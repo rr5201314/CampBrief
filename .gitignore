@@ -1,5 +1,5 @@
-# gitignore 文件夹（本地笔记，不推送到 GitHub）
-gitignore/
+# 本地笔记、草稿和参考资料，不推送到 GitHub
+local-notes/
 
 # IDE / Agent
 .agents/
