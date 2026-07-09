@@ -1,0 +1,35 @@
+# gitignore 文件夹（本地笔记，不推送到 GitHub）
+gitignore/
+
+# IDE / Agent
+.agents/
+.codex/
+.trae-html-share-packages/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build
+dist/
+build/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Archives
+*.zip
+*.tar.gz
