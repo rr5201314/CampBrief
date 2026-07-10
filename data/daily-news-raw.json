@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-07-10T17:42:10.211717+08:00",
+  "collected_at": "2026-07-10T18:34:47.870546+08:00",
   "total": 55,
   "sources_ok": 4,
   "sources_failed": 2,
@@ -17,6 +17,24 @@
   ],
   "candidates": [
     {
+      "title": "LinkedIn 和 X 上四分之一的长文是 AI 撰写的",
+      "url": "https://www.solidot.org/story?sid=84798",
+      "published": "2026-07-10T16:43:49+08:00",
+      "source": "Solidot",
+      "summary_raw": "AI 检测平台 Pangram 的研究显示，LinkedIn 和 X 等平台上四分之一的长文完全是 AI 撰写的。Pangram 对长文定义是包含至少 250 个字符，对 LinkedIn、Medium、Substack、X 和 Reddit 等平台帖子的分析显示，长文受 AI slop 影响最大，这些平台四分之一长文完全是 AI 生成，这里的“完全”并不包含用 AI 润色文字。研究显示，LinkedIn 的长文 AI 生成比例最高，达到了 41%，该平台包含 50-250 字的帖子 AI 生成比例也高达 30%。LinkedIn 上 55.2% 的长文是人类撰写的，4.3% 是在 AI 帮助…",
+      "category_hint": "tech",
+      "lang": "zh"
+    },
+    {
+      "title": "In Emacs, Everything Looks Like a Service",
+      "url": "http://yummymelon.com/devnull/in-emacs-everything-looks-like-a-service.html",
+      "published": "2026-07-10T08:21:10+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Article URL: http://yummymelon.com/devnull/in-emacs-everything-looks-like-a-service.html Comments URL: https://news.ycombinator.com/item?id=48857230 Points: 17 # Comments: 0",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
       "title": "Google 搜索量在世界杯期间创下纪录",
       "url": "https://www.solidot.org/story?sid=84797",
       "published": "2026-07-10T15:53:16+08:00",
@@ -30,7 +48,7 @@
       "url": "https://nevo-project.epfl.ch/",
       "published": "2026-07-10T07:39:11+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://nevo-project.epfl.ch/ Comments URL: https://news.ycombinator.com/item?id=48856904 Points: 48 # Comments: 46",
+      "summary_raw": "Article URL: https://nevo-project.epfl.ch/ Comments URL: https://news.ycombinator.com/item?id=48856904 Points: 60 # Comments: 55",
       "category_hint": "tech",
       "lang": "en"
     },
@@ -66,7 +84,7 @@
       "url": "https://blog.cloudflare.com/build-your-own-vulnerability-harness/",
       "published": "2026-07-10T01:28:43+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://blog.cloudflare.com/build-your-own-vulnerability-harness/ Comments URL: https://news.ycombinator.com/item?id=48854681 Points: 45 # Comments: 19",
+      "summary_raw": "Article URL: https://blog.cloudflare.com/build-your-own-vulnerability-harness/ Comments URL: https://news.ycombinator.com/item?id=48854681 Points: 47 # Comments: 20",
       "category_hint": "tech",
       "lang": "en"
     },
@@ -84,7 +102,7 @@
       "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1766665/full",
       "published": "2026-07-10T00:20:28+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1766665/full Comments URL: https://news.ycombinator.com/item?id=48854247 Points: 127 # Comments: 102",
+      "summary_raw": "Article URL: https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1766665/full Comments URL: https://news.ycombinator.com/item?id=48854247 Points: 128 # Comments: 107",
       "category_hint": "tech",
       "lang": "en"
     },
@@ -93,7 +111,7 @@
       "url": "https://davidoks.blog/p/why-american-ambulance-rides-are",
       "published": "2026-07-09T22:15:56+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://davidoks.blog/p/why-american-ambulance-rides-are Comments URL: https://news.ycombinator.com/item?id=48853091 Points: 210 # Comments: 277",
+      "summary_raw": "Article URL: https://davidoks.blog/p/why-american-ambulance-rides-are Comments URL: https://news.ycombinator.com/item?id=48853091 Points: 218 # Comments: 288",
       "category_hint": "tech",
       "lang": "en"
     },
@@ -111,7 +129,7 @@
       "url": "https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/",
       "published": "2026-07-09T17:17:16+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/ Comments URL: https://news.ycombinator.com/item?id=48849292 Points: 243 # Comments: 110",
+      "summary_raw": "Article URL: https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/ Comments URL: https://news.ycombinator.com/item?id=48849292 Points: 260 # Comments: 119",
       "category_hint": "tech",
       "lang": "en"
     },
@@ -120,7 +138,7 @@
       "url": "https://openai.com/index/gpt-5-6/",
       "published": "2026-07-09T17:04:14+00:00",
       "source": "Hacker News",
-      "summary_raw": "https://deploymentsafety.openai.com/gpt-5-6/gpt-5-6.pdfhttps://developers.openai.com/api/docs/guides/latest-modelhttps://x.com/levie/status/2075287443411222628, https://xcancel.com/levie/status/2075287443411222628 Comments URL: https://news.ycombinator.com/item?id=48849066 Points: 1257 # Comments: 8…",
+      "summary_raw": "https://deploymentsafety.openai.com/gpt-5-6/gpt-5-6.pdfhttps://developers.openai.com/api/docs/guides/latest-modelhttps://x.com/levie/status/2075287443411222628, https://xcancel.com/levie/status/2075287443411222628 Comments URL: https://news.ycombinator.com/item?id=48849066 Points: 1291 # Comments: 9…",
       "category_hint": "tech",
       "lang": "en"
     },
@@ -165,7 +183,7 @@
       "url": "https://hy.tencent.com/research/hy3",
       "published": "2026-07-09T15:27:48+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://hy.tencent.com/research/hy3 Comments URL: https://news.ycombinator.com/item?id=48847552 Points: 474 # Comments: 95",
+      "summary_raw": "Article URL: https://hy.tencent.com/research/hy3 Comments URL: https://news.ycombinator.com/item?id=48847552 Points: 479 # Comments: 97",
       "category_hint": "tech",
       "lang": "en"
     },
@@ -174,16 +192,7 @@
       "url": "https://www.damninteresting.com/a-possible-future/",
       "published": "2026-07-09T15:25:25+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://www.damninteresting.com/a-possible-future/ Comments URL: https://news.ycombinator.com/item?id=48847511 Points: 281 # Comments: 37",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "Opinionated and easy Pi.dev configuration",
-      "url": "https://lazypi.org/",
-      "published": "2026-07-09T15:19:33+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://lazypi.org/ Comments URL: https://news.ycombinator.com/item?id=48847407 Points: 131 # Comments: 69",
+      "summary_raw": "Article URL: https://www.damninteresting.com/a-possible-future/ Comments URL: https://news.ycombinator.com/item?id=48847511 Points: 284 # Comments: 37",
       "category_hint": "tech",
       "lang": "en"
     },
@@ -201,7 +210,7 @@
       "url": "https://tuxnet.dev/posts/tls-for-internal-services/",
       "published": "2026-07-09T14:57:02+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://tuxnet.dev/posts/tls-for-internal-services/ Comments URL: https://news.ycombinator.com/item?id=48846995 Points: 152 # Comments: 109",
+      "summary_raw": "Article URL: https://tuxnet.dev/posts/tls-for-internal-services/ Comments URL: https://news.ycombinator.com/item?id=48846995 Points: 154 # Comments: 112",
       "category_hint": "tech",
       "lang": "en"
     },
@@ -219,7 +228,7 @@
       "url": "https://datacenter.iers.org/data/latestVersion/bulletinC.txt",
       "published": "2026-07-09T14:16:34+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://datacenter.iers.org/data/latestVersion/bulletinC.txt Comments URL: https://news.ycombinator.com/item?id=48846281 Points: 278 # Comments: 218",
+      "summary_raw": "Article URL: https://datacenter.iers.org/data/latestVersion/bulletinC.txt Comments URL: https://news.ycombinator.com/item?id=48846281 Points: 281 # Comments: 218",
       "category_hint": "tech",
       "lang": "en"
     },
@@ -228,7 +237,7 @@
       "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/",
       "published": "2026-07-09T14:10:22+00:00",
       "source": "Hacker News",
-      "summary_raw": "https://ai.meta.com/static-resource/muse-spark-1-1-evaluatio... [pdf]https://developer.meta.com/ai/resources/blog/build-with-muse...https://www.bloomberg.com/news/articles/2026-07-09/meta-star..., https://archive.is/3ccKa Comments URL: https://news.ycombinator.com/item?id=48846184 Points: 373 # Comm…",
+      "summary_raw": "https://ai.meta.com/static-resource/muse-spark-1-1-evaluatio... [pdf]https://developer.meta.com/ai/resources/blog/build-with-muse...https://www.bloomberg.com/news/articles/2026-07-09/meta-star..., https://archive.is/3ccKa Comments URL: https://news.ycombinator.com/item?id=48846184 Points: 375 # Comm…",
       "category_hint": "tech",
       "lang": "en"
     },
@@ -341,15 +350,6 @@
       "lang": "zh"
     },
     {
-      "title": "长鑫和长江存储正在扩大产能",
-      "url": "https://www.solidot.org/story?sid=84783",
-      "published": "2026-07-08T17:28:54+08:00",
-      "source": "Solidot",
-      "summary_raw": "长鑫存储技术（CXMT）和长江存储科技（YMTC）正新建工厂，预计到 2027 年以后，两家企业的产能都将超过目前的两倍。业界相关人士透露，长鑫高性能存储器 HBM 目前在安徽省合肥市的工厂生产，在上海市正在建设的工厂将从 2027 年开始正式生产。随着新工厂的投产等，整体产能预计增至目前的 2 倍以上。长江存储生产用于长期存储的 NAND 闪存和以 NAND 为主要零部件的固态硬盘（SSD）。目前长江存储正在湖北省武汉市建设第 3 工厂，力争将原定 2027 年的量产开始时间提前至 2026 年底。该公司还计划追加建设 2 座工厂，有分析认为全部投产之后产能将增至 2 倍以上。",
-      "category_hint": "tech",
-      "lang": "zh"
-    },
-    {
       "title": "乌兰布统，草原观星",
       "url": "https://sspai.com/post/111923",
       "published": "2026-07-08T17:26:49+08:00",
@@ -377,6 +377,15 @@
       "lang": "zh"
     },
     {
+      "title": "氪星晚报｜德国大众拟大裁员，最高或裁减12万个岗位；高盛称套利交易当前处境为2000年以来最佳；百亿私募数量达142家，再次刷新历史纪录",
+      "url": "https://36kr.com/p/3889551814916614?f=rss",
+      "published": "2026-07-10 18:23:02  +0800",
+      "source": "36氪",
+      "summary_raw": "大公司： SK海力士赴美上市，华尔街投行合计佣金有望达1.4亿美元 参与SK海力士上市项目的投行团队将斩获上亿美元丰厚佣金。这家市值突破万亿美元的韩国芯片巨头即将登陆美股，本次发行有望跻身史上规模最大IPO行列。两名熟悉该交易的人士透露，高盛、花旗等承销本次纳斯达克股票发行的投行，总佣金池规模或将突破1.4亿美元；佣金由两部分构成，一是募资总额0.5%的基础承销费，二是SK海力士另行支付的浮动激励奖金。 谷歌要求AI广告必须标注：涵盖搜索和YouTube等 当地时间7月9日，谷歌宣布全面扩大生成式AI广告的披露范围。新规要求在谷歌搜索、YouTube和Discover信息流中，对由AI创建或编…",
+      "category_hint": "tech",
+      "lang": "zh"
+    },
+    {
       "title": "徕芬产线将向珠海集中，剃须刀、牙刷拉动新增长丨最前线",
       "url": "https://36kr.com/p/3889524008303363?f=rss",
       "published": "2026-07-10 15:49:14  +0800",
@@ -390,7 +399,7 @@
       "url": "https://36kr.com/p/3888284244720131?f=rss",
       "published": "2026-07-10 11:26:25  +0800",
       "source": "36氪",
-      "summary_raw": "文 | 胡香赟 编辑 | 海若镜 36氪获悉，前传奇生物创始人/首席科学家范晓虎创办的生物科技公司深圳湾岛细胞，近日完成1.4亿人民币A轮融资，本轮融资由松禾资本领投、东方富海跟投。 过去一年，AI像一束强光照亮着资本市场。光芒之外，很多赛道在阴影中被重新定价，创新药板块正是其中之一。潮水褪去，人群对新药好药的需求仍在，创业者们也正在更严苛的估值坐标系里，渡过科学、临床和商业化的一关又一关。 在中国细胞与基因治疗（CGT）领域，“范晓虎”这个名字很难被绕开。2022年3月，他主导的传奇生物细胞药物西达基奥仑赛在欧美上市，是目前全球唯一一款销售额逼近20亿美金的CAR-T细胞疗法。 然而，西达基…",
+      "summary_raw": "文 | 胡香赟 编辑 | 海若镜 36氪获悉，前传奇生物创始人/首席科学家范晓��创办的生物科技公司深圳湾岛细胞，近日完成1.4亿人民币A轮融资，本轮融资由松禾资本领投、东方富海跟投。 过去一年，AI像一束强光照亮着资本市场。光芒之外，很多赛道在阴影中被重新定价，创新药板块正是其中之一。潮水褪去，人群对新药好药的需求仍在，创业者们也正在更严苛的估值坐标系里，渡过科学、临床和商业化的一关又一关。 在中国细胞与基因治疗（CGT）领域，“范晓虎”这个名字很难被绕开。2022年3月，他主导的传奇生物细胞药物西达基奥仑赛在欧美上市，是目前全球唯一一款销售额逼近20亿美金的CAR-T细胞疗法。 然而，西达…",
       "category_hint": "tech",
       "lang": "zh"
     },
@@ -458,56 +467,47 @@
       "lang": "zh"
     },
     {
-      "title": "创始人回归，一家高增长公司进入新阶段",
-      "url": "https://36kr.com/p/3886969297893892?f=rss",
-      "published": "2026-07-09 17:50:06  +0800",
+      "title": "电视广播在深圳成立新公司，注册资本500万",
+      "url": "https://36kr.com/newsflashes/3889661120903941?f=rss",
+      "published": "2026-07-10 18:32:10  +0800",
       "source": "36氪",
-      "summary_raw": "六月末的苏黎世，利马特河从 On Labs 楼后流过。昂跑（On）三位创始人之一 Olivier Bernhard 站在一群跑步与商业记者面前，先说了一句略带歉意的开场白：“这里不是那种光鲜亮丽的展示空间。” 他提醒来客，接下来会看到戴着护目镜的工程师、指尖沾着蓝色染料的设计师，以及在跑步机上大汗淋漓、把自己逼到极限的运动员。这是昂跑第一次向外部媒体掀开其创新引擎的帷幕——On Labs 平日紧闭的那道门。 选择此刻开门，并非偶然。这家 2010 年诞生于瑞士、由前铁人三项运动员 Olivier Bernhard 与 David Allemann、Caspar Coppetti 共同创立的公司…",
+      "summary_raw": "36氪获悉，天眼查App显示，近日，无线翡翠（深圳）文化传媒有限公司成立，法定代表人为李福来，注册资本500万，经营范围包括组织文化艺术交流活动、文化娱乐经纪人服务、文艺创作、摄像及视频制作服务、电影摄制服务、版权代理等，由电视广播有限公司全资持股。",
       "category_hint": "tech",
       "lang": "zh"
     },
     {
-      "title": "翔鹭钨业：预计上半年净利润同比增长2347.83%-3435.76%",
-      "url": "https://36kr.com/newsflashes/3889633369783040?f=rss",
-      "published": "2026-07-10 17:39:40  +0800",
+      "title": "国家网信办：截至6月30日累计有988款生成式人工智能服务完成备案",
+      "url": "https://36kr.com/newsflashes/3889675260639749?f=rss",
+      "published": "2026-07-10 18:22:17  +0800",
       "source": "36氪",
-      "summary_raw": "36氪获悉，翔鹭钨业公告，预计2026年半年度归属于上市公司股东的净利润为4.5亿元-6.5亿元，同比增长2347.83%-3435.76%。报告期内，公司作为国内主要钨制品及钨材制造商，产品销量平稳，主营产品受益于钨价上涨带来营收增长，原材料的价格上涨到下游产品的传导较为顺畅，为业绩增长提供重要支撑。",
+      "summary_raw": "36氪获悉，据“网信中国”微信公众号消息，2026年5月至6月新增120款生成式人工智能服务在国家网信办完成备案，对于通过API接口或其他方式直接调用已备案模型能力的生成式人工智能应用或功能，由地方网信办开展登记，新增68款完成登记。截至6月30日，累计有988款生成式人工智能服务完成备案，598款生成式人工智能应用或功能完成登记。",
       "category_hint": "tech",
       "lang": "zh"
     },
     {
-      "title": "南威软件：因涉嫌信息披露违法违规，证监会决定对公司立案",
-      "url": "https://36kr.com/newsflashes/3889629268818688?f=rss",
-      "published": "2026-07-10 17:35:30  +0800",
+      "title": "盒马中国在上海成立新公司，注册资本10万",
+      "url": "https://36kr.com/newsflashes/3889660639738369?f=rss",
+      "published": "2026-07-10 18:15:30  +0800",
       "source": "36氪",
-      "summary_raw": "36氪获悉，南威软件7月10日公告，公司收到中国证券监督管理委员会出具的《立案告知书》，因公司涉嫌信息披露违法违规，中国证监会决定对公司立案。目前公司各项经营活动均正常开展。",
+      "summary_raw": "36氪获悉，天眼查App显示，近日，上海惠实安网络科技有限公司成立，法定代表人为李国，注册资本10万人民币，经营范围包括技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广等，由盒马（中国）有限公司全资持股。",
       "category_hint": "tech",
       "lang": "zh"
     },
     {
-      "title": "中航西飞在浙江成立新公司，注册资本2000万",
-      "url": "https://36kr.com/newsflashes/3889625774029313?f=rss",
-      "published": "2026-07-10 17:31:56  +0800",
+      "title": "摩根大通聘请两位银行家，以把握香港IPO热潮",
+      "url": "https://36kr.com/newsflashes/3889659962915585?f=rss",
+      "published": "2026-07-10 18:12:51  +0800",
       "source": "36氪",
-      "summary_raw": "36氪获悉，天眼查App显示，近日，陕飞科技发展（浙江）有限公司成立，法定代表人为穆克，注册资本2000万人民币，经营范围包括电机及其控制系统研发、智能控制系统集成、新材料技术研发等，由中航西飞旗下西安西飞宜禾科技有限责任公司全资持股。",
+      "summary_raw": "摩根大通公司已招募了两名能够签署香港首次公开招股（IPO）文件的银行家，在中国香港发行上市活动旺盛期间，这些关键职位非常抢手。曾在花旗集团担任董事的Benjamin Seto，以及曾在招商证券担任执行董事的Gary Lam，已加入摩根大通担任执行董事，向香港IPO及企业融资团队负责人Nelly Pai报告工作。（新浪财经）",
       "category_hint": "tech",
       "lang": "zh"
     },
     {
-      "title": "去哪儿：2026上半年入境游客源地覆盖全球575座城市",
-      "url": "https://36kr.com/newsflashes/3889623924980228?f=rss",
-      "published": "2026-07-10 17:30:04  +0800",
+      "title": "德龙激光：康宁是公司长期重要客户之一，向康宁提供玻璃相关激光加工设备",
+      "url": "https://36kr.com/newsflashes/3889660229089798?f=rss",
+      "published": "2026-07-10 18:06:59  +0800",
       "source": "36氪",
-      "summary_raw": "36氪获悉，2026年上半年，外国旅客入境游的脚步越加深入。去哪儿旅行数据显示，截至2026年6月30日，平台上非中国护照游客购买的入境航班目的地覆盖了国内160个城市。客源地方面，2026年上半年，去哪儿平台上入境游客来自全球158个国家的575个城市，比去年同期新增11个国家。“一带一路”国家客源增速最快，蒙古国客源同比增长1.5倍，乌兹别克斯坦增长1.2倍；停留更久、消费更高的欧洲客源也持续增长，来自意大利米兰的游客同比增长近70%。",
-      "category_hint": "tech",
-      "lang": "zh"
-    },
-    {
-      "title": "“全球首款智能体手机”已备货8万至10万台？知情人士：假的",
-      "url": "https://36kr.com/newsflashes/3889614187133448?f=rss",
-      "published": "2026-07-10 17:20:09  +0800",
-      "source": "36氪",
-      "summary_raw": "今日有媒体报道，字节跳动联合中兴努比亚打造的全球首款AI智能体手机计划于2026世界人工智能大会期间亮相开售，现已备货8万至10万台，首批总量50万台，规模远超上代。对此，知情人士回应：假的！此次大会上，仅为该款手机首次公开展示，并非开售，更无备货数万台之说。（证券时报）",
+      "summary_raw": "36氪获悉，德龙激光在互动平台表示，康宁是公司长期重要客户之一，公司向康宁提供玻璃相关激光加工设备，但相关业务收入占比较小，请注意投资风险。",
       "category_hint": "tech",
       "lang": "zh"
     }
