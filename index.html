@@ -3,163 +3,119 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CampBrief - 大学生AI信息助理</title>
+<title>CampBrief - 大学生信息聚合平台</title>
 <link rel="stylesheet" href="assets/css/style.css">
-<style>
-.hero{
-  min-height:80vh;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:60px 24px;
-}
-.hero h1{
-  font-size:56px;
-  line-height:1.1;
-  letter-spacing:-.04em;
-  margin-bottom:20px;
-}
-.hero .subtitle{
-  font-size:18px;
-  max-width:600px;
-  margin-bottom:32px;
-}
-.hero-actions{
-  display:flex;
-  gap:12px;
-}
-.modules{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
-  padding:60px 0;
-}
-.module-card{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:16px;
-  padding:32px 24px;
-  border:1px solid var(--line);
-  border-radius:16px;
-  background:var(--panel);
-  text-decoration:none;
-  color:var(--text);
-  transition:all .2s;
-}
-.module-card:hover{
-  border-color:var(--line-strong);
-  background:var(--control-hover);
-}
-.module-icon{
-  width:56px;
-  height:56px;
-  display:grid;
-  place-items:center;
-  border-radius:16px;
-  background:var(--option-accent-soft);
-}
-.module-title{
-  font-size:18px;
-  font-weight:700;
-}
-.module-desc{
-  font-size:14px;
-  color:var(--muted);
-  text-align:center;
-  line-height:1.5;
-}
-.footer{
-  padding:40px 0;
-  border-top:1px solid var(--line);
-  text-align:center;
-  color:var(--muted);
-  font-size:13px;
-}
-@media(max-width:860px){
-  .hero h1{font-size:36px}
-  .modules{grid-template-columns:1fr 1fr}
-}
-@media(max-width:560px){
-  .modules{grid-template-columns:1fr}
-}
-</style>
+<link rel="stylesheet" href="assets/css/home.css">
 </head>
 <body data-theme="x-light">
 <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10.5V20h14v-9.5"/><path d="M10 20v-5h4v5"/></symbol>
   <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 4h8v4a4 4 0 0 1-8 0z"/><path d="M8 6H5a3 3 0 0 0 3 5"/><path d="M16 6h3a3 3 0 0 1-3 5"/><path d="M12 12v5"/><path d="M8 20h8"/><path d="M9.5 17h5"/></symbol>
+  <symbol id="i-exam" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1"/><path d="M9 11h6"/><path d="M9 15h4"/></symbol>
   <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 8-4 4 4 4"/><path d="m16 8 4 4-4 4"/><path d="m14 5-4 14"/></symbol>
-  <symbol id="i-bot" viewBox="0 0 24 24"><rect x="5" y="8" width="14" height="11" rx="4"/><path d="M12 8V4"/><path d="M9 13h.01"/><path d="M15 13h.01"/><path d="M9.5 17h5"/></symbol>
-  <symbol id="i-status" viewBox="0 0 24 24"><path d="M9 12l2 2 4-5"/><circle cx="12" cy="12" r="9"/></symbol>
   <symbol id="i-news" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8"/><path d="M8 11h8"/><path d="M8 15h5"/></symbol>
   <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6"/><path d="M12 7h.01"/></symbol>
+  <symbol id="i-status" viewBox="0 0 24 24"><path d="M9 12l2 2 4-5"/><circle cx="12" cy="12" r="9"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></symbol>
+  <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></symbol>
+  <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="3"/><path d="M8 3v4"/><path d="M16 3v4"/><path d="M4 10h16"/></symbol>
+  <symbol id="i-medal" viewBox="0 0 24 24"><circle cx="12" cy="14" r="5"/><path d="M9 3h6l-1.5 6h-3z"/><path d="m9 3 3 6 3-6"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-org" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 9h.01"/><path d="M15 9h.01"/><path d="M9 13h.01"/><path d="M15 13h.01"/></symbol>
 </svg>
 
-<div class="page-shell">
-  <main class="main-column">
-    <header class="topbar">
-      <a href="index.html" class="brand">
-        <span class="brand-mark">C</span>
-        <span>CampBrief</span>
-      </a>
-      <div class="top-actions">
-        <nav class="nav" aria-label="主导航">
-          <a href="index.html" class="nav-link active"><svg class="icon-sm icon"><use href="#i-trophy"/></svg>首页</a>
-          <a href="pages/competitions/index.html" class="nav-link"><svg class="icon-sm icon"><use href="#i-trophy"/></svg>竞赛</a>
-          <a href="pages/tech/index.html" class="nav-link"><svg class="icon-sm icon"><use href="#i-code"/></svg>技术</a>
-          <a href="pages/daily-news/index.html" class="nav-link"><svg class="icon-sm icon"><use href="#i-news"/></svg>每日资讯</a>
-          <a href="pages/about/index.html" class="nav-link"><svg class="icon-sm icon"><use href="#i-info"/></svg>关于</a>
-        </nav>
-        <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换主题">
-          <svg class="icon-sm icon"><use href="#i-status"/></svg>
-          <span>浅色模式</span>
-        </button>
-      </div>
-    </header>
-
-    <div class="inner">
-      <section class="hero">
-        <h1>不再错过任何机会</h1>
-        <p class="subtitle">CampBrief 每日自动聚合竞赛、技术、AI 学习信息，智能推荐给每个大学生。</p>
-        <div class="hero-actions">
-          <a href="pages/competitions/index.html" class="btn btn-primary">浏览竞赛 <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>
-          <a href="pages/about/index.html" class="btn btn-secondary">了解更多</a>
-        </div>
-      </section>
-
-      <section class="modules">
-        <a href="pages/competitions/index.html" class="module-card">
-          <span class="module-icon"><svg class="icon"><use href="#i-trophy"/></svg></span>
-          <span class="module-title">竞赛</span>
-          <span class="module-desc">发现校园挑战赛、创新项目和黑客马拉松</span>
-        </a>
-        <a href="pages/tech/index.html" class="module-card">
-          <span class="module-icon"><svg class="icon"><use href="#i-code"/></svg></span>
-          <span class="module-title">技术</span>
-          <span class="module-desc">追踪技术趋势和优质开源项目</span>
-        </a>
-        <a href="pages/daily-news/index.html" class="module-card">
-          <span class="module-icon"><svg class="icon"><use href="#i-news"/></svg></span>
-          <span class="module-title">每日资讯</span>
-          <span class="module-desc">AI 精选每日信息差日报</span>
-        </a>
-        <a href="pages/about/index.html" class="module-card">
-          <span class="module-icon"><svg class="icon"><use href="#i-info"/></svg></span>
-          <span class="module-title">关于</span>
-          <span class="module-desc">了解 CampBrief 的故事</span>
-        </a>
-      </section>
-
-      <footer class="footer">
-        <p>© 2026 CampBrief · 大学生AI信息助理</p>
-      </footer>
+<div class="home-shell">
+  <header class="topbar">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">C</span>
+      <span>CampBrief</span>
+    </a>
+    <div class="top-actions">
+      <nav class="nav" aria-label="主导航">
+        <a href="index.html" class="nav-link active"><svg class="icon-sm icon"><use href="#i-home"/></svg>首页</a>
+        <a href="pages/competitions/index.html" class="nav-link"><svg class="icon-sm icon"><use href="#i-trophy"/></svg>竞赛</a>
+        <a href="pages/exams/index.html" class="nav-link"><svg class="icon-sm icon"><use href="#i-exam"/></svg>考试</a>
+        <a href="pages/tech/index.html" class="nav-link"><svg class="icon-sm icon"><use href="#i-code"/></svg>技术</a>
+        <a href="pages/daily-news/index.html" class="nav-link"><svg class="icon-sm icon"><use href="#i-news"/></svg>每日资讯</a>
+        <a href="pages/about/index.html" class="nav-link"><svg class="icon-sm icon"><use href="#i-info"/></svg>关于</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换主题">
+        <svg class="icon-sm icon"><use href="#i-status"/></svg>
+        <span>浅色模式</span>
+      </button>
     </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <h1 class="hero-title">CampBrief 专为大学生打造的AI信息聚合平台</h1>
+      <p class="hero-sub">竞赛、考试、资讯一站直达，不再错过重要信息。</p>
+      <button class="hero-btn" id="startBtn" type="button">
+        快速开始 <svg class="icon-sm icon"><use href="#i-arrow"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <main class="home-main" id="boards">
+    <section class="board" data-board="competitions">
+      <header class="board-head">
+        <div class="board-title-wrap">
+          <span class="board-icon"><svg class="icon"><use href="#i-trophy"/></svg></span>
+          <h2 class="board-title">近期比赛</h2>
+          <span class="board-count" data-count="competitions"></span>
+        </div>
+        <a class="board-more" href="pages/competitions/index.html">全部<svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>
+      </header>
+      <div class="board-body"><div class="board-list" data-feed="competitions"></div></div>
+      <footer class="board-pager" data-pager="competitions">
+        <button class="pager-btn" data-action="prev" type="button"><svg class="icon-sm icon"><use href="#i-chevron-left"/></svg></button>
+        <span class="pager-info" data-page="competitions">1 / 1</span>
+        <button class="pager-btn" data-action="next" type="button"><svg class="icon-sm icon"><use href="#i-chevron-right"/></svg></button>
+      </footer>
+    </section>
+
+    <section class="board" data-board="exams">
+      <header class="board-head">
+        <div class="board-title-wrap">
+          <span class="board-icon"><svg class="icon"><use href="#i-exam"/></svg></span>
+          <h2 class="board-title">考试通知</h2>
+          <span class="board-count" data-count="exams"></span>
+        </div>
+        <a class="board-more" href="pages/exams/index.html">全部<svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>
+      </header>
+      <div class="board-body"><div class="board-list" data-feed="exams"></div></div>
+      <footer class="board-pager" data-pager="exams">
+        <button class="pager-btn" data-action="prev" type="button"><svg class="icon-sm icon"><use href="#i-chevron-left"/></svg></button>
+        <span class="pager-info" data-page="exams">1 / 1</span>
+        <button class="pager-btn" data-action="next" type="button"><svg class="icon-sm icon"><use href="#i-chevron-right"/></svg></button>
+      </footer>
+    </section>
+
+    <section class="board" data-board="news">
+      <header class="board-head">
+        <div class="board-title-wrap">
+          <span class="board-icon"><svg class="icon"><use href="#i-news"/></svg></span>
+          <h2 class="board-title">每日资讯</h2>
+          <span class="board-count" data-count="news"></span>
+        </div>
+        <a class="board-more" href="pages/daily-news/index.html">全部<svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>
+      </header>
+      <div class="board-body"><div class="board-list" data-feed="news"></div></div>
+      <footer class="board-pager" data-pager="news">
+        <button class="pager-btn" data-action="prev" type="button"><svg class="icon-sm icon"><use href="#i-chevron-left"/></svg></button>
+        <span class="pager-info" data-page="news">1 / 1</span>
+        <button class="pager-btn" data-action="next" type="button"><svg class="icon-sm icon"><use href="#i-chevron-right"/></svg></button>
+      </footer>
+    </section>
   </main>
+
+  <footer class="home-footer">
+    <p>© 2026 CampBrief · 大学生信息聚合平台</p>
+  </footer>
 </div>
 
 <script src="assets/js/main.js"></script>
+<script src="assets/js/home.js"></script>
 </body>
 </html>
