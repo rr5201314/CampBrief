@@ -258,23 +258,31 @@ function renderPage(key, list, builder){
   const slice = list.slice(start, start + PAGE_SIZE);
   slice.forEach(item => wrap.appendChild(builder(item)));
 
-  // 触发 feed-item stagger 入场
-  const items = wrap.querySelectorAll(".feed-item");
-  items.forEach((node, i) => {
-    node.style.transitionDelay = `${i * 60}ms`;
-    // 双 rAF 确保 transition-delay 生效后再加状态类
-    requestAnimationFrame(() => requestAnimationFrame(() => {
-      node.classList.add("is-in");
-    }));
-  });
-  // 入场结束后清除 delay，避免 hover 抬升有延迟
-  setTimeout(() => {
-    items.forEach(node => { node.style.transitionDelay = ""; });
-  }, (items.length - 1) * 60 + 600);
-
   if(info) info.textContent = `${pageState[key] + 1} / ${totalPages}`;
   if(prevBtn) prevBtn.disabled = pageState[key] === 0;
   if(nextBtn) nextBtn.disabled = pageState[key] >= totalPages - 1;
+}
+
+/* ---- 三看板 feed-item 同步逐条入场（一条完成再下一条） ---- */
+function triggerFeedItemsIn(){
+  const allItems = document.querySelectorAll(".board-list .feed-item");
+  if(!allItems.length) return;
+  // 单条入场时长 700ms，间隔 = 单条时长，实现"前一条入场结束瞬间下一条开始"
+  const STEP = 700;
+  const DURATION = 700;
+  allItems.forEach(node => {
+    const itemsInBoard = node.closest(".board-list").querySelectorAll(".feed-item");
+    const idx = Array.from(itemsInBoard).indexOf(node);
+    node.style.transitionDelay = `${idx * STEP}ms`;
+  });
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    allItems.forEach(node => node.classList.add("is-in"));
+  }));
+  // 全部入场结束后清除 delay
+  const cleanupDelay = (PAGE_SIZE - 1) * STEP + DURATION + 100;
+  setTimeout(() => {
+    allItems.forEach(node => { node.style.transitionDelay = ""; });
+  }, cleanupDelay);
 }
 
 function setCount(key, n){
@@ -296,6 +304,8 @@ function bindPager(key, list, builder){
       pageState[key]++;
     }
     renderPage(key, list, builder);
+    // 翻页后触发该看板新内容逐条入场
+    triggerFeedItemsIn();
   });
 }
 
@@ -336,34 +346,50 @@ function observeBoards(){
 }
 
 /* ---- 初始化 ---- */
-renderPage("competitions", SAMPLE.competitions, buildCompetitionItem);
-renderPage("exams", SAMPLE.exams, buildExamItem);
-renderPage("news", SAMPLE.news, buildNewsItem);
-setCount("competitions", SAMPLE.competitions.length);
-setCount("exams", SAMPLE.exams.length);
-setCount("news", SAMPLE.news.length);
-bindPager("competitions", SAMPLE.competitions, buildCompetitionItem);
-bindPager("exams", SAMPLE.exams, buildExamItem);
-bindPager("news", SAMPLE.news, buildNewsItem);
-observeBoards();
+function initHome(){
+  // 标记 JS 就绪，启用 Hero 入场动画（避免 CSS 未解析时元素闪现）
+  document.body.classList.add("js-ready");
 
-// 快速开始按钮 - 平滑滚动到看板区
-const startBtn = document.getElementById("startBtn");
-if(startBtn){
-  startBtn.addEventListener("click", () => {
-    const boards = document.getElementById("boards");
-    if(boards) boards.scrollIntoView({ behavior: "smooth", block: "start" });
+  renderPage("competitions", SAMPLE.competitions, buildCompetitionItem);
+  renderPage("exams", SAMPLE.exams, buildExamItem);
+  renderPage("news", SAMPLE.news, buildNewsItem);
+  setCount("competitions", SAMPLE.competitions.length);
+  setCount("exams", SAMPLE.exams.length);
+  setCount("news", SAMPLE.news.length);
+  bindPager("competitions", SAMPLE.competitions, buildCompetitionItem);
+  bindPager("exams", SAMPLE.exams, buildExamItem);
+  bindPager("news", SAMPLE.news, buildNewsItem);
+  observeBoards();
+  // 首屏渲染后触发三看板同步逐条入场
+  triggerFeedItemsIn();
+
+  // 快速开始按钮 - 平滑滚动到看板区
+  const startBtn = document.getElementById("startBtn");
+  if(startBtn){
+    startBtn.addEventListener("click", () => {
+      const boards = document.getElementById("boards");
+      if(boards) boards.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+    // Hero 按钮涟漪
+    startBtn.addEventListener("click", (e) => {
+      const rect = startBtn.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height);
+      const ripple = document.createElement("span");
+      ripple.className = "ripple";
+      ripple.style.width = ripple.style.height = size + "px";
+      ripple.style.left = (e.clientX - rect.left - size / 2) + "px";
+      ripple.style.top = (e.clientY - rect.top - size / 2) + "px";
+      startBtn.appendChild(ripple);
+      ripple.addEventListener("animationend", () => ripple.remove());
+    });
+  }
+}
+
+// 等待 DOM 就绪 + 双 rAF 确保 CSS 初始状态（opacity:0）已应用，再渲染与触发入场
+if(document.readyState === "loading"){
+  document.addEventListener("DOMContentLoaded", () => {
+    requestAnimationFrame(() => requestAnimationFrame(initHome));
   });
-  // Hero 按钮涟漪
-  startBtn.addEventListener("click", (e) => {
-    const rect = startBtn.getBoundingClientRect();
-    const size = Math.max(rect.width, rect.height);
-    const ripple = document.createElement("span");
-    ripple.className = "ripple";
-    ripple.style.width = ripple.style.height = size + "px";
-    ripple.style.left = (e.clientX - rect.left - size / 2) + "px";
-    ripple.style.top = (e.clientY - rect.top - size / 2) + "px";
-    startBtn.appendChild(ripple);
-    ripple.addEventListener("animationend", () => ripple.remove());
-  });
+} else {
+  requestAnimationFrame(() => requestAnimationFrame(initHome));
 }

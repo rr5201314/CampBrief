@@ -56,7 +56,9 @@ html{scroll-behavior:smooth}
   position:relative;
   overflow:hidden;
   transition:opacity .15s, transform .1s;
-  animation:heroIn .9s cubic-bezier(.22,1,.36,1) .55s backwards;
+}
+body.js-ready .hero-btn{
+  animation:heroIn 1.3s cubic-bezier(.22,1,.36,1) .8s backwards;
 }
 .hero-btn:hover{opacity:.88}
 .hero-btn:active{transform:scale(.97)}
@@ -66,11 +68,12 @@ html{scroll-behavior:smooth}
   from{ opacity:0; transform:translateY(22px); }
   to{ opacity:1; transform:translateY(0); }
 }
-.hero-title{
-  animation:heroIn .9s cubic-bezier(.22,1,.36,1) .15s backwards;
+/* 仅在 JS 就绪后启用入场，避免 CSS 未解析时元素闪现 */
+body.js-ready .hero-title{
+  animation:heroIn 1.3s cubic-bezier(.22,1,.36,1) .2s backwards;
 }
-.hero-sub{
-  animation:heroIn .9s cubic-bezier(.22,1,.36,1) .35s backwards;
+body.js-ready .hero-sub{
+  animation:heroIn 1.3s cubic-bezier(.22,1,.36,1) .5s backwards;
 }
 
 /* ===== Hero 按钮涟漪 ===== */
@@ -80,7 +83,7 @@ html{scroll-behavior:smooth}
   background:rgba(255,255,255,.35);
   transform:scale(0);
   pointer-events:none;
-  animation:rippleEffect .6s ease-out forwards;
+  animation:rippleEffect .8s ease-out forwards;
 }
 @keyframes rippleEffect{
   to{ transform:scale(4); opacity:0; }
@@ -104,8 +107,8 @@ html{scroll-behavior:smooth}
   margin:0 auto;
   opacity:0;
   transform:translateY(24px);
-  transition:opacity .6s cubic-bezier(.16,1,.3,1),
-             transform .6s cubic-bezier(.16,1,.3,1);
+  transition:opacity .9s cubic-bezier(.16,1,.3,1),
+             transform .9s cubic-bezier(.16,1,.3,1);
 }
 .home-main.is-visible{
   opacity:1;
@@ -124,8 +127,8 @@ html{scroll-behavior:smooth}
   min-height:0;
   opacity:0;
   transform:translateY(30px);
-  transition:opacity .7s cubic-bezier(.16,1,.3,1),
-             transform .7s cubic-bezier(.16,1,.3,1);
+  transition:opacity 1s cubic-bezier(.16,1,.3,1),
+             transform 1s cubic-bezier(.16,1,.3,1);
 }
 .board.is-visible{
   opacity:1;
@@ -138,23 +141,23 @@ html{scroll-behavior:smooth}
 .board-pager{
   opacity:0;
   transform:translateY(10px);
-  transition:opacity .5s cubic-bezier(.22,1,.36,1),
-             transform .5s cubic-bezier(.22,1,.36,1);
+  transition:opacity .7s cubic-bezier(.22,1,.36,1),
+             transform .7s cubic-bezier(.22,1,.36,1);
 }
 .board.is-visible .board-head{
   opacity:1;
   transform:translateY(0);
-  transition-delay:.1s;
+  transition-delay:.15s;
 }
 .board.is-visible .board-body{
   opacity:1;
   transform:translateY(0);
-  transition-delay:.2s;
+  transition-delay:.3s;
 }
 .board.is-visible .board-pager{
   opacity:1;
   transform:translateY(0);
-  transition-delay:.3s;
+  transition-delay:.45s;
 }
 .board-head{
   display:flex;
@@ -261,8 +264,8 @@ html{scroll-behavior:smooth}
   background:var(--space);
   opacity:0;
   transform:translateY(12px);
-  transition:opacity .5s cubic-bezier(.22,1,.36,1),
-             transform .5s cubic-bezier(.22,1,.36,1),
+  transition:opacity .7s cubic-bezier(.22,1,.36,1),
+             transform .7s cubic-bezier(.22,1,.36,1),
              border-color .15s,
              background .15s,
              box-shadow .2s;
