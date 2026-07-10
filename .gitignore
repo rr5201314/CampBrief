@@ -4,7 +4,9 @@ local-notes/
 # IDE / Agent
 .agents/
 .codex/
+.trae/
 .trae-html-share-packages/
+.playwright-cli/
 .vscode/
 .idea/
 *.swp
