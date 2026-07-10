@@ -1,4 +1,4 @@
-// 每日资讯模块 - 从 JSON 文件加载数据
+// 每日资讯模块 - 从内嵌数据加载（兼容 GitHub Pages）
 const state = { category: "all", date: "all", customDate: "", query: "" };
 let cards = [];
 let resultCount, searchInput, emptyState;
@@ -24,15 +24,21 @@ function initDOM() {
   customDateOption = document.querySelector('[data-filter-group="date"] [data-value="custom"]');
 }
 
-// 从 JSON 文件加载数据
+// 获取新闻数据（从内嵌变量或 fetch）
 async function loadNewsData() {
+  // 优先使用内嵌数据（兼容 GitHub Pages 和直接打开 HTML）
+  if (typeof NEWS_DATA !== 'undefined' && NEWS_DATA.items) {
+    return NEWS_DATA.items;
+  }
+  
+  // 备选：尝试从 JSON 文件加载（需要 HTTP 服务器）
   try {
     const response = await fetch('../../data/daily-news.json');
     if (!response.ok) throw new Error('加载失败');
     const data = await response.json();
     return data.items || [];
   } catch (error) {
-    console.error('加载资讯数据失败:', error);
+    console.warn('无法从 JSON 文件加载，使用内嵌数据');
     return [];
   }
 }
@@ -91,6 +97,12 @@ function renderCards(items) {
   const container = document.getElementById('cards');
   container.innerHTML = items.map(item => createCardHTML(item)).join('');
   cards = [...document.querySelectorAll(".card")];
+  
+  // 更新计数
+  if (resultCount) {
+    resultCount.textContent = `${items.length} 条资讯`;
+  }
+  
   applyFilters();
 }
 
@@ -368,13 +380,13 @@ async function init() {
   
   // 显示加载状态
   const container = document.getElementById('cards');
-  container.innerHTML = '<div class="loading-state">正在加载资讯...</div>';
+  container.innerHTML = '<div class="loading-state" style="text-align: center; padding: 40px; color: var(--text-secondary, #666);">正在加载资讯...</div>';
   
   // 加载数据
   const items = await loadNewsData();
   
   if (items.length === 0) {
-    container.innerHTML = '<div class="empty-state">暂无资讯数据</div>';
+    container.innerHTML = '<div class="empty-state" style="text-align: center; padding: 40px; color: var(--text-secondary, #666);">暂无资讯数据</div>';
     return;
   }
   

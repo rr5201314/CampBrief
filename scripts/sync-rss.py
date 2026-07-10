@@ -2,6 +2,7 @@
 """
 CampBrief RSS 同步脚本
 从橘鸦AI早报 RSS 获取数据，生成 CampBrief 需要的 JSON 格式
+同时生成内嵌数据的 JS 文件，供前端直接使用（兼容 GitHub Pages）
 """
 
 import json
@@ -14,8 +15,9 @@ import re
 # RSS 源地址
 RSS_URL = "https://daily.juya.uk/rss.xml"
 
-# 输出路径（相对于项目根目录）
-OUTPUT_FILE = "data/daily-news.json"
+# 输出路径
+JSON_OUTPUT = "data/daily-news.json"
+JS_OUTPUT = "assets/js/news-data.js"
 
 def fetch_rss(url):
     """获取 RSS 内容"""
@@ -31,18 +33,8 @@ def extract_title_from_description(description):
     if not description:
         return "AI 早报"
     
-    # 跳过开头的 "AI 早报 2026 07 10 视频版..." 部分
-    # 找到第一个 ↗ 符号前的标题
-    # 格式: "要闻 OpenAI 正式向公众发布 GPT 5.6 模型系列 ↗ 1"
+    text = ' '.join(description.split('\n'))
     
-    # 移除开头的日期和视频版信息
-    lines = description.split('\n')
-    
-    # 合并成一个字符串处理
-    text = ' '.join(lines)
-    
-    # 跳过 "AI 早报 XXXX 视频版" 部分
-    # 找到 "要闻" 或其他分类关键词后的内容
     patterns = [
         r'要闻\s+(.+?)\s*↗',
         r'模型发布\s+(.+?)\s*↗',
@@ -56,16 +48,13 @@ def extract_title_from_description(description):
         match = re.search(pattern, text)
         if match:
             title = match.group(1).strip()
-            # 清理标题中的数字编号
             title = re.sub(r'\s*\d+$', '', title)
             return title
     
-    # 如果都没有匹配，尝试找第一个 ↗ 前的内容
     match = re.search(r'概览\s+要闻\s+(.+?)\s*↗', text)
     if match:
         return match.group(1).strip()
     
-    # 最后的备选：取日期作为标题
     date_match = re.search(r'AI 早报 (\d{4} \d{2} \d{2})', text)
     if date_match:
         return f"AI 早报 {date_match.group(1)}"
@@ -77,16 +66,11 @@ def extract_summary(description):
     if not description:
         return ""
     
-    # 移除视频版链接等
     text = description
-    
-    # 跳过开头的 "AI 早报 XXXX 视频版..."
-    # 从 "要闻" 开始提取
     match = re.search(r'要闻\s+(.+)', text, re.DOTALL)
     if match:
         text = match.group(1)
     
-    # 取前200字符作为摘要
     summary = text[:200].strip()
     if len(text) > 200:
         summary += '...'
@@ -106,12 +90,10 @@ def parse_rss(xml_content):
         description = item.find('description').text if item.find('description') is not None else ''
         pub_date = item.find('pubDate').text if item.find('pubDate') is not None else ''
         
-        # 提取封面图
         image = ''
         if item.find('enclosure') is not None:
             image = item.find('enclosure').get('url', '')
         
-        # 解析日期
         try:
             dt = datetime.strptime(pub_date[:25], '%a, %d %b %Y %H:%M:%S')
             formatted_date = dt.strftime('%Y-%m-%d')
@@ -120,15 +102,12 @@ def parse_rss(xml_content):
             formatted_date = pub_date[:10]
             iso_date = pub_date
         
-        # 从描述中提取真正的标题
         real_title = extract_title_from_description(description)
-        
-        # 提取摘要
         summary = extract_summary(description)
         
         items.append({
             'title': real_title,
-            'date_title': title,  # 保留原始日期标题
+            'date_title': title,
             'url': link,
             'date': formatted_date,
             'published': iso_date,
@@ -154,7 +133,30 @@ def save_json(items, output_path):
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     
-    print(f"✅ 已保存 {len(items)} 条资讯到 {output_path}")
+    print(f"✅ 已保存 JSON 到 {output_path}")
+
+def save_js(items, output_path):
+    """生成内嵌数据的 JS 文件（兼容 GitHub Pages）"""
+    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
+    
+    data = {
+        'last_updated': datetime.now().strftime('%Y-%m-%dT%H:%M:%S+08:00'),
+        'source': '橘鸦AI早报',
+        'total': len(items),
+        'items': items
+    }
+    
+    js_content = f"""// CampBrief 每日资讯数据
+// 自动生成于 {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+// 请勿手动修改此文件
+
+const NEWS_DATA = {json.dumps(data, ensure_ascii=False, indent=2)};
+"""
+    
+    with open(output_path, 'w', encoding='utf-8') as f:
+        f.write(js_content)
+    
+    print(f"✅ 已保存 JS 到 {output_path}")
 
 def main():
     print("🔄 正在获取橘鸦AI早报...")
@@ -164,7 +166,10 @@ def main():
     items = parse_rss(xml_content)
     
     print(f"📊 获取到 {len(items)} 条资讯")
-    save_json(items, OUTPUT_FILE)
+    
+    # 保存两种格式
+    save_json(items, JSON_OUTPUT)
+    save_js(items, JS_OUTPUT)
     
     # 打印最新3条
     print("\n📋 最新资讯预览：")
