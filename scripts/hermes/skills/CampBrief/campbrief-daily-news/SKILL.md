@@ -70,7 +70,17 @@ python3 "$REPO/scripts/collect-daily-news.py"
 - 每次新收录 **8–15 条**，宁缺毋滥
 - 英文来源（如 Hacker News）只挑对学生有普遍价值的，不要凑数
 
-### 4. 生成摘要与分类
+### 4. 分配优先级
+
+对决定收录的每一条，分配一个 `priority` 值（整数，越大越靠前）：
+
+- **3（重磅）**：大模型发布（如 GPT、Claude、Gemini 新版本）、大厂核心 AI/技术动态、国家层面 AI 政策法规
+- **2（重要）**：技术趋势分析、行业洞察、重要开源项目发布、融资事件、科研突破
+- **1（一般）**：产品评测、科普资讯、周边动态
+
+前端按 `priority` 降序排列，同优先级按发布时间降序。
+
+### 5. 生成摘要与分类
 
 对决定收录的每一条：
 
@@ -85,7 +95,7 @@ python3 "$REPO/scripts/collect-daily-news.py"
 - **title**：保留原标题；英文标题可翻译为中文，但若原英文标题已是通用术语（如项目名、产品名）则保留原文。
 - **source**：沿用候选里的 `source` 字段。
 
-### 5. 合并去重
+### 6. 合并去重
 
 - 以 **URL 完全相同** 作为去重依据：候选 URL 若已存在于 `items` 中，跳过。
 - 把本次新收录的条目与已有 `items` 合并。
@@ -93,7 +103,7 @@ python3 "$REPO/scripts/collect-daily-news.py"
 - **总量上限 60 条**：超出则从最旧的开始裁剪。
 - 更新顶层字段：`last_updated` 设为当前时间（ISO8601 带时区），`total` 设为合并后的条目数，`source` 保持 `"CampBrief Auto"`。
 
-### 6. 写入数据文件
+### 7. 写入数据文件
 
 把合并后的完整数据写入 `$REPO/data/daily-news.json`。**必须**符合以下结构（字段顺序保持一致，便于 diff 可读）：
 
@@ -111,6 +121,7 @@ python3 "$REPO/scripts/collect-daily-news.py"
       "summary": "中文摘要，1-2 句话，用于卡片展示。",
       "detail": "中文详情，3-5 句话，用于详情页展开。比 summary 更完整地交代背景、关键事实、影响或后续。",
       "image": "",
+      "priority": 3,
       "category": "ai",
       "source": "来源名"
     }
@@ -126,7 +137,7 @@ python3 "$REPO/scripts/collect-daily-news.py"
 - `url` 是详情页定位条目的唯一键，必须唯一且稳定（详情页通过 `?url=` 参数查找条目）。
 - 写完后**重新读一次**该文件，确认 JSON 合法、`items` 数量与 `total` 一致、每条都有非空的 `summary` 和 `detail`。
 
-### 7. 推送 GitHub
+### 8. 推送 GitHub
 
 ```bash
 cd "$REPO"

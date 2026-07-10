@@ -72,8 +72,17 @@ function createCardHTML(item) {
   
   const formattedDate = `${date.getFullYear()}.${String(date.getMonth() + 1).padStart(2, '0')}.${String(date.getDate()).padStart(2, '0')}`;
   
+  const priority = item.priority || 1;
+  const priorityBadge = priority >= 3
+    ? '<span class="badge badge-hot"><svg class="icon-sm icon"><use href="#i-trophy"/></svg>重磅</span>'
+    : priority >= 2
+    ? '<span class="badge badge-important"><svg class="icon-sm icon"><use href="#i-status"/></svg>重要</span>'
+    : '';
+  const categoryLabels = { ai: 'AI', tech: '技术', competition: '竞赛', exam: '考试', sports: '体育' };
+  const categoryLabel = categoryLabels[item.category] || item.category;
+  
   return `
-    <article class="card" data-category="${item.category}" data-published="${item.published}" data-search="${item.title} ${item.summary}">
+    <article class="card" data-category="${item.category}" data-published="${item.published}" data-priority="${priority}" data-search="${item.title} ${item.summary}">
       <div class="thumb" aria-label="资讯封面占位图">
         <div class="thumb-inner">
           <span class="thumb-icon"><svg class="icon"><use href="#i-image"/></svg></span>
@@ -87,7 +96,8 @@ function createCardHTML(item) {
           <span class="badge status-badge ${statusClass}"><svg class="icon-sm icon"><use href="#i-clock"/></svg>${statusText}</span>
         </div>
         <div class="meta-line">
-          <span class="badge badge-prize"><svg class="icon-sm icon"><use href="#i-bot"/></svg>AI</span>
+          ${priorityBadge}
+          <span class="badge badge-prize"><svg class="icon-sm icon"><use href="#i-bot"/></svg>${categoryLabel}</span>
           <span class="meta-item"><svg class="icon-sm icon"><use href="#i-calendar"/></svg>${formattedDate}</span>
           <span class="meta-item"><svg class="icon-sm icon"><use href="#i-info"/></svg>${item.source}</span>
         </div>
@@ -296,6 +306,12 @@ function applyFilters() {
     const dateOk = matchesDateFilter(item);
     const searchOk = !state.query || `${item.title} ${item.summary} ${item.detail || ""}`.toLowerCase().includes(state.query);
     return categoryOk && dateOk && searchOk;
+  });
+  // 按优先级降序，同优先级按发布时间降序
+  filteredItems.sort((a, b) => {
+    const pa = a.priority || 1, pb = b.priority || 1;
+    if (pa !== pb) return pb - pa;
+    return new Date(b.published) - new Date(a.published);
   });
   if (resultCount) resultCount.textContent = `${filteredItems.length} 条资讯`;
   renderPage();

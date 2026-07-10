@@ -1,73 +1,19 @@
 {
-  "last_updated": "2026-07-10T18:35:58.421350+08:00",
+  "last_updated": "2026-07-10T18:54:54.728483+08:00",
   "source": "CampBrief Auto",
   "total": 14,
   "items": [
     {
-      "title": "LinkedIn 和 X 上四分之一的长文是 AI 撰写的",
-      "url": "https://www.solidot.org/story?sid=84798",
+      "title": "腾讯发布 Hy3 混合推理模型",
+      "url": "https://hy.tencent.com/research/hy3",
       "date": "2026-07-10",
-      "published": "2026-07-10T16:43:49+08:00",
-      "summary": "AI 检测平台 Pangram 研究发现，LinkedIn、X 等社交平台上四分之一的长文（250字符以上）完全由 AI 生成，不包含人工润色。",
-      "detail": "Pangram 对 LinkedIn、Medium、Substack、X 和 Reddit 等平台的长文帖子进行了分析，发现长文受 AI 内容泛滥影响最严重，约 25% 为纯 AI 生成。LinkedIn 和 X 上的 AI 生成长文比例最高。研究区分了「完全 AI 生成」与「AI 辅助润色」两种情况，前者不包含人工编辑痕迹。这一数据反映了 AI 写作工具在专业社交领域的快速渗透。",
+      "published": "2026-07-09T23:27:48+08:00",
+      "summary": "腾讯推出 Hy3 混合推理模型，结合快速响应与深度推理能力，在多项基准测试中表现突出。",
+      "detail": "腾讯发布 Hy3 混合推理模型，采用独特的双阶段推理架构：简单问题快速响应，复杂问题进行深度链式推理。该模型在数学、代码和逻辑推理等基准测试中取得领先成绩。在 Hacker News 上获得 479 点赞和 97 条评论，社区评价其「推理能力与 GPT-5 系列接近，但推理成本更低」。这是国内大厂在推理模型赛道的又一次重要布局。",
       "image": "",
       "category": "ai",
-      "source": "Solidot"
-    },
-    {
-      "title": "AI 生成视频可精准刺激特定大脑区域",
-      "url": "https://nevo-project.epfl.ch/",
-      "date": "2026-07-10",
-      "published": "2026-07-10T15:39:11+08:00",
-      "summary": "瑞士 EPFL 研究团队开发出能根据大脑活动反馈实时生成视频的 AI 系统，可定向激活目标脑区。",
-      "detail": "EPFL 的 Nevo 项目团队发表了一种新的神经反馈范式：AI 系统根据实时 fMRI 脑成像数据，动态生成能够最大程度驱动目标脑区活动的视频内容。该技术可用于研究视觉认知机制，也有望应用于神经康复和心理健康治疗。研究在 Hacker News 上引发广泛讨论，被评价为「脑科学与生成式 AI 的交叉前沿」。",
-      "image": "",
-      "category": "ai",
-      "source": "Hacker News"
-    },
-    {
-      "title": "美国国会调查美国公司使用中国 AI 模型",
-      "url": "https://www.solidot.org/story?sid=84796",
-      "date": "2026-07-10",
-      "published": "2026-07-10T15:33:05+08:00",
-      "summary": "美国众议院两个委员会致函 Cursor 和 Airbnb 等公司，调查其使用中国 AI 模型（如 DeepSeek）的安全风险。",
-      "detail": "美国众议院国土安全委员会和中国问题特别委员会联合致函 Cursor、Airbnb 等科技公司，询问其使用中国 AI 模型的情况和潜在安全风险。议员们担忧中国模型可能存在审查、数据安全以及过度限制等问题。目前美国部分政府部门已禁止使用 DeepSeek 等中国模型，但商业公司层面尚无禁令。此事反映了中美 AI 竞争在监管层面的新动向。",
-      "image": "",
-      "category": "ai",
-      "source": "Solidot"
-    },
-    {
-      "title": "Vibe Coding 时代，为什么降本不一定增效？",
-      "url": "https://sspai.com/post/111975",
-      "date": "2026-07-10",
-      "published": "2026-07-10T10:50:28+08:00",
-      "summary": "Vibe Coding 虽然能快速生成代码，但文章指出其无法替代需求定义、架构设计和结果负责等核心工程能力。",
-      "detail": "少数派文章深入分析了 Vibe Coding（用自然语言描述让 AI 生成代码）的局限性。虽然 AI 能大幅加速编码过程，但软件工程中的问题定义、用户理解、架构设计和结果承担仍然依赖人类。文章认为盲目追求「降本增效」可能导致技术债务累积，对计算机专业学生有警示意义。",
-      "image": "",
-      "category": "tech",
-      "source": "少数派"
-    },
-    {
-      "title": "为 5 岁儿童构建实时 AI 家教",
-      "url": "https://www.ello.com/blog/teaching-a-child-in-1000-ms",
-      "date": "2026-07-10",
-      "published": "2026-07-10T04:51:06+08:00",
-      "summary": "开发者分享了用 AI 构建 4-9 岁儿童实时家教的经验，涵盖阅读、数学和英语学习，延迟控制在 1 秒内。",
-      "detail": "Ello 团队在 Hacker News 分享了构建面向 4-9 岁儿童的 AI 家教产品的技术细节。核心挑战是让 AI 在 1000 毫秒内完成理解儿童语音、判断学习状态、生成教学回应的全流程。团队采用了端侧语音识别+云端推理的混合架构，并针对儿童发音特点做了大量优化。该项目展示了 AI 在教育领域的实际落地路径。",
-      "image": "",
-      "category": "ai",
-      "source": "Hacker News"
-    },
-    {
-      "title": "Mitchell Hashimoto 谈 Ghostty 终端与 Zig 语言",
-      "url": "https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/",
-      "date": "2026-07-10",
-      "published": "2026-07-10T01:17:16+08:00",
-      "summary": "HashiCorp 创始人 Mitchell Hashimoto 深度访谈：从 Terraform 到用 Zig 开发 Ghostty 终端的技术选择与思考。",
-      "detail": "Hashimoto 在访谈中回顾了从创立 HashiCorp 到转向独立开发 Ghostty 终端模拟器的历程。他详细解释了为何选择 Zig 语言（而非 Rust 或 Go）来开发高性能终端，以及 Ghostty 的设计理念。Hashimoto 强调了对底层系统编程的追求和对开发者工具生态的长期思考。该访谈在 HN 获得 260 点赞，引发关于编程语言选择的广泛讨论。",
-      "image": "",
-      "category": "tech",
-      "source": "Hacker News"
+      "source": "Hacker News",
+      "priority": 3
     },
     {
       "title": "OpenAI 发布 GPT-5.6 系列模型",
@@ -78,73 +24,8 @@
       "detail": "OpenAI 发布了 GPT-5.6 系列模型，包括标准版和高性能版本。新模型在推理能力、代码生成和多模态理解方面有显著提升。同日 Box CEO Aaron Levie 在社交媒体评价该模型对企业应用场景有重要价值。GPT-5.6 已通过 API 向开发者开放，配套发布了安全评估报告和使用指南。这是 OpenAI 今年发布的第三个重大模型版本。",
       "image": "",
       "category": "ai",
-      "source": "Hacker News"
-    },
-    {
-      "title": "腾讯发布 Hy3 混合推理模型",
-      "url": "https://hy.tencent.com/research/hy3",
-      "date": "2026-07-10",
-      "published": "2026-07-09T23:27:48+08:00",
-      "summary": "腾讯推出 Hy3 混合推理模型，结合快速响应与深度推理能力，在多项基准测试中表现突出。",
-      "detail": "腾讯发布 Hy3 混合推理模型，采用独特的双阶段推理架构：简单问题快速响应，复杂问题进行深度链式推理。该模型在数学、代码和逻辑推理等基准测试中取得领先成绩。在 Hacker News 上获得 479 点赞和 97 条评论，社区评价其「推理能力与 GPT-5 系列接近，但推理成本更低」。这是国内大厂在推理模型赛道的又一次重要布局。",
-      "image": "",
-      "category": "ai",
-      "source": "Hacker News"
-    },
-    {
-      "title": "Euclid 望远镜发现已知最遥远类星体",
-      "url": "https://www.solidot.org/story?sid=84791",
-      "date": "2026-07-10",
-      "published": "2026-07-10T02:11:30+08:00",
-      "summary": "ESA 欧几里得太空望远镜确认发现红移 7.77 的类星体，为目前距地球最遥远的同类天体。",
-      "detail": "利用欧几里得太空望远镜首批巡天数据，研究团队成功发现 34 个红移大于 6.5 的星体，其中确认 EUCL J172902.75+641018.1 的红移高达 7.77，成为已知最遥远的类星体。该发现展示了 Euclid 在主要任务（绘制宇宙三维结构、研究暗物质暗能量）之外搜寻早期宇宙天体的能力，为理解宇宙早期演化提供了重要线索。",
-      "image": "",
-      "category": "tech",
-      "source": "Solidot"
-    },
-    {
-      "title": "iOS 27 Beta 2 & 3 值得关注的新特性",
-      "url": "https://sspai.com/post/112083",
-      "date": "2026-07-10",
-      "published": "2026-07-10T00:49:58+08:00",
-      "summary": "少数派详细盘点 iOS 27 两个开发者测试版中新增和优化的系统特性。",
-      "detail": "Apple 在 iOS 27 Beta 2 和 Beta 3 中对首个测试版的功能进行了优化，并新增多项系统特性。文章逐一梳理了界面交互变化、新增 API、性能改进等方面的内容。对于开发者和关注 Apple 生态的用户来说，这两个测试版的变化值得关注，部分新特性可能影响后续 App 开发方向。",
-      "image": "",
-      "category": "tech",
-      "source": "少数派"
-    },
-    {
-      "title": "OpenMandriva 项目遭内部破坏事件",
-      "url": "https://www.solidot.org/story?sid=84789",
-      "date": "2026-07-10",
-      "published": "2026-07-09T23:01:35+08:00",
-      "summary": "OpenMandriva 项目因新成员获管理员权限后滥用权限进行攻击和破坏，团队透明公开了事件全过程。",
-      "detail": "Linux 发行版 OpenMandriva 项目披露了一起内部安全事件：一名新加入的开发者（Mumble 项目的知名成员 Davide Beatrici）获得管理员权限后，其朋友在项目聊天室对其他成员进行攻击和辱骂，导致多人退出。该朋友被踢出后，Beatrici 利用管理员权限在项目代码仓库中实施了破坏操作。项目团队出于透明原则公开了事件经过，提醒开源社区注意权限管理。",
-      "image": "",
-      "category": "tech",
-      "source": "Solidot"
-    },
-    {
-      "title": "大多数 AI slop 应用将很快被抛弃",
-      "url": "https://www.solidot.org/story?sid=84784",
-      "date": "2026-07-09",
-      "published": "2026-07-10T02:25:41+08:00",
-      "summary": "Linux 软件仓库 Flathub 停止接受 AI 生成应用，审核者称与 AI 提交者沟通「纯粹是噪音」。",
-      "detail": "Flathub 于五月底宣布停止接受低质量 AI 生成应用，并将此类应用标记为「AI Slop」。审核团队反映，AI 生成应用的提交者往往使用 AI 智能体回复审核意见，导致沟通完全无效。一位审核者评论称「纯粹是噪音和浪费时间」。这一事件反映了 AI 生成内容泛滥对开源软件生态的冲击，也预示着大量 AI 应用可能面临维护荒废。",
-      "image": "",
-      "category": "ai",
-      "source": "Solidot"
-    },
-    {
-      "title": "英伟达触觉仿真合作伙伴他山科技再获数亿融资",
-      "url": "https://36kr.com/p/3889141540370949?f=rss",
-      "date": "2026-07-10",
-      "published": "2026-07-10T09:19:37+08:00",
-      "summary": "他山科技完成数亿元 B 轮融资，为英伟达全球首家触觉仿真合作伙伴，上半年订单超去年四倍。",
-      "detail": "北京他山科技完成 B 轮融资，投资方包括均胜电子、太平创新等产业方。他山科技是英伟达全球首家触觉仿真合作伙伴，专注于触觉传感器及芯片研发。上半年订单量超过去年全年四倍，资金将用于触觉传感器迭代和场景化方案落地。该融资反映了具身智能和触觉感知赛道的资本热度。",
-      "image": "",
-      "category": "ai",
-      "source": "36氪"
+      "source": "Hacker News",
+      "priority": 3
     },
     {
       "title": "国家网信办：累计 988 款生成式 AI 服务完成备案",
@@ -155,7 +36,140 @@
       "detail": "据网信中国公众号消息，2026 年 5-6 月新增 120 款生成式 AI 服务完成备案，68 款通过 API 调用已备案模型的应用完成登记。截至 6 月 30 日，累计 988 款生成式 AI 服务备案、598 款应用登记。这一数据反映了国内 AI 产品合规化进程的持续推进，备案数量保持稳定增长态势。",
       "image": "",
       "category": "ai",
-      "source": "36氪"
+      "source": "36氪",
+      "priority": 3
+    },
+    {
+      "title": "Mitchell Hashimoto 谈 Ghostty 终端与 Zig 语言",
+      "url": "https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/",
+      "date": "2026-07-10",
+      "published": "2026-07-10T01:17:16+08:00",
+      "summary": "HashiCorp 创始人 Mitchell Hashimoto 深度访谈：从 Terraform 到用 Zig 开发 Ghostty 终端的技术选择与思考。",
+      "detail": "Hashimoto 在访谈中回顾了从创立 HashiCorp 到转向独立开发 Ghostty 终端模拟器的历程。他详细解释了为何选择 Zig 语言（而非 Rust 或 Go）来开发高性能终端，以及 Ghostty 的设计理念。Hashimoto 强调了对底层系统编程的追求和对开发者工具生态的长期思考。该访谈在 HN 获得 260 点赞，引发关于编程语言选择的广泛讨论。",
+      "image": "",
+      "category": "tech",
+      "source": "Hacker News",
+      "priority": 2
+    },
+    {
+      "title": "为 5 岁儿童构建实时 AI 家教",
+      "url": "https://www.ello.com/blog/teaching-a-child-in-1000-ms",
+      "date": "2026-07-10",
+      "published": "2026-07-10T04:51:06+08:00",
+      "summary": "开发者分享了用 AI 构建 4-9 岁儿童实时家教的经验，涵盖阅读、数学和英语学习，延迟控制在 1 秒内。",
+      "detail": "Ello 团队在 Hacker News 分享了构建面向 4-9 岁儿童的 AI 家教产品的技术细节。核心挑战是让 AI 在 1000 毫秒内完成理解儿童语音、判断学习状态、生成教学回应的全流程。团队采用了端侧语音识别+云端推理的混合架构，并针对儿童发音特点做了大量优化。该项目展示了 AI 在教育领域的实际落地路径。",
+      "image": "",
+      "category": "ai",
+      "source": "Hacker News",
+      "priority": 2
+    },
+    {
+      "title": "英伟达触觉仿真合作伙伴他山科技再获数亿融资",
+      "url": "https://36kr.com/p/3889141540370949?f=rss",
+      "date": "2026-07-10",
+      "published": "2026-07-10T09:19:37+08:00",
+      "summary": "他山科技完成数亿元 B 轮融资，为英伟达全球首家触觉仿真合作伙伴，上半年订单超去年四倍。",
+      "detail": "北京他山科技完成 B 轮融资，投资方包括均胜电子、太平创新等产业方。他山科技是英伟达全球首家触觉仿真合作伙伴，专注于触觉传感器及芯片研发。上半年订单量超过去年全年四倍，资金将用于触觉传感器迭代和场景化方案落地。该融资反映了具身智能和触觉感知赛道的资本热度。",
+      "image": "",
+      "category": "ai",
+      "source": "36氪",
+      "priority": 2
+    },
+    {
+      "title": "Vibe Coding 时代，为什么降本不一定增效？",
+      "url": "https://sspai.com/post/111975",
+      "date": "2026-07-10",
+      "published": "2026-07-10T10:50:28+08:00",
+      "summary": "Vibe Coding 虽然能快速生成代码，但文章指出其无法替代需求定义、架构设计和结果负责等核心工程能力。",
+      "detail": "少数派文章深入分析了 Vibe Coding（用自然语言描述让 AI 生成代码）的局限性。虽然 AI 能大幅加速编码过程，但软件工程中的问题定义、用户理解、架构设计和结果承担仍然依赖人类。文章认为盲目追求「降本增效」可能导致技术债务累积，对计算机专业学生有警示意义。",
+      "image": "",
+      "category": "tech",
+      "source": "少数派",
+      "priority": 2
+    },
+    {
+      "title": "美国国会调查美国公司使用中国 AI 模型",
+      "url": "https://www.solidot.org/story?sid=84796",
+      "date": "2026-07-10",
+      "published": "2026-07-10T15:33:05+08:00",
+      "summary": "美国众议院两个委员会致函 Cursor 和 Airbnb 等公司，调查其使用中国 AI 模型（如 DeepSeek）的安全风险。",
+      "detail": "美国众议院国土安全委员会和中国问题特别委员会联合致函 Cursor、Airbnb 等科技公司，询问其使用中国 AI 模型的情况和潜在安全风险。议员们担忧中国模型可能存在审查、数据安全以及过度限制等问题。目前美国部分政府部门已禁止使用 DeepSeek 等中国模型，但商业公司层面尚无禁令。此事反映了中美 AI 竞争在监管层面的新动向。",
+      "image": "",
+      "category": "ai",
+      "source": "Solidot",
+      "priority": 2
+    },
+    {
+      "title": "LinkedIn 和 X 上四分之一的长文是 AI 撰写的",
+      "url": "https://www.solidot.org/story?sid=84798",
+      "date": "2026-07-10",
+      "published": "2026-07-10T16:43:49+08:00",
+      "summary": "AI 检测平台 Pangram 研究发现，LinkedIn、X 等社交平台上四分之一的长文（250字符以上）完全由 AI 生成，不包含人工润色。",
+      "detail": "Pangram 对 LinkedIn、Medium、Substack、X 和 Reddit 等平台的长文帖子进行了分析，发现长文受 AI 内容泛滥影响最严重，约 25% 为纯 AI 生成。LinkedIn 和 X 上的 AI 生成长文比例最高。研究区分了「完全 AI 生成」与「AI 辅助润色」两种情况，前者不包含人工编辑痕迹。这一数据反映了 AI 写作工具在专业社交领域的快速渗透。",
+      "image": "",
+      "category": "ai",
+      "source": "Solidot",
+      "priority": 2
+    },
+    {
+      "title": "OpenMandriva 项目遭内部破坏事件",
+      "url": "https://www.solidot.org/story?sid=84789",
+      "date": "2026-07-10",
+      "published": "2026-07-09T23:01:35+08:00",
+      "summary": "OpenMandriva 项目因新成员获管理员权限后滥用权限进行攻击和破坏，团队透明公开了事件全过程。",
+      "detail": "Linux 发行版 OpenMandriva 项目披露了一起内部安全事件：一名新加入的开发者（Mumble 项目的知名成员 Davide Beatrici）获得管理员权限后，其朋友在项目聊天室对其他成员进行攻击和辱骂，导致多人退出。该朋友被踢出后，Beatrici 利用管理员权限在项目代码仓库中实施了破坏操作。项目团队出于透明原则公开了事件经过，提醒开源社区注意权限管理。",
+      "image": "",
+      "category": "tech",
+      "source": "Solidot",
+      "priority": 1
+    },
+    {
+      "title": "iOS 27 Beta 2 & 3 值得关注的新特性",
+      "url": "https://sspai.com/post/112083",
+      "date": "2026-07-10",
+      "published": "2026-07-10T00:49:58+08:00",
+      "summary": "少数派详细盘点 iOS 27 两个开发者测试版中新增和优化的系统特性。",
+      "detail": "Apple 在 iOS 27 Beta 2 和 Beta 3 中对首个测试版的功能进行了优化，并新增多项系统特性。文章逐一梳理了界面交互变化、新增 API、性能改进等方面的内容。对于开发者和关注 Apple 生态的用户来说，这两个测试版的变化值得关注，部分新特性可能影响后续 App 开发方向。",
+      "image": "",
+      "category": "tech",
+      "source": "少数派",
+      "priority": 1
+    },
+    {
+      "title": "Euclid 望远镜发现已知最遥远类星体",
+      "url": "https://www.solidot.org/story?sid=84791",
+      "date": "2026-07-10",
+      "published": "2026-07-10T02:11:30+08:00",
+      "summary": "ESA 欧几里得太空望远镜确认发现红移 7.77 的类星体，为目前距地球最遥远的同类天体。",
+      "detail": "利用欧几里得太空望远镜首批巡天数据，研究团队成功发现 34 个红移大于 6.5 的星体，其中确认 EUCL J172902.75+641018.1 的红移高达 7.77，成为已知最遥远的类星体。该发现展示了 Euclid 在主要任务（绘制宇宙三维结构、研究暗物质暗能量）之外搜寻早期宇宙天体的能力，为理解宇宙早期演化提供了重要线索。",
+      "image": "",
+      "category": "tech",
+      "source": "Solidot",
+      "priority": 1
+    },
+    {
+      "title": "大多数 AI slop 应用将很快被抛弃",
+      "url": "https://www.solidot.org/story?sid=84784",
+      "date": "2026-07-09",
+      "published": "2026-07-10T02:25:41+08:00",
+      "summary": "Linux 软件仓库 Flathub 停止接受 AI 生成应用，审核者称与 AI 提交者沟通「纯粹是噪音」。",
+      "detail": "Flathub 于五月底宣布停止接受低质量 AI 生成应用，并将此类应用标记为「AI Slop」。审核团队反映，AI 生成应用的提交者往往使用 AI 智能体回复审核意见，导致沟通完全无效。一位审核者评论称「纯粹是噪音和浪费时间」。这一事件反映了 AI 生成内容泛滥对开源软件生态的冲击，也预示着大量 AI 应用可能面临维护荒废。",
+      "image": "",
+      "category": "ai",
+      "source": "Solidot",
+      "priority": 1
+    },
+    {
+      "title": "AI 生成视频可精准刺激特定大脑区域",
+      "url": "https://nevo-project.epfl.ch/",
+      "date": "2026-07-10",
+      "published": "2026-07-10T15:39:11+08:00",
+      "summary": "瑞士 EPFL 研究团队开发出能根据大脑活动反馈实时生成视频的 AI 系统，可定向激活目标脑区。",
+      "detail": "EPFL 的 Nevo 项目团队发表了一种新的神经反馈范式：AI 系统根据实时 fMRI 脑成像数据，动态生成能够最大程度驱动目标脑区活动的视频内容。该技术可用于研究视觉认知机制，也有望应用于神经康复和心理健康治疗。研究在 Hacker News 上引发广泛讨论，被评价为「脑科学与生成式 AI 的交叉前沿」。",
+      "image": "",
+      "category": "ai",
+      "source": "Hacker News",
+      "priority": 1
     }
   ]
 }

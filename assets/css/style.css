@@ -677,6 +677,16 @@ body.is-date-modal-open{overflow:hidden}
   border-color:var(--line-strong);
   background:var(--option-accent-soft);
 }
+.badge-hot{
+  color:#E8453C;
+  border-color:rgba(232,69,60,.5);
+  background:rgba(232,69,60,.1);
+}
+.badge-important{
+  color:#F59E0B;
+  border-color:rgba(245,158,11,.5);
+  background:rgba(245,158,11,.1);
+}
 .status-badge.status-pending{
   color:var(--status-pending-text,#8B98A5);
   border-color:var(--status-pending-line,#38444D);
