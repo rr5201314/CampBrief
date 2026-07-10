@@ -26,15 +26,76 @@ def fetch_rss(url):
     with urlopen(req, timeout=30) as response:
         return response.read().decode('utf-8')
 
+def extract_title_from_description(description):
+    """从描述中提取真正的标题"""
+    if not description:
+        return "AI 早报"
+    
+    # 跳过开头的 "AI 早报 2026 07 10 视频版..." 部分
+    # 找到第一个 ↗ 符号前的标题
+    # 格式: "要闻 OpenAI 正式向公众发布 GPT 5.6 模型系列 ↗ 1"
+    
+    # 移除开头的日期和视频版信息
+    lines = description.split('\n')
+    
+    # 合并成一个字符串处理
+    text = ' '.join(lines)
+    
+    # 跳过 "AI 早报 XXXX 视频版" 部分
+    # 找到 "要闻" 或其他分类关键词后的内容
+    patterns = [
+        r'要闻\s+(.+?)\s*↗',
+        r'模型发布\s+(.+?)\s*↗',
+        r'开发生态\s+(.+?)\s*↗',
+        r'技术与洞察\s+(.+?)\s*↗',
+        r'行业动态\s+(.+?)\s*↗',
+        r'前瞻与传闻\s+(.+?)\s*↗',
+    ]
+    
+    for pattern in patterns:
+        match = re.search(pattern, text)
+        if match:
+            title = match.group(1).strip()
+            # 清理标题中的数字编号
+            title = re.sub(r'\s*\d+$', '', title)
+            return title
+    
+    # 如果都没有匹配，尝试找第一个 ↗ 前的内容
+    match = re.search(r'概览\s+要闻\s+(.+?)\s*↗', text)
+    if match:
+        return match.group(1).strip()
+    
+    # 最后的备选：取日期作为标题
+    date_match = re.search(r'AI 早报 (\d{4} \d{2} \d{2})', text)
+    if date_match:
+        return f"AI 早报 {date_match.group(1)}"
+    
+    return "AI 早报"
+
+def extract_summary(description):
+    """从描述中提取摘要"""
+    if not description:
+        return ""
+    
+    # 移除视频版链接等
+    text = description
+    
+    # 跳过开头的 "AI 早报 XXXX 视频版..."
+    # 从 "要闻" 开始提取
+    match = re.search(r'要闻\s+(.+)', text, re.DOTALL)
+    if match:
+        text = match.group(1)
+    
+    # 取前200字符作为摘要
+    summary = text[:200].strip()
+    if len(text) > 200:
+        summary += '...'
+    
+    return summary
+
 def parse_rss(xml_content):
     """解析 RSS XML"""
     root = ET.fromstring(xml_content)
-    
-    # 定义命名空间
-    namespaces = {
-        'content': 'http://purl.org/rss/1.0/modules/content/',
-        'dc': 'http://purl.org/dc/elements/1.1/',
-    }
     
     items = []
     channel = root.find('channel')
@@ -52,7 +113,6 @@ def parse_rss(xml_content):
         
         # 解析日期
         try:
-            # RSS 日期格式: Thu, 10 Jul 2026 01:17:05 GMT
             dt = datetime.strptime(pub_date[:25], '%a, %d %b %Y %H:%M:%S')
             formatted_date = dt.strftime('%Y-%m-%d')
             iso_date = dt.strftime('%Y-%m-%dT%H:%M:%S+08:00')
@@ -60,19 +120,21 @@ def parse_rss(xml_content):
             formatted_date = pub_date[:10]
             iso_date = pub_date
         
-        # 清理描述（提取摘要）
-        summary = description[:200] if description else ''
-        if len(description) > 200:
-            summary += '...'
+        # 从描述中提取真正的标题
+        real_title = extract_title_from_description(description)
+        
+        # 提取摘要
+        summary = extract_summary(description)
         
         items.append({
-            'title': title,
+            'title': real_title,
+            'date_title': title,  # 保留原始日期标题
             'url': link,
             'date': formatted_date,
             'published': iso_date,
             'summary': summary,
             'image': image,
-            'category': 'ai',  # 橘鸦早报都是 AI 资讯
+            'category': 'ai',
             'source': '橘鸦AI早报'
         })
     
@@ -80,10 +142,8 @@ def parse_rss(xml_content):
 
 def save_json(items, output_path):
     """保存为 JSON 文件"""
-    # 确保目录存在
     Path(output_path).parent.mkdir(parents=True, exist_ok=True)
     
-    # 构建数据结构
     data = {
         'last_updated': datetime.now().strftime('%Y-%m-%dT%H:%M:%S+08:00'),
         'source': '橘鸦AI早报',
@@ -91,7 +151,6 @@ def save_json(items, output_path):
         'items': items
     }
     
-    # 写入文件
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     
