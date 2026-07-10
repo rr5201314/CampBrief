@@ -1,6 +1,11 @@
-// 每日资讯模块 - 从内嵌数据加载（兼容 GitHub Pages）
+// 每日资讯模块 - 从 JSON 文件加载 + 前端分页
 const state = { category: "all", date: "all", customDate: "", query: "" };
+const PAGE_SIZE = 5;
+let allItems = [];
+let filteredItems = [];
+let currentPage = 1;
 let cards = [];
+let paginationNav;
 let resultCount, searchInput, emptyState;
 let dateModal, calendarGrid, calendarYearValue, calendarMonthValue;
 let calendarYearMenu, calendarMonthMenu, calendarYearTrigger, calendarMonthTrigger;
@@ -12,6 +17,7 @@ function initDOM() {
   resultCount = document.getElementById("resultCount");
   searchInput = document.getElementById("searchInput");
   emptyState = document.getElementById("emptyState");
+  paginationNav = document.querySelector(".pagination");
   dateModal = document.getElementById("dateModal");
   calendarGrid = document.getElementById("calendarGrid");
   calendarYearValue = document.getElementById("calendarYearValue");
@@ -24,23 +30,27 @@ function initDOM() {
   customDateOption = document.querySelector('[data-filter-group="date"] [data-value="custom"]');
 }
 
-// 获取新闻数据（从内嵌变量或 fetch）
+// 获取新闻数据（优先 fetch JSON 文件，回退内嵌数据）
+// JSON 文件由 Hermes 自动化定时更新，是最新数据来源；
+// 内嵌 NEWS_DATA 仅用于 file:// 协议预览（fetch 不可用时回退）。
 async function loadNewsData() {
-  // 优先使用内嵌数据（兼容 GitHub Pages 和直接打开 HTML）
-  if (typeof NEWS_DATA !== 'undefined' && NEWS_DATA.items) {
+  // 优先从 JSON 文件加载（GitHub Pages / 本地 HTTP 服务器均可）
+  try {
+    const response = await fetch('../../data/daily-news.json', { cache: 'no-store' });
+    if (response.ok) {
+      const data = await response.json();
+      if (data.items && data.items.length > 0) return data.items;
+    }
+  } catch (error) {
+    // file:// 协议下 fetch 会失败，继续走内嵌回退
+  }
+
+  // 回退：使用内嵌数据（兼容 file:// 直接打开 HTML）
+  if (typeof NEWS_DATA !== 'undefined' && NEWS_DATA.items && NEWS_DATA.items.length > 0) {
     return NEWS_DATA.items;
   }
-  
-  // 备选：尝试从 JSON 文件加载（需要 HTTP 服务器）
-  try {
-    const response = await fetch('../../data/daily-news.json');
-    if (!response.ok) throw new Error('加载失败');
-    const data = await response.json();
-    return data.items || [];
-  } catch (error) {
-    console.warn('无法从 JSON 文件加载，使用内嵌数据');
-    return [];
-  }
+
+  return [];
 }
 
 // 生成卡片 HTML
@@ -83,27 +93,80 @@ function createCardHTML(item) {
         </div>
         <p class="desc">${item.summary}</p>
         <div class="actions">
-          <a href="${item.url}" target="_blank" class="btn btn-primary">阅读全文 <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>
-          <button class="btn btn-secondary"><svg class="icon-sm icon"><use href="#i-doc"/></svg>查看详情</button>
-          <button class="btn btn-secondary"><svg class="icon-sm icon"><use href="#i-grid"/></svg>相关资讯</button>
+          <a href="detail.html?url=${encodeURIComponent(item.url)}" class="btn btn-primary"><svg class="icon-sm icon"><use href="#i-doc"/></svg>查看详情</a>
+          <a href="${item.url}" target="_blank" rel="noopener" class="btn btn-secondary">阅读原文 <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>
         </div>
       </div>
     </article>
   `;
 }
 
-// 渲染所有卡片
-function renderCards(items) {
-  const container = document.getElementById('cards');
-  container.innerHTML = items.map(item => createCardHTML(item)).join('');
-  cards = [...document.querySelectorAll(".card")];
-  
-  // 更新计数
-  if (resultCount) {
-    resultCount.textContent = `${items.length} 条资讯`;
-  }
-  
+// 接收全部数据，初始化列表
+function setItems(items) {
+  allItems = items;
+  currentPage = 1;
   applyFilters();
+}
+
+// 渲染当前页的卡片
+function renderPage() {
+  const container = document.getElementById('cards');
+  const start = (currentPage - 1) * PAGE_SIZE;
+  const pageItems = filteredItems.slice(start, start + PAGE_SIZE);
+
+  if (pageItems.length === 0) {
+    container.innerHTML = '';
+    emptyState.hidden = false;
+  } else {
+    emptyState.hidden = true;
+    container.innerHTML = pageItems.map(item => createCardHTML(item)).join('');
+  }
+  cards = [...document.querySelectorAll(".card")];
+  renderPagination();
+}
+
+// 渲染分页控件
+function renderPagination() {
+  if (!paginationNav) return;
+  const totalPages = Math.max(1, Math.ceil(filteredItems.length / PAGE_SIZE));
+
+  // 超出总页数时回到最后一页（筛选后页数变少的情况）
+  if (currentPage > totalPages) {
+    currentPage = totalPages;
+    renderPage();
+    return;
+  }
+
+  if (totalPages <= 1) {
+    paginationNav.hidden = true;
+    paginationNav.innerHTML = '';
+    return;
+  }
+  paginationNav.hidden = false;
+
+  const buttons = [];
+  buttons.push(`<button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} data-page="${currentPage - 1}" aria-label="上一页"><svg class="icon-sm icon"><use href="#i-chevron-left"/></svg></button>`);
+
+  // 页码按钮：最多显示 7 个，过多时中间用省略号
+  const pageNumbers = computePageNumbers(currentPage, totalPages);
+  pageNumbers.forEach(p => {
+    if (p === '...') {
+      buttons.push(`<span class="page-ellipsis">…</span>`);
+    } else {
+      buttons.push(`<button class="page-btn ${p === currentPage ? 'active' : ''}" data-page="${p}">${p}</button>`);
+    }
+  });
+
+  buttons.push(`<button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} data-page="${currentPage + 1}" aria-label="下一页"><svg class="icon-sm icon"><use href="#i-chevron-right"/></svg></button>`);
+  paginationNav.innerHTML = buttons.join('');
+}
+
+// 计算要显示的页码（带省略号）
+function computePageNumbers(current, total) {
+  if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1);
+  if (current <= 4) return [1, 2, 3, 4, 5, '...', total];
+  if (current >= total - 3) return [1, '...', total - 4, total - 3, total - 2, total - 1, total];
+  return [1, '...', current - 1, current, current + 1, '...', total];
 }
 
 // 初始化筛选事件
@@ -127,9 +190,25 @@ function initFilters() {
         state.customDate = "";
         closeDateModal();
       }
+      currentPage = 1;
       applyFilters();
     });
   });
+
+  // 分页点击：事件委托
+  if (paginationNav) {
+    paginationNav.addEventListener("click", event => {
+      const btn = event.target.closest(".page-btn");
+      if (!btn || btn.disabled) return;
+      const target = Number(btn.dataset.page);
+      if (!target || target === currentPage) return;
+      currentPage = target;
+      renderPage();
+      // 滚回列表顶部
+      const cardsTop = document.getElementById("cards");
+      if (cardsTop) cardsTop.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
 }
 
 // 初始化日期选择器
@@ -185,6 +264,7 @@ function initDatePicker() {
       state.date = "custom";
       state.customDate = day.dataset.calendarDate;
       setActiveDateOption("custom");
+      currentPage = 1;
       applyFilters();
       closeDateModal();
     }
@@ -194,6 +274,7 @@ function initDatePicker() {
     state.customDate = "";
     state.date = "all";
     setActiveDateOption("all");
+    currentPage = 1;
     applyFilters();
     closeDateModal();
   });
@@ -204,29 +285,27 @@ function initDatePicker() {
 
   searchInput.addEventListener("input", event => {
     state.query = event.target.value.trim().toLowerCase();
+    currentPage = 1;
     applyFilters();
   });
 }
 
 function applyFilters() {
-  let visible = 0;
-  cards.forEach(card => {
-    const categoryOk = state.category === "all" || card.dataset.category === state.category;
-    const dateOk = matchesDateFilter(card);
-    const searchOk = !state.query || card.dataset.search.toLowerCase().includes(state.query);
-    const show = categoryOk && dateOk && searchOk;
-    card.hidden = !show;
-    if (show) visible += 1;
+  filteredItems = allItems.filter(item => {
+    const categoryOk = state.category === "all" || item.category === state.category;
+    const dateOk = matchesDateFilter(item);
+    const searchOk = !state.query || `${item.title} ${item.summary} ${item.detail || ""}`.toLowerCase().includes(state.query);
+    return categoryOk && dateOk && searchOk;
   });
-  resultCount.textContent = `${visible} 条资讯`;
-  emptyState.hidden = visible !== 0;
+  if (resultCount) resultCount.textContent = `${filteredItems.length} 条资讯`;
+  renderPage();
 }
 
-function matchesDateFilter(card) {
+function matchesDateFilter(item) {
   if (state.date === "all") return true;
-  if (state.date === "custom") return !state.customDate || toLocalDate(card.dataset.published) === state.customDate;
+  if (state.date === "custom") return !state.customDate || toLocalDate(item.published) === state.customDate;
 
-  const publishedAt = new Date(card.dataset.published);
+  const publishedAt = new Date(item.published);
   const now = new Date();
   const rangeHours = { "24h": 24, "7d": 24 * 7, "30d": 24 * 30 }[state.date];
   if (!rangeHours) return true;
@@ -387,11 +466,12 @@ async function init() {
   
   if (items.length === 0) {
     container.innerHTML = '<div class="empty-state" style="text-align: center; padding: 40px; color: var(--text-secondary, #666);">暂无资讯数据</div>';
+    if (resultCount) resultCount.textContent = '0 条资讯';
     return;
   }
-  
-  // 渲染卡片
-  renderCards(items);
+
+  // 初始化列表（内部会触发 applyFilters + renderPage）
+  setItems(items);
 }
 
 // 页面加载完成后初始化
