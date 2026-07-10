@@ -6,6 +6,7 @@ let filteredItems = [];
 let currentPage = 1;
 let cards = [];
 let paginationNav;
+let funCardSection, funCardContainer;
 let resultCount, searchInput, emptyState;
 let dateModal, calendarGrid, calendarYearValue, calendarMonthValue;
 let calendarYearMenu, calendarMonthMenu, calendarYearTrigger, calendarMonthTrigger;
@@ -18,6 +19,8 @@ function initDOM() {
   searchInput = document.getElementById("searchInput");
   emptyState = document.getElementById("emptyState");
   paginationNav = document.querySelector(".pagination");
+  funCardSection = document.getElementById("funCardSection");
+  funCardContainer = document.getElementById("funCardContainer");
   dateModal = document.getElementById("dateModal");
   calendarGrid = document.getElementById("calendarGrid");
   calendarYearValue = document.getElementById("calendarYearValue");
@@ -116,6 +119,26 @@ function setItems(items) {
   allItems = items;
   currentPage = 1;
   applyFilters();
+}
+
+// 渲染顶部「今日趣闻」固定卡片
+function renderFunCard() {
+  if (!funCardSection || !funCardContainer) return;
+  // 筛选 fun 分类时隐藏顶部固定卡片（列表已在展示），避免重复
+  if (state.category === "fun") {
+    funCardSection.hidden = true;
+    return;
+  }
+  // 取最新一条 fun 条目
+  const funItem = allItems.find(it => it.category === "fun");
+  if (!funItem) {
+    funCardSection.hidden = true;
+    return;
+  }
+  funCardSection.hidden = false;
+  funCardContainer.innerHTML = createCardHTML(funItem);
+  const card = funCardContainer.querySelector(".card");
+  if (card) card.classList.add("fun-card");
 }
 
 // 渲染当前页的卡片
@@ -314,6 +337,7 @@ function applyFilters() {
     return new Date(b.published) - new Date(a.published);
   });
   if (resultCount) resultCount.textContent = `${filteredItems.length} 条资讯`;
+  renderFunCard();
   renderPage();
 }
 
