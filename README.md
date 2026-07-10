@@ -64,15 +64,7 @@ CampBrief/
 └── README.md
 ```
 
-## 部署
-
-当前推荐使用 GitHub Pages 部署：
-
-1. 将仓库推送到 GitHub。
-2. 在仓库设置中开启 GitHub Pages。
-3. 选择从主分支的根目录发布。
-
-后续迁移到云服务器时，可以将仓库中的静态文件放到 Web 服务根目录，由 Nginx、Caddy 或其他静态文件服务托管。
+# 
 
 ## 开发说明
 
