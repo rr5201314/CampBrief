@@ -814,6 +814,45 @@ a.btn{
   text-decoration:none;
 }
 
+/* 今日趣闻固定卡片 */
+.fun-card-section{
+  margin-bottom:20px;
+}
+.fun-card-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:10px;
+  padding:0 4px;
+}
+.fun-card-label{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:14px;
+  font-weight:700;
+  color:var(--text);
+}
+.fun-card-hint{
+  font-size:12px;
+  color:var(--text-secondary);
+}
+.card.fun-card{
+  border-color:var(--line-strong);
+  background:linear-gradient(135deg,var(--panel) 0%,var(--bg) 100%);
+  position:relative;
+}
+.card.fun-card::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  width:3px;
+  background:var(--accent,#f59e0b);
+  border-radius:3px 0 0 3px;
+}
+
 /* 资讯详情页 */
 .back-link{
   display:inline-flex;
@@ -836,7 +875,6 @@ a.btn{
   border-radius:18px;
   background:var(--panel);
   padding:32px 36px;
-  max-width:760px;
 }
 .news-detail-meta{
   display:flex;

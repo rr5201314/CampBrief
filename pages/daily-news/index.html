@@ -35,6 +35,7 @@
   <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
   <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
   <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12"/><path d="m18 6-12 12"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5c.6.6 1 1.4 1 2.5h6c0-1.1.4-1.9 1-2.5A6 6 0 0 0 12 3z"/></symbol>
 </svg>
 
 <div class="page-shell">
@@ -80,6 +81,7 @@
             <button class="option" data-value="tech"><svg class="icon-sm icon"><use href="#i-code"/></svg>技术更新</button>
             <button class="option" data-value="ai"><svg class="icon-sm icon"><use href="#i-bot"/></svg>AI</button>
             <button class="option" data-value="sports"><svg class="icon-sm icon"><use href="#i-sports"/></svg>体育</button>
+            <button class="option" data-value="fun"><svg class="icon-sm icon"><use href="#i-bulb"/></svg>每日趣闻</button>
           </div>
         </div>
         <div class="filter-row">
@@ -102,6 +104,14 @@
         <span>为大学生精选的每日信息简报</span>
         <span class="sort-pill"><svg class="icon-sm icon"><use href="#i-calendar"/></svg>最近更新</span>
       </div>
+
+      <section class="fun-card-section" id="funCardSection" hidden>
+        <div class="fun-card-header">
+          <span class="fun-card-label"><svg class="icon-sm icon"><use href="#i-bulb"/></svg>今日趣闻</span>
+          <span class="fun-card-hint">轻松一刻</span>
+        </div>
+        <div id="funCardContainer"></div>
+      </section>
 
       <section class="cards" id="cards">
         <!-- 动态加载的卡片将在这里渲染 -->
