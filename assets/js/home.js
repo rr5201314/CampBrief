@@ -263,12 +263,13 @@ function renderPage(key, list, builder){
   if(nextBtn) nextBtn.disabled = pageState[key] >= totalPages - 1;
 }
 
-/* ---- 三看板 feed-item 同步逐条入场（一条完成再下一条） ---- */
-function triggerFeedItemsIn(){
+/* ---- 三看板 feed-item 同步逐条入场 ---- */
+// scene: "scroll" 首屏滚动入场（较快）；"pager" 翻页后入场（更快）
+function triggerFeedItemsIn(scene){
   const allItems = document.querySelectorAll(".board-list .feed-item");
   if(!allItems.length) return;
-  // 单条入场时长 700ms，间隔 = 单条时长，实现"前一条入场结束瞬间下一条开始"
-  const STEP = 700;
+  // 首屏滚动：间隔 180ms；翻页：间隔 90ms
+  const STEP = scene === "pager" ? 90 : 180;
   const DURATION = 700;
   allItems.forEach(node => {
     const itemsInBoard = node.closest(".board-list").querySelectorAll(".feed-item");
@@ -278,7 +279,6 @@ function triggerFeedItemsIn(){
   requestAnimationFrame(() => requestAnimationFrame(() => {
     allItems.forEach(node => node.classList.add("is-in"));
   }));
-  // 全部入场结束后清除 delay
   const cleanupDelay = (PAGE_SIZE - 1) * STEP + DURATION + 100;
   setTimeout(() => {
     allItems.forEach(node => { node.style.transitionDelay = ""; });
@@ -304,8 +304,8 @@ function bindPager(key, list, builder){
       pageState[key]++;
     }
     renderPage(key, list, builder);
-    // 翻页后触发该看板新内容逐条入场
-    triggerFeedItemsIn();
+    // 翻页后触发该看板新内容逐条入场（更快节奏）
+    triggerFeedItemsIn("pager");
   });
 }
 
@@ -360,8 +360,8 @@ function initHome(){
   bindPager("exams", SAMPLE.exams, buildExamItem);
   bindPager("news", SAMPLE.news, buildNewsItem);
   observeBoards();
-  // 首屏渲染后触发三看板同步逐条入场
-  triggerFeedItemsIn();
+  // 首屏渲染后触发三看板同步逐条入场（滚动场景节奏）
+  triggerFeedItemsIn("scroll");
 
   // 快速开始按钮 - 平滑滚动到看板区
   const startBtn = document.getElementById("startBtn");
