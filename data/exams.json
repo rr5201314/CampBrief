@@ -1,14 +1,32 @@
 {
-  "last_updated": "2026-07-11",
+  "last_updated": "2026-07-11T22:52:32.853155+08:00",
   "source": "CampBrief",
   "total": 30,
   "categories": [
-    { "key": "english", "label": "英语类" },
-    { "key": "computer", "label": "计算机类" },
-    { "key": "accounting", "label": "会计类" },
-    { "key": "teacher", "label": "教师类" },
-    { "key": "civil-service", "label": "公务员类" },
-    { "key": "postgrad", "label": "考研类" }
+    {
+      "key": "english",
+      "label": "英语类"
+    },
+    {
+      "key": "computer",
+      "label": "计算机类"
+    },
+    {
+      "key": "accounting",
+      "label": "会计类"
+    },
+    {
+      "key": "teacher",
+      "label": "教师类"
+    },
+    {
+      "key": "civil-service",
+      "label": "公务员类"
+    },
+    {
+      "key": "postgrad",
+      "label": "考研类"
+    }
   ],
   "items": [
     {
@@ -35,12 +53,30 @@
       "requirements": "全日制普通高等院校本科、专科在校生，在籍研究生，各类成人高等院校在校生均可报考。",
       "scoring": "自近年起不再提供纸质成绩单，成绩发布 10 个工作日后，考生可登录中国教育考试网查看并下载电子成绩报告单，与原纸质成绩报告单具有同等效力。",
       "timeline": [
-        { "label": "四级笔试", "value": "2026年上半年为 6月13日 9:00-11:20" },
-        { "label": "六级笔试", "value": "2026年上半年为 6月13日 15:00-17:25" },
-        { "label": "四级口语", "value": "2026年上半年为 5月23日" },
-        { "label": "六级口语", "value": "2026年上半年为 5月24日" },
-        { "label": "报名时间", "value": "各考点时间不同，以所在学校通知为准" },
-        { "label": "准考证打印", "value": "口试 5月19日9时起，笔试 6月5日9时起" }
+        {
+          "label": "四级笔试",
+          "value": "2026年上半年为 6月13日 9:00-11:20"
+        },
+        {
+          "label": "六级笔试",
+          "value": "2026年上半年为 6月13日 15:00-17:25"
+        },
+        {
+          "label": "四级口语",
+          "value": "2026年上半年为 5月23日"
+        },
+        {
+          "label": "六级口语",
+          "value": "2026年上半年为 5月24日"
+        },
+        {
+          "label": "报名时间",
+          "value": "各考点时间不同，以所在学校通知为准"
+        },
+        {
+          "label": "准考证打印",
+          "value": "口试 5月19日9时起，笔试 6月5日9时起"
+        }
       ]
     },
     {
@@ -80,7 +116,21 @@
       "official_site": "",
       "official_portal": "http://tem.fltonline.cn/",
       "news_list_url": "http://tem.fltonline.cn/?cat=113",
-      "official_url": ""
+      "official_url": "http://tem.fltonline.cn/?p=75533",
+      "timeline": [
+        {
+          "label": "考试时间",
+          "value": "2026年6月14日（星期日）"
+        },
+        {
+          "label": "报名时间",
+          "value": "各考点院校自行安排，以院校通知为准"
+        },
+        {
+          "label": "准考证打印",
+          "value": "以院校通知为准"
+        }
+      ]
     },
     {
       "id": "tem-8",
@@ -94,7 +144,21 @@
       "official_site": "",
       "official_portal": "http://tem.fltonline.cn/",
       "news_list_url": "http://tem.fltonline.cn/?cat=113",
-      "official_url": ""
+      "official_url": "http://tem.fltonline.cn/?p=75533",
+      "timeline": [
+        {
+          "label": "考试时间",
+          "value": "2026年3月21日（星期六）"
+        },
+        {
+          "label": "报名时间",
+          "value": "各考点院校自行安排，以院校通知为准"
+        },
+        {
+          "label": "准考证打印",
+          "value": "以院校通知为准"
+        }
+      ]
     },
     {
       "id": "ielts",
@@ -170,7 +234,7 @@
       "id": "ncre-202609",
       "name": "2026年9月全国计算机等级考试 (NCRE)",
       "category": "computer",
-      "status": "pending",
+      "status": "open",
       "fee": "约80-130元",
       "schedule": "2026年9月",
       "summary": "面向社会的计算机应用能力考核，涵盖一级到四级，包括办公软件、程序设计、网络等多个科目。",
@@ -178,7 +242,21 @@
       "official_site": "https://ncre-bm.neea.edu.cn/",
       "official_portal": "https://ncre.neea.edu.cn/",
       "news_list_url": "https://ncre.neea.edu.cn/html1/category/1507/872-1.htm",
-      "official_url": ""
+      "official_url": "https://ncre.neea.edu.cn/html1/report/2606/16-1.htm",
+      "timeline": [
+        {
+          "label": "考试时间",
+          "value": "2026年9月19日至9月21日"
+        },
+        {
+          "label": "报名时间",
+          "value": "各省份时间不同，多数为6月25日至7月15日"
+        },
+        {
+          "label": "准考证打印",
+          "value": "考前一周左右，以省级承办机构通知为准"
+        }
+      ]
     },
     {
       "id": "ruankao-202605",
@@ -324,7 +402,7 @@
       "id": "acca-202609",
       "name": "2026年9月 ACCA 考试",
       "category": "accounting",
-      "status": "pending",
+      "status": "open",
       "fee": "各阶段费用不同",
       "schedule": "2026年9月",
       "summary": "国际通用会计师资格，全球认可度高，适合意向跨国企业或四大会计师事务所发展的学生。",
@@ -332,7 +410,33 @@
       "official_site": "https://www.accaglobal.com.cn/",
       "official_portal": "https://www.accaglobal.com.cn/",
       "news_list_url": "https://www.accaglobal.com.cn/",
-      "official_url": ""
+      "official_url": "",
+      "timeline": [
+        {
+          "label": "考试月份",
+          "value": "2026年9月"
+        },
+        {
+          "label": "早期报名开始",
+          "value": "2026年5月5日"
+        },
+        {
+          "label": "常规报名开始",
+          "value": "2026年7月27日"
+        },
+        {
+          "label": "常规报名截止",
+          "value": "2026年7月28日"
+        },
+        {
+          "label": "后期报名开始",
+          "value": "2026年8月3日"
+        },
+        {
+          "label": "后期报名截止",
+          "value": "2026年8月8日"
+        }
+      ]
     },
     {
       "id": "acca-202612",
@@ -366,7 +470,7 @@
       "id": "ntce-202610",
       "name": "2026年下半年中小学教师资格考试 (NTCE)",
       "category": "teacher",
-      "status": "pending",
+      "status": "open",
       "fee": "每科约50-70元",
       "schedule": "2026年下半年（笔试10月，面试12月）",
       "summary": "教师资格认定考试，含笔试和面试，分幼儿园、小学、中学多个学段，是从事教师职业的必备前提。",
@@ -374,7 +478,29 @@
       "official_site": "http://ntce.neea.edu.cn/",
       "official_portal": "https://ntce.neea.edu.cn/",
       "news_list_url": "https://ntce.neea.edu.cn/html1/category/1507/1148-1.htm",
-      "official_url": ""
+      "official_url": "https://ntce.neea.edu.cn/html1/report/2606/25-1.htm",
+      "timeline": [
+        {
+          "label": "笔试时间",
+          "value": "2026年下半年（具体日期以官方公告为准）"
+        },
+        {
+          "label": "面试时间",
+          "value": "2026年12月"
+        },
+        {
+          "label": "报名时间",
+          "value": "各省报名时间不同，详见各省报名公告"
+        },
+        {
+          "label": "准考证打印",
+          "value": "考前一周左右"
+        },
+        {
+          "label": "成绩查询",
+          "value": "以官方公告为准"
+        }
+      ]
     },
     {
       "id": "psc",
@@ -436,7 +562,7 @@
       "id": "kaoyan-2026",
       "name": "2026年12月全国硕士研究生招生考试 (考研)",
       "category": "postgrad",
-      "status": "pending",
+      "status": "done",
       "fee": "约200元",
       "schedule": "2026年12月底",
       "summary": "选拔本科毕业生进入研究生阶段的全国统一考试，含初试和复试，分学术型和专业型硕士两类。",
@@ -450,7 +576,7 @@
       "id": "baoyan-2026",
       "name": "2026年推荐免试研究生 (保研)",
       "category": "postgrad",
-      "status": "pending",
+      "status": "done",
       "fee": "无报名费",
       "schedule": "2026年9-10月",
       "summary": "推荐优秀本科毕业生免试攻读研究生，需获得本科院校推免资格，通过目标院校复试后录取。",
