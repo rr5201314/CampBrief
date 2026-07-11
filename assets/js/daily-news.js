@@ -337,7 +337,7 @@ function matchesDateFilter(item) {
 
   const publishedAt = new Date(item.published);
   const now = new Date();
-  const rangeHours = { "24h": 24, "7d": 24 * 7, "30d": 24 * 30 }[state.date];
+  const rangeHours = { "24h": 24, "3d": 24 * 3, "7d": 24 * 7, "30d": 24 * 30 }[state.date];
   if (!rangeHours) return true;
   const rangeStart = new Date(now.getTime() - rangeHours * 60 * 60 * 1000);
   return publishedAt >= rangeStart && publishedAt <= now;

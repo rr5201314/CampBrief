@@ -1,8 +1,10 @@
-// 首页展板 - 示例数据与渲染（含分页）
-// 说明：竞赛、考试看板为占位示例数据；每日资讯看板从 data/daily-news.json 加载。
-// 渲染逻辑兼容 file:// 直接打开（资讯看板 fetch 失败时回退 SAMPLE.news）。
+// 首页展板 - 数据渲染（含分页）
+// 说明：竞赛看板使用当前示例数据；考试和每日资讯看板分别从 data/exams.json、
+// data/daily-news.json 加载，避免首页与栏目页展示两套不一致的信息。
+// 每日资讯在 file:// 直接打开时会回退 SAMPLE.news；考试信息必须以数据文件为准。
 // 每页最多 PAGE_SIZE 条，底部按钮翻页。
-// 每日资讯看板规则：仅显示 priority 为 3 或 2 的消息；同日期下优先级数字大的先显示。
+// 每日资讯看板规则：仅显示 priority 为 4、3、2 的消息；按北京时间自然日优先，
+// 同一自然日内按优先级 4 → 3 → 2 排列。
 
 const PAGE_SIZE = 5;
 
@@ -63,56 +65,6 @@ const SAMPLE = {
       date: "2026.08.05 - 08.08",
       prize: "国家级荣誉",
       desc: "四天三夜完成硬件设计与制作，涵盖模电、数电和嵌入式方向。"
-    }
-  ],
-  exams: [
-    {
-      title: "2026 年下半年中小学教师资格考试",
-      status: "closed",
-      statusLabel: "报名已截止",
-      date: "报名 07.05 - 07.08",
-      org: "教育部考试中心",
-      desc: "笔试报名已结束，10 月底举行笔试，已报名考生请留意准考证打印通知。"
-    },
-    {
-      title: "2026 年下半年全国大学英语四六级考试",
-      status: "open",
-      statusLabel: "报名中",
-      date: "报名 09.05 - 09.25",
-      org: "教育部教育考试院",
-      desc: "笔试与口试报名同步进行，需在报名系统完成资格审核与缴费。"
-    },
-    {
-      title: "全国计算机等级考试（NCRE）9 月次",
-      status: "pending",
-      statusLabel: "待开考",
-      date: "考试 09.26 - 09.28",
-      org: "教育部教育考试院",
-      desc: "考前一周开放准考证打印，建议尽早确认考点与场次。"
-    },
-    {
-      title: "2027 年全国硕士研究生招生考试",
-      status: "open",
-      statusLabel: "预报名",
-      date: "预报名 09.24 - 09.27",
-      org: "教育部",
-      desc: "应届本科毕业生可参加预报名，正式报名于 10 月进行。"
-    },
-    {
-      title: "2026 年下半年全国大学英语四六级口语考试",
-      status: "pending",
-      statusLabel: "待报名",
-      date: "报名 10.10 - 10.18",
-      org: "教育部教育考试院",
-      desc: "口语考试为选考科目，需先完成笔试报名方可报考。"
-    },
-    {
-      title: "全国计算机等级考试（NCRE）12 月次",
-      status: "pending",
-      statusLabel: "待开考",
-      date: "考试 12.05 - 12.07",
-      org: "教育部教育考试院",
-      desc: "年度最后一次 NCRE 考试，建议未通过的同学抓紧报名。"
     }
   ],
   news: [
@@ -218,7 +170,9 @@ function buildCompetitionItem(item){
 
 function buildExamItem(item){
   const article = el("article", "feed-item");
-  article.dataset.href = "pages/exams/index.html";
+  article.dataset.href = item.id
+    ? "pages/exams/detail.html?id=" + encodeURIComponent(item.id)
+    : "pages/exams/index.html";
   const body = el("div", "feed-item-body");
   const top = el("div", "feed-item-top");
   top.appendChild(el("h3", "feed-item-title", escapeHtml(item.title)));
@@ -379,20 +333,106 @@ function observeBoards(){
   }
 }
 
-/* ---- 每日资讯看板规则：优先级过滤与排序 ---- */
-// 显示 priority 为 4、3、2 的消息（4=头条，3=重磅，2=重要）；同日期下优先级数字大的先显示。
+/* ---- 每日资讯看板规则：自然日优先、优先级次之 ---- */
+// 显示 priority 为 4、3、2 的消息（4=头条，3=重磅，2=重要），不显示 priority 为 1 的消息。
+// 先按北京时间自然日倒序；同一自然日内按 4 → 3 → 2，再按发布时间倒序。
 const NEWS_PRIORITY_ALLOWED = [4, 3, 2];
+
+const EXAM_STATUS_LABEL = {
+  open: "可报名",
+  pending: "未开始",
+  closed: "报名截止",
+  done: "已结束"
+};
+
+function officialSourceName(item){
+  const url = item.official_url || item.official_portal || item.official_site || "";
+  try {
+    const host = new URL(url).hostname.toLowerCase();
+    if(host.endsWith("neea.edu.cn")) return "教育部教育考试院";
+    if(host.endsWith("cpta.com.cn")) return "中国人事考试网";
+    if(host.endsWith("ruankao.org.cn")) return "中国计算机技术职业资格网";
+    if(host.endsWith("patest.cn")) return "PAT 官网";
+    if(host.endsWith("mof.gov.cn")) return "财政部会计财务评价中心";
+    if(host.endsWith("cicpa.org.cn")) return "中国注册会计师协会";
+    if(host.endsWith("accaglobal.com.cn")) return "ACCA 中国";
+    if(host.endsWith("chsi.com.cn")) return "中国研究生招生信息网";
+    if(host.endsWith("scs.gov.cn")) return "国家公务员局";
+    if(host.endsWith("cltt.org")) return "国家普通话水平测试网";
+    if(host.endsWith("fltonline.cn")) return "高校外语专业教学测试办公室";
+  } catch(error) {
+    // URL 缺失或格式异常时保留通用官方来源标识。
+  }
+  return "官方渠道";
+}
+
+async function loadExamBoardData(){
+  try {
+    const response = await fetch("data/exams.json", { cache: "no-store" });
+    if(!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+    if(!Array.isArray(data.items)) throw new Error("考试数据格式无效");
+    // 首页只承担“现在能行动”的提醒：仅展示当前可报名项目。
+    // 待报名、报名截止和已结束项目仍可在完整考试栏目中查询。
+    return data.items
+      .filter(item => item.status === "open")
+      .map(item => ({
+        id: item.id || "",
+        title: item.name || "未命名考试",
+        status: item.status || "pending",
+        statusLabel: EXAM_STATUS_LABEL[item.status] || "待确认",
+        date: item.schedule || "时间待官方公布",
+        org: officialSourceName(item),
+        desc: item.summary || "请以官方公告为准。"
+      }));
+  } catch(error) {
+    console.warn("无法加载考试数据：", error);
+    return [];
+  }
+}
+
+function renderExamBoard(list){
+  renderPage("exams", list, buildExamItem);
+  setCount("exams", list.length);
+  bindPager("exams", list, buildExamItem);
+  triggerFeedItemsIn("pager");
+}
+
+function getNewsDateKey(value){
+  const date = new Date(value);
+  if(!Number.isNaN(date.getTime())){
+    const parts = new Intl.DateTimeFormat("en-US", {
+      timeZone: "Asia/Shanghai",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit"
+    }).formatToParts(date);
+    const part = type => parts.find(item => item.type === type)?.value || "";
+    return `${part("year")}-${part("month")}-${part("day")}`;
+  }
+  const match = String(value || "").match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
+  return match ? `${match[1]}-${match[2].padStart(2, "0")}-${match[3].padStart(2, "0")}` : "";
+}
+
+function formatNewsDate(value){
+  const match = getNewsDateKey(value).match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
+  if(!match) return { month: "日期待补充", day: "—" };
+  return {
+    month: `${match[2].padStart(2, "0")}月`,
+    day: match[3].padStart(2, "0")
+  };
+}
 
 function applyNewsRules(list){
   return list
     .filter(item => NEWS_PRIORITY_ALLOWED.includes(item.priority))
-    .map((item, idx) => ({ item, idx }))
     .sort((a, b) => {
-      // 同日期：优先级数字大的在前；不同日期：保持原顺序（稳定排序）
-      if(a.item.date === b.item.date) return b.item.priority - a.item.priority;
-      return a.idx - b.idx;
-    })
-    .map(x => x.item);
+      const dateDiff = getNewsDateKey(b.date).localeCompare(getNewsDateKey(a.date));
+      if(dateDiff) return dateDiff;
+      const priorityDiff = b.priority - a.priority;
+      if(priorityDiff) return priorityDiff;
+      return new Date(b.date).getTime() - new Date(a.date).getTime();
+    });
 }
 
 // 从 daily-news.json 加载资讯数据并映射为看板所需格式
@@ -404,18 +444,16 @@ async function loadNewsBoardData(){
       const data = await response.json();
       if(data.items && data.items.length > 0){
         return data.items.map(it => {
-          const date = it.date || "";
-          // date 格式 "2026-07-10" → day "10", month "07月"
-          const parts = date.split("-");
-          const day = parts[2] || "";
-          const month = parts[1] ? parts[1] + "月" : "";
+          const date = it.published || it.date || "";
+          // 资讯数据使用 published（ISO 8601）；兼容旧数据的 date 字段。
+          const displayDate = formatNewsDate(date);
           return {
             title: it.title,
             desc: it.summary,
             priority: it.priority || 1,
             date,
-            day,
-            month,
+            day: displayDate.day,
+            month: displayDate.month,
             url: it.url || ""
           };
         });
@@ -443,12 +481,12 @@ function initHome(){
   document.body.classList.add("js-ready");
 
   renderPage("competitions", SAMPLE.competitions, buildCompetitionItem);
-  renderPage("exams", SAMPLE.exams, buildExamItem);
   setCount("competitions", SAMPLE.competitions.length);
-  setCount("exams", SAMPLE.exams.length);
   bindPager("competitions", SAMPLE.competitions, buildCompetitionItem);
-  bindPager("exams", SAMPLE.exams, buildExamItem);
   observeBoards();
+
+  // 考试看板与考试栏目共用同一份真实数据文件。
+  loadExamBoardData().then(items => renderExamBoard(items));
 
   // 资讯看板：异步加载 + 优先级规则
   loadNewsBoardData().then(items => renderNewsBoard(items));
