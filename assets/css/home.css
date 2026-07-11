@@ -281,6 +281,9 @@ body.js-ready .hero-sub{
   transform:translateY(-2px);
   box-shadow:0 4px 16px rgba(0,0,0,.08);
 }
+.feed-item[data-href]{
+  cursor:pointer;
+}
 .feed-item-body{
   display:flex;
   flex-direction:column;
@@ -314,6 +317,12 @@ body.js-ready .hero-sub{
 }
 
 /* 资讯日期块 */
+.news-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+}
 .news-date{
   display:flex;
   align-items:baseline;

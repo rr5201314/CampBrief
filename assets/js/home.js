@@ -1,7 +1,8 @@
 // 首页展板 - 示例数据与渲染（含分页）
-// 说明：当前为占位示例数据，后续接入真实数据源时替换 SAMPLE 即可。
-// 渲染逻辑兼容 file:// 直接打开（不依赖 fetch）。
+// 说明：竞赛、考试看板为占位示例数据；每日资讯看板从 data/daily-news.json 加载。
+// 渲染逻辑兼容 file:// 直接打开（资讯看板 fetch 失败时回退 SAMPLE.news）。
 // 每页最多 PAGE_SIZE 条，底部按钮翻页。
+// 每日资讯看板规则：仅显示 priority 为 3 或 2 的消息；同日期下优先级数字大的先显示。
 
 const PAGE_SIZE = 5;
 
@@ -118,32 +119,44 @@ const SAMPLE = {
     {
       day: "10", month: "07月",
       title: "教育部发布 2026 年下半年高校学科竞赛目录",
-      desc: "新增 3 项 AI 相关赛事，涵盖大模型应用与智能体开发方向。"
+      desc: "新增 3 项 AI 相关赛事，涵盖大模型应用与智能体开发方向。",
+      priority: 3,
+      date: "2026-07-10"
     },
     {
       day: "09", month: "07月",
       title: "多所高校秋季学期开设大模型应用通识课",
-      desc: "清华、浙大等校将生成式 AI 列为新生通识必修内容。"
+      desc: "清华、浙大等校将生成式 AI 列为新生通识必修内容。",
+      priority: 2,
+      date: "2026-07-09"
     },
     {
       day: "08", month: "07月",
       title: "GitHub 学生包新增 AI 计算额度",
-      desc: "认证学生每月可领取额外 GPU 时长用于学习与项目实践。"
+      desc: "认证学生每月可领取额外 GPU 时长用于学习与项目实践。",
+      priority: 2,
+      date: "2026-07-08"
     },
     {
       day: "07", month: "07月",
       title: "「智能科学与技术」被列为新增交叉学科",
-      desc: "硕博点申报指南预计 8 月公布，相关培养方案征求意见中。"
+      desc: "硕博点申报指南预计 8 月公布，相关培养方案征求意见中。",
+      priority: 3,
+      date: "2026-07-07"
     },
     {
       day: "06", month: "07月",
       title: "国家大学生创新创业训练计划 2026 年度申报启动",
-      desc: "国家级、省级、校级三级立项同步开放，截止日期 9 月 30 日。"
+      desc: "国家级、省级、校级三级立项同步开放，截止日期 9 月 30 日。",
+      priority: 2,
+      date: "2026-07-06"
     },
     {
       day: "05", month: "07月",
       title: "CSP 认证 8 月场次开放报名",
-      desc: "计算机软件能力认证考试面向高校学生，成绩可替代部分校招笔试。"
+      desc: "计算机软件能力认证考试面向高校学生，成绩可替代部分校招笔试。",
+      priority: 1,
+      date: "2026-07-05"
     }
   ]
 };
@@ -181,8 +194,10 @@ function emptyNode(){
 }
 
 /* ---- 单条目渲染 ---- */
+// 跳转目标：竞赛/考试看板跳到对应栏目列表页；资讯看板跳到 detail.html?url=xxx
 function buildCompetitionItem(item){
   const article = el("article", "feed-item");
+  article.dataset.href = "pages/competitions/index.html";
   const body = el("div", "feed-item-body");
   const top = el("div", "feed-item-top");
   top.appendChild(el("h3", "feed-item-title", escapeHtml(item.title)));
@@ -203,6 +218,7 @@ function buildCompetitionItem(item){
 
 function buildExamItem(item){
   const article = el("article", "feed-item");
+  article.dataset.href = "pages/exams/index.html";
   const body = el("div", "feed-item-body");
   const top = el("div", "feed-item-top");
   top.appendChild(el("h3", "feed-item-title", escapeHtml(item.title)));
@@ -222,12 +238,27 @@ function buildExamItem(item){
 
 function buildNewsItem(item){
   const article = el("article", "feed-item");
+  // 资讯条目跳转到 detail.html?url=xxx；无 url 时回退到栏目列表页
+  article.dataset.href = item.url
+    ? "pages/daily-news/detail.html?url=" + encodeURIComponent(item.url)
+    : "pages/daily-news/index.html";
+  const head = el("div", "news-head");
   const date = el("div", "news-date",
     `<span class="news-month">${escapeHtml(item.month)}</span><span class="news-day">${escapeHtml(item.day)}日</span>`);
+  head.appendChild(date);
+  // 重要程度标签：priority 3=重磅，2=重要
+  const priority = item.priority || 1;
+  if(priority >= 3){
+    head.appendChild(el("span", "badge badge-hot",
+      `<svg class="icon-sm icon"><use href="#i-trophy"/></svg>重磅`));
+  } else if(priority >= 2){
+    head.appendChild(el("span", "badge badge-important",
+      `<svg class="icon-sm icon"><use href="#i-status"/></svg>重要`));
+  }
+  article.appendChild(head);
   const body = el("div", "feed-item-body");
   body.appendChild(el("h3", "feed-item-title", escapeHtml(item.title)));
   body.appendChild(el("p", "feed-item-desc", escapeHtml(item.desc)));
-  article.appendChild(date);
   article.appendChild(body);
   return article;
 }
@@ -345,6 +376,64 @@ function observeBoards(){
   }
 }
 
+/* ---- 每日资讯看板规则：优先级过滤与排序 ---- */
+// 仅显示 priority 为 3 或 2 的消息；同日期下优先级数字大的先显示。
+const NEWS_PRIORITY_ALLOWED = [3, 2];
+
+function applyNewsRules(list){
+  return list
+    .filter(item => NEWS_PRIORITY_ALLOWED.includes(item.priority))
+    .map((item, idx) => ({ item, idx }))
+    .sort((a, b) => {
+      // 同日期：优先级数字大的在前；不同日期：保持原顺序（稳定排序）
+      if(a.item.date === b.item.date) return b.item.priority - a.item.priority;
+      return a.idx - b.idx;
+    })
+    .map(x => x.item);
+}
+
+// 从 daily-news.json 加载资讯数据并映射为看板所需格式
+async function loadNewsBoardData(){
+  // 优先 fetch JSON（GitHub Pages / 本地 HTTP 服务器均可）
+  try {
+    const response = await fetch('data/daily-news.json', { cache: 'no-store' });
+    if(response.ok){
+      const data = await response.json();
+      if(data.items && data.items.length > 0){
+        return data.items.map(it => {
+          const date = it.date || "";
+          // date 格式 "2026-07-10" → day "10", month "07月"
+          const parts = date.split("-");
+          const day = parts[2] || "";
+          const month = parts[1] ? parts[1] + "月" : "";
+          return {
+            title: it.title,
+            desc: it.summary,
+            priority: it.priority || 1,
+            date,
+            day,
+            month,
+            url: it.url || ""
+          };
+        });
+      }
+    }
+  } catch(error) {
+    // file:// 协议下 fetch 会失败，继续走 SAMPLE 回退
+  }
+  // 回退：SAMPLE.news（兼容 file:// 直接打开 HTML）
+  return SAMPLE.news.slice();
+}
+
+function renderNewsBoard(list){
+  const news = applyNewsRules(list);
+  renderPage("news", news, buildNewsItem);
+  setCount("news", news.length);
+  bindPager("news", news, buildNewsItem);
+  // 资讯看板数据异步到位后单独触发入场
+  triggerFeedItemsIn("pager");
+}
+
 /* ---- 初始化 ---- */
 function initHome(){
   // 标记 JS 就绪，启用 Hero 入场动画（避免 CSS 未解析时元素闪现）
@@ -352,14 +441,26 @@ function initHome(){
 
   renderPage("competitions", SAMPLE.competitions, buildCompetitionItem);
   renderPage("exams", SAMPLE.exams, buildExamItem);
-  renderPage("news", SAMPLE.news, buildNewsItem);
   setCount("competitions", SAMPLE.competitions.length);
   setCount("exams", SAMPLE.exams.length);
-  setCount("news", SAMPLE.news.length);
   bindPager("competitions", SAMPLE.competitions, buildCompetitionItem);
   bindPager("exams", SAMPLE.exams, buildExamItem);
-  bindPager("news", SAMPLE.news, buildNewsItem);
   observeBoards();
+
+  // 资讯看板：异步加载 + 优先级规则
+  loadNewsBoardData().then(items => renderNewsBoard(items));
+
+  // 看板条目点击跳转：委托到 .home-main，点击带 data-href 的 feed-item 即跳转
+  const boards = document.getElementById("boards");
+  if(boards){
+    boards.addEventListener("click", e => {
+      const item = e.target.closest(".feed-item[data-href]");
+      if(!item) return;
+      const href = item.dataset.href;
+      if(href) window.location.href = href;
+    });
+  }
+
   // 首屏渲染后触发三看板同步逐条入场（滚动场景节奏）
   triggerFeedItemsIn("scroll");
 
