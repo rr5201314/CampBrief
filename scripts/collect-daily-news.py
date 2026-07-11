@@ -67,18 +67,7 @@ SOURCES = [
         "category_hint": "tech",
         "lang": "zh",
     },
-    {
-        "name": "机器之心",
-        "url": "https://www.jiqizhixin.com/rss",
-        "category_hint": "ai",
-        "lang": "zh",
-    },
-    {
-        "name": "V2EX热门",
-        "url": "https://rsshub.app/v2ex/topics/hot",
-        "category_hint": "tech",
-        "lang": "zh",
-    },
+
 ]
 
 # 不少站点对非浏览器 UA 直接 403，RSS 阅读器普遍用浏览器 UA
