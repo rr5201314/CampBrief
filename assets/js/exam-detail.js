@@ -91,7 +91,7 @@
     const cat = CATEGORY_LABELS[item.category] || { text: item.category, icon: "i-info" };
     const status = STATUS_LABEL[item.status] || { text: item.status, icon: "i-clock", cls: "" };
 
-    document.title = `${item.name} - CampBrief 考试`;
+    document.title = `${item.name} - 简豹考试`;
 
     // 考试科目列表
     let subjectsHtml = "";
@@ -150,14 +150,14 @@
       <div class="exam-official-callout">
         <svg class="icon"><use href="#i-info"/></svg>
         <div>
-          <strong>以下内容为 CampBrief 整理的要点摘要，报名、时间、政策等关键信息请务必以官方原文为准。</strong>
+          <strong>以下内容为简豹整理的要点摘要，报名、时间、政策等关键信息请务必以官方原文为准。</strong>
           <a href="${escapeHtml(item.official_url)}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">查看官方公告 <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>
         </div>
       </div>
     ` : `
       <div class="exam-official-callout">
         <svg class="icon"><use href="#i-info"/></svg>
-        <div><strong>以下内容为 CampBrief 整理的要点摘要，具体政策请以${item.official_portal ? `<a href="${escapeHtml(item.official_portal)}" target="_blank" rel="noopener">官方渠道</a>` : '官方渠道'}为准。</strong></div>
+        <div><strong>以下内容为简豹整理的要点摘要，具体政策请以${item.official_portal ? `<a href="${escapeHtml(item.official_portal)}" target="_blank" rel="noopener">官方渠道</a>` : '官方渠道'}为准。</strong></div>
       </div>
     `;
 
@@ -177,7 +177,7 @@
       ${scoringSection}
       ${timelineSection}
       ${actions}
-      <p class="exam-detail-notice">以上信息由 CampBrief 整理，具体报名时间和政策请以<a href="${escapeHtml(item.official_url || item.official_portal || item.official_site || "#")}" target="_blank" rel="noopener">官方公告</a>为准。</p>
+      <p class="exam-detail-notice">以上信息由简豹整理，具体报名时间和政策请以<a href="${escapeHtml(item.official_url || item.official_portal || item.official_site || "#")}" target="_blank" rel="noopener">官方公告</a>为准。</p>
     `;
   }
 

@@ -35,7 +35,7 @@ const SAMPLE = {
       desc: "为学生生活与公共服务设计实用应用，报名已截止，详情仍可查看。"
     },
     {
-      title: "CampBrief 年度作品展",
+      title: "简豹年度作品展",
       status: "done",
       statusLabel: "已完赛",
       date: "2026.01.10 - 04.30",

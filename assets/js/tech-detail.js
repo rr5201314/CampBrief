@@ -79,7 +79,7 @@
       ? '<span class="badge badge-important"><svg class="icon-sm icon"><use href="#i-status"/></svg>重要</span>'
       : '';
 
-    document.title = `${item.title} - CampBrief 技术`;
+    document.title = `${item.title} - 简豹技术`;
 
     el.innerHTML = `
       <div class="news-detail-meta">
@@ -95,7 +95,7 @@
         ${item.url ? `<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener" class="btn btn-primary">阅读原文 <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>` : ""}
         <a href="index.html" class="btn btn-secondary"><svg class="icon-sm icon"><use href="#i-chevron-left"/></svg>返回列表</a>
       </div>
-      <p class="news-detail-notice">以上内容由 CampBrief 自动整理，请以<a href="${escapeHtml(item.url || "#")}" target="_blank" rel="noopener">原文来源</a>为准。</p>
+      <p class="news-detail-notice">以上内容由简豹自动整理，请以<a href="${escapeHtml(item.url || "#")}" target="_blank" rel="noopener">原文来源</a>为准。</p>
     `;
   }
 
