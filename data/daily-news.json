@@ -25,7 +25,8 @@
       "image": "",
       "priority": 2,
       "category": "tech",
-      "source": "Hacker News"
+      "source": "Hacker News",
+      "subcategory": "software"
     },
     {
       "title": "GPT-5.6 Sol Ultra 证明环双覆盖猜想",
@@ -36,7 +37,8 @@
       "detail": "OpenAI 发布了由 GPT-5.6 Sol Ultra 模型产生的环双覆盖猜想（Cycle Double Cover Conjecture）的完整证明。该猜想是图论与组合数学领域的长期未解决问题，此前一直缺乏严格证明。OpenAI 在其官方 PDF 中公开了证明过程，引发数学界和 AI 社区的广泛关注。这是大语言模型在纯数学推理领域的又一重大突破，标志着 AI 在高难度数学问题上的能力达到了新水平。",
       "image": "",
       "priority": 3,
-      "category": "ai",
+      "category": "tech",
+      "subcategory": "ai-frontier",
       "source": "Hacker News"
     },
     {
@@ -49,7 +51,8 @@
       "image": "",
       "priority": 2,
       "category": "tech",
-      "source": "Hacker News"
+      "source": "Hacker News",
+      "subcategory": "hardware"
     },
     {
       "title": "蜗牛牙齿强度超过蜘蛛丝，成为自然界已知最强材料",
@@ -73,7 +76,8 @@
       "image": "",
       "priority": 1,
       "category": "tech",
-      "source": "Solidot"
+      "source": "Solidot",
+      "subcategory": "industry"
     },
     {
       "title": "QuadRF：能探测无人机并穿墙感知 WiFi 的开源射频平台",
@@ -85,7 +89,8 @@
       "image": "",
       "priority": 2,
       "category": "tech",
-      "source": "Hacker News"
+      "source": "Hacker News",
+      "subcategory": "hardware"
     },
     {
       "title": "人形机器人首次成功完成活体动物远程手术",
@@ -109,7 +114,8 @@
       "image": "",
       "priority": 3,
       "category": "tech",
-      "source": "Solidot"
+      "source": "Solidot",
+      "subcategory": "hardware"
     },
     {
       "title": "国家网信办：累计 988 款生成式 AI 服务完成备案",
@@ -157,7 +163,8 @@
       "image": "",
       "priority": 2,
       "category": "tech",
-      "source": "Solidot"
+      "source": "Solidot",
+      "subcategory": "industry"
     },
     {
       "title": "AI 生成视频可精准刺激特定大脑区域",
@@ -167,7 +174,8 @@
       "summary": "瑞士 EPFL 研究团队开发出能根据大脑活动反馈实时生成视频的 AI 系统，可定向激活目标脑区。",
       "detail": "EPFL 的 Nevo 项目团队发表了一种新的神经反馈范式：AI 系统根据实时 fMRI 脑成像数据，动态生成能够最大程度驱动目标脑区活动的视频内容。该技术可用于研究视觉认知机制，也有望应用于神经康复和心理健康治疗。研究在 Hacker News 上引发广泛讨论，被评价为「脑科学与生成式 AI 的交叉前沿」。",
       "image": "",
-      "category": "ai",
+      "category": "tech",
+      "subcategory": "ai-frontier",
       "source": "Hacker News",
       "priority": 1
     },
@@ -193,7 +201,8 @@
       "image": "",
       "category": "tech",
       "source": "少数派",
-      "priority": 2
+      "priority": 2,
+      "subcategory": "software"
     },
     {
       "title": "英伟达触觉仿真合作伙伴他山科技再获数亿融资",
@@ -241,7 +250,8 @@
       "image": "",
       "category": "tech",
       "source": "Solidot",
-      "priority": 1
+      "priority": 1,
+      "subcategory": "hardware"
     },
     {
       "title": "Mitchell Hashimoto 谈 Ghostty 终端与 Zig 语言",
@@ -253,7 +263,8 @@
       "image": "",
       "category": "tech",
       "source": "Hacker News",
-      "priority": 2
+      "priority": 2,
+      "subcategory": "software"
     },
     {
       "title": "OpenAI 发布 GPT-5.6 系列模型",
@@ -277,7 +288,8 @@
       "image": "",
       "category": "tech",
       "source": "少数派",
-      "priority": 1
+      "priority": 1,
+      "subcategory": "software"
     },
     {
       "title": "继父利用 AI 生成 7000 张未成年人不当图像，Grok 安全系统被指失职",
@@ -299,7 +311,8 @@
       "summary": "腾讯推出 Hy3 混合推理模型，结合快速响应与深度推理能力，在多项基准测试中表现突出。",
       "detail": "腾讯发布 Hy3 混合推理模型，采用独特的双阶段推理架构：简单问题快速响应，复杂问题进行深度链式推理。该模型在数学、代码和逻辑推理等基准测试中取得领先成绩。在 Hacker News 上获得 479 点赞和 97 条评论，社区评价其「推理能力与 GPT-5 系列接近，但推理成本更低」。这是国内大厂在推理模型赛道的又一次重要布局。",
       "image": "",
-      "category": "ai",
+      "category": "tech",
+      "subcategory": "ai-frontier",
       "source": "Hacker News",
       "priority": 3
     },
@@ -313,7 +326,8 @@
       "image": "",
       "category": "tech",
       "source": "Solidot",
-      "priority": 1
+      "priority": 1,
+      "subcategory": "software"
     },
     {
       "title": "2026 年二季度全球 PC 出货量同比下滑 5%",
@@ -325,7 +339,8 @@
       "image": "",
       "priority": 1,
       "category": "tech",
-      "source": "Solidot"
+      "source": "Solidot",
+      "subcategory": "industry"
     },
     {
       "title": "SK 海力士本周五登陆纳斯达克，募资 265 亿美元",
@@ -337,7 +352,8 @@
       "image": "",
       "priority": 2,
       "category": "tech",
-      "source": "36氪"
+      "source": "36氪",
+      "subcategory": "industry"
     },
     {
       "title": "Waymo 未来数周将在美国四个新城市推出无人驾驶出租车",
@@ -349,7 +365,8 @@
       "image": "",
       "priority": 2,
       "category": "tech",
-      "source": "36氪"
+      "source": "36氪",
+      "subcategory": "industry"
     },
     {
       "title": "大众汽车管理层考虑关闭德国部分工厂，最高裁减 12 万岗位",
@@ -361,7 +378,8 @@
       "image": "",
       "priority": 2,
       "category": "tech",
-      "source": "36氪"
+      "source": "36氪",
+      "subcategory": "industry"
     },
     {
       "title": "徕芬科技珠海超级工厂首次大规模开放参观",
@@ -373,7 +391,8 @@
       "image": "",
       "priority": 2,
       "category": "tech",
-      "source": "36氪"
+      "source": "36氪",
+      "subcategory": "industry"
     }
   ]
 }

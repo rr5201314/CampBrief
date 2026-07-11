@@ -30,7 +30,6 @@
   <symbol id="i-unlock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="3"/><path d="M8 10V8a4 4 0 0 1 7.5-2"/></symbol>
   <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="3"/><path d="M8 10V8a4 4 0 0 1 8 0v2"/></symbol>
   <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
-  <symbol id="i-image" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="3"/><path d="m7 16 4-4 3 3 2-2 3 3"/><circle cx="9" cy="9" r="1"/></symbol>
   <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></symbol>
   <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
   <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
@@ -71,13 +70,25 @@
         <div class="count-pill"><svg class="icon-sm icon"><use href="#i-list"/></svg><span id="resultCount">加载中...</span></div>
       </section>
 
+      <!-- 头条资讯轮播 -->
+      <section class="carousel" data-carousel hidden>
+        <div class="carousel-header">
+          <div class="carousel-title"><svg class="icon-sm icon"><use href="#i-trophy"/></svg>近7天头条</div>
+          <span class="carousel-hint">滚轮滑动浏览</span>
+        </div>
+        <div class="carousel-viewport">
+          <div class="carousel-track" data-carousel-track></div>
+          <button class="carousel-nav prev" data-carousel-prev type="button" aria-label="向左滑动"><svg class="icon-sm icon"><use href="#i-chevron-left"/></svg></button>
+          <button class="carousel-nav next" data-carousel-next type="button" aria-label="向右滑动"><svg class="icon-sm icon"><use href="#i-chevron-right"/></svg></button>
+        </div>
+      </section>
+
       <section class="filter-panel" aria-label="资讯筛选">
         <div class="filter-row">
           <div class="filter-label"><svg class="icon"><use href="#i-category"/></svg>资讯分类</div>
           <div class="options" data-filter-group="category">
             <button class="option active" data-value="all"><span class="option-dot"></span>全部</button>
-            <button class="option" data-value="tech"><svg class="icon-sm icon"><use href="#i-code"/></svg>技术更新</button>
-            <button class="option" data-value="ai"><svg class="icon-sm icon"><use href="#i-bot"/></svg>AI</button>
+            <button class="option" data-value="ai"><svg class="icon-sm icon"><use href="#i-bot"/></svg>AI 资讯</button>
             <button class="option" data-value="sports"><svg class="icon-sm icon"><use href="#i-sports"/></svg>体育</button>
             <button class="option" data-value="fun"><svg class="icon-sm icon"><use href="#i-bulb"/></svg>每日趣闻</button>
           </div>
@@ -154,6 +165,7 @@
 </div>
 
 <script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/carousel.js"></script>
 <script src="../../assets/js/news-data.js"></script>
 <script src="../../assets/js/daily-news.js"></script>
 </body>

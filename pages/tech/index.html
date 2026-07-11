@@ -14,8 +14,23 @@
   <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 8-4 4 4 4"/><path d="m16 8 4 4-4 4"/><path d="m14 5-4 14"/></symbol>
   <symbol id="i-news" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8"/><path d="M8 11h8"/><path d="M8 15h5"/></symbol>
   <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6"/><path d="M12 7h.01"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.1.68-.22.68-.5 0-.24 0-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.9-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.38 9.38 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.5C19.14 20.57 22 16.75 22 12.26 22 6.58 17.52 2 12 2z"/></symbol>
+  <symbol id="i-bot" viewBox="0 0 24 24"><rect x="5" y="8" width="14" height="11" rx="4"/><path d="M12 8V4"/><path d="M9 13h.01"/><path d="M15 13h.01"/><path d="M9.5 17h5"/></symbol>
+  <symbol id="i-chip" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 9h6v6H9z"/><path d="M9 2v2"/><path d="M15 2v2"/><path d="M9 20v2"/><path d="M15 20v2"/><path d="M2 9h2"/><path d="M2 15h2"/><path d="M20 9h2"/><path d="M20 15h2"/></symbol>
   <symbol id="i-status" viewBox="0 0 24 24"><path d="M9 12l2 2 4-5"/><circle cx="12" cy="12" r="9"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><path d="M8 6h12"/><path d="M8 12h12"/><path d="M8 18h12"/><path d="M4 6h.01"/><path d="M4 12h.01"/><path d="M4 18h.01"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="3"/><path d="M8 3v4"/><path d="M16 3v4"/><path d="M4 10h16"/></symbol>
+  <symbol id="i-medal" viewBox="0 0 24 24"><circle cx="12" cy="14" r="5"/><path d="M9 3h6l-1.5 6h-3z"/><path d="m9 3 3 6 3-6"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h6"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><path d="M4 4h7v7H4z"/><path d="M13 4h7v7h-7z"/><path d="M4 13h7v7H4z"/><path d="M13 13h7v7h-7z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></symbol>
+  <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+  <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-category" viewBox="0 0 24 24"><path d="M4 5h7v7H4z"/><path d="M13 5h7v7h-7z"/><path d="M4 14h7v5H4z"/><path d="M13 14h7v5h-7z"/></symbol>
 </svg>
 
 <div class="page-shell">
@@ -46,22 +61,74 @@
         <div>
           <div class="eyebrow"><svg class="icon-sm icon"><use href="#i-code"/></svg>技术趋势</div>
           <h1>技术</h1>
-          <p class="subtitle">整理值得关注的开源项目、开发工具和技术动态。</p>
+          <p class="subtitle">面向技术追求者的硬核动态：AI 前沿、硬件芯片、软件系统、产业商业。</p>
+        </div>
+        <div class="count-pill"><svg class="icon-sm icon"><use href="#i-list"/></svg><span id="resultCount">加载中...</span></div>
+      </section>
+
+      <!-- 精选技术轮播 -->
+      <section class="carousel" data-carousel hidden>
+        <div class="carousel-header">
+          <div class="carousel-title"><svg class="icon-sm icon"><use href="#i-trophy"/></svg>近期精选</div>
+          <span class="carousel-hint">滚轮滑动浏览</span>
+        </div>
+        <div class="carousel-viewport">
+          <div class="carousel-track" data-carousel-track></div>
+          <button class="carousel-nav prev" data-carousel-prev type="button" aria-label="向左滑动"><svg class="icon-sm icon"><use href="#i-chevron-left"/></svg></button>
+          <button class="carousel-nav next" data-carousel-next type="button" aria-label="向右滑动"><svg class="icon-sm icon"><use href="#i-chevron-right"/></svg></button>
         </div>
       </section>
 
-      <section class="placeholder-panel">
-        <h2>模块正在建设中</h2>
-        <p>这里后续会展示适合学生关注的技术趋势、开源项目、开发工具和实践资源。当前页面用于保证导航完整，正式内容会在后续迭代中补充。</p>
-        <div class="placeholder-actions">
-          <a href="../../index.html" class="btn btn-secondary">返回首页</a>
-          <a href="../../pages/competitions/index.html" class="btn btn-primary">查看竞赛 <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>
+      <section class="filter-panel" aria-label="技术筛选">
+        <div class="filter-row">
+          <div class="filter-label"><svg class="icon"><use href="#i-category"/></svg>技术分类</div>
+          <div class="options" data-filter-group="subcategory">
+            <button class="option active" data-value="all"><span class="option-dot"></span>全部</button>
+            <button class="option" data-value="ai-frontier"><svg class="icon-sm icon"><use href="#i-bot"/></svg>AI 前沿</button>
+            <button class="option" data-value="hardware"><svg class="icon-sm icon"><use href="#i-chip"/></svg>硬件与芯片</button>
+            <button class="option" data-value="software"><svg class="icon-sm icon"><use href="#i-code"/></svg>软件与系统</button>
+            <button class="option" data-value="industry"><svg class="icon-sm icon"><use href="#i-status"/></svg>产业与商业</button>
+            <button class="option" data-value="github"><svg class="icon-sm icon"><use href="#i-github"/></svg>GitHub 趋势</button>
+          </div>
+        </div>
+        <div class="filter-row">
+          <div class="filter-label"><svg class="icon"><use href="#i-calendar"/></svg>日期</div>
+          <div class="options" data-filter-group="date" role="group" aria-label="技术动态发布日期">
+            <button class="option active" type="button" data-value="all" aria-pressed="true">全部</button>
+            <button class="option" type="button" data-value="24h" aria-pressed="false">24小时</button>
+            <button class="option" type="button" data-value="7d" aria-pressed="false">7天</button>
+            <button class="option" type="button" data-value="30d" aria-pressed="false">30天</button>
+          </div>
+        </div>
+        <div class="search-wrap">
+          <svg class="icon"><use href="#i-search"/></svg>
+          <input id="searchInput" class="search-input" type="search" placeholder="请输入技术动态标题或关键词搜索" autocomplete="off">
         </div>
       </section>
+
+      <div class="content-toolbar">
+        <span>为有技术追求的学生精选的硬核动态</span>
+        <span class="sort-pill"><svg class="icon-sm icon"><use href="#i-calendar"/></svg>最近更新</span>
+      </div>
+
+      <section class="cards" id="cards">
+        <div class="loading-state" style="text-align: center; padding: 40px; color: var(--text-secondary, #666);">
+          <p>正在加载技术动态...</p>
+        </div>
+      </section>
+      <p class="empty-state" id="emptyState" role="status" hidden>暂无符合条件的技术动态，试试调整分类或关键词。</p>
+
+      <nav class="pagination" aria-label="分页" hidden>
+        <button class="page-btn"><svg class="icon-sm icon"><use href="#i-chevron-left"/></svg></button>
+        <button class="page-btn active">1</button>
+        <button class="page-btn"><svg class="icon-sm icon"><use href="#i-chevron-right"/></svg></button>
+      </nav>
     </div>
   </main>
 </div>
 
 <script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/carousel.js"></script>
+<script src="../../assets/js/tech.js"></script>
 </body>
 </html>

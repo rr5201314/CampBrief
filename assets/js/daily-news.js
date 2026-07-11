@@ -64,28 +64,35 @@ function createCardHTML(item) {
   const date = new Date(item.published);
   const now = new Date();
   const diffHours = (now - date) / (1000 * 60 * 60);
-  
-  let statusClass = 'status-closed';
-  let statusText = '本月';
-  
+
+  // 时间标签对齐筛选条件：24小时 / 7天 / 30天 / 更早
+  let statusClass = 'status-done';
+  let statusText = '更早';
+
   if (diffHours < 24) {
     statusClass = 'status-open';
-    statusText = '今天';
+    statusText = '24小时';
   } else if (diffHours < 168) {
     statusClass = 'status-pending';
-    statusText = '本周';
+    statusText = '7天';
+  } else if (diffHours < 720) {
+    statusClass = 'status-closed';
+    statusText = '30天';
   }
   
   const formattedDate = `${date.getFullYear()}.${String(date.getMonth() + 1).padStart(2, '0')}.${String(date.getDate()).padStart(2, '0')}`;
   
   const priority = item.priority || 1;
-  const priorityBadge = priority >= 3
+  // priority 4：头条（放轮播 + 重磅标签）；3：重磅；2：重要；1：无标签
+  const priorityBadge = priority >= 4
+    ? '<span class="badge badge-hot"><svg class="icon-sm icon"><use href="#i-trophy"/></svg>头条</span>'
+    : priority >= 3
     ? '<span class="badge badge-hot"><svg class="icon-sm icon"><use href="#i-trophy"/></svg>重磅</span>'
     : priority >= 2
     ? '<span class="badge badge-important"><svg class="icon-sm icon"><use href="#i-status"/></svg>重要</span>'
     : '';
-  const categoryLabels = { ai: 'AI', tech: '技术', competition: '竞赛', exam: '考试', sports: '体育', fun: '趣闻' };
-  const categoryIcons = { ai: 'i-bot', tech: 'i-code', competition: 'i-trophy', exam: 'i-exam', sports: 'i-sports', fun: 'i-bulb' };
+  const categoryLabels = { ai: 'AI 资讯', competition: '竞赛', exam: '考试', sports: '体育', fun: '趣闻' };
+  const categoryIcons = { ai: 'i-bot', competition: 'i-trophy', exam: 'i-exam', sports: 'i-sports', fun: 'i-bulb' };
   const cats = getCategories(item);
   const categoryBadges = cats.map(c => {
     const label = categoryLabels[c] || c;
@@ -95,13 +102,6 @@ function createCardHTML(item) {
   
   return `
     <article class="card" data-category="${cats.join(' ')}" data-published="${item.published}" data-priority="${priority}" data-search="${item.title} ${item.summary}">
-      <div class="thumb" aria-label="资讯封面占位图">
-        <div class="thumb-inner">
-          <span class="thumb-icon"><svg class="icon"><use href="#i-image"/></svg></span>
-          <span>封面占位图</span>
-          <span class="thumb-lines"><span></span><span></span></span>
-        </div>
-      </div>
       <div class="card-main">
         <div class="card-head">
           <h2 class="card-title">${item.title}</h2>
@@ -314,6 +314,8 @@ function initDatePicker() {
 
 function applyFilters() {
   filteredItems = allItems.filter(item => {
+    // 技术类条目已迁移到技术板块，每日资讯不显示
+    if (item.category === "tech") return false;
     const categoryOk = state.category === "all" || getCategories(item).includes(state.category);
     const dateOk = matchesDateFilter(item);
     const searchOk = !state.query || `${item.title} ${item.summary} ${item.detail || ""}`.toLowerCase().includes(state.query);
@@ -479,6 +481,69 @@ function getLatestCalendarYear() {
   return new Date().getFullYear();
 }
 
+// ===== 头条资讯轮播 =====
+// 规则：近7天 priority>=4 的消息放轮播；不足3个则补充 priority>=3 的；上限10个，超过取最近10条
+function pickNewsCarouselItems(items) {
+  const now = new Date();
+  const sevenDaysAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
+  // 近7天
+  const recent = items.filter(item => {
+    const d = new Date(item.published);
+    return d >= sevenDaysAgo && d <= now;
+  });
+  // priority >= 4 优先
+  let result = recent.filter(i => (i.priority || 1) >= 4);
+  // 不足3个则补充 priority >= 3
+  if (result.length < 3) {
+    const p3 = recent.filter(i => (i.priority || 1) === 3 && !result.find(r => r.url === i.url));
+    result = result.concat(p3);
+  }
+  // 按发布时间降序
+  result.sort((a, b) => new Date(b.published) - new Date(a.published));
+  // 上限10
+  return result.slice(0, 10);
+}
+
+function renderNewsCarouselCard(item) {
+  const date = new Date(item.published);
+  const formattedDate = `${date.getFullYear()}.${String(date.getMonth() + 1).padStart(2, '0')}.${String(date.getDate()).padStart(2, '0')}`;
+  const priority = item.priority || 1;
+  const tagClass = priority >= 4 ? 'tag-featured' : 'tag-normal';
+  const tagText = priority >= 4 ? '头条' : '重磅';
+  const categoryLabels = { ai: 'AI', tech: '技术', competition: '竞赛', exam: '考试', sports: '体育', fun: '趣闻' };
+  const cats = getCategories(item);
+  const catText = cats.map(c => categoryLabels[c] || c).join(' · ');
+
+  return `
+    <a class="carousel-card" href="detail.html?url=${encodeURIComponent(item.url)}">
+      <span class="carousel-card-tag ${tagClass}">${tagText}</span>
+      <div class="carousel-card-head">
+        <h3 class="carousel-card-title">${item.title}</h3>
+      </div>
+      <div class="carousel-card-meta">
+        <span class="meta-item"><svg class="icon-sm icon"><use href="#i-calendar"/></svg>${formattedDate}</span>
+        <span class="meta-item"><svg class="icon-sm icon"><use href="#i-info"/></svg>${item.source}</span>
+        ${catText ? `<span class="meta-item"><svg class="icon-sm icon"><use href="#i-list"/></svg>${catText}</span>` : ''}
+      </div>
+      <p class="carousel-card-desc">${item.summary}</p>
+    </a>
+  `;
+}
+
+function initNewsCarousel(items) {
+  const container = document.querySelector('[data-carousel]');
+  if (!container || typeof Carousel === 'undefined') return;
+  const carouselItems = pickNewsCarouselItems(items);
+  if (carouselItems.length < 3) { container.hidden = true; return; }
+  container.hidden = false;
+  Carousel.init(container, {
+    items: carouselItems,
+    renderCard: renderNewsCarouselCard,
+    autoPlay: true,
+    interval: 5000
+  });
+}
+
 // 主初始化函数
 async function init() {
   initDOM();
@@ -500,6 +565,7 @@ async function init() {
 
   // 初始化列表（内部会触发 applyFilters + renderPage）
   setItems(items);
+  initNewsCarousel(items);
 }
 
 // 页面加载完成后初始化

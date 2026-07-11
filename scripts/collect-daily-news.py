@@ -74,6 +74,17 @@ SOURCES = [
         "category_hint": "tech",
         "lang": "zh",
     },
+    # --- AI 资讯（juya AI 日报）---
+    # juya 的特点：一篇日报包含多条 AI 资讯，Agent 需要从单篇日报中拆分出独立条目
+    # RSS 主源，markdown 备份见 https://github.com/jujuyaya/juya-ai-daily/tree/main/BACKUP
+    {
+        "name": "juya AI 日报",
+        "url": "https://daily.juya.uk/rss.xml",
+        "category_hint": "ai",
+        "lang": "zh",
+        "split_required": True,
+        "split_hint": "该源每篇文章是一份 AI 日报，包含多条独立资讯。Agent 需解析正文，按资讯条目拆分为多个候选，每条独立收录。",
+    },
     # --- 体育（重大赛事） ---
     {
         "name": "BBC Sport",

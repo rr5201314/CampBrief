@@ -246,9 +246,12 @@ function buildNewsItem(item){
   const date = el("div", "news-date",
     `<span class="news-month">${escapeHtml(item.month)}</span><span class="news-day">${escapeHtml(item.day)}日</span>`);
   head.appendChild(date);
-  // 重要程度标签：priority 3=重磅，2=重要
+  // 重要程度标签：priority 4=头条，3=重磅，2=重要
   const priority = item.priority || 1;
-  if(priority >= 3){
+  if(priority >= 4){
+    head.appendChild(el("span", "badge badge-hot",
+      `<svg class="icon-sm icon"><use href="#i-trophy"/></svg>头条`));
+  } else if(priority >= 3){
     head.appendChild(el("span", "badge badge-hot",
       `<svg class="icon-sm icon"><use href="#i-trophy"/></svg>重磅`));
   } else if(priority >= 2){
@@ -377,8 +380,8 @@ function observeBoards(){
 }
 
 /* ---- 每日资讯看板规则：优先级过滤与排序 ---- */
-// 仅显示 priority 为 3 或 2 的消息；同日期下优先级数字大的先显示。
-const NEWS_PRIORITY_ALLOWED = [3, 2];
+// 显示 priority 为 4、3、2 的消息（4=头条，3=重磅，2=重要）；同日期下优先级数字大的先显示。
+const NEWS_PRIORITY_ALLOWED = [4, 3, 2];
 
 function applyNewsRules(list){
   return list
