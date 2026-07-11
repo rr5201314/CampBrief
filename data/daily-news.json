@@ -1,8 +1,177 @@
 {
-  "last_updated": "2026-07-11T08:03:40.090782+08:00",
+  "last_updated": "2026-07-11T22:50:01.701420+08:00",
   "source": "CampBrief Auto",
-  "total": 31,
+  "total": 54,
   "items": [
+    {
+      "title": "温网女单决赛：捷克选手穆乔娃对阵诺斯科娃",
+      "url": "https://www.theguardian.com/sport/live/2026/jul/11/karolina-muchova-v-linda-noskova-wimbledon-2026-womens-singles-final-live",
+      "published": "2026-07-11T14:34:49+00:00",
+      "source": "The Guardian Sport",
+      "summary": "温布尔登网球锦标赛女单决赛迎来捷克内战，穆乔娃与诺斯科娃争夺冠军。",
+      "detail": "2026 年温布尔登网球锦标赛女单决赛呈现罕见的捷克内战，卡罗琳娜·穆乔娃与琳达·诺斯科娃将争夺冠军。这是温网历史上首次由两名捷克选手会师女单决赛，反映了捷克网球近年来的强劲发展势头。比赛于当地时间下午 4 点开始。",
+      "priority": 2,
+      "category": "sports"
+    },
+    {
+      "title": "美国 FCC 批准太空镜测试，引发光污染争议",
+      "url": "https://www.nytimes.com/2026/07/10/climate/fcc-space-mirror.html",
+      "published": "2026-07-11T12:12:34+00:00",
+      "source": "Hacker News",
+      "summary": "FCC 批准一项太空镜测试计划，该镜面可照亮夜空，引发天文学界和环保人士强烈反对。",
+      "detail": "美国联邦通信委员会（FCC）批准了一项太空镜测试计划，该技术旨在通过轨道镜面反射阳光来延长日光时间或提供夜间照明。天文学界和环保组织对此表示强烈反对，担忧大规模部署将严重影响天文观测、野生动物生态和人类昼夜节律。该项目引发了关于太空资源利用边界的新一轮讨论。",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "hardware"
+    },
+    {
+      "title": "智谱创始人唐杰发内部信：「GLM 时刻」之后直指 AGI",
+      "url": "https://36kr.com/newsflashes/3891162734689031?f=rss",
+      "published": "2026-07-11T19:35:25+08:00",
+      "source": "36氪",
+      "summary": "智谱创始人唐杰发布内部信，宣布将不追求短期应用变现，直指 AGI 的长程任务能力和自治智能体系统。",
+      "detail": "智谱创始人唐杰发布主题为《巨浪已来》的内部信，宣布公司战略方向将从短期应用变现转向 AGI 核心能力研发，包括长程任务能力、完全自治的智能体系统、自我进化和极致安全治理。智谱过去半年市值较上市初期涨了 10 倍，已于 6 月跻身「万亿港元俱乐部」，市值超过小米。这一战略转向反映了中国头部 AI 公司在商业化与前沿研究之间的抉择。",
+      "priority": 3,
+      "category": "ai"
+    },
+    {
+      "title": "苏联控制室的复古美学",
+      "url": "https://designyoutrust.com/2018/01/vintage-beauty-soviet-control-rooms/",
+      "published": "2026-07-11T05:19:41+00:00",
+      "source": "Hacker News",
+      "summary": "苏联时期的控制室设计展现出独特的复古美学，色彩鲜明的仪表盘和控制面板至今仍具视觉冲击力。",
+      "detail": "一组苏联时期各类控制室的历史照片近日在 Hacker News 上重新引发关注。这些控制室包括核电站、航天中心和工业设施的操作间，其设计风格独特：大面积使用鲜明色彩的仪表盘、旋钮和指示灯，布局紧凑但功能分区清晰。虽然技术已过时，但这些空间所呈现的工业美学和人机交互设计理念至今仍具启发性。",
+      "priority": 1,
+      "category": "fun"
+    },
+    {
+      "title": "世界杯八强赛：英格兰对阵挪威，迈阿密高温成变数",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cx2jzl3zxpzo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-11T05:08:35+00:00",
+      "source": "BBC Sport",
+      "summary": "世界杯八强赛英格兰将在迈阿密对阵挪威，当地高温天气可能成为比赛关键变数。",
+      "detail": "世界杯八强赛中英格兰将前往迈阿密迎战挪威，这将是英格兰在本届赛事中首次在露天高温环境下比赛。迈阿密预计的高温高湿天气可能对球员体能构成严峻考验，而挪威方面则可能利用北欧球员对凉爽气候的适应性作为战术优势。",
+      "priority": 2,
+      "category": "sports"
+    },
+    {
+      "title": "SK 海力士登陆纳斯达克，上市首日大涨近 13%",
+      "url": "https://36kr.com/newsflashes/3890553690192384?f=rss",
+      "published": "2026-07-11T09:24:06+08:00",
+      "source": "36氪",
+      "summary": "韩国芯片巨头 SK 海力士在纳斯达克上市首日大涨近 13%，市值突破万亿美元。",
+      "detail": "全球第二大存储芯片厂商韩国 SK 海力士在纳斯达克上市首日股价大涨近 13%，市值突破万亿美元。本次 IPO 募资约 265 亿美元，有望跻身史上最大 IPO 行列。SK 海力士是 AI 高带宽内存（HBM）的核心供应商，上市反映了资本市场对 AI 基础设施赛道的持续看好。",
+      "priority": 3,
+      "category": "tech",
+      "subcategory": "industry"
+    },
+    {
+      "title": "OpenAI 推出 ChatGPT 智能体",
+      "url": "https://36kr.com/newsflashes/3890553690192384?f=rss",
+      "published": "2026-07-11T09:24:06+08:00",
+      "source": "36氪",
+      "summary": "OpenAI 正式推出 ChatGPT 智能体功能，可自主执行多步骤复杂任务。",
+      "detail": "OpenAI 正式推出 ChatGPT 智能体（Agent）功能，允许 ChatGPT 自主规划并执行多步骤复杂任务，包括网页浏览、文件处理和代码编写。该功能标志着 ChatGPT 从对话式助手向自主执行系统的转变，是 AI Agent 赛道的重要里程碑。",
+      "priority": 3,
+      "category": "ai"
+    },
+    {
+      "title": "KwaiKAT 发布 KAT Coder Pro V2.5",
+      "summary": "快手 KwaiKAT 发布 KAT Coder Pro V2.5 编程模型，提升代码生成能力。",
+      "detail": "快手旗下 KwaiKAT 发布 KAT Coder Pro V2.5 编程模型，这是其在代码生成领域的最新版本。该模型在代码补全、调试和多语言支持方面进行了优化，面向开发者提供更高效的 AI 编程辅助体验。",
+      "priority": 2,
+      "category": "ai",
+      "published": "2026-07-11T01:20:52+00:00",
+      "url": "https://daily.juya.uk/issues/2026-07-11/",
+      "date": "2026-07-11",
+      "image": "",
+      "source": "juya AI 日报"
+    },
+    {
+      "title": "Grok 4.5 向免费用户开放 Grok Build 限时体验",
+      "summary": "xAI 将 Grok 4.5 模型向免费用户开放 Grok Build 限时体验。",
+      "detail": "xAI 宣布将 Grok 4.5 模型向免费用户开放限时体验，用户可通过 Grok Build 功能直接使用该模型。此举旨在扩大 Grok 的用户基础，与 OpenAI 和 Anthropic 等竞争对手争夺开发者市场。Grok 4.5 此前仅面向付费订阅用户开放。",
+      "priority": 2,
+      "category": "ai",
+      "published": "2026-07-11T01:20:52+00:00",
+      "url": "https://daily.juya.uk/issues/2026-07-11/",
+      "date": "2026-07-11",
+      "image": "",
+      "source": "juya AI 日报"
+    },
+    {
+      "title": "Claude Code 桌面版新增内置浏览器，支持沙盒与交互",
+      "summary": "Anthropic 为 Claude Code 桌面版新增内置浏览器功能，支持沙盒环境和交互操作。",
+      "detail": "Anthropic 为 Claude Code 桌面应用新增了内置浏览器功能，开发者可以在沙盒环境中直接预览和交互测试代码输出。该功能允许 Claude 在编写代码后立即在受控环境中验证结果，提升了开发工作流的效率和安全性。",
+      "priority": 2,
+      "category": "ai",
+      "published": "2026-07-11T01:20:52+00:00",
+      "url": "https://daily.juya.uk/issues/2026-07-11/",
+      "date": "2026-07-11",
+      "image": "",
+      "source": "juya AI 日报"
+    },
+    {
+      "title": "OpenAI 重置用量并承认更新体验问题",
+      "summary": "OpenAI 重置用户用量额度，同时承认近期模型更新带来的体验问题。",
+      "detail": "OpenAI 向用户发送通知，宣布重置各订阅层级的用量额度。同时公司承认近期 GPT-5.6 系列模型更新后，部分用户反馈存在响应质量下降和使用体验不稳定的问题。OpenAI 表示正在积极修复相关问题并优化模型表现。",
+      "priority": 2,
+      "category": "ai",
+      "published": "2026-07-11T01:20:52+00:00",
+      "url": "https://daily.juya.uk/issues/2026-07-11/",
+      "date": "2026-07-11",
+      "image": "",
+      "source": "juya AI 日报"
+    },
+    {
+      "title": "Wan 发布 Wan Streamer v0.2：分辨率升至 640×368",
+      "summary": "Wan 发布 Wan Streamer v0.2 视频生成模型，分辨率提升至 640×368。",
+      "detail": "开源视频生成模型 Wan 发布 Streamer v0.2 版本，将输出分辨率从前代的较低规格提升至 640×368。新版本在视频流畅度和画面质量方面均有改进，继续推进开源视频生成技术的发展。该模型在开源社区中受到关注。",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "published": "2026-07-11T01:20:52+00:00",
+      "url": "https://daily.juya.uk/issues/2026-07-11/",
+      "date": "2026-07-11",
+      "image": "",
+      "source": "juya AI 日报"
+    },
+    {
+      "title": "Kyutai 发布开源多乐器转录模型 MuScriptor",
+      "summary": "法国 AI 研究机构 Kyutai 发布开源多乐器音频转录模型 MuScriptor。",
+      "detail": "法国 AI 研究机构 Kyutai 发布了 MuScriptor，一款开源的多乐器音频转录模型，能够识别和转录多种乐器的演奏内容。该模型支持钢琴、吉他、鼓等多种乐器的独立识别，为音乐信息检索和自动编曲等领域提供了新的开源工具。",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "published": "2026-07-11T01:20:52+00:00",
+      "url": "https://daily.juya.uk/issues/2026-07-11/",
+      "date": "2026-07-11",
+      "image": "",
+      "source": "juya AI 日报"
+    },
+    {
+      "title": "Google AI Studio 为部署应用推出免费个性化 URL",
+      "summary": "Google AI Studio 推出免费个性化 URL 功能，方便开发者分享 AI 应用。",
+      "detail": "Google AI Studio 新增免费个性化 URL 功能，开发者部署的 AI 应用现在可以获得专属的可访问链接，无需自行配置服务器或域名。这一功能降低了 AI 应用的分享和展示门槛，使开发者能更便捷地向他人展示自己的 AI 项目成果。",
+      "priority": 1,
+      "category": "ai",
+      "published": "2026-07-11T01:20:52+00:00",
+      "url": "https://daily.juya.uk/issues/2026-07-11/",
+      "date": "2026-07-11",
+      "image": "",
+      "source": "juya AI 日报"
+    },
+    {
+      "title": "上交大 00 后博士创立仿生扑翼机器人公司，三月融三轮",
+      "url": "https://36kr.com/p/3889516712065799?f=rss",
+      "published": "2026-07-11T09:00:00+08:00",
+      "source": "36氪",
+      "summary": "上交大 00 后博士创立的仿生扑翼飞行机器人公司「鹰瞰智翼」三个月内完成三轮融资。",
+      "detail": "具身智能仿生扑翼飞行机器人公司「鹰瞰智翼」完成数千万元 A 轮融资，这是公司三个月内完成的第三轮融资。创始人为上海交通大学机械工程直博生，团队研发人员占比超 75%。资金将用于首款消费级产品的量产备货和下一代具身智能扑翼机器人研发。该公司是全球较早专注于具身智能扑翼机器人的企业之一。",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "hardware"
+    },
     {
       "title": "苹果起诉 OpenAI，指控前员工窃取商业机密",
       "url": "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/",
@@ -42,6 +211,17 @@
       "source": "Hacker News"
     },
     {
+      "title": "纽约市立法禁止欺骗性订阅 practices",
+      "url": "https://www.theguardian.com/us-news/2026/jul/10/new-york-city-deceptive-subscriptions-ban",
+      "published": "2026-07-10T18:26:24+00:00",
+      "source": "Hacker News",
+      "summary": "纽约市通过法案禁止欺骗性订阅行为，要求企业提供便捷的退订方式。",
+      "detail": "纽约市通过一项新法案，禁止企业采用欺骗性手段诱导用户订阅并设置退订障碍。法案要求所有订阅服务必须提供与注册同等便捷的退订流程，违规企业将面临处罚。该立法被视为对「暗黑模式」设计的重要规制，可能推动其他城市和州跟进类似立法。",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "industry"
+    },
+    {
       "title": "SpaceX 计划再发射 10 万颗卫星以提升 100 倍带宽",
       "url": "https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/",
       "date": "2026-07-10",
@@ -77,6 +257,17 @@
       "priority": 1,
       "category": "tech",
       "source": "Solidot",
+      "subcategory": "industry"
+    },
+    {
+      "title": "代理型领导人推动员工「安静辞职」现象",
+      "url": "https://www.solidot.org/story?sid=84802",
+      "published": "2026-07-11T00:00:32+08:00",
+      "source": "Solidot",
+      "summary": "韩国研究发现权威型领导风格通过加剧工作倦怠间接推动中国中小企业员工的「躺平」现象。",
+      "detail": "韩国嘉泉大学的研究人员调查了权威型领导如何影响中国中小企业员工的工作态度。研究收集了 363 名员工的数据，发现权威型领导通过增加工作倦怠间接导致「安静辞职」（躺平）行为，而非自愿出勤进一步放大了倦怠效应。该研究为理解东亚职场文化中的代际和管理风格差异提供了实证依据。",
+      "priority": 1,
+      "category": "tech",
       "subcategory": "industry"
     },
     {
@@ -205,6 +396,42 @@
       "subcategory": "software"
     },
     {
+      "title": "Meta 发布 Muse Spark 1.1 模型及 API",
+      "summary": "Meta 发布 Muse Spark 1.1 图像生成模型及配套 API，增强创意生成能力。",
+      "detail": "Meta 发布 Muse Spark 1.1 图像生成模型，这是其在创意 AI 领域的最新版本。新模型在图像质量和生成速度方面有显著提升，同时开放 API 供开发者集成。此举标志着 Meta 在 AI 生成内容赛道的持续投入。",
+      "priority": 2,
+      "category": "ai",
+      "published": "2026-07-10T02:17:20+00:00",
+      "url": "https://daily.juya.uk/issues/2026-07-10/",
+      "date": "2026-07-10",
+      "image": "",
+      "source": "juya AI 日报"
+    },
+    {
+      "title": "OpenAI 发布 ChatGPT Work",
+      "summary": "OpenAI 发布 ChatGPT Work，面向企业用户的协作办公版本。",
+      "detail": "OpenAI 推出 ChatGPT Work，这是一款面向企业和团队用户的协作办公版本。ChatGPT Work 集成了文档协作、任务管理和团队知识库等功能，旨在将 AI 助手深度融入企业日常工作流程，与微软 Copilot 等产品形成直接竞争。",
+      "priority": 2,
+      "category": "ai",
+      "published": "2026-07-10T02:17:20+00:00",
+      "url": "https://daily.juya.uk/issues/2026-07-10/",
+      "date": "2026-07-10",
+      "image": "",
+      "source": "juya AI 日报"
+    },
+    {
+      "title": "Codex 升级支持文件编辑与 PR 审查，新增 Pro 与 Ultra 模式",
+      "summary": "OpenAI Codex 升级支持文件编辑和 PR 审查功能，新增 Pro 与 Ultra 两种模式。",
+      "detail": "OpenAI 的编程智能体 Codex 进行了重大升级，新增直接编辑代码文件和审查 Pull Request 的能力。同时引入 Pro 和 Ultra 两种新模式，提供不同级别的推理能力和资源分配。这标志着 Codex 从对话式编程助手向全功能开发工具的转变。",
+      "priority": 2,
+      "category": "ai",
+      "published": "2026-07-10T02:17:20+00:00",
+      "url": "https://daily.juya.uk/issues/2026-07-10/",
+      "date": "2026-07-10",
+      "image": "",
+      "source": "juya AI 日报"
+    },
+    {
       "title": "英伟达触觉仿真合作伙伴他山科技再获数亿融资",
       "url": "https://36kr.com/p/3889141540370949?f=rss",
       "date": "2026-07-10",
@@ -304,6 +531,17 @@
       "source": "Solidot"
     },
     {
+      "title": "万勋科技发布「柔韧充」自动充电通用服务引擎",
+      "url": "https://36kr.com/p/3888567864851204?f=rss",
+      "published": "2026-07-09T23:36:08+08:00",
+      "source": "36氪",
+      "summary": "万勋科技推出行业首个覆盖全场景的「柔韧充」自动充电通用服务引擎。",
+      "detail": "万勋科技发布「柔韧充」自动充电通用服务引擎，号称行业首个以「混沌服务」模式覆盖公用、专用、家用所有应用场景的产品。其核心特性为「0.000s 无极容差应变」，可在复杂多变的环境中实现自动充电。同期发布了三大类别应用成果，为自动充电场景的规模商用提供通用解决方案。",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "hardware"
+    },
+    {
       "title": "腾讯发布 Hy3 混合推理模型",
       "url": "https://hy.tencent.com/research/hy3",
       "date": "2026-07-10",
@@ -317,6 +555,17 @@
       "priority": 3
     },
     {
+      "title": "中国无人机在广西洪灾中救助被困群众",
+      "url": "https://www.solidot.org/story?sid=84793",
+      "published": "2026-07-09T23:02:52+08:00",
+      "source": "Solidot",
+      "summary": "广西南宁横州洪灾中，救援人员使用大疆 FlyCart 100 农业无人机转移被困群众。",
+      "detail": "广西南宁横州市发生严重洪灾，网上视频显示救援人员借助深圳大疆的 FlyCart 100 农业无人机转移被困群众。该无人机载重量为 85 公斤，能够悬挂正常体重的民众进行转移。这并非中国首次使用农业无人机进行救灾，去年也曾有类似案例。无人机在深圳等城市已广泛用于外卖和快递配送。",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "hardware"
+    },
+    {
       "title": "OpenMandriva 项目遭内部破坏事件",
       "url": "https://www.solidot.org/story?sid=84789",
       "date": "2026-07-10",
@@ -328,6 +577,16 @@
       "source": "Solidot",
       "priority": 1,
       "subcategory": "software"
+    },
+    {
+      "title": "美国部分地区居民多达三成对红肉过敏",
+      "url": "https://www.solidot.org/story?sid=84792",
+      "published": "2026-07-09T22:36:58+08:00",
+      "source": "Solidot",
+      "summary": "研究发现美国部分地区居民多达三成携带导致红肉过敏的抗体，远超此前预期。",
+      "detail": "发表在《发病率与死亡率周报》上的研究显示，美国部分地区居民中多达三成携带导致红肉过敏的α-半乳糖综合征抗体，远超此前估计。该过敏反应通常在进食红肉后 2-6 小时才发作，使其难以被及时识别。研究分析了美国 10 个州 3000 份献血样本，田纳西州和阿肯色州等五个州的抗体阳性率最高。",
+      "priority": 1,
+      "category": "fun"
     },
     {
       "title": "2026 年二季度全球 PC 出货量同比下滑 5%",
