@@ -87,30 +87,12 @@ SOURCES = [
         "category_hint": "sports",
         "lang": "en",
     },
-    {
-        "name": "懂球帝早报",
-        "url": f"{RSSHUB_BASE}/dongqiudi/special/48",
-        "category_hint": "sports",
-        "lang": "zh",
-    },
     # --- 每日趣闻（轻松有趣、有知识增量；不含八卦黑料） ---
     {
         "name": "Atlas Obscura",
         "url": "https://www.atlasobscura.com/feeds/latest",
         "category_hint": "fun",
         "lang": "en",
-    },
-    {
-        "name": "果壳科学人",
-        "url": f"{RSSHUB_BASE}/guokr/scientific",
-        "category_hint": "fun",
-        "lang": "zh",
-    },
-    {
-        "name": "知乎日报",
-        "url": f"{RSSHUB_BASE}/zhihu/daily",
-        "category_hint": "fun",
-        "lang": "zh",
     },
 ]
 

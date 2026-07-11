@@ -1,129 +1,26 @@
 {
-  "collected_at": "2026-07-11T08:02:00.421349+08:00",
+  "collected_at": "2026-07-11T13:33:53.344316+08:00",
   "total": 55,
   "sources_ok": 4,
-  "sources_failed": 2,
+  "sources_failed": 3,
   "errors": [
     {
-      "source": "机器之心",
-      "url": "https://www.jiqizhixin.com/rss",
-      "error": "mismatched tag: line 11, column 242"
+      "source": "Hacker News",
+      "url": "https://hnrss.org/frontpage",
+      "error": "<urlopen error [Errno 104] Connection reset by peer>"
     },
     {
-      "source": "V2EX热门",
-      "url": "https://rsshub.app/v2ex/topics/hot",
+      "source": "BBC Sport",
+      "url": "http://feeds.bbci.co.uk/sport/rss.xml?edition=int",
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "source": "The Guardian Sport",
+      "url": "https://www.theguardian.com/sport/rss",
       "error": "<urlopen error timed out>"
     }
   ],
   "candidates": [
-    {
-      "title": "Einstein's relativity rules chemical bonds in heavy elements, new research shows",
-      "url": "https://www.brown.edu/news/2026-07-09/chemical-bonds-relativity",
-      "published": "2026-07-10T22:30:44+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://www.brown.edu/news/2026-07-09/chemical-bonds-relativity Comments URL: https://news.ycombinator.com/item?id=48866134 Points: 30 # Comments: 17",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "Moss (YC F25) Is Hiring",
-      "url": "https://www.ycombinator.com/companies/moss/jobs/52LnqLQ-software-engineer-sdk",
-      "published": "2026-07-10T21:11:18+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://www.ycombinator.com/companies/moss/jobs/52LnqLQ-software-engineer-sdk Comments URL: https://news.ycombinator.com/item?id=48865332 Points: 0 # Comments: 0",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "Prismata: Confining cross-site prompt injection in web agents",
-      "url": "https://arxiv.org/abs/2607.08147",
-      "published": "2026-07-10T21:03:38+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://arxiv.org/abs/2607.08147 Comments URL: https://news.ycombinator.com/item?id=48865238 Points: 9 # Comments: 0",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "Apple sues OpenAI, accuses ex-employees of stealing trade secrets",
-      "url": "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/",
-      "published": "2026-07-10T20:47:09+00:00",
-      "source": "Hacker News",
-      "summary_raw": "https://www.macrumors.com/2026/07/10/apple-sues-openai/ Comments URL: https://news.ycombinator.com/item?id=48865019 Points: 260 # Comments: 125",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "GhostLock, a stack-UAF that has existed in ALL Linux distributions for 15 years",
-      "url": "https://nebusec.ai/research/ionstack-part-2/",
-      "published": "2026-07-10T20:43:02+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://nebusec.ai/research/ionstack-part-2/ Comments URL: https://news.ycombinator.com/item?id=48864969 Points: 20 # Comments: 4",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "How the terrorist group Boko Haram uses frontier AI",
-      "url": "https://casp.ac/reports/ai-enabled-terrorism",
-      "published": "2026-07-10T18:49:26+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://casp.ac/reports/ai-enabled-terrorism Comments URL: https://news.ycombinator.com/item?id=48863707 Points: 161 # Comments: 132",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "GPT-5.6 Sol Ultra produces proof of the Cycle Double Cover Conjecture [pdf]",
-      "url": "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf",
-      "published": "2026-07-10T18:29:19+00:00",
-      "source": "Hacker News",
-      "summary_raw": "https://x.com/__eknight__/status/2075643450196971805, https://xcancel.com/__eknight__/status/2075643450196971805Prompt: https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98... Comments URL: https://news.ycombinator.com/item?id=48863490 Points: 295 # Comments: 251",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "New York City to to ban deceptive subscription practices",
-      "url": "https://www.theguardian.com/us-news/2026/jul/10/new-york-city-deceptive-subscriptions-ban",
-      "published": "2026-07-10T18:26:24+00:00",
-      "source": "Hacker News",
-      "summary_raw": "https://www.nyc.gov/mayors-office/news/2026/07/mayor-mamdani... Comments URL: https://news.ycombinator.com/item?id=48863464 Points: 351 # Comments: 188",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "War Atlas: An interactive cartography of every named war in human history",
-      "url": "https://waratlas.org",
-      "published": "2026-07-10T17:52:48+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://waratlas.org Comments URL: https://news.ycombinator.com/item?id=48863080 Points: 105 # Comments: 45",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "SpaceX wants to launch 100k more Starlink satellites for 100x the bandwidth",
-      "url": "https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/",
-      "published": "2026-07-10T17:51:07+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/ Comments URL: https://news.ycombinator.com/item?id=48863064 Points: 33 # Comments: 107",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "The tech of 'Terminator 2' – an oral history (2017)",
-      "url": "https://vfxblog.com/2017/08/23/the-tech-of-terminator-2-an-oral-history/",
-      "published": "2026-07-10T16:48:41+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://vfxblog.com/2017/08/23/the-tech-of-terminator-2-an-oral-history/ Comments URL: https://news.ycombinator.com/item?id=48862365 Points: 145 # Comments: 57",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "Snails' teeth beats spider silk as nature's strongest material (2015)",
-      "url": "https://www.smithsonianmag.com/smart-news/spider-silk-loses-top-spot-natures-strongest-material-snails-teeth-180954346/",
-      "published": "2026-07-10T16:37:52+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://www.smithsonianmag.com/smart-news/spider-silk-loses-top-spot-natures-strongest-material-snails-teeth-180954346/ Comments URL: https://news.ycombinator.com/item?id=48862252 Points: 147 # Comments: 119",
-      "category_hint": "tech",
-      "lang": "en"
-    },
     {
       "title": "现代环境让大脑不堪重负",
       "url": "https://www.solidot.org/story?sid=84803",
@@ -141,33 +38,6 @@
       "summary_raw": "新冠疫情加速了被称为安静辞职(quiet quitting)的现象，年轻一代的上班族将工作热情不高的态度视为某种形式的“辞职”，他们还想继续领工资，但仅完成最低工作要求，把精力放在工作之外的事情上。韩国嘉泉大学的研究人员调查了权威型领导如何推动中国中小企业员工的安静辞职现象（即躺平）。他们收集了 363 名中国中小企业员工数据。结果显示权威型领导通过增加工作倦怠间接导致躺平，而非自愿出勤通过放大倦怠加速躺平。研究有助于更深入地理解权威型领导带来的有害后果，阐明躺平在中国文化背景下的出现和演变。",
       "category_hint": "tech",
       "lang": "zh"
-    },
-    {
-      "title": "QuadRF can spot drones and see WiFi through my wall",
-      "url": "https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/",
-      "published": "2026-07-10T15:59:53+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/ Comments URL: https://news.ycombinator.com/item?id=48861717 Points: 404 # Comments: 162",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "A love letter to flashcards",
-      "url": "https://lesleylai.info/en/flashcards/",
-      "published": "2026-07-10T15:30:44+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://lesleylai.info/en/flashcards/ Comments URL: https://news.ycombinator.com/item?id=48861319 Points: 119 # Comments: 74",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "Computation as a universal and fundamental concept",
-      "url": "https://ergo.org/courses/computation-as-a-universal-and-fundamental-concept",
-      "published": "2026-07-10T15:23:42+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://ergo.org/courses/computation-as-a-universal-and-fundamental-concept Comments URL: https://news.ycombinator.com/item?id=48861213 Points: 74 # Comments: 64",
-      "category_hint": "tech",
-      "lang": "en"
     },
     {
       "title": "人形机器人成功完成远超手术",
@@ -377,6 +247,159 @@
       "lang": "zh"
     },
     {
+      "title": "The Hastings Museum Kool-Aid Exhibit in Hastings, Nebraska",
+      "url": "https://www.atlasobscura.com/places/hastings-museum-koolaid-exhibit",
+      "published": "2026-07-07T15:00:00-04:00",
+      "source": "Atlas Obscura",
+      "summary_raw": "Hastings, Nebraska is where Edwin Perkins invented Kool-Aid. To honor his delicious invention, the local museum has dedicated half of a floor to the drink’s history. Kool-Aid: Discover the Dream is a nostalgic and comprehensive collection of all things Kool-Aid. The only thing missing is a chance to…",
+      "category_hint": "fun",
+      "lang": "en"
+    },
+    {
+      "title": "These Five Fantastic Events Are Worth Traveling For",
+      "url": "https://www.atlasobscura.com/articles/these-five-fantastic-events-are-worth-traveling-for",
+      "published": "2026-07-01T18:00:00-04:00",
+      "source": "Atlas Obscura",
+      "summary_raw": "The United States is celebrating its 250th birthday this weekend, but there are loads more events to get excited about around the world this weekend. The International Festival of Life transforms Chicago into a living crossroads of Caribbean rhythms, African traditions, and global culture. Live perf…",
+      "category_hint": "fun",
+      "lang": "en"
+    },
+    {
+      "title": "Tomb of Dai Anga in Lahore, Pakistan",
+      "url": "https://www.atlasobscura.com/places/tomb-of-dai-anga",
+      "published": "2026-07-01T14:00:00-04:00",
+      "source": "Atlas Obscura",
+      "summary_raw": "Tucked away behind the bustling Grand Trunk Road and modern railway lines in Lahore lies the Tomb of Dai Anga, a brilliant but frequently overlooked piece of Mughal heritage. Built in 1671, this mausoleum belongs to Zeb-un-Nisa, popularly known as Dai Anga, who was the wet nurse of Emperor Shah Jaha…",
+      "category_hint": "fun",
+      "lang": "en"
+    },
+    {
+      "title": "HM Prison Maze (Long Kesh) in Lisburn, Northern Ireland",
+      "url": "https://www.atlasobscura.com/places/hm-prison-maze-long-kesh",
+      "published": "2026-07-01T12:00:00-04:00",
+      "source": "Atlas Obscura",
+      "summary_raw": "Opened in 1971 on the site of a former Royal Air Force base, few places in Northern Ireland tell the story of the Troubles as powerfully as the former HM Prison. Referred to as 'Maze Prison', 'Long Kesh' or 'the H-Blocks', it became one of the most infamous prisons in Europe and worldwide, housing b…",
+      "category_hint": "fun",
+      "lang": "en"
+    },
+    {
+      "title": "Vancouver Crow Nesting Zone in Burnaby, British Columbia",
+      "url": "https://www.atlasobscura.com/places/vancouver-crow-nesting-zone",
+      "published": "2026-07-01T10:00:00-04:00",
+      "source": "Atlas Obscura",
+      "summary_raw": "If you want a unique bird and crow experience then this is a must. In Vancouver all crows in what we call the Lower Mainland which extends far beyond Vancouver come to roost in the same five block section.This is along the Still Creek Drive between Willingdon Avenue and Gilmour Avenue. The crows wil…",
+      "category_hint": "fun",
+      "lang": "en"
+    },
+    {
+      "title": "Gates of the City or Portas da Cidade in Fall River, Massachusetts",
+      "url": "https://www.atlasobscura.com/places/gates-of-the-city-or-portas-da-cidade",
+      "published": "2026-06-30T16:00:00-04:00",
+      "source": "Atlas Obscura",
+      "summary_raw": "This amazing monument is 60 feet tall and and 30 feet wide. It is an exact replica of the Gates to the City monument in the city of Ponta Delgada on the island of San Miguel in the Azores Islands. Built in 2006, it commemorates the sister city relationship between Fall River and Ponta Delgada and ho…",
+      "category_hint": "fun",
+      "lang": "en"
+    },
+    {
+      "title": "The Looming Head of Jānis Zvīdra in Rēzekne, Latvia",
+      "url": "https://www.atlasobscura.com/places/the-looming-head-of-janis-zvidra",
+      "published": "2026-06-30T14:00:00-04:00",
+      "source": "Atlas Obscura",
+      "summary_raw": "If you are driving through the town of Rēzekne in Latvia's Latgale region, keep your eyes peeled near the train station junction. Right there on a grassy corner, you’ll encounter an incredibly stoic, oversized stone head staring intensely into the distance. This is the monument to Jānis Zvīdra, and …",
+      "category_hint": "fun",
+      "lang": "en"
+    },
+    {
+      "title": "Payson Grotto in Payson, Utah",
+      "url": "https://www.atlasobscura.com/places/payson-grotto",
+      "published": "2026-06-30T12:00:00-04:00",
+      "source": "Atlas Obscura",
+      "summary_raw": "Grotto Falls is a lovely little gem! A short easy hike leads to a little enclosure with a pool of water (shallow enough for most children) fed by a small waterfall. You can bring a swimsuit and wade while enjoying the lovely surrounding nature. It is also possible to hike to the top of the waterfall…",
+      "category_hint": "fun",
+      "lang": "en"
+    },
+    {
+      "title": "Podcast: The Black Surfmen Behind One of the Greatest Water Rescues Ever",
+      "url": "https://www.atlasobscura.com/articles/podcast-america-s-finest-lifesaving-station",
+      "published": "2026-06-30T11:22:00-04:00",
+      "source": "Atlas Obscura",
+      "summary_raw": "Listen and subscribe on Apple Podcasts, Spotify, and all major podcast apps. In this episode of The Atlas Obscura Podcast, we visit the Outer Banks of North Carolina and unearth some surprising history about a place known as the Graveyard of the Atlantic because of how many shipwrecks have occurred …",
+      "category_hint": "fun",
+      "lang": "en"
+    },
+    {
+      "title": "Visiting All 50 U.S. States",
+      "url": "https://www.atlasobscura.com/articles/visiting-all-50-u-s-states",
+      "published": "2026-06-29T09:09:00-04:00",
+      "source": "Atlas Obscura",
+      "summary_raw": "",
+      "category_hint": "fun",
+      "lang": "en"
+    },
+    {
+      "title": "This Illinois Tower Was Built Exclusively for Swiss Goats",
+      "url": "https://www.atlasobscura.com/articles/podcast-goat-tower",
+      "published": "2026-06-27T09:15:00-04:00",
+      "source": "Atlas Obscura",
+      "summary_raw": "Listen and subscribe on Apple Podcasts, Spotify, and all major podcast apps. Kelly McEvers: This episode is for the DIY nation. The people who see something they like and say, “I can make that.” People like Marcia and Dave Johnson. Their farm in Windsor, Illinois, is filled with DIY projects. The ho…",
+      "category_hint": "fun",
+      "lang": "en"
+    },
+    {
+      "title": "7 Essential Experiences in Southwest Louisiana",
+      "url": "https://www.atlasobscura.com/articles/essential-experiences-in-southwest-louisiana",
+      "published": "2026-06-26T12:02:00-04:00",
+      "source": "Atlas Obscura",
+      "summary_raw": "In Southwest Louisiana, culture isn’t something tucked away in museums; it spills out of dance halls, crawfish pots, and marshes. In this region, accordion music echoes through restaurants, migratory birds fill coastal skies, and recipes passed down for generations still define local identity. As Am…",
+      "category_hint": "fun",
+      "lang": "en"
+    },
+    {
+      "title": "The Santander to Alar del Rey  Railway  Line in Alar del Rey, Spain",
+      "url": "https://www.atlasobscura.com/places/the-santander-to-palencia-railway-line",
+      "published": "2026-06-26T12:00:00-04:00",
+      "source": "Atlas Obscura",
+      "summary_raw": "Whilst heritage railways are fairly frequent entries in Atlas Obscura rail lines that are still operating commercially are much rarer but not unknown. This, Iberian standard gauge, line is actually the the northern section, through the Cantabrian Mountains, in Spain, of a line which actually runs so…",
+      "category_hint": "fun",
+      "lang": "en"
+    },
+    {
+      "title": "Horror Studies Archive in Pittsburgh, Pennsylvania",
+      "url": "https://www.atlasobscura.com/places/horror-studies-archive",
+      "published": "2026-06-26T10:00:00-04:00",
+      "source": "Atlas Obscura",
+      "summary_raw": "What do you do when the family of famous and locally loved horror director George Romero offers to donate 100 boxes of manuscripts, letters, marketing and other rare materials to your university? First, obviously, you say yes, and then you set about creating the world's first and only center for the…",
+      "category_hint": "fun",
+      "lang": "en"
+    },
+    {
+      "title": "Doorless Shrine of Gogni in Gogni, Georgia",
+      "url": "https://www.atlasobscura.com/places/doorless-shrine-of-gogni",
+      "published": "2026-06-25T16:00:00-04:00",
+      "source": "Atlas Obscura",
+      "summary_raw": "Georgians call it \"Karugdebeli\" -- literally, \"Door-thrown-off\". For as long as anyone can remember, no building on this holy mountain has been able to survive with its doors intact, so all its shrines remain open to the public 24 hours a day. The first shrine dedicated to St. George is said to have…",
+      "category_hint": "fun",
+      "lang": "en"
+    },
+    {
+      "title": "9点1氪丨“国产存储第一股”长鑫科技公布承销团阵容；SK海力士登陆美股，上市首日大涨近13%；OpenAI推出ChatGPT智能体",
+      "url": "https://36kr.com/p/3890553690192384?f=rss",
+      "published": "2026-07-11 09:24:06  +0800",
+      "source": "36氪",
+      "summary_raw": "今日热点导览 “全球首款智能体手机”已备货8万至10万台？知情人士：假的 百亿私募数量达142家，再次刷新历史纪录 三星李在镕拟于7月底赴美会晤英伟达黄仁勋 德国大众拟大裁员，最高或裁减12万个岗位 OpenAI高管层再现变动，首席运营官因病离职 TOP3大新闻 长鑫科技，承销团阵容公布 长鑫科技IPO进入发行倒计时，这家“国产存储第一股”背后的承销团阵容也随之浮出水面。最新披露的招股意向书显示，长鑫科技预计7月16日发行。本次IPO中，中金公司、中信建投担任联席保荐机构及主承销商，国泰海通、国元证券、华泰联合、招商证券担任联席主承销商，合计6家券商组成承销团。 这是一支少见的“豪华承销团”。…",
+      "category_hint": "tech",
+      "lang": "zh"
+    },
+    {
+      "title": "36氪首发 | 三个月融三轮，上交大00后博士让具身智能仿生扑翼机器人理解并驾驭流体",
+      "url": "https://36kr.com/p/3889516712065799?f=rss",
+      "published": "2026-07-11 09:00:00  +0800",
+      "source": "36氪",
+      "summary_raw": "图源/企业 本文约2400字，建议阅读6分钟 作者丨欧雪 编辑丨袁斯来 硬氪获悉，具身智能仿生扑翼飞行机器人公司「鹰瞰智翼」已于近期完成数千万元A轮融资。本轮融资是公司在三个月内完成的第三轮融资，由元禾璞华领投，孚腾资本、厚雪资本跟投。资金将主要用于首款消费级产品的量产备货、市场拓展，团队扩充以及下一代具身智能扑翼机器人与流体仿真引擎的研发。 「鹰瞰智翼」2025年3月成立于深圳，是全球较早专注于具身智能扑翼机器人的公司之一。创始人陈昊为上海交通大学机械工程直博生，团队研发人员占比超75%。当前核心成员来自上海交通大学、大疆、华为、字节等高校及科技企业，兼具前沿科研、全球化市场和互联网运营经验…",
+      "category_hint": "tech",
+      "lang": "zh"
+    },
+    {
       "title": "氪星晚报｜德国大众拟大裁员，最高或裁减12万个岗位；高盛称套利交易当前处境为2000年以来最佳；百亿私募数量达142家，再次刷新历史纪录",
       "url": "https://36kr.com/p/3889551814916614?f=rss",
       "published": "2026-07-10 18:23:02  +0800",
@@ -399,7 +422,7 @@
       "url": "https://36kr.com/p/3888284244720131?f=rss",
       "published": "2026-07-10 11:26:25  +0800",
       "source": "36氪",
-      "summary_raw": "文 | 胡香赟 编辑 | 海若镜 36氪获悉，前传奇生物创始人/首席科学家范晓��创办的生物科技公司深圳湾岛细胞，近日完成1.4亿���民币A轮融资，本轮融资由松禾资本领投、东方富海跟投。 过去一年，AI像一束强光照亮着资本市场。光芒之外，很多赛道在阴影中被重新定价，创新药板块正是其中之一。潮水褪去，人群对新药好药的需求仍在，创业者们也正在更严苛的估值坐标系里，渡过科学、临床和商业化的一关又一关。 在中国细胞与基因治疗（CGT）领域，“范晓虎”这个名字很难被绕开。2022年3月，他主导的传奇生物细胞药物西达基奥仑赛在欧美上市，是目前全球唯一一款销售额逼近20亿美金的CAR-T细胞疗法。 然而，…",
+      "summary_raw": "文 | 胡香赟 编辑 | 海若镜 36氪获悉，前传奇生物创始人/首席科学家范晓虎创办的生物科技公司深圳湾岛细胞，近日完成1.4亿人民币A轮融资，本轮融资由松禾资本领投、东方富海跟投。 过去一年，AI像一束强光照亮着资本市场。光芒之外，很多赛道在阴影中被重新定价，创新药板块正是其中之一。潮水褪去，人群对新药好药的需求仍在，创业者们也正在更严苛的估值坐标系里，渡过科学、临床和商业化的一关又一关。 在中国细胞与基因治疗（CGT）领域，“范晓虎”这个名字很难被绕开。2022年3月，他主导的传奇生物细胞药物西达基奥仑赛在欧美上市，是目前全球唯一一款销售额逼近20亿美金的CAR-T细胞疗法。 然而，西达基…",
       "category_hint": "tech",
       "lang": "zh"
     },
@@ -449,65 +472,47 @@
       "lang": "zh"
     },
     {
-      "title": "2026·Under36丨绕过旧答案的一代人",
-      "url": "https://36kr.com/p/3888279614274048?f=rss",
-      "published": "2026-07-09 18:45:37  +0800",
+      "title": "我国海洋生产总值超11万亿元，多项指标全球领先",
+      "url": "https://36kr.com/newsflashes/3890753135196679?f=rss",
+      "published": "2026-07-11 13:31:36  +0800",
       "source": "36氪",
-      "summary_raw": "为什么颠覆性的突破总是由年轻人完成？ 因为他们还没有被旧范式驯服。 几乎所有开创一种新范式、完成根本性发明的人，都有某种相似之处：他们要么足够年轻，要么刚刚进入那个即将被他们改写的领域。 1962年，科学哲学家托马斯·库恩在《科学革命的结构》中留下了这个观察。他当时谈论的是物理科学：哥白尼提出日心说时不到四十岁，牛顿发明微积分时二十三岁，爱因斯坦发表狭义相对论时二十六岁。 而库恩试图回答的问题是，为什么颠覆性的突破总是由年轻人完成？答案是简单而残酷的，因为他们还没有被旧范式驯服。 在整理完2026年度Under 36入选者的资料之后，我们很难不想起这个判断：新的范式不靠说服旧的人，而是靠一代新…",
+      "summary_raw": "今天是第22个中国航海日，今年航海日活动的主题是“数智赋能，领航未来”。活动组委会将在北京首次以线上线下方式举办主场活动。今天同时发布的《2026年中国航海日公告》显示，我国已经成为名副其实的航运大国、造船大国、海洋大国。国际海运量占全球比重近三分之一，海运航线与服务网络覆盖全球主要贸易国家和地区，全球货物吞吐量和集装箱吞吐量前10位的港口中分别占8席和6席。我国造船三大指标国际市场份额连续16年保持全球领先。全国海洋生产总值超过11万亿元。（央视新闻）",
       "category_hint": "tech",
       "lang": "zh"
     },
     {
-      "title": "氪星晚报｜大众汽车管理层考虑2031年起关闭德国部分工厂；消息称三星晶圆代工部分制程涨价；国家超算互联网核心节点正式上线",
-      "url": "https://36kr.com/p/3888230589152008?f=rss",
-      "published": "2026-07-09 17:53:58  +0800",
+      "title": "稳定币发行商Circle获银行经营牌照",
+      "url": "https://36kr.com/newsflashes/3890740672838404?f=rss",
+      "published": "2026-07-11 13:10:57  +0800",
       "source": "36氪",
-      "summary_raw": "大公司： LG Innotek将在越南海防投资10亿美元新建半导体基板厂 据6月8日声明，LG集团子公司、韩国电子元件制造商LG Innotek已获得越南海防经济区管理委员会（HEZA）颁发的投资登记证，将投资10亿美元在海防自由贸易区内的DEEP C海防2工业园新建半导体基板制造基地。该厂预计占地约33公顷，计划今年三季度动工，预计明年四季度完工。 Waymo未来几周将在美国四个新城市推出无人驾驶出租车服务 Waymo周三宣布，将在未来几周内陆续在美国四个新城市推出无人驾驶出租车服务，进一步巩固其在本土市场对特斯拉和Zoox的领先优势。新增服务城市分别为圣迭戈、拉斯维加斯、佛罗里达州坦帕以及…",
+      "summary_raw": "Circle公司宣布，美国货币监理署（OCC）于周五批准其设立信托银行。此次获批后，Circle可直接为旗下受监管稳定币管理储备资产，其核心产品USDC流通规模已超730亿美元。这家新银行将命名为Circle国民信托银行。在此之前，Circle必须依靠第三方银行与托管机构，存放支撑USDC发行的现金与美债资产。这份牌照并不允许Circle开展吸收存款、发放贷款的商业银行业务。（新浪财经）",
       "category_hint": "tech",
       "lang": "zh"
     },
     {
-      "title": "热门中概股美股盘前普涨，阿里巴巴涨超2%",
-      "url": "https://36kr.com/newsflashes/3889827679402752?f=rss",
-      "published": "2026-07-10 20:57:20  +0800",
+      "title": "欧洲央行的Moulin认为人工智能可能加剧通胀波动",
+      "url": "https://36kr.com/newsflashes/3890739624540680?f=rss",
+      "published": "2026-07-11 12:52:52  +0800",
       "source": "36氪",
-      "summary_raw": "36氪获悉，热门中概股美股盘前普涨，截至发稿，阿里巴巴、蔚来、理想汽车涨超2%，京东、小鹏集团涨超1%，百度涨0.46%，拼多多涨0.37%，哔哩哔哩涨0.28%。",
+      "summary_raw": "欧洲央行管委Emmanuel Moulin表示，人工智能对通胀的影响难以预测，而且可能导致价格波动加剧。“由于人工智能同时作用于供需两方面的变量，因此对通胀的总体影响尤为难以预测，”Moulin在Investir刊登的评论中表示。“此外，其影响可能不仅体现在通胀水平，还可能体现在通胀的波动。”这位法国央行行长表示，由于资本支出增加，人工智能短期内可能具有通胀效应，但随着生产率提升，后续则可能抑制通胀。（财联社）",
       "category_hint": "tech",
       "lang": "zh"
     },
     {
-      "title": "美股大型科技股盘前涨跌不一，Meta涨超4%",
-      "url": "https://36kr.com/newsflashes/3889825362639365?f=rss",
-      "published": "2026-07-10 20:54:58  +0800",
+      "title": "2026年世界知识产权组织全球奖揭晓，中国获奖企业数量居首",
+      "url": "https://36kr.com/newsflashes/3890730611374850?f=rss",
+      "published": "2026-07-11 12:28:45  +0800",
       "source": "36氪",
-      "summary_raw": "36氪获悉，美股大型科技股盘前涨跌不一，截至发稿，Meta涨超4%，微软涨近1%，亚马逊涨0.45%，特斯拉跌0.38%，苹果跌0.53%，英伟达跌0.5%，谷歌跌0.38%。",
+      "summary_raw": "记者从国家知识产权局了解到，当地时间7月10日，世界知识产权组织（WIPO）第68届成员国大会期间，2026年WIPO全球奖颁奖典礼于瑞士日内瓦举行。本届评选中，我国共有3家企业荣获WIPO全球奖，获奖数量居全球首位，分别来自环境和健康两大领域。（央视新闻）",
       "category_hint": "tech",
       "lang": "zh"
     },
     {
-      "title": "上交所：本周对恒尚节能、有研硅、中船特气等异常波动股票以及财通福鑫LOF等溢价较高的基金进行重点监控",
-      "url": "https://36kr.com/newsflashes/3889816222579456?f=rss",
-      "published": "2026-07-10 20:45:40  +0800",
+      "title": "OpenAI：对其他公司的商业秘密不感兴趣，仍专注于打造创新技术",
+      "url": "https://36kr.com/newsflashes/3890734361377539?f=rss",
+      "published": "2026-07-11 12:19:39  +0800",
       "source": "36氪",
-      "summary_raw": "36氪获悉，上交所公告，2026年7月6日至2026年7月10日，上交所对277起拉抬打压、虚假申报等证券异常交易行为采取了自律监管措施，对恒尚节能、有研硅、中船特气等异常波动股票以及财通福鑫LOF等溢价较高的基金进行重点监控，对23起上市公司重大事项等进行专项核查，向证监会上报涉嫌违法违规案件线索1起。",
-      "category_hint": "tech",
-      "lang": "zh"
-    },
-    {
-      "title": "深交所：本周共对197起证券异常交易行为采取了自律监管措施",
-      "url": "https://36kr.com/newsflashes/3889815436311296?f=rss",
-      "published": "2026-07-10 20:44:52  +0800",
-      "source": "36氪",
-      "summary_raw": "36氪获悉，深交所公告，2026年7月6日至7月10日，本所共对197起证券异常交易行为采取了自律监管措施，涉及盘中拉抬打压、虚假申报等异常交易情形；共对5起上市公司重大事项进行核查，并上报证监会1起涉嫌违法违规案件线索。",
-      "category_hint": "tech",
-      "lang": "zh"
-    },
-    {
-      "title": "SK海力士本周五登陆纳斯达克，募资265亿美元跻身大型IPO",
-      "url": "https://36kr.com/newsflashes/3889804779731457?f=rss",
-      "published": "2026-07-10 20:44:11  +0800",
-      "source": "36氪",
-      "summary_raw": "韩国芯片巨头SK海力士将于本周五登陆科技股云集的纳斯达克交易所，此举将为其打通一条强力全新融资渠道，方便全球投资者布局高速增长的人工智能基础设施赛道。这家全球第二大存储芯片厂商计划通过在纳斯达克发行美国存托凭证（ADR）募资约40万亿韩元（折合265亿美元）。本次发行共计1.779亿份美国存托凭证，发行价定为每份149美元，1份ADR对应其在韩国首尔交易所上市普通股的十分之一。（新浪财经）",
+      "summary_raw": "OpenAI回应苹果就硬件商业机密提起的诉讼，称对其他公司的商业秘密不感兴趣，OpenAI仍专注于打造创新技术。（财联社）",
       "category_hint": "tech",
       "lang": "zh"
     }
