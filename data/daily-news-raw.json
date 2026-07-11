@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-07-10T18:34:47.870546+08:00",
+  "collected_at": "2026-07-11T08:02:00.421349+08:00",
   "total": 55,
   "sources_ok": 4,
   "sources_failed": 2,
@@ -12,10 +12,199 @@
     {
       "source": "V2EX热门",
       "url": "https://rsshub.app/v2ex/topics/hot",
-      "error": "HTTP Error 403: Forbidden"
+      "error": "<urlopen error timed out>"
     }
   ],
   "candidates": [
+    {
+      "title": "Einstein's relativity rules chemical bonds in heavy elements, new research shows",
+      "url": "https://www.brown.edu/news/2026-07-09/chemical-bonds-relativity",
+      "published": "2026-07-10T22:30:44+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Article URL: https://www.brown.edu/news/2026-07-09/chemical-bonds-relativity Comments URL: https://news.ycombinator.com/item?id=48866134 Points: 30 # Comments: 17",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "Moss (YC F25) Is Hiring",
+      "url": "https://www.ycombinator.com/companies/moss/jobs/52LnqLQ-software-engineer-sdk",
+      "published": "2026-07-10T21:11:18+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Article URL: https://www.ycombinator.com/companies/moss/jobs/52LnqLQ-software-engineer-sdk Comments URL: https://news.ycombinator.com/item?id=48865332 Points: 0 # Comments: 0",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "Prismata: Confining cross-site prompt injection in web agents",
+      "url": "https://arxiv.org/abs/2607.08147",
+      "published": "2026-07-10T21:03:38+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Article URL: https://arxiv.org/abs/2607.08147 Comments URL: https://news.ycombinator.com/item?id=48865238 Points: 9 # Comments: 0",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "Apple sues OpenAI, accuses ex-employees of stealing trade secrets",
+      "url": "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/",
+      "published": "2026-07-10T20:47:09+00:00",
+      "source": "Hacker News",
+      "summary_raw": "https://www.macrumors.com/2026/07/10/apple-sues-openai/ Comments URL: https://news.ycombinator.com/item?id=48865019 Points: 260 # Comments: 125",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "GhostLock, a stack-UAF that has existed in ALL Linux distributions for 15 years",
+      "url": "https://nebusec.ai/research/ionstack-part-2/",
+      "published": "2026-07-10T20:43:02+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Article URL: https://nebusec.ai/research/ionstack-part-2/ Comments URL: https://news.ycombinator.com/item?id=48864969 Points: 20 # Comments: 4",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "How the terrorist group Boko Haram uses frontier AI",
+      "url": "https://casp.ac/reports/ai-enabled-terrorism",
+      "published": "2026-07-10T18:49:26+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Article URL: https://casp.ac/reports/ai-enabled-terrorism Comments URL: https://news.ycombinator.com/item?id=48863707 Points: 161 # Comments: 132",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "GPT-5.6 Sol Ultra produces proof of the Cycle Double Cover Conjecture [pdf]",
+      "url": "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf",
+      "published": "2026-07-10T18:29:19+00:00",
+      "source": "Hacker News",
+      "summary_raw": "https://x.com/__eknight__/status/2075643450196971805, https://xcancel.com/__eknight__/status/2075643450196971805Prompt: https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98... Comments URL: https://news.ycombinator.com/item?id=48863490 Points: 295 # Comments: 251",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "New York City to to ban deceptive subscription practices",
+      "url": "https://www.theguardian.com/us-news/2026/jul/10/new-york-city-deceptive-subscriptions-ban",
+      "published": "2026-07-10T18:26:24+00:00",
+      "source": "Hacker News",
+      "summary_raw": "https://www.nyc.gov/mayors-office/news/2026/07/mayor-mamdani... Comments URL: https://news.ycombinator.com/item?id=48863464 Points: 351 # Comments: 188",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "War Atlas: An interactive cartography of every named war in human history",
+      "url": "https://waratlas.org",
+      "published": "2026-07-10T17:52:48+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Article URL: https://waratlas.org Comments URL: https://news.ycombinator.com/item?id=48863080 Points: 105 # Comments: 45",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "SpaceX wants to launch 100k more Starlink satellites for 100x the bandwidth",
+      "url": "https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/",
+      "published": "2026-07-10T17:51:07+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Article URL: https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/ Comments URL: https://news.ycombinator.com/item?id=48863064 Points: 33 # Comments: 107",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "The tech of 'Terminator 2' – an oral history (2017)",
+      "url": "https://vfxblog.com/2017/08/23/the-tech-of-terminator-2-an-oral-history/",
+      "published": "2026-07-10T16:48:41+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Article URL: https://vfxblog.com/2017/08/23/the-tech-of-terminator-2-an-oral-history/ Comments URL: https://news.ycombinator.com/item?id=48862365 Points: 145 # Comments: 57",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "Snails' teeth beats spider silk as nature's strongest material (2015)",
+      "url": "https://www.smithsonianmag.com/smart-news/spider-silk-loses-top-spot-natures-strongest-material-snails-teeth-180954346/",
+      "published": "2026-07-10T16:37:52+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Article URL: https://www.smithsonianmag.com/smart-news/spider-silk-loses-top-spot-natures-strongest-material-snails-teeth-180954346/ Comments URL: https://news.ycombinator.com/item?id=48862252 Points: 147 # Comments: 119",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "现代环境让大脑不堪重负",
+      "url": "https://www.solidot.org/story?sid=84803",
+      "published": "2026-07-11T00:25:26+08:00",
+      "source": "Solidot",
+      "summary_raw": "根据一项新研究，具有特定设计元素的人造环境可能会给大脑带来过度负担，导致视觉不适和压力。视觉不适是指人在看到某些图像或环境时所体验到的不适感，可能表现为眼睛疲劳、偏头痛、阅读困难，或者在他人毫无问题的情况下感到不堪重负。条纹图案、凌乱的内饰、高对比度颜色、闪烁的灯光，甚至是超市中密集的货架，都可能导致视觉不适，这有助于解释为何某些空间会让人感到不舒服。现代人造环境与视觉系统在演化过程中高效处理的自然场景存在显著差异。研究还发现，现代环境对敏感人群影响更大，对感官输入更敏感的人群（如偏头痛、自闭症、注意力缺陷多动障碍、阅读障碍或癫痫患者）可能受到的影响更强烈。",
+      "category_hint": "tech",
+      "lang": "zh"
+    },
+    {
+      "title": "权威型领导人推动员工安静辞职",
+      "url": "https://www.solidot.org/story?sid=84802",
+      "published": "2026-07-11T00:00:32+08:00",
+      "source": "Solidot",
+      "summary_raw": "新冠疫情加速了被称为安静辞职(quiet quitting)的现象，年轻一代的上班族将工作热情不高的态度视为某种形式的“辞职”，他们还想继续领工资，但仅完成最低工作要求，把精力放在工作之外的事情上。韩国嘉泉大学的研究人员调查了权威型领导如何推动中国中小企业员工的安静辞职现象（即躺平）。他们收集了 363 名中国中小企业员工数据。结果显示权威型领导通过增加工作倦怠间接导致躺平，而非自愿出勤通过放大倦怠加速躺平。研究有助于更深入地理解权威型领导带来的有害后果，阐明躺平在中国文化背景下的出现和演变。",
+      "category_hint": "tech",
+      "lang": "zh"
+    },
+    {
+      "title": "QuadRF can spot drones and see WiFi through my wall",
+      "url": "https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/",
+      "published": "2026-07-10T15:59:53+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Article URL: https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/ Comments URL: https://news.ycombinator.com/item?id=48861717 Points: 404 # Comments: 162",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "A love letter to flashcards",
+      "url": "https://lesleylai.info/en/flashcards/",
+      "published": "2026-07-10T15:30:44+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Article URL: https://lesleylai.info/en/flashcards/ Comments URL: https://news.ycombinator.com/item?id=48861319 Points: 119 # Comments: 74",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "Computation as a universal and fundamental concept",
+      "url": "https://ergo.org/courses/computation-as-a-universal-and-fundamental-concept",
+      "published": "2026-07-10T15:23:42+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Article URL: https://ergo.org/courses/computation-as-a-universal-and-fundamental-concept Comments URL: https://news.ycombinator.com/item?id=48861213 Points: 74 # Comments: 64",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "人形机器人成功完成远超手术",
+      "url": "https://www.solidot.org/story?sid=84801",
+      "published": "2026-07-10T23:10:19+08:00",
+      "source": "Solidot",
+      "summary_raw": "根据发表在《自然》期刊上的一项研究，人形机器人成功完成切除活体动物胆囊的手术。人形机器人并不具有自主能力，它们并不会取代医生，而是由外科医生远超操作。远程操控的人形机器人为活猪完成两例微创胆囊切除手术。如果该方法被证实适用于临床，外科医生就可以利用人形机器人，在资源有限、无法安装专业且昂贵手术机器人的小型医院和诊所远程开展机器人辅助手术。人形机器人相比专业手术机器人更便宜，占用的空间更小，而且易于部署，能部署到从偏远地区到战场甚至太空。研究人员利用宇树科技的 G1 人形机器人。最便宜的 G1 基础型号起售价 13,500 美元，配置灵活机械手以及运费之后费用会超过 6.7 万美元。相比下 In…",
+      "category_hint": "tech",
+      "lang": "zh"
+    },
+    {
+      "title": "长征十号乙火箭成功回收",
+      "url": "https://www.solidot.org/story?sid=84800",
+      "published": "2026-07-10T18:27:34+08:00",
+      "source": "Solidot",
+      "summary_raw": "长征十号乙运载火箭于 7 月 10 日 12 时 15 分在海南商业航天发射场发射升空，火箭一二级分离约 6 分钟后，一子级垂直返回，在海上回收平台通过网系捕获方式成功回收。此次回收的一子级预计将在今年年底前完成复用飞行。长征十号乙运载火箭由中国航天科技集团一院抓总研制，是 5 米直径两级串联构型的大型液体运载火箭。火箭芯一级沿用长征十号甲运载火箭一子级状态，采用液氧煤油推进剂，芯二级采用液氧甲烷推进剂；全箭起飞推力约 890 吨，起飞重量约 760 吨；首飞箭全箭长度约 63 米，重复使用状态下近地轨道运载能力 16 吨。该火箭可满足低轨卫星互联网星座部署、大型商业卫星发射等各类任务需求，复…",
+      "category_hint": "tech",
+      "lang": "zh"
+    },
+    {
+      "title": "本周看什么 | 最近值得一看的 8 部作品",
+      "url": "https://sspai.com/post/112169",
+      "published": "2026-07-10T17:44:19+08:00",
+      "source": "少数派",
+      "summary_raw": "📅本周新预告《恐怖游轮》内地定档7月17日7月8日，电影《恐怖游轮》发布了中国内地定档预告，将于7月17日上映。克里斯托弗·史密斯执导、编剧，梅利莎·乔治主演，单亲母亲杰西和一帮朋友乘游艇出海游玩，但 ...查看全文",
+      "category_hint": "tech",
+      "lang": "zh"
+    },
+    {
+      "title": "OpenRouter 上近五成美国公司使用中国 AI 模型",
+      "url": "https://www.solidot.org/story?sid=84799",
+      "published": "2026-07-10T17:32:45+08:00",
+      "source": "Solidot",
+      "summary_raw": "OpenRouter 的数据显示：美国企业每周调用中国 AI 的占比按代表数据处理量的“词元”统计，自 2 月起突破30%，峰值达 46%。相比下 2025 年上半年仅 4% 左右。背景是美国本土 AI 使用成本升高。美国OpenAI 及美国 Anthropic 等高端模型的性能不断提高，可自动处理长时间、高复杂度的任务。但随着企业在内部业务、面向客户服务中广泛使用 AI，词元的消耗量增加，使用成本增加。OpenRouter 平台拥有 800 万用户，以工程师群体为主，每输出 100 万词元（约对应 70 万英文词汇）的收费标准方面，Anthropic 的“Claude Opus 4.7”收费…",
+      "category_hint": "tech",
+      "lang": "zh"
+    },
     {
       "title": "LinkedIn 和 X 上四分之一的长文是 AI 撰写的",
       "url": "https://www.solidot.org/story?sid=84798",
@@ -26,15 +215,6 @@
       "lang": "zh"
     },
     {
-      "title": "In Emacs, Everything Looks Like a Service",
-      "url": "http://yummymelon.com/devnull/in-emacs-everything-looks-like-a-service.html",
-      "published": "2026-07-10T08:21:10+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: http://yummymelon.com/devnull/in-emacs-everything-looks-like-a-service.html Comments URL: https://news.ycombinator.com/item?id=48857230 Points: 17 # Comments: 0",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
       "title": "Google 搜索量在世界杯期间创下纪录",
       "url": "https://www.solidot.org/story?sid=84797",
       "published": "2026-07-10T15:53:16+08:00",
@@ -42,15 +222,6 @@
       "summary_raw": "Google 表示世界杯期间其搜索量创下历史纪录，每秒查询量的峰值是在阿根廷与埃及比赛中间射入制胜球之后。 这一里程碑式的成就正值 Google 试图证明其传统搜索引擎在 AI 聊天机器人日益普及的时代仍能保持其重要性之际。Google 仍然占据着九成的搜索市场份额，其股价过去一年翻了一番多，第一季度营收增速是自 2022 年以来最快的。Google 表示赛后搜索量最高的查询是“阿根廷 vs 埃及（argentina vs egypt）”。在全球范围内，用户还搜索了“阿根廷 vs 哥伦比亚”和“梅西在世界杯上进了多少球”，以及“比赛中一名球员撞击其他球员叫什么”和“这是梅西的最后一届世界杯吗”…",
       "category_hint": "tech",
       "lang": "zh"
-    },
-    {
-      "title": "AI-generated videos to maximally drive a target brain region",
-      "url": "https://nevo-project.epfl.ch/",
-      "published": "2026-07-10T07:39:11+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://nevo-project.epfl.ch/ Comments URL: https://news.ycombinator.com/item?id=48856904 Points: 60 # Comments: 55",
-      "category_hint": "tech",
-      "lang": "en"
     },
     {
       "title": "美国国会调查美国公司使用中国 AI 模型",
@@ -80,15 +251,6 @@
       "lang": "zh"
     },
     {
-      "title": "Build your own vulnerability harness",
-      "url": "https://blog.cloudflare.com/build-your-own-vulnerability-harness/",
-      "published": "2026-07-10T01:28:43+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://blog.cloudflare.com/build-your-own-vulnerability-harness/ Comments URL: https://news.ycombinator.com/item?id=48854681 Points: 47 # Comments: 20",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
       "title": "派早报：蔚来 ES8 大五座版正式上市等",
       "url": "https://sspai.com/post/112143",
       "published": "2026-07-10T08:56:18+08:00",
@@ -96,60 +258,6 @@
       "summary_raw": "OpenAI 发布 GPT-5.6 系列模型等，SpaceXAI 发布编程智能体模型 Grok 4.5。查看全文",
       "category_hint": "tech",
       "lang": "zh"
-    },
-    {
-      "title": "Parental device use and the adolescent-caregiver attachment bond",
-      "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1766665/full",
-      "published": "2026-07-10T00:20:28+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1766665/full Comments URL: https://news.ycombinator.com/item?id=48854247 Points: 128 # Comments: 107",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "Why American ambulance rides are so expensive",
-      "url": "https://davidoks.blog/p/why-american-ambulance-rides-are",
-      "published": "2026-07-09T22:15:56+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://davidoks.blog/p/why-american-ambulance-rides-are Comments URL: https://news.ycombinator.com/item?id=48853091 Points: 218 # Comments: 288",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "Building a real-time AI tutor for 5-year-olds",
-      "url": "https://www.ello.com/blog/teaching-a-child-in-1000-ms",
-      "published": "2026-07-09T20:51:06+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Hey HN! We've spent the good part of this past year building an AI tutor that teaches kids ages 4-9 reading, math, ESL and more. Getting an AI tutor to effectively teach a child turns out to be a really hard technical challenge, this took getting the underlying architecture right.Our tutor steers th…",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "Interview with Mitchell Hashimoto about Ghostty and Zig",
-      "url": "https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/",
-      "published": "2026-07-09T17:17:16+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/ Comments URL: https://news.ycombinator.com/item?id=48849292 Points: 260 # Comments: 119",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "GPT-5.6",
-      "url": "https://openai.com/index/gpt-5-6/",
-      "published": "2026-07-09T17:04:14+00:00",
-      "source": "Hacker News",
-      "summary_raw": "https://deploymentsafety.openai.com/gpt-5-6/gpt-5-6.pdfhttps://developers.openai.com/api/docs/guides/latest-modelhttps://x.com/levie/status/2075287443411222628, https://xcancel.com/levie/status/2075287443411222628 Comments URL: https://news.ycombinator.com/item?id=48849066 Points: 1291 # Comments: 9…",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "Wildcard (YC W25) Is Hiring a Founding Engineer",
-      "url": "https://www.ycombinator.com/companies/wildcard/jobs/ZSLVaaU-founding-engineer",
-      "published": "2026-07-09T17:00:37+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://www.ycombinator.com/companies/wildcard/jobs/ZSLVaaU-founding-engineer Comments URL: https://news.ycombinator.com/item?id=48849011 Points: 0 # Comments: 0",
-      "category_hint": "tech",
-      "lang": "en"
     },
     {
       "title": "父母的手机上瘾影响与子女的关系",
@@ -170,33 +278,6 @@
       "lang": "zh"
     },
     {
-      "title": "Launch HN: Context.dev (YC S26) – API to get structured data from any website",
-      "url": "https://www.context.dev",
-      "published": "2026-07-09T15:28:39+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Hi Hacker News, I’m Yahia. I built Context.dev (https://www.context.dev/) to make it really easy to integrate web data into your products and agents.Here’s a demo video: https://www.tella.tv/video/build-faster-with-context-dev-api...Since it’s an API, here are the docs: https://docs.context.dev/quic…",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "Hy3",
-      "url": "https://hy.tencent.com/research/hy3",
-      "published": "2026-07-09T15:27:48+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://hy.tencent.com/research/hy3 Comments URL: https://news.ycombinator.com/item?id=48847552 Points: 479 # Comments: 97",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "A possible future for Damn Interesting",
-      "url": "https://www.damninteresting.com/a-possible-future/",
-      "published": "2026-07-09T15:25:25+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://www.damninteresting.com/a-possible-future/ Comments URL: https://news.ycombinator.com/item?id=48847511 Points: 284 # Comments: 37",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
       "title": "中国使用无人机救助被洪灾困住的灾民",
       "url": "https://www.solidot.org/story?sid=84793",
       "published": "2026-07-09T23:02:52+08:00",
@@ -206,15 +287,6 @@
       "lang": "zh"
     },
     {
-      "title": "TLS certificates for internal services done right",
-      "url": "https://tuxnet.dev/posts/tls-for-internal-services/",
-      "published": "2026-07-09T14:57:02+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://tuxnet.dev/posts/tls-for-internal-services/ Comments URL: https://news.ycombinator.com/item?id=48846995 Points: 154 # Comments: 112",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
       "title": "美国部分地区居民多达三成对红肉过敏",
       "url": "https://www.solidot.org/story?sid=84792",
       "published": "2026-07-09T22:36:58+08:00",
@@ -222,24 +294,6 @@
       "summary_raw": "根据发表在《Morbidity and Mortality Weekly Report》期刊上的一项研究，美国部分地区居民多达三成携带导致红肉过敏的抗体。这一比例远超此前的预计，意味着红肉过敏的美国人比以前认为的多得多。该过敏反应被称为α-半乳糖综合征（alpha-gal syndrome），其特点是发作缓慢，通常在餐后 2-6 小时之间出现，使得很难将过敏反应与食物联系起来。症状包括荨麻疹、恶心、呕吐、腹部绞痛、腹泻，或严重过敏反应如呼吸困难、喉咙紧缩、舌头或嘴唇肿胀、头晕、脉搏微弱和血压下降等迹象。研究人员分析了美国 10 个州 3000 份献血样本，结果显示田纳西州、阿肯色州等五个州的抗…",
       "category_hint": "tech",
       "lang": "zh"
-    },
-    {
-      "title": "No leap second will be introduced at the end of December 2026",
-      "url": "https://datacenter.iers.org/data/latestVersion/bulletinC.txt",
-      "published": "2026-07-09T14:16:34+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://datacenter.iers.org/data/latestVersion/bulletinC.txt Comments URL: https://news.ycombinator.com/item?id=48846281 Points: 281 # Comments: 218",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "Muse Spark 1.1",
-      "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/",
-      "published": "2026-07-09T14:10:22+00:00",
-      "source": "Hacker News",
-      "summary_raw": "https://ai.meta.com/static-resource/muse-spark-1-1-evaluatio... [pdf]https://developer.meta.com/ai/resources/blog/build-with-muse...https://www.bloomberg.com/news/articles/2026-07-09/meta-star..., https://archive.is/3ccKa Comments URL: https://news.ycombinator.com/item?id=48846184 Points: 375 # Comm…",
-      "category_hint": "tech",
-      "lang": "en"
     },
     {
       "title": "Euclid 望远镜发现已知最遥远的类星体",
@@ -287,15 +341,6 @@
       "lang": "zh"
     },
     {
-      "title": "Cinnamon 下个版本将支持 Wayland",
-      "url": "https://www.solidot.org/story?sid=84788",
-      "published": "2026-07-09T13:59:39+08:00",
-      "source": "Solidot",
-      "summary_raw": "Linux Mint 发行版项目开发的 Cinnamon 是少数仍然不支持 Wayland 只兼容 X11 的桌面环境。但这种情况即将发生改变。Linux Mint 项目宣布，他们在支持 Wayland 上投入了大量精力，如今 Wayland 支持已经相当稳定，足以媲美 X11，因此 Wayland 支持不再被视为实验性，下个版本的 Cinnamon 将同时支持 Wayland 和 X11。Cinnamon 的下一个版本 v6.8 将包含在计划于圣诞节发布的 Linux Mint 新版本中。",
-      "category_hint": "tech",
-      "lang": "zh"
-    },
-    {
       "title": "角落新声｜在陌生的城市里，寻找属于自己的角落",
       "url": "https://sspai.com/post/111983",
       "published": "2026-07-09T10:17:44+08:00",
@@ -314,42 +359,6 @@
       "lang": "zh"
     },
     {
-      "title": "美国成年人肥胖率突破四成",
-      "url": "https://www.solidot.org/story?sid=84787",
-      "published": "2026-07-08T23:57:57+08:00",
-      "source": "Solidot",
-      "summary_raw": "研究人员分析了 1999-2023 年近 8700 名美国居民的健康数据，这些居民包括 20 岁以下的青少年和 20 岁以上的成年人。结果显示：成年人的肥胖率从 30% 增至 41%，重度肥胖率从 5% 增至 10%，腹部脂肪堆积过多的腹部肥胖率从 48% 增至 61%；青少年的总体肥胖率上升了 30%，重度肥胖率上升 50%，腹部肥胖率增长了三倍。分析还发现，肥胖率存在​​性别差异：女性重度肥胖率（13%）和腹部肥胖率（70%）都高于男性（分别为 7% 和 51%）。研究人员指出，这种差异可能是由于女性一生中激素水平的变化比男性更为显著。此外，非拉丁裔黑人的肥胖率高于其他人群。",
-      "category_hint": "tech",
-      "lang": "zh"
-    },
-    {
-      "title": "德国华人性侵案成员被判 5 年监禁",
-      "url": "https://www.solidot.org/story?sid=84786",
-      "published": "2026-07-08T23:30:26+08:00",
-      "source": "Solidot",
-      "summary_raw": "柏林地方法院周三裁定一名 32 岁的原籍中国的男子犯有协助实施三起严重强奸及严重性胁迫罪，并判处该男子总计五年监禁。这名男子是一个交流有关强奸被麻醉女性信息的聊天群组的八名成员之一。该被告（现已获得医学博士学位）在群组内多次就如何麻醉女性提供医学建议。2024 年 1 月 7 日，一名女性在美因河畔法兰克福遭另一名涉案男子强奸。在此前一天，被告在明知对方有强奸意图的情况下，提供了关于麻醉的具体建议，而该男子随后采纳了这些建议。法庭还认定被告在 2020 年和 2021 年期间曾三次性虐待其未婚妻。这些行为发生在北京的一家酒店客房内，受害女性在这些事件中同样处于被麻醉状态。主审法官将这些罪行定性…",
-      "category_hint": "tech",
-      "lang": "zh"
-    },
-    {
-      "title": "Waymo 员工看到青少年乘客玩玩具枪后报警",
-      "url": "https://www.solidot.org/story?sid=84785",
-      "published": "2026-07-08T19:32:27+08:00",
-      "source": "Solidot",
-      "summary_raw": "两名放暑假的 15 岁少年体会到了 Waymo 在时刻监视你的含义。他们在车内喝酒，用玩具枪对着其它汽车射水凝胶珠。一名 Waymo 员工当时正远程监控着这辆车，在看到车内有疑似枪支以及正在开枪之后，骗两名青少年说 Waymo 出租车出现了机械故障，需要停车，同时致电警方说有人在开枪。汽车停在了一家购物中心的停车场，当时五名警察已在那里等候搜查。搜查的结果是他们玩的是玩具枪，子弹是水凝胶珠。两名乘客被拘留后被释放交由其父母监护。检方正在审查可能的指控，包括未成年饮酒和从事威胁性行为。",
-      "category_hint": "tech",
-      "lang": "zh"
-    },
-    {
-      "title": "大多数 AI slop 应用会很快停止维护和抛弃",
-      "url": "https://www.solidot.org/story?sid=84784",
-      "published": "2026-07-08T18:25:41+08:00",
-      "source": "Solidot",
-      "summary_raw": "由于涌入了大量低质量的 AI 生成应用，Linux 软件仓库 Flathub 于五月底宣布停止接受此类 AI 生成应用。审核递交到 Flathub 的应用是一个吃力不讨好的工作，当审核者试图与 AI 生成应用递交者沟通时，却发现对方使用的是 AI 智能体，回复都是答非所问。一位审核者对此评论说，“纯粹是噪音和浪费时间”。从 2026 年 1 月开始，Flathub 将此类应用打上了 AI Slop 的标签。知名 Linux 开发者 Evangelos“GeopJr”Paterakis 调查了 过去半年标记为 AI slop 的 120 个应用，32 个仍在维护，88 个已被抛弃，大多数都彻底删…",
-      "category_hint": "tech",
-      "lang": "zh"
-    },
-    {
       "title": "乌兰布统，草原观星",
       "url": "https://sspai.com/post/111923",
       "published": "2026-07-08T17:26:49+08:00",
@@ -364,15 +373,6 @@
       "published": "2026-07-08T15:14:26+08:00",
       "source": "少数派",
       "summary_raw": "暑期将至，许多「大朋友、小朋友」都会选择在最近两个月内出游。在旅行的过程中，我们难免会遇到各种各样的问题，也会遇到各种各样令人心烦的琐事。如果你恰好在使用iPhone，不妨看看我如何从出发前、在路上、 ...查看全文",
-      "category_hint": "tech",
-      "lang": "zh"
-    },
-    {
-      "title": "好的桌面需要设备，更需要灯光：明基×少数派线下店体验空间升级",
-      "url": "https://sspai.com/post/110993",
-      "published": "2026-07-08T11:00:00+08:00",
-      "source": "少数派",
-      "summary_raw": "如果你最近正在考虑升级自己的桌面，或者想体验墨水屏显示器、屏幕挂灯、阅读灯在真实环境下的使用效果，欢迎来到少数派深圳线下体验店，坐下来试试看。查看全文",
       "category_hint": "tech",
       "lang": "zh"
     },
@@ -399,7 +399,7 @@
       "url": "https://36kr.com/p/3888284244720131?f=rss",
       "published": "2026-07-10 11:26:25  +0800",
       "source": "36氪",
-      "summary_raw": "文 | 胡香赟 编辑 | 海若镜 36氪获悉，前传奇生物创始人/首席科学家范晓��创办的生物科技公司深圳湾岛细胞，近日完成1.4亿人民币A轮融资，本轮融资由松禾资本领投、东方富海跟投。 过去一年，AI像一束强光照亮着资本市场。光芒之外，很多赛道在阴影中被重新定价，创新药板块正是其中之一。潮水褪去，人群对新药好药的需求仍在，创业者们也正在更严苛的估值坐标系里，渡过科学、临床和商业化的一关又一关。 在中国细胞与基因治疗（CGT）领域，“范晓虎”这个名字很难被绕开。2022年3月，他主导的传奇生物细胞药物西达基奥仑赛在欧美上市，是目前全球唯一一款销售额逼近20亿美金的CAR-T细胞疗法。 然而，西达…",
+      "summary_raw": "文 | 胡香赟 编辑 | 海若镜 36氪获悉，前传奇生物创始人/首席科学家范晓��创办的生物科技公司深圳湾岛细胞，近日完成1.4亿���民币A轮融资，本轮融资由松禾资本领投、东方富海跟投。 过去一年，AI像一束强光照亮着资本市场。光芒之外，很多赛道在阴影中被重新定价，创新药板块正是其中之一。潮水褪去，人群对新药好药的需求仍在，创业者们也正在更严苛的估值坐标系里，渡过科学、临床和商业化的一关又一关。 在中国细胞与基因治疗（CGT）领域，“范晓虎”这个名字很难被绕开。2022年3月，他主导的传奇生物细胞药物西达基奥仑赛在欧美上市，是目前全球唯一一款销售额逼近20亿美金的CAR-T细胞疗法。 然而，…",
       "category_hint": "tech",
       "lang": "zh"
     },
@@ -467,47 +467,47 @@
       "lang": "zh"
     },
     {
-      "title": "电视广播在深圳成立新公司，注册资本500万",
-      "url": "https://36kr.com/newsflashes/3889661120903941?f=rss",
-      "published": "2026-07-10 18:32:10  +0800",
+      "title": "热门中概股美股盘前普涨，阿里巴巴涨超2%",
+      "url": "https://36kr.com/newsflashes/3889827679402752?f=rss",
+      "published": "2026-07-10 20:57:20  +0800",
       "source": "36氪",
-      "summary_raw": "36氪获悉，天眼查App显示，近日，无线翡翠（深圳）文化传媒有限公司成立，法定代表人为李福来，注册资本500万，经营范围包括组织文化艺术交流活动、文化娱乐经纪人服务、文艺创作、摄像及视频制作服务、电影摄制服务、版权代理等，由电视广播有限公司全资持股。",
+      "summary_raw": "36氪获悉，热门中概股美股盘前普涨，截至发稿，阿里巴巴、蔚来、理想汽车涨超2%，京东、小鹏集团涨超1%，百度涨0.46%，拼多多涨0.37%，哔哩哔哩涨0.28%。",
       "category_hint": "tech",
       "lang": "zh"
     },
     {
-      "title": "国家网信办：截至6月30日累计有988款生成式人工智能服务完成备案",
-      "url": "https://36kr.com/newsflashes/3889675260639749?f=rss",
-      "published": "2026-07-10 18:22:17  +0800",
+      "title": "美股大型科技股盘前涨跌不一，Meta涨超4%",
+      "url": "https://36kr.com/newsflashes/3889825362639365?f=rss",
+      "published": "2026-07-10 20:54:58  +0800",
       "source": "36氪",
-      "summary_raw": "36氪获悉，据“网信中国”微信公众号消息，2026年5月至6月新增120款生成式人工智能服务在国家网信办完成备案，对于通过API接口或其他方式直接调用已备案模型能力的生成式人工智能应用或功能，由地方网信办开展登记，新增68款完成登记。截至6月30日，累计有988款生成式人工智能服务完成备案，598款生成式人工智能应用或功能完成登记。",
+      "summary_raw": "36氪获悉，美股大型科技股盘前涨跌不一，截至发稿，Meta涨超4%，微软涨近1%，亚马逊涨0.45%，特斯拉跌0.38%，苹果跌0.53%，英伟达跌0.5%，谷歌跌0.38%。",
       "category_hint": "tech",
       "lang": "zh"
     },
     {
-      "title": "盒马中国在上海成立新公司，注册资本10万",
-      "url": "https://36kr.com/newsflashes/3889660639738369?f=rss",
-      "published": "2026-07-10 18:15:30  +0800",
+      "title": "上交所：本周对恒尚节能、有研硅、中船特气等异常波动股票以及财通福鑫LOF等溢价较高的基金进行重点监控",
+      "url": "https://36kr.com/newsflashes/3889816222579456?f=rss",
+      "published": "2026-07-10 20:45:40  +0800",
       "source": "36氪",
-      "summary_raw": "36氪获悉，天眼查App显示，近日，上海惠实安网络科技有限公司成立，法定代表人为李国，注册资本10万人民币，经营范围包括技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广等，由盒马（中国）有限公司全资持股。",
+      "summary_raw": "36氪获悉，上交所公告，2026年7月6日至2026年7月10日，上交所对277起拉抬打压、虚假申报等证券异常交易行为采取了自律监管措施，对恒尚节能、有研硅、中船特气等异常波动股票以及财通福鑫LOF等溢价较高的基金进行重点监控，对23起上市公司重大事项等进行专项核查，向证监会上报涉嫌违法违规案件线索1起。",
       "category_hint": "tech",
       "lang": "zh"
     },
     {
-      "title": "摩根大通聘请两位银行家，以把握香港IPO热潮",
-      "url": "https://36kr.com/newsflashes/3889659962915585?f=rss",
-      "published": "2026-07-10 18:12:51  +0800",
+      "title": "深交所：本周共对197起证券异常交易行为采取了自律监管措施",
+      "url": "https://36kr.com/newsflashes/3889815436311296?f=rss",
+      "published": "2026-07-10 20:44:52  +0800",
       "source": "36氪",
-      "summary_raw": "摩根大通公司已招募了两名能够签署香港首次公开招股（IPO）文件的银行家，在中国香港发行上市活动旺盛期间，这些关键职位非常抢手。曾在花旗集团担任董事的Benjamin Seto，以及曾在招商证券担任执行董事的Gary Lam，已加入摩根大通担任执行董事，向香港IPO及企业融资团队负责人Nelly Pai报告工作。（新浪财经）",
+      "summary_raw": "36氪获悉，深交所公告，2026年7月6日至7月10日，本所共对197起证券异常交易行为采取了自律监管措施，涉及盘中拉抬打压、虚假申报等异常交易情形；共对5起上市公司重大事项进行核查，并上报证监会1起涉嫌违法违规案件线索。",
       "category_hint": "tech",
       "lang": "zh"
     },
     {
-      "title": "德龙激光：康宁是公司长期重要客户之一，向康宁提供玻璃相关激光加工设备",
-      "url": "https://36kr.com/newsflashes/3889660229089798?f=rss",
-      "published": "2026-07-10 18:06:59  +0800",
+      "title": "SK海力士本周五登陆纳斯达克，募资265亿美元跻身大型IPO",
+      "url": "https://36kr.com/newsflashes/3889804779731457?f=rss",
+      "published": "2026-07-10 20:44:11  +0800",
       "source": "36氪",
-      "summary_raw": "36氪获悉，德龙激光在互动平台表示，康宁是公司长期重要客户之一，公司向康宁提供玻璃相关激光加工设备，但相关业务收入占比较小，请注意投资风险。",
+      "summary_raw": "韩国芯片巨头SK海力士将于本周五登陆科技股云集的纳斯达克交易所，此举将为其打通一条强力全新融资渠道，方便全球投资者布局高速增长的人工智能基础设施赛道。这家全球第二大存储芯片厂商计划通过在纳斯达克发行美国存托凭证（ADR）募资约40万亿韩元（折合265亿美元）。本次发行共计1.779亿份美国存托凭证，发行价定为每份149美元，1份ADR对应其在韩国首尔交易所上市普通股的十分之一。（新浪财经）",
       "category_hint": "tech",
       "lang": "zh"
     }
