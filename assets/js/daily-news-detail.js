@@ -64,9 +64,19 @@
     `;
   }
 
+  // 获取条目的分类列表（兼容旧数据：categories 数组优先，回退到 category 字符串）
+  function getCategories(item) {
+    if (Array.isArray(item.categories) && item.categories.length > 0) return item.categories;
+    return item.category ? [item.category] : [];
+  }
+
   function renderDetail(item) {
     const el = document.getElementById("newsDetail");
-    const cat = CATEGORY_LABELS[item.category] || { text: item.category || "资讯", icon: "i-info" };
+    const cats = getCategories(item);
+    const categoryBadges = cats.map(c => {
+      const cat = CATEGORY_LABELS[c] || { text: c, icon: "i-info" };
+      return `<span class="badge badge-prize"><svg class="icon-sm icon"><use href="#${cat.icon}"/></svg>${cat.text}</span>`;
+    }).join('');
     const dateText = formatDate(item.published || item.date);
     const detailText = item.detail || item.summary || "";
 
@@ -74,7 +84,7 @@
 
     el.innerHTML = `
       <div class="news-detail-meta">
-        <span class="badge badge-prize"><svg class="icon-sm icon"><use href="#${cat.icon}"/></svg>${cat.text}</span>
+        ${categoryBadges}
         <span class="meta-item"><svg class="icon-sm icon"><use href="#i-calendar"/></svg>${dateText}</span>
         <span class="meta-item"><svg class="icon-sm icon"><use href="#i-info"/></svg>${escapeHtml(item.source || "")}</span>
       </div>

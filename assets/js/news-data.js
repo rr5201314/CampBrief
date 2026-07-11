@@ -14,8 +14,9 @@ const NEWS_DATA = {
     //   "date": "2026-07-10",
     //   "published": "2026-07-10T10:00:00+08:00",
     //   "summary": "新闻摘要...",
+    //   "detail": "新闻详情...",
     //   "image": "",
-    //   "category": "ai",  // ai, tech, competition, exam, sports
+    //   "categories": ["ai", "tech"],  // 支持多分类，可选值: ai, tech, sports, fun
     //   "source": "来源名称"
     // }
   ]

@@ -42,7 +42,14 @@ MAX_PER_SOURCE = 15
 # category_hint 只是给 Agent 的参考分类，Agent 会做最终分类决策。
 # 想新增源：在这里加一条即可。RSSHub 公共实例可能限流，失败会被跳过。
 # ---------------------------------------------------------------------------
+
+# RSSHub 公共实例（中文站点多需通过 RSSHub 获取）。公共实例稳定性一般，
+# 失败会被脚本自动跳过并记录在 errors 字段，不影响其他源。
+# 如有自建 RSSHub 实例，替换此处即可。
+RSSHUB_BASE = "https://rsshub.app"
+
 SOURCES = [
+    # --- 技术动态 ---
     {
         "name": "Hacker News",
         "url": "https://hnrss.org/frontpage",
@@ -67,7 +74,44 @@ SOURCES = [
         "category_hint": "tech",
         "lang": "zh",
     },
-
+    # --- 体育（重大赛事） ---
+    {
+        "name": "BBC Sport",
+        "url": "http://feeds.bbci.co.uk/sport/rss.xml?edition=int",
+        "category_hint": "sports",
+        "lang": "en",
+    },
+    {
+        "name": "The Guardian Sport",
+        "url": "https://www.theguardian.com/sport/rss",
+        "category_hint": "sports",
+        "lang": "en",
+    },
+    {
+        "name": "懂球帝早报",
+        "url": f"{RSSHUB_BASE}/dongqiudi/special/48",
+        "category_hint": "sports",
+        "lang": "zh",
+    },
+    # --- 每日趣闻（轻松有趣、有知识增量；不含八卦黑料） ---
+    {
+        "name": "Atlas Obscura",
+        "url": "https://www.atlasobscura.com/feeds/latest",
+        "category_hint": "fun",
+        "lang": "en",
+    },
+    {
+        "name": "果壳科学人",
+        "url": f"{RSSHUB_BASE}/guokr/scientific",
+        "category_hint": "fun",
+        "lang": "zh",
+    },
+    {
+        "name": "知乎日报",
+        "url": f"{RSSHUB_BASE}/zhihu/daily",
+        "category_hint": "fun",
+        "lang": "zh",
+    },
 ]
 
 # 不少站点对非浏览器 UA 直接 403，RSS 阅读器普遍用浏览器 UA

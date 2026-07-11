@@ -6,7 +6,6 @@ let filteredItems = [];
 let currentPage = 1;
 let cards = [];
 let paginationNav;
-let funCardSection, funCardContainer;
 let resultCount, searchInput, emptyState;
 let dateModal, calendarGrid, calendarYearValue, calendarMonthValue;
 let calendarYearMenu, calendarMonthMenu, calendarYearTrigger, calendarMonthTrigger;
@@ -19,8 +18,6 @@ function initDOM() {
   searchInput = document.getElementById("searchInput");
   emptyState = document.getElementById("emptyState");
   paginationNav = document.querySelector(".pagination");
-  funCardSection = document.getElementById("funCardSection");
-  funCardContainer = document.getElementById("funCardContainer");
   dateModal = document.getElementById("dateModal");
   calendarGrid = document.getElementById("calendarGrid");
   calendarYearValue = document.getElementById("calendarYearValue");
@@ -56,6 +53,12 @@ async function loadNewsData() {
   return [];
 }
 
+// 获取条目的分类列表（兼容旧数据：categories 数组优先，回退到 category 字符串）
+function getCategories(item) {
+  if (Array.isArray(item.categories) && item.categories.length > 0) return item.categories;
+  return item.category ? [item.category] : [];
+}
+
 // 生成卡片 HTML
 function createCardHTML(item) {
   const date = new Date(item.published);
@@ -81,11 +84,17 @@ function createCardHTML(item) {
     : priority >= 2
     ? '<span class="badge badge-important"><svg class="icon-sm icon"><use href="#i-status"/></svg>重要</span>'
     : '';
-  const categoryLabels = { ai: 'AI', tech: '技术', competition: '竞赛', exam: '考试', sports: '体育' };
-  const categoryLabel = categoryLabels[item.category] || item.category;
+  const categoryLabels = { ai: 'AI', tech: '技术', competition: '竞赛', exam: '考试', sports: '体育', fun: '趣闻' };
+  const categoryIcons = { ai: 'i-bot', tech: 'i-code', competition: 'i-trophy', exam: 'i-exam', sports: 'i-sports', fun: 'i-bulb' };
+  const cats = getCategories(item);
+  const categoryBadges = cats.map(c => {
+    const label = categoryLabels[c] || c;
+    const icon = categoryIcons[c] || 'i-bot';
+    return `<span class="badge badge-prize"><svg class="icon-sm icon"><use href="#${icon}"/></svg>${label}</span>`;
+  }).join('');
   
   return `
-    <article class="card" data-category="${item.category}" data-published="${item.published}" data-priority="${priority}" data-search="${item.title} ${item.summary}">
+    <article class="card" data-category="${cats.join(' ')}" data-published="${item.published}" data-priority="${priority}" data-search="${item.title} ${item.summary}">
       <div class="thumb" aria-label="资讯封面占位图">
         <div class="thumb-inner">
           <span class="thumb-icon"><svg class="icon"><use href="#i-image"/></svg></span>
@@ -100,7 +109,7 @@ function createCardHTML(item) {
         </div>
         <div class="meta-line">
           ${priorityBadge}
-          <span class="badge badge-prize"><svg class="icon-sm icon"><use href="#i-bot"/></svg>${categoryLabel}</span>
+          ${categoryBadges}
           <span class="meta-item"><svg class="icon-sm icon"><use href="#i-calendar"/></svg>${formattedDate}</span>
           <span class="meta-item"><svg class="icon-sm icon"><use href="#i-info"/></svg>${item.source}</span>
         </div>
@@ -119,26 +128,6 @@ function setItems(items) {
   allItems = items;
   currentPage = 1;
   applyFilters();
-}
-
-// 渲染顶部「今日趣闻」固定卡片
-function renderFunCard() {
-  if (!funCardSection || !funCardContainer) return;
-  // 筛选 fun 分类时隐藏顶部固定卡片（列表已在展示），避免重复
-  if (state.category === "fun") {
-    funCardSection.hidden = true;
-    return;
-  }
-  // 取最新一条 fun 条目
-  const funItem = allItems.find(it => it.category === "fun");
-  if (!funItem) {
-    funCardSection.hidden = true;
-    return;
-  }
-  funCardSection.hidden = false;
-  funCardContainer.innerHTML = createCardHTML(funItem);
-  const card = funCardContainer.querySelector(".card");
-  if (card) card.classList.add("fun-card");
 }
 
 // 渲染当前页的卡片
@@ -325,7 +314,7 @@ function initDatePicker() {
 
 function applyFilters() {
   filteredItems = allItems.filter(item => {
-    const categoryOk = state.category === "all" || item.category === state.category;
+    const categoryOk = state.category === "all" || getCategories(item).includes(state.category);
     const dateOk = matchesDateFilter(item);
     const searchOk = !state.query || `${item.title} ${item.summary} ${item.detail || ""}`.toLowerCase().includes(state.query);
     return categoryOk && dateOk && searchOk;
@@ -337,7 +326,6 @@ function applyFilters() {
     return new Date(b.published) - new Date(a.published);
   });
   if (resultCount) resultCount.textContent = `${filteredItems.length} 条资讯`;
-  renderFunCard();
   renderPage();
 }
 
