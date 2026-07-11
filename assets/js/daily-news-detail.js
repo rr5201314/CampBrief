@@ -1,4 +1,4 @@
-// 资讯详情页 - 通过 ?url= 参数定位条目，渲染详情
+// 资讯详情页 - 通过 URL、标题和发布时间共同定位条目，渲染详情
 (function () {
   "use strict";
 
@@ -101,16 +101,28 @@
 
   async function init() {
     const targetUrl = getUrlParam("url");
+    const targetTitle = getUrlParam("title");
+    const targetPublished = getUrlParam("published");
     if (!targetUrl) {
       renderNotFound("缺少资讯地址参数。");
       return;
     }
 
     const items = await loadData();
-    const item = items.find(it => it.url === targetUrl) || items.find(it => it.url === decodeURIComponent(targetUrl));
+    const hasIdentity = Boolean(targetTitle || targetPublished);
+    const matches = items.filter(it => it.url === targetUrl);
+    const item = hasIdentity
+      ? matches.find(it =>
+        it.title === targetTitle &&
+        (it.published || it.date || "") === targetPublished
+      )
+      : matches.length === 1 ? matches[0] : null;
 
     if (!item) {
-      renderNotFound("该资讯可能已更新下线，或链接有误。");
+      renderNotFound(hasIdentity
+        ? "该资讯可能已更新下线，或链接有误。"
+        : "该链接缺少唯一标识，请返回资讯列表后重新打开。"
+      );
       return;
     }
     renderDetail(item);

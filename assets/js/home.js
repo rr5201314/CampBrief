@@ -136,6 +136,15 @@ function escapeHtml(s){
   }[c]));
 }
 
+function getNewsDetailHref(basePath, item){
+  const params = new URLSearchParams({
+    url: item.url || "",
+    title: item.title || "",
+    published: item.published || item.date || ""
+  });
+  return `${basePath}?${params.toString()}`;
+}
+
 function metaItem(iconRef, text){
   return el("span", "meta-item",
     `<svg class="icon-sm icon"><use href="${iconRef}"/></svg>${escapeHtml(text)}`);
@@ -194,7 +203,7 @@ function buildNewsItem(item){
   const article = el("article", "feed-item");
   // 资讯条目跳转到 detail.html?url=xxx；无 url 时回退到栏目列表页
   article.dataset.href = item.url
-    ? "pages/daily-news/detail.html?url=" + encodeURIComponent(item.url)
+    ? getNewsDetailHref("pages/daily-news/detail.html", item)
     : "pages/daily-news/index.html";
   const head = el("div", "news-head");
   const date = el("div", "news-date",

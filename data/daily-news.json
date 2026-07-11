@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-11T22:50:01.701420+08:00",
+  "last_updated": "2026-07-12T00:26:56+08:00",
   "source": "CampBrief Auto",
-  "total": 54,
+  "total": 53,
   "items": [
     {
       "title": "温网女单决赛：捷克选手穆乔娃对阵诺斯科娃",
@@ -55,21 +55,10 @@
       "category": "sports"
     },
     {
-      "title": "SK 海力士登陆纳斯达克，上市首日大涨近 13%",
-      "url": "https://36kr.com/newsflashes/3890553690192384?f=rss",
-      "published": "2026-07-11T09:24:06+08:00",
-      "source": "36氪",
-      "summary": "韩国芯片巨头 SK 海力士在纳斯达克上市首日大涨近 13%，市值突破万亿美元。",
-      "detail": "全球第二大存储芯片厂商韩国 SK 海力士在纳斯达克上市首日股价大涨近 13%，市值突破万亿美元。本次 IPO 募资约 265 亿美元，有望跻身史上最大 IPO 行列。SK 海力士是 AI 高带宽内存（HBM）的核心供应商，上市反映了资本市场对 AI 基础设施赛道的持续看好。",
-      "priority": 3,
-      "category": "tech",
-      "subcategory": "industry"
-    },
-    {
-      "title": "OpenAI 推出 ChatGPT 智能体",
-      "url": "https://36kr.com/newsflashes/3890553690192384?f=rss",
-      "published": "2026-07-11T09:24:06+08:00",
-      "source": "36氪",
+      "title": "OpenAI 发布 ChatGPT 智能体",
+      "url": "https://openai.com/index/introducing-chatgpt-agent/",
+      "published": "2025-07-17T00:00:00+00:00",
+      "source": "OpenAI",
       "summary": "OpenAI 正式推出 ChatGPT 智能体功能，可自主执行多步骤复杂任务。",
       "detail": "OpenAI 正式推出 ChatGPT 智能体（Agent）功能，允许 ChatGPT 自主规划并执行多步骤复杂任务，包括网页浏览、文件处理和代码编写。该功能标志着 ChatGPT 从对话式助手向自主执行系统的转变，是 AI Agent 赛道的重要里程碑。",
       "priority": 3,

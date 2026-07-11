@@ -59,6 +59,17 @@ function getCategories(item) {
   return item.category ? [item.category] : [];
 }
 
+// URL 不能作为资讯唯一标识：日报拆分出的多条资讯会共享同一个原文地址。
+// 将标题和发布时间一并传给详情页，确保回查到的是用户点击的那一条。
+function getNewsDetailHref(item) {
+  const params = new URLSearchParams({
+    url: item.url || "",
+    title: item.title || "",
+    published: item.published || item.date || ""
+  });
+  return `detail.html?${params.toString()}`;
+}
+
 // 生成卡片 HTML
 function createCardHTML(item) {
   const date = new Date(item.published);
@@ -115,7 +126,7 @@ function createCardHTML(item) {
         </div>
         <p class="desc">${item.summary}</p>
         <div class="actions">
-          <a href="detail.html?url=${encodeURIComponent(item.url)}" class="btn btn-primary"><svg class="icon-sm icon"><use href="#i-doc"/></svg>查看详情</a>
+          <a href="${getNewsDetailHref(item)}" class="btn btn-primary"><svg class="icon-sm icon"><use href="#i-doc"/></svg>查看详情</a>
           <a href="${item.url}" target="_blank" rel="noopener" class="btn btn-secondary">阅读原文 <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>
         </div>
       </div>
@@ -515,7 +526,7 @@ function renderNewsCarouselCard(item) {
   const catText = cats.map(c => categoryLabels[c] || c).join(' · ');
 
   return `
-    <a class="carousel-card" href="detail.html?url=${encodeURIComponent(item.url)}">
+    <a class="carousel-card" href="${getNewsDetailHref(item)}">
       <span class="carousel-card-tag ${tagClass}">${tagText}</span>
       <div class="carousel-card-head">
         <h3 class="carousel-card-title">${item.title}</h3>
