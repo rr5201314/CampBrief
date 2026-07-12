@@ -42,9 +42,9 @@ git pull --ff-only
 
 ### 1. 采集候选池（或复用已有候选池）
 
-**先判断候选池是否已就绪**：读取 `$REPO/data/daily-news-raw.json` 的 `collected_at` 字段。如果该时间是**今天**（北京时间自然日），说明 GitHub Actions 已采集过，**跳过本地采集**，直接进入步骤 2。
+**先判断候选池是否有待处理候选**：读取 `$REPO/data/daily-news-raw.json`。如果文件存在、`candidates` 数组非空、且 `collected_at` 是**今天**（北京时间自然日），说明 GitHub Actions 已采集过新候选，**跳过本地采集**，直接进入步骤 2。
 
-如果候选池不存在或 `collected_at` 不是今天，运行采集脚本（纯 Python stdlib，无依赖）：
+如果候选池不存在、`candidates` 为空、或 `collected_at` 不是今天，运行采集脚本（纯 Python stdlib，无依赖）：
 
 ```bash
 python3 "$REPO/scripts/collect-daily-news.py"
@@ -55,6 +55,8 @@ python3 "$REPO/scripts/collect-daily-news.py"
 采集脚本支持参数：
 - `--exclude "juya AI 日报"`：排除指定源（逗号分隔多个）
 - `--only "juya AI 日报"`：只采集指定源并合并到已有候选池（同源旧条目被新数据覆盖）
+
+**两批次定时任务说明**：GitHub Actions 每天采集两批（08:00 排除 juya / 13:00 只采 juya），Hermes 对应设两个定时任务。每次处理完候选池后会清空它（见步骤 8），所以两个批次各自只处理本批新候选，不会重复处理。
 
 ### 2. 读取候选与已有数据
 
@@ -234,10 +236,20 @@ juya 日报备份（如 RSS 不可用，可从 markdown 备份获取）：
 
 - 校验通过后重新读一次该文件，确认 JSON 合法、`items` 数量与 `total` 一致、每条都有非空的 `summary`、`detail` 和 `category`。
 
-### 8. 推送 GitHub
+### 8. 清空候选池并推送
+
+处理成功后，先清空候选池（避免下次定时任务重复处理已收录条目），再推送：
 
 ```bash
 cd "$REPO"
+
+# 清空候选池：写空结构，保留文件便于下次采集合并
+python3 -c "
+import json
+with open('data/daily-news-raw.json', 'w', encoding='utf-8') as f:
+    json.dump({'collected_at': '', 'total': 0, 'sources_ok': 0, 'sources_failed': 0, 'errors': [], 'candidates': []}, f, ensure_ascii=False, indent=2)
+"
+
 git add data/daily-news.json data/daily-news-raw.json
 git diff --cached --quiet && echo "无变更，跳过提交" || git commit -m "chore(daily-news): auto update $(date +%Y-%m-%d)"
 git push

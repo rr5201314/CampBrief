@@ -117,21 +117,21 @@
 ## 自动化采集架构（GitHub Actions + Hermes）
 
 ### 分工
-- **GitHub Actions（云端，无人值守）**：定时采集 RSS 候选池，push 到仓库，发飞书通知触发 Hermes
-- **Hermes（手机，agent 编辑决策）**：收到飞书群 @ 事件后，拉取最新仓库，对候选池做 AI 筛选/摘要/分类，校验后推送
+- **GitHub Actions（云端，无人值守）**：定时采集 RSS 候选池，push 到仓库，发飞书通知
+- **Hermes（手机，cron 定时）**：两个定时任务对应两个采集批次，拉取最新仓库，对候选池做 AI 筛选/摘要/分类，校验后推送，处理完清空候选池
 
-### 事件触发机制（非 cron，手动 @ nienie 触发）
-1. GitHub Actions 定时采集候选池 → push 到仓库
-2. GitHub Actions 机器人发飞书群通知（候选池摘要）
-3. 你看到通知后，在群里 @ nienie 发送「执行 campbrief-daily-news」
-4. Hermes（飞书应用机器人，名 "nienie"）被 @ 后收到 mention 事件，触发 campbrief-daily-news skill
-5. Hermes 执行 skill：git pull → 编辑候选池 → 校验 → push
-6. nienie 的 open_id：`ou_d218aa9957d5c927462b571478cf7484`
+### 事件触发机制（cron 定时，两批次）
+1. GitHub Actions 云端定时采集候选池 → push 到仓库
+2. Hermes（手机）设两个 cron 定时任务，对应两个批次：
+   - 早间批次（如 08:30）：处理 GitHub Actions 08:00 采集的候选（排除 juya）
+   - 午间批次（如 13:30）：处理 GitHub Actions 13:00 采集的 juya AI 日报
+3. Hermes 每次执行 skill：git pull → 读取候选池 → 编辑筛选 → 校验 → push → **清空候选池**
+4. 清空候选池确保两个批次各自只处理本批新候选，不会重复处理
 
-### 为什么不能用机器人 @ 机器人触发
+### 为什么用 cron 而非事件触发
 飞书 `im.message.receive_v1` 事件只对**用户**发的消息触发，**机器人发的消息不触发**该事件。
-所以 GitHub Actions 自定义机器人发的 @ 消息，nienie 收不到事件。必须由**真人**在群里 @ nienie。
-这是飞书的设计限制，防止机器人互相触发形成循环。
+所以 GitHub Actions 自定义机器人发的 @ 消息，nienie 收不到事件。改为 nenie 用 cron 定时拉取仓库，
+检查候选池是否有待处理条目。GitHub Actions 的飞书通知仅作提醒，不作为触发机制。
 
 ### GitHub Actions 配置
 - workflow 文件：`.github/workflows/collect-news.yml`
@@ -157,14 +157,14 @@
 
 ### Hermes skill 衔接
 - 步骤 0：`git pull --ff-only` 拉取最新候选池
-- 步骤 1：判断候选池 `collected_at` 是否为今天（北京时间），是则跳过本地采集，直接进入编辑流程
+- 步骤 1：判断候选池 `candidates` 是否非空且 `collected_at` 是今天，是则跳过本地采集，直接进入编辑流程
+- 步骤 8：处理成功后清空候选池（写空结构），确保下次定时任务只处理新候选
 - 兜底：如果 GitHub Actions 没跑或 pull 失败，Hermes 仍可本地跑采集脚本
 
 ### Hermes 侧配置要求
-- nienie 机器人需拉进飞书群
-- nienie 订阅群消息事件（im.message.receive_v1），权限全开
-- nienie 配置为"被精确 @ 时触发"（飞书应用机器人收到 mention 事件），收到 @ 事件后解析消息文本中的 `执行 campbrief-daily-news` 指令
-- 注意：@所有人 不会触发应用机器人的 mention 事件，必须用 open_id 精确 @
+- nienie 设两个 cron 定时任务（如 08:30 和 13:30），分别对应两个采集批次
+- 每次触发执行 campbrief-daily-news skill
+- 候选池为空时（已处理过或 GitHub Actions 没跑），skill 会尝试本地采集作为兜底
 
 ### 敏感信息
 - 飞书 webhook URL 只存 GitHub Secrets，不进仓库文件
