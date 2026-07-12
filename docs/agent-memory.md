@@ -122,11 +122,11 @@
 
 ### 事件触发机制（非 cron，精确 @ nienie 触发）
 1. GitHub Actions 定时采集候选池 → push 到仓库
-2. GitHub Actions 机器人发飞书群消息，消息含 `<at user_id="ou_d3983607237b59a81676cc68c402b0ee">nienie</at>`（精确 @ nienie）
+2. GitHub Actions 机器人发飞书群消息，消息含 `<at user_id="ou_d218aa9957d5c927462b571478cf7484">nienie</at>`（精确 @ nienie）
 3. Hermes（飞书应用机器人，名 "nienie"）被 @ 后收到 mention 事件，触发 campbrief-daily-news skill
 4. 消息末尾 `执行 campbrief-daily-news` 作为指令文本，被 @ 后 nienie 解析执行
 5. Hermes 执行 skill：git pull → 编辑候选池 → 校验 → push
-6. nienie 的 open_id：`ou_d3983607237b59a81676cc68c402b0ee`
+6. nienie 的 open_id：`ou_d218aa9957d5c927462b571478cf7484`
 
 ### GitHub Actions 配置
 - workflow 文件：`.github/workflows/collect-news.yml`
@@ -146,7 +146,7 @@
 - 脚本：`scripts/notify-feishu.py`
 - 读 `data/daily-news-raw.json` 摘要，发到飞书群
 - 消息含关键词 "CampBrief"（满足飞书自定义机器人安全设置）
-- 消息开头 `<at user_id="ou_d3983607237b59a81676cc68c402b0ee">nienie</at>` 精确 @ nienie，触发 mention 事件
+- 消息开头 `<at user_id="ou_d218aa9957d5c927462b571478cf7484">nienie</at>` 精确 @ nienie，触发 mention 事件
 - 消息末尾 `执行 campbrief-daily-news` 作为指令文本
 - webhook URL 从环境变量 `FEISHU_WEBHOOK` 或 `--webhook` 参数读取
 

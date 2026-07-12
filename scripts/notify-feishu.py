@@ -68,7 +68,7 @@ def build_text_message(data, batch):
 
     lines = [
         # 精确 @ nienie 机器人（open_id 固定），触发 mention 事件
-        '<at user_id="ou_d3983607237b59a81676cc68c402b0ee">nienie</at>',
+        '<at user_id="ou_d218aa9957d5c927462b571478cf7484">nienie</at>',
         f"",
         f"CampBrief 候选池已就绪",
         f"",
