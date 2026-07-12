@@ -79,27 +79,45 @@
 
       <section class="filter-panel" aria-label="赛事筛选">
         <div class="filter-row">
-          <div class="filter-label"><svg class="icon"><use href="#i-category"/></svg>赛事分类</div>
-          <div class="options" data-filter-group="category">
+          <div class="filter-label"><svg class="icon"><use href="#i-medal"/></svg>赛事层次</div>
+          <div class="options" data-filter-group="tier">
             <button class="option active" data-value="all"><span class="option-dot"></span>全部</button>
-            <button class="option" data-value="ai"><svg class="icon-sm icon"><use href="#i-bot"/></svg>AI应用创新赛</button>
-            <button class="option" data-value="security"><svg class="icon-sm icon"><use href="#i-lock"/></svg>安全攻防挑战赛</button>
-            <button class="option" data-value="creative"><svg class="icon-sm icon"><use href="#i-info"/></svg>其他创意应用</button>
+            <button class="option" data-value="official"><svg class="icon-sm icon"><use href="#i-check"/></svg>教育部认可赛事</button>
+            <button class="option" data-value="enterprise"><svg class="icon-sm icon"><use href="#i-trophy"/></svg>名企主办赛事</button>
+            <button class="option" data-value="hobby"><svg class="icon-sm icon"><use href="#i-info"/></svg>兴趣练手赛事</button>
           </div>
         </div>
         <div class="filter-row">
-          <div class="filter-label"><svg class="icon"><use href="#i-status"/></svg>状态</div>
+          <div class="filter-label"><svg class="icon"><use href="#i-category"/></svg>专业领域</div>
+          <div class="options" data-filter-group="field">
+            <button class="option active" data-value="all"><span class="option-dot"></span>全部</button>
+            <button class="option" data-value="innovation"><span class="option-dot"></span>创新创业</button>
+            <button class="option" data-value="computer"><span class="option-dot"></span>计算机/信息技术</button>
+            <button class="option" data-value="engineering"><span class="option-dot"></span>工程/机电</button>
+            <button class="option" data-value="ai"><span class="option-dot"></span>人工智能</button>
+            <button class="option" data-value="robot"><span class="option-dot"></span>机器人</button>
+            <button class="option" data-value="science"><span class="option-dot"></span>数理/化学</button>
+            <button class="option" data-value="design"><span class="option-dot"></span>设计/艺术</button>
+            <button class="option" data-value="language"><span class="option-dot"></span>外语</button>
+            <button class="option" data-value="business"><span class="option-dot"></span>商科/金融</button>
+            <button class="option" data-value="medical"><span class="option-dot"></span>医学/生命科学</button>
+            <button class="option" data-value="civil"><span class="option-dot"></span>建筑/土木</button>
+            <button class="option" data-value="vocational"><span class="option-dot"></span>职业技能</button>
+          </div>
+        </div>
+        <div class="filter-row">
+          <div class="filter-label"><svg class="icon"><use href="#i-status"/></svg>比赛状态</div>
           <div class="options" data-filter-group="status">
             <button class="option active" data-value="all"><span class="option-dot"></span>全部</button>
             <button class="option" data-value="pending"><svg class="icon-sm icon"><use href="#i-clock"/></svg>未开始</button>
-            <button class="option" data-value="open"><svg class="icon-sm icon"><use href="#i-unlock"/></svg>可参赛</button>
-            <button class="option" data-value="closed"><svg class="icon-sm icon"><use href="#i-lock"/></svg>不可参赛</button>
+            <button class="option" data-value="open"><svg class="icon-sm icon"><use href="#i-unlock"/></svg>可报名</button>
+            <button class="option" data-value="ongoing"><svg class="icon-sm icon"><use href="#i-status"/></svg>比赛中</button>
             <button class="option" data-value="done"><svg class="icon-sm icon"><use href="#i-check"/></svg>已完赛</button>
           </div>
         </div>
         <div class="search-wrap">
           <svg class="icon"><use href="#i-search"/></svg>
-          <input id="searchInput" class="search-input" type="search" placeholder="请输入赛事名称搜索" autocomplete="off">
+          <input id="searchInput" class="search-input" type="search" placeholder="请输入赛事名称、主办方或关键词搜索" autocomplete="off">
         </div>
       </section>
 
@@ -109,88 +127,12 @@
       </div>
 
       <section class="cards" id="cards">
-        <article class="card" data-category="ai" data-status="open" data-search="校园 ai 应用 创新 赛 campus innovation challenge">
-          <div class="card-main">
-            <div class="card-head">
-              <h2 class="card-title">2026 校园 AI 创新挑战赛</h2>
-              <span class="badge status-badge status-open"><svg class="icon-sm icon"><use href="#i-unlock"/></svg>可参赛</span>
-            </div>
-            <div class="meta-line">
-              <span class="badge badge-prize"><svg class="icon-sm icon"><use href="#i-medal"/></svg>¥100,000 奖金</span>
-              <span class="meta-item"><svg class="icon-sm icon"><use href="#i-calendar"/></svg>2026.04.17 - 09.13</span>
-            </div>
-            <p class="desc">为真实校园场景构建 AI 工具，从学习助手到智能信息服务。团队可提交原型、演示和实施笔记。</p>
-            <div class="actions">
-              <button class="btn btn-primary">立即报名 <svg class="icon-sm icon"><use href="#i-arrow"/></svg></button>
-              <button class="btn btn-secondary"><svg class="icon-sm icon"><use href="#i-doc"/></svg>查看详情</button>
-              <button class="btn btn-secondary"><svg class="icon-sm icon"><use href="#i-grid"/></svg>查看作品</button>
-            </div>
-          </div>
-        </article>
-
-        <article class="card" data-category="security" data-status="pending" data-search="安全 攻防 挑战 赛 security capture flag">
-          <div class="card-main">
-            <div class="card-head">
-              <h2 class="card-title">网络安全攻防挑战赛</h2>
-              <span class="badge status-badge status-pending"><svg class="icon-sm icon"><use href="#i-clock"/></svg>未开始</span>
-            </div>
-            <div class="meta-line">
-              <span class="badge badge-prize"><svg class="icon-sm icon"><use href="#i-medal"/></svg>¥50,000 奖金</span>
-              <span class="meta-item"><svg class="icon-sm icon"><use href="#i-calendar"/></svg>2026.05.08 - 07.20</span>
-            </div>
-            <p class="desc">涵盖 Web、逆向工程、密码学和实战防御技能的结构化安全挑战，面向学生团队。</p>
-            <div class="actions">
-              <button class="btn btn-primary">提醒我 <svg class="icon-sm icon"><use href="#i-arrow"/></svg></button>
-              <button class="btn btn-secondary"><svg class="icon-sm icon"><use href="#i-doc"/></svg>查看详情</button>
-              <button class="btn btn-secondary"><svg class="icon-sm icon"><use href="#i-grid"/></svg>查看作品</button>
-            </div>
-          </div>
-        </article>
-
-        <article class="card" data-category="creative" data-status="closed" data-search="创意 应用 设计 挑战 creative application design">
-          <div class="card-main">
-            <div class="card-head">
-              <h2 class="card-title">创意应用设计大赛</h2>
-              <span class="badge status-badge status-closed"><svg class="icon-sm icon"><use href="#i-lock"/></svg>不可参赛</span>
-            </div>
-            <div class="meta-line">
-              <span class="badge badge-prize"><svg class="icon-sm icon"><use href="#i-medal"/></svg>¥30,000 奖金</span>
-              <span class="meta-item"><svg class="icon-sm icon"><use href="#i-calendar"/></svg>2026.03.12 - 06.01</span>
-            </div>
-            <p class="desc">为学生生活、公共服务或校园运营设计实用的应用概念。报名已截止，但详情仍可查看。</p>
-            <div class="actions">
-              <button class="btn btn-secondary"><svg class="icon-sm icon"><use href="#i-doc"/></svg>查看详情</button>
-              <button class="btn btn-secondary"><svg class="icon-sm icon"><use href="#i-grid"/></svg>查看作品</button>
-            </div>
-          </div>
-        </article>
-
-        <article class="card" data-category="ai" data-status="done" data-search="年度 作品 展 ai showcase completed">
-          <div class="card-main">
-            <div class="card-head">
-              <h2 class="card-title">简豹年度作品展</h2>
-              <span class="badge status-badge status-done"><svg class="icon-sm icon"><use href="#i-check"/></svg>已完赛</span>
-            </div>
-            <div class="meta-line">
-              <span class="badge badge-prize"><svg class="icon-sm icon"><use href="#i-medal"/></svg>¥20,000 奖金</span>
-              <span class="meta-item"><svg class="icon-sm icon"><use href="#i-calendar"/></svg>2026.01.10 - 04.30</span>
-            </div>
-            <p class="desc">已完赛的展示活动，汇集优秀校园产品和原型。浏览入围作品和存档评审记录。</p>
-            <div class="actions">
-              <button class="btn btn-secondary"><svg class="icon-sm icon"><use href="#i-doc"/></svg>查看详情</button>
-              <button class="btn btn-secondary"><svg class="icon-sm icon"><use href="#i-grid"/></svg>查看结果</button>
-            </div>
-          </div>
-        </article>
+        <!-- 卡片由 competitions.js 从 data/competitions.json 动态渲染 -->
       </section>
 
-      <nav class="pagination" aria-label="分页">
-        <button class="page-btn"><svg class="icon-sm icon"><use href="#i-chevron-left"/></svg></button>
-        <button class="page-btn active">1</button>
-        <button class="page-btn">2</button>
-        <button class="page-btn">3</button>
-        <button class="page-btn"><svg class="icon-sm icon"><use href="#i-chevron-right"/></svg></button>
-      </nav>
+      <div class="empty-state" id="emptyState" hidden>
+        <p>没有找到匹配的赛事，试试调整筛选条件或搜索关键词。</p>
+      </div>
     </div>
   </main>
 </div>

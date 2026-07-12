@@ -54,9 +54,21 @@ body[data-theme="x-light"]{
   --status-closed-text:#71767B;
   --status-closed-line:#CFD9DE;
   --status-closed-bg:#EFF3F4;
+  --status-ongoing-text:#7C3AED;
+  --status-ongoing-line:rgba(124,58,237,.44);
+  --status-ongoing-bg:rgba(124,58,237,.10);
   --status-done-text:#536471;
   --status-done-line:#CFD9DE;
   --status-done-bg:#F7F9F9;
+  --tier-official-text:#0F6FAE;
+  --tier-official-line:rgba(15,111,174,.44);
+  --tier-official-bg:rgba(15,111,174,.10);
+  --tier-enterprise-text:#059669;
+  --tier-enterprise-line:rgba(5,150,105,.44);
+  --tier-enterprise-bg:rgba(5,150,105,.10);
+  --tier-hobby-text:#71767B;
+  --tier-hobby-line:#CFD9DE;
+  --tier-hobby-bg:#EFF3F4;
   --solid-action-bg:#0F1419;
   --solid-action-text:#FFFFFF;
   --brand-mark-bg:#0F1419;
@@ -569,6 +581,13 @@ body.is-date-modal-open{overflow:hidden}
   font-weight:780;
   letter-spacing:-.015em;
 }
+.card-title-link{
+  color:inherit;
+  text-decoration:none;
+}
+.card-title-link:hover{
+  color:var(--accent);
+}
 .meta-line{
   display:flex;
   align-items:center;
@@ -637,6 +656,52 @@ body.is-date-modal-open{overflow:hidden}
   color:var(--status-done-text,#A5ADB4);
   border-color:var(--status-done-line,#38444D);
   background:var(--status-done-bg,rgba(56,68,77,.18));
+}
+.status-badge.status-ongoing{
+  color:var(--status-ongoing-text,#8B5CF6);
+  border-color:var(--status-ongoing-line,rgba(139,92,246,.5));
+  background:var(--status-ongoing-bg,rgba(139,92,246,.12));
+}
+
+.card-badges{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  flex-shrink:0;
+}
+.tier-badge{
+  font-weight:720;
+}
+.tier-badge.tier-official{
+  color:var(--tier-official-text);
+  border-color:var(--tier-official-line);
+  background:var(--tier-official-bg);
+}
+.tier-badge.tier-enterprise{
+  color:var(--tier-enterprise-text);
+  border-color:var(--tier-enterprise-line);
+  background:var(--tier-enterprise-bg);
+}
+.tier-badge.tier-hobby{
+  color:var(--tier-hobby-text);
+  border-color:var(--tier-hobby-line);
+  background:var(--tier-hobby-bg);
+}
+.field-tags{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:-4px;
+}
+.field-badge{
+  height:24px;
+  padding:0 9px;
+  font-size:12px;
+  font-weight:680;
+  color:var(--soft);
+  background:var(--panel-2);
+  border-color:var(--line);
 }
 
 .actions{
@@ -1084,6 +1149,20 @@ a.btn{
   font-size:13px;
   color:var(--text-secondary);
 }
+.exam-detail-meta .field-badge{
+  height:24px;
+  padding:0 9px;
+  font-size:12px;
+  font-weight:680;
+  color:var(--soft);
+  background:var(--panel-2);
+  border-color:var(--line);
+}
+.prestige-stars{
+  color:#F59E0B;
+  font-size:16px;
+  letter-spacing:2px;
+}
 .exam-detail-title{
   font-size:26px;
   line-height:1.35;
@@ -1222,6 +1301,22 @@ a.btn{
   color:var(--text-secondary);
   text-decoration:underline;
 }
+.competition-detail .exam-detail-summary{
+  margin-bottom:20px;
+}
+.competition-info-grid{
+  grid-template-columns:repeat(4,minmax(0,1fr));
+}
+.competition-section--about .exam-section-body{
+  font-size:16px;
+  line-height:1.9;
+}
+.competition-detail .exam-section:not(.competition-section--about){
+  padding-top:2px;
+}
+.competition-detail .exam-section-body{
+  max-width:78ch;
+}
 .exam-detail-empty{
   text-align:center;
   padding:60px 20px;
@@ -1248,6 +1343,7 @@ a.btn{
   .exam-detail{padding:22px 18px;}
   .exam-detail-title{font-size:22px;}
   .exam-info-grid{grid-template-columns:1fr;}
+  .competition-info-grid{grid-template-columns:1fr;}
 }
 
 @media(max-width:1200px){
@@ -1263,4 +1359,15 @@ a.btn{
   .filter-row{grid-template-columns:1fr;gap:10px}
   .card-head{flex-direction:column}
   .actions{flex-wrap:wrap}
+}
+@media(max-width:540px){
+  .inner,.topbar{padding-left:16px;padding-right:16px}
+  .topbar{gap:12px}
+  .brand{gap:8px;align-items:flex-start}
+  .brand > span:last-child{max-width:2em;line-height:1.1}
+  .top-actions{flex:1 1 0;min-width:0;align-items:stretch;gap:8px}
+  .nav{width:100%;justify-content:flex-start;gap:2px}
+  .nav-link{gap:5px;padding:8px;font-size:13px}
+  .nav-link.active::after{left:18px;right:18px}
+  .theme-toggle{align-self:flex-start;min-height:34px;padding:0 10px;font-size:12px}
 }
