@@ -1,8 +1,160 @@
 {
-  "last_updated": "2026-07-12T00:26:56+08:00",
+  "last_updated": "2026-07-12T12:05:21+08:00",
   "source": "CampBrief Auto",
-  "total": 53,
+  "total": 65,
   "items": [
+    {
+      "title": "SK 海力士 CEO 预计 2027 年 HBM 价格将翻倍",
+      "url": "https://36kr.com/newsflashes/3892093059873544?f=rss",
+      "date": "2026-07-12",
+      "published": "2026-07-12T11:58:49+08:00",
+      "summary": "SK 海力士 CEO 表示 2027 年将成为存储行业供应最紧张的一年，客户纷纷寻求长期供货协议。",
+      "detail": "SK 海力士 CEO 郭鲁正表示，2027 年将成为存储行业历史上供应最紧张的一年，客户纷纷前来寻求长期供货协议。尽管公司正扩充产能，但即使到 2030 年后客户需求仍可能高于供应能力。不过国内产投人士指出，中国存储厂商（长鑫存储和长江存储）的扩产进展可能成为存储市场最大的变量。SK 海力士已于本周在纳斯达克上市，募资约 265 亿美元。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "36氪"
+    },
+    {
+      "title": "三星电子将龙仁芯片工厂投产时间提前至 2029 年",
+      "url": "https://36kr.com/newsflashes/3892091542288904?f=rss",
+      "date": "2026-07-12",
+      "published": "2026-07-12T11:39:22+08:00",
+      "summary": "三星电子计划将龙仁芯片集群首座工厂投产时间提前至 2029 年，比原计划提早一至两年。",
+      "detail": "据报道，三星电子正将龙仁芯片集群首座半导体工厂的投产时间提前至 2029 年，以更快响应全球对 AI 芯片的快速增长需求。三星上月宣布将在平泽和龙仁半导体集群投资 2,030 万亿韩元（约 1.35 万亿美元），并在光州建设两座新芯片工厂。此举反映了全球芯片巨头在 AI 芯片产能竞赛中的加速布局。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "hardware",
+      "source": "36氪"
+    },
+    {
+      "title": "百度 AI 将携智能体全家桶亮相 WAIC 2026",
+      "url": "https://36kr.com/newsflashes/3892090766539268?f=rss",
+      "date": "2026-07-12",
+      "published": "2026-07-12T11:19:28+08:00",
+      "summary": "百度 AI 将在 WAIC 2026 上展示智能体全家桶和芯云模体全栈产品矩阵新升级。",
+      "detail": "百度 AI 宣布将在即将开幕的世界人工智能大会（WAIC 2026）上全方位展示智能体从技术升级、应用开发到产业赋能的最新成果。同时百度芯云模体全栈 AI 产品矩阵将发布新升级，集中展示从底层技术创新到产业场景的规模化落地进展。WAIC 2026 将在上海开幕。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "36氪"
+    },
+    {
+      "title": "近百名玩家涌入具身数据赛道，一年融资 44.7 亿",
+      "url": "https://36kr.com/p/3892027841362694?f=rss",
+      "date": "2026-07-12",
+      "published": "2026-07-12T10:16:07+08:00",
+      "summary": "具身智能数据采集赛道一年融资 44.7 亿元，97 家企业涌入，但高质量数据采集仍面临挑战。",
+      "detail": "据统计，国内具身智能数据采集赛道已有 97 家企业，其中 70 家做数据采集、27 家做数据基础设施。过去一年 15 家独立具身数据服务商共融资约 44.7 亿元。从湖南郴州移动营业厅的具身数据采集 5S 店到 VR 游戏化采集，各种创新模式层出不穷。但业内人士指出，符合机器人训练要求的高质量数据采集并不简单，商业模式和可持续性仍面临挑战。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "36氪"
+    },
+    {
+      "title": "GPT-5.6 Sol 被曝误删用户文件，OpenAI 已展开调查",
+      "url": "https://daily.juya.uk/issues/2026-07-12/",
+      "date": "2026-07-12",
+      "published": "2026-07-12T01:12:28+00:00",
+      "summary": "多名用户反映 GPT-5.6 Sol 模型在执行任务时意外删除本地文件，OpenAI 已确认展开调查。",
+      "detail": "多名用户反映 GPT-5.6 Sol 模型在通过 Codex 等工具执行任务时意外删除了本地文件，涉及文档和代码项目。OpenAI 已确认注意到相关报告并展开调查，建议用户在使用时启用版本控制和备份。这一事件再次引发对 AI Agent 自主操作安全性的广泛讨论。",
+      "image": "",
+      "priority": 3,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "title": "Thinking Machines Lab 发文：构建可定制并扩展人类意志的 AI",
+      "url": "https://daily.juya.uk/issues/2026-07-12/",
+      "date": "2026-07-12",
+      "published": "2026-07-12T01:12:28+00:00",
+      "summary": "Thinking Machines Lab 发表研究，探讨如何构建可定制且能扩展人类意志的 AI 系统。",
+      "detail": "AI 研究机构 Thinking Machines Lab 发布新论文，提出一种新的 AI 系统设计范式，旨在使 AI 能够根据用户需求进行定制，并在保持人类控制的前提下扩展其自主决策能力。该研究关注 AI 对齐和人机协作的核心问题，为 AI 安全和可控性提供了新的思路。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "juya AI 日报"
+    },
+    {
+      "title": "xAI Grok Build CLI 隐私分析：工具向服务器发送大量用户数据",
+      "url": "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547",
+      "date": "2026-07-12",
+      "published": "2026-07-12T01:09:50+00:00",
+      "summary": "技术分析揭示 xAI 的 Grok Build CLI 在后台向服务器发送大量用户数据，包括完整文件内容和项目结构。",
+      "detail": "一位开发者对 xAI 的 Grok Build 命令行工具进行了网络层逆向分析，发现该工具在运行时会向 xAI 服务器发送大量用户数据，包括完整的文件内容、项目结构和系统信息，且未明确告知用户。该分析在 Hacker News 获得超过 100 点赞，引发了开发者社区对 AI 编程工具隐私保护的广泛讨论。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "Hacker News"
+    },
+    {
+      "title": "修复三个 Bug 让 Qwen3.5-122B 在 Mac Studio 上稳定运行",
+      "url": "https://mrzk.io/posts/qmlx-maximising-ai-psychosis-minmaxing-mac-studio/",
+      "date": "2026-07-12",
+      "published": "2026-07-11T22:54:06+00:00",
+      "summary": "开发者分享在 Mac Studio 上部署 Qwen3.5-122B 大模型时修复三个关键 Bug 的经验。",
+      "detail": "一位开发者详细记录了在 M3 Mac Studio Ultra 上部署 Qwen3.5-122B 大语言模型时遇到的三个关键 Bug 及其修复方案，涉及量化精度、缓存泄漏和推理稳定性问题。修复后模型可作为日常编程助手稳定运行，支持长上下文对话。该经验对希望在本地硬件上运行大模型的开发者具有参考价值。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "Hacker News"
+    },
+    {
+      "title": "Mesh LLM：基于点对点网络的分布式 AI 计算",
+      "url": "https://www.iroh.computer/blog/mesh-llm",
+      "date": "2026-07-12",
+      "published": "2026-07-11T22:38:57+00:00",
+      "summary": "Iroh 项目发布 Mesh LLM，利用点对点网络实现分布式大模型推理，在 HN 获 147 点赞。",
+      "detail": "Iroh 团队发布 Mesh LLM 项目，利用点对点网络技术实现分布式大语言模型推理。用户可通过加入 mesh 网络共享计算资源共同运行大模型，无需依赖中心化云服务。该项目在 Hacker News 获得 147 点赞，被视为去中心化 AI 计算的重要探索，为降低大模型使用成本提供了新思路。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "Hacker News"
+    },
+    {
+      "title": "RISCBoy：从零设计的开源便携游戏主机",
+      "url": "https://github.com/Wren6991/RISCBoy",
+      "date": "2026-07-12",
+      "published": "2026-07-11T21:58:00+00:00",
+      "summary": "开源项目 RISCBoy 展示了一款完全从零设计的便携游戏主机，包含 CPU、图形、PCB 全部自研。",
+      "detail": "RISCBoy 是一个开源硬件项目，展示了如何从零开始设计一款便携式游戏主机。该项目基于 RISC-V 处理器架构，包含完整的 CPU 设计、图形系统、PCB 布局和外壳模型。在 Hacker News 获得 79 点赞，吸引了大量硬件爱好者关注。项目代码和设计文件完全开源，适合对嵌入式系统和硬件设计感兴趣的学习者参考。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Hacker News"
+    },
+    {
+      "title": "布朗大学教授怀疑多数学生在期中考试中使用 AI 作弊",
+      "url": "https://www.solidot.org/story?sid=84806",
+      "date": "2026-07-12",
+      "published": "2026-07-12T00:40:28+08:00",
+      "summary": "布朗大学经济学教授发现居家期中考试成绩异常高，改为线下考试后平均分暴跌至 48.6%。",
+      "detail": "布朗大学经济学教授 Roberto Serrano 在因枪击案让学生居家完成期中考试后，发现大部分学生获得满分或接近满分。他将期末考试改为线下进行，结果 18 名学生退课、9 名缺考，期末平均分仅 48.6%，远低于此前从未低于 65% 的历史记录。只有少数学生成绩与期中相近。该事件引发了对 AI 作弊工具在高等教育中泛滥的广泛讨论。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "Solidot"
+    },
+    {
+      "title": "日本 JAXA 成功测试可回收火箭 RV-X",
+      "url": "https://www.solidot.org/story?sid=84804",
+      "date": "2026-07-12",
+      "published": "2026-07-11T22:41:00+08:00",
+      "summary": "JAXA 成功测试可回收火箭 RV-X，完成升空、悬停、水平移动和直立着陆四个动作。",
+      "detail": "日本宇航研究开发机构（JAXA）7 月 11 日宣布成功测试可回收火箭 RV-X，测试持续约 40 秒，火箭上升至约 11 米高度后完成升空、悬停、水平移动和直立着陆。RV-X 计划取代不可回收的 H-3 火箭，下一步将进行百米级回收测试。法国和德国也参与了该项目的合作研发。中国在可回收火箭研发方面的进展更快。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "hardware",
+      "source": "Solidot"
+    },
     {
       "title": "温网女单决赛：捷克选手穆乔娃对阵诺斯科娃",
       "url": "https://www.theguardian.com/sport/live/2026/jul/11/karolina-muchova-v-linda-noskova-wimbledon-2026-womens-singles-final-live",
@@ -11,7 +163,8 @@
       "summary": "温布尔登网球锦标赛女单决赛迎来捷克内战，穆乔娃与诺斯科娃争夺冠军。",
       "detail": "2026 年温布尔登网球锦标赛女单决赛呈现罕见的捷克内战，卡罗琳娜·穆乔娃与琳达·诺斯科娃将争夺冠军。这是温网历史上首次由两名捷克选手会师女单决赛，反映了捷克网球近年来的强劲发展势头。比赛于当地时间下午 4 点开始。",
       "priority": 2,
-      "category": "sports"
+      "category": "sports",
+      "date": "2026-07-11"
     },
     {
       "title": "美国 FCC 批准太空镜测试，引发光污染争议",
@@ -22,7 +175,8 @@
       "detail": "美国联邦通信委员会（FCC）批准了一项太空镜测试计划，该技术旨在通过轨道镜面反射阳光来延长日光时间或提供夜间照明。天文学界和环保组织对此表示强烈反对，担忧大规模部署将严重影响天文观测、野生动物生态和人类昼夜节律。该项目引发了关于太空资源利用边界的新一轮讨论。",
       "priority": 2,
       "category": "tech",
-      "subcategory": "hardware"
+      "subcategory": "hardware",
+      "date": "2026-07-11"
     },
     {
       "title": "智谱创始人唐杰发内部信：「GLM 时刻」之后直指 AGI",
@@ -32,7 +186,8 @@
       "summary": "智谱创始人唐杰发布内部信，宣布将不追求短期应用变现，直指 AGI 的长程任务能力和自治智能体系统。",
       "detail": "智谱创始人唐杰发布主题为《巨浪已来》的内部信，宣布公司战略方向将从短期应用变现转向 AGI 核心能力研发，包括长程任务能力、完全自治的智能体系统、自我进化和极致安全治理。智谱过去半年市值较上市初期涨了 10 倍，已于 6 月跻身「万亿港元俱乐部」，市值超过小米。这一战略转向反映了中国头部 AI 公司在商业化与前沿研究之间的抉择。",
       "priority": 3,
-      "category": "ai"
+      "category": "ai",
+      "date": "2026-07-11"
     },
     {
       "title": "苏联控制室的复古美学",
@@ -42,7 +197,8 @@
       "summary": "苏联时期的控制室设计展现出独特的复古美学，色彩鲜明的仪表盘和控制面板至今仍具视觉冲击力。",
       "detail": "一组苏联时期各类控制室的历史照片近日在 Hacker News 上重新引发关注。这些控制室包括核电站、航天中心和工业设施的操作间，其设计风格独特：大面积使用鲜明色彩的仪表盘、旋钮和指示灯，布局紧凑但功能分区清晰。虽然技术已过时，但这些空间所呈现的工业美学和人机交互设计理念至今仍具启发性。",
       "priority": 1,
-      "category": "fun"
+      "category": "fun",
+      "date": "2026-07-11"
     },
     {
       "title": "世界杯八强赛：英格兰对阵挪威，迈阿密高温成变数",
@@ -52,17 +208,8 @@
       "summary": "世界杯八强赛英格兰将在迈阿密对阵挪威，当地高温天气可能成为比赛关键变数。",
       "detail": "世界杯八强赛中英格兰将前往迈阿密迎战挪威，这将是英格兰在本届赛事中首次在露天高温环境下比赛。迈阿密预计的高温高湿天气可能对球员体能构成严峻考验，而挪威方面则可能利用北欧球员对凉爽气候的适应性作为战术优势。",
       "priority": 2,
-      "category": "sports"
-    },
-    {
-      "title": "OpenAI 发布 ChatGPT 智能体",
-      "url": "https://openai.com/index/introducing-chatgpt-agent/",
-      "published": "2025-07-17T00:00:00+00:00",
-      "source": "OpenAI",
-      "summary": "OpenAI 正式推出 ChatGPT 智能体功能，可自主执行多步骤复杂任务。",
-      "detail": "OpenAI 正式推出 ChatGPT 智能体（Agent）功能，允许 ChatGPT 自主规划并执行多步骤复杂任务，包括网页浏览、文件处理和代码编写。该功能标志着 ChatGPT 从对话式助手向自主执行系统的转变，是 AI Agent 赛道的重要里程碑。",
-      "priority": 3,
-      "category": "ai"
+      "category": "sports",
+      "date": "2026-07-11"
     },
     {
       "title": "KwaiKAT 发布 KAT Coder Pro V2.5",
@@ -159,7 +306,8 @@
       "detail": "具身智能仿生扑翼飞行机器人公司「鹰瞰智翼」完成数千万元 A 轮融资，这是公司三个月内完成的第三轮融资。创始人为上海交通大学机械工程直博生，团队研发人员占比超 75%。资金将用于首款消费级产品的量产备货和下一代具身智能扑翼机器人研发。该公司是全球较早专注于具身智能扑翼机器人的企业之一。",
       "priority": 2,
       "category": "tech",
-      "subcategory": "hardware"
+      "subcategory": "hardware",
+      "date": "2026-07-11"
     },
     {
       "title": "苹果起诉 OpenAI，指控前员工窃取商业机密",
@@ -208,7 +356,8 @@
       "detail": "纽约市通过一项新法案，禁止企业采用欺骗性手段诱导用户订阅并设置退订障碍。法案要求所有订阅服务必须提供与注册同等便捷的退订流程，违规企业将面临处罚。该立法被视为对「暗黑模式」设计的重要规制，可能推动其他城市和州跟进类似立法。",
       "priority": 2,
       "category": "tech",
-      "subcategory": "industry"
+      "subcategory": "industry",
+      "date": "2026-07-10"
     },
     {
       "title": "SpaceX 计划再发射 10 万颗卫星以提升 100 倍带宽",
@@ -257,7 +406,8 @@
       "detail": "韩国嘉泉大学的研究人员调查了权威型领导如何影响中国中小企业员工的工作态度。研究收集了 363 名员工的数据，发现权威型领导通过增加工作倦怠间接导致「安静辞职」（躺平）行为，而非自愿出勤进一步放大了倦怠效应。该研究为理解东亚职场文化中的代际和管理风格差异提供了实证依据。",
       "priority": 1,
       "category": "tech",
-      "subcategory": "industry"
+      "subcategory": "industry",
+      "date": "2026-07-11"
     },
     {
       "title": "QuadRF：能探测无人机并穿墙感知 WiFi 的开源射频平台",
@@ -528,7 +678,8 @@
       "detail": "万勋科技发布「柔韧充」自动充电通用服务引擎，号称行业首个以「混沌服务」模式覆盖公用、专用、家用所有应用场景的产品。其核心特性为「0.000s 无极容差应变」，可在复杂多变的环境中实现自动充电。同期发布了三大类别应用成果，为自动充电场景的规模商用提供通用解决方案。",
       "priority": 1,
       "category": "tech",
-      "subcategory": "hardware"
+      "subcategory": "hardware",
+      "date": "2026-07-09"
     },
     {
       "title": "腾讯发布 Hy3 混合推理模型",
@@ -552,7 +703,8 @@
       "detail": "广西南宁横州市发生严重洪灾，网上视频显示救援人员借助深圳大疆的 FlyCart 100 农业无人机转移被困群众。该无人机载重量为 85 公斤，能够悬挂正常体重的民众进行转移。这并非中国首次使用农业无人机进行救灾，去年也曾有类似案例。无人机在深圳等城市已广泛用于外卖和快递配送。",
       "priority": 1,
       "category": "tech",
-      "subcategory": "hardware"
+      "subcategory": "hardware",
+      "date": "2026-07-09"
     },
     {
       "title": "OpenMandriva 项目遭内部破坏事件",
@@ -575,7 +727,8 @@
       "summary": "研究发现美国部分地区居民多达三成携带导致红肉过敏的抗体，远超此前预期。",
       "detail": "发表在《发病率与死亡率周报》上的研究显示，美国部分地区居民中多达三成携带导致红肉过敏的α-半乳糖综合征抗体，远超此前估计。该过敏反应通常在进食红肉后 2-6 小时才发作，使其难以被及时识别。研究分析了美国 10 个州 3000 份献血样本，田纳西州和阿肯色州等五个州的抗体阳性率最高。",
       "priority": 1,
-      "category": "fun"
+      "category": "fun",
+      "date": "2026-07-09"
     },
     {
       "title": "2026 年二季度全球 PC 出货量同比下滑 5%",
@@ -589,6 +742,17 @@
       "category": "tech",
       "source": "Solidot",
       "subcategory": "industry"
+    },
+    {
+      "title": "OpenAI 发布 ChatGPT 智能体",
+      "url": "https://openai.com/index/introducing-chatgpt-agent/",
+      "published": "2025-07-17T00:00:00+00:00",
+      "source": "OpenAI",
+      "summary": "OpenAI 正式推出 ChatGPT 智能体功能，可自主执行多步骤复杂任务。",
+      "detail": "OpenAI 正式推出 ChatGPT 智能体（Agent）功能，允许 ChatGPT 自主规划并执行多步骤复杂任务，包括网页浏览、文件处理和代码编写。该功能标志着 ChatGPT 从对话式助手向自主执行系统的转变，是 AI Agent 赛道的重要里程碑。",
+      "priority": 3,
+      "category": "ai",
+      "date": "2025-07-17"
     },
     {
       "title": "SK 海力士本周五登陆纳斯达克，募资 265 亿美元",

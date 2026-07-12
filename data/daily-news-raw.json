@@ -1,225 +1,200 @@
 {
-  "collected_at": "2026-07-11T22:48:22.927247+08:00",
-  "total": 110,
-  "sources_ok": 8,
-  "sources_failed": 0,
-  "errors": [],
+  "collected_at": "2026-07-12T12:02:27.622618+08:00",
+  "total": 80,
+  "sources_ok": 6,
+  "sources_failed": 2,
+  "errors": [
+    {
+      "source": "BBC Sport",
+      "url": "http://feeds.bbci.co.uk/sport/rss.xml?edition=int",
+      "error": "<urlopen error timed out>"
+    },
+    {
+      "source": "The Guardian Sport",
+      "url": "https://www.theguardian.com/sport/rss",
+      "error": "<urlopen error timed out>"
+    }
+  ],
   "candidates": [
     {
-      "title": "South Africa World Cup midfielder Adams dies aged 25",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cr47y5nvrqlo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-07-11T14:47:47+00:00",
-      "source": "BBC Sport",
-      "summary_raw": "South Africa and Mamelodi Sundowns midfielder Jayden Adams dies at the age of 25, just weeks after featuring for his country at the World Cup.",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
-      "title": "Tour de France 2026 – stage eight updates from Périgueux to Bergerac – live",
-      "url": "https://www.theguardian.com/sport/live/2026/jul/11/tour-de-france-2026-stage-eight-updates-from-perigueux-to-bergerac-live",
-      "published": "2026-07-11T14:36:26+00:00",
-      "source": "The Guardian Sport",
-      "summary_raw": "Périgueux to Bergerac: updates from the 180.4km stage Stage-by-stage guide | Stage seven report | Mail LukeOn the telly, they’re discussing the dynamics of the sprint finishes: we’ve had two bunch kicks and two different winners, Olaf Kooij and Tim Merlier. I fancy we’ll see a different winner today…",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
-      "title": "Glorious Gaud takes five wickets to make history at Lord's",
-      "url": "https://www.bbc.co.uk/sport/cricket/videos/crm0y8ren9wo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-07-11T14:34:57+00:00",
-      "source": "BBC Sport",
-      "summary_raw": "India seamer Kranti Gaud takes five wickets in England's first innings to become the first woman to go on the Lord's Test honours board.",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
-      "title": "Karolina Muchova v Linda Noskova: Wimbledon 2026 women’s singles final – live",
-      "url": "https://www.theguardian.com/sport/live/2026/jul/11/karolina-muchova-v-linda-noskova-wimbledon-2026-womens-singles-final-live",
-      "published": "2026-07-11T14:34:49+00:00",
-      "source": "The Guardian Sport",
-      "summary_raw": "Women’s singles final updates, start from 4pm BST You can now follow us on TikTok | And email KatyAnd the Press Association’s report on the doubles double for Patten and Heliovaara:Britain’s Henry Patten and Harri Heliovaara won the Wimbledon men’s doubles title with a 7-6 (7/4), 7-6 (7/3) victory o…",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
-      "title": "England v India: women’s Test, day two updates – live",
-      "url": "https://www.theguardian.com/sport/live/2026/jul/11/england-v-india-womens-test-day-two-updates-cricket-live",
-      "published": "2026-07-11T14:34:02+00:00",
-      "source": "The Guardian Sport",
-      "summary_raw": "Updates from the one-off women’s Test at Lord’s Sign up for The Spin | Email James15th over: England 38-3 (Sciver-Brunt 1, Capsey 5 ) Alice Capsey joins Sciver-Brunt in the middle with a rebuild job needed. Her first ball jags bag at the pads and she is fortunate to get an inside edge on it to tickl…",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
-      "title": "Fiji v England: Nations Championship rugby union – live",
-      "url": "https://www.theguardian.com/sport/live/2026/jul/11/fiji-v-england-nations-championship-rugby-union-live",
-      "published": "2026-07-11T14:33:42+00:00",
-      "source": "The Guardian Sport",
-      "summary_raw": "Live updates from 2.10pm (BST) kick-offGet in touch: mail Lee about the game2 mins. A single carry before Van Poortvliet sets up the caterpillar ruck to box-kick to touch for a zero nonsense start from England. This is not the case from Fiji from the lineout as Tagitagivalu spills a simple tap off t…",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
-      "title": "World Cup 2026: Norway v England buildup; Fifa to sell bits of MetLife pitch; Kane’s round of golf with Trump – live",
-      "url": "https://www.theguardian.com/football/live/2026/jul/11/world-cup-2026-spain-v-belgium-reaction-norway-v-england-quarter-final-buildup-and-more-live",
-      "published": "2026-07-11T14:33:30+00:00",
-      "source": "The Guardian Sport",
-      "summary_raw": "⚽ All the latest updates as the quarter-finals continue⚽ Player guide | Bracketology | Golden Boot | Email usThe brilliant Cold War Steve is back with the latest of his special World Cup 2026-themed collages. Look closely!More from Thomas Tuchel. Seize the day is his message. Continue reading...",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
-      "title": "July Festival 2026 at Newmarket and updates from York and Ascot: horse racing – live",
-      "url": "https://www.theguardian.com/sport/live/2026/jul/11/july-festival-2026-at-newmarket-horse-racing-live",
-      "published": "2026-07-11T14:33:29+00:00",
-      "source": "The Guardian Sport",
-      "summary_raw": "Updates from Newmarket, York and AscotGet in touch: mail Greg with your thoughtsOff and running in the 1.40 at Newmarket!Haffner and Subscription both break well … Continue reading...",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
-      "title": "England v India: fifth men’s T20 international – live",
-      "url": "https://www.theguardian.com/sport/live/2026/jul/11/england-v-india-fifth-mens-t20-international-cricket-live",
-      "published": "2026-07-11T14:32:15+00:00",
-      "source": "The Guardian Sport",
-      "summary_raw": "Updates from the series finale (2.30pm BST start) Sign up to The Spin | Email Geoff1st over: England 4-0 (Salt 2, Buttler 1) Another quiet opening over for England with the bat. Arshdeep Singh is swinging the ball with his left-arm efforts, and neither Salt nor Buttler tries anything expansive.Looks…",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
-      "title": "'Oh that is superb!' - Shafali's stunning catch gives Gaud five wickets",
-      "url": "https://www.bbc.co.uk/sport/cricket/videos/clywe1pjzdxo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-07-11T14:17:25+00:00",
-      "source": "BBC Sport",
-      "summary_raw": "Shafali Verma takes a diving catch on the rebound in the slips to remove Lauren Bell and secure a fifth wicket for Kranti Gaud, as she becomes the first woman to go on the Test honours board at Lord's.",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
-      "title": "GB's Hewett & Reid roar back to win seventh doubles title",
-      "url": "https://www.bbc.co.uk/sport/tennis/videos/c4gy158l83wo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-07-11T13:53:54+00:00",
-      "source": "BBC Sport",
-      "summary_raw": "Great Britain's Gordon Reid and Alfie Hewett come from a set down against Gustavo Fernandez and Tokito Oda to win a seventh Wimbledon men's wheelchair doubles title.",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
-      "title": "Ken Bates, colourful and controversial former Chelsea chair, dies aged 94",
-      "url": "https://www.theguardian.com/football/2026/jul/11/ken-bates-chelsea-leeds-dies-aged-94",
-      "published": "2026-07-11T13:48:29+00:00",
-      "source": "The Guardian Sport",
-      "summary_raw": "Bates oversaw eventful 21-year period in club’s historySubsequent ownership of Leeds was hugely troubledKen Bates, one of the most colourful and controversial figures in the history of English football, has died aged 94, Chelsea have announced.The club reported on Saturday afternoon that Bates had d…",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
-      "title": "Speculations Concerning the First Ultraintelligent Machine (1965) [pdf]",
-      "url": "https://languagelog.ldc.upenn.edu/myl/Good1964.pdf",
-      "published": "2026-07-11T13:33:17+00:00",
+      "title": "Why are US consumers so angry? It's not just high prices",
+      "url": "https://www.theguardian.com/us-news/ng-interactive/2026/jun/04/us-consumer-rage-prices-economy",
+      "published": "2026-07-12T03:10:08+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://languagelog.ldc.upenn.edu/myl/Good1964.pdf Comments URL: https://news.ycombinator.com/item?id=48871932 Points: 18 # Comments: 1",
+      "summary_raw": "Article URL: https://www.theguardian.com/us-news/ng-interactive/2026/jun/04/us-consumer-rage-prices-economy Comments URL: https://news.ycombinator.com/item?id=48877927 Points: 9 # Comments: 0",
       "category_hint": "tech",
       "lang": "en"
     },
     {
-      "title": "South Africa World Cup midfielder Jayden Adams dies aged 25",
-      "url": "https://www.theguardian.com/football/2026/jul/11/south-africa-world-cup-midfielder-jayden-adams-dies-aged-25",
-      "published": "2026-07-11T13:29:10+00:00",
-      "source": "The Guardian Sport",
-      "summary_raw": "Adams played in South Africa’s World Cup group gamesMidfielder played for Mamelodi SundownsJayden Adams, who played in South Africa’s three group games at the World Cup, has died aged 25.The Mamelodi Sundowns midfielder started the tournament opener, a 2-0 defeat by Mexico, and the 1-1 draw with Cze…",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
-      "title": "Former Chelsea and Leeds owner Bates dies aged 94",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c3ry513ljq3o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-07-11T13:21:14+00:00",
-      "source": "BBC Sport",
-      "summary_raw": "Former Chelsea and Leeds United owner Ken Bates has died aged 94, Chelsea announced on Saturday.",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
-      "title": "Muchova on roots, resilience & being a foodie",
-      "url": "https://www.bbc.co.uk/sport/tennis/videos/cy04edljerko?at_medium=RSS&at_campaign=rss",
-      "published": "2026-07-11T13:14:35+00:00",
-      "source": "BBC Sport",
-      "summary_raw": "Learn more about 2026 Wimbledon women's singles finalist Karolina Muchova and why the \"fire and love for the sport\" keeps her coming back to compete at the highest level.",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
-      "title": "Networking and the Internet, from First Principles",
-      "url": "https://fazamhd.com/mental-models/networking/",
-      "published": "2026-07-11T12:30:40+00:00",
+      "title": "Show HN: Quantum-Qec / Matrix-Free Quantum Homeostatic Engine(Blueprint)",
+      "url": "https://github.com/PJHkorea/quantum-mesh-qec",
+      "published": "2026-07-12T02:15:11+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://fazamhd.com/mental-models/networking/ Comments URL: https://news.ycombinator.com/item?id=48871470 Points: 118 # Comments: 42",
+      "summary_raw": "Article URL: https://github.com/PJHkorea/quantum-mesh-qec Comments URL: https://news.ycombinator.com/item?id=48877672 Points: 3 # Comments: 3",
       "category_hint": "tech",
       "lang": "en"
     },
     {
-      "title": "Pubs can stay open for full Norway game - even if kick-off delayed",
-      "url": "https://www.bbc.co.uk/news/articles/cm204lgrv10o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-07-11T12:26:08+00:00",
-      "source": "BBC Sport",
-      "summary_raw": "The extended hours means fans can watch the entire game, even if the start is delayed.",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
-      "title": "FCC Approves Test of Space Mirror to Light Night Sky Despite Outcry",
-      "url": "https://www.nytimes.com/2026/07/10/climate/fcc-space-mirror.html",
-      "published": "2026-07-11T12:12:34+00:00",
+      "title": "We Know Simple Fluids Can Flow. Turns Out, Some Can Fracture",
+      "url": "https://www.quantamagazine.org/we-know-simple-fluids-can-flow-turns-out-some-can-fracture-20260710/",
+      "published": "2026-07-12T02:13:46+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://www.nytimes.com/2026/07/10/climate/fcc-space-mirror.html Comments URL: https://news.ycombinator.com/item?id=48871367 Points: 51 # Comments: 46",
+      "summary_raw": "Article URL: https://www.quantamagazine.org/we-know-simple-fluids-can-flow-turns-out-some-can-fracture-20260710/ Comments URL: https://news.ycombinator.com/item?id=48877668 Points: 29 # Comments: 6",
       "category_hint": "tech",
       "lang": "en"
     },
     {
-      "title": "Hewett & Reid win seventh Wimbledon doubles title",
-      "url": "https://www.bbc.co.uk/sport/tennis/articles/c0qyk5wxk5eo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-07-11T12:04:59+00:00",
-      "source": "BBC Sport",
-      "summary_raw": "British pair Alfie Hewett and Gordon Reid win their seventh Wimbledon men's wheelchair doubles title as a partnership, beating Gustavo Fernandez and Tokito Oda.",
-      "category_hint": "sports",
-      "lang": "en"
+      "title": "6月音乐精选：不得不听的 17 张……没错 17 张专辑！",
+      "url": "https://sspai.com/post/112035",
+      "published": "2026-07-12T10:03:12+08:00",
+      "source": "少数派",
+      "summary_raw": "编者注：2026年我们将重启少数派音乐推荐栏目FM3.14，特邀资深音乐从业者及爱好者为大家推荐优质的华语独立、流行音乐，今年我们也很荣幸邀请到老朋友飞傲，为本栏目冠名。飞傲目前拥有品牌以音乐发烧友为 ...查看全文",
+      "category_hint": "tech",
+      "lang": "zh"
     },
     {
-      "title": "Your code is fast – if you're lucky",
-      "url": "https://tiki.li/blog/lucky_code.html",
-      "published": "2026-07-11T10:50:10+00:00",
+      "title": "The Energetic Costs of Cellular Computation (2012)",
+      "url": "https://arxiv.org/abs/1203.5426",
+      "published": "2026-07-12T01:59:35+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://tiki.li/blog/lucky_code.html Comments URL: https://news.ycombinator.com/item?id=48870799 Points: 78 # Comments: 29",
+      "summary_raw": "Article URL: https://arxiv.org/abs/1203.5426 Comments URL: https://news.ycombinator.com/item?id=48877613 Points: 10 # Comments: 1",
       "category_hint": "tech",
       "lang": "en"
     },
     {
-      "title": "Show HN: Richest people in the world by wealth creation instead of ownership",
-      "url": "https://anti-forbes-list.vercel.app",
-      "published": "2026-07-11T09:54:14+00:00",
+      "title": "2026-07-12",
+      "url": "https://daily.juya.uk/issues/2026-07-12/",
+      "published": "2026-07-12T01:12:28+00:00",
+      "source": "juya AI 日报",
+      "summary_raw": "AI 早报 2026 07 12 视频版 ：哔哩哔哩 ｜ YouTube 概览 要闻 智谱创始人唐杰发布内部信 宣布启动Touch High计划攻坚AGI ↗ 1 开发生态 ChatGPT Work 和 Codex 再次用量重置 ↗ 2 技术与洞察 Thinking Machines Lab发文：构建可定制并扩展人类意志的AI ↗ 3 其他 GPT 5.6 Sol 被曝误删用户文件 OpenAI 已展开调查 ↗ 4 要闻 智谱创始人唐杰发布内部信 宣布启动Touch High计划攻坚AGI 1 智谱创始人唐杰发布内部信宣布启动Touch High计划，未来两年不将短期应用变现放在首位。计划聚焦…",
+      "category_hint": "ai",
+      "lang": "zh"
+    },
+    {
+      "title": "What xAI's Grok Build CLI Actually Sends to xAI",
+      "url": "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547",
+      "published": "2026-07-12T01:09:50+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://anti-forbes-list.vercel.app Comments URL: https://news.ycombinator.com/item?id=48870472 Points: 14 # Comments: 4",
+      "summary_raw": "Article URL: https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547 Comments URL: https://news.ycombinator.com/item?id=48877371 Points: 107 # Comments: 56",
       "category_hint": "tech",
       "lang": "en"
     },
     {
-      "title": "Not 'something in the beer' - why Czechs are dominating Wimbledon",
-      "url": "https://www.bbc.co.uk/sport/tennis/articles/cy5v6439e37o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-07-11T07:58:45+00:00",
-      "source": "BBC Sport",
-      "summary_raw": "With Karolina Muchova and Linda Noskova set for an all-Czech Wimbledon final, Naomi Broady discusses why the nation produces so many top players and where the final will be won or lost.",
-      "category_hint": "sports",
+      "title": "A Erlang style pure Scheme Webserver and further",
+      "url": "https://igropyr.com",
+      "published": "2026-07-12T01:03:29+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Article URL: https://igropyr.com Comments URL: https://news.ycombinator.com/item?id=48877344 Points: 14 # Comments: 1",
+      "category_hint": "tech",
       "lang": "en"
     },
     {
-      "title": "Hey Jude: Bellingham's return to England indispensability",
-      "url": "https://www.bbc.co.uk/sport/football/articles/ckg47l8nl7jo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-07-11T07:54:32+00:00",
-      "source": "BBC Sport",
-      "summary_raw": "Senior football correspondent Sami Mokbel charts Jude Bellingham's remarkable resurgence with England at the World Cup.",
-      "category_hint": "sports",
+      "title": "A pure scheme web programming tool",
+      "url": "https://goeteia.dev",
+      "published": "2026-07-12T00:57:18+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Article URL: https://goeteia.dev Comments URL: https://news.ycombinator.com/item?id=48877314 Points: 33 # Comments: 13",
+      "category_hint": "tech",
       "lang": "en"
+    },
+    {
+      "title": "A dock that wakes up reliably",
+      "url": "https://fabiensanglard.net/tb4/index.html",
+      "published": "2026-07-12T00:48:10+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Article URL: https://fabiensanglard.net/tb4/index.html Comments URL: https://news.ycombinator.com/item?id=48877269 Points: 43 # Comments: 32",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "Long Covid May Physically Damage the Nerves That Control the Stomach",
+      "url": "https://www.ijidonline.com/article/S1201-9712(26)00608-9/fulltext",
+      "published": "2026-07-12T00:35:08+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Article URL: https://www.ijidonline.com/article/S1201-9712(26)00608-9/fulltext Comments URL: https://news.ycombinator.com/item?id=48877192 Points: 66 # Comments: 34",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "Martha Lillard, last US polio patient using iron lung, dies at 78 in Oklahoma",
+      "url": "https://abcnews.com/US/wireStory/martha-lillard-us-polio-patient-iron-lung-dies-134668491",
+      "published": "2026-07-12T00:32:15+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Article URL: https://abcnews.com/US/wireStory/martha-lillard-us-polio-patient-iron-lung-dies-134668491 Comments URL: https://news.ycombinator.com/item?id=48877178 Points: 44 # Comments: 6",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "Doctors die. It's not like the rest of us, but it should be (2016)",
+      "url": "https://archive.cancerworld.net/featured/how-doctors-die/",
+      "published": "2026-07-11T23:15:06+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Article URL: https://archive.cancerworld.net/featured/how-doctors-die/ Comments URL: https://news.ycombinator.com/item?id=48876741 Points: 101 # Comments: 59",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "Fixed three bugs that made Qwen3.5-122B a daily driver on Mac Studio",
+      "url": "https://mrzk.io/posts/qmlx-maximising-ai-psychosis-minmaxing-mac-studio/",
+      "published": "2026-07-11T22:54:06+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Article URL: https://mrzk.io/posts/qmlx-maximising-ai-psychosis-minmaxing-mac-studio/ Comments URL: https://news.ycombinator.com/item?id=48876619 Points: 10 # Comments: 1",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "Mesh LLM: distributed AI computing on iroh",
+      "url": "https://www.iroh.computer/blog/mesh-llm",
+      "published": "2026-07-11T22:38:57+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Article URL: https://www.iroh.computer/blog/mesh-llm Comments URL: https://news.ycombinator.com/item?id=48876505 Points: 147 # Comments: 33",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "RISCBoy is an open-source portable games console, designed from scratch",
+      "url": "https://github.com/Wren6991/RISCBoy",
+      "published": "2026-07-11T21:58:00+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Article URL: https://github.com/Wren6991/RISCBoy Comments URL: https://news.ycombinator.com/item?id=48876245 Points: 79 # Comments: 17",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "Show HN: Ant – A JavaScript runtime and ecosystem",
+      "url": "https://antjs.org",
+      "published": "2026-07-11T20:07:18+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Hello HN!I'm the author of Ant, a JavaScript ecosystem built around a runtime with its own JavaScript engine. Ant also includes a package manager, the ants.land package registry, a platform for deploying and hosting applications, and Ant Desktop for building native desktop apps with web technologies…",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "布朗大学经济学教授怀疑班级里多数学生使用 AI 作弊",
+      "url": "https://www.solidot.org/story?sid=84806",
+      "published": "2026-07-12T00:40:28+08:00",
+      "source": "Solidot",
+      "summary_raw": "在去年 12 月学校发生枪击案之后，布朗大学经济学教授 Roberto Serrano 首次让学生在家中完成期中考试。期中考试成绩显示大部分学生获得了满分或接近满分，他怀疑学生大规模使用 AI 作弊。因此决定将期末考试改为线下进行。他没有立即宣布期中考试无效，而是决定先看看期末考试的得分。如果期末考试得分的分布与期中考试的分布基本相同，那么他会将期中考试得分计入成绩。结果是 18 名学生退课，9 名学生没有参加期末考试。3 名学生得了零分，期末考试的平均分只有 48.6%——这是他所教班级迄今的历史最低分。此前期末考试的平均分从未低于 65%。只有少数学生的期末考试成绩与期中考试的成绩相近。",
+      "category_hint": "tech",
+      "lang": "zh"
+    },
+    {
+      "title": "苹果起诉 OpenAI，指控前华裔员工窃取商业机密",
+      "url": "https://www.solidot.org/story?sid=84805",
+      "published": "2026-07-12T00:16:25+08:00",
+      "source": "Solidot",
+      "summary_raw": "苹果起诉 OpenAI，指控该公司窃取其商业机密。这起诉讼的两位核心人物是 OpenAI 首席硬件官 Tang Tan 以及前苹果工程师 Chang Liu。苹果指控称，Tang Tan 会指导跳槽到 OpenAI 的苹果前员工如何规避苹果针对离职员工的安全流程。而 Chang Liu 被控秘密访问并下载了数十份苹果的机密硬件相关文件，其中包括大量关于未发布产品的详细信息、工程演示文稿、技术规格和私有项目数据。Liu 被控没有归还苹果配发的笔记本电脑，他还访问和使用了前同事的笔记本电脑，利用认证漏洞访问了苹果的共享网络文件夹。在发现漏洞之后，Liu 在前同事的笔记本电脑上留言说“LOL”。",
+      "category_hint": "tech",
+      "lang": "zh"
+    },
+    {
+      "title": "日本成功测试可回收火箭技术",
+      "url": "https://www.solidot.org/story?sid=84804",
+      "published": "2026-07-11T22:41:00+08:00",
+      "source": "Solidot",
+      "summary_raw": "日本宇航研究开发机构(JAXA) 7 月 11 日宣布，成功测试了一枚可回收火箭 RV-X。本次测试总共持续了约 40 秒，火箭上升至约 11 米的高度，期间完成了升空、悬停、水平移动、直立着陆共 4 个动作。目前旨在大幅降低航天任务成本的可回收火箭是许多国家的研发重点。RV-X 计划将取代不可回收的 H-3 火箭。下一步 JAXA 还将测试 RV-X 的升空一百米回收测试。法国、德国也参与到了日本的可回收火箭合作研发项目中。作为日本的战略竞争对手，中国在可回收火箭研发方面的进展要快得多。",
+      "category_hint": "tech",
+      "lang": "zh"
     },
     {
       "title": "暴雨和洪涝的季节，这些技巧助你从容自保",
@@ -231,60 +206,6 @@
       "lang": "zh"
     },
     {
-      "title": "The ad machine: how David Beckham conquered America",
-      "url": "https://www.theguardian.com/football/2026/jul/11/the-ad-machine-how-david-beckham-conquered-america",
-      "published": "2026-07-11T07:00:43+00:00",
-      "source": "The Guardian Sport",
-      "summary_raw": "The former England midfielder is everywhere at this World Cup, having reached a popularity in the US other Britons have rarely achievedWatch US television for any length of time and the endless spume of adverts will eventually separate into three distinct types.The first are adverts for units of gen…",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
-      "title": "Screen time: grab the remote and embrace this remarkable sporting smorgasbord | Emma John",
-      "url": "https://www.theguardian.com/sport/2026/jul/11/screen-time-grab-the-remote-and-embrace-this-remarkable-sporting-smorgasbord",
-      "published": "2026-07-11T07:00:43+00:00",
-      "source": "The Guardian Sport",
-      "summary_raw": "With content-stacking and spoiler-avoiding, a fan with the right subscriptions can expect to enjoy 13 uninterrupted hours on the sofa on SaturdayStart practising those excuses. For England fans, this Saturday is one of those that demands serious thought, by which I mean how to wheedle out of prior e…",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
-      "title": "Is it time to give record-breaker Pickford the credit he deserves?",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cj9gknxm91vo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-07-11T05:55:32+00:00",
-      "source": "BBC Sport",
-      "summary_raw": "Is it time to finally give England keeper Jordan Pickford the credit he deserves as he enters the World Cup history books, asks chief football writer Phil McNulty.",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
-      "title": "Artificial turf & coaching revolution - how Norway shaped golden generation",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cvge7299ygwo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-07-11T05:31:12+00:00",
-      "source": "BBC Sport",
-      "summary_raw": "Artificial turf, investment from gambling and a coaching revolution based on collaboration over egos help Norway build a golden generation of players.",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
-      "title": "The vintage beauty of Soviet control rooms (2018)",
-      "url": "https://designyoutrust.com/2018/01/vintage-beauty-soviet-control-rooms/",
-      "published": "2026-07-11T05:19:41+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://designyoutrust.com/2018/01/vintage-beauty-soviet-control-rooms/ Comments URL: https://news.ycombinator.com/item?id=48868996 Points: 156 # Comments: 51",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "England set for open-air Miami heat - but do Norway hold the edge?",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cx2jzl3zxpzo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-07-11T05:08:35+00:00",
-      "source": "BBC Sport",
-      "summary_raw": "England will head into unknown territory at this World Cup when they face Norway in Miami - playing in searing temperatures.",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
       "title": "2026-07-11",
       "url": "https://daily.juya.uk/issues/2026-07-11/",
       "published": "2026-07-11T01:20:52+00:00",
@@ -292,105 +213,6 @@
       "summary_raw": "AI 早报 2026 07 11 视频版 ：哔哩哔哩 ｜ YouTube 概览 要闻 KwaiKAT 发布 KAT Coder Pro V2.5 ↗ 1 Grok 4.5向免费用户开放 Grok Build限时体验 ↗ 2 Claude Code 桌面版新增内置浏览器：支持沙盒与交互 ↗ 3 OpenAI 重置用量并承认更新体验问题 ↗ 4 模型发布 Wan 发布 Wan Streamer v0.2：分辨率升至640×368 ↗ 5 Kyutai 发布开源多乐器转录模型 MuScriptor ↗ 6 开发生态 Google AI Studio 为部署应用推出免费个性化 URL ↗ 7 Deep…",
       "category_hint": "ai",
       "lang": "zh"
-    },
-    {
-      "title": "Einstein's relativity rules chemical bonds in heavy elements, new research shows",
-      "url": "https://www.brown.edu/news/2026-07-09/chemical-bonds-relativity",
-      "published": "2026-07-10T22:30:44+00:00",
-      "source": "Hacker News",
-      "summary_raw": "https://www.science.org/doi/10.1126/science.aei1285 Comments URL: https://news.ycombinator.com/item?id=48866134 Points: 314 # Comments: 135",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "Moss (YC F25) Is Hiring",
-      "url": "https://www.ycombinator.com/companies/moss/jobs/52LnqLQ-software-engineer-sdk",
-      "published": "2026-07-10T21:11:18+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://www.ycombinator.com/companies/moss/jobs/52LnqLQ-software-engineer-sdk Comments URL: https://news.ycombinator.com/item?id=48865332 Points: 0 # Comments: 0",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "Apple sues OpenAI, accuses ex-employees of stealing trade secrets",
-      "url": "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/",
-      "published": "2026-07-10T20:47:09+00:00",
-      "source": "Hacker News",
-      "summary_raw": "https://www.macrumors.com/2026/07/10/apple-sues-openai/ Comments URL: https://news.ycombinator.com/item?id=48865019 Points: 1297 # Comments: 698",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "Football's best bromance: Why Bellingham and Haaland break the mould",
-      "url": "https://www.bbc.co.uk/news/articles/cz9l8pzxv7vo?at_medium=RSS&at_campaign=rss",
-      "published": "2026-07-10T19:53:49+00:00",
-      "source": "BBC Sport",
-      "summary_raw": "The two players have won an army of admirers from social media clips and their honesty in interviews.",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
-      "title": "An update on residential proxies and the scraper situation",
-      "url": "https://lwn.net/SubscriberLink/1080822/990a8a5e2d379085/",
-      "published": "2026-07-10T19:38:34+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://lwn.net/SubscriberLink/1080822/990a8a5e2d379085/ Comments URL: https://news.ycombinator.com/item?id=48864252 Points: 253 # Comments: 259",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "GPT-5.6 Sol Ultra produces proof of the Cycle Double Cover Conjecture [pdf]",
-      "url": "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf",
-      "published": "2026-07-10T18:29:19+00:00",
-      "source": "Hacker News",
-      "summary_raw": "https://x.com/__eknight__/status/2075643450196971805, https://xcancel.com/__eknight__/status/2075643450196971805Prompt: https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98... Comments URL: https://news.ycombinator.com/item?id=48863490 Points: 489 # Comments: 402",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "New York City to ban deceptive subscription practices",
-      "url": "https://www.theguardian.com/us-news/2026/jul/10/new-york-city-deceptive-subscriptions-ban",
-      "published": "2026-07-10T18:26:24+00:00",
-      "source": "Hacker News",
-      "summary_raw": "https://www.nyc.gov/mayors-office/news/2026/07/mayor-mamdani... Comments URL: https://news.ycombinator.com/item?id=48863464 Points: 577 # Comments: 286",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "Cutting off Erling Haaland is key but Norway are not just a one-man team | Emma Hayes",
-      "url": "https://www.theguardian.com/football/2026/jul/10/erling-haaland-england-norway-2026-world-cup-quarter-final-emma-hayes",
-      "published": "2026-07-10T17:59:57+00:00",
-      "source": "The Guardian Sport",
-      "summary_raw": "England need to be wary of a united Ståle Solbakken side who know their strengths before the World Cup quarter-finalEngland fans are going to have to be really patient on Saturday night because this World Cup quarter-final against Norway will feel like a grind and I would not be surprised if the mat…",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
-      "title": "SpaceX wants to launch 100k more Starlink satellites for 100x the bandwidth",
-      "url": "https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/",
-      "published": "2026-07-10T17:51:07+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/ Comments URL: https://news.ycombinator.com/item?id=48863064 Points: 233 # Comments: 801",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "The tech of 'Terminator 2' – an oral history (2017)",
-      "url": "https://vfxblog.com/2017/08/23/the-tech-of-terminator-2-an-oral-history/",
-      "published": "2026-07-10T16:48:41+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://vfxblog.com/2017/08/23/the-tech-of-terminator-2-an-oral-history/ Comments URL: https://news.ycombinator.com/item?id=48862365 Points: 236 # Comments: 81",
-      "category_hint": "tech",
-      "lang": "en"
-    },
-    {
-      "title": "Snails' teeth beats spider silk as nature's strongest material (2015)",
-      "url": "https://www.smithsonianmag.com/smart-news/spider-silk-loses-top-spot-natures-strongest-material-snails-teeth-180954346/",
-      "published": "2026-07-10T16:37:52+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://www.smithsonianmag.com/smart-news/spider-silk-loses-top-spot-natures-strongest-material-snails-teeth-180954346/ Comments URL: https://news.ycombinator.com/item?id=48862252 Points: 211 # Comments: 159",
-      "category_hint": "tech",
-      "lang": "en"
     },
     {
       "title": "现代环境让大脑不堪重负",
@@ -418,15 +240,6 @@
       "summary_raw": "根据发表在《自然》期刊上的一项研究，人形机器人成功完成切除活体动物胆囊的手术。人形机器人并不具有自主能力，它们并不会取代医生，而是由外科医生远超操作。远程操控的人形机器人为活猪完成两例微创胆囊切除手术。如果该方法被证实适用于临床，外科医生就可以利用人形机器人，在资源有限、无法安装专业且昂贵手术机器人的小型医院和诊所远程开展机器人辅助手术。人形机器人相比专业手术机器人更便宜，占用的空间更小，而且易于部署，能部署到从偏远地区到战场甚至太空。研究人员利用宇树科技的 G1 人形机器人。最便宜的 G1 基础型号起售价 13,500 美元，配置灵活机械手以及运费之后费用会超过 6.7 万美元。相比下 In…",
       "category_hint": "tech",
       "lang": "zh"
-    },
-    {
-      "title": "World Cup last eight, Wimbledon finals and the Tour de France – follow with us",
-      "url": "https://www.theguardian.com/sport/2026/jul/10/world-cup-last-eight-wimbledon-finals-and-the-tour-de-france-follow-with-us",
-      "published": "2026-07-10T14:23:49+00:00",
-      "source": "The Guardian Sport",
-      "summary_raw": "Here’s how to follow along with our coverage – the finest writing and up-to-the-minute reports Continue reading...",
-      "category_hint": "sports",
-      "lang": "en"
     },
     {
       "title": "长征十号乙火箭成功回收",
@@ -492,15 +305,6 @@
       "lang": "zh"
     },
     {
-      "title": "Born in Leeds, crafted in Norway - Haaland's worlds about to collide",
-      "url": "https://www.bbc.co.uk/sport/football/articles/cd7pqdyy9v2o?at_medium=RSS&at_campaign=rss",
-      "published": "2026-07-10T05:47:23+00:00",
-      "source": "BBC Sport",
-      "summary_raw": "Erling Haaland has guided Norway to their first World Cup since 1998. So what is it like being a global name from a nation with a population of just 5.5 million?",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
       "title": "Vibe Coding 时代，为什么降本不一定增效？",
       "url": "https://sspai.com/post/111975",
       "published": "2026-07-10T10:50:28+08:00",
@@ -564,15 +368,6 @@
       "lang": "zh"
     },
     {
-      "title": "Euclid 望远镜发现已知最遥远的类星体",
-      "url": "https://www.solidot.org/story?sid=84791",
-      "published": "2026-07-09T18:11:30+08:00",
-      "source": "Solidot",
-      "summary_raw": "ESA 欧几里得太空望远镜（Euclid）发射升空后，除了肩负绘制宇宙三维结构、探究暗物质与暗能量本质的主要任务外，也展现搜寻早期宇宙天体的强大能力。最新研究利用欧几里得首批巡天资料，成功发现 34 个红移大于 6.5 的星体，其中 27 个位于红移 7 以上，并确认 EUCL J172902.75+641018.1 的红移高达 7.77，成为目前已知距离最遥远的类星体。类星体是由星系中心超大质量黑洞吸积大量气体所产生的极高亮度天体，其亮度甚至可超越整个宿主星系，因此能作为探测早期宇宙的重要灯塔。",
-      "category_hint": "tech",
-      "lang": "zh"
-    },
-    {
       "title": "TDS REVIEW | 小米耳夹式耳机体验",
       "url": "https://sspai.com/post/112011",
       "published": "2026-07-09T17:30:00+08:00",
@@ -587,24 +382,6 @@
       "published": "2026-07-09T15:49:58+08:00",
       "source": "少数派",
       "summary_raw": "近段时间，Apple陆续推出了iOS27的两个DeveloperBeta测试版本，对第一个版本中的一些新功能进行了优化改进，同时也新增了一些系统特性。接下来，就让我们一起来看看吧。编注：AppleIn ...查看全文",
-      "category_hint": "tech",
-      "lang": "zh"
-    },
-    {
-      "title": "2026 年二季度 PC 出货量下滑 5%",
-      "url": "https://www.solidot.org/story?sid=84790",
-      "published": "2026-07-09T15:37:44+08:00",
-      "source": "Solidot",
-      "summary_raw": "由于内存危机，2026 年二季度 PC 出货量 6820 万台同比下滑 5%。IDC 警告如果这一情况继续下去小型供应商可能会倒闭。联想等大型供应商因为能提前与内存制造商协商供货，因此状况还比较好。联想最近公布的财报显示，其 PC 和智能设备业务收入增长了 26%。IDC 警告称，随着苹果、戴尔、惠普和联想等行业巨头利用其规模优势确保内存供应并挤压小型竞争对手，厂商整合的风险在增加。行业巨头已做好从小型竞争对手手中夺取市场份额的准备，可能会迫使实力较弱的企业进行合并或退出市场。",
-      "category_hint": "tech",
-      "lang": "zh"
-    },
-    {
-      "title": "OpenMandriva 项目发生破坏事件",
-      "url": "https://www.solidot.org/story?sid=84789",
-      "published": "2026-07-09T15:01:35+08:00",
-      "source": "Solidot",
-      "summary_raw": "OpenMandriva 项目发生一起破坏事件，开发者出于透明原则公布了事件经过：有多个新人加入了项目团队，其中之一是 Mumble 项目的 Davide Beatrici，他比较知名因此获得了团队的信任，获得了管理员权限。同时加入的还有 Beatrici 的朋友。但他的朋友在发行版的 Matrix 聊天室对其他人进行了攻击和辱骂，导致其他人退出。此人最终被踢出。在朋友被踢出之后 Beatrici 也离开了项目。鉴于此开发者切断了他维护的镜像连接。但此举却激怒了 Beatrici，他滥用其管理权限删除了 GitHub 上的部分库，在 cooker 库中发布了一个空包，导致所有 gnome 和 …",
       "category_hint": "tech",
       "lang": "zh"
     },
@@ -632,15 +409,6 @@
       "published": "2026-07-09T08:40:02+08:00",
       "source": "少数派",
       "summary_raw": "Notion 推出全新应用 Agents、Jolla Phone (2026) 手机正式发售等。查看全文",
-      "category_hint": "tech",
-      "lang": "zh"
-    },
-    {
-      "title": "乌兰布统，草原观星",
-      "url": "https://sspai.com/post/111923",
-      "published": "2026-07-08T17:26:49+08:00",
-      "source": "少数派",
-      "summary_raw": "以后争取每年都来乌兰布统这一大片地方走走看看。查看全文",
       "category_hint": "tech",
       "lang": "zh"
     },
@@ -704,24 +472,6 @@
       "published": "2026-07-03T01:01:00+00:00",
       "source": "juya AI 日报",
       "summary_raw": "AI 早报 2026 07 03 视频版 ：哔哩哔哩 ｜ YouTube 概览 开发生态 Anthropic 面向 Pro 和 Max 用户开放 Claude Code Artifacts ↗ 1 Anthropic计划算力允许后将Fable恢复为订阅标配 ↗ 2 模型发布 葡萄牙发布面向葡萄牙语的开源模型AMALIA ↗ 3 产品应用 Arena.ai 发布 Code Arena Fullstack 功能 ↗ 4 昆仑万维推出天工3.2升级并上线Skywork Tags ↗ 5 “阿宝”开放公测并取消邀请码限制 ↗ 6 技术与洞察 ByteDance Seed 发布 EdgeBench 基准…",
-      "category_hint": "ai",
-      "lang": "zh"
-    },
-    {
-      "title": "World Cup 2026: guide to all 1,248 players",
-      "url": "https://www.theguardian.com/football/ng-interactive/2026/jun/04/world-cup-2026-complete-player-guide",
-      "published": "2026-07-02T08:59:35+00:00",
-      "source": "The Guardian Sport",
-      "summary_raw": "Everything you need to know (and more) about every squad member. Click on the player pictures for more information Continue reading...",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
-      "title": "2026-07-02",
-      "url": "https://daily.juya.uk/issues/2026-07-02/",
-      "published": "2026-07-02T00:55:00+00:00",
-      "source": "juya AI 日报",
-      "summary_raw": "AI 早报 2026 07 02 视频版 ：哔哩哔哩 ｜ YouTube 概览 要闻 Anthropic 恢复 Claude Fable 5 访问 ↗ 1 Claude Code 反滥用实验引争议 Anthropic 称将移除 ↗ 2 OpenAI ：全球 Codex Go/Plus/Pro 订阅用户获速率限制重置 ↗ 3 模型发布 NVIDIA发布扩散语言模型Nemotron Labs TwoTower ↗ 4 开发生态 SpaceXAI推出Voice Agent Builder测试版 ↗ 5 产品应用 TRAE Work 开放尝鲜 无需排队 ↗ 6 Kimi 推出企业版 Kimi Busi…",
       "category_hint": "ai",
       "lang": "zh"
     },
@@ -807,15 +557,6 @@
       "lang": "en"
     },
     {
-      "title": "Bracketology: predict a path to World Cup victory",
-      "url": "https://www.theguardian.com/football/ng-interactive/2026/jun/04/bracketology-predict-a-path-to-world-cup-victory",
-      "published": "2026-06-28T11:43:13+00:00",
-      "source": "The Guardian Sport",
-      "summary_raw": "Click your way through the group stage and the knockouts to crown champion Continue reading...",
-      "category_hint": "sports",
-      "lang": "en"
-    },
-    {
       "title": "This Illinois Tower Was Built Exclusively for Swiss Goats",
       "url": "https://www.atlasobscura.com/articles/podcast-goat-tower",
       "published": "2026-06-27T09:15:00-04:00",
@@ -859,6 +600,24 @@
       "summary_raw": "Georgians call it \"Karugdebeli\" -- literally, \"Door-thrown-off\". For as long as anyone can remember, no building on this holy mountain has been able to survive with its doors intact, so all its shrines remain open to the public 24 hours a day. The first shrine dedicated to St. George is said to have…",
       "category_hint": "fun",
       "lang": "en"
+    },
+    {
+      "title": "这个周末，科技投资人都得飞一趟成都",
+      "url": "https://36kr.com/p/3892096788396806?f=rss",
+      "published": "2026-07-12 11:27:05  +0800",
+      "source": "36氪",
+      "summary_raw": "新能源基金的下半场 作者 | 吕敬之编辑 | 吾人 来源 | 融中财经 一只新能源基金落子成都。 近日，成都交通投资集团有限公司、成都濛江投资集团有限公司、杭州碧澄能源发展有限公司、洛能（杭州）股权投资有限公司四方签署新能源产业战略合作协议。根据协议，四方将联合设立总规模10亿元的新能源并购基金，推动碧澄能源西南总部及智能运维、资产运营等专业化经营主体落户成都彭州市，助力当地构建产融协同、全域联动的绿色能源产业发展新格局。 资本市场上的突破和产业落地上的加强，在成都相遇了。这次签约的背后，是新能源资产运营逻辑的一次悄悄转变，也是成都这座城在绿色能源赛道上的一次主动出击。 新能源基金的诞生 近日…",
+      "category_hint": "tech",
+      "lang": "zh"
+    },
+    {
+      "title": "近百名玩家涌入具身数据 : 一年融资44.7亿，谁能真靠“卖数据”赚钱？",
+      "url": "https://36kr.com/p/3892027841362694?f=rss",
+      "published": "2026-07-12 10:16:07  +0800",
+      "source": "36氪",
+      "summary_raw": "林方舟 发自 凹非寺 在湖南郴州，一家中国移动营业厅挂牌“具身数据采集5S店”，普通顾客领一套夹爪、手套和头戴相机，经过简单培训，就能边做家务，边采集机器人训练数据。 首期投放的1000套设备，满产状态下每年能采集100万小时数据。我仿佛听到了商家心里打的小算盘：既采了数据，又赚了眼球，4A广告公司都应该来学学。（doge） 具身数采类似的“花活”还有不少：有的为了采数据免费上门保洁（欢迎来我家），有的把数采做成VR游戏，还有的把机器人接入互联网，采集员不用跑到数采工厂，远程就能“云操控”。 具身数采 不过，以上案例看完笑一笑就好了，真要采到符合要求的数据其实并不简单。之所以“花活”层出不穷，…",
+      "category_hint": "tech",
+      "lang": "zh"
     },
     {
       "title": "独家 | 智谱创始人唐杰发内部信：「GLM 时刻」之后，什么是更重要的事",
@@ -910,7 +669,7 @@
       "url": "https://36kr.com/p/3888284244720131?f=rss",
       "published": "2026-07-10 11:26:25  +0800",
       "source": "36氪",
-      "summary_raw": "文 | 胡香赟 编辑 | 海若镜 36氪获悉，前传奇生物创始人/首席科学家范晓虎创��的生物科技公司深圳湾岛细胞，近日完成1.4亿人民币A轮融资，本轮融资由松禾资本领投、东方富海跟投。 过去一年，AI像一束强光照亮着资本市场。光芒之外，很多赛道在阴影中被重新定价，创新药板块正是其中之一。潮水褪去，人群对新药好药的需求仍在，创业者们也正在更严苛的估值坐标系里，渡过科学、临床和商业化的一关又一关。 在中国细胞与基因治疗（CGT）领域，“范晓虎”这个名字很难被绕开。2022年3月，他主导的传奇生物细胞药物西达基奥仑赛在欧美上市，是目前全球唯一一款销售额逼近20亿美金的CAR-T细胞疗法。 然而，西达…",
+      "summary_raw": "文 | 胡香赟 编辑 | 海若镜 36氪获悉，前传奇生物创始人/首席科学家范晓虎创办的生物科技公司深圳湾岛细胞，近日完成1.4亿人民币A轮融资，本轮融资由松禾资本领投、东方富海跟投。 过去一年，AI像一束强光照亮着资本市场。光芒之外，很多赛道在阴影中被重新定价，创新药板块正是其中之一。潮水褪去，人群对新药好药的需求仍在，创业者们也正在更严苛的估值坐标系里，渡过科学、临床和商业化的一关又一关。 在中国细胞与基因治疗（CGT）领域，“范晓虎”这个名字很难被绕开。2022年3月，他主导的传奇生物细胞药物西达基奥仑赛在欧美上市，是目前全球唯一一款销售额逼近20亿美金的CAR-T细胞疗法。 然而，西达基…",
       "category_hint": "tech",
       "lang": "zh"
     },
@@ -933,65 +692,47 @@
       "lang": "zh"
     },
     {
-      "title": "8点1氪丨老乡鸡五年五次冲击上市失败；两款燃油车重回销量榜前十；长鑫科技披露招股意向书，预计7月16日发行",
-      "url": "https://36kr.com/p/3889047503354625?f=rss",
-      "published": "2026-07-10 07:43:55  +0800",
+      "title": "SK海力士预计HBM价格2027年实现翻倍",
+      "url": "https://36kr.com/newsflashes/3892093059873544?f=rss",
+      "published": "2026-07-12 11:58:49  +0800",
       "source": "36氪",
-      "summary_raw": "今日热点导览 花呗就还款页面无法正常打开致歉 中芯国际市值超越贵州茅台 iPhone 18 Pro Max成本大涨，起步价或维持在9999元 英伟达将与Hugging Face合作开发机器人开源模型 美国多州可能于下周起诉阻止派拉蒙与华纳兄弟交易 TOP 3大新闻 老乡鸡五年五次冲击上市失败 LXJ International Holdings Limited（简称“老乡鸡”）于2026年1月8日递交港交所的招股书于7月8日失效。这家被称为“中式快餐第一”的企业，五年间已第五次冲击资本市场失败。（界面新闻） 两款燃油车重回销量榜前十 在短暂告别销量榜前十后，燃油车又杀回来了。在新能源车渗透率连…",
+      "summary_raw": "美东时间周五（7月10日）晚间，SK海力士首席执行官郭鲁正（Kwak Noh-jung）向外界预计，2027年将成为存储行业历史上供应最紧张的一年。“现在客户纷纷前来SK海力士寻求长期供货协议。需求持续增长，而我们的产能却存在限制。尽管我们正尽最大努力扩充产能，但即使到2030年以后，客户需求仍可能高于公司的供应能力。”他说。不过，曾与韩国存储厂商有过接触的国内产投人士表示，除了自身发展，目前海外存储大厂高管同时在关注中国存储厂商的扩产进展，国内“两存”（长鑫存储和长江存储）或将成为未来存储市场长期最大的变量。（证券时报）",
       "category_hint": "tech",
       "lang": "zh"
     },
     {
-      "title": "万勋科技发布“柔韧充”自动充电通用服务引擎，以“0.000s无极容差应变”首创混沌服务、全类通解！",
-      "url": "https://36kr.com/p/3888567864851204?f=rss",
-      "published": "2026-07-09 23:36:08  +0800",
+      "title": "上半年高频数据折射我国经济稳中向优",
+      "url": "https://36kr.com/newsflashes/3892125069130504?f=rss",
+      "published": "2026-07-12 11:54:21  +0800",
       "source": "36氪",
-      "summary_raw": "7月9日，万勋科技于北京举办自动充电机器人业务战略发布会，重磅推出行业首个以 “混沌服务” 模式全面覆盖公用、专用、家用所有应用类别的 “柔韧充” 自动充电通用服务引擎及其核心产品。其独一无二的 “0.000s 无极容差应变” 技术特性，在同期发布的三大类别 “全球首例” 应用成果中得到充分展现，正式为行业带来彻底击穿自动充电各场景规模商用核心困局的通用解法。 0.000S 无机容差应变 瞬息万变的混沌不确定性，为自动充电场景带来 “反应速度” 核心挑战 目前，自动充电演示和概念产品层出不穷，但距真正规模商用始终一步之遥。其核心原因在于，从精准控制的演示环节走向真实而复杂的落地应用时，这不再是…",
+      "summary_raw": "从国家发展改革委国家信息中心了解到，今年上半年，线下商圈人流热度同比增长5.7%，消费延续向好态势；战略性新兴产业相关专利授权量同比增长15.6%，人工智能、人形机器人等前沿领域的资本投资金额同比增长118.4%，经济高质量发展的创新引擎动力不断增强。线下消费大数据显示，1至6月份，线下消费支付金额同比增长2.7%，其中商品消费、服务消费同比分别增长4.0%、0.8%。电子商品需求较高，同比增长9.5%；文旅相关的交通、餐饮相关消费热度持续高涨，同比分别增长6.1%、4.9%；线下商圈人流热度同比增长5.7%。（新华社）",
       "category_hint": "tech",
       "lang": "zh"
     },
     {
-      "title": "智谱CEO唐杰发内部信：“GLM 时刻”和万亿俱乐部之后，什么是更重要的事",
-      "url": "https://36kr.com/newsflashes/3891162734689031?f=rss",
-      "published": "2026-07-11 19:35:25  +0800",
+      "title": "三星电子计划将龙仁首座芯片工厂的投产时间提前至2029年",
+      "url": "https://36kr.com/newsflashes/3892091542288904?f=rss",
+      "published": "2026-07-12 11:39:22  +0800",
       "source": "36氪",
-      "summary_raw": "36氪独家获悉，7月11日，智谱创始人唐杰，在智谱发布了主题为《巨浪已来》的内部信。其中提到，智谱将不追求短期的应用变现，而是直指AGI的下一个高地：长程任务能力、完全自治的智能体系统、自我进化、极致安全治理。过去半年来，智谱收获了创立以来的高光时刻：市值较半年前上市初期涨了10倍，并在2026年 6月，跻身“万亿港元俱乐部”。",
+      "summary_raw": "据报道，行业消息人士周日透露，三星电子正着手将其龙仁芯片集群首座半导体工厂的投产时间提前至2029年，比原计划提早一至两年。“首座工厂提前投产将使三星能够更快地应对全球对人工智能芯片迅速增长的需求，”一位行业官员表示。另外，三星上月表示，根据其超级项目投资计划，计划在平泽和龙仁半导体集群投资2,030万亿韩元（约合1.35万亿美元），并投资400万亿韩元在首尔以南270公里的光州建设两座新的芯片工厂。（财联社）",
       "category_hint": "tech",
       "lang": "zh"
     },
     {
-      "title": "乘联分会崔东树：6月新能源车厂商库存小幅收缩，行业压库存现象没有出现",
-      "url": "https://36kr.com/newsflashes/3891047631796745?f=rss",
-      "published": "2026-07-11 17:38:20  +0800",
+      "title": "百度AI将携智能体全家桶亮相WAIC 2026",
+      "url": "https://36kr.com/newsflashes/3892090766539268?f=rss",
+      "published": "2026-07-12 11:19:28  +0800",
       "source": "36氪",
-      "summary_raw": "36氪获悉，乘联分会秘书长崔东树发文表示，中国宏观经济保持较强增长，在国家促销费政策推动下汽车市场保持强势增长，2026年全国汽车市场总体走势较平稳，在生产资料高补贴卡车市场和客车市场回暖明显。2026年商用车市场出现设备更新补贴推动的结构性增长特征，刚落地的商用车高补贴带来物流运输类电动化加速，商用车景气度较高。由于去年消费政策力度超强，2026年政策收缩明显，入门级消费支持政策剧烈下降，导致今年1-6月乘用车零售持续负增长，尤其是燃油乘用车出现崩塌式下滑。但因出口增量，6月厂家销量增速相对平稳。6月新能源车走势不强，汽车出口市场持续走强，厂商库存小幅收缩，行业压库存现象没有出现。",
+      "summary_raw": "36氪获悉，在即将在上海开幕的世界人工智能大会（WAIC 2026）上，百度AI将携智能体全家桶亮相，全方位呈现智能体从技术升级、应用开发到产业赋能的最新成果。同时，百度“芯云模体”全栈AI产品矩阵也将在WAIC现场发布新升级，集中展示百度AI从底层技术创新到产业场景、个人应用的规模化落地进展。",
       "category_hint": "tech",
       "lang": "zh"
     },
     {
-      "title": "多家A股公司预计业绩大增，存储、锂矿、有色等头部企业表现亮眼",
-      "url": "https://36kr.com/newsflashes/3891019931925001?f=rss",
-      "published": "2026-07-11 17:22:02  +0800",
+      "title": "上周154家上市公司披露机构投资者调研纪要，华盛昌迎超120家机构调研",
+      "url": "https://36kr.com/newsflashes/3892020306279171?f=rss",
+      "published": "2026-07-12 10:55:51  +0800",
       "source": "36氪",
-      "summary_raw": "7月10日晚间，多家A股公司发布2026年半年度业绩预告，存储、锂电上游资源、有色等多个赛道头部企业集体交出亮眼成绩单，部分公司上半年净利润实现10倍以上增长，行业景气度大幅提升。从行业层面来看，受人工智能相关需求增长影响，互联网数据中心等领域对企业级存储产品的需求持续增加，存储芯片行业保持高景气度，相关产品价格较上年同期稳步上涨，业内企业普遍实现高增长。锂电行业自2025年下半年以来持续修复基本面，业内企业业绩迎来复苏，其中锂电上游矿端及锂盐端受益最为明显。除锂矿外，受新能源、人工智能产业需求拉动，上半年铜、钨、铝、稀土等有色金属价格水涨船高，��关上市公司收获业绩释放红利。作为有色金属中的…",
-      "category_hint": "tech",
-      "lang": "zh"
-    },
-    {
-      "title": "2025年我国港口货物、集装箱吞吐量稳居世界第一",
-      "url": "https://36kr.com/newsflashes/3891014962362886?f=rss",
-      "published": "2026-07-11 17:05:06  +0800",
-      "source": "36氪",
-      "summary_raw": "2025年，我国港口货物吞吐量183亿吨，集装箱吞吐量3.54亿标箱，稳居世界第一。（新华社）",
-      "category_hint": "tech",
-      "lang": "zh"
-    },
-    {
-      "title": "研究报告：中国电力技术创新位居全球首位",
-      "url": "https://36kr.com/newsflashes/3890965044869637?f=rss",
-      "published": "2026-07-11 16:35:13  +0800",
-      "source": "36氪",
-      "summary_raw": "联合国可持续发展高级别政治论坛全球能源互联网主题活动10日在纽约联合国总部举行。活动发布的《全球电力发展指数（2026）》研究报告显示，中国电力发展综合排名跻身世界前列，其中电力技术创新居全球首位。（央视新闻）",
+      "summary_raw": "上周（7月6日—10日）A股共有154家上市公司披露机构投资者调研纪要。从赚钱效应看，周内不到两成机构调研股股价实现正收益。其中，崇达技术是周内涨幅最高的机构调研股，累计涨21.59%；威尔高、精测电子、亚虹医药-U等个股涨超10%。在热门调研标的方面，华盛昌是上周唯一一家获得超百家机构调研的公司，天壕能源、胜宏科技分别接受76家、51家机构调研，沪电股份、恒逸石化、华菱线缆、天孚通信等接受40家以上机构调研。（证券时报）",
       "category_hint": "tech",
       "lang": "zh"
     }
