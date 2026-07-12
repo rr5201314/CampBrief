@@ -1,45 +1,187 @@
 {
-  "collected_at": "2026-07-12T14:55:03.202108+08:00",
-  "total": 80,
-  "sources_ok": -1,
-  "sources_failed": 2,
-  "errors": [
+  "collected_at": "2026-07-12T07:08:30.150615+00:00",
+  "total": 110,
+  "sources_ok": 8,
+  "sources_failed": 0,
+  "errors": [],
+  "candidates": [
     {
-      "source": "BBC Sport",
-      "url": "http://feeds.bbci.co.uk/sport/rss.xml?edition=int",
-      "error": "<urlopen error timed out>"
+      "title": "World Cup 2026: reaction to England’s quarter-final win over Norway and more – live",
+      "url": "https://www.theguardian.com/football/live/2026/jul/12/world-cup-2026-reaction-england-norway-argentina-switzerland-live",
+      "published": "2026-07-12T06:54:15+00:00",
+      "source": "The Guardian Sport",
+      "summary_raw": "⚽ All the latest as the quarter-finals conclude⚽ Player guide | Bracketology| Golden Boot | Email usSidebar, Whatever bears such a striking resemblance to Neil Innes’ I’m Free to be an Idiot that the former Monty Python collaborator received a songwriting credit and a share of the royalties in an ou…",
+      "category_hint": "sports",
+      "lang": "en"
     },
     {
+      "title": "Who am I? Guess World Cup star No 35",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cx21gn50e08o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-12T06:15:52+00:00",
+      "source": "BBC Sport",
+      "summary_raw": "Will you get today's player in as few attempts as possible?",
+      "category_hint": "sports",
+      "lang": "en"
+    },
+    {
+      "title": "Switzerland hit out at VAR after ‘mistaken identity’ check ends in Breel Embolo red card",
+      "url": "https://www.theguardian.com/football/2026/jul/12/switzerland-argentina-world-cup-var-mistaken-identity-red-card-breel-emobolo",
+      "published": "2026-07-12T05:20:50+00:00",
       "source": "The Guardian Sport",
-      "url": "https://www.theguardian.com/sport/rss",
-      "error": "<urlopen error timed out>"
-    }
-  ],
-  "candidates": [
+      "summary_raw": "Attacker shown second yellow card for simulationArgentina topple Swiss with two goals in extra timeFifa match officials’ novel use of the term “mistaken identity” reared its head again in sensational circumstances during Saturday’s World Cup quarter-final between Argentina and Switzerland, leaving S…",
+      "category_hint": "sports",
+      "lang": "en"
+    },
+    {
+      "title": "Champion Sinner wary of Zverev before Wimbledon final",
+      "url": "https://www.bbc.co.uk/sport/tennis/articles/cy8dlpvxpvmo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-12T05:19:17+00:00",
+      "source": "BBC Sport",
+      "summary_raw": "Recent history suggests Jannik Sinner should be confident of retaining his Wimbledon title - but he is wary of French Open champion Alexander Zverev.",
+      "category_hint": "sports",
+      "lang": "en"
+    },
+    {
+      "title": "Conor McGregor’s long-awaited UFC return ends after 69 seconds with knee injury",
+      "url": "https://www.theguardian.com/sport/2026/jul/12/conor-mcgregors-knee-injury-ufc-max-holloway",
+      "published": "2026-07-12T05:16:12+00:00",
+      "source": "The Guardian Sport",
+      "summary_raw": "Bout with Holloway in Las Vegas finishes in first roundUFC chief Dana White: ‘We’re assuming a blown ACL’Irish star’s last fight before Saturday was five years agoConor McGregor’s return against Max Holloway at UFC 329 in Las Vegas ended at just 1:09 of the first round Saturday night because of a kn…",
+      "category_hint": "sports",
+      "lang": "en"
+    },
+    {
+      "title": "McGregor injured 69 seconds into UFC comeback",
+      "url": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/c9w2zgpnrqeo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-12T04:45:08+00:00",
+      "source": "BBC Sport",
+      "summary_raw": "Conor McGregor's return to the octagon against Max Holloway at UFC 329 lasts just 69 seconds after the Irishman suffers a knee injury.",
+      "category_hint": "sports",
+      "lang": "en"
+    },
+    {
+      "title": "Argentina set up England semi-final with extra-time victory over Switzerland",
+      "url": "https://www.bbc.co.uk/sport/football/videos/c07y37p7gmko?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-12T04:35:35+00:00",
+      "source": "BBC Sport",
+      "summary_raw": "Argentina set up a World Cup semi-final with England after scoring twice in extra-time to beat 10-man Switzerland 3-1 in Kansas City.",
+      "category_hint": "sports",
+      "lang": "en"
+    },
+    {
+      "title": "Bellingham reaching heights of World Cup legends with Messi next",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cy5v6544ypxo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-12T04:35:19+00:00",
+      "source": "BBC Sport",
+      "summary_raw": "Jude Bellingham again dazzles England and the World Cup with his brilliance, matching some records of the all-time greats.",
+      "category_hint": "sports",
+      "lang": "en"
+    },
+    {
+      "title": "Embolo sent off as result of mistaken identity rule",
+      "url": "https://www.bbc.co.uk/sport/football/articles/ckg0k5gdr79o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-12T04:22:57+00:00",
+      "source": "BBC Sport",
+      "summary_raw": "Switzerland's Breel Embolo becomes first player to be sent off as a result of a new law for mistaken identity at the World Cup.",
+      "category_hint": "sports",
+      "lang": "en"
+    },
+    {
+      "title": "Why Write Code in 2026",
+      "url": "https://softwaredoug.com/blog/2026/07/09/write-code.html",
+      "published": "2026-07-12T04:15:27+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Article URL: https://softwaredoug.com/blog/2026/07/09/write-code.html Comments URL: https://news.ycombinator.com/item?id=48878195 Points: 31 # Comments: 12",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "Alvarez's stunning strike gives Argentina lead against 10-man Switzerland",
+      "url": "https://www.bbc.co.uk/sport/football/videos/cp8rg8yy6nvo?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-12T04:00:45+00:00",
+      "source": "BBC Sport",
+      "summary_raw": "Argentina retake the lead in their quarter-final against Switzerland through a stunning strike from Julian Alvarez during extra-time in Kansas City.",
+      "category_hint": "sports",
+      "lang": "en"
+    },
+    {
+      "title": "Under federal rule, colleges must leave grads better off or lose financial aid",
+      "url": "https://www.npr.org/2026/06/30/nx-s1-5835631/turner-camhi-do-no-harm-college-loans",
+      "published": "2026-07-12T04:00:14+00:00",
+      "source": "Hacker News",
+      "summary_raw": "Article URL: https://www.npr.org/2026/06/30/nx-s1-5835631/turner-camhi-do-no-harm-college-loans Comments URL: https://news.ycombinator.com/item?id=48878126 Points: 51 # Comments: 72",
+      "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "Julián Álvarez’s extra-time stunner sinks 10-man Switzerland to send Argentina into semi-finals",
+      "url": "https://www.theguardian.com/football/2026/jul/12/switzerland-argentina-world-cup-quarter-final-match-report",
+      "published": "2026-07-12T03:58:37+00:00",
+      "source": "The Guardian Sport",
+      "summary_raw": "Did anyone think they would do it the easy way? If Argentina are to win this World Cup they will only get there via rollercoaster. A seemingly straightforward night’s work against Switzerland became their tournament in microcosm, threatening to squander it all before finding salvation through a mome…",
+      "category_hint": "sports",
+      "lang": "en"
+    },
+    {
+      "title": "Pimblett makes title claim with 52-second win at UFC 329",
+      "url": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/c5yznne9l70o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-12T03:51:43+00:00",
+      "source": "BBC Sport",
+      "summary_raw": "Liverpool's Paddy Pimblett submits Benoit Saint-Denis in just 52 seconds at UFC 329 to strengthen his claim for a lightweight title shot.",
+      "category_hint": "sports",
+      "lang": "en"
+    },
     {
       "title": "Why are US consumers so angry? It's not just high prices",
       "url": "https://www.theguardian.com/us-news/ng-interactive/2026/jun/04/us-consumer-rage-prices-economy",
       "published": "2026-07-12T03:10:08+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://www.theguardian.com/us-news/ng-interactive/2026/jun/04/us-consumer-rage-prices-economy Comments URL: https://news.ycombinator.com/item?id=48877927 Points: 9 # Comments: 0",
+      "summary_raw": "Article URL: https://www.theguardian.com/us-news/ng-interactive/2026/jun/04/us-consumer-rage-prices-economy Comments URL: https://news.ycombinator.com/item?id=48877927 Points: 84 # Comments: 88",
       "category_hint": "tech",
       "lang": "en"
     },
     {
-      "title": "Show HN: Quantum-Qec / Matrix-Free Quantum Homeostatic Engine(Blueprint)",
-      "url": "https://github.com/PJHkorea/quantum-mesh-qec",
-      "published": "2026-07-12T02:15:11+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://github.com/PJHkorea/quantum-mesh-qec Comments URL: https://news.ycombinator.com/item?id=48877672 Points: 3 # Comments: 3",
-      "category_hint": "tech",
+      "title": "Tuchel angry at 'lucky' England - but Bellingham defends players",
+      "url": "https://www.bbc.co.uk/sport/football/articles/ckg474ekv58o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-12T03:08:42+00:00",
+      "source": "BBC Sport",
+      "summary_raw": "England head coach Thomas Tuchel is praised by former England players for saying his players \"got lucky\" in World Cup quarter-final win over Norway - but match-winner Jude Bellingham disagrees.",
+      "category_hint": "sports",
       "lang": "en"
     },
     {
-      "title": "We Know Simple Fluids Can Flow. Turns Out, Some Can Fracture",
+      "title": "Jude Bellingham excels in parallel World Cup but cannot win trophy alone | Barney Ronay",
+      "url": "https://www.theguardian.com/football/2026/jul/12/jude-bellingham-parallel-world-cup-norway-england",
+      "published": "2026-07-12T02:37:55+00:00",
+      "source": "The Guardian Sport",
+      "summary_raw": "Up against Norway’s heart and skill and Florida’s heat, talisman got England through – but there is much to fixJude against the sun. For much of this game there was a feeling of three separate entities struggling to assert their will in the heavy air of Miami Gardens. First, Norway, in their first W…",
+      "category_hint": "sports",
+      "lang": "en"
+    },
+    {
+      "title": "Did ball hit spidercam before England goal? Snicko says not - Norway unsure",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cd95335dp10o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-12T02:20:21+00:00",
+      "source": "BBC Sport",
+      "summary_raw": "Norway's World Cup campaign ends in a quarter-final defeat by England, but they leave frustrated, arguing that Jude Bellingham's equaliser should not have counted.",
+      "category_hint": "sports",
+      "lang": "en"
+    },
+    {
+      "title": "Norway’s Ståle Solbakken claims ball struck cable before England equaliser",
+      "url": "https://www.theguardian.com/football/2026/jul/12/norway-ball-struck-cable-england-equaliser-stale-solbakken",
+      "published": "2026-07-12T02:17:00+00:00",
+      "source": "The Guardian Sport",
+      "summary_raw": "Replays suggested ball goal-kick struck a camera cableFifa says ball sensor showed no evidence of contactNorway’s head coach, Ståle Solbakken, complained that England had benefited from the ball hitting an overhead cable before Jude Bellingham equalised in the World Cup quarter-final.Replays appeare…",
+      "category_hint": "sports",
+      "lang": "en"
+    },
+    {
+      "title": "Unexpected Solidlike Fracture in Simple Liquids",
       "url": "https://www.quantamagazine.org/we-know-simple-fluids-can-flow-turns-out-some-can-fracture-20260710/",
       "published": "2026-07-12T02:13:46+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://www.quantamagazine.org/we-know-simple-fluids-can-flow-turns-out-some-can-fracture-20260710/ Comments URL: https://news.ycombinator.com/item?id=48877668 Points: 29 # Comments: 6",
+      "summary_raw": "https://journals.aps.org/prl/abstract/10.1103/t2vy-32wr Comments URL: https://news.ycombinator.com/item?id=48877668 Points: 83 # Comments: 40",
       "category_hint": "tech",
       "lang": "en"
     },
@@ -57,8 +199,17 @@
       "url": "https://arxiv.org/abs/1203.5426",
       "published": "2026-07-12T01:59:35+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://arxiv.org/abs/1203.5426 Comments URL: https://news.ycombinator.com/item?id=48877613 Points: 10 # Comments: 1",
+      "summary_raw": "Article URL: https://arxiv.org/abs/1203.5426 Comments URL: https://news.ycombinator.com/item?id=48877613 Points: 17 # Comments: 1",
       "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "England 'got lucky' with disallowed goal",
+      "url": "https://www.bbc.co.uk/sport/football/videos/c5yznny63pko?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-12T01:45:01+00:00",
+      "source": "BBC Sport",
+      "summary_raw": "BBC Sport World Cup pundits Wayne Rooney and Ellen White believe England \"got lucky\" after Torbjorn Heggem's second-half goal was ruled out for a foul on Elliott Anderson by Erling Haaland.",
+      "category_hint": "sports",
       "lang": "en"
     },
     {
@@ -75,7 +226,7 @@
       "url": "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547",
       "published": "2026-07-12T01:09:50+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547 Comments URL: https://news.ycombinator.com/item?id=48877371 Points: 107 # Comments: 56",
+      "summary_raw": "Article URL: https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547 Comments URL: https://news.ycombinator.com/item?id=48877371 Points: 245 # Comments: 116",
       "category_hint": "tech",
       "lang": "en"
     },
@@ -84,7 +235,7 @@
       "url": "https://igropyr.com",
       "published": "2026-07-12T01:03:29+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://igropyr.com Comments URL: https://news.ycombinator.com/item?id=48877344 Points: 14 # Comments: 1",
+      "summary_raw": "Article URL: https://igropyr.com Comments URL: https://news.ycombinator.com/item?id=48877344 Points: 56 # Comments: 5",
       "category_hint": "tech",
       "lang": "en"
     },
@@ -93,8 +244,17 @@
       "url": "https://goeteia.dev",
       "published": "2026-07-12T00:57:18+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://goeteia.dev Comments URL: https://news.ycombinator.com/item?id=48877314 Points: 33 # Comments: 13",
+      "summary_raw": "Article URL: https://goeteia.dev Comments URL: https://news.ycombinator.com/item?id=48877314 Points: 78 # Comments: 20",
       "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "Bellingham scores extra-time winner as England reach semi-finals",
+      "url": "https://www.bbc.co.uk/sport/football/videos/cjrgww8vr98o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-12T00:50:48+00:00",
+      "source": "BBC Sport",
+      "summary_raw": "Jude Bellingham scores twice, including an extra-time winner, as England come from behind to beat Norway 2-1 in Miami to reach the World Cup semi-finals.",
+      "category_hint": "sports",
       "lang": "en"
     },
     {
@@ -102,7 +262,7 @@
       "url": "https://fabiensanglard.net/tb4/index.html",
       "published": "2026-07-12T00:48:10+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://fabiensanglard.net/tb4/index.html Comments URL: https://news.ycombinator.com/item?id=48877269 Points: 43 # Comments: 32",
+      "summary_raw": "Article URL: https://fabiensanglard.net/tb4/index.html Comments URL: https://news.ycombinator.com/item?id=48877269 Points: 64 # Comments: 40",
       "category_hint": "tech",
       "lang": "en"
     },
@@ -111,17 +271,26 @@
       "url": "https://www.ijidonline.com/article/S1201-9712(26)00608-9/fulltext",
       "published": "2026-07-12T00:35:08+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://www.ijidonline.com/article/S1201-9712(26)00608-9/fulltext Comments URL: https://news.ycombinator.com/item?id=48877192 Points: 66 # Comments: 34",
+      "summary_raw": "Article URL: https://www.ijidonline.com/article/S1201-9712(26)00608-9/fulltext Comments URL: https://news.ycombinator.com/item?id=48877192 Points: 98 # Comments: 45",
       "category_hint": "tech",
       "lang": "en"
     },
     {
-      "title": "Martha Lillard, last US polio patient using iron lung, dies at 78 in Oklahoma",
-      "url": "https://abcnews.com/US/wireStory/martha-lillard-us-polio-patient-iron-lung-dies-134668491",
-      "published": "2026-07-12T00:32:15+00:00",
-      "source": "Hacker News",
-      "summary_raw": "Article URL: https://abcnews.com/US/wireStory/martha-lillard-us-polio-patient-iron-lung-dies-134668491 Comments URL: https://news.ycombinator.com/item?id=48877178 Points: 44 # Comments: 6",
-      "category_hint": "tech",
+      "title": "Bellingham’s extra-time winner sinks Norway and sends England into World Cup semi-finals",
+      "url": "https://www.theguardian.com/football/2026/jul/12/norway-england-world-cup-quarter-final-match-report",
+      "published": "2026-07-11T23:47:01+00:00",
+      "source": "The Guardian Sport",
+      "summary_raw": "Thomas Tuchel’s message was that it was time for England to thrive at the business end of the World Cup; the most exciting part. His players had to release the handbrake and go for it. They must not have any regrets against a Norway team that most of England expected them to beat. English arrogance?…",
+      "category_hint": "sports",
+      "lang": "en"
+    },
+    {
+      "title": "'Man of all the moments' - Bellingham gives England the lead",
+      "url": "https://www.bbc.co.uk/sport/football/videos/c20yrd39ge8o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-11T23:46:44+00:00",
+      "source": "BBC Sport",
+      "summary_raw": "Jude Bellingham scores his second goal of the game to give England a 2-1 lead over Norway during extra time of their 2026 World Cup quarter-final in Miami.",
+      "category_hint": "sports",
       "lang": "en"
     },
     {
@@ -129,7 +298,7 @@
       "url": "https://archive.cancerworld.net/featured/how-doctors-die/",
       "published": "2026-07-11T23:15:06+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://archive.cancerworld.net/featured/how-doctors-die/ Comments URL: https://news.ycombinator.com/item?id=48876741 Points: 101 # Comments: 59",
+      "summary_raw": "Article URL: https://archive.cancerworld.net/featured/how-doctors-die/ Comments URL: https://news.ycombinator.com/item?id=48876741 Points: 130 # Comments: 71",
       "category_hint": "tech",
       "lang": "en"
     },
@@ -138,7 +307,7 @@
       "url": "https://mrzk.io/posts/qmlx-maximising-ai-psychosis-minmaxing-mac-studio/",
       "published": "2026-07-11T22:54:06+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://mrzk.io/posts/qmlx-maximising-ai-psychosis-minmaxing-mac-studio/ Comments URL: https://news.ycombinator.com/item?id=48876619 Points: 10 # Comments: 1",
+      "summary_raw": "Article URL: https://mrzk.io/posts/qmlx-maximising-ai-psychosis-minmaxing-mac-studio/ Comments URL: https://news.ycombinator.com/item?id=48876619 Points: 40 # Comments: 15",
       "category_hint": "tech",
       "lang": "en"
     },
@@ -147,7 +316,7 @@
       "url": "https://www.iroh.computer/blog/mesh-llm",
       "published": "2026-07-11T22:38:57+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://www.iroh.computer/blog/mesh-llm Comments URL: https://news.ycombinator.com/item?id=48876505 Points: 147 # Comments: 33",
+      "summary_raw": "Article URL: https://www.iroh.computer/blog/mesh-llm Comments URL: https://news.ycombinator.com/item?id=48876505 Points: 190 # Comments: 43",
       "category_hint": "tech",
       "lang": "en"
     },
@@ -156,8 +325,26 @@
       "url": "https://github.com/Wren6991/RISCBoy",
       "published": "2026-07-11T21:58:00+00:00",
       "source": "Hacker News",
-      "summary_raw": "Article URL: https://github.com/Wren6991/RISCBoy Comments URL: https://news.ycombinator.com/item?id=48876245 Points: 79 # Comments: 17",
+      "summary_raw": "Article URL: https://github.com/Wren6991/RISCBoy Comments URL: https://news.ycombinator.com/item?id=48876245 Points: 114 # Comments: 17",
       "category_hint": "tech",
+      "lang": "en"
+    },
+    {
+      "title": "Noskova holds her nerve to beat Muchova for first Wimbledon title",
+      "url": "https://www.bbc.co.uk/sport/tennis/videos/c5yznz1q402o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-11T21:32:00+00:00",
+      "source": "BBC Sport",
+      "summary_raw": "Linda Noskova overcomes missing out on five Championship points in the second set, to defeat Karolina Muchova 6-2 5-7 6-3 to win her first Wimbledon title at 21 years old.",
+      "category_hint": "sports",
+      "lang": "en"
+    },
+    {
+      "title": "Noskova, an astonishing Wimbledon fightback - and a kiss to the sky",
+      "url": "https://www.bbc.co.uk/sport/tennis/articles/ckg85p1dp12o?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-11T20:41:53+00:00",
+      "source": "BBC Sport",
+      "summary_raw": "Linda Noskova produces \"one of the all-time greatest efforts on Centre Court\" to win Wimbledon - and thanks her late mother, Ivana, for inspiring her.",
+      "category_hint": "sports",
       "lang": "en"
     },
     {
@@ -170,6 +357,24 @@
       "lang": "en"
     },
     {
+      "title": "Linda Noskova fends off Muchova fightback to win first grand slam title at Wimbledon",
+      "url": "https://www.theguardian.com/sport/2026/jul/11/linda-noskova-karolina-muchova-wimbledon-tennis-womens-final",
+      "published": "2026-07-11T18:09:25+00:00",
+      "source": "The Guardian Sport",
+      "summary_raw": "Ninth seed beats fellow Czech 6-2, 5-7, 6-3Muchova falls short in second major finalAs one of her worst nightmares on a tennis court appeared to be unfolding before her disbelieving eyes, Linda Noskova walked solemnly to her chair with both index fingers plugged into her ears. She was attempting to …",
+      "category_hint": "sports",
+      "lang": "en"
+    },
+    {
+      "title": "Football without faith is nothing so Infantino is playing with fire at World Cup | Jonathan Wilson",
+      "url": "https://www.theguardian.com/football/2026/jul/11/football-without-faith-infantino-world-cup",
+      "published": "2026-07-11T17:00:54+00:00",
+      "source": "The Guardian Sport",
+      "summary_raw": "Swirl around Fifa’s machinations and about big team and big name bias creates doubt – and that’s a dangerous gameAbout 25 years ago, I was in the office of a sports newspaper in Bucharest on a Saturday afternoon following the Premier League games with some local journalists. With about five minutes …",
+      "category_hint": "sports",
+      "lang": "en"
+    },
+    {
       "title": "布朗大学经济学教授怀疑班级里多数学生使用 AI 作弊",
       "url": "https://www.solidot.org/story?sid=84806",
       "published": "2026-07-12T00:40:28+08:00",
@@ -177,6 +382,15 @@
       "summary_raw": "在去年 12 月学校发生枪击案之后，布朗大学经济学教授 Roberto Serrano 首次让学生在家中完成期中考试。期中考试成绩显示大部分学生获得了满分或接近满分，他怀疑学生大规模使用 AI 作弊。因此决定将期末考试改为线下进行。他没有立即宣布期中考试无效，而是决定先看看期末考试的得分。如果期末考试得分的分布与期中考试的分布基本相同，那么他会将期中考试得分计入成绩。结果是 18 名学生退课，9 名学生没有参加期末考试。3 名学生得了零分，期末考试的平均分只有 48.6%——这是他所教班级迄今的历史最低分。此前期末考试的平均分从未低于 65%。只有少数学生的期末考试成绩与期中考试的成绩相近。",
       "category_hint": "tech",
       "lang": "zh"
+    },
+    {
+      "title": "In-form Haeran Ryu shoots LPGA major-record 60 to lead Evian Championship",
+      "url": "https://www.theguardian.com/sport/2026/jul/11/haeran-ryu-lpga-major-record-60-evian-championship-lead",
+      "published": "2026-07-11T16:37:48+00:00",
+      "source": "The Guardian Sport",
+      "summary_raw": "Historic 11-under 60 sets LPGA major markSouth Korean opens three-shot final-round leadRyu chasing second major in three weeksHaeran Ryu set the scoring record for LPGA majors on Saturday with an 11-under 60, giving the South Korean player a three-shot lead in the Evian Championship as she goes for …",
+      "category_hint": "sports",
+      "lang": "en"
     },
     {
       "title": "苹果起诉 OpenAI，指控前华裔员工窃取商业机密",
@@ -195,6 +409,24 @@
       "summary_raw": "日本宇航研究开发机构(JAXA) 7 月 11 日宣布，成功测试了一枚可回收火箭 RV-X。本次测试总共持续了约 40 秒，火箭上升至约 11 米的高度，期间完成了升空、悬停、水平移动、直立着陆共 4 个动作。目前旨在大幅降低航天任务成本的可回收火箭是许多国家的研发重点。RV-X 计划将取代不可回收的 H-3 火箭。下一步 JAXA 还将测试 RV-X 的升空一百米回收测试。法国、德国也参与到了日本的可回收火箭合作研发项目中。作为日本的战略竞争对手，中国在可回收火箭研发方面的进展要快得多。",
       "category_hint": "tech",
       "lang": "zh"
+    },
+    {
+      "title": "Bam Adebayo and Tyler Herro reportedly involved in physical altercation at NBA Summer League",
+      "url": "https://www.theguardian.com/sport/2026/jul/11/bam-adebayo-tyler-herro-altercation-summer-league-las-vegas",
+      "published": "2026-07-11T13:46:16+00:00",
+      "source": "The Guardian Sport",
+      "summary_raw": "Adebayo and Herro involved in altercationYoung unfazed by scrutiny over Wizards dealNBPA vows fight against second apronFormer Miami Heat teammates Bam Adebayo and Tyler Herro had a brief verbal and physical altercation at a practice facility for the NBA’s Summer League in Las Vegas on Friday, accor…",
+      "category_hint": "sports",
+      "lang": "en"
+    },
+    {
+      "title": "South Africa World Cup midfielder Jayden Adams dies aged 25",
+      "url": "https://www.theguardian.com/football/2026/jul/11/south-africa-world-cup-midfielder-jayden-adams-dies-aged-25",
+      "published": "2026-07-11T13:29:10+00:00",
+      "source": "The Guardian Sport",
+      "summary_raw": "Adams played in South Africa’s World Cup group gamesMidfielder played for Mamelodi SundownsJayden Adams, who played in South Africa’s three group games at the World Cup, has died aged 25.The Mamelodi Sundowns midfielder started the tournament opener, a 2-0 defeat by Mexico, and the 1-1 draw with Cze…",
+      "category_hint": "sports",
+      "lang": "en"
     },
     {
       "title": "暴雨和洪涝的季节，这些技巧助你从容自保",
@@ -240,6 +472,15 @@
       "summary_raw": "根据发表在《自然》期刊上的一项研究，人形机器人成功完成切除活体动物胆囊的手术。人形机器人并不具有自主能力，它们并不会取代医生，而是由外科医生远超操作。远程操控的人形机器人为活猪完成两例微创胆囊切除手术。如果该方法被证实适用于临床，外科医生就可以利用人形机器人，在资源有限、无法安装专业且昂贵手术机器人的小型医院和诊所远程开展机器人辅助手术。人形机器人相比专业手术机器人更便宜，占用的空间更小，而且易于部署，能部署到从偏远地区到战场甚至太空。研究人员利用宇树科技的 G1 人形机器人。最便宜的 G1 基础型号起售价 13,500 美元，配置灵活机械手以及运费之后费用会超过 6.7 万美元。相比下 In…",
       "category_hint": "tech",
       "lang": "zh"
+    },
+    {
+      "title": "Jürgen Klopp reveals failed private jet push to sign Kylian Mbappé for Liverpool",
+      "url": "https://www.theguardian.com/football/2026/jul/10/jurgen-klopp-kylian-mbappe-sign-liverpool-private-jet",
+      "published": "2026-07-10T12:14:17+00:00",
+      "source": "The Guardian Sport",
+      "summary_raw": "Plane flew in circles while talks with family took place‘The most expensive non-transfer we’ve ever made’Jürgen Klopp has revealed the impressive lengths Liverpool went to in their attempts to sign a teenage Kylian Mbappé from Monaco.Liverpool were one of a number of top European clubs who tried to …",
+      "category_hint": "sports",
+      "lang": "en"
     },
     {
       "title": "长征十号乙火箭成功回收",
@@ -294,6 +535,15 @@
       "summary_raw": "美国国会议员正在调查美国公司使用中国 AI 模型。议员们担心审查、安全风险，以及美国 AI 公司的模型是否过于昂贵或限制过多。Cursor 和 Airbnb 等公司是调查重点。众议院国土安全委员会和众议院中国问题特别委员会致函 Cursor 和 Airbnb 询问他们使用中国 AI 模型的风险。美国部分政府部门已禁止使用 DeepSeek 等中国模型，但美国公司并未被禁止使用中国 AI 模型。有很多美国公司一直用中国 AI 模型降低使用成本，其中就包括了即将被 SpaceX 公司以 600 亿美元收购的 Cursor 公司，该公司的 Composer 2 模型是基于北京月之暗面（Moonsho…",
       "category_hint": "tech",
       "lang": "zh"
+    },
+    {
+      "title": "Chess: Firouzja wins in Zagreb as Carlsen passes 15-year milestone at the top",
+      "url": "https://www.theguardian.com/sport/2026/jul/10/chess-firouzja-wins-in-zagreb-as-carlsen-passes-15-year-milestone-at-the-top",
+      "published": "2026-07-10T07:00:13+00:00",
+      "source": "The Guardian Sport",
+      "summary_raw": "The Frenchman is ranked world No 12, but that is a disappointment after he became the youngest ever 2800-rated player at 18 years and five monthsAlireza Firouzja is shaping up to be one of the nearly men of grandmaster chess. The Iran-born Frenchman, 23, has just won the St Louis-organised Croatia S…",
+      "category_hint": "sports",
+      "lang": "en"
     },
     {
       "title": "安达卢西亚的日与夜：格拉纳达漫游指南",
@@ -366,6 +616,15 @@
       "summary_raw": "根据发表在《Morbidity and Mortality Weekly Report》期刊上的一项研究，美国部分地区居民多达三成携带导致红肉过敏的抗体。这一比例远超此前的预计，意味着红肉过敏的美国人比以前认为的多得多。该过敏反应被称为α-半乳糖综合征（alpha-gal syndrome），其特点是发作缓慢，通常在餐后 2-6 小时之间出现，使得很难将过敏反应与食物联系起来。症状包括荨麻疹、恶心、呕吐、腹部绞痛、腹泻，或严重过敏反应如呼吸困难、喉咙紧缩、舌头或嘴唇肿胀、头晕、脉搏微弱和血压下降等迹象。研究人员分析了美国 10 个州 3000 份献血样本，结果显示田纳西州、阿肯色州等五个州的抗…",
       "category_hint": "tech",
       "lang": "zh"
+    },
+    {
+      "title": "Republicans ask WNBA to protect Caitlin Clark from possible ‘racially motivated’ attacks",
+      "url": "https://www.theguardian.com/sport/2026/jul/09/republicans-ask-wnba-to-protect-caitlin-clark-from-possible-racially-motivated-attacks",
+      "published": "2026-07-09T12:32:33+00:00",
+      "source": "The Guardian Sport",
+      "summary_raw": "Clark has been on the end of hard fouls during careerBlack players routinely receive racist abuse in WNBAEleven Republican politicians have written to the WNBA asking the league to protect Indiana Fever star Caitlin Clark from “multiple attacks” on court.Clark has been on the receiving end of hard f…",
+      "category_hint": "sports",
+      "lang": "en"
     },
     {
       "title": "TDS REVIEW | 小米耳夹式耳机体验",
@@ -602,6 +861,15 @@
       "lang": "en"
     },
     {
+      "title": "全网骂Claude变笨，Anthropic下场揭秘：坑你的不是模型",
+      "url": "https://36kr.com/p/3892222176574211?f=rss",
+      "published": "2026-07-12 13:47:23  +0800",
+      "source": "36氪",
+      "summary_raw": "换更大的模型就等于更聪明？ 【导读】换更大的模型就等于更聪明？这可能是Claude Code用户最深的误会。很多人为此一路换到最贵的Fable，近日，Anthropic，亲手澄清了这个误区。 你有没有过这种时刻：Claude Code写代码写砸了，第一反应，就是赶紧换个更强的模型。 但这一招，很多时候并不管用，甚至是在白花钱。 近日，Anthropic官方发了一篇长文专门来讲这件事。 Anthropic官方长文 起因是太多人把Claude Code里的两个选项搞混了： 一个是模型选择（Model），一个是努力度（Effort）。 Anthropic官方长文 过去，大家对这两个选项的理解都很简单…",
+      "category_hint": "tech",
+      "lang": "zh"
+    },
+    {
       "title": "这个周末，科技投资人都得飞一趟成都",
       "url": "https://36kr.com/p/3892096788396806?f=rss",
       "published": "2026-07-12 11:27:05  +0800",
@@ -683,56 +951,47 @@
       "lang": "zh"
     },
     {
-      "title": "36氪首发 | 英伟达全球首家触觉仿真合作伙伴再获数亿融资，上半年订单超去年四倍",
-      "url": "https://36kr.com/p/3889141540370949?f=rss",
-      "published": "2026-07-10 09:19:37  +0800",
+      "title": "南向资金上周大幅净买入，智谱获超百亿港元资金加仓",
+      "url": "https://36kr.com/newsflashes/3892241561238280?f=rss",
+      "published": "2026-07-12 14:49:56  +0800",
       "source": "36氪",
-      "summary_raw": "图源/企业 本文约3100字，建议阅读7分钟 作者丨欧雪 编辑丨袁斯来 硬氪获悉，北京他山科技有限公司（以下简称“他山科技”）已于近期完成B轮融资，金额为数亿元。本轮投资方包括均胜电子、太平创新、奥克斯、鹏翎股份、Lavender Hill Capital Partners（LHCP）、洪山资本等产业方，老股东道氏技术、彬复资本追加投资。资金将主要用于触觉传感器及芯片迭代、场景化方案落地及触觉训练平台建设。 这家成立于2017年的公司，总部位于北京，是一家专注于人工智能触觉感知技术及全栈式应用解决方案的研发商。核心团队由清华大学、曼彻斯特大学等高校研发人员组成；首席科学家为ARM架构共同发明人…",
+      "summary_raw": "上周（7月6日至7月10日）港股市场主要股指集体上涨，恒生指数涨3.53%，恒生科技指数涨4.95%，恒生中国企业指数涨4.41%。据统计，上周南向资金合计成交净买入390.55亿港元，为4月以来最高单周净买入。从成交净买入金额来看，智谱获南向资金净买入137.02亿港元。上周南向资金对互联网巨头以加仓为主，阿里巴巴-W获南向资金净买入83.18亿港元，腾讯控股获净买入30.29亿港元，美团-W获净买入14.57亿港元；小米集团-W被净卖出8.02亿港元。（证券时报）",
       "category_hint": "tech",
       "lang": "zh"
     },
     {
-      "title": "SK海力士预计HBM价格2027年实现翻倍",
-      "url": "https://36kr.com/newsflashes/3892093059873544?f=rss",
-      "published": "2026-07-12 11:58:49  +0800",
+      "title": "日本将推动其巨额养老基金增加另类资产配置",
+      "url": "https://36kr.com/newsflashes/3892240984668937?f=rss",
+      "published": "2026-07-12 14:27:23  +0800",
       "source": "36氪",
-      "summary_raw": "美东时间周五（7月10日）晚间，SK海力士首席执行官郭鲁正（Kwak Noh-jung）向外界预计，2027年将成为存储行业历史上供应最紧张的一年。“现在客户纷纷前来SK海力士寻求长期供货协议。需求持续增长，而我们的产能却存在限制。尽管我们正尽最大努力扩充产能，但即使到2030年以后，客户需求仍可能高于公司的供应能力。”他说。不过，曾与韩国存储厂商有过接触的国内产投人士表示，除了自身发展，目前海外存储大厂高管同时在关注中国存储厂商的扩产进展，国内“两存”（长鑫存储和长江存储）或将成为未来存储市场长期最大的变量。（证券时报）",
+      "summary_raw": "据报道，日本旨在提高其全球最大养老基金——日本政府养老金投资基金（GPIF）投资组合中未上市股票、房地产及其他另类投资的比例。日本财务大臣加藤胜信一直试图提振疲软的日元，他于周五表示，政府旨在引导这支规模达1.8万亿美元的GPIF及其他国家养老基金“大幅”增加对国内资产的投资，此言引发日元和日本国债价格跳涨。另类投资（区别于上市股票和债券等传统资产）在3月份占GPIF资产的1.7%，远低于5%的允许上限。一个政府小组将很快编制一份报告，规定将该比例提高至接近5%，此举旨在扩大养老金资产管理范围并降低整体投资风险。（新浪财经）",
       "category_hint": "tech",
       "lang": "zh"
     },
     {
-      "title": "上半年高频数据折射我国经济稳中向优",
-      "url": "https://36kr.com/newsflashes/3892125069130504?f=rss",
-      "published": "2026-07-12 11:54:21  +0800",
+      "title": "上半年中国创新药对外授权规模接近去年全年",
+      "url": "https://36kr.com/newsflashes/3892239437756932?f=rss",
+      "published": "2026-07-12 14:09:50  +0800",
       "source": "36氪",
-      "summary_raw": "从国家发展改革委国家信息中心了解到，今年上半年，线下商圈人流热度同比增长5.7%，消费延续向好态势；战略性新兴产业相关专利授权量同比增长15.6%，人工智能、人形机器人等前沿领域的资本投资金额同比增长118.4%，经济高质量发展的创新引擎动力不断增强。线下消费大数据显示，1至6月份，线下消费支付金额同比增长2.7%，其中商品消费、服务消费同比分别增长4.0%、0.8%。电子商品需求较高，同比增长9.5%；文旅相关的交通、餐饮相关消费热度持续高涨，同比分别增长6.1%、4.9%；线下商圈人流热度同比增长5.7%。（新华社）",
+      "summary_raw": "在12日的北京·昌平生命科学论坛上，国家药监局药品注册管理司相关负责人披露了中国创新药发展的最新“成绩单”。根据国家药监局此前统计：2025年中国获批76个创新药。尽管获批数量再创历史新高，但当年共计获批的11个新靶点、新机制药品中，仅4个为国产。也就是说，今年国产首创新药（新靶点、新机制药品）获批数量已超过去年全年，并有望再创新高。（第一财经）",
       "category_hint": "tech",
       "lang": "zh"
     },
     {
-      "title": "三星电子计划将龙仁首座芯片工厂的投产时间提前至2029年",
-      "url": "https://36kr.com/newsflashes/3892091542288904?f=rss",
-      "published": "2026-07-12 11:39:22  +0800",
+      "title": "1000℃烧透不变形徒手可拿，中国隔热材料跻身世界第一梯队",
+      "url": "https://36kr.com/newsflashes/3892203912608517?f=rss",
+      "published": "2026-07-12 13:51:42  +0800",
       "source": "36氪",
-      "summary_raw": "据报道，行业消息人士周日透露，三星电子正着手将其龙仁芯片集群首座半导体工厂的投产时间提前至2029年，比原计划提早一至两年。“首座工厂提前投产将使三星能够更快地应对全球对人工智能芯片迅速增长的需求，”一位行业官员表示。另外，三星上月表示，根据其超级项目投资计划，计划在平泽和龙仁半导体集群投资2,030万亿韩元（约合1.35万亿美元），并投资400万亿韩元在首尔以南270公里的光州建设两座新的芯片工厂。（财联社）",
+      "summary_raw": "回收火箭为什么难？“要求不能够烧坏，它回来以后又要重复飞，重复使用的难度远远超过一次性材料！”中国工程院院士赫晓东一语道破了回收火箭的核心难点。当隔热材料放进1000多摄氏度的炉子里烧透后，拿出来竟然没有发生变形，更让人难以置信的是，徒手就能直接拿起来！“拿出来时，里面的热量不能持续传出来，而边角已经发黑了，就说明它的热量散了，所以这个材料，隔热性能非常好。”赫晓东院士表示，中国在隔热材料方面已经是世界前列，达到世界第一梯队。（央视财经）",
       "category_hint": "tech",
       "lang": "zh"
     },
     {
-      "title": "百度AI将携智能体全家桶亮相WAIC 2026",
-      "url": "https://36kr.com/newsflashes/3892090766539268?f=rss",
-      "published": "2026-07-12 11:19:28  +0800",
+      "title": "面对用电高峰，我国供电保障能力再提升",
+      "url": "https://36kr.com/newsflashes/3892132453317121?f=rss",
+      "published": "2026-07-12 13:38:55  +0800",
       "source": "36氪",
-      "summary_raw": "36氪获悉，在即将在上海开幕的世界人工智能大会（WAIC 2026）上，百度AI将携智能体全家桶亮相，全方位呈现智能体从技术升级、应用开发到产业赋能的最新成果。同时，百度“芯云模体”全栈AI产品矩阵也将在WAIC现场发布新升级，集中展示百度AI从底层技术创新到产业场景、个人应用的规模化落地进展。",
-      "category_hint": "tech",
-      "lang": "zh"
-    },
-    {
-      "title": "上周154家上市公司披露机构投资者调研纪要，华盛昌迎超120家机构调研",
-      "url": "https://36kr.com/newsflashes/3892020306279171?f=rss",
-      "published": "2026-07-12 10:55:51  +0800",
-      "source": "36氪",
-      "summary_raw": "上周（7月6日—10日）A股共有154家上市公司披露机构投资者调研纪要。从赚钱效应看，周内不到两成机构调研股股价实现正收益。其中，崇达技术是周内涨幅最高的机构调研股，累计涨21.59%；威尔高、精测电子、亚虹医药-U等个股涨超10%。在热门调研标的方面，华盛昌是上周唯一一家获得超百家机构调研的公司，天壕能源、胜宏科技分别接受76家、51家机构调研，沪电股份、恒逸石化、华菱线缆、天孚通信等接受40家以上机构调研。（证券时报）",
+      "summary_raw": "面对用电需求快速增长态势，我国电源装机、输电通道、电网调度保障能力全面升级，全方位筑牢迎峰度夏电力保供坚实底气。新型电网建设也为今年迎峰度夏电力保供提供了有力支撑。目前，我国已建成投运47条特高压通道，国家电网区域168项迎峰度夏重点工程全部按期投产，有效增强了跨省跨区输电能力，提升了省间电力互济和应急支援水平。（央视新闻）",
       "category_hint": "tech",
       "lang": "zh"
     }
