@@ -120,13 +120,14 @@
 - **GitHub Actions（云端，无人值守）**：定时采集 RSS 候选池，push 到仓库，发飞书通知
 - **Hermes（手机，cron 定时）**：两个定时任务对应两个采集批次，拉取最新仓库，对候选池做 AI 筛选/摘要/分类，校验后推送，处理完清空候选池
 
-### 事件触发机制（cron 定时，两批次）
+### 事件触发机制（cron 定时，两批次，两个 skill）
 1. GitHub Actions 云端定时采集候选池 → push 到仓库
-2. Hermes（手机）设两个 cron 定时任务，对应两个批次：
-   - 早间批次（如 08:30）：处理 GitHub Actions 08:00 采集的候选（排除 juya）
-   - 午间批次（如 13:30）：处理 GitHub Actions 13:00 采集的 juya AI 日报
-3. Hermes 每次执行 skill：git pull → 读取候选池 → 编辑筛选 → 校验 → push → **清空候选池**
-4. 清空候选池确保两个批次各自只处理本批新候选，不会重复处理
+2. Hermes（手机）设两个 cron 定时任务，分别触发两个 skill：
+   - 早间批次（如 08:30）：触发 `campbrief-daily-news` skill，处理 GitHub Actions 08:00 采集的候选（排除 juya）
+   - 午间批次（如 13:30）：触发 `campbrief-daily-news-juya` skill，处理 GitHub Actions 13:00 采集的 juya AI 日报
+3. 两个 skill 共享同一个 `data/daily-news.json` 发布文件和同一个候选池 `data/daily-news-raw.json`，但各自只处理自己负责的源
+4. Hermes 每次执行 skill：git pull → 读取候选池 → 编辑筛选 → 校验 → push → **清空候选池**
+5. 清空候选池确保两个批次各自只处理本批新候选，不会重复处理
 
 ### 为什么用 cron 而非事件触发
 飞书 `im.message.receive_v1` 事件只对**用户**发的消息触发，**机器人发的消息不触发**该事件。
@@ -155,15 +156,19 @@
 - webhook URL 从环境变量 `FEISHU_WEBHOOK` 或 `--webhook` 参数读取
 - 注意：飞书应用机器人收不到其他机器人发的消息事件，必须真人 @ nienie
 
-### Hermes skill 衔接
+### Hermes skill 衔接（两个独立 skill）
+- `campbrief-daily-news`（早间批次）：只处理非 juya 源，步骤 1 用 `--exclude "juya AI 日报"` 采集，步骤 2 过滤掉 juya 条目
+- `campbrief-daily-news-juya`（午间批次）：只处理 juya 源，步骤 1 用 `--only "juya AI 日报"` 采集，步骤 2 只保留 juya 条目，步骤 3 必须先拆分日报再筛选
+- 两个 skill 共享发布文件 `data/daily-news.json` 和候选池 `data/daily-news-raw.json`
 - 步骤 0：`git pull --ff-only` 拉取最新候选池
-- 步骤 1：判断候选池 `candidates` 是否非空且 `collected_at` 是今天，是则跳过本地采集，直接进入编辑流程
+- 步骤 1：判断候选池 `candidates` 是否非空且 `collected_at` 是今天，是则跳过本地采集
 - 步骤 8：处理成功后清空候选池（写空结构），确保下次定时任务只处理新候选
 - 兜底：如果 GitHub Actions 没跑或 pull 失败，Hermes 仍可本地跑采集脚本
 
 ### Hermes 侧配置要求
-- nienie 设两个 cron 定时任务（如 08:30 和 13:30），分别对应两个采集批次
-- 每次触发执行 campbrief-daily-news skill
+- nienie 设两个 cron 定时任务：
+  - 08:30 触发 `campbrief-daily-news` skill（处理非 juya 源）
+  - 13:30 触发 `campbrief-daily-news-juya` skill（处理 juya AI 日报）
 - 候选池为空时（已处理过或 GitHub Actions 没跑），skill 会尝试本地采集作为兜底
 
 ### 敏感信息

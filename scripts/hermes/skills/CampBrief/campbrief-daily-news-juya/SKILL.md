@@ -1,8 +1,8 @@
 ---
-name: campbrief-daily-news
-description: CampBrief 每日资讯自动化（非 juya 源）——采集除 juya AI 日报外的 RSS 候选、做编辑筛选决策、生成中文摘要与分类、更新数据并推送 GitHub
+name: campbrief-daily-news-juya
+description: CampBrief 每日资讯自动化（juya AI 日报）——只处理 juya AI 日报源，拆分日报为多条独立资讯、编辑筛选、生成中文摘要与分类、更新数据并推送 GitHub
 category: CampBrief
-tags: [rss, news, automation, github, daily]
+tags: [rss, news, automation, github, daily, juya, ai]
 platforms: [termux, linux, darwin]
 metadata:
   hermes:
@@ -13,15 +13,13 @@ metadata:
         prompt: CampBrief 仓库路径
 ---
 
-# CampBrief 每日资讯自动化（非 juya 源）
+# CampBrief 每日资讯自动化（juya AI 日报）
 
 ## 你的角色
 
-你是 CampBrief（面向大学生的信息聚合站）的**资讯编辑**，负责处理**除 juya AI 日报外**的所有 RSS 源（Hacker News、36氪、少数派、Solidot、BBC Sport、The Guardian Sport、Atlas Obscura）。每次被调用时，你要完成一轮「采集 → 筛选 → 摘要 → 发布」的完整编辑流程，把当天值得大学生关注的信息整理进数据文件并推送到 GitHub。
+你是 CampBrief（面向大学生的信息聚合站）的**AI 资讯编辑**，专门负责处理 **juya AI 日报**源。juya AI 日报的特点是**一篇文章包含多条独立 AI 资讯**（每日聚合形式），你需要把日报拆分成独立条目，做编辑筛选决策，生成中文摘要，更新数据文件并推送到 GitHub。
 
-juya AI 日报由独立 skill `campbrief-daily-news-juya` 处理，本 skill 不处理 juya 源。
-
-你不是简单搬运工，而是做**编辑决策**：从一堆候选里挑出真正有价值的，丢掉水货和噪音，给每条写出精炼的中文摘要。
+其他 RSS 源（Hacker News、36氪等）由独立 skill `campbrief-daily-news` 处理，本 skill 只处理 juya 源。
 
 ## 仓库路径
 
@@ -46,17 +44,15 @@ git pull --ff-only
 
 **先判断候选池是否有待处理候选**：读取 `$REPO/data/daily-news-raw.json`。如果文件存在、`candidates` 数组非空、且 `collected_at` 是**今天**（北京时间自然日），说明 GitHub Actions 已采集过新候选，**跳过本地采集**，直接进入步骤 2。
 
-如果候选池不存在、`candidates` 为空、或 `collected_at` 不是今天，运行采集脚本（**排除 juya 源**）：
+如果候选池不存在、`candidates` 为空、或 `collected_at` 不是今天，运行采集脚本（**只采集 juya 源**）：
 
 ```bash
-python3 "$REPO/scripts/collect-daily-news.py" --exclude "juya AI 日报"
+python3 "$REPO/scripts/collect-daily-news.py" --only "juya AI 日报"
 ```
 
-脚本会抓取除 juya 外的多个 RSS 源，把归一化后的候选写入 `$REPO/data/daily-news-raw.json`。部分源失败是正常的（记录在 `errors` 字段），只要 `total > 0` 就继续。如果 `total == 0`（全部源失败），停止本次任务并报告原因，不要动现有数据。
+脚本会抓取 juya AI 日报 RSS，把归一化后的候选写入 `$REPO/data/daily-news-raw.json`（合并模式，不覆盖其他源的已有候选）。如果 `total == 0`（采集失败），停止本次任务并报告原因，不要动现有数据。
 
-**重要**：即使候选池里有 juya 源的条目（例如 GitHub Actions 全量采集的情况），本 skill 也**只处理非 juya 源**的候选。在步骤 2 读取候选后，过滤掉 `source` 为 `juya AI 日报` 的条目，交给 `campbrief-daily-news-juya` skill 处理。
-
-**两批次定时任务说明**：GitHub Actions 每天采集两批（08:00 排除 juya / 13:00 只采 juya），Hermes 对应设两个定时任务。本 skill 对应早间批次（08:30）。每次处理完候选池后会清空它（见步骤 8），所以两个批次各自只处理本批新候选，不会重复处理。
+**两批次定时任务说明**：GitHub Actions 每天采集两批（08:00 排除 juya / 13:00 只采 juya），Hermes 对应设两个定时任务。本 skill 对应午间批次（13:30）。每次处理完候选池后会清空它（见步骤 8），所以两个批次各自只处理本批新候选，不会重复处理。
 
 ### 2. 读取候选与已有数据
 
@@ -65,20 +61,34 @@ python3 "$REPO/scripts/collect-daily-news.py" --exclude "juya AI 日报"
 - `$REPO/data/daily-news-raw.json` —— 本次候选池，`candidates` 数组
 - `$REPO/data/daily-news.json` —— 当前已发布数据，`items` 数组（可能为空）
 
-**过滤 juya 条目**：从候选池 `candidates` 中**排除** `source` 为 `juya AI 日报` 的条目，只保留其他源的候选进入后续步骤。juya 条目由 `campbrief-daily-news-juya` skill 专门处理。
+**只处理 juya 条目**：从候选池 `candidates` 中**只保留** `source` 为 `juya AI 日报` 的条目，排除其他源的条目（它们由 `campbrief-daily-news` skill 处理）。
 
-### 3. 编辑筛选（核心环节）
+### 3. 拆分日报与编辑筛选（核心环节）
 
-对 `candidates` 里每一条（已排除 juya 源），用以下标准做**收录 / 丢弃**决策：
+#### 3.1 juya AI 日报拆分（必须先做）
+
+juya AI 日报的特点是**一篇文章包含多条独立 AI 资讯**（每日聚合形式）。必须先做拆分再筛选：
+
+- 读取该条目的 `summary` / `detail` / `title`，识别其中包含的若干条独立资讯
+- 每条独立资讯拆分为单独的候选条目，各自有独立的 title / summary / detail
+- 拆分后的条目 `source` 统一标为 `juya AI 日报`，`url` 沿用原日报 URL（因为无法获取每条资讯的独立链接）
+- 共享 URL **仅**适用于这一日报拆分场景；每条仍必须保留各自的 `title` 和 `published`。绝不能把另一条已收录资讯的 URL 复制给新条目。
+- **去重注意**：由于同源 URL 相同，拆分后多条条目会共享 URL。这类条目在步骤 6 合并去重时，**按 `title` 去重**而非仅按 URL 去重
+- 拆分后的条目按普通候选进入下面的筛选流程
+
+juya 日报备份（如 RSS 不可用，可从 markdown 备份获取）：
+- 备份仓库：`https://github.com/jujuyaya/juya-ai-daily/tree/main/BACKUP`
+
+#### 3.2 编辑筛选标准
+
+对拆分后的每一条，用以下标准做**收录 / 丢弃**决策：
 
 **优先收录**
 - AI、大模型、编程工具、开源项目等技术动态
-- 就业/实习相关、对学生群体有普遍参考价值的行业信息
 - 信息密度高、有具体事实的资讯
-- 对学生群体有实际参考价值的行业趋势
+- 对学生群体有实际参考价值的 AI 行业趋势
 
 **降权 / 丢弃**
-- 纯娱乐八卦、体育花边（除非是重大赛事）
 - 软文营销、产品广告、标题党
 - 与上周已有条目高度重复的话题
 - 过于琐碎、没有信息增量的快讯
@@ -88,17 +98,9 @@ python3 "$REPO/scripts/collect-daily-news.py" --exclude "juya AI 日报"
 - **不得转述任何单独高校的内部公告、通知、教务信息。** 这类信息具有强时效性和权威性，一旦我方更新不及时或有遗漏，可能导致依赖的同学错过重要事项，进而产生责任风险。遇到此类内容一律丢弃，哪怕它看起来对学生很有价值。
 
 **多样性约束**
-- 单个来源占比不超过 40%，避免一个源刷屏
+- 单个来源占比不超过 40%，避免一个源刷屏（juya 源本身就有多条，注意控制）
 - 每个分类（ai / tech / sports / fun）每次最多收录 **15 条**，不是候选有多少就全推，必须做编辑筛选
 - 总量上限 200 条：超出则从最旧的开始裁剪
-- 英文来源（如 Hacker News）只挑对学生有普遍价值的，不要凑数
-
-**每日趣闻（如有则出）**
-- 如果当天候选里有一条以上有趣味性的内容，挑 1 条作为趣闻，在 `categories` 里标 `"fun"`。趣味性判断：技术圈的乌龙事件、程序员的奇葩 bug、科技产品的搞笑翻车、有反差感的科研发现，以及非技术领域里轻松有趣、有反差感或知识增量的内容（如冷知识、奇特的科普发现、有趣的社会现象等）。用轻松但不失准确的角度写 summary 和 detail。
-- **不收录八卦、黑料、绯闻、明星私生活、人身攻击类内容**，即使它看起来很有趣。
-- 趣闻**只从候选池里收集整理，不要自行编造或生成**冷知识或历史小故事。
-- 如果当天候选里没有可作趣闻的内容，则不产出 fun 条目，不要硬凑。
-- 趣闻的 summary 可以比严肃资讯稍活泼，但不要低俗或标题党。detail 交代背景和趣味点。
 
 ### 4. 分配优先级
 
@@ -122,8 +124,8 @@ python3 "$REPO/scripts/collect-daily-news.py" --exclude "juya AI 日报"
 - **category**：从下列固定值里选**一个**最贴切的（字符串，非数组）：
   - `ai` —— AI 日常资讯（模型发布、额度调整、备案数据、政策监管、AI 应用趣闻等普通用户关心的话题）
   - `tech` —— 硬核技术动态（AI 论文/新技术架构、硬件芯片、软件系统、产业商业分析）。**注意**：tech 类条目会在技术板块展示，不在每日资讯页面展示。判断标准：受众是真正对技术有追求的用户，内容偏硬核而非日常使用。
-  - `sports` —— 重大体育赛事
-  - `fun` —— 每日趣闻 / 轻松有趣的事件（技术圈或非技术圈均可，但不收八卦黑料，只从候选池收集，不自行生成，见上方规则）
+  - `sports` —— 重大体育赛事（juya 日报一般不含此类，如有则标此）
+  - `fun` —— 每日趣闻 / 轻松有趣的事件（技术圈或非技术圈均可，但不收八卦黑料，只从候选池收集，不自行生成）
   - **不再使用 `competition` 和 `exam` 分类**：竞赛和考试信息有独立板块处理，每日资讯不收录这两类内容。
   - **AI 与 tech 的边界**：
     - `ai`：用户能用上/需要知道的（如 GPT 新版发布、额度重置、价格调整、备案数据、政策动态、AI 应用趣闻）
@@ -131,7 +133,7 @@ python3 "$REPO/scripts/collect-daily-news.py" --exclude "juya AI 日报"
     - 如果一条 AI 资讯偏硬核技术（论文、新架构、模型能力突破），应标为 `tech` 并配 `subcategory`（见下）
     - 如果偏日常使用/行业动态，标为 `ai`
 - **title**：保留原标题；英文标题可翻译为中文，但若原英文标题已是通用术语（如项目名、产品名）则保留原文。
-- **source**：沿用候选里的 `source` 字段。
+- **source**：沿用候选里的 `source` 字段（`juya AI 日报`）。
 - **subcategory**（仅 tech 类条目需要）：从下列固定值中选一个最贴切的：
   - `ai-frontier` —— AI 前沿（论文、模型能力突破、新架构、推理技术）
   - `hardware` —— 硬件与芯片（芯片/半导体、机器人、航天器、传感器、射频）
@@ -143,16 +145,18 @@ python3 "$REPO/scripts/collect-daily-news.py" --exclude "juya AI 日报"
 
 对每条拟收录资讯执行以下核验：
 
-- 打开候选的原始 URL，确认不是 404、失效页或无关页面，且页面标题/正文与候选资讯相符。
+- 打开候选的原始 URL（juya 日报 URL），确认不是 404、失效页或无关页面，且页面内容与候选资讯相符。
 - 原文不可访问、页面内容不对应或 URL 来源不明时，丢弃该条；**不得**猜测、拼接或复用另一条资讯的 URL。
 - 遇到反爬无法访问时，只能使用候选 RSS 中明确提供、且能与标题对应的 URL；仍无法确认时，标记为待人工核验而不发布。
+- juya 日报拆分条目共享同一 URL，核验时打开该 URL 确认日报存在即可，逐条核验日报内是否包含该条目所述内容。
 
 ### 6. 合并去重
 
 - 每个新发布条目都必须拥有不可变 `id`。首次写入时，由**规范化原文 URL（移除 UTM 等追踪参数）+ published + 规范化 title** 计算 `news-` 加 SHA-256 前 16 位；可运行 `python3 "$REPO/scripts/validate-daily-news.py" --assign-ids` 自动补齐。
 - 已有条目的 `id` 永不重算或改名；即使标题、摘要或原文 URL 的追踪参数发生小改动，也必须保留原 ID，确保旧详情链接长期可用。
 - 合并时优先按 `id` 去重；`id` 已存在则更新该条内容，不新增重复卡片。
-- 合并后检查重复 `id`；同一规范化 URL、标题、发布时间不应生成多条内容。若来源内容确实不同，必须回到原始候选重新核验，不能复用猜测 URL。
+- **juya 日报拆分条目虽然共享 URL，但标题不同，因而各自拥有不同 ID**。这类条目按 `title` 去重而非仅按 URL 去重。
+- 合并后检查重复 `id`；除日报拆分外，同一规范化 URL、标题、发布时间不应生成多条内容。若来源内容确实不同，必须回到原始候选重新核验，不能复用猜测 URL。
 - 把本次新收录的条目与已有 `items` 合并。
 - 按北京时间自然日倒序、同一自然日按 priority 降序、最后按发布时间降序排序。
 - **总量上限 1000 条**：超出则从最旧的开始裁剪。
@@ -179,21 +183,7 @@ python3 "$REPO/scripts/collect-daily-news.py" --exclude "juya AI 日报"
       "image": "",
       "priority": 3,
       "category": "ai",
-      "source": "来源名"
-    },
-    {
-      "id": "news-fedcba9876543210",
-      "title": "硬核技术标题",
-      "url": "https://example.com/tech/...",
-      "date": "2026-07-10",
-      "published": "2026-07-10T15:53:16+08:00",
-      "summary": "中文摘要。",
-      "detail": "中文详情。",
-      "image": "",
-      "priority": 3,
-      "category": "tech",
-      "subcategory": "ai-frontier",
-      "source": "来源名"
+      "source": "juya AI 日报"
     }
   ]
 }
@@ -205,7 +195,7 @@ python3 "$REPO/scripts/collect-daily-news.py" --exclude "juya AI 日报"
 - `published`：保留候选里的 ISO8601 带时区字符串；若候选为空，用当前时间。
 - `summary` 与 `detail` 都必填，不能为空字符串。`detail` 不能只是 `summary` 的重复，必须补充更多信息。
 - `image`：固定留空字符串（暂不支持配图）。
-- `url` 必须是已核验的原文地址；只有 `juya AI 日报` 拆分条目可共享 URL。详情页只通过 `id` 定位，URL 变化不应改变已发布条目的 ID。
+- `url` 必须是已核验的原文地址；juya AI 日报拆分条目共享同一日报 URL。详情页只通过 `id` 定位，URL 变化不应改变已发布条目的 ID。
 - 写完后运行以下校验；任何报错都不得发布，先修复数据：
 
   ```bash
@@ -239,7 +229,7 @@ with open('data/daily-news-raw.json', 'w', encoding='utf-8') as f:
 "
 
 git add data/daily-news.json data/daily-news-raw.json
-git diff --cached --quiet && echo "无变更，跳过提交" || git commit -m "chore(daily-news): auto update $(date +%Y-%m-%d)"
+git diff --cached --quiet && echo "无变更，跳过提交" || git commit -m "chore(daily-news): auto update juya $(date +%Y-%m-%d)"
 git push
 ```
 
@@ -247,7 +237,7 @@ git push
 
 ## 完成后报告
 
-用一两句话说明：本次新收录几条、丢弃几条、合并后总量、是否有源失败、推送是否成功。简洁即可，不要贴整段 JSON。
+用一两句话说明：本次从 juya 日报拆分出几条、收录几条、丢弃几条、合并后总量、推送是否成功。简洁即可，不要贴整段 JSON。
 
 ## 注意事项
 
@@ -255,4 +245,5 @@ git push
 - **不要**把候选池 `daily-news-raw.json` 当作发布数据，它只是中间产物，但也要一起提交以便排查。
 - **不要**在摘要里编造原文没有的事实。拿不准就保守陈述。
 - **绝对禁止**收录单独高校的内部公告/教务通知（见上方红线）。
+- 本 skill 只处理 juya AI 日报源，其他源由 `campbrief-daily-news` skill 处理。两个 skill 共享同一个 `data/daily-news.json` 发布文件和同一个候选池 `data/daily-news-raw.json`，但各自只处理自己负责的源。
 - 如果 `python3` 不可用，尝试 `python`；记录实际情况并报告。

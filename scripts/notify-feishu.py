@@ -83,7 +83,9 @@ def build_text_message(data, batch):
 
     # 飞书应用机器人无法接收其他机器人的消息事件，需手动 @ nienie 触发
     lines.append("")
-    lines.append("收到通知后，在群里 @nienie 发送：执行 campbrief-daily-news")
+    # 根据批次提示对应 skill
+    skill_name = "campbrief-daily-news-juya" if batch == "noon" else "campbrief-daily-news"
+    lines.append(f"收到通知后，在群里 @nienie 发送：执行 {skill_name}")
 
     return "\n".join(lines)
 
