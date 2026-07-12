@@ -1,4 +1,4 @@
-// 技术详情页 - 通过 ?url= 参数定位条目，渲染详情
+// 技术详情页 - 通过不可变 ID 定位条目，渲染详情
 // 数据源：data/daily-news.json 中 category=tech 的条目
 (function () {
   "use strict";
@@ -42,12 +42,7 @@
   }
 
   function escapeHtml(text) {
-    if (!text) return "";
-    return String(text)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
+    return CampBriefContent.escapeHtml(text);
   }
 
   function renderNotFound(message) {
@@ -63,6 +58,7 @@
   }
 
   function renderDetail(item) {
+    item = { ...item, url: CampBriefContent.safeHttpUrl(item.url) };
     const el = document.getElementById("techDetail");
     const sub = item.subcategory || "software";
     const subInfo = SUBCATEGORY_LABELS[sub] || SUBCATEGORY_LABELS.software;
@@ -100,14 +96,14 @@
   }
 
   async function init() {
-    const targetUrl = getUrlParam("url");
-    if (!targetUrl) {
-      renderNotFound("缺少技术动态地址参数。");
+    const targetId = getUrlParam("id");
+    if (!targetId) {
+      renderNotFound("缺少技术动态 ID 参数。");
       return;
     }
 
     const items = await loadData();
-    const item = items.find(it => it.url === targetUrl) || items.find(it => it.url === decodeURIComponent(targetUrl));
+    const item = items.find(it => it.id === targetId);
 
     if (!item) {
       renderNotFound("该技术动态可能已更新下线，或链接有误。");

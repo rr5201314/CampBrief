@@ -30,6 +30,7 @@
   <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></symbol>
   <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
   <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
   <symbol id="i-category" viewBox="0 0 24 24"><path d="M4 5h7v7H4z"/><path d="M13 5h7v7h-7z"/><path d="M4 14h7v5H4z"/><path d="M13 14h7v5h-7z"/></symbol>
 </svg>
 
@@ -96,8 +97,10 @@
           <div class="options" data-filter-group="date" role="group" aria-label="技术动态发布日期">
             <button class="option active" type="button" data-value="all" aria-pressed="true">全部</button>
             <button class="option" type="button" data-value="24h" aria-pressed="false">24小时</button>
+            <button class="option" type="button" data-value="3d" aria-pressed="false">近3天</button>
             <button class="option" type="button" data-value="7d" aria-pressed="false">7天</button>
             <button class="option" type="button" data-value="30d" aria-pressed="false">30天</button>
+            <button class="option" type="button" data-value="custom" aria-pressed="false" aria-haspopup="dialog" aria-expanded="false">自定义日期</button>
           </div>
         </div>
         <div class="search-wrap">
@@ -127,8 +130,31 @@
   </main>
 </div>
 
+<div class="date-modal" id="dateModal" role="presentation" hidden>
+  <div class="date-modal-backdrop" data-date-modal-close></div>
+  <section class="date-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="dateModalTitle">
+    <header class="date-modal-header">
+      <div>
+        <p class="date-modal-kicker">技术动态日期</p>
+        <h2 id="dateModalTitle">选择发布日期</h2>
+      </div>
+      <button class="calendar-close" type="button" aria-label="关闭日期选择" data-date-modal-close>
+        <svg class="icon"><use href="#i-close"/></svg>
+      </button>
+    </header>
+    <label class="calendar-period" for="customDateInput">发布日期
+      <input id="customDateInput" class="search-input" type="date" autocomplete="off">
+    </label>
+    <footer class="date-modal-actions">
+      <button class="btn btn-secondary" id="clearDateButton" type="button">清除日期</button>
+      <button class="btn btn-primary" id="applyCustomDateButton" type="button">应用筛选</button>
+    </footer>
+  </section>
+</div>
+
 <script src="../../assets/js/main.js"></script>
 <script src="../../assets/js/carousel.js"></script>
+<script src="../../assets/js/content-utils.js"></script>
 <script src="../../assets/js/tech.js"></script>
 </body>
 </html>

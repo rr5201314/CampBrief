@@ -4,6 +4,7 @@
   "total": 65,
   "items": [
     {
+      "id": "news-0348d3f9fc1dc38f",
       "title": "SK 海力士 CEO 预计 2027 年 HBM 价格将翻倍",
       "url": "https://36kr.com/newsflashes/3892093059873544?f=rss",
       "date": "2026-07-12",
@@ -17,6 +18,7 @@
       "source": "36氪"
     },
     {
+      "id": "news-2966e6035f49c9ea",
       "title": "三星电子将龙仁芯片工厂投产时间提前至 2029 年",
       "url": "https://36kr.com/newsflashes/3892091542288904?f=rss",
       "date": "2026-07-12",
@@ -30,6 +32,7 @@
       "source": "36氪"
     },
     {
+      "id": "news-1cb3da59f7257d91",
       "title": "百度 AI 将携智能体全家桶亮相 WAIC 2026",
       "url": "https://36kr.com/newsflashes/3892090766539268?f=rss",
       "date": "2026-07-12",
@@ -42,6 +45,7 @@
       "source": "36氪"
     },
     {
+      "id": "news-9f8361393f28bd0e",
       "title": "近百名玩家涌入具身数据赛道，一年融资 44.7 亿",
       "url": "https://36kr.com/p/3892027841362694?f=rss",
       "date": "2026-07-12",
@@ -55,6 +59,7 @@
       "source": "36氪"
     },
     {
+      "id": "news-bb526be589355533",
       "title": "GPT-5.6 Sol 被曝误删用户文件，OpenAI 已展开调查",
       "url": "https://daily.juya.uk/issues/2026-07-12/",
       "date": "2026-07-12",
@@ -67,6 +72,7 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-be713f82133f5c95",
       "title": "Thinking Machines Lab 发文：构建可定制并扩展人类意志的 AI",
       "url": "https://daily.juya.uk/issues/2026-07-12/",
       "date": "2026-07-12",
@@ -80,6 +86,7 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-dd1fc92f08313a04",
       "title": "xAI Grok Build CLI 隐私分析：工具向服务器发送大量用户数据",
       "url": "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547",
       "date": "2026-07-12",
@@ -93,6 +100,7 @@
       "source": "Hacker News"
     },
     {
+      "id": "news-28002f417f6f61c6",
       "title": "修复三个 Bug 让 Qwen3.5-122B 在 Mac Studio 上稳定运行",
       "url": "https://mrzk.io/posts/qmlx-maximising-ai-psychosis-minmaxing-mac-studio/",
       "date": "2026-07-12",
@@ -106,6 +114,7 @@
       "source": "Hacker News"
     },
     {
+      "id": "news-50e99d218bcad4f6",
       "title": "Mesh LLM：基于点对点网络的分布式 AI 计算",
       "url": "https://www.iroh.computer/blog/mesh-llm",
       "date": "2026-07-12",
@@ -119,6 +128,7 @@
       "source": "Hacker News"
     },
     {
+      "id": "news-6ab84488cadc8e34",
       "title": "RISCBoy：从零设计的开源便携游戏主机",
       "url": "https://github.com/Wren6991/RISCBoy",
       "date": "2026-07-12",
@@ -131,6 +141,7 @@
       "source": "Hacker News"
     },
     {
+      "id": "news-db79c4ae9946a0e6",
       "title": "布朗大学教授怀疑多数学生在期中考试中使用 AI 作弊",
       "url": "https://www.solidot.org/story?sid=84806",
       "date": "2026-07-12",
@@ -143,6 +154,7 @@
       "source": "Solidot"
     },
     {
+      "id": "news-6320a4be9efe834f",
       "title": "日本 JAXA 成功测试可回收火箭 RV-X",
       "url": "https://www.solidot.org/story?sid=84804",
       "date": "2026-07-12",
@@ -156,6 +168,7 @@
       "source": "Solidot"
     },
     {
+      "id": "news-183bc619c05be9a0",
       "title": "温网女单决赛：捷克选手穆乔娃对阵诺斯科娃",
       "url": "https://www.theguardian.com/sport/live/2026/jul/11/karolina-muchova-v-linda-noskova-wimbledon-2026-womens-singles-final-live",
       "published": "2026-07-11T14:34:49+00:00",
@@ -167,6 +180,7 @@
       "date": "2026-07-11"
     },
     {
+      "id": "news-929d3d26d834ebd5",
       "title": "美国 FCC 批准太空镜测试，引发光污染争议",
       "url": "https://www.nytimes.com/2026/07/10/climate/fcc-space-mirror.html",
       "published": "2026-07-11T12:12:34+00:00",
@@ -179,6 +193,7 @@
       "date": "2026-07-11"
     },
     {
+      "id": "news-ed03da5aab42d0b2",
       "title": "智谱创始人唐杰发内部信：「GLM 时刻」之后直指 AGI",
       "url": "https://36kr.com/newsflashes/3891162734689031?f=rss",
       "published": "2026-07-11T19:35:25+08:00",
@@ -190,6 +205,7 @@
       "date": "2026-07-11"
     },
     {
+      "id": "news-3c33b2493b15b3c0",
       "title": "苏联控制室的复古美学",
       "url": "https://designyoutrust.com/2018/01/vintage-beauty-soviet-control-rooms/",
       "published": "2026-07-11T05:19:41+00:00",
@@ -201,6 +217,7 @@
       "date": "2026-07-11"
     },
     {
+      "id": "news-396fef8b3452b3af",
       "title": "世界杯八强赛：英格兰对阵挪威，迈阿密高温成变数",
       "url": "https://www.bbc.co.uk/sport/football/articles/cx2jzl3zxpzo?at_medium=RSS&at_campaign=rss",
       "published": "2026-07-11T05:08:35+00:00",
@@ -212,6 +229,7 @@
       "date": "2026-07-11"
     },
     {
+      "id": "news-74c2c9a3eef31dc7",
       "title": "KwaiKAT 发布 KAT Coder Pro V2.5",
       "summary": "快手 KwaiKAT 发布 KAT Coder Pro V2.5 编程模型，提升代码生成能力。",
       "detail": "快手旗下 KwaiKAT 发布 KAT Coder Pro V2.5 编程模型，这是其在代码生成领域的最新版本。该模型在代码补全、调试和多语言支持方面进行了优化，面向开发者提供更高效的 AI 编程辅助体验。",
@@ -224,6 +242,7 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-df80de9f680a550a",
       "title": "Grok 4.5 向免费用户开放 Grok Build 限时体验",
       "summary": "xAI 将 Grok 4.5 模型向免费用户开放 Grok Build 限时体验。",
       "detail": "xAI 宣布将 Grok 4.5 模型向免费用户开放限时体验，用户可通过 Grok Build 功能直接使用该模型。此举旨在扩大 Grok 的用户基础，与 OpenAI 和 Anthropic 等竞争对手争夺开发者市场。Grok 4.5 此前仅面向付费订阅用户开放。",
@@ -236,6 +255,7 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-37809e3bd4a3e948",
       "title": "Claude Code 桌面版新增内置浏览器，支持沙盒与交互",
       "summary": "Anthropic 为 Claude Code 桌面版新增内置浏览器功能，支持沙盒环境和交互操作。",
       "detail": "Anthropic 为 Claude Code 桌面应用新增了内置浏览器功能，开发者可以在沙盒环境中直接预览和交互测试代码输出。该功能允许 Claude 在编写代码后立即在受控环境中验证结果，提升了开发工作流的效率和安全性。",
@@ -248,6 +268,7 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-ad75abd64ad47a94",
       "title": "OpenAI 重置用量并承认更新体验问题",
       "summary": "OpenAI 重置用户用量额度，同时承认近期模型更新带来的体验问题。",
       "detail": "OpenAI 向用户发送通知，宣布重置各订阅层级的用量额度。同时公司承认近期 GPT-5.6 系列模型更新后，部分用户反馈存在响应质量下降和使用体验不稳定的问题。OpenAI 表示正在积极修复相关问题并优化模型表现。",
@@ -260,6 +281,7 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-f3e2045b17408479",
       "title": "Wan 发布 Wan Streamer v0.2：分辨率升至 640×368",
       "summary": "Wan 发布 Wan Streamer v0.2 视频生成模型，分辨率提升至 640×368。",
       "detail": "开源视频生成模型 Wan 发布 Streamer v0.2 版本，将输出分辨率从前代的较低规格提升至 640×368。新版本在视频流畅度和画面质量方面均有改进，继续推进开源视频生成技术的发展。该模型在开源社区中受到关注。",
@@ -273,6 +295,7 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-3ece03de3439405f",
       "title": "Kyutai 发布开源多乐器转录模型 MuScriptor",
       "summary": "法国 AI 研究机构 Kyutai 发布开源多乐器音频转录模型 MuScriptor。",
       "detail": "法国 AI 研究机构 Kyutai 发布了 MuScriptor，一款开源的多乐器音频转录模型，能够识别和转录多种乐器的演奏内容。该模型支持钢琴、吉他、鼓等多种乐器的独立识别，为音乐信息检索和自动编曲等领域提供了新的开源工具。",
@@ -286,6 +309,7 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-492f827fe8884008",
       "title": "Google AI Studio 为部署应用推出免费个性化 URL",
       "summary": "Google AI Studio 推出免费个性化 URL 功能，方便开发者分享 AI 应用。",
       "detail": "Google AI Studio 新增免费个性化 URL 功能，开发者部署的 AI 应用现在可以获得专属的可访问链接，无需自行配置服务器或域名。这一功能降低了 AI 应用的分享和展示门槛，使开发者能更便捷地向他人展示自己的 AI 项目成果。",
@@ -298,6 +322,7 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-a8512f524d560048",
       "title": "上交大 00 后博士创立仿生扑翼机器人公司，三月融三轮",
       "url": "https://36kr.com/p/3889516712065799?f=rss",
       "published": "2026-07-11T09:00:00+08:00",
@@ -310,6 +335,7 @@
       "date": "2026-07-11"
     },
     {
+      "id": "news-4a8107a35e05bafe",
       "title": "苹果起诉 OpenAI，指控前员工窃取商业机密",
       "url": "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/",
       "date": "2026-07-10",
@@ -322,6 +348,7 @@
       "source": "Hacker News"
     },
     {
+      "id": "news-5d62f4327be03bb5",
       "title": "GhostLock：影响所有 Linux 发行版 15 年的内核漏洞",
       "url": "https://nebusec.ai/research/ionstack-part-2/",
       "date": "2026-07-10",
@@ -335,6 +362,7 @@
       "subcategory": "software"
     },
     {
+      "id": "news-d1b54f2ee5b19723",
       "title": "GPT-5.6 Sol Ultra 证明环双覆盖猜想",
       "url": "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf",
       "date": "2026-07-10",
@@ -348,6 +376,7 @@
       "source": "Hacker News"
     },
     {
+      "id": "news-ee51ac6dc1525c13",
       "title": "纽约市立法禁止欺骗性订阅 practices",
       "url": "https://www.theguardian.com/us-news/2026/jul/10/new-york-city-deceptive-subscriptions-ban",
       "published": "2026-07-10T18:26:24+00:00",
@@ -360,6 +389,7 @@
       "date": "2026-07-10"
     },
     {
+      "id": "news-9c716b47fa770802",
       "title": "SpaceX 计划再发射 10 万颗卫星以提升 100 倍带宽",
       "url": "https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/",
       "date": "2026-07-10",
@@ -373,6 +403,7 @@
       "subcategory": "hardware"
     },
     {
+      "id": "news-aad652a3af13b6eb",
       "title": "蜗牛牙齿强度超过蜘蛛丝，成为自然界已知最强材料",
       "url": "https://www.smithsonianmag.com/smart-news/spider-silk-loses-top-spot-natures-strongest-material-snails-teeth-180954346/",
       "date": "2026-07-10",
@@ -385,6 +416,7 @@
       "source": "Hacker News"
     },
     {
+      "id": "news-e5073f4b75f38545",
       "title": "现代人造环境对大脑造成过度负担",
       "url": "https://www.solidot.org/story?sid=84803",
       "date": "2026-07-11",
@@ -398,6 +430,7 @@
       "subcategory": "industry"
     },
     {
+      "id": "news-fa91751894e1312f",
       "title": "代理型领导人推动员工「安静辞职」现象",
       "url": "https://www.solidot.org/story?sid=84802",
       "published": "2026-07-11T00:00:32+08:00",
@@ -410,6 +443,7 @@
       "date": "2026-07-11"
     },
     {
+      "id": "news-968b0e8b361846ae",
       "title": "QuadRF：能探测无人机并穿墙感知 WiFi 的开源射频平台",
       "url": "https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/",
       "date": "2026-07-10",
@@ -423,6 +457,7 @@
       "subcategory": "hardware"
     },
     {
+      "id": "news-525410040fb23752",
       "title": "人形机器人首次成功完成活体动物远程手术",
       "url": "https://www.solidot.org/story?sid=84801",
       "date": "2026-07-10",
@@ -435,6 +470,7 @@
       "source": "Solidot"
     },
     {
+      "id": "news-878cad83f4d39616",
       "title": "长征十号乙运载火箭成功回收一级火箭",
       "url": "https://www.solidot.org/story?sid=84800",
       "date": "2026-07-10",
@@ -448,6 +484,7 @@
       "subcategory": "hardware"
     },
     {
+      "id": "news-03177c417829638c",
       "title": "国家网信办：累计 988 款生成式 AI 服务完成备案",
       "url": "https://36kr.com/newsflashes/3889675260639749?f=rss",
       "date": "2026-07-10",
@@ -460,6 +497,7 @@
       "priority": 3
     },
     {
+      "id": "news-cd0e2996f4f6d8e8",
       "title": "OpenRouter 数据：近五成美国公司调用中国 AI 模型",
       "url": "https://www.solidot.org/story?sid=84799",
       "date": "2026-07-10",
@@ -472,6 +510,7 @@
       "source": "Solidot"
     },
     {
+      "id": "news-71a9698fd2df259d",
       "title": "LinkedIn 和 X 上四分之一的长文是 AI 撰写的",
       "url": "https://www.solidot.org/story?sid=84798",
       "date": "2026-07-10",
@@ -484,6 +523,7 @@
       "priority": 2
     },
     {
+      "id": "news-04d24bfe3b849a3d",
       "title": "Google 搜索量在世界杯期间创下历史纪录",
       "url": "https://www.solidot.org/story?sid=84797",
       "date": "2026-07-10",
@@ -497,6 +537,7 @@
       "subcategory": "industry"
     },
     {
+      "id": "news-96a9416556a3c560",
       "title": "AI 生成视频可精准刺激特定大脑区域",
       "url": "https://nevo-project.epfl.ch/",
       "date": "2026-07-10",
@@ -510,6 +551,7 @@
       "priority": 1
     },
     {
+      "id": "news-16136558acd9dd2e",
       "title": "美国国会调查美国公司使用中国 AI 模型",
       "url": "https://www.solidot.org/story?sid=84796",
       "date": "2026-07-10",
@@ -522,6 +564,7 @@
       "priority": 2
     },
     {
+      "id": "news-f9bffdc91fae2296",
       "title": "Vibe Coding 时代，为什么降本不一定增效？",
       "url": "https://sspai.com/post/111975",
       "date": "2026-07-10",
@@ -535,6 +578,7 @@
       "subcategory": "software"
     },
     {
+      "id": "news-d9cc5c3e920b9a8a",
       "title": "Meta 发布 Muse Spark 1.1 模型及 API",
       "summary": "Meta 发布 Muse Spark 1.1 图像生成模型及配套 API，增强创意生成能力。",
       "detail": "Meta 发布 Muse Spark 1.1 图像生成模型，这是其在创意 AI 领域的最新版本。新模型在图像质量和生成速度方面有显著提升，同时开放 API 供开发者集成。此举标志着 Meta 在 AI 生成内容赛道的持续投入。",
@@ -547,6 +591,7 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-cbe09c21baf5056f",
       "title": "OpenAI 发布 ChatGPT Work",
       "summary": "OpenAI 发布 ChatGPT Work，面向企业用户的协作办公版本。",
       "detail": "OpenAI 推出 ChatGPT Work，这是一款面向企业和团队用户的协作办公版本。ChatGPT Work 集成了文档协作、任务管理和团队知识库等功能，旨在将 AI 助手深度融入企业日常工作流程，与微软 Copilot 等产品形成直接竞争。",
@@ -559,6 +604,7 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-656cdc5133c4ce03",
       "title": "Codex 升级支持文件编辑与 PR 审查，新增 Pro 与 Ultra 模式",
       "summary": "OpenAI Codex 升级支持文件编辑和 PR 审查功能，新增 Pro 与 Ultra 两种模式。",
       "detail": "OpenAI 的编程智能体 Codex 进行了重大升级，新增直接编辑代码文件和审查 Pull Request 的能力。同时引入 Pro 和 Ultra 两种新模式，提供不同级别的推理能力和资源分配。这标志着 Codex 从对话式编程助手向全功能开发工具的转变。",
@@ -571,6 +617,7 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-aac5e8acc46416ca",
       "title": "英伟达触觉仿真合作伙伴他山科技再获数亿融资",
       "url": "https://36kr.com/p/3889141540370949?f=rss",
       "date": "2026-07-10",
@@ -583,6 +630,7 @@
       "priority": 2
     },
     {
+      "id": "news-0c2b236890b8ece4",
       "title": "为 5 岁儿童构建实时 AI 家教",
       "url": "https://www.ello.com/blog/teaching-a-child-in-1000-ms",
       "date": "2026-07-10",
@@ -595,6 +643,7 @@
       "priority": 2
     },
     {
+      "id": "news-da1aa2acf777c2df",
       "title": "大多数 AI slop 应用将很快被抛弃",
       "url": "https://www.solidot.org/story?sid=84784",
       "date": "2026-07-09",
@@ -607,6 +656,7 @@
       "priority": 1
     },
     {
+      "id": "news-ba3ac40fff203671",
       "title": "Euclid 望远镜发现已知最遥远类星体",
       "url": "https://www.solidot.org/story?sid=84791",
       "date": "2026-07-10",
@@ -620,6 +670,7 @@
       "subcategory": "hardware"
     },
     {
+      "id": "news-28aa7f3ccaa5240c",
       "title": "Mitchell Hashimoto 谈 Ghostty 终端与 Zig 语言",
       "url": "https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/",
       "date": "2026-07-10",
@@ -633,6 +684,7 @@
       "subcategory": "software"
     },
     {
+      "id": "news-edbe4621d8a9a2ae",
       "title": "OpenAI 发布 GPT-5.6 系列模型",
       "url": "https://openai.com/index/gpt-5-6/",
       "date": "2026-07-10",
@@ -645,6 +697,7 @@
       "priority": 3
     },
     {
+      "id": "news-a3153bdcdc81a2f9",
       "title": "iOS 27 Beta 2 & 3 值得关注的新特性",
       "url": "https://sspai.com/post/112083",
       "date": "2026-07-10",
@@ -658,6 +711,7 @@
       "subcategory": "software"
     },
     {
+      "id": "news-fe4d981edfc7bb0c",
       "title": "继父利用 AI 生成 7000 张未成年人不当图像，Grok 安全系统被指失职",
       "url": "https://www.solidot.org/story?sid=84794",
       "date": "2026-07-09",
@@ -670,6 +724,7 @@
       "source": "Solidot"
     },
     {
+      "id": "news-fdec82112548122a",
       "title": "万勋科技发布「柔韧充」自动充电通用服务引擎",
       "url": "https://36kr.com/p/3888567864851204?f=rss",
       "published": "2026-07-09T23:36:08+08:00",
@@ -682,6 +737,7 @@
       "date": "2026-07-09"
     },
     {
+      "id": "news-5a66ccc2e366955b",
       "title": "腾讯发布 Hy3 混合推理模型",
       "url": "https://hy.tencent.com/research/hy3",
       "date": "2026-07-10",
@@ -695,6 +751,7 @@
       "priority": 3
     },
     {
+      "id": "news-54bd84c2f0d0b559",
       "title": "中国无人机在广西洪灾中救助被困群众",
       "url": "https://www.solidot.org/story?sid=84793",
       "published": "2026-07-09T23:02:52+08:00",
@@ -707,6 +764,7 @@
       "date": "2026-07-09"
     },
     {
+      "id": "news-ee71b664f3130f89",
       "title": "OpenMandriva 项目遭内部破坏事件",
       "url": "https://www.solidot.org/story?sid=84789",
       "date": "2026-07-10",
@@ -720,6 +778,7 @@
       "subcategory": "software"
     },
     {
+      "id": "news-4192e816a41f8fda",
       "title": "美国部分地区居民多达三成对红肉过敏",
       "url": "https://www.solidot.org/story?sid=84792",
       "published": "2026-07-09T22:36:58+08:00",
@@ -731,6 +790,7 @@
       "date": "2026-07-09"
     },
     {
+      "id": "news-81ee8fd3292c739f",
       "title": "2026 年二季度全球 PC 出货量同比下滑 5%",
       "url": "https://www.solidot.org/story?sid=84790",
       "date": "2026-07-09",
@@ -744,6 +804,7 @@
       "subcategory": "industry"
     },
     {
+      "id": "news-89d3f30f51401d24",
       "title": "OpenAI 发布 ChatGPT 智能体",
       "url": "https://openai.com/index/introducing-chatgpt-agent/",
       "published": "2025-07-17T00:00:00+00:00",
@@ -755,6 +816,7 @@
       "date": "2025-07-17"
     },
     {
+      "id": "news-5dc1e519e653b384",
       "title": "SK 海力士本周五登陆纳斯达克，募资 265 亿美元",
       "url": "https://36kr.com/newsflashes/3889804779731457?f=rss",
       "date": "2026-07-11",
@@ -768,6 +830,7 @@
       "subcategory": "industry"
     },
     {
+      "id": "news-9abca58817facf68",
       "title": "Waymo 未来数周将在美国四个新城市推出无人驾驶出租车",
       "url": "https://36kr.com/p/3888230589152008?f=rss",
       "date": "2026-07-11",
@@ -781,6 +844,7 @@
       "subcategory": "industry"
     },
     {
+      "id": "news-dbc1587f13782da4",
       "title": "大众汽车管理层考虑关闭德国部分工厂，最高裁减 12 万岗位",
       "url": "https://36kr.com/p/3889551814916614?f=rss",
       "date": "2026-07-11",
@@ -794,6 +858,7 @@
       "subcategory": "industry"
     },
     {
+      "id": "news-b219bf64f8235026",
       "title": "徕芬科技珠海超级工厂首次大规模开放参观",
       "url": "https://36kr.com/p/3889524008303363?f=rss",
       "date": "2026-07-11",

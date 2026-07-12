@@ -139,11 +139,12 @@ juya 日报备份（如 RSS 不可用，可从 markdown 备份获取）：
 
 ### 6. 合并去重
 
-- 默认以 **URL 完全相同** 作为去重依据：候选 URL 若已存在于 `items` 中，跳过。
-- **例外**：`source` 为 `juya AI 日报` 的条目（拆分后多条共享同一 URL），按 **title 去重**：若候选 title 已存在于 `items` 中（不限 URL），跳过。
-- 合并后检查重复 URL：除 `juya AI 日报` 拆分条目外，同一个 URL 只能对应一条资讯。若不同资讯复用了 URL，必须回到原始候选重新核验，不能保留任意一条猜测内容。
+- 每个新发布条目都必须拥有不可变 `id`。首次写入时，由**规范化原文 URL（移除 UTM 等追踪参数）+ published + 规范化 title** 计算 `news-` 加 SHA-256 前 16 位；可运行 `python3 "$REPO/scripts/validate-daily-news.py" --assign-ids` 自动补齐。
+- 已有条目的 `id` 永不重算或改名；即使标题、摘要或原文 URL 的追踪参数发生小改动，也必须保留原 ID，确保旧详情链接长期可用。
+- 合并时优先按 `id` 去重；`id` 已存在则更新该条内容，不新增重复卡片。`juya AI 日报` 拆分条目虽然共享 URL，但标题不同，因而各自拥有不同 ID。
+- 合并后检查重复 `id`；除日报拆分外，同一规范化 URL、标题、发布时间不应生成多条内容。若来源内容确实不同，必须回到原始候选重新核验，不能复用猜测 URL。
 - 把本次新收录的条目与已有 `items` 合并。
-- 按发布时间 `published` 降序排序。
+- 按北京时间自然日倒序、同一自然日按 priority 降序、最后按发布时间降序排序。
 - **总量上限 1000 条**：超出则从最旧的开始裁剪。
 - 更新顶层字段：`last_updated` 设为当前时间（ISO8601 带时区），`total` 设为合并后的条目数，`source` 保持 `"CampBrief Auto"`。
 
@@ -158,6 +159,7 @@ juya 日报备份（如 RSS 不可用，可从 markdown 备份获取）：
   "total": 23,
   "items": [
     {
+      "id": "news-0123abc456def789",
       "title": "标题",
       "url": "https://example.com/...",
       "date": "2026-07-10",
@@ -170,6 +172,7 @@ juya 日报备份（如 RSS 不可用，可从 markdown 备份获取）：
       "source": "来源名"
     },
     {
+      "id": "news-fedcba9876543210",
       "title": "硬核技术标题",
       "url": "https://example.com/tech/...",
       "date": "2026-07-10",
@@ -187,14 +190,16 @@ juya 日报备份（如 RSS 不可用，可从 markdown 备份获取）：
 ```
 
 字段说明：
+- `id`：不可变内容标识，格式为 `news-` 加 16 位小写 SHA-256 摘要。新条目由规范化 URL、`published`、`title` 生成；已有条目绝不重算。
 - `date`：从 `published` 取 `YYYY-MM-DD` 部分。
 - `published`：保留候选里的 ISO8601 带时区字符串；若候选为空，用当前时间。
 - `summary` 与 `detail` 都必填，不能为空字符串。`detail` 不能只是 `summary` 的重复，必须补充更多信息。
 - `image`：固定留空字符串（暂不支持配图）。
-- `url` 必须是已核验的原文地址；只有 `juya AI 日报` 拆分条目可共享 URL。详情页通过 `url`、`title`、`published` 共同定位，因此这三个字段的组合必须唯一且稳定。
+- `url` 必须是已核验的原文地址；只有 `juya AI 日报` 拆分条目可共享 URL。详情页只通过 `id` 定位，URL 变化不应改变已发布条目的 ID。
 - 写完后运行以下校验；任何报错都不得发布，先修复数据：
 
   ```bash
+  python3 "$REPO/scripts/validate-daily-news.py" --assign-ids
   python3 "$REPO/scripts/validate-daily-news.py"
   ```
 
@@ -205,7 +210,7 @@ juya 日报备份（如 RSS 不可用，可从 markdown 备份获取）：
     --report "$REPO/local-notes/daily-news-link-report.json"
   ```
 
-- 按报告处理结果：`broken` 必须修复或移除后才能发布；`restricted`（401/403/429）和 `error` 不能仅凭自动请求结果删除，先用浏览器或原始 RSS 核验。新增条目无法独立确认时，不发布；已有条目则记录在完成报告中，等待人工复核。
+- 按报告处理结果：`broken` 必须修复或按报告里的 `ids` 移除后才能发布；`restricted`（401/403/429）和 `error` 不能仅凭自动请求结果删除，先用浏览器或原始 RSS 核验。新增条目无法独立确认时，不发布；已有条目则记录在完成报告中，等待人工复核。
 
 - 校验通过后重新读一次该文件，确认 JSON 合法、`items` 数量与 `total` 一致、每条都有非空的 `summary`、`detail` 和 `category`。
 
@@ -226,7 +231,7 @@ git push
 
 ## 注意事项
 
-- **不要**修改 `assets/js/news-data.js`（内嵌数据），那是 file:// 预览的回退，自动化只管 `data/daily-news.json`。
+- `data/daily-news.json` 是唯一发布数据源；不要维护任何前端内嵌资讯回退副本。
 - **不要**把候选池 `daily-news-raw.json` 当作发布数据，它只是中间产物，但也要一起提交以便排查。
 - **不要**在摘要里编造原文没有的事实。拿不准就保守陈述。
 - **绝对禁止**收录单独高校的内部公告/教务通知（见上方红线）。

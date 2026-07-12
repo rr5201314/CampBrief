@@ -8,7 +8,7 @@ const Carousel = (function () {
   "use strict";
 
   const MIN_ITEMS = 3;
-  const MAX_ITEMS = 10;
+  const MAX_ITEMS = 15;
 
   function init(container, options) {
     const items = (options.items || []).slice(0, MAX_ITEMS);
@@ -325,6 +325,7 @@ const Carousel = (function () {
     let touchLastTime = 0;
     let touchVelocity = 0;
     let touchSamples = [];
+    let touchMoved = false;
 
     track.addEventListener("touchstart", (e) => {
       touchStartX = e.touches[0].clientX;
@@ -335,6 +336,7 @@ const Carousel = (function () {
       dragging = true;
       touchVelocity = 0;
       touchSamples.length = 0;
+      touchMoved = false;
       stopInertia();
       stopAutoPlay();
     }, { passive: true });
@@ -351,6 +353,7 @@ const Carousel = (function () {
       touchLastX = clientX;
       touchLastTime = now;
       const diff = touchStartX - clientX;
+      if (Math.abs(diff) >= DRAG_THRESHOLD) touchMoved = true;
       offset = touchStartOffset + diff;
       clampOffset();
       applyTransform();
@@ -360,6 +363,10 @@ const Carousel = (function () {
     track.addEventListener("touchend", () => {
       touchActive = false;
       dragging = false;
+      if (touchMoved) {
+        suppressClick = true;
+        setTimeout(() => { suppressClick = false; }, 50);
+      }
       let avgV = 0;
       if (touchSamples.length) {
         avgV = touchSamples.reduce((a, b) => a + b, 0) / touchSamples.length;

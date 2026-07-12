@@ -12,6 +12,9 @@ let calendarYearMenu, calendarMonthMenu, calendarYearTrigger, calendarMonthTrigg
 let calendarNextButton, customDateOption;
 let calendarCursor = new Date();
 
+const escapeHtml = value => CampBriefContent.escapeHtml(value);
+const safeExternalUrl = value => CampBriefContent.safeHttpUrl(value);
+
 // 初始化 DOM 元素
 function initDOM() {
   resultCount = document.getElementById("resultCount");
@@ -30,11 +33,8 @@ function initDOM() {
   customDateOption = document.querySelector('[data-filter-group="date"] [data-value="custom"]');
 }
 
-// 获取新闻数据（优先 fetch JSON 文件，回退内嵌数据）
-// JSON 文件由 Hermes 自动化定时更新，是最新数据来源；
-// 内嵌 NEWS_DATA 仅用于 file:// 协议预览（fetch 不可用时回退）。
+// 获取新闻数据。发布数据仅以 JSON 文件为准，避免旧内嵌数据与线上内容不一致。
 async function loadNewsData() {
-  // 优先从 JSON 文件加载（GitHub Pages / 本地 HTTP 服务器均可）
   try {
     const response = await fetch('../../data/daily-news.json', { cache: 'no-store' });
     if (response.ok) {
@@ -42,14 +42,8 @@ async function loadNewsData() {
       if (data.items && data.items.length > 0) return data.items;
     }
   } catch (error) {
-    // file:// 协议下 fetch 会失败，继续走内嵌回退
+    // file:// 直接打开时无法加载 JSON；显示空状态而非旧数据。
   }
-
-  // 回退：使用内嵌数据（兼容 file:// 直接打开 HTML）
-  if (typeof NEWS_DATA !== 'undefined' && NEWS_DATA.items && NEWS_DATA.items.length > 0) {
-    return NEWS_DATA.items;
-  }
-
   return [];
 }
 
@@ -59,15 +53,9 @@ function getCategories(item) {
   return item.category ? [item.category] : [];
 }
 
-// URL 不能作为资讯唯一标识：日报拆分出的多条资讯会共享同一个原文地址。
-// 将标题和发布时间一并传给详情页，确保回查到的是用户点击的那一条。
+// 所有发布资讯均有不可变 ID，详情页只依此定位，避免共享 URL 或标题微调导致串页。
 function getNewsDetailHref(item) {
-  const params = new URLSearchParams({
-    url: item.url || "",
-    title: item.title || "",
-    published: item.published || item.date || ""
-  });
-  return `detail.html?${params.toString()}`;
+  return `detail.html?id=${encodeURIComponent(item.id || "")}`;
 }
 
 // 生成卡片 HTML
@@ -108,26 +96,27 @@ function createCardHTML(item) {
   const categoryBadges = cats.map(c => {
     const label = categoryLabels[c] || c;
     const icon = categoryIcons[c] || 'i-bot';
-    return `<span class="badge badge-prize"><svg class="icon-sm icon"><use href="#${icon}"/></svg>${label}</span>`;
+    return `<span class="badge badge-prize"><svg class="icon-sm icon"><use href="#${icon}"/></svg>${escapeHtml(label)}</span>`;
   }).join('');
+  const sourceUrl = safeExternalUrl(item.url);
   
   return `
-    <article class="card" data-category="${cats.join(' ')}" data-published="${item.published}" data-priority="${priority}" data-search="${item.title} ${item.summary}">
+    <article class="card" data-category="${escapeHtml(cats.join(' '))}" data-published="${escapeHtml(item.published || '')}" data-priority="${priority}" data-search="${escapeHtml(`${item.title || ''} ${item.summary || ''}`)}">
       <div class="card-main">
         <div class="card-head">
-          <h2 class="card-title">${item.title}</h2>
+          <h2 class="card-title">${escapeHtml(item.title)}</h2>
           <span class="badge status-badge ${statusClass}"><svg class="icon-sm icon"><use href="#i-clock"/></svg>${statusText}</span>
         </div>
         <div class="meta-line">
           ${priorityBadge}
           ${categoryBadges}
           <span class="meta-item"><svg class="icon-sm icon"><use href="#i-calendar"/></svg>${formattedDate}</span>
-          <span class="meta-item"><svg class="icon-sm icon"><use href="#i-info"/></svg>${item.source}</span>
+          <span class="meta-item"><svg class="icon-sm icon"><use href="#i-info"/></svg>${escapeHtml(item.source)}</span>
         </div>
-        <p class="desc">${item.summary}</p>
+        <p class="desc">${escapeHtml(item.summary)}</p>
         <div class="actions">
           <a href="${getNewsDetailHref(item)}" class="btn btn-primary"><svg class="icon-sm icon"><use href="#i-doc"/></svg>查看详情</a>
-          <a href="${item.url}" target="_blank" rel="noopener" class="btn btn-secondary">阅读原文 <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>
+          ${sourceUrl ? `<a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener" class="btn btn-secondary">阅读原文 <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>` : ''}
         </div>
       </div>
     </article>
@@ -186,7 +175,7 @@ function renderPagination() {
     if (p === '...') {
       buttons.push(`<span class="page-ellipsis">…</span>`);
     } else {
-      buttons.push(`<button class="page-btn ${p === currentPage ? 'active' : ''}" data-page="${p}">${p}</button>`);
+      buttons.push(`<button class="page-btn ${p === currentPage ? 'active' : ''}" data-page="${p}" type="button" ${p === currentPage ? 'aria-current="page"' : ''}>${p}</button>`);
     }
   });
 
@@ -332,12 +321,8 @@ function applyFilters() {
     const searchOk = !state.query || `${item.title} ${item.summary} ${item.detail || ""}`.toLowerCase().includes(state.query);
     return categoryOk && dateOk && searchOk;
   });
-  // 按优先级降序，同优先级按发布时间降序
-  filteredItems.sort((a, b) => {
-    const pa = a.priority || 1, pb = b.priority || 1;
-    if (pa !== pb) return pb - pa;
-    return new Date(b.published) - new Date(a.published);
-  });
+  // 先按北京时间自然日分组，再按优先级与发布时间排序；与首页看板一致。
+  filteredItems.sort(CampBriefContent.compareByNaturalDayThenPriority);
   if (resultCount) resultCount.textContent = `${filteredItems.length} 条资讯`;
   renderPage();
 }
@@ -355,10 +340,7 @@ function matchesDateFilter(item) {
 }
 
 function toLocalDate(value) {
-  const date = new Date(value);
-  const month = String(date.getMonth() + 1).padStart(2, "0");
-  const day = String(date.getDate()).padStart(2, "0");
-  return `${date.getFullYear()}-${month}-${day}`;
+  return CampBriefContent.naturalDayKey(value);
 }
 
 function setActiveDateOption(value) {
@@ -493,14 +475,14 @@ function getLatestCalendarYear() {
 }
 
 // ===== 头条资讯轮播 =====
-// 规则：近7天 priority>=4 的消息放轮播；不足3个则补充 priority>=3 的；上限10个，超过取最近10条
+// 规则：近3天 priority>=4 的消息放轮播；不足3个则补充 priority>=3 的；上限15个。
 function pickNewsCarouselItems(items) {
   const now = new Date();
-  const sevenDaysAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
-  // 近7天
+  const threeDaysAgo = new Date(now.getTime() - 3 * 24 * 60 * 60 * 1000);
+  // 近3天
   const recent = items.filter(item => {
     const d = new Date(item.published);
-    return d >= sevenDaysAgo && d <= now;
+    return d >= threeDaysAgo && d <= now;
   });
   // priority >= 4 优先
   let result = recent.filter(i => (i.priority || 1) >= 4);
@@ -511,8 +493,7 @@ function pickNewsCarouselItems(items) {
   }
   // 按发布时间降序
   result.sort((a, b) => new Date(b.published) - new Date(a.published));
-  // 上限10
-  return result.slice(0, 10);
+  return result.slice(0, 15);
 }
 
 function renderNewsCarouselCard(item) {
@@ -529,14 +510,14 @@ function renderNewsCarouselCard(item) {
     <a class="carousel-card" href="${getNewsDetailHref(item)}">
       <span class="carousel-card-tag ${tagClass}">${tagText}</span>
       <div class="carousel-card-head">
-        <h3 class="carousel-card-title">${item.title}</h3>
+        <h3 class="carousel-card-title">${escapeHtml(item.title)}</h3>
       </div>
       <div class="carousel-card-meta">
         <span class="meta-item"><svg class="icon-sm icon"><use href="#i-calendar"/></svg>${formattedDate}</span>
-        <span class="meta-item"><svg class="icon-sm icon"><use href="#i-info"/></svg>${item.source}</span>
-        ${catText ? `<span class="meta-item"><svg class="icon-sm icon"><use href="#i-list"/></svg>${catText}</span>` : ''}
+        <span class="meta-item"><svg class="icon-sm icon"><use href="#i-info"/></svg>${escapeHtml(item.source)}</span>
+        ${catText ? `<span class="meta-item"><svg class="icon-sm icon"><use href="#i-list"/></svg>${escapeHtml(catText)}</span>` : ''}
       </div>
-      <p class="carousel-card-desc">${item.summary}</p>
+      <p class="carousel-card-desc">${escapeHtml(item.summary)}</p>
     </a>
   `;
 }
@@ -566,6 +547,7 @@ async function init() {
   container.innerHTML = '<div class="loading-state" style="text-align: center; padding: 40px; color: var(--text-secondary, #666);">正在加载资讯...</div>';
   
   // 加载数据
+  container.firstElementChild?.setAttribute("role", "status");
   const items = await loadNewsData();
   
   if (items.length === 0) {

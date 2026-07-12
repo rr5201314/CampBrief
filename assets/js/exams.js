@@ -2,7 +2,7 @@
 // 数据来源：data/exams.json（HTTP 服务器 / GitHub Pages）
 // file:// 协议下 fetch 不可用时显示空状态，建议使用本地服务器预览。
 const state = { category: "all", status: "all", query: "" };
-const PAGE_SIZE = 8;
+const PAGE_SIZE = 5;
 let allItems = [];
 let filteredItems = [];
 let currentPage = 1;
@@ -12,7 +12,7 @@ let resultCount, searchInput, emptyState;
 const STATUS_LABEL = {
   open: "可报名",
   pending: "未开始",
-  closed: "不可报名",
+  closed: "已结束",
   done: "已结束"
 };
 const STATUS_ICON = {
@@ -21,6 +21,30 @@ const STATUS_ICON = {
   closed: "i-lock",
   done: "i-check"
 };
+const LIST_STATUS_ORDER = { pending: 0, open: 1, closed: 2, done: 2 };
+const CAROUSEL_STATUS_ORDER = { open: 0, pending: 1, closed: 2, done: 2 };
+
+function escapeHtml(value) {
+  return CampBriefContent.escapeHtml(value);
+}
+
+function safeExternalUrl(value) {
+  return CampBriefContent.safeHttpUrl(value);
+}
+
+function isEndedStatus(status) {
+  return status === "closed" || status === "done";
+}
+
+function compareExams(a, b, statusOrder = LIST_STATUS_ORDER) {
+  const statusDiff = (statusOrder[a.status] ?? 99) - (statusOrder[b.status] ?? 99);
+  if (statusDiff) return statusDiff;
+
+  const prestigeDiff = (EXAM_PRESTIGE[a.id] || 0) - (EXAM_PRESTIGE[b.id] || 0);
+  if (prestigeDiff) return -prestigeDiff;
+
+  return String(a.name || "").localeCompare(String(b.name || ""), "zh-CN");
+}
 
 // 初始化 DOM 元素
 function initDOM() {
@@ -50,16 +74,10 @@ function createCardHTML(item) {
   const statusText = STATUS_LABEL[item.status] || item.status;
   const statusIcon = STATUS_ICON[item.status] || 'i-clock';
 
-  // 主按钮：open 状态显示"立即报名"，其他状态显示"访问报名系统"
-  // 优先 official_site（稳定报名入口），回退 official_url
-  const primaryLabel = item.status === 'open' ? '立即报名' : '访问报名系统';
-  const primaryHref = item.official_site || item.official_url || '';
-  const primaryBtn = primaryHref
-    ? `<a href="${primaryHref}" target="_blank" rel="noopener" class="btn btn-primary">${primaryLabel} <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>`
-    : '';
-  // 详情页链接
-  const detailLink = item.id
-    ? `<a href="detail.html?id=${encodeURIComponent(item.id)}" class="btn btn-secondary"><svg class="icon-sm icon"><use href="#i-doc"/></svg>查看详情</a>`
+  const detailHref = `detail.html?id=${encodeURIComponent(item.id || '')}`;
+  const officialUrl = safeExternalUrl(item.official_site || item.official_url);
+  const officialLink = officialUrl
+    ? `<a href="${escapeHtml(officialUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">${item.status === 'open' ? '立即报名' : '访问官网'} <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>`
     : '';
 
   // 从 timeline 提取报名时间节点
@@ -67,21 +85,21 @@ function createCardHTML(item) {
   const regTime = regEntry ? regEntry.value : '';
 
   return `
-    <article class="card" data-category="${item.category}" data-status="${item.status}" data-search="${item.search || ''} ${item.name}">
+    <article class="card" data-category="${escapeHtml(item.category)}" data-status="${escapeHtml(item.status)}" data-search="${escapeHtml(`${item.search || ''} ${item.name || ''}`)}">
       <div class="card-main">
         <div class="card-head">
-          <h2 class="card-title">${item.name}</h2>
+          <h2 class="card-title">${escapeHtml(item.name)}</h2>
           <span class="badge status-badge ${statusClass}"><svg class="icon-sm icon"><use href="#${statusIcon}"/></svg>${statusText}</span>
         </div>
         <div class="meta-line">
-          <span class="badge badge-prize"><svg class="icon-sm icon"><use href="#i-medal"/></svg>${item.fee}</span>
-          <span class="meta-item"><svg class="icon-sm icon"><use href="#i-calendar"/></svg>${item.schedule}</span>
-          ${regTime ? `<span class="meta-item"><svg class="icon-sm icon"><use href="#i-clock"/></svg>报名：${regTime}</span>` : ''}
+          <span class="badge badge-prize"><svg class="icon-sm icon"><use href="#i-medal"/></svg>${escapeHtml(item.fee)}</span>
+          <span class="meta-item"><svg class="icon-sm icon"><use href="#i-calendar"/></svg>${escapeHtml(item.schedule)}</span>
+          ${regTime ? `<span class="meta-item"><svg class="icon-sm icon"><use href="#i-clock"/></svg>报名：${escapeHtml(regTime)}</span>` : ''}
         </div>
-        <p class="desc">${item.summary}</p>
+        <p class="desc">${escapeHtml(item.summary)}</p>
         <div class="actions">
-          ${primaryBtn}
-          ${detailLink}
+          <a href="${detailHref}" class="btn btn-primary"><svg class="icon-sm icon"><use href="#i-doc"/></svg>查看详情</a>
+          ${officialLink}
         </div>
       </div>
     </article>
@@ -130,18 +148,18 @@ function renderPagination() {
   paginationNav.hidden = false;
 
   const buttons = [];
-  buttons.push(`<button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} data-page="${currentPage - 1}" aria-label="上一页"><svg class="icon-sm icon"><use href="#i-chevron-left"/></svg></button>`);
+  buttons.push(`<button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} data-page="${currentPage - 1}" type="button" aria-label="上一页"><svg class="icon-sm icon"><use href="#i-chevron-left"/></svg></button>`);
 
   const pageNumbers = computePageNumbers(currentPage, totalPages);
   pageNumbers.forEach(p => {
     if (p === '...') {
       buttons.push(`<span class="page-ellipsis">…</span>`);
     } else {
-      buttons.push(`<button class="page-btn ${p === currentPage ? 'active' : ''}" data-page="${p}">${p}</button>`);
+      buttons.push(`<button class="page-btn ${p === currentPage ? 'active' : ''}" data-page="${p}" type="button" ${p === currentPage ? 'aria-current="page"' : ''}>${p}</button>`);
     }
   });
 
-  buttons.push(`<button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} data-page="${currentPage + 1}" aria-label="下一页"><svg class="icon-sm icon"><use href="#i-chevron-right"/></svg></button>`);
+  buttons.push(`<button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} data-page="${currentPage + 1}" type="button" aria-label="下一页"><svg class="icon-sm icon"><use href="#i-chevron-right"/></svg></button>`);
   paginationNav.innerHTML = buttons.join('');
 }
 
@@ -194,16 +212,17 @@ function initFilters() {
 function applyFilters() {
   filteredItems = allItems.filter(item => {
     const categoryOk = state.category === "all" || item.category === state.category;
-    const statusOk = state.status === "all" || item.status === state.status;
+    const statusOk = state.status === "all" ||
+      (state.status === "ended" ? isEndedStatus(item.status) : item.status === state.status);
     const searchOk = !state.query || `${item.name} ${item.summary} ${item.search || ""}`.toLowerCase().includes(state.query);
     return categoryOk && statusOk && searchOk;
-  });
+  }).sort(compareExams);
   if (resultCount) resultCount.textContent = `${filteredItems.length} 个考试通知`;
   renderPage();
 }
 
 // ===== 精选考试轮播 =====
-// 规则：status=open 优先，其次 pending；按含金量排序；不足 3 个用雅思/托福常驻凑数；上限 10 个
+// 规则：可报名优先，其次未开始；按含金量排序；不足 3 个用雅思/托福常驻凑数；上限 15 个。
 const EXAM_PRESTIGE = {
   'cet-202612': 5, 'kaoyan-2026': 5, 'cpa-2026': 5, 'guokao-2026': 5,
   'ruankao-202611': 4, 'ntce-202610': 4, 'ielts': 4, 'toefl': 4,
@@ -216,16 +235,8 @@ const CAROUSEL_FALLBACK_IDS = ['ielts', 'toefl'];
 function pickCarouselItems(items) {
   // 候选：open + pending
   let candidates = items.filter(i => i.status === 'open' || i.status === 'pending');
-  // 按含金量排序：open 优先 → prestige 降序 → schedule 升序
-  candidates.sort((a, b) => {
-    if (a.status !== b.status) return a.status === 'open' ? -1 : 1;
-    const pa = EXAM_PRESTIGE[a.id] || 0;
-    const pb = EXAM_PRESTIGE[b.id] || 0;
-    if (pa !== pb) return pb - pa;
-    return (a.schedule || '').localeCompare(b.schedule || '');
-  });
-  // 上限 10
-  let result = candidates.slice(0, 10);
+  candidates.sort((a, b) => compareExams(a, b, CAROUSEL_STATUS_ORDER));
+  let result = candidates.slice(0, 15);
   // 不足 3 个用雅思/托福凑数
   if (result.length < 3) {
     for (const id of CAROUSEL_FALLBACK_IDS) {
@@ -243,21 +254,20 @@ function renderCarouselCard(item) {
   const tagText = prestige >= 5 ? '强烈推荐' : prestige >= 4 ? '推荐' : '关注';
   const regEntry = (item.timeline || []).find(t => t.label && t.label.includes('报名'));
   const regText = regEntry ? regEntry.value : '';
-  const href = item.official_site || item.official_url || `detail.html?id=${encodeURIComponent(item.id)}`;
-  const isExternal = (item.official_site || item.official_url) ? 'target="_blank" rel="noopener"' : '';
+  const href = `detail.html?id=${encodeURIComponent(item.id || '')}`;
 
   return `
-    <a class="carousel-card" href="${href}" ${isExternal}>
+    <a class="carousel-card" href="${href}" aria-label="查看详情">
       <span class="carousel-card-tag ${tagClass}">${tagText}</span>
       <div class="carousel-card-head">
-        <h3 class="carousel-card-title">${item.name}</h3>
+      <h3 class="carousel-card-title">${escapeHtml(item.name)}</h3>
       </div>
       <div class="carousel-card-meta">
-        <span class="meta-item"><svg class="icon-sm icon"><use href="#i-calendar"/></svg>${item.schedule}</span>
-        <span class="meta-item"><svg class="icon-sm icon"><use href="#i-medal"/></svg>${item.fee}</span>
+        <span class="meta-item"><svg class="icon-sm icon"><use href="#i-calendar"/></svg>${escapeHtml(item.schedule)}</span>
+        <span class="meta-item"><svg class="icon-sm icon"><use href="#i-medal"/></svg>${escapeHtml(item.fee)}</span>
       </div>
-      ${regText ? `<div class="carousel-card-meta"><span class="meta-item"><svg class="icon-sm icon"><use href="#i-clock"/></svg>报名：${regText}</span></div>` : ''}
-      <p class="carousel-card-desc">${item.summary}</p>
+      ${regText ? `<div class="carousel-card-meta"><span class="meta-item"><svg class="icon-sm icon"><use href="#i-clock"/></svg>报名：${escapeHtml(regText)}</span></div>` : ''}
+      <p class="carousel-card-desc">${escapeHtml(item.summary)}</p>
     </a>
   `;
 }
@@ -282,7 +292,7 @@ async function init() {
   initFilters();
 
   const container = document.getElementById('cards');
-  container.innerHTML = '<div class="loading-state" style="text-align:center;padding:40px;color:var(--text-secondary,#666);">正在加载考试数据...</div>';
+  container.innerHTML = '<div class="loading-state" role="status" style="text-align:center;padding:40px;color:var(--text-secondary,#666);">正在加载考试数据...</div>';
 
   const items = await loadExamsData();
 

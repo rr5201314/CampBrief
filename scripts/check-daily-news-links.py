@@ -19,7 +19,7 @@ USER_AGENT = "Mozilla/5.0 (compatible; CampBriefLinkCheck/1.0)"
 RESTRICTED_STATUS_CODES = {401, 403, 429}
 
 
-def load_urls(path: Path) -> OrderedDict[str, list[str]]:
+def load_urls(path: Path) -> OrderedDict[str, list[dict[str, str]]]:
     data = json.loads(path.read_text(encoding="utf-8"))
     items = data.get("items")
     if not isinstance(items, list):
@@ -29,9 +29,12 @@ def load_urls(path: Path) -> OrderedDict[str, list[str]]:
     for item in items:
         url = str(item.get("url", "")).strip()
         title = str(item.get("title", "未命名资讯")).strip()
+        content_id = str(item.get("id", "")).strip()
         if not url:
             raise ValueError(f"资讯缺少 URL：{title}")
-        grouped.setdefault(url, []).append(title)
+        if not content_id:
+            raise ValueError(f"资讯缺少 ID：{title}")
+        grouped.setdefault(url, []).append({"id": content_id, "title": title})
     return grouped
 
 
@@ -126,12 +129,17 @@ def main() -> int:
                 }
 
     results = []
-    for url, titles in grouped_urls.items():
-        result = {"url": url, "titles": titles, **results_by_url[url]}
+    for url, entries in grouped_urls.items():
+        result = {
+            "url": url,
+            "ids": [entry["id"] for entry in entries],
+            "titles": [entry["title"] for entry in entries],
+            **results_by_url[url],
+        }
         results.append(result)
         if result["state"] != "ok":
             status = result["status_code"] if result["status_code"] is not None else "网络错误"
-            print(f"{result['state'].upper()}: {status} | {' / '.join(titles)} | {url}")
+            print(f"{result['state'].upper()}: {status} | {' / '.join(result['ids'])} | {' / '.join(result['titles'])} | {url}")
 
     counts = Counter(result["state"] for result in results)
     report = {

@@ -1,4 +1,4 @@
-// 资讯详情页 - 通过 URL、标题和发布时间共同定位条目，渲染详情
+// 资讯详情页 - 通过不可变 ID 定位条目，渲染详情
 (function () {
   "use strict";
 
@@ -25,11 +25,7 @@
         if (data.items && data.items.length > 0) return data.items;
       }
     } catch (e) {
-      // file:// 回退
-    }
-    // 回退内嵌数据（需 news-data.js 已加载，详情页未引入，返回空）
-    if (typeof NEWS_DATA !== "undefined" && NEWS_DATA.items && NEWS_DATA.items.length > 0) {
-      return NEWS_DATA.items;
+      // file:// 直接打开时无法加载 JSON；显示空状态而非旧数据。
     }
     return [];
   }
@@ -44,12 +40,7 @@
   }
 
   function escapeHtml(text) {
-    if (!text) return "";
-    return String(text)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
+    return CampBriefContent.escapeHtml(text);
   }
 
   function renderNotFound(message) {
@@ -71,11 +62,12 @@
   }
 
   function renderDetail(item) {
+    item = { ...item, url: CampBriefContent.safeHttpUrl(item.url) };
     const el = document.getElementById("newsDetail");
     const cats = getCategories(item);
     const categoryBadges = cats.map(c => {
       const cat = CATEGORY_LABELS[c] || { text: c, icon: "i-info" };
-      return `<span class="badge badge-prize"><svg class="icon-sm icon"><use href="#${cat.icon}"/></svg>${cat.text}</span>`;
+      return `<span class="badge badge-prize"><svg class="icon-sm icon"><use href="#${cat.icon}"/></svg>${escapeHtml(cat.text)}</span>`;
     }).join('');
     const dateText = formatDate(item.published || item.date);
     const detailText = item.detail || item.summary || "";
@@ -100,29 +92,17 @@
   }
 
   async function init() {
-    const targetUrl = getUrlParam("url");
-    const targetTitle = getUrlParam("title");
-    const targetPublished = getUrlParam("published");
-    if (!targetUrl) {
-      renderNotFound("缺少资讯地址参数。");
+    const targetId = getUrlParam("id");
+    if (!targetId) {
+      renderNotFound("缺少资讯 ID 参数。");
       return;
     }
 
     const items = await loadData();
-    const hasIdentity = Boolean(targetTitle || targetPublished);
-    const matches = items.filter(it => it.url === targetUrl);
-    const item = hasIdentity
-      ? matches.find(it =>
-        it.title === targetTitle &&
-        (it.published || it.date || "") === targetPublished
-      )
-      : matches.length === 1 ? matches[0] : null;
+    const item = items.find(it => it.id === targetId);
 
     if (!item) {
-      renderNotFound(hasIdentity
-        ? "该资讯可能已更新下线，或链接有误。"
-        : "该链接缺少唯一标识，请返回资讯列表后重新打开。"
-      );
+      renderNotFound("该资讯可能已更新下线，或链接有误。");
       return;
     }
     renderDetail(item);

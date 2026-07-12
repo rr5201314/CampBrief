@@ -80,17 +80,17 @@
       <section class="filter-panel" aria-label="赛事筛选">
         <div class="filter-row">
           <div class="filter-label"><svg class="icon"><use href="#i-medal"/></svg>赛事层次</div>
-          <div class="options" data-filter-group="tier">
-            <button class="option active" data-value="all"><span class="option-dot"></span>全部</button>
-            <button class="option" data-value="official"><svg class="icon-sm icon"><use href="#i-check"/></svg>教育部认可赛事</button>
-            <button class="option" data-value="enterprise"><svg class="icon-sm icon"><use href="#i-trophy"/></svg>名企主办赛事</button>
-            <button class="option" data-value="hobby"><svg class="icon-sm icon"><use href="#i-info"/></svg>兴趣练手赛事</button>
+          <div class="options" data-filter-group="tier" role="group" aria-label="赛事层次">
+            <button class="option active" type="button" data-value="all" aria-pressed="true"><span class="option-dot"></span>全部</button>
+            <button class="option" type="button" data-value="official" aria-pressed="false"><svg class="icon-sm icon"><use href="#i-check"/></svg>教育部认可赛事</button>
+            <button class="option" type="button" data-value="enterprise" aria-pressed="false"><svg class="icon-sm icon"><use href="#i-trophy"/></svg>名企主办赛事</button>
+            <button class="option" type="button" data-value="hobby" aria-pressed="false"><svg class="icon-sm icon"><use href="#i-info"/></svg>兴趣练手赛事</button>
           </div>
         </div>
         <div class="filter-row">
           <div class="filter-label"><svg class="icon"><use href="#i-category"/></svg>专业领域</div>
-          <div class="options" data-filter-group="field">
-            <button class="option active" data-value="all"><span class="option-dot"></span>全部</button>
+          <div class="options" data-filter-group="field" role="group" aria-label="专业领域">
+            <button class="option active" type="button" data-value="all" aria-pressed="true"><span class="option-dot"></span>全部</button>
             <button class="option" data-value="innovation"><span class="option-dot"></span>创新创业</button>
             <button class="option" data-value="computer"><span class="option-dot"></span>计算机/信息技术</button>
             <button class="option" data-value="engineering"><span class="option-dot"></span>工程/机电</button>
@@ -107,12 +107,12 @@
         </div>
         <div class="filter-row">
           <div class="filter-label"><svg class="icon"><use href="#i-status"/></svg>比赛状态</div>
-          <div class="options" data-filter-group="status">
-            <button class="option active" data-value="all"><span class="option-dot"></span>全部</button>
-            <button class="option" data-value="pending"><svg class="icon-sm icon"><use href="#i-clock"/></svg>未开始</button>
-            <button class="option" data-value="open"><svg class="icon-sm icon"><use href="#i-unlock"/></svg>可报名</button>
-            <button class="option" data-value="ongoing"><svg class="icon-sm icon"><use href="#i-status"/></svg>比赛中</button>
-            <button class="option" data-value="done"><svg class="icon-sm icon"><use href="#i-check"/></svg>已完赛</button>
+          <div class="options" data-filter-group="status" role="group" aria-label="赛事状态">
+            <button class="option active" type="button" data-value="all" aria-pressed="true"><span class="option-dot"></span>全部</button>
+            <button class="option" type="button" data-value="pending" aria-pressed="false"><svg class="icon-sm icon"><use href="#i-clock"/></svg>未开始</button>
+            <button class="option" type="button" data-value="open" aria-pressed="false"><svg class="icon-sm icon"><use href="#i-unlock"/></svg>可报名</button>
+            <button class="option" type="button" data-value="ongoing" aria-pressed="false"><svg class="icon-sm icon"><use href="#i-status"/></svg>比赛中</button>
+            <button class="option" type="button" data-value="done" aria-pressed="false"><svg class="icon-sm icon"><use href="#i-check"/></svg>已完赛</button>
           </div>
         </div>
         <div class="search-wrap">
@@ -130,15 +130,18 @@
         <!-- 卡片由 competitions.js 从 data/competitions.json 动态渲染 -->
       </section>
 
-      <div class="empty-state" id="emptyState" hidden>
+      <div class="empty-state" id="emptyState" role="status" hidden>
         <p>没有找到匹配的赛事，试试调整筛选条件或搜索关键词。</p>
       </div>
+
+      <nav class="pagination" aria-label="赛事分页" hidden></nav>
     </div>
   </main>
 </div>
 
 <script src="../../assets/js/main.js"></script>
 <script src="../../assets/js/carousel.js"></script>
+<script src="../../assets/js/content-utils.js"></script>
 <script src="../../assets/js/competitions.js"></script>
 </body>
 </html>

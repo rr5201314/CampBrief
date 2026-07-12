@@ -1,117 +1,12 @@
 // 首页展板 - 数据渲染（含分页）
-// 说明：竞赛看板使用当前示例数据；考试和每日资讯看板分别从 data/exams.json、
-// data/daily-news.json 加载，避免首页与栏目页展示两套不一致的信息。
-// 每日资讯在 file:// 直接打开时会回退 SAMPLE.news；考试信息必须以数据文件为准。
+// 竞赛、考试和每日资讯分别读取各自栏目使用的真实数据文件。
+// 每日资讯看板仅展示近 3 天、优先级大于 2 的条目。
 // 每页最多 PAGE_SIZE 条，底部按钮翻页。
-// 每日资讯看板规则：仅显示 priority 为 4、3、2 的消息；按北京时间自然日优先，
-// 同一自然日内按优先级 4 → 3 → 2 排列。
+// 每日资讯看板按北京时间自然日分组，同一自然日内按优先级降序排列。
 
 const PAGE_SIZE = 5;
 
-const SAMPLE = {
-  competitions: [
-    {
-      title: "2026 校园 AI 创新挑战赛",
-      status: "open",
-      statusLabel: "可参赛",
-      date: "2026.04.17 - 09.13",
-      prize: "¥100,000 奖金",
-      desc: "面向真实校园场景构建 AI 工具，团队可提交原型、演示和实施笔记。"
-    },
-    {
-      title: "网络安全攻防挑战赛",
-      status: "pending",
-      statusLabel: "未开始",
-      date: "2026.08.01 - 10.20",
-      prize: "¥50,000 奖金",
-      desc: "涵盖 Web、逆向、密码学和实战防御技能的结构化安全挑战。"
-    },
-    {
-      title: "创意应用设计大赛",
-      status: "closed",
-      statusLabel: "已截止",
-      date: "2026.03.12 - 06.01",
-      prize: "¥30,000 奖金",
-      desc: "为学生生活与公共服务设计实用应用，报名已截止，详情仍可查看。"
-    },
-    {
-      title: "简豹年度作品展",
-      status: "done",
-      statusLabel: "已完赛",
-      date: "2026.01.10 - 04.30",
-      prize: "¥20,000 奖金",
-      desc: "汇集优秀校园产品与原型，可浏览入围作品和存档评审记录。"
-    },
-    {
-      title: "全国大学生数学建模竞赛",
-      status: "open",
-      statusLabel: "可参赛",
-      date: "2026.09.06 - 09.09",
-      prize: "国家级荣誉",
-      desc: "三天三夜挑战真实建模问题，涵盖工程、经济、社会等领域。"
-    },
-    {
-      title: "ACM-ICPC 亚洲区域赛",
-      status: "pending",
-      statusLabel: "未开始",
-      date: "2026.10.15 - 10.16",
-      prize: "国际认证",
-      desc: "5 小时解决 10-12 道算法题，团队三人协作编程竞赛。"
-    },
-    {
-      title: "全国大学生电子设计竞赛",
-      status: "open",
-      statusLabel: "可参赛",
-      date: "2026.08.05 - 08.08",
-      prize: "国家级荣誉",
-      desc: "四天三夜完成硬件设计与制作，涵盖模电、数电和嵌入式方向。"
-    }
-  ],
-  news: [
-    {
-      day: "10", month: "07月",
-      title: "教育部发布 2026 年下半年高校学科竞赛目录",
-      desc: "新增 3 项 AI 相关赛事，涵盖大模型应用与智能体开发方向。",
-      priority: 3,
-      date: "2026-07-10"
-    },
-    {
-      day: "09", month: "07月",
-      title: "多所高校秋季学期开设大模型应用通识课",
-      desc: "清华、浙大等校将生成式 AI 列为新生通识必修内容。",
-      priority: 2,
-      date: "2026-07-09"
-    },
-    {
-      day: "08", month: "07月",
-      title: "GitHub 学生包新增 AI 计算额度",
-      desc: "认证学生每月可领取额外 GPU 时长用于学习与项目实践。",
-      priority: 2,
-      date: "2026-07-08"
-    },
-    {
-      day: "07", month: "07月",
-      title: "「智能科学与技术」被列为新增交叉学科",
-      desc: "硕博点申报指南预计 8 月公布，相关培养方案征求意见中。",
-      priority: 3,
-      date: "2026-07-07"
-    },
-    {
-      day: "06", month: "07月",
-      title: "国家大学生创新创业训练计划 2026 年度申报启动",
-      desc: "国家级、省级、校级三级立项同步开放，截止日期 9 月 30 日。",
-      priority: 2,
-      date: "2026-07-06"
-    },
-    {
-      day: "05", month: "07月",
-      title: "CSP 认证 8 月场次开放报名",
-      desc: "计算机软件能力认证考试面向高校学生，成绩可替代部分校招笔试。",
-      priority: 1,
-      date: "2026-07-05"
-    }
-  ]
-};
+// 首页看板不保留演示内容：数据不可用时显示空状态，避免展示过期信息。
 
 const STATUS_CLASS = {
   open: "status-open",
@@ -131,18 +26,11 @@ function el(tag, cls, html){
 }
 
 function escapeHtml(s){
-  return String(s).replace(/[&<>"']/g, c => ({
-    "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"
-  }[c]));
+  return CampBriefContent.escapeHtml(s);
 }
 
 function getNewsDetailHref(basePath, item){
-  const params = new URLSearchParams({
-    url: item.url || "",
-    title: item.title || "",
-    published: item.published || item.date || ""
-  });
-  return `${basePath}?${params.toString()}`;
+  return `${basePath}?id=${encodeURIComponent(item.id || "")}`;
 }
 
 function metaItem(iconRef, text){
@@ -151,14 +39,27 @@ function metaItem(iconRef, text){
 }
 
 function emptyNode(){
-  return el("div", "feed-empty", "暂无内容，敬请期待");
+  const node = el("div", "feed-empty", "暂无内容，敬请期待");
+  node.setAttribute("role", "status");
+  return node;
+}
+
+function setBoardLoading(key){
+  const wrap = document.querySelector(`[data-feed="${key}"]`);
+  if(!wrap) return;
+  wrap.innerHTML = "";
+  const node = el("div", "feed-empty", "正在加载…");
+  node.setAttribute("role", "status");
+  wrap.appendChild(node);
 }
 
 /* ---- 单条目渲染 ---- */
-// 跳转目标：竞赛/考试看板跳到对应栏目列表页；资讯看板跳到 detail.html?url=xxx
+// 跳转目标：竞赛/考试看板跳到对应栏目列表页；资讯看板按不可变 ID 进入详情页。
 function buildCompetitionItem(item){
   const article = el("article", "feed-item");
-  article.dataset.href = "pages/competitions/index.html";
+  article.dataset.href = item.id
+    ? "pages/competitions/detail.html?id=" + encodeURIComponent(item.id)
+    : "pages/competitions/index.html";
   const body = el("div", "feed-item-body");
   const top = el("div", "feed-item-top");
   top.appendChild(el("h3", "feed-item-title", escapeHtml(item.title)));
@@ -201,8 +102,8 @@ function buildExamItem(item){
 
 function buildNewsItem(item){
   const article = el("article", "feed-item");
-  // 资讯条目跳转到 detail.html?url=xxx；无 url 时回退到栏目列表页
-  article.dataset.href = item.url
+  // 资讯条目按不可变 ID 进入详情；缺少 ID 时回退到栏目列表页。
+  article.dataset.href = item.id
     ? getNewsDetailHref("pages/daily-news/detail.html", item)
     : "pages/daily-news/index.html";
   const head = el("div", "news-head");
@@ -345,7 +246,15 @@ function observeBoards(){
 /* ---- 每日资讯看板规则：自然日优先、优先级次之 ---- */
 // 显示 priority 为 4、3、2 的消息（4=头条，3=重磅，2=重要），不显示 priority 为 1 的消息。
 // 先按北京时间自然日倒序；同一自然日内按 4 → 3 → 2，再按发布时间倒序。
-const NEWS_PRIORITY_ALLOWED = [4, 3, 2];
+const HOME_NEWS_MIN_PRIORITY = 3;
+const COMPETITION_STATUS_ORDER = { open: 0, pending: 1, ongoing: 2, done: 3 };
+const COMPETITION_TIER_ORDER = { official: 0, enterprise: 1, hobby: 2 };
+const COMPETITION_STATUS_LABEL = {
+  pending: "未开始",
+  open: "可报名",
+  ongoing: "比赛中",
+  done: "已完赛"
+};
 
 const EXAM_STATUS_LABEL = {
   open: "可报名",
@@ -400,6 +309,51 @@ async function loadExamBoardData(){
   }
 }
 
+function compareHomeCompetitions(a, b) {
+  const statusDiff = (COMPETITION_STATUS_ORDER[a.status] ?? 99) - (COMPETITION_STATUS_ORDER[b.status] ?? 99);
+  if (statusDiff) return statusDiff;
+
+  const tierDiff = (COMPETITION_TIER_ORDER[a.tier] ?? 99) - (COMPETITION_TIER_ORDER[b.tier] ?? 99);
+  if (tierDiff) return tierDiff;
+
+  const prestigeDiff = (b.prestige || 0) - (a.prestige || 0);
+  if (prestigeDiff) return prestigeDiff;
+
+  return String(a.name || "").localeCompare(String(b.name || ""), "zh-CN");
+}
+
+async function loadCompetitionBoardData(){
+  try {
+    const response = await fetch("data/competitions.json", { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+    if (!Array.isArray(data.items)) throw new Error("竞赛数据格式无效");
+
+    return data.items
+      .filter(item => item.status !== "done")
+      .sort(compareHomeCompetitions)
+      .map(item => ({
+        id: item.id || "",
+        title: item.name || "未命名竞赛",
+        status: item.status || "pending",
+        statusLabel: (data.status_map?.[item.status]?.label) || COMPETITION_STATUS_LABEL[item.status] || "待确认",
+        date: item.signup || item.schedule || "时间待官方公布",
+        prize: (data.tiers || []).find(tier => tier.key === item.tier)?.label || "",
+        desc: item.summary || "请以官方公告为准。"
+      }));
+  } catch (error) {
+    console.warn("无法加载竞赛数据", error);
+    return [];
+  }
+}
+
+function renderCompetitionBoard(list){
+  renderPage("competitions", list, buildCompetitionItem);
+  setCount("competitions", list.length);
+  bindPager("competitions", list, buildCompetitionItem);
+  triggerFeedItemsIn("pager");
+}
+
 function renderExamBoard(list){
   renderPage("exams", list, buildExamItem);
   setCount("exams", list.length);
@@ -433,15 +387,17 @@ function formatNewsDate(value){
 }
 
 function applyNewsRules(list){
+  const now = new Date();
+  const threeDaysAgo = new Date(now.getTime() - 3 * 24 * 60 * 60 * 1000);
   return list
-    .filter(item => NEWS_PRIORITY_ALLOWED.includes(item.priority))
-    .sort((a, b) => {
-      const dateDiff = getNewsDateKey(b.date).localeCompare(getNewsDateKey(a.date));
-      if(dateDiff) return dateDiff;
-      const priorityDiff = b.priority - a.priority;
-      if(priorityDiff) return priorityDiff;
-      return new Date(b.date).getTime() - new Date(a.date).getTime();
-    });
+    .filter(item => {
+      const published = new Date(item.date || item.published || "");
+      return (item.priority || 1) >= HOME_NEWS_MIN_PRIORITY
+        && !Number.isNaN(published.getTime())
+        && published >= threeDaysAgo
+        && published <= now;
+    })
+    .sort(CampBriefContent.compareByNaturalDayThenPriority);
 }
 
 // 从 daily-news.json 加载资讯数据并映射为看板所需格式
@@ -457,6 +413,7 @@ async function loadNewsBoardData(){
           // 资讯数据使用 published（ISO 8601）；兼容旧数据的 date 字段。
           const displayDate = formatNewsDate(date);
           return {
+            id: it.id || "",
             title: it.title,
             desc: it.summary,
             priority: it.priority || 1,
@@ -469,10 +426,9 @@ async function loadNewsBoardData(){
       }
     }
   } catch(error) {
-    // file:// 协议下 fetch 会失败，继续走 SAMPLE 回退
+    console.warn("无法加载每日资讯数据", error);
   }
-  // 回退：SAMPLE.news（兼容 file:// 直接打开 HTML）
-  return SAMPLE.news.slice();
+  return [];
 }
 
 function renderNewsBoard(list){
@@ -489,10 +445,14 @@ function initHome(){
   // 标记 JS 就绪，启用 Hero 入场动画（避免 CSS 未解析时元素闪现）
   document.body.classList.add("js-ready");
 
-  renderPage("competitions", SAMPLE.competitions, buildCompetitionItem);
-  setCount("competitions", SAMPLE.competitions.length);
-  bindPager("competitions", SAMPLE.competitions, buildCompetitionItem);
   observeBoards();
+
+  setBoardLoading("competitions");
+  setBoardLoading("exams");
+  setBoardLoading("news");
+
+  // 竞赛看板与竞赛栏目共用同一份真实数据，条目直达对应详情页。
+  loadCompetitionBoardData().then(items => renderCompetitionBoard(items));
 
   // 考试看板与考试栏目共用同一份真实数据文件。
   loadExamBoardData().then(items => renderExamBoard(items));

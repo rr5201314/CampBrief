@@ -2,12 +2,16 @@
 // 子分类：ai-frontier（AI 前沿）/ hardware（硬件与芯片）/ software（软件与系统）/ industry（产业与商业）
 // GitHub 趋势分类为占位，后续接入独立数据源
 const state = { subcategory: "all", date: "all", customDate: "", query: "" };
-const PAGE_SIZE = 8;
+const PAGE_SIZE = 5;
 let allItems = [];
 let filteredItems = [];
 let currentPage = 1;
 let paginationNav;
 let resultCount, searchInput, emptyState;
+let dateModal, customDateInput, customDateOption;
+
+const escapeHtml = value => CampBriefContent.escapeHtml(value);
+const safeExternalUrl = value => CampBriefContent.safeHttpUrl(value);
 
 const SUBCATEGORY_LABELS = {
   "ai-frontier": { text: "AI 前沿", icon: "i-bot" },
@@ -22,6 +26,9 @@ function initDOM() {
   searchInput = document.getElementById("searchInput");
   emptyState = document.getElementById("emptyState");
   paginationNav = document.querySelector(".pagination");
+  dateModal = document.getElementById("dateModal");
+  customDateInput = document.getElementById("customDateInput");
+  customDateOption = document.querySelector('[data-filter-group="date"] [data-value="custom"]');
 }
 
 // 从 daily-news.json 加载技术类条目
@@ -54,6 +61,9 @@ function createCardHTML(item) {
   if (diffHours < 24) {
     statusClass = 'status-open';
     statusText = '24小时';
+  } else if (diffHours < 72) {
+    statusClass = 'status-pending';
+    statusText = '3天';
   } else if (diffHours < 168) {
     statusClass = 'status-pending';
     statusText = '7天';
@@ -77,24 +87,25 @@ function createCardHTML(item) {
   const sub = item.subcategory || 'software';
   const subInfo = SUBCATEGORY_LABELS[sub] || SUBCATEGORY_LABELS.software;
   const subBadge = `<span class="badge badge-prize"><svg class="icon-sm icon"><use href="#${subInfo.icon}"/></svg>${subInfo.text}</span>`;
+  const sourceUrl = safeExternalUrl(item.url);
 
   return `
-    <article class="card" data-subcategory="${sub}" data-published="${item.published}" data-priority="${priority}" data-search="${item.title} ${item.summary}">
+    <article class="card" data-subcategory="${escapeHtml(sub)}" data-published="${escapeHtml(item.published || '')}" data-priority="${priority}" data-search="${escapeHtml(`${item.title || ''} ${item.summary || ''}`)}">
       <div class="card-main">
         <div class="card-head">
-          <h2 class="card-title">${item.title}</h2>
+          <h2 class="card-title">${escapeHtml(item.title)}</h2>
           <span class="badge status-badge ${statusClass}"><svg class="icon-sm icon"><use href="#i-clock"/></svg>${statusText}</span>
         </div>
         <div class="meta-line">
           ${priorityBadge}
           ${subBadge}
           <span class="meta-item"><svg class="icon-sm icon"><use href="#i-calendar"/></svg>${formattedDate}</span>
-          <span class="meta-item"><svg class="icon-sm icon"><use href="#i-info"/></svg>${item.source}</span>
+          <span class="meta-item"><svg class="icon-sm icon"><use href="#i-info"/></svg>${escapeHtml(item.source)}</span>
         </div>
-        <p class="desc">${item.summary}</p>
+        <p class="desc">${escapeHtml(item.summary)}</p>
         <div class="actions">
-          <a href="detail.html?url=${encodeURIComponent(item.url)}" class="btn btn-primary"><svg class="icon-sm icon"><use href="#i-doc"/></svg>查看详情</a>
-          <a href="${item.url}" target="_blank" rel="noopener" class="btn btn-secondary">阅读原文 <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>
+          <a href="detail.html?id=${encodeURIComponent(item.id || '')}" class="btn btn-primary"><svg class="icon-sm icon"><use href="#i-doc"/></svg>查看详情</a>
+          ${sourceUrl ? `<a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener" class="btn btn-secondary">阅读原文 <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>` : ''}
         </div>
       </div>
     </article>
@@ -147,7 +158,7 @@ function renderPagination() {
     if (p === '...') {
       buttons.push(`<span class="page-ellipsis">…</span>`);
     } else {
-      buttons.push(`<button class="page-btn ${p === currentPage ? 'active' : ''}" data-page="${p}">${p}</button>`);
+      buttons.push(`<button class="page-btn ${p === currentPage ? 'active' : ''}" data-page="${p}" type="button" ${p === currentPage ? 'aria-current="page"' : ''}>${p}</button>`);
     }
   });
 
@@ -169,6 +180,7 @@ function initFilters() {
       if (!option) return;
       const key = group.dataset.filterGroup;
       if (key === "date" && option.dataset.value === "custom") {
+        openDateModal();
         // 日期自定义占位：暂不支持，后续可扩展
         return;
       }
@@ -212,42 +224,105 @@ function applyFilters() {
     const searchOk = !state.query || `${item.title} ${item.summary} ${item.detail || ""}`.toLowerCase().includes(state.query);
     return subOk && dateOk && searchOk;
   });
-  // 按优先级降序，同优先级按发布时间降序
-  filteredItems.sort((a, b) => {
-    const pa = a.priority || 1, pb = b.priority || 1;
-    if (pa !== pb) return pb - pa;
-    return new Date(b.published) - new Date(a.published);
-  });
+  // 先按北京时间自然日分组，再按优先级与发布时间排序；与首页和每日资讯一致。
+  filteredItems.sort(CampBriefContent.compareByNaturalDayThenPriority);
   if (resultCount) resultCount.textContent = `${filteredItems.length} 条技术动态`;
   renderPage();
 }
 
+// ===== 技术板块轮播 =====
+// 规则：近3天 priority>=4 的技术条目；不足3个补充 priority>=3；上限15个。
+function pickTechCarouselItems(items) {
+  const now = new Date();
+  const threeDaysAgo = new Date(now.getTime() - 3 * 24 * 60 * 60 * 1000);
+  const recent = items.filter(item => {
+    const d = new Date(item.published);
+    return d >= threeDaysAgo && d <= now;
+  });
+  let result = recent.filter(i => (i.priority || 1) >= 4);
+  if (result.length < 3) {
+    const p3 = recent.filter(i => (i.priority || 1) === 3 && !result.find(r => r.id === i.id));
+    result = result.concat(p3);
+  }
+  result.sort((a, b) => new Date(b.published) - new Date(a.published));
+  return result.slice(0, 15);
+}
+
 function matchesDateFilter(item) {
   if (state.date === "all") return true;
+  if (state.date === "custom") {
+    return !state.customDate || CampBriefContent.naturalDayKey(item.published) === state.customDate;
+  }
+
   const publishedAt = new Date(item.published);
   const now = new Date();
-  const rangeHours = { "24h": 24, "7d": 24 * 7, "30d": 24 * 30 }[state.date];
+  const rangeHours = { "24h": 24, "3d": 24 * 3, "7d": 24 * 7, "30d": 24 * 30 }[state.date];
   if (!rangeHours) return true;
   const rangeStart = new Date(now.getTime() - rangeHours * 60 * 60 * 1000);
   return publishedAt >= rangeStart && publishedAt <= now;
 }
 
-// ===== 技术板块轮播 =====
-// 规则：近7天 priority>=3 的技术条目；不足3个补充 priority>=2；上限10个
-function pickTechCarouselItems(items) {
-  const now = new Date();
-  const sevenDaysAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
-  const recent = items.filter(item => {
-    const d = new Date(item.published);
-    return d >= sevenDaysAgo && d <= now;
+function setActiveDateOption(value) {
+  document.querySelectorAll('[data-filter-group="date"] .option').forEach(option => {
+    const isActive = option.dataset.value === value;
+    option.classList.toggle("active", isActive);
+    option.setAttribute("aria-pressed", String(isActive));
   });
-  let result = recent.filter(i => (i.priority || 1) >= 3);
-  if (result.length < 3) {
-    const p2 = recent.filter(i => (i.priority || 1) === 2 && !result.find(r => r.url === i.url));
-    result = result.concat(p2);
-  }
-  result.sort((a, b) => new Date(b.published) - new Date(a.published));
-  return result.slice(0, 10);
+}
+
+function openDateModal() {
+  if (!dateModal || !customDateInput) return;
+  customDateInput.value = state.customDate;
+  dateModal.hidden = false;
+  document.body.classList.add("is-date-modal-open");
+  customDateOption?.setAttribute("aria-expanded", "true");
+  customDateInput.focus();
+}
+
+function closeDateModal() {
+  if (!dateModal) return;
+  dateModal.hidden = true;
+  document.body.classList.remove("is-date-modal-open");
+  customDateOption?.setAttribute("aria-expanded", "false");
+}
+
+function initDatePicker() {
+  const dateGroup = document.querySelector('[data-filter-group="date"]');
+  if (!dateModal || !customDateInput || !dateGroup) return;
+
+  dateGroup.addEventListener("click", event => {
+    const option = event.target.closest('[data-value="custom"]');
+    if (!option) return;
+    event.stopImmediatePropagation();
+    openDateModal();
+  }, true);
+
+  dateModal.addEventListener("click", event => {
+    if (event.target.closest("[data-date-modal-close]")) closeDateModal();
+  });
+
+  document.getElementById("applyCustomDateButton")?.addEventListener("click", () => {
+    if (!customDateInput.value) return;
+    state.date = "custom";
+    state.customDate = customDateInput.value;
+    setActiveDateOption("custom");
+    currentPage = 1;
+    applyFilters();
+    closeDateModal();
+  });
+
+  document.getElementById("clearDateButton")?.addEventListener("click", () => {
+    state.date = "all";
+    state.customDate = "";
+    setActiveDateOption("all");
+    currentPage = 1;
+    applyFilters();
+    closeDateModal();
+  });
+
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape" && !dateModal.hidden) closeDateModal();
+  });
 }
 
 function renderTechCarouselCard(item) {
@@ -260,17 +335,17 @@ function renderTechCarouselCard(item) {
   const subInfo = SUBCATEGORY_LABELS[sub] || SUBCATEGORY_LABELS.software;
 
   return `
-    <a class="carousel-card" href="detail.html?url=${encodeURIComponent(item.url)}">
+    <a class="carousel-card" href="detail.html?id=${encodeURIComponent(item.id || '')}">
       <span class="carousel-card-tag ${tagClass}">${tagText}</span>
       <div class="carousel-card-head">
-        <h3 class="carousel-card-title">${item.title}</h3>
+        <h3 class="carousel-card-title">${escapeHtml(item.title)}</h3>
       </div>
       <div class="carousel-card-meta">
         <span class="badge badge-prize"><svg class="icon-sm icon"><use href="#${subInfo.icon}"/></svg>${subInfo.text}</span>
         <span class="meta-item"><svg class="icon-sm icon"><use href="#i-calendar"/></svg>${formattedDate}</span>
-        <span class="meta-item"><svg class="icon-sm icon"><use href="#i-info"/></svg>${item.source}</span>
+        <span class="meta-item"><svg class="icon-sm icon"><use href="#i-info"/></svg>${escapeHtml(item.source)}</span>
       </div>
-      <p class="carousel-card-desc">${item.summary}</p>
+      <p class="carousel-card-desc">${escapeHtml(item.summary)}</p>
     </a>
   `;
 }
@@ -291,10 +366,12 @@ function initTechCarousel(items) {
 async function init() {
   initDOM();
   initFilters();
+  initDatePicker();
 
   const container = document.getElementById('cards');
   container.innerHTML = '<div class="loading-state" style="text-align: center; padding: 40px; color: var(--text-secondary, #666);">正在加载技术动态...</div>';
 
+  container.firstElementChild?.setAttribute("role", "status");
   const items = await loadTechData();
 
   if (items.length === 0) {

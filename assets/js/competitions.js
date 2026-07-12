@@ -3,58 +3,16 @@
   "use strict";
 
   const DATA_URL = "../../data/competitions.json";
-  const FALLBACK_DATA = {
-    tiers: [
-      { key: "all", label: "全部" },
-      { key: "official", label: "教育部认可赛事" },
-      { key: "enterprise", label: "名企主办赛事" },
-      { key: "hobby", label: "兴趣练手赛事" }
-    ],
-    fields: [
-      { key: "all", label: "全部" },
-      { key: "innovation", label: "创新创业" },
-      { key: "computer", label: "计算机 / 信息技术" },
-      { key: "engineering", label: "工程 / 机电 / 自动化" },
-      { key: "ai", label: "人工智能" },
-      { key: "robot", label: "机器人" },
-      { key: "science", label: "数理 / 化学 / 地学" },
-      { key: "design", label: "设计 / 艺术 / 传媒" },
-      { key: "language", label: "外语" },
-      { key: "business", label: "商科 / 金融 / 管理" },
-      { key: "medical", label: "医学 / 生命科学" },
-      { key: "civil", label: "建筑 / 土木 / 测绘" },
-      { key: "vocational", label: "职业技能" }
-    ],
-    status_map: {
-      pending: { label: "未开始" },
-      open: { label: "可报名" },
-      ongoing: { label: "比赛中" },
-      done: { label: "已完赛" }
-    },
-    items: [
-      {
-        id: "demo-001",
-        name: "数据加载失败示例",
-        tier: "official",
-        fields: ["computer"],
-        status: "open",
-        signup: "",
-        schedule: "",
-        summary: "如果看到这条，说明 competitions.json 加载失败。请检查网络或文件路径。",
-        search: "",
-        official_site: "",
-        organizer: "CampBrief",
-        prestige: 5
-      }
-    ]
-  };
-
   const state = { tier: "all", field: "all", status: "all", query: "" };
+  const PAGE_SIZE = 5;
   let allItems = [];
+  let filteredItems = [];
+  let currentPage = 1;
   let meta = { tiers: [], fields: [], status_map: {} };
 
   const cardsContainer = document.getElementById("cards");
   const emptyState = document.getElementById("emptyState");
+  const paginationNav = document.querySelector(".pagination");
   const resultCount = document.getElementById("resultCount");
   const searchInput = document.getElementById("searchInput");
 
@@ -73,14 +31,28 @@
     hobby: "tier-hobby"
   };
 
+  const STATUS_SORT_ORDER = { open: 0, pending: 1, ongoing: 2, done: 3 };
+  const TIER_SORT_ORDER = { official: 0, enterprise: 1, hobby: 2 };
+
   function escapeHtml(text) {
-    if (text == null) return "";
-    return String(text)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;")
-      .replace(/'/g, "&#39;");
+    return CampBriefContent.escapeHtml(text);
+  }
+
+  function safeExternalUrl(value) {
+    return CampBriefContent.safeHttpUrl(value);
+  }
+
+  function compareCompetitions(a, b) {
+    const statusDiff = (STATUS_SORT_ORDER[a.status] ?? 99) - (STATUS_SORT_ORDER[b.status] ?? 99);
+    if (statusDiff) return statusDiff;
+
+    const tierDiff = (TIER_SORT_ORDER[a.tier] ?? 99) - (TIER_SORT_ORDER[b.tier] ?? 99);
+    if (tierDiff) return tierDiff;
+
+    const prestigeDiff = (b.prestige || 0) - (a.prestige || 0);
+    if (prestigeDiff) return prestigeDiff;
+
+    return String(a.name || "").localeCompare(String(b.name || ""), "zh-CN");
   }
 
   async function loadData() {
@@ -89,15 +61,13 @@
       if (!res.ok) throw new Error("HTTP " + res.status);
       const data = await res.json();
       allItems = data.items || [];
-      meta.tiers = data.tiers || FALLBACK_DATA.tiers;
-      meta.fields = data.fields || FALLBACK_DATA.fields;
-      meta.status_map = data.status_map || FALLBACK_DATA.status_map;
+      meta.tiers = data.tiers || [];
+      meta.fields = data.fields || [];
+      meta.status_map = data.status_map || {};
     } catch (err) {
-      console.warn("加载 competitions.json 失败，使用 fallback 数据", err);
-      allItems = FALLBACK_DATA.items;
-      meta.tiers = FALLBACK_DATA.tiers;
-      meta.fields = FALLBACK_DATA.fields;
-      meta.status_map = FALLBACK_DATA.status_map;
+      console.warn("无法加载 competitions.json", err);
+      allItems = [];
+      meta = { tiers: [], fields: [], status_map: {} };
     }
   }
 
@@ -135,17 +105,17 @@
         metaLine.push(`<span class="meta-item"><svg class="icon-sm icon"><use href="#i-calendar"/></svg>${escapeHtml(item.schedule)}</span>`);
       }
 
-      const primaryAction = item.status === "open" && item.official_site
-        ? `<a href="${escapeHtml(item.official_site)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">立即报名 <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>`
-        : item.official_site
-          ? `<a href="${escapeHtml(item.official_site)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">访问官网 <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>`
-          : "";
+      const detailHref = `detail.html?id=${encodeURIComponent(item.id || "")}`;
+      const officialUrl = safeExternalUrl(item.official_site);
+      const officialAction = officialUrl
+        ? `<a href="${escapeHtml(officialUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">${item.status === "open" ? "立即报名" : "访问官网"} <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>`
+        : "";
 
       return `
         <article class="card" data-id="${escapeHtml(item.id || "")}" data-tier="${escapeHtml(item.tier || "")}" data-fields="${escapeHtml((item.fields || []).join(","))}" data-status="${escapeHtml(item.status || "")}" data-search="${escapeHtml((item.search || item.name || "").toLowerCase())}">
           <div class="card-main">
             <div class="card-head">
-              <h2 class="card-title"><a href="detail.html?id=${escapeHtml(item.id || "")}" class="card-title-link">${escapeHtml(item.name)}</a></h2>
+              <h2 class="card-title"><a href="${detailHref}" class="card-title-link">${escapeHtml(item.name)}</a></h2>
               <div class="card-badges">
                 <span class="badge tier-badge ${tierClass}">${escapeHtml(tierLabel)}</span>
                 <span class="badge status-badge ${statusClass}">${escapeHtml(statusLabel)}</span>
@@ -157,25 +127,62 @@
             </div>
             <p class="desc">${escapeHtml(item.summary)}</p>
             <div class="actions">
-              ${primaryAction}
-              <a href="detail.html?id=${escapeHtml(item.id || "")}" class="btn btn-secondary"><svg class="icon-sm icon"><use href="#i-doc"/></svg>查看详情</a>
+              <a href="${detailHref}" class="btn btn-primary"><svg class="icon-sm icon"><use href="#i-doc"/></svg>查看详情</a>
+              ${officialAction}
             </div>
           </div>
         </article>
       `;
     }).join("");
+  }
 
-    if (resultCount) {
-      resultCount.textContent = `${items.length} 个赛事`;
-    }
+  function renderPage() {
+    const totalPages = Math.max(1, Math.ceil(filteredItems.length / PAGE_SIZE));
+    if (currentPage > totalPages) currentPage = totalPages;
+
+    const start = (currentPage - 1) * PAGE_SIZE;
+    renderCards(filteredItems.slice(start, start + PAGE_SIZE));
+
     if (emptyState) {
-      emptyState.hidden = items.length > 0;
+      emptyState.hidden = filteredItems.length > 0;
     }
+    renderPagination(totalPages);
+  }
+
+  function renderPagination(totalPages) {
+    if (!paginationNav) return;
+    if (totalPages <= 1 || filteredItems.length === 0) {
+      paginationNav.hidden = true;
+      paginationNav.innerHTML = "";
+      return;
+    }
+
+    const buttons = [];
+    buttons.push(`<button class="page-btn" ${currentPage === 1 ? "disabled" : ""} data-page="${currentPage - 1}" type="button" aria-label="上一页"><svg class="icon-sm icon"><use href="#i-chevron-left"/></svg></button>`);
+
+    getPageNumbers(currentPage, totalPages).forEach(page => {
+      if (page === "…") {
+        buttons.push('<span class="page-ellipsis" aria-hidden="true">…</span>');
+      } else {
+        buttons.push(`<button class="page-btn ${page === currentPage ? "active" : ""}" data-page="${page}" type="button" ${page === currentPage ? 'aria-current="page"' : ""}>${page}</button>`);
+      }
+    });
+
+    buttons.push(`<button class="page-btn" ${currentPage === totalPages ? "disabled" : ""} data-page="${currentPage + 1}" type="button" aria-label="下一页"><svg class="icon-sm icon"><use href="#i-chevron-right"/></svg></button>`);
+    paginationNav.innerHTML = buttons.join("");
+    paginationNav.hidden = false;
+  }
+
+  function getPageNumbers(current, total) {
+    if (total <= 7) return Array.from({ length: total }, (_, index) => index + 1);
+    if (current <= 4) return [1, 2, 3, 4, 5, "…", total];
+    if (current >= total - 3) return [1, "…", total - 4, total - 3, total - 2, total - 1, total];
+    return [1, "…", current - 1, current, current + 1, "…", total];
   }
 
   function applyFilters() {
     const query = state.query;
-    const filtered = allItems.filter(item => {
+    filteredItems = allItems.filter(item => {
       const tierOk = state.tier === "all" || item.tier === state.tier;
       const fieldOk = state.field === "all" || (item.fields || []).includes(state.field);
       const statusOk = state.status === "all" || item.status === state.status;
@@ -184,8 +191,9 @@
         (item.name || "").toLowerCase().includes(query) ||
         (item.organizer || "").toLowerCase().includes(query);
       return tierOk && fieldOk && statusOk && searchOk;
-    });
-    renderCards(filtered);
+    }).sort(compareCompetitions);
+    if (resultCount) resultCount.textContent = `${filteredItems.length} 个赛事`;
+    renderPage();
   }
 
   function bindFilters() {
@@ -195,28 +203,45 @@
         if (!option) return;
         const key = group.dataset.filterGroup;
         state[key] = option.dataset.value;
-        group.querySelectorAll(".option").forEach(item => item.classList.toggle("active", item === option));
+        group.querySelectorAll(".option").forEach(item => {
+          const isActive = item === option;
+          item.classList.toggle("active", isActive);
+          item.setAttribute("aria-pressed", String(isActive));
+        });
+        currentPage = 1;
         applyFilters();
       });
     });
 
     searchInput.addEventListener("input", event => {
       state.query = event.target.value.trim().toLowerCase();
+      currentPage = 1;
       applyFilters();
     });
+
+    if (paginationNav) {
+      paginationNav.addEventListener("click", event => {
+        const button = event.target.closest(".page-btn");
+        if (!button || button.disabled) return;
+
+        const targetPage = Number(button.dataset.page);
+        if (!targetPage || targetPage === currentPage) return;
+
+        currentPage = targetPage;
+        renderPage();
+        cardsContainer.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
   }
 
   function initCarousel() {
     const container = document.querySelector("[data-carousel]");
     if (!container || typeof Carousel === "undefined") return;
 
-    // 从数据中筛选 open / pending，open 优先，按含金量降序，上限 10
+    // 仅推荐可报名或即将开始的赛事；可报名优先，其次教育部认可、名企主办与含金量。
     let candidates = allItems.filter(i => i.status === "open" || i.status === "pending");
-    candidates.sort((a, b) => {
-      if (a.status !== b.status) return a.status === "open" ? -1 : 1;
-      return (b.prestige || 0) - (a.prestige || 0);
-    });
-    const carouselItems = candidates.slice(0, 10);
+    candidates.sort(compareCompetitions);
+    const carouselItems = candidates.slice(0, 15);
     if (carouselItems.length < 3) {
       container.hidden = true;
       return;
@@ -228,6 +253,7 @@
       renderCard: (item) => {
         const statusLabel = getStatusLabel(item.status);
         const tagClass = item.status === "open" ? "tag-featured" : "tag-normal";
+        const detailHref = `detail.html?id=${encodeURIComponent(item.id || "")}`;
         const metaLine = [];
         if (item.organizer) {
           metaLine.push(`<span class="meta-item"><svg class="icon-sm icon"><use href="#i-info"/></svg>${escapeHtml(item.organizer)}</span>`);
@@ -236,7 +262,7 @@
           metaLine.push(`<span class="meta-item"><svg class="icon-sm icon"><use href="#i-unlock"/></svg>${escapeHtml(item.signup)}</span>`);
         }
         return `
-          <div class="carousel-card" data-carousel-item-id="${escapeHtml(item.id)}">
+          <a class="carousel-card" href="${detailHref}" data-carousel-item-id="${escapeHtml(item.id)}" aria-label="查看${escapeHtml(item.name)}详情">
             <span class="carousel-card-tag ${tagClass}">${escapeHtml(statusLabel)}</span>
             <div class="carousel-card-head">
               <h3 class="carousel-card-title">${escapeHtml(item.name)}</h3>
@@ -245,7 +271,7 @@
               ${metaLine.join("")}
             </div>
             <p class="carousel-card-desc">${escapeHtml(item.summary)}</p>
-          </div>
+          </a>
         `;
       },
       autoPlay: true,
@@ -255,6 +281,7 @@
 
   async function init() {
     bindFilters();
+    cardsContainer.innerHTML = '<div class="loading-state" role="status" style="text-align:center;padding:40px;color:var(--text-secondary,#666);">正在加载竞赛数据...</div>';
     await loadData();
     applyFilters();
     initCarousel();
