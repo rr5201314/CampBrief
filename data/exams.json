@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-11T22:52:32.853155+08:00",
+  "last_updated": "2026-07-12T00:00:00+08:00",
   "source": "CampBrief",
   "total": 30,
   "categories": [
@@ -360,15 +360,33 @@
       "id": "cpa-2026",
       "name": "2026年注册会计师全国统一考试 (CPA)",
       "category": "accounting",
-      "status": "pending",
+      "status": "closed",
       "fee": "每科约60-100元",
-      "schedule": "2026年8月底（专业阶段）、10月（综合阶段）",
+      "schedule": "2026年8月底（专业阶段）、8月底（综合阶段）",
       "summary": "会计行业最高级别执业资格考试，含6个专业阶段科目和综合阶段，通过后可获审计报告签字权。",
       "search": "注册会计师 cpa 注会 accounting audit 2026",
       "official_site": "https://cpaexam.cicpa.org.cn/",
       "official_portal": "https://www.cicpa.org.cn/",
       "news_list_url": "https://www.cicpa.org.cn/ztzl1/exam/exam_info/",
-      "official_url": ""
+      "official_url": "https://www.cicpa.org.cn/xxfb/tzgg/202512/t20251210_65740.html",
+      "timeline": [
+        {
+          "label": "专业阶段考试",
+          "value": "2026年8月29日—30日"
+        },
+        {
+          "label": "综合阶段考试",
+          "value": "2026年8月30日"
+        },
+        {
+          "label": "报名时间",
+          "value": "2026年4月7日8:00—4月30日20:00"
+        },
+        {
+          "label": "交费时间",
+          "value": "2026年6月15日—30日（每天8:00—20:00）"
+        }
+      ]
     },
     {
       "id": "acca-202603",
