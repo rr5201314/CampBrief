@@ -67,9 +67,6 @@ def build_text_message(data, batch):
     batch_label = BATCH_LABELS.get(batch, batch or "采集")
 
     lines = [
-        # 精确 @ nienie 机器人（open_id 固定），触发 mention 事件
-        '<at user_id="ou_d218aa9957d5c927462b571478cf7484">nienie</at>',
-        f"",
         f"CampBrief 候选池已就绪",
         f"",
         f"批次：{batch_label}",
@@ -84,9 +81,9 @@ def build_text_message(data, batch):
         if len(errors) > 5:
             lines.append(f"  （另有 {len(errors) - 5} 个失败源）")
 
-    # 触发指令：被 @ 的 nienie 收到事件后执行对应 skill
+    # 飞书应用机器人无法接收其他机器人的消息事件，需手动 @ nienie 触发
     lines.append("")
-    lines.append("执行 campbrief-daily-news")
+    lines.append("收到通知后，在群里 @nienie 发送：执行 campbrief-daily-news")
 
     return "\n".join(lines)
 

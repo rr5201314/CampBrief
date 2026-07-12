@@ -120,13 +120,18 @@
 - **GitHub Actions（云端，无人值守）**：定时采集 RSS 候选池，push 到仓库，发飞书通知触发 Hermes
 - **Hermes（手机，agent 编辑决策）**：收到飞书群 @ 事件后，拉取最新仓库，对候选池做 AI 筛选/摘要/分类，校验后推送
 
-### 事件触发机制（非 cron，精确 @ nienie 触发）
+### 事件触发机制（非 cron，手动 @ nienie 触发）
 1. GitHub Actions 定时采集候选池 → push 到仓库
-2. GitHub Actions 机器人发飞书群消息，消息含 `<at user_id="ou_d218aa9957d5c927462b571478cf7484">nienie</at>`（精确 @ nienie）
-3. Hermes（飞书应用机器人，名 "nienie"）被 @ 后收到 mention 事件，触发 campbrief-daily-news skill
-4. 消息末尾 `执行 campbrief-daily-news` 作为指令文本，被 @ 后 nienie 解析执行
+2. GitHub Actions 机器人发飞书群通知（候选池摘要）
+3. 你看到通知后，在群里 @ nienie 发送「执行 campbrief-daily-news」
+4. Hermes（飞书应用机器人，名 "nienie"）被 @ 后收到 mention 事件，触发 campbrief-daily-news skill
 5. Hermes 执行 skill：git pull → 编辑候选池 → 校验 → push
 6. nienie 的 open_id：`ou_d218aa9957d5c927462b571478cf7484`
+
+### 为什么不能用机器人 @ 机器人触发
+飞书 `im.message.receive_v1` 事件只对**用户**发的消息触发，**机器人发的消息不触发**该事件。
+所以 GitHub Actions 自定义机器人发的 @ 消息，nienie 收不到事件。必须由**真人**在群里 @ nienie。
+这是飞书的设计限制，防止机器人互相触发形成循环。
 
 ### GitHub Actions 配置
 - workflow 文件：`.github/workflows/collect-news.yml`
@@ -146,9 +151,9 @@
 - 脚本：`scripts/notify-feishu.py`
 - 读 `data/daily-news-raw.json` 摘要，发到飞书群
 - 消息含关键词 "CampBrief"（满足飞书自定义机器人安全设置）
-- 消息开头 `<at user_id="ou_d218aa9957d5c927462b571478cf7484">nienie</at>` 精确 @ nienie，触发 mention 事件
-- 消息末尾 `执行 campbrief-daily-news` 作为指令文本
+- 消息末尾提示「收到通知后，在群里 @nienie 发送：执行 campbrief-daily-news」
 - webhook URL 从环境变量 `FEISHU_WEBHOOK` 或 `--webhook` 参数读取
+- 注意：飞书应用机器人收不到其他机器人发的消息事件，必须真人 @ nienie
 
 ### Hermes skill 衔接
 - 步骤 0：`git pull --ff-only` 拉取最新候选池
