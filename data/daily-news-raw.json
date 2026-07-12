@@ -1,7 +1,7 @@
 {
-  "collected_at": "2026-07-12T12:02:27.622618+08:00",
+  "collected_at": "2026-07-12T14:55:03.202108+08:00",
   "total": 80,
-  "sources_ok": 6,
+  "sources_ok": -1,
   "sources_failed": 2,
   "errors": [
     {

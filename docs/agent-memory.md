@@ -1,10 +1,11 @@
 # Agent 共享记忆
 
-本文件是 CampBrief 项目的**工程决策记录**，供所有参与开发的 agent（TRAE、GPT、Cursor 等）共享读取和维护。
+本文件是 简豹 项目的**工程决策记录**，供所有参与开发的 agent（TRAE、Codex、Hermes ）共享读取和维护。
 
 > 为什么需要这个文件：各 agent 的本地记忆互不可见，容易导致规则不同步。本文件随仓库版本管理，任何 agent 做了影响他人的工程决策后都应同步到此，其他 agent 开工前也应先读这里。
 
 维护规则：
+
 - 只记录**跨会话需要保留的工程决策、参数约定、数据规则**，不记录一次性任务进度。
 - 改动代码或数据结构后，若涉及此处已有规则，必须同步更新本文件。
 - 与 `AGENTS.md`（项目规范）的分工：`AGENTS.md` 写稳定的原则性约定；本文件写具体的参数、排序规则、字段约定等易变但需要一致的细节。
@@ -12,16 +13,19 @@
 ---
 
 ## Engineering Conventions
+
 - All animations respect `prefers-reduced-motion` media query for accessibility
 - Scroll-triggered animations use IntersectionObserver with unobserve after single trigger
 - Animation timing functions use `cubic-bezier(.4,0,.2,1)` for natural motion
 - Stagger animations use incremental delays (e.g., 60ms per feed item, .1s/.2s/.3s for board sections)
 
 ## Hard Constraints
+
 - Animations must work with `file://` protocol (no external dependencies)
 - Mobile devices get simplified animation versions (degraded experience)
 
 ## 列表页统一规则（与每日资讯对齐）
+
 - **每页数量**：所有列表页（每日资讯/技术/考试/竞赛）统一 `PAGE_SIZE = 5`
 - **稳定 ID**：所有模块的条目用不可变 `id` 定位详情页（资讯 `news-<hash>`、竞赛/考试用各自 `id`），不再用 URL 定位
 - **排序基准**：先按北京时间自然日分组倒序，同日按优先级降序，再按发布时间降序（资讯/技术/首页看板统一）；考试/竞赛按各自业务状态优先级排序
@@ -30,6 +34,7 @@
 - **加载/空状态**：列表页有显式加载态，空状态带 `role="status"`，筛选按钮同步 `aria-pressed`
 
 ## 考试模块数据规则
+
 - `data/exams.json` 为考试目录（稳定参考信息），每项含详情字段：`format`/`duration`/`subjects`/`requirements`/`scoring`/`timeline`
 - 三个 URL 字段分工：
   - `official_site`（稳定）：考试报名系统官网，详情页"立即报名/访问报名系统"按钮指向
@@ -53,6 +58,7 @@
 - 卡片主按钮为「查看详情」，次按钮为官网/报名
 
 ## 竞赛模块数据规则
+
 - `data/competitions.json` 为竞赛目录，包含三类赛事：教育部认可赛事（84项）、名企主办赛事、兴趣练手赛事
 - 三级筛选体系：一级（赛事层次：教育部认可/名企主办/兴趣练手）、二级（专业领域：人工智能/机器人/计算机等13类）、三级（比赛状态：未开始/可报名/比赛中/已完赛）
 - 边报名边比赛的赛事优先归入「可报名」状态
@@ -62,6 +68,7 @@
 - 首页竞赛看板读取 `data/competitions.json` 真实数据，卡片点击进入对应详情页
 
 ## 轮播组件规则
+
 - 通用轮播组件位于 `assets/js/carousel.js`，三个模块（竞赛/考试/每日资讯）各自在列表页顶部展示精选轮播
 - 轮播模式：**滚轮缓慢滑动**（非分页切换），鼠标滚轮驱动水平位移，松开后1.5秒恢复自动平移
 - 自动播放改为连续缓慢平移（12 px/秒），到末尾循环回开头
@@ -76,6 +83,7 @@
 - 支持惯性滑动：快速拖拽松手后根据速度衰减继续滑动，边界停止
 
 ## 每日资讯优先级规则
+
 - priority 4：头条（首页看板显示 + 资讯页轮播 + "头条"标签）
 - priority 3：重磅（首页看板显示 + "重磅"标签）
 - priority 2：重要（资讯列表页显示 + "重要"标签，不上首页看板）
@@ -85,6 +93,7 @@
 - 资讯卡片时间标签与筛选条件对齐：<24小时（24小时，蓝）、<7天（7天，灰）、<30天（30天，浅灰）、≥30天（更早，最淡）
 
 ## 技术板块与每日资讯的分工
+
 - **技术板块**（`pages/tech/`）：展示 `category=tech` 的条目，按 `subcategory` 分类筛选
   - 4 个子分类：`ai-frontier`（AI 前沿）/ `hardware`（硬件与芯片）/ `software`（软件与系统）/ `industry`（产业与商业）
   - 第 5 个分类 `github`（GitHub 趋势）为占位，后续接入独立数据源
@@ -105,6 +114,56 @@
   - markdown 备份：`https://github.com/jujuyaya/juya-ai-daily/tree/main/BACKUP`
   - B 站 juya up 主公开资料
 
+## 自动化采集架构（GitHub Actions + Hermes）
+
+### 分工
+- **GitHub Actions（云端，无人值守）**：定时采集 RSS 候选池，push 到仓库，发飞书通知触发 Hermes
+- **Hermes（手机，agent 编辑决策）**：收到飞书群 @ 事件后，拉取最新仓库，对候选池做 AI 筛选/摘要/分类，校验后推送
+
+### 事件触发机制（非 cron，@all 触发）
+1. GitHub Actions 定时采集候选池 → push 到仓库
+2. GitHub Actions 机器人发飞书群消息，消息含 `<at user_id="all">所有人</at>`（@ 所有人）
+3. Hermes（飞书应用机器人，名 "nienie"）被 @ 后收到事件，触发 campbrief-daily-news skill
+4. 消息末尾 `执行 campbrief-daily-news` 作为指令文本，被 @ 后 nienie 解析执行
+5. Hermes 执行 skill：git pull → 编辑候选池 → 校验 → push
+
+### GitHub Actions 配置
+- workflow 文件：`.github/workflows/collect-news.yml`
+- 定时任务（cron 用 UTC，北京 = UTC+8）：
+  - `0 0 * * *`（北京 08:00）：采集全部源，排除 juya AI 日报（该源中午才更新）
+  - `0 5 * * *`（北京 13:00）：只采集 juya AI 日报，`--only` 模式合并到已有候选池
+- 支持手动触发（workflow_dispatch），可选批次 morning/noon/full
+- 采集后自动 commit + push `data/daily-news-raw.json`
+- 发飞书通知（机器人 webhook 存 GitHub Secret `FEISHU_WEBHOOK`）
+
+### 采集脚本参数
+- 无参数：采集全部源
+- `--exclude "juya AI 日报"`：排除指定源（逗号分隔多个）
+- `--only "juya AI 日报"`：只采集指定源，合并到已有候选池（同源旧条目被新数据覆盖）
+
+### 飞书通知
+- 脚本：`scripts/notify-feishu.py`
+- 读 `data/daily-news-raw.json` 摘要，发到飞书群
+- 消息含关键词 "CampBrief"（满足飞书自定义机器人安全设置）
+- 消息开头 `<at user_id="all">所有人</at>` @ 所有人，触发 nienie 机器人
+- 消息末尾 `执行 campbrief-daily-news` 作为指令文本
+- webhook URL 从环境变量 `FEISHU_WEBHOOK` 或 `--webhook` 参数读取
+
+### Hermes skill 衔接
+- 步骤 0：`git pull --ff-only` 拉取最新候选池
+- 步骤 1：判断候选池 `collected_at` 是否为今天（北京时间），是则跳过本地采集，直接进入编辑流程
+- 兜底：如果 GitHub Actions 没跑或 pull 失败，Hermes 仍可本地跑采集脚本
+
+### Hermes 侧配置要求
+- nienie 机器人需拉进飞书群
+- nienie 订阅群消息事件（im.message.receive_v1），权限全开
+- nienie 配置为"被 @ 时触发"（飞书应用机器人默认行为），收到 @ 事件后解析消息文本中的 `执行 campbrief-daily-news` 指令
+
+### 敏感信息
+- 飞书 webhook URL 只存 GitHub Secrets，不进仓库文件
+- workflow 文件里只引用 `${{ secrets.FEISHU_WEBHOOK }}`，日志自动打码
+
 ## Lessons Learned
+
 - 入场动画需使用 `backwards` 模式避免覆盖 hover/active 交互状态
 - koa-connect wrapper caused ctx leaks, so native rewrite is required

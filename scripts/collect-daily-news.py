@@ -13,9 +13,12 @@ CampBrief 每日资讯 - RSS 采集脚本（候选池生成器）
   - 输出路径相对脚本所在位置定位仓库根目录，不依赖 CWD
 
 用法：
-  python3 scripts/collect-daily-news.py
+  python3 scripts/collect-daily-news.py              # 采集全部源
+  python3 scripts/collect-daily-news.py --exclude juya AI 日报  # 排除指定源
+  python3 scripts/collect-daily-news.py --only juya AI 日报      # 只采集指定源，合并到已有候选池
 """
 
+import argparse
 import json
 import os
 import re
@@ -221,22 +224,83 @@ def build_candidate(title, link, pub, desc, source):
     }
 
 
+def load_existing_candidates():
+    """读取已有候选池，返回 (candidates, errors) 或 ([], [])。"""
+    if not os.path.exists(RAW_OUTPUT):
+        return [], []
+    try:
+        with open(RAW_OUTPUT, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return data.get("candidates", []), data.get("errors", [])
+    except (OSError, json.JSONDecodeError):
+        return [], []
+
+
+def merge_candidates(new_items, existing_items):
+    """合并新旧候选，按 (url, title) 去重，保留新条目。"""
+    seen = set()
+    merged = []
+    for item in new_items + existing_items:
+        key = (item.get("url", ""), item.get("title", ""))
+        if key in seen:
+            continue
+        seen.add(key)
+        merged.append(item)
+    return merged
+
+
 def main():
-    print(f"[collect] 开始采集，共 {len(SOURCES)} 个源")
-    all_candidates = []
+    parser = argparse.ArgumentParser(description="CampBrief RSS 采集脚本")
+    parser.add_argument("--exclude", metavar="NAME", help="排除指定源（按 name 匹配，可逗号分隔多个）")
+    parser.add_argument("--only", metavar="NAME", help="只采集指定源（按 name 匹配，可逗号分隔多个），结果合并到已有候选池")
+    args = parser.parse_args()
+
+    exclude_names = {n.strip() for n in (args.exclude or "").split(",") if n.strip()}
+    only_names = {n.strip() for n in (args.only or "").split(",") if n.strip()}
+
+    # 确定本次采集的源
+    if only_names:
+        target_sources = [s for s in SOURCES if s["name"] in only_names]
+        skipped = [s["name"] for s in SOURCES if s["name"] not in only_names]
+        if skipped:
+            print(f"[collect] --only 模式，跳过: {', '.join(skipped)}")
+    elif exclude_names:
+        target_sources = [s for s in SOURCES if s["name"] not in exclude_names]
+        skipped = [s["name"] for s in SOURCES if s["name"] in exclude_names]
+        if skipped:
+            print(f"[collect] --exclude 模式，跳过: {', '.join(skipped)}")
+    else:
+        target_sources = SOURCES
+
+    print(f"[collect] 开始采集，共 {len(target_sources)} 个源")
+    new_candidates = []
     errors = []
 
-    for src in SOURCES:
+    for src in target_sources:
         try:
             print(f"[collect] 抓取 {src['name']} ...", end=" ", flush=True)
             xml_text = fetch(src["url"])
             items = parse_rss(xml_text, src)
             items = items[:MAX_PER_SOURCE]
-            all_candidates.extend(items)
+            new_candidates.extend(items)
             print(f"OK ({len(items)} 条)")
         except Exception as e:
             errors.append({"source": src["name"], "url": src["url"], "error": str(e)})
             print(f"失败: {e}")
+
+    # --only 模式：合并到已有候选池
+    if only_names:
+        existing_candidates, existing_errors = load_existing_candidates()
+        # 过滤掉与新采集同源的旧条目（同源用新数据覆盖）
+        new_source_names = {s["name"] for s in target_sources}
+        kept_existing = [c for c in existing_candidates if c.get("source") not in new_source_names]
+        all_candidates = merge_candidates(new_candidates, kept_existing)
+        # 合并 errors（去掉与新采集同源的旧错误）
+        kept_existing_errors = [e for e in existing_errors if e.get("source") not in new_source_names]
+        errors = kept_existing_errors + errors
+        print(f"[collect] --only 模式：新增 {len(new_candidates)} 条，保留旧候选 {len(kept_existing)} 条，合并后 {len(all_candidates)} 条")
+    else:
+        all_candidates = new_candidates
 
     # 按发布时间降序（解析失败的排后面）
     def sort_key(c):
@@ -249,7 +313,7 @@ def main():
     output = {
         "collected_at": datetime.now(timezone.utc).astimezone().isoformat(),
         "total": len(all_candidates),
-        "sources_ok": len(SOURCES) - len(errors),
+        "sources_ok": len(target_sources) - len(errors),
         "sources_failed": len(errors),
         "errors": errors,
         "candidates": all_candidates,

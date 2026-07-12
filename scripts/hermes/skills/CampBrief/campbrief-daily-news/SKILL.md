@@ -29,15 +29,32 @@ metadata:
 
 严格按以下顺序执行。每一步用你的 shell / 文件工具完成。
 
-### 1. 采集候选池
+### 0. 拉取最新仓库
 
-运行采集脚本（纯 Python stdlib，无依赖）：
+GitHub Actions 会在云端定时采集候选池并推送到仓库。执行前先拉取最新代码，确保拿到最新候选池：
+
+```bash
+cd "$REPO"
+git pull --ff-only
+```
+
+如果 pull 失败（网络问题），继续使用本地版本。
+
+### 1. 采集候选池（或复用已有候选池）
+
+**先判断候选池是否已就绪**：读取 `$REPO/data/daily-news-raw.json` 的 `collected_at` 字段。如果该时间是**今天**（北京时间自然日），说明 GitHub Actions 已采集过，**跳过本地采集**，直接进入步骤 2。
+
+如果候选池不存在或 `collected_at` 不是今天，运行采集脚本（纯 Python stdlib，无依赖）：
 
 ```bash
 python3 "$REPO/scripts/collect-daily-news.py"
 ```
 
 脚本会抓取多个 RSS 源，把归一化后的候选写入 `$REPO/data/daily-news-raw.json`。部分源失败是正常的（记录在 `errors` 字段），只要 `total > 0` 就继续。如果 `total == 0`（全部源失败），停止本次任务并报告原因，不要动现有数据。
+
+采集脚本支持参数：
+- `--exclude "juya AI 日报"`：排除指定源（逗号分隔多个）
+- `--only "juya AI 日报"`：只采集指定源并合并到已有候选池（同源旧条目被新数据覆盖）
 
 ### 2. 读取候选与已有数据
 
