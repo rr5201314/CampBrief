@@ -41,7 +41,11 @@ CampBrief 是面向大学生的信息聚合静态站，当前阶段以 HTML、CS
 
 - 共享样式放入 `assets/css/`，避免每个页面长期堆积大段内联样式。
 - 共享交互逻辑放入 `assets/js/main.js`，页面专属逻辑放入对应页面脚本。
+- 内容板块共用的排序、HTML 转义、URL 安全化等逻辑放入 `assets/js/content-utils.js`，避免各列表页重复实现。
 - 列表型内容应逐步从 HTML 中拆到 JSON 数据文件，由页面脚本渲染，降低后续自动采集和更新成本。
+- **前端不维护内嵌数据回退副本**：列表页直接读取 `data/` 下的 JSON 数据文件，不再保留 `file://` 预览用的内嵌数据（如已移除的 `news-data.js`）。
+- **条目用不可变 `id` 定位详情页**：各模块（资讯 `news-<hash>`、竞赛、考试）的条目均以稳定 `id` 作为详情页定位依据，`id` 一经发布不随标题或 URL 追踪参数变化而重算，确保旧详情链接长期可用。
+- **前端渲染外部数据时统一转义文本、校验外链**：用 `CampBriefContent.escapeHtml` 处理数据字符串，用 `CampBriefContent.safeHttpUrl` 校验外部链接，避免 XSS 和无效外链。
 - 结构调整时同步更新 `README.md` 和相关文档。
 - 本地草稿、Agent 生成包、临时文件和实验材料放入 `local-notes/` 或其他被忽略目录。
 
