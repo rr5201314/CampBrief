@@ -86,22 +86,26 @@
       <section class="filter-panel" aria-label="资讯筛选">
         <div class="filter-row">
           <div class="filter-label"><svg class="icon"><use href="#i-category"/></svg>资讯分类</div>
-          <div class="options" data-filter-group="category">
-            <button class="option active" data-value="all"><span class="option-dot"></span>全部</button>
-            <button class="option" data-value="ai"><svg class="icon-sm icon"><use href="#i-bot"/></svg>AI 资讯</button>
-            <button class="option" data-value="sports"><svg class="icon-sm icon"><use href="#i-sports"/></svg>体育</button>
-            <button class="option" data-value="fun"><svg class="icon-sm icon"><use href="#i-bulb"/></svg>每日趣闻</button>
+          <div class="filter-scroll" data-filter-scroll>
+            <div class="options" data-filter-group="category">
+              <button class="option active" data-value="all"><span class="option-dot"></span>全部</button>
+              <button class="option" data-value="ai"><svg class="icon-sm icon"><use href="#i-bot"/></svg>AI 资讯</button>
+              <button class="option" data-value="sports"><svg class="icon-sm icon"><use href="#i-sports"/></svg>体育</button>
+              <button class="option" data-value="fun"><svg class="icon-sm icon"><use href="#i-bulb"/></svg>每日趣闻</button>
+            </div>
           </div>
         </div>
         <div class="filter-row">
           <div class="filter-label"><svg class="icon"><use href="#i-calendar"/></svg>日期</div>
-          <div class="options" data-filter-group="date" role="group" aria-label="资讯发布日期">
-            <button class="option active" type="button" data-value="all" aria-pressed="true">全部</button>
-            <button class="option" type="button" data-value="24h" aria-pressed="false">24小时</button>
-            <button class="option" type="button" data-value="3d" aria-pressed="false">3天</button>
-            <button class="option" type="button" data-value="7d" aria-pressed="false">7天</button>
-            <button class="option" type="button" data-value="30d" aria-pressed="false">30天</button>
-            <button class="option" type="button" data-value="custom" aria-pressed="false" aria-controls="dateModal" aria-expanded="false"><svg class="icon-sm icon"><use href="#i-calendar"/></svg>自定义日期</button>
+          <div class="filter-scroll" data-filter-scroll>
+            <div class="options" data-filter-group="date" role="group" aria-label="资讯发布日期">
+              <button class="option active" type="button" data-value="all" aria-pressed="true">全部</button>
+              <button class="option" type="button" data-value="24h" aria-pressed="false">24小时</button>
+              <button class="option" type="button" data-value="3d" aria-pressed="false">3天</button>
+              <button class="option" type="button" data-value="7d" aria-pressed="false">7天</button>
+              <button class="option" type="button" data-value="30d" aria-pressed="false">30天</button>
+              <button class="option" type="button" data-value="custom" aria-pressed="false" aria-controls="dateModal" aria-expanded="false"><svg class="icon-sm icon"><use href="#i-calendar"/></svg>自定义日期</button>
+            </div>
           </div>
         </div>
         <div class="search-wrap">
@@ -167,6 +171,7 @@
 
 <script src="../../assets/js/main.js"></script>
 <script src="../../assets/js/carousel.js"></script>
+<script src="../../assets/js/filter-scroll.js"></script>
 <script src="../../assets/js/content-utils.js"></script>
 <script src="../../assets/js/daily-news.js"></script>
 </body>

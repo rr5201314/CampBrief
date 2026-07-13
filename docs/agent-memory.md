@@ -121,39 +121,59 @@
   - markdown 备份：`https://github.com/jujuyaya/juya-ai-daily/tree/main/BACKUP`
   - B 站 juya up 主公开资料
 
-## 自动化采集架构（GitHub Actions + Hermes）
+## 自动化采集架构（Hermes 手机全链路）
 
-### 分工
-- **GitHub Actions（云端，无人值守）**：定时采集 RSS 候选池，push 到仓库，发飞书通知
-- **Hermes（手机，cron 定时）**：两个定时任务对应两个采集批次，拉取最新仓库，对候选池做 AI 筛选/摘要/分类，校验后推送，处理完清空候选池
+### Hermes cron 当前配置（2026-07-13）
 
-### 事件触发机制（cron 定时，两批次，两个 skill）
-1. GitHub Actions 云端定时采集候选池 → push 到仓库
-2. Hermes（手机）设两个 cron 定时任务，分别触发两个 skill：
-   - 早间批次（如 08:40）：触发 `campbrief-daily-news` skill，处理 GitHub Actions 08:10 采集的候选（排除 juya）
-   - 午间批次（如 13:40）：触发 `campbrief-daily-news-juya` skill，处理 GitHub Actions 13:10 采集的 juya AI 日报
-3. 两个 skill 共享同一个 `data/daily-news.json` 发布文件和同一个候选池 `data/daily-news-raw.json`，但各自只处理自己负责的源
-4. Hermes 每次执行 skill：git pull → 读取候选池 → 编辑筛选 → 校验 → push → **清空候选池**
-5. 清空候选池确保两个批次各自只处理本批新候选，不会重复处理
+手机上的 Hermes agent 已配置以下三个定时任务。cron 的职责是**只加载对应 skill 并严格按其中完整流程执行**；业务规则、采集参数、校验和推送行为必须维护在 skill 内，而不是复制到 cron prompt 中。
 
-### 为什么用 cron 而非事件触发
-飞书 `im.message.receive_v1` 事件只对**用户**发的消息触发，**机器人发的消息不触发**该事件。
-所以 GitHub Actions 自定义机器人发的 @ 消息，nienie 收不到事件。改为 nenie 用 cron 定时拉取仓库，
-检查候选池是否有待处理条目。GitHub Actions 的飞书通知仅作提醒，不作为触发机制。
+- 三个 skill 的 `campbrief.repo_path` 默认值统一为 `~/projects/CampBrief`，对应手机上的 `/data/data/com.termux/files/home/projects/CampBrief`；若 Hermes 配置已有该项，以配置值为准。
+
+- `campbrief-daily-news`
+
+  ```text
+  读取 /data/data/com.termux/files/home/projects/CampBrief/scripts/hermes/skills/CampBrief/campbrief-daily-news/SKILL.md，按照其中的完整流程执行。
+  ```
+
+- `campbrief-exams`
+
+  ```text
+  读取 /data/data/com.termux/files/home/projects/CampBrief/scripts/hermes/skills/CampBrief/campbrief-exams/SKILL.md，按照其中的完整流程执行。
+  ```
+
+- `campbrief-daily-news-juya`
+
+  ```text
+  读取 /data/data/com.termux/files/home/projects/CampBrief/scripts/hermes/skills/CampBrief/campbrief-daily-news-juya/SKILL.md，按照其中的完整流程执行。
+  ```
+
+### 运行边界与流程
+
+- **Hermes（手机，cron）** 是唯一的日常执行端；GitHub 仅作为远程仓库和 GitHub Pages 发布来源。
+- `campbrief-daily-news`：先同步并确认工作区干净 → 本地采集非 juya RSS → 同步 GitHub 趋势 → 编辑、核验、校验 → 本地提交 `daily-news.json` 与 `github-trending.json` → **再次 `git pull --ff-only` → `git push`** → 推送成功后清空本次候选池。
+- `campbrief-daily-news-juya`：同样独立执行，但只采集 juya 日报、先拆分日报再编辑；它与前者共用发布文件 `data/daily-news.json`，不共用候选池。
+- `campbrief-exams`：独立巡检官方考试公告、更新 `data/exams.json` 并推送。
+- 任务必须在 `git status --porcelain --untracked-files=no` 无输出、开始时 `git pull --ff-only` 与遗留提交重试 `git push` 都成功后才继续；每次最终推送前还必须再次执行 `git pull --ff-only`。任一拉取或推送失败时安全停止，保留本地提交与候选池，禁止合并、变基或基于过期数据发布。
+- 三个 skill 使用 `local-notes/.campbrief-automation.lock` 互斥访问同一工作树；已有锁时新任务以退出码 75 停止，绝不删除别的任务的锁。正常完成或受控提前停止必须释放自己的锁；异常崩溃留下的锁必须由人工确认后清理，优先保证不发生并发写入。
+
+### 候选池规则
+
+- 候选池仅存在于手机的被忽略目录 `local-notes/candidate-pools/`：非 juya 使用 `daily-news-YYYY-MM-DD.json`，juya 使用 `juya-YYYY-MM-DD.json`。历史 `data/daily-news-raw.json` 不再参与手机自动化，也不是发布数据。
+- `scripts/collect-daily-news.py` 每次运行只保留**北京时间今天和前一天**发布且可解析日期的条目；前一天只用于采集延迟或上一次任务失败后的兜底。
+- 只有数据校验、提交和 `git push` 全部成功后，才删除本次候选池文件；失败时保留用于重试和排查。候选池永不提交到 Git。
 
 ### GitHub Actions 配置
+
 - workflow 文件：`.github/workflows/collect-news.yml`
-- 定时任务（cron 用 UTC，北京 = UTC+8）：
-  - `0 0 * * *`（北京 08:00）：采集全部源，排除 juya AI 日报（该源中午才更新）
-  - `0 5 * * *`（北京 13:00）：只采集 juya AI 日报，`--only` 模式合并到已有候选池
-- 支持手动触发（workflow_dispatch），可选批次 morning/noon/full
-- 采集后自动 commit + push `data/daily-news-raw.json`
-- 发飞书通知（机器人 webhook 存 GitHub Secret `FEISHU_WEBHOOK`）
+- 已移除 `schedule`；仅保留 `workflow_dispatch`，用于维护者手动排查采集器，不能作为生产发布链路或 Hermes 的前置依赖。
+- 手动 workflow 可选 `morning` / `noon` / `full` 批次；若人工运行，需知悉它只生成候选与趋势原始数据，正式编辑发布仍由手机 skill 完成。
 
 ### 采集脚本参数
-- 无参数：采集全部源
-- `--exclude "juya AI 日报"`：排除指定源（逗号分隔多个）
-- `--only "juya AI 日报"`：只采集指定源，合并到已有候选池（同源旧条目被新数据覆盖）
+
+- 无参数：采集全部源。
+- `--exclude "juya AI 日报"`：排除指定源（逗号分隔多个）。
+- `--only "juya AI 日报"`：只采集指定源；仅与同一 `--output` 的候选合并。
+- `--output PATH`：候选池输出路径；相对路径以仓库根目录为基准。手机 cron 必须输出到 `local-notes/candidate-pools/`。
 
 ### GitHub 趋势采集
 - 脚本：`scripts/collect-github-trending.py`
@@ -168,41 +188,15 @@
 - 优先级规则：
   - 周榜/月榜：固定 `priority=4`（最高，进入首页看板和轮播）
   - 日榜：默认 `priority=2`，由 agent 根据项目质量判断是否调整
-- `chinese_summary` 和 `solves_what` 由脚本留空，初始数据已手动填充；后续新增仓库需 Hermes skill 填充
+- `chinese_summary` 和 `solves_what` 由脚本留空；`campbrief-daily-news` 必须在手机端基于 README、仓库描述或官网补全，无法核验时不编造
 - 运行参数：
   - 无参数：按日期自动判断采集哪些榜单
   - `--force-all`：强制采集全部三种榜单（初始化用）
   - `--force daily|weekly|monthly`：强制只采集指定类型
-- 无需 API Token，无配额限制（直接抓取 HTML 页面）
+- 由 `campbrief-daily-news` 在手机端运行；无需 API Token（直接抓取 HTML 页面）
 - 数据保留 90 天，超出自动清理
 - 该数据为结构化数据，由脚本直接产出最终 JSON，不进入 `daily-news-raw.json` 候选池
 
-### 飞书通知
-- 脚本：`scripts/notify-feishu.py`
-- 读 `data/daily-news-raw.json` 摘要，发到飞书群
-- 消息含关键词 "CampBrief"（满足飞书自定义机器人安全设置）
-- 消息末尾提示「收到通知后，在群里 @nienie 发送：执行 campbrief-daily-news」
-- webhook URL 从环境变量 `FEISHU_WEBHOOK` 或 `--webhook` 参数读取
-- 注意：飞书应用机器人收不到其他机器人发的消息事件，必须真人 @ nienie
-
-### Hermes skill 衔接（两个独立 skill）
-- `campbrief-daily-news`（早间批次）：只处理非 juya 源，步骤 1 用 `--exclude "juya AI 日报"` 采集，步骤 2 过滤掉 juya 条目
-- `campbrief-daily-news-juya`（午间批次）：只处理 juya 源，步骤 1 用 `--only "juya AI 日报"` 采集，步骤 2 只保留 juya 条目，步骤 3 必须先拆分日报再筛选
-- 两个 skill 共享发布文件 `data/daily-news.json` 和候选池 `data/daily-news-raw.json`
-- 步骤 0：`git pull --ff-only` 拉取最新候选池
-- 步骤 1：判断候选池 `candidates` 是否非空且 `collected_at` 是今天，是则跳过本地采集
-- 步骤 8：处理成功后清空候选池（写空结构），确保下次定时任务只处理新候选
-- 兜底：如果 GitHub Actions 没跑或 pull 失败，Hermes 仍可本地跑采集脚本
-
-### Hermes 侧配置要求
-- nienie 设两个 cron 定时任务：
-  - 08:30 触发 `campbrief-daily-news` skill（处理非 juya 源）
-  - 13:30 触发 `campbrief-daily-news-juya` skill（处理 juya AI 日报）
-- 候选池为空时（已处理过或 GitHub Actions 没跑），skill 会尝试本地采集作为兜底
-
-### 敏感信息
-- 飞书 webhook URL 只存 GitHub Secrets，不进仓库文件
-- workflow 文件里只引用 `${{ secrets.FEISHU_WEBHOOK }}`，日志自动打码
 
 ## Lessons Learned
 

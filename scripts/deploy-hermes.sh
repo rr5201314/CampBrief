@@ -9,10 +9,10 @@
 set -e
 
 # ---------- 配置 ----------
-REPO_DEFAULT="$HOME/CampBrief"
+REPO_DEFAULT="$HOME/projects/CampBrief"
 HERMES_SKILLS_DIR="$HOME/.hermes/skills"
-SKILL_REL="scripts/hermes/skills/CampBrief/campbrief-daily-news"
-SKILL_TARGET="$HERMES_SKILLS_DIR/CampBrief/campbrief-daily-news"
+SKILL_REL_BASE="scripts/hermes/skills/CampBrief"
+SKILL_NAMES=(campbrief-daily-news campbrief-daily-news-juya campbrief-exams)
 
 # 颜色输出
 G="\033[32m"; Y="\033[33m"; R="\033[31m"; B="\033[34m"; N="\033[0m"
@@ -55,19 +55,27 @@ if [ ! -f "$REPO/scripts/collect-daily-news.py" ]; then
 fi
 ok "采集脚本就位"
 
-# ---------- 3. 安装 skill 到 Hermes ----------
+# ---------- 3. 安装全部 skill 到 Hermes ----------
 echo
-info "安装 Hermes skill..."
+info "安装 Hermes skills..."
 mkdir -p "$HERMES_SKILLS_DIR/CampBrief"
 
 # 优先用软链接：仓库更新后 skill 自动同步
-if [ -L "$SKILL_TARGET" ] || [ -d "$SKILL_TARGET" ]; then
-  rm -rf "$SKILL_TARGET"
-fi
-ln -s "$REPO/$SKILL_REL" "$SKILL_TARGET" 2>/dev/null && ok "已软链接 skill -> $SKILL_TARGET" || {
-  warn "软链接失败，改用复制"
-  cp -r "$REPO/$SKILL_REL" "$SKILL_TARGET" && ok "已复制 skill -> $SKILL_TARGET" || { err "skill 安装失败"; exit 1; }
-}
+for SKILL_NAME in "${SKILL_NAMES[@]}"; do
+  SKILL_SOURCE="$REPO/$SKILL_REL_BASE/$SKILL_NAME"
+  SKILL_TARGET="$HERMES_SKILLS_DIR/CampBrief/$SKILL_NAME"
+  if [ ! -f "$SKILL_SOURCE/SKILL.md" ]; then
+    err "未找到 skill: $SKILL_SOURCE/SKILL.md"
+    exit 1
+  fi
+  if [ -L "$SKILL_TARGET" ] || [ -d "$SKILL_TARGET" ]; then
+    rm -rf "$SKILL_TARGET"
+  fi
+  ln -s "$SKILL_SOURCE" "$SKILL_TARGET" 2>/dev/null && ok "已软链接 $SKILL_NAME" || {
+    warn "$SKILL_NAME 软链接失败，改用复制"
+    cp -r "$SKILL_SOURCE" "$SKILL_TARGET" && ok "已复制 $SKILL_NAME" || { err "skill 安装失败"; exit 1; }
+  }
+done
 
 # 写入 repo_path 配置（若 Hermes 配置文件存在）
 CONFIG_FILE="$HOME/.hermes/config.yaml"
@@ -85,20 +93,23 @@ if [ -f "$CONFIG_FILE" ]; then
     ok "config 中已存在 campbrief.repo_path"
   fi
 else
-  warn "未找到 $CONFIG_FILE，skill 将使用默认路径 ~/CampBrief"
-  warn "若你的仓库不在 ~/CampBrief，请在 Hermes 里手动设置 campbrief.repo_path"
+  warn "未找到 $CONFIG_FILE，skill 将使用默认路径 ~/projects/CampBrief"
+  warn "若你的仓库不在 ~/projects/CampBrief，请在 Hermes 里手动设置 campbrief.repo_path"
 fi
 echo
 
 # ---------- 4. 测试采集 ----------
-info "测试采集脚本（首次可能较慢）..."
-if python3 "$REPO/scripts/collect-daily-news.py"; then
+info "测试手机端候选池采集（首次可能较慢）..."
+TEST_POOL="$REPO/local-notes/candidate-pools/deploy-smoke-test.json"
+mkdir -p "$(dirname "$TEST_POOL")"
+if python3 "$REPO/scripts/collect-daily-news.py" --exclude "juya AI 日报" --output "$TEST_POOL"; then
   echo
-  if [ -f "$REPO/data/daily-news-raw.json" ]; then
-    TOTAL=$(python3 -c "import json;print(json.load(open('$REPO/data/daily-news-raw.json'))['total'])" 2>/dev/null || echo "?")
-    ok "采集成功，候选 $TOTAL 条 -> data/daily-news-raw.json"
+  if [ -f "$TEST_POOL" ]; then
+    TOTAL=$(python3 -c "import json;print(json.load(open('$TEST_POOL'))['total'])" 2>/dev/null || echo "?")
+    rm -f "$TEST_POOL"
+    ok "采集成功，候选 $TOTAL 条；测试候选池已清空"
   else
-    warn "采集脚本执行完但未生成 raw.json，请检查输出"
+    warn "采集脚本执行完但未生成测试候选池，请检查输出"
   fi
 else
   err "采集脚本执行失败，请检查上方报错"
@@ -127,15 +138,21 @@ echo -e "${G}========================================${N}"
 echo -e "${G} 部署完成！下一步：设置定时任务${N}"
 echo -e "${G}========================================${N}"
 echo
-echo "在 Hermes 对话里直接说（任选一种频率）："
+echo "在 Hermes 中为三个任务分别创建 cron，并使用以下提示词："
 echo
-echo -e "  ${Y}「每天早上 8 点执行 campbrief-daily-news skill」${N}"
-echo -e "  ${Y}「每天 8 点和 20 点各跑一次 campbrief-daily-news」${N}"
+echo -e "  ${Y}campbrief-daily-news:${N}"
+echo "  读取 $REPO/scripts/hermes/skills/CampBrief/campbrief-daily-news/SKILL.md，按照其中的完整流程执行。"
 echo
-echo "Hermes 会自动创建 cron 任务。首次可手动触发一次验证完整流程："
+echo -e "  ${Y}campbrief-daily-news-juya:${N}"
+echo "  读取 $REPO/scripts/hermes/skills/CampBrief/campbrief-daily-news-juya/SKILL.md，按照其中的完整流程执行。"
+echo
+echo -e "  ${Y}campbrief-exams:${N}"
+echo "  读取 $REPO/scripts/hermes/skills/CampBrief/campbrief-exams/SKILL.md，按照其中的完整流程执行。"
+echo
+echo "首次可手动触发一次 campbrief-daily-news 验证完整流程："
 echo -e "  ${Y}「现在执行一次 campbrief-daily-news」${N}"
 echo
 echo "仓库路径: $REPO"
-echo "Skill 位置: $SKILL_TARGET"
+echo "Skill 目录: $HERMES_SKILLS_DIR/CampBrief"
 echo
 echo "想新增 RSS 源，编辑: $REPO/scripts/collect-daily-news.py 顶部 SOURCES 列表"

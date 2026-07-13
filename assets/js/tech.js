@@ -1,6 +1,7 @@
-// 技术板块 - 从 daily-news.json 读取 category=tech 的条目，按 subcategory 分类
-// 子分类：ai-frontier（AI 前沿）/ hardware（硬件与芯片）/ software（软件与系统）/ industry（产业与商业）
-// GitHub 趋势分类为占位，后续接入独立数据源
+// 技术板块 - 聚合两类数据源：
+//   1. data/daily-news.json 中 category=tech 的条目
+//   2. data/github-trending.json 中的 GitHub 趋势条目（subcategory=github）
+// 子分类：ai-frontier（AI 前沿）/ hardware（硬件与芯片）/ software（软件与系统）/ industry（产业与商业）/ github（GitHub 趋势）
 const state = { subcategory: "all", date: "all", customDate: "", query: "" };
 const PAGE_SIZE = 5;
 let allItems = [];
@@ -31,21 +32,37 @@ function initDOM() {
   customDateOption = document.querySelector('[data-filter-group="date"] [data-value="custom"]');
 }
 
-// 从 daily-news.json 加载技术类条目
+// 从 daily-news.json 和 github-trending.json 加载技术类条目并合并
 async function loadTechData() {
+  const techItems = [];
+
   try {
     const response = await fetch('../../data/daily-news.json', { cache: 'no-store' });
     if (response.ok) {
       const data = await response.json();
       if (data.items && data.items.length > 0) {
         // 只取 category=tech 的条目
-        return data.items.filter(item => item.category === 'tech');
+        techItems.push(...data.items.filter(item => item.category === 'tech'));
       }
     }
   } catch (error) {
     // file:// 协议下 fetch 会失败
   }
-  return [];
+
+  try {
+    const response = await fetch('../../data/github-trending.json', { cache: 'no-store' });
+    if (response.ok) {
+      const data = await response.json();
+      if (data.items && data.items.length > 0) {
+        // GitHub 趋势条目已经是 tech/github 格式
+        techItems.push(...data.items.filter(item => item.category === 'tech' && item.subcategory === 'github'));
+      }
+    }
+  } catch (error) {
+    // file:// 协议或文件缺失时忽略
+  }
+
+  return techItems;
 }
 
 // 生成卡片 HTML
@@ -148,29 +165,9 @@ function renderPagination() {
     paginationNav.innerHTML = '';
     return;
   }
+  paginationNav.dataset.totalPages = String(totalPages);
+  paginationNav.innerHTML = CampBriefPagination.render({ currentPage, totalPages });
   paginationNav.hidden = false;
-
-  const buttons = [];
-  buttons.push(`<button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} data-page="${currentPage - 1}" aria-label="上一页"><svg class="icon-sm icon"><use href="#i-chevron-left"/></svg></button>`);
-
-  const pageNumbers = computePageNumbers(currentPage, totalPages);
-  pageNumbers.forEach(p => {
-    if (p === '...') {
-      buttons.push(`<span class="page-ellipsis">…</span>`);
-    } else {
-      buttons.push(`<button class="page-btn ${p === currentPage ? 'active' : ''}" data-page="${p}" type="button" ${p === currentPage ? 'aria-current="page"' : ''}>${p}</button>`);
-    }
-  });
-
-  buttons.push(`<button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} data-page="${currentPage + 1}" aria-label="下一页"><svg class="icon-sm icon"><use href="#i-chevron-right"/></svg></button>`);
-  paginationNav.innerHTML = buttons.join('');
-}
-
-function computePageNumbers(current, total) {
-  if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1);
-  if (current <= 4) return [1, 2, 3, 4, 5, '...', total];
-  if (current >= total - 3) return [1, '...', total - 4, total - 3, total - 2, total - 1, total];
-  return [1, '...', current - 1, current, current + 1, '...', total];
 }
 
 function initFilters() {
@@ -195,18 +192,13 @@ function initFilters() {
     });
   });
 
-  if (paginationNav) {
-    paginationNav.addEventListener("click", event => {
-      const btn = event.target.closest(".page-btn");
-      if (!btn || btn.disabled) return;
-      const target = Number(btn.dataset.page);
-      if (!target || target === currentPage) return;
-      currentPage = target;
-      renderPage();
-      const cardsTop = document.getElementById("cards");
-      if (cardsTop) cardsTop.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
-  }
+  CampBriefPagination.bind(paginationNav, targetPage => {
+    if (targetPage === currentPage) return;
+    currentPage = targetPage;
+    renderPage();
+    const cardsTop = document.getElementById("cards");
+    CampBriefPagination.scrollToFirstCard(cardsTop);
+  });
 
   if (searchInput) {
     searchInput.addEventListener("input", event => {
@@ -367,6 +359,7 @@ async function init() {
   initDOM();
   initFilters();
   initDatePicker();
+  if (typeof FilterScroll !== "undefined") FilterScroll.initAll();
 
   const container = document.getElementById('cards');
   container.innerHTML = '<div class="loading-state" style="text-align: center; padding: 40px; color: var(--text-secondary, #666);">正在加载技术动态...</div>';

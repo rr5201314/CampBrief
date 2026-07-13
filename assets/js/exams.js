@@ -145,30 +145,9 @@ function renderPagination() {
     paginationNav.innerHTML = '';
     return;
   }
+  paginationNav.dataset.totalPages = String(totalPages);
+  paginationNav.innerHTML = CampBriefPagination.render({ currentPage, totalPages });
   paginationNav.hidden = false;
-
-  const buttons = [];
-  buttons.push(`<button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} data-page="${currentPage - 1}" type="button" aria-label="上一页"><svg class="icon-sm icon"><use href="#i-chevron-left"/></svg></button>`);
-
-  const pageNumbers = computePageNumbers(currentPage, totalPages);
-  pageNumbers.forEach(p => {
-    if (p === '...') {
-      buttons.push(`<span class="page-ellipsis">…</span>`);
-    } else {
-      buttons.push(`<button class="page-btn ${p === currentPage ? 'active' : ''}" data-page="${p}" type="button" ${p === currentPage ? 'aria-current="page"' : ''}>${p}</button>`);
-    }
-  });
-
-  buttons.push(`<button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} data-page="${currentPage + 1}" type="button" aria-label="下一页"><svg class="icon-sm icon"><use href="#i-chevron-right"/></svg></button>`);
-  paginationNav.innerHTML = buttons.join('');
-}
-
-// 计算要显示的页码（带省略号）
-function computePageNumbers(current, total) {
-  if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1);
-  if (current <= 4) return [1, 2, 3, 4, 5, '...', total];
-  if (current >= total - 3) return [1, '...', total - 4, total - 3, total - 2, total - 1, total];
-  return [1, '...', current - 1, current, current + 1, '...', total];
 }
 
 // 初始化筛选事件
@@ -189,18 +168,13 @@ function initFilters() {
     });
   });
 
-  if (paginationNav) {
-    paginationNav.addEventListener("click", event => {
-      const btn = event.target.closest(".page-btn");
-      if (!btn || btn.disabled) return;
-      const target = Number(btn.dataset.page);
-      if (!target || target === currentPage) return;
-      currentPage = target;
-      renderPage();
-      const cardsTop = document.getElementById("cards");
-      if (cardsTop) cardsTop.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
-  }
+  CampBriefPagination.bind(paginationNav, targetPage => {
+    if (targetPage === currentPage) return;
+    currentPage = targetPage;
+    renderPage();
+    const cardsTop = document.getElementById("cards");
+    CampBriefPagination.scrollToFirstCard(cardsTop);
+  });
 
   searchInput.addEventListener("input", event => {
     state.query = event.target.value.trim().toLowerCase();
@@ -290,6 +264,7 @@ function initExamCarousel(items) {
 async function init() {
   initDOM();
   initFilters();
+  if (typeof FilterScroll !== "undefined") FilterScroll.initAll();
 
   const container = document.getElementById('cards');
   container.innerHTML = '<div class="loading-state" role="status" style="text-align:center;padding:40px;color:var(--text-secondary,#666);">正在加载考试数据...</div>';

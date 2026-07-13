@@ -4,7 +4,7 @@
 CampBrief 每日资讯 - RSS 采集脚本（候选池生成器）
 
 职责：
-  从配置的 RSS 源抓取最新条目，归一化为统一的候选格式，写入 data/daily-news-raw.json。
+  从配置的 RSS 源抓取最新条目，归一化为统一的候选格式，写入指定候选池。
   本脚本只做确定性采集，不做编辑判断。后续由 Hermes Agent 读取候选池做筛选、摘要、分类。
 
 设计约束：
@@ -14,8 +14,9 @@ CampBrief 每日资讯 - RSS 采集脚本（候选池生成器）
 
 用法：
   python3 scripts/collect-daily-news.py              # 采集全部源
-  python3 scripts/collect-daily-news.py --exclude juya AI 日报  # 排除指定源
-  python3 scripts/collect-daily-news.py --only juya AI 日报      # 只采集指定源，合并到已有候选池
+  python3 scripts/collect-daily-news.py --exclude "juya AI 日报"  # 排除指定源
+  python3 scripts/collect-daily-news.py --only "juya AI 日报"      # 只采集指定源
+  python3 scripts/collect-daily-news.py --output local-notes/candidate-pools/news.json
 """
 
 import argparse
@@ -27,13 +28,15 @@ import sys
 import html
 import urllib.request
 import urllib.error
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 from xml.etree import ElementTree as ET
 
 # 仓库根目录（脚本位于 <root>/scripts/ 下）
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW_OUTPUT = os.path.join(ROOT, "data", "daily-news-raw.json")
+# 所有采集窗口按北京时间自然日判断，避免手机时区或 RSS 原始时区造成跨日误收录。
+BEIJING = timezone(timedelta(hours=8))
 
 # 抓取超时（秒）
 FETCH_TIMEOUT = 20
@@ -224,12 +227,12 @@ def build_candidate(title, link, pub, desc, source):
     }
 
 
-def load_existing_candidates():
+def load_existing_candidates(output_path):
     """读取已有候选池，返回 (candidates, errors) 或 ([], [])。"""
-    if not os.path.exists(RAW_OUTPUT):
+    if not os.path.exists(output_path):
         return [], []
     try:
-        with open(RAW_OUTPUT, "r", encoding="utf-8") as f:
+        with open(output_path, "r", encoding="utf-8") as f:
             data = json.load(f)
         return data.get("candidates", []), data.get("errors", [])
     except (OSError, json.JSONDecodeError):
@@ -249,11 +252,44 @@ def merge_candidates(new_items, existing_items):
     return merged
 
 
+def recent_candidates(candidates, now=None):
+    """仅保留北京时间今天和前一天发布、且日期可解析的候选。"""
+    now = now or datetime.now(BEIJING)
+    allowed_dates = {now.date(), (now - timedelta(days=1)).date()}
+    kept = []
+    for item in candidates:
+        published = str(item.get("published", "")).strip()
+        try:
+            parsed = datetime.fromisoformat(published.replace("Z", "+00:00"))
+        except ValueError:
+            try:
+                normalized = re.sub(r"\s+", " ", published)
+                parsed = datetime.strptime(normalized, "%Y-%m-%d %H:%M:%S %z")
+            except ValueError:
+                continue
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=timezone.utc)
+        if parsed.astimezone(BEIJING).date() in allowed_dates:
+            kept.append(item)
+    return kept
+
+
 def main():
     parser = argparse.ArgumentParser(description="CampBrief RSS 采集脚本")
     parser.add_argument("--exclude", metavar="NAME", help="排除指定源（按 name 匹配，可逗号分隔多个）")
-    parser.add_argument("--only", metavar="NAME", help="只采集指定源（按 name 匹配，可逗号分隔多个），结果合并到已有候选池")
+    parser.add_argument("--only", metavar="NAME", help="只采集指定源（按 name 匹配，可逗号分隔多个），结果合并到当前输出候选池")
+    parser.add_argument(
+        "--output",
+        metavar="PATH",
+        help="候选池输出路径；相对路径以仓库根目录为基准，默认 data/daily-news-raw.json",
+    )
     args = parser.parse_args()
+
+    output_path = os.path.abspath(
+        os.path.expanduser(args.output)
+        if args.output and os.path.isabs(os.path.expanduser(args.output))
+        else os.path.join(ROOT, os.path.expanduser(args.output or "data/daily-news-raw.json"))
+    )
 
     exclude_names = {n.strip() for n in (args.exclude or "").split(",") if n.strip()}
     only_names = {n.strip() for n in (args.only or "").split(",") if n.strip()}
@@ -290,7 +326,7 @@ def main():
 
     # --only 模式：合并到已有候选池
     if only_names:
-        existing_candidates, existing_errors = load_existing_candidates()
+        existing_candidates, existing_errors = load_existing_candidates(output_path)
         # 过滤掉与新采集同源的旧条目（同源用新数据覆盖）
         new_source_names = {s["name"] for s in target_sources}
         kept_existing = [c for c in existing_candidates if c.get("source") not in new_source_names]
@@ -302,6 +338,13 @@ def main():
     else:
         all_candidates = new_candidates
 
+    before_window_filter = len(all_candidates)
+    all_candidates = recent_candidates(all_candidates)
+    print(
+        f"[collect] 北京时间窗口（今天和前一天）：保留 {len(all_candidates)} 条，"
+        f"过滤 {before_window_filter - len(all_candidates)} 条过期或日期无法解析的候选"
+    )
+
     # 按发布时间降序（解析失败的排后面）
     def sort_key(c):
         try:
@@ -311,7 +354,7 @@ def main():
     all_candidates.sort(key=sort_key, reverse=True)
 
     output = {
-        "collected_at": datetime.now(timezone.utc).astimezone().isoformat(),
+        "collected_at": datetime.now(BEIJING).isoformat(),
         "total": len(all_candidates),
         "sources_ok": len(target_sources) - len(errors),
         "sources_failed": len(errors),
@@ -319,11 +362,16 @@ def main():
         "candidates": all_candidates,
     }
 
-    os.makedirs(os.path.dirname(RAW_OUTPUT), exist_ok=True)
-    with open(RAW_OUTPUT, "w", encoding="utf-8") as f:
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    with open(output_path, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
-    print(f"[collect] 完成: {len(all_candidates)} 条候选 -> {os.path.relpath(RAW_OUTPUT, ROOT)}")
+    try:
+        display_path = os.path.relpath(output_path, ROOT)
+    except ValueError:
+        # Windows 中绝对输出路径可能与仓库位于不同盘符，relpath 会抛异常。
+        display_path = output_path
+    print(f"[collect] 完成: {len(all_candidates)} 条候选 -> {display_path}")
     if errors:
         print(f"[collect] {len(errors)} 个源失败，详见 errors 字段")
 

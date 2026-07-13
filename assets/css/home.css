@@ -120,7 +120,7 @@ body.js-ready .hero-sub{
   display:flex;
   flex-direction:column;
   aspect-ratio:2/3;
-  border:1px solid var(--line);
+  border:5px solid var(--line);
   border-radius:22px;
   background:var(--panel);
   overflow:hidden;
@@ -295,6 +295,14 @@ body.js-ready .hero-sub{
   align-items:flex-start;
   justify-content:space-between;
   gap:8px;
+}
+.feed-item-badges{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  flex-wrap:wrap;
+  flex-shrink:0;
+  gap:4px;
 }
 .feed-item-title{
   font-size:14px;

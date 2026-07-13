@@ -83,24 +83,28 @@
       <section class="filter-panel" aria-label="技术筛选">
         <div class="filter-row">
           <div class="filter-label"><svg class="icon"><use href="#i-category"/></svg>技术分类</div>
-          <div class="options" data-filter-group="subcategory">
-            <button class="option active" data-value="all"><span class="option-dot"></span>全部</button>
-            <button class="option" data-value="ai-frontier"><svg class="icon-sm icon"><use href="#i-bot"/></svg>AI 前沿</button>
-            <button class="option" data-value="hardware"><svg class="icon-sm icon"><use href="#i-chip"/></svg>硬件与芯片</button>
-            <button class="option" data-value="software"><svg class="icon-sm icon"><use href="#i-code"/></svg>软件与系统</button>
-            <button class="option" data-value="industry"><svg class="icon-sm icon"><use href="#i-status"/></svg>产业与商业</button>
-            <button class="option" data-value="github"><svg class="icon-sm icon"><use href="#i-github"/></svg>GitHub 趋势</button>
+          <div class="filter-scroll" data-filter-scroll>
+            <div class="options" data-filter-group="subcategory">
+              <button class="option active" data-value="all"><span class="option-dot"></span>全部</button>
+              <button class="option" data-value="ai-frontier"><svg class="icon-sm icon"><use href="#i-bot"/></svg>AI 前沿</button>
+              <button class="option" data-value="hardware"><svg class="icon-sm icon"><use href="#i-chip"/></svg>硬件与芯片</button>
+              <button class="option" data-value="software"><svg class="icon-sm icon"><use href="#i-code"/></svg>软件与系统</button>
+              <button class="option" data-value="industry"><svg class="icon-sm icon"><use href="#i-status"/></svg>产业与商业</button>
+              <button class="option" data-value="github"><svg class="icon-sm icon"><use href="#i-github"/></svg>GitHub 趋势</button>
+            </div>
           </div>
         </div>
         <div class="filter-row">
           <div class="filter-label"><svg class="icon"><use href="#i-calendar"/></svg>日期</div>
-          <div class="options" data-filter-group="date" role="group" aria-label="技术动态发布日期">
-            <button class="option active" type="button" data-value="all" aria-pressed="true">全部</button>
-            <button class="option" type="button" data-value="24h" aria-pressed="false">24小时</button>
-            <button class="option" type="button" data-value="3d" aria-pressed="false">近3天</button>
-            <button class="option" type="button" data-value="7d" aria-pressed="false">7天</button>
-            <button class="option" type="button" data-value="30d" aria-pressed="false">30天</button>
-            <button class="option" type="button" data-value="custom" aria-pressed="false" aria-haspopup="dialog" aria-expanded="false">自定义日期</button>
+          <div class="filter-scroll" data-filter-scroll>
+            <div class="options" data-filter-group="date" role="group" aria-label="技术动态发布日期">
+              <button class="option active" type="button" data-value="all" aria-pressed="true">全部</button>
+              <button class="option" type="button" data-value="24h" aria-pressed="false">24小时</button>
+              <button class="option" type="button" data-value="3d" aria-pressed="false">近3天</button>
+              <button class="option" type="button" data-value="7d" aria-pressed="false">7天</button>
+              <button class="option" type="button" data-value="30d" aria-pressed="false">30天</button>
+              <button class="option" type="button" data-value="custom" aria-pressed="false" aria-haspopup="dialog" aria-expanded="false">自定义日期</button>
+            </div>
           </div>
         </div>
         <div class="search-wrap">
@@ -154,6 +158,7 @@
 
 <script src="../../assets/js/main.js"></script>
 <script src="../../assets/js/carousel.js"></script>
+<script src="../../assets/js/filter-scroll.js"></script>
 <script src="../../assets/js/content-utils.js"></script>
 <script src="../../assets/js/tech.js"></script>
 </body>

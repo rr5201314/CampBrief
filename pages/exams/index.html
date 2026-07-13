@@ -80,23 +80,27 @@
       <section class="filter-panel" aria-label="考试筛选">
         <div class="filter-row">
           <div class="filter-label"><svg class="icon"><use href="#i-category"/></svg>考试分类</div>
-          <div class="options" data-filter-group="category" role="group" aria-label="考试分类">
-            <button class="option active" type="button" data-value="all" aria-pressed="true"><span class="option-dot"></span>全部</button>
-            <button class="option" data-value="english"><svg class="icon-sm icon"><use href="#i-doc"/></svg>英语类</button>
-            <button class="option" data-value="computer"><svg class="icon-sm icon"><use href="#i-code"/></svg>计算机类</button>
-            <button class="option" data-value="accounting"><svg class="icon-sm icon"><use href="#i-medal"/></svg>会计类</button>
-            <button class="option" data-value="teacher"><svg class="icon-sm icon"><use href="#i-check"/></svg>教师类</button>
-            <button class="option" data-value="civil-service"><svg class="icon-sm icon"><use href="#i-status"/></svg>公务员类</button>
-            <button class="option" data-value="postgrad"><svg class="icon-sm icon"><use href="#i-trophy"/></svg>考研类</button>
+          <div class="filter-scroll" data-filter-scroll>
+            <div class="options" data-filter-group="category" role="group" aria-label="考试分类">
+              <button class="option active" type="button" data-value="all" aria-pressed="true"><span class="option-dot"></span>全部</button>
+              <button class="option" data-value="english"><svg class="icon-sm icon"><use href="#i-doc"/></svg>英语类</button>
+              <button class="option" data-value="computer"><svg class="icon-sm icon"><use href="#i-code"/></svg>计算机类</button>
+              <button class="option" data-value="accounting"><svg class="icon-sm icon"><use href="#i-medal"/></svg>会计类</button>
+              <button class="option" data-value="teacher"><svg class="icon-sm icon"><use href="#i-check"/></svg>教师类</button>
+              <button class="option" data-value="civil-service"><svg class="icon-sm icon"><use href="#i-status"/></svg>公务员类</button>
+              <button class="option" data-value="postgrad"><svg class="icon-sm icon"><use href="#i-trophy"/></svg>考研类</button>
+            </div>
           </div>
         </div>
         <div class="filter-row">
           <div class="filter-label"><svg class="icon"><use href="#i-status"/></svg>状态</div>
-          <div class="options" data-filter-group="status" role="group" aria-label="考试状态">
-            <button class="option active" type="button" data-value="all" aria-pressed="true"><span class="option-dot"></span>全部</button>
-            <button class="option" type="button" data-value="pending" aria-pressed="false"><svg class="icon-sm icon"><use href="#i-clock"/></svg>未开始</button>
-            <button class="option" type="button" data-value="open" aria-pressed="false"><svg class="icon-sm icon"><use href="#i-unlock"/></svg>可报名</button>
-            <button class="option" type="button" data-value="ended" aria-pressed="false"><svg class="icon-sm icon"><use href="#i-check"/></svg>已结束</button>
+          <div class="filter-scroll" data-filter-scroll>
+            <div class="options" data-filter-group="status" role="group" aria-label="考试状态">
+              <button class="option active" type="button" data-value="all" aria-pressed="true"><span class="option-dot"></span>全部</button>
+              <button class="option" type="button" data-value="pending" aria-pressed="false"><svg class="icon-sm icon"><use href="#i-clock"/></svg>未开始</button>
+              <button class="option" type="button" data-value="open" aria-pressed="false"><svg class="icon-sm icon"><use href="#i-unlock"/></svg>可报名</button>
+              <button class="option" type="button" data-value="ended" aria-pressed="false"><svg class="icon-sm icon"><use href="#i-check"/></svg>已结束</button>
+            </div>
           </div>
         </div>
         <div class="search-wrap">
@@ -120,6 +124,7 @@
 
 <script src="../../assets/js/main.js"></script>
 <script src="../../assets/js/carousel.js"></script>
+<script src="../../assets/js/filter-scroll.js"></script>
 <script src="../../assets/js/content-utils.js"></script>
 <script src="../../assets/js/exams.js"></script>
 </body>

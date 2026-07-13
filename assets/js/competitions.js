@@ -157,27 +157,9 @@
       return;
     }
 
-    const buttons = [];
-    buttons.push(`<button class="page-btn" ${currentPage === 1 ? "disabled" : ""} data-page="${currentPage - 1}" type="button" aria-label="上一页"><svg class="icon-sm icon"><use href="#i-chevron-left"/></svg></button>`);
-
-    getPageNumbers(currentPage, totalPages).forEach(page => {
-      if (page === "…") {
-        buttons.push('<span class="page-ellipsis" aria-hidden="true">…</span>');
-      } else {
-        buttons.push(`<button class="page-btn ${page === currentPage ? "active" : ""}" data-page="${page}" type="button" ${page === currentPage ? 'aria-current="page"' : ""}>${page}</button>`);
-      }
-    });
-
-    buttons.push(`<button class="page-btn" ${currentPage === totalPages ? "disabled" : ""} data-page="${currentPage + 1}" type="button" aria-label="下一页"><svg class="icon-sm icon"><use href="#i-chevron-right"/></svg></button>`);
-    paginationNav.innerHTML = buttons.join("");
+    paginationNav.dataset.totalPages = String(totalPages);
+    paginationNav.innerHTML = CampBriefPagination.render({ currentPage, totalPages });
     paginationNav.hidden = false;
-  }
-
-  function getPageNumbers(current, total) {
-    if (total <= 7) return Array.from({ length: total }, (_, index) => index + 1);
-    if (current <= 4) return [1, 2, 3, 4, 5, "…", total];
-    if (current >= total - 3) return [1, "…", total - 4, total - 3, total - 2, total - 1, total];
-    return [1, "…", current - 1, current, current + 1, "…", total];
   }
 
   function applyFilters() {
@@ -219,19 +201,12 @@
       applyFilters();
     });
 
-    if (paginationNav) {
-      paginationNav.addEventListener("click", event => {
-        const button = event.target.closest(".page-btn");
-        if (!button || button.disabled) return;
-
-        const targetPage = Number(button.dataset.page);
-        if (!targetPage || targetPage === currentPage) return;
-
-        currentPage = targetPage;
-        renderPage();
-        cardsContainer.scrollIntoView({ behavior: "smooth", block: "start" });
-      });
-    }
+    CampBriefPagination.bind(paginationNav, targetPage => {
+      if (targetPage === currentPage) return;
+      currentPage = targetPage;
+      renderPage();
+      CampBriefPagination.scrollToFirstCard(cardsContainer);
+    });
   }
 
   function initCarousel() {
@@ -281,6 +256,7 @@
 
   async function init() {
     bindFilters();
+    if (typeof FilterScroll !== "undefined") FilterScroll.initAll();
     cardsContainer.innerHTML = '<div class="loading-state" role="status" style="text-align:center;padding:40px;color:var(--text-secondary,#666);">正在加载竞赛数据...</div>';
     await loadData();
     applyFilters();

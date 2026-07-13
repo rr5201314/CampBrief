@@ -1,25 +1,13 @@
-# CampBrief 每日资讯采集
+# CampBrief 手动资讯采集兜底
 #
-# 架构：GitHub Actions 负责云端定时采集候选池，Hermes（手机）负责 agent 编辑决策。
-# - 08:10 北京时间：采集全部 RSS 源（排除 juya AI 日报，该源中午才更新）
-# - 13:10 北京时间：只采集 juya AI 日报，合并到已有候选池
-# - 采集完成后推送候选池到仓库，并发飞书通知
-#
-# Hermes 按自己的 cron 拉取最新仓库并执行对应 skill。
-#
-# 注意：cron 用 UTC 时间。北京时间 = UTC+8。
-#   08:10 CST = 00:10 UTC；13:10 CST = 05:10 UTC
-# 错开整点避开 GitHub Actions 高峰，降低 schedule 被延迟或跳过的概率
+# 日常的采集、编辑、校验和发布全部由手机 Hermes cron 完成。
+# 此 workflow 刻意不设 schedule，仅保留人工手动触发，供维护者排查采集器时使用。
+# 它不能作为生产发布链路或 Hermes 的前置依赖。
 
-name: 采集每日资讯
+name: 手动采集资讯候选（维护兜底）
 
 on:
-  schedule:
-    # 每天北京时间 08:10（UTC 00:10）采集除 juya 外的全部源
-    - cron: "10 0 * * *"
-    # 每天北京时间 13:10（UTC 05:10）只采集 juya AI 日报，合并到候选池
-    - cron: "10 5 * * *"
-  # 支持手动触发，用于测试
+  # 仅支持人工触发，用于采集器排查；日常生产链路只跑在手机 Hermes。
   workflow_dispatch:
     inputs:
       batch:
@@ -43,25 +31,10 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: 判断批次
+      - name: 读取手动选择的批次
         id: batch
         run: |
-          # 根据触发方式确定批次
-          if [ "${{ github.event_name }}" = "schedule" ]; then
-            # cron 触发：按 UTC 小时判断（08:10 CST=00 UTC, 13:10 CST=05 UTC）
-            UTC_HOUR=$(date -u +%H)
-            if [ "$UTC_HOUR" = "00" ]; then
-              echo "batch=morning" >> $GITHUB_OUTPUT
-            elif [ "$UTC_HOUR" = "05" ]; then
-              echo "batch=noon" >> $GITHUB_OUTPUT
-            else
-              echo "batch=full" >> $GITHUB_OUTPUT
-            fi
-          elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "batch=${{ github.event.inputs.batch }}" >> $GITHUB_OUTPUT
-          else
-            echo "batch=full" >> $GITHUB_OUTPUT
-          fi
+          echo "batch=${{ github.event.inputs.batch }}" >> $GITHUB_OUTPUT
 
       - name: 采集每日资讯候选池
         run: |
@@ -101,10 +74,3 @@ jobs:
           DATE=$(date -u +%Y-%m-%d)
           git commit -m "chore(daily-news): 采集候选池 ${BATCH} - ${DATE}"
           git push
-
-      - name: 发送飞书通知
-        env:
-          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
-        run: |
-          BATCH="${{ steps.batch.outputs.batch }}"
-          python3 scripts/notify-feishu.py --batch "$BATCH"

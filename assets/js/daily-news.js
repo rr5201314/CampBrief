@@ -164,31 +164,11 @@ function renderPagination() {
     paginationNav.innerHTML = '';
     return;
   }
+  paginationNav.dataset.totalPages = String(totalPages);
+  paginationNav.innerHTML = CampBriefPagination.render({ currentPage, totalPages });
   paginationNav.hidden = false;
+  return;
 
-  const buttons = [];
-  buttons.push(`<button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} data-page="${currentPage - 1}" aria-label="上一页"><svg class="icon-sm icon"><use href="#i-chevron-left"/></svg></button>`);
-
-  // 页码按钮：最多显示 7 个，过多时中间用省略号
-  const pageNumbers = computePageNumbers(currentPage, totalPages);
-  pageNumbers.forEach(p => {
-    if (p === '...') {
-      buttons.push(`<span class="page-ellipsis">…</span>`);
-    } else {
-      buttons.push(`<button class="page-btn ${p === currentPage ? 'active' : ''}" data-page="${p}" type="button" ${p === currentPage ? 'aria-current="page"' : ''}>${p}</button>`);
-    }
-  });
-
-  buttons.push(`<button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} data-page="${currentPage + 1}" aria-label="下一页"><svg class="icon-sm icon"><use href="#i-chevron-right"/></svg></button>`);
-  paginationNav.innerHTML = buttons.join('');
-}
-
-// 计算要显示的页码（带省略号）
-function computePageNumbers(current, total) {
-  if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1);
-  if (current <= 4) return [1, 2, 3, 4, 5, '...', total];
-  if (current >= total - 3) return [1, '...', total - 4, total - 3, total - 2, total - 1, total];
-  return [1, '...', current - 1, current, current + 1, '...', total];
 }
 
 // 初始化筛选事件
@@ -218,19 +198,13 @@ function initFilters() {
   });
 
   // 分页点击：事件委托
-  if (paginationNav) {
-    paginationNav.addEventListener("click", event => {
-      const btn = event.target.closest(".page-btn");
-      if (!btn || btn.disabled) return;
-      const target = Number(btn.dataset.page);
-      if (!target || target === currentPage) return;
-      currentPage = target;
-      renderPage();
-      // 滚回列表顶部
-      const cardsTop = document.getElementById("cards");
-      if (cardsTop) cardsTop.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
-  }
+  CampBriefPagination.bind(paginationNav, targetPage => {
+    if (targetPage === currentPage) return;
+    currentPage = targetPage;
+    renderPage();
+    const cardsTop = document.getElementById("cards");
+    CampBriefPagination.scrollToFirstCard(cardsTop);
+  });
 }
 
 // 初始化日期选择器
@@ -541,6 +515,7 @@ async function init() {
   initDOM();
   initFilters();
   initDatePicker();
+  if (typeof FilterScroll !== "undefined") FilterScroll.initAll();
   
   // 显示加载状态
   const container = document.getElementById('cards');

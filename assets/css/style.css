@@ -1,4 +1,5 @@
 :root{
+  color-scheme:dark;
   --space:#000000;
   --navy:#0F1419;
   --blue:#1D9BF0;
@@ -27,6 +28,7 @@
 }
 
 body[data-theme="x-light"]{
+  color-scheme:light;
   --space:#FFFFFF;
   --navy:#F7F9F9;
   --blue:#1D9BF0;
@@ -274,11 +276,82 @@ h1{
   font-size:15px;
   font-weight:720;
 }
+.filter-scroll{
+  position:relative;
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+  -ms-overflow-style:none;
+  cursor:grab;
+  user-select:none;
+  -webkit-user-select:none;
+}
+.filter-scroll::-webkit-scrollbar{display:none}
+.filter-scroll.is-dragging{cursor:grabbing}
+.filter-scroll::before,
+.filter-scroll::after{
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:20px;
+  pointer-events:none;
+  opacity:0;
+  transition:opacity .2s;
+  z-index:2;
+}
+.filter-scroll::before{
+  left:0;
+  background:linear-gradient(to right, var(--panel), transparent);
+}
+.filter-scroll::after{
+  right:0;
+  background:linear-gradient(to left, var(--panel), transparent);
+}
+.filter-scroll.is-scrollable:not(.is-scroll-start)::before{opacity:1}
+.filter-scroll.is-scrollable:not(.is-scroll-end)::after{opacity:1}
+.filter-slider{
+  grid-column:2;
+  margin-top:8px;
+  padding:0 10px;
+  user-select:none;
+  -webkit-user-select:none;
+}
+.filter-slider[hidden]{display:none}
+.filter-slider-track{
+  position:relative;
+  height:5px;
+  border-radius:999px;
+  background:var(--panel-2);
+  border:1px solid var(--line);
+  cursor:pointer;
+}
+.filter-slider-thumb{
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  min-width:40px;
+  border-radius:999px;
+  background:var(--option-accent);
+  transition:width .2s, background .2s;
+}
+.filter-slider-track:hover .filter-slider-thumb{
+  background:var(--accent);
+}
 .options{
   display:flex;
   align-items:center;
   flex-wrap:wrap;
   gap:10px 18px;
+}
+.filter-scroll .options{
+  flex-wrap:nowrap;
+  padding:2px 10px;
+}
+.filter-scroll .options .option{
+  white-space:nowrap;
+  flex-shrink:0;
 }
 .option{
   display:inline-flex;
@@ -740,32 +813,47 @@ body.is-date-modal-open{overflow:hidden}
   display:flex;
   align-items:center;
   justify-content:center;
-  gap:10px;
-  padding-top:28px;
+  flex-wrap:wrap;
+  column-gap:16px;
+  row-gap:12px;
+  padding-top:32px;
+}
+.pagination-controls{
+  display:flex;
+  align-items:center;
+  gap:4px;
+  padding:4px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:var(--panel);
+  box-shadow:0 3px 10px rgba(15,23,42,.04);
 }
 .page-btn{
-  width:40px;
-  height:40px;
+  width:36px;
+  height:36px;
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  border-radius:50%;
-  border:1.5px solid var(--line);
+  border:0;
+  border-radius:8px;
   color:var(--soft);
-  background:var(--panel);
+  background:transparent;
   font-size:14px;
-  font-weight:600;
-  transition:all .15s;
+  font-weight:700;
+  transition:background .15s,color .15s,transform .15s;
 }
-.page-btn:hover{
+.page-btn:hover:not(:disabled){
   color:var(--text);
-  border-color:var(--line-strong);
+  background:var(--control-hover);
 }
 .page-btn.active{
-  color:var(--text);
-  border-color:var(--text);
-  background:var(--panel);
+  color:var(--solid-action-text);
+  background:var(--solid-action-bg);
   font-weight:800;
+}
+.page-btn:focus-visible,.page-jump-input:focus-visible,.page-jump-submit:focus-visible{
+  outline:3px solid var(--focus-ring);
+  outline-offset:2px;
 }
 .page-btn:disabled{
   opacity:.4;
@@ -775,11 +863,59 @@ body.is-date-modal-open{overflow:hidden}
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  min-width:40px;
-  height:40px;
+  min-width:20px;
+  height:36px;
   color:var(--text-secondary);
   user-select:none;
 }
+.pagination-jump{
+  display:flex;
+  align-items:center;
+  gap:7px;
+  color:var(--text-secondary);
+  font-size:13px;
+  white-space:nowrap;
+}
+.pagination-jump label{display:inline-flex;align-items:center;gap:5px;}
+.page-jump-input{
+  width:3.25em;
+  height:34px;
+  padding:0 6px;
+  border:1px solid var(--line);
+  border-radius:8px;
+  color:var(--text);
+  background:var(--panel);
+  font:inherit;
+  font-weight:700;
+  text-align:center;
+  font-variant-numeric:tabular-nums;
+  appearance:textfield;
+  -moz-appearance:textfield;
+}
+.page-jump-input::-webkit-inner-spin-button,
+.page-jump-input::-webkit-outer-spin-button{
+  appearance:none;
+  -webkit-appearance:none;
+  margin:0;
+}
+body[data-theme="x-dark"] .page-jump-input,
+body[data-theme="x-dark"] .page-jump-submit{
+  background:var(--panel-2);
+  border-color:var(--line-strong);
+}
+.page-jump-submit{
+  height:34px;
+  padding:0 12px;
+  border:1px solid var(--line-strong);
+  border-radius:8px;
+  color:var(--text);
+  background:var(--panel);
+  font:inherit;
+  font-weight:700;
+  cursor:pointer;
+  transition:background .15s,border-color .15s;
+}
+.page-jump-submit:hover{background:var(--control-hover);border-color:var(--text);}
 
 /* ===== 轮播组件 - 滚轮缓慢滑动模式 ===== */
 .carousel{
@@ -1100,6 +1236,118 @@ a.btn{
   .news-detail-title{font-size:22px;}
 }
 
+/* GitHub 趋势榜单详情页 */
+.repo-list{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  margin:0 0 28px;
+}
+.repo-card{
+  display:flex;
+  gap:16px;
+  padding:18px 20px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:var(--panel-2);
+  transition:border-color .2s;
+}
+.repo-card:hover{
+  border-color:var(--line-strong);
+}
+.repo-rank{
+  flex-shrink:0;
+  font-size:22px;
+  font-weight:800;
+  color:var(--accent);
+  min-width:36px;
+  text-align:center;
+  line-height:1.4;
+}
+.repo-content{
+  flex:1;
+  min-width:0;
+}
+.repo-header{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:8px;
+}
+.repo-name{
+  font-size:16px;
+  font-weight:700;
+  color:var(--text);
+  text-decoration:none;
+  word-break:break-all;
+}
+.repo-name:hover{
+  color:var(--accent);
+  text-decoration:underline;
+}
+.repo-lang{
+  font-size:12px;
+  padding:2px 8px;
+  border-radius:6px;
+  background:var(--option-accent-soft);
+  color:var(--option-accent);
+  white-space:nowrap;
+}
+.repo-stats{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  margin-bottom:10px;
+  font-size:13px;
+  color:var(--muted);
+}
+.repo-stat{
+  display:inline-flex;
+  align-items:center;
+  gap:3px;
+}
+.repo-stat-delta{
+  color:var(--accent);
+  font-weight:600;
+}
+.repo-summary{
+  font-size:14px;
+  line-height:1.6;
+  color:var(--text);
+  margin:0 0 8px;
+}
+.repo-solves{
+  font-size:13px;
+  line-height:1.6;
+  color:var(--muted);
+  margin:0 0 10px;
+  display:flex;
+  align-items:flex-start;
+  gap:6px;
+}
+.repo-solves .icon{
+  flex-shrink:0;
+  margin-top:2px;
+}
+.repo-link{
+  font-size:13px;
+  color:var(--accent);
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  gap:4px;
+}
+.repo-link:hover{
+  text-decoration:underline;
+}
+@media(max-width:720px){
+  .repo-card{padding:14px 12px;gap:10px;}
+  .repo-rank{font-size:18px;min-width:28px;}
+  .repo-name{font-size:14px;}
+  .repo-stats{gap:10px;font-size:12px;}
+}
+
 /* 考试详情页 */
 .exam-detail{
   border:1px solid var(--line);
@@ -1370,4 +1618,9 @@ a.btn{
   .nav-link{gap:5px;padding:8px;font-size:13px}
   .nav-link.active::after{left:18px;right:18px}
   .theme-toggle{align-self:flex-start;min-height:34px;padding:0 10px;font-size:12px}
+  .pagination{padding-top:24px;gap:10px;}
+  .pagination-controls{gap:2px;padding:3px;}
+  .page-btn{width:32px;height:32px;}
+  .page-ellipsis{min-width:18px;height:32px;}
+  .pagination-jump{flex-basis:100%;justify-content:center;}
 }

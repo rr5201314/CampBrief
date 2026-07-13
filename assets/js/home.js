@@ -63,15 +63,17 @@ function buildCompetitionItem(item){
   const body = el("div", "feed-item-body");
   const top = el("div", "feed-item-top");
   top.appendChild(el("h3", "feed-item-title", escapeHtml(item.title)));
-  top.appendChild(el("span", "badge status-badge " + (STATUS_CLASS[item.status] || ""),
+  const badges = el("div", "feed-item-badges");
+  if(item.prize){
+    badges.appendChild(el("span", "badge badge-prize",
+      `<svg class="icon-sm icon"><use href="#i-medal"/></svg>${escapeHtml(item.prize)}`));
+  }
+  badges.appendChild(el("span", "badge status-badge " + (STATUS_CLASS[item.status] || ""),
     `<svg class="icon-sm icon"><use href="#i-clock"/></svg>${escapeHtml(item.statusLabel)}`));
+  top.appendChild(badges);
   body.appendChild(top);
   const meta = el("div", "meta-line");
   meta.appendChild(metaItem("#i-calendar", item.date));
-  if(item.prize){
-    meta.appendChild(el("span", "badge badge-prize",
-      `<svg class="icon-sm icon"><use href="#i-medal"/></svg>${escapeHtml(item.prize)}`));
-  }
   body.appendChild(meta);
   body.appendChild(el("p", "feed-item-desc", escapeHtml(item.desc)));
   article.appendChild(body);
@@ -329,8 +331,9 @@ async function loadCompetitionBoardData(){
     const data = await response.json();
     if (!Array.isArray(data.items)) throw new Error("竞赛数据格式无效");
 
+    // 首页只展示当前可直接报名的竞赛；其他状态保留在完整竞赛栏目中查询。
     return data.items
-      .filter(item => item.status !== "done")
+      .filter(item => item.status === "open")
       .sort(compareHomeCompetitions)
       .map(item => ({
         id: item.id || "",

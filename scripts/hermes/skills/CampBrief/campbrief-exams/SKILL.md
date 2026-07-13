@@ -9,7 +9,7 @@ metadata:
     config:
       - key: campbrief.repo_path
         description: CampBrief 仓库在本机的克隆路径
-        default: ~/CampBrief
+        default: ~/projects/CampBrief
         prompt: CampBrief 仓库路径
 ---
 
@@ -39,6 +39,28 @@ metadata:
 ## 执行步骤
 
 严格按以下顺序执行。每一步用你的 shell / 文件工具完成。
+
+### 0. 同步并保护工作区
+
+考试巡检与两个资讯 cron 共用同一仓库，开始前必须同步远程、重试上次遗留提交，并取得全局锁：
+
+```bash
+cd "$REPO"
+if [ -n "$(git status --porcelain --untracked-files=no)" ]; then
+  echo "工作区有未提交的跟踪文件改动，停止自动任务"
+  exit 1
+fi
+git pull --ff-only || exit 1
+git push || exit 1
+mkdir -p "$REPO/local-notes" || exit 1
+LOCK_DIR="$REPO/local-notes/.campbrief-automation.lock"
+if ! mkdir "$LOCK_DIR"; then
+  echo "另一个 CampBrief 自动任务仍在运行，停止本次任务"
+  exit 75
+fi
+```
+
+任一命令失败都要安全停止；不得用 merge/rebase 解决冲突，也不得基于过期数据发布。取得锁后，若后续因巡检失败、无变更或其他原因需要提前停止，必须先执行 `rmdir "$LOCK_DIR"` 再报告；不能删除启动前已存在的锁。任务异常崩溃后保留锁，优先阻止并发写入，交由人工确认后再清理。
 
 ### 1. 读取现有考试数据
 
@@ -173,16 +195,22 @@ metadata:
 - `total`：合并后的条目数
 - `source`：保持 `"CampBrief"`
 
-### 7. 提交并推送 GitHub
+### 7. 提交、拉取远程更新、推送并释放锁
 
 ```bash
 cd "$REPO"
-git add data/exams.json
-git commit -m "chore(exams): 更新考试公告与时间节点 - $(date +%Y-%m-%d)"
-git push origin main
+git add -- data/exams.json
+if git diff --cached --quiet; then
+  echo "无变更，跳过提交"
+else
+  git commit -m "chore(exams): 更新考试公告与时间节点 - $(date +%Y-%m-%d)" || { rmdir "$LOCK_DIR"; exit 1; }
+fi
+git pull --ff-only || { rmdir "$LOCK_DIR"; exit 1; }
+git push || { rmdir "$LOCK_DIR"; exit 1; }
+rmdir "$LOCK_DIR"
 ```
 
-如果没有任何变更（所有考试都没有新公告），跳过提交，只在报告中说明"本次巡检无更新"。
+如果没有任何变更（所有考试都没有新公告），仍先执行 `git pull --ff-only`，再执行 `git push` 重试上次遗留提交并释放锁，再报告"本次巡检无更新"。最终拉取或推送失败时保留本地提交、释放自己的锁并报告原因。
 
 ## 考试与官方网站列表
 
