@@ -1,23 +1,24 @@
 # CampBrief 每日资讯采集
 #
 # 架构：GitHub Actions 负责云端定时采集候选池，Hermes（手机）负责 agent 编辑决策。
-# - 08:00 北京时间：采集全部 RSS 源（排除 juya AI 日报，该源中午才更新）
-# - 13:00 北京时间：只采集 juya AI 日报，合并到已有候选池
+# - 08:10 北京时间：采集全部 RSS 源（排除 juya AI 日报，该源中午才更新）
+# - 13:10 北京时间：只采集 juya AI 日报，合并到已有候选池
 # - 采集完成后推送候选池到仓库，并发飞书通知
 #
-# Hermes 按自己的 cron 拉取最新仓库并执行 campbrief-daily-news skill。
+# Hermes 按自己的 cron 拉取最新仓库并执行对应 skill。
 #
 # 注意：cron 用 UTC 时间。北京时间 = UTC+8。
-#   08:00 CST = 00:00 UTC；13:00 CST = 05:00 UTC
+#   08:10 CST = 00:10 UTC；13:10 CST = 05:10 UTC
+# 错开整点避开 GitHub Actions 高峰，降低 schedule 被延迟或跳过的概率
 
 name: 采集每日资讯
 
 on:
   schedule:
-    # 每天北京时间 08:00（UTC 00:00）采集除 juya 外的全部源
-    - cron: "0 0 * * *"
-    # 每天北京时间 13:00（UTC 05:00）只采集 juya AI 日报，合并到候选池
-    - cron: "0 5 * * *"
+    # 每天北京时间 08:10（UTC 00:10）采集除 juya 外的全部源
+    - cron: "10 0 * * *"
+    # 每天北京时间 13:10（UTC 05:10）只采集 juya AI 日报，合并到候选池
+    - cron: "10 5 * * *"
   # 支持手动触发，用于测试
   workflow_dispatch:
     inputs:
@@ -47,7 +48,7 @@ jobs:
         run: |
           # 根据触发方式确定批次
           if [ "${{ github.event_name }}" = "schedule" ]; then
-            # cron 触发：按 UTC 小时判断
+            # cron 触发：按 UTC 小时判断（08:10 CST=00 UTC, 13:10 CST=05 UTC）
             UTC_HOUR=$(date -u +%H)
             if [ "$UTC_HOUR" = "00" ]; then
               echo "batch=morning" >> $GITHUB_OUTPUT
@@ -62,7 +63,7 @@ jobs:
             echo "batch=full" >> $GITHUB_OUTPUT
           fi
 
-      - name: 采集候选池
+      - name: 采集每日资讯候选池
         run: |
           BATCH="${{ steps.batch.outputs.batch }}"
           echo "=== 采集批次: $BATCH ==="
@@ -75,22 +76,27 @@ jobs:
             python3 scripts/collect-daily-news.py
           fi
 
+      - name: 采集 GitHub 趋势
+        run: |
+          echo "=== 采集 GitHub 趋势 ==="
+          python3 scripts/collect-github-trending.py
+
       - name: 检查是否有变更
         id: changes
         run: |
-          if git diff --quiet data/daily-news-raw.json; then
+          if git diff --quiet data/daily-news-raw.json data/github-trending.json; then
             echo "changed=false" >> $GITHUB_OUTPUT
-            echo "候选池无变更，跳过提交"
+            echo "无变更，跳过提交"
           else
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
 
-      - name: 提交候选池
+      - name: 提交变更
         if: steps.changes.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/daily-news-raw.json
+          git add data/daily-news-raw.json data/github-trending.json
           BATCH="${{ steps.batch.outputs.batch }}"
           DATE=$(date -u +%Y-%m-%d)
           git commit -m "chore(daily-news): 采集候选池 ${BATCH} - ${DATE}"

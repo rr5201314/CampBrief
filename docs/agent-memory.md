@@ -32,6 +32,7 @@
 - **数据加载**：无离线回退副本，列表页直接读取真实 JSON 数据文件
 - **输出安全**：所有模块统一用 `CampBriefContent.escapeHtml` 转义文本、`safeHttpUrl` 校验外链
 - **加载/空状态**：列表页有显式加载态，空状态带 `role="status"`，筛选按钮同步 `aria-pressed`
+- **分页交互**：四个列表页共享 `CampBriefPagination`；保留相邻页码与首尾页、省略号，并提供受总页数约束的“跳至第 N 页”输入（不显示“第 X / X 页”）。翻页后将新页首张卡片精确定位在吸顶导航下方 20px（窄屏为页面顶部 24px），窄屏分页控件自动换行。
 
 ## 考试模块数据规则
 
@@ -66,6 +67,8 @@
 - **排序规则**（`compareCompetitions`）：状态优先（可报名 open > 未开始 pending > 比赛中 ongoing > 已完赛 done）→ 赛事层次（教育部 official > 名企 enterprise > 兴趣 hobby）→ 含金量 `prestige` 降序 → 名称
 - 卡片主按钮为「查看详情」，次按钮为官网/报名（统一为资讯形式）
 - 首页竞赛看板读取 `data/competitions.json` 真实数据，卡片点击进入对应详情页
+- **首页竞赛看板筛选**：仅展示 `status=open`（可报名）的赛事；条数与分页均基于该筛选结果，未开始、比赛中和已完赛赛事仅在完整竞赛栏目中展示
+- **首页竞赛看板徽章**：赛事层级徽章（教育部认可/名企主办/兴趣练手）置于标题栏右侧，并排在状态徽章（如“可报名”）左侧；报名时间单独保留在下一行
 
 ## 轮播组件规则
 
@@ -95,11 +98,15 @@
 ## 技术板块与每日资讯的分工
 
 - **技术板块**（`pages/tech/`）：展示 `category=tech` 的条目，按 `subcategory` 分类筛选
-  - 4 个子分类：`ai-frontier`（AI 前沿）/ `hardware`（硬件与芯片）/ `software`（软件与系统）/ `industry`（产业与商业）
-  - 第 5 个分类 `github`（GitHub 趋势）为占位，后续接入独立数据源
-  - 数据源：复用 `data/daily-news.json`，前端过滤 `category=tech`
+  - 5 个子分类：`ai-frontier`（AI 前沿）/ `hardware`（硬件与芯片）/ `software`（软件与系统）/ `industry`（产业与商业）/ `github`（GitHub 趋势）
+  - 数据源：
+    - 技术动态：`data/daily-news.json` 中 `category=tech` 的条目
+    - GitHub 趋势：`data/github-trending.json` 中 `category=tech/subcategory=github` 的条目（榜单形式，每个条目含 `repos` 数组）
+  - 前端合并两个数据源后统一渲染、筛选、分页
   - 技术板块轮播：近3天 priority>=4，不足3个补 priority>=3，上限15
-- **技术详情页**：`pages/tech/detail.html`，仅展示 `category=tech` 条目，显示 `subcategory` 标签和优先级标签（头条/重磅/重要），导航高亮"技术"，返回链接指向技术列表
+- **技术详情页**：`pages/tech/detail.html`，从 `daily-news.json` 和 `github-trending.json` 合并后按不可变 `id` 查找
+  - 普通技术动态：显示标题、摘要、正文、原文链接
+  - GitHub 趋势榜单：检测到 `repos` 数组时渲染 Top 10 项目卡片列表，每张卡片含排名、仓库名（链接）、语言、Stars/Forks/新增、中文概括、解决问题说明
 - **每日资讯板块**：不显示 `category=tech` 的条目（前端过滤），只保留 AI 日常、体育、趣闻
 - **AI 分类边界**：
   - `ai`（每日资讯）：用户能用上/需要知道的（模型发布、额度重置、价格调整、备案数据、政策动态、AI 应用趣闻）
@@ -123,8 +130,8 @@
 ### 事件触发机制（cron 定时，两批次，两个 skill）
 1. GitHub Actions 云端定时采集候选池 → push 到仓库
 2. Hermes（手机）设两个 cron 定时任务，分别触发两个 skill：
-   - 早间批次（如 08:30）：触发 `campbrief-daily-news` skill，处理 GitHub Actions 08:00 采集的候选（排除 juya）
-   - 午间批次（如 13:30）：触发 `campbrief-daily-news-juya` skill，处理 GitHub Actions 13:00 采集的 juya AI 日报
+   - 早间批次（如 08:40）：触发 `campbrief-daily-news` skill，处理 GitHub Actions 08:10 采集的候选（排除 juya）
+   - 午间批次（如 13:40）：触发 `campbrief-daily-news-juya` skill，处理 GitHub Actions 13:10 采集的 juya AI 日报
 3. 两个 skill 共享同一个 `data/daily-news.json` 发布文件和同一个候选池 `data/daily-news-raw.json`，但各自只处理自己负责的源
 4. Hermes 每次执行 skill：git pull → 读取候选池 → 编辑筛选 → 校验 → push → **清空候选池**
 5. 清空候选池确保两个批次各自只处理本批新候选，不会重复处理
@@ -147,6 +154,28 @@
 - 无参数：采集全部源
 - `--exclude "juya AI 日报"`：排除指定源（逗号分隔多个）
 - `--only "juya AI 日报"`：只采集指定源，合并到已有候选池（同源旧条目被新数据覆盖）
+
+### GitHub 趋势采集
+- 脚本：`scripts/collect-github-trending.py`
+- 输出：`data/github-trending.json`
+- 数据源：GitHub 官方 Trending 页面（`https://github.com/trending?since=daily|weekly|monthly`），HTML 抓取 + 正则解析
+- 榜单类型与采集频率：
+  - 日榜：每天采集，标题如「7月12日 GitHub趋势日榜」
+  - 周榜：每周一采集，标题如「7月第2周 GitHub趋势周榜」
+  - 月榜：每月1日采集，标题如「7月 GitHub趋势月榜」
+- 每个榜单条目含 `repos` 数组（Top 10 项目），每个 repo 含 name/url/language/stars/forks/stars_delta/description/chinese_summary/solves_what
+- ID 格式：`github-{daily|weekly|monthly}-{YYYY-MM-DD}`，稳定不变
+- 优先级规则：
+  - 周榜/月榜：固定 `priority=4`（最高，进入首页看板和轮播）
+  - 日榜：默认 `priority=2`，由 agent 根据项目质量判断是否调整
+- `chinese_summary` 和 `solves_what` 由脚本留空，初始数据已手动填充；后续新增仓库需 Hermes skill 填充
+- 运行参数：
+  - 无参数：按日期自动判断采集哪些榜单
+  - `--force-all`：强制采集全部三种榜单（初始化用）
+  - `--force daily|weekly|monthly`：强制只采集指定类型
+- 无需 API Token，无配额限制（直接抓取 HTML 页面）
+- 数据保留 90 天，超出自动清理
+- 该数据为结构化数据，由脚本直接产出最终 JSON，不进入 `daily-news-raw.json` 候选池
 
 ### 飞书通知
 - 脚本：`scripts/notify-feishu.py`
