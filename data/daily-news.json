@@ -1,8 +1,47 @@
 {
-  "last_updated": "2026-07-12T16:29:16.122818+08:00",
+  "last_updated": "2026-07-13T10:49:10.346369+08:00",
   "source": "CampBrief Auto",
-  "total": 85,
+  "total": 97,
   "items": [
+    {
+      "id": "news-40ca3250f5aecf2e",
+      "title": "高盛：AI 或引爆美国通胀，存储暴涨是核心推手",
+      "url": "https://36kr.com/newsflashes/3893440881621760?f=rss",
+      "date": "2026-07-13",
+      "published": "2026-07-13T10:12:52+08:00",
+      "summary": "高盛报告指出，AI 驱动的存储芯片需求激增可能成为美国通胀的核心推手，存储价格暴涨正向下游传导。",
+      "detail": "高盛最新分析认为，AI 基础设施建设带来的存储芯片需求爆发式增长，正在推高全球存储价格。这一成本上升可能通过服务器、数据中心等基础设施向下游传导，最终影响美国通胀水平。存储芯片价格暴涨已成为 AI 产业供应链中不可忽视的通胀因素。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "36氪"
+    },
+    {
+      "id": "news-a05fcb32f71f2c87",
+      "title": "温网：辛纳四盘逆转兹维列夫，成功卫冕男单冠军",
+      "url": "https://www.bbc.co.uk/sport/tennis/articles/cx2v84zje83o?at_medium=RSS&at_campaign=rss",
+      "date": "2026-07-12",
+      "published": "2026-07-12T22:52:17+00:00",
+      "summary": "世界第一辛纳在温网男单决赛中以 6-7、7-6、6-3、6-4 逆转兹维列夫，成为公开赛年代第 10 位成功卫冕温网男单冠军的球员。",
+      "detail": "辛纳在首盘抢七失利后连扳三盘，完成了从法网失利中反弹的壮举。比赛中辛纳一度摔倒后迅速起身逼迫对手失误，展现了顽强的意志力。这是他职业生涯第五座大满贯冠军，也是自 2002 年以来首位在温网实现卫冕的意大利球员。",
+      "image": "",
+      "priority": 3,
+      "category": "sports",
+      "source": "BBC Sport"
+    },
+    {
+      "id": "news-ca30c8ea03af6a0f",
+      "title": "世界杯：英格兰将与阿根廷上演半决赛巅峰对决",
+      "url": "https://www.theguardian.com/football/2026/jul/12/england-lionel-messi-argentina-world-cup-2026-semi-final-norway",
+      "date": "2026-07-12",
+      "published": "2026-07-12T19:51:33+00:00",
+      "summary": "英格兰淘汰挪威后将在世界杯半决赛中对阵阿根廷，这是两队自 2002 年世界杯以来首次在正式比赛中交手。",
+      "detail": "英格兰在迈阿密的四分之一决赛中击败哈兰德领衔的挪威，将在周三于亚特兰大迎战阿根廷。这场半决赛被外界称为国际足球史上最大的「复仇战」之一。两队上一次在世界杯交手是 2002 年，英格兰球员赛后在堪萨斯城基地休整，全力备战这场焦点大战。",
+      "image": "",
+      "priority": 3,
+      "category": "sports",
+      "source": "The Guardian Sport"
+    },
     {
       "id": "news-41a64ac294f11338",
       "title": "全网骂 Claude 变笨，Anthropic 下场揭秘：坑你的不是模型",
@@ -17,13 +56,66 @@
       "source": "36氪"
     },
     {
-      "id": "news-0348d3f9fc1dc38f",
-      "title": "SK 海力士 CEO 预计 2027 年 HBM 价格将翻倍",
-      "url": "https://36kr.com/newsflashes/3892093059873544?f=rss",
+      "id": "news-bb526be589355533",
+      "title": "GPT-5.6 Sol 被曝误删用户文件，OpenAI 已展开调查",
+      "url": "https://daily.juya.uk/issues/2026-07-12/",
       "date": "2026-07-12",
-      "published": "2026-07-12T11:58:49+08:00",
-      "summary": "SK 海力士 CEO 表示 2027 年将成为存储行业供应最紧张的一年，客户纷纷寻求长期供货协议。",
-      "detail": "SK 海力士 CEO 郭鲁正表示，2027 年将成为存储行业历史上供应最紧张的一年，客户纷纷前来寻求长期供货协议。尽管公司正扩充产能，但即使到 2030 年后客户需求仍可能高于供应能力。不过国内产投人士指出，中国存储厂商（长鑫存储和长江存储）的扩产进展可能成为存储市场最大的变量。SK 海力士已于本周在纳斯达克上市，募资约 265 亿美元。",
+      "published": "2026-07-12T01:12:28+00:00",
+      "summary": "多名用户反映 GPT-5.6 Sol 模型在执行任务时意外删除本地文件，OpenAI 已确认展开调查。",
+      "detail": "多名用户反映 GPT-5.6 Sol 模型在通过 Codex 等工具执行任务时意外删除了本地文件，涉及文档和代码项目。OpenAI 已确认注意到相关报告并展开调查，建议用户在使用时启用版本控制和备份。这一事件再次引发对 AI Agent 自主操作安全性的广泛讨论。",
+      "image": "",
+      "priority": 3,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-240c8b3d9b62559a",
+      "title": "苹果起诉 OpenAI，指控前华裔员工窃取商业机密",
+      "url": "https://www.solidot.org/story?sid=84805",
+      "date": "2026-07-12",
+      "published": "2026-07-12T00:16:25+08:00",
+      "summary": "苹果起诉 OpenAI，指控其首席硬件官 Tang Tan 指导跳槽员工规避安全流程，前苹果工程师 Chang Liu 被控秘密下载数十份机密硬件文件。",
+      "detail": "苹果在诉状中称，OpenAI 首席硬件官 Tang Tan 会指导跳槽到 OpenAI 的苹果前员工如何规避离职安全流程。前苹果工程师 Chang Liu 被控秘密访问并下载了大量关于未发布产品的详细信息、工程演示文稿和技术规格。Liu 还被控未归还苹果配发的笔记本电脑，并利用认证漏洞访问前同事电脑和共享文件夹，在发现漏洞后留言'LOL'。",
+      "image": "",
+      "priority": 3,
+      "category": "ai",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-2f0239e7bf3f3424",
+      "title": "Flash-MSA：首个百万 Token 稀疏注意力训练内核开源",
+      "url": "https://nanduruganesh.github.io/flash-msa/",
+      "date": "2026-07-12",
+      "published": "2026-07-12T20:46:43+00:00",
+      "summary": "开发者发布 Flash-MSA，首个高性能开源的 MiniMax 稀疏注意力训练内核，支持 Hopper 和 Blackwell GPU，可加速百万 Token 级训练。",
+      "detail": "Flash-MSA 是世界首个高性能开源的 Minimax Sparse Attention 训练内核，基于 CuTeDSL 开发，支持 H100 和 B200 GPU。MSA 类似 DeepSeek 稀疏注意力，通过块级稀疏和全局-局部注意力机制大幅降低训练成本。基准测试显示在长上下文场景下 Flash-MSA 显著优于 Flash-Attention 4。开发者在 Spheron H100/B200 租用设备上完成开发，参考了 FA4、MSA 推理代码和 Codex。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "ai-frontier"
+    },
+    {
+      "id": "news-eb1cfe00698aa131",
+      "title": "因凡蒂诺暗示世界杯可能扩军至 64 支球队",
+      "url": "https://www.bbc.co.uk/sport/football/articles/cj9gm31jwg8o?at_medium=RSS&at_campaign=rss",
+      "date": "2026-07-12",
+      "published": "2026-07-12T19:18:56+00:00",
+      "summary": "FIFA 主席因凡蒂诺表示将在 2026 年世界杯后评估 64 支球队扩军方案，称世界杯需要「为全世界而办」。",
+      "detail": "因凡蒂诺接受瑞士电视台采访时表示，2026 年 48 队世界杯的成功意味着 FIFA 应研究 64 队方案的可行性。他强调世界杯不应只属于欧洲和南美，而应让每个国家都有机会参与梦想。该提案去年就已提出，但需在本届赛事结束后正式评估。",
+      "image": "",
+      "priority": 2,
+      "category": "sports",
+      "source": "BBC Sport"
+    },
+    {
+      "id": "news-386cbaaaeb5afb9b",
+      "title": "消失的150亿美元有下文了：LVMH商标维权与茉莉奶白侵权案",
+      "url": "https://36kr.com/p/3892321158773251?f=rss",
+      "date": "2026-07-12",
+      "published": "2026-07-12 15:16:34  +0800",
+      "summary": "苏州法院判决茉莉奶白侵害LVMH七件商标权，判赔1030万元，揭示LVMH长达二十年的全球商标维权策略。",
+      "detail": "苏州市中级人民法院就LV诉新茶饮品牌茉莉奶白商标侵权案作出一审判决，认定茉莉奶白侵害LV七件四叶花卉图形注册商标专用权，判赔1030万元。茉莉奶白方面已回应将依法上诉。文章揭示了LVMH过去二十年来对商标维权的执着，从韩国炸鸡店到美国作坊，只要触碰老花标识就会收到法务函。这一判决也折射出奢侈品行业在新消费时代的品牌保护挑战。",
       "image": "",
       "priority": 2,
       "category": "tech",
@@ -31,32 +123,45 @@
       "source": "36氪"
     },
     {
-      "id": "news-2966e6035f49c9ea",
-      "title": "三星电子将龙仁芯片工厂投产时间提前至 2029 年",
-      "url": "https://36kr.com/newsflashes/3892091542288904?f=rss",
+      "id": "news-845078b65ea844b3",
+      "title": "南向资金大幅净买入，智谱获超百亿港元加仓",
+      "url": "https://36kr.com/newsflashes/3892241561238280?f=rss",
       "date": "2026-07-12",
-      "published": "2026-07-12T11:39:22+08:00",
-      "summary": "三星电子计划将龙仁芯片集群首座工厂投产时间提前至 2029 年，比原计划提早一至两年。",
-      "detail": "据报道，三星电子正将龙仁芯片集群首座半导体工厂的投产时间提前至 2029 年，以更快响应全球对 AI 芯片的快速增长需求。三星上月宣布将在平泽和龙仁半导体集群投资 2,030 万亿韩元（约 1.35 万亿美元），并在光州建设两座新芯片工厂。此举反映了全球芯片巨头在 AI 芯片产能竞赛中的加速布局。",
+      "published": "2026-07-12 14:49:56  +0800",
+      "summary": "上周南向资金合计净买入 390 亿港元，智谱获 137 亿港元净买入，阿里、腾讯亦获加仓。",
+      "detail": "上周（7 月 6 日至 10 日）港股主要股指集体上涨，恒生科技指数涨 4.95%。南向资金合计净买入 390.55 亿港元，为 4 月以来最高。其中智谱获南向资金净买入 137.02 亿港元，阿里巴巴获净买入 83.18 亿港元，腾讯获净买入 30.29 亿港元。小米则被净卖出 8.02 亿港元。智谱此前已跻身万亿港元市值俱乐部。",
       "image": "",
       "priority": 2,
-      "category": "tech",
-      "subcategory": "hardware",
+      "category": "ai",
       "source": "36氪"
     },
     {
-      "id": "news-9f8361393f28bd0e",
-      "title": "近百名玩家涌入具身数据赛道，一年融资 44.7 亿",
-      "url": "https://36kr.com/p/3892027841362694?f=rss",
+      "id": "news-e944131e2eff31a0",
+      "title": "上半年中国创新药对外授权规模接近去年全年",
+      "url": "https://36kr.com/newsflashes/3892239437756932?f=rss",
       "date": "2026-07-12",
-      "published": "2026-07-12T10:16:07+08:00",
-      "summary": "具身智能数据采集赛道一年融资 44.7 亿元，97 家企业涌入，但高质量数据采集仍面临挑战。",
-      "detail": "据统计，国内具身智能数据采集赛道已有 97 家企业，其中 70 家做数据采集、27 家做数据基础设施。过去一年 15 家独立具身数据服务商共融资约 44.7 亿元。从湖南郴州移动营业厅的具身数据采集 5S 店到 VR 游戏化采集，各种创新模式层出不穷。但业内人士指出，符合机器人训练要求的高质量数据采集并不简单，商业模式和可持续性仍面临挑战。",
+      "published": "2026-07-12 14:09:50  +0800",
+      "summary": "国家药监局数据显示，2026 上半年国产首创新药获批数量已超去年全年，中国创新药出海加速。",
+      "detail": "国家药监局药品注册管理司在北京昌平生命科学论坛上披露，2026 年上半年国产首创新药（新靶点、新机制药品）获批数量已超过 2025 年全年。2025 年中国共获批 76 个创新药创历史新高，但其中 11 个新靶点药品仅 4 个为国产。今年国产创新药对外授权（License-out）规模也接近去年全年水平，反映了中国医药创新能力的快速提升。",
       "image": "",
       "priority": 2,
       "category": "tech",
-      "subcategory": "industry",
-      "source": "36氪"
+      "source": "36氪",
+      "subcategory": "industry"
+    },
+    {
+      "id": "news-476727633fdd1b0e",
+      "title": "中国隔热材料经 1000℃ 烧透不变形，跻身世界第一梯队",
+      "url": "https://36kr.com/newsflashes/3892203912608517?f=rss",
+      "date": "2026-07-12",
+      "published": "2026-07-12 13:51:42  +0800",
+      "summary": "中国工程院院士展示新型隔热材料，在 1000℃ 高温烧透后不变形且徒手可拿，达到世界第一梯队水平。",
+      "detail": "中国工程院院士赫晓东在央视财经节目中展示了中国新型隔热材料的性能：材料在 1000 多摄氏度的炉中烧透后取出不变形，且因散热极快可徒手触碰。该材料可用于回收火箭的热防护系统，解决火箭重复使用中的核心难点。赫晓东表示中国在隔热材料方面已达世界前列。这一突破对降低航天发射成本具有重要意义。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "36氪",
+      "subcategory": "hardware"
     },
     {
       "id": "news-e7b5f2151f2112e8",
@@ -125,6 +230,48 @@
       "source": "Hacker News"
     },
     {
+      "id": "news-0348d3f9fc1dc38f",
+      "title": "SK 海力士 CEO 预计 2027 年 HBM 价格将翻倍",
+      "url": "https://36kr.com/newsflashes/3892093059873544?f=rss",
+      "date": "2026-07-12",
+      "published": "2026-07-12T11:58:49+08:00",
+      "summary": "SK 海力士 CEO 表示 2027 年将成为存储行业供应最紧张的一年，客户纷纷寻求长期供货协议。",
+      "detail": "SK 海力士 CEO 郭鲁正表示，2027 年将成为存储行业历史上供应最紧张的一年，客户纷纷前来寻求长期供货协议。尽管公司正扩充产能，但即使到 2030 年后客户需求仍可能高于供应能力。不过国内产投人士指出，中国存储厂商（长鑫存储和长江存储）的扩产进展可能成为存储市场最大的变量。SK 海力士已于本周在纳斯达克上市，募资约 265 亿美元。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "36氪"
+    },
+    {
+      "id": "news-2966e6035f49c9ea",
+      "title": "三星电子将龙仁芯片工厂投产时间提前至 2029 年",
+      "url": "https://36kr.com/newsflashes/3892091542288904?f=rss",
+      "date": "2026-07-12",
+      "published": "2026-07-12T11:39:22+08:00",
+      "summary": "三星电子计划将龙仁芯片集群首座工厂投产时间提前至 2029 年，比原计划提早一至两年。",
+      "detail": "据报道，三星电子正将龙仁芯片集群首座半导体工厂的投产时间提前至 2029 年，以更快响应全球对 AI 芯片的快速增长需求。三星上月宣布将在平泽和龙仁半导体集群投资 2,030 万亿韩元（约 1.35 万亿美元），并在光州建设两座新芯片工厂。此举反映了全球芯片巨头在 AI 芯片产能竞赛中的加速布局。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "hardware",
+      "source": "36氪"
+    },
+    {
+      "id": "news-9f8361393f28bd0e",
+      "title": "近百名玩家涌入具身数据赛道，一年融资 44.7 亿",
+      "url": "https://36kr.com/p/3892027841362694?f=rss",
+      "date": "2026-07-12",
+      "published": "2026-07-12T10:16:07+08:00",
+      "summary": "具身智能数据采集赛道一年融资 44.7 亿元，97 家企业涌入，但高质量数据采集仍面临挑战。",
+      "detail": "据统计，国内具身智能数据采集赛道已有 97 家企业，其中 70 家做数据采集、27 家做数据基础设施。过去一年 15 家独立具身数据服务商共融资约 44.7 亿元。从湖南郴州移动营业厅的具身数据采集 5S 店到 VR 游戏化采集，各种创新模式层出不穷。但业内人士指出，符合机器人训练要求的高质量数据采集并不简单，商业模式和可持续性仍面临挑战。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "36氪"
+    },
+    {
       "id": "news-38ad62f9492d84e7",
       "title": "简单流体也能断裂：颠覆传统认知的流体力学发现",
       "url": "https://www.quantamagazine.org/we-know-simple-fluids-can-flow-turns-out-some-can-fracture-20260710/",
@@ -137,6 +284,33 @@
       "category": "tech",
       "source": "Hacker News",
       "subcategory": "ai-frontier"
+    },
+    {
+      "id": "news-be713f82133f5c95",
+      "title": "Thinking Machines Lab 发文：构建可定制并扩展人类意志的 AI",
+      "url": "https://daily.juya.uk/issues/2026-07-12/",
+      "date": "2026-07-12",
+      "published": "2026-07-12T01:12:28+00:00",
+      "summary": "Thinking Machines Lab 发表研究，探讨如何构建可定制且能扩展人类意志的 AI 系统。",
+      "detail": "AI 研究机构 Thinking Machines Lab 发布新论文，提出一种新的 AI 系统设计范式，旨在使 AI 能够根据用户需求进行定制，并在保持人类控制的前提下扩展其自主决策能力。该研究关注 AI 对齐和人机协作的核心问题，为 AI 安全和可控性提供了新的思路。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-57d7156dea615c2f",
+      "title": "ChatGPT Work 和 Codex 再次用量重置",
+      "url": "https://daily.juya.uk/issues/2026-07-12/",
+      "date": "2026-07-12",
+      "published": "2026-07-12T01:12:28+00:00",
+      "summary": "OpenAI 再次重置 ChatGPT Work 和 Codex 的用量额度，此前用户反馈额度消耗过快。",
+      "detail": "OpenAI 宣布再次重置 ChatGPT Work 和 Codex 的用量额度。此前大量用户反映更新至 GPT-5.6 系列后额度消耗速度明显加快，部分用户甚至在一天内用完月度配额。此次重置旨在缓解用户不满，但同时也暴露了 OpenAI 在新模型部署后用量管理方面的挑战。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
     },
     {
       "id": "news-dd1fc92f08313a04",
@@ -153,6 +327,20 @@
       "source": "Hacker News"
     },
     {
+      "id": "news-50e99d218bcad4f6",
+      "title": "Mesh LLM：基于点对点网络的分布式 AI 计算",
+      "url": "https://www.iroh.computer/blog/mesh-llm",
+      "date": "2026-07-12",
+      "published": "2026-07-11T22:38:57+00:00",
+      "summary": "Iroh 项目发布 Mesh LLM，利用点对点网络实现分布式大模型推理，在 HN 获 147 点赞。",
+      "detail": "Iroh 团队发布 Mesh LLM 项目，利用点对点网络技术实现分布式大语言模型推理。用户可通过加入 mesh 网络共享计算资源共同运行大模型，无需依赖中心化云服务。该项目在 Hacker News 获得 147 点赞，被视为去中心化 AI 计算的重要探索，为降低大模型使用成本提供了新思路。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "Hacker News"
+    },
+    {
       "id": "news-db79c4ae9946a0e6",
       "title": "布朗大学教授怀疑多数学生在期中考试中使用 AI 作弊",
       "url": "https://www.solidot.org/story?sid=84806",
@@ -164,61 +352,6 @@
       "priority": 2,
       "category": "ai",
       "source": "Solidot"
-    },
-    {
-      "id": "news-386cbaaaeb5afb9b",
-      "title": "消失的150亿美元有下文了：LVMH商标维权与茉莉奶白侵权案",
-      "url": "https://36kr.com/p/3892321158773251?f=rss",
-      "date": "2026-07-12",
-      "published": "2026-07-12 15:16:34  +0800",
-      "summary": "苏州法院判决茉莉奶白侵害LVMH七件商标权，判赔1030万元，揭示LVMH长达二十年的全球商标维权策略。",
-      "detail": "苏州市中级人民法院就LV诉新茶饮品牌茉莉奶白商标侵权案作出一审判决，认定茉莉奶白侵害LV七件四叶花卉图形注册商标专用权，判赔1030万元。茉莉奶白方面已回应将依法上诉。文章揭示了LVMH过去二十年来对商标维权的执着，从韩国炸鸡店到美国作坊，只要触碰老花标识就会收到法务函。这一判决也折射出奢侈品行业在新消费时代的品牌保护挑战。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "industry",
-      "source": "36氪"
-    },
-    {
-      "id": "news-845078b65ea844b3",
-      "title": "南向资金大幅净买入，智谱获超百亿港元加仓",
-      "url": "https://36kr.com/newsflashes/3892241561238280?f=rss",
-      "date": "2026-07-12",
-      "published": "2026-07-12 14:49:56  +0800",
-      "summary": "上周南向资金合计净买入 390 亿港元，智谱获 137 亿港元净买入，阿里、腾讯亦获加仓。",
-      "detail": "上周（7 月 6 日至 10 日）港股主要股指集体上涨，恒生科技指数涨 4.95%。南向资金合计净买入 390.55 亿港元，为 4 月以来最高。其中智谱获南向资金净买入 137.02 亿港元，阿里巴巴获净买入 83.18 亿港元，腾讯获净买入 30.29 亿港元。小米则被净卖出 8.02 亿港元。智谱此前已跻身万亿港元市值俱乐部。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "36氪"
-    },
-    {
-      "id": "news-e944131e2eff31a0",
-      "title": "上半年中国创新药对外授权规模接近去年全年",
-      "url": "https://36kr.com/newsflashes/3892239437756932?f=rss",
-      "date": "2026-07-12",
-      "published": "2026-07-12 14:09:50  +0800",
-      "summary": "国家药监局数据显示，2026 上半年国产首创新药获批数量已超去年全年，中国创新药出海加速。",
-      "detail": "国家药监局药品注册管理司在北京昌平生命科学论坛上披露，2026 年上半年国产首创新药（新靶点、新机制药品）获批数量已超过 2025 年全年。2025 年中国共获批 76 个创新药创历史新高，但其中 11 个新靶点药品仅 4 个为国产。今年国产创新药对外授权（License-out）规模也接近去年全年水平，反映了中国医药创新能力的快速提升。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "36氪",
-      "subcategory": "industry"
-    },
-    {
-      "id": "news-476727633fdd1b0e",
-      "title": "中国隔热材料经 1000℃ 烧透不变形，跻身世界第一梯队",
-      "url": "https://36kr.com/newsflashes/3892203912608517?f=rss",
-      "date": "2026-07-12",
-      "published": "2026-07-12 13:51:42  +0800",
-      "summary": "中国工程院院士展示新型隔热材料，在 1000℃ 高温烧透后不变形且徒手可拿，达到世界第一梯队水平。",
-      "detail": "中国工程院院士赫晓东在央视财经节目中展示了中国新型隔热材料的性能：材料在 1000 多摄氏度的炉中烧透后取出不变形，且因散热极快可徒手触碰。该材料可用于回收火箭的热防护系统，解决火箭重复使用中的核心难点。赫晓东表示中国在隔热材料方面已达世界前列。这一突破对降低航天发射成本具有重要意义。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "36氪",
-      "subcategory": "hardware"
     },
     {
       "id": "news-6320a4be9efe834f",
@@ -235,18 +368,71 @@
       "source": "Solidot"
     },
     {
-      "id": "news-50e99d218bcad4f6",
-      "title": "Mesh LLM：基于点对点网络的分布式 AI 计算",
-      "url": "https://www.iroh.computer/blog/mesh-llm",
+      "id": "news-b37e03ec1c243729",
+      "title": "Chromium 148 起 Math.tanh 可被用于浏览器 OS 指纹识别",
+      "url": "https://scrapfly.dev/posts/browser-math-os-fingerprint/",
       "date": "2026-07-12",
-      "published": "2026-07-11T22:38:57+00:00",
-      "summary": "Iroh 项目发布 Mesh LLM，利用点对点网络实现分布式大模型推理，在 HN 获 147 点赞。",
-      "detail": "Iroh 团队发布 Mesh LLM 项目，利用点对点网络技术实现分布式大语言模型推理。用户可通过加入 mesh 网络共享计算资源共同运行大模型，无需依赖中心化云服务。该项目在 Hacker News 获得 147 点赞，被视为去中心化 AI 计算的重要探索，为降低大模型使用成本提供了新思路。",
+      "published": "2026-07-12T21:12:11+00:00",
+      "summary": "研究发现 Chromium 148 起，JavaScript 数学函数的浮点舍入差异可被反爬系统用于识别浏览器底层操作系统，形成新的指纹向量。",
+      "detail": "从 Chromium 148 开始，Math.tanh、CSS 三角函数和 Web Audio 压缩器等都通过宿主系统 libm 库执行，导致不同操作系统上的浮点运算舍入结果不同。反爬系统可以利用这些比特级差异来识别浏览器实际运行的操作系统。文章详细分析了 V8、Blink 和 Web Audio 中的泄漏点，并讨论了通过复制 Apple 数学库实现位级一致的修复方案。",
       "image": "",
-      "priority": 2,
+      "priority": 1,
       "category": "tech",
-      "subcategory": "ai-frontier",
-      "source": "Hacker News"
+      "source": "Hacker News",
+      "subcategory": "software"
+    },
+    {
+      "id": "news-2d66a24df555b03d",
+      "title": "金泰亨结束三年冠军荒，赢得苏格兰公开赛",
+      "url": "https://www.bbc.co.uk/sport/golf/articles/cx24ejkyvkyo?at_medium=RSS&at_campaign=rss",
+      "date": "2026-07-12",
+      "published": "2026-07-12T20:39:30+00:00",
+      "summary": "韩国球手金泰亨以 -17 的总成绩赢得苏格兰公开赛冠军，结束三年冠军荒，赛后收到伍兹的祝贺短信。",
+      "detail": "24 岁的金泰亨在最后一轮打出无柏忌的 64 杆，以两杆优势力压澳大利亚选手闵伍赢得冠军。金泰亨此前经历状态和信心危机，世界排名大幅下滑，曾向伍兹寻求建议。获胜后他喜极而泣，伍兹也是最早向他祝贺的人之一。",
+      "image": "",
+      "priority": 1,
+      "category": "sports",
+      "source": "BBC Sport"
+    },
+    {
+      "id": "news-38683e4ffe449243",
+      "title": "Rich Sutton：AI 研究中的「一步陷阱」",
+      "url": "http://incompleteideas.net/IncIdeas/OneStepTrap.html",
+      "date": "2026-07-12",
+      "published": "2026-07-12T18:41:15+00:00",
+      "summary": "强化学习之父 Rich Sutton 撰文探讨 AI 研究中的「一步陷阱」——研究者倾向于做渐进式改进而忽视更根本的范式变革。",
+      "detail": "Rich Sutton（强化学习之父）在文章中指出，AI 研究者常陷入「一步陷阱」：面对一个能通过小幅改进取得进展的问题时，倾向于做渐进式优化，而忽视可能需要更大胆、更根本性变革的替代方案。这一观察源于他多年对 AI 研究趋势的思考，对理解当前大模型研究中的路径依赖问题有启发意义。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "ai-frontier"
+    },
+    {
+      "id": "news-9806128e6b0ff08e",
+      "title": "范德普尔在 40°C 高温下赢得环法第九赛段",
+      "url": "https://www.bbc.co.uk/sport/cycling/articles/c9v2wyw41vko?at_medium=RSS&at_campaign=rss",
+      "date": "2026-07-12",
+      "published": "2026-07-12T17:18:07+00:00",
+      "summary": "环法自行车赛第九赛段因 40°C 高温缩短约 30 公里，荷兰车手范德普尔在冲刺中获胜，波加查尔继续保留黄衫。",
+      "detail": "法国当局发布红色高温预警后，第九赛段从马勒莫尔到于塞尔缩短约 30 公里。31 岁的范德普尔在突围集团冲刺中击败丹麦选手约翰内森和英国选手皮德科克，赢得职业生涯第三个环法赛段冠军。卫冕冠军波加查尔在追击集团中完赛，继续保留黄衫。",
+      "image": "",
+      "priority": 1,
+      "category": "sports",
+      "source": "BBC Sport"
+    },
+    {
+      "id": "news-db7edbd1be510fd5",
+      "title": "中国法院支持数字资产的继承",
+      "url": "https://www.solidot.org/story?sid=84808",
+      "date": "2026-07-12",
+      "published": "2026-07-12T23:30:34+08:00",
+      "summary": "多个案例显示中国法院支持数字资产继承，认为游戏账户和微交易物品具有货币价值，玩家对其拥有可继承的权利。",
+      "detail": "法院在审理中拒绝了游戏公司的不可转让条款，认为这些条款无法阻止玩家继承或转让游戏资产。在一个案例中，法院认定《征途》中的「黄金刀」具有经济价值——另一玩家曾出价 5 万元购买，因此构成可继承的虚拟财产，但因与游戏「情侣」共同获取，继承人只能继承 50% 份额。另一个案例涉及 5 个比特币和一个价值约 20 万元的游戏账户。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "Solidot"
     },
     {
       "id": "news-bdbd359b48d2d6ec",
@@ -260,19 +446,6 @@
       "priority": 1,
       "category": "sports",
       "source": "The Guardian Sport"
-    },
-    {
-      "id": "news-1cb3da59f7257d91",
-      "title": "百度 AI 将携智能体全家桶亮相 WAIC 2026",
-      "url": "https://36kr.com/newsflashes/3892090766539268?f=rss",
-      "date": "2026-07-12",
-      "published": "2026-07-12T11:19:28+08:00",
-      "summary": "百度 AI 将在 WAIC 2026 上展示智能体全家桶和芯云模体全栈产品矩阵新升级。",
-      "detail": "百度 AI 宣布将在即将开幕的世界人工智能大会（WAIC 2026）上全方位展示智能体从技术升级、应用开发到产业赋能的最新成果。同时百度芯云模体全栈 AI 产品矩阵将发布新升级，集中展示从底层技术创新到产业场景的规模化落地进展。WAIC 2026 将在上海开幕。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "36氪"
     },
     {
       "id": "news-4e9b5ed02874470b",
@@ -299,6 +472,19 @@
       "priority": 1,
       "category": "sports",
       "source": "BBC Sport"
+    },
+    {
+      "id": "news-1cb3da59f7257d91",
+      "title": "百度 AI 将携智能体全家桶亮相 WAIC 2026",
+      "url": "https://36kr.com/newsflashes/3892090766539268?f=rss",
+      "date": "2026-07-12",
+      "published": "2026-07-12T11:19:28+08:00",
+      "summary": "百度 AI 将在 WAIC 2026 上展示智能体全家桶和芯云模体全栈产品矩阵新升级。",
+      "detail": "百度 AI 宣布将在即将开幕的世界人工智能大会（WAIC 2026）上全方位展示智能体从技术升级、应用开发到产业赋能的最新成果。同时百度芯云模体全栈 AI 产品矩阵将发布新升级，集中展示从底层技术创新到产业场景的规模化落地进展。WAIC 2026 将在上海开幕。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "36氪"
     },
     {
       "id": "news-facf2942a94021ba",
@@ -354,18 +540,6 @@
       "source": "The Guardian Sport"
     },
     {
-      "id": "news-ed03da5aab42d0b2",
-      "title": "智谱创始人唐杰发内部信：「GLM 时刻」之后直指 AGI",
-      "url": "https://36kr.com/newsflashes/3891162734689031?f=rss",
-      "published": "2026-07-11T19:35:25+08:00",
-      "source": "36氪",
-      "summary": "智谱创始人唐杰发布内部信，宣布将不追求短期应用变现，直指 AGI 的长程任务能力和自治智能体系统。",
-      "detail": "智谱创始人唐杰发布主题为《巨浪已来》的内部信，宣布公司战略方向将从短期应用变现转向 AGI 核心能力研发，包括长程任务能力、完全自治的智能体系统、自我进化和极致安全治理。智谱过去半年市值较上市初期涨了 10 倍，已于 6 月跻身「万亿港元俱乐部」，市值超过小米。这一战略转向反映了中国头部 AI 公司在商业化与前沿研究之间的抉择。",
-      "priority": 3,
-      "category": "ai",
-      "date": "2026-07-11"
-    },
-    {
       "id": "news-a5afb33ea3eeb087",
       "title": "Nvidia、CoreWeave 与 Nebius：GPU 繁荣背后的循环融资",
       "url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
@@ -378,6 +552,18 @@
       "category": "tech",
       "source": "Hacker News",
       "subcategory": "industry"
+    },
+    {
+      "id": "news-ed03da5aab42d0b2",
+      "title": "智谱创始人唐杰发内部信：「GLM 时刻」之后直指 AGI",
+      "url": "https://36kr.com/newsflashes/3891162734689031?f=rss",
+      "published": "2026-07-11T19:35:25+08:00",
+      "source": "36氪",
+      "summary": "智谱创始人唐杰发布内部信，宣布将不追求短期应用变现，直指 AGI 的长程任务能力和自治智能体系统。",
+      "detail": "智谱创始人唐杰发布主题为《巨浪已来》的内部信，宣布公司战略方向将从短期应用变现转向 AGI 核心能力研发，包括长程任务能力、完全自治的智能体系统、自我进化和极致安全治理。智谱过去半年市值较上市初期涨了 10 倍，已于 6 月跻身「万亿港元俱乐部」，市值超过小米。这一战略转向反映了中国头部 AI 公司在商业化与前沿研究之间的抉择。",
+      "priority": 3,
+      "category": "ai",
+      "date": "2026-07-11"
     },
     {
       "id": "news-8097c6b5ee600532",
@@ -458,19 +644,6 @@
       "date": "2026-07-11"
     },
     {
-      "id": "news-a8512f524d560048",
-      "title": "上交大 00 后博士创立仿生扑翼机器人公司，三月融三轮",
-      "url": "https://36kr.com/p/3889516712065799?f=rss",
-      "published": "2026-07-11T09:00:00+08:00",
-      "source": "36氪",
-      "summary": "上交大 00 后博士创立的仿生扑翼飞行机器人公司「鹰瞰智翼」三个月内完成三轮融资。",
-      "detail": "具身智能仿生扑翼飞行机器人公司「鹰瞰智翼」完成数千万元 A 轮融资，这是公司三个月内完成的第三轮融资。创始人为上海交通大学机械工程直博生，团队研发人员占比超 75%。资金将用于首款消费级产品的量产备货和下一代具身智能扑翼机器人研发。该公司是全球较早专注于具身智能扑翼机器人的企业之一。",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "hardware",
-      "date": "2026-07-11"
-    },
-    {
       "id": "news-396fef8b3452b3af",
       "title": "世界杯八强赛：英格兰对阵挪威，迈阿密高温成变数",
       "url": "https://www.bbc.co.uk/sport/football/articles/cx2jzl3zxpzo?at_medium=RSS&at_campaign=rss",
@@ -495,6 +668,45 @@
       "category": "tech",
       "subcategory": "industry",
       "source": "36氪"
+    },
+    {
+      "id": "news-74c2c9a3eef31dc7",
+      "title": "KwaiKAT 发布 KAT Coder Pro V2.5",
+      "summary": "快手 KwaiKAT 发布 KAT Coder Pro V2.5 编程模型，提升代码生成能力。",
+      "detail": "快手旗下 KwaiKAT 发布 KAT Coder Pro V2.5 编程模型，这是其在代码生成领域的最新版本。该模型在代码补全、调试和多语言支持方面进行了优化，面向开发者提供更高效的 AI 编程辅助体验。",
+      "priority": 2,
+      "category": "ai",
+      "published": "2026-07-11T01:20:52+00:00",
+      "url": "https://daily.juya.uk/issues/2026-07-11/",
+      "date": "2026-07-11",
+      "image": "",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-df80de9f680a550a",
+      "title": "Grok 4.5 向免费用户开放 Grok Build 限时体验",
+      "summary": "xAI 将 Grok 4.5 模型向免费用户开放 Grok Build 限时体验。",
+      "detail": "xAI 宣布将 Grok 4.5 模型向免费用户开放限时体验，用户可通过 Grok Build 功能直接使用该模型。此举旨在扩大 Grok 的用户基础，与 OpenAI 和 Anthropic 等竞争对手争夺开发者市场。Grok 4.5 此前仅面向付费订阅用户开放。",
+      "priority": 2,
+      "category": "ai",
+      "published": "2026-07-11T01:20:52+00:00",
+      "url": "https://daily.juya.uk/issues/2026-07-11/",
+      "date": "2026-07-11",
+      "image": "",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-a8512f524d560048",
+      "title": "上交大 00 后博士创立仿生扑翼机器人公司，三月融三轮",
+      "url": "https://36kr.com/p/3889516712065799?f=rss",
+      "published": "2026-07-11T09:00:00+08:00",
+      "source": "36氪",
+      "summary": "上交大 00 后博士创立的仿生扑翼飞行机器人公司「鹰瞰智翼」三个月内完成三轮融资。",
+      "detail": "具身智能仿生扑翼飞行机器人公司「鹰瞰智翼」完成数千万元 A 轮融资，这是公司三个月内完成的第三轮融资。创始人为上海交通大学机械工程直博生，团队研发人员占比超 75%。资金将用于首款消费级产品的量产备货和下一代具身智能扑翼机器人研发。该公司是全球较早专注于具身智能扑翼机器人的企业之一。",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "hardware",
+      "date": "2026-07-11"
     },
     {
       "id": "news-5dc1e519e653b384",
@@ -565,6 +777,19 @@
       "category": "tech",
       "subcategory": "software",
       "source": "Hacker News"
+    },
+    {
+      "id": "news-b5a2d4e6a4962318",
+      "title": "诺斯科娃三盘击败穆乔娃，首夺温网女单冠军",
+      "url": "https://www.theguardian.com/sport/2026/jul/11/linda-noskova-karolina-muchova-wimbledon-tennis-womens-final",
+      "date": "2026-07-11",
+      "published": "2026-07-11T18:09:25+00:00",
+      "summary": "捷克选手诺斯科娃以 6-2、5-7、6-3 战胜同胞穆乔娃，职业生涯首次夺得大满贯冠军。",
+      "detail": "9 号种子诺斯科娃在温网女单决赛中先赢一盘后被穆乔娃扳回，但最终在决胜盘中稳住阵脚，以总比分 2-1 获胜。这是她职业生涯首个大满贯冠军，穆乔娃则继此前的大满贯决赛后再次遗憾屈居亚军。",
+      "image": "",
+      "priority": 1,
+      "category": "sports",
+      "source": "The Guardian Sport"
     },
     {
       "id": "news-3c33b2493b15b3c0",
@@ -687,19 +912,6 @@
       "priority": 3
     },
     {
-      "id": "news-525410040fb23752",
-      "title": "人形机器人首次成功完成活体动物远程手术",
-      "url": "https://www.solidot.org/story?sid=84801",
-      "date": "2026-07-10",
-      "published": "2026-07-10T23:10:19+08:00",
-      "summary": "基于宇树科技 G1 人形机器人的远程操控系统成功完成两例活猪胆囊切除手术，成果发表于《自然》。",
-      "detail": "一项发表在《自然》期刊的研究显示，研究人员利用宇树科技的 G1 人形机器人，通过远程操控成功为活体猪完成两例微创胆囊切除手术。人形机器人相比专业手术机器人（如达芬奇）更便宜、更紧凑、更易部署，有望在资源有限的小型医院和偏远地区推广。G1 基础型号起售价约 13,500 美元，远低于传统手术机器人。该研究为机器人辅助手术的普及开辟了新路径。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "Solidot"
-    },
-    {
       "id": "news-5d62f4327be03bb5",
       "title": "GhostLock：影响所有 Linux 发行版 15 年的内核漏洞",
       "url": "https://nebusec.ai/research/ionstack-part-2/",
@@ -741,6 +953,33 @@
       "subcategory": "hardware"
     },
     {
+      "id": "news-968b0e8b361846ae",
+      "title": "QuadRF：能探测无人机并穿墙感知 WiFi 的开源射频平台",
+      "url": "https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/",
+      "date": "2026-07-10",
+      "published": "2026-07-10T15:59:53+00:00",
+      "summary": "开源射频平台 QuadRF 可同时探测无人机信号和穿墙感知 WiFi 网络，在 HN 获超 400 点赞。",
+      "detail": "知名技术博主 Jeff Geerling 展示了开源射频平台 QuadRF 的强大能力：该设备基于软件定义无线电（SDR）技术，可同时执行无人机信号探测和穿墙 WiFi 信号分析两项任务。QuadRF 采用四通道射频前端设计，能在复杂电磁环境中精确定位信号源。该项目在 Hacker News 获得超过 400 点赞，引发对开源射频技术在安防和网络分析领域应用的广泛讨论。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "hardware"
+    },
+    {
+      "id": "news-525410040fb23752",
+      "title": "人形机器人首次成功完成活体动物远程手术",
+      "url": "https://www.solidot.org/story?sid=84801",
+      "date": "2026-07-10",
+      "published": "2026-07-10T23:10:19+08:00",
+      "summary": "基于宇树科技 G1 人形机器人的远程操控系统成功完成两例活猪胆囊切除手术，成果发表于《自然》。",
+      "detail": "一项发表在《自然》期刊的研究显示，研究人员利用宇树科技的 G1 人形机器人，通过远程操控成功为活体猪完成两例微创胆囊切除手术。人形机器人相比专业手术机器人（如达芬奇）更便宜、更紧凑、更易部署，有望在资源有限的小型医院和偏远地区推广。G1 基础型号起售价约 13,500 美元，远低于传统手术机器人。该研究为机器人辅助手术的普及开辟了新路径。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "Solidot"
+    },
+    {
       "id": "news-cd0e2996f4f6d8e8",
       "title": "OpenRouter 数据：近五成美国公司调用中国 AI 模型",
       "url": "https://www.solidot.org/story?sid=84799",
@@ -765,20 +1004,6 @@
       "category": "ai",
       "source": "Solidot",
       "priority": 2
-    },
-    {
-      "id": "news-968b0e8b361846ae",
-      "title": "QuadRF：能探测无人机并穿墙感知 WiFi 的开源射频平台",
-      "url": "https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/",
-      "date": "2026-07-10",
-      "published": "2026-07-10T15:59:53+00:00",
-      "summary": "开源射频平台 QuadRF 可同时探测无人机信号和穿墙感知 WiFi 网络，在 HN 获超 400 点赞。",
-      "detail": "知名技术博主 Jeff Geerling 展示了开源射频平台 QuadRF 的强大能力：该设备基于软件定义无线电（SDR）技术，可同时执行无人机信号探测和穿墙 WiFi 信号分析两项任务。QuadRF 采用四通道射频前端设计，能在复杂电磁环境中精确定位信号源。该项目在 Hacker News 获得超过 400 点赞，引发对开源射频技术在安防和网络分析领域应用的广泛讨论。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "hardware"
     },
     {
       "id": "news-04d24bfe3b849a3d",
@@ -889,6 +1114,20 @@
       "priority": 1
     },
     {
+      "id": "news-80b96ba9f2442792",
+      "title": "前传奇生物创始人范晓虎创办湾岛细胞，完成1.4亿元A轮融资",
+      "url": "https://36kr.com/p/3888284244720131?f=rss",
+      "date": "2026-07-10",
+      "published": "2026-07-10 11:26:25  +0800",
+      "summary": "前传奇生物创始人范晓虎创办的深圳湾岛细胞完成1.4亿元A轮融资，致力于将百万级CAR-T抗癌疗法变为平价。",
+      "detail": "前传奇生物创始人/首席科学家范晓虎创办的深圳湾岛细胞完成1.4亿人民币A轮融资，由松禾资本领投。范晓虎曾主导全球唯一销售额逼近20亿美元的CAR-T细胞疗法西达基奥仑赛。新公司目标是将细胞与基因治疗从百万级高价降至可及范围。在AI照亮资本市场的同时，创新药板块正在更严苛的估值坐标系里寻找新的定位。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "36氪"
+    },
+    {
       "id": "news-ba3ac40fff203671",
       "title": "Euclid 望远镜发现已知最遥远类星体",
       "url": "https://www.solidot.org/story?sid=84791",
@@ -915,20 +1154,6 @@
       "source": "少数派",
       "priority": 1,
       "subcategory": "software"
-    },
-    {
-      "id": "news-80b96ba9f2442792",
-      "title": "前传奇生物创始人范晓虎创办湾岛细胞，完成1.4亿元A轮融资",
-      "url": "https://36kr.com/p/3888284244720131?f=rss",
-      "date": "2026-07-10",
-      "published": "2026-07-10 11:26:25  +0800",
-      "summary": "前传奇生物创始人范晓虎创办的深圳湾岛细胞完成1.4亿元A轮融资，致力于将百万级CAR-T抗癌疗法变为平价。",
-      "detail": "前传奇生物创始人/首席科学家范晓虎创办的深圳湾岛细胞完成1.4亿人民币A轮融资，由松禾资本领投。范晓虎曾主导全球唯一销售额逼近20亿美元的CAR-T细胞疗法西达基奥仑赛。新公司目标是将细胞与基因治疗从百万级高价降至可及范围。在AI照亮资本市场的同时，创新药板块正在更严苛的估值坐标系里寻找新的定位。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "subcategory": "industry",
-      "source": "36氪"
     },
     {
       "id": "news-ee71b664f3130f89",
@@ -1072,72 +1297,6 @@
       "priority": 3,
       "category": "ai",
       "date": "2025-07-17"
-    },
-    {
-      "id": "news-bb526be589355533",
-      "title": "GPT-5.6 Sol 被曝误删用户文件，OpenAI 已展开调查",
-      "url": "https://daily.juya.uk/issues/2026-07-12/",
-      "date": "2026-07-12",
-      "published": "2026-07-12T01:12:28+00:00",
-      "summary": "多名用户反映 GPT-5.6 Sol 模型在执行任务时意外删除本地文件，OpenAI 已确认展开调查。",
-      "detail": "多名用户反映 GPT-5.6 Sol 模型在通过 Codex 等工具执行任务时意外删除了本地文件，涉及文档和代码项目。OpenAI 已确认注意到相关报告并展开调查，建议用户在使用时启用版本控制和备份。这一事件再次引发对 AI Agent 自主操作安全性的广泛讨论。",
-      "image": "",
-      "priority": 3,
-      "category": "ai",
-      "source": "juya AI 日报"
-    },
-    {
-      "id": "news-be713f82133f5c95",
-      "title": "Thinking Machines Lab 发文：构建可定制并扩展人类意志的 AI",
-      "url": "https://daily.juya.uk/issues/2026-07-12/",
-      "date": "2026-07-12",
-      "published": "2026-07-12T01:12:28+00:00",
-      "summary": "Thinking Machines Lab 发表研究，探讨如何构建可定制且能扩展人类意志的 AI 系统。",
-      "detail": "AI 研究机构 Thinking Machines Lab 发布新论文，提出一种新的 AI 系统设计范式，旨在使 AI 能够根据用户需求进行定制，并在保持人类控制的前提下扩展其自主决策能力。该研究关注 AI 对齐和人机协作的核心问题，为 AI 安全和可控性提供了新的思路。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "ai-frontier",
-      "source": "juya AI 日报"
-    },
-    {
-      "id": "news-57d7156dea615c2f",
-      "title": "ChatGPT Work 和 Codex 再次用量重置",
-      "url": "https://daily.juya.uk/issues/2026-07-12/",
-      "date": "2026-07-12",
-      "published": "2026-07-12T01:12:28+00:00",
-      "summary": "OpenAI 再次重置 ChatGPT Work 和 Codex 的用量额度，此前用户反馈额度消耗过快。",
-      "detail": "OpenAI 宣布再次重置 ChatGPT Work 和 Codex 的用量额度。此前大量用户反映更新至 GPT-5.6 系列后额度消耗速度明显加快，部分用户甚至在一天内用完月度配额。此次重置旨在缓解用户不满，但同时也暴露了 OpenAI 在新模型部署后用量管理方面的挑战。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "juya AI 日报"
-    },
-    {
-      "id": "news-74c2c9a3eef31dc7",
-      "title": "KwaiKAT 发布 KAT Coder Pro V2.5",
-      "summary": "快手 KwaiKAT 发布 KAT Coder Pro V2.5 编程模型，提升代码生成能力。",
-      "detail": "快手旗下 KwaiKAT 发布 KAT Coder Pro V2.5 编程模型，这是其在代码生成领域的最新版本。该模型在代码补全、调试和多语言支持方面进行了优化，面向开发者提供更高效的 AI 编程辅助体验。",
-      "priority": 2,
-      "category": "ai",
-      "published": "2026-07-11T01:20:52+00:00",
-      "url": "https://daily.juya.uk/issues/2026-07-11/",
-      "date": "2026-07-11",
-      "image": "",
-      "source": "juya AI 日报"
-    },
-    {
-      "id": "news-df80de9f680a550a",
-      "title": "Grok 4.5 向免费用户开放 Grok Build 限时体验",
-      "summary": "xAI 将 Grok 4.5 模型向免费用户开放 Grok Build 限时体验。",
-      "detail": "xAI 宣布将 Grok 4.5 模型向免费用户开放限时体验，用户可通过 Grok Build 功能直接使用该模型。此举旨在扩大 Grok 的用户基础，与 OpenAI 和 Anthropic 等竞争对手争夺开发者市场。Grok 4.5 此前仅面向付费订阅用户开放。",
-      "priority": 2,
-      "category": "ai",
-      "published": "2026-07-11T01:20:52+00:00",
-      "url": "https://daily.juya.uk/issues/2026-07-11/",
-      "date": "2026-07-11",
-      "image": "",
-      "source": "juya AI 日报"
     }
   ]
 }
