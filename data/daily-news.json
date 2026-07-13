@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-13T18:30:40+08:00",
+  "last_updated": "2026-07-13T18:36:00+08:00",
   "source": "CampBrief Auto",
-  "total": 154,
+  "total": 159,
   "items": [
     {
       "id": "news-eaf4201e50b4b6f1",
@@ -15,6 +15,32 @@
       "priority": 3,
       "category": "ai",
       "source": "36氪"
+    },
+    {
+      "id": "news-77af054dbb0d7714",
+      "title": "Anthropic延长Fable 5促销体验及Claude Code周用量提升活动",
+      "url": "https://daily.juya.uk/issues/2026-07-13/",
+      "published": "2026-07-13T01:12:38+00:00",
+      "source": "juya AI 日报",
+      "priority": 3,
+      "category": "ai",
+      "summary": "Anthropic宣布将Claude Fable 5促销体验及Claude Code每周限额50%提升延长至7月19日，超限需使用额度点数或切换模型。",
+      "detail": "Anthropic宣布将Claude Fable 5促销访问及Claude Code每周限额50%提升两项限时活动延长至7月19日。Pro、Max、Team及Enterprise premium用户最多可将每周限额的50%用于Fable 5，该模型消耗限额速度快于其他模型。达到上限后需使用单独计费的额度点数继续使用Fable 5，或切换模型使用剩余限额。促销结束后Fable 5将不再包含在每周限额中。Free计划、部分Enterprise席位及API使用不包含在促销内。",
+      "date": "2026-07-13",
+      "image": ""
+    },
+    {
+      "id": "news-909e9ed3a6a3fe8a",
+      "title": "Codex临时取消5小时限额并执行即时用量重置",
+      "url": "https://daily.juya.uk/issues/2026-07-13/",
+      "published": "2026-07-13T01:12:38+00:00",
+      "source": "juya AI 日报",
+      "priority": 3,
+      "category": "ai",
+      "summary": "Codex临时取消Plus、Business和Pro用户的5小时使用限额，并为庆祝600万活跃用户执行即时用量重置。",
+      "detail": "Codex负责人Tibo宣布面向所有Plus、Business及Pro计划付费用户临时取消5小时使用限额。为庆祝达到600万活跃用户，官方在声明后一小时内执行了即时用量重置。同时网页端和移动端新增手动重置功能，此前该功能仅限桌面端。官方正推出优化措施使GPT-5.6 Sol运行更高效以降低使用量消耗。针对约2小时内不足10%用户重置未生效的问题，官方决定向该窗口期内所有点击过重置按钮的用户发放一次重置次数作为补偿。",
+      "date": "2026-07-13",
+      "image": ""
     },
     {
       "id": "news-4a5f2913fa5a7d59",
@@ -70,6 +96,73 @@
       "source": "36氪"
     },
     {
+      "id": "news-3d2192eb78c60a0c",
+      "title": "阶跃推出Step Edge端侧模型家族",
+      "url": "https://daily.juya.uk/issues/2026-07-13/",
+      "published": "2026-07-13T01:12:38+00:00",
+      "source": "juya AI 日报",
+      "priority": 2,
+      "category": "ai",
+      "summary": "阶跃发布面向手机和车载的Step Edge端侧模型家族，采用1+N架构，支持低至0.1秒本地toolcall。",
+      "detail": "阶跃发布面向手机和汽车等端侧场景的Step Edge模型家族，采用1+N架构，包含1个文本加视觉基础模型及Audio、GUI、Gen等多模态模型。该家族支持低至0.1秒的本地toolcall、文本与视觉和语音的本地处理，以及端云协同完成复杂任务。官方称在29项核心评测指标中取得第一，但对比外部模型的分数均为内部自测结果。系列模型还配套自研Step Inference NPU引擎以降低端到端延迟。",
+      "date": "2026-07-13",
+      "image": ""
+    },
+    {
+      "id": "news-bced07ffdffe8533",
+      "title": "Codex负责人分享Claude Code调用GPT 5.6 Sol配置方案",
+      "url": "https://daily.juya.uk/issues/2026-07-13/",
+      "published": "2026-07-13T01:12:38+00:00",
+      "source": "juya AI 日报",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "summary": "Codex负责人Tibo分享通过CLIProxyAPI在Claude Code中调用GPT 5.6 Sol的方法，但有用户反映使用后账号被停用。",
+      "detail": "Codex负责人Tibo分享了通过CLIProxyAPI工具在Claude Code中直接调用GPT-5.6 Sol模型的配置方案，据称设置过程仅需约五分钟，无需安装Codex独立应用。核心步骤包括安装CLIProxyAPI、连接Claude和Codex认证，以及在终端定义特定别名来设定子Agent模型与工具并发等环境变量。该分享在社区引发讨论，有用户称使用帖文提及的CLIProxyAPI后账号被停用。",
+      "date": "2026-07-13",
+      "image": ""
+    },
+    {
+      "id": "news-54999e974e316934",
+      "title": "OpenAI辟谣GPT-5.6 Sol超过272K tokens后双倍计费传闻",
+      "url": "https://daily.juya.uk/issues/2026-07-13/",
+      "published": "2026-07-13T01:12:38+00:00",
+      "source": "juya AI 日报",
+      "priority": 2,
+      "category": "ai",
+      "summary": "OpenAI工作人员辟谣GPT-5.6 Sol超过272K tokens后双倍计费的说法，确认订阅用户不会被额外收费。",
+      "detail": "针对社区中关于GPT-5.6 Sol额度消耗过快的广泛讨论，OpenAI Codex团队工作人员出面辟谣，驳斥了超过272K tokens后开始双倍计费的说法。该争议源于社区用户发布的\"省token教程\"，建议在配置文件中手动限制上下文窗口，官方明确否定了这一操作的有效性与安全性。官方指出对订阅用户而言基础价并未上涨，仅在订阅计划外手动扩展窗口才会触发额外计费。",
+      "date": "2026-07-13",
+      "image": ""
+    },
+    {
+      "id": "news-e632c08a67fab93d",
+      "title": "Zig 语言创始人批评 Anthropic 做法，引发社区讨论",
+      "url": "https://raymyers.org/post/zed-creator-calls-spade-a-spade/",
+      "date": "2026-07-13",
+      "published": "2026-07-13T08:39:39+00:00",
+      "summary": "Zig 语言创始人 Andrew Kelley 公开批评 Anthropic 的行为方式，获 182 点讨论热度。",
+      "detail": "Zig 编程语言创始人 Andrew Kelley 发文批评 Anthropic 公司的做法，文章在 Hacker News 上获得 182 点和 106 条评论。文章对比了 Zig 团队的透明沟通风格与 Anthropic 被认为不够坦诚的公关策略，引发开发者社区关于 AI 公司透明度的广泛讨论。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "software"
+    },
+    {
+      "id": "news-117bdcbf34b154a4",
+      "title": "伯克希尔 3970 亿美元押注看空过热市场",
+      "url": "https://www.disruptionbanking.com/2026/07/13/inside-berkshires-397-billion-bet-against-an-overheated-market/",
+      "date": "2026-07-13",
+      "published": "2026-07-13T08:15:52+00:00",
+      "summary": "伯克希尔·哈撒韦持有 3970 亿美元现金储备，被解读为对过热市场的看空信号。",
+      "detail": "伯克希尔·哈撒韦的现金储备达到 3970 亿美元历史新高，市场解读为巴菲特对当前过热市场的谨慎态度。在美股估值处于历史高位的背景下，这一巨额现金持仓引发了关于市场走向的广泛讨论。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Hacker News"
+    },
+    {
       "id": "news-3ccf30d06e965fa1",
       "title": "古 DNA 证实 1587 年意大利大公死于疟疾，非毒杀",
       "url": "https://www.solidot.org/story?sid=84813",
@@ -81,6 +174,20 @@
       "priority": 1,
       "category": "fun",
       "source": "Solidot"
+    },
+    {
+      "id": "news-5402e40574b95739",
+      "title": "一个「无用」的 if 语句如何将代码性能提升四倍",
+      "url": "https://purplesyringa.moe/blog/quadrupling-code-performance-with-a-useless-if/",
+      "date": "2026-07-13",
+      "published": "2026-07-13T07:37:06+00:00",
+      "summary": "技术文章展示看似无用的 if 分支如何通过影响编译器优化将性能提升四倍。",
+      "detail": "文章展示了一个表面上「无用」的 if 分支如何通过影响编译器的代码布局决策，将程序性能提升四倍。深入分析了 CPU 分支预测、指令缓存和代码对齐等底层机制，对系统编程和性能优化有重要参考价值。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "software"
     },
     {
       "id": "news-c61163b1db375192",
@@ -108,6 +215,60 @@
       "priority": 1,
       "category": "fun",
       "source": "少数派"
+    },
+    {
+      "id": "news-a1918055c47b7dea",
+      "title": "世界杯历史最佳射手 Just Fontaine 的传奇故事",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c621xndyd7no?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-13T06:57:04+00:00",
+      "summary": "回顾 1958 年世界杯单届 13 球纪录保持者 Just Fontaine 的故事——穿借来的球鞋、没拿到金靴奖。",
+      "detail": "1958 年世界杯上，法国前锋 Just Fontaine 在仅 6 场比赛中打入 13 球，创下至今无人打破的单届世界杯进球纪录。他当时穿的是队友借给他的球鞋，甚至没有获得金靴奖（该奖项 1982 年才设立），瑞典报纸送了他一把气步枪作为「神射手」奖。28 岁因伤退役后，他仅留下 21 场国际比赛 30 球的数据。",
+      "category": "fun",
+      "source": "BBC Sport",
+      "priority": 1,
+      "date": "2026-07-13",
+      "image": ""
+    },
+    {
+      "id": "news-465a3abb7958343e",
+      "title": "无需回溯的草书字体渲染算法",
+      "url": "https://mmapped.blog/posts/52-backtrack-free-cursive",
+      "date": "2026-07-13",
+      "published": "2026-07-13T06:08:12+00:00",
+      "summary": "介绍一种无需回溯的草书字体渲染算法，通过巧妙数据结构实现线性时间渲染。",
+      "detail": "文章介绍了一种无需回溯的草书字体渲染算法。传统草书渲染需要复杂回溯逻辑处理字母连笔，该算法通过巧妙的数据结构设计实现线性时间复杂度渲染，在 Hacker News 上获得 86 点和 40 条讨论。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "software"
+    },
+    {
+      "id": "news-1f6ca9fd8046a0a6",
+      "title": "Sam Neill 去世，享年 78 岁",
+      "url": "https://www.theguardian.com/film/2026/jul/13/sam-neill-death-actor-dies-aged-78",
+      "published": "2026-07-13T06:02:11+00:00",
+      "summary": "新西兰演员 Sam Neill 去世，享年 78 岁，代表作包括《侏罗纪公园》《钢琴课》《浴血黑帮》等。",
+      "detail": "新西兰演员 Sam Neill 因病去世，享年 78 岁。他以《侏罗纪公园》中的 Alan Grant 博士一角闻名全球，职业生涯横跨电影与电视，代表作还包括《钢琴课》《浴血黑帮》等。Neill 2022 年曾公开披露罹患淋巴瘤后康复，近期病情复发。",
+      "category": "fun",
+      "source": "Hacker News",
+      "priority": 1,
+      "date": "2026-07-13",
+      "image": ""
+    },
+    {
+      "id": "news-6851e9319b2486c4",
+      "title": "Beavis：开源 Gravis Ultrasound PnP 声卡复刻项目",
+      "url": "https://github.com/schlae/BeavisUltrasound",
+      "published": "2026-07-13T05:15:14+00:00",
+      "summary": "开发者公开 Gravis Ultrasound PnP ISA 声卡的完整开源硬件复刻方案，含 KiCad PCB 设计文件。",
+      "detail": "BeavisUltrasound 项目在 GitHub 上公开了经典 Gravis Ultrasound PnP ISA 声卡的完整复刻方案，包括 KiCad 原理图和 PCB 布局文件。该项目旨在让复古计算爱好者能够自行制造这款 90 年代标志性声卡。项目在 Hacker News 获得 62 点赞，展示了开源硬件社区对经典硬件复刻的持续热情。",
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "hardware",
+      "priority": 1,
+      "date": "2026-07-13",
+      "image": ""
     },
     {
       "id": "news-e4cff0eb2d93d3b3",
@@ -163,101 +324,6 @@
       "category": "tech",
       "source": "36氪",
       "subcategory": "hardware"
-    },
-    {
-      "id": "news-e632c08a67fab93d",
-      "title": "Zig 语言创始人批评 Anthropic 做法，引发社区讨论",
-      "url": "https://raymyers.org/post/zed-creator-calls-spade-a-spade/",
-      "date": "2026-07-13",
-      "published": "2026-07-13T08:39:39+00:00",
-      "summary": "Zig 语言创始人 Andrew Kelley 公开批评 Anthropic 的行为方式，获 182 点讨论热度。",
-      "detail": "Zig 编程语言创始人 Andrew Kelley 发文批评 Anthropic 公司的做法，文章在 Hacker News 上获得 182 点和 106 条评论。文章对比了 Zig 团队的透明沟通风格与 Anthropic 被认为不够坦诚的公关策略，引发开发者社区关于 AI 公司透明度的广泛讨论。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "software"
-    },
-    {
-      "id": "news-117bdcbf34b154a4",
-      "title": "伯克希尔 3970 亿美元押注看空过热市场",
-      "url": "https://www.disruptionbanking.com/2026/07/13/inside-berkshires-397-billion-bet-against-an-overheated-market/",
-      "date": "2026-07-13",
-      "published": "2026-07-13T08:15:52+00:00",
-      "summary": "伯克希尔·哈撒韦持有 3970 亿美元现金储备，被解读为对过热市场的看空信号。",
-      "detail": "伯克希尔·哈撒韦的现金储备达到 3970 亿美元历史新高，市场解读为巴菲特对当前过热市场的谨慎态度。在美股估值处于历史高位的背景下，这一巨额现金持仓引发了关于市场走向的广泛讨论。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "Hacker News"
-    },
-    {
-      "id": "news-5402e40574b95739",
-      "title": "一个「无用」的 if 语句如何将代码性能提升四倍",
-      "url": "https://purplesyringa.moe/blog/quadrupling-code-performance-with-a-useless-if/",
-      "date": "2026-07-13",
-      "published": "2026-07-13T07:37:06+00:00",
-      "summary": "技术文章展示看似无用的 if 分支如何通过影响编译器优化将性能提升四倍。",
-      "detail": "文章展示了一个表面上「无用」的 if 分支如何通过影响编译器的代码布局决策，将程序性能提升四倍。深入分析了 CPU 分支预测、指令缓存和代码对齐等底层机制，对系统编程和性能优化有重要参考价值。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "software"
-    },
-    {
-      "id": "news-a1918055c47b7dea",
-      "title": "世界杯历史最佳射手 Just Fontaine 的传奇故事",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c621xndyd7no?at_medium=RSS&at_campaign=rss",
-      "published": "2026-07-13T06:57:04+00:00",
-      "summary": "回顾 1958 年世界杯单届 13 球纪录保持者 Just Fontaine 的故事——穿借来的球鞋、没拿到金靴奖。",
-      "detail": "1958 年世界杯上，法国前锋 Just Fontaine 在仅 6 场比赛中打入 13 球，创下至今无人打破的单届世界杯进球纪录。他当时穿的是队友借给他的球鞋，甚至没有获得金靴奖（该奖项 1982 年才设立），瑞典报纸送了他一把气步枪作为「神射手」奖。28 岁因伤退役后，他仅留下 21 场国际比赛 30 球的数据。",
-      "category": "fun",
-      "source": "BBC Sport",
-      "priority": 1,
-      "date": "2026-07-13",
-      "image": ""
-    },
-    {
-      "id": "news-465a3abb7958343e",
-      "title": "无需回溯的草书字体渲染算法",
-      "url": "https://mmapped.blog/posts/52-backtrack-free-cursive",
-      "date": "2026-07-13",
-      "published": "2026-07-13T06:08:12+00:00",
-      "summary": "介绍一种无需回溯的草书字体渲染算法，通过巧妙数据结构实现线性时间渲染。",
-      "detail": "文章介绍了一种无需回溯的草书字体渲染算法。传统草书渲染需要复杂回溯逻辑处理字母连笔，该算法通过巧妙的数据结构设计实现线性时间复杂度渲染，在 Hacker News 上获得 86 点和 40 条讨论。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "software"
-    },
-    {
-      "id": "news-1f6ca9fd8046a0a6",
-      "title": "Sam Neill 去世，享年 78 岁",
-      "url": "https://www.theguardian.com/film/2026/jul/13/sam-neill-death-actor-dies-aged-78",
-      "published": "2026-07-13T06:02:11+00:00",
-      "summary": "新西兰演员 Sam Neill 去世，享年 78 岁，代表作包括《侏罗纪公园》《钢琴课》《浴血黑帮》等。",
-      "detail": "新西兰演员 Sam Neill 因病去世，享年 78 岁。他以《侏罗纪公园》中的 Alan Grant 博士一角闻名全球，职业生涯横跨电影与电视，代表作还包括《钢琴课》《浴血黑帮》等。Neill 2022 年曾公开披露罹患淋巴瘤后康复，近期病情复发。",
-      "category": "fun",
-      "source": "Hacker News",
-      "priority": 1,
-      "date": "2026-07-13",
-      "image": ""
-    },
-    {
-      "id": "news-6851e9319b2486c4",
-      "title": "Beavis：开源 Gravis Ultrasound PnP 声卡复刻项目",
-      "url": "https://github.com/schlae/BeavisUltrasound",
-      "published": "2026-07-13T05:15:14+00:00",
-      "summary": "开发者公开 Gravis Ultrasound PnP ISA 声卡的完整开源硬件复刻方案，含 KiCad PCB 设计文件。",
-      "detail": "BeavisUltrasound 项目在 GitHub 上公开了经典 Gravis Ultrasound PnP ISA 声卡的完整复刻方案，包括 KiCad 原理图和 PCB 布局文件。该项目旨在让复古计算爱好者能够自行制造这款 90 年代标志性声卡。项目在 Hacker News 获得 62 点赞，展示了开源硬件社区对经典硬件复刻的持续热情。",
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "hardware",
-      "priority": 1,
-      "date": "2026-07-13",
-      "image": ""
     },
     {
       "id": "news-6d8659b3b00acd4e",
@@ -392,48 +458,6 @@
       "subcategory": "software"
     },
     {
-      "id": "news-0348d3f9fc1dc38f",
-      "title": "SK 海力士 CEO 预计 2027 年 HBM 价格将翻倍",
-      "url": "https://36kr.com/newsflashes/3892093059873544?f=rss",
-      "date": "2026-07-12",
-      "published": "2026-07-12T11:58:49+08:00",
-      "summary": "SK 海力士 CEO 表示 2027 年将成为存储行业供应最紧张的一年，客户纷纷寻求长期供货协议。",
-      "detail": "SK 海力士 CEO 郭鲁正表示，2027 年将成为存储行业历史上供应最紧张的一年，客户纷纷前来寻求长期供货协议。尽管公司正扩充产能，但即使到 2030 年后客户需求仍可能高于供应能力。不过国内产投人士指出，中国存储厂商（长鑫存储和长江存储）的扩产进展可能成为存储市场最大的变量。SK 海力士已于本周在纳斯达克上市，募资约 265 亿美元。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "industry",
-      "source": "36氪"
-    },
-    {
-      "id": "news-2966e6035f49c9ea",
-      "title": "三星电子将龙仁芯片工厂投产时间提前至 2029 年",
-      "url": "https://36kr.com/newsflashes/3892091542288904?f=rss",
-      "date": "2026-07-12",
-      "published": "2026-07-12T11:39:22+08:00",
-      "summary": "三星电子计划将龙仁芯片集群首座工厂投产时间提前至 2029 年，比原计划提早一至两年。",
-      "detail": "据报道，三星电子正将龙仁芯片集群首座半导体工厂的投产时间提前至 2029 年，以更快响应全球对 AI 芯片的快速增长需求。三星上月宣布将在平泽和龙仁半导体集群投资 2,030 万亿韩元（约 1.35 万亿美元），并在光州建设两座新芯片工厂。此举反映了全球芯片巨头在 AI 芯片产能竞赛中的加速布局。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "hardware",
-      "source": "36氪"
-    },
-    {
-      "id": "news-9f8361393f28bd0e",
-      "title": "近百名玩家涌入具身数据赛道，一年融资 44.7 亿",
-      "url": "https://36kr.com/p/3892027841362694?f=rss",
-      "date": "2026-07-12",
-      "published": "2026-07-12T10:16:07+08:00",
-      "summary": "具身智能数据采集赛道一年融资 44.7 亿元，97 家企业涌入，但高质量数据采集仍面临挑战。",
-      "detail": "据统计，国内具身智能数据采集赛道已有 97 家企业，其中 70 家做数据采集、27 家做数据基础设施。过去一年 15 家独立具身数据服务商共融资约 44.7 亿元。从湖南郴州移动营业厅的具身数据采集 5S 店到 VR 游戏化采集，各种创新模式层出不穷。但业内人士指出，符合机器人训练要求的高质量数据采集并不简单，商业模式和可持续性仍面临挑战。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "industry",
-      "source": "36氪"
-    },
-    {
       "id": "news-e7b5f2151f2112e8",
       "title": "世界杯：阿根廷加时3-1击败瑞士，将与英格兰争夺决赛席位",
       "url": "https://www.bbc.co.uk/sport/football/videos/c07y37p7gmko?at_medium=RSS&at_campaign=rss",
@@ -500,6 +524,48 @@
       "source": "Hacker News"
     },
     {
+      "id": "news-0348d3f9fc1dc38f",
+      "title": "SK 海力士 CEO 预计 2027 年 HBM 价格将翻倍",
+      "url": "https://36kr.com/newsflashes/3892093059873544?f=rss",
+      "date": "2026-07-12",
+      "published": "2026-07-12T11:58:49+08:00",
+      "summary": "SK 海力士 CEO 表示 2027 年将成为存储行业供应最紧张的一年，客户纷纷寻求长期供货协议。",
+      "detail": "SK 海力士 CEO 郭鲁正表示，2027 年将成为存储行业历史上供应最紧张的一年，客户纷纷前来寻求长期供货协议。尽管公司正扩充产能，但即使到 2030 年后客户需求仍可能高于供应能力。不过国内产投人士指出，中国存储厂商（长鑫存储和长江存储）的扩产进展可能成为存储市场最大的变量。SK 海力士已于本周在纳斯达克上市，募资约 265 亿美元。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "36氪"
+    },
+    {
+      "id": "news-2966e6035f49c9ea",
+      "title": "三星电子将龙仁芯片工厂投产时间提前至 2029 年",
+      "url": "https://36kr.com/newsflashes/3892091542288904?f=rss",
+      "date": "2026-07-12",
+      "published": "2026-07-12T11:39:22+08:00",
+      "summary": "三星电子计划将龙仁芯片集群首座工厂投产时间提前至 2029 年，比原计划提早一至两年。",
+      "detail": "据报道，三星电子正将龙仁芯片集群首座半导体工厂的投产时间提前至 2029 年，以更快响应全球对 AI 芯片的快速增长需求。三星上月宣布将在平泽和龙仁半导体集群投资 2,030 万亿韩元（约 1.35 万亿美元），并在光州建设两座新芯片工厂。此举反映了全球芯片巨头在 AI 芯片产能竞赛中的加速布局。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "hardware",
+      "source": "36氪"
+    },
+    {
+      "id": "news-9f8361393f28bd0e",
+      "title": "近百名玩家涌入具身数据赛道，一年融资 44.7 亿",
+      "url": "https://36kr.com/p/3892027841362694?f=rss",
+      "date": "2026-07-12",
+      "published": "2026-07-12T10:16:07+08:00",
+      "summary": "具身智能数据采集赛道一年融资 44.7 亿元，97 家企业涌入，但高质量数据采集仍面临挑战。",
+      "detail": "据统计，国内具身智能数据采集赛道已有 97 家企业，其中 70 家做数据采集、27 家做数据基础设施。过去一年 15 家独立具身数据服务商共融资约 44.7 亿元。从湖南郴州移动营业厅的具身数据采集 5S 店到 VR 游戏化采集，各种创新模式层出不穷。但业内人士指出，符合机器人训练要求的高质量数据采集并不简单，商业模式和可持续性仍面临挑战。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "36氪"
+    },
+    {
       "id": "news-38ad62f9492d84e7",
       "title": "简单流体也能断裂：颠覆传统认知的流体力学发现",
       "url": "https://www.quantamagazine.org/we-know-simple-fluids-can-flow-turns-out-some-can-fracture-20260710/",
@@ -555,6 +621,20 @@
       "source": "Hacker News"
     },
     {
+      "id": "news-50e99d218bcad4f6",
+      "title": "Mesh LLM：基于点对点网络的分布式 AI 计算",
+      "url": "https://www.iroh.computer/blog/mesh-llm",
+      "date": "2026-07-12",
+      "published": "2026-07-11T22:38:57+00:00",
+      "summary": "Iroh 项目发布 Mesh LLM，利用点对点网络实现分布式大模型推理，在 HN 获 147 点赞。",
+      "detail": "Iroh 团队发布 Mesh LLM 项目，利用点对点网络技术实现分布式大语言模型推理。用户可通过加入 mesh 网络共享计算资源共同运行大模型，无需依赖中心化云服务。该项目在 Hacker News 获得 147 点赞，被视为去中心化 AI 计算的重要探索，为降低大模型使用成本提供了新思路。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "Hacker News"
+    },
+    {
       "id": "news-db79c4ae9946a0e6",
       "title": "布朗大学教授怀疑多数学生在期中考试中使用 AI 作弊",
       "url": "https://www.solidot.org/story?sid=84806",
@@ -565,6 +645,20 @@
       "image": "",
       "priority": 2,
       "category": "ai",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-6320a4be9efe834f",
+      "title": "日本 JAXA 成功测试可回收火箭 RV-X",
+      "url": "https://www.solidot.org/story?sid=84804",
+      "date": "2026-07-12",
+      "published": "2026-07-11T22:41:00+08:00",
+      "summary": "JAXA 成功测试可回收火箭 RV-X，完成升空、悬停、水平移动和直立着陆四个动作。",
+      "detail": "日本宇航研究开发机构（JAXA）7 月 11 日宣布成功测试可回收火箭 RV-X，测试持续约 40 秒，火箭上升至约 11 米高度后完成升空、悬停、水平移动和直立着陆。RV-X 计划取代不可回收的 H-3 火箭，下一步将进行百米级回收测试。法国和德国也参与了该项目的合作研发。中国在可回收火箭研发方面的进展更快。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "hardware",
       "source": "Solidot"
     },
     {
@@ -621,60 +715,6 @@
       "category": "tech",
       "source": "36氪",
       "subcategory": "hardware"
-    },
-    {
-      "id": "news-6320a4be9efe834f",
-      "title": "日本 JAXA 成功测试可回收火箭 RV-X",
-      "url": "https://www.solidot.org/story?sid=84804",
-      "date": "2026-07-12",
-      "published": "2026-07-11T22:41:00+08:00",
-      "summary": "JAXA 成功测试可回收火箭 RV-X，完成升空、悬停、水平移动和直立着陆四个动作。",
-      "detail": "日本宇航研究开发机构（JAXA）7 月 11 日宣布成功测试可回收火箭 RV-X，测试持续约 40 秒，火箭上升至约 11 米高度后完成升空、悬停、水平移动和直立着陆。RV-X 计划取代不可回收的 H-3 火箭，下一步将进行百米级回收测试。法国和德国也参与了该项目的合作研发。中国在可回收火箭研发方面的进展更快。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "hardware",
-      "source": "Solidot"
-    },
-    {
-      "id": "news-50e99d218bcad4f6",
-      "title": "Mesh LLM：基于点对点网络的分布式 AI 计算",
-      "url": "https://www.iroh.computer/blog/mesh-llm",
-      "date": "2026-07-12",
-      "published": "2026-07-11T22:38:57+00:00",
-      "summary": "Iroh 项目发布 Mesh LLM，利用点对点网络实现分布式大模型推理，在 HN 获 147 点赞。",
-      "detail": "Iroh 团队发布 Mesh LLM 项目，利用点对点网络技术实现分布式大语言模型推理。用户可通过加入 mesh 网络共享计算资源共同运行大模型，无需依赖中心化云服务。该项目在 Hacker News 获得 147 点赞，被视为去中心化 AI 计算的重要探索，为降低大模型使用成本提供了新思路。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "ai-frontier",
-      "source": "Hacker News"
-    },
-    {
-      "id": "news-db7edbd1be510fd5",
-      "title": "中国法院支持数字资产的继承",
-      "url": "https://www.solidot.org/story?sid=84808",
-      "date": "2026-07-12",
-      "published": "2026-07-12T23:30:34+08:00",
-      "summary": "多个案例显示中国法院支持数字资产继承，认为游戏账户和微交易物品具有货币价值，玩家对其拥有可继承的权利。",
-      "detail": "法院在审理中拒绝了游戏公司的不可转让条款，认为这些条款无法阻止玩家继承或转让游戏资产。在一个案例中，法院认定《征途》中的「黄金刀」具有经济价值——另一玩家曾出价 5 万元购买，因此构成可继承的虚拟财产，但因与游戏「情侣」共同获取，继承人只能继承 50% 份额。另一个案例涉及 5 个比特币和一个价值约 20 万元的游戏账户。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "Solidot"
-    },
-    {
-      "id": "news-d4887ec7162ecd9a",
-      "title": "相对论效应改变重元素化学键结构，挑战传统教科书",
-      "url": "https://www.solidot.org/story?sid=84807",
-      "date": "2026-07-12",
-      "published": "2026-07-12T23:08:02+08:00",
-      "summary": "布朗大学研究证明爱因斯坦相对论会改变重元素三键结构，修正化学教科书描述。",
-      "detail": "布朗大学化学家通过光电子能谱提供直接证据，证明当原子核足够重时，相对论效应会改变三键结构。碳-铋键不符合传统的「一个σ键加两个π键」结构，而是呈现「一个π键加两个σ-π杂化键」形态，修正了化学教科书中的传统描述。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "Solidot"
     },
     {
       "id": "news-10bfbb51eca1948e",
@@ -798,6 +838,32 @@
       "source": "BBC Sport"
     },
     {
+      "id": "news-db7edbd1be510fd5",
+      "title": "中国法院支持数字资产的继承",
+      "url": "https://www.solidot.org/story?sid=84808",
+      "date": "2026-07-12",
+      "published": "2026-07-12T23:30:34+08:00",
+      "summary": "多个案例显示中国法院支持数字资产继承，认为游戏账户和微交易物品具有货币价值，玩家对其拥有可继承的权利。",
+      "detail": "法院在审理中拒绝了游戏公司的不可转让条款，认为这些条款无法阻止玩家继承或转让游戏资产。在一个案例中，法院认定《征途》中的「黄金刀」具有经济价值——另一玩家曾出价 5 万元购买，因此构成可继承的虚拟财产，但因与游戏「情侣」共同获取，继承人只能继承 50% 份额。另一个案例涉及 5 个比特币和一个价值约 20 万元的游戏账户。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-d4887ec7162ecd9a",
+      "title": "相对论效应改变重元素化学键结构，挑战传统教科书",
+      "url": "https://www.solidot.org/story?sid=84807",
+      "date": "2026-07-12",
+      "published": "2026-07-12T23:08:02+08:00",
+      "summary": "布朗大学研究证明爱因斯坦相对论会改变重元素三键结构，修正化学教科书描述。",
+      "detail": "布朗大学化学家通过光电子能谱提供直接证据，证明当原子核足够重时，相对论效应会改变三键结构。碳-铋键不符合传统的「一个σ键加两个π键」结构，而是呈现「一个π键加两个σ-π杂化键」形态，修正了化学教科书中的传统描述。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot"
+    },
+    {
       "id": "news-bdbd359b48d2d6ec",
       "title": "麦格雷戈 UFC 回归仅持续 69 秒便因膝伤终结",
       "url": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/c9w2zgpnrqeo?at_medium=RSS&at_campaign=rss",
@@ -809,19 +875,6 @@
       "priority": 1,
       "category": "sports",
       "source": "The Guardian Sport"
-    },
-    {
-      "id": "news-1cb3da59f7257d91",
-      "title": "百度 AI 将携智能体全家桶亮相 WAIC 2026",
-      "url": "https://36kr.com/newsflashes/3892090766539268?f=rss",
-      "date": "2026-07-12",
-      "published": "2026-07-12T11:19:28+08:00",
-      "summary": "百度 AI 将在 WAIC 2026 上展示智能体全家桶和芯云模体全栈产品矩阵新升级。",
-      "detail": "百度 AI 宣布将在即将开幕的世界人工智能大会（WAIC 2026）上全方位展示智能体从技术升级、应用开发到产业赋能的最新成果。同时百度芯云模体全栈 AI 产品矩阵将发布新升级，集中展示从底层技术创新到产业场景的规模化落地进展。WAIC 2026 将在上海开幕。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "36氪"
     },
     {
       "id": "news-4e9b5ed02874470b",
@@ -848,6 +901,19 @@
       "priority": 1,
       "category": "sports",
       "source": "BBC Sport"
+    },
+    {
+      "id": "news-1cb3da59f7257d91",
+      "title": "百度 AI 将携智能体全家桶亮相 WAIC 2026",
+      "url": "https://36kr.com/newsflashes/3892090766539268?f=rss",
+      "date": "2026-07-12",
+      "published": "2026-07-12T11:19:28+08:00",
+      "summary": "百度 AI 将在 WAIC 2026 上展示智能体全家桶和芯云模体全栈产品矩阵新升级。",
+      "detail": "百度 AI 宣布将在即将开幕的世界人工智能大会（WAIC 2026）上全方位展示智能体从技术升级、应用开发到产业赋能的最新成果。同时百度芯云模体全栈 AI 产品矩阵将发布新升级，集中展示从底层技术创新到产业场景的规模化落地进展。WAIC 2026 将在上海开幕。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "36氪"
     },
     {
       "id": "news-facf2942a94021ba",
@@ -903,18 +969,6 @@
       "source": "The Guardian Sport"
     },
     {
-      "id": "news-ed03da5aab42d0b2",
-      "title": "智谱创始人唐杰发内部信：「GLM 时刻」之后直指 AGI",
-      "url": "https://36kr.com/newsflashes/3891162734689031?f=rss",
-      "published": "2026-07-11T19:35:25+08:00",
-      "source": "36氪",
-      "summary": "智谱创始人唐杰发布内部信，宣布将不追求短期应用变现，直指 AGI 的长程任务能力和自治智能体系统。",
-      "detail": "智谱创始人唐杰发布主题为《巨浪已来》的内部信，宣布公司战略方向将从短期应用变现转向 AGI 核心能力研发，包括长程任务能力、完全自治的智能体系统、自我进化和极致安全治理。智谱过去半年市值较上市初期涨了 10 倍，已于 6 月跻身「万亿港元俱乐部」，市值超过小米。这一战略转向反映了中国头部 AI 公司在商业化与前沿研究之间的抉择。",
-      "priority": 3,
-      "category": "ai",
-      "date": "2026-07-11"
-    },
-    {
       "id": "news-a5afb33ea3eeb087",
       "title": "Nvidia、CoreWeave 与 Nebius：GPU 繁荣背后的循环融资",
       "url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
@@ -927,6 +981,18 @@
       "category": "tech",
       "source": "Hacker News",
       "subcategory": "industry"
+    },
+    {
+      "id": "news-ed03da5aab42d0b2",
+      "title": "智谱创始人唐杰发内部信：「GLM 时刻」之后直指 AGI",
+      "url": "https://36kr.com/newsflashes/3891162734689031?f=rss",
+      "published": "2026-07-11T19:35:25+08:00",
+      "source": "36氪",
+      "summary": "智谱创始人唐杰发布内部信，宣布将不追求短期应用变现，直指 AGI 的长程任务能力和自治智能体系统。",
+      "detail": "智谱创始人唐杰发布主题为《巨浪已来》的内部信，宣布公司战略方向将从短期应用变现转向 AGI 核心能力研发，包括长程任务能力、完全自治的智能体系统、自我进化和极致安全治理。智谱过去半年市值较上市初期涨了 10 倍，已于 6 月跻身「万亿港元俱乐部」，市值超过小米。这一战略转向反映了中国头部 AI 公司在商业化与前沿研究之间的抉择。",
+      "priority": 3,
+      "category": "ai",
+      "date": "2026-07-11"
     },
     {
       "id": "news-3b28dc968220a491",
@@ -1034,19 +1100,6 @@
       "date": "2026-07-11"
     },
     {
-      "id": "news-a8512f524d560048",
-      "title": "上交大 00 后博士创立仿生扑翼机器人公司，三月融三轮",
-      "url": "https://36kr.com/p/3889516712065799?f=rss",
-      "published": "2026-07-11T09:00:00+08:00",
-      "source": "36氪",
-      "summary": "上交大 00 后博士创立的仿生扑翼飞行机器人公司「鹰瞰智翼」三个月内完成三轮融资。",
-      "detail": "具身智能仿生扑翼飞行机器人公司「鹰瞰智翼」完成数千万元 A 轮融资，这是公司三个月内完成的第三轮融资。创始人为上海交通大学机械工程直博生，团队研发人员占比超 75%。资金将用于首款消费级产品的量产备货和下一代具身智能扑翼机器人研发。该公司是全球较早专注于具身智能扑翼机器人的企业之一。",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "hardware",
-      "date": "2026-07-11"
-    },
-    {
       "id": "news-396fef8b3452b3af",
       "title": "世界杯八强赛：英格兰对阵挪威，迈阿密高温成变数",
       "url": "https://www.bbc.co.uk/sport/football/articles/cx2jzl3zxpzo?at_medium=RSS&at_campaign=rss",
@@ -1083,6 +1136,19 @@
       "date": "2026-07-11",
       "image": "",
       "source": "juya AI 日报"
+    },
+    {
+      "id": "news-a8512f524d560048",
+      "title": "上交大 00 后博士创立仿生扑翼机器人公司，三月融三轮",
+      "url": "https://36kr.com/p/3889516712065799?f=rss",
+      "published": "2026-07-11T09:00:00+08:00",
+      "source": "36氪",
+      "summary": "上交大 00 后博士创立的仿生扑翼飞行机器人公司「鹰瞰智翼」三个月内完成三轮融资。",
+      "detail": "具身智能仿生扑翼飞行机器人公司「鹰瞰智翼」完成数千万元 A 轮融资，这是公司三个月内完成的第三轮融资。创始人为上海交通大学机械工程直博生，团队研发人员占比超 75%。资金将用于首款消费级产品的量产备货和下一代具身智能扑翼机器人研发。该公司是全球较早专注于具身智能扑翼机器人的企业之一。",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "hardware",
+      "date": "2026-07-11"
     },
     {
       "id": "news-7c48c1e133a3dfdb",
@@ -1328,19 +1394,6 @@
       "priority": 3
     },
     {
-      "id": "news-525410040fb23752",
-      "title": "人形机器人首次成功完成活体动物远程手术",
-      "url": "https://www.solidot.org/story?sid=84801",
-      "date": "2026-07-10",
-      "published": "2026-07-10T23:10:19+08:00",
-      "summary": "基于宇树科技 G1 人形机器人的远程操控系统成功完成两例活猪胆囊切除手术，成果发表于《自然》。",
-      "detail": "一项发表在《自然》期刊的研究显示，研究人员利用宇树科技的 G1 人形机器人，通过远程操控成功为活体猪完成两例微创胆囊切除手术。人形机器人相比专业手术机器人（如达芬奇）更便宜、更紧凑、更易部署，有望在资源有限的小型医院和偏远地区推广。G1 基础型号起售价约 13,500 美元，远低于传统手术机器人。该研究为机器人辅助手术的普及开辟了新路径。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "Solidot"
-    },
-    {
       "id": "news-5d62f4327be03bb5",
       "title": "GhostLock：影响所有 Linux 发行版 15 年的内核漏洞",
       "url": "https://nebusec.ai/research/ionstack-part-2/",
@@ -1382,6 +1435,33 @@
       "subcategory": "hardware"
     },
     {
+      "id": "news-968b0e8b361846ae",
+      "title": "QuadRF：能探测无人机并穿墙感知 WiFi 的开源射频平台",
+      "url": "https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/",
+      "date": "2026-07-10",
+      "published": "2026-07-10T15:59:53+00:00",
+      "summary": "开源射频平台 QuadRF 可同时探测无人机信号和穿墙感知 WiFi 网络，在 HN 获超 400 点赞。",
+      "detail": "知名技术博主 Jeff Geerling 展示了开源射频平台 QuadRF 的强大能力：该设备基于软件定义无线电（SDR）技术，可同时执行无人机信号探测和穿墙 WiFi 信号分析两项任务。QuadRF 采用四通道射频前端设计，能在复杂电磁环境中精确定位信号源。该项目在 Hacker News 获得超过 400 点赞，引发对开源射频技术在安防和网络分析领域应用的广泛讨论。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "hardware"
+    },
+    {
+      "id": "news-525410040fb23752",
+      "title": "人形机器人首次成功完成活体动物远程手术",
+      "url": "https://www.solidot.org/story?sid=84801",
+      "date": "2026-07-10",
+      "published": "2026-07-10T23:10:19+08:00",
+      "summary": "基于宇树科技 G1 人形机器人的远程操控系统成功完成两例活猪胆囊切除手术，成果发表于《自然》。",
+      "detail": "一项发表在《自然》期刊的研究显示，研究人员利用宇树科技的 G1 人形机器人，通过远程操控成功为活体猪完成两例微创胆囊切除手术。人形机器人相比专业手术机器人（如达芬奇）更便宜、更紧凑、更易部署，有望在资源有限的小型医院和偏远地区推广。G1 基础型号起售价约 13,500 美元，远低于传统手术机器人。该研究为机器人辅助手术的普及开辟了新路径。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "Solidot"
+    },
+    {
       "id": "news-cd0e2996f4f6d8e8",
       "title": "OpenRouter 数据：近五成美国公司调用中国 AI 模型",
       "url": "https://www.solidot.org/story?sid=84799",
@@ -1406,20 +1486,6 @@
       "category": "ai",
       "source": "Solidot",
       "priority": 2
-    },
-    {
-      "id": "news-968b0e8b361846ae",
-      "title": "QuadRF：能探测无人机并穿墙感知 WiFi 的开源射频平台",
-      "url": "https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/",
-      "date": "2026-07-10",
-      "published": "2026-07-10T15:59:53+00:00",
-      "summary": "开源射频平台 QuadRF 可同时探测无人机信号和穿墙感知 WiFi 网络，在 HN 获超 400 点赞。",
-      "detail": "知名技术博主 Jeff Geerling 展示了开源射频平台 QuadRF 的强大能力：该设备基于软件定义无线电（SDR）技术，可同时执行无人机信号探测和穿墙 WiFi 信号分析两项任务。QuadRF 采用四通道射频前端设计，能在复杂电磁环境中精确定位信号源。该项目在 Hacker News 获得超过 400 点赞，引发对开源射频技术在安防和网络分析领域应用的广泛讨论。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "hardware"
     },
     {
       "id": "news-04d24bfe3b849a3d",
@@ -1558,20 +1624,6 @@
       "subcategory": "software"
     },
     {
-      "id": "news-80b96ba9f2442792",
-      "title": "前传奇生物创始人范晓虎创办湾岛细胞，完成1.4亿元A轮融资",
-      "url": "https://36kr.com/p/3888284244720131?f=rss",
-      "date": "2026-07-10",
-      "published": "2026-07-10 11:26:25  +0800",
-      "summary": "前传奇生物创始人范晓虎创办的深圳湾岛细胞完成1.4亿元A轮融资，致力于将百万级CAR-T抗癌疗法变为平价。",
-      "detail": "前传奇生物创始人/首席科学家范晓虎创办的深圳湾岛细胞完成1.4亿人民币A轮融资，由松禾资本领投。范晓虎曾主导全球唯一销售额逼近20亿美元的CAR-T细胞疗法西达基奥仑赛。新公司目标是将细胞与基因治疗从百万级高价降至可及范围。在AI照亮资本市场的同时，创新药板块正在更严苛的估值坐标系里寻找新的定位。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "subcategory": "industry",
-      "source": "36氪"
-    },
-    {
       "id": "news-ee71b664f3130f89",
       "title": "OpenMandriva 项目遭内部破坏事件",
       "url": "https://www.solidot.org/story?sid=84789",
@@ -1584,6 +1636,20 @@
       "source": "Solidot",
       "priority": 1,
       "subcategory": "software"
+    },
+    {
+      "id": "news-80b96ba9f2442792",
+      "title": "前传奇生物创始人范晓虎创办湾岛细胞，完成1.4亿元A轮融资",
+      "url": "https://36kr.com/p/3888284244720131?f=rss",
+      "date": "2026-07-10",
+      "published": "2026-07-10 11:26:25  +0800",
+      "summary": "前传奇生物创始人范晓虎创办的深圳湾岛细胞完成1.4亿元A轮融资，致力于将百万级CAR-T抗癌疗法变为平价。",
+      "detail": "前传奇生物创始人/首席科学家范晓虎创办的深圳湾岛细胞完成1.4亿人民币A轮融资，由松禾资本领投。范晓虎曾主导全球唯一销售额逼近20亿美元的CAR-T细胞疗法西达基奥仑赛。新公司目标是将细胞与基因治疗从百万级高价降至可及范围。在AI照亮资本市场的同时，创新药板块正在更严苛的估值坐标系里寻找新的定位。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "36氪"
     },
     {
       "id": "news-eccf16e33fb82cd7",
