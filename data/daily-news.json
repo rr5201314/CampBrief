@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-13T18:24:40.371378+08:00",
+  "last_updated": "2026-07-13T18:30:40+08:00",
   "source": "CampBrief Auto",
-  "total": 150,
+  "total": 154,
   "items": [
     {
       "id": "news-eaf4201e50b4b6f1",
@@ -206,6 +206,19 @@
       "subcategory": "software"
     },
     {
+      "id": "news-a1918055c47b7dea",
+      "title": "世界杯历史最佳射手 Just Fontaine 的传奇故事",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c621xndyd7no?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-13T06:57:04+00:00",
+      "summary": "回顾 1958 年世界杯单届 13 球纪录保持者 Just Fontaine 的故事——穿借来的球鞋、没拿到金靴奖。",
+      "detail": "1958 年世界杯上，法国前锋 Just Fontaine 在仅 6 场比赛中打入 13 球，创下至今无人打破的单届世界杯进球纪录。他当时穿的是队友借给他的球鞋，甚至没有获得金靴奖（该奖项 1982 年才设立），瑞典报纸送了他一把气步枪作为「神射手」奖。28 岁因伤退役后，他仅留下 21 场国际比赛 30 球的数据。",
+      "category": "fun",
+      "source": "BBC Sport",
+      "priority": 1,
+      "date": "2026-07-13",
+      "image": ""
+    },
+    {
       "id": "news-465a3abb7958343e",
       "title": "无需回溯的草书字体渲染算法",
       "url": "https://mmapped.blog/posts/52-backtrack-free-cursive",
@@ -218,6 +231,33 @@
       "category": "tech",
       "source": "Hacker News",
       "subcategory": "software"
+    },
+    {
+      "id": "news-1f6ca9fd8046a0a6",
+      "title": "Sam Neill 去世，享年 78 岁",
+      "url": "https://www.theguardian.com/film/2026/jul/13/sam-neill-death-actor-dies-aged-78",
+      "published": "2026-07-13T06:02:11+00:00",
+      "summary": "新西兰演员 Sam Neill 去世，享年 78 岁，代表作包括《侏罗纪公园》《钢琴课》《浴血黑帮》等。",
+      "detail": "新西兰演员 Sam Neill 因病去世，享年 78 岁。他以《侏罗纪公园》中的 Alan Grant 博士一角闻名全球，职业生涯横跨电影与电视，代表作还包括《钢琴课》《浴血黑帮》等。Neill 2022 年曾公开披露罹患淋巴瘤后康复，近期病情复发。",
+      "category": "fun",
+      "source": "Hacker News",
+      "priority": 1,
+      "date": "2026-07-13",
+      "image": ""
+    },
+    {
+      "id": "news-6851e9319b2486c4",
+      "title": "Beavis：开源 Gravis Ultrasound PnP 声卡复刻项目",
+      "url": "https://github.com/schlae/BeavisUltrasound",
+      "published": "2026-07-13T05:15:14+00:00",
+      "summary": "开发者公开 Gravis Ultrasound PnP ISA 声卡的完整开源硬件复刻方案，含 KiCad PCB 设计文件。",
+      "detail": "BeavisUltrasound 项目在 GitHub 上公开了经典 Gravis Ultrasound PnP ISA 声卡的完整复刻方案，包括 KiCad 原理图和 PCB 布局文件。该项目旨在让复古计算爱好者能够自行制造这款 90 年代标志性声卡。项目在 Hacker News 获得 62 点赞，展示了开源硬件社区对经典硬件复刻的持续热情。",
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "hardware",
+      "priority": 1,
+      "date": "2026-07-13",
+      "image": ""
     },
     {
       "id": "news-6d8659b3b00acd4e",
@@ -730,6 +770,19 @@
       "category": "tech",
       "source": "Hacker News",
       "subcategory": "ai-frontier"
+    },
+    {
+      "id": "news-237f8d16f07a54ce",
+      "title": "西班牙前首相因种族主义言论批评法国足球队遭谴责",
+      "url": "https://www.theguardian.com/world/2026/jul/12/spain-mariano-rajoy-accused-of-racism-french-football-team-world-cup",
+      "published": "2026-07-12T17:39:13+00:00",
+      "summary": "西班牙前首相拉霍伊在专栏中称法国队「没有法国球员」，遭西法两国政治领导人一致谴责。",
+      "detail": "西班牙前首相拉霍伊在世界杯半决赛前的报纸专栏中写道法国队「没有任何法国球员」，引发西法两国政界强烈反应。西班牙首相桑切斯在 X 平台发文回击：「有人仍以姓氏、出生地或肤色衡量归属感。」法国政府官员称其言论「完全不可接受」，并呼吁法国足协采取法律途径。此事与此前巴拉圭参议员攻击姆巴佩的种族主义言论形成呼应。",
+      "category": "sports",
+      "source": "The Guardian Sport",
+      "priority": 1,
+      "date": "2026-07-12",
+      "image": ""
     },
     {
       "id": "news-9806128e6b0ff08e",

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-13T18:19:47.960926+08:00",
+  "last_updated": "2026-07-13T18:28:43.460683+08:00",
   "source": "GitHub Trending",
   "total": 5,
   "items": [
@@ -8,7 +8,7 @@
       "title": "7月13日 GitHub趋势日榜",
       "url": "https://github.com/trending?since=daily",
       "date": "2026-07-13",
-      "published": "2026-07-13T18:19:47.960926+08:00",
+      "published": "2026-07-13T18:28:43.460683+08:00",
       "summary": "7月13日 GitHub趋势日榜，Top 10 项目涵盖 Rust、TypeScript、Python 等，今日社区最受关注的开源项目。",
       "detail": "Dicklesworthstone/destructive_command_guard - The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.\nwonderwhy-er/DesktopCommanderMCP - This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities\nHKUDS/Vibe-Trading - \"Vibe-Trading: Your Personal Trading Agent\"\nPrefectHQ/prefect - Prefect is a workflow orchestration framework for building resilient data pipelines in Python.\nShubhamsaboo/awesome-llm-apps - 100+ AI Agent & RAG apps you can actually run — clone, customize, ship.\nanthropics/claude-cookbooks - A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.\nhome-assistant/core - 🏡 Open source home automation that puts local control and privacy first.\nCrosstalk-Solutions/project-nomad - Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.\nColeMurray/background-agents - An open-source background agents coding system\nk1tbyte/Wand-Enhancer - Advanced UX and interoperability extension for Wand (WeMod) app",
       "priority": 2,
@@ -22,39 +22,39 @@
           "name": "Dicklesworthstone/destructive_command_guard",
           "url": "https://github.com/Dicklesworthstone/destructive_command_guard",
           "language": "Rust",
-          "stars": 3537,
-          "forks": 128,
+          "stars": 3547,
+          "forks": 129,
           "stars_delta": 444,
           "trend_period": "today",
           "description": "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.",
-          "chinese_summary": "Rust 编写的危险命令拦截工具，防止在 git 和 shell 中误执行破坏性操作。",
-          "solves_what": "防止开发者误执行 rm -rf、git push --force 等破坏性命令，保护代码仓库和系统安全。"
+          "chinese_summary": "一个用 Rust 编写的守护工具，用于拦截 AI 代理执行危险 git 与 shell 命令。",
+          "solves_what": "防止 AI 编程助手误删仓库或执行破坏性命令，保护代码安全。"
         },
         {
           "rank": 2,
           "name": "wonderwhy-er/DesktopCommanderMCP",
           "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
           "language": "TypeScript",
-          "stars": 8119,
-          "forks": 993,
+          "stars": 8123,
+          "forks": 994,
           "stars_delta": 210,
           "trend_period": "today",
           "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
-          "chinese_summary": "Claude 的 MCP 服务器，提供终端控制、文件搜索和差异编辑能力。",
-          "solves_what": "让 Claude AI 能直接操作本地终端、搜索文件和编辑代码，实现真正的桌面级 AI 助手。"
+          "chinese_summary": "为 Claude 提供终端控制、文件系统搜索和差异编辑能力的 MCP 服务器。",
+          "solves_what": "让 AI 编程助手直接操作终端和文件系统，提升开发效率。"
         },
         {
           "rank": 3,
           "name": "HKUDS/Vibe-Trading",
           "url": "https://github.com/HKUDS/Vibe-Trading",
           "language": "Python",
-          "stars": 21108,
-          "forks": 3672,
+          "stars": 21116,
+          "forks": 3673,
           "stars_delta": 768,
           "trend_period": "today",
           "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
-          "chinese_summary": "基于 AI 的个人量化交易代理框架。",
-          "solves_what": "为个人投资者提供 AI 驱动的自动化交易策略开发和执行平台。"
+          "chinese_summary": "HKUDS 推出的个人交易智能体项目，帮助用户实现交易决策自动化。",
+          "solves_what": "提供可定制的 AI 交易助手，降低量化交易入门门槛。"
         },
         {
           "rank": 4,
@@ -66,86 +66,86 @@
           "stars_delta": 66,
           "trend_period": "today",
           "description": "Prefect is a workflow orchestration framework for building resilient data pipelines in Python.",
-          "chinese_summary": "Python 工作流编排框架，用于构建弹性数据管道。",
-          "solves_what": "替代 Airflow 等传统调度器，提供更 Pythonic 的方式编排和监控数据管道。"
+          "chinese_summary": "Python 工作流编排框架，用于构建具备容错能力的数据管道。",
+          "solves_what": "简化数据管道开发与监控，适合做数据处理课程项目。"
         },
         {
           "rank": 5,
           "name": "Shubhamsaboo/awesome-llm-apps",
           "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
           "language": "Python",
-          "stars": 119107,
+          "stars": 119116,
           "forks": 17700,
           "stars_delta": 408,
           "trend_period": "today",
           "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
-          "chinese_summary": "100+ 可直接运行的 AI Agent 和 RAG 应用集合。",
-          "solves_what": "为开发者提供大量可克隆、定制和部署的 LLM 应用示例，降低 AI 应用开发门槛。"
+          "chinese_summary": "收录 100 多个可直接克隆运行的 AI Agent 与 RAG 应用示例集合。",
+          "solves_what": "提供大量可上手的大模型应用模板，快速入门 AI 开发。"
         },
         {
           "rank": 6,
           "name": "anthropics/claude-cookbooks",
           "url": "https://github.com/anthropics/claude-cookbooks",
           "language": "Jupyter Notebook",
-          "stars": 48688,
-          "forks": 5749,
+          "stars": 48689,
+          "forks": 5750,
           "stars_delta": 459,
           "trend_period": "today",
           "description": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.",
-          "chinese_summary": "Anthropic 官方 Claude 使用示例和最佳实践集合。",
-          "solves_what": "展示 Claude 模型的各种高效用法，帮助开发者快速上手 AI 应用开发。"
+          "chinese_summary": "Anthropic 官方整理的 Claude 使用示例与 Notebook 配方合集。",
+          "solves_what": "提供官方实践范例，帮助快速掌握 Claude API 应用技巧。"
         },
         {
           "rank": 7,
           "name": "home-assistant/core",
           "url": "https://github.com/home-assistant/core",
           "language": "Python",
-          "stars": 89301,
+          "stars": 89303,
           "forks": 38100,
           "stars_delta": 400,
           "trend_period": "today",
           "description": "🏡 Open source home automation that puts local control and privacy first.",
-          "chinese_summary": "开源智能家居自动化平台，优先本地控制和隐私保护。",
-          "solves_what": "统一管理各类智能设备，实现本地化自动化控制，避免依赖云端服务。"
+          "chinese_summary": "一款优先本地控制与隐私保护的开源智能家居自动化平台，社区活跃。",
+          "solves_what": "让你自建智能家居系统避免数据上云，适合 IoT 项目实践。"
         },
         {
           "rank": 8,
           "name": "Crosstalk-Solutions/project-nomad",
           "url": "https://github.com/Crosstalk-Solutions/project-nomad",
           "language": "TypeScript",
-          "stars": 33988,
+          "stars": 33990,
           "forks": 3406,
           "stars_delta": 125,
           "trend_period": "today",
           "description": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.",
-          "chinese_summary": "离线生存计算机项目，集成关键工具和知识库。",
-          "solves_what": "在无网络环境下提供导航、通信、急救等生存必备功能的自包含计算设备。"
+          "chinese_summary": "Project N.O.M.A.D 是一台自带工具、知识与 AI 的离线便携生存计算机。",
+          "solves_what": "在无网环境下提供生存知识与计算能力，适合极客硬件折腾。"
         },
         {
           "rank": 9,
           "name": "ColeMurray/background-agents",
           "url": "https://github.com/ColeMurray/background-agents",
           "language": "TypeScript",
-          "stars": 2370,
+          "stars": 2372,
           "forks": 346,
           "stars_delta": 16,
           "trend_period": "today",
           "description": "An open-source background agents coding system",
-          "chinese_summary": "开源后台 AI 代理编码系统。",
-          "solves_what": "让 AI 编码代理在后台并行执行多个开发任务，提升开发效率。"
+          "chinese_summary": "一个开源的后台 AI 编程智能体系统，支持后台持续编码任务。",
+          "solves_what": "让 AI 在后台持续处理编码任务，学习多代理协作开发。"
         },
         {
           "rank": 10,
           "name": "k1tbyte/Wand-Enhancer",
           "url": "https://github.com/k1tbyte/Wand-Enhancer",
           "language": "C#",
-          "stars": 7116,
-          "forks": 19850,
+          "stars": 7120,
+          "forks": 19860,
           "stars_delta": 609,
           "trend_period": "today",
           "description": "Advanced UX and interoperability extension for Wand (WeMod) app",
-          "chinese_summary": "Wand (WeMod) 应用的高级 UX 和互操作性扩展。",
-          "solves_what": "增强 WeMod 游戏修改器的用户体验和功能扩展能力。"
+          "chinese_summary": "为 Wand（WeMod）应用提供高级 UX 与互操作能力的扩展工具。",
+          "solves_what": "增强游戏修改器 Wand 的交互能力，方便游戏模组开发。"
         }
       ]
     },
@@ -154,7 +154,7 @@
       "title": "7月第2周 GitHub趋势周榜",
       "url": "https://github.com/trending?since=weekly",
       "date": "2026-07-13",
-      "published": "2026-07-13T18:19:47.960926+08:00",
+      "published": "2026-07-13T18:28:43.460683+08:00",
       "summary": "7月第2周 GitHub趋势周榜，Top 10 项目涵盖 Rust、TypeScript、JavaScript 等，本周社区最受关注的开源项目。",
       "detail": "Zackriya-Solutions/meetily - Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted, Open-source Ai meeting note taker for macOS & Windows. Understand How to write meeting minutes\nwonderwhy-er/DesktopCommanderMCP - This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities\nopenai/codex-plugin-cc - Use Codex from Claude Code to review code or delegate tasks.\nTencentCloud/CubeSandbox - Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.\nabseil/abseil-cpp - Abseil Common Libraries (C++)\nogulcancelik/herdr - agent multiplexer that lives in your terminal.\nasgeirtj/system_prompts_leaks - Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT GPT-5.6, Codex GPT-5.6, GPT-5.5. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.\ndiegosouzapw/OmniRoute - Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.\nstablyai/orca - Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.\nbradautomates/claude-video - Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.",
       "priority": 4,
@@ -168,52 +168,52 @@
           "name": "Zackriya-Solutions/meetily",
           "url": "https://github.com/Zackriya-Solutions/meetily",
           "language": "Rust",
-          "stars": 23818,
-          "forks": 2502,
+          "stars": 23821,
+          "forks": 2503,
           "stars_delta": 7440,
           "trend_period": "this week",
           "description": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted, Open-source Ai meeting note taker for macOS & Windows. Understand How to write meeting minutes",
-          "chinese_summary": "隐私优先的 AI 会议助手，支持 4 倍速实时转录和说话人识别。",
-          "solves_what": "在本地实时转录会议内容并识别说话人，无需上传云端，保护会议隐私。"
+          "chinese_summary": "隐私优先的本地 AI 会议助手，支持实时转写、说话人分离和 Ollama 摘要。",
+          "solves_what": "全本地处理会议录音自动生成会议纪要，保护隐私不上云。"
         },
         {
           "rank": 2,
           "name": "wonderwhy-er/DesktopCommanderMCP",
           "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
           "language": "TypeScript",
-          "stars": 8119,
-          "forks": 993,
+          "stars": 8123,
+          "forks": 994,
           "stars_delta": 1678,
           "trend_period": "this week",
           "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
-          "chinese_summary": "Claude 的 MCP 服务器，提供终端控制、文件搜索和差异编辑能力。",
-          "solves_what": "让 Claude AI 能直接操作本地终端、搜索文件和编辑代码，实现真正的桌面级 AI 助手。"
+          "chinese_summary": "",
+          "solves_what": ""
         },
         {
           "rank": 3,
           "name": "openai/codex-plugin-cc",
           "url": "https://github.com/openai/codex-plugin-cc",
           "language": "JavaScript",
-          "stars": 28223,
+          "stars": 28225,
           "forks": 1853,
           "stars_delta": 2803,
           "trend_period": "this week",
           "description": "Use Codex from Claude Code to review code or delegate tasks.",
-          "chinese_summary": "在 Claude Code 中使用 OpenAI Codex 进行代码审查或任务委派。",
-          "solves_what": "打通 Claude Code 和 OpenAI Codex 两个 AI 编码工具，实现跨平台协作。"
+          "chinese_summary": "在 Claude Code 中调用 Codex 进行代码审查或委派任务的官方插件。",
+          "solves_what": "在 Claude Code 内打通 Codex 能力，实现多模型协作编程。"
         },
         {
           "rank": 4,
           "name": "TencentCloud/CubeSandbox",
           "url": "https://github.com/TencentCloud/CubeSandbox",
           "language": "Rust",
-          "stars": 9889,
+          "stars": 9890,
           "forks": 969,
           "stars_delta": 2490,
           "trend_period": "this week",
           "description": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
-          "chinese_summary": "腾讯云开源的轻量级 AI Agent 沙箱，支持即时、并发、安全的代码执行。",
-          "solves_what": "为 AI Agent 提供安全隔离的代码执行环境，防止恶意代码影响宿主系统。"
+          "chinese_summary": "腾讯云推出的即时、并发、安全的 AI Agent 轻量沙盒环境。",
+          "solves_what": "为 AI 代理提供隔离的安全执行环境，防止恶意代码影响主机。"
         },
         {
           "rank": 5,
@@ -225,73 +225,73 @@
           "stars_delta": 600,
           "trend_period": "this week",
           "description": "Abseil Common Libraries (C++)",
-          "chinese_summary": "Google 开源的 C++ 通用库集合。",
-          "solves_what": "提供经过 Google 大规模生产验证的 C++ 基础组件，填补标准库的空白。"
+          "chinese_summary": "Google 开源的 C++ 基础库集合，提供经过实战验证的通用组件。",
+          "solves_what": "提供高质量 C++ 基础组件，避免重复造轮子。"
         },
         {
           "rank": 6,
           "name": "ogulcancelik/herdr",
           "url": "https://github.com/ogulcancelik/herdr",
           "language": "Rust",
-          "stars": 15949,
+          "stars": 15950,
           "forks": 1069,
           "stars_delta": 3928,
           "trend_period": "this week",
           "description": "agent multiplexer that lives in your terminal.",
-          "chinese_summary": "终端中的 AI 代理多路复用器。",
-          "solves_what": "在终端中同时管理和协调多个 AI 代理并行工作。"
+          "chinese_summary": "终端中的 AI 代理多路复用器，支持同时管理多个代理会话。",
+          "solves_what": "在终端中并行运行和管理多个 AI 编程代理，提升多任务效率。"
         },
         {
           "rank": 7,
           "name": "asgeirtj/system_prompts_leaks",
           "url": "https://github.com/asgeirtj/system_prompts_leaks",
           "language": "JavaScript",
-          "stars": 56962,
+          "stars": 56965,
           "forks": 9421,
           "stars_delta": 7155,
           "trend_period": "this week",
           "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT GPT-5.6, Codex GPT-5.6, GPT-5.5. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
-          "chinese_summary": "泄露的 AI 系统提示词集合，包含 Claude Fable 5、Opus 4.8 等模型的系统指令。",
-          "solves_what": "揭示主流 AI 模型的系统提示词设计，帮助研究者和开发者了解 AI 行为约束机制。"
+          "chinese_summary": "收集整理各大 AI 公司产品的系统提示词泄露合集，持续更新。",
+          "solves_what": "了解 AI 产品背后的系统指令设计，学习提示词工程。"
         },
         {
           "rank": 8,
           "name": "diegosouzapw/OmniRoute",
           "url": "https://github.com/diegosouzapw/OmniRoute",
           "language": "TypeScript",
-          "stars": 16467,
-          "forks": 2507,
+          "stars": 16471,
+          "forks": 2506,
           "stars_delta": 4506,
           "trend_period": "this week",
           "description": "Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
-          "chinese_summary": "免费 AI 网关，单一端点支持 231+ 供应商（50+ 免费），兼容 Claude Code 等工具。",
-          "solves_what": "统一 AI 模型 API 接口，让开发者用一个端点访问数百家 AI 供应商，降低集成成本。"
+          "chinese_summary": "免费 AI 网关，一个端点接入 231+ 供应商，支持 Claude Code、Codex 等工具。",
+          "solves_what": "统一 AI 模型接入入口，降低多模型切换成本，节省 token 开支。"
         },
         {
           "rank": 9,
           "name": "stablyai/orca",
           "url": "https://github.com/stablyai/orca",
           "language": "TypeScript",
-          "stars": 17635,
-          "forks": 1386,
+          "stars": 17642,
+          "forks": 1387,
           "stars_delta": 4481,
           "trend_period": "this week",
           "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.",
-          "chinese_summary": "并行 AI 代理的 ADE（代理开发环境），支持运行任意编码代理。",
-          "solves_what": "提供管理和运行 AI 编码代理舰队的开发环境，支持并行任务执行。"
+          "chinese_summary": "Orca 是用于管理并行代理舰队的 ADE，支持桌面和移动端。",
+          "solves_what": "让开发者用自有订阅运行和管理多个并行编码代理。"
         },
         {
           "rank": 10,
           "name": "bradautomates/claude-video",
           "url": "https://github.com/bradautomates/claude-video",
           "language": "Python",
-          "stars": 7948,
+          "stars": 7950,
           "forks": 883,
           "stars_delta": 4353,
           "trend_period": "this week",
           "description": "Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.",
-          "chinese_summary": "让 Claude 具备视频理解能力的工具，可下载、提取帧、转录视频。",
-          "solves_what": "扩展 Claude 的多模态能力，使其能观看和理解视频内容。"
+          "chinese_summary": "让 Claude 能够观看视频的工具，自动下载、提取帧、转写并交给 Claude 分析。",
+          "solves_what": "为 Claude 添加视频理解能力，实现视频内容分析和总结。"
         }
       ]
     },
