@@ -68,26 +68,7 @@ async function loadTechData() {
 // 生成卡片 HTML
 function createCardHTML(item) {
   const date = new Date(item.published);
-  const now = new Date();
-  const diffHours = (now - date) / (1000 * 60 * 60);
-
-  // 时间标签对齐筛选条件：24小时 / 7天 / 30天 / 更早
-  let statusClass = 'status-done';
-  let statusText = '更早';
-
-  if (diffHours < 24) {
-    statusClass = 'status-open';
-    statusText = '24小时';
-  } else if (diffHours < 72) {
-    statusClass = 'status-pending';
-    statusText = '3天';
-  } else if (diffHours < 168) {
-    statusClass = 'status-pending';
-    statusText = '7天';
-  } else if (diffHours < 720) {
-    statusClass = 'status-closed';
-    statusText = '30天';
-  }
+  const { statusClass, statusText } = CampBriefContent.getTimeBadge(item.published);
 
   const formattedDate = `${date.getFullYear()}.${String(date.getMonth() + 1).padStart(2, '0')}.${String(date.getDate()).padStart(2, '0')}`;
 
@@ -216,8 +197,9 @@ function applyFilters() {
     const searchOk = !state.query || `${item.title} ${item.summary} ${item.detail || ""}`.toLowerCase().includes(state.query);
     return subOk && dateOk && searchOk;
   });
-  // 先按北京时间自然日分组，再按优先级与发布时间排序；与首页和每日资讯一致。
-  filteredItems.sort(CampBriefContent.compareByNaturalDayThenPriority);
+  // 时效标签优先，保证 24小时条目始终排在 3天条目前；同一时效区间内再按优先级和发布时间排序。
+  const now = new Date();
+  filteredItems.sort((a, b) => CampBriefContent.compareByTimeBadgeThenPriority(a, b, now));
   if (resultCount) resultCount.textContent = `${filteredItems.length} 条技术动态`;
   renderPage();
 }

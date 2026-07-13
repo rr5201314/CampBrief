@@ -400,7 +400,7 @@ function applyNewsRules(list){
         && published >= threeDaysAgo
         && published <= now;
     })
-    .sort(CampBriefContent.compareByNaturalDayThenPriority);
+    .sort((a, b) => CampBriefContent.compareByTimeBadgeThenPriority(a, b, now));
 }
 
 // 从 daily-news.json 加载资讯数据并映射为看板所需格式

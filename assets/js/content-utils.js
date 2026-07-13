@@ -19,19 +19,6 @@ const CampBriefContent = (function () {
     return match ? `${match[1]}-${match[2].padStart(2, "0")}-${match[3].padStart(2, "0")}` : "";
   }
 
-  function compareByNaturalDayThenPriority(a, b) {
-    const dayDiff = naturalDayKey(b.published || b.date).localeCompare(naturalDayKey(a.published || a.date));
-    if (dayDiff) return dayDiff;
-
-    const priorityDiff = (b.priority || 1) - (a.priority || 1);
-    if (priorityDiff) return priorityDiff;
-
-    const publishedDiff = new Date(b.published || b.date || 0).getTime() - new Date(a.published || a.date || 0).getTime();
-    if (publishedDiff) return publishedDiff;
-
-    return 0;
-  }
-
   function escapeHtml(value) {
     return String(value == null ? "" : value)
       .replace(/&/g, "&amp;")
@@ -51,5 +38,40 @@ const CampBriefContent = (function () {
     }
   }
 
-  return Object.freeze({ naturalDayKey, compareByNaturalDayThenPriority, escapeHtml, safeHttpUrl });
+  // 资讯和技术列表共用的时效标签。阈值与日期筛选保持一致，避免不同列表页出现相同日期却显示不同徽章。
+  function getTimeBadgeRank(value, referenceTime = new Date()) {
+    const publishedAt = new Date(value);
+    const diffHours = (referenceTime - publishedAt) / (1000 * 60 * 60);
+
+    if (diffHours < 24) return 0;
+    if (diffHours < 72) return 1;
+    if (diffHours < 168) return 2;
+    if (diffHours < 720) return 3;
+    return 4;
+  }
+
+  function getTimeBadge(value, referenceTime = new Date()) {
+    const badgeRank = getTimeBadgeRank(value, referenceTime);
+    const badges = [
+      { statusClass: "status-open", statusText: "24小时" },
+      { statusClass: "status-pending", statusText: "3天" },
+      { statusClass: "status-pending", statusText: "7天" },
+      { statusClass: "status-closed", statusText: "30天" },
+      { statusClass: "status-done", statusText: "更早" }
+    ];
+    return badges[badgeRank];
+  }
+
+  // 先按时效标签排序，保证 24小时/3天/7天/30天/更早不会在分页间交错；同一时效区间内再按优先级和发布时间排序。
+  function compareByTimeBadgeThenPriority(a, b, referenceTime = new Date()) {
+    const badgeDiff = getTimeBadgeRank(a.published || a.date, referenceTime) - getTimeBadgeRank(b.published || b.date, referenceTime);
+    if (badgeDiff) return badgeDiff;
+
+    const priorityDiff = (b.priority || 1) - (a.priority || 1);
+    if (priorityDiff) return priorityDiff;
+
+    return new Date(b.published || b.date || 0).getTime() - new Date(a.published || a.date || 0).getTime();
+  }
+
+  return Object.freeze({ naturalDayKey, compareByTimeBadgeThenPriority, escapeHtml, safeHttpUrl, getTimeBadge });
 })();

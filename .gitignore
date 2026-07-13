@@ -35,3 +35,6 @@ venv/
 # Archives
 *.zip
 *.tar.gz
+
+# Local preview launcher
+start-preview.bat
