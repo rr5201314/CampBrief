@@ -74,7 +74,7 @@ function createCardHTML(item) {
     : priority >= 2
     ? '<span class="badge badge-important"><svg class="icon-sm icon"><use href="#i-status"/></svg>重要</span>'
     : '';
-  const categoryLabels = { ai: 'AI 资讯', competition: '竞赛', exam: '考试', sports: '体育', fun: '趣闻' };
+  const categoryLabels = { ai: 'AI 资讯', competition: '竞赛', exam: '考试', sports: '体育', fun: '每日速览' };
   const categoryIcons = { ai: 'i-bot', competition: 'i-trophy', exam: 'i-exam', sports: 'i-sports', fun: 'i-bulb' };
   const cats = getCategories(item);
   const categoryBadges = cats.map(c => {
@@ -461,7 +461,7 @@ function renderNewsCarouselCard(item) {
   const priority = item.priority || 1;
   const tagClass = priority >= 4 ? 'tag-featured' : 'tag-normal';
   const tagText = priority >= 4 ? '头条' : '重磅';
-  const categoryLabels = { ai: 'AI', tech: '技术', competition: '竞赛', exam: '考试', sports: '体育', fun: '趣闻' };
+  const categoryLabels = { ai: 'AI', tech: '技术', competition: '竞赛', exam: '考试', sports: '体育', fun: '每日速览' };
   const cats = getCategories(item);
   const catText = cats.map(c => categoryLabels[c] || c).join(' · ');
 

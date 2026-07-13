@@ -8,7 +8,7 @@
     competition: { text: "竞赛动态", icon: "i-trophy" },
     exam: { text: "考试动态", icon: "i-exam" },
     sports: { text: "体育", icon: "i-sports" },
-    fun: { text: "每日趣闻", icon: "i-bulb" }
+    fun: { text: "每日速览", icon: "i-bulb" }
   };
 
   function getUrlParam(name) {

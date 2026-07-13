@@ -104,7 +104,7 @@ SOURCES = [
         "category_hint": "sports",
         "lang": "en",
     },
-    # --- 每日趣闻（轻松有趣、有知识增量；不含八卦黑料） ---
+    # --- 每日速览（轻量综合资讯、有知识增量；不含八卦黑料） ---
     {
         "name": "Atlas Obscura",
         "url": "https://www.atlasobscura.com/feeds/latest",
