@@ -37,14 +37,16 @@
 ## 考试模块数据规则
 
 - `data/exams.json` 为考试目录（稳定参考信息），每项含详情字段：`format`/`duration`/`subjects`/`requirements`/`scoring`/`timeline`
-- 三个 URL 字段分工：
+- 四个 URL 字段分工：
   - `official_site`（稳定）：考试报名系统官网，详情页"立即报名/访问报名系统"按钮指向
-  - `news_list_url`（稳定）：官方考试动态列表页，agent 自动化从此处发现最新公告 URL
+  - `official_portal`（稳定）：考试项目官网，详情页"考试官网"按钮指向
+  - `news_list_url`（稳定）：官方考试动态列表或日程页，agent 自动化从此处发现相关公告 URL
   - `official_url`（每期更新）：本期报名公告原文，详情页"查看官方公告"按钮指向，agent 从此抓取 timeline
 - agent 维护流程：
-  1. 访问 `news_list_url` → 提取列表第一条链接 → 得到最新公告 URL
-  2. 抓取最新公告 URL → 解析时间节点 → 更新 `official_url` 和 `timeline`
-  3. 如有新一期，`official_url` 换成新的，`timeline` 重新填充
+  1. 读取 `data/exams.json` 作为 URL 唯一事实源，并按 `scripts/hermes/skills/CampBrief/campbrief-exams/source-policy.json` 的巡检模式处理
+  2. 访问 `news_list_url` → 按考试名称、期次和考务/报名关键词筛选相关公告；不得将列表第一条、无关动态或渲染失败视为新公告
+  3. 抓取确认相关的公告 URL → 解析时间节点 → 更新对应期次的 `official_url` 和 `timeline`；日程页或动态列表可合法作为 `official_url`
+  4. 如有新一期，更新/新增对应期次；PSC、事业单位等仅保留全国官方入口，不采集各省或高校分散通知
 - `timeline`（重要时间节点）数据来源：agent 主动从官方通知原文提取具体信息（日期、时段等）
   - 原文有具体信息时，直接填写（如"2026年上半年为 6月13日 9:00-11:20"）
   - 原文确实没有该信息时，才用"以官方公告为准"或"以所在学校通知为准"作为兜底
@@ -152,7 +154,7 @@
 - **Hermes（手机，cron）** 是唯一的日常执行端；GitHub 仅作为远程仓库和 GitHub Pages 发布来源。
 - `campbrief-daily-news`：先同步并确认工作区干净 → 本地采集非 juya RSS → 同步 GitHub 趋势 → 编辑、核验、校验 → 本地提交 `daily-news.json` 与 `github-trending.json` → **再次 `git pull --ff-only` → `git push`** → 推送成功后清空本次候选池。
 - `campbrief-daily-news-juya`：同样独立执行，但只采集 juya 日报、先拆分日报再编辑；它与前者共用发布文件 `data/daily-news.json`，不共用候选池。
-- `campbrief-exams`：独立巡检官方考试公告、更新 `data/exams.json` 并推送。
+- `campbrief-exams`：独立巡检官方考试公告、更新 `data/exams.json` 并推送。URL 的唯一事实源是 `data/exams.json`；巡检行为和关键词在 `scripts/hermes/skills/CampBrief/campbrief-exams/source-policy.json`，skill 不得维护会过期的网址快照。公告列表必须按考试和期次筛选，列表首条、无关结果公告或渲染失败均不得覆盖当前官方公告；PSC、事业单位等仅保留全国官方入口，不采集各省/高校分散通知。
 - 任务必须在 `git status --porcelain --untracked-files=no` 无输出、开始时 `git pull --ff-only` 与遗留提交重试 `git push` 都成功后才继续；每次最终推送前还必须再次执行 `git pull --ff-only`。任一拉取或推送失败时安全停止，保留本地提交与候选池，禁止合并、变基或基于过期数据发布。
 - 三个 skill 使用 `local-notes/.campbrief-automation.lock` 互斥访问同一工作树；已有锁时新任务以退出码 75 停止，绝不删除别的任务的锁。正常完成或受控提前停止必须释放自己的锁；异常崩溃留下的锁必须由人工确认后清理，优先保证不发生并发写入。
 

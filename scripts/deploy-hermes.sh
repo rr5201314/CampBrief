@@ -30,6 +30,7 @@ echo
 info "检查依赖工具..."
 command -v python3 >/dev/null 2>&1 && ok "python3: $(python3 --version)" || { err "缺少 python3，请执行 pkg install python"; exit 1; }
 command -v git >/dev/null 2>&1 && ok "git: $(git --version)" || { err "缺少 git，请执行 pkg install git"; exit 1; }
+command -v curl >/dev/null 2>&1 && ok "curl: $(curl --version | head -n 1)" || { err "缺少 curl，请执行 pkg install curl"; exit 1; }
 echo
 
 # ---------- 2. 定位 / 克隆仓库 ----------
@@ -54,6 +55,16 @@ if [ ! -f "$REPO/scripts/collect-daily-news.py" ]; then
   exit 1
 fi
 ok "采集脚本就位"
+
+if [ ! -f "$REPO/scripts/validate-exam-sources.py" ]; then
+  err "未找到 scripts/validate-exam-sources.py，请确认仓库内容完整"
+  exit 1
+fi
+if ! python3 "$REPO/scripts/validate-exam-sources.py"; then
+  err "考试官方源或 Hermes 巡检策略校验失败，请先修复后再部署"
+  exit 1
+fi
+ok "考试官方源与 Hermes 巡检策略校验通过"
 
 # ---------- 3. 安装全部 skill 到 Hermes ----------
 echo

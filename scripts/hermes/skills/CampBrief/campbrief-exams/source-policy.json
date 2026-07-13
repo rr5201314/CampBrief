@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "source_of_truth": "data/exams.json",
+  "default": {
+    "mode": "notice-list",
+    "fallback": "current-notice"
+  },
+  "items": {
+    "catti-202606": {
+      "mode": "filtered-list",
+      "fallback": "current-notice",
+      "match_all": ["全国翻译专业资格"],
+      "match_any": ["报名", "考试时间", "考试顺利结束", "CATTI"],
+      "ignore_any": ["培训", "实习", "招聘"]
+    },
+    "ruankao-202605": {
+      "mode": "filtered-list",
+      "fallback": "current-notice",
+      "match_any": ["计算机软件资格", "计算机技术与软件专业技术资格"],
+      "notice_any": ["报名", "考试安排", "考试时间", "批次安排"],
+      "ignore_any": ["成绩查询", "合格标准", "模拟练习", "证书补申领"]
+    },
+    "ruankao-202611": {
+      "mode": "filtered-list",
+      "fallback": "current-notice",
+      "match_any": ["计算机软件资格", "计算机技术与软件专业技术资格"],
+      "notice_any": ["报名", "考试安排", "考试时间", "批次安排"],
+      "ignore_any": ["成绩查询", "合格标准", "模拟练习", "证书补申领"]
+    },
+    "pat-202603": {
+      "mode": "dynamic-list",
+      "fallback": "current-notice",
+      "same_page_notice": true,
+      "match_all": ["PAT"],
+      "match_any": ["2026", "春季"]
+    },
+    "pat-202606": {
+      "mode": "dynamic-list",
+      "fallback": "current-notice",
+      "same_page_notice": true,
+      "match_all": ["PAT"],
+      "match_any": ["2026", "夏季"]
+    },
+    "pat-202609": {
+      "mode": "dynamic-list",
+      "fallback": "current-notice",
+      "same_page_notice": true,
+      "match_all": ["PAT"],
+      "match_any": ["2026", "秋季"]
+    },
+    "junior-accounting-2026": {
+      "mode": "filtered-list",
+      "fallback": "current-notice",
+      "match_all": ["全国会计专业技术资格"],
+      "notice_any": ["考务日程", "报名"]
+    },
+    "intermediate-accounting-2026": {
+      "mode": "filtered-list",
+      "fallback": "current-notice",
+      "match_all": ["全国会计专业技术资格"],
+      "notice_any": ["考务日程", "报名"]
+    },
+    "acca-202603": {
+      "mode": "schedule-page",
+      "fallback": "current-notice",
+      "same_page_notice": true
+    },
+    "acca-202606": {
+      "mode": "schedule-page",
+      "fallback": "current-notice",
+      "same_page_notice": true
+    },
+    "acca-202609": {
+      "mode": "schedule-page",
+      "fallback": "current-notice",
+      "same_page_notice": true
+    },
+    "acca-202612": {
+      "mode": "schedule-page",
+      "fallback": "current-notice",
+      "same_page_notice": true
+    },
+    "guokao-2026": {
+      "mode": "filtered-list",
+      "fallback": "portal",
+      "match_all": ["公务员"],
+      "match_any": ["中央机关", "直属机构", "考试录用"]
+    },
+    "psc": {
+      "mode": "national-portal",
+      "fallback": "portal"
+    },
+    "shiye": {
+      "mode": "national-portal",
+      "fallback": "portal"
+    }
+  }
+}

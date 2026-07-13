@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-12T00:00:00+08:00",
+  "last_updated": "2026-07-13T00:00:00+08:00",
   "source": "CampBrief",
-  "total": 30,
+  "total": 28,
   "categories": [
     {
       "key": "english",
@@ -38,7 +38,7 @@
       "schedule": "2026年6月",
       "summary": "面向在校大学生的英语水平测试，分四级和六级，包含听力、阅读、写作和翻译。每年两次，需通过学校统一报名。",
       "search": "英语 四级 六级 cet cet-4 cet-6 university english listening 2026 6月",
-      "official_site": "http://cet-bm.neea.edu.cn/",
+      "official_site": "https://cet-bm.neea.edu.cn/",
       "official_portal": "https://cet.neea.edu.cn/",
       "news_list_url": "https://www.neea.edu.cn/html1/category/16093/1124-1.htm",
       "official_url": "https://www.neea.edu.cn/html1/report/2603/2-1.htm",
@@ -88,7 +88,7 @@
       "schedule": "2026年12月",
       "summary": "面向在校大学生的英语水平测试，分四级和六级，包含听力、阅读、写作和翻译。每年两次，需通过学校统一报名。",
       "search": "英语 四级 六级 cet cet-4 cet-6 university english listening 2026 12月",
-      "official_site": "http://cet-bm.neea.edu.cn/",
+      "official_site": "https://cet-bm.neea.edu.cn/",
       "official_portal": "https://cet.neea.edu.cn/",
       "news_list_url": "https://www.neea.edu.cn/html1/category/16093/1124-1.htm",
       "official_url": "",
@@ -113,10 +113,10 @@
       "schedule": "2026年6月",
       "summary": "英语专业二年级学生参加的专业基础水平测试，考核听写、听力、语法、阅读与写作能力。",
       "search": "英语 专业 四级 tem-4 tem english major 2026",
-      "official_site": "",
-      "official_portal": "http://tem.fltonline.cn/",
-      "news_list_url": "http://tem.fltonline.cn/?cat=113",
-      "official_url": "http://tem.fltonline.cn/?p=75533",
+      "official_site": "https://tem.fltonline.cn/",
+      "official_portal": "https://tem.fltonline.cn/",
+      "news_list_url": "https://tem.fltonline.cn/?cat=113",
+      "official_url": "https://tem.fltonline.cn/?p=75533",
       "timeline": [
         {
           "label": "考试时间",
@@ -141,10 +141,10 @@
       "schedule": "2026年3月",
       "summary": "英语专业四年级学生参加的最高水平专业测试，全面考核高级听力、阅读、翻译与写作能力。",
       "search": "英语 专业 八级 tem-8 tem english major advanced 2026",
-      "official_site": "",
-      "official_portal": "http://tem.fltonline.cn/",
-      "news_list_url": "http://tem.fltonline.cn/?cat=113",
-      "official_url": "http://tem.fltonline.cn/?p=75533",
+      "official_site": "https://tem.fltonline.cn/",
+      "official_portal": "https://tem.fltonline.cn/",
+      "news_list_url": "https://tem.fltonline.cn/?cat=113",
+      "official_url": "https://tem.fltonline.cn/?p=75533",
       "timeline": [
         {
           "label": "考试时间",
@@ -171,8 +171,8 @@
       "search": "雅思 ielts 留学 英语 国际 international english",
       "official_site": "https://ielts.neea.cn/",
       "official_portal": "https://ielts-main.neea.cn/",
-      "news_list_url": "https://ielts-main.neea.cn/html1/category/1507/1403-1.htm",
-      "official_url": ""
+      "news_list_url": "https://www.chinaielts.org/press-office",
+      "official_url": "https://www.chinaielts.org/press-office/IELTS-Chinese-Mainland-Exam-Registration-Fee-Update-2026"
     },
     {
       "id": "toefl",
@@ -186,35 +186,27 @@
       "official_site": "https://toefl.neea.cn/",
       "official_portal": "https://toefl-main.neea.cn/",
       "news_list_url": "https://toefl-main.neea.cn/html1/category/16123/94-1.htm",
-      "official_url": ""
+      "official_url": "https://toefl.neea.cn/"
     },
     {
       "id": "catti-202606",
-      "name": "2026年上半年全国翻译专业资格考试 (CATTI)",
+      "name": "2026年全国翻译专业资格（水平）考试 (CATTI)",
       "category": "english",
       "status": "done",
       "fee": "约60-200元",
       "schedule": "2026年6月",
       "summary": "国家级翻译人才评价考试，分口译和笔译两类，含多个语种和级别，是翻译行业权威资格认证。",
-      "search": "翻译 catti 口译 笔译 translation interpret 2026 上半年",
-      "official_site": "http://www.catticenter.com/",
-      "official_portal": "http://www.catticenter.com/",
-      "news_list_url": "http://www.cpta.com.cn/notice.html",
-      "official_url": ""
-    },
-    {
-      "id": "catti-202611",
-      "name": "2026年下半年全国翻译专业资格考试 (CATTI)",
-      "category": "english",
-      "status": "pending",
-      "fee": "约60-200元",
-      "schedule": "2026年11月",
-      "summary": "国家级翻译人才评价考试，分口译和笔译两类，含多个语种和级别，是翻译行业权威资格认证。",
-      "search": "翻译 catti 口译 笔译 translation interpret 2026 下半年",
-      "official_site": "http://www.catticenter.com/",
-      "official_portal": "http://www.catticenter.com/",
-      "news_list_url": "http://www.cpta.com.cn/notice.html",
-      "official_url": ""
+      "search": "翻译 catti 口译 笔译 translation interpret 2026",
+      "official_site": "https://www.cpta.com.cn/",
+      "official_portal": "https://www.aticicg.org.cn/",
+      "news_list_url": "https://www.aticicg.org.cn/node_1014328.html",
+      "official_url": "https://www.aticicg.org.cn/2026-06/30/content_43455221.html",
+      "timeline": [
+        {
+          "label": "考试时间",
+          "value": "2026年6月27日至28日"
+        }
+      ]
     },
     {
       "id": "ncre-202603",
@@ -228,7 +220,7 @@
       "official_site": "https://ncre-bm.neea.edu.cn/",
       "official_portal": "https://ncre.neea.edu.cn/",
       "news_list_url": "https://ncre.neea.edu.cn/html1/category/1507/872-1.htm",
-      "official_url": ""
+      "official_url": "https://ncre.neea.edu.cn/xhtml1/report/2512/40-1.htm"
     },
     {
       "id": "ncre-202609",
@@ -270,7 +262,7 @@
       "official_site": "https://www.ruankao.org.cn/",
       "official_portal": "https://www.ruankao.org.cn/",
       "news_list_url": "https://www.ruankao.org.cn/index/work.html",
-      "official_url": ""
+      "official_url": "https://www.ruankao.org.cn/article/content/2603051204118156470700001.html"
     },
     {
       "id": "ruankao-202611",
@@ -284,7 +276,7 @@
       "official_site": "https://www.ruankao.org.cn/",
       "official_portal": "https://www.ruankao.org.cn/",
       "news_list_url": "https://www.ruankao.org.cn/index/work.html",
-      "official_url": ""
+      "official_url": "https://www.ruankao.org.cn/article/content/2603051204118156470700001.html"
     },
     {
       "id": "pat-202603",
@@ -298,7 +290,7 @@
       "official_site": "https://www.patest.cn/",
       "official_portal": "https://www.patest.cn/",
       "news_list_url": "https://www.patest.cn/articles",
-      "official_url": ""
+      "official_url": "https://www.patest.cn/articles"
     },
     {
       "id": "pat-202606",
@@ -312,7 +304,7 @@
       "official_site": "https://www.patest.cn/",
       "official_portal": "https://www.patest.cn/",
       "news_list_url": "https://www.patest.cn/articles",
-      "official_url": ""
+      "official_url": "https://www.patest.cn/articles"
     },
     {
       "id": "pat-202609",
@@ -326,7 +318,7 @@
       "official_site": "https://www.patest.cn/",
       "official_portal": "https://www.patest.cn/",
       "news_list_url": "https://www.patest.cn/articles",
-      "official_url": ""
+      "official_url": "https://www.patest.cn/articles"
     },
     {
       "id": "junior-accounting-2026",
@@ -337,24 +329,38 @@
       "schedule": "2026年5月",
       "summary": "会计行业入门级证书，考试科目为《初级会计实务》和《经济法基础》，高中及以上学历即可报考。",
       "search": "初级 会计 职称 初会 accounting junior 2026",
-      "official_site": "http://kzp.mof.gov.cn/",
-      "official_portal": "http://kzp.mof.gov.cn/",
-      "news_list_url": "http://kzp.mof.gov.cn/list.jsp?class_id=01_05",
-      "official_url": ""
+      "official_site": "https://ausm.mof.gov.cn/",
+      "official_portal": "https://kjs.mof.gov.cn/",
+      "news_list_url": "https://kjs.mof.gov.cn/gongzuotongzhi/",
+      "official_url": "https://kjs.mof.gov.cn/gongzuotongzhi/202511/t20251127_3977584.htm"
     },
     {
       "id": "intermediate-accounting-2026",
       "name": "2026年中级会计职称考试",
       "category": "accounting",
-      "status": "pending",
+      "status": "closed",
       "fee": "每科约50-70元",
       "schedule": "2026年9月",
       "summary": "面向有一定工作经验的会计人员，需满足工作年限要求，考试含《中级会计实务》《财务管理》《经济法》。",
       "search": "中级 会计 职称 中会 accounting intermediate 2026",
-      "official_site": "http://kzp.mof.gov.cn/",
-      "official_portal": "http://kzp.mof.gov.cn/",
-      "news_list_url": "http://kzp.mof.gov.cn/list.jsp?class_id=01_05",
-      "official_url": ""
+      "official_site": "https://ausm.mof.gov.cn/",
+      "official_portal": "https://kjs.mof.gov.cn/",
+      "news_list_url": "https://kjs.mof.gov.cn/gongzuotongzhi/",
+      "official_url": "https://kjs.mof.gov.cn/gongzuotongzhi/202511/t20251127_3977584.htm",
+      "timeline": [
+        {
+          "label": "报名时间",
+          "value": "2026年6月12日至7月2日"
+        },
+        {
+          "label": "考试时间",
+          "value": "2026年9月5日至6日"
+        },
+        {
+          "label": "准考证打印",
+          "value": "各省级考试管理机构于2026年8月11日前公布"
+        }
+      ]
     },
     {
       "id": "cpa-2026",
@@ -368,7 +374,7 @@
       "official_site": "https://cpaexam.cicpa.org.cn/",
       "official_portal": "https://www.cicpa.org.cn/",
       "news_list_url": "https://www.cicpa.org.cn/ztzl1/exam/exam_info/",
-      "official_url": "https://www.cicpa.org.cn/xxfb/tzgg/202512/t20251210_65740.html",
+      "official_url": "https://www.cicpa.org.cn/xxfb/tzgg/202603/t20260311_65852.html",
       "timeline": [
         {
           "label": "专业阶段考试",
@@ -397,10 +403,10 @@
       "schedule": "2026年3月",
       "summary": "国际通用会计师资格，全球认可度高，适合意向跨国企业或四大会计师事务所发展的学生。",
       "search": "acca 特许公认 会计 国际 accounting international 2026 3月",
-      "official_site": "https://www.accaglobal.com.cn/",
-      "official_portal": "https://www.accaglobal.com.cn/",
-      "news_list_url": "https://www.accaglobal.com.cn/",
-      "official_url": ""
+      "official_site": "https://myacca.accaglobal.com/",
+      "official_portal": "https://www.accaglobal.com/cn/zh.html",
+      "news_list_url": "https://www.accaglobal.com/gb/en/student/getting-started/important-dates.html",
+      "official_url": "https://www.accaglobal.com/gb/en/student/getting-started/important-dates.html"
     },
     {
       "id": "acca-202606",
@@ -411,10 +417,10 @@
       "schedule": "2026年6月",
       "summary": "国际通用会计师资格，全球认可度高，适合意向跨国企业或四大会计师事务所发展的学生。",
       "search": "acca 特许公认 会计 国际 accounting international 2026 6月",
-      "official_site": "https://www.accaglobal.com.cn/",
-      "official_portal": "https://www.accaglobal.com.cn/",
-      "news_list_url": "https://www.accaglobal.com.cn/",
-      "official_url": ""
+      "official_site": "https://myacca.accaglobal.com/",
+      "official_portal": "https://www.accaglobal.com/cn/zh.html",
+      "news_list_url": "https://www.accaglobal.com/gb/en/student/getting-started/important-dates.html",
+      "official_url": "https://www.accaglobal.com/gb/en/student/getting-started/important-dates.html"
     },
     {
       "id": "acca-202609",
@@ -425,34 +431,30 @@
       "schedule": "2026年9月",
       "summary": "国际通用会计师资格，全球认可度高，适合意向跨国企业或四大会计师事务所发展的学生。",
       "search": "acca 特许公认 会计 国际 accounting international 2026 9月",
-      "official_site": "https://www.accaglobal.com.cn/",
-      "official_portal": "https://www.accaglobal.com.cn/",
-      "news_list_url": "https://www.accaglobal.com.cn/",
-      "official_url": "",
+      "official_site": "https://myacca.accaglobal.com/",
+      "official_portal": "https://www.accaglobal.com/cn/zh.html",
+      "news_list_url": "https://www.accaglobal.com/gb/en/student/getting-started/important-dates.html",
+      "official_url": "https://www.accaglobal.com/gb/en/student/getting-started/important-dates.html",
       "timeline": [
         {
-          "label": "考试月份",
-          "value": "2026年9月"
+          "label": "考试时间",
+          "value": "2026年9月7日至11日"
         },
         {
           "label": "早期报名开始",
           "value": "2026年5月5日"
         },
         {
-          "label": "常规报名开始",
-          "value": "2026年7月27日"
-        },
-        {
           "label": "常规报名截止",
-          "value": "2026年7月28日"
+          "value": "2026年7月27日（23:59，英国时间）"
         },
         {
           "label": "后期报名开始",
-          "value": "2026年8月3日"
+          "value": "常规报名截止后开放"
         },
         {
           "label": "后期报名截止",
-          "value": "2026年8月8日"
+          "value": "2026年8月3日（23:59，英国时间）"
         }
       ]
     },
@@ -465,10 +467,10 @@
       "schedule": "2026年12月",
       "summary": "国际通用会计师资格，全球认可度高，适合意向跨国企业或四大会计师事务所发展的学生。",
       "search": "acca 特许公认 会计 国际 accounting international 2026 12月",
-      "official_site": "https://www.accaglobal.com.cn/",
-      "official_portal": "https://www.accaglobal.com.cn/",
-      "news_list_url": "https://www.accaglobal.com.cn/",
-      "official_url": ""
+      "official_site": "https://myacca.accaglobal.com/",
+      "official_portal": "https://www.accaglobal.com/cn/zh.html",
+      "news_list_url": "https://www.accaglobal.com/gb/en/student/getting-started/important-dates.html",
+      "official_url": "https://www.accaglobal.com/gb/en/student/getting-started/important-dates.html"
     },
     {
       "id": "ntce-202603",
@@ -479,10 +481,10 @@
       "schedule": "2026年上半年（笔试3月，面试5月）",
       "summary": "教师资格认定考试，含笔试和面试，分幼儿园、小学、中学多个学段，是从事教师职业的必备前提。",
       "search": "教师 资格 教资 ntce teacher certification 2026 上半年",
-      "official_site": "http://ntce.neea.edu.cn/",
+      "official_site": "https://ntcebm4.neea.edu.cn/apply/memapp/memLogin",
       "official_portal": "https://ntce.neea.edu.cn/",
       "news_list_url": "https://ntce.neea.edu.cn/html1/category/1507/1148-1.htm",
-      "official_url": ""
+      "official_url": "https://ntce.neea.edu.cn/xhtml1/report/2512/78-1.htm"
     },
     {
       "id": "ntce-202610",
@@ -493,18 +495,18 @@
       "schedule": "2026年下半年（笔试10月，面试12月）",
       "summary": "教师资格认定考试，含笔试和面试，分幼儿园、小学、中学多个学段，是从事教师职业的必备前提。",
       "search": "教师 资格 教资 ntce teacher certification 2026 下半年",
-      "official_site": "http://ntce.neea.edu.cn/",
+      "official_site": "https://ntcebm4.neea.edu.cn/apply/memapp/memLogin",
       "official_portal": "https://ntce.neea.edu.cn/",
       "news_list_url": "https://ntce.neea.edu.cn/html1/category/1507/1148-1.htm",
       "official_url": "https://ntce.neea.edu.cn/html1/report/2606/25-1.htm",
       "timeline": [
         {
           "label": "笔试时间",
-          "value": "2026年下半年（具体日期以官方公告为准）"
+          "value": "2026年9月12日"
         },
         {
           "label": "面试时间",
-          "value": "2026年12月"
+          "value": "2026年12月5日至6日"
         },
         {
           "label": "报名时间",
@@ -529,10 +531,10 @@
       "schedule": "各地定期组织",
       "summary": "评估普通话水平的标准测试，分一到三级，教师资格认定要求达到二级乙等及以上。",
       "search": "普通话 水平 测试 psc putonghua teacher",
-      "official_site": "https://bm.cltt.org/",
+      "official_site": "https://stzbm.cltt.org/",
       "official_portal": "https://www.cltt.org/",
       "news_list_url": "https://www.cltt.org/",
-      "official_url": ""
+      "official_url": "https://stzbm.cltt.org/"
     },
     {
       "id": "guokao-2026",
@@ -543,23 +545,9 @@
       "schedule": "2026年11月底或12月初",
       "summary": "中央机关及其直属机构公务员录用考试，含笔试（行测、申论）和面试，是进入中央机关的主要途径。",
       "search": "公务员 国考 行测 申论 civil service national 2027",
-      "official_site": "http://bm.scs.gov.cn/",
-      "official_portal": "http://www.scs.gov.cn/gkIndex.html",
-      "news_list_url": "http://bm.scs.gov.cn/",
-      "official_url": ""
-    },
-    {
-      "id": "shengkao-2026",
-      "name": "2026年各省公务员考试 (省考)",
-      "category": "civil-service",
-      "status": "done",
-      "fee": "约50-100元",
-      "schedule": "2026年3-4月",
-      "summary": "地方各级机关公务员录用考试，多数省份参加联考，笔试科目与国考类似，部分省份加考专业科目。",
-      "search": "公务员 省考 地方 civil service provincial 2026",
-      "official_site": "",
-      "official_portal": "",
-      "news_list_url": "",
+      "official_site": "https://bm.scs.gov.cn/",
+      "official_portal": "https://www.scs.gov.cn/gkIndex.html",
+      "news_list_url": "https://www.scs.gov.cn/",
       "official_url": ""
     },
     {
@@ -571,36 +559,36 @@
       "schedule": "各地不定期",
       "summary": "事业单位工作人员公开招聘考试，含笔试和面试，岗位类型多样，是进入事业编制的主要渠道。",
       "search": "事业单位 招聘 编制 public institution",
-      "official_site": "",
+      "official_site": "https://job.mohrss.gov.cn/cjobs/institution/listInstitution",
       "official_portal": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/index.html",
       "news_list_url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/index.html",
-      "official_url": ""
+      "official_url": "https://job.mohrss.gov.cn/cjobs/institution/listInstitution"
     },
     {
       "id": "kaoyan-2026",
-      "name": "2026年12月全国硕士研究生招生考试 (考研)",
+      "name": "2027年全国硕士研究生招生考试 (考研)",
       "category": "postgrad",
-      "status": "done",
+      "status": "pending",
       "fee": "约200元",
-      "schedule": "2026年12月底",
+      "schedule": "预计2026年12月",
       "summary": "选拔本科毕业生进入研究生阶段的全国统一考试，含初试和复试，分学术型和专业型硕士两类。",
-      "search": "考研 硕士 研究生 postgraduate entrance master 2026 12月",
-      "official_site": "https://yz.chsi.com.cn/",
+      "search": "考研 硕士 研究生 postgraduate entrance master 2027",
+      "official_site": "https://yzst.chsi.com.cn/yzwb/",
       "official_portal": "https://yz.chsi.com.cn/",
       "news_list_url": "https://yz.chsi.com.cn/kyzx/jybzc/",
       "official_url": ""
     },
     {
       "id": "baoyan-2026",
-      "name": "2026年推荐免试研究生 (保研)",
+      "name": "2027年推荐免试研究生 (保研)",
       "category": "postgrad",
-      "status": "done",
+      "status": "pending",
       "fee": "无报名费",
       "schedule": "2026年9-10月",
       "summary": "推荐优秀本科毕业生免试攻读研究生，需获得本科院校推免资格，通过目标院校复试后录取。",
-      "search": "保研 推免 研究生 推荐免试 postgraduate exempt 2026",
-      "official_site": "https://yz.chsi.com.cn/tm",
-      "official_portal": "https://yz.chsi.com.cn/tm",
+      "search": "保研 推免 研究生 推荐免试 postgraduate exempt 2027",
+      "official_site": "https://yz.chsi.com.cn/tm/",
+      "official_portal": "https://yz.chsi.com.cn/tm/",
       "news_list_url": "https://yz.chsi.com.cn/kyzx/kydt/",
       "official_url": ""
     }

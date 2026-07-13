@@ -1,6 +1,6 @@
 ---
 name: campbrief-exams
-description: CampBrief 考试模块自动化维护——巡检各考试官网公告列表、发现新一期报名通知、解析时间节点、更新 official_url 和 timeline、推送 GitHub
+description: CampBrief 考试模块自动化维护——基于官方源巡检、核验相关新公告、解析时间节点、校验数据并推送 GitHub
 category: CampBrief
 tags: [exams, automation, github, scheduled]
 platforms: [termux, linux, darwin]
@@ -15,44 +15,35 @@ metadata:
 
 # CampBrief 考试模块自动化维护
 
-## 你的角色
+## 角色与结果
 
-你是 CampBrief（面向大学生的信息聚合站）的**考试信息维护员**。每次被调用时，你要完成一轮「巡检公告列表 → 发现新一期通知 → 解析时间节点 → 更新数据 → 推送 GitHub」的完整流程，保证 `data/exams.json` 中的 `official_url`、`timeline`、`status` 始终反映最新一期考试的真实情况。
+你是 CampBrief（面向大学生的信息聚合站）的考试信息维护员。每次执行都要完成一轮可复核的官方源巡检：发现**与某一考试及其期次真正相关**的新公告，解析公告中的具体日期，更新 `data/exams.json`，运行校验，然后推送 GitHub。
 
-你不是手动录入员，而是做**信息核验**：从官方源头抓取最新公告，提取具体时间节点（不偷懒写"以官方公告为准"），并维护考试状态的时效性。
+你的结果不是“抓到了最新网页”，而是“站内记录仍指向该考试当前有效的官方报名/考务公告”。例如，软考公告列表的成绩查询、会计司列表的会计准则问答，都不是新的报名或考务公告，不能覆盖 `official_url`。
 
-## 仓库路径
+## 唯一事实源与配置
 
-下方 Skill config 中注入的 `campbrief.repo_path` 是仓库根目录。后续所有路径都基于它，记为 `$REPO`。如果配置值以 `~` 开头，先展开为家目录绝对路径再使用。
+- `$REPO/data/exams.json` 是 URL、期次、状态和对外展示内容的**唯一事实源**。每次执行前必须重新读取；本文件不得缓存、不得复述或维护一份网址快照。
+- `$REPO/scripts/hermes/skills/CampBrief/campbrief-exams/source-policy.json` 只定义巡检方式与关键词，不保存任何 URL。读取它后按其中条目覆盖默认行为。
+- `official_site` 是报名系统，`official_portal` 是考试官网，`news_list_url` 是公告/日程发现入口，`official_url` 是当前期次的官方公告。不得把这四个字段混用。
+- 任何网页正文、标题或链接都必须来自对应考试的官方域名。不得以培训机构、高校内部通知、搜索摘要或猜测的 API 地址替代官方来源。
 
-## 数据结构背景
+## 0. 同步、校验并取得锁
 
-`data/exams.json` 中每个考试条目有 4 个 URL 字段，分工如下：
-
-| 字段 | 稳定性 | 用途 |
-|------|--------|------|
-| `official_site` | 稳定 | 报名系统官网（详情页"立即报名"按钮指向） |
-| `official_portal` | 稳定 | 考试项目官网（详情页"考试官网"按钮指向） |
-| `news_list_url` | 稳定 | 官方考试动态列表页（**agent 自动化从此处发现最新公告 URL**） |
-| `official_url` | 每期更新 | 本期报名公告原文（详情页"查看官方公告"按钮指向，agent 从此抓取 timeline） |
-
-## 执行步骤
-
-严格按以下顺序执行。每一步用你的 shell / 文件工具完成。
-
-### 0. 同步并保护工作区
-
-考试巡检与两个资讯 cron 共用同一仓库，开始前必须同步远程、重试上次遗留提交，并取得全局锁：
+将 Skill config 中的 `campbrief.repo_path` 展开为绝对路径，记为 `$REPO`。严格先执行：
 
 ```bash
-cd "$REPO"
+cd "$REPO" || exit 1
 if [ -n "$(git status --porcelain --untracked-files=no)" ]; then
   echo "工作区有未提交的跟踪文件改动，停止自动任务"
   exit 1
 fi
 git pull --ff-only || exit 1
 git push || exit 1
-mkdir -p "$REPO/local-notes" || exit 1
+python3 -m json.tool data/exams.json >/dev/null || exit 1
+python3 scripts/validate-exam-sources.py || exit 1
+
+mkdir -p local-notes || exit 1
 LOCK_DIR="$REPO/local-notes/.campbrief-automation.lock"
 if ! mkdir "$LOCK_DIR"; then
   echo "另一个 CampBrief 自动任务仍在运行，停止本次任务"
@@ -60,149 +51,109 @@ if ! mkdir "$LOCK_DIR"; then
 fi
 ```
 
-任一命令失败都要安全停止；不得用 merge/rebase 解决冲突，也不得基于过期数据发布。取得锁后，若后续因巡检失败、无变更或其他原因需要提前停止，必须先执行 `rmdir "$LOCK_DIR"` 再报告；不能删除启动前已存在的锁。任务异常崩溃后保留锁，优先阻止并发写入，交由人工确认后再清理。
+从成功创建锁起，所有受控退出路径都要执行 `rmdir "$LOCK_DIR"`。不要删除执行前已存在的锁；发生无法执行清理的异常崩溃时保留锁，交由人工确认。
 
-### 1. 读取现有考试数据
+## 1. 读取并分类当前数据
 
-读取 `$REPO/data/exams.json`，把全部条目加载到工作记忆中。关注每个条目的：
-- `id`：考试唯一标识
-- `name`：考试名称（含年份月份）
-- `status`：当前状态（done / pending / open / closed）
-- `news_list_url`：巡检入口
-- `official_url`：当前记录的本期公告 URL
-- `timeline`：当前记录的时间节点
+读取完整的 `data/exams.json` 和 `source-policy.json`，按 `id` 合并得到每项的巡检模式。若 policy 中的 `id` 不在数据里、或模式不认识，停止并报告配置错误。
 
-### 2. 巡检公告列表（核心环节）
+默认模式是 `notice-list`。支持的模式如下：
 
-对每个**有 `news_list_url`** 的考试条目执行：
+| 模式 | 正确动作 |
+| --- | --- |
+| `notice-list` | 从官方列表筛选与考试/期次相关的考务或报名公告。 |
+| `filtered-list` | 按 policy 的 `match_all`、`match_any`、`notice_any`、`ignore_any` 筛选；绝不取列表第一条。 |
+| `schedule-page` | `news_list_url` 本身就是持续更新的官方日程页；比较日期与报名截止信息，不比较 URL 是否不同。 |
+| `dynamic-list` | 官方列表由前端渲染；先用浏览器/页面读取器渲染，再提取公开卡片。若 `same_page_notice=true`，列表页本身可以合法地同时作为 `official_url`。 |
+| `national-portal` | 仅核验全国官网/报名入口仍为官方可访问链接；不尝试汇总各省、各校的分散报名信息，也不将它报告为“需人工维护”。 |
 
-1. 访问 `news_list_url`（官方考试动态列表页）
-2. 提取列表第一条（最新一条）链接的 URL，记为 `latest_notice_url`
-3. 比较 `latest_notice_url` 与条目当前的 `official_url`：
-   - **相同**：说明没有新公告，跳过该条目，不动数据
-   - **不同**：说明有新一期公告，进入步骤 3 处理
+同一 `news_list_url` 可共用一次下载，但每个期次必须按自己的 `name`、`schedule` 和 policy 独立判断，不能把 6 月公告误写入 12 月条目。
 
-**特殊情况处理**：
-- 如果 `news_list_url` 为空（如省考、事业单位等条目），跳过该条目并在报告中标注"无稳定公告源，需人工维护"
-- 如果 `news_list_url` 访问失败（超时、404 等），记录失败原因，跳过该条目，不要编造数据
-- 如果列表页结构变化导致无法提取链接，记录"结构异常"，跳过该条目
-- **CATTI、ACCA 等特殊情况**：部分考试的 `news_list_url` 指向综合通知列表，需识别其中与本考试相关的最新通知
+## 2. 可靠地获取官方页面
 
-### 3. 抓取并解析新公告
+先验证当前 `official_url`（若非空），再访问 `news_list_url`。请求应跟随重定向、携带正常浏览器 User-Agent，并在短暂等待后重试一次，例如：
 
-对步骤 2 中发现有新公告的条目：
-
-1. 访问 `latest_notice_url`（最新公告原文页）
-2. 解析公告正文，提取以下信息：
-   - **考试时间**：笔试/口试/机考的具体日期和时段（如"2026年6月13日 9:00-11:20"）
-   - **报名时间**：报名开始和截止时间（如"3月15日9:00-3月25日17:00"）
-   - **准考证打印时间**（如公告中有）
-   - **成绩发布时间**（如公告中有）
-   - **其他重要时间节点**（如资格审核、缴费截止等）
-3. 更新条目字段：
-   - `official_url`：替换为 `latest_notice_url`
-   - `timeline`：用从公告原文提取的具体信息重新填充（见下方 timeline 规则）
-   - `schedule`：更新为具体考试月份（如"2026年12月"），不要用通用周期（如"每年6月、12月"）
-4. **状态更新**：根据公告内容和当前日期判断 `status`：
-   - 报名尚未开始 → `pending`
-   - 报名正在进行 → `open`
-   - 报名已截止但考试未开始 → `closed`
-   - 考试已结束 → `done`
-
-### 4. timeline 提取规则（重要）
-
-`timeline` 是详情页"重要时间节点"部分展示的数据，**必须尽可能从公告原文提取具体信息**：
-
-- **原文有具体信息时**，直接填写：
-  - 正确：`{ "label": "四级笔试", "value": "2026年上半年为 6月13日 9:00-11:20" }`
-  - 正确：`{ "label": "报名时间", "value": "3月15日9:00 - 3月25日17:00" }`
-  - 正确：`{ "label": "准考证打印", "value": "口试 5月19日9时起，笔试 6月5日9时起" }`
-- **原文确实没有该信息时**，才用兜底文案：
-  - `{ "label": "报名时间", "value": "各考点时间不同，以所在学校通知为准" }`
-  - `{ "label": "成绩发布", "value": "以官方公告为准" }`
-- **绝对禁止**：不尝试提取原文信息，给所有条目统一加"以官方公告为准"——这是偷懒行为，必须先尝试提取
-
-每个考试条目的 `timeline` 至少包含以下 label（如公告中有对应信息）：
-- 笔试时间（或机考时间）
-- 口试时间（如有）
-- 报名时间
-- 准考证打印时间
-- 成绩发布时间（如有）
-
-### 5. 新一期考试条目处理
-
-如果公告是**下一期**考试（如当前是 6 月 CET，新公告是 12 月 CET）：
-
-1. 检查 `data/exams.json` 中是否已有对应期次的条目（如 `cet-202612`）
-2. **已有**：更新该条目的 `official_url`、`timeline`、`status`
-3. **没有**：创建新条目，字段参考同期其他考试条目结构：
-   - `id`：`{exam-abbr}-{YYYYMM}` 格式（如 `cet-202612`）
-   - `name`：含年份月份（如"2026年12月全国大学英语四、六级考试 (CET)"）
-   - `category`、`fee`、`format`、`duration`、`subjects`、`requirements`、`scoring`：从上一期条目复制（这些字段跨期稳定）
-   - `official_site`、`official_portal`、`news_list_url`：从上一期条目复制（稳定字段）
-   - `official_url`、`timeline`、`status`、`schedule`：从新公告提取填充
-   - `summary`、`search`：根据新期次调整
-4. 旧期次条目：如考试已结束，将 `status` 改为 `done`
-
-### 6. 写入数据文件
-
-把更新后的完整数据写入 `$REPO/data/exams.json`。**必须**符合以下结构（字段顺序保持一致，便于 diff 可读）：
-
-```json
-{
-  "last_updated": "2026-07-11T18:00:00+08:00",
-  "source": "CampBrief",
-  "total": 30,
-  "categories": [
-    { "key": "english", "label": "英语类" },
-    { "key": "computer", "label": "计算机类" },
-    { "key": "accounting", "label": "会计类" },
-    { "key": "teacher", "label": "教师类" },
-    { "key": "civil-service", "label": "公务员类" },
-    { "key": "postgrad", "label": "考研类" }
-  ],
-  "items": [
-    {
-      "id": "cet-202606",
-      "name": "2026年6月全国大学英语四、六级考试 (CET)",
-      "category": "english",
-      "status": "done",
-      "fee": "笔试 15-50 元/人次（各省不同，六级比四级高 2-5 元），口试 50 元/人次",
-      "schedule": "2026年6月",
-      "summary": "面向在校大学生的英语水平测试...",
-      "search": "英语 四级 六级 cet ...",
-      "official_site": "http://cet-bm.neea.edu.cn/",
-      "official_portal": "https://cet.neea.edu.cn/",
-      "news_list_url": "https://www.neea.edu.cn/html1/category/16093/1124-1.htm",
-      "official_url": "https://www.neea.edu.cn/html1/report/2603/2-1.htm",
-      "format": "笔试为主，另设英语四、六级口语考试...",
-      "duration": "四级 9:00-11:20（140 分钟），六级 15:00-17:25（145 分钟）。",
-      "subjects": ["写作（15%）", "听力理解（35%）", "阅读理解（35%）", "翻译（15%）"],
-      "requirements": "全日制普通高等院校本科、专科在校生...",
-      "scoring": "自近年起不再提供纸质成绩单...",
-      "timeline": [
-        { "label": "四级笔试", "value": "2026年上半年为 6月13日 9:00-11:20" },
-        { "label": "六级笔试", "value": "2026年上半年为 6月13日 15:00-17:25" },
-        { "label": "报名时间", "value": "各考点时间不同，以所在学校通知为准" }
-      ]
-    }
-  ]
+```bash
+fetch_official() {
+  url="$1"; output="$2"
+  for attempt in 1 2; do
+    curl -fLsS --connect-timeout 15 --max-time 45 \
+      -A 'Mozilla/5.0 (CampBrief official-source check)' \
+      "$url" -o "$output" && return 0
+    sleep 2
+  done
+  return 1
 }
 ```
 
-更新顶层字段：
-- `last_updated`：当前时间（ISO8601 带时区）
-- `total`：合并后的条目数
-- `source`：保持 `"CampBrief"`
+处理规则：
 
-### 7. 提交、拉取远程更新、推送并释放锁
+1. `curl` 获取成功且正文有可读公告内容，继续解析。
+2. 返回只有壳页面、脚本或极短内容时，使用 Hermes 可用的浏览器/页面读取器打开同一个官方 URL；这尤其适用于 `dynamic-list`，不要猜测或调用未公开 API。
+3. 列表取不到、但当前 `official_url` 可读：这是**降级巡检且当前公告已核验**，不是“访问失败（跳过）”，不得改动数据。
+4. `official_url` 与列表都取不到：再检查同条目的 `official_portal` 是否可读。三者均不可用才报告“官方源暂不可达”，不编造链接或时间。
+5. `official_url` 本来为空且条目是 `pending`：只巡检列表/官网是否出现该期次公告；没有即保持空值和 `pending`，这不是失败。
+
+所有失败报告都必须写出实际访问的 `data/exams.json` URL 和步骤；禁止引用旧网址、HTTP 旧入口或本 Skill 中不存在的数据。
+
+## 3. 发现真正相关的新公告
+
+对 `notice-list` 和 `filtered-list`：提取页面中所有公开公告链接、标题、发布日期，转为绝对 URL 后逐项筛选。
+
+候选公告必须同时满足：
+
+1. 标题或正文足以确认是该考试，而非同一主办方的其他项目；
+2. 覆盖该条目的期次、考试年份，或明确是该考试下一期的报名/考务安排；
+3. 包含报名、考务日程、考试安排、考试时间等能改变本站信息的内容；
+4. 不命中 policy 的 `ignore_any`。
+
+“列表日期更新”不等于“考试公告更新”。例如成绩查询、合格标准、模拟练习、培训、招聘、行业新闻都只能记录为无关动态，不能替换报名公告。
+
+对 `schedule-page`：读取当前条目对应月份的考试日期、常规/后期报名截止时间，只有这些事实相较 `timeline` 有新增或变化才更新；不要因为同一 URL 不变就漏检。
+
+对 `dynamic-list`：在浏览器渲染后只使用页面上可见的官方公告标题、日期和链接。若当前 `official_url === news_list_url` 且无可确认的新期次卡片，保持不变；渲染失败时使用已核验的当前页做降级结果。
+
+对 `national-portal`：只检查 `official_site` 和 `official_portal`。PSC、事业单位等项目不收录分散的省级或高校通知，不输出“人工维护”待办。
+
+## 4. 解析、更新与状态判断
+
+只有在第 3 步确认了有效的当前期次/下一期官方公告后，才打开公告全文并更新对应条目：
+
+- `official_url`：写入该公告原文的官方绝对 URL；`same_page_notice=true` 的日程/动态页可保留同一页。
+- `timeline`：从原文逐项提取考试、报名、缴费、准考证、成绩等具体日期/时段。原文没有的信息才可使用明确的兜底文案。
+- `schedule`：写具体考试月份或已公布日期，不能写泛化周期。
+- `status`：报名未开始 `pending`；报名进行中 `open`；报名截止且考试未开始 `closed`；考试已结束 `done`。
+
+新公告仅适用于已有期次时，更新该期次。明确公布下一期而数据不存在时，才新增条目；新条目的稳定字段从同一考试最近期次复制，`id` 仍用不可变的 `{exam-abbr}-{YYYYMM}`。旧期次在考试结束后设为 `done`。不得改写已发布 `id`。
+
+不得：
+
+- 仅因“列表第一条 URL 不同”覆盖 `official_url`；
+- 将当前记录删空或降级为官网首页；
+- 为了填满 timeline 编造日期；
+- 收录任何单独高校内部公告；
+- 修改 `assets/js/exams.js` 或 `assets/js/exam-detail.js`。
+
+## 5. 写入与验证
+
+若数据确有变化，保持原字段顺序与 2 空格 JSON 格式，更新顶层 `last_updated`（ISO8601，带 `+08:00`）及准确的 `total`。无有效信息变化时不触碰数据文件时间戳。
+
+无论是否修改，都必须在提交前执行：
 
 ```bash
-cd "$REPO"
+cd "$REPO" || exit 1
+python3 -m json.tool data/exams.json >/dev/null || { rmdir "$LOCK_DIR"; exit 1; }
+python3 scripts/validate-exam-sources.py || { rmdir "$LOCK_DIR"; exit 1; }
+git diff --check || { rmdir "$LOCK_DIR"; exit 1; }
+```
+
+## 6. 提交、拉取、推送与报告
+
+仅暂存本次实际修改的发布文件：
+
+```bash
 git add -- data/exams.json
-if git diff --cached --quiet; then
-  echo "无变更，跳过提交"
-else
+if ! git diff --cached --quiet; then
   git commit -m "chore(exams): 更新考试公告与时间节点 - $(date +%Y-%m-%d)" || { rmdir "$LOCK_DIR"; exit 1; }
 fi
 git pull --ff-only || { rmdir "$LOCK_DIR"; exit 1; }
@@ -210,75 +161,13 @@ git push || { rmdir "$LOCK_DIR"; exit 1; }
 rmdir "$LOCK_DIR"
 ```
 
-如果没有任何变更（所有考试都没有新公告），仍先执行 `git pull --ff-only`，再执行 `git push` 重试上次遗留提交并释放锁，再报告"本次巡检无更新"。最终拉取或推送失败时保留本地提交、释放自己的锁并报告原因。
+如果无数据变更，仍执行最后的 `git pull --ff-only` 和 `git push` 后释放锁。不得 merge、rebase 或基于过期数据发布。
 
-## 考试与官方网站列表
+报告按条目列出四种结果之一：`已更新`、`无相关官方新公告`、`降级巡检（当前公告已核验）`、`官方源暂不可达`。全国入口型项目记为“全国官网已核验”或“全国官网暂不可达”，不生成省级/高校人工维护项。报告应列出实际使用的官方 URL 和更新的时间节点；只有实际改动时才称为“有更新”。
 
-以下是 `data/exams.json` 中所有考试的 URL 字段汇总，供巡检参考：
+## 频率
 
-### 英语类 (english)
-
-| 考试 ID | 考试名称 | 报名系统 (official_site) | 考试官网 (official_portal) | 公告列表 (news_list_url) |
-|---------|---------|------------------------|--------------------------|------------------------|
-| cet-202606 / cet-202612 | 大学英语四六级 (CET) | http://cet-bm.neea.edu.cn/ | https://cet.neea.edu.cn/ | https://www.neea.edu.cn/html1/category/16093/1124-1.htm |
-| tem-4 / tem-8 | 英语专业四八级 (TEM) | — | http://tem.fltonline.cn/ | http://tem.fltonline.cn/?cat=113 |
-| ielts | 雅思 (IELTS) | https://ielts.neea.cn/ | https://ielts-main.neea.cn/ | https://ielts-main.neea.cn/html1/category/1507/1403-1.htm |
-| toefl | 托福 (TOEFL) | https://toefl.neea.cn/ | https://toefl-main.neea.cn/ | https://toefl-main.neea.cn/html1/category/16123/94-1.htm |
-| catti-202606 / catti-202611 | 翻译专业资格 (CATTI) | http://www.catticenter.com/ | http://www.catticenter.com/ | http://www.cpta.com.cn/notice.html |
-
-### 计算机类 (computer)
-
-| 考试 ID | 考试名称 | 报名系统 (official_site) | 考试官网 (official_portal) | 公告列表 (news_list_url) |
-|---------|---------|------------------------|--------------------------|------------------------|
-| ncre-202603 / ncre-202609 | 全国计算机等级考试 (NCRE) | https://ncre-bm.neea.edu.cn/ | https://ncre.neea.edu.cn/ | https://ncre.neea.edu.cn/html1/category/1507/872-1.htm |
-| ruankao-202605 / ruankao-202611 | 计算机技术与软件专业技术资格 (软考) | https://www.ruankao.org.cn/ | https://www.ruankao.org.cn/ | https://www.ruankao.org.cn/index/work.html |
-| pat-202603 / pat-202606 / pat-202609 | 计算机程序设计能力考试 (PAT) | https://www.patest.cn/ | https://www.patest.cn/ | https://www.patest.cn/articles |
-
-### 会计类 (accounting)
-
-| 考试 ID | 考试名称 | 报名系统 (official_site) | 考试官网 (official_portal) | 公告列表 (news_list_url) |
-|---------|---------|------------------------|--------------------------|------------------------|
-| junior-accounting-2026 | 初级会计职称 | http://kzp.mof.gov.cn/ | http://kzp.mof.gov.cn/ | http://kzp.mof.gov.cn/list.jsp?class_id=01_05 |
-| intermediate-accounting-2026 | 中级会计职称 | http://kzp.mof.gov.cn/ | http://kzp.mof.gov.cn/ | http://kzp.mof.gov.cn/list.jsp?class_id=01_05 |
-| cpa-2026 | 注册会计师 (CPA) | https://cpaexam.cicpa.org.cn/ | https://www.cicpa.org.cn/ | https://www.cicpa.org.cn/ztzl1/exam/exam_info/ |
-| acca-202603 / 202606 / 202609 / 202612 | 特许公认会计师 (ACCA) | https://www.accaglobal.com.cn/ | https://www.accaglobal.com.cn/ | https://www.accaglobal.com.cn/ |
-
-### 教师类 (teacher)
-
-| 考试 ID | 考试名称 | 报名系统 (official_site) | 考试官网 (official_portal) | 公告列表 (news_list_url) |
-|---------|---------|------------------------|--------------------------|------------------------|
-| ntce-202603 / ntce-202610 | 中小学教师资格考试 (NTCE) | http://ntce.neea.edu.cn/ | https://ntce.neea.edu.cn/ | https://ntce.neea.edu.cn/html1/category/1507/1148-1.htm |
-| psc | 普通话水平测试 (PSC) | https://bm.cltt.org/ | https://www.cltt.org/ | https://www.cltt.org/ |
-
-### 公务员类 (civil-service)
-
-| 考试 ID | 考试名称 | 报名系统 (official_site) | 考试官网 (official_portal) | 公告列表 (news_list_url) |
-|---------|---------|------------------------|--------------------------|------------------------|
-| guokao-2026 | 国家公务员考试 | http://bm.scs.gov.cn/ | http://www.scs.gov.cn/gkIndex.html | http://bm.scs.gov.cn/ |
-| shengkao-2026 | 省级公务员考试 | — | — | —（各省不同，需人工维护） |
-| shiye | 事业单位招聘 | — | https://www.mohrss.gov.cn/.../index.html | https://www.mohrss.gov.cn/.../index.html |
-
-### 考研类 (postgrad)
-
-| 考试 ID | 考试名称 | 报名系统 (official_site) | 考试官网 (official_portal) | 公告列表 (news_list_url) |
-|---------|---------|------------------------|--------------------------|------------------------|
-| kaoyan-2026 | 全国硕士研究生招生考试 | https://yz.chsi.com.cn/ | https://yz.chsi.com.cn/ | https://yz.chsi.com.cn/kyzx/jybzc/ |
-| baoyan-2026 | 推荐免试研究生（保研） | https://yz.chsi.com.cn/tm | https://yz.chsi.com.cn/tm | https://yz.chsi.com.cn/kyzx/kydt/ |
-
-## 注意事项
-
-- **不要**修改 `assets/js/exam-detail.js` 或 `assets/js/exams.js`，自动化只管 `data/exams.json`
-- **不要**转述任何单独高校的内部公告、教务通知（见 AGENTS.md 内容范围约束）。如公告中涉及"各校报名时间的差异"，可保留"以所在学校通知为准"作为兜底
-- **不要**在 `timeline` 中编造公告中没有的具体日期。拿不准就保守陈述
-- **不要**改变 `id` 的命名规则（`{exam-abbr}-{YYYYMM}`），这是前端路由的依据
-- 如 `news_list_url` 指向的列表页结构发生变化，导致无法提取公告链接，**记录异常并在报告中提示人工介入**，不要猜测
-- ACCA、CATTI 等考试无传统"报名通知"概念，`news_list_url` 指向综合通知列表，需识别其中与本考试相关的条目
-- PSC（普通话水平测试）报名高度分散（各省各校独立组织），自动化可能无法覆盖，需人工维护
-
-## 巡检频率建议
-
-- **CET、NCRE、NTCE**（neea 系统）：每月巡检一次，考前 2 个月加密为每周一次
-- **软考、CPA、初级/中级会计**：每月巡检一次
-- **考研、国考**：每月巡检一次，9-10 月报名季加密为每周一次
-- **ACCA、IELTS、TOEFL**（全年多场）：每月巡检一次
-- **省考、事业单位、PSC**：人工维护为主，自动化跳过
+- CET、NCRE、NTCE：每月一次；考前两个月每周一次。
+- 软考、CATTI、会计、CPA：每月一次。
+- 国考、考研、保研：每月一次；报名季每周一次。
+- ACCA、IELTS、TOEFL、PAT：每月一次；已进入报名窗口可每周一次。

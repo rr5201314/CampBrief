@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-12T11:30:00+08:00",
+  "last_updated": "2026-07-13T00:00:00+08:00",
   "source": "CampBrief",
-  "total": 96,
+  "total": 100,
   "tiers": [
     { "key": "all", "label": "全部" },
     { "key": "official", "label": "教育部认可赛事" },
@@ -1317,6 +1317,62 @@
       "official_site": "https://game.163.com/",
       "organizer": "网易游戏",
       "prestige": 7
+    },
+    {
+      "id": "enterprise-009",
+      "name": "2026 TRAE AI 创造力大赛",
+      "tier": "enterprise",
+      "fields": ["ai", "computer", "design", "innovation"],
+      "status": "open",
+      "signup": "2026年6月16日至7月15日",
+      "schedule": "报名与初赛至 7月15日；后续赛程以赛事官网为准",
+      "summary": "TRAE 面向创作者、开发者与高校学生的 AI 应用创作赛事，参赛作品需使用 TRAE 完成并提交可体验的创意产物或 Demo。",
+      "search": "TRAE AI 创造力大赛 AI 编程 创意 Demo 2026",
+      "official_site": "https://www.trae.cn/ai-creativity",
+      "organizer": "TRAE / 火山引擎",
+      "prestige": 8
+    },
+    {
+      "id": "enterprise-010",
+      "name": "腾讯云黑客松·AI 智能体争霸赛",
+      "tier": "enterprise",
+      "fields": ["ai", "computer", "business", "innovation"],
+      "status": "ongoing",
+      "signup": "2026年4月15日至5月31日（已截止）",
+      "schedule": "6月1日至7月31日赛区线下路演；赛事至 9月18日",
+      "summary": "腾讯云面向合作伙伴发起的 AI 智能体作品征集，围绕 Skill 与 Agent 双赛道，验证 CodeBuddy、ClawPro、WorkBuddy 等产品在真实商业场景的能力。",
+      "search": "腾讯云 黑客松 AI 智能体 WorkBuddy CodeBuddy 2026",
+      "official_site": "https://tch.cloud.tencent.com/contest/41",
+      "organizer": "腾讯云",
+      "prestige": 8
+    },
+    {
+      "id": "enterprise-011",
+      "name": "2026 火山杯 Agent 创新大赛",
+      "tier": "enterprise",
+      "fields": ["ai", "computer", "innovation"],
+      "status": "open",
+      "signup": "2026年Q3-Q4，申请举办独立赛",
+      "schedule": "2026年Q3-Q4",
+      "summary": "火山引擎面向企业开发者与高校师生的 AI Agent 创新赛事；作品可基于 HiAgent、扣子、TRAE、AgentKit 等官方工具构建，并需提供可演示方案。",
+      "search": "火山杯 Agent 创新大赛 扣子 TRAE AgentKit 2026",
+      "official_site": "https://www.volcengine.com/activity/agent/competition/2026",
+      "organizer": "火山引擎",
+      "prestige": 8
+    },
+    {
+      "id": "enterprise-012",
+      "name": "华为算法挑战赛第38期：内存受限的大模型推理优化",
+      "tier": "enterprise",
+      "fields": ["ai", "computer"],
+      "status": "open",
+      "signup": "即日起至 2026年7月23日",
+      "schedule": "2026年6月23日至7月23日；结果预计 8月上旬公布",
+      "summary": "华为云 Code Craft 网络开放赛，赛题来自华为真实业务场景，聚焦内存受限条件下的大模型推理优化。",
+      "search": "华为 算法挑战赛 第38期 大模型 推理优化 2026",
+      "official_site": "https://developer.huaweicloud.com/hackathon",
+      "organizer": "华为云",
+      "prestige": 8
     },
     {
       "id": "hobby-001",
