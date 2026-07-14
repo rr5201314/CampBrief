@@ -145,7 +145,7 @@
 
     const repoCards = repos.map(repo => {
       const safeUrl = CampBriefContent.safeHttpUrl(repo.url);
-      const summary = repo.chinese_summary || "";
+      const summary = repo.chinese_summary || repo.description || "暂无描述";
       const solves = repo.solves_what || "";
 
       return `
@@ -161,7 +161,7 @@
               <span class="repo-stat">⑂ ${formatNum(repo.forks)}</span>
               ${repo.stars_delta > 0 ? `<span class="repo-stat repo-stat-delta">+${formatNum(repo.stars_delta)} ${deltaLabel}</span>` : ""}
             </div>
-            <p class="repo-summary">${summary ? escapeHtml(summary) : '<span style="color:var(--text-tertiary,#999)">待翻译</span>'}</p>
+            <p class="repo-summary">${escapeHtml(summary)}</p>
             ${solves ? `<p class="repo-solves"><svg class="icon-sm icon"><use href="#i-info"/></svg>${escapeHtml(solves)}</p>` : ""}
             ${safeUrl ? `<a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener" class="repo-link">项目地址 <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>` : ""}
           </div>

@@ -77,7 +77,11 @@ GitHub 趋势也是手机端职责，不再依赖 GitHub Actions。运行：
 python3 "$REPO/scripts/collect-github-trending.py"
 ```
 
-脚本成功后，读取 `$REPO/data/github-trending.json`；对本次新增或更新榜单中的每个 repo，补全非空的 `chinese_summary`（中文概述）和 `solves_what`（它解决的问题）。必须基于项目 README、仓库描述或官网保守表述，无法核验时不编造。脚本本身失败时记录原因，但不回退已有趋势数据，也不因此中止 RSS 资讯的编辑流程。
+脚本成功后，读取 `$REPO/data/github-trending.json`；对本次新增或更新榜单中的**每个 repo**，补全 `chinese_summary`（中文概述）和 `solves_what`（它解决的问题）。必须基于项目 README、仓库描述或官网保守表述，无法核验时不编造。
+
+**硬性要求：每个 repo 的 `chinese_summary` 必须是非空中文字符串，不得留空。** 写入前逐条检查：若某条 `chinese_summary` 为空或全为英文，必须补写后再写入文件。这是前端展示的唯一中文来源，缺失会导致用户看到英文原文。
+
+脚本本身失败时记录原因，但不回退已有趋势数据，也不因此中止 RSS 资讯的编辑流程。
 
 ### 2. 读取候选与已有数据
 
