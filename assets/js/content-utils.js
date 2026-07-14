@@ -73,5 +73,30 @@ const CampBriefContent = (function () {
     return new Date(b.published || b.date || 0).getTime() - new Date(a.published || a.date || 0).getTime();
   }
 
-  return Object.freeze({ naturalDayKey, compareByTimeBadgeThenPriority, escapeHtml, safeHttpUrl, getTimeBadge });
+  // 将 ISO8601 时间戳格式化为 "MM.DD HH:mm 更新"
+  function formatLastUpdated(isoString) {
+    if (!isoString) return "";
+    const date = new Date(isoString);
+    if (Number.isNaN(date.getTime())) return "";
+    const parts = new Intl.DateTimeFormat("en-US", {
+      timeZone: "Asia/Shanghai",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false
+    }).formatToParts(date);
+    const p = type => parts.find(item => item.type === type)?.value || "";
+    return `${p("month")}.${p("day")} ${p("hour")}:${p("minute")} 更新`;
+  }
+
+  // 更新页面 .sort-pill 为实际更新时间
+  function updateSortPill(isoString) {
+    const pill = document.querySelector(".sort-pill");
+    if (!pill) return;
+    const text = formatLastUpdated(isoString);
+    if (text) pill.textContent = text;
+  }
+
+  return Object.freeze({ naturalDayKey, compareByTimeBadgeThenPriority, escapeHtml, safeHttpUrl, getTimeBadge, formatLastUpdated, updateSortPill });
 })();

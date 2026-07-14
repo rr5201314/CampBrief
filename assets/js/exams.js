@@ -60,12 +60,12 @@ async function loadExamsData() {
     const response = await fetch('../../data/exams.json', { cache: 'no-store' });
     if (response.ok) {
       const data = await response.json();
-      if (data.items && data.items.length > 0) return data.items;
+      if (data.items && data.items.length > 0) return { items: data.items, lastUpdated: data.last_updated };
     }
   } catch (error) {
     // file:// 协议下 fetch 会失败
   }
-  return [];
+  return { items: [], lastUpdated: null };
 }
 
 // 生成单张考试卡片 HTML
@@ -269,8 +269,10 @@ async function init() {
   const container = document.getElementById('cards');
   container.innerHTML = '<div class="loading-state" role="status" style="text-align:center;padding:40px;color:var(--text-secondary,#666);">正在加载考试数据...</div>';
 
-  const items = await loadExamsData();
-
+  const { items, lastUpdated } = await loadExamsData();
+  
+  CampBriefContent.updateSortPill(lastUpdated);
+  
   if (items.length === 0) {
     container.innerHTML = '';
     emptyState.hidden = false;

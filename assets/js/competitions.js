@@ -64,10 +64,11 @@
       meta.tiers = data.tiers || [];
       meta.fields = data.fields || [];
       meta.status_map = data.status_map || {};
+      meta.last_updated = data.last_updated || null;
     } catch (err) {
       console.warn("无法加载 competitions.json", err);
       allItems = [];
-      meta = { tiers: [], fields: [], status_map: {} };
+      meta = { tiers: [], fields: [], status_map: {}, last_updated: null };
     }
   }
 
@@ -259,6 +260,7 @@
     if (typeof FilterScroll !== "undefined") FilterScroll.initAll();
     cardsContainer.innerHTML = '<div class="loading-state" role="status" style="text-align:center;padding:40px;color:var(--text-secondary,#666);">正在加载竞赛数据...</div>';
     await loadData();
+    CampBriefContent.updateSortPill(meta.last_updated);
     applyFilters();
     initCarousel();
   }

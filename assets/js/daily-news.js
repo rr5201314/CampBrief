@@ -39,12 +39,12 @@ async function loadNewsData() {
     const response = await fetch('../../data/daily-news.json', { cache: 'no-store' });
     if (response.ok) {
       const data = await response.json();
-      if (data.items && data.items.length > 0) return data.items;
+      if (data.items && data.items.length > 0) return { items: data.items, lastUpdated: data.last_updated };
     }
   } catch (error) {
     // file:// 直接打开时无法加载 JSON；显示空状态而非旧数据。
   }
-  return [];
+  return { items: [], lastUpdated: null };
 }
 
 // 获取条目的分类列表（兼容旧数据：categories 数组优先，回退到 category 字符串）
@@ -508,7 +508,9 @@ async function init() {
   
   // 加载数据
   container.firstElementChild?.setAttribute("role", "status");
-  const items = await loadNewsData();
+  const { items, lastUpdated } = await loadNewsData();
+  
+  CampBriefContent.updateSortPill(lastUpdated);
   
   if (items.length === 0) {
     container.innerHTML = '<div class="empty-state" style="text-align: center; padding: 40px; color: var(--text-secondary, #666);">暂无资讯数据</div>';

@@ -35,11 +35,13 @@ function initDOM() {
 // 从 daily-news.json 和 github-trending.json 加载技术类条目并合并
 async function loadTechData() {
   const techItems = [];
+  let lastUpdated = null;
 
   try {
     const response = await fetch('../../data/daily-news.json', { cache: 'no-store' });
     if (response.ok) {
       const data = await response.json();
+      lastUpdated = data.last_updated || null;
       if (data.items && data.items.length > 0) {
         // 只取 category=tech 的条目
         techItems.push(...data.items.filter(item => item.category === 'tech'));
@@ -62,7 +64,7 @@ async function loadTechData() {
     // file:// 协议或文件缺失时忽略
   }
 
-  return techItems;
+  return { items: techItems, lastUpdated };
 }
 
 // 生成卡片 HTML
@@ -347,8 +349,10 @@ async function init() {
   container.innerHTML = '<div class="loading-state" style="text-align: center; padding: 40px; color: var(--text-secondary, #666);">正在加载技术动态...</div>';
 
   container.firstElementChild?.setAttribute("role", "status");
-  const items = await loadTechData();
-
+  const { items, lastUpdated } = await loadTechData();
+  
+  CampBriefContent.updateSortPill(lastUpdated);
+  
   if (items.length === 0) {
     container.innerHTML = '<div class="empty-state" style="text-align: center; padding: 40px; color: var(--text-secondary, #666);">暂无技术动态</div>';
     if (resultCount) resultCount.textContent = '0 条技术动态';
