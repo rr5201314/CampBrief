@@ -187,7 +187,7 @@
           "trend_period": "today",
           "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
           "chinese_summary": "为 Claude 提供终端控制、文件系统搜索和差异编辑能力的 MCP 服务器。",
-          "solves_what": "让 AI 编程助手直接操作终端和文件系统，提升开发效率。"
+          "solves_what": "让 Claude 能直接操作终端、搜索文件和编辑代码，无需手动复制粘贴。"
         },
         {
           "rank": 3,
@@ -332,8 +332,8 @@
           "stars_delta": 1678,
           "trend_period": "this week",
           "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "为 Claude 提供终端控制、文件系统搜索和差异编辑能力的 MCP 服务器。",
+          "solves_what": "让 Claude 能直接操作终端、搜索文件和编辑代码，无需手动复制粘贴。"
         },
         {
           "rank": 3,
@@ -479,7 +479,7 @@
           "trend_period": "today",
           "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
           "chinese_summary": "为 Claude 提供终端控制、文件系统搜索和差异编辑能力的 MCP 服务器。",
-          "solves_what": "让 AI 编程助手直接操作终端和文件系统，提升开发效率。"
+          "solves_what": "让 Claude 能直接操作终端、搜索文件和编辑代码，无需手动复制粘贴。"
         },
         {
           "rank": 3,
@@ -625,7 +625,7 @@
           "trend_period": "this week",
           "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
           "chinese_summary": "为 Claude 提供终端控制、文件系统搜索和差异编辑能力的 MCP 服务器。",
-          "solves_what": "让 AI 编程助手直接操作终端和文件系统，提升开发效率。"
+          "solves_what": "让 Claude 能直接操作终端、搜索文件和编辑代码，无需手动复制粘贴。"
         },
         {
           "rank": 3,
