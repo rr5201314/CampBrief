@@ -139,51 +139,54 @@ const FilterScroll = (function () {
     window.addEventListener("mousemove", onMouseMove);
     window.addEventListener("mouseup", onMouseUp);
 
-    // 触摸拖拽
-    let touchStartX = 0;
-    let touchStartScroll = 0;
-    let touchActive = false;
-    let touchMoved = false;
-    let touchSamples = [];
-    let touchLastX = 0;
-    let touchLastTime = 0;
+    // 触摸拖拽：手机端完全交给浏览器原生横向滚动，避免脚本接管导致的卡顿/惯性失效
+    const isCoarse = window.matchMedia("(max-width: 600px)").matches || window.matchMedia("(pointer: coarse)").matches;
+    if (!isCoarse) {
+      let touchStartX = 0;
+      let touchStartScroll = 0;
+      let touchActive = false;
+      let touchMoved = false;
+      let touchSamples = [];
+      let touchLastX = 0;
+      let touchLastTime = 0;
 
-    container.addEventListener("touchstart", (e) => {
-      touchStartX = e.touches[0].clientX;
-      touchStartScroll = container.scrollLeft;
-      touchActive = true;
-      touchMoved = false;
-      touchSamples = [];
-      touchLastX = touchStartX;
-      touchLastTime = performance.now();
-      stopInertia();
-    }, { passive: true });
+      container.addEventListener("touchstart", (e) => {
+        touchStartX = e.touches[0].clientX;
+        touchStartScroll = container.scrollLeft;
+        touchActive = true;
+        touchMoved = false;
+        touchSamples = [];
+        touchLastX = touchStartX;
+        touchLastTime = performance.now();
+        stopInertia();
+      }, { passive: true });
 
-    container.addEventListener("touchmove", (e) => {
-      if (!touchActive) return;
-      const clientX = e.touches[0].clientX;
-      const diff = touchStartX - clientX;
-      if (Math.abs(diff) > DRAG_THRESHOLD) touchMoved = true;
-      const now = performance.now();
-      const dt = now - touchLastTime;
-      if (dt > 0) {
-        touchSamples.push((touchLastX - clientX) / dt);
-        if (touchSamples.length > MAX_SAMPLES) touchSamples.shift();
-      }
-      touchLastX = clientX;
-      touchLastTime = now;
-      container.scrollLeft = touchStartScroll + diff;
-    }, { passive: true });
+      container.addEventListener("touchmove", (e) => {
+        if (!touchActive) return;
+        const clientX = e.touches[0].clientX;
+        const diff = touchStartX - clientX;
+        if (Math.abs(diff) > DRAG_THRESHOLD) touchMoved = true;
+        const now = performance.now();
+        const dt = now - touchLastTime;
+        if (dt > 0) {
+          touchSamples.push((touchLastX - clientX) / dt);
+          if (touchSamples.length > MAX_SAMPLES) touchSamples.shift();
+        }
+        touchLastX = clientX;
+        touchLastTime = now;
+        container.scrollLeft = touchStartScroll + diff;
+      }, { passive: true });
 
-    container.addEventListener("touchend", () => {
-      touchActive = false;
-      if (touchMoved) {
-        const avgV = touchSamples.length
-          ? touchSamples.reduce((a, b) => a + b, 0) / touchSamples.length
-          : 0;
-        startInertia(avgV);
-      }
-    });
+      container.addEventListener("touchend", () => {
+        touchActive = false;
+        if (touchMoved) {
+          const avgV = touchSamples.length
+            ? touchSamples.reduce((a, b) => a + b, 0) / touchSamples.length
+            : 0;
+          startInertia(avgV);
+        }
+      });
+    }
 
     // 拖拽时阻止按钮点击触发筛选
     options.addEventListener("click", (e) => {

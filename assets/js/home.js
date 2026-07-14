@@ -482,7 +482,18 @@ function initHome(){
   if(startBtn){
     startBtn.addEventListener("click", () => {
       const boards = document.getElementById("boards");
-      if(boards) boards.scrollIntoView({ behavior: "smooth", block: "start" });
+      if(!boards) return;
+      // 手机端把当前激活的看板卡片居中在屏幕；PC 端保持顶部对齐
+      if(window.matchMedia("(max-width: 768px)").matches){
+        const activeBoard = boards.querySelector(".board.is-active") || boards.querySelector(".board");
+        const target = activeBoard || boards;
+        const rect = target.getBoundingClientRect();
+        const scrollTop = window.pageYOffset + rect.top;
+        const offset = scrollTop - (window.innerHeight - rect.height) / 2;
+        window.scrollTo({ top: Math.max(0, offset), behavior: "smooth" });
+      } else {
+        boards.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     });
     // Hero 按钮涟漪
     startBtn.addEventListener("click", (e) => {

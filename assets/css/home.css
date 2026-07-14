@@ -11,7 +11,8 @@ html{scroll-behavior:smooth}
 
 /* 顶栏 */
 .home-shell .topbar{
-  padding:0 5vw;
+  padding-left:5vw;
+  padding-right:5vw;
 }
 
 /* Hero 首屏区 */
@@ -409,7 +410,7 @@ body.js-ready .hero-sub{
 
 /* 平板保留双列，让每块展板依然有舒适的阅读宽度。 */
 @media(max-width:1100px){
-  .home-shell .topbar{padding:0 24px}
+  .home-shell .topbar{padding-left:24px;padding-right:24px}
   .hero{padding:0 24px;min-height:calc(100vh - 76px)}
   .hero-title{font-size:28px}
   .hero-sub{font-size:15px}
@@ -421,17 +422,17 @@ body.js-ready .hero-sub{
   .board{aspect-ratio:4/5}
 }
 
-/* 窄屏单列，并以固定可控高度取代超长的纵向比例。 */
+/* 窄屏单列，高度按视口自适应，不再写死固定像素。 */
 @media(max-width:680px){
   .home-main{grid-template-columns:1fr;gap:16px;padding:16px 18px 28px}
-  .board{aspect-ratio:auto;min-height:480px}
+  .board{aspect-ratio:auto;min-height:min(72svh, 560px)}
   .board-head{padding:14px 16px}
   .board-list{padding:12px}
 }
 
 /* ===== 手机端优化 + 看板轮播 ===== */
 @media(max-width:768px){
-  .home-shell .topbar{padding:0 16px}
+  .home-shell .topbar{padding-left:16px;padding-right:16px}
   .hero{padding:0 16px;min-height:calc(100vh - 60px)}
   .hero-title{font-size:24px;letter-spacing:-.025em}
   .hero-sub{font-size:14px}
@@ -441,7 +442,7 @@ body.js-ready .hero-sub{
   .home-main.has-carousel{
     display:block;
     overflow:hidden;
-    padding:12px 0 8px;
+    padding:12px 0 max(80px, calc(50vh - 310px));
     position:relative;
   }
   .home-main.has-carousel .board-track{
@@ -458,7 +459,9 @@ body.js-ready .hero-sub{
     width:min(78vw, 420px);
     min-width:0;
     min-height:0;
-    height:clamp(460px, 64svh, 580px);
+    /* 高度按视口自适应，同时避免过长屏幕显得太空或过短屏幕溢出 */
+    height:min(72svh, 620px);
+    max-height:min(72svh, 620px);
     border-width:3px;
     border-radius:16px;
     opacity:.54;

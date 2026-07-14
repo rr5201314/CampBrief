@@ -231,6 +231,12 @@ button{cursor:pointer}
   text-transform:uppercase;
   margin-bottom:10px;
 }
+.eyebrow-title{
+  font-size:28px;
+  font-weight:800;
+  letter-spacing:-.025em;
+  text-transform:none;
+}
 h1{
   font-size:42px;
   line-height:1.05;
@@ -1098,9 +1104,29 @@ body[data-theme="x-dark"] .page-jump-submit{
   .carousel-nav.next{right:0}
 }
 @media(max-width:600px){
-  .carousel-card{flex:0 0 240px;padding:14px}
-  .carousel-card-title{font-size:15px}
-  .carousel-card-desc{font-size:12px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .carousel-card{flex:0 0 220px;padding:12px;border-radius:12px;gap:8px}
+  .carousel-card-tag{height:22px;padding:0 8px;font-size:10px}
+  .carousel-card-title{font-size:14px}
+  .carousel-card-meta{font-size:12px}
+  .carousel-card-desc{font-size:11px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  /* 手机端轮播改为原生横向滚动，避免自定义拖拽与页面滚动冲突 */
+  .carousel-viewport{
+    overflow-x:auto;
+    overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
+    overscroll-behavior-x:contain;
+    scroll-behavior:smooth;
+    scrollbar-width:none;
+    -ms-overflow-style:none;
+    cursor:default
+  }
+  .carousel-viewport::-webkit-scrollbar{display:none}
+  .carousel-viewport.is-dragging{cursor:default}
+  .carousel-track{transform:none !important;gap:8px}
+  .carousel-nav{display:none}
+  .carousel-slider{margin-top:8px;padding:0 2px}
+  .carousel-slider-track{height:4px}
+  .carousel-slider-thumb{min-width:28px}
 }
 @media(prefers-reduced-motion:reduce){
   .carousel-card:hover{transform:none}
@@ -1130,6 +1156,51 @@ body[data-theme="x-dark"] .page-jump-submit{
   flex-wrap:wrap;
   gap:12px;
   margin-top:22px;
+}
+.contact-card{
+  margin-top:20px;
+  padding:16px;
+  background:var(--panel-2);
+  border-radius:12px;
+  border:1px solid var(--line);
+}
+.placeholder-panel .contact-label{
+  margin:0 0 8px 0;
+  font-weight:600;
+  color:var(--text);
+}
+.placeholder-panel .contact-link{
+  font-size:1.2em;
+  font-weight:700;
+  color:var(--accent);
+  text-decoration:none;
+  background:transparent;
+  border:0;
+  padding:0;
+  cursor:pointer;
+  font-family:inherit;
+}
+.placeholder-panel .contact-link:hover{text-decoration:underline}
+.copy-toast{
+  position:fixed;
+  left:50%;
+  bottom:32px;
+  transform:translateX(-50%) translateY(20px);
+  padding:10px 18px;
+  border-radius:999px;
+  font-size:14px;
+  font-weight:600;
+  color:var(--solid-action-text);
+  background:var(--solid-action-bg);
+  box-shadow:0 8px 24px rgba(0,0,0,.18);
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .25s ease, transform .25s ease;
+  z-index:200;
+}
+.copy-toast.is-visible{
+  opacity:1;
+  transform:translateX(-50%) translateY(0);
 }
 a.btn{
   text-decoration:none;
@@ -1601,6 +1672,64 @@ a.btn{
   .competition-info-grid{grid-template-columns:1fr}
 }
 
+/* ===== 手机端详情页内部元素收紧（≤720px，不影响 PC） ===== */
+@media(max-width:720px){
+  /* 官方提示框：减小内边距和下间距 */
+  .exam-official-callout{margin-bottom:16px;padding:12px 14px;gap:10px}
+  .exam-official-callout svg{width:18px;height:18px}
+  .exam-official-callout strong{font-size:13px;line-height:1.55}
+  .exam-official-callout .btn-sm{font-size:12px;padding:5px 12px}
+
+  /* 信息网格：缩小间距和图标 */
+  .exam-info-grid{gap:10px;margin-bottom:18px}
+  .exam-info-item{padding:10px 12px;gap:10px}
+  .exam-info-icon{width:30px;height:30px;border-radius:8px}
+  .exam-info-icon .icon{width:16px;height:16px}
+  .exam-info-label{font-size:11px}
+  .exam-info-value{font-size:13px}
+
+  /* 章节：收紧标题和正文 */
+  .exam-section{margin-bottom:18px}
+  .exam-section-title{font-size:16px;margin-bottom:10px}
+  .exam-section-body{font-size:14px;line-height:1.7}
+  .competition-section--about .exam-section-body{font-size:14px;line-height:1.75}
+
+  /* 考试科目列表：单列 */
+  .exam-subject-list{grid-template-columns:1fr;gap:8px}
+  .exam-subject-list li{padding:8px 12px;font-size:13px}
+
+  /* 时间线：收紧条目 */
+  .exam-timeline{gap:8px}
+  .exam-timeline-item{padding:10px 12px}
+  .exam-timeline-label{font-size:12px}
+  .exam-timeline-value{font-size:13px;line-height:1.55}
+
+  /* 摘要块：缩小字号和内边距 */
+  .news-detail-summary,
+  .exam-detail-summary{font-size:14px;line-height:1.6;padding:12px 14px;margin-bottom:18px}
+
+  /* 正文：收紧行高 */
+  .news-detail-body{font-size:14px;line-height:1.75;margin-bottom:22px}
+
+  /* 元信息与操作区：减少间距 */
+  .news-detail-meta,
+  .exam-detail-meta{gap:10px;margin-bottom:14px;font-size:12px}
+  .news-detail-actions,
+  .exam-detail-actions{gap:10px;margin-bottom:14px}
+  .news-detail-notice,
+  .exam-detail-notice{font-size:11px;padding-top:14px}
+
+  /* 空状态：缩小内边距 */
+  .news-detail-empty,
+  .exam-detail-empty{padding:40px 16px}
+  .news-detail-empty h2,
+  .exam-detail-empty h2{font-size:18px}
+
+  /* 仓库卡片：收紧统计行 */
+  .repo-summary{font-size:13px;line-height:1.55}
+  .repo-solves{font-size:12px;line-height:1.55}
+}
+
 /* ===== Mobile: ≤1200px — 移除侧栏留白 ===== */
 @media(max-width:1200px){
   .page-shell{grid-template-columns:0 minmax(0,1fr) 0}
@@ -1649,23 +1778,17 @@ a.btn{
     align-items:center;
     position:relative;
   }
-  .brand{gap:6px;font-size:15px;flex:1 1 auto;min-width:0}
-  .brand-mark{width:28px;height:28px;font-size:14px}
+  .brand{gap:6px;font-size:15px;flex:0 0 auto;min-width:0;height:28px;align-items:center;order:1}
+  .brand>span:not(.brand-mark){line-height:28px}
+  .brand-mark{width:28px;height:28px;font-size:14px;flex:0 0 28px}
+  /* 把导航和主题按钮直接作为 topbar 的 flex 子项，避免绝对定位带来的对齐误差 */
   .top-actions{
-    width:100%;
-    flex:1 1 100%;
-    flex-direction:column;
-    gap:8px;
-    min-width:0;
-    /* 让绝对定位的 theme-toggle 相对于 topbar 定位 */
-    position:static;
+    display:contents;
   }
   /* 主题切换拉到品牌同一行右端 */
   .theme-toggle{
-    position:absolute;
-    right:16px;
-    /* 垂直居中于品牌行：topbar padding-top + brand高度/2 */
-    top:12px;
+    order:2;
+    margin-left:auto;
     height:28px;
     min-height:28px;
     padding:0 10px;
@@ -1673,6 +1796,7 @@ a.btn{
   }
   /* 导航：横向滚动，不换行 */
   .nav{
+    order:3;
     width:100%;
     overflow:hidden;
     flex-wrap:nowrap;
@@ -1716,35 +1840,61 @@ a.btn{
   /* 标题区 */
   .title-row{padding:24px 0 16px}
   h1{font-size:22px}
+  .eyebrow-title{font-size:22px}
   .subtitle{font-size:14px}
 
   /* 筛选区 */
-  .filter-row{gap:8px}
-  .filter-label{font-size:14px}
-  .option{min-height:36px;font-size:14px;padding:5px 0}
+  .filter-panel{padding:12px;border-radius:12px}
+  .filter-row + .filter-row{margin-top:12px}
+  .filter-row{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:4px;
+    grid-template-columns:1fr
+  }
+  .filter-label{font-size:12px;gap:5px;min-height:24px}
+  .filter-label .icon{width:14px;height:14px}
+  .filter-scroll{width:100%}
+  .filter-scroll::before,.filter-scroll::after{display:none}
+  .filter-slider{grid-column:1;width:100%;padding:0 2px;margin-top:2px}
+  .filter-slider-track{height:3px}
+  .filter-slider-thumb{min-width:28px}
+  .options{gap:4px 8px}
+  .filter-scroll .options{padding:1px 0}
+  .option{min-height:32px;font-size:12px;padding:3px 0;gap:4px}
+  .option .icon-sm{width:12px;height:12px}
+  .option-dot{width:5px;height:5px}
+  .count-pill{min-width:auto;padding:7px 11px;font-size:11px;gap:5px}
 
   /* 搜索框 */
-  .search-wrap{margin-top:16px}
-  .search-input{height:44px;padding:0 14px 0 42px;font-size:14px}
-  .search-wrap .icon{left:14px}
+  .search-wrap{margin-top:14px}
+  .search-input{height:42px;padding:0 12px 0 40px;font-size:14px}
+  .search-wrap .icon{left:12px}
 
   /* 内容工具栏 */
   .content-toolbar{padding:20px 0 10px;font-size:13px}
   .sort-pill{font-size:12px;padding:4px 10px}
 
   /* 卡片 */
-  .card{padding:12px;border-radius:12px}
-  .card-main{gap:8px}
-  .card-title{font-size:17px;line-height:1.35}
-  .meta-line{gap:6px 10px;font-size:13px}
-  .desc{font-size:13px;line-height:1.65}
+  .cards{gap:10px}
+  .card{padding:10px 12px;border-radius:12px}
+  .card-main{gap:7px}
+  .card-head{gap:10px}
+  .card-title{font-size:15px;line-height:1.35}
+  .meta-line{gap:5px 9px;font-size:12px}
+  .meta-item .icon{width:14px;height:14px}
+  .desc{font-size:12px;line-height:1.6}
+  .empty-state{padding:16px;border-radius:12px;font-size:13px}
 
   /* 标签 */
-  .badge{height:26px;padding:0 8px;font-size:11px;gap:5px}
-  .badge .icon-sm{width:12px;height:12px}
+  .badge{height:23px;padding:0 7px;font-size:10px;gap:4px}
+  .badge .icon-sm{width:11px;height:11px}
+  .field-tags{gap:6px;margin-top:-2px}
+  .field-badge{height:21px;padding:0 7px;font-size:10px}
 
-  /* 按钮：44px 触控高度 */
-  .btn{min-height:44px;padding:0 14px;font-size:13px}
+  /* 按钮 */
+  .btn{min-height:40px;padding:0 12px;font-size:12px}
   .actions{gap:8px}
 
   /* 分页 */

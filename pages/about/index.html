@@ -44,8 +44,7 @@
     <div class="inner">
       <section class="title-row">
         <div>
-          <div class="eyebrow"><svg class="icon-sm icon"><use href="#i-info"/></svg>关于</div>
-          <h1>关于简豹</h1>
+          <div class="eyebrow eyebrow-title"><svg class="icon-sm icon"><use href="#i-info"/></svg>关于简豹</div>
           <p class="subtitle">一个面向大学生的信息聚合网站。</p>
         </div>
       </section>
@@ -53,19 +52,49 @@
       <section class="placeholder-panel">
         <h2>帮助学生更快发现机会</h2>
         <p>简豹计划聚合竞赛、技术趋势、AI 学习资源和每日资讯，减少学生在不同平台之间反复搜索的成本。当前项目仍处于早期建设阶段，更多栏目和数据流程会持续完善。</p>
-        <div class="contact-card" style="margin-top: 20px; padding: 16px; background: var(--bg-secondary, #f5f5f5); border-radius: 8px; border: 1px solid var(--border-color, #e0e0e0);">
-          <p style="margin: 0 0 8px 0; font-weight: 600;">💬 问题交流Q群</p>
-          <a href="https://qm.qq.com/q/1EZ02nj8mg" target="_blank" rel="noopener" style="font-size: 1.2em; font-weight: 700; color: var(--accent, #0066cc); text-decoration: none;">1062075435</a>
+        <div class="contact-card">
+          <p class="contact-label">💬 问题交流Q群</p>
+          <button class="contact-link" type="button" data-copy="1062075435">1062075435</button>
         </div>
         <div class="placeholder-actions">
           <a href="../../index.html" class="btn btn-secondary">返回首页</a>
-          <a href="../../pages/competitions/index.html" class="btn btn-primary">查看竞赛 <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>
+          <a href="https://qm.qq.com/q/1EZ02nj8mg" target="_blank" rel="noopener" class="btn btn-primary">一键加群 <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>
         </div>
       </section>
     </div>
   </main>
 </div>
 
+<div class="copy-toast" id="copyToast" role="status" aria-live="polite">已复制到剪贴板</div>
 <script src="../../assets/js/main.js"></script>
+<script>
+  (function(){
+    const toast = document.getElementById('copyToast');
+    let hideTimer;
+    function showToast(msg){
+      toast.textContent = msg;
+      toast.classList.add('is-visible');
+      clearTimeout(hideTimer);
+      hideTimer = setTimeout(() => toast.classList.remove('is-visible'), 1500);
+    }
+    document.querySelectorAll('[data-copy]').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const text = btn.dataset.copy;
+        try {
+          await navigator.clipboard.writeText(text);
+          showToast('已复制到剪贴板');
+        } catch (err) {
+          // 降级：选中文字
+          const range = document.createRange();
+          range.selectNodeContents(btn);
+          const sel = window.getSelection();
+          sel.removeAllRanges();
+          sel.addRange(range);
+          showToast('请手动复制');
+        }
+      });
+    });
+  })();
+</script>
 </body>
 </html>

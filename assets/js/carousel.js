@@ -36,6 +36,8 @@ const Carousel = (function () {
 
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const autoSpeed = options.speed || 12; // px/秒
+    // 手机端检测：与 CSS @media(max-width:600px) 对齐，兼容真机(pointer:coarse)和 DevTools 模拟
+    const isCoarse = window.matchMedia("(max-width: 600px)").matches || window.matchMedia("(pointer: coarse)").matches;
 
     let offset = 0;
     let maxOffset = 0;
@@ -58,7 +60,19 @@ const Carousel = (function () {
     }
 
     function applyTransform() {
-      track.style.transform = `translateX(${-offset}px)`;
+      if (isCoarse) {
+        viewport.scrollLeft = offset;
+      } else {
+        track.style.transform = `translateX(${-offset}px)`;
+      }
+    }
+
+    function syncOffsetFromScroll() {
+      if (isCoarse && !dragging) {
+        offset = viewport.scrollLeft;
+        updateNavState();
+        updateSlider();
+      }
     }
 
     function updateNavState() {
@@ -123,12 +137,24 @@ const Carousel = (function () {
       rafId = requestAnimationFrame(autoStep);
     }
 
+    // 手机端原生滚动自动平移：通过 scrollLeft 递增实现，与触摸滑动不冲突
+    function nativeAutoStep(ts) {
+      if (!autoPlaying || paused || dragging) return;
+      if (!lastTs) lastTs = ts;
+      const dt = ts - lastTs;
+      lastTs = ts;
+      let next = viewport.scrollLeft + (autoSpeed * dt) / 1000;
+      if (next >= maxOffset) next = 0;
+      viewport.scrollLeft = next;
+      rafId = requestAnimationFrame(nativeAutoStep);
+    }
+
     function startAutoPlay() {
       if (!options.autoPlay || reduceMotion || maxOffset <= 0 || dragging) return;
       stopAutoPlay();
       autoPlaying = true;
       lastTs = 0;
-      rafId = requestAnimationFrame(autoStep);
+      rafId = requestAnimationFrame(isCoarse ? nativeAutoStep : autoStep);
     }
 
     function stopAutoPlay() {
@@ -155,6 +181,13 @@ const Carousel = (function () {
     // 鼠标悬停暂停
     container.addEventListener("mouseenter", () => { paused = true; });
     container.addEventListener("mouseleave", () => { paused = false; });
+
+    // 手机端：用原生 scroll 同步 offset；触摸时暂停自动播放，松开后恢复
+    if (isCoarse) {
+      viewport.addEventListener("scroll", syncOffsetFromScroll, { passive: true });
+      viewport.addEventListener("touchstart", () => { paused = true; }, { passive: true });
+      viewport.addEventListener("touchend", () => { paused = false; }, { passive: true });
+    }
 
     // 滚轮驱动
     let wheelTimer = null;
@@ -317,7 +350,8 @@ const Carousel = (function () {
     track.addEventListener("mousedown", onMouseDown);
     track.addEventListener("dragstart", (e) => e.preventDefault());
 
-    // ===== 触摸拖拽（含惯性） =====
+    // ===== 触摸拖拽（含惯性）—— 仅 PC 端使用；手机端走原生横向滚动 =====
+    if (!isCoarse) {
     let touchStartX = 0;
     let touchStartOffset = 0;
     let touchActive = false;
@@ -377,6 +411,7 @@ const Carousel = (function () {
         startAutoPlay();
       }
     });
+    }
 
     // ===== 滑动条拖拽定位 =====
     let sliderDragging = false;
