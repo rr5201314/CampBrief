@@ -424,9 +424,108 @@ body.js-ready .hero-sub{
 /* 窄屏单列，并以固定可控高度取代超长的纵向比例。 */
 @media(max-width:680px){
   .home-main{grid-template-columns:1fr;gap:16px;padding:16px 18px 28px}
-  .board{aspect-ratio:auto;min-height:520px}
+  .board{aspect-ratio:auto;min-height:480px}
   .board-head{padding:14px 16px}
   .board-list{padding:12px}
+}
+
+/* ===== 手机端优化 + 看板轮播 ===== */
+@media(max-width:768px){
+  .home-shell .topbar{padding:0 16px}
+  .hero{padding:0 16px;min-height:calc(100vh - 60px)}
+  .hero-title{font-size:24px;letter-spacing:-.025em}
+  .hero-sub{font-size:14px}
+  .hero-btn{min-height:44px;padding:0 20px;font-size:14px}
+
+  .home-main{padding:12px 14px 8px}
+  .home-main.has-carousel{
+    overflow:hidden;
+    padding:12px 0 8px;
+    position:relative;
+  }
+  .home-main.has-carousel .board-track{
+    display:flex;
+    align-items:center;
+    padding:0 48px;
+    transition:transform .45s cubic-bezier(.4,0,.2,1);
+  }
+  .home-main.has-carousel .board{
+    flex:0 0 100%;
+    min-width:0;
+    min-height:55vh;
+    border-width:3px;
+    border-radius:16px;
+    transition:opacity .45s ease;
+    margin:0 4px;
+  }
+  .board-head{padding:14px 16px}
+  .board-icon{width:28px;height:28px}
+  .board-title{font-size:15px}
+  .board-more{font-size:12px;gap:4px}
+  .board-list{padding:10px}
+  .board-pager{padding:10px 14px}
+  .home-footer{padding:16px;font-size:12px}
+}
+
+/* 看板左右切换按钮 */
+/* 桌面端 track 不影响布局 */
+.board-track{display:contents}
+.board-switch-btn,.board-dots{display:none}
+
+/* 看板左右切换按钮（手机端） */
+.board-switch-btn{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:38px;
+  height:38px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  border:2px solid var(--line-strong);
+  background:var(--panel);
+  color:var(--text);
+  cursor:pointer;
+  z-index:50;
+  box-shadow:0 2px 12px rgba(0,0,0,.15);
+  transition:background .15s, opacity .15s, transform .15s;
+}
+.board-switch-btn:active{
+  background:var(--control-hover);
+  transform:translateY(-50%) scale(.92);
+}
+.board-switch-btn:disabled{opacity:.25;cursor:not-allowed}
+.board-switch-btn svg{width:18px;height:18px;stroke-width:2.5}
+.board-switch-prev{left:6px}
+.board-switch-next{right:6px}
+
+/* 底部圆点指示器 */
+.board-dots{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:12px 0 4px;
+}
+.board-dot{
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  border:0;
+  background:var(--line-strong);
+  cursor:pointer;
+  transition:background .2s, transform .2s;
+  padding:0;
+}
+.board-dot.is-active{
+  background:var(--option-accent);
+  transform:scale(1.3);
+}
+
+@media(max-width:380px){
+  .hero-title{font-size:21px}
+  .hero-sub{font-size:13px}
+  .board{min-height:380px}
 }
 
 /* ===== 降级：尊重减少动效偏好 ===== */

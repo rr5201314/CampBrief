@@ -19,6 +19,44 @@ function syncThemeToggle(){
   themeToggle.querySelector("span").textContent = isLight ? "浅色模式" : "深色模式";
 }
 
+// 设备平台检测：给 body 加 data-platform 标识，供 CSS 针对性适配
+(function detectPlatform() {
+  const ua = navigator.userAgent || "";
+  const platform = navigator.platform || "";
+  // iOS: iPhone / iPad / iPod，以及 Mac 上的触屏（iPadOS 桌面模式）
+  const isIOS = /iPhone|iPad|iPod/.test(ua) ||
+    (platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  if (isIOS) {
+    document.body.dataset.platform = "ios";
+    return;
+  }
+  if (/Android/.test(ua)) {
+    document.body.dataset.platform = "android";
+    return;
+  }
+  document.body.dataset.platform = "desktop";
+})();
+
+// 手机端导航栏滚动提示（右侧渐变）
+(function initNavScrollHint() {
+  const nav = document.querySelector(".topbar .nav");
+  if (!nav) return;
+
+  function updateHint() {
+    const maxScroll = nav.scrollWidth - nav.clientWidth;
+    nav.classList.toggle("is-scrollable", maxScroll > 2);
+    nav.classList.toggle("is-scroll-end", nav.scrollLeft >= maxScroll - 2);
+  }
+
+  nav.addEventListener("scroll", updateHint, { passive: true });
+  window.addEventListener("resize", updateHint, { passive: true });
+  // 延迟一帧等布局稳定
+  requestAnimationFrame(updateHint);
+})();
+
+// 阻止横向滚动区域触发浏览器「滑动返回」手势
+// 仅靠 CSS overscroll-behavior-x:contain 已足够，不再用 JS preventDefault 避免破坏原生滚动惯性
+
 // 列表页共享分页：统一页码窗口、跳页表单和键盘可达性。
 window.CampBriefPagination = (() => {
   function getPageNumbers(current, total) {

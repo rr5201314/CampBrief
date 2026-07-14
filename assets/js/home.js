@@ -497,6 +497,76 @@ function initHome(){
       ripple.addEventListener("animationend", () => ripple.remove());
     });
   }
+
+  // 手机端看板轮播
+  // (moved to standalone DOMContentLoaded below)
+}
+
+/* ===== 手机端看板轮播 ===== */
+function initBoardCarousel() {
+  var active = 0;
+  var homeMain = document.querySelector(".home-main");
+  if (!homeMain) return;
+  var boards = [...homeMain.querySelectorAll(".board")];
+  if (boards.length <= 1) return;
+
+  // 创建 track 容器
+  var track = document.createElement("div");
+  track.className = "board-track";
+  boards.forEach(function(b) { track.appendChild(b); });
+  homeMain.appendChild(track);
+  homeMain.classList.add("has-carousel");
+
+  var chevronLeft = '<svg viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></svg>';
+  var chevronRight = '<svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg>';
+
+  var prevBtn = document.createElement("button");
+  prevBtn.className = "board-switch-btn board-switch-prev";
+  prevBtn.type = "button";
+  prevBtn.innerHTML = chevronLeft;
+
+  var nextBtn = document.createElement("button");
+  nextBtn.className = "board-switch-btn board-switch-next";
+  nextBtn.type = "button";
+  nextBtn.innerHTML = chevronRight;
+
+  homeMain.appendChild(prevBtn);
+  homeMain.appendChild(nextBtn);
+
+  var dotsWrap = document.createElement("div");
+  dotsWrap.className = "board-dots";
+  dotsWrap.innerHTML = boards.map(function(_, i) {
+    return '<button class="board-dot' + (i === 0 ? ' is-active' : '') + '" data-index="' + i + '" type="button"></button>';
+  }).join("");
+  homeMain.after(dotsWrap);
+
+  function goTo(index) {
+    active = Math.max(0, Math.min(index, boards.length - 1));
+    // 按实际看板宽度滑动
+    var containerWidth = homeMain.offsetWidth;
+    var boardWidth = boards[0].offsetWidth;
+    var offset = active * (boardWidth + 8); // 8px margin
+    var maxOffset = track.scrollWidth - containerWidth;
+    offset = Math.min(offset, maxOffset);
+    track.style.transform = "translateX(-" + offset + "px)";
+    boards.forEach(function(b, i) {
+      b.classList.toggle("is-visible", i === active);
+    });
+    dotsWrap.querySelectorAll(".board-dot").forEach(function(dot, i) {
+      dot.classList.toggle("is-active", i === active);
+    });
+    prevBtn.disabled = active === 0;
+    nextBtn.disabled = active === boards.length - 1;
+  }
+
+  prevBtn.addEventListener("click", function() { goTo(active - 1); });
+  nextBtn.addEventListener("click", function() { goTo(active + 1); });
+  dotsWrap.addEventListener("click", function(e) {
+    var dot = e.target.closest(".board-dot");
+    if (dot) goTo(Number(dot.dataset.index));
+  });
+
+  goTo(0);
 }
 
 // 等待 DOM 就绪 + 双 rAF 确保 CSS 初始状态（opacity:0）已应用，再渲染与触发入场
@@ -507,3 +577,23 @@ if(document.readyState === "loading"){
 } else {
   requestAnimationFrame(() => requestAnimationFrame(initHome));
 }
+
+// 看板轮播独立初始化（不依赖 initHome）
+// 加防重复标记，兼容夸克等浏览器
+var _carouselInited = false;
+function safeInitCarousel() {
+  if (_carouselInited) return;
+  _carouselInited = true;
+  initBoardCarousel();
+}
+if(document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", function() {
+    requestAnimationFrame(safeInitCarousel);
+  });
+} else {
+  requestAnimationFrame(safeInitCarousel);
+}
+// 兜底：夸克等浏览器 DOMContentLoaded 可能不触发
+window.addEventListener("load", function() {
+  requestAnimationFrame(safeInitCarousel);
+});
