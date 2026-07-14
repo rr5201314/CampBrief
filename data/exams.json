@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-13T00:00:00+08:00",
+  "last_updated": "2026-07-14T10:54:53+08:00",
   "source": "CampBrief",
   "total": 28,
   "categories": [
@@ -470,7 +470,29 @@
       "official_site": "https://myacca.accaglobal.com/",
       "official_portal": "https://www.accaglobal.com/cn/zh.html",
       "news_list_url": "https://www.accaglobal.com/gb/en/student/getting-started/important-dates.html",
-      "official_url": "https://www.accaglobal.com/gb/en/student/getting-started/important-dates.html"
+      "official_url": "https://www.accaglobal.com/gb/en/student/getting-started/important-dates.html",
+      "timeline": [
+        {
+          "label": "考试时间",
+          "value": "2026年12月7日至11日"
+        },
+        {
+          "label": "报名开始",
+          "value": "2026年8月4日"
+        },
+        {
+          "label": "常规报名截止",
+          "value": "2026年11月2日（23:59，英国时间）"
+        },
+        {
+          "label": "后期报名截止",
+          "value": "2026年11月9日（23:59，英国时间）"
+        },
+        {
+          "label": "成绩公布",
+          "value": "2027年1月18日"
+        }
+      ]
     },
     {
       "id": "ntce-202603",
