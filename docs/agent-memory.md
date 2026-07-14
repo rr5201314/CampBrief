@@ -18,6 +18,10 @@
 - Scroll-triggered animations use IntersectionObserver with unobserve after single trigger
 - Animation timing functions use `cubic-bezier(.4,0,.2,1)` for natural motion
 - Stagger animations use incremental delays (e.g., 60ms per feed item, .1s/.2s/.3s for board sections)
+- Homepage boards use the carousel only at `max-width: 768px`; desktop always restores the three-column board grid when the viewport grows past that breakpoint.
+- On the mobile homepage carousel, the active board is full-size while adjacent previews are dimmed and scaled down; each switch animates the outgoing and incoming boards.
+- Mobile carousel offsets are calculated from each board's layout position, so the first and last boards remain centered even when flex-track overflow excludes end padding from `scrollWidth`.
+- Mobile navigation uses a transform-based menu track at `max-width: 860px`: CSS keeps vertical panning native, while `main.js` clamps the track offset to `[0, maxOffset]`. The navigation itself must not be a native horizontal scroll container and must not use `scroll-snap` or inertia, because edge hits must stop, never rebound.
 
 ## Hard Constraints
 

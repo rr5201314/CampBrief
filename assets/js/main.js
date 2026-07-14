@@ -43,19 +43,144 @@ function syncThemeToggle(){
   if (!nav) return;
 
   function updateHint() {
-    const maxScroll = nav.scrollWidth - nav.clientWidth;
+    const hasVirtualOffset = nav.dataset.navVirtualMax !== undefined;
+    const maxScroll = hasVirtualOffset
+      ? Number(nav.dataset.navVirtualMax)
+      : nav.scrollWidth - nav.clientWidth;
+    const currentScroll = hasVirtualOffset
+      ? Number(nav.dataset.navVirtualOffset)
+      : nav.scrollLeft;
     nav.classList.toggle("is-scrollable", maxScroll > 2);
-    nav.classList.toggle("is-scroll-end", nav.scrollLeft >= maxScroll - 2);
+    nav.classList.toggle("is-scroll-end", currentScroll >= maxScroll - 2);
   }
 
   nav.addEventListener("scroll", updateHint, { passive: true });
+  nav.addEventListener("navvirtualscroll", updateHint);
   window.addEventListener("resize", updateHint, { passive: true });
   // 延迟一帧等布局稳定
   requestAnimationFrame(updateHint);
 })();
 
-// 阻止横向滚动区域触发浏览器「滑动返回」手势
-// 仅靠 CSS overscroll-behavior-x:contain 已足够，不再用 JS preventDefault 避免破坏原生滚动惯性
+// 手机端导航横滑：原生滚动在部分浏览器触底时会产生橡皮筋回弹。
+// 以 transform 移动菜单轨道，边界只有数值限位，不会触发浏览器横向回弹。
+(function initBoundedMobileNavDrag() {
+  const nav = document.querySelector(".topbar .nav");
+  if (!nav) return;
+
+  const track = document.createElement("div");
+  track.className = "nav-scroll-track";
+  Array.from(nav.childNodes).forEach(node => track.appendChild(node));
+  nav.appendChild(track);
+
+  const mobileQuery = window.matchMedia("(max-width: 860px)");
+  const DRAG_THRESHOLD = 6;
+  const CLICK_SUPPRESS_MS = 320;
+  let drag = null;
+  let suppressClickUntil = 0;
+  let offset = 0;
+
+  function maxOffset() {
+    return Math.max(0, track.scrollWidth - nav.clientWidth);
+  }
+
+  function clampOffset(value) {
+    return Math.min(maxOffset(), Math.max(0, value));
+  }
+
+  function applyOffset(value) {
+    offset = clampOffset(value);
+    track.style.transform = `translate3d(${-offset}px, 0, 0)`;
+    nav.dataset.navVirtualOffset = String(offset);
+    nav.dataset.navVirtualMax = String(maxOffset());
+    nav.dispatchEvent(new Event("navvirtualscroll"));
+  }
+
+  function getTouch(touches, identifier) {
+    return Array.from(touches).find(touch => touch.identifier === identifier);
+  }
+
+  function clearDrag() {
+    if (!drag) return;
+    const completedDrag = drag.axis === "x" && drag.moved;
+    drag = null;
+
+    if (completedDrag) {
+      suppressClickUntil = performance.now() + CLICK_SUPPRESS_MS;
+    }
+  }
+
+  nav.addEventListener("touchstart", event => {
+    if (!mobileQuery.matches || maxOffset() <= 0) return;
+    const touch = event.changedTouches[0];
+    if (!touch) return;
+
+    drag = {
+      touchId: touch.identifier,
+      startX: touch.clientX,
+      startY: touch.clientY,
+      startOffset: offset,
+      axis: null,
+      moved: false
+    };
+  }, { passive: true });
+
+  // 监听 window 能让手指滑出导航边界后仍持续执行限位。
+  window.addEventListener("touchmove", event => {
+    if (!drag) return;
+    const touch = getTouch(event.touches, drag.touchId);
+    if (!touch) return;
+
+    const deltaX = touch.clientX - drag.startX;
+    const deltaY = touch.clientY - drag.startY;
+    if (!drag.axis) {
+      if (Math.abs(deltaX) <= Math.abs(deltaY)) {
+        if (Math.max(Math.abs(deltaX), Math.abs(deltaY)) >= DRAG_THRESHOLD) drag.axis = "y";
+        return;
+      }
+
+      // 在确认横向意图的第一帧就取消默认滚动，避免浏览器先产生一小段橡皮筋位移。
+      if (event.cancelable) event.preventDefault();
+      if (Math.abs(deltaX) < DRAG_THRESHOLD) return;
+      drag.axis = "x";
+    }
+    if (drag.axis !== "x") return;
+
+    if (event.cancelable) event.preventDefault();
+    applyOffset(drag.startOffset - deltaX);
+    drag.moved = true;
+  }, { passive: false });
+
+  window.addEventListener("touchend", event => {
+    if (drag && getTouch(event.changedTouches, drag.touchId)) clearDrag();
+  });
+  window.addEventListener("touchcancel", event => {
+    if (drag && getTouch(event.changedTouches, drag.touchId)) clearDrag();
+  });
+
+  function syncViewport() {
+    if (mobileQuery.matches) {
+      applyOffset(offset);
+      return;
+    }
+    offset = 0;
+    track.style.transform = "";
+    delete nav.dataset.navVirtualOffset;
+    delete nav.dataset.navVirtualMax;
+    nav.dispatchEvent(new Event("navvirtualscroll"));
+  }
+
+  window.addEventListener("resize", syncViewport, { passive: true });
+  if (mobileQuery.addEventListener) mobileQuery.addEventListener("change", syncViewport);
+  else mobileQuery.addListener(syncViewport);
+  requestAnimationFrame(syncViewport);
+
+  // 拖动结束后不触发起始菜单项的点击；轻触不受影响。
+  nav.addEventListener("click", event => {
+    if (performance.now() >= suppressClickUntil) return;
+    event.preventDefault();
+    event.stopImmediatePropagation();
+  }, true);
+})();
 
 // 列表页共享分页：统一页码窗口、跳页表单和键盘可达性。
 window.CampBriefPagination = (() => {

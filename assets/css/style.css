@@ -184,6 +184,7 @@ button{cursor:pointer}
   align-items:center;
   gap:4px;
 }
+.nav-scroll-track{display:contents}
 .nav-link{
   position:relative;
   display:flex;
@@ -1613,14 +1614,20 @@ a.btn{
   .top-actions{align-items:flex-end;flex-direction:column;width:100%;flex:1 1 100%;min-width:0}
   .nav{
     width:100%;
-    overflow-x:auto;
-    -webkit-overflow-scrolling:touch;
-    scrollbar-width:none;
+    overflow:hidden;
     flex-wrap:nowrap;
-    gap:2px;
-    overscroll-behavior-x:contain;
+    gap:0;
+    /* 横向位移交由脚本轨道限位，纵向手势继续由页面原生处理 */
+    touch-action:pan-y;
   }
-  .nav::-webkit-scrollbar{display:none}
+  .nav-scroll-track{
+    display:flex;
+    align-items:center;
+    min-width:max-content;
+    gap:2px;
+    transform:translate3d(0,0,0);
+    will-change:transform;
+  }
   .nav-link{flex-shrink:0}
   .title-row{align-items:flex-start;flex-direction:column}
   .filter-row{grid-template-columns:1fr;gap:10px}
@@ -1667,26 +1674,21 @@ a.btn{
   /* 导航：横向滚动，不换行 */
   .nav{
     width:100%;
-    overflow-x:auto;
-    -webkit-overflow-scrolling:touch;
-    scrollbar-width:none;
+    overflow:hidden;
     flex-wrap:nowrap;
-    gap:2px;
-    padding:2px 2px 2px 4px;
+    gap:0;
+    padding:0;
     position:relative;
-    /* 阻止浏览器滑动返回手势，避免和导航滚动冲突 */
-    overscroll-behavior-x:contain;
   }
-  .nav::-webkit-scrollbar{display:none}
+  .nav-scroll-track{padding:2px 2px 2px 4px}
   /* 右侧渐变提示：还有更多内容 */
   .nav::after{
     content:"";
-    position:sticky;
+    position:absolute;
     right:0;
     top:0;
     bottom:0;
-    min-width:32px;
-    flex-shrink:0;
+    width:32px;
     background:linear-gradient(to right, transparent, var(--space));
     pointer-events:none;
     /* 只在可滚动时显示 */
@@ -1828,13 +1830,11 @@ a.btn{
   background: var(--control-hover);
   transition: background 0.1s;
 }
-[data-platform="android"] .filter-scroll,
-[data-platform="android"] .nav {
+[data-platform="android"] .filter-scroll {
   /* Android 横向滚动优化 */
   scroll-snap-type: x proximity;
 }
-[data-platform="android"] .filter-scroll .options .option,
-[data-platform="android"] .nav-link {
+[data-platform="android"] .filter-scroll .options .option {
   scroll-snap-align: start;
 }
 

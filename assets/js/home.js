@@ -498,21 +498,27 @@ function initHome(){
     });
   }
 
-  // 手机端看板轮播
-  // (moved to standalone DOMContentLoaded below)
 }
 
 /* ===== 手机端看板轮播 ===== */
 function initBoardCarousel() {
-  var active = 0;
   var homeMain = document.querySelector(".home-main");
-  if (!homeMain) return;
-  var boards = [...homeMain.querySelectorAll(".board")];
-  if (boards.length <= 1) return;
+  if (!homeMain || homeMain.classList.contains("has-carousel")) return null;
+  var boards = Array.from(homeMain.children).filter(function(node) {
+    return node.classList && node.classList.contains("board");
+  });
+  if (boards.length <= 1) return null;
 
-  // 创建 track 容器
+  var active = 0;
+  var currentOffset = 0;
+  var pointer = null;
+  var suppressClick = false;
+  var leaveTimers = [];
+
+  // 轨道仅在手机端创建；切回桌面时会完整还原为三列 DOM。
   var track = document.createElement("div");
   track.className = "board-track";
+  track.id = "home-board-carousel";
   boards.forEach(function(b) { track.appendChild(b); });
   homeMain.appendChild(track);
   homeMain.classList.add("has-carousel");
@@ -521,52 +527,158 @@ function initBoardCarousel() {
   var chevronRight = '<svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg>';
 
   var prevBtn = document.createElement("button");
-  prevBtn.className = "board-switch-btn board-switch-prev";
+  prevBtn.className = "board-carousel-control board-carousel-control--prev";
   prevBtn.type = "button";
+  prevBtn.setAttribute("aria-label", "上一个看板");
+  prevBtn.setAttribute("aria-controls", track.id);
   prevBtn.innerHTML = chevronLeft;
 
   var nextBtn = document.createElement("button");
-  nextBtn.className = "board-switch-btn board-switch-next";
+  nextBtn.className = "board-carousel-control board-carousel-control--next";
   nextBtn.type = "button";
+  nextBtn.setAttribute("aria-label", "下一个看板");
+  nextBtn.setAttribute("aria-controls", track.id);
   nextBtn.innerHTML = chevronRight;
 
   homeMain.appendChild(prevBtn);
   homeMain.appendChild(nextBtn);
 
-  var dotsWrap = document.createElement("div");
-  dotsWrap.className = "board-dots";
-  dotsWrap.innerHTML = boards.map(function(_, i) {
-    return '<button class="board-dot' + (i === 0 ? ' is-active' : '') + '" data-index="' + i + '" type="button"></button>';
-  }).join("");
-  homeMain.after(dotsWrap);
+  var status = document.createElement("p");
+  status.className = "sr-only";
+  status.setAttribute("aria-live", "polite");
+  homeMain.appendChild(status);
+
+  // 移动端简化入场：相邻看板需要始终可见，才能形成草图中的两侧预览。
+  boards.forEach(function(board) { board.classList.add("is-visible"); });
+
+  function clamp(value, min, max) {
+    return Math.max(min, Math.min(value, max));
+  }
+
+  function getOffset(index) {
+    var board = boards[index];
+    var centeredOffset = board.offsetLeft - (homeMain.clientWidth - board.offsetWidth) / 2;
+    return Math.max(0, centeredOffset);
+  }
+
+  function getMaxOffset() {
+    return getOffset(boards.length - 1);
+  }
+
+  function queueLeavingBoard(board) {
+    board.classList.remove("is-active");
+    board.classList.add("is-leaving");
+    var timer = window.setTimeout(function() {
+      board.classList.remove("is-leaving");
+      leaveTimers = leaveTimers.filter(function(item) { return item !== timer; });
+    }, 420);
+    leaveTimers.push(timer);
+  }
 
   function goTo(index) {
+    var previous = active;
     active = Math.max(0, Math.min(index, boards.length - 1));
-    // 按实际看板宽度滑动
-    var containerWidth = homeMain.offsetWidth;
-    var boardWidth = boards[0].offsetWidth;
-    var offset = active * (boardWidth + 8); // 8px margin
-    var maxOffset = track.scrollWidth - containerWidth;
-    offset = Math.min(offset, maxOffset);
-    track.style.transform = "translateX(-" + offset + "px)";
+    var changed = active !== previous;
+    if (changed) queueLeavingBoard(boards[previous]);
     boards.forEach(function(b, i) {
-      b.classList.toggle("is-visible", i === active);
+      var isActive = i === active;
+      b.classList.toggle("is-active", isActive);
+      b.classList.toggle("is-before-active", i < active);
+      b.classList.toggle("is-after-active", i > active);
+      if (isActive) b.classList.remove("is-leaving");
+      b.setAttribute("aria-hidden", String(!isActive));
+      if ("inert" in b) b.inert = !isActive;
     });
-    dotsWrap.querySelectorAll(".board-dot").forEach(function(dot, i) {
-      dot.classList.toggle("is-active", i === active);
-    });
+    currentOffset = getOffset(active);
+    track.style.transform = "translateX(-" + currentOffset + "px)";
     prevBtn.disabled = active === 0;
     nextBtn.disabled = active === boards.length - 1;
+    var title = boards[active].querySelector(".board-title");
+    status.textContent = "当前看板：" + (title ? title.textContent.trim() : "") + "，第 " + (active + 1) + " / " + boards.length + " 块";
   }
 
   prevBtn.addEventListener("click", function() { goTo(active - 1); });
   nextBtn.addEventListener("click", function() { goTo(active + 1); });
-  dotsWrap.addEventListener("click", function(e) {
-    var dot = e.target.closest(".board-dot");
-    if (dot) goTo(Number(dot.dataset.index));
-  });
+
+  function onPointerDown(event) {
+    if (event.pointerType === "mouse" && event.button !== 0) return;
+    pointer = { id: event.pointerId, startX: event.clientX, startY: event.clientY, swiping: false };
+    if (track.setPointerCapture) track.setPointerCapture(event.pointerId);
+  }
+
+  function onPointerMove(event) {
+    if (!pointer || pointer.id !== event.pointerId) return;
+    var deltaX = event.clientX - pointer.startX;
+    var deltaY = event.clientY - pointer.startY;
+    if (!pointer.swiping && Math.abs(deltaX) > 8 && Math.abs(deltaX) > Math.abs(deltaY)) {
+      pointer.swiping = true;
+    }
+    if (!pointer.swiping) return;
+    event.preventDefault();
+    var maxOffset = getMaxOffset();
+    var dragOffset = clamp(currentOffset - deltaX, 0, maxOffset);
+    track.style.transform = "translateX(-" + dragOffset + "px)";
+  }
+
+  function onPointerEnd(event) {
+    if (!pointer || pointer.id !== event.pointerId) return;
+    var deltaX = event.clientX - pointer.startX;
+    var threshold = Math.max(44, boards[active].offsetWidth * 0.12);
+    var wasSwipe = pointer.swiping;
+    pointer = null;
+    if (wasSwipe && Math.abs(deltaX) >= threshold) {
+      goTo(active + (deltaX < 0 ? 1 : -1));
+    } else {
+      goTo(active);
+    }
+    if (wasSwipe) {
+      suppressClick = true;
+      setTimeout(function() { suppressClick = false; }, 0);
+    }
+  }
+
+  function preventDraggedClick(event) {
+    if (!suppressClick) return;
+    event.preventDefault();
+    event.stopPropagation();
+  }
+
+  track.addEventListener("pointerdown", onPointerDown);
+  track.addEventListener("pointermove", onPointerMove);
+  track.addEventListener("pointerup", onPointerEnd);
+  track.addEventListener("pointercancel", onPointerEnd);
+  track.addEventListener("click", preventDraggedClick, true);
+
+  var resizeObserver = typeof ResizeObserver === "function"
+    ? new ResizeObserver(function() { goTo(active); })
+    : null;
+  var onResize = function() { goTo(active); };
+  if (resizeObserver) resizeObserver.observe(homeMain);
+  else window.addEventListener("resize", onResize);
 
   goTo(0);
+
+  return function destroyBoardCarousel() {
+    if (resizeObserver) resizeObserver.disconnect();
+    else window.removeEventListener("resize", onResize);
+    leaveTimers.forEach(function(timer) { window.clearTimeout(timer); });
+    track.removeEventListener("pointerdown", onPointerDown);
+    track.removeEventListener("pointermove", onPointerMove);
+    track.removeEventListener("pointerup", onPointerEnd);
+    track.removeEventListener("pointercancel", onPointerEnd);
+    track.removeEventListener("click", preventDraggedClick, true);
+    boards.forEach(function(board) {
+      board.classList.remove("is-active", "is-before-active", "is-after-active", "is-leaving");
+      board.removeAttribute("aria-hidden");
+      if ("inert" in board) board.inert = false;
+      homeMain.insertBefore(board, track);
+    });
+    track.remove();
+    prevBtn.remove();
+    nextBtn.remove();
+    status.remove();
+    homeMain.classList.remove("has-carousel");
+  };
 }
 
 // 等待 DOM 就绪 + 双 rAF 确保 CSS 初始状态（opacity:0）已应用，再渲染与触发入场
@@ -578,22 +690,29 @@ if(document.readyState === "loading"){
   requestAnimationFrame(() => requestAnimationFrame(initHome));
 }
 
-// 看板轮播独立初始化（不依赖 initHome）
-// 加防重复标记，兼容夸克等浏览器
-var _carouselInited = false;
-function safeInitCarousel() {
-  if (_carouselInited) return;
-  _carouselInited = true;
-  initBoardCarousel();
+// 轮播严格限制为手机断点；旋转设备或拉宽窗口后完整恢复桌面三列结构。
+var boardCarouselQuery = window.matchMedia("(max-width: 768px)");
+var destroyBoardCarousel = null;
+function syncBoardCarousel() {
+  if (boardCarouselQuery.matches) {
+    if (!destroyBoardCarousel) destroyBoardCarousel = initBoardCarousel();
+  } else if (destroyBoardCarousel) {
+    destroyBoardCarousel();
+    destroyBoardCarousel = null;
+  }
+}
+function initResponsiveBoardCarousel() {
+  syncBoardCarousel();
+  if (boardCarouselQuery.addEventListener) {
+    boardCarouselQuery.addEventListener("change", syncBoardCarousel);
+  } else {
+    boardCarouselQuery.addListener(syncBoardCarousel);
+  }
 }
 if(document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", function() {
-    requestAnimationFrame(safeInitCarousel);
+    requestAnimationFrame(initResponsiveBoardCarousel);
   });
 } else {
-  requestAnimationFrame(safeInitCarousel);
+  requestAnimationFrame(initResponsiveBoardCarousel);
 }
-// 兜底：夸克等浏览器 DOMContentLoaded 可能不触发
-window.addEventListener("load", function() {
-  requestAnimationFrame(safeInitCarousel);
-});

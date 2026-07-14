@@ -439,25 +439,58 @@ body.js-ready .hero-sub{
 
   .home-main{padding:12px 14px 8px}
   .home-main.has-carousel{
+    display:block;
     overflow:hidden;
     padding:12px 0 8px;
     position:relative;
   }
   .home-main.has-carousel .board-track{
     display:flex;
-    align-items:center;
-    padding:0 48px;
+    align-items:stretch;
+    gap:12px;
+    padding-inline:max(11vw, calc(50% - 210px));
+    touch-action:pan-y;
+    will-change:transform;
     transition:transform .45s cubic-bezier(.4,0,.2,1);
   }
   .home-main.has-carousel .board{
-    flex:0 0 100%;
+    flex:0 0 min(78vw, 420px);
+    width:min(78vw, 420px);
     min-width:0;
-    min-height:55vh;
+    min-height:0;
+    height:clamp(460px, 64svh, 580px);
     border-width:3px;
     border-radius:16px;
-    transition:opacity .45s ease;
-    margin:0 4px;
+    opacity:.54;
+    filter:grayscale(.14) saturate(.58) contrast(.94);
+    transform:scale(.9);
+    transform-origin:center center;
+    box-shadow:none;
+    will-change:transform, opacity, filter;
+    transition:
+      transform .48s cubic-bezier(.4,0,.2,1),
+      opacity .38s cubic-bezier(.4,0,.2,1),
+      filter .38s cubic-bezier(.4,0,.2,1),
+      box-shadow .38s cubic-bezier(.4,0,.2,1);
   }
+  .home-main.has-carousel .board.is-active{
+    opacity:1;
+    filter:none;
+    transform:scale(1);
+    border-color:var(--line-strong);
+    box-shadow:0 14px 30px rgba(0,0,0,.12);
+    z-index:1;
+  }
+  .home-main.has-carousel .board.is-before-active{transform-origin:right center}
+  .home-main.has-carousel .board.is-after-active{transform-origin:left center}
+  .home-main.has-carousel.is-visible .board.is-active{
+    animation:mobileBoardEnter .48s cubic-bezier(.4,0,.2,1) both;
+  }
+  .home-main.has-carousel.is-visible .board.is-leaving{
+    animation:mobileBoardExit .38s cubic-bezier(.4,0,.2,1) both;
+    z-index:0;
+  }
+  .home-main.has-carousel .board:not(.is-active){pointer-events:none}
   .board-head{padding:14px 16px}
   .board-icon{width:28px;height:28px}
   .board-title{font-size:15px}
@@ -465,67 +498,74 @@ body.js-ready .hero-sub{
   .board-list{padding:10px}
   .board-pager{padding:10px 14px}
   .home-footer{padding:16px;font-size:12px}
+
+  /* 仅在手机端出现：居中主看板，两侧保留相邻看板的一小部分。 */
+  .board-carousel-control{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:38px;
+    height:38px;
+    display:grid;
+    place-items:center;
+    border-radius:50%;
+    border:2px solid var(--line-strong);
+    background:var(--panel);
+    color:var(--text);
+    cursor:pointer;
+    z-index:2;
+    box-shadow:0 2px 12px rgba(0,0,0,.15);
+    transition:background .15s, opacity .15s, transform .15s;
+  }
+  .board-carousel-control:active:not(:disabled){
+    background:var(--control-hover);
+    transform:translateY(-50%) scale(.92);
+  }
+  .board-carousel-control:focus-visible{
+    outline:3px solid var(--option-accent);
+    outline-offset:2px;
+  }
+  .board-carousel-control:disabled{opacity:.25;cursor:not-allowed}
+  .board-carousel-control svg{width:18px;height:18px;stroke-width:2.5}
+  .board-carousel-control--prev{left:4px}
+  .board-carousel-control--next{right:4px}
 }
 
-/* 看板左右切换按钮 */
-/* 桌面端 track 不影响布局 */
-.board-track{display:contents}
-.board-switch-btn,.board-dots{display:none}
-
-/* 看板左右切换按钮（手机端） */
-.board-switch-btn{
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  width:38px;
-  height:38px;
-  display:grid;
-  place-items:center;
-  border-radius:50%;
-  border:2px solid var(--line-strong);
-  background:var(--panel);
-  color:var(--text);
-  cursor:pointer;
-  z-index:50;
-  box-shadow:0 2px 12px rgba(0,0,0,.15);
-  transition:background .15s, opacity .15s, transform .15s;
+@keyframes mobileBoardEnter{
+  from{
+    opacity:.54;
+    filter:grayscale(.14) saturate(.58) contrast(.94);
+    transform:scale(.9) translateY(14px);
+    box-shadow:none;
+  }
+  72%{transform:scale(1.018) translateY(-2px)}
+  to{
+    opacity:1;
+    filter:none;
+    transform:scale(1) translateY(0);
+    box-shadow:0 14px 30px rgba(0,0,0,.12);
+  }
 }
-.board-switch-btn:active{
-  background:var(--control-hover);
-  transform:translateY(-50%) scale(.92);
-}
-.board-switch-btn:disabled{opacity:.25;cursor:not-allowed}
-.board-switch-btn svg{width:18px;height:18px;stroke-width:2.5}
-.board-switch-prev{left:6px}
-.board-switch-next{right:6px}
-
-/* 底部圆点指示器 */
-.board-dots{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:8px;
-  padding:12px 0 4px;
-}
-.board-dot{
-  width:8px;
-  height:8px;
-  border-radius:50%;
-  border:0;
-  background:var(--line-strong);
-  cursor:pointer;
-  transition:background .2s, transform .2s;
-  padding:0;
-}
-.board-dot.is-active{
-  background:var(--option-accent);
-  transform:scale(1.3);
+@keyframes mobileBoardExit{
+  from{
+    opacity:1;
+    filter:none;
+    transform:scale(1) translateY(0);
+    box-shadow:0 14px 30px rgba(0,0,0,.12);
+  }
+  to{
+    opacity:.54;
+    filter:grayscale(.14) saturate(.58) contrast(.94);
+    transform:scale(.9) translateY(10px);
+    box-shadow:none;
+  }
 }
 
 @media(max-width:380px){
   .hero-title{font-size:21px}
   .hero-sub{font-size:13px}
   .board{min-height:380px}
+  .home-main.has-carousel .board{height:clamp(420px, 68svh, 520px)}
 }
 
 /* ===== 降级：尊重减少动效偏好 ===== */
@@ -541,6 +581,14 @@ body.js-ready .hero-sub{
   .board-head,.board-body,.board-pager{
     opacity:1;
     transform:none;
+  }
+  .home-main.has-carousel .board-track,
+  .home-main.has-carousel .board,
+  .home-main.has-carousel.is-visible .board.is-active,
+  .home-main.has-carousel.is-visible .board.is-leaving,
+  .board-carousel-control{
+    animation:none;
+    transition:none;
   }
   .ripple{ display:none; }
 }
