@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-15T18:57:14.828406+08:00",
+  "last_updated": "2026-07-15T21:06:04.616621+08:00",
   "source": "CampBrief",
-  "total": 149,
+  "total": 150,
   "tiers": [
     {
       "key": "all",
@@ -2046,7 +2046,7 @@
     },
     {
       "id": "comp-saikr-91694bf3b0c1",
-      "name": "【最后13天】第五届“中外传播杯”大学生英语翻译大赛",
+      "name": "【最后12天】第五届“中外传播杯”大学生英语翻译大赛",
       "tier": "official",
       "fields": [
         "language"
@@ -2054,7 +2054,7 @@
       "status": "open",
       "signup": "",
       "schedule": "",
-      "summary": "来源：赛氪。浏览 5.0万，关注 1582",
+      "summary": "来源：赛氪。浏览 5.0万，关注 1589",
       "search": "",
       "official_url": "https://www.saikr.com/vse/2026NCSET",
       "official_site": "",
@@ -2103,7 +2103,7 @@
     },
     {
       "id": "comp-saikr-1427ab50afa1",
-      "name": "第九届ETTBL杯高校英语阅读大赛",
+      "name": "【年度最后一场】第九届ETTBL杯高校英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -2111,7 +2111,7 @@
       "status": "pending",
       "signup": "",
       "schedule": "",
-      "summary": "来源：赛氪。浏览 6.6万，关注 635",
+      "summary": "来源：赛氪。浏览 6.6万，关注 639",
       "search": "",
       "official_url": "https://www.saikr.com/vse/ETTBL-YD",
       "official_site": "",
@@ -2172,7 +2172,7 @@
     },
     {
       "id": "comp-saikr-8cfb683e4617",
-      "name": "【倒计时6天】第四届“三晋杯”全国大学生英语翻译大赛",
+      "name": "【倒计时5天】第四届“三晋杯”全国大学生英语翻译大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -2180,7 +2180,7 @@
       "status": "open",
       "signup": "",
       "schedule": "",
-      "summary": "来源：赛氪。浏览 2.5万，关注 736",
+      "summary": "来源：赛氪。浏览 2.6万，关注 743",
       "search": "",
       "official_url": "https://www.saikr.com/vse/YSJFY",
       "official_site": "",
@@ -2195,7 +2195,7 @@
     },
     {
       "id": "comp-saikr-b28f051c4971",
-      "name": "【最后11天】第三届“中国故事大赛·双语中国”全国大学生英语词汇大赛",
+      "name": "【最后10天】第三届“中国故事大赛·双语中国”全国大学生英语词汇大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -2203,7 +2203,7 @@
       "status": "open",
       "signup": "",
       "schedule": "",
-      "summary": "来源：赛氪。浏览 1.7万，关注 1110",
+      "summary": "来源：赛氪。浏览 1.7万，关注 1121",
       "search": "",
       "official_url": "https://www.saikr.com/vse/2026/SYZGVC",
       "official_site": "",
@@ -2326,7 +2326,7 @@
     },
     {
       "id": "comp-saikr-da4f00946e30",
-      "name": "【最后5天】第四届“中外传播杯”大学生英语词汇大赛",
+      "name": "【最后4天】第四届“中外传播杯”大学生英语词汇大赛",
       "tier": "official",
       "fields": [
         "language"
@@ -2334,7 +2334,7 @@
       "status": "open",
       "signup": "",
       "schedule": "",
-      "summary": "来源：赛氪。浏览 9952，关注 679",
+      "summary": "来源：赛氪。浏览 1.1万，关注 688",
       "search": "",
       "official_url": "https://www.saikr.com/vse/WORD2026",
       "official_site": "",
@@ -2725,7 +2725,7 @@
     },
     {
       "id": "comp-saikr-e96b1b2e22c9",
-      "name": "第三届“中外传播杯”大学生手机摄影大赛",
+      "name": "【倒计时10天】第三届“中外传播杯”大学生手机摄影大赛",
       "tier": "hobby",
       "fields": [
         "design"
@@ -2733,7 +2733,7 @@
       "status": "pending",
       "signup": "",
       "schedule": "",
-      "summary": "来源：赛氪。浏览 7112，关注 155",
+      "summary": "来源：赛氪。浏览 7626，关注 163",
       "search": "",
       "official_url": "https://www.saikr.com/vse/ZWSY",
       "official_site": "",
@@ -2814,6 +2814,23 @@
         "registration_end": "2026-07-18",
         "verified_at": "2026-07-15T18:57:08.606962+08:00"
       }
+    },
+    {
+      "id": "comp-saikr-74b7678e90b1",
+      "name": "2026 第六届“心上的中国” 全国大学生525 心理知识大赛·全国赛",
+      "tier": "hobby",
+      "fields": [
+        "medical"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 6340，关注 180",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/psy2026",
+      "official_site": "",
+      "organizer": "全国大学生心理知识竞赛",
+      "prestige": 4
     }
   ]
 }
