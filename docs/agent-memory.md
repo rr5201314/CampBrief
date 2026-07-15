@@ -159,11 +159,11 @@
 - GitHub Trending 采集后不得在 gate 前让 Hermes 通读榜单；gate 只为缺少 `chinese_summary`/`solves_what` 的 repo 生成 `content_completion`。补写后必须通过 `scripts/validate-github-trending.py`。
 - 完整协议和命令见 `docs/maintenance-workflow.md`。
 
-### Hermes ccron 当前配置（2026-07-15）
+### Hermes cron 当前配置（2026-07-15）
 
-手机上的 Hermes agent 已配置以下四个定时任务，所有内容板块至少每天巡检一次（技术板块由 daily-news 中的技术源和 GitHub Trending 流程维护）。具体执行频率只在 ccron 配置中维护，不复制到流程文件。ccron 的职责是**按绝对路径读取对应 `SKILL.md` 并严格执行其中完整流程**；业务规则、采集参数、校验和推送行为维护在这些文件内，而不是复制到 ccron prompt 中。
+手机上的 Hermes agent 已配置以下四个定时任务，所有内容板块至少每天巡检一次（技术板块由 daily-news 中的技术源和 GitHub Trending 流程维护）。具体执行频率只在 cron 配置中维护，不复制到流程文件。cron 的职责是**按绝对路径读取对应 `SKILL.md` 并严格执行其中完整流程**；业务规则、采集参数、校验和推送行为维护在这些文件内，而不是复制到 cron prompt 中。
 
-- 这些 `SKILL.md` 没有注册到 Hermes Agent 的 skill 目录，不会发生 skill config 注入。每个流程必须把 ccron prompt 中指向自身的绝对路径记为 `SKILL_FILE`，向上五级推导 `$REPO`，并用 `$REPO/AGENTS.md` 验证根目录。
+- 这些 `SKILL.md` 没有注册到 Hermes Agent 的 skill 目录，不会发生 skill config 注入。每个流程必须把 cron prompt 中指向自身的绝对路径记为 `SKILL_FILE`，向上五级推导 `$REPO`，并用 `$REPO/AGENTS.md` 验证根目录。
 
 - `campbrief-daily-news`
 
@@ -191,7 +191,7 @@
 
 ### 运行边界与流程
 
-- **Hermes（手机，ccron）** 是唯一的日常执行端；GitHub 仅作为远程仓库和 GitHub Pages 发布来源。
+- **Hermes（手机，cron）** 是唯一的日常执行端；GitHub 仅作为远程仓库和 GitHub Pages 发布来源。
 - `campbrief-daily-news`：先同步并确认工作区干净 → 采集非 juya RSS、同步 GitHub 趋势、批量检查非 juya 原文链接 → gate 去重与校验。退出码 `0` 直接结束或发布确定性变更；仅退出码 `10` 由 Hermes 处理 handoff 中的新候选、缺失中文字段、来源错误和链接异常 → 校验、提交、**再次 `git pull --ff-only` → `git push`** → ack 并清空本次候选池。
 - `campbrief-daily-news-juya`：独立采集 juya 日报并只检查 juya 原文链接，随后执行同一 gate 协议；仅 handoff 中的新日报才拆分和编辑。它与前者共用发布文件 `data/daily-news.json`，不共用候选池与 gate state。
 - `campbrief-exams`：先由脚本合并下载官方入口并按考试/期次批量匹配，再由 gate 同步状态、校验和去除重复异常；Hermes 只处理 handoff 中的唯一新候选、多候选、零命中、动态页变化或来源错误。URL 的唯一事实源是 `data/exams.json`；巡检规则在 `scripts/hermes/skills/CampBrief/campbrief-exams/source-policy.json`，skill 不维护网址快照。PSC、事业单位等仅保留全国官方入口，不采集各省/高校分散通知。
@@ -209,14 +209,14 @@
 
 ### GitHub Actions 配置
 
-- `.github/workflows/` 目录已清空，不再使用 GitHub Actions 做任何自动化采集。日常采集、编辑、校验和发布全部由手机 Hermes ccron 完成。GitHub 仅作为远程仓库和 GitHub Pages 发布来源。
+- `.github/workflows/` 目录已清空，不再使用 GitHub Actions 做任何自动化采集。日常采集、编辑、校验和发布全部由手机 Hermes cron 完成。GitHub 仅作为远程仓库和 GitHub Pages 发布来源。
 
 ### 采集脚本参数
 
 - 无参数：采集全部源。
 - `--exclude "juya AI 日报"`：排除指定源（逗号分隔多个）。
 - `--only "juya AI 日报"`：只采集指定源；仅与同一 `--output` 的候选合并。
-- `--output PATH`：候选池输出路径；相对路径以仓库根目录为基准。手机 ccron 必须输出到 `local-notes/candidate-pools/`。
+- `--output PATH`：候选池输出路径；相对路径以仓库根目录为基准。手机 cron 必须输出到 `local-notes/candidate-pools/`。
 
 ### GitHub 趋势采集
 - 脚本：`scripts/collect-github-trending.py`

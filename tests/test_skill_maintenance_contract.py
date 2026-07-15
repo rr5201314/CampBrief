@@ -49,7 +49,7 @@ class SkillMaintenanceContractTests(unittest.TestCase):
                 self.assertTrue(description.endswith("."))
                 keys = [line.split(":", 1)[0] for line in frontmatter.splitlines() if line.strip()]
                 self.assertEqual(keys, ["name", "description"])
-                self.assertIn("ccron 提示词", text)
+                self.assertIn("cron 提示词", text)
                 self.assertIn("SKILL_FILE", text)
                 self.assertIn("../../../../..", text)
                 self.assertNotIn("campbrief.repo_path", text)

@@ -22,10 +22,10 @@ description: 维护竞赛数据；脚本批量校验，Hermes 只处理例外并
 
 ## 仓库路径
 
-本文件不注册到 Hermes skill 目录，也不依赖 skill config 注入。把 ccron 提示词中“执行此流程”后面的本文件绝对路径原样赋给 `SKILL_FILE`，再由文件位置确定仓库根目录：
+本文件不注册到 Hermes skill 目录，也不依赖 skill config 注入。把 cron 提示词中“执行此流程”后面的本文件绝对路径原样赋给 `SKILL_FILE`，再由文件位置确定仓库根目录：
 
 ```bash
-# SKILL_FILE 的值必须直接取自本次 ccron 提示词，不得猜测或复用旧路径
+# SKILL_FILE 的值必须直接取自本次 cron 提示词，不得猜测或复用旧路径
 REPO="$(cd "$(dirname "$SKILL_FILE")/../../../../.." && pwd)" || exit 1
 test -f "$REPO/AGENTS.md" || exit 1
 ```
