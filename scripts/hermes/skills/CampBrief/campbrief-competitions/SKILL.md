@@ -89,22 +89,26 @@ python3 "$REPO/scripts/collect-52jingsai.py" \
 - 名称相似度 > 80% 视为重复，跳过
 - 完全相同的 URL 也视为重复
 
-**分类标注（tier）：以主办方为主，竞赛名称为辅。**
+**分类标注（tier + prestige）：使用参考表批量对照**
 
-判断顺序：
-1. 先看 `organizer` 字段：
-   - 含"教育部"、"共青团"、"中国科协"、"外文局"、"人社部"等国家级机构 → `official`
-   - 含"华为"、"腾讯"、"阿里"、"百度"、"字节"、"小米"、"创客中国"等企业名 → `enterprise`
-2. 主办方为空或无法判断时，再看竞赛名称：
-   - 含"全国大学生"、"挑战杯"、"互联网+"、"ACM"、"ICPC"等 → `official`
-   - 含企业名 → `enterprise`
-3. 都无法判断 → `hobby`
+先运行批量分类脚本，对照参考表自动标注：
 
-同一主办方的多个竞赛应归入相同 tier。
+```bash
+python3 "$REPO/scripts/classify-competitions.py" --apply
+```
+
+脚本逻辑：以主办方为主、竞赛名称为辅，对照 `scripts/competition-tier-ref.json` 参考表自动分配 tier 和 prestige。
+
+**脚本未命中的条目**：需要手动核验。搜索该主办方/竞赛的含金量背景，确认 tier 和 prestige 后补全到参考表 `scripts/competition-tier-ref.json`，然后重新运行脚本。
+
+参考表结构：
+- `organizers`：主办方名 → tier + prestige
+- `competitions`：竞赛关键词 → tier + prestige
+- 新增条目时保持已有格式，prestige 按 1-10 标准评分
 
 **领域标注（fields）：**
-根据竞赛名称和描述自动标注，可多选：
-- `computer`：含"编程"、"程序设计"、"软件"、"IT"、"计算机"
+根据竞赛名称和主办方自动标注，可多选：
+- `computer`：含"编程"、"程序设计"、"软件"、"IT"、"计算机"、"三维"、"数字化"
 - `ai`：含"人工智能"、"AI"、"机器学习"、"深度学习"
 - `language`：含"英语"、"翻译"、"词汇"、"外语"
 - `design`：含"设计"、"艺术"、"创意"、"广告"
