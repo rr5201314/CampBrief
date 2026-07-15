@@ -76,6 +76,20 @@
 - **首页竞赛看板筛选**：仅展示 `status=open`（可报名）的赛事；条数与分页均基于该筛选结果，未开始、比赛中和已完赛赛事仅在完整竞赛栏目中展示
 - **首页竞赛看板徽章**：赛事层级徽章（教育部认可/名企主办/兴趣练手）置于标题栏右侧，并排在状态徽章（如“可报名”）左侧；报名时间单独保留在下一行
 
+### 竞赛采集源
+
+| 源 | 脚本 | 编码 | 是否抓详情页 | ID 前缀 |
+|---|---|---|---|---|
+| 我爱竞赛网 52jingsai.com | `scripts/collect-52jingsai.py --detail` | GBK | 是（逐条抓详情页补主办方/截止日期） | `comp-52jingsai-` |
+| 赛氪 saikr.com | `scripts/collect-saikr.py` | UTF-8 | 否（列表页一次拿全字段） | `comp-saikr-` |
+
+- 赛氪采集 URL：`https://www.saikr.com/index/hot/contest`（SSR HTML，约 50 条热门竞赛）
+- 赛氪列表页卡片 class 为 `item`，含 `name`/`organizer`/`views`/`followers`/`cover`/`status_hint` 六个字段
+- `status_hint` 是公告摘要（已截断到 200 字），仅用于辅助状态判断，不写入发布数据
+- 赛氪热门榜会混入资讯类条目（保研规划、时间轴等），`collect-saikr.py` 已按关键词过滤
+- 跨源去重：同一竞赛可能被两个源同时收录，合并时优先采用 `organizer` 更完整或 `name` 更规范的版本
+- ID 生成：`comp-{源名}-{SHA-256(name|url) 前 12 位}`，与源名绑定，避免跨源 ID 冲突
+
 ## 轮播组件规则
 
 - 通用轮播组件位于 `assets/js/carousel.js`，三个模块（竞赛/考试/每日资讯）各自在列表页顶部展示精选轮播
@@ -170,9 +184,7 @@
 
 ### GitHub Actions 配置
 
-- workflow 文件：`.github/workflows/collect-news.yml`
-- 已移除 `schedule`；仅保留 `workflow_dispatch`，用于维护者手动排查采集器，不能作为生产发布链路或 Hermes 的前置依赖。
-- 手动 workflow 可选 `morning` / `noon` / `full` 批次；若人工运行，需知悉它只生成候选与趋势原始数据，正式编辑发布仍由手机 skill 完成。
+- `.github/workflows/` 目录已清空，不再使用 GitHub Actions 做任何自动化采集。日常采集、编辑、校验和发布全部由手机 Hermes cron 完成。GitHub 仅作为远程仓库和 GitHub Pages 发布来源。
 
 ### 采集脚本参数
 

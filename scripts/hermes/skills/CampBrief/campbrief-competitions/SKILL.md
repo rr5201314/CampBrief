@@ -25,10 +25,10 @@ metadata:
 
 | 源 | 采集方式 | 可靠性 |
 |---|---|---|
-| 我爱竞赛网 52jingsai.com | `scripts/collect-52jingsai.py --detail` | ✅ 静态 HTML，GBK 编码 |
-| 赛氪 saikr.com | ❌ Node.js 渲染，暂不支持 | — |
+| 我爱竞赛网 52jingsai.com | `scripts/collect-52jingsai.py --detail` | ✅ 静态 HTML，GBK 编码，需逐条抓详情页 |
+| 赛氪 saikr.com | `scripts/collect-saikr.py` | ✅ SSR HTML，UTF-8，列表页一次拿全字段 |
 
-当前唯一自动化源是我爱竞赛网。赛氪待后续接入浏览器自动化。
+两个源并行采集，合并去重后写入发布数据。赛氪列表页已含主办方、浏览量、关注数，无需抓详情页；标题前缀（如「【7月18日收官】」「【最后13天】」）和 `status_hint` 用于推断状态和报名截止。
 
 ## 仓库路径
 
@@ -61,33 +61,43 @@ fi
 
 ### 1. 采集新竞赛数据
 
-运行采集脚本，抓取我爱竞赛网的竞赛列表和详情：
+并行运行两个采集脚本，分别抓取我爱竞赛网和赛氪的竞赛列表：
 
 ```bash
+# 源 1：我爱竞赛网（含详情页，较慢）
 python3 "$REPO/scripts/collect-52jingsai.py" \
   --max 30 --detail \
-  --output "$REPO/local-notes/competitions-raw.json"
+  --output "$REPO/local-notes/competitions-52jingsai.json"
+
+# 源 2：赛氪热门排行榜（列表页一次拿全字段，较快）
+python3 "$REPO/scripts/collect-saikr.py" \
+  --max 50 \
+  --output "$REPO/local-notes/competitions-saikr.json"
 ```
 
-脚本会输出到 `local-notes/competitions-raw.json`。读取结果：
-- `total == 0` 时停止本次任务并报告，不得动现有数据
-- 部分条目详情页失败是正常的，只有列表页全部失败才停止
+两个脚本各自独立输出，读取结果时：
+- 两个源 `total` 都为 0 时停止本次任务并报告，不得动现有数据
+- 单个源失败时仍可继续，在报告中标注哪个源失败
+- 52jingsai 部分详情页失败是正常的，只有列表页全部失败才视为源失败
+- 赛氪的 `status_hint` 字段是整段公告摘要（已截断到 200 字），用于辅助状态判断，不直接写入发布数据
 
 ### 2. 读取已有数据
 
-读取这两个文件：
+读取这三个文件：
 
-- `$REPO/local-notes/competitions-raw.json` —— 本次采集结果
+- `$REPO/local-notes/competitions-52jingsai.json` —— 我爱竞赛网本次采集结果
+- `$REPO/local-notes/competitions-saikr.json` —— 赛氪本次采集结果
 - `$REPO/data/competitions.json` —— 当前已发布数据
 
 ### 3. 合并去重与分类
 
 对采集到的每条竞赛，执行以下处理：
 
-**去重规则：**
+**去重规则（跨源 + 既有数据）：**
 - 按竞赛名称模糊匹配（去掉括号内容、标点后比较）
 - 名称相似度 > 80% 视为重复，跳过
 - 完全相同的 URL 也视为重复
+- **跨源冲突处理**：同一竞赛可能同时被 52jingsai 和 saikr 收录。若赛氪条目的 `organizer` 更完整或 `name` 更规范（含届次/年份），优先采用赛氪版本；否则保留 52jingsai 版本。合并时保留更完整的字段，不要简单丢弃任一条目。
 
 **链接校验（硬性要求）：**
 每条竞赛必须至少有一个有效链接（`official_site` 或 `official_url`）。两个都为空的条目**禁止写入数据文件**，直接丢弃。这是前端详情页"查看官方信息/查看信息来源"按钮的数据源，没有链接用户无法跳转。
@@ -132,7 +142,8 @@ python3 "$REPO/scripts/classify-competitions.py" --apply
 - 在完成报告中列出所有自动状态变更
 
 **ID 生成：**
-- 新条目：`52jingsai-{hash}`，hash 由名称+URL 计算 SHA-256 前 12 位
+- 我爱竞赛网新条目：`comp-52jingsai-{hash}`，hash 由名称+URL 计算 SHA-256 前 12 位
+- 赛氪新条目：`comp-saikr-{hash}`，hash 由名称+URL 计算 SHA-256 前 12 位
 - 已有条目：保留原 ID 不变
 
 ### 4. 写入数据文件
@@ -197,7 +208,7 @@ else
 fi
 git pull --ff-only || { rmdir "$LOCK_DIR"; exit 1; }
 git push || { rmdir "$LOCK_DIR"; exit 1; }
-rm -f "$REPO/local-notes/competitions-raw.json"
+rm -f "$REPO/local-notes/competitions-52jingsai.json" "$REPO/local-notes/competitions-saikr.json"
 rmdir "$LOCK_DIR"
 ```
 
@@ -215,5 +226,7 @@ rmdir "$LOCK_DIR"
 - 竞赛名称必须完整，不得截断
 - 如果 `python3` 不可用，尝试 `python`
 - 我爱竞赛网使用 GBK 编码，采集脚本已处理，不要手动转换
+- 赛氪热门榜会混入资讯/活动类条目（如保研规划、时间轴、复盘文章），`collect-saikr.py` 已按关键词过滤，但 skill 层仍需留意标题异常的条目
+- 赛氪条目的 `status_hint` 是公告摘要而非简短状态词，仅用于辅助状态判断，不写入发布数据的 `summary` 字段
 
 <!-- call_count: 0 -->
