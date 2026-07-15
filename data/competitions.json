@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-15T14:52:23.531332+08:00",
+  "last_updated": "2026-07-15T15:31:29.802416+08:00",
   "source": "CampBrief",
-  "total": 104,
+  "total": 146,
   "tiers": [
     {
       "key": "all",
@@ -1692,7 +1692,7 @@
         "business",
         "innovation"
       ],
-      "status": "ongoing",
+      "status": "done",
       "signup": "2026年4月15日至5月31日（已截止）",
       "schedule": "6月1日至7月31日赛区线下路演；赛事至 9月18日",
       "summary": "腾讯云面向合作伙伴发起的 AI 智能体作品征集，围绕 Skill 与 Agent 双赛道，验证 CodeBuddy、ClawPro、WorkBuddy 等产品在真实商业场景的能力。",
@@ -1727,7 +1727,7 @@
         "ai",
         "computer"
       ],
-      "status": "open",
+      "status": "done",
       "signup": "即日起至 2026年7月23日",
       "schedule": "2026年6月23日至7月23日；结果预计 8月上旬公布",
       "summary": "华为云 Code Craft 网络开放赛，赛题来自华为真实业务场景，聚焦内存受限条件下的大模型推理优化。",
@@ -1869,7 +1869,736 @@
       "official_url": "https://www.52jingsai.com/article-23801-1.html",
       "official_site": "",
       "organizer": "工业和信息化部",
+      "prestige": 9
+    },
+    {
+      "id": "comp-saikr-30e0daa72450",
+      "name": "2026“外研社·国才杯”“理解当代中国” 外语能力公开赛",
+      "tier": "official",
+      "fields": [
+        "language"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 30.3万，关注 5258",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/WYNLGKS2026",
+      "official_site": "",
+      "organizer": "外研社",
+      "prestige": 7
+    },
+    {
+      "id": "comp-saikr-878570eab378",
+      "name": "【7月18日收官】第四届“BETT杯”全国大学生英语语法大赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "signup": "7月18日",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 7.3万，关注 4008",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/Bett-Grammar-Fourth",
+      "official_site": "",
+      "organizer": "“BETT杯”大赛组委会",
+      "prestige": 2
+    },
+    {
+      "id": "comp-saikr-1d6ba753f9c2",
+      "name": "【创新创业类】2026年第六届全国大学生技术创新创业大赛-国赛",
+      "tier": "hobby",
+      "fields": [
+        "innovation"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 5.7万，关注 2001",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/JSSCSSGS266",
+      "official_site": "",
+      "organizer": "全国大学生技术创新创业大赛组委会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-787fea6f2f3c",
+      "name": "第十届全国大学生集成电路创新创业大赛职业技能赛项--企业命题",
+      "tier": "hobby",
+      "fields": [
+        "innovation",
+        "engineering"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 5.1万，关注 188",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/58262",
+      "official_site": "",
+      "organizer": "芯人类",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-91694bf3b0c1",
+      "name": "【最后13天】第五届“中外传播杯”大学生英语翻译大赛",
+      "tier": "official",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 5.0万，关注 1582",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/2026NCSET",
+      "official_site": "",
+      "organizer": "外文局亚太传播中心英语大赛组委会",
+      "prestige": 7
+    },
+    {
+      "id": "comp-saikr-94f90cd43a98",
+      "name": "2026年第七届“华数杯”大学生数学建模竞赛",
+      "tier": "official",
+      "fields": [
+        "science"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 4.6万，关注 1180",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/chinamcm26",
+      "official_site": "",
+      "organizer": "华数杯组委会",
       "prestige": 8
+    },
+    {
+      "id": "comp-saikr-fabd5817d237",
+      "name": "【高含金量，强推！】第四届“一带一路”大学生英语翻译大赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 5.3万，关注 1768",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/2026/YDYL/Translate",
+      "official_site": "",
+      "organizer": "一带一路系列赛事组委会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-1427ab50afa1",
+      "name": "第九届ETTBL杯高校英语阅读大赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 6.6万，关注 635",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/ETTBL-YD",
+      "official_site": "",
+      "organizer": "ETTBL英语大赛组委会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-6c2d525ee632",
+      "name": "【高校力荐！老师强推！】第三届大学生外交英语阅读大赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 5.0万，关注 2411",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/DESC-Read-Third",
+      "official_site": "",
+      "organizer": "外交英语系列大赛（Diplomatic English）",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-b0811676aab5",
+      "name": "第三届“创新实践杯”全国大学生英语词汇大赛",
+      "tier": "hobby",
+      "fields": [
+        "language",
+        "innovation"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 3.8万，关注 777",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/IPCEVC/2026",
+      "official_site": "",
+      "organizer": "大学生“创新实践杯”竞赛组委会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-46fac61c1db8",
+      "name": "第十八届全国大学生数学竞赛",
+      "tier": "official",
+      "fields": [
+        "science"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 9232，关注 541",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/58312",
+      "official_site": "",
+      "organizer": "赛事速递",
+      "prestige": 6
+    },
+    {
+      "id": "comp-saikr-8cfb683e4617",
+      "name": "【倒计时6天】第四届“三晋杯”全国大学生英语翻译大赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 2.5万，关注 736",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/YSJFY",
+      "official_site": "",
+      "organizer": "“三晋杯”全国大学生英语大赛组委会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-b28f051c4971",
+      "name": "【最后11天】第三届“中国故事大赛·双语中国”全国大学生英语词汇大赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 1.7万，关注 1110",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/2026/SYZGVC",
+      "official_site": "",
+      "organizer": "中国寓言文学研究会教育教学专业委员会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-908546aaf309",
+      "name": "2026年第三届大学生高新技术竞赛——数学竞赛",
+      "tier": "official",
+      "fields": [
+        "science"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 2.2万，关注 584",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/WLBMATH26",
+      "official_site": "",
+      "organizer": "全国大学生高新技术竞赛组织委员会",
+      "prestige": 6
+    },
+    {
+      "id": "comp-saikr-c538dd2b43b6",
+      "name": "2026 年 “高教社杯” 全国大学生数学建模竞赛",
+      "tier": "official",
+      "fields": [
+        "science"
+      ],
+      "status": "open",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 4710，关注 329",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/58394",
+      "official_site": "",
+      "organizer": "赛事速递",
+      "prestige": 9
+    },
+    {
+      "id": "comp-saikr-5aca2a1f06a6",
+      "name": "第三届大学生办公软件技能大赛",
+      "tier": "hobby",
+      "fields": [
+        "computer"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 2.0万，关注 518",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/ZJWSOS266",
+      "official_site": "",
+      "organizer": "智慧工程大赛组委会",
+      "prestige": 2
+    },
+    {
+      "id": "comp-saikr-99d7338106a6",
+      "name": "全国大学生诗经吟唱大赛",
+      "tier": "hobby",
+      "fields": [
+        "other"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 2.5万，关注 650",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/47994",
+      "official_site": "",
+      "organizer": "诗经吟唱大赛组委会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-78443557aa65",
+      "name": "【暑期热门竞赛】（城市联赛）计算机素养赛道",
+      "tier": "hobby",
+      "fields": [
+        "computer"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 1.6万，关注 640",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/CLComputer2026",
+      "official_site": "",
+      "organizer": "大连市计算机学会、苏州市计算机学会、天津市计算机学会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-18e1497ac3fd",
+      "name": "2026年第二届工业互联网技术与应用挑战赛——工业互联网专项赛道",
+      "tier": "hobby",
+      "fields": [
+        "other"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 1.7万，关注 494",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/2026Industrial",
+      "official_site": "",
+      "organizer": "工业互联网技术与应用挑战赛组委会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-da4f00946e30",
+      "name": "【最后5天】第四届“中外传播杯”大学生英语词汇大赛",
+      "tier": "official",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 9952，关注 679",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/WORD2026",
+      "official_site": "",
+      "organizer": "外文局亚太传播中心英语大赛组委会",
+      "prestige": 7
+    },
+    {
+      "id": "comp-saikr-6c939e6a7253",
+      "name": "第十八届全国大学生数学竞赛初赛(福建赛区赛)福州大学考场第一轮报名",
+      "tier": "official",
+      "fields": [
+        "science"
+      ],
+      "status": "open",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 8648，关注 16",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/2026CMCFZU",
+      "official_site": "",
+      "organizer": "福州大学高数协会",
+      "prestige": 6
+    },
+    {
+      "id": "comp-saikr-666a81761ea0",
+      "name": "第六届全国高校商务翻译（英语）能力挑战赛",
+      "tier": "hobby",
+      "fields": [
+        "language",
+        "business"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 1.2万，关注 547",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/BTE2026",
+      "official_site": "",
+      "organizer": "商务外语系列赛事组委会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-0699351a3134",
+      "name": "【最后一场】第二届“东方创新杯”全国大学生数学建模大赛",
+      "tier": "official",
+      "fields": [
+        "innovation",
+        "science"
+      ],
+      "status": "open",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 1.3万，关注 606",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/SXJM",
+      "official_site": "",
+      "organizer": "竞赛工作赛事组",
+      "prestige": 8
+    },
+    {
+      "id": "comp-saikr-e14523b066cc",
+      "name": "2026年“知行杯”大学生新媒体大赛",
+      "tier": "hobby",
+      "fields": [
+        "other"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 1.4万，关注 281",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/ZXBXMT2026",
+      "official_site": "",
+      "organizer": "全国大学生“知行杯”组委会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-bc908cea4c83",
+      "name": "2026年大学生“麟创杯”数学建模竞赛",
+      "tier": "official",
+      "fields": [
+        "science"
+      ],
+      "status": "open",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 1.1万，关注 362",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/LCBSM",
+      "official_site": "",
+      "organizer": "全国大学生“麟创杯”组委会",
+      "prestige": 8
+    },
+    {
+      "id": "comp-saikr-4d36245c1d5c",
+      "name": "第四届“华文奖”全国大学生文化创新-传统文化大赛",
+      "tier": "hobby",
+      "fields": [
+        "design",
+        "innovation"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 9824，关注 448",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/2026/HWJCTWH",
+      "official_site": "",
+      "organizer": "“华文奖”全国大学生文化创新大赛组委会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-68dc51fa915b",
+      "name": "2026年全国大学生宪法知识大赛",
+      "tier": "hobby",
+      "fields": [
+        "other"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 1.3万，关注 221",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/CWH/XFZS/2025",
+      "official_site": "",
+      "organizer": "赛事组委会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-e5eaadd424dd",
+      "name": "2026大学生“麟创杯”创新数学竞赛",
+      "tier": "official",
+      "fields": [
+        "ai",
+        "innovation",
+        "science"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 1.2万，关注 403",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/LCBCXSX",
+      "official_site": "",
+      "organizer": "人工智能知识竞赛组委会",
+      "prestige": 6
+    },
+    {
+      "id": "comp-saikr-dd7b4d65a4bf",
+      "name": "2026 第十七届“安徽大学 –《英语世界》杯”翻译大赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 8166，关注 207",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/translation17",
+      "official_site": "",
+      "organizer": "《英语世界》杯系列大赛组委会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-c92bb2b34da7",
+      "name": "2026年“中西挑战杯”大学生数学能力大赛",
+      "tier": "official",
+      "fields": [
+        "science"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 1.0万，关注 378",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/WCC-MAC",
+      "official_site": "",
+      "organizer": "大赛组委会",
+      "prestige": 10
+    },
+    {
+      "id": "comp-saikr-eecd27df77de",
+      "name": "2026年第三届大学生高新技术竞赛——高校AI机器人竞技大赛",
+      "tier": "hobby",
+      "fields": [
+        "ai",
+        "robot"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 9391，关注 274",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/AIRobot2026",
+      "official_site": "",
+      "organizer": "全国大学生高新技术竞赛组织委员会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-d873a7301f36",
+      "name": "第十届全国大学生集成电路创新创业大赛职业技能赛项--综合赛道",
+      "tier": "hobby",
+      "fields": [
+        "innovation",
+        "engineering"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 1.1万，关注 39",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/58261",
+      "official_site": "",
+      "organizer": "芯人类",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-c6921a9ddea4",
+      "name": "2026年“开发者”算法编程挑战赛",
+      "tier": "hobby",
+      "fields": [
+        "computer",
+        "innovation"
+      ],
+      "status": "open",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 8631，关注 249",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/2026KFZ",
+      "official_site": "",
+      "organizer": "信息系统创新大赛组委会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-a9fc0ce98006",
+      "name": "2026年大学生统计科学与算法编程挑战赛——算法赛道",
+      "tier": "hobby",
+      "fields": [
+        "computer",
+        "science"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 9786，关注 227",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/2026TJKXSF",
+      "official_site": "",
+      "organizer": "统计科学算法编程",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-29d981765725",
+      "name": "2026年APMCM亚太地区大学生大模型竞赛",
+      "tier": "hobby",
+      "fields": [
+        "ai"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 7831，关注 157",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/apmcm2601",
+      "official_site": "",
+      "organizer": "APMCM组委会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-1ec0e37c309a",
+      "name": "【暑假助力奖金】城市联赛——AI大模型创新应用挑战赛道",
+      "tier": "hobby",
+      "fields": [
+        "computer",
+        "ai",
+        "innovation"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 8073，关注 325",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/CLAIBM2026",
+      "official_site": "",
+      "organizer": "大连市计算机学会、苏州市计算机学会、天津市计算机学会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-9cfeceaf8750",
+      "name": "2026第九届全国大学生数学竞赛暨数学精英挑战赛",
+      "tier": "official",
+      "fields": [
+        "science"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 5625，关注 225",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/Math26",
+      "official_site": "",
+      "organizer": "全国大学生数学竞赛暨数学精英挑战赛组委会",
+      "prestige": 6
+    },
+    {
+      "id": "comp-saikr-f29d5a8fa482",
+      "name": "【五章认证】2026年全国大学生文旅创作大赛",
+      "tier": "hobby",
+      "fields": [
+        "other"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 6689，关注 224",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/YFWL26",
+      "official_site": "",
+      "organizer": "2026年全国文旅赛",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-0a041558f3c5",
+      "name": "第五届“数学周报” 全国大学生数学能力大赛",
+      "tier": "hobby",
+      "fields": [
+        "science"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 5131，关注 195",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/sxzb5nd",
+      "official_site": "",
+      "organizer": "数学周报",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-eb5e2ae5edb1",
+      "name": "2026年第三届大学生高新技术竞赛——大模型知识创新赛",
+      "tier": "hobby",
+      "fields": [
+        "ai",
+        "innovation"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 6050，关注 141",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/2026BMKIC",
+      "official_site": "",
+      "organizer": "全国大学生高新技术竞赛组织委员会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-e96b1b2e22c9",
+      "name": "第三届“中外传播杯”大学生手机摄影大赛",
+      "tier": "hobby",
+      "fields": [
+        "design"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 7112，关注 155",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/ZWSY",
+      "official_site": "",
+      "organizer": "中外传播杯",
+      "prestige": 2
+    },
+    {
+      "id": "comp-saikr-46e9ffc441d9",
+      "name": "2026年大学生统计科学与算法编程挑战赛——计算机组成原理赛道",
+      "tier": "hobby",
+      "fields": [
+        "computer",
+        "science"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。浏览 5899，关注 206",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/2026TJKXCOA",
+      "official_site": "",
+      "organizer": "统计科学算法编程",
+      "prestige": 4
     }
   ]
 }
