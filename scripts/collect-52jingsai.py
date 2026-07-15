@@ -53,7 +53,14 @@ def parse_list(html):
         if aid in seen:
             continue
         # 过滤非竞赛条目
-        skip_keywords = ["输入页码", "快速跳转", "真题答案", "学科赛事汇总", "评奖评优", "防水墙", "保卫网站", "远离侵害", "四级真题", "六级真题"]
+        skip_keywords = [
+            "输入页码", "快速跳转", "防水墙", "保卫网站", "远离侵害",
+            "真题", "答案", "四六级", "六级", "四级", "词汇答案",
+            "证书查询", "社会实践证书", "荣誉证书",
+            "报名入口", "报名时间汇总", "赛事汇总",
+            "评奖评优", "学科赛事汇总",
+            "志愿者", "实习", "保研", "考研",
+        ]
         if any(kw in title for kw in skip_keywords):
             continue
         if title and len(title) > 6:
