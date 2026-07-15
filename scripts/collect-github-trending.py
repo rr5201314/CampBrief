@@ -5,7 +5,7 @@ CampBrief GitHub 趋势采集脚本
 
 职责：
   抓取 GitHub 官方 Trending 页面（daily/weekly/monthly），提取 Top 10 仓库，
-  生成榜单条目写入 data/github-trending.json。
+  生成榜单条目写入 static/data/github-trending.json。
 
 榜单规则：
   - 日榜：每天采集，标题如「7月12日 GitHub趋势日榜」
@@ -36,7 +36,7 @@ from datetime import datetime, timezone, timedelta
 
 # 仓库根目录（脚本位于 <root>/scripts/ 下）
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUTPUT = os.path.join(ROOT, "data", "github-trending.json")
+OUTPUT = os.path.join(ROOT, "static", "data", "github-trending.json")
 
 TRENDING_URL = "https://github.com/trending"
 FETCH_TIMEOUT = 20

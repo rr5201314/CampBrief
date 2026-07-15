@@ -14,7 +14,7 @@ from temporal_status import effective_status, lifecycle_issues
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = ROOT / "data"
+DATA_DIR = ROOT / "static" / "data"
 MIN_ITEMS = 3
 MAX_ITEMS = 15
 DEFAULT_MAX_AGE_HOURS = 36

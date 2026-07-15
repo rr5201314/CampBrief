@@ -12,7 +12,7 @@ from typing import Any
 from urllib.parse import urlsplit
 
 
-DEFAULT_PATH = Path(__file__).resolve().parents[1] / "data" / "github-trending.json"
+DEFAULT_PATH = Path(__file__).resolve().parents[1] / "static" / "data" / "github-trending.json"
 CJK_RE = re.compile(r"[\u3400-\u9fff]")
 
 

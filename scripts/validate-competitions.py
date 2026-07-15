@@ -20,7 +20,7 @@ import sys
 from datetime import datetime, timezone, timedelta
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA_FILE = os.path.join(ROOT, "data", "competitions.json")
+DATA_FILE = os.path.join(ROOT, "static", "data", "competitions.json")
 CST = timezone(timedelta(hours=8))
 
 

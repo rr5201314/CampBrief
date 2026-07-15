@@ -106,7 +106,7 @@ if [ "$GATE_RC" -eq 0 ]; then
     python3 "$REPO/scripts/validate-competitions.py" || { rmdir "$LOCK_DIR"; exit 1; }
     python3 "$REPO/scripts/check-carousel-health.py" || { rmdir "$LOCK_DIR"; exit 1; }
     git -C "$REPO" diff --check || { rmdir "$LOCK_DIR"; exit 1; }
-    git add -- data/competitions.json
+    git add -- static/data/competitions.json
     if ! git diff --cached --quiet; then
       git commit -m "chore(competitions): batch maintenance $(date +%Y-%m-%d)" || { rmdir "$LOCK_DIR"; exit 1; }
     fi
@@ -132,7 +132,7 @@ fi
 只读取这两个文件：
 
 - `$HANDOFF` —— 本次新增或内容变化的异常任务，候选原文位于各任务的 `payload`
-- `$REPO/data/competitions.json` —— 当前已发布数据
+- `$REPO/static/data/competitions.json` —— 当前已发布数据
 
 ### 3. 合并去重与分类
 
@@ -171,7 +171,7 @@ python3 "$REPO/scripts/classify-competitions.py" --apply
 - `language`：含"英语"、"翻译"、"词汇"、"外语"
 - `design`：含"设计"、"艺术"、"创意"、"广告"
 - `innovation`：含"创业"、"创新"、"创客"
-- 其他字段参照 `data/competitions.json` 的 `fields` 列表
+- 其他字段参照 `static/data/competitions.json` 的 `fields` 列表
 
 **状态判断（status）：**
 - `pending`：明确尚未开始报名。
@@ -198,7 +198,7 @@ python3 "$REPO/scripts/classify-competitions.py" --apply
 
 ### 4. 写入数据文件
 
-把合并后的数据写入 `$REPO/data/competitions.json`。保持字段顺序一致：
+把合并后的数据写入 `$REPO/static/data/competitions.json`。保持字段顺序一致：
 
 **无论是否有新内容，每次执行都必须更新 `last_updated` 为当前时间（ISO8601 带时区）。** 这是前端显示"最近更新时间"的依据。即使无新竞赛入库、无状态变更，也必须写入当前时间戳并提交。
 
@@ -246,7 +246,7 @@ python3 "$REPO/scripts/classify-competitions.py" --apply
 写完后运行校验：
 
 ```bash
-python3 -m json.tool "$REPO/data/competitions.json" >/dev/null || { rmdir "$LOCK_DIR"; exit 1; }
+python3 -m json.tool "$REPO/static/data/competitions.json" >/dev/null || { rmdir "$LOCK_DIR"; exit 1; }
 python3 "$REPO/scripts/check-temporal-status.py" --scope competitions --fix || { rmdir "$LOCK_DIR"; exit 1; }
 python3 "$REPO/scripts/validate-competitions.py" || { rmdir "$LOCK_DIR"; exit 1; }
 python3 "$REPO/scripts/check-carousel-health.py" || { rmdir "$LOCK_DIR"; exit 1; }
@@ -259,7 +259,7 @@ git -C "$REPO" diff --check || { rmdir "$LOCK_DIR"; exit 1; }
 
 ```bash
 cd "$REPO"
-git add -- data/competitions.json
+git add -- static/data/competitions.json
 if git diff --cached --quiet; then
   echo "无变更，跳过提交"
 else
@@ -280,7 +280,7 @@ rmdir "$LOCK_DIR"
 
 - **绝对禁止强制推送：** 不得使用 `git push --force`、`git push -f`、`git push --force-with-lease` 或任何强制推送变体。推送失败时应报告错误并安全停止，不得尝试强制推送。如果远程有冲突，优先用 `git pull --ff-only` 合并，合并失败则停止并报告。
 
-- `data/competitions.json` 是唯一发布数据源
+- `static/data/competitions.json` 是唯一发布数据源
 - 不要编造竞赛信息。采集不到的字段留空
 - **绝对禁止**收录高校内部竞赛（校级选拔赛除外，如果它同时也是公开赛事）
 - 竞赛名称必须完整，不得截断

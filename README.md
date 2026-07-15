@@ -37,7 +37,7 @@ python -X utf8 scripts/check-temporal-status.py
 python -X utf8 scripts/check-carousel-health.py
 ```
 
-长期自动维护使用脚本优先的统一 gate：脚本先完成候选去重、资讯链接探测、考试公告匹配、状态同步和结构校验，退出码 `0` 时不需要 Hermes 深度处理，只有退出码 `10` 才读取机器生成的增量任务。完整退出码、交接报告和 ack 约定见 [长期维护流程](docs/maintenance-workflow.md)。
+长期自动维护使用脚本优先的统一 gate：脚本先完成候选去重、资讯链接探测、考试公告匹配、状态同步和结构校验，退出码 `0` 时不需要 Hermes 深度处理，只有退出码 `10` 才读取机器生成的增量任务。完整退出码、交接报告和 ack 约定见 [长期维护流程](static/docs/maintenance-workflow.md)。
 
 ```bash
 python3 scripts/maintenance-gate.py --scope competitions --fix \

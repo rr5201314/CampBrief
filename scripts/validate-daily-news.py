@@ -73,7 +73,7 @@ def main() -> int:
     parser.add_argument(
         "path",
         nargs="?",
-        default=Path(__file__).resolve().parents[1] / "data" / "daily-news.json",
+        default=Path(__file__).resolve().parents[1] / "static" / "data" / "daily-news.json",
         type=Path,
     )
     parser.add_argument(

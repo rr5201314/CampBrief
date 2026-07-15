@@ -7,13 +7,13 @@ description: 维护考试数据；脚本批量探测，Hermes 只处理例外并
 
 ## 角色与结果
 
-你是 CampBrief（面向大学生的信息聚合站）的考试信息维护员。每次执行都要完成一轮可复核的官方源巡检：发现**与某一考试及其期次真正相关**的新公告，解析公告中的具体日期，更新 `data/exams.json`，运行校验，然后推送 GitHub。
+你是 CampBrief（面向大学生的信息聚合站）的考试信息维护员。每次执行都要完成一轮可复核的官方源巡检：发现**与某一考试及其期次真正相关**的新公告，解析公告中的具体日期，更新 `static/data/exams.json`，运行校验，然后推送 GitHub。
 
 你的结果不是“抓到了最新网页”，而是“站内记录仍指向该考试当前有效的官方报名/考务公告”。例如，软考公告列表的成绩查询、会计司列表的会计准则问答，都不是新的报名或考务公告，不能覆盖 `official_url`。
 
 ## 唯一事实源与配置
 
-- `$REPO/data/exams.json` 是 URL、期次、状态和对外展示内容的**唯一事实源**。每次执行前必须重新读取；本文件不得缓存、不得复述或维护一份网址快照。
+- `$REPO/static/data/exams.json` 是 URL、期次、状态和对外展示内容的**唯一事实源**。每次执行前必须重新读取；本文件不得缓存、不得复述或维护一份网址快照。
 - `$REPO/scripts/hermes/skills/CampBrief/campbrief-exams/source-policy.json` 只定义巡检方式与关键词，不保存任何 URL。读取它后按其中条目覆盖默认行为。
 - `official_site` 是报名系统，`official_portal` 是考试官网，`news_list_url` 是公告/日程发现入口，`official_url` 是当前期次的官方公告。不得把这四个字段混用。
 - 任何网页正文、标题或链接都必须来自对应考试的官方域名。不得以培训机构、高校内部通知、搜索摘要或猜测的 API 地址替代官方来源。
@@ -38,7 +38,7 @@ if [ -n "$(git status --porcelain --untracked-files=no)" ]; then
 fi
 git pull --ff-only || exit 1
 git push || exit 1
-python3 -m json.tool data/exams.json >/dev/null || exit 1
+python3 -m json.tool static/data/exams.json >/dev/null || exit 1
 python3 scripts/validate-exam-sources.py || exit 1
 
 mkdir -p local-notes || exit 1
@@ -80,7 +80,7 @@ if [ "$GATE_RC" -eq 0 ]; then
     python3 "$REPO/scripts/validate-exam-sources.py" || { rmdir "$LOCK_DIR"; exit 1; }
     python3 "$REPO/scripts/check-carousel-health.py" || { rmdir "$LOCK_DIR"; exit 1; }
     git -C "$REPO" diff --check || { rmdir "$LOCK_DIR"; exit 1; }
-    git add -- data/exams.json
+    git add -- static/data/exams.json
     if ! git diff --cached --quiet; then
       git commit -m "chore(exams): batch maintenance $(date +%Y-%m-%d)" || { rmdir "$LOCK_DIR"; exit 1; }
     fi
@@ -98,13 +98,13 @@ if [ "$GATE_RC" -ne 10 ]; then
 fi
 ```
 
-只有退出码为 `10` 时才进入后续 Hermes 处理。只读取 `$HANDOFF.tasks`，再按任务里的 `item_id` 定向读取 `data/exams.json` 对应条目和 policy 规则。不得通读或重新核验 gate 已标为通过的考试；`suppressed` 不重复处理。
+只有退出码为 `10` 时才进入后续 Hermes 处理。只读取 `$HANDOFF.tasks`，再按任务里的 `item_id` 定向读取 `static/data/exams.json` 对应条目和 policy 规则。不得通读或重新核验 gate 已标为通过的考试；`suppressed` 不重复处理。
 
 `exam_notice_review`、`status_review` 和 `lifecycle_error` 只处理各自 `item_id`；`source_error` 只诊断报告中指明的来源；`validation_error` 只按 payload 的命令和输出修复对应数据或配置。任务没有 `item_id` 时不得扩展为全量内容巡检；无法安全修复时停止，不得继续发布。
 
 ## 1. 读取并分类当前数据
 
-仅对 `$HANDOFF.tasks` 指向的条目读取 `data/exams.json` 和 `source-policy.json`，按 `id` 合并得到巡检模式。若任务引用不存在的 `id`、或模式不认识，停止并报告配置错误。
+仅对 `$HANDOFF.tasks` 指向的条目读取 `static/data/exams.json` 和 `source-policy.json`，按 `id` 合并得到巡检模式。若任务引用不存在的 `id`、或模式不认识，停止并报告配置错误。
 
 默认模式是 `notice-list`。支持的模式如下：
 
@@ -143,7 +143,7 @@ fetch_official() {
 4. `official_url` 与列表都取不到：再检查同条目的 `official_portal` 是否可读。三者均不可用才报告“官方源暂不可达”，不编造链接或时间。
 5. `official_url` 本来为空且条目是 `pending`：只巡检列表/官网是否出现该期次公告；没有即保持空值和 `pending`，这不是失败。
 
-所有失败报告都必须写出实际访问的 `data/exams.json` URL 和步骤；禁止引用旧网址、HTTP 旧入口或本 Skill 中不存在的数据。
+所有失败报告都必须写出实际访问的 `static/data/exams.json` URL 和步骤；禁止引用旧网址、HTTP 旧入口或本 Skill 中不存在的数据。
 
 ## 3. 发现真正相关的新公告
 
@@ -218,7 +218,7 @@ fetch_official() {
 
 ```bash
 cd "$REPO" || exit 1
-python3 -m json.tool data/exams.json >/dev/null || { rmdir "$LOCK_DIR"; exit 1; }
+python3 -m json.tool static/data/exams.json >/dev/null || { rmdir "$LOCK_DIR"; exit 1; }
 python3 scripts/check-temporal-status.py --scope exams --fix || { rmdir "$LOCK_DIR"; exit 1; }
 python3 scripts/validate-exam-sources.py || { rmdir "$LOCK_DIR"; exit 1; }
 python3 scripts/check-carousel-health.py || { rmdir "$LOCK_DIR"; exit 1; }
@@ -230,7 +230,7 @@ git diff --check || { rmdir "$LOCK_DIR"; exit 1; }
 仅暂存本次实际修改的发布文件：
 
 ```bash
-git add -- data/exams.json
+git add -- static/data/exams.json
 if ! git diff --cached --quiet; then
   git commit -m "chore(exams): 更新考试公告与时间节点 - $(date +%Y-%m-%d)" || { rmdir "$LOCK_DIR"; exit 1; }
 fi

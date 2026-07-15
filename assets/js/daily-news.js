@@ -36,7 +36,7 @@ function initDOM() {
 // 获取新闻数据。发布数据仅以 JSON 文件为准，避免旧内嵌数据与线上内容不一致。
 async function loadNewsData() {
   try {
-    const response = await fetch('../../data/daily-news.json', { cache: 'no-store' });
+    const response = await fetch('../../static/data/daily-news.json', { cache: 'no-store' });
     if (response.ok) {
       const data = await response.json();
       if (data.items && data.items.length > 0) return { items: data.items, lastUpdated: data.last_updated };

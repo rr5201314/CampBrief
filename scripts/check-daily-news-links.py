@@ -14,7 +14,7 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 
-DEFAULT_DATA_PATH = Path(__file__).resolve().parents[1] / "data" / "daily-news.json"
+DEFAULT_DATA_PATH = Path(__file__).resolve().parents[1] / "static" / "data" / "daily-news.json"
 USER_AGENT = "Mozilla/5.0 (compatible; CampBriefLinkCheck/1.0)"
 RESTRICTED_STATUS_CODES = {401, 403, 429}
 

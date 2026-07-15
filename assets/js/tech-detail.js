@@ -1,7 +1,7 @@
 // 技术详情页 - 通过不可变 ID 定位条目，渲染详情
 // 数据源：
-//   1. data/daily-news.json 中 category=tech 的条目
-//   2. data/github-trending.json 中 category=tech/subcategory=github 的条目
+//   1. static/data/daily-news.json 中 category=tech 的条目
+//   2. static/data/github-trending.json 中 category=tech/subcategory=github 的条目
 (function () {
   "use strict";
 
@@ -22,7 +22,7 @@
     const techItems = [];
 
     try {
-      const response = await fetch("../../data/daily-news.json", { cache: "no-store" });
+      const response = await fetch("../../static/data/daily-news.json", { cache: "no-store" });
       if (response.ok) {
         const data = await response.json();
         if (data.items && data.items.length > 0) {
@@ -35,7 +35,7 @@
     }
 
     try {
-      const response = await fetch("../../data/github-trending.json", { cache: "no-store" });
+      const response = await fetch("../../static/data/github-trending.json", { cache: "no-store" });
       if (response.ok) {
         const data = await response.json();
         if (data.items && data.items.length > 0) {

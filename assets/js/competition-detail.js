@@ -39,7 +39,7 @@
 
   async function loadData() {
     try {
-      const response = await fetch("../../data/competitions.json", { cache: "no-store" });
+      const response = await fetch("../../static/data/competitions.json", { cache: "no-store" });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const data = await response.json();
       return Array.isArray(data.items) ? data.items : [];

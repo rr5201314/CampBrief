@@ -1,6 +1,6 @@
 // 技术板块 - 聚合两类数据源：
-//   1. data/daily-news.json 中 category=tech 的条目
-//   2. data/github-trending.json 中的 GitHub 趋势条目（subcategory=github）
+//   1. static/data/daily-news.json 中 category=tech 的条目
+//   2. static/data/github-trending.json 中的 GitHub 趋势条目（subcategory=github）
 // 子分类：ai-frontier（AI 前沿）/ hardware（硬件与芯片）/ software（软件与系统）/ industry（产业与商业）/ github（GitHub 趋势）
 const state = { subcategory: "all", date: "all", customDate: "", query: "" };
 const PAGE_SIZE = 5;
@@ -38,7 +38,7 @@ async function loadTechData() {
   let lastUpdated = null;
 
   try {
-    const response = await fetch('../../data/daily-news.json', { cache: 'no-store' });
+    const response = await fetch('../../static/data/daily-news.json', { cache: 'no-store' });
     if (response.ok) {
       const data = await response.json();
       lastUpdated = data.last_updated || null;
@@ -52,7 +52,7 @@ async function loadTechData() {
   }
 
   try {
-    const response = await fetch('../../data/github-trending.json', { cache: 'no-store' });
+    const response = await fetch('../../static/data/github-trending.json', { cache: 'no-store' });
     if (response.ok) {
       const data = await response.json();
       if (data.items && data.items.length > 0) {

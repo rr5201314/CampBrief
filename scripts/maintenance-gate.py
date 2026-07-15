@@ -25,7 +25,7 @@ from temporal_status import effective_status, lifecycle_issues
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = ROOT / "data"
+DATA_DIR = ROOT / "static" / "data"
 TRACKING_QUERY_KEYS = {
     "fbclid",
     "gclid",
@@ -582,11 +582,11 @@ def content_completion_tasks(scope: str) -> list[dict[str, Any]]:
 
 def scope_worktree_changed(scope: str) -> bool:
     paths_by_scope = {
-        "daily-news": ["data/daily-news.json", "data/github-trending.json"],
-        "daily-news-juya": ["data/daily-news.json"],
-        "exams": ["data/exams.json"],
-        "competitions": ["data/competitions.json"],
-        "all": ["data"],
+        "daily-news": ["static/data/daily-news.json", "static/data/github-trending.json"],
+        "daily-news-juya": ["static/data/daily-news.json"],
+        "exams": ["static/data/exams.json"],
+        "competitions": ["static/data/competitions.json"],
+        "all": ["static/data"],
     }
     completed = subprocess.run(
         ["git", "diff", "--quiet", "--", *paths_by_scope[scope]],

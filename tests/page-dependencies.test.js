@@ -44,6 +44,33 @@ test("all local href and src targets exist", () => {
   assert.deepEqual(missing, []);
 });
 
+test("literal fetch targets exist relative to their pages", () => {
+  const missing = [];
+  for (const htmlPath of htmlFiles()) {
+    const html = fs.readFileSync(htmlPath, "utf8");
+    const scripts = [...html.matchAll(/<script\s+[^>]*src=["']([^"']+)["'][^>]*><\/script>/g)]
+      .map(match => localTarget(htmlPath, match[1]))
+      .filter(target => target && fs.existsSync(target));
+    for (const scriptPath of scripts) {
+      const source = fs.readFileSync(scriptPath, "utf8");
+      for (const match of source.matchAll(/\bfetch\(\s*["']([^"']+)["']/g)) {
+        const target = localTarget(htmlPath, match[1]);
+        if (target && !fs.existsSync(target)) {
+          missing.push(`${path.relative(root, htmlPath)} -> ${match[1]}`);
+        }
+      }
+    }
+  }
+  assert.deepEqual(missing, []);
+});
+
+test("public data and documentation stay grouped under static", () => {
+  assert.equal(fs.existsSync(path.join(root, "data")), false);
+  assert.equal(fs.existsSync(path.join(root, "docs")), false);
+  assert.equal(fs.existsSync(path.join(root, "static", "data")), true);
+  assert.equal(fs.existsSync(path.join(root, "static", "docs")), true);
+});
+
 test("pages load content-utils before scripts that use CampBriefContent", () => {
   const failures = [];
   for (const htmlPath of htmlFiles()) {

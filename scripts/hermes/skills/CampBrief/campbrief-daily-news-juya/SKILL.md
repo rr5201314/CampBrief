@@ -51,7 +51,7 @@ fi
 
 ### 1. 在手机本地采集 juya 候选池
 
-每次 cron 调用都必须主动采集，不读取、不复用仓库中的 `data/daily-news-raw.json`。候选只属于当前手机任务，写入被 Git 忽略的本地目录；成功推送后必须清空，既避免两个批次互相覆盖，也避免候选池堆积。
+每次 cron 调用都必须主动采集，不读取、不复用仓库中的 `static/data/daily-news-raw.json`。候选只属于当前手机任务，写入被 Git 忽略的本地目录；成功推送后必须清空，既避免两个批次互相覆盖，也避免候选池堆积。
 
 ```bash
 mkdir -p "$REPO/local-notes/candidate-pools"
@@ -95,7 +95,7 @@ if [ "$GATE_RC" -eq 0 ]; then
     python3 "$REPO/scripts/validate-daily-news.py" || { rmdir "$LOCK_DIR"; exit 1; }
     python3 "$REPO/scripts/check-carousel-health.py" || { rmdir "$LOCK_DIR"; exit 1; }
     git -C "$REPO" diff --check || { rmdir "$LOCK_DIR"; exit 1; }
-    git add -- data/daily-news.json
+    git add -- static/data/daily-news.json
     if ! git diff --cached --quiet; then
       git commit -m "chore(daily-news): batch maintenance juya $(date +%Y-%m-%d)" || { rmdir "$LOCK_DIR"; exit 1; }
     fi
@@ -121,7 +121,7 @@ fi
 读取这两个文件：
 
 - `$HANDOFF` —— 仅包含本次新增或内容变化的 juya 候选与来源错误
-- `$REPO/data/daily-news.json` —— 当前已发布数据，`items` 数组（可能为空）
+- `$REPO/static/data/daily-news.json` —— 当前已发布数据，`items` 数组（可能为空）
 
 后文的候选仅指 `$HANDOFF.tasks` 中 `candidate_review.payload` 的集合。**只处理 juya 条目**：只保留 `source` 为 `juya AI 日报` 的任务，排除其他源（它们由 `campbrief-daily-news` skill 处理）；`source_error` 只诊断对应失败源，`link_review` 只复核任务 payload 中列出的 URL 与 `ids`。`validation_error` 只按 payload 的命令和输出修复对应数据或配置；无法安全修复时停止，不得继续发布。
 
@@ -226,7 +226,7 @@ juya 日报备份（如 RSS 不可用，可从 markdown 备份获取）：
 
 ### 7. 写入数据文件
 
-把合并后的完整数据写入 `$REPO/data/daily-news.json`。**必须**符合以下结构（字段顺序保持一致，便于 diff 可读）：
+把合并后的完整数据写入 `$REPO/static/data/daily-news.json`。**必须**符合以下结构（字段顺序保持一致，便于 diff 可读）：
 
 ```json
 {
@@ -273,12 +273,12 @@ juya 日报备份（如 RSS 不可用，可从 markdown 备份获取）：
 
 ### 8. 拉取远程更新、推送并清空候选池
 
-本地候选池不提交到 Git。完成本地提交后，**必须先再次拉取远程更新，再推送**。只有 `data/daily-news.json` 已完成提交、最终 `git pull --ff-only` 与 `git push` 都成功后，才清空本次候选池；任何校验、提交、拉取或推送失败都必须保留候选池，供下次任务重试和排查。
+本地候选池不提交到 Git。完成本地提交后，**必须先再次拉取远程更新，再推送**。只有 `static/data/daily-news.json` 已完成提交、最终 `git pull --ff-only` 与 `git push` 都成功后，才清空本次候选池；任何校验、提交、拉取或推送失败都必须保留候选池，供下次任务重试和排查。
 
 ```bash
 cd "$REPO"
 
-git add -- data/daily-news.json
+git add -- static/data/daily-news.json
 if git diff --cached --quiet; then
   echo "无变更，跳过提交"
 else
@@ -301,9 +301,9 @@ rmdir "$LOCK_DIR"
 
 - **绝对禁止强制推送：** 不得使用 `git push --force`、`git push -f`、`git push --force-with-lease` 或任何强制推送变体。推送失败时应报告错误并安全停止，不得尝试强制推送。如果远程有冲突，优先用 `git pull --ff-only` 合并，合并失败则停止并报告。
 
-- `data/daily-news.json` 是唯一发布数据源；不要维护任何前端内嵌资讯回退副本。
-- `$CANDIDATE_POOL` 是本次手机任务的本地中间产物，位于被忽略的 `local-notes/candidate-pools/`；不要把它或历史 `data/daily-news-raw.json` 当作发布数据，也不要提交它。成功推送后必须删除本次文件。
+- `static/data/daily-news.json` 是唯一发布数据源；不要维护任何前端内嵌资讯回退副本。
+- `$CANDIDATE_POOL` 是本次手机任务的本地中间产物，位于被忽略的 `local-notes/candidate-pools/`；不要把它或历史 `static/data/daily-news-raw.json` 当作发布数据，也不要提交它。成功推送后必须删除本次文件。
 - **不要**在摘要里编造原文没有的事实。拿不准就保守陈述。
 - **绝对禁止**收录单独高校的内部公告/教务通知（见上方红线）。
-- 本 skill 只处理 juya AI 日报源，其他源由 `campbrief-daily-news` skill 处理。两个 skill 共享同一个 `data/daily-news.json` 发布文件，但使用各自独立的本地候选池；成功发布后各自清空本次候选池。
+- 本 skill 只处理 juya AI 日报源，其他源由 `campbrief-daily-news` skill 处理。两个 skill 共享同一个 `static/data/daily-news.json` 发布文件，但使用各自独立的本地候选池；成功发布后各自清空本次候选池。
 - 如果 `python3` 不可用，尝试 `python`；记录实际情况并报告。

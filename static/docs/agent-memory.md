@@ -14,6 +14,7 @@
 
 ## Engineering Conventions
 
+- Public JSON data and project documentation are grouped under `static/`: runtime data lives in `static/data/`, and maintained documentation lives in `static/docs/`. Root-level `data/` and `docs/` directories must not be recreated.
 - All animations respect `prefers-reduced-motion` media query for accessibility
 - Scroll-triggered animations use IntersectionObserver with unobserve after single trigger
 - Animation timing functions use `cubic-bezier(.4,0,.2,1)` for natural motion
@@ -40,14 +41,14 @@
 
 ## 考试模块数据规则
 
-- `data/exams.json` 为考试目录（稳定参考信息），每项含详情字段：`format`/`duration`/`subjects`/`requirements`/`scoring`/`timeline`
+- `static/data/exams.json` 为考试目录（稳定参考信息），每项含详情字段：`format`/`duration`/`subjects`/`requirements`/`scoring`/`timeline`
 - 四个 URL 字段分工：
   - `official_site`（稳定）：考试报名系统官网，详情页"立即报名/访问报名系统"按钮指向
   - `official_portal`（稳定）：考试项目官网，详情页"考试官网"按钮指向
   - `news_list_url`（稳定）：官方考试动态列表或日程页，agent 自动化从此处发现相关公告 URL
   - `official_url`（每期更新）：本期报名公告原文，详情页"查看官方公告"按钮指向，agent 从此抓取 timeline
 - agent 维护流程：
-  1. 读取 `data/exams.json` 作为 URL 唯一事实源，并按 `scripts/hermes/skills/CampBrief/campbrief-exams/source-policy.json` 的巡检模式处理
+  1. 读取 `static/data/exams.json` 作为 URL 唯一事实源，并按 `scripts/hermes/skills/CampBrief/campbrief-exams/source-policy.json` 的巡检模式处理
   2. 访问 `news_list_url` → 按考试名称、期次和考务/报名关键词筛选相关公告；不得将列表第一条、无关动态或渲染失败视为新公告
   3. 抓取确认相关的公告 URL → 解析时间节点 → 更新对应期次的 `official_url` 和 `timeline`；日程页或动态列表可合法作为 `official_url`
   4. 如有新一期，更新/新增对应期次；PSC、事业单位等仅保留全国官方入口，不采集各省或高校分散通知
@@ -57,7 +58,7 @@
   - 不要偷懒给所有条目统一加"以官方公告为准"，必须先尝试提取原文信息
 - 详情页不含 `prep_tips`（备考建议）字段——已移除
 - 详情页顶部有醒目官方提示框（callout），底部有 notice，双重引导用户去官方渠道核实
-- 时效性报名通知（每次考试不同）后续放入 `data/exam-notices.json`（方案B，待实现）
+- 时效性报名通知（每次考试不同）后续放入 `static/data/exam-notices.json`（方案B，待实现）
 - 信息网格的"考试时间"字段需填写具体考试月份（如"2026年6月"），而非通用周期（如"每年6月、12月"）
 - 考试和竞赛模块的状态标签需去除"阶段"后缀（如"可报名阶段"改为"可报名"）
 - **结构化生命周期**：考试/竞赛状态只由可选 `lifecycle` 计算；`timeline`、`signup`、`schedule`、标题和摘要仅用于展示，禁止解析自然语言后直接改状态。
@@ -71,13 +72,13 @@
 
 ## 竞赛模块数据规则
 
-- `data/competitions.json` 为竞赛目录，包含三类赛事：教育部认可赛事（84项）、名企主办赛事、兴趣练手赛事
+- `static/data/competitions.json` 为竞赛目录，包含三类赛事：教育部认可赛事（84项）、名企主办赛事、兴趣练手赛事
 - 三级筛选体系：一级（赛事层次：教育部认可/名企主办/兴趣练手）、二级（专业领域：人工智能/机器人/计算机等13类）、三级（比赛状态：未开始/可报名/报名截止/比赛中/待核验/已完赛）
 - 边报名边比赛的赛事优先归入「可报名」状态
 - 每个赛事在 JSON 中通过 `tags` 数组支持一赛多领域分类
 - **排序规则**（`compareCompetitions`）：状态优先（可报名 open > 未开始 pending > 比赛中 ongoing > 报名截止 closed > 待核验 unknown > 已完赛 done）→ 赛事层次（教育部 official > 名企 enterprise > 兴趣 hobby）→ 含金量 `prestige` 降序 → 名称
 - 卡片主按钮为「查看详情」，次按钮为官网/报名（统一为资讯形式）
-- 首页竞赛看板读取 `data/competitions.json` 真实数据，卡片点击进入对应详情页
+- 首页竞赛看板读取 `static/data/competitions.json` 真实数据，卡片点击进入对应详情页
 - **首页竞赛看板筛选**：仅展示 lifecycle 有效且派生状态为 `open`（可报名）的赛事；缺少 lifecycle 的旧 `open` 显示为“待核验”，不进入首页或轮播
 - **首页竞赛看板徽章**：赛事层级徽章（教育部认可/名企主办/兴趣练手）置于标题栏右侧，并排在状态徽章（如“可报名”）左侧；报名时间单独保留在下一行
 
@@ -127,8 +128,8 @@
 - **技术板块**（`pages/tech/`）：展示 `category=tech` 的条目，按 `subcategory` 分类筛选
   - 5 个子分类：`ai-frontier`（AI 前沿）/ `hardware`（硬件与芯片）/ `software`（软件与系统）/ `industry`（产业与商业）/ `github`（GitHub 趋势）
   - 数据源：
-    - 技术动态：`data/daily-news.json` 中 `category=tech` 的条目
-    - GitHub 趋势：`data/github-trending.json` 中 `category=tech/subcategory=github` 的条目（榜单形式，每个条目含 `repos` 数组）
+    - 技术动态：`static/data/daily-news.json` 中 `category=tech` 的条目
+    - GitHub 趋势：`static/data/github-trending.json` 中 `category=tech/subcategory=github` 的条目（榜单形式，每个条目含 `repos` 数组）
   - 前端合并两个数据源后统一渲染、筛选、分页
   - 技术板块轮播：近3天 priority>=4，不足3个补 priority>=3，上限15
 - **技术详情页**：`pages/tech/detail.html`，从 `daily-news.json` 和 `github-trending.json` 合并后按不可变 `id` 查找
@@ -157,7 +158,7 @@
 - 考试来源先由 `scripts/collect-exam-notices.py` 对相同 `news_list_url` 合并下载并按 `source-policy.json` 匹配。唯一新候选、多候选、零命中、动态页面内容变化、页面壳和网络错误才交给 Hermes；脚本不解析正文日期。
 - 采集脚本中的标题或 `status_hint` 启发式结果只作为候选线索，不得直接写入发布状态。状态事实仍只能来自可靠 lifecycle；自然语言日期不得参与自动状态计算。
 - GitHub Trending 采集后不得在 gate 前让 Hermes 通读榜单；gate 只为缺少 `chinese_summary`/`solves_what` 的 repo 生成 `content_completion`。补写后必须通过 `scripts/validate-github-trending.py`。
-- 完整协议和命令见 `docs/maintenance-workflow.md`。
+- 完整协议和命令见 `static/docs/maintenance-workflow.md`。
 
 ### Hermes cron 当前配置（2026-07-15）
 
@@ -193,8 +194,8 @@
 
 - **Hermes（手机，cron）** 是唯一的日常执行端；GitHub 仅作为远程仓库和 GitHub Pages 发布来源。
 - `campbrief-daily-news`：先同步并确认工作区干净 → 采集非 juya RSS、同步 GitHub 趋势、批量检查非 juya 原文链接 → gate 去重与校验。退出码 `0` 直接结束或发布确定性变更；仅退出码 `10` 由 Hermes 处理 handoff 中的新候选、缺失中文字段、来源错误和链接异常 → 校验、提交、**再次 `git pull --ff-only` → `git push`** → ack 并清空本次候选池。
-- `campbrief-daily-news-juya`：独立采集 juya 日报并只检查 juya 原文链接，随后执行同一 gate 协议；仅 handoff 中的新日报才拆分和编辑。它与前者共用发布文件 `data/daily-news.json`，不共用候选池与 gate state。
-- `campbrief-exams`：先由脚本合并下载官方入口并按考试/期次批量匹配，再由 gate 同步状态、校验和去除重复异常；Hermes 只处理 handoff 中的唯一新候选、多候选、零命中、动态页变化或来源错误。URL 的唯一事实源是 `data/exams.json`；巡检规则在 `scripts/hermes/skills/CampBrief/campbrief-exams/source-policy.json`，skill 不维护网址快照。PSC、事业单位等仅保留全国官方入口，不采集各省/高校分散通知。
+- `campbrief-daily-news-juya`：独立采集 juya 日报并只检查 juya 原文链接，随后执行同一 gate 协议；仅 handoff 中的新日报才拆分和编辑。它与前者共用发布文件 `static/data/daily-news.json`，不共用候选池与 gate state。
+- `campbrief-exams`：先由脚本合并下载官方入口并按考试/期次批量匹配，再由 gate 同步状态、校验和去除重复异常；Hermes 只处理 handoff 中的唯一新候选、多候选、零命中、动态页变化或来源错误。URL 的唯一事实源是 `static/data/exams.json`；巡检规则在 `scripts/hermes/skills/CampBrief/campbrief-exams/source-policy.json`，skill 不维护网址快照。PSC、事业单位等仅保留全国官方入口，不采集各省/高校分散通知。
 - `campbrief-competitions`：两个采集器输出先由 gate 按稳定 ID、规范化 URL 和名称批量去重，并确定性同步有可靠 lifecycle 的状态；Hermes 只处理新增/变化候选、来源失败和缺少可靠状态边界的条目。
 - 考试/竞赛维护在写入展示文本和 lifecycle 后，必须调用 `scripts/check-temporal-status.py --scope <exams|competitions> --fix` 确定性同步状态；LLM 不得自行比较自然语言日期。完整本地只读验证入口为 `python scripts/check-project.py`。
 - 任务必须在 `git status --porcelain --untracked-files=no` 无输出、开始时 `git pull --ff-only` 与遗留提交重试 `git push` 都成功后才继续；每次最终推送前还必须再次执行 `git pull --ff-only`。任一拉取或推送失败时安全停止，保留本地提交与候选池，禁止合并、变基或基于过期数据发布。
@@ -202,7 +203,7 @@
 
 ### 候选池规则
 
-- 候选池仅存在于手机的被忽略目录 `local-notes/candidate-pools/`：非 juya 使用 `daily-news-YYYY-MM-DD.json`，juya 使用 `juya-YYYY-MM-DD.json`。历史 `data/daily-news-raw.json` 不再参与手机自动化，也不是发布数据。
+- 候选池仅存在于手机的被忽略目录 `local-notes/candidate-pools/`：非 juya 使用 `daily-news-YYYY-MM-DD.json`，juya 使用 `juya-YYYY-MM-DD.json`。历史 `static/data/daily-news-raw.json` 不再参与手机自动化，也不是发布数据。
 - `scripts/collect-daily-news.py` 每次运行只保留**北京时间今天和前一天**发布且可解析日期的条目；前一天只用于采集延迟或上一次任务失败后的兜底。
 - 候选池为空、缺失、格式错误或带采集错误时不得在 gate 前直接结束；交给 gate 生成可 ack、可抑制、可按内容变化重新触发的来源任务。
 - 只有数据校验、提交和 `git push` 全部成功后，才删除本次候选池文件；失败时保留用于重试和排查。候选池永不提交到 Git。
@@ -220,7 +221,7 @@
 
 ### GitHub 趋势采集
 - 脚本：`scripts/collect-github-trending.py`
-- 输出：`data/github-trending.json`
+- 输出：`static/data/github-trending.json`
 - 数据源：GitHub 官方 Trending 页面（`https://github.com/trending?since=daily|weekly|monthly`），HTML 抓取 + 正则解析
 - 榜单类型与采集频率：
   - 日榜：每天采集，标题如「7月12日 GitHub趋势日榜」

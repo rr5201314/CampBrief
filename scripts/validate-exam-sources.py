@@ -97,8 +97,8 @@ def validate_source_policy(items_by_id: dict[str, dict[str, object]], errors: li
     if not isinstance(policy, dict):
         errors.append("exam source policy must be an object")
         return
-    if policy.get("source_of_truth") != "data/exams.json":
-        errors.append("exam source policy must declare data/exams.json as source_of_truth")
+    if policy.get("source_of_truth") != "static/data/exams.json":
+        errors.append("exam source policy must declare static/data/exams.json as source_of_truth")
 
     default = policy.get("default")
     if not isinstance(default, dict) or default.get("mode") not in VALID_POLICY_MODES:
@@ -145,7 +145,7 @@ def main() -> int:
         "path",
         nargs="?",
         type=Path,
-        default=Path(__file__).resolve().parents[1] / "data" / "exams.json",
+        default=Path(__file__).resolve().parents[1] / "static" / "data" / "exams.json",
     )
     args = parser.parse_args()
 

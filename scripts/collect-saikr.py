@@ -9,7 +9,7 @@
 
 用法：
   python3 scripts/collect-saikr.py                         # 采集并输出到 stdout
-  python3 scripts/collect-saikr.py --output data/out.json  # 写入文件
+  python3 scripts/collect-saikr.py --output static/data/out.json  # 写入文件
   python3 scripts/collect-saikr.py --max 20                # 最多采集 20 条
 """
 

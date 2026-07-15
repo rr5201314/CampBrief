@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "source_of_truth": "data/exams.json",
+  "source_of_truth": "static/data/exams.json",
   "default": {
     "mode": "notice-list",
     "fallback": "current-notice"

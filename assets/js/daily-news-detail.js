@@ -19,7 +19,7 @@
   async function loadData() {
     // 详情页同样优先 fetch JSON
     try {
-      const response = await fetch("../../data/daily-news.json", { cache: "no-store" });
+      const response = await fetch("../../static/data/daily-news.json", { cache: "no-store" });
       if (response.ok) {
         const data = await response.json();
         if (data.items && data.items.length > 0) return data.items;

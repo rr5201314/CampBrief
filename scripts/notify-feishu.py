@@ -3,7 +3,7 @@
 """
 飞书群机器人通知脚本
 
-读取 data/daily-news-raw.json 候选池摘要，通过飞书自定义机器人 webhook 发送到群。
+读取 static/data/daily-news-raw.json 候选池摘要，通过飞书自定义机器人 webhook 发送到群。
 消息内容包含关键词 "CampBrief"（满足飞书机器人的安全设置）。
 
 用法：
@@ -24,7 +24,7 @@ import urllib.error
 from datetime import datetime, timezone, timedelta
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RAW_PATH = os.path.join(ROOT, "data", "daily-news-raw.json")
+RAW_PATH = os.path.join(ROOT, "static", "data", "daily-news-raw.json")
 
 # 北京时区
 CST = timezone(timedelta(hours=8))

@@ -30,7 +30,7 @@ link_checker = load_script("campbrief_link_checker", "check-daily-news-links.py"
 
 class MaintenanceGateTests(unittest.TestCase):
     def test_daily_candidate_dedup_and_new_handoff(self) -> None:
-        published = json.loads((ROOT / "data" / "daily-news.json").read_text(encoding="utf-8"))["items"][0]
+        published = json.loads((ROOT / "static" / "data" / "daily-news.json").read_text(encoding="utf-8"))["items"][0]
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "pool.json"
             path.write_text(

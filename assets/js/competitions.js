@@ -1,8 +1,8 @@
-// 竞赛模块 - 从 data/competitions.json 加载并支持三级筛选 + 精选轮播
+// 竞赛模块 - 从 static/data/competitions.json 加载并支持三级筛选 + 精选轮播
 (function () {
   "use strict";
 
-  const DATA_URL = "../../data/competitions.json";
+  const DATA_URL = "../../static/data/competitions.json";
   const state = { tier: "all", field: "all", status: "all", query: "" };
   const PAGE_SIZE = 5;
   let allItems = [];

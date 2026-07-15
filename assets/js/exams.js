@@ -1,5 +1,5 @@
 // 考试模块 - 从 JSON 文件加载 + 筛选搜索 + 前端分页
-// 数据来源：data/exams.json（HTTP 服务器 / GitHub Pages）
+// 数据来源：static/data/exams.json（HTTP 服务器 / GitHub Pages）
 // file:// 协议下 fetch 不可用时显示空状态，建议使用本地服务器预览。
 const state = { category: "all", status: "all", query: "" };
 const PAGE_SIZE = 5;
@@ -60,7 +60,7 @@ function initDOM() {
 // 从 exams.json 加载考试数据
 async function loadExamsData() {
   try {
-    const response = await fetch('../../data/exams.json', { cache: 'no-store' });
+    const response = await fetch('../../static/data/exams.json', { cache: 'no-store' });
     if (response.ok) {
       const data = await response.json();
       if (data.items && data.items.length > 0) return { items: data.items, lastUpdated: data.last_updated };

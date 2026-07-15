@@ -27,7 +27,7 @@
 
   async function loadData() {
     try {
-      const response = await fetch("../../data/exams.json", { cache: "no-store" });
+      const response = await fetch("../../static/data/exams.json", { cache: "no-store" });
       if (response.ok) {
         const data = await response.json();
         if (data.items && data.items.length > 0) return data.items;

@@ -24,7 +24,7 @@ import urllib.request
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_DATA = ROOT / "data" / "exams.json"
+DEFAULT_DATA = ROOT / "static" / "data" / "exams.json"
 DEFAULT_POLICY = (
     ROOT
     / "scripts"

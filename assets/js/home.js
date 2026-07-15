@@ -293,7 +293,7 @@ function officialSourceName(item){
 
 async function loadExamBoardData(){
   try {
-    const response = await fetch("data/exams.json", { cache: "no-store" });
+    const response = await fetch("static/data/exams.json", { cache: "no-store" });
     if(!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     if(!Array.isArray(data.items)) throw new Error("考试数据格式无效");
@@ -335,7 +335,7 @@ function compareHomeCompetitions(a, b) {
 
 async function loadCompetitionBoardData(){
   try {
-    const response = await fetch("data/competitions.json", { cache: "no-store" });
+    const response = await fetch("static/data/competitions.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     if (!Array.isArray(data.items)) throw new Error("竞赛数据格式无效");
@@ -420,7 +420,7 @@ function applyNewsRules(list){
 async function loadNewsBoardData(){
   // 优先 fetch JSON（GitHub Pages / 本地 HTTP 服务器均可）
   try {
-    const response = await fetch('data/daily-news.json', { cache: 'no-store' });
+    const response = await fetch('static/data/daily-news.json', { cache: 'no-store' });
     if(response.ok){
       const data = await response.json();
       if(data.items && data.items.length > 0){

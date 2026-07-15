@@ -15,9 +15,9 @@ from temporal_status import effective_status, lifecycle_issues
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES = {
-    "exams": (ROOT / "data" / "exams.json", "exam", {"pending", "open", "closed", "done"}),
+    "exams": (ROOT / "static" / "data" / "exams.json", "exam", {"pending", "open", "closed", "done"}),
     "competitions": (
-        ROOT / "data" / "competitions.json",
+        ROOT / "static" / "data" / "competitions.json",
         "competition",
         {"pending", "open", "closed", "ongoing", "done"},
     ),
@@ -116,4 +116,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

@@ -34,7 +34,7 @@ from xml.etree import ElementTree as ET
 
 # 仓库根目录（脚本位于 <root>/scripts/ 下）
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RAW_OUTPUT = os.path.join(ROOT, "data", "daily-news-raw.json")
+RAW_OUTPUT = os.path.join(ROOT, "static", "data", "daily-news-raw.json")
 # 所有采集窗口按北京时间自然日判断，避免手机时区或 RSS 原始时区造成跨日误收录。
 BEIJING = timezone(timedelta(hours=8))
 
@@ -281,14 +281,14 @@ def main():
     parser.add_argument(
         "--output",
         metavar="PATH",
-        help="候选池输出路径；相对路径以仓库根目录为基准，默认 data/daily-news-raw.json",
+        help="候选池输出路径；相对路径以仓库根目录为基准，默认 static/data/daily-news-raw.json",
     )
     args = parser.parse_args()
 
     output_path = os.path.abspath(
         os.path.expanduser(args.output)
         if args.output and os.path.isabs(os.path.expanduser(args.output))
-        else os.path.join(ROOT, os.path.expanduser(args.output or "data/daily-news-raw.json"))
+        else os.path.join(ROOT, os.path.expanduser(args.output or "static/data/daily-news-raw.json"))
     )
 
     exclude_names = {n.strip() for n in (args.exclude or "").split(",") if n.strip()}

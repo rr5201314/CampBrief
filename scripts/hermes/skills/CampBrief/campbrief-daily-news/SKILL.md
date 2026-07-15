@@ -53,7 +53,7 @@ fi
 
 ### 1. 在手机本地采集非 juya 候选池
 
-每次 cron 调用都必须主动采集，不读取、不复用仓库中的 `data/daily-news-raw.json`。候选只属于当前手机任务，写入被 Git 忽略的本地目录；成功推送后必须清空，既避免两个批次互相覆盖，也避免候选池堆积。
+每次 cron 调用都必须主动采集，不读取、不复用仓库中的 `static/data/daily-news-raw.json`。候选只属于当前手机任务，写入被 Git 忽略的本地目录；成功推送后必须清空，既避免两个批次互相覆盖，也避免候选池堆积。
 
 ```bash
 mkdir -p "$REPO/local-notes/candidate-pools"
@@ -78,7 +78,7 @@ if ! python3 "$REPO/scripts/collect-github-trending.py"; then
 fi
 ```
 
-脚本成功后不要在 gate 前通读 `$REPO/data/github-trending.json` 或逐条补写。gate 会把本次仍缺少 `chinese_summary`（中文概述）或 `solves_what`（它解决的问题）的 repo 生成独立 `content_completion`；只有退出码 `10` 后才按这些任务定向读取 README、仓库描述或官网并保守补全，无法核验时不编造。
+脚本成功后不要在 gate 前通读 `$REPO/static/data/github-trending.json` 或逐条补写。gate 会把本次仍缺少 `chinese_summary`（中文概述）或 `solves_what`（它解决的问题）的 repo 生成独立 `content_completion`；只有退出码 `10` 后才按这些任务定向读取 README、仓库描述或官网并保守补全，无法核验时不编造。
 
 **硬性要求：每个 repo 的 `chinese_summary` 与 `solves_what` 都必须是非空中文字符串。** 发布前由 `validate-github-trending.py` 逐条检查；缺失或全为英文时不得发布。
 
@@ -117,7 +117,7 @@ if [ "$GATE_RC" -eq 0 ]; then
     python3 "$REPO/scripts/validate-github-trending.py" || { rmdir "$LOCK_DIR"; exit 1; }
     python3 "$REPO/scripts/check-carousel-health.py" || { rmdir "$LOCK_DIR"; exit 1; }
     git -C "$REPO" diff --check || { rmdir "$LOCK_DIR"; exit 1; }
-    git add -- data/daily-news.json data/github-trending.json
+    git add -- static/data/daily-news.json static/data/github-trending.json
     if ! git diff --cached --quiet; then
       git commit -m "chore(daily-news): batch maintenance $(date +%Y-%m-%d)" || { rmdir "$LOCK_DIR"; exit 1; }
     fi
@@ -143,7 +143,7 @@ fi
 读取这两个文件：
 
 - `$HANDOFF` —— 仅包含本次新增或内容变化的候选、来源错误与待补字段
-- `$REPO/data/daily-news.json` —— 当前已发布数据，`items` 数组（可能为空）
+- `$REPO/static/data/daily-news.json` —— 当前已发布数据，`items` 数组（可能为空）
 
 后文的 `candidates` 仅指 `$HANDOFF.tasks` 中 `candidate_review.payload` 的集合。本候选池已在采集时排除 juya AI 日报；若交接任务仍意外出现 `source` 为 `juya AI 日报` 的条目，必须丢弃，不得在本 skill 发布。`content_completion` 只补对应 GitHub repo 的缺失字段，`source_error` 只诊断对应失败源，`link_review` 只复核任务 payload 中列出的 URL 与 `ids`。`validation_error` 只按 payload 的命令和输出修复对应数据或配置；无法安全修复时停止，不得继续发布。
 
@@ -240,7 +240,7 @@ fi
 
 ### 7. 写入数据文件
 
-把合并后的完整数据写入 `$REPO/data/daily-news.json`。**必须**符合以下结构（字段顺序保持一致，便于 diff 可读）：
+把合并后的完整数据写入 `$REPO/static/data/daily-news.json`。**必须**符合以下结构（字段顺序保持一致，便于 diff 可读）：
 
 ```json
 {
@@ -302,12 +302,12 @@ fi
 
 ### 8. 拉取远程更新、推送并清空候选池
 
-本地候选池不提交到 Git。完成本地提交后，**必须先再次拉取远程更新，再推送**。只有 `data/daily-news.json` 和 `data/github-trending.json` 已完成提交、最终 `git pull --ff-only` 与 `git push` 都成功后，才清空本次候选池；任何校验、提交、拉取或推送失败都必须保留候选池，供下次任务重试和排查。
+本地候选池不提交到 Git。完成本地提交后，**必须先再次拉取远程更新，再推送**。只有 `static/data/daily-news.json` 和 `static/data/github-trending.json` 已完成提交、最终 `git pull --ff-only` 与 `git push` 都成功后，才清空本次候选池；任何校验、提交、拉取或推送失败都必须保留候选池，供下次任务重试和排查。
 
 ```bash
 cd "$REPO"
 
-git add -- data/daily-news.json data/github-trending.json
+git add -- static/data/daily-news.json static/data/github-trending.json
 if git diff --cached --quiet; then
   echo "无变更，跳过提交"
 else
@@ -330,8 +330,8 @@ rmdir "$LOCK_DIR"
 
 - **绝对禁止强制推送：** 不得使用 `git push --force`、`git push -f`、`git push --force-with-lease` 或任何强制推送变体。推送失败时应报告错误并安全停止，不得尝试强制推送。如果远程有冲突，优先用 `git pull --ff-only` 合并，合并失败则停止并报告。
 
-- `data/daily-news.json` 是唯一发布数据源；不要维护任何前端内嵌资讯回退副本。
-- `$CANDIDATE_POOL` 是本次手机任务的本地中间产物，位于被忽略的 `local-notes/candidate-pools/`；不要把它或历史 `data/daily-news-raw.json` 当作发布数据，也不要提交它。成功推送后必须删除本次文件。
+- `static/data/daily-news.json` 是唯一发布数据源；不要维护任何前端内嵌资讯回退副本。
+- `$CANDIDATE_POOL` 是本次手机任务的本地中间产物，位于被忽略的 `local-notes/candidate-pools/`；不要把它或历史 `static/data/daily-news-raw.json` 当作发布数据，也不要提交它。成功推送后必须删除本次文件。
 - **不要**在摘要里编造原文没有的事实。拿不准就保守陈述。
 - **绝对禁止**收录单独高校的内部公告/教务通知（见上方红线）。
 - 如果 `python3` 不可用，尝试 `python`；记录实际情况并报告。
