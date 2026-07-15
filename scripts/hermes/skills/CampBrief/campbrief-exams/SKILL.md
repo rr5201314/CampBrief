@@ -181,3 +181,7 @@ rmdir "$LOCK_DIR"
 - 软考、CATTI、会计、CPA：每月一次。
 - 国考、考研、保研：每月一次；报名季每周一次。
 - ACCA、IELTS、TOEFL、PAT：每月一次；已进入报名窗口可每周一次。
+
+## 注意事项
+
+- **绝对禁止强制推送：** 不得使用 `git push --force`、`git push -f`、`git push --force-with-lease` 或任何强制推送变体。推送失败时应报告错误并安全停止，不得尝试强制推送。如果远程有冲突，优先用 `git pull --ff-only` 合并，合并失败则停止并报告。

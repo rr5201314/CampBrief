@@ -207,6 +207,8 @@ rmdir "$LOCK_DIR"
 
 ## 注意事项
 
+- **绝对禁止强制推送：** 不得使用 `git push --force`、`git push -f`、`git push --force-with-lease` 或任何强制推送变体。推送失败时应报告错误并安全停止，不得尝试强制推送。如果远程有冲突，优先用 `git pull --ff-only` 合并，合并失败则停止并报告。
+
 - `data/competitions.json` 是唯一发布数据源
 - 不要编造竞赛信息。采集不到的字段留空
 - **绝对禁止**收录高校内部竞赛（校级选拔赛除外，如果它同时也是公开赛事）

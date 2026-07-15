@@ -254,6 +254,8 @@ rmdir "$LOCK_DIR"
 
 ## 注意事项
 
+- **绝对禁止强制推送：** 不得使用 `git push --force`、`git push -f`、`git push --force-with-lease` 或任何强制推送变体。推送失败时应报告错误并安全停止，不得尝试强制推送。如果远程有冲突，优先用 `git pull --ff-only` 合并，合并失败则停止并报告。
+
 - `data/daily-news.json` 是唯一发布数据源；不要维护任何前端内嵌资讯回退副本。
 - `$CANDIDATE_POOL` 是本次手机任务的本地中间产物，位于被忽略的 `local-notes/candidate-pools/`；不要把它或历史 `data/daily-news-raw.json` 当作发布数据，也不要提交它。成功推送后必须删除本次文件。
 - **不要**在摘要里编造原文没有的事实。拿不准就保守陈述。
