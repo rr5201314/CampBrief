@@ -83,6 +83,14 @@
       "label": "可报名",
       "desc": "报名进行中（含边报名边比赛的赛事）"
     },
+    "closed": {
+      "label": "报名截止",
+      "desc": "报名已截止，比赛尚未开始或比赛时间待确认"
+    },
+    "unknown": {
+      "label": "待核验",
+      "desc": "缺少可自动判断的结构化时间，请以官方渠道为准"
+    },
     "ongoing": {
       "label": "比赛中",
       "desc": "报名已截止，比赛/评审/作品提交仍在进行"
@@ -1810,6 +1818,12 @@
         "language"
       ],
       "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-08-06",
+        "verified_at": "2026-07-15T15:31:29+08:00"
+      },
       "signup": "即日起至8月6日",
       "schedule": "",
       "summary": "翻译能力竞赛报名时间：即日起至8月6日，赛题发布时间：7月8日上午10点 || 主办单位：中国外文局亚太传播中心",
@@ -1827,6 +1841,12 @@
         "language"
       ],
       "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-07-17",
+        "verified_at": "2026-07-15T15:31:29+08:00"
+      },
       "signup": "",
       "schedule": "",
       "summary": "报名截止：2026年7月17日；主办单位：全国高校英语翻译挑战赛组织委员会、北京民教信息科学研究院、广东省高教外语研究院",
@@ -1896,6 +1916,12 @@
         "language"
       ],
       "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-07-18",
+        "verified_at": "2026-07-15T15:31:29+08:00"
+      },
       "signup": "7月18日",
       "schedule": "",
       "summary": "来源：赛氪。浏览 7.3万，关注 4008",

@@ -20,7 +20,9 @@
   const STATUS_CLASS = {
     pending: "status-pending",
     open: "status-open",
+    closed: "status-closed",
     ongoing: "status-ongoing",
+    unknown: "status-pending",
     done: "status-done"
   };
 
@@ -31,7 +33,7 @@
     hobby: "tier-hobby"
   };
 
-  const STATUS_SORT_ORDER = { open: 0, pending: 1, ongoing: 2, done: 3 };
+  const STATUS_SORT_ORDER = { open: 0, pending: 1, ongoing: 2, closed: 3, unknown: 4, done: 5 };
   const TIER_SORT_ORDER = { official: 0, enterprise: 1, hobby: 2 };
 
   function escapeHtml(text) {
@@ -42,8 +44,13 @@
     return CampBriefContent.safeHttpUrl(value);
   }
 
+  // 结构化生命周期兜底；自然语言展示字段不参与状态计算。
+  function getStatus(item) {
+    return CampBriefContent.effectiveStatus(item, { kind: "competition", requireLifecycle: true });
+  }
+
   function compareCompetitions(a, b) {
-    const statusDiff = (STATUS_SORT_ORDER[a.status] ?? 99) - (STATUS_SORT_ORDER[b.status] ?? 99);
+    const statusDiff = (STATUS_SORT_ORDER[getStatus(a)] ?? 99) - (STATUS_SORT_ORDER[getStatus(b)] ?? 99);
     if (statusDiff) return statusDiff;
 
     const tierDiff = (TIER_SORT_ORDER[a.tier] ?? 99) - (TIER_SORT_ORDER[b.tier] ?? 99);
@@ -88,8 +95,9 @@
 
   function renderCards(items) {
     cardsContainer.innerHTML = items.map(item => {
-      const statusLabel = getStatusLabel(item.status);
-      const statusClass = STATUS_CLASS[item.status] || "status-pending";
+      const itemStatus = getStatus(item);
+      const statusLabel = getStatusLabel(itemStatus);
+      const statusClass = STATUS_CLASS[itemStatus] || "status-pending";
       const tierLabel = getTierLabel(item.tier);
       const tierClass = TIER_CLASS[item.tier] || "tier-hobby";
       const fieldTags = (item.fields || []).slice(0, 3).map(f =>
@@ -112,13 +120,13 @@
       const isThirdParty = sourceUrl && sourceUrl.includes("52jingsai");
       let officialAction = "";
       if (officialUrl) {
-        officialAction = `<a href="${escapeHtml(officialUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">${item.status === "open" ? "立即报名" : "访问官网"} <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>`;
+        officialAction = `<a href="${escapeHtml(officialUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">${itemStatus === "open" ? "立即报名" : "访问官网"} <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>`;
       } else if (isThirdParty) {
         officialAction = `<a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">信息来源 <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>`;
       }
 
       return `
-        <article class="card" data-id="${escapeHtml(item.id || "")}" data-tier="${escapeHtml(item.tier || "")}" data-fields="${escapeHtml((item.fields || []).join(","))}" data-status="${escapeHtml(item.status || "")}" data-search="${escapeHtml((item.search || item.name || "").toLowerCase())}">
+        <article class="card" data-id="${escapeHtml(item.id || "")}" data-tier="${escapeHtml(item.tier || "")}" data-fields="${escapeHtml((item.fields || []).join(","))}" data-status="${escapeHtml(itemStatus || "")}" data-search="${escapeHtml((item.search || item.name || "").toLowerCase())}">
           <div class="card-main">
             <div class="card-head">
               <h2 class="card-title"><a href="${detailHref}" class="card-title-link">${escapeHtml(item.name)}</a></h2>
@@ -173,7 +181,7 @@
     filteredItems = allItems.filter(item => {
       const tierOk = state.tier === "all" || item.tier === state.tier;
       const fieldOk = state.field === "all" || (item.fields || []).includes(state.field);
-      const statusOk = state.status === "all" || item.status === state.status;
+      const statusOk = state.status === "all" || getStatus(item) === state.status;
       const searchOk = !query ||
         (item.search || "").toLowerCase().includes(query) ||
         (item.name || "").toLowerCase().includes(query) ||
@@ -220,7 +228,7 @@
     if (!container || typeof Carousel === "undefined") return;
 
     // 仅推荐可报名或即将开始的赛事；可报名优先，其次教育部认可、名企主办与含金量。
-    let candidates = allItems.filter(i => i.status === "open" || i.status === "pending");
+    let candidates = allItems.filter(item => CampBriefContent.isCarouselCandidate(item, "competition"));
     candidates.sort(compareCompetitions);
     const carouselItems = candidates.slice(0, 15);
     if (carouselItems.length < 3) {
@@ -232,8 +240,9 @@
     Carousel.init(container, {
       items: carouselItems,
       renderCard: (item) => {
-        const statusLabel = getStatusLabel(item.status);
-        const tagClass = item.status === "open" ? "tag-featured" : "tag-normal";
+        const itemStatus = getStatus(item);
+        const statusLabel = getStatusLabel(itemStatus);
+        const tagClass = itemStatus === "open" ? "tag-featured" : "tag-normal";
         const detailHref = `detail.html?id=${encodeURIComponent(item.id || "")}`;
         const metaLine = [];
         if (item.organizer) {

@@ -1,16 +1,6 @@
 ---
 name: campbrief-competitions
-description: CampBrief 竞赛模块自动化维护——从我爱竞赛网采集新竞赛、合并去重、分类标注、校验数据并推送 GitHub
-category: CampBrief
-tags: [competitions, automation, github, scheduled]
-platforms: [termux, linux, darwin]
-metadata:
-  hermes:
-    config:
-      - key: campbrief.repo_path
-        description: CampBrief 仓库在本机的克隆路径
-        default: ~/projects/CampBrief
-        prompt: CampBrief 仓库路径
+description: 维护竞赛数据；脚本批量校验，Hermes 只处理例外并安全发布.
 ---
 
 # CampBrief 竞赛模块自动化维护
@@ -28,11 +18,17 @@ metadata:
 | 我爱竞赛网 52jingsai.com | `scripts/collect-52jingsai.py --detail` | ✅ 静态 HTML，GBK 编码，需逐条抓详情页 |
 | 赛氪 saikr.com | `scripts/collect-saikr.py` | ✅ SSR HTML，UTF-8，列表页一次拿全字段 |
 
-两个源并行采集，合并去重后写入发布数据。赛氪列表页已含主办方、浏览量、关注数，无需抓详情页；标题前缀（如「【7月18日收官】」「【最后13天】」）和 `status_hint` 用于推断状态和报名截止。
+两个源并行采集，先交给 `maintenance-gate.py` 与已发布数据批量对照，再只把新增、变化或错误任务交给 Hermes。赛氪标题前缀和 `status_hint` 只是候选线索，采集器的启发式 `status` 不得直接写入发布数据；最终状态必须来自可靠的结构化 lifecycle。
 
 ## 仓库路径
 
-下方 Skill config 中注入的 `campbrief.repo_path` 是仓库根目录。后续所有路径都基于它，记为 `$REPO`。如果配置值以 `~` 开头，先展开为家目录绝对路径再使用。
+本文件不注册到 Hermes skill 目录，也不依赖 skill config 注入。把 ccron 提示词中“执行此流程”后面的本文件绝对路径原样赋给 `SKILL_FILE`，再由文件位置确定仓库根目录：
+
+```bash
+# SKILL_FILE 的值必须直接取自本次 ccron 提示词，不得猜测或复用旧路径
+REPO="$(cd "$(dirname "$SKILL_FILE")/../../../../.." && pwd)" || exit 1
+test -f "$REPO/AGENTS.md" || exit 1
+```
 
 ## 执行步骤
 
@@ -64,6 +60,9 @@ fi
 并行运行两个采集脚本，分别抓取我爱竞赛网和赛氪的竞赛列表：
 
 ```bash
+# 先删除旧批次，避免本次源失败时误读上次结果
+rm -f "$REPO/local-notes/competitions-52jingsai.json" "$REPO/local-notes/competitions-saikr.json"
+
 # 源 1：我爱竞赛网（含详情页，较慢）
 python3 "$REPO/scripts/collect-52jingsai.py" \
   --max 30 --detail \
@@ -75,23 +74,69 @@ python3 "$REPO/scripts/collect-saikr.py" \
   --output "$REPO/local-notes/competitions-saikr.json"
 ```
 
-两个脚本各自独立输出，读取结果时：
-- 两个源 `total` 都为 0 时停止本次任务并报告，不得动现有数据
-- 单个源失败时仍可继续，在报告中标注哪个源失败
+两个脚本各自独立输出，采集完成后一律继续进入 gate，不在此处提前结束：
+- 两个源均为空、输出缺失或格式错误时，由 gate 形成来源异常任务，不得在 gate 前改动现有数据
+- 单个源失败时由 gate 只交接该来源，另一个来源仍正常批量去重
 - 52jingsai 部分详情页失败是正常的，只有列表页全部失败才视为源失败
-- 赛氪的 `status_hint` 字段是整段公告摘要（已截断到 200 字），用于辅助状态判断，不直接写入发布数据
+- 赛氪的 `status_hint` 字段是整段公告摘要（已截断到 200 字），只进入兜底任务辅助查找官方事实，不直接写入发布数据或决定状态
+
+### 1.1 脚本批量判定与 Hermes 短路
+
+采集结束后先运行统一 gate。它会批量完成候选与已发布数据的稳定 ID/URL/名称去重、结构化状态同步、数据校验和异常去重；调度频率不由本 skill 定义。
+
+```bash
+mkdir -p "$REPO/local-notes/maintenance"
+HANDOFF="$REPO/local-notes/maintenance/competitions-handoff.json"
+STATE="$REPO/local-notes/maintenance/competitions-state.json"
+GATE_RC=0
+python3 "$REPO/scripts/maintenance-gate.py" \
+  --scope competitions --fix --touch-last-updated \
+  --candidate-pool "52jingsai=$REPO/local-notes/competitions-52jingsai.json" \
+  --candidate-pool "saikr=$REPO/local-notes/competitions-saikr.json" \
+  --report "$HANDOFF" --state "$STATE" || GATE_RC=$?
+
+if [ "$GATE_RC" -eq 20 ]; then
+  rmdir "$LOCK_DIR"
+  exit 1
+fi
+
+if [ "$GATE_RC" -eq 0 ]; then
+  DECISION=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1], encoding="utf-8"))["decision"])' "$HANDOFF")
+  if [ "$DECISION" = "script_changes_ready" ]; then
+    python3 "$REPO/scripts/validate-competitions.py" || { rmdir "$LOCK_DIR"; exit 1; }
+    python3 "$REPO/scripts/check-carousel-health.py" || { rmdir "$LOCK_DIR"; exit 1; }
+    git -C "$REPO" diff --check || { rmdir "$LOCK_DIR"; exit 1; }
+    git add -- data/competitions.json
+    if ! git diff --cached --quiet; then
+      git commit -m "chore(competitions): batch maintenance $(date +%Y-%m-%d)" || { rmdir "$LOCK_DIR"; exit 1; }
+    fi
+    git pull --ff-only || { rmdir "$LOCK_DIR"; exit 1; }
+    git push || { rmdir "$LOCK_DIR"; exit 1; }
+  fi
+  rm -f "$REPO/local-notes/competitions-52jingsai.json" "$REPO/local-notes/competitions-saikr.json"
+  rmdir "$LOCK_DIR"
+  echo "批量脚本已完成，未产生新的 Hermes 兜底任务：$DECISION"
+  exit 0
+fi
+
+if [ "$GATE_RC" -ne 10 ]; then
+  rmdir "$LOCK_DIR"
+  exit 1
+fi
+```
+
+只有退出码为 `10` 时才进入后续 Hermes 处理。此时只读取 `$HANDOFF` 的 `tasks`；`suppressed` 是近期已经交接过且内容未变化的异常，不重复处理。不得重新通读两个原始候选池。
 
 ### 2. 读取已有数据
 
-读取这三个文件：
+只读取这两个文件：
 
-- `$REPO/local-notes/competitions-52jingsai.json` —— 我爱竞赛网本次采集结果
-- `$REPO/local-notes/competitions-saikr.json` —— 赛氪本次采集结果
+- `$HANDOFF` —— 本次新增或内容变化的异常任务，候选原文位于各任务的 `payload`
 - `$REPO/data/competitions.json` —— 当前已发布数据
 
 ### 3. 合并去重与分类
 
-对采集到的每条竞赛，执行以下处理：
+只对 `$HANDOFF.tasks` 中的 `candidate_review`、`candidate_change`、`status_review` 和 `lifecycle_error` 执行以下处理；`source_error` 只诊断对应源，不扫描其他已通过脚本处理的条目；`validation_error` 只按 payload 的命令与输出修复对应数据或配置，无法安全修复时停止发布：
 
 **去重规则（跨源 + 既有数据）：**
 - 按竞赛名称模糊匹配（去掉括号内容、标点后比较）
@@ -129,17 +174,22 @@ python3 "$REPO/scripts/classify-competitions.py" --apply
 - 其他字段参照 `data/competitions.json` 的 `fields` 列表
 
 **状态判断（status）：**
-- 标题含"截止"且日期已过 → `done`
-- 标题含"报名"且未过期 → `open`
-- 默认 → `pending`
+- `pending`：明确尚未开始报名。
+- `open`：当前可以报名；边报名边比赛仍归 `open`。
+- `closed`：报名已截止，比赛尚未开始或结束时间未知。
+- `ongoing`：报名已截止，比赛/评审仍在进行。
+- `done`：比赛/评审全部结束。
 
-**过期自动状态更新（每次执行必做）：**
-对 `data/competitions.json` 中所有条目，检查当前日期：
-- `signup` 字段包含截止日期 且 当前日期已过该日期 且 status 为 `open` → 自动改为 `done`
-- `schedule` 字段包含比赛结束时间 且 当前日期已过 且 status 为 `open` 或 `ongoing` → 自动改为 `done`
-- 日期解析不到时不改状态，保持原值
-- 改状态时只改 `status` 字段，不动其他字段
-- 在完成报告中列出所有自动状态变更
+**结构化生命周期（每次执行必做）：**
+
+- `lifecycle` 是状态计算的唯一时间事实源；标题、`signup`、`schedule`、`summary` 只负责展示，不得由前端或 LLM直接解析后改状态。
+- 有明确时间时用 `mode=scheduled`，按来源填写 `registration_start`、`registration_end`、`event_start`、`event_end`。日期格式只允许 `YYYY-MM-DD` 或带偏移的 ISO8601；日期值必须配 IANA `time_zone`。若状态为 `open`，必须有可靠的 `registration_end`，只有开始时间或比赛时间不能支撑持续显示“可报名”。
+- 明确为全年滚动时用 `mode=rolling`；来源只给当前状态、无法得到可靠时间边界时用 `mode=manual`。两者必须填写带时区的 `verified_at` 和 `review_after`，复核有效期不得超过 72 小时。复核到期后前端显示“待核验”。
+- 无年份日期仅在赛事名称或公告明确给出所属年份时才可结构化；否则保留展示文本，不得猜年份。
+- 只有 `registration_end` 已过时应变为 `closed`，绝不能直接当作 `done`；有 `event_start`/`event_end` 时才可继续计算 `ongoing`/`done`。
+- 新增或更新为 `open` 的条目必须同时写入有效 lifecycle，否则公开页面只显示“待核验”，且不会进入首页或轮播。
+
+写入数据后运行 `python3 "$REPO/scripts/check-temporal-status.py" --scope competitions --fix`，让确定性脚本同步状态，并在报告中列出全部状态变化。
 
 **ID 生成：**
 - 我爱竞赛网新条目：`comp-52jingsai-{hash}`，hash 由名称+URL 计算 SHA-256 前 12 位
@@ -167,6 +217,12 @@ python3 "$REPO/scripts/classify-competitions.py" --apply
       "tier": "hobby",
       "fields": ["language"],
       "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-08-06",
+        "verified_at": "2026-07-15T09:00:00+08:00"
+      },
       "signup": "即日起至8月6日",
       "schedule": "",
       "summary": "来源：我爱竞赛网。",
@@ -190,8 +246,11 @@ python3 "$REPO/scripts/classify-competitions.py" --apply
 写完后运行校验：
 
 ```bash
-python3 -m json.tool "$REPO/data/competitions.json" >/dev/null
-python3 "$REPO/scripts/validate-competitions.py"
+python3 -m json.tool "$REPO/data/competitions.json" >/dev/null || { rmdir "$LOCK_DIR"; exit 1; }
+python3 "$REPO/scripts/check-temporal-status.py" --scope competitions --fix || { rmdir "$LOCK_DIR"; exit 1; }
+python3 "$REPO/scripts/validate-competitions.py" || { rmdir "$LOCK_DIR"; exit 1; }
+python3 "$REPO/scripts/check-carousel-health.py" || { rmdir "$LOCK_DIR"; exit 1; }
+git -C "$REPO" diff --check || { rmdir "$LOCK_DIR"; exit 1; }
 ```
 
 校验脚本会检查：链接完整性（至少一个链接）、id 非空且不重复、name 非空。有不合格条目时会报错，必须修复后才能提交。
@@ -208,13 +267,14 @@ else
 fi
 git pull --ff-only || { rmdir "$LOCK_DIR"; exit 1; }
 git push || { rmdir "$LOCK_DIR"; exit 1; }
+python3 "$REPO/scripts/maintenance-gate.py" --scope competitions --ack "$HANDOFF" --state "$STATE" || { rmdir "$LOCK_DIR"; exit 1; }
 rm -f "$REPO/local-notes/competitions-52jingsai.json" "$REPO/local-notes/competitions-saikr.json"
 rmdir "$LOCK_DIR"
 ```
 
 ## 完成后报告
 
-用一两句话说明：本次新收录几条、丢弃几条（重复/噪音）、合并后总量、是否有源失败、推送是否成功。
+报告本次新收录、丢弃（重复/噪音）、合并后总量、结构化状态变化、轮播候选数量、是否有源失败以及推送结果。
 
 ## 注意事项
 

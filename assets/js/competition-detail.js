@@ -12,7 +12,9 @@
   const STATUS_LABEL = {
     pending: { text: "未开始", icon: "i-clock", cls: "status-pending" },
     open: { text: "可报名", icon: "i-unlock", cls: "status-open" },
+    closed: { text: "报名截止", icon: "i-lock", cls: "status-closed" },
     ongoing: { text: "比赛中", icon: "i-status", cls: "status-ongoing" },
+    unknown: { text: "待核验", icon: "i-clock", cls: "status-pending" },
     done: { text: "已完赛", icon: "i-check", cls: "status-done" }
   };
 
@@ -136,7 +138,8 @@
   function renderDetail(item) {
     const el = document.getElementById("competitionDetail");
     const tier = TIER_LABEL[item.tier] || { text: item.tier || "赛事", icon: "i-info", cls: "tier-hobby" };
-    const status = STATUS_LABEL[item.status] || { text: item.status || "状态待更新", icon: "i-clock", cls: "status-pending" };
+    const itemStatus = CampBriefContent.effectiveStatus(item, { kind: "competition", requireLifecycle: true });
+    const status = STATUS_LABEL[itemStatus] || { text: itemStatus || "状态待更新", icon: "i-clock", cls: "status-pending" };
     const officialUrl = safeExternalUrl(item.official_site);
     const sourceUrl = safeExternalUrl(item.official_url);
     const isThirdPartySource = sourceUrl && sourceUrl.includes('52jingsai');
@@ -181,7 +184,7 @@
       </div>
     `;
 
-    const primaryLabel = item.status === "open" ? "前往报名 / 官网" : "访问赛事官网";
+    const primaryLabel = itemStatus === "open" ? "前往报名 / 官网" : "访问赛事官网";
     const officialCallout = `
       <div class="exam-official-callout">
         <svg class="icon"><use href="#i-info"/></svg>

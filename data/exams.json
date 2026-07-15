@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-15T18:00:00+08:00",
+  "last_updated": "2026-07-15T16:40:00+08:00",
   "source": "CampBrief",
   "total": 28,
   "categories": [
@@ -165,6 +165,11 @@
       "name": "雅思 (IELTS)",
       "category": "english",
       "status": "open",
+      "lifecycle": {
+        "mode": "rolling",
+        "verified_at": "2026-07-15T16:40:00+08:00",
+        "review_after": "2026-07-18T16:40:00+08:00"
+      },
       "fee": "约2170元",
       "schedule": "全年多场",
       "summary": "国际英语语言测试系统，用于留学、移民和海外工作申请。听、说、读、写四项单独评分。",
@@ -179,6 +184,11 @@
       "name": "托福 (TOEFL)",
       "category": "english",
       "status": "open",
+      "lifecycle": {
+        "mode": "rolling",
+        "verified_at": "2026-07-15T16:40:00+08:00",
+        "review_after": "2026-07-18T16:40:00+08:00"
+      },
       "fee": "约2100元",
       "schedule": "全年多场",
       "summary": "检测非英语母语者的英语能力，主要用于北美留学申请。涵盖阅读、听力、口语和写作。",
@@ -339,6 +349,15 @@
       "name": "2026年中级会计职称考试",
       "category": "accounting",
       "status": "closed",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-06-12",
+        "registration_end": "2026-07-02",
+        "event_start": "2026-09-05",
+        "event_end": "2026-09-06",
+        "verified_at": "2026-07-15T16:40:00+08:00"
+      },
       "fee": "每科约50-70元",
       "schedule": "2026年9月",
       "summary": "面向有一定工作经验的会计人员，需满足工作年限要求，考试含《中级会计实务》《财务管理》《经济法》。",
@@ -367,6 +386,15 @@
       "name": "2026年注册会计师全国统一考试 (CPA)",
       "category": "accounting",
       "status": "closed",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-04-07T08:00:00+08:00",
+        "registration_end": "2026-04-30T20:00:00+08:00",
+        "event_start": "2026-08-29",
+        "event_end": "2026-08-30",
+        "verified_at": "2026-07-15T16:40:00+08:00"
+      },
       "fee": "每科约60-100元",
       "schedule": "2026年8月底（专业阶段）、8月底（综合阶段）",
       "summary": "会计行业最高级别执业资格考试，含6个专业阶段科目和综合阶段，通过后可获审计报告签字权。",
@@ -427,6 +455,15 @@
       "name": "2026年9月 ACCA 考试",
       "category": "accounting",
       "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Europe/London",
+        "registration_start": "2026-05-05",
+        "registration_end": "2026-08-03T23:59:00+01:00",
+        "event_start": "2026-09-07",
+        "event_end": "2026-09-11",
+        "verified_at": "2026-07-15T16:40:00+08:00"
+      },
       "fee": "各阶段费用不同",
       "schedule": "2026年9月",
       "summary": "国际通用会计师资格，全球认可度高，适合意向跨国企业或四大会计师事务所发展的学生。",
@@ -467,6 +504,15 @@
       "name": "2026年12月 ACCA 考试",
       "category": "accounting",
       "status": "pending",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Europe/London",
+        "registration_start": "2026-08-04",
+        "registration_end": "2026-11-09T23:59:00+00:00",
+        "event_start": "2026-12-07",
+        "event_end": "2026-12-11",
+        "verified_at": "2026-07-15T16:40:00+08:00"
+      },
       "fee": "各阶段费用不同",
       "schedule": "2026年12月",
       "summary": "国际通用会计师资格，全球认可度高，适合意向跨国企业或四大会计师事务所发展的学生。",
@@ -517,6 +563,11 @@
       "name": "2026年下半年中小学教师资格考试 (NTCE)",
       "category": "teacher",
       "status": "open",
+      "lifecycle": {
+        "mode": "manual",
+        "verified_at": "2026-07-15T16:40:00+08:00",
+        "review_after": "2026-07-18T16:40:00+08:00"
+      },
       "fee": "每科约50-70元",
       "schedule": "2026年下半年（笔试10月，面试12月）",
       "summary": "教师资格认定考试，含笔试和面试，分幼儿园、小学、中学多个学段，是从事教师职业的必备前提。",
@@ -553,6 +604,11 @@
       "name": "普通话水平测试 (PSC)",
       "category": "teacher",
       "status": "open",
+      "lifecycle": {
+        "mode": "rolling",
+        "verified_at": "2026-07-15T16:40:00+08:00",
+        "review_after": "2026-07-18T16:40:00+08:00"
+      },
       "fee": "约50元（学生优惠）",
       "schedule": "各地定期组织",
       "summary": "评估普通话水平的标准测试，分一到三级，教师资格认定要求达到二级乙等及以上。",
@@ -581,6 +637,11 @@
       "name": "事业单位招聘考试",
       "category": "civil-service",
       "status": "open",
+      "lifecycle": {
+        "mode": "rolling",
+        "verified_at": "2026-07-15T16:40:00+08:00",
+        "review_after": "2026-07-18T16:40:00+08:00"
+      },
       "fee": "约50-100元",
       "schedule": "各地不定期",
       "summary": "事业单位工作人员公开招聘考试，含笔试和面试，岗位类型多样，是进入事业编制的主要渠道。",

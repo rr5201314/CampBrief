@@ -12,16 +12,18 @@ let resultCount, searchInput, emptyState;
 const STATUS_LABEL = {
   open: "可报名",
   pending: "未开始",
-  closed: "已结束",
+  closed: "报名截止",
+  unknown: "待核验",
   done: "已结束"
 };
 const STATUS_ICON = {
   open: "i-unlock",
   pending: "i-clock",
   closed: "i-lock",
+  unknown: "i-clock",
   done: "i-check"
 };
-const LIST_STATUS_ORDER = { pending: 0, open: 1, closed: 2, done: 2 };
+const LIST_STATUS_ORDER = { pending: 0, open: 1, closed: 2, unknown: 3, done: 4 };
 const CAROUSEL_STATUS_ORDER = { open: 0, pending: 1, closed: 2, done: 2 };
 
 function escapeHtml(value) {
@@ -32,12 +34,13 @@ function safeExternalUrl(value) {
   return CampBriefContent.safeHttpUrl(value);
 }
 
-function isEndedStatus(status) {
-  return status === "closed" || status === "done";
+// 结构化生命周期兜底；自然语言展示字段不参与状态计算。
+function getStatus(item) {
+  return CampBriefContent.effectiveStatus(item, { kind: "exam", requireLifecycle: true });
 }
 
 function compareExams(a, b, statusOrder = LIST_STATUS_ORDER) {
-  const statusDiff = (statusOrder[a.status] ?? 99) - (statusOrder[b.status] ?? 99);
+  const statusDiff = (statusOrder[getStatus(a)] ?? 99) - (statusOrder[getStatus(b)] ?? 99);
   if (statusDiff) return statusDiff;
 
   const prestigeDiff = (EXAM_PRESTIGE[a.id] || 0) - (EXAM_PRESTIGE[b.id] || 0);
@@ -70,14 +73,15 @@ async function loadExamsData() {
 
 // 生成单张考试卡片 HTML
 function createCardHTML(item) {
-  const statusClass = `status-${item.status}`;
-  const statusText = STATUS_LABEL[item.status] || item.status;
-  const statusIcon = STATUS_ICON[item.status] || 'i-clock';
+  const itemStatus = getStatus(item);
+  const statusClass = itemStatus === 'unknown' ? 'status-pending' : `status-${itemStatus}`;
+  const statusText = STATUS_LABEL[itemStatus] || itemStatus;
+  const statusIcon = STATUS_ICON[itemStatus] || 'i-clock';
 
   const detailHref = `detail.html?id=${encodeURIComponent(item.id || '')}`;
   const officialUrl = safeExternalUrl(item.official_site || item.official_url);
   const officialLink = officialUrl
-    ? `<a href="${escapeHtml(officialUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">${item.status === 'open' ? '立即报名' : '访问官网'} <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>`
+    ? `<a href="${escapeHtml(officialUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">${itemStatus === 'open' ? '立即报名' : '访问官网'} <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>`
     : '';
 
   // 从 timeline 提取报名时间节点
@@ -85,7 +89,7 @@ function createCardHTML(item) {
   const regTime = regEntry ? regEntry.value : '';
 
   return `
-    <article class="card" data-category="${escapeHtml(item.category)}" data-status="${escapeHtml(item.status)}" data-search="${escapeHtml(`${item.search || ''} ${item.name || ''}`)}">
+    <article class="card" data-category="${escapeHtml(item.category)}" data-status="${escapeHtml(itemStatus)}" data-search="${escapeHtml(`${item.search || ''} ${item.name || ''}`)}">
       <div class="card-main">
         <div class="card-head">
           <h2 class="card-title">${escapeHtml(item.name)}</h2>
@@ -186,8 +190,8 @@ function initFilters() {
 function applyFilters() {
   filteredItems = allItems.filter(item => {
     const categoryOk = state.category === "all" || item.category === state.category;
-    const statusOk = state.status === "all" ||
-      (state.status === "ended" ? isEndedStatus(item.status) : item.status === state.status);
+    const itemStatus = getStatus(item);
+    const statusOk = state.status === "all" || itemStatus === state.status;
     const searchOk = !state.query || `${item.name} ${item.summary} ${item.search || ""}`.toLowerCase().includes(state.query);
     return categoryOk && statusOk && searchOk;
   }).sort(compareExams);
@@ -196,7 +200,7 @@ function applyFilters() {
 }
 
 // ===== 精选考试轮播 =====
-// 规则：可报名优先，其次未开始；按含金量排序；不足 3 个用雅思/托福常驻凑数；上限 15 个。
+// 规则：只收 lifecycle 有效的可报名或明确未来期次；按状态和含金量排序，上限 15 个。
 const EXAM_PRESTIGE = {
   'cet-202612': 5, 'kaoyan-2026': 5, 'cpa-2026': 5, 'guokao-2026': 5,
   'ruankao-202611': 4, 'ntce-202610': 4, 'ielts': 4, 'toefl': 4,
@@ -204,22 +208,11 @@ const EXAM_PRESTIGE = {
   'ncre-202609': 2, 'pat-202609': 2, 'acca-202609': 2, 'acca-202612': 2,
   'psc': 1, 'shiye': 1
 };
-const CAROUSEL_FALLBACK_IDS = ['ielts', 'toefl'];
-
 function pickCarouselItems(items) {
-  // 候选：open + pending
-  let candidates = items.filter(i => i.status === 'open' || i.status === 'pending');
+  // 候选：有效 open + scheduled pending
+  let candidates = items.filter(item => CampBriefContent.isCarouselCandidate(item, "exam"));
   candidates.sort((a, b) => compareExams(a, b, CAROUSEL_STATUS_ORDER));
-  let result = candidates.slice(0, 15);
-  // 不足 3 个用雅思/托福凑数
-  if (result.length < 3) {
-    for (const id of CAROUSEL_FALLBACK_IDS) {
-      if (result.length >= 3) break;
-      const fb = items.find(i => i.id === id);
-      if (fb && !result.find(r => r.id === id)) result.push(fb);
-    }
-  }
-  return result;
+  return candidates.slice(0, 15);
 }
 
 function renderCarouselCard(item) {

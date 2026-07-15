@@ -20,6 +20,31 @@
 
 简豹负责整理公开信息，方便你发现机会；涉及报名时间、资格条件、费用和政策时，请始终以对应官方渠道的最新公告为准。
 
+## 本地维护检查
+
+项目的考试和竞赛状态使用结构化 `lifecycle` 时间边界计算，不从标题、摘要或展示文本猜日期。报名状态无法自动确认或超过复核期限时，页面显示“待核验”，不会继续承诺“可报名”。
+
+完成内容或页面修改后，在仓库根目录运行：
+
+```powershell
+python -X utf8 scripts/check-project.py
+```
+
+该命令会检查竞赛、考试和资讯数据，核对结构化状态，生成四个轮播的健康报告，执行 Python/JavaScript 单元测试，验证页面本地资源依赖并检查 Git 空白错误。轮播巡检默认在任一数据集超过 36 小时未更新时报警；手工/滚动状态最多保留 72 小时复核有效期。单独查看状态或轮播时可运行：
+
+```powershell
+python -X utf8 scripts/check-temporal-status.py
+python -X utf8 scripts/check-carousel-health.py
+```
+
+长期自动维护使用脚本优先的统一 gate：脚本先完成候选去重、资讯链接探测、考试公告匹配、状态同步和结构校验，退出码 `0` 时不需要 Hermes 深度处理，只有退出码 `10` 才读取机器生成的增量任务。完整退出码、交接报告和 ack 约定见 [长期维护流程](docs/maintenance-workflow.md)。
+
+```bash
+python3 scripts/maintenance-gate.py --scope competitions --fix \
+  --report local-notes/maintenance/competitions-handoff.json \
+  --state local-notes/maintenance/competitions-state.json
+```
+
 ## 持续完善中
 
 我们会持续优化内容整理方式和阅读体验，让重要信息更容易被看见。

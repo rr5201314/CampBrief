@@ -19,7 +19,12 @@ USER_AGENT = "Mozilla/5.0 (compatible; CampBriefLinkCheck/1.0)"
 RESTRICTED_STATUS_CODES = {401, 403, 429}
 
 
-def load_urls(path: Path) -> OrderedDict[str, list[dict[str, str]]]:
+def load_urls(
+    path: Path,
+    *,
+    only_sources: set[str] | None = None,
+    exclude_sources: set[str] | None = None,
+) -> OrderedDict[str, list[dict[str, str]]]:
     data = json.loads(path.read_text(encoding="utf-8"))
     items = data.get("items")
     if not isinstance(items, list):
@@ -27,6 +32,11 @@ def load_urls(path: Path) -> OrderedDict[str, list[dict[str, str]]]:
 
     grouped = OrderedDict()
     for item in items:
+        source = str(item.get("source", "")).strip()
+        if only_sources and source not in only_sources:
+            continue
+        if exclude_sources and source in exclude_sources:
+            continue
         url = str(item.get("url", "")).strip()
         title = str(item.get("title", "未命名资讯")).strip()
         content_id = str(item.get("id", "")).strip()
@@ -93,6 +103,18 @@ def main() -> int:
     parser.add_argument("--timeout", type=float, default=12, help="单个链接超时秒数，默认 12")
     parser.add_argument("--report", type=Path, help="可选：写入 JSON 检查报告")
     parser.add_argument(
+        "--only-source",
+        action="append",
+        default=[],
+        help="只检查指定 source，可重复使用",
+    )
+    parser.add_argument(
+        "--exclude-source",
+        action="append",
+        default=[],
+        help="排除指定 source，可重复使用",
+    )
+    parser.add_argument(
         "--fail-on-restricted",
         action="store_true",
         help="将 401、403、429 等受限响应视为失败，用于自动发布前的严格检查",
@@ -103,7 +125,11 @@ def main() -> int:
         parser.error("--workers 必须大于 0，--timeout 必须大于 0")
 
     try:
-        grouped_urls = load_urls(args.path)
+        grouped_urls = load_urls(
+            args.path,
+            only_sources=set(args.only_source),
+            exclude_sources=set(args.exclude_source),
+        )
     except (OSError, json.JSONDecodeError, ValueError) as error:
         print(f"ERROR: 无法加载资讯数据：{error}")
         return 1

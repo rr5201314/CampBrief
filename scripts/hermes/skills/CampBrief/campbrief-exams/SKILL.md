@@ -1,16 +1,6 @@
 ---
 name: campbrief-exams
-description: CampBrief 考试模块自动化维护——基于官方源巡检、核验相关新公告、解析时间节点、校验数据并推送 GitHub
-category: CampBrief
-tags: [exams, automation, github, scheduled]
-platforms: [termux, linux, darwin]
-metadata:
-  hermes:
-    config:
-      - key: campbrief.repo_path
-        description: CampBrief 仓库在本机的克隆路径
-        default: ~/projects/CampBrief
-        prompt: CampBrief 仓库路径
+description: 维护考试数据；脚本批量探测，Hermes 只处理例外并安全发布.
 ---
 
 # CampBrief 考试模块自动化维护
@@ -30,7 +20,15 @@ metadata:
 
 ## 0. 同步、校验并取得锁
 
-将 Skill config 中的 `campbrief.repo_path` 展开为绝对路径，记为 `$REPO`。严格先执行：
+本文件不注册到 Hermes skill 目录，也不依赖 skill config 注入。把 ccron 提示词中“执行此流程”后面的本文件绝对路径原样赋给 `SKILL_FILE`，再由文件位置确定仓库根目录：
+
+```bash
+# SKILL_FILE 的值必须直接取自本次 ccron 提示词，不得猜测或复用旧路径
+REPO="$(cd "$(dirname "$SKILL_FILE")/../../../../.." && pwd)" || exit 1
+test -f "$REPO/AGENTS.md" || exit 1
+```
+
+然后严格执行：
 
 ```bash
 cd "$REPO" || exit 1
@@ -53,9 +51,60 @@ fi
 
 从成功创建锁起，所有受控退出路径都要执行 `rmdir "$LOCK_DIR"`。不要删除执行前已存在的锁；发生无法执行清理的异常崩溃时保留锁，交由人工确认。
 
+### 0.1 批量探测、校验与 Hermes 短路
+
+先由脚本批量下载去重后的官方入口、按 `source-policy.json` 匹配链接，再运行统一 gate。脚本只判断可达性、当前链接命中和候选数量，不解析公告正文日期；调度频率不由本 skill 定义。
+
+```bash
+mkdir -p "$REPO/local-notes/maintenance"
+EXAM_REPORT="$REPO/local-notes/maintenance/exam-notice-probe.json"
+HANDOFF="$REPO/local-notes/maintenance/exams-handoff.json"
+STATE="$REPO/local-notes/maintenance/exams-state.json"
+rm -f "$EXAM_REPORT"
+python3 "$REPO/scripts/collect-exam-notices.py" --output "$EXAM_REPORT" || true
+
+GATE_RC=0
+python3 "$REPO/scripts/maintenance-gate.py" \
+  --scope exams --fix --touch-last-updated \
+  --exam-report "$EXAM_REPORT" \
+  --report "$HANDOFF" --state "$STATE" || GATE_RC=$?
+
+if [ "$GATE_RC" -eq 20 ]; then
+  rmdir "$LOCK_DIR"
+  exit 1
+fi
+
+if [ "$GATE_RC" -eq 0 ]; then
+  DECISION=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1], encoding="utf-8"))["decision"])' "$HANDOFF")
+  if [ "$DECISION" = "script_changes_ready" ]; then
+    python3 "$REPO/scripts/validate-exam-sources.py" || { rmdir "$LOCK_DIR"; exit 1; }
+    python3 "$REPO/scripts/check-carousel-health.py" || { rmdir "$LOCK_DIR"; exit 1; }
+    git -C "$REPO" diff --check || { rmdir "$LOCK_DIR"; exit 1; }
+    git add -- data/exams.json
+    if ! git diff --cached --quiet; then
+      git commit -m "chore(exams): batch maintenance $(date +%Y-%m-%d)" || { rmdir "$LOCK_DIR"; exit 1; }
+    fi
+    git pull --ff-only || { rmdir "$LOCK_DIR"; exit 1; }
+    git push || { rmdir "$LOCK_DIR"; exit 1; }
+  fi
+  rmdir "$LOCK_DIR"
+  echo "批量脚本已完成，未产生新的 Hermes 兜底任务：$DECISION"
+  exit 0
+fi
+
+if [ "$GATE_RC" -ne 10 ]; then
+  rmdir "$LOCK_DIR"
+  exit 1
+fi
+```
+
+只有退出码为 `10` 时才进入后续 Hermes 处理。只读取 `$HANDOFF.tasks`，再按任务里的 `item_id` 定向读取 `data/exams.json` 对应条目和 policy 规则。不得通读或重新核验 gate 已标为通过的考试；`suppressed` 不重复处理。
+
+`exam_notice_review`、`status_review` 和 `lifecycle_error` 只处理各自 `item_id`；`source_error` 只诊断报告中指明的来源；`validation_error` 只按 payload 的命令和输出修复对应数据或配置。任务没有 `item_id` 时不得扩展为全量内容巡检；无法安全修复时停止，不得继续发布。
+
 ## 1. 读取并分类当前数据
 
-读取完整的 `data/exams.json` 和 `source-policy.json`，按 `id` 合并得到每项的巡检模式。若 policy 中的 `id` 不在数据里、或模式不认识，停止并报告配置错误。
+仅对 `$HANDOFF.tasks` 指向的条目读取 `data/exams.json` 和 `source-policy.json`，按 `id` 合并得到巡检模式。若任务引用不存在的 `id`、或模式不认识，停止并报告配置错误。
 
 默认模式是 `notice-list`。支持的模式如下：
 
@@ -67,7 +116,7 @@ fi
 | `dynamic-list` | 官方列表由前端渲染；先用浏览器/页面读取器渲染，再提取公开卡片。若 `same_page_notice=true`，列表页本身可以合法地同时作为 `official_url`。 |
 | `national-portal` | 仅核验全国官网/报名入口仍为官方可访问链接；不尝试汇总各省、各校的分散报名信息，也不将它报告为“需人工维护”。 |
 
-同一 `news_list_url` 可共用一次下载，但每个期次必须按自己的 `name`、`schedule` 和 policy 独立判断，不能把 6 月公告误写入 12 月条目。
+同一 `news_list_url` 已由批量探测脚本共用一次下载。Hermes 只处理报告中的未命中、多个候选、新候选或来源错误；每个期次仍必须按自己的 `name`、`schedule` 和 policy 独立判断，不能把 6 月公告误写入 12 月条目。
 
 ## 2. 可靠地获取官方页面
 
@@ -125,14 +174,31 @@ fetch_official() {
 - `timeline`：从原文逐项提取考试、报名、缴费、准考证、成绩等具体日期/时段。原文没有的信息才可使用明确的兜底文案。
 - `schedule`：写具体考试月份或已公布日期，不能写泛化周期。
 - `status`：报名未开始 `pending`；报名进行中 `open`；报名截止且考试未开始 `closed`；考试已结束 `done`。
+- `lifecycle`：状态计算的唯一时间事实源。`timeline`、`schedule`、标题等自然语言字段只负责展示，禁止再从这些字段直接猜状态。
 
-**过期自动状态更新（每次巡检必做）：**
-对 `data/exams.json` 中所有条目，检查当前日期与 `timeline` 中的时间节点：
-- 当前日期已过报名截止日期 且 status 仍为 `open` → 自动改为 `closed`
-- 当前日期已过考试结束日期 且 status 为 `open` 或 `closed` → 自动改为 `done`
-- 日期解析不到时不改状态，保持原值
-- 改状态时只改 `status` 字段，不动其他字段
-- 在完成报告中列出所有自动状态变更
+**结构化生命周期（每次巡检必做）：**
+
+- 有明确报名和考试时间时使用 `mode=scheduled`，按官方事实填写 `registration_start`、`registration_end`、`event_start`、`event_end`。可缺少未知边界，但不得编造；若状态为 `open`，必须有可靠的 `registration_end`，只有开始时间或考试时间不能支撑持续显示“可报名”。
+- 时间边界只允许 `YYYY-MM-DD`，或带 `Z`/时区偏移的 ISO8601 时间戳。使用日期值时必须写 IANA `time_zone`（如 `Asia/Shanghai`、`Europe/London`）；结束日期包含当天。
+- 常年多场项目使用 `mode=rolling`；分地区、无法统一计算的项目使用 `mode=manual`。两者必须填写带时区的 `verified_at` 和 `review_after`，且复核有效期不得超过 72 小时。超过复核时间后前端自动显示“待核验”，不会继续显示“可报名”。
+- 只有官方原文和当前期次能明确支持某个日期时才写入 lifecycle。无年份日期只有在标题/公告明确给出所属年份时才可结构化。
+- 报名结束但考试尚未结束为 `closed`，不得直接写成 `done`。
+
+示例：
+
+```json
+"lifecycle": {
+  "mode": "scheduled",
+  "time_zone": "Asia/Shanghai",
+  "registration_start": "2026-06-12",
+  "registration_end": "2026-07-02",
+  "event_start": "2026-09-05",
+  "event_end": "2026-09-06",
+  "verified_at": "2026-07-15T18:00:00+08:00"
+}
+```
+
+完成字段更新后必须运行 `python3 scripts/check-temporal-status.py --scope exams --fix`，由确定性脚本同步 `status`；不得由 LLM 自行比较自然语言日期。完成报告列出脚本产生的所有状态变更。
 
 新公告仅适用于已有期次时，更新该期次。明确公布下一期而数据不存在时，才新增条目；新条目的稳定字段从同一考试最近期次复制，`id` 仍用不可变的 `{exam-abbr}-{YYYYMM}`。旧期次在考试结束后设为 `done`。不得改写已发布 `id`。
 
@@ -146,14 +212,16 @@ fetch_official() {
 
 ## 5. 写入与验证
 
-若数据确有变化，保持原字段顺序与 2 空格 JSON 格式，更新顶层 `last_updated`（ISO8601，带 `+08:00`）及准确的 `total`。无有效信息变化时不触碰数据文件时间戳。
+保持原字段顺序与 2 空格 JSON 格式，维护准确的 `total`。每次成功完成巡检都更新顶层 `last_updated`（ISO8601，带 `+08:00`）；它表示官方来源最后核验时间，而不是“发现新公告”的时间。
 
 无论是否修改，都必须在提交前执行：
 
 ```bash
 cd "$REPO" || exit 1
 python3 -m json.tool data/exams.json >/dev/null || { rmdir "$LOCK_DIR"; exit 1; }
+python3 scripts/check-temporal-status.py --scope exams --fix || { rmdir "$LOCK_DIR"; exit 1; }
 python3 scripts/validate-exam-sources.py || { rmdir "$LOCK_DIR"; exit 1; }
+python3 scripts/check-carousel-health.py || { rmdir "$LOCK_DIR"; exit 1; }
 git diff --check || { rmdir "$LOCK_DIR"; exit 1; }
 ```
 
@@ -168,19 +236,13 @@ if ! git diff --cached --quiet; then
 fi
 git pull --ff-only || { rmdir "$LOCK_DIR"; exit 1; }
 git push || { rmdir "$LOCK_DIR"; exit 1; }
+python3 "$REPO/scripts/maintenance-gate.py" --scope exams --ack "$HANDOFF" --state "$STATE" || { rmdir "$LOCK_DIR"; exit 1; }
 rmdir "$LOCK_DIR"
 ```
 
-如果无数据变更，仍执行最后的 `git pull --ff-only` 和 `git push` 后释放锁。不得 merge、rebase 或基于过期数据发布。
+成功巡检至少会产生 `last_updated` 变更，因此正常情况下会形成提交；若暂存区仍为空，依旧执行最后的 `git pull --ff-only` 和 `git push` 后释放锁。不得 merge、rebase 或基于过期数据发布。
 
 报告按条目列出四种结果之一：`已更新`、`无相关官方新公告`、`降级巡检（当前公告已核验）`、`官方源暂不可达`。全国入口型项目记为“全国官网已核验”或“全国官网暂不可达”，不生成省级/高校人工维护项。报告应列出实际使用的官方 URL 和更新的时间节点；只有实际改动时才称为“有更新”。
-
-## 频率
-
-- CET、NCRE、NTCE：每月一次；考前两个月每周一次。
-- 软考、CATTI、会计、CPA：每月一次。
-- 国考、考研、保研：每月一次；报名季每周一次。
-- ACCA、IELTS、TOEFL、PAT：每月一次；已进入报名窗口可每周一次。
 
 ## 注意事项
 

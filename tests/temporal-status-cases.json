@@ -1,0 +1,185 @@
+[
+  {
+    "name": "exam before registration",
+    "kind": "exam",
+    "now": "2026-05-31T15:59:00Z",
+    "item": {
+      "status": "done",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-06-01",
+        "registration_end": "2026-06-30",
+        "event_start": "2026-08-09",
+        "event_end": "2026-08-10"
+      }
+    },
+    "expected": "pending"
+  },
+  {
+    "name": "exam registration open",
+    "kind": "exam",
+    "now": "2026-06-15T04:00:00Z",
+    "item": {
+      "status": "pending",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-06-01",
+        "registration_end": "2026-06-30",
+        "event_start": "2026-08-09",
+        "event_end": "2026-08-10"
+      }
+    },
+    "expected": "open"
+  },
+  {
+    "name": "exam registration closed but exam not ended",
+    "kind": "exam",
+    "now": "2026-07-15T04:00:00Z",
+    "item": {
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-06-01",
+        "registration_end": "2026-06-30",
+        "event_start": "2026-08-09",
+        "event_end": "2026-08-10"
+      }
+    },
+    "expected": "closed"
+  },
+  {
+    "name": "exam ended",
+    "kind": "exam",
+    "now": "2026-08-10T16:00:00Z",
+    "item": {
+      "status": "closed",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-06-01",
+        "registration_end": "2026-06-30",
+        "event_start": "2026-08-09",
+        "event_end": "2026-08-10"
+      }
+    },
+    "expected": "done"
+  },
+  {
+    "name": "competition registration wins over ongoing event",
+    "kind": "competition",
+    "now": "2026-07-15T04:00:00Z",
+    "item": {
+      "status": "ongoing",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-06-01",
+        "registration_end": "2026-07-20",
+        "event_start": "2026-07-01",
+        "event_end": "2026-07-31"
+      }
+    },
+    "expected": "open"
+  },
+  {
+    "name": "competition registration closed before event",
+    "kind": "competition",
+    "now": "2026-07-21T04:00:00Z",
+    "item": {
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-07-20",
+        "event_start": "2026-08-01",
+        "event_end": "2026-08-05"
+      }
+    },
+    "expected": "closed"
+  },
+  {
+    "name": "competition ongoing",
+    "kind": "competition",
+    "now": "2026-07-16T04:00:00Z",
+    "item": {
+      "status": "closed",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-07-10",
+        "event_start": "2026-07-15",
+        "event_end": "2026-07-20"
+      }
+    },
+    "expected": "ongoing"
+  },
+  {
+    "name": "competition ended",
+    "kind": "competition",
+    "now": "2026-07-20T16:00:00Z",
+    "item": {
+      "status": "ongoing",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-07-10",
+        "event_start": "2026-07-15",
+        "event_end": "2026-07-20"
+      }
+    },
+    "expected": "done"
+  },
+  {
+    "name": "offset deadline still open before exact instant",
+    "kind": "exam",
+    "now": "2026-08-03T22:58:00Z",
+    "item": {
+      "status": "pending",
+      "lifecycle": {
+        "mode": "scheduled",
+        "registration_end": "2026-08-03T23:59:00+01:00"
+      }
+    },
+    "expected": "open"
+  },
+  {
+    "name": "offset deadline closes after exact instant",
+    "kind": "exam",
+    "now": "2026-08-03T23:00:00Z",
+    "item": {
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "registration_end": "2026-08-03T23:59:00+01:00"
+      }
+    },
+    "expected": "closed"
+  },
+  {
+    "name": "rolling preserves status",
+    "kind": "exam",
+    "now": "2027-01-01T00:00:00Z",
+    "item": {
+      "status": "open",
+      "lifecycle": {
+        "mode": "rolling",
+        "verified_at": "2026-12-30T00:00:00+08:00",
+        "review_after": "2027-01-02T00:00:00+08:00"
+      }
+    },
+    "expected": "open"
+  },
+  {
+    "name": "missing lifecycle preserves status",
+    "kind": "competition",
+    "now": "2027-01-01T00:00:00Z",
+    "item": {
+      "status": "pending",
+      "signup": "7月18日"
+    },
+    "expected": "pending"
+  }
+]

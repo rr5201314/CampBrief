@@ -1,16 +1,6 @@
 ---
 name: campbrief-daily-news
-description: CampBrief 每日资讯自动化（非 juya 源）——采集除 juya AI 日报外的 RSS 候选、做编辑筛选决策、生成中文摘要与分类、更新数据并推送 GitHub
-category: CampBrief
-tags: [rss, news, automation, github, daily]
-platforms: [termux, linux, darwin]
-metadata:
-  hermes:
-    config:
-      - key: campbrief.repo_path
-        description: CampBrief 仓库在本机的克隆路径
-        default: ~/projects/CampBrief
-        prompt: CampBrief 仓库路径
+description: 维护非 juya 资讯；脚本批量校验，Hermes 只处理例外并安全发布.
 ---
 
 # CampBrief 每日资讯自动化（非 juya 源）
@@ -25,7 +15,13 @@ juya AI 日报由独立 skill `campbrief-daily-news-juya` 处理，本 skill 不
 
 ## 仓库路径
 
-下方 Skill config 中注入的 `campbrief.repo_path` 是仓库根目录。后续所有路径都基于它，记为 `$REPO`。如果配置值以 `~` 开头，先展开为家目录绝对路径再使用。
+本文件不注册到 Hermes skill 目录，也不依赖 skill config 注入。把 ccron 提示词中“执行此流程”后面的本文件绝对路径原样赋给 `SKILL_FILE`，再由文件位置确定仓库根目录：
+
+```bash
+# SKILL_FILE 的值必须直接取自本次 ccron 提示词，不得猜测或复用旧路径
+REPO="$(cd "$(dirname "$SKILL_FILE")/../../../../.." && pwd)" || exit 1
+test -f "$REPO/AGENTS.md" || exit 1
+```
 
 ## 执行步骤
 
@@ -33,7 +29,7 @@ juya AI 日报由独立 skill `campbrief-daily-news-juya` 处理，本 skill 不
 
 ### 0. 同步并保护工作区
 
-手机是本流程的唯一自动执行端。开始前必须保证本地仓库没有未提交的跟踪文件改动，并同步远程的已发布数据；这样不会把人工改动、另一个 cron 的结果或上次失败任务混进本次提交。
+手机是本流程的唯一自动执行端。开始前必须保证本地仓库没有未提交的跟踪文件改动，并同步远程的已发布数据；这样不会把人工改动、另一个 ccron 的结果或上次失败任务混进本次提交。
 
 ```bash
 cd "$REPO"
@@ -53,11 +49,11 @@ fi
 
 只有工作区干净、`git pull --ff-only` 和用于重试上次遗留提交的 `git push` 都成功，且成功取得全局锁后，才可以继续。任一命令失败都要**安全停止本次任务**并报告原因；不得在有未提交改动的工作区继续、不得用 merge/rebase 解决冲突、不得基于过期数据继续发布。
 
-`$LOCK_DIR` 保护三个 cron 对同一工作树和发布文件的写入。取得锁后，若后续因候选为空、核验失败或其他原因需要停止，必须先执行 `rmdir "$LOCK_DIR"` 再报告；不能删除启动前已存在的锁。任务异常崩溃后保留锁，优先阻止并发写入，交由人工确认后再清理。
+`$LOCK_DIR` 保护四个 ccron 对同一工作树和发布文件的写入。取得锁后，若后续因候选为空、核验失败或其他原因需要停止，必须先执行 `rmdir "$LOCK_DIR"` 再报告；不能删除启动前已存在的锁。任务异常崩溃后保留锁，优先阻止并发写入，交由人工确认后再清理。
 
 ### 1. 在手机本地采集非 juya 候选池
 
-每次 cron 都必须主动采集，不读取、不复用仓库中的 `data/daily-news-raw.json`。候选只属于当前手机任务，写入被 Git 忽略的本地目录；成功推送后必须清空，既避免两个批次互相覆盖，也避免候选池堆积。
+每次 ccron 调用都必须主动采集，不读取、不复用仓库中的 `data/daily-news-raw.json`。候选只属于当前手机任务，写入被 Git 忽略的本地目录；成功推送后必须清空，既避免两个批次互相覆盖，也避免候选池堆积。
 
 ```bash
 mkdir -p "$REPO/local-notes/candidate-pools"
@@ -67,30 +63,89 @@ python3 "$REPO/scripts/collect-daily-news.py" \
   --output "$CANDIDATE_POOL"
 ```
 
-脚本会把非 juya 源的归一化候选写入 `$CANDIDATE_POOL`，且只保留北京时间今天和前一天的内容；前一天仅用于采集延迟或前次任务失败时的兜底。读取结果：`total == 0` 时停止本次任务并报告 `errors`，不得动现有发布数据；部分源失败只有在本批仍有候选时才可继续。每次执行都重新抓取，以免早些时候的失败或旧候选被误发布。
+脚本会把非 juya 源的归一化候选写入 `$CANDIDATE_POOL`，且只保留北京时间今天和前一天的内容；前一天仅用于采集延迟或前次任务失败时的兜底。无论候选为空、部分源失败还是脚本未能生成文件，都继续进入 gate，由脚本把 `errors`、缺失报告和空候选与已有数据的关系统一判定；不得在 gate 前改动现有发布数据。每次执行都重新抓取，以免早些时候的失败或旧候选被误发布。
 
 ### 1.1 同步 GitHub 趋势榜单
 
 GitHub 趋势也是手机端职责，不再依赖 GitHub Actions。运行：
 
 ```bash
-python3 "$REPO/scripts/collect-github-trending.py"
+GITHUB_ERROR="$REPO/local-notes/maintenance/github-trending-error.txt"
+mkdir -p "$REPO/local-notes/maintenance"
+rm -f "$GITHUB_ERROR"
+if ! python3 "$REPO/scripts/collect-github-trending.py"; then
+  echo "GitHub Trending 采集脚本失败" > "$GITHUB_ERROR"
+fi
 ```
 
-脚本成功后，读取 `$REPO/data/github-trending.json`；对本次新增或更新榜单中的**每个 repo**，补全 `chinese_summary`（中文概述）和 `solves_what`（它解决的问题）。必须基于项目 README、仓库描述或官网保守表述，无法核验时不编造。
+脚本成功后不要在 gate 前通读 `$REPO/data/github-trending.json` 或逐条补写。gate 会把本次仍缺少 `chinese_summary`（中文概述）或 `solves_what`（它解决的问题）的 repo 生成独立 `content_completion`；只有退出码 `10` 后才按这些任务定向读取 README、仓库描述或官网并保守补全，无法核验时不编造。
 
-**硬性要求：每个 repo 的 `chinese_summary` 必须是非空中文字符串，不得留空。** 写入前逐条检查：若某条 `chinese_summary` 为空或全为英文，必须补写后再写入文件。这是前端展示的唯一中文来源，缺失会导致用户看到英文原文。
+**硬性要求：每个 repo 的 `chinese_summary` 与 `solves_what` 都必须是非空中文字符串。** 发布前由 `validate-github-trending.py` 逐条检查；缺失或全为英文时不得发布。
 
 脚本本身失败时记录原因，但不回退已有趋势数据，也不因此中止 RSS 资讯的编辑流程。
+
+### 1.2 脚本批量判定与 Hermes 短路
+
+候选和趋势榜采集后先运行原文链接批量检查与统一 gate。它会批量完成已发布候选去重、链接状态分类、数据校验、轮播检查、GitHub 中文字段检查和重复异常抑制；调度频率不由本 skill 定义。
+
+```bash
+HANDOFF="$REPO/local-notes/maintenance/daily-news-handoff.json"
+STATE="$REPO/local-notes/maintenance/daily-news-state.json"
+LINK_REPORT="$REPO/local-notes/maintenance/daily-news-link-report.json"
+rm -f "$LINK_REPORT"
+python3 "$REPO/scripts/check-daily-news-links.py" \
+  --exclude-source "juya AI 日报" \
+  --report "$LINK_REPORT" || true
+
+GATE_RC=0
+python3 "$REPO/scripts/maintenance-gate.py" \
+  --scope daily-news --touch-last-updated \
+  --candidate-pool "rss=$CANDIDATE_POOL" \
+  --error-marker "github-trending=$GITHUB_ERROR" \
+  --daily-link-report "$LINK_REPORT" \
+  --report "$HANDOFF" --state "$STATE" || GATE_RC=$?
+
+if [ "$GATE_RC" -eq 20 ]; then
+  rmdir "$LOCK_DIR"
+  exit 1
+fi
+
+if [ "$GATE_RC" -eq 0 ]; then
+  DECISION=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1], encoding="utf-8"))["decision"])' "$HANDOFF")
+  if [ "$DECISION" = "script_changes_ready" ]; then
+    python3 "$REPO/scripts/validate-daily-news.py" || { rmdir "$LOCK_DIR"; exit 1; }
+    python3 "$REPO/scripts/validate-github-trending.py" || { rmdir "$LOCK_DIR"; exit 1; }
+    python3 "$REPO/scripts/check-carousel-health.py" || { rmdir "$LOCK_DIR"; exit 1; }
+    git -C "$REPO" diff --check || { rmdir "$LOCK_DIR"; exit 1; }
+    git add -- data/daily-news.json data/github-trending.json
+    if ! git diff --cached --quiet; then
+      git commit -m "chore(daily-news): batch maintenance $(date +%Y-%m-%d)" || { rmdir "$LOCK_DIR"; exit 1; }
+    fi
+    git pull --ff-only || { rmdir "$LOCK_DIR"; exit 1; }
+    git push || { rmdir "$LOCK_DIR"; exit 1; }
+  fi
+  rm -f "$CANDIDATE_POOL" "$GITHUB_ERROR"
+  rmdir "$LOCK_DIR"
+  echo "批量脚本已完成，未产生新的 Hermes 兜底任务：$DECISION"
+  exit 0
+fi
+
+if [ "$GATE_RC" -ne 10 ]; then
+  rmdir "$LOCK_DIR"
+  exit 1
+fi
+```
+
+只有退出码为 `10` 时才进入后续编辑。只读取 `$HANDOFF.tasks`；`suppressed` 是近期已经交接过且内容未变化的异常，不重复处理，也不得重新通读完整候选池。
 
 ### 2. 读取候选与已有数据
 
 读取这两个文件：
 
-- `$CANDIDATE_POOL` —— 本次候选池，`candidates` 数组
+- `$HANDOFF` —— 仅包含本次新增或内容变化的候选、来源错误与待补字段
 - `$REPO/data/daily-news.json` —— 当前已发布数据，`items` 数组（可能为空）
 
-本候选池已在采集时排除 juya AI 日报；若仍意外出现 `source` 为 `juya AI 日报` 的条目，必须丢弃，不得在本 skill 发布。
+后文的 `candidates` 仅指 `$HANDOFF.tasks` 中 `candidate_review.payload` 的集合。本候选池已在采集时排除 juya AI 日报；若交接任务仍意外出现 `source` 为 `juya AI 日报` 的条目，必须丢弃，不得在本 skill 发布。`content_completion` 只补对应 GitHub repo 的缺失字段，`source_error` 只诊断对应失败源，`link_review` 只复核任务 payload 中列出的 URL 与 `ids`。`validation_error` 只按 payload 的命令和输出修复对应数据或配置；无法安全修复时停止，不得继续发布。
 
 ### 3. 编辑筛选（核心环节）
 
@@ -234,18 +289,14 @@ python3 "$REPO/scripts/collect-github-trending.py"
 - 写完后运行以下校验；任何报错都不得发布，先修复数据：
 
   ```bash
-  python3 "$REPO/scripts/validate-daily-news.py" --assign-ids
-  python3 "$REPO/scripts/validate-daily-news.py"
+  python3 "$REPO/scripts/validate-daily-news.py" --assign-ids || { rmdir "$LOCK_DIR"; exit 1; }
+  python3 "$REPO/scripts/validate-daily-news.py" || { rmdir "$LOCK_DIR"; exit 1; }
+  python3 "$REPO/scripts/validate-github-trending.py" || { rmdir "$LOCK_DIR"; exit 1; }
+  python3 "$REPO/scripts/check-carousel-health.py" || { rmdir "$LOCK_DIR"; exit 1; }
+  git -C "$REPO" diff --check || { rmdir "$LOCK_DIR"; exit 1; }
   ```
 
-- 随后检查全量已发布资讯的原文链接并写入报告：
-
-  ```bash
-  python3 "$REPO/scripts/check-daily-news-links.py" \
-    --report "$REPO/local-notes/daily-news-link-report.json"
-  ```
-
-- 按报告处理结果：`broken` 必须修复或按报告里的 `ids` 移除后才能发布；`restricted`（401/403/429）和 `error` 不能仅凭自动请求结果删除，先用浏览器或原始 RSS 核验。新增条目无法独立确认时，不发布；已有条目则记录在完成报告中，等待人工复核。
+- 对 gate 交接的 `link_review`：`broken` 必须核验后修复或按 payload 的 `ids` 移除；`restricted`（401/403/429）和 `error` 不能仅凭自动请求结果删除，只定向使用浏览器或原始 RSS 复核该 URL。不得再次检查报告中状态为 `ok` 的链接。
 
 - 校验通过后重新读一次该文件，确认 JSON 合法、`items` 数量与 `total` 一致、每条都有非空的 `summary`、`detail` 和 `category`。
 
@@ -264,6 +315,7 @@ else
 fi
 git pull --ff-only || { rmdir "$LOCK_DIR"; exit 1; }
 git push || { rmdir "$LOCK_DIR"; exit 1; }
+python3 "$REPO/scripts/maintenance-gate.py" --scope daily-news --ack "$HANDOFF" --state "$STATE" || { rmdir "$LOCK_DIR"; exit 1; }
 rm -f "$CANDIDATE_POOL"
 rmdir "$LOCK_DIR"
 ```

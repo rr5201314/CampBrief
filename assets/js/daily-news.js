@@ -447,7 +447,7 @@ function pickNewsCarouselItems(items) {
   let result = recent.filter(i => (i.priority || 1) >= 4);
   // 不足3个则补充 priority >= 3
   if (result.length < 3) {
-    const p3 = recent.filter(i => (i.priority || 1) === 3 && !result.find(r => r.url === i.url));
+    const p3 = recent.filter(i => (i.priority || 1) === 3 && !result.find(r => r.id === i.id));
     result = result.concat(p3);
   }
   // 按发布时间降序

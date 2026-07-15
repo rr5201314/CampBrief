@@ -12,6 +12,8 @@ const STATUS_CLASS = {
   open: "status-open",
   pending: "status-pending",
   closed: "status-closed",
+  ongoing: "status-ongoing",
+  unknown: "status-pending",
   done: "status-done"
 };
 
@@ -254,7 +256,9 @@ const COMPETITION_TIER_ORDER = { official: 0, enterprise: 1, hobby: 2 };
 const COMPETITION_STATUS_LABEL = {
   pending: "未开始",
   open: "可报名",
+  closed: "报名截止",
   ongoing: "比赛中",
+  unknown: "待核验",
   done: "已完赛"
 };
 
@@ -262,6 +266,7 @@ const EXAM_STATUS_LABEL = {
   open: "可报名",
   pending: "未开始",
   closed: "报名截止",
+  unknown: "待核验",
   done: "已结束"
 };
 
@@ -294,17 +299,21 @@ async function loadExamBoardData(){
     if(!Array.isArray(data.items)) throw new Error("考试数据格式无效");
     // 首页只承担“现在能行动”的提醒：仅展示当前可报名项目。
     // 待报名、报名截止和已结束项目仍可在完整考试栏目中查询。
+    // 使用 effectiveStatus 做日期兜底，避免 skill 未及时更新时展示过期 open 条目。
     return data.items
-      .filter(item => item.status === "open")
-      .map(item => ({
-        id: item.id || "",
-        title: item.name || "未命名考试",
-        status: item.status || "pending",
-        statusLabel: EXAM_STATUS_LABEL[item.status] || "待确认",
-        date: item.schedule || "时间待官方公布",
-        org: officialSourceName(item),
-        desc: item.summary || "请以官方公告为准。"
-      }));
+      .filter(item => CampBriefContent.effectiveStatus(item, { kind: "exam", requireLifecycle: true }) === "open")
+      .map(item => {
+        const itemStatus = CampBriefContent.effectiveStatus(item, { kind: "exam", requireLifecycle: true });
+        return {
+          id: item.id || "",
+          title: item.name || "未命名考试",
+          status: itemStatus || "pending",
+          statusLabel: EXAM_STATUS_LABEL[itemStatus] || "待确认",
+          date: item.schedule || "时间待官方公布",
+          org: officialSourceName(item),
+          desc: item.summary || "请以官方公告为准。"
+        };
+      });
   } catch(error) {
     console.warn("无法加载考试数据：", error);
     return [];
@@ -332,18 +341,22 @@ async function loadCompetitionBoardData(){
     if (!Array.isArray(data.items)) throw new Error("竞赛数据格式无效");
 
     // 首页只展示当前可直接报名的竞赛；其他状态保留在完整竞赛栏目中查询。
+    // 使用 effectiveStatus 做日期兜底，避免 skill 未及时更新时展示过期 open 条目。
     return data.items
-      .filter(item => item.status === "open")
+      .filter(item => CampBriefContent.effectiveStatus(item, { kind: "competition", requireLifecycle: true }) === "open")
       .sort(compareHomeCompetitions)
-      .map(item => ({
-        id: item.id || "",
-        title: item.name || "未命名竞赛",
-        status: item.status || "pending",
-        statusLabel: (data.status_map?.[item.status]?.label) || COMPETITION_STATUS_LABEL[item.status] || "待确认",
-        date: item.signup || item.schedule || "时间待官方公布",
-        prize: (data.tiers || []).find(tier => tier.key === item.tier)?.label || "",
-        desc: item.summary || "请以官方公告为准。"
-      }));
+      .map(item => {
+        const itemStatus = CampBriefContent.effectiveStatus(item, { kind: "competition", requireLifecycle: true });
+        return {
+          id: item.id || "",
+          title: item.name || "未命名竞赛",
+          status: itemStatus || "pending",
+          statusLabel: (data.status_map?.[itemStatus]?.label) || COMPETITION_STATUS_LABEL[itemStatus] || "待确认",
+          date: item.signup || item.schedule || "时间待官方公布",
+          prize: (data.tiers || []).find(tier => tier.key === item.tier)?.label || "",
+          desc: item.summary || "请以官方公告为准。"
+        };
+      });
   } catch (error) {
     console.warn("无法加载竞赛数据", error);
     return [];

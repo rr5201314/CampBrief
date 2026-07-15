@@ -15,7 +15,8 @@
   const STATUS_LABEL = {
     open: { text: "可报名", icon: "i-unlock", cls: "status-open" },
     pending: { text: "未开始", icon: "i-clock", cls: "status-pending" },
-    closed: { text: "不可报名", icon: "i-lock", cls: "status-closed" },
+    closed: { text: "报名截止", icon: "i-lock", cls: "status-closed" },
+    unknown: { text: "待核验", icon: "i-clock", cls: "status-pending" },
     done: { text: "已结束", icon: "i-check", cls: "status-done" }
   };
 
@@ -89,7 +90,8 @@
   function renderDetail(item) {
     const el = document.getElementById("examDetail");
     const cat = CATEGORY_LABELS[item.category] || { text: item.category, icon: "i-info" };
-    const status = STATUS_LABEL[item.status] || { text: item.status, icon: "i-clock", cls: "" };
+    const itemStatus = CampBriefContent.effectiveStatus(item, { kind: "exam", requireLifecycle: true });
+    const status = STATUS_LABEL[itemStatus] || { text: itemStatus, icon: "i-clock", cls: "" };
 
     document.title = `${item.name} - 简豹考试`;
 
@@ -135,7 +137,7 @@
     `;
 
     // 操作按钮：立即报名→official_site，考试官网→official_portal，查看官方公告→official_url
-    const primaryLabel = item.status === "open" ? "立即报名" : "访问报名系统";
+    const primaryLabel = itemStatus === "open" ? "立即报名" : "查看官方渠道";
     const actions = `
       <div class="exam-detail-actions">
         ${item.official_site ? `<a href="${escapeHtml(item.official_site)}" target="_blank" rel="noopener" class="btn btn-primary">${primaryLabel} <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>` : ""}
