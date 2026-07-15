@@ -1,8 +1,154 @@
 {
-  "last_updated": "2026-07-14T10:38:37.800613+08:00",
+  "last_updated": "2026-07-15T08:34:06.123011+08:00",
   "source": "GitHub Trending",
-  "total": 6,
+  "total": 7,
   "items": [
+    {
+      "id": "github-daily-2026-07-15",
+      "title": "7月15日 GitHub趋势日榜",
+      "url": "https://github.com/trending?since=daily",
+      "date": "2026-07-15",
+      "published": "2026-07-15T08:34:06.123011+08:00",
+      "summary": "7月15日 GitHub趋势日榜，Top 10 项目涵盖 Python、Shell、Rust 等，今日社区最受关注的开源项目。",
+      "detail": "1c7/chinese-independent-developer - 👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么\nShubhamsaboo/awesome-llm-apps - 100+ AI Agent & RAG apps you can actually run — clone, customize, ship.\nmattpocock/skills - Skills for Real Engineers. Straight from my .claude directory.\nDicklesworthstone/destructive_command_guard - The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.\nOpenCut-app/OpenCut - The open-source CapCut alternative\nvirattt/ai-hedge-fund - An AI Hedge Fund Team\nNutlope/hallmark - Anti-AI-slop design skill for Claude Code, Cursor, and Codex.\nHKUDS/Vibe-Trading - \"Vibe-Trading: Your Personal Trading Agent\"\nRaphire/Win11Debloat - A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.\nhasaneyldrm/exercises-dataset - 1,324-exercise fitness dataset — animation GIFs, 180×180 thumbnails, muscle-group & equipment data, and step-by-step instructions in 6 languages. The exercise data layer behind the LogPress app.",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "github",
+      "source": "GitHub Trending",
+      "trend_type": "daily",
+      "repos": [
+        {
+          "rank": 1,
+          "name": "1c7/chinese-independent-developer",
+          "url": "https://github.com/1c7/chinese-independent-developer",
+          "language": "Python",
+          "stars": 53496,
+          "forks": 4697,
+          "stars_delta": 1196,
+          "trend_period": "today",
+          "description": "👩🏿‍💻👨🏾‍💻👩🏼‍💻👨🏽‍💻👩🏻‍💻中国独立开发者项目列表 -- 分享大家都在做什么",
+          "chinese_summary": "收录中国独立开发者项目的开源列表，涵盖各类个人开发产品和工具，是了解国内独立开发者生态的综合索引。",
+          "solves_what": "帮助独立开发者发现同行项目、获取灵感，并为中国独立开发社区提供集中展示平台。"
+        },
+        {
+          "rank": 2,
+          "name": "Shubhamsaboo/awesome-llm-apps",
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+          "language": "Python",
+          "stars": 120772,
+          "forks": 17874,
+          "stars_delta": 1106,
+          "trend_period": "today",
+          "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
+          "chinese_summary": "汇集 100 多个基于大语言模型的 AI Agent 和 RAG 应用实例，涵盖高级 Agent、聊天机器人和检索增强生成等多种场景。",
+          "solves_what": "为开发者提供可直接克隆和定制的 LLM 应用模板，降低 AI 应用开发门槛。"
+        },
+        {
+          "rank": 3,
+          "name": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills",
+          "language": "Shell",
+          "stars": 170205,
+          "forks": 14643,
+          "stars_delta": 1679,
+          "trend_period": "today",
+          "description": "Skills for Real Engineers. Straight from my .claude directory.",
+          "chinese_summary": "TypeScript 核心贡献者 Matt Pocock 开源的 Claude Code 技能集，包含面向真实工程场景的 AI 编程辅助指令和工作流。",
+          "solves_what": "为使用 AI 编程助手的工程师提供经过实战检验的技能模板，提升 AI 辅助编码的效率和质量。"
+        },
+        {
+          "rank": 4,
+          "name": "Dicklesworthstone/destructive_command_guard",
+          "url": "https://github.com/Dicklesworthstone/destructive_command_guard",
+          "language": "Rust",
+          "stars": 4400,
+          "forks": 165,
+          "stars_delta": 473,
+          "trend_period": "today",
+          "description": "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.",
+          "chinese_summary": "用 Rust 编写的命令安全防护工具，可拦截 AI Agent 执行危险的 git 和 shell 命令，防止误删文件或破坏仓库。",
+          "solves_what": "解决 AI 编程代理可能执行破坏性命令（如 git reset --hard、rm -rf）的安全风险，为自动化工作流提供防护层。"
+        },
+        {
+          "rank": 5,
+          "name": "OpenCut-app/OpenCut",
+          "url": "https://github.com/OpenCut-app/OpenCut",
+          "language": "TypeScript",
+          "stars": 69167,
+          "forks": 7207,
+          "stars_delta": 4276,
+          "trend_period": "today",
+          "description": "The open-source CapCut alternative",
+          "chinese_summary": "开源视频编辑器，定位为 CapCut（剪映）的替代方案，支持时间线编辑、多轨处理等专业功能，代码完全开放。",
+          "solves_what": "为需要免费、开源视频编辑工具的用户提供隐私友好且无广告的剪辑方案，摆脱商业软件限制。"
+        },
+        {
+          "rank": 6,
+          "name": "virattt/ai-hedge-fund",
+          "url": "https://github.com/virattt/ai-hedge-fund",
+          "language": "Python",
+          "stars": 61867,
+          "forks": 10914,
+          "stars_delta": 109,
+          "trend_period": "today",
+          "description": "An AI Hedge Fund Team",
+          "chinese_summary": "基于 AI 的对冲基金模拟项目，使用多个 AI Agent 协作完成股票分析、风险评估和投资决策，包含完整的投资决策流程。",
+          "solves_what": "为学习量化投资和 AI 金融应用的开发者提供可运行的参考实现，展示多 Agent 协作的投资分析框架。"
+        },
+        {
+          "rank": 7,
+          "name": "Nutlope/hallmark",
+          "url": "https://github.com/Nutlope/hallmark",
+          "language": "CSS",
+          "stars": 6133,
+          "forks": 350,
+          "stars_delta": 1015,
+          "trend_period": "today",
+          "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+          "chinese_summary": "面向 Claude Code、Cursor 和 Codex 等 AI 编程工具的反 AI 味设计技能，帮助 AI 生成的前端代码摆脱千篇一律的 AI 风格。",
+          "solves_what": "解决 AI 生成的网页和 UI 设计同质化严重的问题，让 AI 辅助产出的界面更具设计感和辨识度。"
+        },
+        {
+          "rank": 8,
+          "name": "HKUDS/Vibe-Trading",
+          "url": "https://github.com/HKUDS/Vibe-Trading",
+          "language": "Python",
+          "stars": 22840,
+          "forks": 3919,
+          "stars_delta": 1256,
+          "trend_period": "today",
+          "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
+          "chinese_summary": "香港大学数据科学实验室推出的个人化交易 Agent，结合大语言模型进行市场分析和交易决策，支持前端可视化。",
+          "solves_what": "将 LLM 的推理能力应用于个人化交易场景，为研究 AI 与金融交叉领域提供开源实验平台。"
+        },
+        {
+          "rank": 9,
+          "name": "Raphire/Win11Debloat",
+          "url": "https://github.com/Raphire/Win11Debloat",
+          "language": "PowerShell",
+          "stars": 51667,
+          "forks": 2127,
+          "stars_delta": 783,
+          "trend_period": "today",
+          "description": "A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.",
+          "chinese_summary": "轻量级 PowerShell 脚本，一键移除 Windows 10/11 预装应用、禁用遥测数据收集，精简和自定义系统体验。",
+          "solves_what": "帮助 Windows 用户快速清理系统臃肿软件和隐私侵入功能，恢复干净流畅的操作体验。"
+        },
+        {
+          "rank": 10,
+          "name": "hasaneyldrm/exercises-dataset",
+          "url": "https://github.com/hasaneyldrm/exercises-dataset",
+          "language": "HTML",
+          "stars": 13500,
+          "forks": 1613,
+          "stars_delta": 851,
+          "trend_period": "today",
+          "description": "1,324-exercise fitness dataset — animation GIFs, 180×180 thumbnails, muscle-group & equipment data, and step-by-step instructions in 6 languages. The exercise data layer behind the LogPress app.",
+          "chinese_summary": "包含 1324 个健身动作的开源数据集，提供 GIF 动画演示、缩略图、目标肌群和器材信息，支持 6 种语言。",
+          "solves_what": "为健身类应用开发者提供标准化的运动数据资源，避免从零构建动作数据库的高昂成本。"
+        }
+      ]
+    },
     {
       "id": "github-daily-2026-07-14",
       "title": "7月14日 GitHub趋势日榜",
@@ -27,8 +173,8 @@
           "stars_delta": 1229,
           "trend_period": "today",
           "description": "The open-source CapCut alternative",
-          "chinese_summary": "开源免费的视频编辑工具，定位为 CapCut（剪映）的替代品。",
-          "solves_what": "提供免费开源的视频剪辑方案，免去商业软件订阅费用。"
+          "chinese_summary": "开源视频编辑器，定位为 CapCut（剪映）的替代方案，支持时间线编辑、多轨处理等专业功能，代码完全开放。",
+          "solves_what": "为需要免费、开源视频编辑工具的用户提供隐私友好且无广告的剪辑方案，摆脱商业软件限制。"
         },
         {
           "rank": 2,
@@ -40,8 +186,8 @@
           "stars_delta": 1153,
           "trend_period": "today",
           "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
-          "chinese_summary": "香港大学数据科学团队推出的个人交易智能体项目。",
-          "solves_what": "帮助用户构建可定制的 AI 交易助手，降低量化交易门槛。"
+          "chinese_summary": "香港大学数据科学实验室推出的个人化交易 Agent，结合大语言模型进行市场分析和交易决策，支持前端可视化。",
+          "solves_what": "将 LLM 的推理能力应用于个人化交易场景，为研究 AI 与金融交叉领域提供开源实验平台。"
         },
         {
           "rank": 3,
@@ -66,8 +212,8 @@
           "stars_delta": 996,
           "trend_period": "today",
           "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
-          "chinese_summary": "收录 100 多个可直接运行的 AI Agent 与 RAG 应用示例。",
-          "solves_what": "提供大量可上手的大模型应用模板，快速入门 AI 开发。"
+          "chinese_summary": "汇集 100 多个基于大语言模型的 AI Agent 和 RAG 应用实例，涵盖高级 Agent、聊天机器人和检索增强生成等多种场景。",
+          "solves_what": "为开发者提供可直接克隆和定制的 LLM 应用模板，降低 AI 应用开发门槛。"
         },
         {
           "rank": 5,
@@ -79,8 +225,8 @@
           "stars_delta": 794,
           "trend_period": "today",
           "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-          "chinese_summary": "为 Claude Code、Cursor 等 AI 编程工具提供的反 AI 风格设计技能。",
-          "solves_what": "帮助 AI 编程助手生成更高质量、不千篇一律的前端设计。"
+          "chinese_summary": "面向 Claude Code、Cursor 和 Codex 等 AI 编程工具的反 AI 味设计技能，帮助 AI 生成的前端代码摆脱千篇一律的 AI 风格。",
+          "solves_what": "解决 AI 生成的网页和 UI 设计同质化严重的问题，让 AI 辅助产出的界面更具设计感和辨识度。"
         },
         {
           "rank": 6,
@@ -92,8 +238,8 @@
           "stars_delta": 118,
           "trend_period": "today",
           "description": "A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.",
-          "chinese_summary": "Windows 11/10 系统精简工具，一键移除预装应用和遥测。",
-          "solves_what": "清理 Windows 预装软件、关闭数据收集，让系统更轻量干净。"
+          "chinese_summary": "轻量级 PowerShell 脚本，一键移除 Windows 10/11 预装应用、禁用遥测数据收集，精简和自定义系统体验。",
+          "solves_what": "帮助 Windows 用户快速清理系统臃肿软件和隐私侵入功能，恢复干净流畅的操作体验。"
         },
         {
           "rank": 7,
@@ -118,8 +264,8 @@
           "stars_delta": 451,
           "trend_period": "today",
           "description": "1,324-exercise fitness dataset — animation GIFs, 180×180 thumbnails, muscle-group & equipment data, and step-by-step instructions in 6 languages. The exercise data layer behind the LogPress app.",
-          "chinese_summary": "包含 1324 个健身动作的数据集，含 GIF 动画和多语言说明。",
-          "solves_what": "为健身应用提供标准化动作数据，方便开发运动类应用。"
+          "chinese_summary": "包含 1324 个健身动作的开源数据集，提供 GIF 动画演示、缩略图、目标肌群和器材信息，支持 6 种语言。",
+          "solves_what": "为健身类应用开发者提供标准化的运动数据资源，避免从零构建动作数据库的高昂成本。"
         },
         {
           "rank": 9,
@@ -173,8 +319,8 @@
           "stars_delta": 444,
           "trend_period": "today",
           "description": "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.",
-          "chinese_summary": "一个用 Rust 编写的守护工具，用于拦截 AI 代理执行危险 git 与 shell 命令。",
-          "solves_what": "防止 AI 编程助手误删仓库或执行破坏性命令，保护代码安全。"
+          "chinese_summary": "用 Rust 编写的命令安全防护工具，可拦截 AI Agent 执行危险的 git 和 shell 命令，防止误删文件或破坏仓库。",
+          "solves_what": "解决 AI 编程代理可能执行破坏性命令（如 git reset --hard、rm -rf）的安全风险，为自动化工作流提供防护层。"
         },
         {
           "rank": 2,
@@ -199,8 +345,8 @@
           "stars_delta": 768,
           "trend_period": "today",
           "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
-          "chinese_summary": "HKUDS 推出的个人交易智能体项目，帮助用户实现交易决策自动化。",
-          "solves_what": "提供可定制的 AI 交易助手，降低量化交易入门门槛。"
+          "chinese_summary": "香港大学数据科学实验室推出的个人化交易 Agent，结合大语言模型进行市场分析和交易决策，支持前端可视化。",
+          "solves_what": "将 LLM 的推理能力应用于个人化交易场景，为研究 AI 与金融交叉领域提供开源实验平台。"
         },
         {
           "rank": 4,
@@ -225,8 +371,8 @@
           "stars_delta": 408,
           "trend_period": "today",
           "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
-          "chinese_summary": "收录 100 多个可直接克隆运行的 AI Agent 与 RAG 应用示例集合。",
-          "solves_what": "提供大量可上手的大模型应用模板，快速入门 AI 开发。"
+          "chinese_summary": "汇集 100 多个基于大语言模型的 AI Agent 和 RAG 应用实例，涵盖高级 Agent、聊天机器人和检索增强生成等多种场景。",
+          "solves_what": "为开发者提供可直接克隆和定制的 LLM 应用模板，降低 AI 应用开发门槛。"
         },
         {
           "rank": 6,
@@ -465,8 +611,8 @@
           "stars_delta": 444,
           "trend_period": "today",
           "description": "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.",
-          "chinese_summary": "一个用 Rust 编写的守护工具，用于拦截 AI 代理执行危险 git 与 shell 命令。",
-          "solves_what": "防止 AI 编程助手误删仓库或执行破坏性命令，保护代码安全。"
+          "chinese_summary": "用 Rust 编写的命令安全防护工具，可拦截 AI Agent 执行危险的 git 和 shell 命令，防止误删文件或破坏仓库。",
+          "solves_what": "解决 AI 编程代理可能执行破坏性命令（如 git reset --hard、rm -rf）的安全风险，为自动化工作流提供防护层。"
         },
         {
           "rank": 2,
@@ -491,8 +637,8 @@
           "stars_delta": 776,
           "trend_period": "today",
           "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
-          "chinese_summary": "HKUDS 推出的个人交易智能体项目，帮助用户实现交易决策自动化。",
-          "solves_what": "提供可定制的 AI 交易助手，降低量化交易入门门槛。"
+          "chinese_summary": "香港大学数据科学实验室推出的个人化交易 Agent，结合大语言模型进行市场分析和交易决策，支持前端可视化。",
+          "solves_what": "将 LLM 的推理能力应用于个人化交易场景，为研究 AI 与金融交叉领域提供开源实验平台。"
         },
         {
           "rank": 4,
@@ -517,8 +663,8 @@
           "stars_delta": 549,
           "trend_period": "today",
           "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
-          "chinese_summary": "收录 100 多个可直接克隆运行的 AI Agent 与 RAG 应用示例集合。",
-          "solves_what": "提供大量可上手的大模型应用模板，快速入门 AI 开发。"
+          "chinese_summary": "汇集 100 多个基于大语言模型的 AI Agent 和 RAG 应用实例，涵盖高级 Agent、聊天机器人和检索增强生成等多种场景。",
+          "solves_what": "为开发者提供可直接克隆和定制的 LLM 应用模板，降低 AI 应用开发门槛。"
         },
         {
           "rank": 6,
