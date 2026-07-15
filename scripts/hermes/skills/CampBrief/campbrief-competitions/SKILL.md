@@ -124,6 +124,8 @@ python3 "$REPO/scripts/collect-52jingsai.py" \
 
 把合并后的数据写入 `$REPO/data/competitions.json`。保持字段顺序一致：
 
+**无论是否有新内容，每次执行都必须更新 `last_updated` 为当前时间（ISO8601 带时区）。** 这是前端显示"最近更新时间"的依据。即使无新竞赛入库、无状态变更，也必须写入当前时间戳并提交。
+
 ```json
 {
   "last_updated": "2026-07-15T09:00:00+08:00",
