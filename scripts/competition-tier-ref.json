@@ -1,0 +1,706 @@
+{
+  "_meta": {
+    "description": "竞赛含金量参考表——主办方/竞赛名 → tier + prestige。脚本批量对照用，未命中的条目由 agent 手动核对后补全。",
+    "version": "2026-07-15",
+    "prestige_scale": "1-10，10最高。官方顶级赛事8-10，名企赛事5-7，兴趣练手1-4"
+  },
+  "organizers": {
+    "教育部": {
+      "tier": "official",
+      "prestige": 10,
+      "note": "国家级教育主管部门"
+    },
+    "教育部高等教育司": {
+      "tier": "official",
+      "prestige": 10
+    },
+    "教育部考试中心": {
+      "tier": "official",
+      "prestige": 10
+    },
+    "共青团中央": {
+      "tier": "official",
+      "prestige": 9,
+      "note": "团中央主办赛事"
+    },
+    "共青团": {
+      "tier": "official",
+      "prestige": 9
+    },
+    "中国科协": {
+      "tier": "official",
+      "prestige": 9
+    },
+    "中国科学技术协会": {
+      "tier": "official",
+      "prestige": 9
+    },
+    "工业和信息化部": {
+      "tier": "official",
+      "prestige": 9
+    },
+    "工信部": {
+      "tier": "official",
+      "prestige": 9
+    },
+    "人力资源和社会保障部": {
+      "tier": "official",
+      "prestige": 9
+    },
+    "人社部": {
+      "tier": "official",
+      "prestige": 9
+    },
+    "科技部": {
+      "tier": "official",
+      "prestige": 9
+    },
+    "国务院": {
+      "tier": "official",
+      "prestige": 10
+    },
+    "中国外文局": {
+      "tier": "official",
+      "prestige": 7,
+      "note": "外文局下属赛事"
+    },
+    "外文局": {
+      "tier": "official",
+      "prestige": 7
+    },
+    "中国外文局亚太传播中心": {
+      "tier": "official",
+      "prestige": 7
+    },
+    "国家体育总局": {
+      "tier": "official",
+      "prestige": 8
+    },
+    "中国计算机学会": {
+      "tier": "official",
+      "prestige": 9,
+      "note": "CCF，ACM等赛事主办方"
+    },
+    "CCF": {
+      "tier": "official",
+      "prestige": 9
+    },
+    "中国数学会": {
+      "tier": "official",
+      "prestige": 8
+    },
+    "中国工业与应用数学学会": {
+      "tier": "official",
+      "prestige": 8
+    },
+    "ICPC Foundation": {
+      "tier": "official",
+      "prestige": 10,
+      "note": "ICPC国际大学生程序设计竞赛"
+    },
+    "ACM": {
+      "tier": "official",
+      "prestige": 10
+    },
+    "华为技术有限公司": {
+      "tier": "enterprise",
+      "prestige": 7,
+      "note": "华为ICT大赛等"
+    },
+    "华为": {
+      "tier": "enterprise",
+      "prestige": 7
+    },
+    "腾讯": {
+      "tier": "enterprise",
+      "prestige": 7
+    },
+    "腾讯科技": {
+      "tier": "enterprise",
+      "prestige": 7
+    },
+    "阿里巴巴": {
+      "tier": "enterprise",
+      "prestige": 7
+    },
+    "阿里": {
+      "tier": "enterprise",
+      "prestige": 7
+    },
+    "百度": {
+      "tier": "enterprise",
+      "prestige": 6
+    },
+    "百度在线": {
+      "tier": "enterprise",
+      "prestige": 6
+    },
+    "字节跳动": {
+      "tier": "enterprise",
+      "prestige": 7
+    },
+    "字节": {
+      "tier": "enterprise",
+      "prestige": 7
+    },
+    "小米": {
+      "tier": "enterprise",
+      "prestige": 6
+    },
+    "火山引擎": {
+      "tier": "enterprise",
+      "prestige": 6,
+      "note": "字节跳动旗下"
+    },
+    "京东": {
+      "tier": "enterprise",
+      "prestige": 6
+    },
+    "美团": {
+      "tier": "enterprise",
+      "prestige": 6
+    },
+    "网易": {
+      "tier": "enterprise",
+      "prestige": 6
+    },
+    "科大讯飞": {
+      "tier": "enterprise",
+      "prestige": 6
+    },
+    "商汤科技": {
+      "tier": "enterprise",
+      "prestige": 6
+    },
+    "高教社": {
+      "tier": "official",
+      "prestige": 8,
+      "note": "高等教育出版社，常与教育部合办"
+    },
+    "高等教育出版社": {
+      "tier": "official",
+      "prestige": 8
+    },
+    "中国高等教育学会": {
+      "tier": "official",
+      "prestige": 7
+    },
+    "中国物流与采购联合会": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "外语教学与研究出版社": {
+      "tier": "official",
+      "prestige": 7,
+      "note": "外研社赛事"
+    },
+    "外研社": {
+      "tier": "official",
+      "prestige": 7
+    },
+    "中国商业统计学会": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "中国图学学会": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "中国教育国际交流协会": {
+      "tier": "official",
+      "prestige": 7
+    },
+    "中国光学学会": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "中国力学学会": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "周培源基金会": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "中国机械工程学会": {
+      "tier": "official",
+      "prestige": 7
+    },
+    "中国自动化学会": {
+      "tier": "official",
+      "prestige": 7
+    },
+    "中国电子学会": {
+      "tier": "official",
+      "prestige": 7
+    },
+    "中国软件行业协会": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "中国国际贸易促进委员会": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "中国电子视像行业协会": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "中国人工智能学会": {
+      "tier": "official",
+      "prestige": 7
+    },
+    "世界技能组织": {
+      "tier": "official",
+      "prestige": 9,
+      "note": "WorldSkills"
+    },
+    "中国日报社": {
+      "tier": "official",
+      "prestige": 6,
+      "note": "21世纪杯英语演讲"
+    },
+    "中国工商银行": {
+      "tier": "enterprise",
+      "prestige": 6,
+      "note": "工行杯"
+    },
+    "工商银行": {
+      "tier": "enterprise",
+      "prestige": 6
+    },
+    "中国商业会计学会": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "上海外国语大学": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "国际iCAN联盟": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "iCAN": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "中国农业机械学会": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "中国测绘学会": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "中国风景园林学会": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "中国优选法统筹法与经济数学研究会": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "中国水利教育协会": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "中国统计教育学会": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "全国高等学校计算机教育研究会": {
+      "tier": "official",
+      "prestige": 7
+    },
+    "北京理工大学": {
+      "tier": "official",
+      "prestige": 7,
+      "note": "信安大赛主办方"
+    },
+    "中国商业联合会": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "中国管理现代化研究会": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "中国建设教育协会": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "江苏省人工智能学会": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "金砖国家工商理事会": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "中国地质学会": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "中国化工学会": {
+      "tier": "official",
+      "prestige": 7
+    },
+    "社会机构": {
+      "tier": "hobby",
+      "prestige": 2,
+      "note": "商业赛/非官方赛泛称"
+    },
+    "科云": {
+      "tier": "hobby",
+      "prestige": 4,
+      "note": "商业赛"
+    },
+    "码蹄": {
+      "tier": "hobby",
+      "prestige": 4,
+      "note": "商业赛"
+    }
+  },
+  "competitions": {
+    "中国国际大学生创新大赛": {
+      "tier": "official",
+      "prestige": 10,
+      "note": "原互联网+，最顶级创新创业赛事"
+    },
+    "互联网+": {
+      "tier": "official",
+      "prestige": 10
+    },
+    "挑战杯": {
+      "tier": "official",
+      "prestige": 10,
+      "note": "挑战杯全国大学生课外学术科技作品竞赛"
+    },
+    "全国大学生数学建模竞赛": {
+      "tier": "official",
+      "prestige": 9,
+      "note": "CUMCM"
+    },
+    "数学建模": {
+      "tier": "official",
+      "prestige": 8
+    },
+    "ACM-ICPC": {
+      "tier": "official",
+      "prestige": 10,
+      "note": "国际大学生程序设计竞赛"
+    },
+    "ICPC": {
+      "tier": "official",
+      "prestige": 10
+    },
+    "全国大学生电子设计竞赛": {
+      "tier": "official",
+      "prestige": 9
+    },
+    "全国大学生机械创新设计大赛": {
+      "tier": "official",
+      "prestige": 8
+    },
+    "全国大学生广告艺术大赛": {
+      "tier": "official",
+      "prestige": 8
+    },
+    "大广赛": {
+      "tier": "official",
+      "prestige": 8
+    },
+    "全国大学生英语竞赛": {
+      "tier": "official",
+      "prestige": 7,
+      "note": "NECCS"
+    },
+    "华为ICT大赛": {
+      "tier": "enterprise",
+      "prestige": 7
+    },
+    "百度之星": {
+      "tier": "enterprise",
+      "prestige": 6
+    },
+    "创客中国": {
+      "tier": "official",
+      "prestige": 8,
+      "note": "工信部主办"
+    },
+    "全国三维数字化创新设计大赛": {
+      "tier": "official",
+      "prestige": 7
+    },
+    "创研杯": {
+      "tier": "official",
+      "prestige": 6,
+      "note": "中国外文局主办系列赛事"
+    },
+    "外文奖": {
+      "tier": "official",
+      "prestige": 6,
+      "note": "中国外文局主办系列赛事"
+    },
+    "蓝桥杯": {
+      "tier": "official",
+      "prestige": 7,
+      "note": "全国软件专业人才设计与创业大赛"
+    },
+    "全国软件专业人才设计与创业大赛": {
+      "tier": "official",
+      "prestige": 7
+    },
+    "PAT": {
+      "tier": "official",
+      "prestige": 7,
+      "note": "计算机程序设计能力考试"
+    },
+    "数学竞赛": {
+      "tier": "official",
+      "prestige": 6,
+      "note": "全国大学生数学竞赛"
+    },
+    "华教杯": {
+      "tier": "hobby",
+      "prestige": 4,
+      "note": "非教育部认可，商业赛事"
+    },
+    "TRAE": {
+      "tier": "enterprise",
+      "prestige": 5,
+      "note": "字节跳动旗下AI工具赛事"
+    },
+    "结构设计竞赛": {
+      "tier": "official",
+      "prestige": 7
+    },
+    "外研社": {
+      "tier": "official",
+      "prestige": 7
+    },
+    "华灿奖": {
+      "tier": "official",
+      "prestige": 7
+    },
+    "市场调查与分析大赛": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "成图技术": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "米兰设计周": {
+      "tier": "official",
+      "prestige": 7
+    },
+    "光电设计竞赛": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "周培源力学竞赛": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "嵌入式芯片": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "BIM": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "商业精英挑战赛": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "好创意": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "21世纪杯": {
+      "tier": "official",
+      "prestige": 7
+    },
+    "工行杯": {
+      "tier": "enterprise",
+      "prestige": 6
+    },
+    "科云杯": {
+      "tier": "hobby",
+      "prestige": 4
+    },
+    "外教社杯": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "智能农业装备": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "税收风险管控": {
+      "tier": "official",
+      "prestige": 5
+    },
+    "测绘学科": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "花园设计": {
+      "tier": "official",
+      "prestige": 5
+    },
+    "能源经济学术": {
+      "tier": "official",
+      "prestige": 5
+    },
+    "数字媒体科技作品": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "水利创新": {
+      "tier": "official",
+      "prestige": 5
+    },
+    "统计建模": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "物联网设计": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "信息安全与对抗": {
+      "tier": "official",
+      "prestige": 7
+    },
+    "数智化企业经营": {
+      "tier": "official",
+      "prestige": 5
+    },
+    "企业模拟竞赛": {
+      "tier": "official",
+      "prestige": 5
+    },
+    "数字建筑": {
+      "tier": "official",
+      "prestige": 5
+    },
+    "人工智能算法精英": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "金砖国家技能": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "码蹄杯": {
+      "tier": "hobby",
+      "prestige": 4
+    },
+    "世界技能大赛": {
+      "tier": "official",
+      "prestige": 9
+    },
+    "英语语法大赛": {
+      "tier": "hobby",
+      "prestige": 2
+    },
+    "办公软件技能大赛": {
+      "tier": "hobby",
+      "prestige": 2
+    },
+    "摄影大赛": {
+      "tier": "hobby",
+      "prestige": 2
+    }
+  },
+  "fields_hints": {
+    "计算机": [
+      "computer"
+    ],
+    "编程": [
+      "computer"
+    ],
+    "程序设计": [
+      "computer"
+    ],
+    "软件": [
+      "computer"
+    ],
+    "IT": [
+      "computer"
+    ],
+    "人工智能": [
+      "ai"
+    ],
+    "AI": [
+      "ai"
+    ],
+    "机器学习": [
+      "ai"
+    ],
+    "深度学习": [
+      "ai"
+    ],
+    "英语": [
+      "language"
+    ],
+    "翻译": [
+      "language"
+    ],
+    "词汇": [
+      "language"
+    ],
+    "外语": [
+      "language"
+    ],
+    "设计": [
+      "design"
+    ],
+    "艺术": [
+      "design"
+    ],
+    "创意": [
+      "design"
+    ],
+    "广告": [
+      "design"
+    ],
+    "创业": [
+      "innovation"
+    ],
+    "创新": [
+      "innovation"
+    ],
+    "创客": [
+      "innovation"
+    ],
+    "数学": [
+      "science"
+    ],
+    "物理": [
+      "science"
+    ],
+    "化学": [
+      "science"
+    ],
+    "电子": [
+      "engineering"
+    ],
+    "机械": [
+      "engineering"
+    ],
+    "机器人": [
+      "robot"
+    ],
+    "三维": [
+      "computer"
+    ],
+    "数字化": [
+      "computer"
+    ]
+  }
+}

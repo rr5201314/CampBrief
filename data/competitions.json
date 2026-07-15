@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-15T09:47:48.665790+08:00",
+  "last_updated": "2026-07-15T09:52:49.424542+08:00",
   "source": "CampBrief",
   "total": 104,
   "tiers": [
@@ -176,7 +176,7 @@
       "search": "数学建模 国赛 CUMCM",
       "official_site": "http://www.mcm.edu.cn/",
       "organizer": "中国工业与应用数学学会",
-      "prestige": 9
+      "prestige": 8
     },
     {
       "id": "official-006",
@@ -192,7 +192,7 @@
       "search": "电子设计 电赛 NUEDC",
       "official_site": "http://www.nuedcchina.com/",
       "organizer": "教育部高等教育司、工业和信息化部人事教育司",
-      "prestige": 9
+      "prestige": 10
     },
     {
       "id": "official-007",
@@ -208,7 +208,7 @@
       "search": "医学技术技能 医学生 技能大赛",
       "official_site": "",
       "organizer": "教育部",
-      "prestige": 9
+      "prestige": 10
     },
     {
       "id": "official-008",
@@ -224,7 +224,7 @@
       "search": "机械创新设计 机械",
       "official_site": "http://umic.ckcest.cn/",
       "organizer": "教育部高等学校机械学科教学指导委员会等",
-      "prestige": 8
+      "prestige": 10
     },
     {
       "id": "official-009",
@@ -241,7 +241,7 @@
       "search": "结构设计 土木",
       "official_site": "http://www.structurecontest.com/",
       "organizer": "中国高等教育学会结构教育分会",
-      "prestige": 8
+      "prestige": 7
     },
     {
       "id": "official-010",
@@ -257,7 +257,7 @@
       "search": "大广赛 广告艺术 创意",
       "official_site": "http://www.sun-ada.net/",
       "organizer": "中国高等教育学会广告教育专业委员会、中国传媒大学",
-      "prestige": 8
+      "prestige": 7
     },
     {
       "id": "official-011",
@@ -275,7 +275,7 @@
       "search": "智能汽车 智能车 飞思卡尔",
       "official_site": "http://www.eepw.com.cn/event/action/freescale_car2012/",
       "organizer": "教育部高等学校自动化类专业教学指导委员会",
-      "prestige": 8
+      "prestige": 10
     },
     {
       "id": "official-012",
@@ -292,7 +292,7 @@
       "search": "三创赛 电子商务 电商",
       "official_site": "http://www.3chuang.net/",
       "organizer": "教育部高等学校电子商务类专业教学指导委员会",
-      "prestige": 8
+      "prestige": 10
     },
     {
       "id": "official-013",
@@ -310,7 +310,7 @@
       "search": "节能减排 社会实践 科技竞赛",
       "official_site": "http://www.jienengjianpai.org/",
       "organizer": "教育部高等教育司",
-      "prestige": 8
+      "prestige": 10
     },
     {
       "id": "official-014",
@@ -326,7 +326,7 @@
       "search": "工创赛 工程实践 工程训练",
       "official_site": "http://www.gcxl.edu.cn/new/index.html",
       "organizer": "教育部工程训练教学指导委员会",
-      "prestige": 8
+      "prestige": 10
     },
     {
       "id": "official-015",
@@ -342,7 +342,7 @@
       "search": "物流设计 物流管理",
       "official_site": "http://www.clpp.org.cn/",
       "organizer": "中国物流与采购联合会",
-      "prestige": 7
+      "prestige": 6
     },
     {
       "id": "official-016",
@@ -358,7 +358,7 @@
       "search": "外研社杯 国才杯 英语演讲 英语写作",
       "official_site": "http://uchallenge.unipus.cn/",
       "organizer": "外语教学与研究出版社",
-      "prestige": 8
+      "prestige": 7
     },
     {
       "id": "official-017",
@@ -390,7 +390,7 @@
       "search": "大创 创新创业训练计划",
       "official_site": "http://gjcxcy.bjtu.edu.cn/Index.aspx",
       "organizer": "教育部高等教育司",
-      "prestige": 7
+      "prestige": 10
     },
     {
       "id": "official-019",
@@ -407,7 +407,7 @@
       "search": "化工设计 化工",
       "official_site": "http://iche.zju.edu.cn/",
       "organizer": "中国化工学会、教育部高等学校化工类专业教学指导委员会",
-      "prestige": 7
+      "prestige": 10
     },
     {
       "id": "official-020",
@@ -424,7 +424,7 @@
       "search": "机器人大赛 RoboMaster RoboCon CURC",
       "official_site": "https://www.robomaster.com/zh-CN",
       "organizer": "教育部高等学校机械类专业教学指导委员会等",
-      "prestige": 9
+      "prestige": 10
     },
     {
       "id": "official-021",
@@ -441,7 +441,7 @@
       "search": "市场调查 市调大赛 统计",
       "official_site": "http://www.china-cssc.org/list-56-1.html",
       "organizer": "中国商业统计学会",
-      "prestige": 7
+      "prestige": 6
     },
     {
       "id": "official-022",
@@ -459,7 +459,7 @@
       "search": "成图大赛 制图 CAD",
       "official_site": "http://www.chengtudasai.com/",
       "organizer": "中国图学学会",
-      "prestige": 7
+      "prestige": 6
     },
     {
       "id": "official-023",
@@ -493,7 +493,7 @@
       "search": "西门子杯 智能制造 自动化",
       "official_site": "http://www.siemenscup-cimc.org.cn/",
       "organizer": "教育部高等学校自动化类专业教学指导委员会、西门子（中国）有限公司",
-      "prestige": 8
+      "prestige": 10
     },
     {
       "id": "official-025",
@@ -511,7 +511,7 @@
       "search": "服务外包 创新创业",
       "official_site": "http://www.fwwb.org.cn/",
       "organizer": "教育部、商务部",
-      "prestige": 8
+      "prestige": 10
     },
     {
       "id": "official-026",
@@ -529,7 +529,7 @@
       "search": "计算机设计大赛 4C",
       "official_site": "http://jsjds.blcu.edu.cn/",
       "organizer": "教育部高等学校计算机类专业教学指导委员会等",
-      "prestige": 8
+      "prestige": 10
     },
     {
       "id": "official-027",
@@ -546,7 +546,7 @@
       "search": "C4 高校计算机大赛 天梯赛 移动应用创新赛",
       "official_site": "http://www.c4best.cn/",
       "organizer": "教育部高等学校计算机类专业教学指导委员会等",
-      "prestige": 8
+      "prestige": 10
     },
     {
       "id": "official-028",
@@ -563,7 +563,7 @@
       "search": "蓝桥杯 软件 算法",
       "official_site": "http://dasai.lanqiao.cn/",
       "organizer": "工业和信息化部人才交流中心",
-      "prestige": 8
+      "prestige": 9
     },
     {
       "id": "official-029",
@@ -595,7 +595,7 @@
       "search": "地质技能 地质",
       "official_site": "https://yuanxi.cugb.edu.cn/competition/",
       "organizer": "中国地质学会、教育部高等学校地质学专业教学指导委员会",
-      "prestige": 7
+      "prestige": 10
     },
     {
       "id": "official-031",
@@ -612,7 +612,7 @@
       "search": "光电设计 光学",
       "official_site": "http://gd.p.moocollege.com/",
       "organizer": "中国光学学会",
-      "prestige": 7
+      "prestige": 6
     },
     {
       "id": "official-032",
@@ -629,7 +629,7 @@
       "search": "集成电路 芯片 集创赛",
       "official_site": "http://univ.ciciec.com/",
       "organizer": "工业和信息化部人才交流中心",
-      "prestige": 8
+      "prestige": 9
     },
     {
       "id": "official-033",
@@ -646,7 +646,7 @@
       "search": "金相 材料",
       "official_site": "http://www.cnzjjx.cn/",
       "organizer": "教育部高等学校材料类专业教学指导委员会",
-      "prestige": 7
+      "prestige": 10
     },
     {
       "id": "official-034",
@@ -663,7 +663,7 @@
       "search": "信息安全竞赛 CISCN",
       "official_site": "http://www.ciscn.cn/",
       "organizer": "教育部高等学校网络空间安全专业教学指导委员会",
-      "prestige": 8
+      "prestige": 10
     },
     {
       "id": "official-035",
@@ -680,7 +680,7 @@
       "search": "NCDA 数字艺术设计",
       "official_site": "https://www.ncda.org.cn/",
       "organizer": "工信部人才交流中心",
-      "prestige": 8
+      "prestige": 9
     },
     {
       "id": "official-036",
@@ -697,7 +697,7 @@
       "search": "周培源 力学竞赛",
       "official_site": "http://zpy.cstam.org.cn/",
       "organizer": "中国力学学会、周培源基金会",
-      "prestige": 7
+      "prestige": 6
     },
     {
       "id": "official-037",
@@ -731,7 +731,7 @@
       "search": "中国机器人大赛 RoboCup",
       "official_site": "http://crc.drct-caa.org.cn/",
       "organizer": "中国自动化学会",
-      "prestige": 8
+      "prestige": 7
     },
     {
       "id": "official-039",
@@ -748,7 +748,7 @@
       "search": "中国软件杯 软件设计",
       "official_site": "http://www.cnsoftbei.com/",
       "organizer": "工业和信息化部、教育部",
-      "prestige": 8
+      "prestige": 10
     },
     {
       "id": "official-040",
@@ -767,7 +767,7 @@
       "search": "中美青年创客 创客",
       "official_site": "https://www.eol.cn/html/lx/maker/",
       "organizer": "教育部",
-      "prestige": 7
+      "prestige": 10
     },
     {
       "id": "official-041",
@@ -785,7 +785,7 @@
       "search": "RAICOM 睿抗 机器人开发者",
       "official_site": "https://www.robocom.com.cn/",
       "organizer": "工业和信息化部人才交流中心",
-      "prestige": 7
+      "prestige": 9
     },
     {
       "id": "official-042",
@@ -802,7 +802,7 @@
       "search": "大唐杯 5G 信息通信",
       "official_site": "https://dtcup.dtxiaotangren.com",
       "organizer": "工业和信息化部、教育部",
-      "prestige": 7
+      "prestige": 10
     },
     {
       "id": "official-043",
@@ -820,7 +820,7 @@
       "search": "华为 ICT 大赛 网络 云计算 昇腾",
       "official_site": "https://e.huawei.com/cn/talent/ict-academy/#/ict-contest",
       "organizer": "华为技术有限公司",
-      "prestige": 6
+      "prestige": 7
     },
     {
       "id": "official-044",
@@ -855,7 +855,7 @@
       "search": "生命科学竞赛 CULSC",
       "official_site": "https://www.culsc.cn/#/",
       "organizer": "教育部高等学校大学生物学课程教学指导委员会等",
-      "prestige": 7
+      "prestige": 10
     },
     {
       "id": "official-046",
@@ -871,7 +871,7 @@
       "search": "物理实验竞赛",
       "official_site": "http://wlsycx.moocollege.com/",
       "organizer": "教育部高等学校物理学类专业教学指导委员会",
-      "prestige": 7
+      "prestige": 10
     },
     {
       "id": "official-047",
@@ -889,7 +889,7 @@
       "search": "BIM 毕业设计 土木",
       "official_site": "http://gxbsxs.glodonedu.com/index",
       "organizer": "中国软件行业协会",
-      "prestige": 7
+      "prestige": 6
     },
     {
       "id": "official-048",
@@ -907,7 +907,7 @@
       "search": "商业精英挑战赛 品牌策划 国际贸易",
       "official_site": "http://cubec.org.cn/",
       "organizer": "中国国际贸易促进委员会商业行业委员会",
-      "prestige": 7
+      "prestige": 6
     },
     {
       "id": "official-049",
@@ -924,7 +924,7 @@
       "search": "学创杯 创业模拟",
       "official_site": "http://www.bster.cn/cyds/index",
       "organizer": "教育部高等学校国家级实验教学示范中心联席会",
-      "prestige": 7
+      "prestige": 10
     },
     {
       "id": "official-050",
@@ -942,7 +942,7 @@
       "search": "智能机器人创意大赛 机器人",
       "official_site": "http://www.robotcontest.cn/",
       "organizer": "中国高等教育学会、教育部高等学校机械类专业教学指导委员会",
-      "prestige": 7
+      "prestige": 10
     },
     {
       "id": "official-051",
@@ -959,7 +959,7 @@
       "search": "中国好创意 数字艺术设计 CDEC",
       "official_site": "https://www.cdec.org.cn/",
       "organizer": "中国电子视像行业协会",
-      "prestige": 7
+      "prestige": 6
     },
     {
       "id": "official-052",
@@ -993,7 +993,7 @@
       "search": "职业院校技能大赛 chinaskills",
       "official_site": "https://chinaskills.icve.com.cn",
       "organizer": "教育部等",
-      "prestige": 7
+      "prestige": 10
     },
     {
       "id": "official-054",
@@ -1010,7 +1010,7 @@
       "search": "RoboTac 机器人大赛",
       "official_site": "http://www.robotac.cn",
       "organizer": "教育部高等学校机械类专业教学指导委员会等",
-      "prestige": 7
+      "prestige": 10
     },
     {
       "id": "official-055",
@@ -1042,7 +1042,7 @@
       "search": "世界技能大赛 中国选拔赛",
       "official_site": "http://worldskillschina.mohrss.gov.cn/",
       "organizer": "人力资源社会保障部",
-      "prestige": 8
+      "prestige": 9
     },
     {
       "id": "official-057",
@@ -1058,12 +1058,12 @@
       "search": "21世纪杯 英语演讲",
       "official_site": "https://contest.i21st.cn/",
       "organizer": "中国日报社",
-      "prestige": 7
+      "prestige": 6
     },
     {
       "id": "official-058",
       "name": "「工行杯」全国大学生金融科技创新大赛",
-      "tier": "official",
+      "tier": "enterprise",
       "fields": [
         "business",
         "computer"
@@ -1075,7 +1075,7 @@
       "search": "工行杯 金融科技",
       "official_site": "https://www.gonghangbei.com/index/Lists/index.html?id=1",
       "organizer": "中国工商银行股份有限公司",
-      "prestige": 7
+      "prestige": 6
     },
     {
       "id": "official-059",
@@ -1107,7 +1107,7 @@
       "search": "外教社杯 跨文化能力 英语",
       "official_site": "",
       "organizer": "上海外国语大学",
-      "prestige": 7
+      "prestige": 6
     },
     {
       "id": "official-061",
@@ -1125,7 +1125,7 @@
       "search": "iCAN 创新创业 物联网",
       "official_site": "https://www.g-ican.com",
       "organizer": "国际 iCAN 联盟",
-      "prestige": 7
+      "prestige": 6
     },
     {
       "id": "official-062",
@@ -1160,7 +1160,7 @@
       "search": "智能农业装备 农业装备",
       "official_site": "http://uiaec.ujs.edu.cn",
       "organizer": "中国农业机械学会",
-      "prestige": 7
+      "prestige": 6
     },
     {
       "id": "official-064",
@@ -1176,7 +1176,7 @@
       "search": "税收风险管控 税务",
       "official_site": "",
       "organizer": "中国高等教育学会高等财经教育分会",
-      "prestige": 6
+      "prestige": 7
     },
     {
       "id": "official-065",
@@ -1194,7 +1194,7 @@
       "search": "测绘 创新创业 智能大赛",
       "official_site": "http://smt.whu.edu.cn/index.htm",
       "organizer": "中国测绘学会",
-      "prestige": 7
+      "prestige": 6
     },
     {
       "id": "official-066",
@@ -1211,7 +1211,7 @@
       "search": "工业设计大赛",
       "official_site": "https://www.cuidc.net/#/",
       "organizer": "教育部高等学校工业设计专业教学指导委员会",
-      "prestige": 7
+      "prestige": 10
     },
     {
       "id": "official-067",
@@ -1228,7 +1228,7 @@
       "search": "花园设计建造 风景园林",
       "official_site": "",
       "organizer": "中国风景园林学会",
-      "prestige": 7
+      "prestige": 6
     },
     {
       "id": "official-068",
@@ -1245,7 +1245,7 @@
       "search": "化工实验大赛",
       "official_site": "http://www.cteic.com/higherEducation-199.html",
       "organizer": "教育部高等学校化工类专业教学指导委员会",
-      "prestige": 6
+      "prestige": 10
     },
     {
       "id": "official-069",
@@ -1261,7 +1261,7 @@
       "search": "化学实验创新设计",
       "official_site": "https://cid.nju.edu.cn/",
       "organizer": "教育部高等学校化学教育研究中心",
-      "prestige": 7
+      "prestige": 10
     },
     {
       "id": "official-070",
@@ -1278,7 +1278,7 @@
       "search": "基础医学 创新研究 实验设计",
       "official_site": "http://www.jcyxds.com/",
       "organizer": "教育部高等学校基础医学类专业教学指导委员会",
-      "prestige": 7
+      "prestige": 10
     },
     {
       "id": "official-071",
@@ -1294,7 +1294,7 @@
       "search": "计算机系统能力大赛 操作系统 编译器",
       "official_site": "https://compiler.educg.net/#/",
       "organizer": "教育部高等学校计算机类专业教学指导委员会",
-      "prestige": 7
+      "prestige": 10
     },
     {
       "id": "official-072",
@@ -1346,7 +1346,7 @@
       "search": "水利创新设计 水利",
       "official_site": "",
       "organizer": "中国水利教育协会",
-      "prestige": 7
+      "prestige": 6
     },
     {
       "id": "official-075",
@@ -1364,7 +1364,7 @@
       "search": "统计建模大赛 统计",
       "official_site": "http://tjjmds.ai-learning.net/",
       "organizer": "中国统计教育学会",
-      "prestige": 7
+      "prestige": 6
     },
     {
       "id": "official-076",
@@ -1467,7 +1467,7 @@
       "search": "Digix 华为 人工智能算法",
       "official_site": "https://developer.huawei.com/consumer/cn/activity/digixActivity/digixdetail/101655281685926449",
       "organizer": "江苏省人工智能学会等",
-      "prestige": 7
+      "prestige": 6
     },
     {
       "id": "official-082",
@@ -1484,7 +1484,7 @@
       "search": "中华经典诵写讲 诵读 书法",
       "official_site": "https://www.jingdiansxj.cn/home",
       "organizer": "教育部、国家语委",
-      "prestige": 6
+      "prestige": 10
     },
     {
       "id": "official-083",
@@ -1519,7 +1519,7 @@
       "search": "码蹄杯 程序设计 职业院校",
       "official_site": "https://matiji.net/matibei",
       "organizer": "中国电子学会",
-      "prestige": 5
+      "prestige": 7
     },
     {
       "id": "enterprise-001",
@@ -1536,7 +1536,7 @@
       "search": "字节跳动 ByteCamp 夏令营",
       "official_site": "https://www.bytedance.com/zh/blog/ByteCamp",
       "organizer": "字节跳动",
-      "prestige": 8
+      "prestige": 7
     },
     {
       "id": "enterprise-002",
@@ -1553,7 +1553,7 @@
       "search": "腾讯犀牛鸟 精英人才 科研",
       "official_site": "https://www.tencent.com/zh-cn/rhino-bird.html",
       "organizer": "腾讯",
-      "prestige": 8
+      "prestige": 7
     },
     {
       "id": "enterprise-003",
@@ -1571,7 +1571,7 @@
       "search": "阿里云 天池大赛 数据竞赛",
       "official_site": "https://tianchi.aliyun.com/",
       "organizer": "阿里云",
-      "prestige": 8
+      "prestige": 7
     },
     {
       "id": "enterprise-004",
@@ -1589,7 +1589,7 @@
       "search": "华为开发者大赛 昇腾 鸿蒙",
       "official_site": "https://developer.huawei.com/home/contest/home.html",
       "organizer": "华为",
-      "prestige": 8
+      "prestige": 7
     },
     {
       "id": "enterprise-005",
@@ -1608,7 +1608,7 @@
       "search": "小米黑客马拉松 米家",
       "official_site": "https://hr.xiaomi.com/",
       "organizer": "小米集团",
-      "prestige": 7
+      "prestige": 6
     },
     {
       "id": "enterprise-006",
@@ -1626,7 +1626,7 @@
       "search": "京东 算法挑战赛 零售",
       "official_site": "https://jdata.jd.com/",
       "organizer": "京东",
-      "prestige": 7
+      "prestige": 6
     },
     {
       "id": "enterprise-007",
@@ -1644,7 +1644,7 @@
       "search": "百度 AI 创意赛 飞桨 文心",
       "official_site": "https://aistudio.baidu.com/competition",
       "organizer": "百度",
-      "prestige": 7
+      "prestige": 6
     },
     {
       "id": "enterprise-008",
@@ -1661,7 +1661,7 @@
       "search": "网易 游戏高校 MINI 项目",
       "official_site": "https://game.163.com/",
       "organizer": "网易游戏",
-      "prestige": 7
+      "prestige": 6
     },
     {
       "id": "enterprise-009",
@@ -1680,7 +1680,7 @@
       "search": "TRAE AI 创造力大赛 AI 编程 创意 Demo 2026",
       "official_site": "https://www.trae.cn/ai-creativity",
       "organizer": "TRAE / 火山引擎",
-      "prestige": 8
+      "prestige": 6
     },
     {
       "id": "enterprise-010",
@@ -1699,7 +1699,7 @@
       "search": "腾讯云 黑客松 AI 智能体 WorkBuddy CodeBuddy 2026",
       "official_site": "https://tch.cloud.tencent.com/contest/41",
       "organizer": "腾讯云",
-      "prestige": 8
+      "prestige": 7
     },
     {
       "id": "enterprise-011",
@@ -1717,7 +1717,7 @@
       "search": "火山杯 Agent 创新大赛 扣子 TRAE AgentKit 2026",
       "official_site": "https://www.volcengine.com/activity/agent/competition/2026",
       "organizer": "火山引擎",
-      "prestige": 8
+      "prestige": 6
     },
     {
       "id": "enterprise-012",
@@ -1734,7 +1734,7 @@
       "search": "华为 算法挑战赛 第38期 大模型 推理优化 2026",
       "official_site": "https://developer.huaweicloud.com/hackathon",
       "organizer": "华为云",
-      "prestige": 8
+      "prestige": 7
     },
     {
       "id": "hobby-001",
@@ -1750,7 +1750,7 @@
       "search": "英语语法大赛 英语竞赛 练手",
       "official_site": "https://m.saikr.com/",
       "organizer": "社会机构",
-      "prestige": 3
+      "prestige": 2
     },
     {
       "id": "hobby-002",
@@ -1767,7 +1767,7 @@
       "search": "AI 图像 AIGC 图像识别 练手",
       "official_site": "https://m.saikr.com/",
       "organizer": "社会机构",
-      "prestige": 3
+      "prestige": 2
     },
     {
       "id": "hobby-003",
@@ -1784,7 +1784,7 @@
       "search": "办公软件 技能竞赛 WPS Office",
       "official_site": "https://m.saikr.com/",
       "organizer": "社会机构",
-      "prestige": 3
+      "prestige": 2
     },
     {
       "id": "hobby-004",
@@ -1817,12 +1817,12 @@
       "official_url": "https://www.52jingsai.com/article-23405-1.html",
       "official_site": "",
       "organizer": "中国外文局亚太传播中心",
-      "prestige": 8
+      "prestige": 7
     },
     {
       "id": "52jingsai-9c66aa8503e5",
       "name": "【英语词汇大赛】2026年第四届“外文奖”大学生英语词汇大赛",
-      "tier": "hobby",
+      "tier": "official",
       "fields": [
         "language"
       ],
@@ -1834,7 +1834,7 @@
       "official_url": "https://www.52jingsai.com/article-23445-1.html",
       "official_site": "",
       "organizer": "全国高校英语翻译挑战赛组织委员会、北京民教信息科学研究院、广东省高教外语研究院",
-      "prestige": 4
+      "prestige": 6
     },
     {
       "id": "52jingsai-6ed748f24f50",
@@ -1851,12 +1851,12 @@
       "official_url": "https://www.52jingsai.com/article-23427-1.html",
       "official_site": "",
       "organizer": "中国外文局亚太传播中心",
-      "prestige": 8
+      "prestige": 7
     },
     {
       "id": "52jingsai-6f888443fb6c",
       "name": "关于举办第十一届“创客中国”人工智能中小企业创新创业大赛的通知",
-      "tier": "enterprise",
+      "tier": "official",
       "fields": [
         "ai",
         "innovation"
@@ -1869,7 +1869,7 @@
       "official_url": "https://www.52jingsai.com/article-23801-1.html",
       "official_site": "",
       "organizer": "",
-      "prestige": 6
+      "prestige": 8
     }
   ]
 }
