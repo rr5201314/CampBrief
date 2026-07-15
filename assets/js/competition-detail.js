@@ -137,7 +137,7 @@
     const el = document.getElementById("competitionDetail");
     const tier = TIER_LABEL[item.tier] || { text: item.tier || "赛事", icon: "i-info", cls: "tier-hobby" };
     const status = STATUS_LABEL[item.status] || { text: item.status || "状态待更新", icon: "i-clock", cls: "status-pending" };
-    const officialUrl = safeExternalUrl(item.official_site);
+    const officialUrl = safeExternalUrl(item.official_site) || safeExternalUrl(item.official_url);
     const labels = fieldLabels(item);
     const abilities = fieldAbilities(item);
     const fieldsText = joinWithChineseComma(labels);
@@ -185,7 +185,7 @@
         <svg class="icon"><use href="#i-info"/></svg>
         <div>
           <strong>比赛通知、报名资格、赛题和时间可能变化；提交前请以主办方公开发布的当届规则为准。</strong>
-          ${officialUrl ? `<a href="${escapeHtml(officialUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">查看官方信息 <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>` : ""}
+          ${officialUrl ? `<a href="${escapeHtml(officialUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">${officialUrl.includes('52jingsai') ? '查看信息来源' : '查看官方信息'} <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>` : ""}
         </div>
       </div>
     `;
