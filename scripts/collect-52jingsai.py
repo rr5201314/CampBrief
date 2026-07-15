@@ -148,11 +148,19 @@ def main():
 
     # 3. 转换为 CampBrief 格式
     competitions = []
+    skipped_no_link = 0
     for item in items:
+        url = item.get("url", "").strip()
+        # 必须至少有一个链接，否则跳过
+        if not url:
+            skipped_no_link += 1
+            print(f"[52jingsai] 跳过(无链接): {item['title'][:30]}", file=sys.stderr)
+            continue
+
         comp = {
             "id": stable_id(item["title"], item["url"]),
             "name": item["title"],
-            "official_url": item["url"],
+            "official_url": url,
             "status": "open",
             "tier": "other",
             "signup": item.get("signup_time", ""),
@@ -161,6 +169,9 @@ def main():
             "summary": f"来源：我爱竞赛网。{item.get('category', '')}",
         }
         competitions.append(comp)
+
+    if skipped_no_link:
+        print(f"[52jingsai] 跳过 {skipped_no_link} 条无链接条目", file=sys.stderr)
 
     # 4. 输出
     result = {
