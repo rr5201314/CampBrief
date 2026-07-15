@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-15T09:59:30.807838+08:00",
+  "last_updated": "2026-07-15T10:07:06.420079+08:00",
   "source": "CampBrief",
   "total": 104,
   "tiers": [
@@ -206,7 +206,7 @@
       "schedule": "每年一届，具体时间以官方通知为准",
       "summary": "医学类最高水平技能竞赛，覆盖临床医学、口腔医学、预防医学、护理学、药学等专业。",
       "search": "医学技术技能 医学生 技能大赛",
-      "official_site": "",
+      "official_site": "http://medu.bjmu.edu.cn/jnds/",
       "organizer": "教育部",
       "prestige": 10
     },
@@ -1105,7 +1105,7 @@
       "schedule": "省赛 9–10 月，国赛 11 月",
       "summary": "聚焦跨文化交际能力的英语赛事，由上海外国语大学主办。",
       "search": "外教社杯 跨文化能力 英语",
-      "official_site": "",
+      "official_site": "https://ict.sflep.com/",
       "organizer": "上海外国语大学",
       "prestige": 6
     },
@@ -1174,7 +1174,7 @@
       "schedule": "初赛 10 月，决赛 12 月",
       "summary": "税务、财务类专业赛事，以真实企业税收风险案例为分析对象。",
       "search": "税收风险管控 税务",
-      "official_site": "",
+      "official_site": "http://ssfkds.moocollege.com/",
       "organizer": "中国高等教育学会高等财经教育分会",
       "prestige": 7
     },
@@ -1226,7 +1226,7 @@
       "schedule": "建造与评审 5–7 月",
       "summary": "风景园林、园艺类专业赛事，团队完成真实尺度的花园设计与现场建造。",
       "search": "花园设计建造 风景园林",
-      "official_site": "",
+      "official_site": "http://www.lalavision.com/hysjjzjs",
       "organizer": "中国风景园林学会",
       "prestige": 6
     },
@@ -1344,7 +1344,7 @@
       "schedule": "国赛在偶数年 7 月",
       "summary": "水利类专业创新设计赛事，强调水安全、水资源、水生态等主题。",
       "search": "水利创新设计 水利",
-      "official_site": "",
+      "official_site": "http://sljzw.hhu.edu.cn/11822/list.htm",
       "organizer": "中国水利教育协会",
       "prestige": 6
     },
