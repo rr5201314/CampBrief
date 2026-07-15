@@ -180,9 +180,10 @@ python3 "$REPO/scripts/classify-competitions.py" --apply
 
 ```bash
 python3 -m json.tool "$REPO/data/competitions.json" >/dev/null
+python3 "$REPO/scripts/validate-competitions.py"
 ```
 
-校验通过后重新读一次，确认 JSON 合法、`items` 数量与 `total` 一致。
+校验脚本会检查：链接完整性（至少一个链接）、id 非空且不重复、name 非空。有不合格条目时会报错，必须修复后才能提交。
 
 ### 5. 推送并清空临时文件
 
