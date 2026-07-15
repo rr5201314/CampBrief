@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-15T12:00:00+08:00",
+  "last_updated": "2026-07-15T18:00:00+08:00",
   "source": "CampBrief",
   "total": 28,
   "categories": [
@@ -226,7 +226,7 @@
       "id": "ncre-202609",
       "name": "2026年9月全国计算机等级考试 (NCRE)",
       "category": "computer",
-      "status": "open",
+      "status": "closed",
       "fee": "约80-130元",
       "schedule": "2026年9月",
       "summary": "面向社会的计算机应用能力考核，涵盖一级到四级，包括办公软件、程序设计、网络等多个科目。",
