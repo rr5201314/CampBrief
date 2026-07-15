@@ -1,40 +1,105 @@
 {
-  "last_updated": "2026-07-13T00:00:00+08:00",
+  "last_updated": "2026-07-15T09:40:31.666572+08:00",
   "source": "CampBrief",
-  "total": 100,
+  "total": 104,
   "tiers": [
-    { "key": "all", "label": "全部" },
-    { "key": "official", "label": "教育部认可赛事" },
-    { "key": "enterprise", "label": "名企主办赛事" },
-    { "key": "hobby", "label": "兴趣练手赛事" }
+    {
+      "key": "all",
+      "label": "全部"
+    },
+    {
+      "key": "official",
+      "label": "教育部认可赛事"
+    },
+    {
+      "key": "enterprise",
+      "label": "名企主办赛事"
+    },
+    {
+      "key": "hobby",
+      "label": "兴趣练手赛事"
+    }
   ],
   "fields": [
-    { "key": "all", "label": "全部" },
-    { "key": "innovation", "label": "创新创业" },
-    { "key": "computer", "label": "计算机 / 信息技术" },
-    { "key": "engineering", "label": "工程 / 机电 / 自动化" },
-    { "key": "ai", "label": "人工智能" },
-    { "key": "robot", "label": "机器人" },
-    { "key": "science", "label": "数理 / 化学 / 地学" },
-    { "key": "design", "label": "设计 / 艺术 / 传媒" },
-    { "key": "language", "label": "外语" },
-    { "key": "business", "label": "商科 / 金融 / 管理" },
-    { "key": "medical", "label": "医学 / 生命科学" },
-    { "key": "civil", "label": "建筑 / 土木 / 测绘" },
-    { "key": "vocational", "label": "职业技能" }
+    {
+      "key": "all",
+      "label": "全部"
+    },
+    {
+      "key": "innovation",
+      "label": "创新创业"
+    },
+    {
+      "key": "computer",
+      "label": "计算机 / 信息技术"
+    },
+    {
+      "key": "engineering",
+      "label": "工程 / 机电 / 自动化"
+    },
+    {
+      "key": "ai",
+      "label": "人工智能"
+    },
+    {
+      "key": "robot",
+      "label": "机器人"
+    },
+    {
+      "key": "science",
+      "label": "数理 / 化学 / 地学"
+    },
+    {
+      "key": "design",
+      "label": "设计 / 艺术 / 传媒"
+    },
+    {
+      "key": "language",
+      "label": "外语"
+    },
+    {
+      "key": "business",
+      "label": "商科 / 金融 / 管理"
+    },
+    {
+      "key": "medical",
+      "label": "医学 / 生命科学"
+    },
+    {
+      "key": "civil",
+      "label": "建筑 / 土木 / 测绘"
+    },
+    {
+      "key": "vocational",
+      "label": "职业技能"
+    }
   ],
   "status_map": {
-    "pending": { "label": "未开始", "desc": "报名尚未开始" },
-    "open": { "label": "可报名", "desc": "报名进行中（含边报名边比赛的赛事）" },
-    "ongoing": { "label": "比赛中", "desc": "报名已截止，比赛/评审/作品提交仍在进行" },
-    "done": { "label": "已完赛", "desc": "全部结束，结果已公布" }
+    "pending": {
+      "label": "未开始",
+      "desc": "报名尚未开始"
+    },
+    "open": {
+      "label": "可报名",
+      "desc": "报名进行中（含边报名边比赛的赛事）"
+    },
+    "ongoing": {
+      "label": "比赛中",
+      "desc": "报名已截止，比赛/评审/作品提交仍在进行"
+    },
+    "done": {
+      "label": "已完赛",
+      "desc": "全部结束，结果已公布"
+    }
   },
   "items": [
     {
       "id": "official-001",
       "name": "中国国际大学生创新大赛",
       "tier": "official",
-      "fields": ["innovation"],
+      "fields": [
+        "innovation"
+      ],
       "status": "pending",
       "signup": "通常每年 5–7 月启动校赛/省赛报名",
       "schedule": "校赛 5–6 月，省赛 7–9 月，国赛 10 月左右",
@@ -48,7 +113,13 @@
       "id": "official-002",
       "name": "「挑战杯」全国大学生课外学术科技作品竞赛",
       "tier": "official",
-      "fields": ["innovation", "science", "engineering", "computer", "design"],
+      "fields": [
+        "innovation",
+        "science",
+        "engineering",
+        "computer",
+        "design"
+      ],
       "status": "pending",
       "signup": "奇数年举办，校赛通常上年年底启动",
       "schedule": "两年一届，国赛在奇数年 5–6 月",
@@ -62,7 +133,10 @@
       "id": "official-003",
       "name": "「挑战杯」中国大学生创业计划大赛",
       "tier": "official",
-      "fields": ["innovation", "business"],
+      "fields": [
+        "innovation",
+        "business"
+      ],
       "status": "pending",
       "signup": "偶数年举办，校赛通常上年年底启动",
       "schedule": "两年一届，国赛在偶数年 5–6 月",
@@ -76,7 +150,9 @@
       "id": "official-004",
       "name": "ACM-ICPC 国际大学生程序设计竞赛",
       "tier": "official",
-      "fields": ["computer"],
+      "fields": [
+        "computer"
+      ],
       "status": "open",
       "signup": "各校选拔赛通常在 9–10 月，区域赛 10–11 月",
       "schedule": "区域赛秋季，亚洲区决赛及世界总决赛次年",
@@ -90,7 +166,9 @@
       "id": "official-005",
       "name": "全国大学生数学建模竞赛",
       "tier": "official",
-      "fields": ["science"],
+      "fields": [
+        "science"
+      ],
       "status": "done",
       "signup": "每年 9 月比赛，通过学校统一报名",
       "schedule": "2026 年 9 月中旬（通常 9 月第二个周末）",
@@ -104,7 +182,9 @@
       "id": "official-006",
       "name": "全国大学生电子设计竞赛",
       "tier": "official",
-      "fields": ["engineering"],
+      "fields": [
+        "engineering"
+      ],
       "status": "pending",
       "signup": "奇数年国赛，通过学校报名",
       "schedule": "国赛在奇数年 7–8 月，为期 4 天 3 夜",
@@ -118,7 +198,9 @@
       "id": "official-007",
       "name": "中国大学生医学技术技能大赛",
       "tier": "official",
-      "fields": ["medical"],
+      "fields": [
+        "medical"
+      ],
       "status": "pending",
       "signup": "通过医学院校或附属医院报名",
       "schedule": "每年一届，具体时间以官方通知为准",
@@ -132,7 +214,9 @@
       "id": "official-008",
       "name": "全国大学生机械创新设计大赛",
       "tier": "official",
-      "fields": ["engineering"],
+      "fields": [
+        "engineering"
+      ],
       "status": "pending",
       "signup": "两年一届，通过学校报名",
       "schedule": "国赛在偶数年举办",
@@ -146,7 +230,10 @@
       "id": "official-009",
       "name": "全国大学生结构设计竞赛",
       "tier": "official",
-      "fields": ["civil", "engineering"],
+      "fields": [
+        "civil",
+        "engineering"
+      ],
       "status": "pending",
       "signup": "分区赛 + 国赛，通过学校报名",
       "schedule": "每年一届，国赛通常在 10 月",
@@ -160,7 +247,9 @@
       "id": "official-010",
       "name": "全国大学生广告艺术大赛",
       "tier": "official",
-      "fields": ["design"],
+      "fields": [
+        "design"
+      ],
       "status": "open",
       "signup": "每年 3–6 月校级初评，官网提交作品",
       "schedule": "校赛 3–6 月，省赛 7 月，国赛 8–9 月",
@@ -174,7 +263,11 @@
       "id": "official-011",
       "name": "全国大学生智能汽车竞赛",
       "tier": "official",
-      "fields": ["engineering", "robot", "ai"],
+      "fields": [
+        "engineering",
+        "robot",
+        "ai"
+      ],
       "status": "done",
       "signup": "通过学校报名，分选拔赛和总决赛",
       "schedule": "每年 7–8 月举办总决赛",
@@ -188,7 +281,10 @@
       "id": "official-012",
       "name": "全国大学生电子商务「创新、创意及创业」挑战赛",
       "tier": "official",
-      "fields": ["business", "innovation"],
+      "fields": [
+        "business",
+        "innovation"
+      ],
       "status": "pending",
       "signup": "每年 9–12 月启动报名",
       "schedule": "校赛 3–4 月，省赛 4–6 月，国赛 7 月左右",
@@ -202,7 +298,11 @@
       "id": "official-013",
       "name": "全国大学生节能减排社会实践与科技竞赛",
       "tier": "official",
-      "fields": ["civil", "engineering", "science"],
+      "fields": [
+        "civil",
+        "engineering",
+        "science"
+      ],
       "status": "pending",
       "signup": "每年 3–4 月启动报名",
       "schedule": "国赛通常在 8 月",
@@ -216,7 +316,9 @@
       "id": "official-014",
       "name": "中国大学生工程实践与创新能力大赛",
       "tier": "official",
-      "fields": ["engineering"],
+      "fields": [
+        "engineering"
+      ],
       "status": "pending",
       "signup": "两年一届，通过学校报名",
       "schedule": "国赛在奇数年举办",
@@ -230,7 +332,9 @@
       "id": "official-015",
       "name": "全国大学生物流设计大赛",
       "tier": "official",
-      "fields": ["business"],
+      "fields": [
+        "business"
+      ],
       "status": "pending",
       "signup": "两年一届，通过学校组队报名",
       "schedule": "国赛通常在偶数年",
@@ -244,7 +348,9 @@
       "id": "official-016",
       "name": "「外研社·国才杯」「理解当代中国」全国大学生外语能力大赛",
       "tier": "official",
-      "fields": ["language"],
+      "fields": [
+        "language"
+      ],
       "status": "pending",
       "signup": "每年 6–9 月，通过学校报名",
       "schedule": "校赛 9–10 月，省赛 10–11 月，国赛 12 月",
@@ -258,7 +364,9 @@
       "id": "official-017",
       "name": "两岸新锐设计竞赛·华灿奖",
       "tier": "official",
-      "fields": ["design"],
+      "fields": [
+        "design"
+      ],
       "status": "pending",
       "signup": "每年 4–7 月征稿",
       "schedule": "评审通常在 9–10 月",
@@ -272,7 +380,9 @@
       "id": "official-018",
       "name": "全国大学生创新创业训练计划年会展示",
       "tier": "official",
-      "fields": ["innovation"],
+      "fields": [
+        "innovation"
+      ],
       "status": "pending",
       "signup": "由各高校推荐优秀大创项目参展",
       "schedule": "每年一届，时间以通知为准",
@@ -286,7 +396,10 @@
       "id": "official-019",
       "name": "全国大学生化工设计竞赛",
       "tier": "official",
-      "fields": ["science", "engineering"],
+      "fields": [
+        "science",
+        "engineering"
+      ],
       "status": "pending",
       "signup": "每年 3 月启动，5–6 月提交作品",
       "schedule": "国赛 8 月",
@@ -300,7 +413,10 @@
       "id": "official-020",
       "name": "全国大学生机器人大赛（CURC）",
       "tier": "official",
-      "fields": ["robot", "engineering"],
+      "fields": [
+        "robot",
+        "engineering"
+      ],
       "status": "pending",
       "signup": "含 RoboMaster、RoboCon 等分赛，通过官网报名",
       "schedule": "各分赛时间不同，集中在 5–8 月",
@@ -314,7 +430,10 @@
       "id": "official-021",
       "name": "全国大学生市场调查与分析大赛",
       "tier": "official",
-      "fields": ["business", "science"],
+      "fields": [
+        "business",
+        "science"
+      ],
       "status": "pending",
       "signup": "每年 10 月启动报名",
       "schedule": "校赛 3 月，省赛 4 月，国赛 5 月",
@@ -328,7 +447,11 @@
       "id": "official-022",
       "name": "全国大学生先进成图技术与产品信息建模创新大赛",
       "tier": "official",
-      "fields": ["engineering", "civil", "design"],
+      "fields": [
+        "engineering",
+        "civil",
+        "design"
+      ],
       "status": "pending",
       "signup": "每年 3–5 月报名",
       "schedule": "国赛通常在 7–8 月",
@@ -342,7 +465,10 @@
       "id": "official-023",
       "name": "全国三维数字化创新设计大赛",
       "tier": "official",
-      "fields": ["design", "engineering"],
+      "fields": [
+        "design",
+        "engineering"
+      ],
       "status": "pending",
       "signup": "每年 3–6 月报名并提交作品",
       "schedule": "省赛 7 月，国赛 8 月",
@@ -356,7 +482,10 @@
       "id": "official-024",
       "name": "「西门子杯」中国智能制造挑战赛",
       "tier": "official",
-      "fields": ["engineering", "ai"],
+      "fields": [
+        "engineering",
+        "ai"
+      ],
       "status": "pending",
       "signup": "每年 3–5 月报名",
       "schedule": "初赛 6–7 月，决赛 8 月",
@@ -370,7 +499,11 @@
       "id": "official-025",
       "name": "中国大学生服务外包创新创业大赛",
       "tier": "official",
-      "fields": ["innovation", "computer", "business"],
+      "fields": [
+        "innovation",
+        "computer",
+        "business"
+      ],
       "status": "pending",
       "signup": "每年 10–12 月报名",
       "schedule": "决赛次年 8 月左右",
@@ -384,7 +517,11 @@
       "id": "official-026",
       "name": "中国大学生计算机设计大赛",
       "tier": "official",
-      "fields": ["computer", "design", "ai"],
+      "fields": [
+        "computer",
+        "design",
+        "ai"
+      ],
       "status": "pending",
       "signup": "每年 1–3 月校级报名",
       "schedule": "省赛 4–5 月，国赛 7–8 月",
@@ -398,7 +535,10 @@
       "id": "official-027",
       "name": "中国高校计算机大赛",
       "tier": "official",
-      "fields": ["computer", "ai"],
+      "fields": [
+        "computer",
+        "ai"
+      ],
       "status": "pending",
       "signup": "各子赛时间不同，详见官网",
       "schedule": "含大数据挑战赛、团体程序设计天梯赛、移动应用创新赛、网络技术挑战赛、人工智能创意赛",
@@ -412,7 +552,10 @@
       "id": "official-028",
       "name": "蓝桥杯全国软件和信息技术专业人才大赛",
       "tier": "official",
-      "fields": ["computer", "ai"],
+      "fields": [
+        "computer",
+        "ai"
+      ],
       "status": "done",
       "signup": "每年 10–12 月报名省赛",
       "schedule": "省赛次年 4 月，国赛 6 月",
@@ -426,7 +569,9 @@
       "id": "official-029",
       "name": "米兰设计周--中国高校设计学科师生优秀作品展",
       "tier": "official",
-      "fields": ["design"],
+      "fields": [
+        "design"
+      ],
       "status": "pending",
       "signup": "每年 10 月启动，次年 3 月截稿",
       "schedule": "省赛 3–4 月，国赛 5 月",
@@ -440,7 +585,9 @@
       "id": "official-030",
       "name": "全国大学生地质技能竞赛",
       "tier": "official",
-      "fields": ["science"],
+      "fields": [
+        "science"
+      ],
       "status": "pending",
       "signup": "两年一届，通过学校报名",
       "schedule": "国赛在偶数年举办",
@@ -454,7 +601,10 @@
       "id": "official-031",
       "name": "全国大学生光电设计竞赛",
       "tier": "official",
-      "fields": ["science", "engineering"],
+      "fields": [
+        "science",
+        "engineering"
+      ],
       "status": "pending",
       "signup": "两年一届，通过学校报名",
       "schedule": "国赛在偶数年 8 月左右",
@@ -468,7 +618,10 @@
       "id": "official-032",
       "name": "全国大学生集成电路创新创业大赛",
       "tier": "official",
-      "fields": ["engineering", "computer"],
+      "fields": [
+        "engineering",
+        "computer"
+      ],
       "status": "pending",
       "signup": "每年 1–3 月报名",
       "schedule": "初赛 4–5 月，决赛 7 月",
@@ -482,7 +635,10 @@
       "id": "official-033",
       "name": "全国大学生金相技能大赛",
       "tier": "official",
-      "fields": ["engineering", "science"],
+      "fields": [
+        "engineering",
+        "science"
+      ],
       "status": "pending",
       "signup": "每年 3–5 月报名",
       "schedule": "国赛 7–8 月",
@@ -496,7 +652,10 @@
       "id": "official-034",
       "name": "全国大学生信息安全竞赛",
       "tier": "official",
-      "fields": ["computer", "ai"],
+      "fields": [
+        "computer",
+        "ai"
+      ],
       "status": "pending",
       "signup": "每年 4–5 月报名",
       "schedule": "初赛 6–7 月，决赛 8 月",
@@ -510,7 +669,10 @@
       "id": "official-035",
       "name": "未来设计师·全国高校数字艺术设计大赛",
       "tier": "official",
-      "fields": ["design", "computer"],
+      "fields": [
+        "design",
+        "computer"
+      ],
       "status": "pending",
       "signup": "每年 1–6 月征集作品",
       "schedule": "省赛 7 月，国赛 8 月",
@@ -524,7 +686,10 @@
       "id": "official-036",
       "name": "全国周培源大学生力学竞赛",
       "tier": "official",
-      "fields": ["science", "engineering"],
+      "fields": [
+        "science",
+        "engineering"
+      ],
       "status": "pending",
       "signup": "两年一届，通过学校报名",
       "schedule": "国赛在奇数年 5 月",
@@ -538,7 +703,9 @@
       "id": "official-037",
       "name": "中国大学生机械工程创新创意大赛",
       "tier": "official",
-      "fields": ["engineering"],
+      "fields": [
+        "engineering"
+      ],
       "status": "pending",
       "signup": "各子赛时间不同，详见官网",
       "schedule": "含过程装备实践与创新赛、铸造工艺设计赛、材料热处理创新创业赛、起重机创意赛、智能制造大赛",
@@ -552,7 +719,11 @@
       "id": "official-038",
       "name": "中国机器人大赛暨 RoboCup 机器人世界杯中国赛",
       "tier": "official",
-      "fields": ["robot", "ai", "computer"],
+      "fields": [
+        "robot",
+        "ai",
+        "computer"
+      ],
       "status": "pending",
       "signup": "每年 4–7 月报名",
       "schedule": "国赛 8–10 月",
@@ -566,7 +737,10 @@
       "id": "official-039",
       "name": "「中国软件杯」大学生软件设计大赛",
       "tier": "official",
-      "fields": ["computer", "ai"],
+      "fields": [
+        "computer",
+        "ai"
+      ],
       "status": "pending",
       "signup": "每年 3–6 月报名",
       "schedule": "决赛 8 月",
@@ -580,7 +754,12 @@
       "id": "official-040",
       "name": "中美青年创客大赛",
       "tier": "official",
-      "fields": ["innovation", "engineering", "computer", "design"],
+      "fields": [
+        "innovation",
+        "engineering",
+        "computer",
+        "design"
+      ],
       "status": "pending",
       "signup": "每年 4–6 月报名",
       "schedule": "分赛区 6–7 月，决赛 8 月",
@@ -594,7 +773,11 @@
       "id": "official-041",
       "name": "睿抗机器人开发者大赛（RAICOM）",
       "tier": "official",
-      "fields": ["robot", "ai", "computer"],
+      "fields": [
+        "robot",
+        "ai",
+        "computer"
+      ],
       "status": "pending",
       "signup": "每年 3–5 月报名",
       "schedule": "省赛 6–7 月，国赛 8 月",
@@ -608,7 +791,10 @@
       "id": "official-042",
       "name": "「大唐杯」全国大学生新一代信息通信技术大赛",
       "tier": "official",
-      "fields": ["engineering", "computer"],
+      "fields": [
+        "engineering",
+        "computer"
+      ],
       "status": "pending",
       "signup": "每年 12 月–次年 4 月报名",
       "schedule": "省赛 4 月，国赛 7 月",
@@ -622,7 +808,11 @@
       "id": "official-043",
       "name": "华为 ICT 大赛",
       "tier": "official",
-      "fields": ["computer", "ai", "engineering"],
+      "fields": [
+        "computer",
+        "ai",
+        "engineering"
+      ],
       "status": "open",
       "signup": "每年 9–12 月启动报名",
       "schedule": "省赛/国家赛次年春季，全球总决赛次年 5 月",
@@ -636,7 +826,11 @@
       "id": "official-044",
       "name": "全国大学生嵌入式芯片与系统设计竞赛",
       "tier": "official",
-      "fields": ["computer", "engineering", "ai"],
+      "fields": [
+        "computer",
+        "engineering",
+        "ai"
+      ],
       "status": "pending",
       "signup": "每年 3–5 月报名",
       "schedule": "分赛区 7 月，总决赛 8 月",
@@ -650,7 +844,10 @@
       "id": "official-045",
       "name": "全国大学生生命科学竞赛（CULSC）",
       "tier": "official",
-      "fields": ["medical", "science"],
+      "fields": [
+        "medical",
+        "science"
+      ],
       "status": "pending",
       "signup": "每年 3–5 月报名",
       "schedule": "省赛 7 月，国赛 8 月",
@@ -664,7 +861,9 @@
       "id": "official-046",
       "name": "全国大学生物理实验竞赛",
       "tier": "official",
-      "fields": ["science"],
+      "fields": [
+        "science"
+      ],
       "status": "pending",
       "signup": "每年 4–6 月报名",
       "schedule": "国赛 7–8 月",
@@ -678,7 +877,11 @@
       "id": "official-047",
       "name": "全国高校 BIM 毕业设计创新大赛",
       "tier": "official",
-      "fields": ["civil", "engineering", "design"],
+      "fields": [
+        "civil",
+        "engineering",
+        "design"
+      ],
       "status": "pending",
       "signup": "每年 9–12 月报名",
       "schedule": "初赛次年 3 月，决赛次年 5 月",
@@ -692,7 +895,11 @@
       "id": "official-048",
       "name": "全国高校商业精英挑战赛",
       "tier": "official",
-      "fields": ["business", "innovation", "design"],
+      "fields": [
+        "business",
+        "innovation",
+        "design"
+      ],
       "status": "pending",
       "signup": "各子赛时间不同，全年滚动",
       "schedule": "含品牌策划、会展专业创新创业实践、国际贸易、创新创业、会计与商业管理案例",
@@ -706,7 +913,10 @@
       "id": "official-049",
       "name": "「学创杯」全国大学生创业综合模拟大赛",
       "tier": "official",
-      "fields": ["business", "innovation"],
+      "fields": [
+        "business",
+        "innovation"
+      ],
       "status": "pending",
       "signup": "每年 3–5 月报名",
       "schedule": "省赛 5–6 月，国赛 10 月",
@@ -720,7 +930,11 @@
       "id": "official-050",
       "name": "中国高校智能机器人创意大赛",
       "tier": "official",
-      "fields": ["robot", "ai", "engineering"],
+      "fields": [
+        "robot",
+        "ai",
+        "engineering"
+      ],
       "status": "pending",
       "signup": "每年 3–6 月报名",
       "schedule": "初赛 7 月，决赛 8 月",
@@ -734,7 +948,10 @@
       "id": "official-051",
       "name": "中国好创意暨全国数字艺术设计大赛",
       "tier": "official",
-      "fields": ["design", "computer"],
+      "fields": [
+        "design",
+        "computer"
+      ],
       "status": "pending",
       "signup": "每年 9 月–次年 6 月征稿",
       "schedule": "评审次年 7–8 月",
@@ -748,7 +965,11 @@
       "id": "official-052",
       "name": "中国机器人及人工智能大赛",
       "tier": "official",
-      "fields": ["robot", "ai", "computer"],
+      "fields": [
+        "robot",
+        "ai",
+        "computer"
+      ],
       "status": "pending",
       "signup": "每年 4–6 月报名",
       "schedule": "省赛 6–7 月，国赛 8 月",
@@ -762,7 +983,9 @@
       "id": "official-053",
       "name": "全国职业院校技能大赛",
       "tier": "official",
-      "fields": ["vocational"],
+      "fields": [
+        "vocational"
+      ],
       "status": "pending",
       "signup": "通过职业院校选拔报名",
       "schedule": "每年一届，时间以官方通知为准",
@@ -776,7 +999,10 @@
       "id": "official-054",
       "name": "全国大学生机器人大赛-RoboTac",
       "tier": "official",
-      "fields": ["robot", "engineering"],
+      "fields": [
+        "robot",
+        "engineering"
+      ],
       "status": "pending",
       "signup": "每年 4–6 月报名",
       "schedule": "国赛 8 月",
@@ -790,7 +1016,9 @@
       "id": "official-055",
       "name": "世界技能大赛",
       "tier": "official",
-      "fields": ["vocational"],
+      "fields": [
+        "vocational"
+      ],
       "status": "pending",
       "signup": "通过国家队选拔",
       "schedule": "每两年一届，通常在偶数年 9–10 月",
@@ -804,7 +1032,9 @@
       "id": "official-056",
       "name": "世界技能大赛中国选拔赛",
       "tier": "official",
-      "fields": ["vocational"],
+      "fields": [
+        "vocational"
+      ],
       "status": "pending",
       "signup": "通过各省/行业选拔",
       "schedule": "每两年一届，时间以通知为准",
@@ -818,7 +1048,9 @@
       "id": "official-057",
       "name": "「21世纪杯」全国英语演讲比赛",
       "tier": "official",
-      "fields": ["language"],
+      "fields": [
+        "language"
+      ],
       "status": "pending",
       "signup": "每年 1–4 月报名",
       "schedule": "校园赛/地区赛 3–5 月，全国总决赛 8 月",
@@ -832,7 +1064,10 @@
       "id": "official-058",
       "name": "「工行杯」全国大学生金融科技创新大赛",
       "tier": "official",
-      "fields": ["business", "computer"],
+      "fields": [
+        "business",
+        "computer"
+      ],
       "status": "pending",
       "signup": "每年 6–10 月报名",
       "schedule": "初赛 9–11 月，决赛次年 3 月",
@@ -846,7 +1081,9 @@
       "id": "official-059",
       "name": "「科云杯」全国大学生财会职业能力大赛",
       "tier": "official",
-      "fields": ["business"],
+      "fields": [
+        "business"
+      ],
       "status": "pending",
       "signup": "每年 3–5 月报名",
       "schedule": "省赛 5–6 月，国赛 11 月",
@@ -860,7 +1097,9 @@
       "id": "official-060",
       "name": "「外教社杯」全国高校学生跨文化能力大赛",
       "tier": "official",
-      "fields": ["language"],
+      "fields": [
+        "language"
+      ],
       "status": "pending",
       "signup": "每年 5–9 月报名",
       "schedule": "省赛 9–10 月，国赛 11 月",
@@ -874,7 +1113,11 @@
       "id": "official-061",
       "name": "iCAN 大学生创新创业大赛",
       "tier": "official",
-      "fields": ["innovation", "engineering", "computer"],
+      "fields": [
+        "innovation",
+        "engineering",
+        "computer"
+      ],
       "status": "pending",
       "signup": "每年 4–7 月报名",
       "schedule": "初赛 6–8 月，决赛 10 月",
@@ -888,7 +1131,10 @@
       "id": "official-062",
       "name": "百度之星·程序设计大赛",
       "tier": "official",
-      "fields": ["computer", "ai"],
+      "fields": [
+        "computer",
+        "ai"
+      ],
       "status": "pending",
       "signup": "每年 5–7 月报名",
       "schedule": "初赛 7 月，决赛 8 月",
@@ -902,7 +1148,11 @@
       "id": "official-063",
       "name": "国际大学生智能农业装备创新大赛",
       "tier": "official",
-      "fields": ["engineering", "ai", "robot"],
+      "fields": [
+        "engineering",
+        "ai",
+        "robot"
+      ],
       "status": "pending",
       "signup": "每年 9–11 月报名",
       "schedule": "决赛次年 4 月左右",
@@ -916,7 +1166,9 @@
       "id": "official-064",
       "name": "全国本科院校税收风险管控案例大赛",
       "tier": "official",
-      "fields": ["business"],
+      "fields": [
+        "business"
+      ],
       "status": "pending",
       "signup": "每年 9–10 月报名",
       "schedule": "初赛 10 月，决赛 12 月",
@@ -930,7 +1182,11 @@
       "id": "official-065",
       "name": "全国大学生测绘学科创新创业智能大赛",
       "tier": "official",
-      "fields": ["civil", "science", "ai"],
+      "fields": [
+        "civil",
+        "science",
+        "ai"
+      ],
       "status": "pending",
       "signup": "每年 3–5 月报名",
       "schedule": "国赛 7 月",
@@ -944,7 +1200,10 @@
       "id": "official-066",
       "name": "全国大学生工业设计大赛",
       "tier": "official",
-      "fields": ["design", "engineering"],
+      "fields": [
+        "design",
+        "engineering"
+      ],
       "status": "pending",
       "signup": "两年一届，通过学校报名",
       "schedule": "国赛在偶数年",
@@ -958,7 +1217,10 @@
       "id": "official-067",
       "name": "全国大学生花园设计建造竞赛",
       "tier": "official",
-      "fields": ["civil", "design"],
+      "fields": [
+        "civil",
+        "design"
+      ],
       "status": "pending",
       "signup": "每年 2–4 月报名",
       "schedule": "建造与评审 5–7 月",
@@ -972,7 +1234,10 @@
       "id": "official-068",
       "name": "全国大学生化工实验大赛",
       "tier": "official",
-      "fields": ["science", "engineering"],
+      "fields": [
+        "science",
+        "engineering"
+      ],
       "status": "pending",
       "signup": "每年 4–6 月报名",
       "schedule": "区赛 7 月，国赛 8 月",
@@ -986,7 +1251,9 @@
       "id": "official-069",
       "name": "全国大学生化学实验创新设计大赛",
       "tier": "official",
-      "fields": ["science"],
+      "fields": [
+        "science"
+      ],
       "status": "pending",
       "signup": "每年 3–5 月报名",
       "schedule": "初赛 6–7 月，决赛 8 月",
@@ -1000,7 +1267,10 @@
       "id": "official-070",
       "name": "全国大学生基础医学创新研究暨实验设计论坛（大赛）",
       "tier": "official",
-      "fields": ["medical", "science"],
+      "fields": [
+        "medical",
+        "science"
+      ],
       "status": "pending",
       "signup": "每年 3–4 月报名",
       "schedule": "初赛 5 月，决赛 8 月",
@@ -1014,7 +1284,9 @@
       "id": "official-071",
       "name": "全国大学生计算机系统能力大赛",
       "tier": "official",
-      "fields": ["computer"],
+      "fields": [
+        "computer"
+      ],
       "status": "pending",
       "signup": "每年 3–5 月报名",
       "schedule": "初赛 6–7 月，决赛 8 月",
@@ -1028,7 +1300,10 @@
       "id": "official-072",
       "name": "全国大学生能源经济学术创意大赛",
       "tier": "official",
-      "fields": ["business", "science"],
+      "fields": [
+        "business",
+        "science"
+      ],
       "status": "pending",
       "signup": "每年 10–12 月报名",
       "schedule": "校赛次年 3 月，国赛次年 5 月",
@@ -1042,7 +1317,11 @@
       "id": "official-073",
       "name": "全国大学生数字媒体科技作品及创意竞赛",
       "tier": "official",
-      "fields": ["design", "computer", "ai"],
+      "fields": [
+        "design",
+        "computer",
+        "ai"
+      ],
       "status": "pending",
       "signup": "每年 4–7 月报名",
       "schedule": "省赛 8 月，国赛 9 月",
@@ -1056,7 +1335,10 @@
       "id": "official-074",
       "name": "全国大学生水利创新设计大赛",
       "tier": "official",
-      "fields": ["civil", "engineering"],
+      "fields": [
+        "civil",
+        "engineering"
+      ],
       "status": "pending",
       "signup": "两年一届，通过学校报名",
       "schedule": "国赛在偶数年 7 月",
@@ -1070,7 +1352,11 @@
       "id": "official-075",
       "name": "全国大学生统计建模大赛",
       "tier": "official",
-      "fields": ["science", "business", "ai"],
+      "fields": [
+        "science",
+        "business",
+        "ai"
+      ],
       "status": "done",
       "signup": "每年 2–3 月报名",
       "schedule": "省赛 5–6 月，国赛 8 月",
@@ -1084,7 +1370,11 @@
       "id": "official-076",
       "name": "全国大学生物联网设计竞赛",
       "tier": "official",
-      "fields": ["computer", "engineering", "ai"],
+      "fields": [
+        "computer",
+        "engineering",
+        "ai"
+      ],
       "status": "pending",
       "signup": "每年 3–5 月报名",
       "schedule": "分赛区 7 月，总决赛 8 月",
@@ -1098,7 +1388,10 @@
       "id": "official-077",
       "name": "全国大学生信息安全与对抗技术竞赛",
       "tier": "official",
-      "fields": ["computer", "ai"],
+      "fields": [
+        "computer",
+        "ai"
+      ],
       "status": "pending",
       "signup": "每年 4–6 月报名",
       "schedule": "初赛 7 月，决赛 8 月",
@@ -1112,7 +1405,10 @@
       "id": "official-078",
       "name": "全国高等院校数智化企业经营沙盘大赛",
       "tier": "official",
-      "fields": ["business", "computer"],
+      "fields": [
+        "business",
+        "computer"
+      ],
       "status": "pending",
       "signup": "每年 4–6 月报名",
       "schedule": "省赛 6 月，国赛 10 月",
@@ -1126,7 +1422,9 @@
       "id": "official-079",
       "name": "全国企业模拟竞赛大赛",
       "tier": "official",
-      "fields": ["business"],
+      "fields": [
+        "business"
+      ],
       "status": "pending",
       "signup": "每年 3–5 月报名",
       "schedule": "初赛 5 月，决赛 7 月",
@@ -1140,7 +1438,11 @@
       "id": "official-080",
       "name": "全国数字建筑创新应用大赛",
       "tier": "official",
-      "fields": ["civil", "computer", "design"],
+      "fields": [
+        "civil",
+        "computer",
+        "design"
+      ],
       "status": "pending",
       "signup": "每年 4–6 月报名",
       "schedule": "初赛 9 月，决赛 11 月",
@@ -1154,7 +1456,10 @@
       "id": "official-081",
       "name": "全球校园人工智能算法精英大赛",
       "tier": "official",
-      "fields": ["ai", "computer"],
+      "fields": [
+        "ai",
+        "computer"
+      ],
       "status": "pending",
       "signup": "每年 3–5 月报名",
       "schedule": "初赛 6–7 月，决赛 8 月",
@@ -1168,7 +1473,10 @@
       "id": "official-082",
       "name": "中华经典诵写讲大赛",
       "tier": "official",
-      "fields": ["language", "design"],
+      "fields": [
+        "language",
+        "design"
+      ],
       "status": "pending",
       "signup": "每年 4–6 月报名",
       "schedule": "省赛 7–8 月，国赛 9–10 月",
@@ -1182,7 +1490,11 @@
       "id": "official-083",
       "name": "一带一路暨金砖国家技能发展与技术创新大赛",
       "tier": "official",
-      "fields": ["vocational", "computer", "engineering"],
+      "fields": [
+        "vocational",
+        "computer",
+        "engineering"
+      ],
       "status": "pending",
       "signup": "每年 3–6 月报名",
       "schedule": "各子赛时间不同，决赛通常在 11 月",
@@ -1196,7 +1508,10 @@
       "id": "official-084",
       "name": "码蹄杯全国职业院校程序设计大赛",
       "tier": "official",
-      "fields": ["computer", "vocational"],
+      "fields": [
+        "computer",
+        "vocational"
+      ],
       "status": "pending",
       "signup": "每年 3–5 月报名",
       "schedule": "初赛 5 月，决赛 7 月",
@@ -1210,7 +1525,10 @@
       "id": "enterprise-001",
       "name": "字节跳动 ByteCamp 夏令营",
       "tier": "enterprise",
-      "fields": ["computer", "ai"],
+      "fields": [
+        "computer",
+        "ai"
+      ],
       "status": "pending",
       "signup": "每年 4–6 月申请",
       "schedule": "夏令营 7–8 月",
@@ -1224,7 +1542,10 @@
       "id": "enterprise-002",
       "name": "腾讯犀牛鸟精英人才培养计划",
       "tier": "enterprise",
-      "fields": ["computer", "ai"],
+      "fields": [
+        "computer",
+        "ai"
+      ],
       "status": "open",
       "signup": "每年 3–5 月申请",
       "schedule": "培养周期 6–12 个月",
@@ -1238,7 +1559,11 @@
       "id": "enterprise-003",
       "name": "阿里云天池大赛",
       "tier": "enterprise",
-      "fields": ["ai", "computer", "business"],
+      "fields": [
+        "ai",
+        "computer",
+        "business"
+      ],
       "status": "open",
       "signup": "全年滚动，按赛题报名",
       "schedule": "各赛题时间不同",
@@ -1252,7 +1577,11 @@
       "id": "enterprise-004",
       "name": "华为开发者大赛",
       "tier": "enterprise",
-      "fields": ["computer", "ai", "engineering"],
+      "fields": [
+        "computer",
+        "ai",
+        "engineering"
+      ],
       "status": "open",
       "signup": "全年滚动，按赛题报名",
       "schedule": "各赛道时间不同",
@@ -1266,7 +1595,12 @@
       "id": "enterprise-005",
       "name": "小米黑客马拉松",
       "tier": "enterprise",
-      "fields": ["computer", "ai", "design", "innovation"],
+      "fields": [
+        "computer",
+        "ai",
+        "design",
+        "innovation"
+      ],
       "status": "pending",
       "signup": "每年 6–8 月报名",
       "schedule": "决赛 9–10 月",
@@ -1280,7 +1614,11 @@
       "id": "enterprise-006",
       "name": "京东零售算法挑战赛",
       "tier": "enterprise",
-      "fields": ["ai", "computer", "business"],
+      "fields": [
+        "ai",
+        "computer",
+        "business"
+      ],
       "status": "pending",
       "signup": "每年 4–6 月启动",
       "schedule": "初赛 5–7 月，决赛 8 月",
@@ -1294,7 +1632,11 @@
       "id": "enterprise-007",
       "name": "百度 AI 创意赛",
       "tier": "enterprise",
-      "fields": ["ai", "computer", "design"],
+      "fields": [
+        "ai",
+        "computer",
+        "design"
+      ],
       "status": "open",
       "signup": "全年滚动，按赛题报名",
       "schedule": "各赛题时间不同",
@@ -1308,7 +1650,10 @@
       "id": "enterprise-008",
       "name": "网易游戏高校 MINI 项目",
       "tier": "enterprise",
-      "fields": ["design", "computer"],
+      "fields": [
+        "design",
+        "computer"
+      ],
       "status": "pending",
       "signup": "每年 3–5 月报名",
       "schedule": "创作周期 3–6 个月",
@@ -1322,7 +1667,12 @@
       "id": "enterprise-009",
       "name": "2026 TRAE AI 创造力大赛",
       "tier": "enterprise",
-      "fields": ["ai", "computer", "design", "innovation"],
+      "fields": [
+        "ai",
+        "computer",
+        "design",
+        "innovation"
+      ],
       "status": "open",
       "signup": "2026年6月16日至7月15日",
       "schedule": "报名与初赛至 7月15日；后续赛程以赛事官网为准",
@@ -1336,7 +1686,12 @@
       "id": "enterprise-010",
       "name": "腾讯云黑客松·AI 智能体争霸赛",
       "tier": "enterprise",
-      "fields": ["ai", "computer", "business", "innovation"],
+      "fields": [
+        "ai",
+        "computer",
+        "business",
+        "innovation"
+      ],
       "status": "ongoing",
       "signup": "2026年4月15日至5月31日（已截止）",
       "schedule": "6月1日至7月31日赛区线下路演；赛事至 9月18日",
@@ -1350,7 +1705,11 @@
       "id": "enterprise-011",
       "name": "2026 火山杯 Agent 创新大赛",
       "tier": "enterprise",
-      "fields": ["ai", "computer", "innovation"],
+      "fields": [
+        "ai",
+        "computer",
+        "innovation"
+      ],
       "status": "open",
       "signup": "2026年Q3-Q4，申请举办独立赛",
       "schedule": "2026年Q3-Q4",
@@ -1364,7 +1723,10 @@
       "id": "enterprise-012",
       "name": "华为算法挑战赛第38期：内存受限的大模型推理优化",
       "tier": "enterprise",
-      "fields": ["ai", "computer"],
+      "fields": [
+        "ai",
+        "computer"
+      ],
       "status": "open",
       "signup": "即日起至 2026年7月23日",
       "schedule": "2026年6月23日至7月23日；结果预计 8月上旬公布",
@@ -1378,7 +1740,9 @@
       "id": "hobby-001",
       "name": "全国大学生英语语法大赛（商业赛示例）",
       "tier": "hobby",
-      "fields": ["language"],
+      "fields": [
+        "language"
+      ],
       "status": "open",
       "signup": "全年多场次，线上报名",
       "schedule": "每月约 1–2 场线上考试",
@@ -1392,7 +1756,10 @@
       "id": "hobby-002",
       "name": "全国大学生 AI 图像图形技术创新大赛（商业赛示例）",
       "tier": "hobby",
-      "fields": ["ai", "design"],
+      "fields": [
+        "ai",
+        "design"
+      ],
       "status": "open",
       "signup": "线上报名，全年多场次",
       "schedule": "按赛道分批评审",
@@ -1406,7 +1773,10 @@
       "id": "hobby-003",
       "name": "全国大学生办公软件技能大赛",
       "tier": "hobby",
-      "fields": ["computer", "vocational"],
+      "fields": [
+        "computer",
+        "vocational"
+      ],
       "status": "open",
       "signup": "线上报名，全年多场次",
       "schedule": "每月约 1 场线上考试",
@@ -1420,7 +1790,9 @@
       "id": "hobby-004",
       "name": "全国大学生摄影大赛",
       "tier": "hobby",
-      "fields": ["design"],
+      "fields": [
+        "design"
+      ],
       "status": "pending",
       "signup": "按主题征稿，全年多期",
       "schedule": "各期截稿时间不同",
@@ -1429,6 +1801,75 @@
       "official_site": "https://m.saikr.com/",
       "organizer": "社会机构",
       "prestige": 2
+    },
+    {
+      "id": "52jingsai-72dc2f9f0944",
+      "name": "2026年第五届大学生英语翻译能力竞赛报名通知",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "signup": "即日起至8月6日",
+      "schedule": "",
+      "summary": "来源：我爱竞赛网。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23405-1.html",
+      "official_site": "",
+      "organizer": "中国外文局亚太传播中心",
+      "prestige": 4
+    },
+    {
+      "id": "52jingsai-9c66aa8503e5",
+      "name": "【英语词汇大赛】2026年第四届“外文奖”大学生英语词汇大赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：我爱竞赛网。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23445-1.html",
+      "official_site": "",
+      "organizer": "全国高校英语翻译挑战赛组织委员会、北京民教信息科学研究院、广东省高教外语研究院",
+      "prestige": 4
+    },
+    {
+      "id": "52jingsai-6ed748f24f50",
+      "name": "【写作竞赛】2026年第五届创研杯全国大学生英语写作竞赛",
+      "tier": "official",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：我爱竞赛网。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23427-1.html",
+      "official_site": "",
+      "organizer": "中国外文局亚太传播中心",
+      "prestige": 8
+    },
+    {
+      "id": "52jingsai-6f888443fb6c",
+      "name": "关于举办第十一届“创客中国”人工智能中小企业创新创业大赛的通知",
+      "tier": "enterprise",
+      "fields": [
+        "ai",
+        "innovation"
+      ],
+      "status": "open",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：我爱竞赛网。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23801-1.html",
+      "official_site": "",
+      "organizer": "",
+      "prestige": 6
     }
   ]
 }
