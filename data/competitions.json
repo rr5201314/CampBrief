@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-15T10:07:06.420079+08:00",
+  "last_updated": "2026-07-15T14:52:23.531332+08:00",
   "source": "CampBrief",
   "total": 104,
   "tiers": [
@@ -1673,7 +1673,7 @@
         "design",
         "innovation"
       ],
-      "status": "open",
+      "status": "done",
       "signup": "2026年6月16日至7月15日",
       "schedule": "报名与初赛至 7月15日；后续赛程以赛事官网为准",
       "summary": "TRAE 面向创作者、开发者与高校学生的 AI 应用创作赛事，参赛作品需使用 TRAE 完成并提交可体验的创意产物或 Demo。",
