@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-15T09:40:31.666572+08:00",
+  "last_updated": "2026-07-15T09:47:48.665790+08:00",
   "source": "CampBrief",
   "total": 104,
   "tiers": [
@@ -807,7 +807,7 @@
     {
       "id": "official-043",
       "name": "华为 ICT 大赛",
-      "tier": "official",
+      "tier": "enterprise",
       "fields": [
         "computer",
         "ai",
@@ -820,7 +820,7 @@
       "search": "华为 ICT 大赛 网络 云计算 昇腾",
       "official_site": "https://e.huawei.com/cn/talent/ict-academy/#/ict-contest",
       "organizer": "华为技术有限公司",
-      "prestige": 8
+      "prestige": 6
     },
     {
       "id": "official-044",
@@ -1130,7 +1130,7 @@
     {
       "id": "official-062",
       "name": "百度之星·程序设计大赛",
-      "tier": "official",
+      "tier": "enterprise",
       "fields": [
         "computer",
         "ai"
@@ -1142,7 +1142,7 @@
       "search": "百度之星 程序设计 算法",
       "official_site": "https://star.baidu.com/#/",
       "organizer": "百度在线网络技术（北京）有限公司",
-      "prestige": 7
+      "prestige": 6
     },
     {
       "id": "official-063",
@@ -1805,7 +1805,7 @@
     {
       "id": "52jingsai-72dc2f9f0944",
       "name": "2026年第五届大学生英语翻译能力竞赛报名通知",
-      "tier": "hobby",
+      "tier": "official",
       "fields": [
         "language"
       ],
@@ -1817,7 +1817,7 @@
       "official_url": "https://www.52jingsai.com/article-23405-1.html",
       "official_site": "",
       "organizer": "中国外文局亚太传播中心",
-      "prestige": 4
+      "prestige": 8
     },
     {
       "id": "52jingsai-9c66aa8503e5",
