@@ -108,9 +108,14 @@
 
       const detailHref = `detail.html?id=${encodeURIComponent(item.id || "")}`;
       const officialUrl = safeExternalUrl(item.official_site);
-      const officialAction = officialUrl
-        ? `<a href="${escapeHtml(officialUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">${item.status === "open" ? "立即报名" : "访问官网"} <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>`
-        : "";
+      const sourceUrl = safeExternalUrl(item.official_url);
+      const isThirdParty = sourceUrl && sourceUrl.includes("52jingsai");
+      let officialAction = "";
+      if (officialUrl) {
+        officialAction = `<a href="${escapeHtml(officialUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">${item.status === "open" ? "立即报名" : "访问官网"} <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>`;
+      } else if (isThirdParty) {
+        officialAction = `<a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">信息来源 <svg class="icon-sm icon"><use href="#i-arrow"/></svg></a>`;
+      }
 
       return `
         <article class="card" data-id="${escapeHtml(item.id || "")}" data-tier="${escapeHtml(item.tier || "")}" data-fields="${escapeHtml((item.fields || []).join(","))}" data-status="${escapeHtml(item.status || "")}" data-search="${escapeHtml((item.search || item.name || "").toLowerCase())}">
