@@ -108,6 +108,14 @@ python3 "$REPO/scripts/collect-52jingsai.py" \
 - 标题含"报名"且未过期 → `open`
 - 默认 → `pending`
 
+**过期自动状态更新（每次执行必做）：**
+对 `data/competitions.json` 中所有条目，检查当前日期：
+- `signup` 字段包含截止日期 且 当前日期已过该日期 且 status 为 `open` → 自动改为 `done`
+- `schedule` 字段包含比赛结束时间 且 当前日期已过 且 status 为 `open` 或 `ongoing` → 自动改为 `done`
+- 日期解析不到时不改状态，保持原值
+- 改状态时只改 `status` 字段，不动其他字段
+- 在完成报告中列出所有自动状态变更
+
 **ID 生成：**
 - 新条目：`52jingsai-{hash}`，hash 由名称+URL 计算 SHA-256 前 12 位
 - 已有条目：保留原 ID 不变
