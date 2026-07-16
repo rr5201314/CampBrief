@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-16T08:36:20.941939+08:00",
+  "last_updated": "2026-07-16T08:56:03.401274+08:00",
   "source": "GitHub Trending",
   "total": 8,
   "items": [
@@ -27,8 +27,8 @@
           "stars_delta": 1664,
           "trend_period": "today",
           "description": "The open-source CapCut alternative",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "开源视频编辑器，定位为 CapCut（剪映国际版）的免费替代方案，支持时间线编辑、特效和导出。",
+          "solves_what": "解决视频剪辑工具被商业产品垄断、免费开源替代品匮乏的问题，让创作者无需订阅即可完成基础视频编辑。"
         },
         {
           "rank": 2,
@@ -40,8 +40,8 @@
           "stars_delta": 1277,
           "trend_period": "today",
           "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "面向 Claude Code、Cursor 和 Codex 的设计技能包，帮助 AI 编程工具生成更美观的 UI 设计。",
+          "solves_what": "解决 AI 生成代码时界面设计粗糙、千篇一律的「AI 味」问题，通过设计约束让输出更接近专业水准。"
         },
         {
           "rank": 3,
@@ -53,8 +53,8 @@
           "stars_delta": 2130,
           "trend_period": "today",
           "description": "Skills for Real Engineers. Straight from my .claude directory.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "面向工程师的 .claude 目录技能集，提供经过实战验证的 Claude Code 工作流和最佳实践。",
+          "solves_what": "解决 Claude Code 使用中缺乏标准化工作流的问题，让工程师能快速复用高效的 AI 编程模式。"
         },
         {
           "rank": 4,
@@ -66,8 +66,8 @@
           "stars_delta": 110,
           "trend_period": "today",
           "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "自托管的 AI 伴侣项目，支持实时语音对话和 Minecraft、Factorio 等游戏交互，灵感来自 Neuro-sama。",
+          "solves_what": "解决现有 AI 助手缺乏个性化和实时交互能力的问题，让用户拥有可自定义的、具人格特征的 AI 伴侣。"
         },
         {
           "rank": 5,
@@ -79,8 +79,8 @@
           "stars_delta": 471,
           "trend_period": "today",
           "description": "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "安全防护工具，用于拦截 AI 编程代理执行危险的 git 和 shell 命令，防止误操作导致数据丢失。",
+          "solves_what": "解决 AI 编程代理在自主执行命令时可能误删代码库、强制推送或执行破坏性操作的安全隐患。"
         },
         {
           "rank": 6,
@@ -92,8 +92,8 @@
           "stars_delta": 915,
           "trend_period": "today",
           "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "基于 AI 的个人交易代理，帮助用户分析市场数据并辅助做出交易决策。",
+          "solves_what": "解决个人投资者缺乏专业量化分析工具的问题，用 AI 代理降低金融交易的技术门槛。"
         },
         {
           "rank": 7,
@@ -105,8 +105,8 @@
           "stars_delta": 299,
           "trend_period": "today",
           "description": "A coding agent for low-cost models",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "面向低成本模型的编程代理框架，支持本地运行的 LLM 执行代码、操作文件和完成开发任务。",
+          "solves_what": "解决现有编程代理依赖昂贵的云端大模型的问题，让预算有限的开发者也能使用 AI 编程助手。"
         },
         {
           "rank": 8,
@@ -118,8 +118,8 @@
           "stars_delta": 172,
           "trend_period": "today",
           "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "终身个性化辅导系统，根据学生的学习进度和知识薄弱点提供自适应教学内容。",
+          "solves_what": "解决传统在线教育「千人一面」的问题，通过 AI 实现真正个性化的学习路径和实时答疑。"
         },
         {
           "rank": 9,
@@ -131,8 +131,8 @@
           "stars_delta": 725,
           "trend_period": "today",
           "description": "Become a cracked AI/ML Research Engineer",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "AI/ML 研究工程师的数学与计算机科学速查手册，涵盖线性代数、概率论、优化等核心知识。",
+          "solves_what": "解决 AI/ML 学习者数学基础分散、缺乏系统性参考材料的问题，提供一站式的知识梳理。"
         },
         {
           "rank": 10,
@@ -144,8 +144,8 @@
           "stars_delta": 1236,
           "trend_period": "today",
           "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "精选 100+ 可直接运行的 AI Agent 和 RAG 应用合集，提供源码和部署指南。",
+          "solves_what": "解决开发者学习 LLM 应用开发时缺乏可运行示例的问题，降低从概念到原型的实现门槛。"
         }
       ]
     },
@@ -186,8 +186,8 @@
           "stars_delta": 1106,
           "trend_period": "today",
           "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
-          "chinese_summary": "收录 100 多个可实际运行的 AI Agent 和 RAG 应用，支持克隆、自定义和部署。",
-          "solves_what": "为开发者提供可直接使用的 LLM 应用示例，降低 AI 应用开发的学习门槛。"
+          "chinese_summary": "精选 100+ 可直接运行的 AI Agent 和 RAG 应用合集，提供源码和部署指南。",
+          "solves_what": "解决开发者学习 LLM 应用开发时缺乏可运行示例的问题，降低从概念到原型的实现门槛。"
         },
         {
           "rank": 3,
@@ -199,8 +199,8 @@
           "stars_delta": 1679,
           "trend_period": "today",
           "description": "Skills for Real Engineers. Straight from my .claude directory.",
-          "chinese_summary": "面向实际工程师的 AI 编码技能集，来自作者的 .claude 配置目录。",
-          "solves_what": "为使用 AI 编码工具的工程师提供即用的技能模板和最佳实践参考。"
+          "chinese_summary": "面向工程师的 .claude 目录技能集，提供经过实战验证的 Claude Code 工作流和最佳实践。",
+          "solves_what": "解决 Claude Code 使用中缺乏标准化工作流的问题，让工程师能快速复用高效的 AI 编程模式。"
         },
         {
           "rank": 4,
@@ -212,8 +212,8 @@
           "stars_delta": 473,
           "trend_period": "today",
           "description": "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.",
-          "chinese_summary": "用 Rust 编写的命令安全防护工具，可拦截 AI Agent 执行危险的 git 和 shell 命令，防止误删文件或破坏仓库。",
-          "solves_what": "解决 AI 编程代理可能执行破坏性命令（如 git reset --hard、rm -rf）的安全风险，为自动化工作流提供防护层。"
+          "chinese_summary": "安全防护工具，用于拦截 AI 编程代理执行危险的 git 和 shell 命令，防止误操作导致数据丢失。",
+          "solves_what": "解决 AI 编程代理在自主执行命令时可能误删代码库、强制推送或执行破坏性操作的安全隐患。"
         },
         {
           "rank": 5,
@@ -225,8 +225,8 @@
           "stars_delta": 4276,
           "trend_period": "today",
           "description": "The open-source CapCut alternative",
-          "chinese_summary": "开源视频编辑工具，作为 CapCut（剪映国际版）的免费替代方案。",
-          "solves_what": "为用户提供免费、开源的视频编辑选择，不依赖商业闭源剪辑软件。"
+          "chinese_summary": "开源视频编辑器，定位为 CapCut（剪映国际版）的免费替代方案，支持时间线编辑、特效和导出。",
+          "solves_what": "解决视频剪辑工具被商业产品垄断、免费开源替代品匮乏的问题，让创作者无需订阅即可完成基础视频编辑。"
         },
         {
           "rank": 6,
@@ -251,8 +251,8 @@
           "stars_delta": 1015,
           "trend_period": "today",
           "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-          "chinese_summary": "为 Claude Code、Cursor 等 AI 编码工具提供反「AI 味」的设计技能。",
-          "solves_what": "帮助 AI 编码工具生成更有设计感的界面代码，避免千篇一律的模板化风格。"
+          "chinese_summary": "面向 Claude Code、Cursor 和 Codex 的设计技能包，帮助 AI 编程工具生成更美观的 UI 设计。",
+          "solves_what": "解决 AI 生成代码时界面设计粗糙、千篇一律的「AI 味」问题，通过设计约束让输出更接近专业水准。"
         },
         {
           "rank": 8,
@@ -264,8 +264,8 @@
           "stars_delta": 1256,
           "trend_period": "today",
           "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
-          "chinese_summary": "香港大学数据科学实验室推出的个人化交易 Agent，结合大语言模型进行市场分析和交易决策。",
-          "solves_what": "将 LLM 的推理能力应用于个人化交易场景，为研究 AI 与金融交叉领域提供开源实验平台。"
+          "chinese_summary": "基于 AI 的个人交易代理，帮助用户分析市场数据并辅助做出交易决策。",
+          "solves_what": "解决个人投资者缺乏专业量化分析工具的问题，用 AI 代理降低金融交易的技术门槛。"
         },
         {
           "rank": 9,
@@ -319,8 +319,8 @@
           "stars_delta": 1229,
           "trend_period": "today",
           "description": "The open-source CapCut alternative",
-          "chinese_summary": "开源视频编辑器，定位为 CapCut（剪映）的替代方案，支持时间线编辑、多轨处理等专业功能，代码完全开放。",
-          "solves_what": "为需要免费、开源视频编辑工具的用户提供隐私友好且无广告的剪辑方案，摆脱商业软件限制。"
+          "chinese_summary": "开源视频编辑器，定位为 CapCut（剪映国际版）的免费替代方案，支持时间线编辑、特效和导出。",
+          "solves_what": "解决视频剪辑工具被商业产品垄断、免费开源替代品匮乏的问题，让创作者无需订阅即可完成基础视频编辑。"
         },
         {
           "rank": 2,
@@ -332,8 +332,8 @@
           "stars_delta": 1153,
           "trend_period": "today",
           "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
-          "chinese_summary": "香港大学数据科学实验室推出的个人化交易 Agent，结合大语言模型进行市场分析和交易决策，支持前端可视化。",
-          "solves_what": "将 LLM 的推理能力应用于个人化交易场景，为研究 AI 与金融交叉领域提供开源实验平台。"
+          "chinese_summary": "基于 AI 的个人交易代理，帮助用户分析市场数据并辅助做出交易决策。",
+          "solves_what": "解决个人投资者缺乏专业量化分析工具的问题，用 AI 代理降低金融交易的技术门槛。"
         },
         {
           "rank": 3,
@@ -345,8 +345,8 @@
           "stars_delta": 78,
           "trend_period": "today",
           "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
-          "chinese_summary": "自托管的 AI 伴侣项目，支持实时语音聊天和游戏互动。",
-          "solves_what": "提供本地运行的虚拟伴侣，支持 Minecraft、Factorio 等游戏场景。"
+          "chinese_summary": "自托管的 AI 伴侣项目，支持实时语音对话和 Minecraft、Factorio 等游戏交互，灵感来自 Neuro-sama。",
+          "solves_what": "解决现有 AI 助手缺乏个性化和实时交互能力的问题，让用户拥有可自定义的、具人格特征的 AI 伴侣。"
         },
         {
           "rank": 4,
@@ -358,8 +358,8 @@
           "stars_delta": 996,
           "trend_period": "today",
           "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
-          "chinese_summary": "汇集 100 多个基于大语言模型的 AI Agent 和 RAG 应用实例，涵盖高级 Agent、聊天机器人和检索增强生成等多种场景。",
-          "solves_what": "为开发者提供可直接克隆和定制的 LLM 应用模板，降低 AI 应用开发门槛。"
+          "chinese_summary": "精选 100+ 可直接运行的 AI Agent 和 RAG 应用合集，提供源码和部署指南。",
+          "solves_what": "解决开发者学习 LLM 应用开发时缺乏可运行示例的问题，降低从概念到原型的实现门槛。"
         },
         {
           "rank": 5,
@@ -371,8 +371,8 @@
           "stars_delta": 794,
           "trend_period": "today",
           "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-          "chinese_summary": "面向 Claude Code、Cursor 和 Codex 等 AI 编程工具的反 AI 味设计技能，帮助 AI 生成的前端代码摆脱千篇一律的 AI 风格。",
-          "solves_what": "解决 AI 生成的网页和 UI 设计同质化严重的问题，让 AI 辅助产出的界面更具设计感和辨识度。"
+          "chinese_summary": "面向 Claude Code、Cursor 和 Codex 的设计技能包，帮助 AI 编程工具生成更美观的 UI 设计。",
+          "solves_what": "解决 AI 生成代码时界面设计粗糙、千篇一律的「AI 味」问题，通过设计约束让输出更接近专业水准。"
         },
         {
           "rank": 6,
@@ -465,8 +465,8 @@
           "stars_delta": 444,
           "trend_period": "today",
           "description": "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.",
-          "chinese_summary": "用 Rust 编写的命令安全防护工具，可拦截 AI Agent 执行危险的 git 和 shell 命令，防止误删文件或破坏仓库。",
-          "solves_what": "解决 AI 编程代理可能执行破坏性命令（如 git reset --hard、rm -rf）的安全风险，为自动化工作流提供防护层。"
+          "chinese_summary": "安全防护工具，用于拦截 AI 编程代理执行危险的 git 和 shell 命令，防止误操作导致数据丢失。",
+          "solves_what": "解决 AI 编程代理在自主执行命令时可能误删代码库、强制推送或执行破坏性操作的安全隐患。"
         },
         {
           "rank": 2,
@@ -491,8 +491,8 @@
           "stars_delta": 768,
           "trend_period": "today",
           "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
-          "chinese_summary": "香港大学数据科学实验室推出的个人化交易 Agent，结合大语言模型进行市场分析和交易决策，支持前端可视化。",
-          "solves_what": "将 LLM 的推理能力应用于个人化交易场景，为研究 AI 与金融交叉领域提供开源实验平台。"
+          "chinese_summary": "基于 AI 的个人交易代理，帮助用户分析市场数据并辅助做出交易决策。",
+          "solves_what": "解决个人投资者缺乏专业量化分析工具的问题，用 AI 代理降低金融交易的技术门槛。"
         },
         {
           "rank": 4,
@@ -517,8 +517,8 @@
           "stars_delta": 408,
           "trend_period": "today",
           "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
-          "chinese_summary": "汇集 100 多个基于大语言模型的 AI Agent 和 RAG 应用实例，涵盖高级 Agent、聊天机器人和检索增强生成等多种场景。",
-          "solves_what": "为开发者提供可直接克隆和定制的 LLM 应用模板，降低 AI 应用开发门槛。"
+          "chinese_summary": "精选 100+ 可直接运行的 AI Agent 和 RAG 应用合集，提供源码和部署指南。",
+          "solves_what": "解决开发者学习 LLM 应用开发时缺乏可运行示例的问题，降低从概念到原型的实现门槛。"
         },
         {
           "rank": 6,
@@ -757,8 +757,8 @@
           "stars_delta": 444,
           "trend_period": "today",
           "description": "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.",
-          "chinese_summary": "用 Rust 编写的命令安全防护工具，可拦截 AI Agent 执行危险的 git 和 shell 命令，防止误删文件或破坏仓库。",
-          "solves_what": "解决 AI 编程代理可能执行破坏性命令（如 git reset --hard、rm -rf）的安全风险，为自动化工作流提供防护层。"
+          "chinese_summary": "安全防护工具，用于拦截 AI 编程代理执行危险的 git 和 shell 命令，防止误操作导致数据丢失。",
+          "solves_what": "解决 AI 编程代理在自主执行命令时可能误删代码库、强制推送或执行破坏性操作的安全隐患。"
         },
         {
           "rank": 2,
@@ -783,8 +783,8 @@
           "stars_delta": 776,
           "trend_period": "today",
           "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
-          "chinese_summary": "香港大学数据科学实验室推出的个人化交易 Agent，结合大语言模型进行市场分析和交易决策，支持前端可视化。",
-          "solves_what": "将 LLM 的推理能力应用于个人化交易场景，为研究 AI 与金融交叉领域提供开源实验平台。"
+          "chinese_summary": "基于 AI 的个人交易代理，帮助用户分析市场数据并辅助做出交易决策。",
+          "solves_what": "解决个人投资者缺乏专业量化分析工具的问题，用 AI 代理降低金融交易的技术门槛。"
         },
         {
           "rank": 4,
@@ -809,8 +809,8 @@
           "stars_delta": 549,
           "trend_period": "today",
           "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
-          "chinese_summary": "汇集 100 多个基于大语言模型的 AI Agent 和 RAG 应用实例，涵盖高级 Agent、聊天机器人和检索增强生成等多种场景。",
-          "solves_what": "为开发者提供可直接克隆和定制的 LLM 应用模板，降低 AI 应用开发门槛。"
+          "chinese_summary": "精选 100+ 可直接运行的 AI Agent 和 RAG 应用合集，提供源码和部署指南。",
+          "solves_what": "解决开发者学习 LLM 应用开发时缺乏可运行示例的问题，降低从概念到原型的实现门槛。"
         },
         {
           "rank": 6,
