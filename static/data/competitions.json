@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-16T09:02:45+08:00",
+  "last_updated": "2026-07-16T21:41:32.129231+08:00",
   "source": "CampBrief",
-  "total": 150,
+  "total": 152,
   "tiers": [
     {
       "key": "all",
@@ -2830,6 +2830,40 @@
       "official_url": "https://www.saikr.com/vse/psy2026",
       "official_site": "",
       "organizer": "全国大学生心理知识竞赛",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-c4f00438cfee",
+      "name": "第四届“一带一路”大学生知识文化大赛",
+      "tier": "hobby",
+      "fields": [
+        "design"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/2026/YDYL/Culture",
+      "official_site": "",
+      "organizer": "一带一路系列赛事组委会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-3bcfd9399c73",
+      "name": "“声释中华”新时代大学生外宣人才文学素养大赛",
+      "tier": "hobby",
+      "fields": [
+        "other"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/2026SY",
+      "official_site": "",
+      "organizer": "“声释中华”新时代大学生外宣人才赛事组委会",
       "prestige": 4
     }
   ]
