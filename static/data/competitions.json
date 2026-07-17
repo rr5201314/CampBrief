@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-17T13:40:28.193657+08:00",
+  "last_updated": "2026-07-17T15:32:48.379322+08:00",
   "source": "CampBrief",
-  "total": 153,
+  "total": 154,
   "tiers": [
     {
       "key": "all",
@@ -1906,7 +1906,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "done",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -2883,6 +2883,22 @@
       "official_site": "",
       "organizer": "全国大学生文学竞赛组委会、北京中华文化发展协会、黑龙江省创新教育研究院",
       "prestige": 4
+    },
+    {
+      "id": "comp-52jingsai-bcce7b0c6e68",
+      "name": "【7月17日截止】2026年全国高校英语翻译挑战赛报名通知！",
+      "official_url": "https://www.52jingsai.com/article-23405-1.html",
+      "status": "open",
+      "tier": "official",
+      "signup": "即日起至8月6日",
+      "schedule": "",
+      "organizer": "中国外文局亚太传播中心",
+      "summary": "赛事详情请访问信息来源页面",
+      "fields": [
+        "language"
+      ],
+      "official_site": "https://www.52jingsai.com/article-23405-1.html",
+      "prestige": 7
     }
   ]
 }
