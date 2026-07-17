@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-17T09:04:33.664539+08:00",
+  "last_updated": "2026-07-17T09:08:03.431321+08:00",
   "source": "CampBrief Auto",
-  "total": 316,
+  "total": 317,
   "items": [
     {
       "id": "news-812df71bd8d1c19f",
@@ -42,6 +42,19 @@
       "priority": 1,
       "category": "ai",
       "source": "36氪"
+    },
+    {
+      "id": "news-d1065187ef74e575",
+      "title": "月之暗面发布 Kimi K3：2.8万亿参数开源模型，性能逼近 Claude Fable 5",
+      "url": "https://finance.sina.com.cn/tob/2026-07-17/doc-iniiahrp8128941.shtml",
+      "date": "2026-07-16",
+      "published": "2026-07-16T22:00:00+08:00",
+      "summary": "月之暗面正式发布旗舰模型 Kimi K3，2.8万亿参数，采用 KDA 混合线性注意力架构，原生支持视觉理解与100万token上下文。K3在编程与推理任务上超越 Claude Opus 4.8，接近 Fable 5 水平，即将开源权重。",
+      "detail": "月之暗面正式发布迄今最强旗舰模型 Kimi K3，总参数2.8万亿，基于 Kimi Delta Attention（KDA）混合线性注意力机制和 Attention Residuals 技术构建。模型原生支持视觉理解，拥有100万token上下文窗口，尤其擅长编程、游戏/3D和知识类任务。在 Arena.ai 排行榜上，K3 超越 Claude Opus 4.8，接近 Fable 5 水平，被评为中国迄今规模最大的AI模型。K3 已在 kimi.com 和 Kimi App 上线，会员分四档（49-699元/月），完整模型权重将于7月27日前开源。API 定价为输入0.30-3.00美元/百万token，输出15美元/百万token。",
+      "image": "",
+      "priority": 4,
+      "category": "ai",
+      "source": "juya AI 日报"
     },
     {
       "id": "news-352405a3261b296c",
