@@ -126,3 +126,27 @@ test("only scheduled pending items may enter a carousel", () => {
     false
   );
 });
+
+test("homepage board ordering uses publication time before priority", () => {
+  const items = [
+    { id: "older-headline", published: "2026-07-16T23:59:00+08:00", priority: 4 },
+    { id: "newer-major", published: "2026-07-17T00:01:00+08:00", priority: 3 }
+  ];
+
+  assert.deepEqual(
+    items.sort(CampBriefContent.compareByPublishedThenPriority).map(item => item.id),
+    ["newer-major", "older-headline"]
+  );
+});
+
+test("homepage board ordering uses priority when publication times are equal", () => {
+  const items = [
+    { id: "major", published: "2026-07-17T09:00:00+08:00", priority: 3 },
+    { id: "headline", published: "2026-07-17T09:00:00+08:00", priority: 4 }
+  ];
+
+  assert.deepEqual(
+    items.sort(CampBriefContent.compareByPublishedThenPriority).map(item => item.id),
+    ["headline", "major"]
+  );
+});

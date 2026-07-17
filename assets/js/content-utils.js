@@ -73,6 +73,19 @@ const CampBriefContent = (function () {
     return new Date(b.published || b.date || 0).getTime() - new Date(a.published || a.date || 0).getTime();
   }
 
+  // 首页看板按实际发布时间倒序；仅在发布时间完全相同时才以优先级决定先后。
+  // 与列表页的“时效标签分组”排序分开，避免较早的高优先级资讯压过较新的资讯。
+  function compareByPublishedThenPriority(a, b) {
+    const timestamp = item => {
+      const value = new Date(item?.published || item?.date || "").getTime();
+      return Number.isNaN(value) ? Number.NEGATIVE_INFINITY : value;
+    };
+    const publishedDiff = timestamp(b) - timestamp(a);
+    if (publishedDiff) return publishedDiff;
+
+    return (b.priority || 1) - (a.priority || 1);
+  }
+
   // 将 ISO8601 时间戳格式化为 "MM.DD HH:mm 更新"
   function formatLastUpdated(isoString) {
     if (!isoString) return "";
@@ -299,6 +312,7 @@ const CampBriefContent = (function () {
   return Object.freeze({
     naturalDayKey,
     compareByTimeBadgeThenPriority,
+    compareByPublishedThenPriority,
     escapeHtml,
     safeHttpUrl,
     getTimeBadge,

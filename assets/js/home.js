@@ -247,9 +247,9 @@ function observeBoards(){
   }
 }
 
-/* ---- 每日资讯看板规则：自然日优先、优先级次之 ---- */
+/* ---- 每日资讯看板规则：发布时间优先、优先级次之 ---- */
 // 显示 priority 为 4、3、2 的消息（4=头条，3=重磅，2=重要），不显示 priority 为 1 的消息。
-// 先按北京时间自然日倒序；同一自然日内按 4 → 3 → 2，再按发布时间倒序。
+// 先按实际发布时间倒序；仅在发布时间相同时按 4 → 3 → 2 排序。
 const HOME_NEWS_MIN_PRIORITY = 3;
 const COMPETITION_STATUS_ORDER = { open: 0, pending: 1, ongoing: 2, done: 3 };
 const COMPETITION_TIER_ORDER = { official: 0, enterprise: 1, hobby: 2 };
@@ -413,7 +413,7 @@ function applyNewsRules(list){
         && published >= threeDaysAgo
         && published <= now;
     })
-    .sort((a, b) => CampBriefContent.compareByTimeBadgeThenPriority(a, b, now));
+    .sort(CampBriefContent.compareByPublishedThenPriority);
 }
 
 // 从 daily-news.json 加载资讯数据并映射为看板所需格式
