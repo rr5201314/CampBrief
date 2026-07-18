@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-18T09:58:02+08:00",
+  "last_updated": "2026-07-18T14:51:35.994205+08:00",
   "source": "CampBrief",
-  "total": 154,
+  "total": 155,
   "tiers": [
     {
       "key": "all",
@@ -2899,6 +2899,23 @@
       ],
       "official_site": "https://www.52jingsai.com/article-23405-1.html",
       "prestige": 7
+    },
+    {
+      "id": "comp-52jingsai-b5cafbe9a2bb",
+      "name": "第十九届“振兴杯”全国青年职业技能大赛",
+      "tier": "hobby",
+      "fields": [
+        "design"
+      ],
+      "status": "done",
+      "signup": "2026年7月17日中午12点截止",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23522-1.html",
+      "official_site": "",
+      "organizer": "华夏文化促进会素质教育委员会",
+      "prestige": 4
     }
   ]
 }
