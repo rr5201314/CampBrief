@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-18T15:04:39+08:00",
+  "last_updated": "2026-07-18T21:05:30+08:00",
   "source": "CampBrief",
   "total": 28,
   "categories": [
@@ -103,7 +103,7 @@
       "requirements": "全日制普通高等院校本科、专科在校生，在籍研究生，各类成人高等院校在校生均可报考。",
       "scoring": "自近年起不再提供纸质成绩单，成绩发布 10 个工作日后，考生可登录中国教育考试网查看并下载电子成绩报告单，与原纸质成绩报告单具有同等效力。",
       "timeline": [],
-      "last_updated": "2026-07-15T18:50:55+08:00"
+      "last_updated": "2026-07-18T21:05:30+08:00"
     },
     {
       "id": "tem-4",
@@ -168,8 +168,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-07-15T16:40:00+08:00",
-        "review_after": "2026-07-18T16:40:00+08:00"
+        "verified_at": "2026-07-18T21:05:30+08:00",
+        "review_after": "2026-07-21T21:05:30+08:00"
       },
       "fee": "约2170元",
       "schedule": "全年多场",
@@ -178,7 +178,8 @@
       "official_site": "https://ielts.neea.cn/",
       "official_portal": "https://ielts-main.neea.cn/",
       "news_list_url": "https://www.chinaielts.org/press-office",
-      "official_url": "https://www.chinaielts.org/press-office/IELTS-Chinese-Mainland-Exam-Registration-Fee-Update-2026"
+      "official_url": "https://www.chinaielts.org/press-office/IELTS-Chinese-Mainland-Exam-Registration-Fee-Update-2026",
+      "last_updated": "2026-07-18T21:05:30+08:00"
     },
     {
       "id": "toefl",
@@ -187,8 +188,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-07-15T16:40:00+08:00",
-        "review_after": "2026-07-18T16:40:00+08:00"
+        "verified_at": "2026-07-18T21:05:30+08:00",
+        "review_after": "2026-07-21T21:05:30+08:00"
       },
       "fee": "约2100元",
       "schedule": "全年多场",
@@ -197,7 +198,8 @@
       "official_site": "https://toefl.neea.cn/",
       "official_portal": "https://toefl-main.neea.cn/",
       "news_list_url": "https://toefl-main.neea.cn/html1/category/16123/94-1.htm",
-      "official_url": "https://toefl.neea.cn/"
+      "official_url": "https://toefl.neea.cn/",
+      "last_updated": "2026-07-18T21:05:30+08:00"
     },
     {
       "id": "catti-202606",
@@ -288,7 +290,7 @@
       "official_portal": "https://www.ruankao.org.cn/",
       "news_list_url": "https://www.ruankao.org.cn/index/work.html",
       "official_url": "https://www.ruankao.org.cn/article/content/2603051204118156470700001.html",
-      "last_updated": "2026-07-15T18:50:55+08:00"
+      "last_updated": "2026-07-18T21:05:30+08:00"
     },
     {
       "id": "pat-202603",
@@ -331,7 +333,7 @@
       "official_portal": "https://www.patest.cn/",
       "news_list_url": "https://www.patest.cn/articles",
       "official_url": "https://www.patest.cn/articles",
-      "last_updated": "2026-07-15T18:50:55+08:00"
+      "last_updated": "2026-07-18T21:05:30+08:00"
     },
     {
       "id": "junior-accounting-2026",
@@ -383,7 +385,7 @@
           "value": "各省级考试管理机构于2026年8月11日前公布"
         }
       ],
-      "last_updated": "2026-07-15T18:50:55+08:00"
+      "last_updated": "2026-07-18T21:05:30+08:00"
     },
     {
       "id": "cpa-2026",
@@ -425,7 +427,7 @@
           "value": "2026年6月15日—30日（每天8:00—20:00）"
         }
       ],
-      "last_updated": "2026-07-15T18:50:55+08:00"
+      "last_updated": "2026-07-18T21:05:30+08:00"
     },
     {
       "id": "acca-202603",
@@ -569,11 +571,15 @@
       "id": "ntce-202610",
       "name": "2026年下半年中小学教师资格考试 (NTCE)",
       "category": "teacher",
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
-        "mode": "manual",
-        "verified_at": "2026-07-15T16:40:00+08:00",
-        "review_after": "2026-07-18T16:40:00+08:00"
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-07-03",
+        "registration_end": "2026-07-10",
+        "event_start": "2026-09-12",
+        "event_end": "2026-12-06",
+        "verified_at": "2026-07-18T21:05:30+08:00"
       },
       "fee": "每科约50-70元",
       "schedule": "2026年下半年（笔试10月，面试12月）",
@@ -604,7 +610,8 @@
           "label": "成绩查询",
           "value": "以官方公告为准"
         }
-      ]
+      ],
+      "last_updated": "2026-07-18T21:05:30+08:00"
     },
     {
       "id": "psc",
@@ -613,8 +620,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-07-15T16:40:00+08:00",
-        "review_after": "2026-07-18T16:40:00+08:00"
+        "verified_at": "2026-07-18T21:05:30+08:00",
+        "review_after": "2026-07-21T21:05:30+08:00"
       },
       "fee": "约50元（学生优惠）",
       "schedule": "各地定期组织",
@@ -623,7 +630,8 @@
       "official_site": "https://stzbm.cltt.org/",
       "official_portal": "https://www.cltt.org/",
       "news_list_url": "https://www.cltt.org/",
-      "official_url": "https://stzbm.cltt.org/"
+      "official_url": "https://stzbm.cltt.org/",
+      "last_updated": "2026-07-18T21:05:30+08:00"
     },
     {
       "id": "guokao-2026",
@@ -638,7 +646,7 @@
       "official_portal": "https://www.scs.gov.cn/gkIndex.html",
       "news_list_url": "https://www.scs.gov.cn/",
       "official_url": "",
-      "last_updated": "2026-07-15T18:50:55+08:00"
+      "last_updated": "2026-07-18T21:05:30+08:00"
     },
     {
       "id": "shiye",
@@ -647,8 +655,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-07-15T16:40:00+08:00",
-        "review_after": "2026-07-18T16:40:00+08:00"
+        "verified_at": "2026-07-18T21:05:30+08:00",
+        "review_after": "2026-07-21T21:05:30+08:00"
       },
       "fee": "约50-100元",
       "schedule": "各地不定期",
@@ -657,7 +665,8 @@
       "official_site": "https://job.mohrss.gov.cn/cjobs/institution/listInstitution",
       "official_portal": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/index.html",
       "news_list_url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/index.html",
-      "official_url": "https://job.mohrss.gov.cn/cjobs/institution/listInstitution"
+      "official_url": "https://job.mohrss.gov.cn/cjobs/institution/listInstitution",
+      "last_updated": "2026-07-18T21:05:30+08:00"
     },
     {
       "id": "kaoyan-2026",
@@ -672,7 +681,7 @@
       "official_portal": "https://yz.chsi.com.cn/",
       "news_list_url": "https://yz.chsi.com.cn/kyzx/jybzc/",
       "official_url": "",
-      "last_updated": "2026-07-15T18:50:55+08:00"
+      "last_updated": "2026-07-18T21:05:30+08:00"
     },
     {
       "id": "baoyan-2026",
@@ -687,7 +696,7 @@
       "official_portal": "https://yz.chsi.com.cn/tm/",
       "news_list_url": "https://yz.chsi.com.cn/kyzx/kydt/",
       "official_url": "",
-      "last_updated": "2026-07-15T18:50:55+08:00"
+      "last_updated": "2026-07-18T21:05:30+08:00"
     }
   ]
 }
