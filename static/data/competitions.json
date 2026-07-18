@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-18T15:34:13.238987+08:00",
+  "last_updated": "2026-07-18T21:40:04+08:00",
   "source": "CampBrief",
   "total": 155,
   "tiers": [
@@ -172,8 +172,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-15T18:57:08.606962+08:00",
-        "review_after": "2026-07-18T18:57:08.606962+08:00"
+        "verified_at": "2026-07-18T21:39:50.221662+08:00",
+        "review_after": "2026-07-21T21:39:50.221662+08:00"
       }
     },
     {
@@ -275,8 +275,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-15T18:57:08.606962+08:00",
-        "review_after": "2026-07-18T18:57:08.606962+08:00"
+        "verified_at": "2026-07-18T21:39:50.221662+08:00",
+        "review_after": "2026-07-21T21:39:50.221662+08:00"
       }
     },
     {
@@ -844,8 +844,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-15T18:57:08.606962+08:00",
-        "review_after": "2026-07-18T18:57:08.606962+08:00"
+        "verified_at": "2026-07-18T21:39:50.221662+08:00",
+        "review_after": "2026-07-21T21:39:50.221662+08:00"
       }
     },
     {
@@ -1137,21 +1137,28 @@
     },
     {
       "id": "official-061",
-      "name": "iCAN 大学生创新创业大赛",
+      "name": "2026年第二十届iCAN大学生创新创业大赛",
       "tier": "official",
       "fields": [
         "innovation",
         "engineering",
         "computer"
       ],
-      "status": "pending",
+      "status": "open",
       "signup": "每年 4–7 月报名",
       "schedule": "初赛 6–8 月，决赛 10 月",
       "summary": "以物联网、人工智能、智能硬件为特色的创新创业赛事。",
       "search": "iCAN 创新创业 物联网",
       "official_site": "https://www.g-ican.com",
       "organizer": "国际 iCAN 联盟",
-      "prestige": 6
+      "prestige": 6,
+      "official_url": "https://www.saikr.com/vse/ican2026",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-07-18T21:39:50.221662+08:00",
+        "review_after": "2026-07-21T21:39:50.221662+08:00"
+      }
     },
     {
       "id": "official-062",
@@ -1583,8 +1590,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-15T18:57:08.606962+08:00",
-        "review_after": "2026-07-18T18:57:08.606962+08:00"
+        "verified_at": "2026-07-18T21:39:50.221662+08:00",
+        "review_after": "2026-07-21T21:39:50.221662+08:00"
       }
     },
     {
@@ -1607,8 +1614,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-15T18:57:08.606962+08:00",
-        "review_after": "2026-07-18T18:57:08.606962+08:00"
+        "verified_at": "2026-07-18T21:39:50.221662+08:00",
+        "review_after": "2026-07-21T21:39:50.221662+08:00"
       }
     },
     {
@@ -1631,8 +1638,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-15T18:57:08.606962+08:00",
-        "review_after": "2026-07-18T18:57:08.606962+08:00"
+        "verified_at": "2026-07-18T21:39:50.221662+08:00",
+        "review_after": "2026-07-21T21:39:50.221662+08:00"
       }
     },
     {
@@ -1692,8 +1699,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-15T18:57:08.606962+08:00",
-        "review_after": "2026-07-18T18:57:08.606962+08:00"
+        "verified_at": "2026-07-18T21:39:50.221662+08:00",
+        "review_after": "2026-07-21T21:39:50.221662+08:00"
       }
     },
     {
@@ -1771,8 +1778,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-15T18:57:08.606962+08:00",
-        "review_after": "2026-07-18T18:57:08.606962+08:00"
+        "verified_at": "2026-07-18T21:39:50.221662+08:00",
+        "review_after": "2026-07-21T21:39:50.221662+08:00"
       }
     },
     {
@@ -1810,8 +1817,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-15T18:57:08.606962+08:00",
-        "review_after": "2026-07-18T18:57:08.606962+08:00"
+        "verified_at": "2026-07-18T21:39:50.221662+08:00",
+        "review_after": "2026-07-21T21:39:50.221662+08:00"
       }
     },
     {
@@ -1833,8 +1840,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-15T18:57:08.606962+08:00",
-        "review_after": "2026-07-18T18:57:08.606962+08:00"
+        "verified_at": "2026-07-18T21:39:50.221662+08:00",
+        "review_after": "2026-07-21T21:39:50.221662+08:00"
       }
     },
     {
@@ -1856,8 +1863,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-15T18:57:08.606962+08:00",
-        "review_after": "2026-07-18T18:57:08.606962+08:00"
+        "verified_at": "2026-07-18T21:39:50.221662+08:00",
+        "review_after": "2026-07-21T21:39:50.221662+08:00"
       }
     },
     {
@@ -1929,7 +1936,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "done",
       "signup": "",
       "schedule": "",
       "summary": "多校认可加分，第61届中国高等教育博览会参展赛事||主办单位：中国外文局亚太传播中心",
@@ -1939,10 +1946,11 @@
       "organizer": "中国外文局亚太传播中心",
       "prestige": 7,
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-15T18:57:08.606962+08:00",
-        "review_after": "2026-07-18T18:57:08.606962+08:00"
+        "registration_end": "2026-07-17",
+        "event_end": "2026-07-17",
+        "verified_at": "2026-07-18T21:39:50.221662+08:00"
       }
     },
     {
@@ -1965,8 +1973,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-15T18:57:08.606962+08:00",
-        "review_after": "2026-07-18T18:57:08.606962+08:00"
+        "verified_at": "2026-07-18T21:39:50.221662+08:00",
+        "review_after": "2026-07-21T21:39:50.221662+08:00"
       }
     },
     {
@@ -1988,7 +1996,7 @@
     },
     {
       "id": "comp-saikr-878570eab378",
-      "name": "【报名最后1天】第四届“BETT杯”全国大学生英语语法大赛",
+      "name": "【今日截止】第四届“BETT杯”全国大学生英语语法大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -1998,7 +2006,7 @@
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
         "registration_end": "2026-07-18",
-        "verified_at": "2026-07-15T15:31:29+08:00"
+        "verified_at": "2026-07-18T21:39:50.221662+08:00"
       },
       "signup": "7月18日",
       "schedule": "",
@@ -2252,8 +2260,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-15T18:57:08.606962+08:00",
-        "review_after": "2026-07-18T18:57:08.606962+08:00"
+        "verified_at": "2026-07-18T21:39:50.221662+08:00",
+        "review_after": "2026-07-21T21:39:50.221662+08:00"
       }
     },
     {
@@ -2366,8 +2374,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-15T18:57:08.606962+08:00",
-        "review_after": "2026-07-18T18:57:08.606962+08:00"
+        "verified_at": "2026-07-18T21:39:50.221662+08:00",
+        "review_after": "2026-07-21T21:39:50.221662+08:00"
       }
     },
     {
@@ -2408,8 +2416,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-15T18:57:08.606962+08:00",
-        "review_after": "2026-07-18T18:57:08.606962+08:00"
+        "verified_at": "2026-07-18T21:39:50.221662+08:00",
+        "review_after": "2026-07-21T21:39:50.221662+08:00"
       }
     },
     {
@@ -2448,8 +2456,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-15T18:57:08.606962+08:00",
-        "review_after": "2026-07-18T18:57:08.606962+08:00"
+        "verified_at": "2026-07-18T21:39:50.221662+08:00",
+        "review_after": "2026-07-21T21:39:50.221662+08:00"
       }
     },
     {
@@ -2596,8 +2604,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-15T18:57:08.606962+08:00",
-        "review_after": "2026-07-18T18:57:08.606962+08:00"
+        "verified_at": "2026-07-18T21:39:50.221662+08:00",
+        "review_after": "2026-07-21T21:39:50.221662+08:00"
       }
     },
     {
@@ -2879,7 +2887,7 @@
       "schedule": "2026年7月31",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
-      "official_url": "https://www.52jingsai.com/article-21735-1.html",
+      "official_url": "https://www.52jingsai.com/article-23373-1.html",
       "official_site": "",
       "organizer": "全国大学生文学竞赛组委会、北京中华文化发展协会、黑龙江省创新教育研究院",
       "prestige": 4,
