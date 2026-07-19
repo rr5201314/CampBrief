@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-18T21:40:04+08:00",
+  "last_updated": "2026-07-19T09:47:34+08:00",
   "source": "CampBrief",
   "total": 155,
   "tiers": [
@@ -2001,7 +2001,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -2807,7 +2807,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "closed",
       "signup": "",
       "schedule": "",
       "summary": "来源：赛氪。浏览 2.5万，关注 236",
