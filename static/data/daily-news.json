@@ -1,8 +1,35 @@
 {
-  "last_updated": "2026-07-19T13:35:44.546040+08:00",
+  "last_updated": "2026-07-19T14:03:45+08:00",
   "source": "CampBrief Auto",
-  "total": 364,
+  "total": 375,
   "items": [
+    {
+      "id": "news-ed2e94f3fd57c86c",
+      "title": "蚂蚁集团韩歆毅：没有企业专属数据就没有企业专属智能",
+      "url": "https://36kr.com/newsflashes/3901996759729799?f=rss",
+      "date": "2026-07-19",
+      "published": "2026-07-19T11:30:00+08:00",
+      "summary": "蚂蚁集团CEO韩歆毅表示，企业专属数据是构建企业专属AI智能的核心前提。",
+      "detail": "蚂蚁集团CEO韩歆毅在公开发言中强调，没有企业专属数据就无法构建企业专属的AI智能。他指出，企业在推进AI落地时，数据治理和私有数据的积累是关键基础，通用大模型需要与企业私有知识库深度结合才能产生真正价值。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "36氪"
+    },
+    {
+      "id": "news-90f7e82020a2e233",
+      "title": "量子科技公司两仪万象完成A+轮融资",
+      "url": "https://36kr.com/newsflashes/3901995647321736?f=rss",
+      "date": "2026-07-19",
+      "published": "2026-07-19T11:00:00+08:00",
+      "summary": "量子科技公司两仪万象宣布完成A+轮融资，持续加码量子计算核心技术研发。",
+      "detail": "据36氪报道，量子科技公司两仪万象完成A+轮融资。该公司专注于量子计算核心技术研发，本轮融资将用于加速量子硬件和软件的技术迭代。量子计算作为前沿技术赛道，近期融资活跃度持续提升。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "36氪",
+      "subcategory": "hardware"
+    },
     {
       "id": "news-c34360b288aad354",
       "title": "Codex 负责人 Tibo 宣布重置所有付费用户使用限制",
@@ -67,6 +94,32 @@
       "source": "juya AI 日报",
       "date": "2026-07-19",
       "image": ""
+    },
+    {
+      "id": "news-1c55032a9058efca",
+      "title": "一目科技完成超10亿元E轮融资，估值过百亿元",
+      "url": "https://36kr.com/newsflashes/3902093496813441?f=rss",
+      "date": "2026-07-19",
+      "published": "2026-07-19T13:15:39+08:00",
+      "summary": "一目科技完成超10亿元E轮融资，估值突破百亿元，资金将用于具身智能触觉感知技术研发和量产。",
+      "detail": "据36氪报道，一目科技于7月18日宣布完成超10亿元E轮融资，估值突破100亿元。本轮融资由多家一线人民币基金、头部美元基金和知名产业方联合参与。所融资金将用于具身智能触觉感知材料、芯片、算法和模型的研发，以及产线订单的规模化量产。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "36氪"
+    },
+    {
+      "id": "news-29a76f12f3448568",
+      "title": "“人工智能+防震减灾”行动方案发布",
+      "url": "https://36kr.com/newsflashes/3902090005743493?f=rss",
+      "date": "2026-07-19",
+      "published": "2026-07-19T13:00:00+08:00",
+      "summary": "国家发布“人工智能+防震减灾”行动方案，推动AI技术在地震预警和灾害应对领域的应用。",
+      "detail": "国家相关部门发布“人工智能+防震减灾”行动方案，明确将AI技术应用于地震监测预警、灾害风险评估和应急救援等环节。方案提出建设智能化防震减灾体系，利用大模型和物联网技术提升灾害预测精度和响应效率。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "36氪"
     },
     {
       "id": "news-2143377718a3fab1",
@@ -373,6 +426,60 @@
       "image": ""
     },
     {
+      "id": "news-cb889a88fc432778",
+      "title": "丹麦奥胡斯铁桥上的“悲伤精灵”喷泉雕塑",
+      "url": "https://www.atlasobscura.com/places/the-solgrylle-of-the-blacksmiths-bridge",
+      "date": "2026-07-18",
+      "published": "2026-07-18T00:00:00-04:00",
+      "summary": "丹麦奥胡斯市的铁桥上有一座名为“悲伤精灵”的铜雕喷泉，是当地独特的城市景观。",
+      "detail": "在丹麦奥胡斯市的黑铁桥上，矗立着一座名为Solgrylle（“悲伤精灵”）的铜雕喷泉。这件公共艺术作品融合了北欧神话元素与现代城市设计，是当地居民和游客喜爱的打卡地标，展现了北欧城市独特的艺术品味。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Atlas Obscura"
+    },
+    {
+      "id": "news-778020560c777f89",
+      "title": "基于浏览器的P2P文件传输工具：利用WebRTC实现零服务器传输",
+      "url": "https://airdows.com/",
+      "date": "2026-07-18",
+      "published": "2026-07-18T00:00:00+00:00",
+      "summary": "开发者构建了基于WebRTC的浏览器端P2P文件传输工具，无需服务器中转即可完成文件共享。",
+      "detail": "一位开发者利用WebRTC技术构建了完全在浏览器中运行的P2P文件传输工具。该工具无需安装任何软件或注册账号，通过生成链接即可在设备间直接传输文件，数据不经过中间服务器，兼顾便捷性和隐私保护。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "software"
+    },
+    {
+      "id": "news-a4c96b26983be789",
+      "title": "Deepsec：Vercel Labs 推出开源安全扫描工具",
+      "url": "https://github.com/vercel-labs/deepsec",
+      "date": "2026-07-18",
+      "published": "2026-07-18T00:00:00+00:00",
+      "summary": "Vercel Labs 开源 Deepsec 安全扫描工具，帮助开发者在代码部署前发现安全漏洞。",
+      "detail": "Vercel Labs 发布了开源安全扫描工具 Deepsec，旨在帮助开发者在代码部署前自动检测潜在安全漏洞。该工具可集成到CI/CD流程中，支持多种编程语言和框架，降低应用上线后的安全风险。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "software"
+    },
+    {
+      "id": "news-d7f7d525c34de01c",
+      "title": "AI热潮正在侵蚀全球决策能力",
+      "url": "https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/",
+      "date": "2026-07-18",
+      "published": "2026-07-18T00:00:00+00:00",
+      "summary": "批评文章指出AI热潮导致企业和机构过度依赖AI辅助决策，削弱了人类独立判断能力。",
+      "detail": "一篇广泛讨论的批评文章指出，当前AI热潮正在侵蚀全球范围内的决策质量。作者认为企业和机构越来越倾向于将关键决策外包给AI系统，而忽视了AI在复杂情境下的局限性。文章呼吁在AI辅助和人类判断之间保持平衡。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
       "id": "news-845aa1fb970ce22b",
       "title": "月之暗面推出开源模型 Kimi K3",
       "url": "https://stephen.bochinski.dev/blog/2026/07/18/the-kimi-k3-moment/",
@@ -543,6 +650,33 @@
       "image": ""
     },
     {
+      "id": "news-3978fac9caf13a06",
+      "title": "LuaTeX 实现实时编译：1毫秒内重编译大型文档",
+      "url": "https://www.tug.org/tug2026/preprints/lode-realtime.pdf",
+      "date": "2026-07-18",
+      "published": "2026-07-18T00:00:00+00:00",
+      "summary": "LuaTeX 推出实时编译功能，可在1毫秒内完成大型文档的重编译，大幅提升LaTeX写作体验。",
+      "detail": "在TUG 2026会议上，研究者展示了LuaTeX的实时编译能力，能在1毫秒内完成大型文档的重新编译。这意味着LaTeX用户在编辑时可以实现类似所见即所得的即时预览体验，对学术写作效率有显著提升。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "software"
+    },
+    {
+      "id": "news-d614e2ed6de9e9b1",
+      "title": "英国选手打破尘封27年的英里跑世界纪录",
+      "url": "https://www.theguardian.com/sport/2026/jul/18/josh-kerr-makes-athletics-history-by-shattering-one-mile-world-record",
+      "date": "2026-07-18",
+      "published": "2026-07-18T20:00:00+00:00",
+      "summary": "英国田径选手乔什·科尔在伦敦打破保持27年的英里跑世界纪录，创造历史。",
+      "detail": "英国中长跑选手乔什·科尔在伦敦钻石联赛上打破了尘封27年的英里跑世界纪录。这一成就被视为近年来田径领域最令人瞩目的突破之一，科尔在主场观众面前完成了这一历史性时刻。",
+      "image": "",
+      "priority": 3,
+      "category": "sports",
+      "source": "The Guardian Sport"
+    },
+    {
       "id": "news-0a9cde0d53da7062",
       "title": "InternLM 发布 Intern-S2-Preview-397B 开源多模态模型",
       "url": "https://daily.juya.uk/issues/2026-07-18/",
@@ -593,6 +727,19 @@
       "source": "juya AI 日报",
       "date": "2026-07-18",
       "image": ""
+    },
+    {
+      "id": "news-7c43a984ed6d249d",
+      "title": "2026世界杯决赛：西班牙对阵阿根廷即将打响",
+      "url": "https://www.theguardian.com/football/2026/jul/18/shackle-rodri-the-metronome-and-argentinas-passion-play-can-floor-spain",
+      "date": "2026-07-18",
+      "published": "2026-07-18T18:00:00+00:00",
+      "summary": "2026世界杯决赛即将上演，西班牙与阿根廷争夺冠军，梅西与新星亚马尔的对决成为焦点。",
+      "detail": "2026年世界杯决赛将在西班牙和阿根廷之间展开。西班牙中场核心罗德里被视为关键人物，而阿根廷则凭借梅西的经验和全队的激情一路杀入决赛。这场对决被外界视为控球大师与激情之师的巅峰较量，全球瞩目。",
+      "image": "",
+      "priority": 4,
+      "category": "sports",
+      "source": "The Guardian Sport"
     },
     {
       "id": "news-6601641f335ede25",
