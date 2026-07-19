@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-19T09:47:34+08:00",
+  "last_updated": "2026-07-19T21:39:22+08:00",
   "source": "CampBrief",
-  "total": 155,
+  "total": 157,
   "tiers": [
     {
       "key": "all",
@@ -2802,7 +2802,7 @@
     },
     {
       "id": "comp-saikr-8715b18b4de9",
-      "name": "【明日开考】第九届ETTBL杯高校英语语法大赛",
+      "name": "第九届ETTBL杯高校英语语法大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -2936,6 +2936,40 @@
       "official_site": "",
       "organizer": "华夏文化促进会素质教育委员会",
       "prestige": 4
+    },
+    {
+      "id": "comp-saikr-635a0b9d727c",
+      "name": "第十一届全国高等院校英语教师教学基本功大赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/JSJBG2026",
+      "official_site": "",
+      "organizer": "第十一届全国高等院校英语教师教学基本功大赛组委会",
+      "prestige": 3
+    },
+    {
+      "id": "comp-saikr-6678ca268bc9",
+      "name": "2026年第二届计算机能力竞赛暨城市联赛（夏季赛）——算法编程赛道",
+      "tier": "hobby",
+      "fields": [
+        "computer"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/CLAlgorithmp2026",
+      "official_site": "",
+      "organizer": "大连市计算机学会、苏州市计算机学会、天津市计算机学会",
+      "prestige": 3
     }
   ]
 }
