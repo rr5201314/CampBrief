@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-20T11:48:41+08:00",
+  "last_updated": "2026-07-20T21:33:00+08:00",
   "source": "CampBrief",
-  "total": 157,
+  "total": 160,
   "tiers": [
     {
       "key": "all",
@@ -2054,7 +2054,7 @@
     },
     {
       "id": "comp-saikr-91694bf3b0c1",
-      "name": "【最后10天】第五届“中外传播杯”大学生英语翻译大赛",
+      "name": "【最后7天】第五届“中外传播杯”大学生英语翻译大赛",
       "tier": "official",
       "fields": [
         "language"
@@ -2094,7 +2094,7 @@
     },
     {
       "id": "comp-saikr-fabd5817d237",
-      "name": "【高含金量，强推！】第四届“一带一路”大学生英语翻译大赛",
+      "name": "【下周截止！强推】第四届“一带一路”大学生英语翻译大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -2203,7 +2203,7 @@
     },
     {
       "id": "comp-saikr-b28f051c4971",
-      "name": "【最后8天】第三届“中国故事大赛·双语中国”全国大学生英语词汇大赛",
+      "name": "【最后5天】第三届“中国故事大赛·双语中国”全国大学生英语词汇大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -2681,7 +2681,7 @@
     },
     {
       "id": "comp-saikr-f29d5a8fa482",
-      "name": "【五章认证】2026年全国大学生文旅创作大赛",
+      "name": "【周五截止/五章认证】2026年全国大学生文旅创作大赛",
       "tier": "hobby",
       "fields": [
         "other"
@@ -2733,7 +2733,7 @@
     },
     {
       "id": "comp-saikr-e96b1b2e22c9",
-      "name": "【倒计时8天】第三届“中外传播杯”大学生手机摄影大赛",
+      "name": "【倒计时5天】第三届“中外传播杯”大学生手机摄影大赛",
       "tier": "hobby",
       "fields": [
         "design"
@@ -2970,6 +2970,75 @@
       "official_site": "",
       "organizer": "大连市计算机学会、苏州市计算机学会、天津市计算机学会",
       "prestige": 3
+    },
+    {
+      "id": "comp-saikr-09acb8c02f83",
+      "name": "【多省市译协盖章】2026年第十二届中西部外语翻译大赛",
+      "tier": "enterprise",
+      "fields": [
+        "language"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/2026/ZXB",
+      "official_site": "",
+      "organizer": "中西部外语翻译大赛组委会",
+      "prestige": 5,
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-07-20T21:33:00+08:00",
+        "review_after": "2026-07-23T21:33:00+08:00"
+      }
+    },
+    {
+      "id": "comp-saikr-6c0add4967a9",
+      "name": "【倒计时8天】第三届“中国故事大赛·双语中国”全国大学生写作大赛-中文赛道",
+      "tier": "enterprise",
+      "fields": [
+        "design"
+      ],
+      "status": "open",
+      "signup": "7月28日",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/2026/WCC",
+      "official_site": "",
+      "organizer": "中国寓言文学研究会教育教学专业委员会",
+      "prestige": 5,
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-07-28",
+        "verified_at": "2026-07-20T21:33:00+08:00"
+      }
+    },
+    {
+      "id": "comp-saikr-c1fb6ed36379",
+      "name": "中国光学工程学会首届伊辛·智算未来挑战赛——新质生产力科技成果万里行活动",
+      "tier": "enterprise",
+      "fields": [
+        "design"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/YXZS",
+      "official_site": "",
+      "organizer": "伊辛·智算未来挑战杯组委会",
+      "prestige": 5,
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-07-20T21:33:00+08:00",
+        "review_after": "2026-07-23T21:33:00+08:00"
+      }
     }
   ]
 }
