@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-21T09:40:04+08:00",
+  "last_updated": "2026-07-21T15:40:16+08:00",
   "source": "CampBrief",
   "total": 160,
   "tiers": [
@@ -2879,12 +2879,11 @@
       "name": "2026年全国大学生文学竞赛",
       "tier": "hobby",
       "fields": [
-        "design",
-        "innovation"
+        "literature"
       ],
-      "status": "pending",
-      "signup": "",
-      "schedule": "2026年7月31",
+      "status": "open",
+      "signup": "即日起至7月31日",
+      "schedule": "初赛截止2026年7月31日",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.52jingsai.com/article-23373-1.html",
@@ -2892,10 +2891,10 @@
       "organizer": "全国大学生文学竞赛组委会、北京中华文化发展协会、黑龙江省创新教育研究院",
       "prestige": 4,
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-18T15:33:14.557264+08:00",
-        "review_after": "2026-07-21T15:33:14.557264+08:00"
+        "registration_end": "2026-07-31",
+        "verified_at": "2026-07-21T15:40:16+08:00"
       }
     },
     {
