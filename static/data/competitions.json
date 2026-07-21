@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-21T15:40:16+08:00",
+  "last_updated": "2026-07-21T21:33:23+08:00",
   "source": "CampBrief",
-  "total": 160,
+  "total": 161,
   "tiers": [
     {
       "key": "all",
@@ -2054,7 +2054,7 @@
     },
     {
       "id": "comp-saikr-91694bf3b0c1",
-      "name": "【最后7天】第五届“中外传播杯”大学生英语翻译大赛",
+      "name": "【最后6天】第五届“中外传播杯”大学生英语翻译大赛",
       "tier": "official",
       "fields": [
         "language"
@@ -2111,7 +2111,7 @@
     },
     {
       "id": "comp-saikr-1427ab50afa1",
-      "name": "【年度最后一场】第九届ETTBL杯高校英语阅读大赛",
+      "name": "【最后一场&周日开考】第九届ETTBL杯高校英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -2203,7 +2203,7 @@
     },
     {
       "id": "comp-saikr-b28f051c4971",
-      "name": "【最后5天】第三届“中国故事大赛·双语中国”全国大学生英语词汇大赛",
+      "name": "【最后4天】第三届“中国故事大赛·双语中国”全国大学生英语词汇大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -2733,7 +2733,7 @@
     },
     {
       "id": "comp-saikr-e96b1b2e22c9",
-      "name": "【倒计时5天】第三届“中外传播杯”大学生手机摄影大赛",
+      "name": "【倒计时4天】第三届“中外传播杯”大学生手机摄影大赛",
       "tier": "hobby",
       "fields": [
         "design"
@@ -2978,7 +2978,7 @@
         "language"
       ],
       "status": "pending",
-      "signup": "",
+      "signup": "7月31日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
@@ -2995,7 +2995,7 @@
     },
     {
       "id": "comp-saikr-6c0add4967a9",
-      "name": "【倒计时8天】第三届“中国故事大赛·双语中国”全国大学生写作大赛-中文赛道",
+      "name": "【倒计时7天】第三届“中国故事大赛·双语中国”全国大学生写作大赛-中文赛道",
       "tier": "enterprise",
       "fields": [
         "design"
@@ -3038,6 +3038,29 @@
         "verified_at": "2026-07-20T21:33:00+08:00",
         "review_after": "2026-07-23T21:33:00+08:00"
       }
+    },
+    {
+      "id": "comp-saikr-c45cc2238308",
+      "name": "【高含金量赛事】第五届“英才计划”大学生英语翻译大赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "pending",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-07-21T21:33:23+08:00",
+        "review_after": "2026-07-24T21:33:23+08:00"
+      },
+      "signup": "",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/YCJH/FY2026",
+      "official_site": "",
+      "organizer": "英才计划",
+      "prestige": 4
     }
   ]
 }
