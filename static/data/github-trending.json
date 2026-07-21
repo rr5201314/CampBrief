@@ -27,8 +27,8 @@
           "stars_delta": 1734,
           "trend_period": "today",
           "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "《深入理解 AI Agent：设计原理与工程实践》开源主仓库，包含全书正文、PDF 和配套代码",
+          "solves_what": "系统化梳理 AI Agent 的设计原理与工程实践，为开发者提供从理论到实现的完整学习路径"
         },
         {
           "rank": 2,
@@ -40,8 +40,8 @@
           "stars_delta": 663,
           "trend_period": "today",
           "description": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "本地优先的代码智能图谱工具，为 MCP 和 CLI 构建代码库的持久化映射",
+          "solves_what": "通过代码智能图谱让 AI 编程工具只读取相关代码，显著减少代码审查和大仓库场景的上下文消耗"
         },
         {
           "rank": 3,
@@ -53,8 +53,8 @@
           "stars_delta": 360,
           "trend_period": "today",
           "description": "A Flexible Framework for Experiencing Heterogeneous LLM Inference/Fine-tune Optimizations",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "面向 LLM 推理和微调的异构优化框架，支持灵活的硬件加速方案",
+          "solves_what": "解决大模型推理在异构硬件上的性能瓶颈，让开发者在消费级 GPU 上也能高效运行大模型"
         },
         {
           "rank": 4,
@@ -66,8 +66,8 @@
           "stars_delta": 501,
           "trend_period": "today",
           "description": "Learn it. Build it. Ship it for others.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "从零开始学习 AI 工程的实践教程，覆盖模型训练到部署上线的完整流程",
+          "solves_what": "为有编程基础但缺乏 AI 经验的工程师提供一条从零到生产部署的系统化学习路径"
         },
         {
           "rank": 5,
@@ -79,8 +79,8 @@
           "stars_delta": 610,
           "trend_period": "today",
           "description": "The open-source AI voice studio. Clone, dictate, create.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "开源 AI 语音工作室，支持语音克隆、听写和创作功能",
+          "solves_what": "提供一站式开源语音 AI 工具链，让用户在本地完成语音克隆和创作，无需依赖付费云服务"
         },
         {
           "rank": 6,
@@ -92,8 +92,8 @@
           "stars_delta": 595,
           "trend_period": "today",
           "description": "The go-to web for your AI coding agent — local-first search, fetch, crawl & research over MCP. No API keys, no cloud, $0/query. Public beta.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "为 AI 编程代理提供本地优先的搜索、抓取和研究能力，无需 API 密钥，通过 MCP 协议集成",
+          "solves_what": "为 AI 编程代理提供免费的本地网络搜索和研究工具链，降低开发者使用 AI 代理的成本"
         },
         {
           "rank": 7,
@@ -105,8 +105,8 @@
           "stars_delta": 43,
           "trend_period": "today",
           "description": "An unofficial desktop client for Jellyfin",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "开源媒体服务器 Jellyfin 的非官方桌面客户端，基于 Rust 构建",
+          "solves_what": "为 Jellyfin 用户提供更原生的桌面观影体验，补足官方客户端在桌面端的功能空白"
         },
         {
           "rank": 8,
@@ -118,8 +118,8 @@
           "stars_delta": 39,
           "trend_period": "today",
           "description": "Multi-platform SDK for integrating GitHub Copilot Agent into apps and services",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "GitHub 官方推出的 Copilot Agent 多平台集成 SDK，支持在应用和服务中嵌入 Copilot 能力",
+          "solves_what": "标准化了 Copilot Agent 的集成方式，降低第三方应用接入 GitHub AI 编程助手的技术门槛"
         },
         {
           "rank": 9,
@@ -131,8 +131,8 @@
           "stars_delta": 411,
           "trend_period": "today",
           "description": "🦔 PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "面向产品团队的开源全栈分析平台，集成 AI 可观测性、会话回放、功能标志等开发工具",
+          "solves_what": "帮助产品团队构建自主驱动的产品，为 AI 代理提供诊断问题和优化产品所需的完整上下文"
         },
         {
           "rank": 10,
@@ -144,8 +144,8 @@
           "stars_delta": 59,
           "trend_period": "today",
           "description": "The new Windows Terminal and the original Windows console host, all in the same place!",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "微软开源的 Windows Terminal，整合传统控制台和现代化终端体验",
+          "solves_what": "为 Windows 开发者提供现代化、高性能的终端工具，支持多标签、GPU 加速渲染等特性"
         }
       ]
     },
@@ -173,8 +173,8 @@
           "stars_delta": 9193,
           "trend_period": "this week",
           "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "面向 Claude Code、Cursor 和 Codex 的反 AI 模板化设计技能",
+          "solves_what": "帮助开发者在使用 AI 编程工具时生成更有设计品味的界面，避免千篇一律的 AI 风格"
         },
         {
           "rank": 2,
@@ -186,8 +186,8 @@
           "stars_delta": 12743,
           "trend_period": "this week",
           "description": "The open-source CapCut alternative",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "开源视频编辑器，对标 CapCut 的免费替代方案",
+          "solves_what": "提供功能完整的开源视频编辑工具，为创作者提供免费、无广告的 CapCut 替代选择"
         },
         {
           "rank": 3,
@@ -199,8 +199,8 @@
           "stars_delta": 6211,
           "trend_period": "this week",
           "description": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "100 多个可实际运行的 AI Agent 和 RAG 应用合集，可克隆、定制和部署",
+          "solves_what": "为开发者提供大量可直接运行的 AI 应用示例，大幅降低 AI Agent 和 RAG 应用的开发门槛"
         },
         {
           "rank": 4,
@@ -212,8 +212,8 @@
           "stars_delta": 5228,
           "trend_period": "this week",
           "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "个人 AI 交易代理，辅助投资决策和市场分析",
+          "solves_what": "将 AI 代理能力应用于个人投资领域，帮助用户进行市场分析和交易决策辅助"
         },
         {
           "rank": 5,
@@ -225,8 +225,8 @@
           "stars_delta": 2375,
           "trend_period": "this week",
           "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "终身个性化辅导系统 DeepTutor，提供自适应学习体验",
+          "solves_what": "通过 AI 实现终身个性化辅导，根据学生的学习进度和薄弱环节动态调整教学内容"
         },
         {
           "rank": 6,
@@ -238,8 +238,8 @@
           "stars_delta": 10983,
           "trend_period": "this week",
           "description": "Skills for Real Engineers. Straight from my .agents directory.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "面向实际工程师的 Agent 技能集合，来自作者的 .agents 目录",
+          "solves_what": "提供经过实战验证的 AI Agent 技能模板，帮助工程师快速构建高效的 AI 工作流"
         },
         {
           "rank": 7,
@@ -251,8 +251,8 @@
           "stars_delta": 1284,
           "trend_period": "this week",
           "description": "把书、长视频、播客等高价值内容蒸馏成可执行的 Agent Skills",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "将书籍、长视频、播客等高价值内容蒸馏为可执行的 Agent 技能",
+          "solves_what": "通过 AI 将长篇内容提炼为可执行的知识技能，提升信息吸收和知识转化效率"
         },
         {
           "rank": 8,
@@ -264,8 +264,8 @@
           "stars_delta": 4269,
           "trend_period": "this week",
           "description": "OfficeCLI is the first and best Office suite purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "首个面向 AI 代理的 Office 套件 CLI 工具，支持读取、编辑和自动化 Word、Excel、PPT",
+          "solves_what": "让 AI 代理通过命令行直接操作 Office 文档，实现文档处理的自动化和智能化"
         },
         {
           "rank": 9,
@@ -277,8 +277,8 @@
           "stars_delta": 1669,
           "trend_period": "this week",
           "description": "Skills for Design Engineers",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "面向设计工程师的 UI 技能库，提供可复用的组件和设计模式",
+          "solves_what": "帮助设计工程师快速构建高质量界面，提供经过验证的 UI 组件和设计模式参考"
         },
         {
           "rank": 10,
@@ -290,8 +290,8 @@
           "stars_delta": 2361,
           "trend_period": "this week",
           "description": "Lightweight coding agent that runs in your terminal",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "OpenAI 推出的轻量级终端编程代理，可在本地终端中运行",
+          "solves_what": "OpenAI 官方的终端编程代理工具，让开发者在命令行环境中直接调用 AI 进行代码编写和调试"
         }
       ]
     },
