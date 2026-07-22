@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-22T15:32:22.639507+08:00",
+  "last_updated": "2026-07-22T21:32:53.959616+08:00",
   "source": "CampBrief",
   "total": 161,
   "tiers": [
@@ -2054,7 +2054,7 @@
     },
     {
       "id": "comp-saikr-91694bf3b0c1",
-      "name": "【最后6天】第五届“中外传播杯”大学生英语翻译大赛",
+      "name": "【最后5天】第五届“中外传播杯”大学生英语翻译大赛",
       "tier": "official",
       "fields": [
         "language"
@@ -2111,7 +2111,7 @@
     },
     {
       "id": "comp-saikr-1427ab50afa1",
-      "name": "【最后一场&周日开考】第九届ETTBL杯高校英语阅读大赛",
+      "name": "【周日开考】第九届ETTBL杯高校英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -2145,7 +2145,7 @@
     },
     {
       "id": "comp-saikr-b0811676aab5",
-      "name": "第三届“创新实践杯”全国大学生英语词汇大赛",
+      "name": "【本周日报名截止】第三届“创新实践杯”全国大学生英语词汇大赛",
       "tier": "hobby",
       "fields": [
         "language",
@@ -2203,7 +2203,7 @@
     },
     {
       "id": "comp-saikr-b28f051c4971",
-      "name": "【最后4天】第三届“中国故事大赛·双语中国”全国大学生英语词汇大赛",
+      "name": "【最后3天】第三届“中国故事大赛·双语中国”全国大学生英语词汇大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -2737,7 +2737,7 @@
     },
     {
       "id": "comp-saikr-e96b1b2e22c9",
-      "name": "【倒计时4天】第三届“中外传播杯”大学生手机摄影大赛",
+      "name": "【最后3天】第三届“中外传播杯”大学生手机摄影大赛",
       "tier": "hobby",
       "fields": [
         "design"
@@ -2903,7 +2903,7 @@
     },
     {
       "id": "comp-52jingsai-bcce7b0c6e68",
-      "name": "【英语词汇大赛，7月25日考试】2026年第四届外文奖大学生英语词汇大赛报名通知！",
+      "name": "【英语词汇大赛，7月25日考试】2026年第四届“外文奖”大学生英语词汇大赛报名通知！",
       "official_url": "https://www.52jingsai.com/article-23405-1.html",
       "status": "open",
       "tier": "official",
@@ -2999,7 +2999,7 @@
     },
     {
       "id": "comp-saikr-6c0add4967a9",
-      "name": "【倒计时7天】第三届“中国故事大赛·双语中国”全国大学生写作大赛-中文赛道",
+      "name": "【倒计时6天】第三届“中国故事大赛·双语中国”全国大学生写作大赛-中文赛道",
       "tier": "enterprise",
       "fields": [
         "design"
