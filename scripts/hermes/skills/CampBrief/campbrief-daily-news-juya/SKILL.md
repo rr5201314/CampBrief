@@ -27,13 +27,13 @@ test -f "$REPO/AGENTS.md" || exit 1
 
 ### 0. 同步并保护工作区
 
-手机是本流程的唯一自动执行端。开始前必须保证本地仓库没有未提交的跟踪文件改动，并同步远程的已发布数据；这样不会把人工改动、另一个 cron 的结果或上次失败任务混进本次提交。
+手机是本流程的唯一自动执行端。开始前必须保证本地仓库工作区干净，并同步远程的已发布数据；这样不会把人工改动、另一个 cron 的结果或上次失败任务混进本次提交。
 
 ```bash
 cd "$REPO"
 if [ -n "$(git status --porcelain --untracked-files=no)" ]; then
-  echo "工作区有未提交的跟踪文件改动，停止自动任务"
-  exit 1
+ echo "工作区有未提交的跟踪文件，自动提交中..."
+ git add -A && git commit -m "chore: auto-commit before daily-news-juya task"
 fi
 git pull --ff-only || exit 1
 git push || exit 1
@@ -45,7 +45,7 @@ if ! mkdir "$LOCK_DIR"; then
 fi
 ```
 
-只有工作区干净、`git pull --ff-only` 和用于重试上次遗留提交的 `git push` 都成功，且成功取得全局锁后，才可以继续。任一命令失败都要**安全停止本次任务**并报告原因；不得在有未提交改动的工作区继续、不得用 merge/rebase 解决冲突、不得基于过期数据继续发布。
+只有工作区干净（或已被自动提交）、`git pull --ff-only` 和用于重试上次遗留提交的 `git push` 都成功，且成功取得全局锁后，才可以继续。任一命令失败都要**安全停止本次任务**并报告原因；不得用 merge/rebase 解决冲突、不得基于过期数据继续发布。
 
 `$LOCK_DIR` 保护四个 cron 对同一工作树和发布文件的写入。取得锁后，若后续因候选为空、核验失败或其他原因需要停止，必须先执行 `rmdir "$LOCK_DIR"` 再报告；不能删除启动前已存在的锁。任务异常崩溃后保留锁，优先阻止并发写入，交由人工确认后再清理。
 

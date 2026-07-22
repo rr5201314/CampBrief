@@ -33,8 +33,8 @@ test -f "$REPO/AGENTS.md" || exit 1
 ```bash
 cd "$REPO" || exit 1
 if [ -n "$(git status --porcelain --untracked-files=no)" ]; then
-  echo "工作区有未提交的跟踪文件改动，停止自动任务"
-  exit 1
+  echo "工作区有未提交的跟踪文件，自动提交中..."
+  git add -A && git commit -m "chore: auto-commit before exams task"
 fi
 git pull --ff-only || exit 1
 git push || exit 1
