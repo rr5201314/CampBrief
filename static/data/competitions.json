@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-21T21:33:23+08:00",
+  "last_updated": "2026-07-22T09:54:57.820766+08:00",
   "source": "CampBrief",
   "total": 161,
   "tiers": [
@@ -172,8 +172,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-18T21:39:50.221662+08:00",
-        "review_after": "2026-07-21T21:39:50.221662+08:00"
+        "verified_at": "2026-07-22T09:54:57.820766+08:00",
+        "review_after": "2026-07-25T09:54:57.820766+08:00"
       }
     },
     {
@@ -275,8 +275,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-18T21:39:50.221662+08:00",
-        "review_after": "2026-07-21T21:39:50.221662+08:00"
+        "verified_at": "2026-07-22T09:54:57.820766+08:00",
+        "review_after": "2026-07-25T09:54:57.820766+08:00"
       }
     },
     {
@@ -844,8 +844,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-18T21:39:50.221662+08:00",
-        "review_after": "2026-07-21T21:39:50.221662+08:00"
+        "verified_at": "2026-07-22T09:54:57.820766+08:00",
+        "review_after": "2026-07-25T09:54:57.820766+08:00"
       }
     },
     {
@@ -1145,7 +1145,7 @@
         "computer"
       ],
       "status": "open",
-      "signup": "每年 4–7 月报名",
+      "signup": "每年4月至7月报名",
       "schedule": "初赛 6–8 月，决赛 10 月",
       "summary": "以物联网、人工智能、智能硬件为特色的创新创业赛事。",
       "search": "iCAN 创新创业 物联网",
@@ -1154,10 +1154,10 @@
       "prestige": 6,
       "official_url": "https://www.saikr.com/vse/ican2026",
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-18T21:39:50.221662+08:00",
-        "review_after": "2026-07-21T21:39:50.221662+08:00"
+        "registration_end": "2026-07-31",
+        "verified_at": "2026-07-22T09:54:57.820766+08:00"
       }
     },
     {
@@ -1590,8 +1590,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-18T21:39:50.221662+08:00",
-        "review_after": "2026-07-21T21:39:50.221662+08:00"
+        "verified_at": "2026-07-22T09:54:57.820766+08:00",
+        "review_after": "2026-07-25T09:54:57.820766+08:00"
       }
     },
     {
@@ -1614,8 +1614,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-18T21:39:50.221662+08:00",
-        "review_after": "2026-07-21T21:39:50.221662+08:00"
+        "verified_at": "2026-07-22T09:54:57.820766+08:00",
+        "review_after": "2026-07-25T09:54:57.820766+08:00"
       }
     },
     {
@@ -1638,8 +1638,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-18T21:39:50.221662+08:00",
-        "review_after": "2026-07-21T21:39:50.221662+08:00"
+        "verified_at": "2026-07-22T09:54:57.820766+08:00",
+        "review_after": "2026-07-25T09:54:57.820766+08:00"
       }
     },
     {
@@ -1699,8 +1699,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-18T21:39:50.221662+08:00",
-        "review_after": "2026-07-21T21:39:50.221662+08:00"
+        "verified_at": "2026-07-22T09:54:57.820766+08:00",
+        "review_after": "2026-07-25T09:54:57.820766+08:00"
       }
     },
     {
@@ -1778,8 +1778,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-18T21:39:50.221662+08:00",
-        "review_after": "2026-07-21T21:39:50.221662+08:00"
+        "verified_at": "2026-07-22T09:54:57.820766+08:00",
+        "review_after": "2026-07-25T09:54:57.820766+08:00"
       }
     },
     {
@@ -1817,8 +1817,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-18T21:39:50.221662+08:00",
-        "review_after": "2026-07-21T21:39:50.221662+08:00"
+        "verified_at": "2026-07-22T09:54:57.820766+08:00",
+        "review_after": "2026-07-25T09:54:57.820766+08:00"
       }
     },
     {
@@ -1840,8 +1840,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-18T21:39:50.221662+08:00",
-        "review_after": "2026-07-21T21:39:50.221662+08:00"
+        "verified_at": "2026-07-22T09:54:57.820766+08:00",
+        "review_after": "2026-07-25T09:54:57.820766+08:00"
       }
     },
     {
@@ -1863,8 +1863,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-18T21:39:50.221662+08:00",
-        "review_after": "2026-07-21T21:39:50.221662+08:00"
+        "verified_at": "2026-07-22T09:54:57.820766+08:00",
+        "review_after": "2026-07-25T09:54:57.820766+08:00"
       }
     },
     {
@@ -1973,8 +1973,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-18T21:39:50.221662+08:00",
-        "review_after": "2026-07-21T21:39:50.221662+08:00"
+        "verified_at": "2026-07-22T09:54:57.820766+08:00",
+        "review_after": "2026-07-25T09:54:57.820766+08:00"
       }
     },
     {
@@ -2185,7 +2185,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "closed",
       "signup": "",
       "schedule": "",
       "summary": "来源：赛氪。浏览 2.7万，关注 753",
@@ -2249,7 +2249,7 @@
         "science"
       ],
       "status": "open",
-      "signup": "",
+      "signup": "2026年5月26日至9月1日报名（多数赛区8月31日20:00前）",
       "schedule": "",
       "summary": "来源：赛氪。浏览 4710，关注 329",
       "search": "",
@@ -2258,10 +2258,13 @@
       "organizer": "赛事速递",
       "prestige": 9,
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-18T21:39:50.221662+08:00",
-        "review_after": "2026-07-21T21:39:50.221662+08:00"
+        "registration_start": "2026-05-26",
+        "registration_end": "2026-09-01",
+        "event_start": "2026-09-10",
+        "event_end": "2026-09-13",
+        "verified_at": "2026-07-22T09:54:57.820766+08:00"
       }
     },
     {
@@ -2374,8 +2377,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-18T21:39:50.221662+08:00",
-        "review_after": "2026-07-21T21:39:50.221662+08:00"
+        "verified_at": "2026-07-22T09:54:57.820766+08:00",
+        "review_after": "2026-07-25T09:54:57.820766+08:00"
       }
     },
     {
@@ -2405,7 +2408,7 @@
         "science"
       ],
       "status": "open",
-      "signup": "",
+      "signup": "2026年3月18日至7月26日报名",
       "schedule": "",
       "summary": "来源：赛氪。浏览 1.3万，关注 606",
       "search": "",
@@ -2414,10 +2417,11 @@
       "organizer": "竞赛工作赛事组",
       "prestige": 8,
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-18T21:39:50.221662+08:00",
-        "review_after": "2026-07-21T21:39:50.221662+08:00"
+        "registration_start": "2026-03-18",
+        "registration_end": "2026-07-26",
+        "verified_at": "2026-07-22T09:54:57.820766+08:00"
       }
     },
     {
@@ -2456,8 +2460,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-18T21:39:50.221662+08:00",
-        "review_after": "2026-07-21T21:39:50.221662+08:00"
+        "verified_at": "2026-07-22T09:54:57.820766+08:00",
+        "review_after": "2026-07-25T09:54:57.820766+08:00"
       }
     },
     {
@@ -2604,8 +2608,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-18T21:39:50.221662+08:00",
-        "review_after": "2026-07-21T21:39:50.221662+08:00"
+        "verified_at": "2026-07-22T09:54:57.820766+08:00",
+        "review_after": "2026-07-25T09:54:57.820766+08:00"
       }
     },
     {
