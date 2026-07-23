@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-23T13:33:53.851882+08:00",
+  "last_updated": "2026-07-23T14:52:04.886735+08:00",
   "source": "CampBrief Auto",
-  "total": 486,
+  "total": 488,
   "items": [
     {
       "id": "news-49b11203fc137927",
@@ -128,6 +128,19 @@
       "published": "2026-07-23T10:23:32+08:00",
       "summary": "研究者称 GPT 5.6 Pro 为开放近 30 年的 Dinitz-Garg-Goemans 猜想找到反例，分流成本与不可分拆流成本存在差异。",
       "detail": "研究者 Dmitry Rybin 表示，GPT 5.6 Pro 为开放近 30 年的 Dinitz-Garg-Goemans 猜想找到反例。该猜想研究如何把可分拆流转换为不可分拆流并控制成本。新构造显示允许分流时最低成本为 58，但每条边容量超额不超过 15 的条件下，任何不可分拆方案成本都至少为 60，与猜想预期冲突。由于网络规模较小，各项均可逐项核验。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-db5792afdfd852ee",
+      "title": "OpenAI 推出企业级 AI agent 平台 OpenAI Presence",
+      "url": "https://openai.com/index/introducing-openai-presence/",
+      "date": "2026-07-23",
+      "published": "2026-07-23T02:23:32+08:00",
+      "summary": "OpenAI 推出企业级 AI agent 平台 Presence，帮助企业部署语音和聊天 agent 处理客服与内部流程。",
+      "detail": "OpenAI 推出 OpenAI Presence，面向企业客户的 AI agent 平台，支持部署可信赖的语音和聊天 agent 处理客户服务及内部业务流程。agent 可回答问题、调用企业系统执行已批准操作，并在需要时转交人工。据官方数据，Presence 支撑的 OpenAI 自有电话客服渠道已实现 75% 来电无需人工干预解决。目前通过限量通用可用计划面向符合条件的企业客户开放，尚不提供自助服务。",
       "image": "",
       "priority": 2,
       "category": "ai",
@@ -263,6 +276,19 @@
       "category": "tech",
       "subcategory": "software",
       "source": "Hacker News"
+    },
+    {
+      "id": "news-b2bdfe2cdc870826",
+      "title": "OpenAI 宣布在乔治亚州开发 Project Camellia 数据中心",
+      "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/",
+      "date": "2026-07-23",
+      "published": "2026-07-23T02:23:32+08:00",
+      "summary": "OpenAI 宣布在乔治亚州开发 3.2 吉瓦 Project Camellia 数据中心，完全私人出资，计划 2028-2032 年分阶段交付。",
+      "detail": "OpenAI 宣布正在乔治亚州 Effingham County 设计和开发 Project Camellia 长期 AI 基础设施项目。该项目完全由私人资助，计划与 Georgia Power 签约获取 3.2 吉瓦电力，预计 2028 至 2032 年分阶段交付。OpenAI 承诺当地居民电费不会因此上涨，采用闭环冷却系统将持续用水量降至普通办公楼水平。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
     },
     {
       "id": "news-068c024e264794b2",
