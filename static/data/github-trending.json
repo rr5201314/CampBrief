@@ -1,8 +1,154 @@
 {
-  "last_updated": "2026-07-22T08:38:44.894690+08:00",
+  "last_updated": "2026-07-23T13:04:52+08:00",
   "source": "GitHub Trending",
-  "total": 13,
+  "total": 14,
   "items": [
+    {
+      "id": "github-daily-2026-07-23",
+      "title": "7月23日 GitHub趋势日榜",
+      "url": "https://github.com/trending?since=daily",
+      "date": "2026-07-23",
+      "published": "2026-07-23T12:54:49.849288+08:00",
+      "summary": "7月23日 GitHub趋势日榜，Top 10 项目涵盖 TypeScript、Rust、Python 等，今日社区最受关注的开源项目。",
+      "detail": "koala73/worldmonitor - Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface\nruvnet/RuView - π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.\nayghri/i-have-adhd - A skill for your coding agent to stop it from burying the answer. ADHD-friendly output.\nschollz/croc - Easily and securely send things from one computer to another 🐊 📦\nlikec4/likec4 - Visualize, collaborate, and evolve the software architecture with always actual and live diagrams from your code\nchrislgarry/Apollo-11 - Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.\njamiepine/voicebox - The open-source AI voice studio. Clone, dictate, create.\ndiegosouzapw/OmniRoute - Never stop coding. Free MIT AI gateway: one endpoint, 278+ providers (90+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 500+ contributors\nshiyu-coder/Kronos - Kronos: A Foundation Model for the Language of Financial Markets\nComposioHQ/awesome-claude-skills - A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "github",
+      "source": "GitHub Trending",
+      "trend_type": "daily",
+      "repos": [
+        {
+          "rank": 1,
+          "name": "koala73/worldmonitor",
+          "url": "https://github.com/koala73/worldmonitor",
+          "language": "TypeScript",
+          "stars": 69500,
+          "forks": 10603,
+          "stars_delta": 4139,
+          "trend_period": "today",
+          "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+          "chinese_summary": "实时全球情报监控面板，集成 AI 驱动的新闻聚合、地缘政治监测和基础设施追踪，提供统一态势感知界面。",
+          "solves_what": "解决了信息过载环境下缺乏统一监控工具的问题，让分析师和研究人员能在一个界面中追踪全球动态。"
+        },
+        {
+          "rank": 2,
+          "name": "ruvnet/RuView",
+          "url": "https://github.com/ruvnet/RuView",
+          "language": "Rust",
+          "stars": 84061,
+          "forks": 11253,
+          "stars_delta": 741,
+          "trend_period": "today",
+          "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+          "chinese_summary": "利用普通 WiFi 信号实现实时空间感知、生命体征监测和存在检测，无需摄像头即可感知环境。",
+          "solves_what": "解决了隐私敏感场景下的环境感知需求，用 WiFi 信号替代摄像头实现无接触式监测。"
+        },
+        {
+          "rank": 3,
+          "name": "ayghri/i-have-adhd",
+          "url": "https://github.com/ayghri/i-have-adhd",
+          "language": "Python",
+          "stars": 8506,
+          "forks": 390,
+          "stars_delta": 1699,
+          "trend_period": "today",
+          "description": "A skill for your coding agent to stop it from burying the answer. ADHD-friendly output.",
+          "chinese_summary": "一个编程 Agent 技能插件，帮助 AI 代码助手输出简洁直接的答案，避免冗长解释。",
+          "solves_what": "解决了 AI 编程助手回答过于冗长、核心答案被埋没的问题，提供 ADHD 友好的精简输出模式。"
+        },
+        {
+          "rank": 4,
+          "name": "schollz/croc",
+          "url": "https://github.com/schollz/croc",
+          "language": "Go",
+          "stars": 37776,
+          "forks": 1491,
+          "stars_delta": 739,
+          "trend_period": "today",
+          "description": "Easily and securely send things from one computer to another 🐊 📦",
+          "chinese_summary": "一款命令行文件传输工具，支持在任意两台电脑之间安全、便捷地传输文件和文件夹。",
+          "solves_what": "解决了跨设备文件传输的复杂性，无需注册账号或云存储，端到端加密确保安全性。"
+        },
+        {
+          "rank": 5,
+          "name": "likec4/likec4",
+          "url": "https://github.com/likec4/likec4",
+          "language": "TypeScript",
+          "stars": 4386,
+          "forks": 305,
+          "stars_delta": 80,
+          "trend_period": "today",
+          "description": "Visualize, collaborate, and evolve the software architecture with always actual and live diagrams from your code",
+          "chinese_summary": "从代码自动生成、协作编辑和持续演进软件架构图，保持图表与代码同步更新。",
+          "solves_what": "解决了架构文档容易过时的问题，通过代码驱动的方式让架构图始终反映最新实现。"
+        },
+        {
+          "rank": 6,
+          "name": "chrislgarry/Apollo-11",
+          "url": "https://github.com/chrislgarry/Apollo-11",
+          "language": "Assembly",
+          "stars": 70710,
+          "forks": 7889,
+          "stars_delta": 768,
+          "trend_period": "today",
+          "description": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.",
+          "chinese_summary": "阿波罗 11 号登月任务的原始导航计算机（AGC）源代码，涵盖指令舱和登月舱的飞行软件。",
+          "solves_what": "为航天史和计算机科学爱好者提供了珍贵的历史资料，展示了早期航天软件工程的精妙设计。"
+        },
+        {
+          "rank": 7,
+          "name": "jamiepine/voicebox",
+          "url": "https://github.com/jamiepine/voicebox",
+          "language": "TypeScript",
+          "stars": 45917,
+          "forks": 5598,
+          "stars_delta": 557,
+          "trend_period": "today",
+          "description": "The open-source AI voice studio. Clone, dictate, create.",
+          "chinese_summary": "开源 AI 语音工作站，支持语音克隆、语音转文字和语音创作等功能。",
+          "solves_what": "为内容创作者提供一站式 AI 语音处理工具，无需依赖商业平台即可完成语音克隆和生成。"
+        },
+        {
+          "rank": 8,
+          "name": "diegosouzapw/OmniRoute",
+          "url": "https://github.com/diegosouzapw/OmniRoute",
+          "language": "TypeScript",
+          "stars": 25633,
+          "forks": 3381,
+          "stars_delta": 1651,
+          "trend_period": "today",
+          "description": "Never stop coding. Free MIT AI gateway: one endpoint, 278+ providers (90+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 500+ contributors",
+          "chinese_summary": "免费开源的 AI 网关，一个端点支持 278+ 提供商和 500+ 模型，兼容 Claude Code、Codex、Cursor 等工具。",
+          "solves_what": "解决了开发者需要对接多个 AI 服务提供商的复杂性，提供统一接口简化 AI 应用开发。"
+        },
+        {
+          "rank": 9,
+          "name": "shiyu-coder/Kronos",
+          "url": "https://github.com/shiyu-coder/Kronos",
+          "language": "Python",
+          "stars": 32682,
+          "forks": 5608,
+          "stars_delta": 137,
+          "trend_period": "today",
+          "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+          "chinese_summary": "金融市场语言的基础模型，专注于理解和分析金融市场的文本和数据。",
+          "solves_what": "解决了通用大模型在金融领域理解不足的问题，为量化分析和金融研究提供专业模型支持。"
+        },
+        {
+          "rank": 10,
+          "name": "ComposioHQ/awesome-claude-skills",
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+          "language": "Python",
+          "stars": 68906,
+          "forks": 7815,
+          "stars_delta": 163,
+          "trend_period": "today",
+          "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+          "chinese_summary": "精选的 Claude 技能和资源列表，汇总自定义 Claude AI 工作流的工具和最佳实践。",
+          "solves_what": "帮助开发者快速发现和学习 Claude 的扩展能力，降低 AI 工作流定制的学习门槛。"
+        }
+      ]
+    },
     {
       "id": "github-daily-2026-07-22",
       "title": "7月22日 GitHub趋势日榜",
@@ -27,8 +173,8 @@
           "stars_delta": 1295,
           "trend_period": "today",
           "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
-          "chinese_summary": "实时全球情报仪表盘，集成 AI 驱动的新闻聚合、地缘政治监控和基础设施追踪",
-          "solves_what": "将分散的全球新闻和地缘情报整合进统一的态势感知界面，辅助快速决策"
+          "chinese_summary": "实时全球情报监控面板，集成 AI 驱动的新闻聚合、地缘政治监测和基础设施追踪，提供统一态势感知界面。",
+          "solves_what": "解决了信息过载环境下缺乏统一监控工具的问题，让分析师和研究人员能在一个界面中追踪全球动态。"
         },
         {
           "rank": 2,
@@ -66,8 +212,8 @@
           "stars_delta": 1866,
           "trend_period": "today",
           "description": "A skill for your coding agent to stop it from burying the answer. ADHD-friendly output.",
-          "chinese_summary": "为编码 Agent 设计的 ADHD 友好输出插件，直接呈现关键结果而非冗长过程",
-          "solves_what": "解决 AI 编码工具答案被埋在冗长输出中的问题，让关键信息一目了然"
+          "chinese_summary": "一个编程 Agent 技能插件，帮助 AI 代码助手输出简洁直接的答案，避免冗长解释。",
+          "solves_what": "解决了 AI 编程助手回答过于冗长、核心答案被埋没的问题，提供 ADHD 友好的精简输出模式。"
         },
         {
           "rank": 5,
@@ -225,8 +371,8 @@
           "stars_delta": 610,
           "trend_period": "today",
           "description": "The open-source AI voice studio. Clone, dictate, create.",
-          "chinese_summary": "开源 AI 语音工作室，支持语音克隆、听写和创作功能",
-          "solves_what": "提供一站式开源语音 AI 工具链，让用户在本地完成语音克隆和创作，无需依赖付费云服务"
+          "chinese_summary": "开源 AI 语音工作站，支持语音克隆、语音转文字和语音创作等功能。",
+          "solves_what": "为内容创作者提供一站式 AI 语音处理工具，无需依赖商业平台即可完成语音克隆和生成。"
         },
         {
           "rank": 6,
@@ -1432,8 +1578,8 @@
           "stars_delta": 4506,
           "trend_period": "this week",
           "description": "Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
-          "chinese_summary": "免费 AI 网关，一个端点接入 231+ 供应商，支持 Claude Code、Codex 等工具。",
-          "solves_what": "统一 AI 模型接入入口，降低多模型切换成本，节省 token 开支。"
+          "chinese_summary": "免费开源的 AI 网关，一个端点支持 278+ 提供商和 500+ 模型，兼容 Claude Code、Codex、Cursor 等工具。",
+          "solves_what": "解决了开发者需要对接多个 AI 服务提供商的复杂性，提供统一接口简化 AI 应用开发。"
         },
         {
           "rank": 9,
@@ -1724,8 +1870,8 @@
           "stars_delta": 4375,
           "trend_period": "this week",
           "description": "Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
-          "chinese_summary": "免费 AI 网关，用一个端点接入 231+ 家模型供应商，含 50+ 免费服务。",
-          "solves_what": "用免费额度连接 Claude/GPT/Gemini，降低 AI 开发成本。"
+          "chinese_summary": "免费开源的 AI 网关，一个端点支持 278+ 提供商和 500+ 模型，兼容 Claude Code、Codex、Cursor 等工具。",
+          "solves_what": "解决了开发者需要对接多个 AI 服务提供商的复杂性，提供统一接口简化 AI 应用开发。"
         },
         {
           "rank": 9,
