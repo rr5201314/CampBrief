@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-23T15:31:40+08:00",
+  "last_updated": "2026-07-23T21:32:59+08:00",
   "source": "CampBrief",
-  "total": 161,
+  "total": 163,
   "tiers": [
     {
       "key": "all",
@@ -1944,14 +1944,7 @@
       "official_url": "https://www.52jingsai.com/article-23427-1.html",
       "official_site": "",
       "organizer": "中国外文局亚太传播中心",
-      "prestige": 7,
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_end": "2026-07-17",
-        "event_end": "2026-07-17",
-        "verified_at": "2026-07-18T21:39:50.221662+08:00"
-      }
+      "prestige": 7
     },
     {
       "id": "52jingsai-6f888443fb6c",
@@ -2019,20 +2012,26 @@
     },
     {
       "id": "comp-saikr-1d6ba753f9c2",
-      "name": "【创新创业类】2026年第六届全国大学生技术创新创业大赛-国赛",
+      "name": "【评阅倒计时10天】2026年第六届全国大学生技术创新创业大赛-国赛",
       "tier": "hobby",
       "fields": [
         "innovation"
       ],
-      "status": "pending",
+      "status": "ongoing",
       "signup": "",
       "schedule": "",
-      "summary": "来源：赛氪。浏览 5.7万，关注 2001",
+      "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/JSSCSSGS266",
       "official_site": "",
       "organizer": "全国大学生技术创新创业大赛组委会",
-      "prestige": 4
+      "prestige": 4,
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-07-23T21:32:59+08:00",
+        "review_after": "2026-07-26T21:32:59+08:00"
+      }
     },
     {
       "id": "comp-saikr-787fea6f2f3c",
@@ -2054,15 +2053,15 @@
     },
     {
       "id": "comp-saikr-91694bf3b0c1",
-      "name": "【最后5天】第五届“中外传播杯”大学生英语翻译大赛",
+      "name": "【最后4天】第五届“中外传播杯”大学生英语翻译大赛",
       "tier": "official",
       "fields": [
         "language"
       ],
       "status": "open",
-      "signup": "",
+      "signup": "2026年3月12日至7月27日",
       "schedule": "",
-      "summary": "来源：赛氪。浏览 5.1万，关注 1601",
+      "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/2026NCSET",
       "official_site": "",
@@ -2071,8 +2070,11 @@
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "registration_end": "2026-07-28",
-        "verified_at": "2026-07-15T18:57:08.606962+08:00"
+        "registration_end": "2026-07-27",
+        "verified_at": "2026-07-23T21:32:59+08:00",
+        "registration_start": "2026-03-12",
+        "event_start": "2026-06-25",
+        "event_end": "2026-07-30"
       }
     },
     {
@@ -2203,15 +2205,15 @@
     },
     {
       "id": "comp-saikr-b28f051c4971",
-      "name": "【最后3天】第三届“中国故事大赛·双语中国”全国大学生英语词汇大赛",
+      "name": "【最后2天】第三届“中国故事大赛·双语中国”全国大学生英语词汇大赛",
       "tier": "hobby",
       "fields": [
         "language"
       ],
       "status": "open",
-      "signup": "",
+      "signup": "即日起至2026年7月25日",
       "schedule": "",
-      "summary": "来源：赛氪。浏览 1.8万，关注 1132",
+      "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/2026/SYZGVC",
       "official_site": "",
@@ -2220,8 +2222,9 @@
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "registration_end": "2026-07-26",
-        "verified_at": "2026-07-15T18:57:08.606962+08:00"
+        "registration_end": "2026-07-25",
+        "verified_at": "2026-07-23T21:32:59+08:00",
+        "event_end": "2026-07-25"
       }
     },
     {
@@ -2383,21 +2386,27 @@
     },
     {
       "id": "comp-saikr-666a81761ea0",
-      "name": "第六届全国高校商务翻译（英语）能力挑战赛",
+      "name": "【倒计时4天】第六届全国高校商务翻译（英语）能力挑战赛",
       "tier": "hobby",
       "fields": [
         "language",
         "business"
       ],
-      "status": "pending",
-      "signup": "",
+      "status": "open",
+      "signup": "即日起至2026年7月26日",
       "schedule": "",
-      "summary": "来源：赛氪。浏览 1.2万，关注 547",
+      "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/BTE2026",
       "official_site": "",
       "organizer": "商务外语系列赛事组委会",
-      "prestige": 4
+      "prestige": 4,
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-07-26",
+        "verified_at": "2026-07-23T21:32:59+08:00"
+      }
     },
     {
       "id": "comp-saikr-0699351a3134",
@@ -2737,20 +2746,26 @@
     },
     {
       "id": "comp-saikr-e96b1b2e22c9",
-      "name": "【最后3天】第三届“中外传播杯”大学生手机摄影大赛",
+      "name": "【最后2天】第三届“中外传播杯”大学生手机摄影大赛",
       "tier": "hobby",
       "fields": [
         "design"
       ],
-      "status": "pending",
-      "signup": "",
+      "status": "open",
+      "signup": "即日起至2026年7月25日",
       "schedule": "",
-      "summary": "来源：赛氪。浏览 8807，关注 176",
+      "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/ZWSY",
       "official_site": "",
       "organizer": "中外传播杯",
-      "prestige": 2
+      "prestige": 2,
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-07-25",
+        "verified_at": "2026-07-23T21:32:59+08:00"
+      }
     },
     {
       "id": "comp-saikr-46e9ffc441d9",
@@ -2780,12 +2795,18 @@
       "status": "pending",
       "signup": "",
       "schedule": "",
-      "summary": "来源：赛氪。浏览 1.6万，关注 795",
+      "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/Bett-Writing-Fourth",
       "official_site": "",
       "organizer": "“BETT杯”大赛组委会",
-      "prestige": 4
+      "prestige": 4,
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-07-23T21:32:59+08:00",
+        "review_after": "2026-07-26T21:32:59+08:00"
+      }
     },
     {
       "id": "comp-saikr-613cd4ec2e22",
@@ -3065,6 +3086,52 @@
       "official_site": "",
       "organizer": "英才计划",
       "prestige": 4
+    },
+    {
+      "id": "comp-52jingsai-47e3099e888b",
+      "name": "【团中央等主办】第十三届中国青年创青春大赛",
+      "tier": "official",
+      "fields": [
+        "innovation"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-07-23T21:32:12+08:00",
+        "review_after": "2026-07-26T21:32:12+08:00"
+      },
+      "signup": "赛事详情请访问信息来源页面",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23427-1.html",
+      "official_site": "",
+      "organizer": "共青团中央等",
+      "prestige": 9
+    },
+    {
+      "id": "comp-saikr-621d8ad96385",
+      "name": "第四届“三晋杯”全国大学生英语演讲大赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "pending",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-07-23T21:32:12+08:00",
+        "review_after": "2026-07-26T21:32:12+08:00"
+      },
+      "signup": "赛事详情请访问信息来源页面",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/YSJYJ",
+      "official_site": "",
+      "organizer": "“三晋杯”全国大学生英语大赛组委会",
+      "prestige": 3
     }
   ]
 }
