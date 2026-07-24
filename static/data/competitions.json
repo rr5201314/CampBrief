@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-23T21:32:59+08:00",
+  "last_updated": "2026-07-24T15:38:45+08:00",
   "source": "CampBrief",
   "total": 163,
   "tiers": [
@@ -3002,20 +3002,21 @@
       "fields": [
         "language"
       ],
-      "status": "pending",
-      "signup": "7月31日",
-      "schedule": "",
+      "status": "open",
+      "signup": "即日起至2026年12月13日",
+      "schedule": "初赛两场次，决赛两场次，详见赛氪页面",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/2026/ZXB",
       "official_site": "",
-      "organizer": "中西部外语翻译大赛组委会",
+      "organizer": "中国西部研究与发展促进会教育工作委员会",
       "prestige": 5,
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-20T21:33:00+08:00",
-        "review_after": "2026-07-23T21:33:00+08:00"
+        "registration_start": "2026-07-01",
+        "registration_end": "2026-12-13",
+        "verified_at": "2026-07-24T15:38:45+08:00"
       }
     },
     {
@@ -3046,22 +3047,26 @@
       "name": "中国光学工程学会首届伊辛·智算未来挑战赛——新质生产力科技成果万里行活动",
       "tier": "enterprise",
       "fields": [
-        "design"
+        "computer",
+        "ai"
       ],
-      "status": "pending",
-      "signup": "",
-      "schedule": "",
+      "status": "open",
+      "signup": "2026年6月12日至2026年8月1日",
+      "schedule": "作品提交截止2026年8月9日，成果评议8月10-14日，终选展示8月22日",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/YXZS",
       "official_site": "",
-      "organizer": "伊辛·智算未来挑战杯组委会",
+      "organizer": "中国光学工程学会",
       "prestige": 5,
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-20T21:33:00+08:00",
-        "review_after": "2026-07-23T21:33:00+08:00"
+        "registration_start": "2026-06-12",
+        "registration_end": "2026-08-01",
+        "event_start": "2026-08-10",
+        "event_end": "2026-08-22",
+        "verified_at": "2026-07-24T15:38:45+08:00"
       }
     },
     {
