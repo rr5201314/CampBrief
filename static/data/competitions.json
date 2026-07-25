@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-25T09:30:52+08:00",
+  "last_updated": "2026-07-25T15:33:09+08:00",
   "source": "CampBrief",
   "total": 163,
   "tiers": [
@@ -172,8 +172,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-22T09:54:57.820766+08:00",
-        "review_after": "2026-07-25T09:54:57.820766+08:00"
+        "verified_at": "2026-07-25T15:33:09+08:00",
+        "review_after": "2026-07-28T15:33:09+08:00"
       }
     },
     {
@@ -275,8 +275,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-22T09:54:57.820766+08:00",
-        "review_after": "2026-07-25T09:54:57.820766+08:00"
+        "verified_at": "2026-07-25T15:33:09+08:00",
+        "review_after": "2026-07-28T15:33:09+08:00"
       }
     },
     {
@@ -844,8 +844,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-22T09:54:57.820766+08:00",
-        "review_after": "2026-07-25T09:54:57.820766+08:00"
+        "verified_at": "2026-07-25T15:33:09+08:00",
+        "review_after": "2026-07-28T15:33:09+08:00"
       }
     },
     {
@@ -1590,8 +1590,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-22T09:54:57.820766+08:00",
-        "review_after": "2026-07-25T09:54:57.820766+08:00"
+        "verified_at": "2026-07-25T15:33:09+08:00",
+        "review_after": "2026-07-28T15:33:09+08:00"
       }
     },
     {
@@ -1614,8 +1614,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-22T09:54:57.820766+08:00",
-        "review_after": "2026-07-25T09:54:57.820766+08:00"
+        "verified_at": "2026-07-25T15:33:09+08:00",
+        "review_after": "2026-07-28T15:33:09+08:00"
       }
     },
     {
@@ -1638,8 +1638,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-22T09:54:57.820766+08:00",
-        "review_after": "2026-07-25T09:54:57.820766+08:00"
+        "verified_at": "2026-07-25T15:33:09+08:00",
+        "review_after": "2026-07-28T15:33:09+08:00"
       }
     },
     {
@@ -1699,8 +1699,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-22T09:54:57.820766+08:00",
-        "review_after": "2026-07-25T09:54:57.820766+08:00"
+        "verified_at": "2026-07-25T15:33:09+08:00",
+        "review_after": "2026-07-28T15:33:09+08:00"
       }
     },
     {
@@ -1778,8 +1778,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-22T09:54:57.820766+08:00",
-        "review_after": "2026-07-25T09:54:57.820766+08:00"
+        "verified_at": "2026-07-25T15:33:09+08:00",
+        "review_after": "2026-07-28T15:33:09+08:00"
       }
     },
     {
@@ -1817,8 +1817,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-22T09:54:57.820766+08:00",
-        "review_after": "2026-07-25T09:54:57.820766+08:00"
+        "verified_at": "2026-07-25T15:33:09+08:00",
+        "review_after": "2026-07-28T15:33:09+08:00"
       }
     },
     {
@@ -1840,8 +1840,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-22T09:54:57.820766+08:00",
-        "review_after": "2026-07-25T09:54:57.820766+08:00"
+        "verified_at": "2026-07-25T15:33:09+08:00",
+        "review_after": "2026-07-28T15:33:09+08:00"
       }
     },
     {
@@ -1863,8 +1863,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-22T09:54:57.820766+08:00",
-        "review_after": "2026-07-25T09:54:57.820766+08:00"
+        "verified_at": "2026-07-25T15:33:09+08:00",
+        "review_after": "2026-07-28T15:33:09+08:00"
       }
     },
     {
@@ -1966,8 +1966,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-22T09:54:57.820766+08:00",
-        "review_after": "2026-07-25T09:54:57.820766+08:00"
+        "verified_at": "2026-07-25T15:33:09+08:00",
+        "review_after": "2026-07-28T15:33:09+08:00"
       }
     },
     {
@@ -2380,8 +2380,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-22T09:54:57.820766+08:00",
-        "review_after": "2026-07-25T09:54:57.820766+08:00"
+        "verified_at": "2026-07-25T15:33:09+08:00",
+        "review_after": "2026-07-28T15:33:09+08:00"
       }
     },
     {
@@ -2469,8 +2469,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-22T09:54:57.820766+08:00",
-        "review_after": "2026-07-25T09:54:57.820766+08:00"
+        "verified_at": "2026-07-25T15:33:09+08:00",
+        "review_after": "2026-07-28T15:33:09+08:00"
       }
     },
     {
@@ -2617,8 +2617,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-22T09:54:57.820766+08:00",
-        "review_after": "2026-07-25T09:54:57.820766+08:00"
+        "verified_at": "2026-07-25T15:33:09+08:00",
+        "review_after": "2026-07-28T15:33:09+08:00"
       }
     },
     {
@@ -2930,7 +2930,7 @@
     },
     {
       "id": "comp-52jingsai-bcce7b0c6e68",
-      "name": "【英语词汇大赛，7月25日考试】2026年第四届“外文奖”大学生英语词汇大赛报名通知！",
+      "name": "【英语词汇大赛】2026年第四届“外文奖”大学生英语词汇大赛报名通知！",
       "official_url": "https://www.52jingsai.com/article-23405-1.html",
       "status": "open",
       "tier": "official",
@@ -2947,7 +2947,7 @@
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
         "registration_end": "2026-08-06",
-        "verified_at": "2026-07-18T15:34:13.236968+08:00"
+        "verified_at": "2026-07-25T15:33:09+08:00"
       }
     },
     {
@@ -3086,8 +3086,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-21T21:33:23+08:00",
-        "review_after": "2026-07-24T21:33:23+08:00"
+        "verified_at": "2026-07-25T15:33:09+08:00",
+        "review_after": "2026-07-28T15:33:09+08:00"
       },
       "signup": "",
       "schedule": "",
