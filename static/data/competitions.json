@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-25T15:33:09+08:00",
+  "last_updated": "2026-07-26T12:34:10+08:00",
   "source": "CampBrief",
-  "total": 163,
+  "total": 165,
   "tiers": [
     {
       "key": "all",
@@ -2205,12 +2205,12 @@
     },
     {
       "id": "comp-saikr-b28f051c4971",
-      "name": "【明日开考】第三届“中国故事大赛·双语中国”全国大学生英语词汇大赛",
+      "name": "【截止今晚23点】第三届“中国故事大赛·双语中国”全国大学生英语词汇大赛",
       "tier": "hobby",
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "done",
       "signup": "即日起至2026年7月25日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
@@ -2694,7 +2694,7 @@
     },
     {
       "id": "comp-saikr-f29d5a8fa482",
-      "name": "【今晚截止/五章认证】2026年全国大学生文旅创作大赛",
+      "name": "【五章认证】2026年全国大学生文旅创作大赛",
       "tier": "hobby",
       "fields": [
         "other"
@@ -2752,12 +2752,12 @@
     },
     {
       "id": "comp-saikr-e96b1b2e22c9",
-      "name": "【最后1天】第三届“中外传播杯”大学生手机摄影大赛",
+      "name": "第三届“中外传播杯”大学生手机摄影大赛",
       "tier": "hobby",
       "fields": [
         "design"
       ],
-      "status": "open",
+      "status": "closed",
       "signup": "即日起至2026年7月25日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
@@ -2793,7 +2793,7 @@
     },
     {
       "id": "comp-saikr-4604dd3e4d72",
-      "name": "第四届“BETT杯”全国大学生英语写作大赛",
+      "name": "第四届“BETT杯”大学生英语写作大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3142,6 +3142,53 @@
       "official_url": "https://www.saikr.com/vse/YSJYJ",
       "official_site": "",
       "organizer": "“三晋杯”全国大学生英语大赛组委会",
+      "prestige": 3
+    },
+    {
+      "id": "comp-saikr-83cda7062eb7",
+      "name": "【最后一场】第二届大学生“创意中华”传统文化知识大赛",
+      "tier": "hobby",
+      "fields": [
+        "design",
+        "culture"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-07-26T12:33:25+08:00",
+        "review_after": "2026-07-29T12:33:25+08:00"
+      },
+      "signup": "",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/57745",
+      "official_site": "",
+      "organizer": "“创意中华”系列活动组委会",
+      "prestige": 3
+    },
+    {
+      "id": "comp-saikr-4eb4c5be367a",
+      "name": "【截止今晚23点】第三届“中国故事大赛·双语中国”全国大学生英语阅读大赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-07-26T12:34:10+08:00",
+        "review_after": "2026-07-29T12:34:10+08:00"
+      },
+      "signup": "",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/2026/ER",
+      "official_site": "",
+      "organizer": "中国寓言文学研究会教育教学专业委员会",
       "prestige": 3
     }
   ]
