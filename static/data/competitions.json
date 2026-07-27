@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T21:45:14+08:00",
+  "last_updated": "2026-07-27T09:33:28+08:00",
   "source": "CampBrief",
   "total": 167,
   "tiers": [
@@ -2398,7 +2398,7 @@
         "language",
         "business"
       ],
-      "status": "open",
+      "status": "closed",
       "signup": "即日起至2026年7月26日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
@@ -2422,7 +2422,7 @@
         "innovation",
         "science"
       ],
-      "status": "open",
+      "status": "closed",
       "signup": "2026年3月18日至7月26日报名",
       "schedule": "",
       "summary": "来源：赛氪。浏览 1.3万，关注 606",
@@ -3201,7 +3201,7 @@
     },
     {
       "id": "comp-saikr-0b57b8d507e5",
-      "name": "2026年第五届\"空英杯\"全国大学生英语语法竞赛",
+      "name": "【火热报名中】2026年第五届“空英杯”全国大学生英语语法竞赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3210,8 +3210,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-26T21:45:14+08:00",
-        "review_after": "2026-07-29T21:45:14+08:00"
+        "verified_at": "2026-07-27T09:33:28+08:00",
+        "review_after": "2026-07-30T09:33:28+08:00"
       },
       "signup": "赛事详情请访问信息来源页面",
       "schedule": "",
@@ -3224,17 +3224,17 @@
     },
     {
       "id": "comp-saikr-dd8077ef2650",
-      "name": "\"悦·读者杯\"——2026年青少年文学大赛",
+      "name": "【作品征集】“悦·读者杯”——2026年青少年文学大赛",
       "tier": "hobby",
       "fields": [
         "language"
       ],
-      "status": "pending",
+      "status": "open",
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-26T21:45:14+08:00",
-        "review_after": "2026-07-29T21:45:14+08:00"
+        "verified_at": "2026-07-27T09:33:28+08:00",
+        "review_after": "2026-07-30T09:33:28+08:00"
       },
       "signup": "赛事详情请访问信息来源页面",
       "schedule": "",
