@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-27T15:34:14+08:00",
+  "last_updated": "2026-07-27T21:34:25.933584+08:00",
   "source": "CampBrief",
-  "total": 167,
+  "total": 170,
   "tiers": [
     {
       "key": "all",
@@ -791,7 +791,7 @@
     },
     {
       "id": "official-041",
-      "name": "睿抗机器人开发者大赛（RAICOM）",
+      "name": "2026年睿抗机器人开发者大赛（RAICOM）",
       "tier": "official",
       "fields": [
         "robot",
@@ -2053,7 +2053,7 @@
     },
     {
       "id": "comp-saikr-91694bf3b0c1",
-      "name": "【最后3天】第五届“中外传播杯”大学生英语翻译大赛",
+      "name": "【今晚23点截止】第五届“中外传播杯”大学生英语翻译大赛",
       "tier": "official",
       "fields": [
         "language"
@@ -2096,20 +2096,26 @@
     },
     {
       "id": "comp-saikr-fabd5817d237",
-      "name": "【下周截止！强推】第四届“一带一路”大学生英语翻译大赛",
+      "name": "【明晚截止！】第四届“一带一路”大学生英语翻译大赛",
       "tier": "hobby",
       "fields": [
         "language"
       ],
-      "status": "pending",
-      "signup": "",
+      "status": "open",
+      "signup": "即日起至7月28日",
       "schedule": "",
       "summary": "来源：赛氪。浏览 5.3万，关注 1768",
       "search": "",
       "official_url": "https://www.saikr.com/vse/2026/YDYL/Translate",
       "official_site": "",
       "organizer": "一带一路系列赛事组委会",
-      "prestige": 4
+      "prestige": 4,
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-07-28",
+        "verified_at": "2026-07-27T21:33:16+08:00"
+      }
     },
     {
       "id": "comp-saikr-1427ab50afa1",
@@ -2392,7 +2398,7 @@
     },
     {
       "id": "comp-saikr-666a81761ea0",
-      "name": "【周日开考】第六届全国高校商务翻译（英语）能力挑战赛",
+      "name": "【新增考场】第六届全国高校商务翻译（英语）能力挑战赛",
       "tier": "hobby",
       "fields": [
         "language",
@@ -2799,7 +2805,7 @@
     },
     {
       "id": "comp-saikr-4604dd3e4d72",
-      "name": "第四届“BETT杯”大学生英语写作大赛",
+      "name": "【最后一场】第四届“BETT杯”大学生英语写作大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -2898,12 +2904,12 @@
     },
     {
       "id": "comp-saikr-3bcfd9399c73",
-      "name": "“声释中华”新时代大学生外宣人才文学素养大赛",
+      "name": "【周日开考】“声释中华”新时代大学生外宣人才文学素养大赛",
       "tier": "hobby",
       "fields": [
         "other"
       ],
-      "status": "pending",
+      "status": "ongoing",
       "signup": "",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
@@ -2911,7 +2917,13 @@
       "official_url": "https://www.saikr.com/vse/2026SY",
       "official_site": "",
       "organizer": "“声释中华”新时代大学生外宣人才赛事组委会",
-      "prestige": 4
+      "prestige": 4,
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-07-27T21:33:16+08:00",
+        "review_after": "2026-07-30T21:33:16+08:00"
+      }
     },
     {
       "id": "comp-52jingsai-c4ee8436bf0e",
@@ -3035,7 +3047,7 @@
     },
     {
       "id": "comp-saikr-6c0add4967a9",
-      "name": "【倒计时3天】第三届“中国故事大赛·双语中国”全国大学生写作大赛-中文赛道",
+      "name": "【明晚截止】第三届“中国故事大赛·双语中国”全国大学生写作大赛-中文赛道",
       "tier": "enterprise",
       "fields": [
         "design"
@@ -3178,17 +3190,17 @@
     },
     {
       "id": "comp-saikr-4eb4c5be367a",
-      "name": "第三届“中国故事大赛·双语中国”全国大学生英语阅读大赛",
+      "name": "【第三场报名】第三届“中国故事大赛·双语中国”全国大学生英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
       ],
-      "status": "closed",
+      "status": "open",
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-26T21:45:14+08:00",
-        "review_after": "2026-07-29T21:45:14+08:00"
+        "verified_at": "2026-07-27T21:33:16+08:00",
+        "review_after": "2026-07-30T21:33:16+08:00"
       },
       "signup": "",
       "schedule": "",
@@ -3224,17 +3236,17 @@
     },
     {
       "id": "comp-saikr-dd8077ef2650",
-      "name": "【作品征集】“悦·读者杯”——2026年青少年文学大赛",
+      "name": "【评阅倒计时】“悦·读者杯”——2026年青少年文学大赛",
       "tier": "hobby",
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-27T09:33:28+08:00",
-        "review_after": "2026-07-30T09:33:28+08:00"
+        "verified_at": "2026-07-27T21:33:16+08:00",
+        "review_after": "2026-07-30T21:33:16+08:00"
       },
       "signup": "赛事详情请访问信息来源页面",
       "schedule": "",
@@ -3244,6 +3256,75 @@
       "official_site": "",
       "organizer": "读者杂志社、读者出版集团",
       "prestige": 5
+    },
+    {
+      "id": "comp-saikr-888a592edcd2",
+      "name": "2026年全国大学生“青鸾杯”语文能力大赛",
+      "tier": "hobby",
+      "fields": [
+        "design"
+      ],
+      "status": "pending",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-07-27T21:33:16+08:00",
+        "review_after": "2026-07-30T21:33:16+08:00"
+      },
+      "signup": "",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/QLBYW26",
+      "official_site": "",
+      "organizer": "语文文化组委会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-934b697c9f23",
+      "name": "【最后一场】2026年第二届全国大学生电子商务精英挑战赛",
+      "tier": "hobby",
+      "fields": [
+        "computer"
+      ],
+      "status": "pending",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-07-27T21:33:16+08:00",
+        "review_after": "2026-07-30T21:33:16+08:00"
+      },
+      "signup": "",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/DZSW2026",
+      "official_site": "",
+      "organizer": "全国大学生电子商务精英挑战赛大赛组委会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-274ee0a08789",
+      "name": "2026年第六届《英语世界》杯全国大学生英语语法大赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "pending",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-07-27T21:34:22+08:00",
+        "review_after": "2026-07-30T21:34:22+08:00"
+      },
+      "signup": "",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/grammar/2026",
+      "official_site": "",
+      "organizer": "《英语世界》杯系列大赛组委会",
+      "prestige": 2
     }
   ]
 }
