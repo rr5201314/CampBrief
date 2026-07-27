@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-27T08:49:53.752524+08:00",
+  "last_updated": "2026-07-27T13:36:11.950430+08:00",
   "source": "CampBrief Auto",
-  "total": 571,
+  "total": 576,
   "items": [
     {
       "id": "news-287d880c23ab16d2",
@@ -15,6 +15,45 @@
       "priority": 3,
       "category": "ai",
       "source": "少数派"
+    },
+    {
+      "id": "news-190400e79477404c",
+      "title": "月之暗面 Kimi K3 计划开放权重，目前尚未发布",
+      "url": "https://daily.juya.uk/issues/2026-07-27/",
+      "published": "2026-07-27T01:24:04+08:00",
+      "summary": "月之暗面预告新一代旗舰模型 Kimi K3 将开放完整模型权重，该模型总参数量达 2.8 万亿，原生支持视觉理解。",
+      "detail": "月之暗面此前预告其新一代旗舰模型 Kimi K3 将于 7 月 27 日前开放完整模型权重。该模型已于 7 月 16 日正式发布，在 Kimi 系列产品及开放平台上线。Kimi K3 总参数量达 2.8 万亿，采用混合专家架构，原生支持视觉理解，拥有 100 万 token 上下文窗口，主要面向长程编程和深度推理场景。截至日报发出前，权重尚未发布。",
+      "image": "",
+      "priority": 3,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-07-27"
+    },
+    {
+      "id": "news-ee7f9e0a09c312ae",
+      "title": "OpenAI 宣布 ChatGPT Work 活跃用户数已超越 Codex",
+      "url": "https://daily.juya.uk/issues/2026-07-27/",
+      "published": "2026-07-27T01:24:04+08:00",
+      "summary": "Codex 负责人 Tibo 宣布 ChatGPT Work 的活跃用户数正式超越 Codex，有用户推测 Work 模式被设为默认选项是增长原因之一。",
+      "detail": "Codex 负责人 Tibo 通过社交平台宣布，ChatGPT Work 的活跃用户数已正式超越 Codex。该消息引发用户对使用限制的抱怨，部分用户推测 Work 模式被设为默认选项可能是用户量增长原因之一。此外，用户对 ChatGPT 中 Chat、Work 和 Codex 三者定位差异表达了困惑。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-07-27"
+    },
+    {
+      "id": "news-1de0022905f413e1",
+      "title": "Claude 共享链接遭搜索引擎索引，Anthropic 已部署反爬措施",
+      "url": "https://daily.juya.uk/issues/2026-07-27/",
+      "published": "2026-07-27T01:24:04+08:00",
+      "summary": "用户发现 Claude 共享聊天链接被搜索引擎索引，涉及敏感信息泄露。Anthropic 已部署 robots.txt 和反索引措施，Google 已移除结果。",
+      "detail": "近日有用户发现 Claude 共享聊天功能生成的公开链接被搜索引擎索引，称涉及 API 密钥、加密货币钱包等敏感信息。Anthropic 已部署 robots.txt 禁止抓取及 X-Robots-Tag 反索引响应头，Google 此前曾索引约 600 条对话但已移除相关结果。目前 Brave 搜索仍可列出 claude.ai/share 页面链接。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-07-27"
     },
     {
       "id": "news-041bcb014f083278",
@@ -43,6 +82,32 @@
       "category": "tech",
       "subcategory": "hardware",
       "source": "36氪"
+    },
+    {
+      "id": "news-cadd4bb2d828a691",
+      "title": "Andrej Karpathy 否认从 Anthropic 离职传闻",
+      "url": "https://daily.juya.uk/issues/2026-07-27/",
+      "published": "2026-07-27T01:24:04+08:00",
+      "summary": "Andrej Karpathy 在社交平台否认已从 Anthropic 离职的传闻，称相关说法为虚假信息，自己只是在清理个人简介。",
+      "detail": "网传 Andrej Karpathy 已从 Anthropic 离职的说法在社交媒体上引发关注。Karpathy 本人在 Twitter 上明确否认，称这是\"奇怪的虚假信息\"。他表示自己只是在清理个人简介，并指出如果真要宣布此类消息，方式应该是发布文章并与团队分享，而不是修改简介。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-07-27"
+    },
+    {
+      "id": "news-7f4b8e596531f9ae",
+      "title": "Grok Build 新增支持 /deep-research 研究命令",
+      "url": "https://daily.juya.uk/issues/2026-07-27/",
+      "published": "2026-07-27T01:24:04+08:00",
+      "summary": "Grok Build 新增 /deep-research 命令，可通过并行 agents 研究、交叉验证证据并编写带引用的报告。",
+      "detail": "Grok Build 新增支持 /deep-research 命令。该功能通过受限的并行 agents 执行研究，交叉检查证据并编写带有引用的报告。这是 Grok 平台在开发者工具方向的又一扩展，为用户提供自动化深度研究能力。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-07-27"
     },
     {
       "id": "news-b46bc208abf75dd8",
