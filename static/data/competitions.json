@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-28T15:32:35+08:00",
+  "last_updated": "2026-07-28T21:36:08+08:00",
   "source": "CampBrief",
-  "total": 170,
+  "total": 171,
   "tiers": [
     {
       "key": "all",
@@ -172,8 +172,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-25T15:33:09+08:00",
-        "review_after": "2026-07-28T15:33:09+08:00"
+        "verified_at": "2026-07-28T21:34:44+08:00",
+        "review_after": "2026-07-31T21:34:44+08:00"
       }
     },
     {
@@ -275,8 +275,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-25T15:33:09+08:00",
-        "review_after": "2026-07-28T15:33:09+08:00"
+        "verified_at": "2026-07-28T21:34:44+08:00",
+        "review_after": "2026-07-31T21:34:44+08:00"
       }
     },
     {
@@ -844,8 +844,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-25T15:33:09+08:00",
-        "review_after": "2026-07-28T15:33:09+08:00"
+        "verified_at": "2026-07-28T21:34:44+08:00",
+        "review_after": "2026-07-31T21:34:44+08:00"
       }
     },
     {
@@ -1590,8 +1590,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-25T15:33:09+08:00",
-        "review_after": "2026-07-28T15:33:09+08:00"
+        "verified_at": "2026-07-28T21:34:44+08:00",
+        "review_after": "2026-07-31T21:34:44+08:00"
       }
     },
     {
@@ -1614,8 +1614,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-25T15:33:09+08:00",
-        "review_after": "2026-07-28T15:33:09+08:00"
+        "verified_at": "2026-07-28T21:34:44+08:00",
+        "review_after": "2026-07-31T21:34:44+08:00"
       }
     },
     {
@@ -1638,8 +1638,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-25T15:33:09+08:00",
-        "review_after": "2026-07-28T15:33:09+08:00"
+        "verified_at": "2026-07-28T21:34:44+08:00",
+        "review_after": "2026-07-31T21:34:44+08:00"
       }
     },
     {
@@ -1699,8 +1699,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-25T15:33:09+08:00",
-        "review_after": "2026-07-28T15:33:09+08:00"
+        "verified_at": "2026-07-28T21:34:44+08:00",
+        "review_after": "2026-07-31T21:34:44+08:00"
       }
     },
     {
@@ -1778,8 +1778,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-25T15:33:09+08:00",
-        "review_after": "2026-07-28T15:33:09+08:00"
+        "verified_at": "2026-07-28T21:34:44+08:00",
+        "review_after": "2026-07-31T21:34:44+08:00"
       }
     },
     {
@@ -1817,8 +1817,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-25T15:33:09+08:00",
-        "review_after": "2026-07-28T15:33:09+08:00"
+        "verified_at": "2026-07-28T21:34:44+08:00",
+        "review_after": "2026-07-31T21:34:44+08:00"
       }
     },
     {
@@ -1840,8 +1840,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-25T15:33:09+08:00",
-        "review_after": "2026-07-28T15:33:09+08:00"
+        "verified_at": "2026-07-28T21:34:44+08:00",
+        "review_after": "2026-07-31T21:34:44+08:00"
       }
     },
     {
@@ -1863,8 +1863,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-25T15:33:09+08:00",
-        "review_after": "2026-07-28T15:33:09+08:00"
+        "verified_at": "2026-07-28T21:34:44+08:00",
+        "review_after": "2026-07-31T21:34:44+08:00"
       }
     },
     {
@@ -1966,8 +1966,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-25T15:33:09+08:00",
-        "review_after": "2026-07-28T15:33:09+08:00"
+        "verified_at": "2026-07-28T21:34:44+08:00",
+        "review_after": "2026-07-31T21:34:44+08:00"
       }
     },
     {
@@ -2096,7 +2096,7 @@
     },
     {
       "id": "comp-saikr-fabd5817d237",
-      "name": "【明晚截止！】第四届“一带一路”大学生英语翻译大赛",
+      "name": "【今晚截止！】第四届“一带一路”大学生英语翻译大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -2114,7 +2114,7 @@
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
         "registration_end": "2026-07-28",
-        "verified_at": "2026-07-27T21:33:16+08:00"
+        "verified_at": "2026-07-28T21:34:44+08:00"
       }
     },
     {
@@ -2392,8 +2392,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-25T15:33:09+08:00",
-        "review_after": "2026-07-28T15:33:09+08:00"
+        "verified_at": "2026-07-28T21:34:44+08:00",
+        "review_after": "2026-07-31T21:34:44+08:00"
       }
     },
     {
@@ -2481,8 +2481,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-25T15:33:09+08:00",
-        "review_after": "2026-07-28T15:33:09+08:00"
+        "verified_at": "2026-07-28T21:34:44+08:00",
+        "review_after": "2026-07-31T21:34:44+08:00"
       }
     },
     {
@@ -2629,8 +2629,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-25T15:33:09+08:00",
-        "review_after": "2026-07-28T15:33:09+08:00"
+        "verified_at": "2026-07-28T21:34:44+08:00",
+        "review_after": "2026-07-31T21:34:44+08:00"
       }
     },
     {
@@ -3047,7 +3047,7 @@
     },
     {
       "id": "comp-saikr-6c0add4967a9",
-      "name": "【明晚截止】第三届“中国故事大赛·双语中国”全国大学生写作大赛-中文赛道",
+      "name": "【截止今晚23点】第三届“中国故事大赛·双语中国”全国大学生写作大赛-中文赛道",
       "tier": "enterprise",
       "fields": [
         "design"
@@ -3065,7 +3065,7 @@
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
         "registration_end": "2026-07-28",
-        "verified_at": "2026-07-20T21:33:00+08:00"
+        "verified_at": "2026-07-28T21:34:44+08:00"
       }
     },
     {
@@ -3106,8 +3106,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-25T15:33:09+08:00",
-        "review_after": "2026-07-28T15:33:09+08:00"
+        "verified_at": "2026-07-28T21:34:44+08:00",
+        "review_after": "2026-07-31T21:34:44+08:00"
       },
       "signup": "",
       "schedule": "",
@@ -3325,6 +3325,29 @@
       "official_site": "",
       "organizer": "《英语世界》杯系列大赛组委会",
       "prestige": 2
+    },
+    {
+      "id": "comp-saikr-02e4f69cc49e",
+      "name": "2026年第六届天府杯全国大学生数学建模竞赛",
+      "tier": "hobby",
+      "fields": [
+        "math"
+      ],
+      "status": "pending",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-07-28T21:35:47+08:00",
+        "review_after": "2026-07-31T21:35:47+08:00"
+      },
+      "signup": "",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/TFB2026",
+      "official_site": "",
+      "organizer": "天府杯竞赛组委会",
+      "prestige": 4
     }
   ]
 }
