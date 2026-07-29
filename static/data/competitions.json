@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-28T21:36:08+08:00",
+  "last_updated": "2026-07-29T09:33:52+08:00",
   "source": "CampBrief",
   "total": 171,
   "tiers": [
@@ -2101,7 +2101,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "closed",
       "signup": "即日起至7月28日",
       "schedule": "",
       "summary": "来源：赛氪。浏览 5.3万，关注 1768",
@@ -3052,7 +3052,7 @@
       "fields": [
         "design"
       ],
-      "status": "open",
+      "status": "closed",
       "signup": "7月28日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
