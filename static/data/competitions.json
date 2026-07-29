@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-29T09:35:53+08:00",
+  "last_updated": "2026-07-29T15:35:00+08:00",
   "source": "CampBrief",
   "total": 171,
   "tiers": [
@@ -3172,15 +3172,9 @@
         "design",
         "culture"
       ],
-      "status": "open",
-      "lifecycle": {
-        "mode": "manual",
-        "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-26T12:33:25+08:00",
-        "review_after": "2026-07-29T12:33:25+08:00"
-      },
-      "signup": "",
-      "schedule": "",
+      "status": "done",
+      "signup": "2026年3月31日至2026年7月25日",
+      "schedule": "最后一场考试：2026年7月25日9:00-23:00",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/57745",
