@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-29T15:35:00+08:00",
+  "last_updated": "2026-07-29T21:38:01.305818+08:00",
   "source": "CampBrief",
-  "total": 171,
+  "total": 172,
   "tiers": [
     {
       "key": "all",
@@ -2053,7 +2053,7 @@
     },
     {
       "id": "comp-saikr-91694bf3b0c1",
-      "name": "【今晚23点截止】第五届“中外传播杯”大学生英语翻译大赛",
+      "name": "第五届“中外传播杯”大学生英语翻译大赛",
       "tier": "official",
       "fields": [
         "language"
@@ -2398,14 +2398,14 @@
     },
     {
       "id": "comp-saikr-666a81761ea0",
-      "name": "【新增考场】第六届全国高校商务翻译（英语）能力挑战赛",
+      "name": "【八月新增考场】第六届全国高校商务翻译（英语）能力挑战赛",
       "tier": "hobby",
       "fields": [
         "language",
         "business"
       ],
-      "status": "closed",
-      "signup": "即日起至2026年7月26日",
+      "status": "open",
+      "signup": "赛事详情请访问信息来源页面",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
@@ -2414,10 +2414,10 @@
       "organizer": "商务外语系列赛事组委会",
       "prestige": 4,
       "lifecycle": {
-        "mode": "scheduled",
+        "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "registration_end": "2026-07-26",
-        "verified_at": "2026-07-23T21:32:59+08:00"
+        "verified_at": "2026-07-29T21:37:27+08:00",
+        "review_after": "2026-08-01T21:37:27+08:00"
       }
     },
     {
@@ -2977,15 +2977,21 @@
       "fields": [
         "design"
       ],
-      "status": "done",
-      "signup": "2026年7月17日中午12点截止",
+      "status": "open",
+      "signup": "即日起-12月25日中午12点截止",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.52jingsai.com/article-23522-1.html",
       "official_site": "",
       "organizer": "华夏文化促进会素质教育委员会",
-      "prestige": 4
+      "prestige": 4,
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-12-25",
+        "verified_at": "2026-07-29T21:36:38+08:00"
+      }
     },
     {
       "id": "comp-saikr-635a0b9d727c",
@@ -3042,18 +3048,18 @@
         "time_zone": "Asia/Shanghai",
         "registration_start": "2026-07-01",
         "registration_end": "2026-12-13",
-        "verified_at": "2026-07-24T15:38:45+08:00"
+        "verified_at": "2026-07-29T21:36:38+08:00"
       }
     },
     {
       "id": "comp-saikr-6c0add4967a9",
-      "name": "【截止今晚23点】第三届“中国故事大赛·双语中国”全国大学生写作大赛-中文赛道",
+      "name": "【最后一场】第三届“中国故事大赛·双语中国”全国大学生写作大赛-中文赛道",
       "tier": "enterprise",
       "fields": [
         "design"
       ],
-      "status": "closed",
-      "signup": "7月28日",
+      "status": "open",
+      "signup": "8月31日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
@@ -3064,8 +3070,8 @@
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "registration_end": "2026-07-28",
-        "verified_at": "2026-07-28T21:34:44+08:00"
+        "registration_end": "2026-08-31",
+        "verified_at": "2026-07-29T21:36:38+08:00"
       }
     },
     {
@@ -3323,7 +3329,7 @@
     {
       "id": "comp-saikr-02e4f69cc49e",
       "name": "2026年第六届天府杯全国大学生数学建模竞赛",
-      "tier": "hobby",
+      "tier": "official",
       "fields": [
         "math"
       ],
@@ -3341,7 +3347,30 @@
       "official_url": "https://www.saikr.com/vse/TFB2026",
       "official_site": "",
       "organizer": "天府杯竞赛组委会",
-      "prestige": 4
+      "prestige": 9
+    },
+    {
+      "id": "comp-saikr-6ac61880bd78",
+      "name": "第四届“中外传播杯”大学生英语能力挑战赛",
+      "tier": "official",
+      "fields": [
+        "language"
+      ],
+      "status": "pending",
+      "signup": "赛事详情请访问信息来源页面",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/NCEPC2026",
+      "official_site": "",
+      "organizer": "外文局亚太传播中心英语大赛组委会",
+      "prestige": 7,
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-07-29T21:36:38+08:00",
+        "review_after": "2026-08-01T21:36:38+08:00"
+      }
     }
   ]
 }
