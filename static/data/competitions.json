@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-30T09:33:39+08:00",
+  "last_updated": "2026-07-30T15:34:17+08:00",
   "source": "CampBrief",
   "total": 172,
   "tiers": [
@@ -2948,20 +2948,20 @@
       "official_url": "https://www.52jingsai.com/article-23405-1.html",
       "status": "open",
       "tier": "official",
-      "signup": "即日起至8月6日",
+      "signup": "即日起至2026年9月18日",
       "schedule": "",
       "organizer": "中国外文局亚太传播中心",
-      "summary": "赛事详情请访问信息来源页面",
+      "summary": "赛事详情请访问官方网站",
       "fields": [
         "language"
       ],
-      "official_site": "https://www.52jingsai.com/article-23405-1.html",
+      "official_site": "https://www.wwj.org.cn/index/index/subject?subject_id=4",
       "prestige": 7,
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "registration_end": "2026-08-06",
-        "verified_at": "2026-07-25T15:33:09+08:00"
+        "registration_end": "2026-09-18",
+        "verified_at": "2026-07-30T15:34:17+08:00"
       }
     },
     {
@@ -3201,19 +3201,19 @@
     },
     {
       "id": "comp-saikr-0b57b8d507e5",
-      "name": "【火热报名中】2026年第五届“空英杯”全国大学生英语语法竞赛",
+      "name": "2026年第五届“空英杯”全国大学生英语语法竞赛",
       "tier": "hobby",
       "fields": [
         "language"
       ],
       "status": "open",
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-27T09:33:28+08:00",
-        "review_after": "2026-07-30T09:33:28+08:00"
+        "registration_end": "2026-10-18",
+        "verified_at": "2026-07-30T15:34:17+08:00"
       },
-      "signup": "赛事详情请访问信息来源页面",
+      "signup": "即日起至2026年10月18日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
