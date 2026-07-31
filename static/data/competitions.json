@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-30T21:32:32+08:00",
+  "last_updated": "2026-07-31T09:31:25+08:00",
   "source": "CampBrief",
   "total": 172,
   "tiers": [
@@ -2058,7 +2058,7 @@
       "fields": [
         "language"
       ],
-      "status": "ongoing",
+      "status": "done",
       "signup": "2026年3月12日至7月27日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
