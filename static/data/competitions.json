@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-31T09:31:25+08:00",
+  "last_updated": "2026-07-31T15:40:57.050780+08:00",
   "source": "CampBrief",
-  "total": 172,
+  "total": 173,
   "tiers": [
     {
       "key": "all",
@@ -2799,7 +2799,7 @@
     },
     {
       "id": "comp-saikr-4604dd3e4d72",
-      "name": "【最后一场】第四届“BETT杯”大学生英语写作大赛",
+      "name": "【多校认可！最后机会！】第四届“BETT杯”大学生英语写作大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -2898,7 +2898,7 @@
     },
     {
       "id": "comp-saikr-3bcfd9399c73",
-      "name": "【周日开考】“声释中华”新时代大学生外宣人才文学素养大赛",
+      "name": "【周六开考】“声释中华”新时代大学生外宣人才文学素养大赛",
       "tier": "hobby",
       "fields": [
         "other"
@@ -2915,8 +2915,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-27T21:33:16+08:00",
-        "review_after": "2026-07-30T21:33:16+08:00"
+        "verified_at": "2026-07-31T15:40:01+08:00",
+        "review_after": "2026-08-03T15:40:01+08:00"
       }
     },
     {
@@ -3035,7 +3035,7 @@
       "search": "",
       "official_url": "https://www.saikr.com/vse/2026/ZXB",
       "official_site": "",
-      "organizer": "中国西部研究与发展促进会教育工作委员会",
+      "organizer": "中西部外语翻译大赛组委会",
       "prestige": 5,
       "lifecycle": {
         "mode": "scheduled",
@@ -3047,7 +3047,7 @@
     },
     {
       "id": "comp-saikr-6c0add4967a9",
-      "name": "【最后一场】第三届“中国故事大赛·双语中国”全国大学生写作大赛-中文赛道",
+      "name": "【最后一场】第三届“中国故事大赛·双语中国”大学生写作大赛-中文赛道",
       "tier": "enterprise",
       "fields": [
         "design"
@@ -3178,7 +3178,7 @@
     },
     {
       "id": "comp-saikr-4eb4c5be367a",
-      "name": "【第三场报名】第三届“中国故事大赛·双语中国”全国大学生英语阅读大赛",
+      "name": "【第三场报名】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3187,8 +3187,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-27T21:33:16+08:00",
-        "review_after": "2026-07-30T21:33:16+08:00"
+        "verified_at": "2026-07-31T15:40:01+08:00",
+        "review_after": "2026-08-03T15:40:01+08:00"
       },
       "signup": "",
       "schedule": "",
@@ -3201,7 +3201,7 @@
     },
     {
       "id": "comp-saikr-0b57b8d507e5",
-      "name": "2026年第五届“空英杯”全国大学生英语语法竞赛",
+      "name": "【火热报名中】2026年第五届“空英杯”全国大学生英语语法竞赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3233,8 +3233,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-27T21:33:16+08:00",
-        "review_after": "2026-07-30T21:33:16+08:00"
+        "verified_at": "2026-07-31T15:40:01+08:00",
+        "review_after": "2026-08-03T15:40:01+08:00"
       },
       "signup": "赛事详情请访问信息来源页面",
       "schedule": "",
@@ -3256,8 +3256,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-27T21:33:16+08:00",
-        "review_after": "2026-07-30T21:33:16+08:00"
+        "verified_at": "2026-07-31T15:40:01+08:00",
+        "review_after": "2026-08-03T15:40:01+08:00"
       },
       "signup": "",
       "schedule": "",
@@ -3275,12 +3275,12 @@
       "fields": [
         "computer"
       ],
-      "status": "pending",
+      "status": "open",
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-27T21:33:16+08:00",
-        "review_after": "2026-07-30T21:33:16+08:00"
+        "verified_at": "2026-07-31T15:40:01+08:00",
+        "review_after": "2026-08-03T15:40:01+08:00"
       },
       "signup": "",
       "schedule": "",
@@ -3302,8 +3302,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-27T21:34:22+08:00",
-        "review_after": "2026-07-30T21:34:22+08:00"
+        "verified_at": "2026-07-31T15:40:01+08:00",
+        "review_after": "2026-08-03T15:40:01+08:00"
       },
       "signup": "",
       "schedule": "",
@@ -3359,6 +3359,29 @@
         "verified_at": "2026-07-29T21:36:38+08:00",
         "review_after": "2026-08-01T21:36:38+08:00"
       }
+    },
+    {
+      "id": "comp-saikr-cc54a285b632",
+      "name": "2026“外研社·国才杯”“理解当代中国”全国大学生外语能力大赛",
+      "tier": "official",
+      "fields": [
+        "language"
+      ],
+      "status": "pending",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-07-31T15:40:01+08:00",
+        "review_after": "2026-08-03T15:40:01+08:00"
+      },
+      "signup": "",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/58318",
+      "official_site": "",
+      "organizer": "外语教学与研究出版社",
+      "prestige": 7
     }
   ]
 }
