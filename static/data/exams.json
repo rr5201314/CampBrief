@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-31T21:09:59+08:00",
+  "last_updated": "2026-08-01T23:54:35+08:00",
   "source": "CampBrief",
   "total": 28,
   "categories": [
@@ -171,8 +171,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-07-29T09:16:05.706022+08:00",
-        "review_after": "2026-08-01T09:16:05.706022+08:00"
+        "verified_at": "2026-08-01T23:54:35+08:00",
+        "review_after": "2026-08-04T23:54:35+08:00"
       },
       "fee": "约2170元",
       "schedule": "全年多场",
@@ -181,8 +181,22 @@
       "official_site": "https://ielts.neea.cn/",
       "official_portal": "https://ielts-main.neea.cn/",
       "news_list_url": "https://www.chinaielts.org/press-office",
-      "official_url": "https://www.chinaielts.org/press-office/IELTS-Chinese-Mainland-Exam-Registration-Fee-Update-2026",
-      "last_updated": "2026-07-29T09:16:05.706022+08:00"
+      "official_url": "https://www.chinaielts.org/press-office/IELTS-Chinese-Mainland-Exam-Registration-2026-7-9",
+      "last_updated": "2026-08-01T23:54:35+08:00",
+      "timeline": [
+        {
+          "label": "考试场次",
+          "value": "2026年7-9月中国大陆地区雅思场次已公布，具体日期与考位以报名网站为准"
+        },
+        {
+          "label": "纸笔退市",
+          "value": "中国大陆地区自2026年年中起陆续停止纸笔考试，全部采用机考"
+        },
+        {
+          "label": "机考出分",
+          "value": "机考成绩通常在考后3-5天内公布，考前3日截止报名"
+        }
+      ]
     },
     {
       "id": "toefl",
@@ -191,8 +205,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-07-29T09:16:05.706022+08:00",
-        "review_after": "2026-08-01T09:16:05.706022+08:00"
+        "verified_at": "2026-08-01T23:54:35+08:00",
+        "review_after": "2026-08-04T23:54:35+08:00"
       },
       "fee": "约2100元",
       "schedule": "全年多场",
@@ -202,7 +216,7 @@
       "official_portal": "https://toefl-main.neea.cn/",
       "news_list_url": "https://toefl-main.neea.cn/html1/category/16123/94-1.htm",
       "official_url": "https://toefl.neea.cn/",
-      "last_updated": "2026-07-29T09:16:05.706022+08:00"
+      "last_updated": "2026-08-01T23:54:35+08:00"
     },
     {
       "id": "catti-202606",
@@ -481,7 +495,7 @@
         "registration_end": "2026-08-03T23:59:00+01:00",
         "event_start": "2026-09-07",
         "event_end": "2026-09-11",
-        "verified_at": "2026-07-21T21:05:00+08:00"
+        "verified_at": "2026-08-01T23:54:35+08:00"
       },
       "fee": "各阶段费用不同",
       "schedule": "2026年9月",
@@ -517,7 +531,7 @@
           "value": "2026年10月19日"
         }
       ],
-      "last_updated": "2026-07-31T21:09:59+08:00"
+      "last_updated": "2026-08-01T23:54:35+08:00"
     },
     {
       "id": "acca-202612",
@@ -531,7 +545,7 @@
         "registration_end": "2026-11-09T23:59:00+00:00",
         "event_start": "2026-12-07",
         "event_end": "2026-12-11",
-        "verified_at": "2026-07-21T21:05:00+08:00"
+        "verified_at": "2026-08-01T23:54:35+08:00"
       },
       "fee": "各阶段费用不同",
       "schedule": "2026年12月",
@@ -563,7 +577,7 @@
           "value": "2027年1月18日"
         }
       ],
-      "last_updated": "2026-07-31T21:09:59+08:00"
+      "last_updated": "2026-08-01T23:54:35+08:00"
     },
     {
       "id": "ntce-202603",
@@ -633,8 +647,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-07-29T09:16:05.706022+08:00",
-        "review_after": "2026-08-01T09:16:05.706022+08:00"
+        "verified_at": "2026-08-01T23:54:35+08:00",
+        "review_after": "2026-08-04T23:54:35+08:00"
       },
       "fee": "约50元（学生优惠）",
       "schedule": "各地定期组织",
@@ -644,7 +658,7 @@
       "official_portal": "https://www.cltt.org/",
       "news_list_url": "https://www.cltt.org/",
       "official_url": "https://stzbm.cltt.org/",
-      "last_updated": "2026-07-29T09:16:05.706022+08:00"
+      "last_updated": "2026-08-01T23:54:35+08:00"
     },
     {
       "id": "guokao-2026",
@@ -668,8 +682,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-07-29T09:16:05.706022+08:00",
-        "review_after": "2026-08-01T09:16:05.706022+08:00"
+        "verified_at": "2026-08-01T23:54:35+08:00",
+        "review_after": "2026-08-04T23:54:35+08:00"
       },
       "fee": "约50-100元",
       "schedule": "各地不定期",
@@ -679,7 +693,7 @@
       "official_portal": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/index.html",
       "news_list_url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/index.html",
       "official_url": "https://job.mohrss.gov.cn/cjobs/institution/listInstitution",
-      "last_updated": "2026-07-29T09:16:05.706022+08:00"
+      "last_updated": "2026-08-01T23:54:35+08:00"
     },
     {
       "id": "kaoyan-2026",
