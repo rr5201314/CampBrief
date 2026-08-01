@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-01T23:44:57+08:00",
+  "last_updated": "2026-08-02T00:16:08+08:00",
   "source": "CampBrief Auto",
-  "total": 698,
+  "total": 700,
   "items": [
     {
       "id": "news-f1084f2ebe0fff52",
@@ -207,6 +207,32 @@
       "published": "2026-08-01T01:19:13+00:00",
       "summary": "Google Earth 的 AI 图像生成功能上线仅一天即被回滚，因发现用户分享疑似违规生成截图，Google 决定在完善防护期间撤回该功能。",
       "detail": "Google 此前在 Google Earth 中推出 AI 图像生成功能，允许用户使用 Nano Banana 2 模型通过提示词在卫星地图上创建虚构图像并叠加于真实地图之上。该功能上线后遭批评，评论者指出可能被用于制造和传播虚假地理信息。Google 随后声明已观察到疑似违反政策的生成图像，决定在实施更强护栏期间回滚。生成的图像不会在 Google Earth 主界面对其他用户可见，且已标注 AI 生成水印。",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "image": "",
+      "date": "2026-08-01"
+    },
+    {
+      "id": "news-afb53d0457739ce8",
+      "title": "GPT-5.4 系列将于 8 月 31 日从 Codex 中下线",
+      "url": "https://daily.juya.uk/issues/2026-08-01/",
+      "published": "2026-08-01T01:19:13+00:00",
+      "summary": "OpenAI 宣布 GPT-5.4 和 GPT-5.4 mini 将于 8 月 31 日对通过 ChatGPT 登录的 Codex 用户停用，API 中仍可使用，官方建议迁移至 GPT-5.6 系列。",
+      "detail": "OpenAI 宣布 GPT-5.4 和 GPT-5.4 mini 将于 8 月 31 日正式从 Codex 中退役，不再向通过 ChatGPT 账号登录的用户提供，但在 OpenAI API 和通过 API 密钥验证的 Codex 会话中仍保持可用。官方建议开发者将 gpt-5.4 替换为 gpt-5.6-terra、gpt-5.4-mini 替换为 gpt-5.6-luna，并在期限前更新所有相关默认设置和自定义任务。",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "image": "",
+      "date": "2026-08-01"
+    },
+    {
+      "id": "news-dde181e272ff08d1",
+      "title": "Nous Research 发布首个官方 Hermes Desktop 插件 Kanban 及配套插件 SDK",
+      "url": "https://daily.juya.uk/issues/2026-08-01/",
+      "published": "2026-08-01T01:19:13+00:00",
+      "summary": "Nous Research 发布首个官方 Hermes Desktop 插件 Kanban 及配套 Desktop Plugin SDK，开发者可无构建步骤加载自定义插件，为桌面应用添加扩展能力。",
+      "detail": "Nous Research 官方宣布首个 Hermes Desktop 插件 Kanban 已上线，桌面原生版本应大量用户请求推出并进行了重大升级。配套发布的 Desktop Plugin SDK 对应模块 @hermes/plugin-sdk，允许开发者为 Hermes Desktop 原生应用添加独立页面、侧边栏导航、快捷键、状态栏操作、主题和后端接口等功能。",
       "priority": 1,
       "category": "ai",
       "source": "juya AI 日报",
