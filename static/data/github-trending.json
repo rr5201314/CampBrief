@@ -1,8 +1,300 @@
 {
-  "last_updated": "2026-07-30T08:45:13.154786+08:00",
+  "last_updated": "2026-08-01T08:32:13.823746+08:00",
   "source": "GitHub Trending",
-  "total": 19,
+  "total": 21,
   "items": [
+    {
+      "id": "github-daily-2026-08-01",
+      "title": "8月1日 GitHub趋势日榜",
+      "url": "https://github.com/trending?since=daily",
+      "date": "2026-08-01",
+      "published": "2026-08-01T08:32:13.823746+08:00",
+      "summary": "8月1日 GitHub趋势日榜，Top 10 项目涵盖 PowerShell、TypeScript、Python 等，今日社区最受关注的开源项目。",
+      "detail": "zhaoxuya520/reverse-skill - Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端\ndifferent-ai/openwork - The open-source alternative to Claude Cowork (powered by opencode)\nmvanhorn/last30days-skill - AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary\npaperswithbacktest/awesome-systematic-trading - A curated list of awesome libraries, packages, strategies, books, blogs, tutorials for systematic trading.\nmicrosoft/AI-For-Beginners - 12 Weeks, 24 Lessons, AI for All!\ngithub/copilot-sdk - Multi-platform SDK for integrating GitHub Copilot Agent into apps and services\nchatwoot/chatwoot - Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬\nagavra/tuicr - a code review TUI with vim keybindings\nusekaneo/kaneo - 🎯 All you need. Nothing you don't. Open source project management that works for you, not against you.\ngeo-tp/ESP32-Bit-Pirate - A Hardware Hacking Tool with Web-Based CLI That Speaks Every Protocol",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "github",
+      "source": "GitHub Trending",
+      "trend_type": "daily",
+      "repos": [
+        {
+          "rank": 1,
+          "name": "zhaoxuya520/reverse-skill",
+          "url": "https://github.com/zhaoxuya520/reverse-skill",
+          "language": "PowerShell",
+          "stars": 10714,
+          "forks": 1652,
+          "stars_delta": 335,
+          "trend_period": "today",
+          "description": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端",
+          "chinese_summary": "面向逆向工程、授权渗透与安全研究的 AI 技能路由包，支持多种代码代理按需装配工具链。",
+          "solves_what": "解决安全研究工作流分散、工具链搭建繁琐、经验难沉淀的问题，让代理能按场景自动调用合适的逆向与渗透能力。"
+        },
+        {
+          "rank": 2,
+          "name": "different-ai/openwork",
+          "url": "https://github.com/different-ai/openwork",
+          "language": "TypeScript",
+          "stars": 19494,
+          "forks": 2004,
+          "stars_delta": 806,
+          "trend_period": "today",
+          "description": "The open-source alternative to Claude Cowork (powered by opencode)",
+          "chinese_summary": "开源的 AI 工作流共享平台，可在桌面端或现有代理中复用技能、MCP 与外部连接。",
+          "solves_what": "解决团队在不同 AI 工具、设备与成员之间重复配置工作流的问题，让能力可以一次搭建、多处共享与统一管理。"
+        },
+        {
+          "rank": 3,
+          "name": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "language": "Python",
+          "stars": 56225,
+          "forks": 4888,
+          "stars_delta": 658,
+          "trend_period": "today",
+          "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+          "chinese_summary": "一个可跨 Reddit、X、YouTube、HN 等来源做近 30 天主题调研的 AI skill。",
+          "solves_what": "解决热点研究需要手动搜遍多个平台、信息碎片化且难以核实的问题，自动汇总近期讨论并生成有依据的总结。"
+        },
+        {
+          "rank": 4,
+          "name": "paperswithbacktest/awesome-systematic-trading",
+          "url": "https://github.com/paperswithbacktest/awesome-systematic-trading",
+          "language": "Python",
+          "stars": 11753,
+          "forks": 1465,
+          "stars_delta": 763,
+          "trend_period": "today",
+          "description": "A curated list of awesome libraries, packages, strategies, books, blogs, tutorials for systematic trading.",
+          "chinese_summary": "系统化交易资源精选清单，汇总量化库、策略、书籍、博客与教程。",
+          "solves_what": "解决量化交易学习资料分散、入门路径不清的问题，帮助研究者快速找到可用工具、方法与参考资源。"
+        },
+        {
+          "rank": 5,
+          "name": "microsoft/AI-For-Beginners",
+          "url": "https://github.com/microsoft/AI-For-Beginners",
+          "language": "Jupyter Notebook",
+          "stars": 55310,
+          "forks": 11145,
+          "stars_delta": 1592,
+          "trend_period": "today",
+          "description": "12 Weeks, 24 Lessons, AI for All!",
+          "chinese_summary": "微软推出的 AI 入门课程仓库，用 12 周 24 节课系统讲解人工智能基础。",
+          "solves_what": "解决初学者学 AI 时缺少成体系、低门槛教学路径的问题，让非专业背景用户也能循序渐进上手。"
+        },
+        {
+          "rank": 6,
+          "name": "github/copilot-sdk",
+          "url": "https://github.com/github/copilot-sdk",
+          "language": "Java",
+          "stars": 10135,
+          "forks": 1372,
+          "stars_delta": 7,
+          "trend_period": "today",
+          "description": "Multi-platform SDK for integrating GitHub Copilot Agent into apps and services",
+          "chinese_summary": "GitHub Copilot 多语言 SDK，可把 Copilot 的代理式工作流嵌入应用和服务。",
+          "solves_what": "解决开发者自建 agent 编排成本高的问题，直接复用 Copilot 的规划、调工具与改文件能力来开发产品。"
+        },
+        {
+          "rank": 7,
+          "name": "chatwoot/chatwoot",
+          "url": "https://github.com/chatwoot/chatwoot",
+          "language": "Ruby",
+          "stars": 35120,
+          "forks": 8440,
+          "stars_delta": 35,
+          "trend_period": "today",
+          "description": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
+          "chinese_summary": "开源客户沟通平台，整合在线聊天、邮件与多渠道客服工作台。",
+          "solves_what": "解决企业客服消息分散在多个渠道、协作低效的问题，用一个统一后台管理对话、支持与客户关系。"
+        },
+        {
+          "rank": 8,
+          "name": "agavra/tuicr",
+          "url": "https://github.com/agavra/tuicr",
+          "language": "Rust",
+          "stars": 2150,
+          "forks": 172,
+          "stars_delta": 335,
+          "trend_period": "today",
+          "description": "a code review TUI with vim keybindings",
+          "chinese_summary": "一款带 Vim 键位的代码审查 TUI，支持浏览 diff、评论和提交 review。",
+          "solves_what": "解决开发者在浏览器里审代码效率低、键盘流不顺手的问题，让重度终端用户能更快完成 review。"
+        },
+        {
+          "rank": 9,
+          "name": "usekaneo/kaneo",
+          "url": "https://github.com/usekaneo/kaneo",
+          "language": "TypeScript",
+          "stars": 5083,
+          "forks": 450,
+          "stars_delta": 194,
+          "trend_period": "today",
+          "description": "🎯 All you need. Nothing you don't. Open source project management that works for you, not against you.",
+          "chinese_summary": "简洁的开源项目管理工具，提供更轻量、可控的任务与协作体验。",
+          "solves_what": "解决传统项目管理软件臃肿复杂、难以贴合团队实际流程的问题，让团队用更少配置完成计划与跟踪。"
+        },
+        {
+          "rank": 10,
+          "name": "geo-tp/ESP32-Bit-Pirate",
+          "url": "https://github.com/geo-tp/ESP32-Bit-Pirate",
+          "language": "C++",
+          "stars": 4999,
+          "forks": 406,
+          "stars_delta": 83,
+          "trend_period": "today",
+          "description": "A Hardware Hacking Tool with Web-Based CLI That Speaks Every Protocol",
+          "chinese_summary": "把 ESP32 变成多协议硬件调试与分析工具，支持串口和网页 CLI 操作。",
+          "solves_what": "解决硬件黑客与嵌入式调试需要多种专用设备的问题，用一套开源固件统一处理 I2C、SPI、UART、RF 等协议。"
+        }
+      ]
+    },
+    {
+      "id": "github-monthly-2026-08-01",
+      "title": "8月 GitHub趋势月榜",
+      "url": "https://github.com/trending?since=monthly",
+      "date": "2026-08-01",
+      "published": "2026-08-01T08:32:13.823746+08:00",
+      "summary": "8月 GitHub趋势月榜，Top 10 项目涵盖 Swift、TypeScript、Rust 等，本月社区最受关注的开源项目。",
+      "detail": "permissionlesstech/bitchat - bluetooth mesh chat, IRC vibes\ndiegosouzapw/OmniRoute - Never stop coding. Free MIT AI gateway: one endpoint, 290+ providers (90+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 500+ contributors\nstablyai/orca - Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and VPS.\nemilkowalski/skills - Skills for Design Engineers.\nZackriya-Solutions/meetily - Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted, Open-source Ai meeting note taker for macOS & Windows. Understand How to write meeting minutes\nNutlope/hallmark - Anti-AI-slop design skill for Claude Code, Cursor, and Codex.\nopenai/codex-plugin-cc - Use Codex from Claude Code to review code or delegate tasks.\nusestrix/strix - Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.\nkoala73/worldmonitor - Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface\nasgeirtj/system_prompts_leaks - Extracted system prompts from Anthropic - Claude Fable 5, Opus 5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-5.6-Sol, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
+      "priority": 4,
+      "category": "tech",
+      "subcategory": "github",
+      "source": "GitHub Trending",
+      "trend_type": "monthly",
+      "repos": [
+        {
+          "rank": 1,
+          "name": "permissionlesstech/bitchat",
+          "url": "https://github.com/permissionlesstech/bitchat",
+          "language": "Swift",
+          "stars": 33696,
+          "forks": 5380,
+          "stars_delta": 7687,
+          "trend_period": "this month",
+          "description": "bluetooth mesh chat, IRC vibes",
+          "chinese_summary": "基于蓝牙 Mesh 的去中心化聊天应用，风格类似 IRC，无需传统服务器。",
+          "solves_what": "解决无网络或不想依赖中心化平台时的即时通信问题，让附近设备可直接组网聊天并保持更高自治性。"
+        },
+        {
+          "rank": 2,
+          "name": "diegosouzapw/OmniRoute",
+          "url": "https://github.com/diegosouzapw/OmniRoute",
+          "language": "TypeScript",
+          "stars": 36118,
+          "forks": 4646,
+          "stars_delta": 27829,
+          "trend_period": "this month",
+          "description": "Never stop coding. Free MIT AI gateway: one endpoint, 290+ providers (90+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 500+ contributors",
+          "chinese_summary": "统一接入数百家 AI 提供商与模型的开源网关，支持自动回退、压缩与多代理工具接入。",
+          "solves_what": "解决多模型接入复杂、额度不稳定、切换成本高的问题，用一个端点统一管理路由、降级和成本优化。"
+        },
+        {
+          "rank": 3,
+          "name": "stablyai/orca",
+          "url": "https://github.com/stablyai/orca",
+          "language": "TypeScript",
+          "stars": 34626,
+          "forks": 2417,
+          "stars_delta": 25201,
+          "trend_period": "this month",
+          "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and VPS.",
+          "chinese_summary": "面向并行代理协作的 ADE，可在桌面、移动端和 VPS 上运行多种编码代理。",
+          "solves_what": "解决多个 AI 编码代理难以统一调度、观察与协作的问题，让团队能成批运行代理并集中管理任务执行。"
+        },
+        {
+          "rank": 4,
+          "name": "emilkowalski/skills",
+          "url": "https://github.com/emilkowalski/skills",
+          "language": "未知",
+          "stars": 23358,
+          "forks": 1270,
+          "stars_delta": 19439,
+          "trend_period": "this month",
+          "description": "Skills for Design Engineers.",
+          "chinese_summary": "面向设计工程师的技能集合，聚焦动画、界面细节与设计判断。",
+          "solves_what": "解决 AI 做界面时缺乏审美与动效判断的问题，把经验规则沉淀成可复用技能，帮助产出更高质量 UI。"
+        },
+        {
+          "rank": 5,
+          "name": "Zackriya-Solutions/meetily",
+          "url": "https://github.com/Zackriya-Solutions/meetily",
+          "language": "Rust",
+          "stars": 27686,
+          "forks": 2844,
+          "stars_delta": 14907,
+          "trend_period": "this month",
+          "description": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted, Open-source Ai meeting note taker for macOS & Windows. Understand How to write meeting minutes",
+          "chinese_summary": "隐私优先的本地 AI 会议助手，可实时转录、区分说话人并生成摘要。",
+          "solves_what": "解决会议记录依赖云服务带来的隐私与合规风险问题，让企业在本地完成转写、总结和纪要生成。"
+        },
+        {
+          "rank": 6,
+          "name": "Nutlope/hallmark",
+          "url": "https://github.com/Nutlope/hallmark",
+          "language": "CSS",
+          "stars": 20339,
+          "forks": 1014,
+          "stars_delta": 16829,
+          "trend_period": "this month",
+          "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+          "chinese_summary": "为 Claude Code、Cursor 和 Codex 提供的反 AI 味设计技能，强调结构与风格差异化。",
+          "solves_what": "解决 AI 生成页面千篇一律、模板感重的问题，通过规则、审查与主题系统提升界面辨识度与设计质感。"
+        },
+        {
+          "rank": 7,
+          "name": "openai/codex-plugin-cc",
+          "url": "https://github.com/openai/codex-plugin-cc",
+          "language": "JavaScript",
+          "stars": 30704,
+          "forks": 2019,
+          "stars_delta": 8998,
+          "trend_period": "this month",
+          "description": "Use Codex from Claude Code to review code or delegate tasks.",
+          "chinese_summary": "让 Claude Code 直接调用 Codex 的插件，可用于代码审查和任务委派。",
+          "solves_what": "解决单一代理能力边界明显的问题，把 Codex 接入 Claude Code，便于在同一工作流里做协作、复核与分工。"
+        },
+        {
+          "rank": 8,
+          "name": "usestrix/strix",
+          "url": "https://github.com/usestrix/strix",
+          "language": "Python",
+          "stars": 46204,
+          "forks": 4842,
+          "stars_delta": 18958,
+          "trend_period": "this month",
+          "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+          "chinese_summary": "开源 AI 渗透测试工具，可自动发现并协助修复应用中的安全漏洞。",
+          "solves_what": "解决人工渗透测试成本高、覆盖有限的问题，帮助团队更快发现 Web 应用弱点并形成修复闭环。"
+        },
+        {
+          "rank": 9,
+          "name": "koala73/worldmonitor",
+          "url": "https://github.com/koala73/worldmonitor",
+          "language": "TypeScript",
+          "stars": 77435,
+          "forks": 11564,
+          "stars_delta": 16613,
+          "trend_period": "this month",
+          "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+          "chinese_summary": "实时全球情报看板，整合新闻聚合、地缘监测与基础设施追踪。",
+          "solves_what": "解决全球事件信息来源分散、态势难统一观察的问题，为研究者和分析人员提供单一界面的实时态势感知。"
+        },
+        {
+          "rank": 10,
+          "name": "asgeirtj/system_prompts_leaks",
+          "url": "https://github.com/asgeirtj/system_prompts_leaks",
+          "language": "JavaScript",
+          "stars": 61696,
+          "forks": 10070,
+          "stars_delta": 14733,
+          "trend_period": "this month",
+          "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-5.6-Sol, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
+          "chinese_summary": "收录多家 AI 产品泄露系统提示词的资料库，持续更新各模型隐藏指令。",
+          "solves_what": "解决研究者难以系统比较不同 AI 助手底层行为规则的问题，便于分析提示词设计、能力边界与安全策略。"
+        }
+      ]
+    },
     {
       "id": "github-daily-2026-07-30",
       "title": "7月30日 GitHub趋势日榜",
@@ -131,8 +423,8 @@
           "stars_delta": 97,
           "trend_period": "today",
           "description": "The open-source alternative to Claude Cowork (powered by opencode)",
-          "chinese_summary": "开源的 AI 协作工作台，对标 Claude Cowork，支持以 opencode 为核心的代理式工作流。（基于趋势描述整理）",
-          "solves_what": "解决团队希望自托管 AI 协作环境、统一任务执行与代码代理工作流的问题。"
+          "chinese_summary": "开源的 AI 工作流共享平台，可在桌面端或现有代理中复用技能、MCP 与外部连接。",
+          "solves_what": "解决团队在不同 AI 工具、设备与成员之间重复配置工作流的问题，让能力可以一次搭建、多处共享与统一管理。"
         },
         {
           "rank": 10,
@@ -277,8 +569,8 @@
           "stars_delta": 309,
           "trend_period": "today",
           "description": "A curated list of awesome libraries, packages, strategies, books, blogs, tutorials for systematic trading.",
-          "chinese_summary": "系统化交易相关库、策略、书籍、博客与教程的精选清单。",
-          "solves_what": "帮助量化交易学习者快速找到高质量资源，降低入门时的信息搜集成本。"
+          "chinese_summary": "系统化交易资源精选清单，汇总量化库、策略、书籍、博客与教程。",
+          "solves_what": "解决量化交易学习资料分散、入门路径不清的问题，帮助研究者快速找到可用工具、方法与参考资源。"
         },
         {
           "rank": 10,
@@ -319,8 +611,8 @@
           "stars_delta": 1166,
           "trend_period": "today",
           "description": "bluetooth mesh chat, IRC vibes",
-          "chinese_summary": "bitchat 是去中心化点对点聊天应用，结合蓝牙 Mesh 离线通信与 Nostr 在线消息。",
-          "solves_what": "解决无网或弱网场景下仍需私密通信的问题，避免依赖账号、手机号和中心服务器。"
+          "chinese_summary": "基于蓝牙 Mesh 的去中心化聊天应用，风格类似 IRC，无需传统服务器。",
+          "solves_what": "解决无网络或不想依赖中心化平台时的即时通信问题，让附近设备可直接组网聊天并保持更高自治性。"
         },
         {
           "rank": 2,
@@ -478,8 +770,8 @@
           "stars_delta": 12615,
           "trend_period": "this week",
           "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
-          "chinese_summary": "worldmonitor 是实时全球情报仪表盘，整合新闻聚合、地缘监测与基础设施追踪。",
-          "solves_what": "解决全球事件与情报分散在多源系统中、难以统一观察和快速研判的问题。"
+          "chinese_summary": "实时全球情报看板，整合新闻聚合、地缘监测与基础设施追踪。",
+          "solves_what": "解决全球事件信息来源分散、态势难统一观察的问题，为研究者和分析人员提供单一界面的实时态势感知。"
         },
         {
           "rank": 3,
@@ -517,8 +809,8 @@
           "stars_delta": 10912,
           "trend_period": "this week",
           "description": "Never stop coding. Free MIT AI gateway: one endpoint, 290+ providers (90+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 500+ contributors",
-          "chinese_summary": "OmniRoute 是统一 AI 网关，用一个端点接入数百家模型与提供商。",
-          "solves_what": "解决多模型接口分散、额度切换和失败回退复杂的问题，便于稳定调用不同 AI 服务。"
+          "chinese_summary": "统一接入数百家 AI 提供商与模型的开源网关，支持自动回退、压缩与多代理工具接入。",
+          "solves_what": "解决多模型接入复杂、额度不稳定、切换成本高的问题，用一个端点统一管理路由、降级和成本优化。"
         },
         {
           "rank": 6,
@@ -624,8 +916,8 @@
           "stars_delta": 2184,
           "trend_period": "today",
           "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
-          "chinese_summary": "worldmonitor 是一个实时全球情报仪表盘，集成 AI 驱动的新闻聚合、地缘政治监测和基础设施追踪能力。",
-          "solves_what": "解决了全球新闻、地缘事件和基础设施动态分散在不同数据源、难以统一观察的问题。"
+          "chinese_summary": "实时全球情报看板，整合新闻聚合、地缘监测与基础设施追踪。",
+          "solves_what": "解决全球事件信息来源分散、态势难统一观察的问题，为研究者和分析人员提供单一界面的实时态势感知。"
         },
         {
           "rank": 3,
@@ -757,8 +1049,8 @@
           "stars_delta": 4139,
           "trend_period": "today",
           "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
-          "chinese_summary": "实时全球情报监控面板，集成 AI 驱动的新闻聚合、地缘政治监测和基础设施追踪，提供统一态势感知界面。",
-          "solves_what": "解决了信息过载环境下缺乏统一监控工具的问题，让分析师和研究人员能在一个界面中追踪全球动态。"
+          "chinese_summary": "实时全球情报看板，整合新闻聚合、地缘监测与基础设施追踪。",
+          "solves_what": "解决全球事件信息来源分散、态势难统一观察的问题，为研究者和分析人员提供单一界面的实时态势感知。"
         },
         {
           "rank": 2,
@@ -848,8 +1140,8 @@
           "stars_delta": 1651,
           "trend_period": "today",
           "description": "Never stop coding. Free MIT AI gateway: one endpoint, 278+ providers (90+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 500+ contributors",
-          "chinese_summary": "免费开源的 AI 网关，一个端点支持 278+ 提供商和 500+ 模型，兼容 Claude Code、Codex、Cursor 等工具。",
-          "solves_what": "解决了开发者需要对接多个 AI 服务提供商的复杂性，提供统一接口简化 AI 应用开发。"
+          "chinese_summary": "统一接入数百家 AI 提供商与模型的开源网关，支持自动回退、压缩与多代理工具接入。",
+          "solves_what": "解决多模型接入复杂、额度不稳定、切换成本高的问题，用一个端点统一管理路由、降级和成本优化。"
         },
         {
           "rank": 9,
@@ -903,8 +1195,8 @@
           "stars_delta": 1295,
           "trend_period": "today",
           "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
-          "chinese_summary": "实时全球情报监控面板，集成 AI 驱动的新闻聚合、地缘政治监测和基础设施追踪，提供统一态势感知界面。",
-          "solves_what": "解决了信息过载环境下缺乏统一监控工具的问题，让分析师和研究人员能在一个界面中追踪全球动态。"
+          "chinese_summary": "实时全球情报看板，整合新闻聚合、地缘监测与基础设施追踪。",
+          "solves_what": "解决全球事件信息来源分散、态势难统一观察的问题，为研究者和分析人员提供单一界面的实时态势感知。"
         },
         {
           "rank": 2,
@@ -1140,8 +1432,8 @@
           "stars_delta": 39,
           "trend_period": "today",
           "description": "Multi-platform SDK for integrating GitHub Copilot Agent into apps and services",
-          "chinese_summary": "GitHub 官方推出的 Copilot Agent 多平台集成 SDK，支持在应用和服务中嵌入 Copilot 能力",
-          "solves_what": "标准化了 Copilot Agent 的集成方式，降低第三方应用接入 GitHub AI 编程助手的技术门槛"
+          "chinese_summary": "GitHub Copilot 多语言 SDK，可把 Copilot 的代理式工作流嵌入应用和服务。",
+          "solves_what": "解决开发者自建 agent 编排成本高的问题，直接复用 Copilot 的规划、调工具与改文件能力来开发产品。"
         },
         {
           "rank": 9,
@@ -1195,8 +1487,8 @@
           "stars_delta": 9193,
           "trend_period": "this week",
           "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-          "chinese_summary": "面向 Claude Code、Cursor 和 Codex 的反 AI 模板化设计技能",
-          "solves_what": "帮助开发者在使用 AI 编程工具时生成更有设计品味的界面，避免千篇一律的 AI 风格"
+          "chinese_summary": "为 Claude Code、Cursor 和 Codex 提供的反 AI 味设计技能，强调结构与风格差异化。",
+          "solves_what": "解决 AI 生成页面千篇一律、模板感重的问题，通过规则、审查与主题系统提升界面辨识度与设计质感。"
         },
         {
           "rank": 2,
@@ -1500,8 +1792,8 @@
           "stars_delta": 3372,
           "trend_period": "today",
           "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-          "chinese_summary": "Hallmark 是面向 Claude Code、Cursor 和 Codex 的设计技能，能为不同需求生成风格差异明显、避免“AI 味”的界面。",
-          "solves_what": "它解决 AI 生成网页和 UI 容易模板化、同质化的问题，通过主题、结构和自检规则提升设计质感与辨识度。"
+          "chinese_summary": "为 Claude Code、Cursor 和 Codex 提供的反 AI 味设计技能，强调结构与风格差异化。",
+          "solves_what": "解决 AI 生成页面千篇一律、模板感重的问题，通过规则、审查与主题系统提升界面辨识度与设计质感。"
         },
         {
           "rank": 3,
@@ -1646,8 +1938,8 @@
           "stars_delta": 1277,
           "trend_period": "today",
           "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-          "chinese_summary": "面向 Claude Code、Cursor 和 Codex 的设计技能包，帮助 AI 编程工具生成更美观的 UI 设计。",
-          "solves_what": "解决 AI 生成代码时界面设计粗糙、千篇一律的「AI 味」问题，通过设计约束让输出更接近专业水准。"
+          "chinese_summary": "为 Claude Code、Cursor 和 Codex 提供的反 AI 味设计技能，强调结构与风格差异化。",
+          "solves_what": "解决 AI 生成页面千篇一律、模板感重的问题，通过规则、审查与主题系统提升界面辨识度与设计质感。"
         },
         {
           "rank": 3,
@@ -1857,8 +2149,8 @@
           "stars_delta": 1015,
           "trend_period": "today",
           "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-          "chinese_summary": "面向 Claude Code、Cursor 和 Codex 的设计技能包，帮助 AI 编程工具生成更美观的 UI 设计。",
-          "solves_what": "解决 AI 生成代码时界面设计粗糙、千篇一律的「AI 味」问题，通过设计约束让输出更接近专业水准。"
+          "chinese_summary": "为 Claude Code、Cursor 和 Codex 提供的反 AI 味设计技能，强调结构与风格差异化。",
+          "solves_what": "解决 AI 生成页面千篇一律、模板感重的问题，通过规则、审查与主题系统提升界面辨识度与设计质感。"
         },
         {
           "rank": 8,
@@ -1977,8 +2269,8 @@
           "stars_delta": 794,
           "trend_period": "today",
           "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-          "chinese_summary": "面向 Claude Code、Cursor 和 Codex 的设计技能包，帮助 AI 编程工具生成更美观的 UI 设计。",
-          "solves_what": "解决 AI 生成代码时界面设计粗糙、千篇一律的「AI 味」问题，通过设计约束让输出更接近专业水准。"
+          "chinese_summary": "为 Claude Code、Cursor 和 Codex 提供的反 AI 味设计技能，强调结构与风格差异化。",
+          "solves_what": "解决 AI 生成页面千篇一律、模板感重的问题，通过规则、审查与主题系统提升界面辨识度与设计质感。"
         },
         {
           "rank": 6,
@@ -2217,8 +2509,8 @@
           "stars_delta": 7440,
           "trend_period": "this week",
           "description": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted, Open-source Ai meeting note taker for macOS & Windows. Understand How to write meeting minutes",
-          "chinese_summary": "隐私优先的本地 AI 会议助手，支持实时转写、说话人分离和 Ollama 摘要。",
-          "solves_what": "全本地处理会议录音自动生成会议纪要，保护隐私不上云。"
+          "chinese_summary": "隐私优先的本地 AI 会议助手，可实时转录、区分说话人并生成摘要。",
+          "solves_what": "解决会议记录依赖云服务带来的隐私与合规风险问题，让企业在本地完成转写、总结和纪要生成。"
         },
         {
           "rank": 2,
@@ -2243,8 +2535,8 @@
           "stars_delta": 2803,
           "trend_period": "this week",
           "description": "Use Codex from Claude Code to review code or delegate tasks.",
-          "chinese_summary": "在 Claude Code 中调用 Codex 进行代码审查或委派任务的官方插件。",
-          "solves_what": "在 Claude Code 内打通 Codex 能力，实现多模型协作编程。"
+          "chinese_summary": "让 Claude Code 直接调用 Codex 的插件，可用于代码审查和任务委派。",
+          "solves_what": "解决单一代理能力边界明显的问题，把 Codex 接入 Claude Code，便于在同一工作流里做协作、复核与分工。"
         },
         {
           "rank": 4,
@@ -2295,8 +2587,8 @@
           "stars_delta": 7155,
           "trend_period": "this week",
           "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT GPT-5.6, Codex GPT-5.6, GPT-5.5. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
-          "chinese_summary": "收集整理各大 AI 公司产品的系统提示词泄露合集，持续更新。",
-          "solves_what": "了解 AI 产品背后的系统指令设计，学习提示词工程。"
+          "chinese_summary": "收录多家 AI 产品泄露系统提示词的资料库，持续更新各模型隐藏指令。",
+          "solves_what": "解决研究者难以系统比较不同 AI 助手底层行为规则的问题，便于分析提示词设计、能力边界与安全策略。"
         },
         {
           "rank": 8,
@@ -2308,8 +2600,8 @@
           "stars_delta": 4506,
           "trend_period": "this week",
           "description": "Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
-          "chinese_summary": "免费开源的 AI 网关，一个端点支持 278+ 提供商和 500+ 模型，兼容 Claude Code、Codex、Cursor 等工具。",
-          "solves_what": "解决了开发者需要对接多个 AI 服务提供商的复杂性，提供统一接口简化 AI 应用开发。"
+          "chinese_summary": "统一接入数百家 AI 提供商与模型的开源网关，支持自动回退、压缩与多代理工具接入。",
+          "solves_what": "解决多模型接入复杂、额度不稳定、切换成本高的问题，用一个端点统一管理路由、降级和成本优化。"
         },
         {
           "rank": 9,
@@ -2321,8 +2613,8 @@
           "stars_delta": 4481,
           "trend_period": "this week",
           "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.",
-          "chinese_summary": "Orca 是用于管理并行代理舰队的 ADE，支持桌面和移动端。",
-          "solves_what": "让开发者用自有订阅运行和管理多个并行编码代理。"
+          "chinese_summary": "面向并行代理协作的 ADE，可在桌面、移动端和 VPS 上运行多种编码代理。",
+          "solves_what": "解决多个 AI 编码代理难以统一调度、观察与协作的问题，让团队能成批运行代理并集中管理任务执行。"
         },
         {
           "rank": 10,
@@ -2509,8 +2801,8 @@
           "stars_delta": 8579,
           "trend_period": "this week",
           "description": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted, Open-source Ai meeting note taker for macOS & Windows. Understand How to write meeting minutes",
-          "chinese_summary": "隐私优先的本地 AI 会议助手，支持实时转写、说话人分离和 Ollama 摘要。",
-          "solves_what": "全本地处理会议录音自动生成会议纪要，保护隐私不上云。"
+          "chinese_summary": "隐私优先的本地 AI 会议助手，可实时转录、区分说话人并生成摘要。",
+          "solves_what": "解决会议记录依赖云服务带来的隐私与合规风险问题，让企业在本地完成转写、总结和纪要生成。"
         },
         {
           "rank": 2,
@@ -2535,8 +2827,8 @@
           "stars_delta": 4030,
           "trend_period": "this week",
           "description": "Use Codex from Claude Code to review code or delegate tasks.",
-          "chinese_summary": "在 Claude Code 中调用 Codex 进行代码审查或委派任务的官方插件。",
-          "solves_what": "在 Claude Code 内打通 Codex 能力，实现多模型协作编程。"
+          "chinese_summary": "让 Claude Code 直接调用 Codex 的插件，可用于代码审查和任务委派。",
+          "solves_what": "解决单一代理能力边界明显的问题，把 Codex 接入 Claude Code，便于在同一工作流里做协作、复核与分工。"
         },
         {
           "rank": 4,
@@ -2587,8 +2879,8 @@
           "stars_delta": 7731,
           "trend_period": "this week",
           "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT GPT-5.6, Codex GPT-5.6, GPT-5.5. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
-          "chinese_summary": "收集整理 Claude、GPT、Gemini、Grok 等主流 AI 产品系统提示词的仓库。",
-          "solves_what": "研究各 AI 产品提示词工程，学习系统提示词设计思路。"
+          "chinese_summary": "收录多家 AI 产品泄露系统提示词的资料库，持续更新各模型隐藏指令。",
+          "solves_what": "解决研究者难以系统比较不同 AI 助手底层行为规则的问题，便于分析提示词设计、能力边界与安全策略。"
         },
         {
           "rank": 8,
@@ -2600,8 +2892,8 @@
           "stars_delta": 4375,
           "trend_period": "this week",
           "description": "Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
-          "chinese_summary": "免费开源的 AI 网关，一个端点支持 278+ 提供商和 500+ 模型，兼容 Claude Code、Codex、Cursor 等工具。",
-          "solves_what": "解决了开发者需要对接多个 AI 服务提供商的复杂性，提供统一接口简化 AI 应用开发。"
+          "chinese_summary": "统一接入数百家 AI 提供商与模型的开源网关，支持自动回退、压缩与多代理工具接入。",
+          "solves_what": "解决多模型接入复杂、额度不稳定、切换成本高的问题，用一个端点统一管理路由、降级和成本优化。"
         },
         {
           "rank": 9,
@@ -2613,8 +2905,8 @@
           "stars_delta": 4368,
           "trend_period": "this week",
           "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.",
-          "chinese_summary": "面向并行智能体舰队的 AI 开发环境（ADE），支持桌面与移动端。",
-          "solves_what": "用自己的订阅并行调度多个编程代理，提升开发吞吐量。"
+          "chinese_summary": "面向并行代理协作的 ADE，可在桌面、移动端和 VPS 上运行多种编码代理。",
+          "solves_what": "解决多个 AI 编码代理难以统一调度、观察与协作的问题，让团队能成批运行代理并集中管理任务执行。"
         },
         {
           "rank": 10,
@@ -2694,8 +2986,8 @@
           "stars_delta": 14671,
           "trend_period": "this month",
           "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT GPT-5.6, Codex GPT-5.6, GPT-5.5. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
-          "chinese_summary": "收集整理 Claude、GPT、Gemini、Grok 等主流 AI 产品系统提示词的仓库。",
-          "solves_what": "研究各 AI 产品提示词工程，学习系统提示词设计思路。"
+          "chinese_summary": "收录多家 AI 产品泄露系统提示词的资料库，持续更新各模型隐藏指令。",
+          "solves_what": "解决研究者难以系统比较不同 AI 助手底层行为规则的问题，便于分析提示词设计、能力边界与安全策略。"
         },
         {
           "rank": 5,
@@ -2720,8 +3012,8 @@
           "stars_delta": 14657,
           "trend_period": "this month",
           "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
-          "chinese_summary": "开源的 AI 渗透测试工具，用于自动发现并修复应用安全漏洞。",
-          "solves_what": "用 AI 自动化扫描应用安全漏洞，适合网络安全课程实践。"
+          "chinese_summary": "开源 AI 渗透测试工具，可自动发现并协助修复应用中的安全漏洞。",
+          "solves_what": "解决人工渗透测试成本高、覆盖有限的问题，帮助团队更快发现 Web 应用弱点并形成修复闭环。"
         },
         {
           "rank": 7,
@@ -2746,8 +3038,8 @@
           "stars_delta": 11693,
           "trend_period": "this month",
           "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.",
-          "chinese_summary": "面向并行智能体舰队的 AI 开发环境（ADE），支持桌面与移动端。",
-          "solves_what": "用自己的订阅并行调度多个编程代理，提升开发吞吐量。"
+          "chinese_summary": "面向并行代理协作的 ADE，可在桌面、移动端和 VPS 上运行多种编码代理。",
+          "solves_what": "解决多个 AI 编码代理难以统一调度、观察与协作的问题，让团队能成批运行代理并集中管理任务执行。"
         },
         {
           "rank": 9,
@@ -2759,8 +3051,8 @@
           "stars_delta": 10434,
           "trend_period": "this month",
           "description": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted, Open-source Ai meeting note taker for macOS & Windows. Understand How to write meeting minutes",
-          "chinese_summary": "隐私优先的本地 AI 会议助手，支持实时转写、说话人分离和 Ollama 摘要。",
-          "solves_what": "全本地处理会议录音自动生成会议纪要，保护隐私不上云。"
+          "chinese_summary": "隐私优先的本地 AI 会议助手，可实时转录、区分说话人并生成摘要。",
+          "solves_what": "解决会议记录依赖云服务带来的隐私与合规风险问题，让企业在本地完成转写、总结和纪要生成。"
         },
         {
           "rank": 10,
