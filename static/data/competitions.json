@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-31T15:40:57.050780+08:00",
+  "last_updated": "2026-08-02T00:24:52+08:00",
   "source": "CampBrief",
-  "total": 173,
+  "total": 175,
   "tiers": [
     {
       "key": "all",
@@ -172,8 +172,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-28T21:34:44+08:00",
-        "review_after": "2026-07-31T21:34:44+08:00"
+        "verified_at": "2026-08-02T00:24:22+08:00",
+        "review_after": "2026-08-05T00:24:22+08:00"
       }
     },
     {
@@ -275,8 +275,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-28T21:34:44+08:00",
-        "review_after": "2026-07-31T21:34:44+08:00"
+        "verified_at": "2026-08-02T00:24:22+08:00",
+        "review_after": "2026-08-05T00:24:22+08:00"
       }
     },
     {
@@ -844,8 +844,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-28T21:34:44+08:00",
-        "review_after": "2026-07-31T21:34:44+08:00"
+        "verified_at": "2026-08-02T00:24:22+08:00",
+        "review_after": "2026-08-05T00:24:22+08:00"
       }
     },
     {
@@ -1144,7 +1144,7 @@
         "engineering",
         "computer"
       ],
-      "status": "open",
+      "status": "closed",
       "signup": "每年4月至7月报名",
       "schedule": "初赛 6–8 月，决赛 10 月",
       "summary": "以物联网、人工智能、智能硬件为特色的创新创业赛事。",
@@ -1590,8 +1590,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-28T21:34:44+08:00",
-        "review_after": "2026-07-31T21:34:44+08:00"
+        "verified_at": "2026-08-02T00:24:22+08:00",
+        "review_after": "2026-08-05T00:24:22+08:00"
       }
     },
     {
@@ -1614,8 +1614,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-28T21:34:44+08:00",
-        "review_after": "2026-07-31T21:34:44+08:00"
+        "verified_at": "2026-08-02T00:24:22+08:00",
+        "review_after": "2026-08-05T00:24:22+08:00"
       }
     },
     {
@@ -1638,8 +1638,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-28T21:34:44+08:00",
-        "review_after": "2026-07-31T21:34:44+08:00"
+        "verified_at": "2026-08-02T00:24:22+08:00",
+        "review_after": "2026-08-05T00:24:22+08:00"
       }
     },
     {
@@ -1699,8 +1699,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-28T21:34:44+08:00",
-        "review_after": "2026-07-31T21:34:44+08:00"
+        "verified_at": "2026-08-02T00:24:22+08:00",
+        "review_after": "2026-08-05T00:24:22+08:00"
       }
     },
     {
@@ -1778,8 +1778,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-28T21:34:44+08:00",
-        "review_after": "2026-07-31T21:34:44+08:00"
+        "verified_at": "2026-08-02T00:24:22+08:00",
+        "review_after": "2026-08-05T00:24:22+08:00"
       }
     },
     {
@@ -1817,8 +1817,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-28T21:34:44+08:00",
-        "review_after": "2026-07-31T21:34:44+08:00"
+        "verified_at": "2026-08-02T00:24:22+08:00",
+        "review_after": "2026-08-05T00:24:22+08:00"
       }
     },
     {
@@ -1840,8 +1840,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-28T21:34:44+08:00",
-        "review_after": "2026-07-31T21:34:44+08:00"
+        "verified_at": "2026-08-02T00:24:22+08:00",
+        "review_after": "2026-08-05T00:24:22+08:00"
       }
     },
     {
@@ -1863,8 +1863,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-28T21:34:44+08:00",
-        "review_after": "2026-07-31T21:34:44+08:00"
+        "verified_at": "2026-08-02T00:24:22+08:00",
+        "review_after": "2026-08-05T00:24:22+08:00"
       }
     },
     {
@@ -1954,20 +1954,21 @@
         "ai",
         "innovation"
       ],
-      "status": "open",
-      "signup": "",
+      "status": "closed",
+      "signup": "报名截止2026年7月10日",
       "schedule": "",
       "summary": "工信部主办的国家级创新创业赛事，聚焦人工智能与中小企业创新方向。赛事设置企业组和创客组，涵盖AI应用、智能制造等领域，获奖项目可获得政策扶持和投融资对接。",
       "search": "",
-      "official_url": "https://www.52jingsai.com/article-23801-1.html",
-      "official_site": "",
+      "official_url": "",
+      "official_site": "https://www.cnmaker.org.cn",
       "organizer": "工业和信息化部",
       "prestige": 9,
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-28T21:34:44+08:00",
-        "review_after": "2026-07-31T21:34:44+08:00"
+        "registration_start": "2026-03-10",
+        "registration_end": "2026-07-10",
+        "verified_at": "2026-08-02T00:24:22+08:00"
       }
     },
     {
@@ -2375,7 +2376,7 @@
         "science"
       ],
       "status": "open",
-      "signup": "",
+      "signup": "2026年7月8日至8月31日",
       "schedule": "",
       "summary": "来源：赛氪。浏览 8648，关注 16",
       "search": "",
@@ -2384,10 +2385,13 @@
       "organizer": "福州大学高数协会",
       "prestige": 6,
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-28T21:34:44+08:00",
-        "review_after": "2026-07-31T21:34:44+08:00"
+        "registration_start": "2026-07-08",
+        "registration_end": "2026-08-31",
+        "event_start": "2026-11-14",
+        "event_end": "2026-11-14",
+        "verified_at": "2026-08-02T00:24:22+08:00"
       }
     },
     {
@@ -2399,7 +2403,7 @@
         "business"
       ],
       "status": "open",
-      "signup": "赛事详情请访问信息来源页面",
+      "signup": "即日起至2026年9月19日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
@@ -2408,10 +2412,13 @@
       "organizer": "商务外语系列赛事组委会",
       "prestige": 4,
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-29T21:37:27+08:00",
-        "review_after": "2026-08-01T21:37:27+08:00"
+        "registration_start": "2026-04-14",
+        "registration_end": "2026-09-19",
+        "event_start": "2026-08-30",
+        "event_end": "2026-10-18",
+        "verified_at": "2026-08-02T00:24:22+08:00"
       }
     },
     {
@@ -2464,7 +2471,7 @@
         "science"
       ],
       "status": "open",
-      "signup": "",
+      "signup": "2026年7月1日至8月22日",
       "schedule": "",
       "summary": "来源：赛氪。浏览 1.1万，关注 362",
       "search": "",
@@ -2473,10 +2480,13 @@
       "organizer": "全国大学生“麟创杯”组委会",
       "prestige": 8,
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-28T21:34:44+08:00",
-        "review_after": "2026-07-31T21:34:44+08:00"
+        "registration_start": "2026-07-01",
+        "registration_end": "2026-08-22",
+        "event_start": "2026-08-23",
+        "event_end": "2026-08-23",
+        "verified_at": "2026-08-02T00:24:22+08:00"
       }
     },
     {
@@ -2611,8 +2621,8 @@
         "computer",
         "innovation"
       ],
-      "status": "open",
-      "signup": "",
+      "status": "ongoing",
+      "signup": "第二场报名截止2026年7月26日",
       "schedule": "",
       "summary": "来源：赛氪。浏览 8631，关注 249",
       "search": "",
@@ -2621,10 +2631,13 @@
       "organizer": "信息系统创新大赛组委会",
       "prestige": 4,
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-28T21:34:44+08:00",
-        "review_after": "2026-07-31T21:34:44+08:00"
+        "registration_start": "2026-05-15",
+        "registration_end": "2026-07-26",
+        "event_start": "2026-07-25",
+        "event_end": "2026-08-16",
+        "verified_at": "2026-08-02T00:24:22+08:00"
       }
     },
     {
@@ -2898,7 +2911,7 @@
     },
     {
       "id": "comp-saikr-3bcfd9399c73",
-      "name": "【周六开考】“声释中华”新时代大学生外宣人才文学素养大赛",
+      "name": "【已开考！持续报名中】“声释中华”新时代大学生外宣人才文学素养大赛",
       "tier": "hobby",
       "fields": [
         "other"
@@ -2926,7 +2939,7 @@
       "fields": [
         "literature"
       ],
-      "status": "open",
+      "status": "closed",
       "signup": "即日起至7月31日",
       "schedule": "初赛截止2026年7月31日",
       "summary": "赛事详情请访问信息来源页面",
@@ -3023,7 +3036,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【多省市译协盖章】2026年第十二届中西部外语翻译大赛",
+      "name": "【发暑期实践证书】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3076,7 +3089,7 @@
         "computer",
         "ai"
       ],
-      "status": "open",
+      "status": "closed",
       "signup": "2026年6月12日至2026年8月1日",
       "schedule": "作品提交截止2026年8月9日，成果评议8月10-14日，终选展示8月22日",
       "summary": "赛事详情请访问信息来源页面",
@@ -3102,14 +3115,17 @@
       "fields": [
         "language"
       ],
-      "status": "pending",
+      "status": "open",
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-28T21:34:44+08:00",
-        "review_after": "2026-07-31T21:34:44+08:00"
+        "registration_start": "2026-05-09",
+        "registration_end": "2026-09-08",
+        "event_start": "2026-06-13",
+        "event_end": "2026-09-08",
+        "verified_at": "2026-08-02T00:24:22+08:00"
       },
-      "signup": "",
+      "signup": "即日起至2026年9月8日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
@@ -3321,14 +3337,17 @@
       "fields": [
         "math"
       ],
-      "status": "pending",
+      "status": "open",
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-28T21:35:47+08:00",
-        "review_after": "2026-07-31T21:35:47+08:00"
+        "registration_start": "2026-06-30",
+        "registration_end": "2026-08-20",
+        "event_start": "2026-08-20",
+        "event_end": "2026-08-23",
+        "verified_at": "2026-08-02T00:24:22+08:00"
       },
-      "signup": "",
+      "signup": "即日起至2026年8月20日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
@@ -3344,8 +3363,8 @@
       "fields": [
         "language"
       ],
-      "status": "pending",
-      "signup": "赛事详情请访问信息来源页面",
+      "status": "open",
+      "signup": "2026年6月17日至8月16日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
@@ -3354,10 +3373,13 @@
       "organizer": "外文局亚太传播中心英语大赛组委会",
       "prestige": 7,
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-29T21:36:38+08:00",
-        "review_after": "2026-08-01T21:36:38+08:00"
+        "registration_start": "2026-06-17",
+        "registration_end": "2026-08-16",
+        "event_start": "2026-08-16",
+        "event_end": "2026-08-16",
+        "verified_at": "2026-08-02T00:24:22+08:00"
       }
     },
     {
@@ -3382,6 +3404,58 @@
       "official_site": "",
       "organizer": "外语教学与研究出版社",
       "prestige": 7
+    },
+    {
+      "id": "comp-saikr-52bbbd9ae327",
+      "name": "【9月开学领证书】2026年第二届大学生网络信息技术大赛",
+      "tier": "hobby",
+      "fields": [
+        "computer"
+      ],
+      "status": "open",
+      "signup": "2026年7月16日至8月30日",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/NEAI202602",
+      "official_site": "",
+      "organizer": "中国商业技师协会",
+      "prestige": 4,
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-07-16",
+        "registration_end": "2026-08-30",
+        "event_start": "2026-08-29",
+        "event_end": "2026-11-22",
+        "verified_at": "2026-08-02T00:24:22+08:00"
+      }
+    },
+    {
+      "id": "comp-saikr-699c33f46408",
+      "name": "第五届“中外传播杯”大学生英语语法大赛",
+      "tier": "official",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "signup": "2026年7月7日至8月30日",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/2026YF",
+      "official_site": "",
+      "organizer": "外文局亚太传播中心英语大赛组委会",
+      "prestige": 7,
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-07-07",
+        "registration_end": "2026-08-30",
+        "event_start": "2026-08-30",
+        "event_end": "2026-08-30",
+        "verified_at": "2026-08-02T00:24:22+08:00"
+      }
     }
   ]
 }
