@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-02T00:16:08+08:00",
+  "last_updated": "2026-08-02T13:57:15+08:00",
   "source": "CampBrief Auto",
-  "total": 700,
+  "total": 705,
   "items": [
     {
       "id": "news-f1084f2ebe0fff52",
@@ -1068,7 +1068,7 @@
     {
       "id": "news-c50a2dcf23ca3854",
       "title": "Fish Audio 发布 S2.1 Pro 并完成 5200 万美元种子轮融资",
-      "url": "https://x.com/FishAudio/status/2082152596739862853",
+      "url": "https://fish.audio/blog/fish-audio-52m-seed-funding/",
       "date": "2026-07-29",
       "published": "2026-07-29T01:37:57+00:00",
       "summary": "Fish Audio 完成 5200 万美元种子轮融资并发布 S2.1 Pro 语音模型，仅需 5 秒音频即可克隆声音，一年内 ARR 达 2100 万美元。",
@@ -9323,6 +9323,67 @@
       "priority": 3,
       "category": "ai",
       "date": "2025-07-17"
+    },
+    {
+      "id": "news-6ad01552d04968d7",
+      "title": "SpaceXAI 为 Grok Imagine 新增文生视频、引用功能与原生 1080p",
+      "url": "https://daily.juya.uk/issues/2026-08-02/",
+      "published": "2026-08-02T01:25:34+00:00",
+      "summary": "SpaceXAI 升级 Imagine Video 1.5 模型，新增文生视频、图像与语音引用及原生 1080p 支持，多引用功能每次最多绑定 7 张参考图。",
+      "detail": "SpaceXAI 旗下视频模型 Imagine Video 1.5 迎来功能升级，新增文生视频、图像引用、语音引用、多引用及原生 1080p 支持。多引用功能允许每次生成最多绑定 7 张参考图像，分别锁定角色、场景或产品。图像与语音引用目前面向美国地区 SuperGrok Heavy 和 Plus 订阅用户开放，文生视频与原生 1080p 已在 web、iOS 和 Android 全面可用；API 方面文生视频、图像引用与 1080p 已上线。",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-08-02"
+    },
+    {
+      "id": "news-f08727df7dfbbf91",
+      "title": "OpenAI 团队向 Git 上游提交多项性能与正确性补丁",
+      "url": "https://daily.juya.uk/issues/2026-08-02/",
+      "published": "2026-08-02T01:25:34+00:00",
+      "summary": "OpenAI 以公开 fork 形式向 Git 上游贡献性能与正确性补丁，已有 2 个补丁系列合入 master，5 个进入审查，23 个仍在开发。",
+      "detail": "OpenAI 正持续推进面向大型仓库的 Git 改进工作，由 Ted Nyman 和 Taylor Blau 主导，以公开 fork 形式开发，只要补丁具备通用价值便贡献至上游 Git。目前已有 2 个补丁系列合入上游 Git master 分支，5 个系列进入 seen 分支审查，另有 23 个系列仍在主题分支开发。已合入的改进包括限制路径的 git stash 稀疏索引优化（索引扩展耗时从 18.87 秒降至 0.06 秒）及路径遍历位图支持。相关性能改进也将应用于 Codex 应用。",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "juya AI 日报",
+      "date": "2026-08-02"
+    },
+    {
+      "id": "news-4915959a3d29cbb8",
+      "title": "报道称 OpenAI 与 Anthropic 正游说要求竞争对手接受相同审查",
+      "url": "https://daily.juya.uk/issues/2026-08-02/",
+      "published": "2026-08-02T01:25:34+00:00",
+      "summary": "据 The Information 报道，OpenAI 和 Anthropic 正敦促美国政府，要求 Meta、SpaceXAI 等竞争对手接受与它们相同的前沿模型审查。",
+      "detail": "据 The Information 报道，OpenAI 和 Anthropic 正悄悄敦促美国政府，要求 Meta 和 SpaceXAI 等竞争对手接受与两家公司目前面临的相同的前沿模型审查。报道称两家公司目前已接受此类审查，希望竞争对手也被纳入同等框架，这一联盟可能在竞争对手避免审查时保护自身不被拖慢进度。消息源自媒体报道，相关公司及华盛顿方面尚未作出正式回应。",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-08-02"
+    },
+    {
+      "id": "news-c5315d35655fe54d",
+      "title": "Tibo 称已重置 Codex 和 ChatGPT Work 使用限制",
+      "url": "https://daily.juya.uk/issues/2026-08-02/",
+      "published": "2026-08-02T01:25:34+00:00",
+      "summary": "Codex 负责人 Tibo 宣布已重置 Codex 和 ChatGPT Work 的使用限制，庆祝效率周，让用户本周末可运行 10 万个 Luna 任务会话。",
+      "detail": "北京时间 8 月 1 日中午，Codex 负责人 Tibo 在社交媒体上宣布，他已重置 Codex 和 ChatGPT Work 的使用限制。Tibo 表示此举是为庆祝一周的效率工作，让用户能够在本周末运行 10 万个 Luna 任务会话。",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-08-02"
+    },
+    {
+      "id": "news-4d86d9d56f302278",
+      "title": "DeepSeek Harness 面向 Agent Harness 开源项目开发者招募内测",
+      "url": "https://daily.juya.uk/issues/2026-08-02/",
+      "published": "2026-08-02T01:25:34+00:00",
+      "summary": "DeepSeek Harness 负责人宣布面向 Agent Harness 相关开源项目开发者招募内测参与者，申请需附 GitHub ID 与开源代表作。",
+      "detail": "DeepSeek Harness 负责人 Tianyi Cui 发布消息称，DeepSeek Harness 目前处于内测阶段，并面向 Agent Harness 相关开源项目开发者招募内测参与者。开发者可通过回复或私信联系申请，需附上 GitHub ID 及代表性开源作品。公测时间及正式发布安排均未提及。",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-08-02"
     }
   ]
 }
