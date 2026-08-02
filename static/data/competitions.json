@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-02T00:24:52+08:00",
+  "last_updated": "2026-08-02T10:19:52+08:00",
   "source": "CampBrief",
   "total": 175,
   "tiers": [
@@ -2018,8 +2018,8 @@
       "fields": [
         "innovation"
       ],
-      "status": "ongoing",
-      "signup": "",
+      "status": "open",
+      "signup": "即日起至2026年10月20日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
@@ -2028,10 +2028,13 @@
       "organizer": "全国大学生技术创新创业大赛组委会",
       "prestige": 4,
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-30T09:33:39+08:00",
-        "review_after": "2026-08-02T09:33:39+08:00"
+        "registration_start": "2026-03-20",
+        "registration_end": "2026-10-20",
+        "event_start": "2026-03-20",
+        "event_end": "2026-11-30",
+        "verified_at": "2026-08-02T10:19:52+08:00"
       }
     },
     {
@@ -3158,14 +3161,16 @@
       "fields": [
         "language"
       ],
-      "status": "pending",
+      "status": "open",
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-30T09:33:39+08:00",
-        "review_after": "2026-08-02T09:33:39+08:00"
+        "registration_start": "2026-06-09",
+        "registration_end": "2026-10-10",
+        "event_start": "2026-06-09",
+        "verified_at": "2026-08-02T10:19:52+08:00"
       },
-      "signup": "赛事详情请访问信息来源页面",
+      "signup": "即日起至2026年10月10日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
