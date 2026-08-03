@@ -364,6 +364,11 @@
     "全国大学生才艺大赛组委会": {
       "tier": "hobby",
       "prestige": 2
+    },
+    "中国语文报刊协会": {
+      "tier": "hobby",
+      "prestige": 4,
+      "note": "语文规范化知识大赛主办方，行业学会商业赛"
     }
   },
   "competitions": {

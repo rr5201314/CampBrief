@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-03T09:56:57+08:00",
+  "last_updated": "2026-08-03T15:43:54+08:00",
   "source": "CampBrief",
-  "total": 178,
+  "total": 179,
   "tiers": [
     {
       "key": "all",
@@ -3538,6 +3538,29 @@
       "official_site": "",
       "organizer": "全国大学生才艺大赛组委会",
       "prestige": 2
+    },
+    {
+      "id": "comp-52jingsai-8f63fddc6364",
+      "name": "2026年语文规范化知识大赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-10-29",
+        "verified_at": "2026-08-03T15:43:54+08:00"
+      },
+      "signup": "即日起至2026年10月29日",
+      "schedule": "最近考试场次时间：2026年8月8日",
+      "summary": "语文规范化知识大赛：以宣传《国家通用语言文字法》、提升国民语言文字应用能力为宗旨，面向全社会，设大学生组/教师组/社会组线上答题评奖。大赛截止时间：2026年10月29日，官网 ywgfh.52jingsai.com",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23412-1.html",
+      "official_site": "http://ywgfh.52jingsai.com/",
+      "organizer": "中国语文报刊协会",
+      "prestige": 4
     }
   ]
 }
