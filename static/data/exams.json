@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-01T23:54:35+08:00",
+  "last_updated": "2026-08-03T21:25:36+08:00",
   "source": "CampBrief",
   "total": 28,
   "categories": [
@@ -104,7 +104,7 @@
       "requirements": "全日制普通高等院校本科、专科在校生，在籍研究生，各类成人高等院校在校生均可报考。",
       "scoring": "自近年起不再提供纸质成绩单，成绩发布 10 个工作日后，考生可登录中国教育考试网查看并下载电子成绩报告单，与原纸质成绩报告单具有同等效力。",
       "timeline": [],
-      "last_updated": "2026-07-31T21:09:59+08:00"
+      "last_updated": "2026-08-03T21:25:36.197658+08:00"
     },
     {
       "id": "tem-4",
@@ -311,7 +311,7 @@
       "official_portal": "https://www.ruankao.org.cn/",
       "news_list_url": "https://www.ruankao.org.cn/index/work.html",
       "official_url": "https://www.ruankao.org.cn/article/content/2603051204118156470700001.html",
-      "last_updated": "2026-07-31T21:09:59+08:00"
+      "last_updated": "2026-08-03T21:25:36.197658+08:00"
     },
     {
       "id": "pat-202603",
@@ -347,16 +347,46 @@
       "id": "pat-202609",
       "name": "2026年秋季 PAT 计算机程序设计能力考试",
       "category": "computer",
-      "status": "pending",
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-08-29",
+        "event_start": "2026-09-05",
+        "event_end": "2026-09-05",
+        "verified_at": "2026-08-03T21:25:36+08:00"
+      },
       "fee": "约200-300元",
-      "schedule": "2026年9月",
+      "schedule": "2026年9月5日",
       "summary": "浙江大学发起的程序设计能力评估考试，分乙、甲、顶级，被多所高校和企业认可用于招生和招聘。",
       "search": "pat 程序设计 编程 计算机 programming zju 2026 秋季",
       "official_site": "https://www.patest.cn/",
       "official_portal": "https://www.patest.cn/",
       "news_list_url": "https://www.patest.cn/articles",
       "official_url": "https://www.patest.cn/articles",
-      "last_updated": "2026-07-31T21:09:59+08:00"
+      "timeline": [
+        {
+          "label": "考试时间",
+          "value": "2026年9月5日（周六）13:30-16:30，线上与线下同时举办"
+        },
+        {
+          "label": "报名截止",
+          "value": "2026年8月29日 23:59（报名已开启）"
+        },
+        {
+          "label": "考试级别",
+          "value": "开放甲级、乙级、顶级，继续颁发等级奖证书"
+        },
+        {
+          "label": "线下考点",
+          "value": "全国22家考点有条件开放线下考场"
+        },
+        {
+          "label": "线上考试要求",
+          "value": "自备考试用机与双摄像头，需安装最新版监考客户端（OMS v2.1.3）"
+        }
+      ],
+      "last_updated": "2026-08-03T21:25:36.197658+08:00"
     },
     {
       "id": "junior-accounting-2026",
@@ -385,7 +415,7 @@
         "registration_end": "2026-07-02",
         "event_start": "2026-09-05",
         "event_end": "2026-09-06",
-        "verified_at": "2026-07-15T18:50:55+08:00"
+        "verified_at": "2026-08-03T21:25:36+08:00"
       },
       "fee": "每科约50-70元",
       "schedule": "2026年9月",
@@ -409,7 +439,7 @@
           "value": "各省级考试管理机构于2026年8月11日前公布"
         }
       ],
-      "last_updated": "2026-07-31T21:09:59+08:00"
+      "last_updated": "2026-08-03T21:25:36.197658+08:00"
     },
     {
       "id": "cpa-2026",
@@ -423,7 +453,7 @@
         "registration_end": "2026-04-30T20:00:00+08:00",
         "event_start": "2026-08-29",
         "event_end": "2026-08-30",
-        "verified_at": "2026-07-15T18:50:55+08:00"
+        "verified_at": "2026-08-03T21:25:36+08:00"
       },
       "fee": "每科约60-100元",
       "schedule": "2026年8月底（专业阶段）、8月底（综合阶段）",
@@ -451,7 +481,7 @@
           "value": "2026年6月15日—30日（每天8:00—20:00）"
         }
       ],
-      "last_updated": "2026-07-31T21:09:59+08:00"
+      "last_updated": "2026-08-03T21:25:36.197658+08:00"
     },
     {
       "id": "acca-202603",
@@ -708,7 +738,7 @@
       "official_portal": "https://yz.chsi.com.cn/",
       "news_list_url": "https://yz.chsi.com.cn/kyzx/jybzc/",
       "official_url": "",
-      "last_updated": "2026-07-31T21:09:59+08:00"
+      "last_updated": "2026-08-03T21:25:36.197658+08:00"
     },
     {
       "id": "baoyan-2026",
@@ -723,7 +753,7 @@
       "official_portal": "https://yz.chsi.com.cn/tm/",
       "news_list_url": "https://yz.chsi.com.cn/kyzx/kydt/",
       "official_url": "",
-      "last_updated": "2026-07-31T21:09:59+08:00"
+      "last_updated": "2026-08-03T21:25:36.197658+08:00"
     }
   ]
 }
