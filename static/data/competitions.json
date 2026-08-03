@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-02T21:34:44+08:00",
+  "last_updated": "2026-08-03T09:56:57+08:00",
   "source": "CampBrief",
-  "total": 175,
+  "total": 178,
   "tiers": [
     {
       "key": "all",
@@ -1144,9 +1144,9 @@
         "engineering",
         "computer"
       ],
-      "status": "closed",
-      "signup": "每年4月至7月报名",
-      "schedule": "初赛 6–8 月，决赛 10 月",
+      "status": "open",
+      "signup": "2026年4月1日至8月31日",
+      "schedule": "校内赛 9 月，区域赛 9–10 月，全国总决赛 11 月",
       "summary": "以物联网、人工智能、智能硬件为特色的创新创业赛事。",
       "search": "iCAN 创新创业 物联网",
       "official_site": "https://www.g-ican.com",
@@ -1156,8 +1156,10 @@
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "registration_end": "2026-07-31",
-        "verified_at": "2026-07-22T09:54:57.820766+08:00"
+        "verified_at": "2026-08-03T09:56:57+08:00",
+        "registration_start": "2026-04-01",
+        "registration_end": "2026-08-31",
+        "event_start": "2026-09-01"
       }
     },
     {
@@ -1901,7 +1903,7 @@
       "schedule": "",
       "summary": "翻译能力竞赛报名时间：即日起至8月6日，赛题发布时间：7月8日上午10点 || 主办单位：中国外文局亚太传播中心",
       "search": "",
-      "official_url": "",
+      "official_url": "https://www.52jingsai.com/article-23405-1.html",
       "official_site": "http://www.ncetac.com/",
       "organizer": "中国外文局亚太传播中心",
       "prestige": 7
@@ -2914,13 +2916,13 @@
     },
     {
       "id": "comp-saikr-3bcfd9399c73",
-      "name": "【已开考！持续报名中】“声释中华”新时代大学生外宣人才文学素养大赛",
+      "name": "【六章证书】“声释中华”新时代大学生外宣人才文学素养大赛",
       "tier": "hobby",
       "fields": [
         "other"
       ],
-      "status": "ongoing",
-      "signup": "",
+      "status": "open",
+      "signup": "即日起至2026年9月5日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
@@ -2929,10 +2931,12 @@
       "organizer": "“声释中华”新时代大学生外宣人才赛事组委会",
       "prestige": 4,
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-31T15:40:01+08:00",
-        "review_after": "2026-08-03T15:40:01+08:00"
+        "verified_at": "2026-08-03T09:56:57+08:00",
+        "registration_start": "2026-06-02",
+        "registration_end": "2026-09-05",
+        "event_start": "2026-09-05"
       }
     },
     {
@@ -3394,12 +3398,13 @@
       "fields": [
         "language"
       ],
-      "status": "pending",
+      "status": "open",
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-07-31T15:40:01+08:00",
-        "review_after": "2026-08-03T15:40:01+08:00"
+        "verified_at": "2026-08-03T09:56:57+08:00",
+        "registration_start": "2026-04-01",
+        "registration_end": "2026-08-31"
       },
       "signup": "",
       "schedule": "",
@@ -3461,6 +3466,78 @@
         "event_end": "2026-08-30",
         "verified_at": "2026-08-02T00:24:22+08:00"
       }
+    },
+    {
+      "id": "comp-saikr-357a094c18d3",
+      "name": "2026年第五届“空英杯”全国大学生英语翻译竞赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-05-11",
+        "registration_end": "2026-08-23",
+        "verified_at": "2026-08-03T09:56:57+08:00"
+      },
+      "signup": "即日起至2026年8月23日",
+      "schedule": "译文提交：第二场 2026年6月28日—8月23日",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "空英杯 英语翻译 空中英语教室",
+      "official_url": "https://www.saikr.com/vse/KYB/translation26",
+      "official_site": "",
+      "organizer": "《空中英语教室》杂志社",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-3b8905911811",
+      "name": "【最后一场】第三届“中国故事大赛·双语中国”大学生写作大赛-英文赛道",
+      "tier": "enterprise",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-04-20",
+        "registration_end": "2026-08-31",
+        "verified_at": "2026-08-03T09:56:57+08:00"
+      },
+      "signup": "即日起至2026年8月31日",
+      "schedule": "作品提交截止：第四场 2026年8月31日",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "中国故事大赛 双语中国 写作大赛 英文",
+      "official_url": "https://www.saikr.com/vse/2026/WCE",
+      "official_site": "",
+      "organizer": "中国寓言文学研究会教育教学专业委员会",
+      "prestige": 5
+    },
+    {
+      "id": "comp-saikr-6f62859c543d",
+      "name": "全国大学生才艺大赛",
+      "tier": "hobby",
+      "fields": [
+        "design"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2025-12-12",
+        "registration_end": "2026-12-12",
+        "verified_at": "2026-08-03T09:56:57+08:00"
+      },
+      "signup": "2025年12月12日至2026年12月12日",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "才艺 大学生 文艺",
+      "official_url": "https://www.saikr.com/vse/5658",
+      "official_site": "",
+      "organizer": "全国大学生才艺大赛组委会",
+      "prestige": 2
     }
   ]
 }

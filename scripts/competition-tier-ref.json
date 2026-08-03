@@ -360,6 +360,10 @@
       "tier": "hobby",
       "prestige": 4,
       "note": "商业赛"
+    },
+    "全国大学生才艺大赛组委会": {
+      "tier": "hobby",
+      "prestige": 2
     }
   },
   "competitions": {
@@ -615,6 +619,16 @@
     "摄影大赛": {
       "tier": "hobby",
       "prestige": 2
+    },
+    "空英杯": {
+      "tier": "hobby",
+      "prestige": 4,
+      "note": "空英杯系列（语法/翻译），空中英语教室杂志社主办"
+    },
+    "大学生写作大赛": {
+      "tier": "enterprise",
+      "prestige": 5,
+      "note": "中国故事大赛·双语中国写作大赛"
     }
   },
   "fields_hints": {
