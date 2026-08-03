@@ -1,8 +1,22 @@
 {
-  "last_updated": "2026-08-03T08:55:41+08:00",
+  "last_updated": "2026-08-03T13:38:00+08:00",
   "source": "CampBrief Auto",
-  "total": 711,
+  "total": 714,
   "items": [
+    {
+      "id": "news-5c1db683df2a07fa",
+      "title": "Qwen 与 XLang Lab 联合发布原生 Computer Use agent Qwen-CUA",
+      "url": "https://github.com/xlang-ai/Qwen-CUA",
+      "date": "2026-08-03",
+      "published": "2026-08-03T01:18:49+00:00",
+      "summary": "Qwen 团队与 XLang Lab 联合发布原生 Computer Use agent Qwen-CUA，仅凭截图感知界面，通过键盘鼠标操作计算机，已开放技术报告与 demo。",
+      "detail": "Qwen Team 与 XLang Lab 联合发布了基于 Qwen 的原生 Computer Use 模型和 agent Qwen-CUA。该 agent 仅通过截图感知界面状态，不依赖 DOM 树、辅助功能元数据或任务专用 API，通过原生键盘和鼠标事件在浏览器、桌面应用和专业软件中执行操作。模型基于 397B-A17B 混合专家架构，在 OSWorld-Verified 基准上取得 86.2 分；更大的 Qwen-CUA-Max 参数量超过一万亿，同基准得分 87.6。目前官方已在 GitHub 开放技术报告和参考 demo。",
+      "image": "",
+      "priority": 3,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "juya AI 日报"
+    },
     {
       "id": "news-31d40b6e7f8f978a",
       "title": "奇点逃逸完成千万级种子轮融资，研发 AI 原生团队协作系统 Nexus",
@@ -15,6 +29,20 @@
       "detail": "Nexus 以组织状态而非单次对话为出发点，让人、Agent、任务、知识和工具基于同一份状态持续协作，并通过真实任务反馈驱动 Agent 自进化：协作产生反馈，独立评测筛选改进，经治理机制决定采用或回滚。薛传奕认为 Agent 能力提升后新的瓶颈是协作断层——各自拥有完整上下文的 Agent 难以合并工作，Nexus 希望成为 AI 时代的组织基础设施。",
       "date": "2026-08-03",
       "image": ""
+    },
+    {
+      "id": "news-14f40e0e40551bd1",
+      "title": "Karpathy 用 Opus 5 测试 3D 世界生成，指出 LLM 世界建模仍有短板",
+      "url": "https://x.com/karpathy/status/2083749667410727319",
+      "date": "2026-08-03",
+      "published": "2026-08-03T01:18:49+00:00",
+      "summary": "Andrej Karpathy 用 Opus 5 做了 3D 世界生成测试，输入《指环王》第一段文本，要求用 three.js 渲染故事场景，结果可运行但粗糙。",
+      "detail": "Andrej Karpathy 近日发帖称不该再用鹈鹕骑自行车这类方式测试 LLM，并分享了他用 Opus 5 进行的 3D 世界生成测试。他输入《指环王》第一段文本，要求模型用 three.js 渲染故事场景，预算约 100 万 token（约 10 美元）。Opus 5 运行约 2 小时、编写了 5500 行代码完成渲染，Karpathy 表示结果虽然粗糙但可运行。他指出当前 LLM 在世界与游戏领域仍存在弱点，无法高效原生感知视频或在游戏内游玩，需要缓慢截图来检查工作。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "juya AI 日报"
     },
     {
       "id": "news-f06e0d22b0adef59",
@@ -55,6 +83,19 @@
       "detail": "欧盟数字身份钱包的年龄验证方案依赖 Android TEE、StrongBox 或 Apple Secure Enclave 等受保护硬件存储密钥，防止凭据被克隆复用。维护者表示这是项目架构要求而非可省略的实现细节。批评者认为该方案将系统绑定到少量受认可的设备与系统，社区构建版本可能无法接入真实服务，开源身份系统能否保持开放仍悬而未决。",
       "date": "2026-08-03",
       "image": ""
+    },
+    {
+      "id": "news-d72886bf69826754",
+      "title": "前谷歌团队成员称谷歌曾在 ChatGPT 前开发类似产品 LMChat",
+      "url": "https://x.com/thsottiaux/status/2083596911060324570",
+      "date": "2026-08-03",
+      "published": "2026-08-03T01:18:49+00:00",
+      "summary": "Codex 负责人 Tibo 透露，谷歌在 ChatGPT 发布约一年前已开发出类似产品 LMChat，但因担忧冲击搜索业务未予发布。",
+      "detail": "Codex 负责人 Tibo 在回复网友时表示，谷歌在 ChatGPT 发布约一年前就已开发出类似产品，最初代号 LMChat，后改用另一代号，他本人曾在该团队工作。Tibo 称谷歌因担忧该产品冲击搜索业务而选择不发布，DeepMind 也曾被阻止推出可能颠覆谷歌的产品。此前有网友援引 Jeff Dean 采访称，谷歌在 ChatGPT 之前已有内部聊天机器人。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
     },
     {
       "id": "news-6ad01552d04968d7",
