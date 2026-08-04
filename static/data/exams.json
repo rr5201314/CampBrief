@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-03T21:25:36+08:00",
+  "last_updated": "2026-08-04T15:12:51+08:00",
   "source": "CampBrief",
   "total": 28,
   "categories": [
@@ -415,7 +415,7 @@
         "registration_end": "2026-07-02",
         "event_start": "2026-09-05",
         "event_end": "2026-09-06",
-        "verified_at": "2026-08-03T21:25:36+08:00"
+        "verified_at": "2026-08-04T15:20:56+08:00"
       },
       "fee": "每科约50-70元",
       "schedule": "2026年9月",
@@ -439,7 +439,7 @@
           "value": "各省级考试管理机构于2026年8月11日前公布"
         }
       ],
-      "last_updated": "2026-08-03T21:25:36.197658+08:00"
+      "last_updated": "2026-08-04T15:20:56.496128+08:00"
     },
     {
       "id": "cpa-2026",
@@ -517,7 +517,7 @@
       "id": "acca-202609",
       "name": "2026年9月 ACCA 考试",
       "category": "accounting",
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Europe/London",
@@ -567,7 +567,7 @@
       "id": "acca-202612",
       "name": "2026年12月 ACCA 考试",
       "category": "accounting",
-      "status": "pending",
+      "status": "open",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Europe/London",
