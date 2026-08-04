@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-03T21:36:23+08:00",
+  "last_updated": "2026-08-04T15:41:30+08:00",
   "source": "CampBrief",
-  "total": 179,
+  "total": 180,
   "tiers": [
     {
       "key": "all",
@@ -2015,7 +2015,7 @@
     },
     {
       "id": "comp-saikr-1d6ba753f9c2",
-      "name": "【评阅倒计时】2026年第六届全国大学生技术创新创业大赛-国赛",
+      "name": "【创新创业类】2026年第六届全国大学生技术创新创业大赛-国赛",
       "tier": "hobby",
       "fields": [
         "innovation"
@@ -2318,20 +2318,29 @@
     },
     {
       "id": "comp-saikr-78443557aa65",
-      "name": "【暑期热门竞赛】（城市联赛）计算机素养赛道",
+      "name": "【暑期热门竞赛即将截止】（城市联赛）计算机素养赛道",
       "tier": "hobby",
       "fields": [
         "computer"
       ],
-      "status": "pending",
-      "signup": "",
-      "schedule": "",
-      "summary": "来源：赛氪。浏览 1.6万，关注 640",
+      "status": "open",
+      "signup": "即日起至2026年8月7日",
+      "schedule": "第二场考试：2026年8月8日-8月9日（任选1小时作答）",
+      "summary": "大连市计算机学会、苏州市计算机学会、天津市计算机学会联合主办，线上客观题竞赛，设C语言、C++、Python、Java四赛道，设一二三等奖及优秀奖，获奖可获三学会联合盖章电子+纸质证书。",
       "search": "",
       "official_url": "https://www.saikr.com/vse/CLComputer2026",
       "official_site": "",
       "organizer": "大连市计算机学会、苏州市计算机学会、天津市计算机学会",
-      "prestige": 4
+      "prestige": 4,
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-08-04T15:41:30+08:00",
+        "registration_start": "2026-06-17",
+        "registration_end": "2026-08-07",
+        "event_start": "2026-08-08",
+        "event_end": "2026-08-09"
+      }
     },
     {
       "id": "comp-saikr-18e1497ac3fd",
@@ -2859,15 +2868,15 @@
     },
     {
       "id": "comp-saikr-8715b18b4de9",
-      "name": "第九届ETTBL杯高校英语语法大赛",
+      "name": "【开学加分】第九届ETTBL杯全国英语语法大赛",
       "tier": "hobby",
       "fields": [
         "language"
       ],
-      "status": "closed",
-      "signup": "",
-      "schedule": "",
-      "summary": "来源：赛氪。浏览 2.5万，关注 236",
+      "status": "open",
+      "signup": "即日起至2026年9月19日",
+      "schedule": "线上考试四场：6月13日/7月18日/8月15日/9月19日（任选一场，60分钟）",
+      "summary": "中国商业联合会推出的ETTBL认证体系赛事，语法赛道以商务英语实务场景为主题（四级为主、含少量六级考点），设一二三等奖及优秀奖，获奖可获电子+纸质证书，成绩前5%可晋级ETTBL商务英语翻译大赛决赛。",
       "search": "",
       "official_url": "https://www.saikr.com/vse/ETTBL-JYF",
       "official_site": "",
@@ -2876,8 +2885,11 @@
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "registration_end": "2026-07-18",
-        "verified_at": "2026-07-15T18:57:08.606962+08:00"
+        "verified_at": "2026-08-04T15:41:30+08:00",
+        "registration_start": "2026-05-13",
+        "registration_end": "2026-09-19",
+        "event_start": "2026-06-13",
+        "event_end": "2026-09-19"
       }
     },
     {
@@ -2916,7 +2928,7 @@
     },
     {
       "id": "comp-saikr-3bcfd9399c73",
-      "name": "【六章证书】“声释中华”新时代大学生外宣人才文学素养大赛",
+      "name": "【六章证书 | 开学加分】“声释中华”新时代大学生外宣人才文学素养大赛",
       "tier": "hobby",
       "fields": [
         "other"
@@ -3576,6 +3588,31 @@
       "official_site": "http://ywgfh.52jingsai.com/",
       "organizer": "中国语文报刊协会",
       "prestige": 4
+    },
+    {
+      "id": "comp-saikr-d5eb8e83d073",
+      "name": "第九届ETTBL全国商务英语翻译大赛",
+      "tier": "enterprise",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-08-04T15:41:30+08:00",
+        "registration_start": "2026-06-18",
+        "registration_end": "2026-10-18",
+        "event_start": "2026-08-01"
+      },
+      "signup": "笔译初赛即日起至2026年10月17日，口译初赛即日起至2026年10月18日",
+      "schedule": "初赛：8月-10月分场次线上考试（笔译/口译），决赛预计11月初",
+      "summary": "中国商业联合会主办，设笔译、口译两赛道及研究生/英语专业/非英语专业三组别；初赛获奖率60%，决赛前三名有现金奖励，颁发电子+纸质四章证书。",
+      "search": "ETTBL 商务英语翻译 中国商业联合会",
+      "official_url": "https://www.saikr.com/vse/ETTBL-SW",
+      "official_site": "",
+      "organizer": "ETTBL英语大赛组委会",
+      "prestige": 5
     }
   ]
 }

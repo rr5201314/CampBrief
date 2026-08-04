@@ -634,6 +634,10 @@
       "tier": "enterprise",
       "prestige": 5,
       "note": "中国故事大赛·双语中国写作大赛"
+    },
+    "商务英语翻译大赛": {
+      "tier": "enterprise",
+      "prestige": 5
     }
   },
   "fields_hints": {
