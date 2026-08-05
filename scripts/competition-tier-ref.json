@@ -369,6 +369,11 @@
       "tier": "hobby",
       "prestige": 4,
       "note": "语文规范化知识大赛主办方，行业学会商业赛"
+    },
+    "中国技术市场协会": {
+      "tier": "hobby",
+      "prestige": 3,
+      "note": "行业性协会，麟创杯等商业赛"
     }
   },
   "competitions": {
