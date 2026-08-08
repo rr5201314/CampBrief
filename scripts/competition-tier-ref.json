@@ -643,6 +643,11 @@
     "商务英语翻译大赛": {
       "tier": "enterprise",
       "prestige": 5
+    },
+    "华智": {
+      "tier": "hobby",
+      "prestige": 3,
+      "note": "2026华智·高校大学生人工智能大赛，50元报名费商业赛"
     }
   },
   "fields_hints": {
