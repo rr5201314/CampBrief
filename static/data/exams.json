@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-05T09:19:10+08:00",
+  "last_updated": "2026-08-08T20:20:18+08:00",
   "source": "CampBrief",
   "total": 28,
   "categories": [
@@ -104,7 +104,7 @@
       "requirements": "全日制普通高等院校本科、专科在校生，在籍研究生，各类成人高等院校在校生均可报考。",
       "scoring": "自近年起不再提供纸质成绩单，成绩发布 10 个工作日后，考生可登录中国教育考试网查看并下载电子成绩报告单，与原纸质成绩报告单具有同等效力。",
       "timeline": [],
-      "last_updated": "2026-08-03T21:25:36.197658+08:00"
+      "last_updated": "2026-08-08T20:20:18.473364+08:00"
     },
     {
       "id": "tem-4",
@@ -171,8 +171,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-08-05T09:19:10+08:00",
-        "review_after": "2026-08-08T09:19:10+08:00"
+        "verified_at": "2026-08-08T20:20:18+08:00",
+        "review_after": "2026-08-11T20:19:18+08:00"
       },
       "fee": "约2170元",
       "schedule": "全年多场",
@@ -182,7 +182,7 @@
       "official_portal": "https://ielts-main.neea.cn/",
       "news_list_url": "https://www.chinaielts.org/press-office",
       "official_url": "https://www.chinaielts.org/press-office/IELTS-Chinese-Mainland-Exam-Registration-2026-7-9",
-      "last_updated": "2026-08-05T09:19:10+08:00",
+      "last_updated": "2026-08-08T20:20:18.473364+08:00",
       "timeline": [
         {
           "label": "考试场次",
@@ -205,8 +205,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-08-05T09:19:10+08:00",
-        "review_after": "2026-08-08T09:19:10+08:00"
+        "verified_at": "2026-08-08T20:20:18+08:00",
+        "review_after": "2026-08-11T20:19:18+08:00"
       },
       "fee": "约2100元",
       "schedule": "全年多场",
@@ -216,7 +216,7 @@
       "official_portal": "https://toefl-main.neea.cn/",
       "news_list_url": "https://toefl-main.neea.cn/html1/category/16123/94-1.htm",
       "official_url": "https://toefl.neea.cn/",
-      "last_updated": "2026-08-05T09:19:10+08:00"
+      "last_updated": "2026-08-08T20:20:18.473364+08:00"
     },
     {
       "id": "catti-202606",
@@ -311,7 +311,7 @@
       "official_portal": "https://www.ruankao.org.cn/",
       "news_list_url": "https://www.ruankao.org.cn/index/work.html",
       "official_url": "https://www.ruankao.org.cn/article/content/2603051204118156470700001.html",
-      "last_updated": "2026-08-03T21:25:36.197658+08:00"
+      "last_updated": "2026-08-08T20:20:18.473364+08:00"
     },
     {
       "id": "pat-202603",
@@ -386,7 +386,7 @@
           "value": "自备考试用机与双摄像头，需安装最新版监考客户端（OMS v2.1.3）"
         }
       ],
-      "last_updated": "2026-08-03T21:25:36.197658+08:00"
+      "last_updated": "2026-08-08T20:20:18.473364+08:00"
     },
     {
       "id": "junior-accounting-2026",
@@ -439,7 +439,7 @@
           "value": "各省级考试管理机构于2026年8月11日前公布"
         }
       ],
-      "last_updated": "2026-08-04T15:20:56.496128+08:00"
+      "last_updated": "2026-08-08T20:20:18.473364+08:00"
     },
     {
       "id": "cpa-2026",
@@ -481,7 +481,7 @@
           "value": "2026年6月15日—30日（每天8:00—20:00）"
         }
       ],
-      "last_updated": "2026-08-03T21:25:36.197658+08:00"
+      "last_updated": "2026-08-08T20:20:18.473364+08:00"
     },
     {
       "id": "acca-202603",
@@ -561,7 +561,7 @@
           "value": "2026年10月19日"
         }
       ],
-      "last_updated": "2026-08-05T09:19:10+08:00"
+      "last_updated": "2026-08-08T20:20:18.473364+08:00"
     },
     {
       "id": "acca-202612",
@@ -607,7 +607,7 @@
           "value": "2027年1月18日"
         }
       ],
-      "last_updated": "2026-08-05T09:19:10+08:00"
+      "last_updated": "2026-08-08T20:20:18.473364+08:00"
     },
     {
       "id": "ntce-202603",
@@ -677,8 +677,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-08-05T09:19:10+08:00",
-        "review_after": "2026-08-08T09:19:10+08:00"
+        "verified_at": "2026-08-08T20:20:18+08:00",
+        "review_after": "2026-08-11T20:19:18+08:00"
       },
       "fee": "约50元（学生优惠）",
       "schedule": "各地定期组织",
@@ -688,7 +688,7 @@
       "official_portal": "https://www.cltt.org/",
       "news_list_url": "https://www.cltt.org/",
       "official_url": "https://stzbm.cltt.org/",
-      "last_updated": "2026-08-05T09:19:10+08:00"
+      "last_updated": "2026-08-08T20:20:18.473364+08:00"
     },
     {
       "id": "guokao-2026",
@@ -703,7 +703,7 @@
       "official_portal": "https://www.scs.gov.cn/gkIndex.html",
       "news_list_url": "https://www.scs.gov.cn/",
       "official_url": "",
-      "last_updated": "2026-07-31T15:03:18.588303+08:00"
+      "last_updated": "2026-08-08T20:20:18.473364+08:00"
     },
     {
       "id": "shiye",
@@ -712,8 +712,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-08-05T09:19:10+08:00",
-        "review_after": "2026-08-08T09:19:10+08:00"
+        "verified_at": "2026-08-08T20:20:18+08:00",
+        "review_after": "2026-08-11T20:19:18+08:00"
       },
       "fee": "约50-100元",
       "schedule": "各地不定期",
@@ -723,7 +723,7 @@
       "official_portal": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/index.html",
       "news_list_url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/index.html",
       "official_url": "https://job.mohrss.gov.cn/cjobs/institution/listInstitution",
-      "last_updated": "2026-08-05T09:19:10+08:00"
+      "last_updated": "2026-08-08T20:20:18.473364+08:00"
     },
     {
       "id": "kaoyan-2026",
@@ -738,7 +738,7 @@
       "official_portal": "https://yz.chsi.com.cn/",
       "news_list_url": "https://yz.chsi.com.cn/kyzx/jybzc/",
       "official_url": "",
-      "last_updated": "2026-08-03T21:25:36.197658+08:00"
+      "last_updated": "2026-08-08T20:20:18.473364+08:00"
     },
     {
       "id": "baoyan-2026",
@@ -753,7 +753,7 @@
       "official_portal": "https://yz.chsi.com.cn/tm/",
       "news_list_url": "https://yz.chsi.com.cn/kyzx/kydt/",
       "official_url": "",
-      "last_updated": "2026-08-03T21:25:36.197658+08:00"
+      "last_updated": "2026-08-08T20:20:18.473364+08:00"
     }
   ]
 }
