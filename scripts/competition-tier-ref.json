@@ -374,6 +374,11 @@
       "tier": "hobby",
       "prestige": 3,
       "note": "行业性协会，麟创杯等商业赛"
+    },
+    "华夏文化促进会素质教育委员会": {
+      "tier": "official",
+      "prestige": 6,
+      "note": "创研杯系列赛事主办方"
     }
   },
   "competitions": {
@@ -450,7 +455,7 @@
     "创研杯": {
       "tier": "official",
       "prestige": 6,
-      "note": "中国外文局主办系列赛事"
+      "note": "华夏文化促进会素质教育委员会主办系列赛事（词汇/翻译/写作）"
     },
     "外文奖": {
       "tier": "official",

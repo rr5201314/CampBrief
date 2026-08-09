@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-08T20:20:01+08:00",
+  "last_updated": "2026-08-09T09:41:26+08:00",
   "source": "CampBrief",
-  "total": 181,
+  "total": 182,
   "tiers": [
     {
       "key": "all",
@@ -1903,7 +1903,7 @@
       "schedule": "",
       "summary": "翻译能力竞赛报名时间：即日起至8月6日，赛题发布时间：7月8日上午10点 || 主办单位：中国外文局亚太传播中心",
       "search": "",
-      "official_url": "",
+      "official_url": "https://www.52jingsai.com/article-23405-1.html",
       "official_site": "http://www.ncetac.com/",
       "organizer": "中国外文局亚太传播中心",
       "prestige": 7
@@ -1943,8 +1943,8 @@
       "schedule": "",
       "summary": "多校认可加分，第61届中国高等教育博览会参展赛事||主办单位：中国外文局亚太传播中心",
       "search": "",
-      "official_url": "https://www.52jingsai.com/article-23427-1.html",
-      "official_site": "",
+      "official_url": "",
+      "official_site": "http://cycupzt.52jingsai.com/",
       "organizer": "中国外文局亚太传播中心",
       "prestige": 7
     },
@@ -2984,7 +2984,7 @@
     {
       "id": "comp-52jingsai-bcce7b0c6e68",
       "name": "【英语词汇大赛】2026年第四届“外文奖”大学生英语词汇大赛报名通知！",
-      "official_url": "",
+      "official_url": "https://www.52jingsai.com/article-23427-1.html",
       "status": "open",
       "tier": "official",
       "signup": "即日起至2026年9月18日",
@@ -3006,7 +3006,7 @@
     {
       "id": "comp-52jingsai-b5cafbe9a2bb",
       "name": "第十九届“振兴杯”全国青年职业技能大赛",
-      "tier": "hobby",
+      "tier": "official",
       "fields": [
         "design"
       ],
@@ -3018,7 +3018,7 @@
       "official_url": "https://www.52jingsai.com/article-23522-1.html",
       "official_site": "",
       "organizer": "华夏文化促进会素质教育委员会",
-      "prestige": 4,
+      "prestige": 6,
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -3185,7 +3185,7 @@
     },
     {
       "id": "comp-saikr-621d8ad96385",
-      "name": "【周五截止】第四届“三晋杯”全国大学生英语演讲大赛",
+      "name": "第四届“三晋杯”全国大学生英语演讲大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3360,7 +3360,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -3652,6 +3652,29 @@
       "official_site": "",
       "organizer": "华智·高校组委会",
       "prestige": 3
+    },
+    {
+      "id": "comp-52jingsai-387816ac1709",
+      "name": "【词汇竞赛】2026年第五届创研杯大学生英语词汇竞赛（秋季赛）报名通知！",
+      "tier": "official",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-12-04",
+        "verified_at": "2026-08-09T09:40:55+08:00"
+      },
+      "signup": "即日起至2026年12月4日",
+      "schedule": "考试时间：10月24日（第一场）、12月5日（第二场）",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23524-1.html",
+      "official_site": "http://cycupzt.52jingsai.com/",
+      "organizer": "华夏文化促进会素质教育委员会",
+      "prestige": 6
     }
   ]
 }
