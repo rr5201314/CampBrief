@@ -27,8 +27,8 @@
           "stars_delta": 891,
           "trend_period": "today",
           "description": "Give your agent a computer 👾",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "Cloudflare 开源的「给 Agent 一台电脑」项目：基于 Durable Object 的虚拟文件系统，提供容器、隔离 shell、JavaScript 三种执行后端，当前为预览版。",
+          "solves_what": "解决 AI 代理缺乏持久、隔离、可编程执行环境的问题，让代理在沙箱中获得真实文件系统与命令执行能力。"
         },
         {
           "rank": 2,
@@ -40,8 +40,8 @@
           "stars_delta": 326,
           "trend_period": "today",
           "description": "Lightweight loop engineering state kernel for long-running AI agent teams. Agent-loop agnostic across Codex, Claude Code, and other coding agents, with durable goals, quota-aware auto-wake, executable todos, evidence logs, and verifiable handoffs.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "开源、厂商中立的长任务 Agent 控制平面（loop engineering 状态内核），用持久的目标、门禁、待办、证据与配额管理 Codex、Claude Code、Cursor 等代理的长期运行。",
+          "solves_what": "解决长周期代理任务目标漂移、证据过期、交接混乱、配额失控的问题，让多日工程与研究循环可复盘、可重启、可交接。"
         },
         {
           "rank": 3,
@@ -53,8 +53,8 @@
           "stars_delta": 1892,
           "trend_period": "today",
           "description": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "腾讯云开源的团队级 AI Agent 记忆中枢，将对话、文档和代码沉淀为聊天记忆、技能、LLM 百科与代码图谱四类可复用资产。",
+          "solves_what": "解决 AI Agent 记忆碎片化、跨会话与跨团队难以共享知识的问题，让团队协作经验可治理、可复用。"
         },
         {
           "rank": 4,
@@ -66,8 +66,8 @@
           "stars_delta": 303,
           "trend_period": "today",
           "description": "Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "知名开源系统设计学习资源（362k stars），系统讲解大规模系统设计原理，配套面试题解、Anki 记忆卡与多语言版本。",
+          "solves_what": "解决系统设计知识分散、备战系统设计面试无体系的问题，帮助工程师系统掌握可扩展系统设计。"
         },
         {
           "rank": 5,
@@ -79,8 +79,8 @@
           "stars_delta": 1582,
           "trend_period": "today",
           "description": "Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based PDFs to enable smart routing decisions.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "firecrawl 开源的 Rust 高性能 PDF 检测与文本提取库，可在约 20ms 内判断 PDF 是扫描件还是文本型，并决定走本地提取还是 OCR 服务。",
+          "solves_what": "解决 PDF 处理中扫描件与文本型文档混流导致的 OCR 成本浪费问题，通过智能分类路由降低延迟与费用。"
         },
         {
           "rank": 6,
@@ -92,8 +92,8 @@
           "stars_delta": 747,
           "trend_period": "today",
           "description": "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "DeepSeek 原生的终端 AI 编码代理，围绕前缀缓存稳定性设计、可长期驻留运行，支持 TUI、多工具调用与桌面端。",
+          "solves_what": "解决 DeepSeek 模型在编码代理场景中上下文缓存不稳定、频繁重算浪费成本的问题，让终端代理长时间高效运行。"
         },
         {
           "rank": 7,
@@ -105,8 +105,8 @@
           "stars_delta": 226,
           "trend_period": "today",
           "description": "Production-grade engineering skills for AI coding agents.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "Addy Osmani 开源的「生产级」AI 编程代理技能集，将资深工程师的规格、计划、构建、测试、审查、发布等工作流编码为可复用技能，可安装到 Claude Code、Codex、Cursor 等 70+ 代理。",
+          "solves_what": "解决 AI 编码代理默认走捷径、跳过规格与测试导致代码质量不稳的问题，让代理遵循工程纪律产出生产级代码。"
         },
         {
           "rank": 8,
@@ -118,8 +118,8 @@
           "stars_delta": 931,
           "trend_period": "today",
           "description": "An agentic skills framework & software development methodology that works.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "一套面向 AI 代理的软件开发方法论与技能框架，帮助工程团队组织可复用的工作流。（基于趋势描述整理）",
+          "solves_what": "解决代理式开发中流程混乱、经验难沉淀、任务质量不稳定的问题。"
         },
         {
           "rank": 9,
@@ -131,8 +131,8 @@
           "stars_delta": 146,
           "trend_period": "today",
           "description": "We write your reusable computer vision tools. 💜",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "Roboflow 开源的计算机视觉工具库，提供模型无关的目标检测、分割、追踪、标注与数据集处理等可复用组件。",
+          "solves_what": "解决 CV 应用开发中重复造轮子的问题，让开发者用统一工具链快速完成检测、追踪、计数与数据集管理。"
         },
         {
           "rank": 10,
@@ -144,8 +144,8 @@
           "stars_delta": 68,
           "trend_period": "today",
           "description": "The React Framework",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "Vercel 出品的 React 全栈框架，扩展最新 React 特性并结合 Rust 工具链，支持服务端渲染、静态生成与全栈应用开发。",
+          "solves_what": "解决 React 应用从开发到部署的工程化问题，提供统一的渲染、路由、构建与部署方案。"
         }
       ]
     },
