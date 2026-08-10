@@ -379,6 +379,16 @@
       "tier": "official",
       "prestige": 6,
       "note": "创研杯系列赛事主办方"
+    },
+    "中国福利会": {
+      "tier": "official",
+      "prestige": 7,
+      "note": "新概念作文大赛主办"
+    },
+    "萌芽": {
+      "tier": "official",
+      "prestige": 7,
+      "note": "萌芽杂志社承办新概念作文大赛"
     }
   },
   "competitions": {
@@ -653,6 +663,10 @@
       "tier": "hobby",
       "prestige": 3,
       "note": "2026华智·高校大学生人工智能大赛，50元报名费商业赛"
+    },
+    "新概念作文": {
+      "tier": "official",
+      "prestige": 7
     }
   },
   "fields_hints": {

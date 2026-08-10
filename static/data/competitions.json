@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-09T21:33:54+08:00",
+  "last_updated": "2026-08-10T10:57:50+08:00",
   "source": "CampBrief",
-  "total": 182,
+  "total": 183,
   "tiers": [
     {
       "key": "all",
@@ -2323,7 +2323,7 @@
       "fields": [
         "computer"
       ],
-      "status": "ongoing",
+      "status": "done",
       "signup": "即日起至2026年8月7日",
       "schedule": "第二场考试：2026年8月8日-8月9日（任选1小时作答）",
       "summary": "大连市计算机学会、苏州市计算机学会、天津市计算机学会联合主办，线上客观题竞赛，设C语言、C++、Python、Java四赛道，设一二三等奖及优秀奖，获奖可获三学会联合盖章电子+纸质证书。",
@@ -3115,7 +3115,7 @@
         "computer",
         "ai"
       ],
-      "status": "closed",
+      "status": "ongoing",
       "signup": "2026年6月12日至2026年8月1日",
       "schedule": "作品提交截止2026年8月9日，成果评议8月10-14日，终选展示8月22日",
       "summary": "赛事详情请访问信息来源页面",
@@ -3308,7 +3308,7 @@
       "fields": [
         "design"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -3360,7 +3360,7 @@
       "fields": [
         "language"
       ],
-      "status": "ongoing",
+      "status": "done",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -3629,12 +3629,12 @@
     },
     {
       "id": "comp-saikr-c137aa06257d",
-      "name": "【周日开考】2026华智·高校大学生人工智能大赛",
+      "name": "2026华智·高校大学生人工智能大赛",
       "tier": "hobby",
       "fields": [
         "ai"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -3675,6 +3675,30 @@
       "official_site": "http://cycupzt.52jingsai.com/",
       "organizer": "华夏文化促进会素质教育委员会",
       "prestige": 6
+    },
+    {
+      "id": "comp-52jingsai-7a1b82a1c128",
+      "name": "“临港智图”杯2026年第二十九届全国新概念作文大赛",
+      "tier": "official",
+      "fields": [
+        "literature"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-05-01",
+        "registration_end": "2026-11-10",
+        "verified_at": "2026-08-10T10:57:50+08:00"
+      },
+      "signup": "2026年5月1日起，征文截止2026年11月10日（以邮戳为准）",
+      "schedule": "初赛征文，11月10日截止；复赛在上海现场统一命题",
+      "summary": "中国福利会主办、《萌芽》杂志承办的全国性作文大赛（第29届），设大学生X组；初赛征文+上海现场复赛，获奖作品将在《萌芽》选登。",
+      "search": "新概念作文 萌芽 作文大赛 文学",
+      "official_url": "https://www.52jingsai.com/article-23689-1.html",
+      "official_site": "http://www.mengya.com",
+      "organizer": "中国福利会、萌芽杂志社",
+      "prestige": 7
     }
   ]
 }
