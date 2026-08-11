@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-10T21:39:03+08:00",
+  "last_updated": "2026-08-11T09:55:16+08:00",
   "source": "CampBrief",
-  "total": 183,
+  "total": 184,
   "tiers": [
     {
       "key": "all",
@@ -2833,7 +2833,7 @@
     },
     {
       "id": "comp-saikr-4604dd3e4d72",
-      "name": "【多校认可！最后机会！】第四届“BETT杯”大学生英语写作大赛",
+      "name": "【倒计时2天】第四届“BETT杯”大学生英语写作大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -2875,7 +2875,7 @@
     },
     {
       "id": "comp-saikr-8715b18b4de9",
-      "name": "【倒计时7天】第九届ETTBL杯全国英语语法大赛",
+      "name": "【倒计时5天】第九届ETTBL杯全国英语语法大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3407,7 +3407,7 @@
     },
     {
       "id": "comp-saikr-6ac61880bd78",
-      "name": "【倒计时9天】第四届“中外传播杯”大学生英语能力挑战赛",
+      "name": "【倒计时6天】第四届“中外传播杯”大学生英语能力挑战赛",
       "tier": "official",
       "fields": [
         "language"
@@ -3699,6 +3699,29 @@
       "official_site": "http://www.mengya.com",
       "organizer": "中国福利会、萌芽杂志社",
       "prestige": 7
+    },
+    {
+      "id": "comp-saikr-0eed3f253b2f",
+      "name": "第四届“一带一路”大学生英语演讲大赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "pending",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-08-11T09:55:16+08:00",
+        "review_after": "2026-08-14T09:55:16+08:00"
+      },
+      "signup": "",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/2026/YDYL/speech",
+      "official_site": "",
+      "organizer": "一带一路系列赛事组委会",
+      "prestige": 4
     }
   ]
 }
