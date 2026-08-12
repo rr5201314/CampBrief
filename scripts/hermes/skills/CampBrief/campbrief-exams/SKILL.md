@@ -87,6 +87,28 @@ if [ "$GATE_RC" -eq 0 ]; then
     git pull --ff-only || { rmdir "$LOCK_DIR"; exit 1; }
     git push || { rmdir "$LOCK_DIR"; exit 1; }
   fi
+  # === 修复：no_action 路径也必须刷新顶层 last_updated（gate 的 --touch-last-updated 在该路径不生效）===
+  NOW=$(python3 -c "from datetime import datetime, timezone, timedelta; print(datetime.now(timezone(timedelta(hours=8))).isoformat())")
+  python3 -c "
+import json
+with open('static/data/exams.json', 'r', encoding='utf-8') as f:
+    data = json.load(f)
+data['last_updated'] = '$NOW'
+with open('static/data/exams.json', 'w', encoding='utf-8') as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+    f.write('\n')
+"
+  python3 -m json.tool static/data/exams.json >/dev/null || { rmdir "$LOCK_DIR"; exit 1; }
+  python3 "$REPO/scripts/validate-exam-sources.py" || { rmdir "$LOCK_DIR"; exit 1; }
+  python3 "$REPO/scripts/check-carousel-health.py" || { rmdir "$LOCK_DIR"; exit 1; }
+  git -C "$REPO" diff --check || { rmdir "$LOCK_DIR"; exit 1; }
+  git add -- static/data/exams.json
+  if ! git diff --cached --quiet; then
+    git commit -m "chore(exams): update last_updated $(date +%Y-%m-%d)" || { rmdir "$LOCK_DIR"; exit 1; }
+  fi
+  git pull --ff-only || { rmdir "$LOCK_DIR"; exit 1; }
+  git push || { rmdir "$LOCK_DIR"; exit 1; }
+  # === 修复结束 ===
   rmdir "$LOCK_DIR"
   echo "批量脚本已完成，未产生新的 Hermes 兜底任务：$DECISION"
   exit 0
