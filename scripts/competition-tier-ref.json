@@ -389,6 +389,11 @@
       "tier": "official",
       "prestige": 7,
       "note": "萌芽杂志社承办新概念作文大赛"
+    },
+    "一带一路系列赛事组委会": {
+      "tier": "hobby",
+      "prestige": 4,
+      "note": "一带一路系列（翻译/演讲/文化/词汇）商业赛，赛氪发布"
     }
   },
   "competitions": {
