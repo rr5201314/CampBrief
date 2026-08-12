@@ -1,8 +1,222 @@
 {
-  "last_updated": "2026-08-12T10:26:49+08:00",
+  "last_updated": "2026-08-12T14:10:00+08:00",
   "source": "CampBrief Auto",
-  "total": 848,
+  "total": 864,
   "items": [
+    {
+      "id": "news-5405bc806b5b83d4",
+      "title": "Google 宣布 Gemini 月活突破 10 亿，Gemma 下载量同步破 10 亿",
+      "url": "https://daily.juya.uk/issues/2026-08-12/",
+      "published": "2026-08-12T01:50:54+00:00",
+      "summary": "Google CEO 皮查伊宣布 Gemini 应用月活跃用户突破 10 亿，成为谷歌历史上增长最快的产品；同期 Gemma 模型家族下载量也突破 10 亿次。",
+      "detail": "Gemini 是谷歌第 14 个达到 10 亿用户里程碑的产品。据谷歌数据，63% 的用户使用语音与 Gemini 交互，用户每天生成超过 1.5 亿张照片，超过 1 亿人在 iOS 上使用 Gemini。同一时期，Gemma 模型家族下载量也突破 10 亿次，显示开源模型生态持续扩张。",
+      "priority": 3,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-08-12",
+      "image": ""
+    },
+    {
+      "id": "news-f18447316be73eb7",
+      "title": "OpenAI 推出 ChatGPT 桌面应用 Linux 预览版",
+      "url": "https://daily.juya.uk/issues/2026-08-12/",
+      "published": "2026-08-12T01:50:54+00:00",
+      "summary": "OpenAI 正式推出 ChatGPT 桌面应用的 Linux 预览版，集成 ChatGPT、ChatGPT Work 和 Codex，支持 Ubuntu、Debian 与 Fedora，覆盖 x64 和 ARM64 架构。",
+      "detail": "该预览版支持用户在受支持的 Linux 系统上处理项目和使用浏览器工作流，覆盖 Ubuntu 24.04 LTS 与 26.04 LTS、Debian 13 以及 Fedora 43 和 44 桌面版本，用户可通过 .deb 或 .rpm 安装包安装。这一发布意味着 OpenAI 官方桌面端首次完整支持 Linux 平台。",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-08-12",
+      "image": ""
+    },
+    {
+      "id": "news-c7cfa61f5562950e",
+      "title": "SpaceXAI 发布 Grok Bot 云端 Agent，预告本周推出 Grok 4.6",
+      "url": "https://daily.juya.uk/issues/2026-08-12/",
+      "published": "2026-08-12T01:50:54+00:00",
+      "summary": "SpaceXAI 推出 Grok Bot 早期测试版，这是拥有独立云端计算机的 Agent，可登录已有工具和平台端到端完成多步骤任务，目前面向 SuperGrok Heavy 等订阅用户开放。",
+      "detail": "Grok Bot 拥有独立云端计算机，能登录用户已有的工具和应用，端到端完成多步骤任务；用户可同时运行多个 Bot，它们能互相通信、共享上下文并在群组中自主协调。目前面向 SuperGrok Heavy、Cursor Ultra 和 Cursor Teams Premium 订阅用户开放桌面端和 iOS 版。Elon Musk 表示修复早期问题后将扩大测试范围，并计划本周晚些时候发布 Grok 4.6。",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-08-12",
+      "image": ""
+    },
+    {
+      "id": "news-b511a20e4a17cfc0",
+      "title": "研究人员发现主流大模型可被跨模型越狱，提取明文隐藏推理",
+      "url": "https://daily.juya.uk/issues/2026-08-12/",
+      "published": "2026-08-12T01:50:54+00:00",
+      "summary": "研究团队称发现主流大模型 API 漏洞：加密推理块可在同提供商的不同会话、用户和模型间复用，通过注入弱模型越狱可提取出强模型的明文隐藏推理，适用于 Anthropic、OpenAI 和 Google 模型。",
+      "detail": "该研究通过将强大模型的加密推理块注入较弱的兼容模型并实施越狱，成功迫使弱模型逐字解密输出强模型的原始明文推理。研究人员称已按负责任披露程序向各 AI 实验室通报，实验室已修补了由此漏洞引起的多个问题。研究还从公开推理轨迹中扫描出 API 密钥和密码等敏感数据，并观察到模型真实推理过程与展示给用户的摘要存在明显差异。",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "juya AI 日报",
+      "date": "2026-08-12",
+      "image": ""
+    },
+    {
+      "id": "news-2c27a470869d1b34",
+      "title": "智谱 ZCode 用户破百万，重置订阅额度并上线闲时任务等功能",
+      "url": "https://daily.juya.uk/issues/2026-08-12/",
+      "published": "2026-08-12T01:50:54+00:00",
+      "summary": "智谱旗下 Harness 产品 ZCode 用户数突破一百万，并已重置全体 GLM Coding Plan 用户额度，同时上线低峰时段不扣额度的闲时任务等功能。",
+      "detail": "智谱宣布 ZCode 用户数突破一百万，于 8 月 11 日 13 点重置了全体 GLM Coding Plan 用户的额度。此次重大升级还上线了低峰时段自动执行且不扣额度的闲时任务、Goal 自主交付模式、Subagents 并行协作以及 Remote Control 移动端控制等功能。",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-08-12",
+      "image": ""
+    },
+    {
+      "id": "news-597531bc9e0cf771",
+      "title": "LTX 发布 LTX-2.5 开源世界模型，16GB 显存可本地运行",
+      "url": "https://daily.juya.uk/issues/2026-08-12/",
+      "published": "2026-08-12T01:50:54+00:00",
+      "summary": "LTX.io 发布开源世界模型 LTX-2.5，支持从文本、图像和视频生成高保真音视频，开放权重且最低 16GB 显存即可本地运行。",
+      "detail": "LTX-2.5 引入原生多镜头生成、扩散保真渲染以及定制的 Gemma 4 12B 文本编码器，提升画面细节和提示词遵循度。模型提供开放权重，允许用户使用自有数据进行微调，此前基于 LTX-2.3 训练的大多数 LoRA 可直接在 LTX-2.5 上运行。",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "juya AI 日报",
+      "date": "2026-08-12",
+      "image": ""
+    },
+    {
+      "id": "news-f3b9e21a7f48091c",
+      "title": "NVIDIA 开源 Nemotron 3.5 Lightning，30B MoE 仅激活 3B 参数",
+      "url": "https://daily.juya.uk/issues/2026-08-12/",
+      "published": "2026-08-12T01:50:54+00:00",
+      "summary": "NVIDIA 发布开源模型 Nemotron 3.5 Lightning：30B 总参数 MoE 架构每 token 仅激活 3B 参数，专为长期运行 Agent 的高频执行任务设计，支持 1M tokens 上下文。",
+      "detail": "该模型采用 Mamba-2 + MoE + Attention 混合架构，从 Nemotron 3 Ultra 蒸馏而来，支持高达 1M tokens 上下文长度。模型采用 OpenMDW-1.1 开放协议，权重、训练数据和配方均已公开，支持 DGX Spark、H100、GB200 等多种硬件部署，并已上线 OpenRouter 和 OpenCode 免费使用。",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "juya AI 日报",
+      "date": "2026-08-12",
+      "image": ""
+    },
+    {
+      "id": "news-50c4dd79076c9bfd",
+      "title": "Manus 恢复独立运营，部分用户数据将于 8 月 23 日起删除",
+      "url": "https://daily.juya.uk/issues/2026-08-12/",
+      "published": "2026-08-12T01:50:54+00:00",
+      "summary": "Manus 官方宣布即将恢复独立公司运营，作为与 Meta 分拆的一部分，部分用户在收购后产生的数据将于 8 月 23 日至 24 日删除，受影响用户需提前备份。",
+      "detail": "2025 年 12 月 29 日 Meta 收购了 Manus，为遵守特定司法辖区监管要求，部分用户在收购当天或之后产生的数据将被删除。受影响用户可在 8 月 23 日 07:59（新加坡时间）前使用官方备份工具备份，数据于 8 月 23 日至 24 日删除，8 月 25 日 08:00 起可恢复数据并正常使用。未受影响用户无需采取任何行动。",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-08-12",
+      "image": ""
+    },
+    {
+      "id": "news-42e9e3bf4a538a24",
+      "title": "通义千问前负责人林俊旸创立语用科技，进军具身智能",
+      "url": "https://daily.juya.uk/issues/2026-08-12/",
+      "published": "2026-08-12T01:50:54+00:00",
+      "summary": "通义千问前负责人林俊旸宣布在上海创立 Pragmatik Labs（语用科技），研发跨越数字和物理世界的下一代 Agent，融资由红杉中国和高榕创投领投。",
+      "detail": "语用科技致力于构建能执行知识工作的数字 Agent，以及能在真实环境中执行长程任务的物理或具身 Agent。林俊旸确认本轮融资由红杉中国和高榕创投领投，腾讯和上海未来产业基金提供支持。",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-08-12",
+      "image": ""
+    },
+    {
+      "id": "news-1403441787737f35",
+      "title": "Google AMIE 实时视频咨询在模拟测试中达到临床基准",
+      "url": "https://daily.juya.uk/issues/2026-08-12/",
+      "published": "2026-08-12T01:50:54+00:00",
+      "summary": "Google 医疗 AI 系统 AMIE 现可进行实时视频咨询，在模拟咨询随机研究中达到临床表现基准，目前仍是研究系统。",
+      "detail": "AMIE 基于 Gemini 和 Project Astra 构建，采用多智能体架构，能解读视觉和听觉线索、引导虚拟体检并实时进行诊断推理。在患者演员和初级保健医生参与的模拟咨询随机研究中，评估人员对 AMIE 的病史采集全面性、诊断准确性、管理适当性和沟通质量给予良好评价，患者演员也更倾向视频体验而非文本聊天。正式临床部署前仍需更多研究。",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "juya AI 日报",
+      "date": "2026-08-12",
+      "image": ""
+    },
+    {
+      "id": "news-8c4f986674900a6c",
+      "title": "Riot Platforms 与 Anthropic 达成 91 亿美元数据中心租赁协议",
+      "url": "https://daily.juya.uk/issues/2026-08-12/",
+      "published": "2026-08-12T01:50:54+00:00",
+      "summary": "据报道 Riot Platforms 与 Anthropic 达成约 91 亿美元的 20 年数据中心租赁协议，覆盖 191 兆瓦算力，含两次五年续约选项。",
+      "detail": "Riot Platforms 在季度财报中宣布与一家前沿 AI 实验室签署 20 年数据中心租赁协议，在其得克萨斯州 Rockdale 园区提供 191 兆瓦关键 IT 算力，预计初始合同期产生约 91 亿美元收入。据彭博社援引知情人士报道，该租户为 Anthropic，双方均未正式回应。若行使全部续约选项，总合同价值可达约 161 亿美元。",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "juya AI 日报",
+      "date": "2026-08-12",
+      "image": ""
+    },
+    {
+      "id": "news-81a1d187d8571e4d",
+      "title": "Bilibili 开源 IndexTTS-2.5 语音克隆模型，支持五语跨语种迁移",
+      "url": "https://daily.juya.uk/issues/2026-08-12/",
+      "published": "2026-08-12T01:50:54+00:00",
+      "summary": "Bilibili 旗下 Index SpeechTeam 开源零样本文本转语音模型 IndexTTS-2.5（0.8B 参数），支持中英日西阿五语语音克隆及跨语种迁移，代码与权重已发布。",
+      "detail": "相比上一代，IndexTTS-2.5 重构了推理架构以提升运行效率，并新增 0.5 倍至 2.0 倍语速控制功能，发音与情感控制能力增强。项目完整代码、模型权重及论文已在相关平台发布，采用 Bilibili Model License。该模型面向零样本语音克隆场景，支持中文、英语、日语、西班牙语和阿拉伯语。",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-08-12",
+      "image": ""
+    },
+    {
+      "id": "news-429b57e1e52b40b1",
+      "title": "ChatGPT 桌面应用与 Codex CLI 支持从其他 Agent 导入工作内容",
+      "url": "https://daily.juya.uk/issues/2026-08-12/",
+      "published": "2026-08-12T01:50:54+00:00",
+      "summary": "OpenAI 为 ChatGPT 桌面应用和 Codex CLI 新增 Agent 导入功能，可从 Claude Code、Claude Cowork 和 Cursor 迁移配置、项目与近期工作，支持自动同步。",
+      "detail": "ChatGPT 桌面应用支持从 Claude Code、Claude Cowork 和 Cursor 导入，Codex CLI 支持从 Claude Code 和 Cursor 导入，可迁移指令文件、设置、技能、插件、项目文件夹、MCP 服务器配置、hooks、subagents 及最近 30 天聊天记录等。ChatGPT 桌面应用还可开启自动更新，保持导入内容与原始 Agent 同步。",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-08-12",
+      "image": ""
+    },
+    {
+      "id": "news-29797994800b28d6",
+      "title": "Unsloth 发布开源桌面应用 Unsloth Desktop",
+      "url": "https://daily.juya.uk/issues/2026-08-12/",
+      "published": "2026-08-12T01:50:54+00:00",
+      "summary": "Unsloth 团队发布开源桌面应用 Unsloth Desktop Beta，支持在 Mac、Windows 和 Linux 本地运行和训练 LLM 等多种模型，覆盖 NVIDIA、AMD、Intel 和 Apple Silicon 芯片。",
+      "detail": "该应用支持本地运行和训练 LLM、图像与视频扩散、音频、MLX 及 GGUF 等模型，覆盖多类芯片及 CPU、多 GPU 设置。内置私有 Web 搜索、深度研究、RAG 和 MCP，并可通过 unsloth start 命令将本地模型连接至 Claude Code、Codex 等 Agent。",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "juya AI 日报",
+      "date": "2026-08-12",
+      "image": ""
+    },
+    {
+      "id": "news-c1183098e13cbe30",
+      "title": "OpenAI 推出 ChatGPT 工作区 Agent 功能",
+      "url": "https://daily.juya.uk/issues/2026-08-12/",
+      "published": "2026-08-12T01:50:54+00:00",
+      "summary": "OpenAI 在 ChatGPT 中推出工作区 Agent 功能，可将工作描述转化为可在团队间共享的 Agent，自动执行跨工具的多步骤工作流，目前处于研究预览阶段。",
+      "detail": "用户描述工作内容后，ChatGPT 可协助将其转化为能够在团队间共享的可用 Agent，用于自动执行审查潜在客户、生成报告和研究供应商等长期工作流。Agent 能跨 Slack、Google Drive 和 Microsoft SharePoint 等工具提取上下文，并在获批后执行更新工单或发送消息等操作。该功能面向 ChatGPT Business、Enterprise、Edu 和 Teachers 订阅方案开放。",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-08-12",
+      "image": ""
+    },
+    {
+      "id": "news-bc73d659446023ce",
+      "title": "科技公司高管称 AI 将减少工作时间，实际却增加了员工工时",
+      "url": "https://www.solidot.org/story?sid=85065",
+      "date": "2026-08-11",
+      "published": "2026-08-11T23:20:06+08:00",
+      "summary": "多家科技公司曾宣称 AI 将推动四天工作制，但前 OpenAI 员工透露公司从未试行，员工每周工作常超 70 小时。",
+      "detail": "四年前 Google 工程总监称 AI 将在 2025 年推动企业实行四天工作制，OpenAI 今年也鼓励企业试行。但前员工称 OpenAI 工作文化令人精疲力竭，冲刺开发期一周工作时长甚至超过 90 小时，同事会被突然解雇。一名现 AI 初创员工表示每周仍需工作 50-60 小时，仅比 OpenAI 略好。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "Solidot"
+    },
     {
       "id": "news-4adf08a9c1e1f48a",
       "title": "腾讯混元发布 WorldClaw：一句话生成可探索编辑的 3D 开放世界",
@@ -43,19 +257,6 @@
       "priority": 2,
       "category": "ai",
       "source": "Hacker News"
-    },
-    {
-      "id": "news-bc73d659446023ce",
-      "title": "科技公司高管称 AI 将减少工作时间，实际却增加了员工工时",
-      "url": "https://www.solidot.org/story?sid=85065",
-      "date": "2026-08-11",
-      "published": "2026-08-11T23:20:06+08:00",
-      "summary": "多家科技公司曾宣称 AI 将推动四天工作制，但前 OpenAI 员工透露公司从未试行，员工每周工作常超 70 小时。",
-      "detail": "四年前 Google 工程总监称 AI 将在 2025 年推动企业实行四天工作制，OpenAI 今年也鼓励企业试行。但前员工称 OpenAI 工作文化令人精疲力竭，冲刺开发期一周工作时长甚至超过 90 小时，同事会被突然解雇。一名现 AI 初创员工表示每周仍需工作 50-60 小时，仅比 OpenAI 略好。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "Solidot"
     },
     {
       "id": "news-e16c531acb9a4a6e",
@@ -218,6 +419,20 @@
       "priority": 2,
       "category": "ai",
       "source": "juya AI 日报"
+    },
+    {
+      "id": "news-0fb2acc27c191ef0",
+      "title": "Meta 发布 Muse Glimmer 30B 开源模型，预告 Muse Spark 1.2 权重",
+      "url": "https://daily.juya.uk/issues/2026-08-11/",
+      "published": "2026-08-11T01:40:07+00:00",
+      "summary": "Meta Superintelligence Labs 发布 Muse Glimmer 30B 开放权重模型，支持文本与图像多模态输入、128k 上下文，基准测试优于同级别 Gemma4-31B 和 Qwen3.6-27B。",
+      "detail": "Muse Glimmer 采用 Apache 2.0 许可，权重已在 Hugging Face 开放下载。该 Dense 模型总参数约 296 亿，包含约 18 亿参数的 ViT-G/14 感知编码器，支持 128k tokens 上下文。Meta 同时确认 Muse Spark 1.2 的开放权重也即将发布。",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "juya AI 日报",
+      "date": "2026-08-11",
+      "image": ""
     },
     {
       "id": "news-e6d26f9e714fba7b",
@@ -408,19 +623,6 @@
       "source": "juya AI 日报"
     },
     {
-      "id": "news-d78ddb037f86d3be",
-      "title": "Needle2：14MB 端侧智能体大模型",
-      "url": "https://cactuscompute.com/needle",
-      "date": "2026-08-10",
-      "published": "2026-08-10T17:22:07+00:00",
-      "summary": "Cactus Compute 发布 Needle2，一个仅 14MB 的端侧智能体大模型，面向手机、可穿戴设备、智能家居和机器人等微型设备。",
-      "detail": "Cactus Compute 推出的 Needle2 是一个 14MB 的 agentic LLM，支持工具调用、设备使用和结构化抽取，面向手机、可穿戴设备、智能家居、小型机器人等资源受限设备。模型尺寸极小，可在本地离线运行，为端侧 AI 应用提供轻量级智能体能力，代表了小模型在边缘设备上的最新进展。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "Hacker News"
-    },
-    {
       "id": "news-78b88869baa371b8",
       "title": "Meta 推出 300 亿参数开放权重模型 Muse Glimmer",
       "url": "https://www.solidot.org/story?sid=85054",
@@ -446,6 +648,19 @@
       "category": "tech",
       "source": "Solidot",
       "subcategory": "hardware"
+    },
+    {
+      "id": "news-d78ddb037f86d3be",
+      "title": "Needle2：14MB 端侧智能体大模型",
+      "url": "https://cactuscompute.com/needle",
+      "date": "2026-08-10",
+      "published": "2026-08-10T17:22:07+00:00",
+      "summary": "Cactus Compute 发布 Needle2，一个仅 14MB 的端侧智能体大模型，面向手机、可穿戴设备、智能家居和机器人等微型设备。",
+      "detail": "Cactus Compute 推出的 Needle2 是一个 14MB 的 agentic LLM，支持工具调用、设备使用和结构化抽取，面向手机、可穿戴设备、智能家居、小型机器人等资源受限设备。模型尺寸极小，可在本地离线运行，为端侧 AI 应用提供轻量级智能体能力，代表了小模型在边缘设备上的最新进展。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "Hacker News"
     },
     {
       "id": "news-d3a3ca930b6c1ab2",
@@ -531,20 +746,6 @@
       "subcategory": "software"
     },
     {
-      "id": "news-cb50b854f2a8ddb1",
-      "title": "研究：一条超长中断即可攻破 CPU 系统管理模式",
-      "url": "https://github.com/xoreaxeaxeax/smiiiiiiiiiiiiiiii",
-      "date": "2026-08-10",
-      "published": "2026-08-10T16:03:14+00:00",
-      "summary": "知名安全研究员 Christopher Domas 开源研究项目，展示仅用一条运行时间极长的机器指令即可攻破 x86 CPU 中最高特权的系统管理模式（SMM）。",
-      "detail": "安全研究员 Christopher Domas（xoreaxeaxeax）发布开源项目 smiiiiiiiiiiiiiiii，展示可以用一条超长运行的机器指令攻破 SMM——x86 CPU 后台运行的最高特权执行环境。项目通过定时 MMIO 读取观察 SMI 计数变化实现漏洞利用，附带示例代码，对理解 CPU 底层安全机制具有研究价值。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "software"
-    },
-    {
       "id": "news-03f364a65513d1cb",
       "title": "果糖会帮助癌细胞扩散",
       "url": "https://www.solidot.org/story?sid=85048",
@@ -558,17 +759,18 @@
       "source": "Solidot"
     },
     {
-      "id": "news-be1e850a10de6682",
-      "title": "消息称 Hassabis 原想离职被挽留转任 DeepMind 董事长",
-      "url": "https://daily.juya.uk/issues/2026-08-10/",
+      "id": "news-cb50b854f2a8ddb1",
+      "title": "研究：一条超长中断即可攻破 CPU 系统管理模式",
+      "url": "https://github.com/xoreaxeaxeax/smiiiiiiiiiiiiiiii",
       "date": "2026-08-10",
-      "published": "2026-08-10T01:33:07+00:00",
-      "summary": "消息称 Google DeepMind 前 CEO Hassabis 原想与 Jeff Dean 同时离职，被管理层挽留暂任董事长，说法尚未获官方确认。",
-      "detail": "据 Pathfounders 援引行业消息人士称，Google DeepMind 前 CEO Demis Hassabis 原本希望与 Jeff Dean 同时离职，但 Google 管理层担忧消息导致股价暴跌，说服其暂任 DeepMind 董事长，待局势稳定后再体面退出。Pathfounders 预测 Hassabis 将在一年内离开 Google，该说法尚未获得官方确认。",
+      "published": "2026-08-10T16:03:14+00:00",
+      "summary": "知名安全研究员 Christopher Domas 开源研究项目，展示仅用一条运行时间极长的机器指令即可攻破 x86 CPU 中最高特权的系统管理模式（SMM）。",
+      "detail": "安全研究员 Christopher Domas（xoreaxeaxeax）发布开源项目 smiiiiiiiiiiiiiiii，展示可以用一条超长运行的机器指令攻破 SMM——x86 CPU 后台运行的最高特权执行环境。项目通过定时 MMIO 读取观察 SMI 计数变化实现漏洞利用，附带示例代码，对理解 CPU 底层安全机制具有研究价值。",
       "image": "",
       "priority": 1,
-      "category": "ai",
-      "source": "juya AI 日报"
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "software"
     },
     {
       "id": "news-2b32908c5d0bbd44",
@@ -584,18 +786,17 @@
       "source": "少数派"
     },
     {
-      "id": "news-732fc92af12de4cf",
-      "title": "OpenChamber：开源的智能体开发环境，支持多模型并行与定时任务",
-      "url": "https://openchamber.dev/",
-      "date": "2026-08-09",
-      "published": "2026-08-09T17:27:16+00:00",
-      "summary": "开源智能体开发环境 OpenChamber 发布，基于 OpenCode SDK 构建：可设\"会话目标\"让代理持续工作、同一任务并行跑最多 5 个模型并融合最佳结果，支持从 GitHub issue 直达 PR、定时任务等，桌面、浏览器、手机与 VS Code 间同步。",
-      "detail": "OpenChamber 定位为面向 AI 编程的智能体开发环境（ADE），核心功能包括：Session Goals（设定完成目标后代理可连续多轮工作，应用关闭也继续）、Multi-run 与 Fusion（最多 5 个模型并行执行并融合最强部分）、代码变更分步讲解、以及浏览器/手机远程访问（可用密码门控）。项目开源免费，官方承诺代码与会话数据不离开本机，远程连接走端到端加密的 Private Relay。",
+      "id": "news-be1e850a10de6682",
+      "title": "消息称 Hassabis 原想离职被挽留转任 DeepMind 董事长",
+      "url": "https://daily.juya.uk/issues/2026-08-10/",
+      "date": "2026-08-10",
+      "published": "2026-08-10T01:33:07+00:00",
+      "summary": "消息称 Google DeepMind 前 CEO Hassabis 原想与 Jeff Dean 同时离职，被管理层挽留暂任董事长，说法尚未获官方确认。",
+      "detail": "据 Pathfounders 援引行业消息人士称，Google DeepMind 前 CEO Demis Hassabis 原本希望与 Jeff Dean 同时离职，但 Google 管理层担忧消息导致股价暴跌，说服其暂任 DeepMind 董事长，待局势稳定后再体面退出。Pathfounders 预测 Hassabis 将在一年内离开 Google，该说法尚未获得官方确认。",
       "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "software"
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
     },
     {
       "id": "news-5955ae7324dcb5f4",
@@ -610,6 +811,20 @@
       "category": "tech",
       "source": "Solidot",
       "subcategory": "industry"
+    },
+    {
+      "id": "news-732fc92af12de4cf",
+      "title": "OpenChamber：开源的智能体开发环境，支持多模型并行与定时任务",
+      "url": "https://openchamber.dev/",
+      "date": "2026-08-09",
+      "published": "2026-08-09T17:27:16+00:00",
+      "summary": "开源智能体开发环境 OpenChamber 发布，基于 OpenCode SDK 构建：可设\"会话目标\"让代理持续工作、同一任务并行跑最多 5 个模型并融合最佳结果，支持从 GitHub issue 直达 PR、定时任务等，桌面、浏览器、手机与 VS Code 间同步。",
+      "detail": "OpenChamber 定位为面向 AI 编程的智能体开发环境（ADE），核心功能包括：Session Goals（设定完成目标后代理可连续多轮工作，应用关闭也继续）、Multi-run 与 Fusion（最多 5 个模型并行执行并融合最强部分）、代码变更分步讲解、以及浏览器/手机远程访问（可用密码门控）。项目开源免费，官方承诺代码与会话数据不离开本机，远程连接走端到端加密的 Private Relay。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "software"
     },
     {
       "id": "news-5ff38009cd94ffd4",
@@ -1441,46 +1656,6 @@
       "source": "juya AI 日报"
     },
     {
-      "id": "news-f16064fcd5d50004",
-      "title": "国际刑警组织：AI 已驱动非洲过半网络犯罪",
-      "url": "https://www.africanews.com/2026/08/04/ai-fuels-more-than-half-of-cybercrime-in-africa-as-digital-scams-surge-interpol/",
-      "date": "2026-08-04",
-      "published": "2026-08-04T22:01:41+00:00",
-      "summary": "国际刑警组织报告称，AI 驱动的网络犯罪已占非洲网络犯罪一半以上，数字诈骗激增。",
-      "detail": "据国际刑警组织（Interpol）报告，随着生成式 AI 工具普及，非洲的网络犯罪中超过一半由 AI 驱动，数字诈骗活动激增。AI 降低了钓鱼攻击、深度伪造等犯罪手法的门槛，使大规模诈骗更容易实施。报告呼吁各国加强执法协作与公众防范意识。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "Hacker News"
-    },
-    {
-      "id": "news-7051863812fcfa1e",
-      "title": "OpenAI 披露第三方网络评估事件，强调测试环境标准升级",
-      "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/",
-      "date": "2026-08-04",
-      "published": "2026-08-04T21:14:19+00:00",
-      "summary": "OpenAI 披露近期第三方网络安全评估中，测试配置与模型能力叠加导致活动超出预定测试边界，呼吁行业升级评估环境标准。",
-      "detail": "OpenAI 发文说明，在近期两次由外部测试方参与的网络安全评估中，测试配置和控制与新一代模型能力叠加，使模型活动超出了预期测试边界。OpenAI 强调第三方独立测试对部署前风险验证的重要性，并呼吁行业协作升级测试环境与流程标准。文章注明该事件与 Hugging Face 安全事件无关。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "Hacker News"
-    },
-    {
-      "id": "news-d449a9e343112918",
-      "title": "Oxide Computer 完成 4.45 亿美元融资",
-      "url": "https://www.sec.gov/Archives/edgar/data/1795071/000179507126000002/xslFormDX01/primary_doc.xml",
-      "date": "2026-08-04",
-      "published": "2026-08-04T20:13:40+00:00",
-      "summary": "主打开源可破解机架级服务器的硬件公司 Oxide Computer 通过 SEC Form D 披露完成 4.45 亿美元融资。",
-      "detail": "Oxide Computer 是一家聚焦机架级（Rack-scale）基础设施的硬件创业公司，主张开源、可破解的服务器与云基础设施，创始团队包括前 Joyent CTO Bryan Cantrill。据 SEC Form D 文件，公司于 8 月 4 日提交文件披露本次 4.45 亿美元融资。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "hardware"
-    },
-    {
       "id": "news-6247e8c92bb92455",
       "title": "\"车企牌\"电池相继上车，与宁德时代相持竞争",
       "url": "https://36kr.com/p/3925382191708552?f=rss",
@@ -1509,6 +1684,32 @@
       "subcategory": "hardware"
     },
     {
+      "id": "news-f16064fcd5d50004",
+      "title": "国际刑警组织：AI 已驱动非洲过半网络犯罪",
+      "url": "https://www.africanews.com/2026/08/04/ai-fuels-more-than-half-of-cybercrime-in-africa-as-digital-scams-surge-interpol/",
+      "date": "2026-08-04",
+      "published": "2026-08-04T22:01:41+00:00",
+      "summary": "国际刑警组织报告称，AI 驱动的网络犯罪已占非洲网络犯罪一半以上，数字诈骗激增。",
+      "detail": "据国际刑警组织（Interpol）报告，随着生成式 AI 工具普及，非洲的网络犯罪中超过一半由 AI 驱动，数字诈骗活动激增。AI 降低了钓鱼攻击、深度伪造等犯罪手法的门槛，使大规模诈骗更容易实施。报告呼吁各国加强执法协作与公众防范意识。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-7051863812fcfa1e",
+      "title": "OpenAI 披露第三方网络评估事件，强调测试环境标准升级",
+      "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/",
+      "date": "2026-08-04",
+      "published": "2026-08-04T21:14:19+00:00",
+      "summary": "OpenAI 披露近期第三方网络安全评估中，测试配置与模型能力叠加导致活动超出预定测试边界，呼吁行业升级评估环境标准。",
+      "detail": "OpenAI 发文说明，在近期两次由外部测试方参与的网络安全评估中，测试配置和控制与新一代模型能力叠加，使模型活动超出了预期测试边界。OpenAI 强调第三方独立测试对部署前风险验证的重要性，并呼吁行业协作升级测试环境与流程标准。文章注明该事件与 Hugging Face 安全事件无关。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
       "id": "news-d37ce24b4d177620",
       "title": "FFmpeg 9.0 释出",
       "url": "https://www.solidot.org/story?sid=85005",
@@ -1521,6 +1722,20 @@
       "category": "tech",
       "source": "Solidot",
       "subcategory": "software"
+    },
+    {
+      "id": "news-d449a9e343112918",
+      "title": "Oxide Computer 完成 4.45 亿美元融资",
+      "url": "https://www.sec.gov/Archives/edgar/data/1795071/000179507126000002/xslFormDX01/primary_doc.xml",
+      "date": "2026-08-04",
+      "published": "2026-08-04T20:13:40+00:00",
+      "summary": "主打开源可破解机架级服务器的硬件公司 Oxide Computer 通过 SEC Form D 披露完成 4.45 亿美元融资。",
+      "detail": "Oxide Computer 是一家聚焦机架级（Rack-scale）基础设施的硬件创业公司，主张开源、可破解的服务器与云基础设施，创始团队包括前 Joyent CTO Bryan Cantrill。据 SEC Form D 文件，公司于 8 月 4 日提交文件披露本次 4.45 亿美元融资。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "hardware"
     },
     {
       "id": "news-0c0743d04300c0ba",
@@ -1826,6 +2041,19 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-31d40b6e7f8f978a",
+      "title": "奇点逃逸完成千万级种子轮融资，研发 AI 原生团队协作系统 Nexus",
+      "url": "https://36kr.com/p/3919025939246727",
+      "published": "2026-08-03T08:10:16+08:00",
+      "source": "36氪",
+      "category": "ai",
+      "priority": 2,
+      "summary": "清华博士薛传奕创办的奇点逃逸获星连资本与水木创投领投的千万级种子轮融资，正在研发 AI 原生团队协作操作系统 Nexus。",
+      "detail": "Nexus 以组织状态而非单次对话为出发点，让人、Agent、任务、知识和工具基于同一份状态持续协作，并通过真实任务反馈驱动 Agent 自进化：协作产生反馈，独立评测筛选改进，经治理机制决定采用或回滚。薛传奕认为 Agent 能力提升后新的瓶颈是协作断层——各自拥有完整上下文的 Agent 难以合并工作，Nexus 希望成为 AI 时代的组织基础设施。",
+      "date": "2026-08-03",
+      "image": ""
+    },
+    {
       "id": "news-14f40e0e40551bd1",
       "title": "Karpathy 用 Opus 5 测试 3D 世界生成，指出 LLM 世界建模仍有短板",
       "url": "https://x.com/karpathy/status/2083749667410727319",
@@ -1840,19 +2068,6 @@
       "source": "juya AI 日报"
     },
     {
-      "id": "news-31d40b6e7f8f978a",
-      "title": "奇点逃逸完成千万级种子轮融资，研发 AI 原生团队协作系统 Nexus",
-      "url": "https://36kr.com/p/3919025939246727",
-      "published": "2026-08-03T08:10:16+08:00",
-      "source": "36氪",
-      "category": "ai",
-      "priority": 2,
-      "summary": "清华博士薛传奕创办的奇点逃逸获星连资本与水木创投领投的千万级种子轮融资，正在研发 AI 原生团队协作操作系统 Nexus。",
-      "detail": "Nexus 以组织状态而非单次对话为出发点，让人、Agent、任务、知识和工具基于同一份状态持续协作，并通过真实任务反馈驱动 Agent 自进化：协作产生反馈，独立评测筛选改进，经治理机制决定采用或回滚。薛传奕认为 Agent 能力提升后新的瓶颈是协作断层——各自拥有完整上下文的 Agent 难以合并工作，Nexus 希望成为 AI 时代的组织基础设施。",
-      "date": "2026-08-03",
-      "image": ""
-    },
-    {
       "id": "news-f06e0d22b0adef59",
       "title": "Kakehashi：在 Linux ARM 上运行 macOS 二进制的开源翻译层",
       "url": "https://github.com/wie-project/kakehashi",
@@ -1865,19 +2080,6 @@
       "detail": "Kakehashi 采用 CLI 优先、无 JIT 的架构，在 Linux ARM64 上加载 Darwin Mach-O 文件，映射独立的 libSystem 并翻译 BSD 系统调用，已在 Docker、Colima 和 UTM 环境中验证可运行 7-Zip、curl 等真实程序。该项目与 Darling 无继承关系，采用 Apache-2.0 许可。",
       "date": "2026-08-03",
       "image": ""
-    },
-    {
-      "id": "news-d72886bf69826754",
-      "title": "前谷歌团队成员称谷歌曾在 ChatGPT 前开发类似产品 LMChat",
-      "url": "https://x.com/thsottiaux/status/2083596911060324570",
-      "date": "2026-08-03",
-      "published": "2026-08-03T01:18:49+00:00",
-      "summary": "Codex 负责人 Tibo 透露，谷歌在 ChatGPT 发布约一年前已开发出类似产品 LMChat，但因担忧冲击搜索业务未予发布。",
-      "detail": "Codex 负责人 Tibo 在回复网友时表示，谷歌在 ChatGPT 发布约一年前就已开发出类似产品，最初代号 LMChat，后改用另一代号，他本人曾在该团队工作。Tibo 称谷歌因担忧该产品冲击搜索业务而选择不发布，DeepMind 也曾被阻止推出可能颠覆谷歌的产品。此前有网友援引 Jeff Dean 采访称，谷歌在 ChatGPT 之前已有内部聊天机器人。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "juya AI 日报"
     },
     {
       "id": "news-ad10852663cd9f6b",
@@ -1904,6 +2106,19 @@
       "detail": "欧盟数字身份钱包的年龄验证方案依赖 Android TEE、StrongBox 或 Apple Secure Enclave 等受保护硬件存储密钥，防止凭据被克隆复用。维护者表示这是项目架构要求而非可省略的实现细节。批评者认为该方案将系统绑定到少量受认可的设备与系统，社区构建版本可能无法接入真实服务，开源身份系统能否保持开放仍悬而未决。",
       "date": "2026-08-03",
       "image": ""
+    },
+    {
+      "id": "news-d72886bf69826754",
+      "title": "前谷歌团队成员称谷歌曾在 ChatGPT 前开发类似产品 LMChat",
+      "url": "https://x.com/thsottiaux/status/2083596911060324570",
+      "date": "2026-08-03",
+      "published": "2026-08-03T01:18:49+00:00",
+      "summary": "Codex 负责人 Tibo 透露，谷歌在 ChatGPT 发布约一年前已开发出类似产品 LMChat，但因担忧冲击搜索业务未予发布。",
+      "detail": "Codex 负责人 Tibo 在回复网友时表示，谷歌在 ChatGPT 发布约一年前就已开发出类似产品，最初代号 LMChat，后改用另一代号，他本人曾在该团队工作。Tibo 称谷歌因担忧该产品冲击搜索业务而选择不发布，DeepMind 也曾被阻止推出可能颠覆谷歌的产品。此前有网友援引 Jeff Dean 采访称，谷歌在 ChatGPT 之前已有内部聊天机器人。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
     },
     {
       "id": "news-6ad01552d04968d7",
@@ -2033,6 +2248,19 @@
       "date": "2026-08-01"
     },
     {
+      "id": "news-987216fd53ad377f",
+      "title": "部分美国企业改用中国大模型以降低成本",
+      "url": "https://36kr.com/newsflashes/3920583026929281?f=rss",
+      "date": "2026-08-01",
+      "published": "2026-08-01T15:30:11+08:00",
+      "summary": "外媒报道称部分美国企业开始转向使用中国大模型以降低成本，加密货币交易所Coinbase表示正在切换。",
+      "detail": "据《华尔街日报》等媒体报道，随着中国大模型崛起，部分美国大型企业开始改用中国大模型以降低调用成本。报道提到月之暗面新一代开源模型Kimi K3震动市场，马斯克也称赞其表现。加密货币交易所Coinbase表示正在转向使用中国人工智能模型。此前OpenRouter数据显示近五成美国公司已调用中国AI模型。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "36氪"
+    },
+    {
       "id": "news-94062aaa8dfd6b85",
       "title": "OpenAI 公布数学与理论计算机科学十项进展",
       "url": "https://openai.com/index/ten-advances-in-mathematics/",
@@ -2045,19 +2273,6 @@
       "category": "tech",
       "subcategory": "ai-frontier",
       "source": "Hacker News"
-    },
-    {
-      "id": "news-987216fd53ad377f",
-      "title": "部分美国企业改用中国大模型以降低成本",
-      "url": "https://36kr.com/newsflashes/3920583026929281?f=rss",
-      "date": "2026-08-01",
-      "published": "2026-08-01T15:30:11+08:00",
-      "summary": "外媒报道称部分美国企业开始转向使用中国大模型以降低成本，加密货币交易所Coinbase表示正在切换。",
-      "detail": "据《华尔街日报》等媒体报道，随着中国大模型崛起，部分美国大型企业开始改用中国大模型以降低调用成本。报道提到月之暗面新一代开源模型Kimi K3震动市场，马斯克也称赞其表现。加密货币交易所Coinbase表示正在转向使用中国人工智能模型。此前OpenRouter数据显示近五成美国公司已调用中国AI模型。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "36氪"
     },
     {
       "id": "news-bf49de51d1b2c74c",
@@ -2126,19 +2341,6 @@
       "date": "2026-08-01"
     },
     {
-      "id": "news-b090be3ec7f9be8c",
-      "title": "经济学人：如何识别 AI 写作",
-      "url": "https://www.economist.com/culture/2026/07/30/how-to-spot-ai-writing",
-      "date": "2026-08-01",
-      "published": "2026-08-01T13:35:26+00:00",
-      "summary": "《经济学人》刊文分析AI写作的语言特征与识别方法，指出AI文本在用词和标点使用上存在可观察的模式。",
-      "detail": "《经济学人》发表长文讨论如何识别AI生成的写作。文章指出，大语言模型在词汇选择、破折号等标点使用上存在可识别的模式；AI正在撰写互联网上超过三分之一的新网页，也越来越多地参与学生论文写作。文章分析了AI文本与人类写作的风格差异，并提醒读者许多AI生成内容难以简单辨别。对于需要提交论文或内容的用户，这个话题具有现实参考价值。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "Hacker News"
-    },
-    {
       "id": "news-75a8bf5216dc047a",
       "title": "宝马向汽车显示屏推送蜘蛛侠全屏广告引发争议",
       "url": "https://www.solidot.org/story?sid=84980",
@@ -2150,6 +2352,19 @@
       "priority": 1,
       "category": "fun",
       "source": "Solidot"
+    },
+    {
+      "id": "news-b090be3ec7f9be8c",
+      "title": "经济学人：如何识别 AI 写作",
+      "url": "https://www.economist.com/culture/2026/07/30/how-to-spot-ai-writing",
+      "date": "2026-08-01",
+      "published": "2026-08-01T13:35:26+00:00",
+      "summary": "《经济学人》刊文分析AI写作的语言特征与识别方法，指出AI文本在用词和标点使用上存在可观察的模式。",
+      "detail": "《经济学人》发表长文讨论如何识别AI生成的写作。文章指出，大语言模型在词汇选择、破折号等标点使用上存在可识别的模式；AI正在撰写互联网上超过三分之一的新网页，也越来越多地参与学生论文写作。文章分析了AI文本与人类写作的风格差异，并提醒读者许多AI生成内容难以简单辨别。对于需要提交论文或内容的用户，这个话题具有现实参考价值。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "Hacker News"
     },
     {
       "id": "news-1a15fe1f9bfd6791",
@@ -2404,6 +2619,32 @@
       "source": "Solidot"
     },
     {
+      "id": "news-f245b7fa6d3cd453",
+      "title": "硅谷工程师观察：中层消失、Token狂热退潮，AI创业进入下半场",
+      "url": "https://36kr.com/p/3918250549931394?f=rss",
+      "published": "2026-07-31T08:30:54+08:00",
+      "summary": "硅谷一线工程师视角下，AI创业正经历中层岗位消失和Token经济泡沫消退的结构性变化。",
+      "detail": "36氪这篇深度报道从硅谷工程师的第一视角出发，描述了AI创业生态的最新变化：中间层公司大量消亡，Token定价的狂热已明显退潮，市场开始回归理性。报道指出，真正能存活的AI创业公司需要找到可持续的商业模式，而非依赖烧钱获取用户。对关注AI行业就业趋势的大学生有较强参考价值。",
+      "category": "ai",
+      "priority": 2,
+      "source": "36氪",
+      "date": "2026-07-31",
+      "image": ""
+    },
+    {
+      "id": "news-37c98626f8668d11",
+      "title": "高端算力持续涨价，头部企业探索Token工厂新模式",
+      "url": "https://36kr.com/newsflashes/3918818162306694?f=rss",
+      "published": "2026-07-31T08:27:58+08:00",
+      "summary": "高端算力价格持续上涨，部分头部企业开始探索Token工厂模式以降低推理成本。",
+      "detail": "随着AI大模型推理需求激增，高端算力供给持续紧张，价格水涨船高。部分头部企业开始探索所谓Token工厂模式，通过规模化部署和优化推理流水线来降低单Token成本。这一趋势反映出AI行业正从训练竞赛转向推理效率比拼，对依赖API调用的中小企业和开发者影响深远。",
+      "category": "ai",
+      "priority": 2,
+      "source": "36氪",
+      "date": "2026-07-31",
+      "image": ""
+    },
+    {
       "id": "news-c65a7cc387a98ff0",
       "title": "Thinking Machines 发布开源模型 Inkling-Small",
       "url": "https://thinkingmachines.ai/news/inkling-small/",
@@ -2498,32 +2739,6 @@
       "subcategory": "software"
     },
     {
-      "id": "news-f245b7fa6d3cd453",
-      "title": "硅谷工程师观察：中层消失、Token狂热退潮，AI创业进入下半场",
-      "url": "https://36kr.com/p/3918250549931394?f=rss",
-      "published": "2026-07-31T08:30:54+08:00",
-      "summary": "硅谷一线工程师视角下，AI创业正经历中层岗位消失和Token经济泡沫消退的结构性变化。",
-      "detail": "36氪这篇深度报道从硅谷工程师的第一视角出发，描述了AI创业生态的最新变化：中间层公司大量消亡，Token定价的狂热已明显退潮，市场开始回归理性。报道指出，真正能存活的AI创业公司需要找到可持续的商业模式，而非依赖烧钱获取用户。对关注AI行业就业趋势的大学生有较强参考价值。",
-      "category": "ai",
-      "priority": 2,
-      "source": "36氪",
-      "date": "2026-07-31",
-      "image": ""
-    },
-    {
-      "id": "news-37c98626f8668d11",
-      "title": "高端算力持续涨价，头部企业探索Token工厂新模式",
-      "url": "https://36kr.com/newsflashes/3918818162306694?f=rss",
-      "published": "2026-07-31T08:27:58+08:00",
-      "summary": "高端算力价格持续上涨，部分头部企业开始探索Token工厂模式以降低推理成本。",
-      "detail": "随着AI大模型推理需求激增，高端算力供给持续紧张，价格水涨船高。部分头部企业开始探索所谓Token工厂模式，通过规模化部署和优化推理流水线来降低单Token成本。这一趋势反映出AI行业正从训练竞赛转向推理效率比拼，对依赖API调用的中小企业和开发者影响深远。",
-      "category": "ai",
-      "priority": 2,
-      "source": "36氪",
-      "date": "2026-07-31",
-      "image": ""
-    },
-    {
       "id": "news-bb7a920c490f9113",
       "title": "国内首个 Maker Tool 行业联盟成立",
       "url": "https://36kr.com/p/3919301778288261?f=rss",
@@ -2549,6 +2764,33 @@
       "priority": 1,
       "category": "ai",
       "source": "少数派"
+    },
+    {
+      "id": "news-61d7f593b01a606f",
+      "title": "亚马逊CEO预计算力强劲需求将持续至2028年",
+      "url": "https://36kr.com/newsflashes/3918817466199681?f=rss",
+      "published": "2026-07-31T08:27:16+08:00",
+      "summary": "亚马逊CEO表示AI驱动的算力需求将在未来两年保持强劲增长态势。",
+      "detail": "亚马逊CEO在最新表态中指出，AI应用对算力的强劲需求预计将持续到2028年。这一判断与谷歌、微软等科技巨头近期大幅增加AI基础设施资本开支的趋势一致。当前全球主要云服务商正经历自由现金流急剧下降的压力，但均押注AI数据中心是未来增长的核心引擎。",
+      "category": "ai",
+      "priority": 1,
+      "source": "36氪",
+      "date": "2026-07-31",
+      "image": ""
+    },
+    {
+      "id": "news-fcf406a65e733eeb",
+      "title": "工信部推动新一代动力电池、车规级芯片、车用操作系统创新应用",
+      "url": "https://36kr.com/newsflashes/3918816534130057?f=rss",
+      "published": "2026-07-31T08:26:19+08:00",
+      "summary": "工信部发文推动动力电池、车规级芯片和车用操作系统等核心技术的创新应用。",
+      "detail": "工信部发布政策文件，明确推动新一代动力电池、车规级芯片和车用操作系统等关键技术的创新应用。这一举措旨在加速新能源汽车产业链自主可控进程，减少对进口芯片和操作系统的依赖。对软件工程和硬件相关专业的学生而言，国产车规级芯片和操作系统领域正成为重要就业方向。",
+      "category": "tech",
+      "subcategory": "hardware",
+      "priority": 1,
+      "source": "36氪",
+      "date": "2026-07-31",
+      "image": ""
     },
     {
       "id": "news-8cb2c56acb4e3b5b",
@@ -2666,33 +2908,6 @@
       "priority": 1,
       "category": "ai",
       "source": "juya AI 日报"
-    },
-    {
-      "id": "news-61d7f593b01a606f",
-      "title": "亚马逊CEO预计算力强劲需求将持续至2028年",
-      "url": "https://36kr.com/newsflashes/3918817466199681?f=rss",
-      "published": "2026-07-31T08:27:16+08:00",
-      "summary": "亚马逊CEO表示AI驱动的算力需求将在未来两年保持强劲增长态势。",
-      "detail": "亚马逊CEO在最新表态中指出，AI应用对算力的强劲需求预计将持续到2028年。这一判断与谷歌、微软等科技巨头近期大幅增加AI基础设施资本开支的趋势一致。当前全球主要云服务商正经历自由现金流急剧下降的压力，但均押注AI数据中心是未来增长的核心引擎。",
-      "category": "ai",
-      "priority": 1,
-      "source": "36氪",
-      "date": "2026-07-31",
-      "image": ""
-    },
-    {
-      "id": "news-fcf406a65e733eeb",
-      "title": "工信部推动新一代动力电池、车规级芯片、车用操作系统创新应用",
-      "url": "https://36kr.com/newsflashes/3918816534130057?f=rss",
-      "published": "2026-07-31T08:26:19+08:00",
-      "summary": "工信部发文推动动力电池、车规级芯片和车用操作系统等核心技术的创新应用。",
-      "detail": "工信部发布政策文件，明确推动新一代动力电池、车规级芯片和车用操作系统等关键技术的创新应用。这一举措旨在加速新能源汽车产业链自主可控进程，减少对进口芯片和操作系统的依赖。对软件工程和硬件相关专业的学生而言，国产车规级芯片和操作系统领域正成为重要就业方向。",
-      "category": "tech",
-      "subcategory": "hardware",
-      "priority": 1,
-      "source": "36氪",
-      "date": "2026-07-31",
-      "image": ""
     },
     {
       "id": "news-608ad231dd308d2b",
@@ -3203,6 +3418,19 @@
       "subcategory": "hardware"
     },
     {
+      "id": "news-7300a479e0a0e73b",
+      "title": "微软发布网络安全模型 MAI-Cyber-1-Flash，美团上线 AI Agent 平台",
+      "url": "https://sspai.com/post/112837",
+      "date": "2026-07-29",
+      "published": "2026-07-29T08:39:00+08:00",
+      "summary": "少数派早报汇总微软安全模型与美团 Agent 平台两项 AI 动态。",
+      "detail": "这条早报覆盖了微软推出网络安全专用模型，以及美团发布面向多端协作的 AI Agent 平台两件事。信息密度尚可，但属于二次汇总，不适合作为头条，更适合补充读者当天 AI 产品动向。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "少数派"
+    },
+    {
       "id": "news-d3a7e3de96730287",
       "title": "OpenAI 上线 GPT Live Transcribe 和 GPT Transcribe 转录模型",
       "url": "https://x.com/OpenAIDevs/status/2082201169443905798",
@@ -3283,19 +3511,6 @@
       "subcategory": "industry"
     },
     {
-      "id": "news-7300a479e0a0e73b",
-      "title": "微软发布网络安全模型 MAI-Cyber-1-Flash，美团上线 AI Agent 平台",
-      "url": "https://sspai.com/post/112837",
-      "date": "2026-07-29",
-      "published": "2026-07-29T08:39:00+08:00",
-      "summary": "少数派早报汇总微软安全模型与美团 Agent 平台两项 AI 动态。",
-      "detail": "这条早报覆盖了微软推出网络安全专用模型，以及美团发布面向多端协作的 AI Agent 平台两件事。信息密度尚可，但属于二次汇总，不适合作为头条，更适合补充读者当天 AI 产品动向。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "少数派"
-    },
-    {
       "id": "news-addda37b842848ad",
       "title": "恩智浦第二财季营收增长 19%",
       "url": "https://36kr.com/newsflashes/3915981645819272?f=rss",
@@ -3310,19 +3525,6 @@
       "subcategory": "hardware"
     },
     {
-      "id": "news-46e132fe32d2163e",
-      "title": "OpenAI 开源 Codex Security 安全代理",
-      "url": "https://github.com/openai/codex-security",
-      "date": "2026-07-28",
-      "published": "2026-07-28T20:52:55+00:00",
-      "summary": "OpenAI 发布面向代码安全审查的开源代理 Codex Security。",
-      "detail": "该项目聚焦代码与依赖安全检查，可用于发现漏洞、审阅变更和强化开发流程。Hacker News 讨论度较高，说明其在开发者工具链中关注度上升。对学生开发者而言，这是观察 AI 安全编程实践的直接样本。",
-      "image": "",
-      "priority": 4,
-      "category": "ai",
-      "source": "Hacker News"
-    },
-    {
       "id": "news-ed34a2a32bea60fb",
       "title": "中国启动 DUV 光刻机小规模量产",
       "url": "https://www.solidot.org/story?sid=84947",
@@ -3335,6 +3537,19 @@
       "category": "tech",
       "source": "Solidot",
       "subcategory": "hardware"
+    },
+    {
+      "id": "news-46e132fe32d2163e",
+      "title": "OpenAI 开源 Codex Security 安全代理",
+      "url": "https://github.com/openai/codex-security",
+      "date": "2026-07-28",
+      "published": "2026-07-28T20:52:55+00:00",
+      "summary": "OpenAI 发布面向代码安全审查的开源代理 Codex Security。",
+      "detail": "该项目聚焦代码与依赖安全检查，可用于发现漏洞、审阅变更和强化开发流程。Hacker News 讨论度较高，说明其在开发者工具链中关注度上升。对学生开发者而言，这是观察 AI 安全编程实践的直接样本。",
+      "image": "",
+      "priority": 4,
+      "category": "ai",
+      "source": "Hacker News"
     },
     {
       "id": "news-98f06e78e97ffc20",
@@ -4330,6 +4545,20 @@
       "source": "36氪"
     },
     {
+      "id": "news-0a6229735d28aca0",
+      "title": "Acrab发布5纳米边缘AI芯片GELIX 1和个人AI系统Agent Box",
+      "url": "https://sspai.com/post/112677",
+      "date": "2026-07-24",
+      "published": "2026-07-24T08:33:05+08:00",
+      "summary": "Acrab发布5纳米边缘AI芯片GELIX 1，可在本地运行最高约千亿参数级开源模型。",
+      "detail": "GELIX 1采用CPU、GPU与NPU融合架构，配备20核Arm CPU和273GB/s统一内存带宽。官方称其可在本地运行最高约千亿参数级开源模型，并在Gemma 26B测试中显著快于Mac mini M4 Pro。基于该芯片的Agent Box定位个人AI中心，支持本地推理、多模态交互、长期记忆和Agent编排。产品强调减少云端依赖、提升响应速度并加强隐私保护。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "少数派",
+      "subcategory": "hardware"
+    },
+    {
       "id": "news-594ba55dd866c25f",
       "title": "蚂蚁百灵发布 Ling-3.0-flash 混合推理模型，多平台限时免费",
       "url": "https://daily.juya.uk/issues/2026-07-24/",
@@ -4432,20 +4661,6 @@
       "source": "juya AI 日报",
       "date": "2026-07-24",
       "image": ""
-    },
-    {
-      "id": "news-0a6229735d28aca0",
-      "title": "Acrab发布5纳米边缘AI芯片GELIX 1和个人AI系统Agent Box",
-      "url": "https://sspai.com/post/112677",
-      "date": "2026-07-24",
-      "published": "2026-07-24T08:33:05+08:00",
-      "summary": "Acrab发布5纳米边缘AI芯片GELIX 1，可在本地运行最高约千亿参数级开源模型。",
-      "detail": "GELIX 1采用CPU、GPU与NPU融合架构，配备20核Arm CPU和273GB/s统一内存带宽。官方称其可在本地运行最高约千亿参数级开源模型，并在Gemma 26B测试中显著快于Mac mini M4 Pro。基于该芯片的Agent Box定位个人AI中心，支持本地推理、多模态交互、长期记忆和Agent编排。产品强调减少云端依赖、提升响应速度并加强隐私保护。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "少数派",
-      "subcategory": "hardware"
     },
     {
       "id": "news-f7abd8d042caaf8c",
@@ -4580,6 +4795,19 @@
       "image": ""
     },
     {
+      "id": "news-99c812cc21e9957e",
+      "title": "公募基金 AI 投资图谱：算力端「吃饱」，应用层「等风」",
+      "url": "https://36kr.com/newsflashes/3908893856306562?f=rss",
+      "published": "2026-07-24 08:22:24  +0800",
+      "summary": "公募基金 AI 投资呈现分化格局，算力端获资金追捧，应用层仍在等待爆发。",
+      "detail": "从公募基金二季报来看，AI 投资呈现明显的结构性分化。算力基础设施相关标的受到资金热捧，多家基金重仓布局。但 AI 应用层投资则相对冷清，基金普遍认为应用端商业模式尚未成熟，仍在「等风来」。这种分化反映了市场对 AI 产业链不同环节的价值判断差异。",
+      "category": "ai",
+      "source": "36氪",
+      "priority": 1,
+      "image": "",
+      "date": "2026-07-24"
+    },
+    {
       "id": "news-af4c49d677e93d36",
       "title": "AI 全面未来的分类学：一份关于 AI 灭绝风险的系统研究",
       "url": "https://arxiv.org/abs/2507.09369",
@@ -4647,19 +4875,6 @@
       "date": "2026-07-24"
     },
     {
-      "id": "news-99c812cc21e9957e",
-      "title": "公募基金 AI 投资图谱：算力端「吃饱」，应用层「等风」",
-      "url": "https://36kr.com/newsflashes/3908893856306562?f=rss",
-      "published": "2026-07-24 08:22:24  +0800",
-      "summary": "公募基金 AI 投资呈现分化格局，算力端获资金追捧，应用层仍在等待爆发。",
-      "detail": "从公募基金二季报来看，AI 投资呈现明显的结构性分化。算力基础设施相关标的受到资金热捧，多家基金重仓布局。但 AI 应用层投资则相对冷清，基金普遍认为应用端商业模式尚未成熟，仍在「等风来」。这种分化反映了市场对 AI 产业链不同环节的价值判断差异。",
-      "category": "ai",
-      "source": "36氪",
-      "priority": 1,
-      "image": "",
-      "date": "2026-07-24"
-    },
-    {
       "id": "news-49b11203fc137927",
       "title": "白宫指控月之暗面非法蒸馏 Anthropic 模型开发 Kimi K3 并威胁制裁",
       "url": "https://daily.juya.uk/issues/2026-07-23/",
@@ -4710,32 +4925,6 @@
       "priority": 2,
       "image": "",
       "date": "2026-07-23"
-    },
-    {
-      "id": "news-dde3e92c2513bb02",
-      "title": "灵初智能以 14.8 亿美元估值融资近 1 亿美元",
-      "url": "https://36kr.com/newsflashes/3907726672090241",
-      "date": "2026-07-23",
-      "published": "2026-07-23 12:25:08 +0800",
-      "summary": "具身智能公司灵初智能正以 14.8 亿美元估值进行新一轮融资，金额近 1 亿美元。",
-      "detail": "据市场消息，灵初智能正在完成新一轮融资，估值达 14.8 亿美元（约合人民币 107 亿元），融资金额接近 1 亿美元。灵初智能专注于具身智能和人形机器人领域，是国内该赛道的头部创业公司之一。此次融资反映出资本市场对人形机器人和具身智能赛道的持续看好。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "36氪"
-    },
-    {
-      "id": "news-859b1b0626d9de13",
-      "title": "腾讯副总裁林松涛：Marvis 聚焦端侧系统级操作，不拼通用能力",
-      "url": "https://36kr.com/p/3907676111983745",
-      "date": "2026-07-23",
-      "published": "2026-07-23 12:23:24 +0800",
-      "summary": "腾讯副总裁林松涛表示，旗下 AI 产品 Marvis 不追求通用大模型能力，而是专注做好端侧系统级操作。",
-      "detail": "林松涛在采访中指出，当前大模型行业存在过度追求通用能力的现象，而 Marvis 选择差异化路线，聚焦在手机端侧实现系统级 AI 操作。他认为端侧 AI 是未来重要方向，能在隐私保护和低延迟方面提供更好体验。这一策略反映了国内 AI 产品正从盲目追求参数规模转向实际应用场景深耕。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "36氪"
     },
     {
       "id": "news-d3ff6aefe16a85bc",
@@ -4881,6 +5070,59 @@
       "date": "2026-07-23"
     },
     {
+      "id": "news-dde3e92c2513bb02",
+      "title": "灵初智能以 14.8 亿美元估值融资近 1 亿美元",
+      "url": "https://36kr.com/newsflashes/3907726672090241",
+      "date": "2026-07-23",
+      "published": "2026-07-23 12:25:08 +0800",
+      "summary": "具身智能公司灵初智能正以 14.8 亿美元估值进行新一轮融资，金额近 1 亿美元。",
+      "detail": "据市场消息，灵初智能正在完成新一轮融资，估值达 14.8 亿美元（约合人民币 107 亿元），融资金额接近 1 亿美元。灵初智能专注于具身智能和人形机器人领域，是国内该赛道的头部创业公司之一。此次融资反映出资本市场对人形机器人和具身智能赛道的持续看好。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "36氪"
+    },
+    {
+      "id": "news-859b1b0626d9de13",
+      "title": "腾讯副总裁林松涛：Marvis 聚焦端侧系统级操作，不拼通用能力",
+      "url": "https://36kr.com/p/3907676111983745",
+      "date": "2026-07-23",
+      "published": "2026-07-23 12:23:24 +0800",
+      "summary": "腾讯副总裁林松涛表示，旗下 AI 产品 Marvis 不追求通用大模型能力，而是专注做好端侧系统级操作。",
+      "detail": "林松涛在采访中指出，当前大模型行业存在过度追求通用能力的现象，而 Marvis 选择差异化路线，聚焦在手机端侧实现系统级 AI 操作。他认为端侧 AI 是未来重要方向，能在隐私保护和低延迟方面提供更好体验。这一策略反映了国内 AI 产品正从盲目追求参数规模转向实际应用场景深耕。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "36氪"
+    },
+    {
+      "id": "news-e295adaed67b0a6b",
+      "title": "科学家发现给工蜂分配工作的隐蔽开关",
+      "url": "https://www.solidot.org/story?sid=84907",
+      "published": "2026-07-23T23:10:18+08:00",
+      "summary": "研究发现蜜蜂大脑中存在一个隐蔽的神经机制，可决定工蜂从事采蜜还是护巢工作。",
+      "detail": "一项最新研究揭示了蜜蜂社会分工的神经基础：工蜂大脑中存在一个此前未知的「开关」机制，可以调控个体是外出采蜜还是留守巢穴负责照料幼虫和防御。这一发现不仅加深了对昆虫社会行为的理解，也为群体智能和自组织系统的研究提供了新视角。",
+      "category": "fun",
+      "source": "Solidot",
+      "priority": 1,
+      "image": "",
+      "date": "2026-07-23"
+    },
+    {
+      "id": "news-66ef5e30b0a5260b",
+      "title": "Codeberg 拒绝托管「Vibe-Coded」项目",
+      "url": "https://www.solidot.org/story?sid=84906",
+      "published": "2026-07-23T18:44:38+08:00",
+      "summary": "开源代码托管平台 Codeberg 明确拒绝托管完全由 AI 生成的「vibe-coded」项目。",
+      "detail": "开源代码托管平台 Codeberg 宣布将拒绝托管完全由 AI 生成代码（即所谓「vibe-coded」）的项目。这一决定引发了开源社区的广泛讨论：支持者认为 AI 批量生成的代码质量参差不齐，会增加平台维护负担；反对者则认为这违背了开源精神。该事件折射出 AI 生成代码对开源生态的深层冲击。",
+      "category": "tech",
+      "subcategory": "software",
+      "source": "Solidot",
+      "priority": 1,
+      "image": "",
+      "date": "2026-07-23"
+    },
+    {
       "id": "news-f9b91613792909e1",
       "title": "OneCLI：开源凭证网关，防止 AI 代理泄露密钥",
       "url": "https://github.com/onecli/onecli",
@@ -4889,6 +5131,19 @@
       "detail": "随着 AI 代理工具的普及，密钥和凭证安全成为新痛点。OneCLI 是一个开源的凭证网关，它在 AI 代理和外部服务之间建立安全层，确保 API 密钥等敏感信息不会被传递给 AI 模型。该项目解决了 AI 代理工作流中的实际安全隐患，对使用 AI 编程工具的开发者有直接参考价值。",
       "category": "ai",
       "source": "Hacker News",
+      "priority": 1,
+      "image": "",
+      "date": "2026-07-23"
+    },
+    {
+      "id": "news-b89a4e09caa6083b",
+      "title": "法国禁止 15 岁以下儿童使用社交媒体",
+      "url": "https://www.solidot.org/story?sid=84902",
+      "published": "2026-07-23T15:34:40+08:00",
+      "summary": "法国通过立法禁止 15 岁以下未成年人使用社交媒体，成为全球最严格的类似法规之一。",
+      "detail": "法国正式通过立法，全面禁止 15 岁以下未成年人使用社交媒体平台。这项法规是全球范围内针对青少年网络保护的最严格措施之一，要求社交平台实施年龄验证机制。此举引发了关于青少年数字权利、网络自由与保护之间平衡的广泛讨论。",
+      "category": "fun",
+      "source": "Solidot",
       "priority": 1,
       "image": "",
       "date": "2026-07-23"
@@ -4922,46 +5177,6 @@
       "date": "2026-07-23"
     },
     {
-      "id": "news-e295adaed67b0a6b",
-      "title": "科学家发现给工蜂分配工作的隐蔽开关",
-      "url": "https://www.solidot.org/story?sid=84907",
-      "published": "2026-07-23T23:10:18+08:00",
-      "summary": "研究发现蜜蜂大脑中存在一个隐蔽的神经机制，可决定工蜂从事采蜜还是护巢工作。",
-      "detail": "一项最新研究揭示了蜜蜂社会分工的神经基础：工蜂大脑中存在一个此前未知的「开关」机制，可以调控个体是外出采蜜还是留守巢穴负责照料幼虫和防御。这一发现不仅加深了对昆虫社会行为的理解，也为群体智能和自组织系统的研究提供了新视角。",
-      "category": "fun",
-      "source": "Solidot",
-      "priority": 1,
-      "image": "",
-      "date": "2026-07-23"
-    },
-    {
-      "id": "news-66ef5e30b0a5260b",
-      "title": "Codeberg 拒绝托管「Vibe-Coded」项目",
-      "url": "https://www.solidot.org/story?sid=84906",
-      "published": "2026-07-23T18:44:38+08:00",
-      "summary": "开源代码托管平台 Codeberg 明确拒绝托管完全由 AI 生成的「vibe-coded」项目。",
-      "detail": "开源代码托管平台 Codeberg 宣布将拒绝托管完全由 AI 生成代码（即所谓「vibe-coded」）的项目。这一决定引发了开源社区的广泛讨论：支持者认为 AI 批量生成的代码质量参差不齐，会增加平台维护负担；反对者则认为这违背了开源精神。该事件折射出 AI 生成代码对开源生态的深层冲击。",
-      "category": "tech",
-      "subcategory": "software",
-      "source": "Solidot",
-      "priority": 1,
-      "image": "",
-      "date": "2026-07-23"
-    },
-    {
-      "id": "news-b89a4e09caa6083b",
-      "title": "法国禁止 15 岁以下儿童使用社交媒体",
-      "url": "https://www.solidot.org/story?sid=84902",
-      "published": "2026-07-23T15:34:40+08:00",
-      "summary": "法国通过立法禁止 15 岁以下未成年人使用社交媒体，成为全球最严格的类似法规之一。",
-      "detail": "法国正式通过立法，全面禁止 15 岁以下未成年人使用社交媒体平台。这项法规是全球范围内针对青少年网络保护的最严格措施之一，要求社交平台实施年龄验证机制。此举引发了关于青少年数字权利、网络自由与保护之间平衡的广泛讨论。",
-      "category": "fun",
-      "source": "Solidot",
-      "priority": 1,
-      "image": "",
-      "date": "2026-07-23"
-    },
-    {
       "id": "news-4de461a52a1869df",
       "title": "美国陆军也耗尽 AI Token 配额，要求限制使用",
       "url": "https://www.solidot.org/story?sid=84900",
@@ -4973,72 +5188,6 @@
       "priority": 1,
       "image": "",
       "date": "2026-07-23"
-    },
-    {
-      "id": "news-281948762cd4fe3b",
-      "title": "Deeplore 完成数千万元种子轮融资",
-      "url": "https://36kr.com/newsflashes/3907716402582912",
-      "date": "2026-07-23",
-      "published": "2026-07-23 12:45:36 +0800",
-      "summary": "AI 创业公司 Deeplore 近日完成数千万元种子轮融资，专注于深度知识检索技术。",
-      "detail": "Deeplore 是一家专注于深度知识检索和知识图谱技术的 AI 创业公司，近日完成了数千万元的种子轮融资。公司的技术方向聚焦于让 AI 系统更深入地理解和检索结构化知识，而非仅依赖表面文本匹配。该轮融资将用于技术研发和团队扩张。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "36氪"
-    },
-    {
-      "id": "news-97f3a0a30ec99745",
-      "title": "美的等入股钧舵机器人，加速布局人形机器人赛道",
-      "url": "https://36kr.com/newsflashes/3907709033747840",
-      "date": "2026-07-23",
-      "published": "2026-07-23 12:30:06 +0800",
-      "summary": "家电巨头美的集团入股钧舵机器人，进一步布局人形机器人产业。",
-      "detail": "美的集团通过战略投资入股钧舵机器人，后者专注于人形机器人核心零部件和整机研发。美的近年来持续加码机器人赛道，此前已收购库卡机器人。此次入股钧舵被视为其在人形机器人领域的重要布局，也反映了传统制造业巨头对 AI 机器人赛道的战略重视。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "36氪"
-    },
-    {
-      "id": "news-625d9094a89f1d96",
-      "title": "AI 正在重塑创业范式：从「一个人+一群 Agent」到超级个体",
-      "url": "https://36kr.com/p/3907639172027522",
-      "date": "2026-07-23",
-      "published": "2026-07-23 10:57:46 +0800",
-      "summary": "FutureTech 创始人张梦钊分享 AI Agent 如何赋能个体创业者，打造「超级个体」新模式。",
-      "detail": "张梦钊在采访中阐述了 AI Agent 对创业模式的变革性影响。他认为，借助 AI Agent 集群，单个创业者可以完成过去需要团队才能完成的工作，形成「超级个体」模式。FutureTech 正在探索如何将这一理念产品化，帮助更多创业者用 AI 工具取代传统团队协作。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "36氪"
-    },
-    {
-      "id": "news-1900c986b5d036ac",
-      "title": "大疆系 AI 自然探索公司获五源、顺为投资，首创水下光学系统",
-      "url": "https://36kr.com/p/3906474040153220",
-      "date": "2026-07-23",
-      "published": "2026-07-23 10:30:00 +0800",
-      "summary": "大疆系创业公司获五源资本和顺为资本投资，首创水下光学成像系统用于 AI 自然探索。",
-      "detail": "该公司由大疆前团队创立，专注于 AI 驱动的自然探索技术。其核心产品是首创的水下光学成像系统，可用于海洋生物研究和水下环境监测。获得五源资本和顺为资本投资后，公司计划加速产品商业化。这一方向将 AI 技术与自然科学研究结合，具有独特的应用价值。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "36氪"
-    },
-    {
-      "id": "news-ccd255561e3e964e",
-      "title": "GitHub 重组 Bug Bounty 漏洞赏金计划",
-      "url": "https://github.blog/security/next-chapter-restructuring-githubs-bug-bounty-program/",
-      "date": "2026-07-23",
-      "published": "2026-07-23T02:28:23+00:00",
-      "summary": "GitHub 宣布对其 Bug Bounty 漏洞赏金计划进行全面重组，调整奖励范围和金额。",
-      "detail": "GitHub 发布博文宣布对其运行多年的 Bug Bounty 计划进行重大调整。重组后的计划扩大了漏洞奖励的范围，涵盖了更多产品线和安全场景，同时调整了各级漏洞的奖励金额。这一举措旨在吸引更多安全研究人员参与 GitHub 的安全建设，反映了平台对安全问题的持续重视。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "subcategory": "software",
-      "source": "Hacker News"
     },
     {
       "id": "news-349c46ea43f46f0c",
@@ -5132,66 +5281,13 @@
       "source": "juya AI 日报"
     },
     {
-      "id": "news-34e13e02ca91f012",
-      "title": "蚂蚁数科打造商业智能体超级工厂，共建行业版 Harness 标准",
-      "url": "https://36kr.com/p/3907590205085056",
+      "id": "news-ccd255561e3e964e",
+      "title": "GitHub 重组 Bug Bounty 漏洞赏金计划",
+      "url": "https://github.blog/security/next-chapter-restructuring-githubs-bug-bounty-program/",
       "date": "2026-07-23",
-      "published": "2026-07-23 10:09:19 +0800",
-      "summary": "蚂蚁数科宣布打造商业智能体超级工厂，推动建立中国行业版 AI Agent 标准。",
-      "detail": "蚂蚁数科在采访中介绍了其商业智能体平台的战略规划，目标是打造规模化生产 AI Agent 的「超级工厂」。该平台面向金融、零售等行业场景，提供标准化的 Agent 开发框架。蚂蚁数科还计划联合行业伙伴共建中国版 Harness 标准，推动 AI Agent 在企业级场景的规模化落地。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "36氪"
-    },
-    {
-      "id": "news-068c024e264794b2",
-      "title": "Petals：用 BitTorrent 方式在家运行大语言模型",
-      "url": "https://petals.dev/",
-      "date": "2026-07-23",
-      "published": "2026-07-23T01:33:12+00:00",
-      "summary": "开源项目 Petals 借鉴 BitTorrent 协议，让普通用户可以通过分布式协作方式运行 Llama、Falcon 等大模型。",
-      "detail": "Petals 采用类似 BitTorrent 的分布式推理方案，将大模型拆分到多台设备上协同运行。参与者贡献自己的 GPU 算力，就能免费使用大模型推理服务。项目支持 Llama、Falcon、Bloom 等主流开源模型，降低了个人用户使用大模型的硬件门槛。这一模式为 AI 民主化提供了新的技术路径。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "subcategory": "software",
-      "source": "Hacker News"
-    },
-    {
-      "id": "news-8022b72bbe6db2f9",
-      "title": "前华尔街投资人转型造机器人「手」，以视触觉技术破解数据难题",
-      "url": "https://36kr.com/p/3907536767833473",
-      "date": "2026-07-23",
-      "published": "2026-07-23 09:12:15 +0800",
-      "summary": "前华尔街投资人创办机器人公司，通过自研视触觉传感器和软硬一体方案解决机器人操作数据稀缺问题。",
-      "detail": "这位前华尔街投资人转型硬科技创业，创办的公司专注于机器人灵巧手的研发。其核心技术是自研的视触觉传感器，能够同时获取视觉和触觉信息，并通过软硬件闭环方案大规模采集操作数据。当前人形机器人领域面临操作数据稀缺的瓶颈，该公司的技术路线为解决这一问题提供了新思路。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "36氪"
-    },
-    {
-      "id": "news-2f251c5fae763ed0",
-      "title": "同济博士用几何和物理 AI 重构设计制造，累计获超 3 亿元融资",
-      "url": "https://36kr.com/p/3907532622648453",
-      "date": "2026-07-23",
-      "published": "2026-07-23 09:08:03 +0800",
-      "summary": "同济大学博士创办的公司利用几何和物理 AI 技术重构工业设计制造流程，已累计获得超 3 亿元融资。",
-      "detail": "该创业团队由同济大学博士创立，核心技术是将几何建模与物理仿真相结合的 AI 系统，用于优化工业设计和制造流程。与传统 CAD 工具不同，该系统能自动考虑材料力学、热力学等物理约束，大幅缩短产品设计周期。公司已累计获得超 3 亿元融资，客户覆盖汽车、航空航天等行业。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "36氪"
-    },
-    {
-      "id": "news-6753b99f1fa6f92e",
-      "title": "Codeberg 禁止加密货币项目",
-      "url": "https://codeberg.org/Codeberg/org/pulls/1254",
-      "date": "2026-07-23",
-      "published": "2026-07-23T01:06:56+00:00",
-      "summary": "开源代码托管平台 Codeberg 宣布禁止托管加密货币和区块链相关项目。",
-      "detail": "Codeberg 是一个基于 Gitea 的开源代码托管平台，近日宣布将不再允许加密货币和区块链相关项目的托管。该决定在社区引发了广泛讨论，支持者认为这有助于维护平台的开源纯粹性，反对者则认为这是对技术创新的限制。这一事件反映了开源社区对加密货币项目的态度分歧。",
+      "published": "2026-07-23T02:28:23+00:00",
+      "summary": "GitHub 宣布对其 Bug Bounty 漏洞赏金计划进行全面重组，调整奖励范围和金额。",
+      "detail": "GitHub 发布博文宣布对其运行多年的 Bug Bounty 计划进行重大调整。重组后的计划扩大了漏洞奖励的范围，涵盖了更多产品线和安全场景，同时调整了各级漏洞的奖励金额。这一举措旨在吸引更多安全研究人员参与 GitHub 的安全建设，反映了平台对安全问题的持续重视。",
       "image": "",
       "priority": 1,
       "category": "tech",
@@ -5212,6 +5308,34 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-068c024e264794b2",
+      "title": "Petals：用 BitTorrent 方式在家运行大语言模型",
+      "url": "https://petals.dev/",
+      "date": "2026-07-23",
+      "published": "2026-07-23T01:33:12+00:00",
+      "summary": "开源项目 Petals 借鉴 BitTorrent 协议，让普通用户可以通过分布式协作方式运行 Llama、Falcon 等大模型。",
+      "detail": "Petals 采用类似 BitTorrent 的分布式推理方案，将大模型拆分到多台设备上协同运行。参与者贡献自己的 GPU 算力，就能免费使用大模型推理服务。项目支持 Llama、Falcon、Bloom 等主流开源模型，降低了个人用户使用大模型的硬件门槛。这一模式为 AI 民主化提供了新的技术路径。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-6753b99f1fa6f92e",
+      "title": "Codeberg 禁止加密货币项目",
+      "url": "https://codeberg.org/Codeberg/org/pulls/1254",
+      "date": "2026-07-23",
+      "published": "2026-07-23T01:06:56+00:00",
+      "summary": "开源代码托管平台 Codeberg 宣布禁止托管加密货币和区块链相关项目。",
+      "detail": "Codeberg 是一个基于 Gitea 的开源代码托管平台，近日宣布将不再允许加密货币和区块链相关项目的托管。该决定在社区引发了广泛讨论，支持者认为这有助于维护平台的开源纯粹性，反对者则认为这是对技术创新的限制。这一事件反映了开源社区对加密货币项目的态度分歧。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "Hacker News"
+    },
+    {
       "id": "news-3580f31496f1129d",
       "title": "数学家仍不知道乘法的最快计算方法",
       "url": "https://www.solidot.org/story?sid=84899",
@@ -5223,6 +5347,84 @@
       "priority": 1,
       "category": "fun",
       "source": "Solidot"
+    },
+    {
+      "id": "news-281948762cd4fe3b",
+      "title": "Deeplore 完成数千万元种子轮融资",
+      "url": "https://36kr.com/newsflashes/3907716402582912",
+      "date": "2026-07-23",
+      "published": "2026-07-23 12:45:36 +0800",
+      "summary": "AI 创业公司 Deeplore 近日完成数千万元种子轮融资，专注于深度知识检索技术。",
+      "detail": "Deeplore 是一家专注于深度知识检索和知识图谱技术的 AI 创业公司，近日完成了数千万元的种子轮融资。公司的技术方向聚焦于让 AI 系统更深入地理解和检索结构化知识，而非仅依赖表面文本匹配。该轮融资将用于技术研发和团队扩张。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "36氪"
+    },
+    {
+      "id": "news-97f3a0a30ec99745",
+      "title": "美的等入股钧舵机器人，加速布局人形机器人赛道",
+      "url": "https://36kr.com/newsflashes/3907709033747840",
+      "date": "2026-07-23",
+      "published": "2026-07-23 12:30:06 +0800",
+      "summary": "家电巨头美的集团入股钧舵机器人，进一步布局人形机器人产业。",
+      "detail": "美的集团通过战略投资入股钧舵机器人，后者专注于人形机器人核心零部件和整机研发。美的近年来持续加码机器人赛道，此前已收购库卡机器人。此次入股钧舵被视为其在人形机器人领域的重要布局，也反映了传统制造业巨头对 AI 机器人赛道的战略重视。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "36氪"
+    },
+    {
+      "id": "news-625d9094a89f1d96",
+      "title": "AI 正在重塑创业范式：从「一个人+一群 Agent」到超级个体",
+      "url": "https://36kr.com/p/3907639172027522",
+      "date": "2026-07-23",
+      "published": "2026-07-23 10:57:46 +0800",
+      "summary": "FutureTech 创始人张梦钊分享 AI Agent 如何赋能个体创业者，打造「超级个体」新模式。",
+      "detail": "张梦钊在采访中阐述了 AI Agent 对创业模式的变革性影响。他认为，借助 AI Agent 集群，单个创业者可以完成过去需要团队才能完成的工作，形成「超级个体」模式。FutureTech 正在探索如何将这一理念产品化，帮助更多创业者用 AI 工具取代传统团队协作。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "36氪"
+    },
+    {
+      "id": "news-1900c986b5d036ac",
+      "title": "大疆系 AI 自然探索公司获五源、顺为投资，首创水下光学系统",
+      "url": "https://36kr.com/p/3906474040153220",
+      "date": "2026-07-23",
+      "published": "2026-07-23 10:30:00 +0800",
+      "summary": "大疆系创业公司获五源资本和顺为资本投资，首创水下光学成像系统用于 AI 自然探索。",
+      "detail": "该公司由大疆前团队创立，专注于 AI 驱动的自然探索技术。其核心产品是首创的水下光学成像系统，可用于海洋生物研究和水下环境监测。获得五源资本和顺为资本投资后，公司计划加速产品商业化。这一方向将 AI 技术与自然科学研究结合，具有独特的应用价值。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "36氪"
+    },
+    {
+      "id": "news-34e13e02ca91f012",
+      "title": "蚂蚁数科打造商业智能体超级工厂，共建行业版 Harness 标准",
+      "url": "https://36kr.com/p/3907590205085056",
+      "date": "2026-07-23",
+      "published": "2026-07-23 10:09:19 +0800",
+      "summary": "蚂蚁数科宣布打造商业智能体超级工厂，推动建立中国行业版 AI Agent 标准。",
+      "detail": "蚂蚁数科在采访中介绍了其商业智能体平台的战略规划，目标是打造规模化生产 AI Agent 的「超级工厂」。该平台面向金融、零售等行业场景，提供标准化的 Agent 开发框架。蚂蚁数科还计划联合行业伙伴共建中国版 Harness 标准，推动 AI Agent 在企业级场景的规模化落地。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "36氪"
+    },
+    {
+      "id": "news-8022b72bbe6db2f9",
+      "title": "前华尔街投资人转型造机器人「手」，以视触觉技术破解数据难题",
+      "url": "https://36kr.com/p/3907536767833473",
+      "date": "2026-07-23",
+      "published": "2026-07-23 09:12:15 +0800",
+      "summary": "前华尔街投资人创办机器人公司，通过自研视触觉传感器和软硬一体方案解决机器人操作数据稀缺问题。",
+      "detail": "这位前华尔街投资人转型硬科技创业，创办的公司专注于机器人灵巧手的研发。其核心技术是自研的视触觉传感器，能够同时获取视觉和触觉信息，并通过软硬件闭环方案大规模采集操作数据。当前人形机器人领域面临操作数据稀缺的瓶颈，该公司的技术路线为解决这一问题提供了新思路。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "36氪"
     },
     {
       "id": "news-4fd1e2116988f342",
@@ -5237,6 +5439,19 @@
       "priority": 1,
       "image": "",
       "date": "2026-07-23"
+    },
+    {
+      "id": "news-2f251c5fae763ed0",
+      "title": "同济博士用几何和物理 AI 重构设计制造，累计获超 3 亿元融资",
+      "url": "https://36kr.com/p/3907532622648453",
+      "date": "2026-07-23",
+      "published": "2026-07-23 09:08:03 +0800",
+      "summary": "同济大学博士创办的公司利用几何和物理 AI 技术重构工业设计制造流程，已累计获得超 3 亿元融资。",
+      "detail": "该创业团队由同济大学博士创立，核心技术是将几何建模与物理仿真相结合的 AI 系统，用于优化工业设计和制造流程。与传统 CAD 工具不同，该系统能自动考虑材料力学、热力学等物理约束，大幅缩短产品设计周期。公司已累计获得超 3 亿元融资，客户覆盖汽车、航空航天等行业。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "36氪"
     },
     {
       "id": "news-55c91122cb55d5d3",
@@ -5384,6 +5599,19 @@
       "priority": 2,
       "category": "ai",
       "source": "Solidot"
+    },
+    {
+      "id": "news-3097a838274972b5",
+      "title": "谷歌推出 Gemini 3.6 Flash 模型",
+      "url": "https://sspai.com/post/112597",
+      "date": "2026-07-22",
+      "published": "2026-07-22T08:30:00+08:00",
+      "summary": "谷歌发布 Gemini 3.6 Flash 模型，主打更快速的推理能力和更低的使用成本。",
+      "detail": "谷歌近日发布了 Gemini 3.6 Flash 版本，该模型在保持较强能力的同时大幅提升了推理速度并降低了使用成本。Flash 系列一直是 Gemini 产品线中面向高频调用场景的轻量级方案。此次更新预计将惠及大量使用 Gemini API 的开发者和企业用户。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "少数派"
     },
     {
       "id": "news-a7743f680f2d8fed",
@@ -5557,17 +5785,46 @@
       "source": "juya AI 日报"
     },
     {
-      "id": "news-3097a838274972b5",
-      "title": "谷歌推出 Gemini 3.6 Flash 模型",
-      "url": "https://sspai.com/post/112597",
+      "id": "news-f30ed42a531219a3",
+      "title": "空客将应用从亚马逊 AWS 迁移至法国 Scaleway",
+      "url": "https://www.solidot.org/story?sid=84898",
       "date": "2026-07-22",
-      "published": "2026-07-22T08:30:00+08:00",
-      "summary": "谷歌发布 Gemini 3.6 Flash 模型，主打更快速的推理能力和更低的使用成本。",
-      "detail": "谷歌近日发布了 Gemini 3.6 Flash 版本，该模型在保持较强能力的同时大幅提升了推理速度并降低了使用成本。Flash 系列一直是 Gemini 产品线中面向高频调用场景的轻量级方案。此次更新预计将惠及大量使用 Gemini API 的开发者和企业用户。",
+      "published": "2026-07-22T23:08:36+08:00",
+      "summary": "欧洲航空巨头空客正将其应用从亚马逊 AWS 迁移到法国本土云服务商 Scaleway。",
+      "detail": "空客正在将工作负载从美国云服务商迁移到欧洲本土的 Scaleway 平台。这一举措被视为欧洲「数字主权」运动的重要实践，旨在减少对美国科技巨头的依赖，确保关键数据留在欧洲境内。随着欧盟数据法规趋严，越来越多的欧洲企业开始考虑类似的云迁移方案。",
       "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "少数派"
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-1f64d9d4915d2893",
+      "title": "大众汽车官方应用不支持第三方 Android 系统",
+      "url": "https://www.solidot.org/story?sid=84897",
+      "date": "2026-07-22",
+      "published": "2026-07-22T22:54:38+08:00",
+      "summary": "大众汽车的官方手机应用拒绝在第三方 Android ROM 上运行，引发用户对厂商锁定的不满。",
+      "detail": "大众汽车的官方车机互联应用近期开始检测并拒绝在非官方 Android 系统（如 LineageOS、GrapheneOS 等）上运行。这一做法引发了隐私和开源社区的批评，用户认为厂商不应限制用户对自有设备的使用权。该事件也折射出汽车行业数字化进程中用户自由与厂商控制之间的张力。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-2ef8aef223d1cad3",
+      "title": "Firefox 预览原生多账户容器功能",
+      "url": "https://www.solidot.org/story?sid=84896",
+      "date": "2026-07-22",
+      "published": "2026-07-22T22:32:55+08:00",
+      "summary": "Mozilla 预览了 Firefox 浏览器即将推出的原生多账户容器功能，用户可在同一浏览器内隔离不同账号。",
+      "detail": "Firefox 此前通过扩展插件提供容器标签页功能，现在 Mozilla 决定将其作为原生功能内置到浏览器中。该功能允许用户在同一浏览器中创建隔离的浏览环境，不同容器之间的 Cookie 和登录状态互不干扰，方便用户同时登录多个账号。这对开发者和需要多账号管理的用户尤为实用。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "Solidot"
     },
     {
       "id": "news-bac5c674e12a1c55",
@@ -5611,6 +5868,19 @@
       "source": "Hacker News"
     },
     {
+      "id": "news-1b391ac4a5a8509e",
+      "title": "尼安德特人可能和现代人类一样聪明",
+      "url": "https://www.solidot.org/story?sid=84894",
+      "date": "2026-07-22",
+      "published": "2026-07-22T18:39:13+08:00",
+      "summary": "最新研究表明，尼安德特人的认知能力可能与现代人类相当，颠覆了传统认知。",
+      "detail": "一项新的综合研究通过分析考古证据和大脑结构数据，提出尼安德特人的认知能力可能与现代人类相当。研究发现尼安德特人具备复杂的工具制作、艺术创作和社会组织能力，此前认为他们智力较低的观点可能源于对化石记录的误读。这一发现对理解人类进化史具有重要意义。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot"
+    },
+    {
       "id": "news-75da918c9ee38b61",
       "title": "Everyone Should Know SIMD：每个程序员都该了解的并行计算基础",
       "url": "https://mitchellh.com/writing/everyone-should-know-simd",
@@ -5625,61 +5895,6 @@
       "source": "Hacker News"
     },
     {
-      "id": "news-f30ed42a531219a3",
-      "title": "空客将应用从亚马逊 AWS 迁移至法国 Scaleway",
-      "url": "https://www.solidot.org/story?sid=84898",
-      "date": "2026-07-22",
-      "published": "2026-07-22T23:08:36+08:00",
-      "summary": "欧洲航空巨头空客正将其应用从亚马逊 AWS 迁移到法国本土云服务商 Scaleway。",
-      "detail": "空客正在将工作负载从美国云服务商迁移到欧洲本土的 Scaleway 平台。这一举措被视为欧洲「数字主权」运动的重要实践，旨在减少对美国科技巨头的依赖，确保关键数据留在欧洲境内。随着欧盟数据法规趋严，越来越多的欧洲企业开始考虑类似的云迁移方案。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "subcategory": "industry",
-      "source": "Solidot"
-    },
-    {
-      "id": "news-1f64d9d4915d2893",
-      "title": "大众汽车官方应用不支持第三方 Android 系统",
-      "url": "https://www.solidot.org/story?sid=84897",
-      "date": "2026-07-22",
-      "published": "2026-07-22T22:54:38+08:00",
-      "summary": "大众汽车的官方手机应用拒绝在第三方 Android ROM 上运行，引发用户对厂商锁定的不满。",
-      "detail": "大众汽车的官方车机互联应用近期开始检测并拒绝在非官方 Android 系统（如 LineageOS、GrapheneOS 等）上运行。这一做法引发了隐私和开源社区的批评，用户认为厂商不应限制用户对自有设备的使用权。该事件也折射出汽车行业数字化进程中用户自由与厂商控制之间的张力。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "subcategory": "software",
-      "source": "Solidot"
-    },
-    {
-      "id": "news-2ef8aef223d1cad3",
-      "title": "Firefox 预览原生多账户容器功能",
-      "url": "https://www.solidot.org/story?sid=84896",
-      "date": "2026-07-22",
-      "published": "2026-07-22T22:32:55+08:00",
-      "summary": "Mozilla 预览了 Firefox 浏览器即将推出的原生多账户容器功能，用户可在同一浏览器内隔离不同账号。",
-      "detail": "Firefox 此前通过扩展插件提供容器标签页功能，现在 Mozilla 决定将其作为原生功能内置到浏览器中。该功能允许用户在同一浏览器中创建隔离的浏览环境，不同容器之间的 Cookie 和登录状态互不干扰，方便用户同时登录多个账号。这对开发者和需要多账号管理的用户尤为实用。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "subcategory": "software",
-      "source": "Solidot"
-    },
-    {
-      "id": "news-1b391ac4a5a8509e",
-      "title": "尼安德特人可能和现代人类一样聪明",
-      "url": "https://www.solidot.org/story?sid=84894",
-      "date": "2026-07-22",
-      "published": "2026-07-22T18:39:13+08:00",
-      "summary": "最新研究表明，尼安德特人的认知能力可能与现代人类相当，颠覆了传统认知。",
-      "detail": "一项新的综合研究通过分析考古证据和大脑结构数据，提出尼安德特人的认知能力可能与现代人类相当。研究发现尼安德特人具备复杂的工具制作、艺术创作和社会组织能力，此前认为他们智力较低的观点可能源于对化石记录的误读。这一发现对理解人类进化史具有重要意义。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "Solidot"
-    },
-    {
       "id": "news-28f98043a82ed77b",
       "title": "Parti：零门槛联机游戏平台，不需要服务器",
       "url": "https://sspai.com/post/112545",
@@ -5692,32 +5907,6 @@
       "category": "tech",
       "subcategory": "software",
       "source": "少数派"
-    },
-    {
-      "id": "news-44b83202ed7b4d8b",
-      "title": "2026 世界杯消费报告：花钱最狠的人不懂球",
-      "url": "https://36kr.com/p/3906526848144515",
-      "date": "2026-07-22",
-      "published": "2026-07-22 17:35:15 +0800",
-      "summary": "2026 世界杯消费数据显示，最大方的消费者并非传统球迷，而是被赛事文化氛围吸引的跨界消费者。",
-      "detail": "36 氪发布的 2026 世界杯消费报告显示，本届世界杯的消费结构发生了有趣变化：消费金额最高的群体并非传统足球迷，而是被世界杯文化氛围吸引的跨界消费者。他们在周边商品、观赛旅行和餐饮娱乐上的支出远超传统球迷。这一现象反映了体育赛事正在从竞技观赏向文化消费转型。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "36氪"
-    },
-    {
-      "id": "news-2fa2389bd028c942",
-      "title": "超擎数智 CEO：AI 竞争从模型训练转向推理落地",
-      "url": "https://36kr.com/p/3906523265914245",
-      "date": "2026-07-22",
-      "published": "2026-07-22 16:02:33 +0800",
-      "summary": "超擎数智 CEO 唐春峰指出，AI 产业竞争正从模型训练转向推理落地，全栈方案加速企业智能化。",
-      "detail": "唐春峰在采访中表示，随着大模型训练竞争趋于白热化，行业重心正在向推理部署和实际应用转移。超擎数智提供从模型推理到应用落地的全栈方案，帮助企业快速实现 AI 能力的商业化。他认为，未来 AI 公司的核心竞争力将体现在推理效率和场景适配能力上。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "36氪"
     },
     {
       "id": "news-e9a63957e653d881",
@@ -5810,6 +5999,32 @@
       "priority": 1,
       "category": "ai",
       "source": "juya AI 日报"
+    },
+    {
+      "id": "news-44b83202ed7b4d8b",
+      "title": "2026 世界杯消费报告：花钱最狠的人不懂球",
+      "url": "https://36kr.com/p/3906526848144515",
+      "date": "2026-07-22",
+      "published": "2026-07-22 17:35:15 +0800",
+      "summary": "2026 世界杯消费数据显示，最大方的消费者并非传统球迷，而是被赛事文化氛围吸引的跨界消费者。",
+      "detail": "36 氪发布的 2026 世界杯消费报告显示，本届世界杯的消费结构发生了有趣变化：消费金额最高的群体并非传统足球迷，而是被世界杯文化氛围吸引的跨界消费者。他们在周边商品、观赛旅行和餐饮娱乐上的支出远超传统球迷。这一现象反映了体育赛事正在从竞技观赏向文化消费转型。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "36氪"
+    },
+    {
+      "id": "news-2fa2389bd028c942",
+      "title": "超擎数智 CEO：AI 竞争从模型训练转向推理落地",
+      "url": "https://36kr.com/p/3906523265914245",
+      "date": "2026-07-22",
+      "published": "2026-07-22 16:02:33 +0800",
+      "summary": "超擎数智 CEO 唐春峰指出，AI 产业竞争正从模型训练转向推理落地，全栈方案加速企业智能化。",
+      "detail": "唐春峰在采访中表示，随着大模型训练竞争趋于白热化，行业重心正在向推理部署和实际应用转移。超擎数智提供从模型推理到应用落地的全栈方案，帮助企业快速实现 AI 能力的商业化。他认为，未来 AI 公司的核心竞争力将体现在推理效率和场景适配能力上。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "36氪"
     },
     {
       "id": "news-dd9c545392181b19",
@@ -6077,6 +6292,20 @@
       "image": ""
     },
     {
+      "id": "news-2e8338e521da769a",
+      "title": "罗马尼亚全国土地登记数据库遭黑客删除",
+      "url": "https://www.solidot.org/story?sid=84876",
+      "date": "2026-07-20",
+      "published": "2026-07-20T23:48:32+08:00",
+      "summary": "罗马尼亚全国土地登记数据库遭网络攻击，数据被黑客删除，引发严重安全事件。",
+      "detail": "Solidot 报道，罗马尼亚全国土地登记数据库系统遭到黑客入侵，数据库被删除。这一事件可能导致该国土地所有权记录的大规模丢失，影响范围极广。该案例再次凸显了关键基础设施网络安全防护的紧迫性，也为各国数字政务系统敲响警钟。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Solidot",
+      "subcategory": "software"
+    },
+    {
       "id": "news-96f362391e56f26f",
       "title": "前沿实验室经济学：Kimi K3、Qwen 3.8 与 Anthropic 的困局",
       "url": "https://www.atlasobscura.com/places/the-house-of-david-bowie",
@@ -6117,20 +6346,6 @@
       "category": "tech",
       "source": "Atlas Obscura",
       "subcategory": "hardware"
-    },
-    {
-      "id": "news-2e8338e521da769a",
-      "title": "罗马尼亚全国土地登记数据库遭黑客删除",
-      "url": "https://www.solidot.org/story?sid=84876",
-      "date": "2026-07-20",
-      "published": "2026-07-20T23:48:32+08:00",
-      "summary": "罗马尼亚全国土地登记数据库遭网络攻击，数据被黑客删除，引发严重安全事件。",
-      "detail": "Solidot 报道，罗马尼亚全国土地登记数据库系统遭到黑客入侵，数据库被删除。这一事件可能导致该国土地所有权记录的大规模丢失，影响范围极广。该案例再次凸显了关键基础设施网络安全防护的紧迫性，也为各国数字政务系统敲响警钟。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "Solidot",
-      "subcategory": "software"
     },
     {
       "id": "news-1fdbc0bfaa5e20d3",
@@ -6214,6 +6429,19 @@
       "subcategory": "hardware"
     },
     {
+      "id": "news-51375138783662d9",
+      "title": "SpaceX 推迟星舰第 13 次试飞；特斯拉 FSD 将模仿驾驶风格",
+      "url": "https://www.solidot.org/story?sid=84870",
+      "date": "2026-07-20",
+      "published": "2026-07-20T16:05:18+08:00",
+      "summary": "SpaceX 将星舰第 13 次试飞推迟至 7 月 23 日；马斯克称特斯拉 FSD 将学习驾驶风格；中国人形机器人整机产品超全球半数。",
+      "detail": "据36氪氪星晚报综合报道：SpaceX 宣布将星舰第 13 次试飞推迟至 7 月 23 日，具体原因未披露。马斯克透露特斯拉 FSD 自动驾驶将加入驾驶风格模仿功能。此外，数据显示中国人形机器人整机产品数量已超过全球半数，反映出中国在具身智能领域的快速追赶。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "Solidot"
+    },
+    {
       "id": "news-1286f199e424d242",
       "title": "AI 基建推高光纤光缆景气度，产业链公司扩产忙",
       "url": "https://www.youtube.com/watch?v=NwhVJ7cv9B4",
@@ -6239,19 +6467,6 @@
       "priority": 1,
       "category": "fun",
       "source": "Hacker News"
-    },
-    {
-      "id": "news-51375138783662d9",
-      "title": "SpaceX 推迟星舰第 13 次试飞；特斯拉 FSD 将模仿驾驶风格",
-      "url": "https://www.solidot.org/story?sid=84870",
-      "date": "2026-07-20",
-      "published": "2026-07-20T16:05:18+08:00",
-      "summary": "SpaceX 将星舰第 13 次试飞推迟至 7 月 23 日；马斯克称特斯拉 FSD 将学习驾驶风格；中国人形机器人整机产品超全球半数。",
-      "detail": "据36氪氪星晚报综合报道：SpaceX 宣布将星舰第 13 次试飞推迟至 7 月 23 日，具体原因未披露。马斯克透露特斯拉 FSD 自动驾驶将加入驾驶风格模仿功能。此外，数据显示中国人形机器人整机产品数量已超过全球半数，反映出中国在具身智能领域的快速追赶。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "Solidot"
     },
     {
       "id": "news-4cde08d498b4ba8a",
@@ -6623,6 +6838,19 @@
       "source": "Hacker News"
     },
     {
+      "id": "news-e5dd5683e0be0928",
+      "title": "腾讯在 WAIC 2026 发布具身智能全栈方案与 ADP 4.0 海外版",
+      "url": "https://36kr.com/newsflashes/3900908700436103?f=rss",
+      "date": "2026-07-18",
+      "published": "2026-07-18T17:30:23+08:00",
+      "summary": "腾讯在世界人工智能大会升级发布具身智能全栈方案，贯穿云底座到应用层，同时推出 ADP 4.0 海外版。",
+      "detail": "在 2026 世界人工智能大会（WAIC）上，腾讯面向具身智能与智能体领域带来多项产品升级。具身智能全栈方案覆盖云底座、模型层、平台层与应用层，助力机器人本体及系统开发商提质提效。同时，腾讯 ADP 4.0 海外版正式上线，拓展其 AI 开发平台的国际影响力。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "36氪"
+    },
+    {
       "id": "news-9981da871d8a16f8",
       "title": "Google DeepMind 与 Isomorphic Labs 发布生物韧性研究方法",
       "url": "https://deepmind.google/blog/our-approach-to-bioresilience/",
@@ -6635,19 +6863,6 @@
       "category": "tech",
       "source": "Hacker News",
       "subcategory": "ai-frontier"
-    },
-    {
-      "id": "news-e5dd5683e0be0928",
-      "title": "腾讯在 WAIC 2026 发布具身智能全栈方案与 ADP 4.0 海外版",
-      "url": "https://36kr.com/newsflashes/3900908700436103?f=rss",
-      "date": "2026-07-18",
-      "published": "2026-07-18T17:30:23+08:00",
-      "summary": "腾讯在世界人工智能大会升级发布具身智能全栈方案，贯穿云底座到应用层，同时推出 ADP 4.0 海外版。",
-      "detail": "在 2026 世界人工智能大会（WAIC）上，腾讯面向具身智能与智能体领域带来多项产品升级。具身智能全栈方案覆盖云底座、模型层、平台层与应用层，助力机器人本体及系统开发商提质提效。同时，腾讯 ADP 4.0 海外版正式上线，拓展其 AI 开发平台的国际影响力。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "36氪"
     },
     {
       "id": "news-cbe329a41751bcb1",
@@ -6794,6 +7009,33 @@
       "subcategory": "software"
     },
     {
+      "id": "news-6206d53e897e1142",
+      "title": "天文学家确认 25 光年外宜居带岩石行星",
+      "url": "https://www.solidot.org/story?sid=84862",
+      "date": "2026-07-18",
+      "published": "2026-07-18T23:14:47+08:00",
+      "summary": "天文学家确认一颗距地球仅 25 光年、位于红矮星宜居带的岩石行星 GJ3378b，是目前已知最近的潜在宜居世界之一。",
+      "detail": "天文学家确认了一颗名为 GJ3378b 的系外行星，位于距离地球仅 25 光年的红矮星宜居带内，可能具备孕育生命的条件。这颗行星位于鹿豹座方向，围绕一颗暗淡的红矮星运行，被视为目前已知距离地球最近的潜在宜居世界之一。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-634b74d990888216",
+      "title": "Mozilla 宣布 Firefox 9 月起改为每两周发布一个新版本",
+      "url": "https://www.solidot.org/story?sid=84860",
+      "date": "2026-07-18",
+      "published": "2026-07-18T22:36:22+08:00",
+      "summary": "Mozilla 宣布从 2026 年 9 月起，Firefox 桌面版和 Android 版的发布周期从 4 周缩短到 2 周。",
+      "detail": "Mozilla 工程总监 Sylvestre Ledru 通过邮件列表宣布，从 2026 年 9 月起 Firefox 桌面版和 Android 版本的发布周期将从 4 周减少到 2 周。这意味着 Firefox 用户将更快获得新功能和安全更新，但也对开发团队的发布流程提出更高要求。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "Solidot",
+      "subcategory": "software"
+    },
+    {
       "id": "news-41a06b08491f80e8",
       "title": "纽约市长禁止房东使用 AI 生成图片发布房产广告",
       "url": "https://petapixel.com/2026/07/16/mayor-mamdani-says-landlords-cant-secretly-use-ai-images-to-advertise-properties/",
@@ -6834,47 +7076,6 @@
       "source": "Hacker News"
     },
     {
-      "id": "news-354eb3363d8a4d04",
-      "title": "配置备用 Mac 让 Claude Code 远程操控的详细教程",
-      "url": "https://ykdojo.github.io/claude-controls-mac/",
-      "date": "2026-07-18",
-      "published": "2026-07-18T16:12:08+00:00",
-      "summary": "一篇手把手教程，介绍如何将闲置 Mac 配置为 Claude Code 可远程控制的开发环境。",
-      "detail": "教程详细介绍了如何将一台闲置的 Mac 设置为 AI 编程助手 Claude Code 可以远程操控的开发环境，包括网络配置、权限设置和安全注意事项。对想体验 AI 编程自动化的学生和开发者有实用参考价值。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "software"
-    },
-    {
-      "id": "news-6206d53e897e1142",
-      "title": "天文学家确认 25 光年外宜居带岩石行星",
-      "url": "https://www.solidot.org/story?sid=84862",
-      "date": "2026-07-18",
-      "published": "2026-07-18T23:14:47+08:00",
-      "summary": "天文学家确认一颗距地球仅 25 光年、位于红矮星宜居带的岩石行星 GJ3378b，是目前已知最近的潜在宜居世界之一。",
-      "detail": "天文学家确认了一颗名为 GJ3378b 的系外行星，位于距离地球仅 25 光年的红矮星宜居带内，可能具备孕育生命的条件。这颗行星位于鹿豹座方向，围绕一颗暗淡的红矮星运行，被视为目前已知距离地球最近的潜在宜居世界之一。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "Solidot"
-    },
-    {
-      "id": "news-634b74d990888216",
-      "title": "Mozilla 宣布 Firefox 9 月起改为每两周发布一个新版本",
-      "url": "https://www.solidot.org/story?sid=84860",
-      "date": "2026-07-18",
-      "published": "2026-07-18T22:36:22+08:00",
-      "summary": "Mozilla 宣布从 2026 年 9 月起，Firefox 桌面版和 Android 版的发布周期从 4 周缩短到 2 周。",
-      "detail": "Mozilla 工程总监 Sylvestre Ledru 通过邮件列表宣布，从 2026 年 9 月起 Firefox 桌面版和 Android 版本的发布周期将从 4 周减少到 2 周。这意味着 Firefox 用户将更快获得新功能和安全更新，但也对开发团队的发布流程提出更高要求。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "source": "Solidot",
-      "subcategory": "software"
-    },
-    {
       "id": "news-d02184bc0b4f7053",
       "title": "腾讯云 WorkBuddy 与李未可合作发布首款 AI 记忆眼镜",
       "url": "https://36kr.com/newsflashes/3900906468984713?f=rss",
@@ -6901,6 +7102,20 @@
       "source": "36氪"
     },
     {
+      "id": "news-354eb3363d8a4d04",
+      "title": "配置备用 Mac 让 Claude Code 远程操控的详细教程",
+      "url": "https://ykdojo.github.io/claude-controls-mac/",
+      "date": "2026-07-18",
+      "published": "2026-07-18T16:12:08+00:00",
+      "summary": "一篇手把手教程，介绍如何将闲置 Mac 配置为 Claude Code 可远程控制的开发环境。",
+      "detail": "教程详细介绍了如何将一台闲置的 Mac 设置为 AI 编程助手 Claude Code 可以远程操控的开发环境，包括网络配置、权限设置和安全注意事项。对想体验 AI 编程自动化的学生和开发者有实用参考价值。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "software"
+    },
+    {
       "id": "news-84b33c700d61b3b6",
       "title": "AWS 计费系统单位错误导致客户看到数亿美元天价账单",
       "url": "https://www.solidot.org/story?sid=84859",
@@ -6915,19 +7130,6 @@
       "subcategory": "software"
     },
     {
-      "id": "news-cb889a88fc432778",
-      "title": "丹麦奥胡斯铁桥上的“悲伤精灵”喷泉雕塑",
-      "url": "https://www.atlasobscura.com/places/the-solgrylle-of-the-blacksmiths-bridge",
-      "date": "2026-07-18",
-      "published": "2026-07-18T00:00:00-04:00",
-      "summary": "丹麦奥胡斯市的铁桥上有一座名为“悲伤精灵”的铜雕喷泉，是当地独特的城市景观。",
-      "detail": "在丹麦奥胡斯市的黑铁桥上，矗立着一座名为Solgrylle（“悲伤精灵”）的铜雕喷泉。这件公共艺术作品融合了北欧神话元素与现代城市设计，是当地居民和游客喜爱的打卡地标，展现了北欧城市独特的艺术品味。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "Atlas Obscura"
-    },
-    {
       "id": "news-44b8d3b1b7155778",
       "title": "小米首款 NAS 产品拆解评测：它适合你的第一台 NAS 吗？",
       "url": "https://sspai.com/post/112398",
@@ -6940,6 +7142,32 @@
       "category": "tech",
       "source": "少数派",
       "subcategory": "hardware"
+    },
+    {
+      "id": "news-44bdc4f23c32abd7",
+      "title": "36氪早报：月之暗面推出 Kimi K3、智谱 ARR 达 10 亿美元、苹果市值重返全球第一",
+      "url": "https://36kr.com/p/3900449325287305?f=rss",
+      "date": "2026-07-18",
+      "published": "2026-07-18T09:05:45+08:00",
+      "summary": "36氪早报涵盖多项热点：月之暗面推出 Kimi K3 开源模型、智谱 ARR 达 10 亿美元、苹果市值重返全球第一等。",
+      "detail": "36氪早间资讯导览：月之暗面正式推出开源模型 Kimi K3；智谱年化收入达到 10 亿美元，半年增长 15 倍；苹果市值重返全球第一；A 股存储板块龙头遭遇两个跌停；国际足联宣布世界杯冠军将获得独编号戒指。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "36氪"
+    },
+    {
+      "id": "news-ae567fbc00260488",
+      "title": "WAIC 2026 主论坛：当智能体走进物理世界",
+      "url": "https://36kr.com/p/3900439867147909?f=rss",
+      "date": "2026-07-18",
+      "published": "2026-07-18T08:53:35+08:00",
+      "summary": "阶跃星辰董事长印奇在 WAIC 2026 开幕式主论坛发表演讲，探讨 AI 智能体进入物理世界的路径与挑战。",
+      "detail": "2026 世界人工智能大会于 7 月 17 日在上海开幕，主题为“智能伙伴 共创未来”。阶跃星辰董事长印奇作为特邀嘉宾在主论坛发表演讲，围绕智能体从数字空间向物理世界延伸的技术路径与产业前景进行探讨。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "36氪"
     },
     {
       "id": "news-c7185d0884ddd667",
@@ -6994,30 +7222,17 @@
       "image": ""
     },
     {
-      "id": "news-44bdc4f23c32abd7",
-      "title": "36氪早报：月之暗面推出 Kimi K3、智谱 ARR 达 10 亿美元、苹果市值重返全球第一",
-      "url": "https://36kr.com/p/3900449325287305?f=rss",
+      "id": "news-cb889a88fc432778",
+      "title": "丹麦奥胡斯铁桥上的“悲伤精灵”喷泉雕塑",
+      "url": "https://www.atlasobscura.com/places/the-solgrylle-of-the-blacksmiths-bridge",
       "date": "2026-07-18",
-      "published": "2026-07-18T09:05:45+08:00",
-      "summary": "36氪早报涵盖多项热点：月之暗面推出 Kimi K3 开源模型、智谱 ARR 达 10 亿美元、苹果市值重返全球第一等。",
-      "detail": "36氪早间资讯导览：月之暗面正式推出开源模型 Kimi K3；智谱年化收入达到 10 亿美元，半年增长 15 倍；苹果市值重返全球第一；A 股存储板块龙头遭遇两个跌停；国际足联宣布世界杯冠军将获得独编号戒指。",
+      "published": "2026-07-18T00:00:00-04:00",
+      "summary": "丹麦奥胡斯市的铁桥上有一座名为“悲伤精灵”的铜雕喷泉，是当地独特的城市景观。",
+      "detail": "在丹麦奥胡斯市的黑铁桥上，矗立着一座名为Solgrylle（“悲伤精灵”）的铜雕喷泉。这件公共艺术作品融合了北欧神话元素与现代城市设计，是当地居民和游客喜爱的打卡地标，展现了北欧城市独特的艺术品味。",
       "image": "",
       "priority": 1,
-      "category": "ai",
-      "source": "36氪"
-    },
-    {
-      "id": "news-ae567fbc00260488",
-      "title": "WAIC 2026 主论坛：当智能体走进物理世界",
-      "url": "https://36kr.com/p/3900439867147909?f=rss",
-      "date": "2026-07-18",
-      "published": "2026-07-18T08:53:35+08:00",
-      "summary": "阶跃星辰董事长印奇在 WAIC 2026 开幕式主论坛发表演讲，探讨 AI 智能体进入物理世界的路径与挑战。",
-      "detail": "2026 世界人工智能大会于 7 月 17 日在上海开幕，主题为“智能伙伴 共创未来”。阶跃星辰董事长印奇作为特邀嘉宾在主论坛发表演讲，围绕智能体从数字空间向物理世界延伸的技术路径与产业前景进行探讨。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "36氪"
+      "category": "fun",
+      "source": "Atlas Obscura"
     },
     {
       "id": "news-778020560c777f89",
@@ -7127,19 +7342,6 @@
       "source": "36氪"
     },
     {
-      "id": "news-fac45f244b5d16cc",
-      "title": "LM Studio 发布 Bionic：面向开源模型的 AI 编程与文档智能体",
-      "url": "https://lmstudio.ai/blog/introducing-lm-studio-bionic",
-      "date": "2026-07-16",
-      "published": "2026-07-16T20:18:15+00:00",
-      "summary": "LM Studio 推出全新 AI 智能体 Bionic，支持本地运行开源模型完成编程、文档处理和语音转录，承诺零数据留存。",
-      "detail": "Bionic 是独立于 LM Studio 的全新应用，集成本地语音键盘（使用 Mistral Voxtral 模型）、代码库检查和文件编辑功能。用户可灵活切换本地模型与云端开源模型，适用于对隐私和成本敏感的开发者。LM Studio 承诺对 Bionic 用户零数据留存、不使用用户数据训练。",
-      "image": "",
-      "priority": 3,
-      "category": "ai",
-      "source": "Hacker News"
-    },
-    {
       "id": "news-d1065187ef74e575",
       "title": "月之暗面发布 Kimi K3：2.8万亿参数开源模型，性能逼近 Claude Fable 5",
       "url": "https://finance.sina.com.cn/tob/2026-07-17/doc-iniiahrp8128941.shtml",
@@ -7151,6 +7353,19 @@
       "priority": 3,
       "category": "ai",
       "source": "juya AI 日报"
+    },
+    {
+      "id": "news-fac45f244b5d16cc",
+      "title": "LM Studio 发布 Bionic：面向开源模型的 AI 编程与文档智能体",
+      "url": "https://lmstudio.ai/blog/introducing-lm-studio-bionic",
+      "date": "2026-07-16",
+      "published": "2026-07-16T20:18:15+00:00",
+      "summary": "LM Studio 推出全新 AI 智能体 Bionic，支持本地运行开源模型完成编程、文档处理和语音转录，承诺零数据留存。",
+      "detail": "Bionic 是独立于 LM Studio 的全新应用，集成本地语音键盘（使用 Mistral Voxtral 模型）、代码库检查和文件编辑功能。用户可灵活切换本地模型与云端开源模型，适用于对隐私和成本敏感的开发者。LM Studio 承诺对 Bionic 用户零数据留存、不使用用户数据训练。",
+      "image": "",
+      "priority": 3,
+      "category": "ai",
+      "source": "Hacker News"
     },
     {
       "id": "news-e5826eab593c7d42",
@@ -7446,32 +7661,6 @@
       "subcategory": "software"
     },
     {
-      "id": "news-624e4fa1613f4d25",
-      "title": "西班牙阿兰胡埃斯皇宫中的「瓷器厅」：比想象中更惊艳",
-      "url": "https://www.atlasobscura.com/places/porcelain-room",
-      "date": "2026-07-16",
-      "published": "2026-07-16T16:00:00-04:00",
-      "summary": "Atlas Obscura 介绍西班牙阿兰胡埃斯皇宫中一间装饰效果犹如戏剧幻境的瓷器厅。",
-      "detail": "游客到阿兰胡埃斯通常为皇家花园和宫殿的宏伟而来，但皇宫中最令人惊叹的宝藏之一却藏在一个角落房间里，其装饰效果犹如戏剧幻境，远超一般瓷器装饰的想象。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "Atlas Obscura"
-    },
-    {
-      "id": "news-dba1b6ea71f64076",
-      "title": "19 世纪美国山顶「圣城」Celestia：从理想到森林遗迹",
-      "url": "https://www.atlasobscura.com/places/celestia",
-      "date": "2026-07-16",
-      "published": "2026-07-16T14:00:00-04:00",
-      "summary": "Atlas Obscura 介绍 19 世纪宾州山顶曾被规划为神圣城市 Celestia，如今只剩森林遗迹。",
-      "detail": "1850 年代，一座宾州山顶被规划为神圣城市 Celestia，如今只剩森林、旧地基遗迹和一块历史标记。这个乌托邦式的城市规划实验已成为历史趣闻，记录了 19 世纪美国宗教与理想主义的交汇。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "Atlas Obscura"
-    },
-    {
       "id": "news-e2d867d1c41867cd",
       "title": "研究发现马能仅凭视觉识别屏幕上的捕食者",
       "url": "https://www.solidot.org/story?sid=84847",
@@ -7496,6 +7685,19 @@
       "priority": 1,
       "category": "fun",
       "source": "少数派"
+    },
+    {
+      "id": "news-624e4fa1613f4d25",
+      "title": "西班牙阿兰胡埃斯皇宫中的「瓷器厅」：比想象中更惊艳",
+      "url": "https://www.atlasobscura.com/places/porcelain-room",
+      "date": "2026-07-16",
+      "published": "2026-07-16T16:00:00-04:00",
+      "summary": "Atlas Obscura 介绍西班牙阿兰胡埃斯皇宫中一间装饰效果犹如戏剧幻境的瓷器厅。",
+      "detail": "游客到阿兰胡埃斯通常为皇家花园和宫殿的宏伟而来，但皇宫中最令人惊叹的宝藏之一却藏在一个角落房间里，其装饰效果犹如戏剧幻境，远超一般瓷器装饰的想象。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Atlas Obscura"
     },
     {
       "id": "news-d1698180a70ac321",
@@ -7523,6 +7725,19 @@
       "priority": 1,
       "category": "ai",
       "source": "Solidot"
+    },
+    {
+      "id": "news-dba1b6ea71f64076",
+      "title": "19 世纪美国山顶「圣城」Celestia：从理想到森林遗迹",
+      "url": "https://www.atlasobscura.com/places/celestia",
+      "date": "2026-07-16",
+      "published": "2026-07-16T14:00:00-04:00",
+      "summary": "Atlas Obscura 介绍 19 世纪宾州山顶曾被规划为神圣城市 Celestia，如今只剩森林遗迹。",
+      "detail": "1850 年代，一座宾州山顶被规划为神圣城市 Celestia，如今只剩森林、旧地基遗迹和一块历史标记。这个乌托邦式的城市规划实验已成为历史趣闻，记录了 19 世纪美国宗教与理想主义的交汇。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Atlas Obscura"
     },
     {
       "id": "news-e3fdc5add2d6d651",
@@ -7696,6 +7911,19 @@
       "source": "36氪"
     },
     {
+      "id": "news-c8d5d4c3bd2fd1f8",
+      "title": "Thinking Machines 发布 9750 亿参数开源模型 Inkling",
+      "url": "https://thinkingmachines.ai/news/introducing-inkling/",
+      "date": "2026-07-15",
+      "published": "2026-07-15T18:12:45+08:00",
+      "summary": "Thinking Machines Lab 发布开源权重模型 Inkling，采用 MoE 架构共 9750 亿参数、410 亿激活参数，支持文本、图像和音频多模态推理。",
+      "detail": "Inkling 是 Thinking Machines Lab 推出的首个开源权重大模型，采用混合专家架构，总参数 9750 亿、激活参数 410 亿，支持最高 100 万 token 上下文。模型在 45 万亿 token 的文本、图像、音频和视频数据上预训练，支持可控思维深度调节。团队同时发布了轻量版 Inkling-Small（120 亿激活参数）。模型权重已在 Hugging Face 开放，并支持 Tinker 平台微调。Thinking Machines 由前 OpenAI 研究员创立，此前已完成多轮融资。",
+      "image": "",
+      "priority": 3,
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
       "id": "news-a08ba995f66e811c",
       "title": "世界杯半决赛：西班牙轻取法国晋级决赛，英格兰今夜迎战阿根廷",
       "url": "https://www.theguardian.com/football/live/2026/jul/15/world-cup-2026-spain-stun-listless-france-to-reach-final-england-v-argentina-buildup-live",
@@ -7709,17 +7937,17 @@
       "image": ""
     },
     {
-      "id": "news-c8d5d4c3bd2fd1f8",
-      "title": "Thinking Machines 发布 9750 亿参数开源模型 Inkling",
-      "url": "https://thinkingmachines.ai/news/introducing-inkling/",
+      "id": "news-638577ad36631f71",
+      "title": "DeepSeek 创始人梁文锋成全球 AI 领域新首富",
+      "url": "https://36kr.com/p/3896138695706497",
       "date": "2026-07-15",
-      "published": "2026-07-15T18:12:45+08:00",
-      "summary": "Thinking Machines Lab 发布开源权重模型 Inkling，采用 MoE 架构共 9750 亿参数、410 亿激活参数，支持文本、图像和音频多模态推理。",
-      "detail": "Inkling 是 Thinking Machines Lab 推出的首个开源权重大模型，采用混合专家架构，总参数 9750 亿、激活参数 410 亿，支持最高 100 万 token 上下文。模型在 45 万亿 token 的文本、图像、音频和视频数据上预训练，支持可控思维深度调节。团队同时发布了轻量版 Inkling-Small（120 亿激活参数）。模型权重已在 Hugging Face 开放，并支持 Tinker 平台微调。Thinking Machines 由前 OpenAI 研究员创立，此前已完成多轮融资。",
+      "published": "2026-07-15T07:57:20+0800",
+      "summary": "DeepSeek 创始人梁文锋因公司估值飙升，成为全球 AI 公司领域身价最高的个人。",
+      "detail": "据 36 氪报道，DeepSeek 凭借在大模型领域的技术突破和商业化进展，公司估值持续攀升，其创始人梁文锋的个人财富也随之跃居全球 AI 公司创始人之首。这一变化反映了中国 AI 企业在全球竞争格局中的崛起势头。",
       "image": "",
       "priority": 3,
       "category": "ai",
-      "source": "Hacker News"
+      "source": "36氪"
     },
     {
       "id": "news-dabb1892c187a99d",
@@ -7746,19 +7974,6 @@
       "source": "juya AI 日报",
       "date": "2026-07-15",
       "image": ""
-    },
-    {
-      "id": "news-638577ad36631f71",
-      "title": "DeepSeek 创始人梁文锋成全球 AI 领域新首富",
-      "url": "https://36kr.com/p/3896138695706497",
-      "date": "2026-07-15",
-      "published": "2026-07-15T07:57:20+0800",
-      "summary": "DeepSeek 创始人梁文锋因公司估值飙升，成为全球 AI 公司领域身价最高的个人。",
-      "detail": "据 36 氪报道，DeepSeek 凭借在大模型领域的技术突破和商业化进展，公司估值持续攀升，其创始人梁文锋的个人财富也随之跃居全球 AI 公司创始人之首。这一变化反映了中国 AI 企业在全球竞争格局中的崛起势头。",
-      "image": "",
-      "priority": 3,
-      "category": "ai",
-      "source": "36氪"
     },
     {
       "id": "news-9982d352005823ef",
@@ -7857,6 +8072,46 @@
       "image": ""
     },
     {
+      "id": "news-6102ddc67abb8554",
+      "title": "前非夕科技合伙人创业，工业智能体公司获数千万元种子轮融资",
+      "url": "https://36kr.com/p/3896298534520705?f=rss",
+      "published": "2026-07-15T10:40:40+08:00",
+      "summary": "追知工科完成数千万元种子轮融资，聚焦垂域工业智能体，由多家机构联合投资。",
+      "detail": "前非夕科技核心业务合伙人创办的追知工科完成数千万元种子轮融资，由 L2F 光源创业者基金、尚融资本、一村资本联合投资。公司成立于 2024 年，专注于工业领域的 AI 智能体应用，本轮融资将用于核心产品研发和市场拓展。这是工业 AI 赛道的又一笔新融资，反映出资本对垂域 AI 应用的持续看好。",
+      "priority": 2,
+      "category": "ai",
+      "source": "36氪",
+      "date": "2026-07-15",
+      "image": ""
+    },
+    {
+      "id": "news-7e499ac0ae1b3bd7",
+      "title": "前阿里平头哥半导体高管创业，RISC-V 芯片公司完成 Pre-A 轮融资",
+      "url": "https://36kr.com/p/3896295689569922?f=rss",
+      "published": "2026-07-15T10:37:46+08:00",
+      "summary": "前阿里平头哥高管创办的智创芯完成 Pre-A 轮融资，聚焦 RISC-V 架构芯片与开源鸿蒙生态。",
+      "detail": "深圳市智创芯微电子完成 Pre-A 轮融资，由启迪之星创投、深开鸿产业基金等机构共同参与。公司由前阿里平头哥半导体高管创办，聚焦 RISC-V 架构芯片研发，并将与深开鸿围绕开源鸿蒙生态展开合作。RISC-V 作为开源指令集架构，正成为国产芯片自主化的重要路径。",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "hardware",
+      "source": "36氪",
+      "date": "2026-07-15",
+      "image": ""
+    },
+    {
+      "id": "news-ae76d24ab168f7d3",
+      "title": "华泰证券：AI 眼镜等终端有望成为消费新入口",
+      "url": "https://36kr.com/newsflashes/3896165823858562",
+      "date": "2026-07-15",
+      "published": "2026-07-15T08:32:46+0800",
+      "summary": "华泰证券研报指出，AI 眼镜等新型终端设备有望成为下一代消费电子的核心入口和场景载体。",
+      "detail": "随着多模态大模型能力的提升，AI 眼镜、AI 耳机等可穿戴设备正从概念走向量产。华泰证券认为，这类终端将成为继智能手机之后的新一代人机交互入口，带动消费电子产业链的新一轮升级。多家厂商已在布局相关产品。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "36氪"
+    },
+    {
       "id": "news-aee7beee00df523a",
       "title": "安全研究者揭示 Claude 记忆系统隐私泄露风险",
       "url": "https://www.ayush.digital/blog/the-memory-heist",
@@ -7883,29 +8138,28 @@
       "image": ""
     },
     {
-      "id": "news-6102ddc67abb8554",
-      "title": "前非夕科技合伙人创业，工业智能体公司获数千万元种子轮融资",
-      "url": "https://36kr.com/p/3896298534520705?f=rss",
-      "published": "2026-07-15T10:40:40+08:00",
-      "summary": "追知工科完成数千万元种子轮融资，聚焦垂域工业智能体，由多家机构联合投资。",
-      "detail": "前非夕科技核心业务合伙人创办的追知工科完成数千万元种子轮融资，由 L2F 光源创业者基金、尚融资本、一村资本联合投资。公司成立于 2024 年，专注于工业领域的 AI 智能体应用，本轮融资将用于核心产品研发和市场拓展。这是工业 AI 赛道的又一笔新融资，反映出资本对垂域 AI 应用的持续看好。",
+      "id": "news-4bb026f2c55f8b93",
+      "title": "火山引擎发布 AI MediaKit CLI 与 Skill，为 Agent 提供音视频工作台",
+      "url": "https://mp.weixin.qq.com/s/Kfrcbw91WY71XKD50vVEmg",
+      "published": "2026-07-15T01:21:32+08:00",
+      "summary": "火山引擎发布 AI MediaKit CLI 与 Skill，集成 100+ 音视频原子能力，支持 Claude Code 等通过自然语言触发剪辑与增强任务。",
+      "detail": "火山引擎智能视频云发布 AI MediaKit CLI 与 Skill，旨在为 Agent 提供可调用与编排的音视频工作台。该套件包含 CLI 工具和面向 Agent runtime 的 Skill，支持通过自然语言触发剪辑、视频、图像、音频四大能力域的任务，并将异步长耗时任务的提交与轮询下沉至工具层。mediakit-cli 已在 GitHub 开源。",
       "priority": 2,
       "category": "ai",
-      "source": "36氪",
+      "source": "juya AI 日报",
       "date": "2026-07-15",
       "image": ""
     },
     {
-      "id": "news-7e499ac0ae1b3bd7",
-      "title": "前阿里平头哥半导体高管创业，RISC-V 芯片公司完成 Pre-A 轮融资",
-      "url": "https://36kr.com/p/3896295689569922?f=rss",
-      "published": "2026-07-15T10:37:46+08:00",
-      "summary": "前阿里平头哥高管创办的智创芯完成 Pre-A 轮融资，聚焦 RISC-V 架构芯片与开源鸿蒙生态。",
-      "detail": "深圳市智创芯微电子完成 Pre-A 轮融资，由启迪之星创投、深开鸿产业基金等机构共同参与。公司由前阿里平头哥半导体高管创办，聚焦 RISC-V 架构芯片研发，并将与深开鸿围绕开源鸿蒙生态展开合作。RISC-V 作为开源指令集架构，正成为国产芯片自主化的重要路径。",
+      "id": "news-e8e133a6d7bf44e7",
+      "title": "PixVerse 推出游戏引擎，基于实时世界模型 R1 实现自然语言生成游戏世界",
+      "url": "https://world.pixverse.ai/game/invite/",
+      "published": "2026-07-15T01:21:32+08:00",
+      "summary": "PixVerse 推出基于实时世界模型 R1 的游戏引擎，支持自然语言交互实时生成游戏世界，并完成 C 轮融资总额达 4.39 亿美元。",
+      "detail": "PixVerse 宣布推出 PixVerse Game Engine，基于其实时世界模型 R1，将抽象游戏机制与视觉表达分离，玩家使用自然语言交互时世界会实时响应。PixVerse 还将推出 AI 角色实时响应观众的互动直播。同日宣布完成 Series C 延展轮融资，总融资额达 4.39 亿美元，投资方包括阿里巴巴、蓝色光标等。",
       "priority": 2,
-      "category": "tech",
-      "subcategory": "hardware",
-      "source": "36氪",
+      "category": "ai",
+      "source": "juya AI 日报",
       "date": "2026-07-15",
       "image": ""
     },
@@ -8034,19 +8288,6 @@
       "image": ""
     },
     {
-      "id": "news-ae76d24ab168f7d3",
-      "title": "华泰证券：AI 眼镜等终端有望成为消费新入口",
-      "url": "https://36kr.com/newsflashes/3896165823858562",
-      "date": "2026-07-15",
-      "published": "2026-07-15T08:32:46+0800",
-      "summary": "华泰证券研报指出，AI 眼镜等新型终端设备有望成为下一代消费电子的核心入口和场景载体。",
-      "detail": "随着多模态大模型能力的提升，AI 眼镜、AI 耳机等可穿戴设备正从概念走向量产。华泰证券认为，这类终端将成为继智能手机之后的新一代人机交互入口，带动消费电子产业链的新一轮升级。多家厂商已在布局相关产品。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "36氪"
-    },
-    {
       "id": "news-b3ae04aa8c02bcfd",
       "title": "研究者用 20 个 Codex 并行解决 20 个 Erdős 数学难题",
       "url": "https://www.starfleetmath.com/",
@@ -8057,32 +8298,6 @@
       "category": "tech",
       "subcategory": "ai-frontier",
       "source": "Hacker News",
-      "date": "2026-07-15",
-      "image": ""
-    },
-    {
-      "id": "news-4bb026f2c55f8b93",
-      "title": "火山引擎发布 AI MediaKit CLI 与 Skill，为 Agent 提供音视频工作台",
-      "url": "https://mp.weixin.qq.com/s/Kfrcbw91WY71XKD50vVEmg",
-      "published": "2026-07-15T01:21:32+08:00",
-      "summary": "火山引擎发布 AI MediaKit CLI 与 Skill，集成 100+ 音视频原子能力，支持 Claude Code 等通过自然语言触发剪辑与增强任务。",
-      "detail": "火山引擎智能视频云发布 AI MediaKit CLI 与 Skill，旨在为 Agent 提供可调用与编排的音视频工作台。该套件包含 CLI 工具和面向 Agent runtime 的 Skill，支持通过自然语言触发剪辑、视频、图像、音频四大能力域的任务，并将异步长耗时任务的提交与轮询下沉至工具层。mediakit-cli 已在 GitHub 开源。",
-      "priority": 2,
-      "category": "ai",
-      "source": "juya AI 日报",
-      "date": "2026-07-15",
-      "image": ""
-    },
-    {
-      "id": "news-e8e133a6d7bf44e7",
-      "title": "PixVerse 推出游戏引擎，基于实时世界模型 R1 实现自然语言生成游戏世界",
-      "url": "https://world.pixverse.ai/game/invite/",
-      "published": "2026-07-15T01:21:32+08:00",
-      "summary": "PixVerse 推出基于实时世界模型 R1 的游戏引擎，支持自然语言交互实时生成游戏世界，并完成 C 轮融资总额达 4.39 亿美元。",
-      "detail": "PixVerse 宣布推出 PixVerse Game Engine，基于其实时世界模型 R1，将抽象游戏机制与视觉表达分离，玩家使用自然语言交互时世界会实时响应。PixVerse 还将推出 AI 角色实时响应观众的互动直播。同日宣布完成 Series C 延展轮融资，总融资额达 4.39 亿美元，投资方包括阿里巴巴、蓝色光标等。",
-      "priority": 2,
-      "category": "ai",
-      "source": "juya AI 日报",
       "date": "2026-07-15",
       "image": ""
     },
@@ -8154,6 +8369,34 @@
       "image": ""
     },
     {
+      "id": "news-39fbd90a6bb63fa4",
+      "title": "谷歌参与建设美国最大太阳能项目，总规模达 2.5GW",
+      "url": "https://36kr.com/newsflashes/3896149563475591",
+      "date": "2026-07-15",
+      "published": "2026-07-15T08:30:13+0800",
+      "summary": "谷歌宣布参与建设美国规模最大的太阳能发电项目，总装机容量达 2.5 吉瓦，为其数据中心提供清洁能源。",
+      "detail": "随着 AI 训练和推理对算力的需求爆炸式增长，科技巨头的能源消耗也急剧攀升。谷歌此次参与建设 2.5GW 太阳能项目，是其 2030 年全天候无碳能源运营目标的重要一步。这也反映出科技行业对可再生能源的大规模投资正在加速。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "36氪",
+      "subcategory": "industry"
+    },
+    {
+      "id": "news-99cf0e9200f98540",
+      "title": "三星拟在韩国器兴新建 DRAM 工厂",
+      "url": "https://36kr.com/newsflashes/3896141531629446",
+      "date": "2026-07-15",
+      "published": "2026-07-15T08:28:01+0800",
+      "summary": "三星电子计划在韩国器兴半导体园区新建一座 DRAM 存储芯片工厂，以应对 AI 时代的存储需求增长。",
+      "detail": "三星电子宣布将在韩国器兴基地新建 DRAM 工厂，这是其半导体产能扩张计划的一部分。随着 AI 训练和推理对高性能内存的需求持续攀升，三星正在加大在先进存储芯片领域的投资力度，与 SK 海力士、美光等竞争对手展开产能竞赛。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "36氪",
+      "subcategory": "hardware"
+    },
+    {
       "id": "news-3f6e5e84e9b43d92",
       "title": "《侏罗纪公园》中的计算机系统被详细复原分析",
       "url": "https://fabiensanglard.net/jurrasic_park_computers/index.html",
@@ -8163,6 +8406,32 @@
       "priority": 1,
       "category": "fun",
       "source": "Hacker News",
+      "date": "2026-07-15",
+      "image": ""
+    },
+    {
+      "id": "news-cad2c6178dcd94b5",
+      "title": "OpenClaw 发布 v2026.7.1 版本，重构 Control UI 并新增多模型支持",
+      "url": "https://daily.juya.uk/issues/2026-07-15/",
+      "published": "2026-07-15T01:21:32+08:00",
+      "summary": "OpenClaw 推送 v2026.7.1 更新，重构 Control UI，新增 GPT-5.6、Hy3、Muse Spark 等模型支持，强化移动端与 Gateway 功能。",
+      "detail": "OpenClaw 正式推送 v2026.7.1 更新，重构 Control UI 使其更接近浏览器工作区，并优化多平台新手引导。模型层面新增 GPT-5.6（含 Sol、Terra、Luna）、Tencent Hy3、Meta Muse Spark 1.1 等兼容支持，同时深化了 Codex 及 Claude Code 的集成。移动端各应用新增离线缓存、语音笔记与工作区终端，Gateway 增加崩溃循环自动阻断与 Agent 审计历史功能。",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-07-15",
+      "image": ""
+    },
+    {
+      "id": "news-024fcd414dcc10e9",
+      "title": "Spotify 面向特定区域 Premium 用户推出对话式交互 Beta 功能",
+      "url": "https://newsroom.spotify.com/2026-07-14/talk-to-spotify-announcement-beta/",
+      "published": "2026-07-15T01:21:32+08:00",
+      "summary": "Spotify 推出对话式交互功能，Premium 用户可通过语音或文字控制播放和探索音频内容，目前仅限美国、爱尔兰和瑞典英语用户。",
+      "detail": "Spotify 推出对话式交互功能，允许 Premium 用户通过语音或文字与应用进行来回对话，以控制播放、了解音频背景和探索收听历史。该功能混合使用 Spotify 自研 AI 技术及多家提供商的模型，目前以 Beta 版逐步推出，仅限美国、爱尔兰和瑞典 18 岁以上的英语 Premium 用户在 iOS 和 Android 上使用。",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报",
       "date": "2026-07-15",
       "image": ""
     },
@@ -8247,74 +8516,6 @@
       "image": ""
     },
     {
-      "id": "news-39fbd90a6bb63fa4",
-      "title": "谷歌参与建设美国最大太阳能项目，总规模达 2.5GW",
-      "url": "https://36kr.com/newsflashes/3896149563475591",
-      "date": "2026-07-15",
-      "published": "2026-07-15T08:30:13+0800",
-      "summary": "谷歌宣布参与建设美国规模最大的太阳能发电项目，总装机容量达 2.5 吉瓦，为其数据中心提供清洁能源。",
-      "detail": "随着 AI 训练和推理对算力的需求爆炸式增长，科技巨头的能源消耗也急剧攀升。谷歌此次参与建设 2.5GW 太阳能项目，是其 2030 年全天候无碳能源运营目标的重要一步。这也反映出科技行业对可再生能源的大规模投资正在加速。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "source": "36氪",
-      "subcategory": "industry"
-    },
-    {
-      "id": "news-99cf0e9200f98540",
-      "title": "三星拟在韩国器兴新建 DRAM 工厂",
-      "url": "https://36kr.com/newsflashes/3896141531629446",
-      "date": "2026-07-15",
-      "published": "2026-07-15T08:28:01+0800",
-      "summary": "三星电子计划在韩国器兴半导体园区新建一座 DRAM 存储芯片工厂，以应对 AI 时代的存储需求增长。",
-      "detail": "三星电子宣布将在韩国器兴基地新建 DRAM 工厂，这是其半导体产能扩张计划的一部分。随着 AI 训练和推理对高性能内存的需求持续攀升，三星正在加大在先进存储芯片领域的投资力度，与 SK 海力士、美光等竞争对手展开产能竞赛。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "source": "36氪",
-      "subcategory": "hardware"
-    },
-    {
-      "id": "news-cad2c6178dcd94b5",
-      "title": "OpenClaw 发布 v2026.7.1 版本，重构 Control UI 并新增多模型支持",
-      "url": "https://daily.juya.uk/issues/2026-07-15/",
-      "published": "2026-07-15T01:21:32+08:00",
-      "summary": "OpenClaw 推送 v2026.7.1 更新，重构 Control UI，新增 GPT-5.6、Hy3、Muse Spark 等模型支持，强化移动端与 Gateway 功能。",
-      "detail": "OpenClaw 正式推送 v2026.7.1 更新，重构 Control UI 使其更接近浏览器工作区，并优化多平台新手引导。模型层面新增 GPT-5.6（含 Sol、Terra、Luna）、Tencent Hy3、Meta Muse Spark 1.1 等兼容支持，同时深化了 Codex 及 Claude Code 的集成。移动端各应用新增离线缓存、语音笔记与工作区终端，Gateway 增加崩溃循环自动阻断与 Agent 审计历史功能。",
-      "priority": 1,
-      "category": "ai",
-      "source": "juya AI 日报",
-      "date": "2026-07-15",
-      "image": ""
-    },
-    {
-      "id": "news-024fcd414dcc10e9",
-      "title": "Spotify 面向特定区域 Premium 用户推出对话式交互 Beta 功能",
-      "url": "https://newsroom.spotify.com/2026-07-14/talk-to-spotify-announcement-beta/",
-      "published": "2026-07-15T01:21:32+08:00",
-      "summary": "Spotify 推出对话式交互功能，Premium 用户可通过语音或文字控制播放和探索音频内容，目前仅限美国、爱尔兰和瑞典英语用户。",
-      "detail": "Spotify 推出对话式交互功能，允许 Premium 用户通过语音或文字与应用进行来回对话，以控制播放、了解音频背景和探索收听历史。该功能混合使用 Spotify 自研 AI 技术及多家提供商的模型，目前以 Beta 版逐步推出，仅限美国、爱尔兰和瑞典 18 岁以上的英语 Premium 用户在 iOS 和 Android 上使用。",
-      "priority": 1,
-      "category": "ai",
-      "source": "juya AI 日报",
-      "date": "2026-07-15",
-      "image": ""
-    },
-    {
-      "id": "news-e42e4e79ed5fc1c8",
-      "title": "Bonsai 27B：可在手机上运行的 270 亿参数大模型",
-      "url": "https://prismml.com/news/bonsai-27b",
-      "date": "2026-07-14",
-      "published": "2026-07-14T17:50:48+00:00",
-      "summary": "PrismML 发布 Bonsai 27B，这是一款 270 亿参数的语言模型，可在移动设备上本地运行。",
-      "detail": "PrismML 推出的 Bonsai 27B 模型在保持 27B 参数规模的同时，通过架构优化实现了在手机端的本地推理。这意味着用户无需联网即可使用大模型能力，对于隐私保护和离线场景具有重要意义。该模型的发布标志着端侧大模型正在从实验走向实用。",
-      "image": "",
-      "priority": 3,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "ai-frontier"
-    },
-    {
       "id": "news-38f99b4f4841f73b",
       "title": "AI 公司高管与经济学家联名呼吁关注 AI 对经济的冲击",
       "url": "https://www.solidot.org/story?sid=84829",
@@ -8339,6 +8540,20 @@
       "priority": 3,
       "category": "ai",
       "source": "36氪"
+    },
+    {
+      "id": "news-e42e4e79ed5fc1c8",
+      "title": "Bonsai 27B：可在手机上运行的 270 亿参数大模型",
+      "url": "https://prismml.com/news/bonsai-27b",
+      "date": "2026-07-14",
+      "published": "2026-07-14T17:50:48+00:00",
+      "summary": "PrismML 发布 Bonsai 27B，这是一款 270 亿参数的语言模型，可在移动设备上本地运行。",
+      "detail": "PrismML 推出的 Bonsai 27B 模型在保持 27B 参数规模的同时，通过架构优化实现了在手机端的本地推理。这意味着用户无需联网即可使用大模型能力，对于隐私保护和离线场景具有重要意义。该模型的发布标志着端侧大模型正在从实验走向实用。",
+      "image": "",
+      "priority": 3,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "ai-frontier"
     },
     {
       "id": "news-48c34098c802d9ba",
@@ -8448,20 +8663,6 @@
       "subcategory": "software"
     },
     {
-      "id": "news-ac53c0a8609de6f3",
-      "title": "Cursor 编辑器曝零日漏洞，安全研究团队选择公开披露",
-      "url": "https://mindgard.ai/blog/cursor-0day-when-full-disclosure-becomes-the-only-protection-left",
-      "date": "2026-07-14",
-      "published": "2026-07-14T17:58:35+00:00",
-      "summary": "AI 编程编辑器 Cursor 被发现存在零日安全漏洞，安全研究团队因修复迟缓而选择全文公开披露细节。",
-      "detail": "Mindgard 安全团队发现 Cursor 编辑器存在可被利用的零日漏洞，在多次联系官方未获及时响应后，团队决定进行全文公开披露以保护用户。这一事件引发了关于 AI 编程工具安全审计标准的讨论——随着 AI 工具深度介入开发流程，其自身的安全性也需受到同等重视。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "software"
-    },
-    {
       "id": "news-5eb7d11d6346df4d",
       "title": "瑞士军方拥抱开源，切断与微软的深度合作",
       "url": "https://www.solidot.org/story?sid=84827",
@@ -8474,6 +8675,20 @@
       "category": "tech",
       "source": "Solidot",
       "subcategory": "industry"
+    },
+    {
+      "id": "news-ac53c0a8609de6f3",
+      "title": "Cursor 编辑器曝零日漏洞，安全研究团队选择公开披露",
+      "url": "https://mindgard.ai/blog/cursor-0day-when-full-disclosure-becomes-the-only-protection-left",
+      "date": "2026-07-14",
+      "published": "2026-07-14T17:58:35+00:00",
+      "summary": "AI 编程编辑器 Cursor 被发现存在零日安全漏洞，安全研究团队因修复迟缓而选择全文公开披露细节。",
+      "detail": "Mindgard 安全团队发现 Cursor 编辑器存在可被利用的零日漏洞，在多次联系官方未获及时响应后，团队决定进行全文公开披露以保护用户。这一事件引发了关于 AI 编程工具安全审计标准的讨论——随着 AI 工具深度介入开发流程，其自身的安全性也需受到同等重视。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "software"
     },
     {
       "id": "news-3f485bcd8a25f5c4",
@@ -8510,6 +8725,34 @@
       "published": "2026-07-14T10:17:42+08:00",
       "summary": "海关总署数据显示上半年我国算力硬件进出口额达5.13万亿元，同比增长56.6%，AI驱动的电子元件和智能产品出口强劲。",
       "detail": "海关总署副署长王军在国新办发布会上表示，随着人工智能快速发展，我国相关产品进出口动力强劲。上半年我国电子元件、电脑零部件等算力硬件进出口额度达到5.13万亿元，增长56.6%。眼镜、翻译器、机械外骨骼等智能产品快速迭代，各类创新产品不断涌现。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "36氪",
+      "subcategory": "industry"
+    },
+    {
+      "id": "news-df899bf6e13b9f18",
+      "title": "人形机器人公司逐际动力完成 2 亿美元 Pre-IPO 融资，估值 150 亿元",
+      "url": "https://36kr.com/p/3893976502287618",
+      "date": "2026-07-14",
+      "published": "2026-07-14T08:46:41+0800",
+      "summary": "逐际动力完成 2 亿美元 Pre-IPO 轮融资，投后估值达 150 亿元人民币，加速人形机器人商业化进程。",
+      "detail": "人形机器人赛道持续升温。逐际动力本轮融资是国内具身智能领域规模最大的 Pre-IPO 轮次之一，资金将用于人形机器人的量产和商业化落地。该公司在运动控制和场景适配方面已取得阶段性成果，正加速向工业和服务业场景渗透。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "36氪",
+      "subcategory": "hardware"
+    },
+    {
+      "id": "news-8aa4e174767134a8",
+      "title": "海南将成中国首个禁售燃油车省份；SK 海力士股价暴跌 15%",
+      "url": "https://36kr.com/p/3894729787767810",
+      "date": "2026-07-14",
+      "published": "2026-07-14T08:04:11+0800",
+      "summary": "海南省宣布将率先实施燃油车禁售政策，成为中国首个明确禁售时间表的省份；同期 SK 海力士股价单日暴跌 15%。",
+      "detail": "海南省因岛屿地理特征和新能源基础设施建设进展，率先提出禁售燃油车的目标，为中国其他省份提供了政策参照。与此同时，全球存储芯片巨头 SK 海力士股价单日大跌 15%，市场对其 AI 内存需求的可持续性产生了分歧。",
       "image": "",
       "priority": 2,
       "category": "tech",
@@ -8596,20 +8839,6 @@
       "source": "juya AI 日报"
     },
     {
-      "id": "news-df899bf6e13b9f18",
-      "title": "人形机器人公司逐际动力完成 2 亿美元 Pre-IPO 融资，估值 150 亿元",
-      "url": "https://36kr.com/p/3893976502287618",
-      "date": "2026-07-14",
-      "published": "2026-07-14T08:46:41+0800",
-      "summary": "逐际动力完成 2 亿美元 Pre-IPO 轮融资，投后估值达 150 亿元人民币，加速人形机器人商业化进程。",
-      "detail": "人形机器人赛道持续升温。逐际动力本轮融资是国内具身智能领域规模最大的 Pre-IPO 轮次之一，资金将用于人形机器人的量产和商业化落地。该公司在运动控制和场景适配方面已取得阶段性成果，正加速向工业和服务业场景渗透。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "36氪",
-      "subcategory": "hardware"
-    },
-    {
       "id": "news-3a3d9c8558b4734c",
       "title": "德尚预测法国 vs 西班牙半决赛将非常精彩",
       "url": "https://www.bbc.co.uk/sport/football/articles/c79y29l32gxo?at_medium=RSS&at_campaign=rss",
@@ -8621,48 +8850,6 @@
       "priority": 2,
       "category": "sports",
       "source": "BBC Sport"
-    },
-    {
-      "id": "news-8aa4e174767134a8",
-      "title": "海南将成中国首个禁售燃油车省份；SK 海力士股价暴跌 15%",
-      "url": "https://36kr.com/p/3894729787767810",
-      "date": "2026-07-14",
-      "published": "2026-07-14T08:04:11+0800",
-      "summary": "海南省宣布将率先实施燃油车禁售政策，成为中国首个明确禁售时间表的省份；同期 SK 海力士股价单日暴跌 15%。",
-      "detail": "海南省因岛屿地理特征和新能源基础设施建设进展，率先提出禁售燃油车的目标，为中国其他省份提供了政策参照。与此同时，全球存储芯片巨头 SK 海力士股价单日大跌 15%，市场对其 AI 内存需求的可持续性产生了分歧。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "36氪",
-      "subcategory": "industry"
-    },
-    {
-      "id": "news-a39d54995aabd04b",
-      "title": "JEPA 世界模型实战：研究者在超级马里奥上训练出预测模型",
-      "url": "https://www.benjamin-bai.com/projects/lemario",
-      "published": "2026-07-14T22:30:47+00:00",
-      "summary": "LeMario 项目使用 JEPA 架构在超级马里奥兄弟游戏上训练世界模型，展示了 AI 学习游戏物理的能力。",
-      "detail": "LeMario 项目展示了如何使用 JEPA（联合嵌入预测架构）在经典游戏超级马里奥兄弟上训练世界模型。该模型能够预测游戏世界的未来状态，无需显式规则即可学习游戏物理机制。这一实验为理解世界模型在复杂环境中的应用提供了有趣的案例，也是 AI 研究与游戏结合的生动示范。",
-      "priority": 1,
-      "category": "tech",
-      "subcategory": "ai-frontier",
-      "source": "Hacker News",
-      "date": "2026-07-14",
-      "image": ""
-    },
-    {
-      "id": "news-e01532e95a752dd3",
-      "title": "实战分享：如何将 HTMX 与 Go 结合使用",
-      "url": "https://www.alexedwards.net/blog/how-i-use-htmx-with-go",
-      "date": "2026-07-14",
-      "published": "2026-07-14T19:55:31+00:00",
-      "summary": "开发者 Alex Edwards 分享了在 Go 后端项目中集成 HTMX 的实践经验，展示了服务端渲染与现代交互的结合方案。",
-      "detail": "HTMX 是一个轻量级前端库，允许通过 HTML 属性直接发起 AJAX 请求并更新页面片段，无需编写 JavaScript。本文作者详细介绍了如何在 Go Web 应用中利用 HTMX 实现表单提交、动态列表加载等常见交互模式，为追求简洁技术栈的开发者提供了实用参考。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "software"
     },
     {
       "id": "news-5cc29c5cbf8143aa",
@@ -8679,6 +8866,20 @@
       "subcategory": "software"
     },
     {
+      "id": "news-a39d54995aabd04b",
+      "title": "JEPA 世界模型实战：研究者在超级马里奥上训练出预测模型",
+      "url": "https://www.benjamin-bai.com/projects/lemario",
+      "published": "2026-07-14T22:30:47+00:00",
+      "summary": "LeMario 项目使用 JEPA 架构在超级马里奥兄弟游戏上训练世界模型，展示了 AI 学习游戏物理的能力。",
+      "detail": "LeMario 项目展示了如何使用 JEPA（联合嵌入预测架构）在经典游戏超级马里奥兄弟上训练世界模型。该模型能够预测游戏世界的未来状态，无需显式规则即可学习游戏物理机制。这一实验为理解世界模型在复杂环境中的应用提供了有趣的案例，也是 AI 研究与游戏结合的生动示范。",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "Hacker News",
+      "date": "2026-07-14",
+      "image": ""
+    },
+    {
       "id": "news-0ddc4c57121ac756",
       "title": "加州新提案拟禁止「无限滚动」设计模式",
       "url": "https://www.solidot.org/story?sid=84830",
@@ -8690,6 +8891,20 @@
       "priority": 1,
       "category": "fun",
       "source": "Solidot"
+    },
+    {
+      "id": "news-e01532e95a752dd3",
+      "title": "实战分享：如何将 HTMX 与 Go 结合使用",
+      "url": "https://www.alexedwards.net/blog/how-i-use-htmx-with-go",
+      "date": "2026-07-14",
+      "published": "2026-07-14T19:55:31+00:00",
+      "summary": "开发者 Alex Edwards 分享了在 Go 后端项目中集成 HTMX 的实践经验，展示了服务端渲染与现代交互的结合方案。",
+      "detail": "HTMX 是一个轻量级前端库，允许通过 HTML 属性直接发起 AJAX 请求并更新页面片段，无需编写 JavaScript。本文作者详细介绍了如何在 Go Web 应用中利用 HTMX 实现表单提交、动态列表加载等常见交互模式，为追求简洁技术栈的开发者提供了实用参考。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "software"
     },
     {
       "id": "news-2dd065fa8e53ce9b",
@@ -8775,6 +8990,34 @@
       "subcategory": "ai-frontier"
     },
     {
+      "id": "news-0fb4ba416bf158a6",
+      "title": "人形机器人公司逐际动力完成2亿美元Pre-IPO轮融资",
+      "url": "https://36kr.com/p/3893976502287618?f=rss",
+      "date": "2026-07-14",
+      "published": "2026-07-14T08:46:41+08:00",
+      "summary": "通用人形机器人公司逐际动力完成近2亿美元Pre-IPO轮融资，投后估值达150亿元，投资方含IDG、蓝思科技等。",
+      "detail": "逐际动力宣布完成Pre-IPO轮融资，融资金额近2亿美元，投资方包括IDG资本、蓝思科技、GGG Group等。阿联酋磊石资本连续多轮追投，绿洲资本、基石资本等多家老股东超额加注。融资资金将重点用于大小脑融合技术突破和产品化，推动数千台全自主人形机器人的规模化部署。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "36氪",
+      "subcategory": "hardware"
+    },
+    {
+      "id": "news-245b4f557741cbfa",
+      "title": "全球智能手机出货量创 13 年来最低水平",
+      "url": "https://sspai.com/post/112286",
+      "date": "2026-07-14",
+      "published": "2026-07-14T08:25:26+08:00",
+      "summary": "多家市场研究机构数据显示，全球智能手机出货量已跌至近 13 年来的最低点，行业面临增长瓶颈。",
+      "detail": "少数派派早报汇总了多条科技行业动态，其中全球智能手机出货量数据尤为引人关注。市场饱和、换机周期延长以及宏观经济不确定性是出货量下滑的主要原因。这一趋势将对上游芯片、面板等供应链企业产生连锁影响。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "少数派",
+      "subcategory": "industry"
+    },
+    {
       "id": "news-47a941c2e8ef6298",
       "title": "The Economics of Recursive Self-Improvement",
       "url": "https://elasticity.institute/rsi-paper.pdf",
@@ -8843,34 +9086,6 @@
       "subcategory": "software"
     },
     {
-      "id": "news-0fb4ba416bf158a6",
-      "title": "人形机器人公司逐际动力完成2亿美元Pre-IPO轮融资",
-      "url": "https://36kr.com/p/3893976502287618?f=rss",
-      "date": "2026-07-14",
-      "published": "2026-07-14T08:46:41+08:00",
-      "summary": "通用人形机器人公司逐际动力完成近2亿美元Pre-IPO轮融资，投后估值达150亿元，投资方含IDG、蓝思科技等。",
-      "detail": "逐际动力宣布完成Pre-IPO轮融资，融资金额近2亿美元，投资方包括IDG资本、蓝思科技、GGG Group等。阿联酋磊石资本连续多轮追投，绿洲资本、基石资本等多家老股东超额加注。融资资金将重点用于大小脑融合技术突破和产品化，推动数千台全自主人形机器人的规模化部署。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "source": "36氪",
-      "subcategory": "hardware"
-    },
-    {
-      "id": "news-245b4f557741cbfa",
-      "title": "全球智能手机出货量创 13 年来最低水平",
-      "url": "https://sspai.com/post/112286",
-      "date": "2026-07-14",
-      "published": "2026-07-14T08:25:26+08:00",
-      "summary": "多家市场研究机构数据显示，全球智能手机出货量已跌至近 13 年来的最低点，行业面临增长瓶颈。",
-      "detail": "少数派派早报汇总了多条科技行业动态，其中全球智能手机出货量数据尤为引人关注。市场饱和、换机周期延长以及宏观经济不确定性是出货量下滑的主要原因。这一趋势将对上游芯片、面板等供应链企业产生连锁影响。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "source": "少数派",
-      "subcategory": "industry"
-    },
-    {
       "id": "news-b991360e35e8f46f",
       "title": "Turn your singing voice into printable notes (in the browser)",
       "url": "https://om-intelligence.ch/projects/vocal-notation/vocal-notation.html",
@@ -8882,6 +9097,46 @@
       "priority": 1,
       "category": "fun",
       "source": "Hacker News"
+    },
+    {
+      "id": "news-4157ef46902d9e9e",
+      "title": "用 LLM 配置 MikroTik 网络设备的实践经验",
+      "url": "https://blog.greg.technology/2026/07/14/llm-networking-with-mikrotik.html",
+      "date": "2026-07-14",
+      "published": "2026-07-14T00:00:00+08:00",
+      "summary": "开发者分享使用 Claude Code 等 LLM 工具配置 MikroTik 网络设备的经验，建议通过 REST API 而非 SSH 与设备交互。",
+      "detail": "一位开发者分享了数月来使用 LLM 配置 MikroTik 网络设备的实践经验。关键建议包括：使用 REST/JSON API 而非 SSH 与设备交互（LLM 处理结构化数据更可靠）；配置前后完整备份；使用 CAPsMAN 简化 WiFi 配置；让多个 LLM 交叉验证配置方案；逐项测试而非一次性大改。文章指出 LLM 在网络配置中是「混乱的力量倍增器」——能加速进展但仍会出错，需要人工把关。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "software"
+    },
+    {
+      "id": "news-48b4e934432c0646",
+      "title": "Vinton Cerf 退休",
+      "url": "https://www.solidot.org/story?sid=84820",
+      "date": "2026-07-14",
+      "published": "2026-07-13T23:52:38+08:00",
+      "summary": "互联网之父 Vinton Cerf 上周卸任 Google 首席互联网布道官，标志其职业生涯落幕，现年 83 岁。",
+      "detail": "Vinton Cerf 上周卸任 Google 首席互联网布道官一职，标志其职业生涯落幕。现年83岁的 Cerf 与 Robert Kahn 合作设计了 TCP/IP 协议，被誉为互联网之父。自2005年以来，Cerf 一直担任 Google 副总裁和首席互联网布道官。TCP/IP 协议构成了互联网的核心架构。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-2b92be4c2b6cedb9",
+      "title": "韦伯望远镜观测到逃脱死亡命运的类木星行星",
+      "url": "https://www.solidot.org/story?sid=84819",
+      "date": "2026-07-14",
+      "published": "2026-07-13T23:31:13+08:00",
+      "summary": "天文学家利用韦伯望远镜发现一颗逃脱白矮星吞噬的类木星行星 WD 1856 b，大气层含甲烷。",
+      "detail": "天文学家利用韦伯望远镜观测了白矮星系统 WD 1856 中的气态巨行星 WD 1856 b。该行星距离已死亡60亿年的白矮星仅0.02个天文单位，在恒星红巨星阶段本应被吞噬，却奇迹般存活。韦伯观测发现其大气层含甲烷，辐射能量约为从恒星接收能量的25倍。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot"
     },
     {
       "id": "news-5d2626aaec4f7a99",
@@ -8908,6 +9163,20 @@
       "priority": 1,
       "category": "sports",
       "source": "BBC Sport"
+    },
+    {
+      "id": "news-5297beeb21818c5f",
+      "title": "数据中心用电量占到爱尔兰用电量的 23%",
+      "url": "https://www.solidot.org/story?sid=84818",
+      "date": "2026-07-14",
+      "published": "2026-07-13T22:02:54+08:00",
+      "summary": "爱尔兰2025年数据中心用电量占全国用电量23%，较2015年的5%大幅增长，大型数据中心用电量同比增长10%。",
+      "detail": "爱尔兰中央统计局数据显示，2025年数据中心用电量占该国总用电量的23%，2015年这一比例仅为5%。大型数据中心2025年用电量增长10%至7663 GWh，其他部门同期仅增长2%。城市居民用电量占比18%，农村为9%。该国拥有逾80个数据中心，已出现反数据中心抗议活动。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "Solidot",
+      "subcategory": "industry"
     },
     {
       "id": "news-f0d4ed3f0d3838ca",
@@ -8988,17 +9257,44 @@
       "source": "The Guardian Sport"
     },
     {
-      "id": "news-2ea6ada8d323799b",
-      "title": "英格兰兰克利夫的霍夫曼石灰窑",
-      "url": "https://www.atlasobscura.com/places/hoffmann-lime-kilns",
+      "id": "news-b174dcd177d2364f",
+      "title": "中国三北防护林阻止了沙漠扩大，但战斗并未结束",
+      "url": "https://www.solidot.org/story?sid=84815",
       "date": "2026-07-14",
-      "published": "2026-07-13T14:00:00-04:00",
-      "summary": "约克郡谷地国家公园内的维多利亚时代霍夫曼石灰窑遗址，是英格兰保存最完好的同类建筑。",
-      "detail": "霍夫曼石灰窑位于约克郡谷地国家公园的兰克利夫，建于1873年，是英格兰保存最完好的霍夫曼窑遗址。该遗址详细记录了该地区石灰生产的历史，包括各种废弃建筑结构。霍夫曼窑是一种连续式石灰窑，曾在维多利亚时代的工业革命中发挥重要作用。",
+      "published": "2026-07-13T18:07:39+08:00",
+      "summary": "监测显示自2000年以来中国荒漠化土地减少约10%，三北防护林森林覆盖率从5%升至14%。",
+      "detail": "中国科学院团队监测显示，自2000年以来中国荒漠化土地总体减少约10%，重度荒漠化面积减少40%以上。三北防护林项目区森林覆盖率从1978年的约5%上升到2022年的14%，累计造林面积达50万平方公里。但项目关键问题是如何实现可持续的森林保护。",
       "image": "",
       "priority": 1,
       "category": "fun",
-      "source": "Atlas Obscura"
+      "source": "Solidot"
+    },
+    {
+      "id": "news-a3a82e4314730bec",
+      "title": "具透 Plus：Android 17 的应用内存限制",
+      "url": "https://sspai.com/prime/story/inside-release-notes-260713",
+      "date": "2026-07-14",
+      "published": "2026-07-13T17:48:45+08:00",
+      "summary": "少数派文章分析 Android 17 新增的应用内存限制机制，以及 macOS 和 Linux 可执行文件运行方式的差异。",
+      "detail": "少数派「具透 Plus」栏目分析了 Android 17 引入的应用内存限制机制。该特性限制单个应用可使用的内存量，旨在提升系统整体流畅度。文章还讨论了 macOS 和 Linux 运行可执行文件的不同方式，为移动开发者和系统爱好者提供了技术参考。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "少数派",
+      "subcategory": "software"
+    },
+    {
+      "id": "news-7f4c4024d3f6d23b",
+      "title": "Steam 月活用户数超过 2 亿",
+      "url": "https://www.solidot.org/story?sid=84814",
+      "date": "2026-07-14",
+      "published": "2026-07-13T17:45:00+08:00",
+      "summary": "分析师估计 Steam 2026 年上半年月活用户数已突破 2 亿，远超 PlayStation 的 1.25 亿。",
+      "detail": "根据欧盟 Digital Services Act 披露的数据和全球带宽分布分析，Steam 2025 年月活用户数约为1.98亿，2026年上半年预计已突破2亿。相比之下，索尼 PlayStation 的月活用户数为1.25亿。Steam 在 PC 游戏平台领域的领先地位进一步巩固。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot"
     },
     {
       "id": "news-3d5d7776050f458a",
@@ -9012,59 +9308,6 @@
       "priority": 1,
       "category": "sports",
       "source": "The Guardian Sport"
-    },
-    {
-      "id": "news-4157ef46902d9e9e",
-      "title": "用 LLM 配置 MikroTik 网络设备的实践经验",
-      "url": "https://blog.greg.technology/2026/07/14/llm-networking-with-mikrotik.html",
-      "date": "2026-07-14",
-      "published": "2026-07-14T00:00:00+08:00",
-      "summary": "开发者分享使用 Claude Code 等 LLM 工具配置 MikroTik 网络设备的经验，建议通过 REST API 而非 SSH 与设备交互。",
-      "detail": "一位开发者分享了数月来使用 LLM 配置 MikroTik 网络设备的实践经验。关键建议包括：使用 REST/JSON API 而非 SSH 与设备交互（LLM 处理结构化数据更可靠）；配置前后完整备份；使用 CAPsMAN 简化 WiFi 配置；让多个 LLM 交叉验证配置方案；逐项测试而非一次性大改。文章指出 LLM 在网络配置中是「混乱的力量倍增器」——能加速进展但仍会出错，需要人工把关。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "software"
-    },
-    {
-      "id": "news-783c301a157687bd",
-      "title": "香港励德邨",
-      "url": "https://www.atlasobscura.com/places/lai-tak-tsuen",
-      "date": "2026-07-14",
-      "published": "2026-07-13T12:00:00-04:00",
-      "summary": "建于1975年的香港励德邨是香港首批公共屋邨之一，以其独特的双圆柱形塔楼闻名。",
-      "detail": "励德邨建于1975年，是香港首批公共屋邨之一。该屋邨位于山坡上，最显著的特征是两座双圆柱形塔楼，内含2600个住宅单元，居住约11000名居民。其独特的建筑设计使其成为香港公共房屋的标志性建筑之一。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "Atlas Obscura"
-    },
-    {
-      "id": "news-48b4e934432c0646",
-      "title": "Vinton Cerf 退休",
-      "url": "https://www.solidot.org/story?sid=84820",
-      "date": "2026-07-14",
-      "published": "2026-07-13T23:52:38+08:00",
-      "summary": "互联网之父 Vinton Cerf 上周卸任 Google 首席互联网布道官，标志其职业生涯落幕，现年 83 岁。",
-      "detail": "Vinton Cerf 上周卸任 Google 首席互联网布道官一职，标志其职业生涯落幕。现年83岁的 Cerf 与 Robert Kahn 合作设计了 TCP/IP 协议，被誉为互联网之父。自2005年以来，Cerf 一直担任 Google 副总裁和首席互联网布道官。TCP/IP 协议构成了互联网的核心架构。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "Solidot"
-    },
-    {
-      "id": "news-2b92be4c2b6cedb9",
-      "title": "韦伯望远镜观测到逃脱死亡命运的类木星行星",
-      "url": "https://www.solidot.org/story?sid=84819",
-      "date": "2026-07-14",
-      "published": "2026-07-13T23:31:13+08:00",
-      "summary": "天文学家利用韦伯望远镜发现一颗逃脱白矮星吞噬的类木星行星 WD 1856 b，大气层含甲烷。",
-      "detail": "天文学家利用韦伯望远镜观测了白矮星系统 WD 1856 中的气态巨行星 WD 1856 b。该行星距离已死亡60亿年的白矮星仅0.02个天文单位，在恒星红巨星阶段本应被吞噬，却奇迹般存活。韦伯观测发现其大气层含甲烷，辐射能量约为从恒星接收能量的25倍。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "Solidot"
     },
     {
       "id": "news-8b1e774619fc82f3",
@@ -9119,18 +9362,17 @@
       "source": "BBC Sport"
     },
     {
-      "id": "news-5297beeb21818c5f",
-      "title": "数据中心用电量占到爱尔兰用电量的 23%",
-      "url": "https://www.solidot.org/story?sid=84818",
+      "id": "news-2ea6ada8d323799b",
+      "title": "英格兰兰克利夫的霍夫曼石灰窑",
+      "url": "https://www.atlasobscura.com/places/hoffmann-lime-kilns",
       "date": "2026-07-14",
-      "published": "2026-07-13T22:02:54+08:00",
-      "summary": "爱尔兰2025年数据中心用电量占全国用电量23%，较2015年的5%大幅增长，大型数据中心用电量同比增长10%。",
-      "detail": "爱尔兰中央统计局数据显示，2025年数据中心用电量占该国总用电量的23%，2015年这一比例仅为5%。大型数据中心2025年用电量增长10%至7663 GWh，其他部门同期仅增长2%。城市居民用电量占比18%，农村为9%。该国拥有逾80个数据中心，已出现反数据中心抗议活动。",
+      "published": "2026-07-13T14:00:00-04:00",
+      "summary": "约克郡谷地国家公园内的维多利亚时代霍夫曼石灰窑遗址，是英格兰保存最完好的同类建筑。",
+      "detail": "霍夫曼石灰窑位于约克郡谷地国家公园的兰克利夫，建于1873年，是英格兰保存最完好的霍夫曼窑遗址。该遗址详细记录了该地区石灰生产的历史，包括各种废弃建筑结构。霍夫曼窑是一种连续式石灰窑，曾在维多利亚时代的工业革命中发挥重要作用。",
       "image": "",
       "priority": 1,
-      "category": "tech",
-      "source": "Solidot",
-      "subcategory": "industry"
+      "category": "fun",
+      "source": "Atlas Obscura"
     },
     {
       "id": "news-6af09ee6df6cc5a6",
@@ -9146,6 +9388,19 @@
       "source": "BBC Sport"
     },
     {
+      "id": "news-783c301a157687bd",
+      "title": "香港励德邨",
+      "url": "https://www.atlasobscura.com/places/lai-tak-tsuen",
+      "date": "2026-07-14",
+      "published": "2026-07-13T12:00:00-04:00",
+      "summary": "建于1975年的香港励德邨是香港首批公共屋邨之一，以其独特的双圆柱形塔楼闻名。",
+      "detail": "励德邨建于1975年，是香港首批公共屋邨之一。该屋邨位于山坡上，最显著的特征是两座双圆柱形塔楼，内含2600个住宅单元，居住约11000名居民。其独特的建筑设计使其成为香港公共房屋的标志性建筑之一。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Atlas Obscura"
+    },
+    {
       "id": "news-0fea084a625ad318",
       "title": "罗德里：法国是强敌，但西班牙也能击败他们",
       "url": "https://www.theguardian.com/football/2026/jul/13/rodri-interview-spain-captain-world-cup-2026",
@@ -9157,46 +9412,6 @@
       "priority": 1,
       "category": "sports",
       "source": "The Guardian Sport"
-    },
-    {
-      "id": "news-b174dcd177d2364f",
-      "title": "中国三北防护林阻止了沙漠扩大，但战斗并未结束",
-      "url": "https://www.solidot.org/story?sid=84815",
-      "date": "2026-07-14",
-      "published": "2026-07-13T18:07:39+08:00",
-      "summary": "监测显示自2000年以来中国荒漠化土地减少约10%，三北防护林森林覆盖率从5%升至14%。",
-      "detail": "中国科学院团队监测显示，自2000年以来中国荒漠化土地总体减少约10%，重度荒漠化面积减少40%以上。三北防护林项目区森林覆盖率从1978年的约5%上升到2022年的14%，累计造林面积达50万平方公里。但项目关键问题是如何实现可持续的森林保护。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "Solidot"
-    },
-    {
-      "id": "news-a3a82e4314730bec",
-      "title": "具透 Plus：Android 17 的应用内存限制",
-      "url": "https://sspai.com/prime/story/inside-release-notes-260713",
-      "date": "2026-07-14",
-      "published": "2026-07-13T17:48:45+08:00",
-      "summary": "少数派文章分析 Android 17 新增的应用内存限制机制，以及 macOS 和 Linux 可执行文件运行方式的差异。",
-      "detail": "少数派「具透 Plus」栏目分析了 Android 17 引入的应用内存限制机制。该特性限制单个应用可使用的内存量，旨在提升系统整体流畅度。文章还讨论了 macOS 和 Linux 运行可执行文件的不同方式，为移动开发者和系统爱好者提供了技术参考。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "source": "少数派",
-      "subcategory": "software"
-    },
-    {
-      "id": "news-7f4c4024d3f6d23b",
-      "title": "Steam 月活用户数超过 2 亿",
-      "url": "https://www.solidot.org/story?sid=84814",
-      "date": "2026-07-14",
-      "published": "2026-07-13T17:45:00+08:00",
-      "summary": "分析师估计 Steam 2026 年上半年月活用户数已突破 2 亿，远超 PlayStation 的 1.25 亿。",
-      "detail": "根据欧盟 Digital Services Act 披露的数据和全球带宽分布分析，Steam 2025 年月活用户数约为1.98亿，2026年上半年预计已突破2亿。相比之下，索尼 PlayStation 的月活用户数为1.25亿。Steam 在 PC 游戏平台领域的领先地位进一步巩固。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "Solidot"
     },
     {
       "id": "news-eaf4201e50b4b6f1",
@@ -9331,33 +9546,6 @@
       "image": ""
     },
     {
-      "id": "news-e632c08a67fab93d",
-      "title": "Zig 语言创始人批评 Anthropic 做法，引发社区讨论",
-      "url": "https://raymyers.org/post/zed-creator-calls-spade-a-spade/",
-      "date": "2026-07-13",
-      "published": "2026-07-13T08:39:39+00:00",
-      "summary": "Zig 语言创始人 Andrew Kelley 公开批评 Anthropic 的行为方式，获 182 点讨论热度。",
-      "detail": "Zig 编程语言创始人 Andrew Kelley 发文批评 Anthropic 公司的做法，文章在 Hacker News 上获得 182 点和 106 条评论。文章对比了 Zig 团队的透明沟通风格与 Anthropic 被认为不够坦诚的公关策略，引发开发者社区关于 AI 公司透明度的广泛讨论。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "software"
-    },
-    {
-      "id": "news-117bdcbf34b154a4",
-      "title": "伯克希尔 3970 亿美元押注看空过热市场",
-      "url": "https://www.disruptionbanking.com/2026/07/13/inside-berkshires-397-billion-bet-against-an-overheated-market/",
-      "date": "2026-07-13",
-      "published": "2026-07-13T08:15:52+00:00",
-      "summary": "伯克希尔·哈撒韦持有 3970 亿美元现金储备，被解读为对过热市场的看空信号。",
-      "detail": "伯克希尔·哈撒韦的现金储备达到 3970 亿美元历史新高，市场解读为巴菲特对当前过热市场的谨慎态度。在美股估值处于历史高位的背景下，这一巨额现金持仓引发了关于市场走向的广泛讨论。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "Hacker News"
-    },
-    {
       "id": "news-3ccf30d06e965fa1",
       "title": "古 DNA 证实 1587 年意大利大公死于疟疾，非毒杀",
       "url": "https://www.solidot.org/story?sid=84813",
@@ -9369,20 +9557,6 @@
       "priority": 1,
       "category": "fun",
       "source": "Solidot"
-    },
-    {
-      "id": "news-5402e40574b95739",
-      "title": "一个「无用」的 if 语句如何将代码性能提升四倍",
-      "url": "https://purplesyringa.moe/blog/quadrupling-code-performance-with-a-useless-if/",
-      "date": "2026-07-13",
-      "published": "2026-07-13T07:37:06+00:00",
-      "summary": "技术文章展示看似无用的 if 分支如何通过影响编译器优化将性能提升四倍。",
-      "detail": "文章展示了一个表面上「无用」的 if 分支如何通过影响编译器的代码布局决策，将程序性能提升四倍。深入分析了 CPU 分支预测、指令缓存和代码对齐等底层机制，对系统编程和性能优化有重要参考价值。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "software"
     },
     {
       "id": "news-c61163b1db375192",
@@ -9410,60 +9584,6 @@
       "priority": 1,
       "category": "fun",
       "source": "少数派"
-    },
-    {
-      "id": "news-a1918055c47b7dea",
-      "title": "世界杯历史最佳射手 Just Fontaine 的传奇故事",
-      "url": "https://www.bbc.co.uk/sport/football/articles/c621xndyd7no?at_medium=RSS&at_campaign=rss",
-      "published": "2026-07-13T06:57:04+00:00",
-      "summary": "回顾 1958 年世界杯单届 13 球纪录保持者 Just Fontaine 的故事——穿借来的球鞋、没拿到金靴奖。",
-      "detail": "1958 年世界杯上，法国前锋 Just Fontaine 在仅 6 场比赛中打入 13 球，创下至今无人打破的单届世界杯进球纪录。他当时穿的是队友借给他的球鞋，甚至没有获得金靴奖（该奖项 1982 年才设立），瑞典报纸送了他一把气步枪作为「神射手」奖。28 岁因伤退役后，他仅留下 21 场国际比赛 30 球的数据。",
-      "category": "fun",
-      "source": "BBC Sport",
-      "priority": 1,
-      "date": "2026-07-13",
-      "image": ""
-    },
-    {
-      "id": "news-465a3abb7958343e",
-      "title": "无需回溯的草书字体渲染算法",
-      "url": "https://mmapped.blog/posts/52-backtrack-free-cursive",
-      "date": "2026-07-13",
-      "published": "2026-07-13T06:08:12+00:00",
-      "summary": "介绍一种无需回溯的草书字体渲染算法，通过巧妙数据结构实现线性时间渲染。",
-      "detail": "文章介绍了一种无需回溯的草书字体渲染算法。传统草书渲染需要复杂回溯逻辑处理字母连笔，该算法通过巧妙的数据结构设计实现线性时间复杂度渲染，在 Hacker News 上获得 86 点和 40 条讨论。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "software"
-    },
-    {
-      "id": "news-1f6ca9fd8046a0a6",
-      "title": "Sam Neill 去世，享年 78 岁",
-      "url": "https://www.theguardian.com/film/2026/jul/13/sam-neill-death-actor-dies-aged-78",
-      "published": "2026-07-13T06:02:11+00:00",
-      "summary": "新西兰演员 Sam Neill 去世，享年 78 岁，代表作包括《侏罗纪公园》《钢琴课》《浴血黑帮》等。",
-      "detail": "新西兰演员 Sam Neill 因病去世，享年 78 岁。他以《侏罗纪公园》中的 Alan Grant 博士一角闻名全球，职业生涯横跨电影与电视，代表作还包括《钢琴课》《浴血黑帮》等。Neill 2022 年曾公开披露罹患淋巴瘤后康复，近期病情复发。",
-      "category": "fun",
-      "source": "Hacker News",
-      "priority": 1,
-      "date": "2026-07-13",
-      "image": ""
-    },
-    {
-      "id": "news-6851e9319b2486c4",
-      "title": "Beavis：开源 Gravis Ultrasound PnP 声卡复刻项目",
-      "url": "https://github.com/schlae/BeavisUltrasound",
-      "published": "2026-07-13T05:15:14+00:00",
-      "summary": "开发者公开 Gravis Ultrasound PnP ISA 声卡的完整开源硬件复刻方案，含 KiCad PCB 设计文件。",
-      "detail": "BeavisUltrasound 项目在 GitHub 上公开了经典 Gravis Ultrasound PnP ISA 声卡的完整复刻方案，包括 KiCad 原理图和 PCB 布局文件。该项目旨在让复古计算爱好者能够自行制造这款 90 年代标志性声卡。项目在 Hacker News 获得 62 点赞，展示了开源硬件社区对经典硬件复刻的持续热情。",
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "hardware",
-      "priority": 1,
-      "date": "2026-07-13",
-      "image": ""
     },
     {
       "id": "news-e4cff0eb2d93d3b3",
@@ -9519,6 +9639,101 @@
       "category": "tech",
       "source": "36氪",
       "subcategory": "hardware"
+    },
+    {
+      "id": "news-e632c08a67fab93d",
+      "title": "Zig 语言创始人批评 Anthropic 做法，引发社区讨论",
+      "url": "https://raymyers.org/post/zed-creator-calls-spade-a-spade/",
+      "date": "2026-07-13",
+      "published": "2026-07-13T08:39:39+00:00",
+      "summary": "Zig 语言创始人 Andrew Kelley 公开批评 Anthropic 的行为方式，获 182 点讨论热度。",
+      "detail": "Zig 编程语言创始人 Andrew Kelley 发文批评 Anthropic 公司的做法，文章在 Hacker News 上获得 182 点和 106 条评论。文章对比了 Zig 团队的透明沟通风格与 Anthropic 被认为不够坦诚的公关策略，引发开发者社区关于 AI 公司透明度的广泛讨论。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "software"
+    },
+    {
+      "id": "news-117bdcbf34b154a4",
+      "title": "伯克希尔 3970 亿美元押注看空过热市场",
+      "url": "https://www.disruptionbanking.com/2026/07/13/inside-berkshires-397-billion-bet-against-an-overheated-market/",
+      "date": "2026-07-13",
+      "published": "2026-07-13T08:15:52+00:00",
+      "summary": "伯克希尔·哈撒韦持有 3970 亿美元现金储备，被解读为对过热市场的看空信号。",
+      "detail": "伯克希尔·哈撒韦的现金储备达到 3970 亿美元历史新高，市场解读为巴菲特对当前过热市场的谨慎态度。在美股估值处于历史高位的背景下，这一巨额现金持仓引发了关于市场走向的广泛讨论。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-5402e40574b95739",
+      "title": "一个「无用」的 if 语句如何将代码性能提升四倍",
+      "url": "https://purplesyringa.moe/blog/quadrupling-code-performance-with-a-useless-if/",
+      "date": "2026-07-13",
+      "published": "2026-07-13T07:37:06+00:00",
+      "summary": "技术文章展示看似无用的 if 分支如何通过影响编译器优化将性能提升四倍。",
+      "detail": "文章展示了一个表面上「无用」的 if 分支如何通过影响编译器的代码布局决策，将程序性能提升四倍。深入分析了 CPU 分支预测、指令缓存和代码对齐等底层机制，对系统编程和性能优化有重要参考价值。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "software"
+    },
+    {
+      "id": "news-a1918055c47b7dea",
+      "title": "世界杯历史最佳射手 Just Fontaine 的传奇故事",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c621xndyd7no?at_medium=RSS&at_campaign=rss",
+      "published": "2026-07-13T06:57:04+00:00",
+      "summary": "回顾 1958 年世界杯单届 13 球纪录保持者 Just Fontaine 的故事——穿借来的球鞋、没拿到金靴奖。",
+      "detail": "1958 年世界杯上，法国前锋 Just Fontaine 在仅 6 场比赛中打入 13 球，创下至今无人打破的单届世界杯进球纪录。他当时穿的是队友借给他的球鞋，甚至没有获得金靴奖（该奖项 1982 年才设立），瑞典报纸送了他一把气步枪作为「神射手」奖。28 岁因伤退役后，他仅留下 21 场国际比赛 30 球的数据。",
+      "category": "fun",
+      "source": "BBC Sport",
+      "priority": 1,
+      "date": "2026-07-13",
+      "image": ""
+    },
+    {
+      "id": "news-465a3abb7958343e",
+      "title": "无需回溯的草书字体渲染算法",
+      "url": "https://mmapped.blog/posts/52-backtrack-free-cursive",
+      "date": "2026-07-13",
+      "published": "2026-07-13T06:08:12+00:00",
+      "summary": "介绍一种无需回溯的草书字体渲染算法，通过巧妙数据结构实现线性时间渲染。",
+      "detail": "文章介绍了一种无需回溯的草书字体渲染算法。传统草书渲染需要复杂回溯逻辑处理字母连笔，该算法通过巧妙的数据结构设计实现线性时间复杂度渲染，在 Hacker News 上获得 86 点和 40 条讨论。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "software"
+    },
+    {
+      "id": "news-1f6ca9fd8046a0a6",
+      "title": "Sam Neill 去世，享年 78 岁",
+      "url": "https://www.theguardian.com/film/2026/jul/13/sam-neill-death-actor-dies-aged-78",
+      "published": "2026-07-13T06:02:11+00:00",
+      "summary": "新西兰演员 Sam Neill 去世，享年 78 岁，代表作包括《侏罗纪公园》《钢琴课》《浴血黑帮》等。",
+      "detail": "新西兰演员 Sam Neill 因病去世，享年 78 岁。他以《侏罗纪公园》中的 Alan Grant 博士一角闻名全球，职业生涯横跨电影与电视，代表作还包括《钢琴课》《浴血黑帮》等。Neill 2022 年曾公开披露罹患淋巴瘤后康复，近期病情复发。",
+      "category": "fun",
+      "source": "Hacker News",
+      "priority": 1,
+      "date": "2026-07-13",
+      "image": ""
+    },
+    {
+      "id": "news-6851e9319b2486c4",
+      "title": "Beavis：开源 Gravis Ultrasound PnP 声卡复刻项目",
+      "url": "https://github.com/schlae/BeavisUltrasound",
+      "published": "2026-07-13T05:15:14+00:00",
+      "summary": "开发者公开 Gravis Ultrasound PnP ISA 声卡的完整开源硬件复刻方案，含 KiCad PCB 设计文件。",
+      "detail": "BeavisUltrasound 项目在 GitHub 上公开了经典 Gravis Ultrasound PnP ISA 声卡的完整复刻方案，包括 KiCad 原理图和 PCB 布局文件。该项目旨在让复古计算爱好者能够自行制造这款 90 年代标志性声卡。项目在 Hacker News 获得 62 点赞，展示了开源硬件社区对经典硬件复刻的持续热情。",
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "hardware",
+      "priority": 1,
+      "date": "2026-07-13",
+      "image": ""
     },
     {
       "id": "news-6d8659b3b00acd4e",
@@ -9653,6 +9868,48 @@
       "subcategory": "software"
     },
     {
+      "id": "news-0348d3f9fc1dc38f",
+      "title": "SK 海力士 CEO 预计 2027 年 HBM 价格将翻倍",
+      "url": "https://36kr.com/newsflashes/3892093059873544?f=rss",
+      "date": "2026-07-12",
+      "published": "2026-07-12T11:58:49+08:00",
+      "summary": "SK 海力士 CEO 表示 2027 年将成为存储行业供应最紧张的一年，客户纷纷寻求长期供货协议。",
+      "detail": "SK 海力士 CEO 郭鲁正表示，2027 年将成为存储行业历史上供应最紧张的一年，客户纷纷前来寻求长期供货协议。尽管公司正扩充产能，但即使到 2030 年后客户需求仍可能高于供应能力。不过国内产投人士指出，中国存储厂商（长鑫存储和长江存储）的扩产进展可能成为存储市场最大的变量。SK 海力士已于本周在纳斯达克上市，募资约 265 亿美元。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "36氪"
+    },
+    {
+      "id": "news-2966e6035f49c9ea",
+      "title": "三星电子将龙仁芯片工厂投产时间提前至 2029 年",
+      "url": "https://36kr.com/newsflashes/3892091542288904?f=rss",
+      "date": "2026-07-12",
+      "published": "2026-07-12T11:39:22+08:00",
+      "summary": "三星电子计划将龙仁芯片集群首座工厂投产时间提前至 2029 年，比原计划提早一至两年。",
+      "detail": "据报道，三星电子正将龙仁芯片集群首座半导体工厂的投产时间提前至 2029 年，以更快响应全球对 AI 芯片的快速增长需求。三星上月宣布将在平泽和龙仁半导体集群投资 2,030 万亿韩元（约 1.35 万亿美元），并在光州建设两座新芯片工厂。此举反映了全球芯片巨头在 AI 芯片产能竞赛中的加速布局。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "hardware",
+      "source": "36氪"
+    },
+    {
+      "id": "news-9f8361393f28bd0e",
+      "title": "近百名玩家涌入具身数据赛道，一年融资 44.7 亿",
+      "url": "https://36kr.com/p/3892027841362694?f=rss",
+      "date": "2026-07-12",
+      "published": "2026-07-12T10:16:07+08:00",
+      "summary": "具身智能数据采集赛道一年融资 44.7 亿元，97 家企业涌入，但高质量数据采集仍面临挑战。",
+      "detail": "据统计，国内具身智能数据采集赛道已有 97 家企业，其中 70 家做数据采集、27 家做数据基础设施。过去一年 15 家独立具身数据服务商共融资约 44.7 亿元。从湖南郴州移动营业厅的具身数据采集 5S 店到 VR 游戏化采集，各种创新模式层出不穷。但业内人士指出，符合机器人训练要求的高质量数据采集并不简单，商业模式和可持续性仍面临挑战。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "36氪"
+    },
+    {
       "id": "news-e7b5f2151f2112e8",
       "title": "世界杯：阿根廷加时3-1击败瑞士，将与英格兰争夺决赛席位",
       "url": "https://www.bbc.co.uk/sport/football/videos/c07y37p7gmko?at_medium=RSS&at_campaign=rss",
@@ -9719,48 +9976,6 @@
       "source": "Hacker News"
     },
     {
-      "id": "news-0348d3f9fc1dc38f",
-      "title": "SK 海力士 CEO 预计 2027 年 HBM 价格将翻倍",
-      "url": "https://36kr.com/newsflashes/3892093059873544?f=rss",
-      "date": "2026-07-12",
-      "published": "2026-07-12T11:58:49+08:00",
-      "summary": "SK 海力士 CEO 表示 2027 年将成为存储行业供应最紧张的一年，客户纷纷寻求长期供货协议。",
-      "detail": "SK 海力士 CEO 郭鲁正表示，2027 年将成为存储行业历史上供应最紧张的一年，客户纷纷前来寻求长期供货协议。尽管公司正扩充产能，但即使到 2030 年后客户需求仍可能高于供应能力。不过国内产投人士指出，中国存储厂商（长鑫存储和长江存储）的扩产进展可能成为存储市场最大的变量。SK 海力士已于本周在纳斯达克上市，募资约 265 亿美元。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "industry",
-      "source": "36氪"
-    },
-    {
-      "id": "news-2966e6035f49c9ea",
-      "title": "三星电子将龙仁芯片工厂投产时间提前至 2029 年",
-      "url": "https://36kr.com/newsflashes/3892091542288904?f=rss",
-      "date": "2026-07-12",
-      "published": "2026-07-12T11:39:22+08:00",
-      "summary": "三星电子计划将龙仁芯片集群首座工厂投产时间提前至 2029 年，比原计划提早一至两年。",
-      "detail": "据报道，三星电子正将龙仁芯片集群首座半导体工厂的投产时间提前至 2029 年，以更快响应全球对 AI 芯片的快速增长需求。三星上月宣布将在平泽和龙仁半导体集群投资 2,030 万亿韩元（约 1.35 万亿美元），并在光州建设两座新芯片工厂。此举反映了全球芯片巨头在 AI 芯片产能竞赛中的加速布局。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "hardware",
-      "source": "36氪"
-    },
-    {
-      "id": "news-9f8361393f28bd0e",
-      "title": "近百名玩家涌入具身数据赛道，一年融资 44.7 亿",
-      "url": "https://36kr.com/p/3892027841362694?f=rss",
-      "date": "2026-07-12",
-      "published": "2026-07-12T10:16:07+08:00",
-      "summary": "具身智能数据采集赛道一年融资 44.7 亿元，97 家企业涌入，但高质量数据采集仍面临挑战。",
-      "detail": "据统计，国内具身智能数据采集赛道已有 97 家企业，其中 70 家做数据采集、27 家做数据基础设施。过去一年 15 家独立具身数据服务商共融资约 44.7 亿元。从湖南郴州移动营业厅的具身数据采集 5S 店到 VR 游戏化采集，各种创新模式层出不穷。但业内人士指出，符合机器人训练要求的高质量数据采集并不简单，商业模式和可持续性仍面临挑战。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "industry",
-      "source": "36氪"
-    },
-    {
       "id": "news-38ad62f9492d84e7",
       "title": "简单流体也能断裂：颠覆传统认知的流体力学发现",
       "url": "https://www.quantamagazine.org/we-know-simple-fluids-can-flow-turns-out-some-can-fracture-20260710/",
@@ -9816,20 +10031,6 @@
       "source": "Hacker News"
     },
     {
-      "id": "news-50e99d218bcad4f6",
-      "title": "Mesh LLM：基于点对点网络的分布式 AI 计算",
-      "url": "https://www.iroh.computer/blog/mesh-llm",
-      "date": "2026-07-12",
-      "published": "2026-07-11T22:38:57+00:00",
-      "summary": "Iroh 项目发布 Mesh LLM，利用点对点网络实现分布式大模型推理，在 HN 获 147 点赞。",
-      "detail": "Iroh 团队发布 Mesh LLM 项目，利用点对点网络技术实现分布式大语言模型推理。用户可通过加入 mesh 网络共享计算资源共同运行大模型，无需依赖中心化云服务。该项目在 Hacker News 获得 147 点赞，被视为去中心化 AI 计算的重要探索，为降低大模型使用成本提供了新思路。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "ai-frontier",
-      "source": "Hacker News"
-    },
-    {
       "id": "news-db79c4ae9946a0e6",
       "title": "布朗大学教授怀疑多数学生在期中考试中使用 AI 作弊",
       "url": "https://www.solidot.org/story?sid=84806",
@@ -9840,20 +10041,6 @@
       "image": "",
       "priority": 2,
       "category": "ai",
-      "source": "Solidot"
-    },
-    {
-      "id": "news-6320a4be9efe834f",
-      "title": "日本 JAXA 成功测试可回收火箭 RV-X",
-      "url": "https://www.solidot.org/story?sid=84804",
-      "date": "2026-07-12",
-      "published": "2026-07-11T22:41:00+08:00",
-      "summary": "JAXA 成功测试可回收火箭 RV-X，完成升空、悬停、水平移动和直立着陆四个动作。",
-      "detail": "日本宇航研究开发机构（JAXA）7 月 11 日宣布成功测试可回收火箭 RV-X，测试持续约 40 秒，火箭上升至约 11 米高度后完成升空、悬停、水平移动和直立着陆。RV-X 计划取代不可回收的 H-3 火箭，下一步将进行百米级回收测试。法国和德国也参与了该项目的合作研发。中国在可回收火箭研发方面的进展更快。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "hardware",
       "source": "Solidot"
     },
     {
@@ -9910,6 +10097,60 @@
       "category": "tech",
       "source": "36氪",
       "subcategory": "hardware"
+    },
+    {
+      "id": "news-6320a4be9efe834f",
+      "title": "日本 JAXA 成功测试可回收火箭 RV-X",
+      "url": "https://www.solidot.org/story?sid=84804",
+      "date": "2026-07-12",
+      "published": "2026-07-11T22:41:00+08:00",
+      "summary": "JAXA 成功测试可回收火箭 RV-X，完成升空、悬停、水平移动和直立着陆四个动作。",
+      "detail": "日本宇航研究开发机构（JAXA）7 月 11 日宣布成功测试可回收火箭 RV-X，测试持续约 40 秒，火箭上升至约 11 米高度后完成升空、悬停、水平移动和直立着陆。RV-X 计划取代不可回收的 H-3 火箭，下一步将进行百米级回收测试。法国和德国也参与了该项目的合作研发。中国在可回收火箭研发方面的进展更快。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "hardware",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-50e99d218bcad4f6",
+      "title": "Mesh LLM：基于点对点网络的分布式 AI 计算",
+      "url": "https://www.iroh.computer/blog/mesh-llm",
+      "date": "2026-07-12",
+      "published": "2026-07-11T22:38:57+00:00",
+      "summary": "Iroh 项目发布 Mesh LLM，利用点对点网络实现分布式大模型推理，在 HN 获 147 点赞。",
+      "detail": "Iroh 团队发布 Mesh LLM 项目，利用点对点网络技术实现分布式大语言模型推理。用户可通过加入 mesh 网络共享计算资源共同运行大模型，无需依赖中心化云服务。该项目在 Hacker News 获得 147 点赞，被视为去中心化 AI 计算的重要探索，为降低大模型使用成本提供了新思路。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-db7edbd1be510fd5",
+      "title": "中国法院支持数字资产的继承",
+      "url": "https://www.solidot.org/story?sid=84808",
+      "date": "2026-07-12",
+      "published": "2026-07-12T23:30:34+08:00",
+      "summary": "多个案例显示中国法院支持数字资产继承，认为游戏账户和微交易物品具有货币价值，玩家对其拥有可继承的权利。",
+      "detail": "法院在审理中拒绝了游戏公司的不可转让条款，认为这些条款无法阻止玩家继承或转让游戏资产。在一个案例中，法院认定《征途》中的「黄金刀」具有经济价值——另一玩家曾出价 5 万元购买，因此构成可继承的虚拟财产，但因与游戏「情侣」共同获取，继承人只能继承 50% 份额。另一个案例涉及 5 个比特币和一个价值约 20 万元的游戏账户。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-d4887ec7162ecd9a",
+      "title": "相对论效应改变重元素化学键结构，挑战传统教科书",
+      "url": "https://www.solidot.org/story?sid=84807",
+      "date": "2026-07-12",
+      "published": "2026-07-12T23:08:02+08:00",
+      "summary": "布朗大学研究证明爱因斯坦相对论会改变重元素三键结构，修正化学教科书描述。",
+      "detail": "布朗大学化学家通过光电子能谱提供直接证据，证明当原子核足够重时，相对论效应会改变三键结构。碳-铋键不符合传统的「一个σ键加两个π键」结构，而是呈现「一个π键加两个σ-π杂化键」形态，修正了化学教科书中的传统描述。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot"
     },
     {
       "id": "news-10bfbb51eca1948e",
@@ -10033,32 +10274,6 @@
       "source": "BBC Sport"
     },
     {
-      "id": "news-db7edbd1be510fd5",
-      "title": "中国法院支持数字资产的继承",
-      "url": "https://www.solidot.org/story?sid=84808",
-      "date": "2026-07-12",
-      "published": "2026-07-12T23:30:34+08:00",
-      "summary": "多个案例显示中国法院支持数字资产继承，认为游戏账户和微交易物品具有货币价值，玩家对其拥有可继承的权利。",
-      "detail": "法院在审理中拒绝了游戏公司的不可转让条款，认为这些条款无法阻止玩家继承或转让游戏资产。在一个案例中，法院认定《征途》中的「黄金刀」具有经济价值——另一玩家曾出价 5 万元购买，因此构成可继承的虚拟财产，但因与游戏「情侣」共同获取，继承人只能继承 50% 份额。另一个案例涉及 5 个比特币和一个价值约 20 万元的游戏账户。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "Solidot"
-    },
-    {
-      "id": "news-d4887ec7162ecd9a",
-      "title": "相对论效应改变重元素化学键结构，挑战传统教科书",
-      "url": "https://www.solidot.org/story?sid=84807",
-      "date": "2026-07-12",
-      "published": "2026-07-12T23:08:02+08:00",
-      "summary": "布朗大学研究证明爱因斯坦相对论会改变重元素三键结构，修正化学教科书描述。",
-      "detail": "布朗大学化学家通过光电子能谱提供直接证据，证明当原子核足够重时，相对论效应会改变三键结构。碳-铋键不符合传统的「一个σ键加两个π键」结构，而是呈现「一个π键加两个σ-π杂化键」形态，修正了化学教科书中的传统描述。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "Solidot"
-    },
-    {
       "id": "news-bdbd359b48d2d6ec",
       "title": "麦格雷戈 UFC 回归仅持续 69 秒便因膝伤终结",
       "url": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/c9w2zgpnrqeo?at_medium=RSS&at_campaign=rss",
@@ -10070,6 +10285,19 @@
       "priority": 1,
       "category": "sports",
       "source": "The Guardian Sport"
+    },
+    {
+      "id": "news-1cb3da59f7257d91",
+      "title": "百度 AI 将携智能体全家桶亮相 WAIC 2026",
+      "url": "https://36kr.com/newsflashes/3892090766539268?f=rss",
+      "date": "2026-07-12",
+      "published": "2026-07-12T11:19:28+08:00",
+      "summary": "百度 AI 将在 WAIC 2026 上展示智能体全家桶和芯云模体全栈产品矩阵新升级。",
+      "detail": "百度 AI 宣布将在即将开幕的世界人工智能大会（WAIC 2026）上全方位展示智能体从技术升级、应用开发到产业赋能的最新成果。同时百度芯云模体全栈 AI 产品矩阵将发布新升级，集中展示从底层技术创新到产业场景的规模化落地进展。WAIC 2026 将在上海开幕。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "36氪"
     },
     {
       "id": "news-4e9b5ed02874470b",
@@ -10096,19 +10324,6 @@
       "priority": 1,
       "category": "sports",
       "source": "BBC Sport"
-    },
-    {
-      "id": "news-1cb3da59f7257d91",
-      "title": "百度 AI 将携智能体全家桶亮相 WAIC 2026",
-      "url": "https://36kr.com/newsflashes/3892090766539268?f=rss",
-      "date": "2026-07-12",
-      "published": "2026-07-12T11:19:28+08:00",
-      "summary": "百度 AI 将在 WAIC 2026 上展示智能体全家桶和芯云模体全栈产品矩阵新升级。",
-      "detail": "百度 AI 宣布将在即将开幕的世界人工智能大会（WAIC 2026）上全方位展示智能体从技术升级、应用开发到产业赋能的最新成果。同时百度芯云模体全栈 AI 产品矩阵将发布新升级，集中展示从底层技术创新到产业场景的规模化落地进展。WAIC 2026 将在上海开幕。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "36氪"
     },
     {
       "id": "news-28002f417f6f61c6",
@@ -10151,6 +10366,18 @@
       "source": "The Guardian Sport"
     },
     {
+      "id": "news-ed03da5aab42d0b2",
+      "title": "智谱创始人唐杰发内部信：「GLM 时刻」之后直指 AGI",
+      "url": "https://36kr.com/newsflashes/3891162734689031?f=rss",
+      "published": "2026-07-11T19:35:25+08:00",
+      "source": "36氪",
+      "summary": "智谱创始人唐杰发布内部信，宣布将不追求短期应用变现，直指 AGI 的长程任务能力和自治智能体系统。",
+      "detail": "智谱创始人唐杰发布主题为《巨浪已来》的内部信，宣布公司战略方向将从短期应用变现转向 AGI 核心能力研发，包括长程任务能力、完全自治的智能体系统、自我进化和极致安全治理。智谱过去半年市值较上市初期涨了 10 倍，已于 6 月跻身「万亿港元俱乐部」，市值超过小米。这一战略转向反映了中国头部 AI 公司在商业化与前沿研究之间的抉择。",
+      "priority": 3,
+      "category": "ai",
+      "date": "2026-07-11"
+    },
+    {
       "id": "news-a5afb33ea3eeb087",
       "title": "Nvidia、CoreWeave 与 Nebius：GPU 繁荣背后的循环融资",
       "url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
@@ -10163,18 +10390,6 @@
       "category": "tech",
       "source": "Hacker News",
       "subcategory": "industry"
-    },
-    {
-      "id": "news-ed03da5aab42d0b2",
-      "title": "智谱创始人唐杰发内部信：「GLM 时刻」之后直指 AGI",
-      "url": "https://36kr.com/newsflashes/3891162734689031?f=rss",
-      "published": "2026-07-11T19:35:25+08:00",
-      "source": "36氪",
-      "summary": "智谱创始人唐杰发布内部信，宣布将不追求短期应用变现，直指 AGI 的长程任务能力和自治智能体系统。",
-      "detail": "智谱创始人唐杰发布主题为《巨浪已来》的内部信，宣布公司战略方向将从短期应用变现转向 AGI 核心能力研发，包括长程任务能力、完全自治的智能体系统、自我进化和极致安全治理。智谱过去半年市值较上市初期涨了 10 倍，已于 6 月跻身「万亿港元俱乐部」，市值超过小米。这一战略转向反映了中国头部 AI 公司在商业化与前沿研究之间的抉择。",
-      "priority": 3,
-      "category": "ai",
-      "date": "2026-07-11"
     },
     {
       "id": "news-3b28dc968220a491",
@@ -10282,6 +10497,19 @@
       "date": "2026-07-11"
     },
     {
+      "id": "news-a8512f524d560048",
+      "title": "上交大 00 后博士创立仿生扑翼机器人公司，三月融三轮",
+      "url": "https://36kr.com/p/3889516712065799?f=rss",
+      "published": "2026-07-11T09:00:00+08:00",
+      "source": "36氪",
+      "summary": "上交大 00 后博士创立的仿生扑翼飞行机器人公司「鹰瞰智翼」三个月内完成三轮融资。",
+      "detail": "具身智能仿生扑翼飞行机器人公司「鹰瞰智翼」完成数千万元 A 轮融资，这是公司三个月内完成的第三轮融资。创始人为上海交通大学机械工程直博生，团队研发人员占比超 75%。资金将用于首款消费级产品的量产备货和下一代具身智能扑翼机器人研发。该公司是全球较早专注于具身智能扑翼机器人的企业之一。",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "hardware",
+      "date": "2026-07-11"
+    },
+    {
       "id": "news-396fef8b3452b3af",
       "title": "世界杯八强赛：英格兰对阵挪威，迈阿密高温成变数",
       "url": "https://www.bbc.co.uk/sport/football/articles/cx2jzl3zxpzo?at_medium=RSS&at_campaign=rss",
@@ -10318,19 +10546,6 @@
       "date": "2026-07-11",
       "image": "",
       "source": "juya AI 日报"
-    },
-    {
-      "id": "news-a8512f524d560048",
-      "title": "上交大 00 后博士创立仿生扑翼机器人公司，三月融三轮",
-      "url": "https://36kr.com/p/3889516712065799?f=rss",
-      "published": "2026-07-11T09:00:00+08:00",
-      "source": "36氪",
-      "summary": "上交大 00 后博士创立的仿生扑翼飞行机器人公司「鹰瞰智翼」三个月内完成三轮融资。",
-      "detail": "具身智能仿生扑翼飞行机器人公司「鹰瞰智翼」完成数千万元 A 轮融资，这是公司三个月内完成的第三轮融资。创始人为上海交通大学机械工程直博生，团队研发人员占比超 75%。资金将用于首款消费级产品的量产备货和下一代具身智能扑翼机器人研发。该公司是全球较早专注于具身智能扑翼机器人的企业之一。",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "hardware",
-      "date": "2026-07-11"
     },
     {
       "id": "news-7c48c1e133a3dfdb",
@@ -10576,6 +10791,19 @@
       "priority": 3
     },
     {
+      "id": "news-525410040fb23752",
+      "title": "人形机器人首次成功完成活体动物远程手术",
+      "url": "https://www.solidot.org/story?sid=84801",
+      "date": "2026-07-10",
+      "published": "2026-07-10T23:10:19+08:00",
+      "summary": "基于宇树科技 G1 人形机器人的远程操控系统成功完成两例活猪胆囊切除手术，成果发表于《自然》。",
+      "detail": "一项发表在《自然》期刊的研究显示，研究人员利用宇树科技的 G1 人形机器人，通过远程操控成功为活体猪完成两例微创胆囊切除手术。人形机器人相比专业手术机器人（如达芬奇）更便宜、更紧凑、更易部署，有望在资源有限的小型医院和偏远地区推广。G1 基础型号起售价约 13,500 美元，远低于传统手术机器人。该研究为机器人辅助手术的普及开辟了新路径。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "Solidot"
+    },
+    {
       "id": "news-5d62f4327be03bb5",
       "title": "GhostLock：影响所有 Linux 发行版 15 年的内核漏洞",
       "url": "https://nebusec.ai/research/ionstack-part-2/",
@@ -10617,33 +10845,6 @@
       "subcategory": "hardware"
     },
     {
-      "id": "news-968b0e8b361846ae",
-      "title": "QuadRF：能探测无人机并穿墙感知 WiFi 的开源射频平台",
-      "url": "https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/",
-      "date": "2026-07-10",
-      "published": "2026-07-10T15:59:53+00:00",
-      "summary": "开源射频平台 QuadRF 可同时探测无人机信号和穿墙感知 WiFi 网络，在 HN 获超 400 点赞。",
-      "detail": "知名技术博主 Jeff Geerling 展示了开源射频平台 QuadRF 的强大能力：该设备基于软件定义无线电（SDR）技术，可同时执行无人机信号探测和穿墙 WiFi 信号分析两项任务。QuadRF 采用四通道射频前端设计，能在复杂电磁环境中精确定位信号源。该项目在 Hacker News 获得超过 400 点赞，引发对开源射频技术在安防和网络分析领域应用的广泛讨论。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "hardware"
-    },
-    {
-      "id": "news-525410040fb23752",
-      "title": "人形机器人首次成功完成活体动物远程手术",
-      "url": "https://www.solidot.org/story?sid=84801",
-      "date": "2026-07-10",
-      "published": "2026-07-10T23:10:19+08:00",
-      "summary": "基于宇树科技 G1 人形机器人的远程操控系统成功完成两例活猪胆囊切除手术，成果发表于《自然》。",
-      "detail": "一项发表在《自然》期刊的研究显示，研究人员利用宇树科技的 G1 人形机器人，通过远程操控成功为活体猪完成两例微创胆囊切除手术。人形机器人相比专业手术机器人（如达芬奇）更便宜、更紧凑、更易部署，有望在资源有限的小型医院和偏远地区推广。G1 基础型号起售价约 13,500 美元，远低于传统手术机器人。该研究为机器人辅助手术的普及开辟了新路径。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "Solidot"
-    },
-    {
       "id": "news-cd0e2996f4f6d8e8",
       "title": "OpenRouter 数据：近五成美国公司调用中国 AI 模型",
       "url": "https://www.solidot.org/story?sid=84799",
@@ -10668,6 +10869,20 @@
       "category": "ai",
       "source": "Solidot",
       "priority": 2
+    },
+    {
+      "id": "news-968b0e8b361846ae",
+      "title": "QuadRF：能探测无人机并穿墙感知 WiFi 的开源射频平台",
+      "url": "https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/",
+      "date": "2026-07-10",
+      "published": "2026-07-10T15:59:53+00:00",
+      "summary": "开源射频平台 QuadRF 可同时探测无人机信号和穿墙感知 WiFi 网络，在 HN 获超 400 点赞。",
+      "detail": "知名技术博主 Jeff Geerling 展示了开源射频平台 QuadRF 的强大能力：该设备基于软件定义无线电（SDR）技术，可同时执行无人机信号探测和穿墙 WiFi 信号分析两项任务。QuadRF 采用四通道射频前端设计，能在复杂电磁环境中精确定位信号源。该项目在 Hacker News 获得超过 400 点赞，引发对开源射频技术在安防和网络分析领域应用的广泛讨论。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "hardware"
     },
     {
       "id": "news-04d24bfe3b849a3d",
@@ -10806,20 +11021,6 @@
       "subcategory": "software"
     },
     {
-      "id": "news-ee71b664f3130f89",
-      "title": "OpenMandriva 项目遭内部破坏事件",
-      "url": "https://www.solidot.org/story?sid=84789",
-      "date": "2026-07-10",
-      "published": "2026-07-09T23:01:35+08:00",
-      "summary": "OpenMandriva 项目因新成员获管理员权限后滥用权限进行攻击和破坏，团队透明公开了事件全过程。",
-      "detail": "Linux 发行版 OpenMandriva 项目披露了一起内部安全事件：一名新加入的开发者（Mumble 项目的知名成员 Davide Beatrici）获得管理员权限后，其朋友在项目聊天室对其他成员进行攻击和辱骂，导致多人退出。该朋友被踢出后，Beatrici 利用管理员权限在项目代码仓库中实施了破坏操作。项目团队出于透明原则公开了事件经过，提醒开源社区注意权限管理。",
-      "image": "",
-      "category": "tech",
-      "source": "Solidot",
-      "priority": 1,
-      "subcategory": "software"
-    },
-    {
       "id": "news-80b96ba9f2442792",
       "title": "前传奇生物创始人范晓虎创办湾岛细胞，完成1.4亿元A轮融资",
       "url": "https://36kr.com/p/3888284244720131?f=rss",
@@ -10832,6 +11033,20 @@
       "category": "tech",
       "subcategory": "industry",
       "source": "36氪"
+    },
+    {
+      "id": "news-ee71b664f3130f89",
+      "title": "OpenMandriva 项目遭内部破坏事件",
+      "url": "https://www.solidot.org/story?sid=84789",
+      "date": "2026-07-10",
+      "published": "2026-07-09T23:01:35+08:00",
+      "summary": "OpenMandriva 项目因新成员获管理员权限后滥用权限进行攻击和破坏，团队透明公开了事件全过程。",
+      "detail": "Linux 发行版 OpenMandriva 项目披露了一起内部安全事件：一名新加入的开发者（Mumble 项目的知名成员 Davide Beatrici）获得管理员权限后，其朋友在项目聊天室对其他成员进行攻击和辱骂，导致多人退出。该朋友被踢出后，Beatrici 利用管理员权限在项目代码仓库中实施了破坏操作。项目团队出于透明原则公开了事件经过，提醒开源社区注意权限管理。",
+      "image": "",
+      "category": "tech",
+      "source": "Solidot",
+      "priority": 1,
+      "subcategory": "software"
     },
     {
       "id": "news-eccf16e33fb82cd7",
