@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-13T21:34:30+08:00",
+  "last_updated": "2026-08-14T10:14:42+08:00",
   "source": "CampBrief",
-  "total": 186,
+  "total": 187,
   "tiers": [
     {
       "key": "all",
@@ -2698,22 +2698,31 @@
     },
     {
       "id": "comp-saikr-1ec0e37c309a",
-      "name": "【暑假助力奖金】城市联赛——AI大模型创新应用挑战赛道",
+      "name": "【报名最后1天，赛后5天领证】城市联赛——AI大模型创新应用挑战赛道",
       "tier": "hobby",
       "fields": [
         "computer",
         "ai",
         "innovation"
       ],
-      "status": "pending",
-      "signup": "",
+      "status": "open",
+      "signup": "2026年6月17日至8月14日",
       "schedule": "",
       "summary": "来源：赛氪。浏览 8073，关注 325",
       "search": "",
       "official_url": "https://www.saikr.com/vse/CLAIBM2026",
       "official_site": "",
       "organizer": "大连市计算机学会、苏州市计算机学会、天津市计算机学会",
-      "prestige": 4
+      "prestige": 4,
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-06-17",
+        "registration_end": "2026-08-14",
+        "event_start": "2026-08-15",
+        "event_end": "2026-08-16",
+        "verified_at": "2026-08-14T10:13:34+08:00"
+      }
     },
     {
       "id": "comp-saikr-9cfeceaf8750",
@@ -2833,7 +2842,7 @@
     },
     {
       "id": "comp-saikr-4604dd3e4d72",
-      "name": "【倒计时1天】第四届“BETT杯”大学生英语写作大赛",
+      "name": "第四届“BETT杯”大学生英语写作大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -2875,7 +2884,7 @@
     },
     {
       "id": "comp-saikr-8715b18b4de9",
-      "name": "【倒计时2天】第九届ETTBL杯全国英语语法大赛",
+      "name": "【周六开考】第九届ETTBL杯全国英语语法大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3086,7 +3095,7 @@
     },
     {
       "id": "comp-saikr-6c0add4967a9",
-      "name": "【最后16天】第三届“中国故事大赛·双语中国”大学生写作大赛-中文赛道",
+      "name": "【最后15天】第三届“中国故事大赛·双语中国”大学生写作大赛-中文赛道",
       "tier": "enterprise",
       "fields": [
         "design"
@@ -3229,7 +3238,7 @@
     },
     {
       "id": "comp-saikr-4eb4c5be367a",
-      "name": "【倒计时17天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
+      "name": "【倒计时16天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3772,6 +3781,30 @@
         "event_start": "2026-08-22",
         "verified_at": "2026-08-13T10:06:00+08:00"
       }
+    },
+    {
+      "id": "comp-52jingsai-635f68be70be",
+      "name": "2026年第三届“华夏杯”全民国学经典大会",
+      "tier": "hobby",
+      "fields": [
+        "other"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-04-02",
+        "registration_end": "2026-12-31",
+        "verified_at": "2026-08-14T10:13:34+08:00"
+      },
+      "signup": "参与时间：2026年4月2日至12月31日",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23614-1.html",
+      "official_site": "http://guoxue.52jingsai.com/",
+      "organizer": "华夏文化促进会素质教育委员会",
+      "prestige": 3
     }
   ]
 }
