@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-13T21:18:34.070186+08:00",
+  "last_updated": "2026-08-14T09:49:56.607599+08:00",
   "source": "CampBrief",
   "total": 28,
   "categories": [
@@ -415,7 +415,7 @@
         "registration_end": "2026-07-02",
         "event_start": "2026-09-05",
         "event_end": "2026-09-06",
-        "verified_at": "2026-08-13T21:18:34+08:00"
+        "verified_at": "2026-08-14T09:49:56.607599+08:00"
       },
       "fee": "每科约50-70元",
       "schedule": "2026年9月",
@@ -439,7 +439,7 @@
           "value": "各省级考试管理机构于2026年8月11日前公布"
         }
       ],
-      "last_updated": "2026-08-13T21:18:34.070186+08:00"
+      "last_updated": "2026-08-14T09:49:56.607599+08:00"
     },
     {
       "id": "cpa-2026",
@@ -453,7 +453,7 @@
         "registration_end": "2026-04-30T20:00:00+08:00",
         "event_start": "2026-08-29",
         "event_end": "2026-08-30",
-        "verified_at": "2026-08-13T21:18:34+08:00"
+        "verified_at": "2026-08-14T09:49:56.607599+08:00"
       },
       "fee": "每科约60-100元",
       "schedule": "2026年8月底（专业阶段）、8月底（综合阶段）",
@@ -462,7 +462,7 @@
       "official_site": "https://cpaexam.cicpa.org.cn/",
       "official_portal": "https://www.cicpa.org.cn/",
       "news_list_url": "https://www.cicpa.org.cn/ztzl1/exam/exam_info/",
-      "official_url": "https://www.cicpa.org.cn/xxfb/tzgg/202603/t20260311_65852.html",
+      "official_url": "https://www.cicpa.org.cn/xxfb/tzgg/202607/t20260727_66040.html",
       "timeline": [
         {
           "label": "专业阶段考试",
@@ -481,7 +481,7 @@
           "value": "2026年6月15日—30日（每天8:00—20:00）"
         }
       ],
-      "last_updated": "2026-08-13T21:18:34.070186+08:00"
+      "last_updated": "2026-08-14T09:49:56.607599+08:00"
     },
     {
       "id": "acca-202603",
