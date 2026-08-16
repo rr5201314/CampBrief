@@ -2001,3 +2001,53 @@ a.btn{
   border-color: var(--line-strong);
   box-shadow: 0 2px 12px rgba(0,0,0,.04);
 }
+
+/* ===== 加载历史归档区（daily-news 列表页） ===== */
+.archive-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 0 8px;
+}
+.archive-controls-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+.archive-controls-label {
+  font-size: 13px;
+  color: var(--muted);
+}
+.archive-controls-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.archive-load-button {
+  min-height: 44px; /* 触控目标 ≥44px（项目规范） */
+  padding: 0 18px;
+  border: 1px solid var(--line-strong, rgba(0,0,0,.12));
+  border-radius: 999px;
+  font-size: 14px;
+  color: var(--text);
+  background: transparent;
+  cursor: pointer;
+}
+.archive-load-button:hover {
+  background: var(--control-hover);
+}
+.archive-load-button:disabled {
+  opacity: .5;
+  cursor: default;
+}
+.archive-controls-loaded {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  font-size: 12px;
+}

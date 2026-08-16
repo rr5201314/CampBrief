@@ -60,7 +60,7 @@ function initDOM() {
 // 从 exams.json 加载考试数据
 async function loadExamsData() {
   try {
-    const response = await fetch('../../static/data/exams.json', { cache: 'no-store' });
+    const response = await fetch('../../static/data/exams.json', { cache: 'default' });
     if (response.ok) {
       const data = await response.json();
       if (data.items && data.items.length > 0) return { items: data.items, lastUpdated: data.last_updated };

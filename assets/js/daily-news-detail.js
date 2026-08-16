@@ -19,7 +19,7 @@
   async function loadData() {
     // 详情页同样优先 fetch JSON
     try {
-      const response = await fetch("../../static/data/daily-news.json", { cache: "no-store" });
+      const response = await fetch("../../static/data/daily-news.json", { cache: "default" });
       if (response.ok) {
         const data = await response.json();
         if (data.items && data.items.length > 0) return data.items;
@@ -28,6 +28,28 @@
       // file:// 直接打开时无法加载 JSON；显示空状态而非旧数据。
     }
     return [];
+  }
+
+  function monthString(date) {
+    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`;
+  }
+
+  async function findInArchives(targetId) {
+    const now = new Date();
+    for (let index = 1; index <= 12; index += 1) {
+      const month = monthString(new Date(now.getFullYear(), now.getMonth() - index, 1));
+      try {
+        const response = await fetch(`../../static/data/daily-news-archive-${month}.json`, { cache: "default" });
+        if (response.status === 404) break;
+        if (!response.ok) continue;
+        const data = await response.json();
+        const item = Array.isArray(data.items) ? data.items.find(it => it.id === targetId) : null;
+        if (item) return item;
+      } catch (error) {
+        continue;
+      }
+    }
+    return null;
   }
 
   function formatDate(value) {
@@ -99,10 +121,14 @@
     }
 
     const items = await loadData();
-    const item = items.find(it => it.id === targetId);
+    let item = items.find(it => it.id === targetId);
 
     if (!item) {
-      renderNotFound("该资讯可能已更新下线，或链接有误。");
+      item = await findInArchives(targetId);
+    }
+
+    if (!item) {
+      renderNotFound("内容不存在或已归档。");
       return;
     }
     renderDetail(item);

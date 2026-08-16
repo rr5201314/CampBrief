@@ -22,7 +22,7 @@
     const techItems = [];
 
     try {
-      const response = await fetch("../../static/data/daily-news.json", { cache: "no-store" });
+      const response = await fetch("../../static/data/daily-news.json", { cache: "default" });
       if (response.ok) {
         const data = await response.json();
         if (data.items && data.items.length > 0) {
@@ -35,7 +35,7 @@
     }
 
     try {
-      const response = await fetch("../../static/data/github-trending.json", { cache: "no-store" });
+      const response = await fetch("../../static/data/github-trending.json", { cache: "default" });
       if (response.ok) {
         const data = await response.json();
         if (data.items && data.items.length > 0) {

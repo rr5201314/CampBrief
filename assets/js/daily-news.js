@@ -11,6 +11,12 @@ let dateModal, calendarGrid, calendarYearValue, calendarMonthValue;
 let calendarYearMenu, calendarMonthMenu, calendarYearTrigger, calendarMonthTrigger;
 let calendarNextButton, customDateOption;
 let calendarCursor = new Date();
+let archiveControlsContainer;
+let baseEarliestMonth = null;
+const loadedArchives = new Set();
+const availableArchiveMonths = [];
+let archiveMonthsReady = false;
+let initStarted = false;
 
 const escapeHtml = value => CampBriefContent.escapeHtml(value);
 const safeExternalUrl = value => CampBriefContent.safeHttpUrl(value);
@@ -36,7 +42,7 @@ function initDOM() {
 // 获取新闻数据。发布数据仅以 JSON 文件为准，避免旧内嵌数据与线上内容不一致。
 async function loadNewsData() {
   try {
-    const response = await fetch('../../static/data/daily-news.json', { cache: 'no-store' });
+    const response = await fetch('../../static/data/daily-news.json', { cache: 'default' });
     if (response.ok) {
       const data = await response.json();
       if (data.items && data.items.length > 0) return { items: data.items, lastUpdated: data.last_updated };
@@ -109,9 +115,111 @@ function createCardHTML(item) {
 
 // 接收全部数据，初始化列表
 function setItems(items) {
-  allItems = items;
+  allItems = Array.isArray(items) ? [...items] : [];
+  baseEarliestMonth = getEarliestMonthFromItems(allItems);
+  availableArchiveMonths.length = 0;
+  archiveMonthsReady = false;
   currentPage = 1;
   applyFilters();
+}
+
+function getPublishedMonth(item) {
+  const value = item && item.published ? String(item.published) : "";
+  const match = value.match(/^(\d{4})-(\d{2})/);
+  return match ? `${match[1]}-${match[2]}` : null;
+}
+
+function getEarliestMonthFromItems(items) {
+  let earliest = null;
+  (items || []).forEach(item => {
+    const month = getPublishedMonth(item);
+    if (month && (!earliest || month < earliest)) earliest = month;
+  });
+  return earliest;
+}
+
+function shiftMonth(monthStr, delta) {
+  if (!monthStr) return null;
+  const [year, month] = monthStr.split("-").map(Number);
+  if (!year || !month) return null;
+  const date = new Date(year, month - 1 + delta, 1);
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`;
+}
+
+function getArchiveControlsContainer() {
+  if (!archiveControlsContainer) {
+    archiveControlsContainer = document.getElementById("archiveControls");
+    if (!archiveControlsContainer && paginationNav && paginationNav.parentNode) {
+      archiveControlsContainer = document.createElement("div");
+      archiveControlsContainer.id = "archiveControls";
+      archiveControlsContainer.className = "archive-controls";
+      paginationNav.insertAdjacentElement("afterend", archiveControlsContainer);
+    }
+  }
+  return archiveControlsContainer;
+}
+
+async function probeArchiveMonths() {
+  if (archiveMonthsReady) return availableArchiveMonths;
+  archiveMonthsReady = true;
+  if (!baseEarliestMonth) return availableArchiveMonths;
+
+  // 从主文件最早月份本身开始探测：30 天窗口会切分同月条目，同月也可能存在归档文件
+  let month = baseEarliestMonth;
+  for (let index = 0; month && index < 12; index += 1) {
+    try {
+      const response = await fetch(`../../static/data/daily-news-archive-${month}.json`, { cache: 'default' });
+      if (response.status === 404) break;
+      if (!response.ok) break;
+      availableArchiveMonths.push(month);
+    } catch (error) {
+      break;
+    }
+    month = shiftMonth(month, -1);
+  }
+  return availableArchiveMonths;
+}
+
+async function loadArchive(monthStr) {
+  if (!monthStr || loadedArchives.has(monthStr)) return;
+  try {
+    const response = await fetch(`../../static/data/daily-news-archive-${monthStr}.json`, { cache: 'default' });
+    if (!response.ok) {
+      if (response.status === 404) return;
+      return;
+    }
+    const data = await response.json();
+    if (!Array.isArray(data.items) || data.items.length === 0) {
+      loadedArchives.add(monthStr);
+      renderArchiveControls();
+      return;
+    }
+
+    const existingIds = new Set(allItems.map(item => item.id));
+    const merged = [...allItems];
+    data.items.forEach(item => {
+      if (!existingIds.has(item.id)) {
+        existingIds.add(item.id);
+        merged.push(item);
+      }
+    });
+
+    allItems = merged;
+    loadedArchives.add(monthStr);
+    // 加载历史归档后，日期筛选自动切回"全部"：否则旧条目会被 24小时/7天/30天 等筛选过滤掉，用户看不到加载结果
+    if (state.date !== "all") {
+      state.date = "all";
+      document.querySelectorAll('[data-filter-group="date"] .option').forEach(item => {
+        const isActive = item.dataset.value === "all";
+        item.classList.toggle("active", isActive);
+        item.setAttribute("aria-pressed", String(isActive));
+      });
+    }
+    applyFilters();
+  } catch (error) {
+    return;
+  }
+  renderArchiveControls();
 }
 
 // 渲染当前页的卡片
@@ -146,13 +254,66 @@ function renderPagination() {
   if (totalPages <= 1) {
     paginationNav.hidden = true;
     paginationNav.innerHTML = '';
+    renderArchiveControls(totalPages);
     return;
   }
   paginationNav.dataset.totalPages = String(totalPages);
   paginationNav.innerHTML = CampBriefPagination.render({ currentPage, totalPages });
   paginationNav.hidden = false;
+  renderArchiveControls(totalPages);
   return;
 
+}
+
+function renderArchiveControls(totalPages = Math.max(1, Math.ceil(filteredItems.length / PAGE_SIZE))) {
+  const container = getArchiveControlsContainer();
+  if (!container) return;
+
+  if (currentPage !== totalPages || availableArchiveMonths.length === 0) {
+    container.hidden = true;
+    container.innerHTML = "";
+    return;
+  }
+
+  const buttons = availableArchiveMonths
+    .filter(month => !loadedArchives.has(month))
+    .map(month => `<button type="button" class="option archive-load-button" data-archive-month="${escapeHtml(month)}">${escapeHtml(month)}</button>`)
+    .join("");
+
+  const loaded = Array.from(loadedArchives)
+    .sort((a, b) => b.localeCompare(a, "zh-CN"))
+    .map(month => `<span class="badge badge-prize">${escapeHtml(month)}</span>`)
+    .join("");
+
+  if (!buttons && !loaded) {
+    container.hidden = true;
+    container.innerHTML = "";
+    return;
+  }
+
+  container.hidden = false;
+  container.innerHTML = `
+    <div class="archive-controls-inner">
+      <span class="archive-controls-label">加载历史</span>
+      ${buttons ? `<div class="archive-controls-actions">${buttons}</div>` : ""}
+      ${loaded ? `<div class="archive-controls-loaded">${loaded}</div>` : ""}
+    </div>
+  `;
+}
+
+function bindArchiveControls() {
+  const container = getArchiveControlsContainer();
+  if (!container) return;
+  container.addEventListener("click", event => {
+    const button = event.target.closest("[data-archive-month]");
+    if (!button) return;
+    const month = button.dataset.archiveMonth;
+    if (!month || loadedArchives.has(month)) return;
+    button.disabled = true;
+    loadArchive(month).finally(() => {
+      button.disabled = false;
+    });
+  });
 }
 
 // 初始化筛选事件
@@ -497,9 +658,12 @@ function initNewsCarousel(items) {
 
 // 主初始化函数
 async function init() {
+  if (initStarted) return;
+  initStarted = true;
   initDOM();
   initFilters();
   initDatePicker();
+  bindArchiveControls();
   if (typeof FilterScroll !== "undefined") FilterScroll.initAll();
   
   // 显示加载状态
@@ -520,8 +684,18 @@ async function init() {
 
   // 初始化列表（内部会触发 applyFilters + renderPage）
   setItems(items);
+  await probeArchiveMonths();
+  renderArchiveControls();
   initNewsCarousel(items);
 }
 
-// 页面加载完成后初始化
-document.addEventListener('DOMContentLoaded', init);
+function safeInit() {
+  init().catch(() => {});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', safeInit, { once: true });
+  window.addEventListener('load', safeInit, { once: true });
+} else {
+  safeInit();
+}

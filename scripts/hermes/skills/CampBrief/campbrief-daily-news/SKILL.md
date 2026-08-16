@@ -235,7 +235,7 @@ fi
 - 合并后检查重复 `id`；同一规范化 URL、标题、发布时间不应生成多条内容。若来源内容确实不同，必须回到原始候选重新核验，不能复用猜测 URL。
 - 把本次新收录的条目与已有 `items` 合并。
 - 按北京时间自然日倒序、同一自然日按 priority 降序、最后按发布时间降序排序。
-- **总量上限 1000 条**：超出则从最旧的开始裁剪。
+- **主文件保留最近 30 天**：新增条目发布后，若主文件存在早于今天-30天的条目（published 字段），运行 `python3 scripts/archive-daily-news.py` 将旧条目移入 `static/data/daily-news-archive-YYYY-MM.json`（按 published 月份归档）；归档条目只读不改动；归档文件结构与主文件一致。
 - 更新顶层字段：`last_updated` 设为当前时间（ISO8601 带时区），`total` 设为合并后的条目数，`source` 保持 `"CampBrief Auto"`。
 
 ### 7. 写入数据文件

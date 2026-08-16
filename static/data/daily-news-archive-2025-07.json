@@ -1,0 +1,17 @@
+{
+  "last_updated": "2026-08-16T13:40:00+08:00",
+  "items": [
+    {
+      "id": "news-89d3f30f51401d24",
+      "title": "OpenAI 发布 ChatGPT 智能体",
+      "url": "https://openai.com/index/introducing-chatgpt-agent/",
+      "published": "2025-07-17T00:00:00+00:00",
+      "source": "OpenAI",
+      "summary": "OpenAI 正式推出 ChatGPT 智能体功能，可自主执行多步骤复杂任务。",
+      "detail": "OpenAI 正式推出 ChatGPT 智能体（Agent）功能，允许 ChatGPT 自主规划并执行多步骤复杂任务，包括网页浏览、文件处理和代码编写。该功能标志着 ChatGPT 从对话式助手向自主执行系统的转变，是 AI Agent 赛道的重要里程碑。",
+      "priority": 3,
+      "category": "ai",
+      "date": "2025-07-17"
+    }
+  ]
+}
