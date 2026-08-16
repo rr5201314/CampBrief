@@ -672,6 +672,10 @@
       "tier": "hobby",
       "prestige": 3,
       "note": "华夏文化促进会素质教育委员会主办公益答题赛（免费）"
+    },
+    "英语听力大赛": {
+      "tier": "hobby",
+      "prestige": 3
     }
   },
   "fields_hints": {
