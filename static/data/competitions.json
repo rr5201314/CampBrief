@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-16T21:42:23+08:00",
+  "last_updated": "2026-08-17T07:46:48+08:00",
   "source": "CampBrief",
-  "total": 188,
+  "total": 189,
   "tiers": [
     {
       "key": "all",
@@ -2173,7 +2173,7 @@
       "official_url": "https://www.saikr.com/vse/IPCEVC/2026",
       "official_site": "",
       "organizer": "大学生“创新实践杯”竞赛组委会",
-      "prestige": 4
+      "prestige": 2
     },
     {
       "id": "comp-saikr-46fac61c1db8",
@@ -2230,7 +2230,7 @@
       "official_url": "https://www.saikr.com/vse/2026/SYZGVC",
       "official_site": "",
       "organizer": "中国寓言文学研究会教育教学专业委员会",
-      "prestige": 4,
+      "prestige": 2,
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -2642,7 +2642,7 @@
         "computer",
         "innovation"
       ],
-      "status": "ongoing",
+      "status": "done",
       "signup": "第二场报名截止2026年7月26日",
       "schedule": "",
       "summary": "来源：赛氪。浏览 8631，关注 249",
@@ -2705,7 +2705,7 @@
         "ai",
         "innovation"
       ],
-      "status": "ongoing",
+      "status": "done",
       "signup": "2026年6月17日至8月14日",
       "schedule": "",
       "summary": "来源：赛氪。浏览 8073，关注 325",
@@ -2884,7 +2884,7 @@
     },
     {
       "id": "comp-saikr-8715b18b4de9",
-      "name": "【已开考！持续报名中】第九届ETTBL杯全国英语语法大赛",
+      "name": "【开学加分】第九届ETTBL杯全国英语语法大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3417,13 +3417,13 @@
     },
     {
       "id": "comp-saikr-6ac61880bd78",
-      "name": "【本周日考试】第四届“中外传播杯”大学生英语能力挑战赛",
+      "name": "【今日考试】第四届“中外传播杯”大学生英语能力挑战赛",
       "tier": "official",
       "fields": [
         "language"
       ],
       "status": "open",
-      "signup": "2026年6月17日至8月16日",
+      "signup": "2026年6月17日至9月19日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
@@ -3435,10 +3435,10 @@
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
         "registration_start": "2026-06-17",
-        "registration_end": "2026-08-16",
-        "event_start": "2026-08-16",
-        "event_end": "2026-08-16",
-        "verified_at": "2026-08-02T00:24:22+08:00"
+        "registration_end": "2026-09-19",
+        "event_start": "2026-07-19",
+        "event_end": "2026-09-19",
+        "verified_at": "2026-08-17T07:43:31+08:00"
       }
     },
     {
@@ -3831,6 +3831,31 @@
       "official_site": "",
       "organizer": "《英语世界》杯系列大赛组委会",
       "prestige": 3
+    },
+    {
+      "id": "comp-saikr-9867f29b35c9",
+      "name": "【四章证书】第九届ETTBL杯全国英语词汇大赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-12-13",
+        "event_start": "2026-09-12",
+        "event_end": "2026-12-13",
+        "verified_at": "2026-08-17T07:43:31+08:00"
+      },
+      "signup": "即日起至2026年12月13日",
+      "schedule": "四场考试：9月12日、10月11日、11月15日、12月13日",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/ETTBL/26CH",
+      "official_site": "",
+      "organizer": "ETTBL英语大赛组委会",
+      "prestige": 2
     }
   ]
 }

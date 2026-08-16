@@ -676,6 +676,11 @@
     "英语听力大赛": {
       "tier": "hobby",
       "prestige": 3
+    },
+    "英语词汇大赛": {
+      "tier": "hobby",
+      "prestige": 2,
+      "note": "ETTBL杯词汇大赛，49元商业赛"
     }
   },
   "fields_hints": {
