@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-17T08:48:35+08:00",
+  "last_updated": "2026-08-17T13:40:00+08:00",
   "source": "CampBrief Auto",
-  "total": 620,
+  "total": 625,
   "items": [
     {
       "id": "news-4261e314746deb36",
@@ -15,6 +15,72 @@
       "priority": 3,
       "category": "ai",
       "source": "少数派"
+    },
+    {
+      "id": "news-ff34d2b01536f622",
+      "title": "Dario Amodei 回应 AI 风险沟通与监管批评",
+      "url": "https://daily.juya.uk/issues/2026-08-17/",
+      "date": "2026-08-17",
+      "published": "2026-08-17T01:45:08+00:00",
+      "summary": "Anthropic CEO Dario Amodei 回应近期批评，否认个人 AI 风险沟通不成比例地负面，称言论在风险与收益间基本平衡，并反对在集中监管与广泛分发之间二选一。",
+      "detail": "Amodei 在 X 上回应近期针对他的批评，认为公众对 AI 的负面看法源于长期形成的信任危机，而非 AI 领袖的警告。他表示 Anthropic 正加快在生物学和医学领域的投入，预计未来数月将出现早期成果。针对监管，他反对「要么集中监管要么广泛分发」的二元选择，称好规则可同时限制前沿公司权力并为开放权重模型留空间，并支持美国被报道的前置测试路线。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-16600a158ef03178",
+      "title": "OpenAI 被曝解散 Preparedness 团队",
+      "url": "https://daily.juya.uk/issues/2026-08-17/",
+      "date": "2026-08-17",
+      "published": "2026-08-17T01:45:08+00:00",
+      "summary": "据 Financial Times 报道，OpenAI 已于 7 月底解散其评估 AI 灾难性风险的 Preparedness 团队，相关工作拆分并入现有团队，近期已有多名安全人员离职。",
+      "detail": "Preparedness 团队此前负责评估自家 AI 模型是否可能构成严重或灾难性风险，其生物和网络风险方面的工作已拆分并入现有团队。OpenAI 联合创始人 Greg Brockman 表示，公司已将安全工作更紧密地融入模型开发；原团队负责人 Dylan Scandinaro 目前专注于「递归自我改进」AI 带来的安全风险，即能够自我优化并训练其他模型的系统。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-084726967c18ff66",
+      "title": "Codex 负责人发布 1M 上下文配置教程，超额 token 计费引发争议",
+      "url": "https://daily.juya.uk/issues/2026-08-17/",
+      "date": "2026-08-17",
+      "published": "2026-08-17T01:45:08+00:00",
+      "summary": "Codex 负责人 Tibo 发布为 GPT-5.6 Sol 开启 100 万 token 上下文窗口的配置教程，另一 OpenAI 成员称超窗 token 将按 2 倍计入用量限额，双方说法存在分歧。",
+      "detail": "Tibo 在社交平台分享了在 Codex 中开启 1M 上下文的方法：在 ~/.codex/config.toml 顶层配置 model 为 gpt-5.6-sol、model_context_window 设为 1000000 并调整自动压缩阈值，重启客户端即可生效。他表示 Codex 默认上下文限制已针对性能和成本调至最优，此次是应常见需求记录成文。另一 OpenAI 成员 Vaibhav Srivastav 提醒，超出默认窗口的 token 按 2 倍计入用量限额，不用时应关闭该设置，但此前 Tibo 否认了这一说法。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "juya AI 日报",
+      "subcategory": "software"
+    },
+    {
+      "id": "news-f721c20aa4b69c8d",
+      "title": "DeepSeek API 正式上调价格并启用峰谷定价",
+      "url": "https://daily.juya.uk/issues/2026-08-17/",
+      "date": "2026-08-17",
+      "published": "2026-08-17T01:45:08+00:00",
+      "summary": "DeepSeek API 新定价体系于 8 月 17 日零时生效，deepseek-v4-flash 与 deepseek-v4-pro 改为峰谷定价并涨价，高峰时段为每天 9:00—12:00 和 14:00—18:00。",
+      "detail": "DeepSeek 官方此前预告的 API 新定价体系已正式生效，官方 API 文档价格已更新。deepseek-v4-flash 与 deepseek-v4-pro 的调用价格由统一定价改为峰谷定价并上调：高峰时段为每天 9:00—12:00 和 14:00—18:00，其余为空闲时段，空闲时段价格为高峰时段的一半。开发者可通过错峰调用降低成本。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-35d0790a89a39f50",
+      "title": "OpenCode 跟进 DeepSeek 涨价，调整 Go 额度并出现忙时加价",
+      "url": "https://daily.juya.uk/issues/2026-08-17/",
+      "date": "2026-08-17",
+      "published": "2026-08-17T01:45:08+00:00",
+      "summary": "OpenCode 团队表示 DeepSeek 官方涨价后 Go 额度已随之更新，社区观察到 flash 模型额度由 60 美元降至 15 美元，页面每月预估请求次数从 158150 次降至 18900 次。",
+      "detail": "OpenCode 团队成员 dax 称，团队本周正测试多种部署方案，力争以接近此前的价格继续托管 DeepSeek。他同时指出，数十家声称已对齐旧价的供应商实际均未做到。社区用户观察到 OpenCode Go 中 DeepSeek 模型涨价、额度缩水，并出现忙时加价。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
     },
     {
       "id": "news-ce2d53499b802a02",
