@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-17T07:46:48+08:00",
+  "last_updated": "2026-08-17T21:37:01+08:00",
   "source": "CampBrief",
   "total": 189,
   "tiers": [
@@ -3722,8 +3722,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-14T15:39:16+08:00",
-        "review_after": "2026-08-17T15:38:16+08:00"
+        "verified_at": "2026-08-17T21:37:01+08:00",
+        "review_after": "2026-08-20T21:37:01+08:00"
       },
       "signup": "",
       "schedule": "",
