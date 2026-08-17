@@ -68,12 +68,26 @@ def main():
     archive_totals = {}
     for month_key, month_items in sorted(archive_buckets.items()):
         archive_path = DATA_PATH.parent / ARCHIVE_PATTERN.format(month_key)
+        # 读取已有归档文件并合并（按 id 去重），避免覆盖丢失历史归档
+        existing_items = []
+        if archive_path.exists():
+            try:
+                existing_payload = load_json(archive_path)
+                existing_items = existing_payload.get("items", [])
+            except (json.JSONDecodeError, OSError):
+                existing_items = []
+        existing_ids = {item.get("id") for item in existing_items if item.get("id")}
+        merged_items = list(existing_items)
+        for item in month_items:
+            if item.get("id") not in existing_ids:
+                merged_items.append(item)
+                existing_ids.add(item.get("id"))
         archive_payload = {
             "last_updated": payload.get("last_updated"),
-            "items": month_items,
+            "items": merged_items,
         }
         dump_json(archive_path, archive_payload)
-        archive_totals[month_key] = len(month_items)
+        archive_totals[month_key] = len(merged_items)
 
     payload["items"] = keep_items
     dump_json(DATA_PATH, payload)
