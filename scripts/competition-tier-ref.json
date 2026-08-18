@@ -198,6 +198,11 @@
       "tier": "official",
       "prestige": 7
     },
+    "商务印书馆《英语世界》杂志社": {
+      "tier": "enterprise",
+      "prestige": 6,
+      "note": "《英语世界》杯系列赛事主办方"
+    },
     "中国商业统计学会": {
       "tier": "official",
       "prestige": 6

@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-18T21:34:21+08:00",
+  "last_updated": "2026-08-19T07:41:05+08:00",
   "source": "CampBrief",
-  "total": 189,
+  "total": 190,
   "tiers": [
     {
       "key": "all",
@@ -3095,7 +3095,7 @@
     },
     {
       "id": "comp-saikr-6c0add4967a9",
-      "name": "【最后11天】第三届“中国故事大赛·双语中国”大学生写作大赛-中文赛道",
+      "name": "【最后10天】第三届“中国故事大赛·双语中国”大学生写作大赛-中文赛道",
       "tier": "enterprise",
       "fields": [
         "design"
@@ -3238,7 +3238,7 @@
     },
     {
       "id": "comp-saikr-4eb4c5be367a",
-      "name": "【倒计时12天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
+      "name": "【倒计时11天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3543,7 +3543,7 @@
     },
     {
       "id": "comp-saikr-3b8905911811",
-      "name": "【最后11天】第三届“中国故事大赛·双语中国”大学生写作大赛-英文赛道",
+      "name": "【最后10天】第三届“中国故事大赛·双语中国”大学生写作大赛-英文赛道",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3856,6 +3856,32 @@
       "official_site": "",
       "organizer": "ETTBL英语大赛组委会",
       "prestige": 2
+    },
+    {
+      "id": "comp-saikr-454b590971bf",
+      "name": "2026年第六届《英语世界》杯全国大学生翻译大赛",
+      "tier": "enterprise",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-08-12",
+        "registration_end": "2026-12-26",
+        "event_start": "2026-09-19",
+        "event_end": "2026-12-27",
+        "verified_at": "2026-08-19T07:40:10+08:00"
+      },
+      "signup": "2026年8月12日—2026年12月26日",
+      "schedule": "第一场：2026年9月19日10:00-22:00；第二场：2026年11月8日10:00-22:00；第三场：2026年12月27日10:00-22:00（任选一场）",
+      "summary": "商务印书馆《英语世界》杂志社主办，主题为“AI监管”的全国大学生翻译大赛；报名后可任选三场中的一场参加。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/WOWTtranslation2026",
+      "official_site": "https://www.yingyushijie.com/",
+      "organizer": "商务印书馆《英语世界》杂志社",
+      "prestige": 6
     }
   ]
 }
