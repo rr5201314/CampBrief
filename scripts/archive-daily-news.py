@@ -66,6 +66,7 @@ def main():
         raise AssertionError(f"duplicate ids found: {duplicates[:10]}")
 
     archive_totals = {}
+    newly_archived = {}
     for month_key, month_items in sorted(archive_buckets.items()):
         archive_path = DATA_PATH.parent / ARCHIVE_PATTERN.format(month_key)
         # 读取已有归档文件并合并（按 id 去重），避免覆盖丢失历史归档
@@ -78,26 +79,31 @@ def main():
                 existing_items = []
         existing_ids = {item.get("id") for item in existing_items if item.get("id")}
         merged_items = list(existing_items)
+        added = 0
         for item in month_items:
             if item.get("id") not in existing_ids:
                 merged_items.append(item)
                 existing_ids.add(item.get("id"))
+                added += 1
         archive_payload = {
             "last_updated": payload.get("last_updated"),
             "items": merged_items,
         }
         dump_json(archive_path, archive_payload)
         archive_totals[month_key] = len(merged_items)
+        newly_archived[month_key] = added
 
     payload["items"] = keep_items
+    payload["total"] = len(keep_items)
     dump_json(DATA_PATH, payload)
 
     kept_total = len(keep_items)
     archived_total = sum(archive_totals.values())
-    combined_total = kept_total + archived_total
+    new_archived_total = sum(newly_archived.values())
+    combined_total = kept_total + new_archived_total
     if combined_total != original_total:
         raise AssertionError(
-            f"count mismatch: kept={kept_total} archived={archived_total} original={original_total}"
+            f"count mismatch: kept={kept_total} newly_archived={new_archived_total} original={original_total}"
         )
 
     print(f"主文件条数: {kept_total}")
