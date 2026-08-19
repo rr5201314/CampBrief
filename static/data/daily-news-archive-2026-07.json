@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-18T16:55:52+08:00",
+  "last_updated": "2026-08-19T08:31:31+08:00",
   "items": [
     {
       "id": "news-812df71bd8d1c19f",
@@ -4941,6 +4941,20 @@
       "priority": 1,
       "category": "fun",
       "source": "Atlas Obscura"
+    },
+    {
+      "id": "news-c715258736de3125",
+      "title": "80cm 毛绒人形机器人发布，搭载自研 OS 系统",
+      "url": "https://sspai.com/post/112498",
+      "date": "2026-07-20",
+      "published": "2026-07-20T07:11:33+08:00",
+      "summary": "一款 80cm 高的毛绒人形机器人亮相，配备自主研发的操作系统，面向家庭陪伴场景。",
+      "detail": "36氪硬氪报道，一家初创企业发布了一款 80cm 高的毛绒材质人形机器人，主打家庭陪伴和教育场景。该机器人搭载了团队自主研发的操作系统，支持语音交互和基础动作控制。软硬件一体化设计降低了人形机器人的入门门槛。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "少数派",
+      "subcategory": "hardware"
     }
   ]
 }
