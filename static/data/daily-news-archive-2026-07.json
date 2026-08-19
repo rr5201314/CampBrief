@@ -4955,6 +4955,59 @@
       "category": "tech",
       "source": "少数派",
       "subcategory": "hardware"
+    },
+    {
+      "id": "news-f964a57bba1ec1ae",
+      "title": "阿里千问上线 2.4T 参数旗舰模型 Qwen3.8-Max-Preview",
+      "url": "https://daily.juya.uk/issues/2026-07-20/",
+      "published": "2026-07-20T01:31:39+00:00",
+      "summary": "阿里上线新一代旗舰模型 Qwen3.8-Max-Preview，参数量达 2.4T，官方称可能是除 Fable 5 外最强大的模型，正式版将开放权重。",
+      "detail": "阿里千问最新旗舰模型 Qwen3.8-Max-Preview 已上线，参数量达 2.4T。官方称该模型正在以天为单位持续进化，在代码工程和专业办公等领域匹敌世界前沿模型。已在 Qwen Studio、Token Plan、Qoder 等平台上线，Qoder 上调用可享限时 1 折优惠。有博主公布的基准测试显示其编码能力仅落后 Fable 5，正式版将于近期发布并开放权重。",
+      "priority": 3,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-07-20",
+      "image": ""
+    },
+    {
+      "id": "news-ca5e1d7af2ead0b0",
+      "title": "Kimi 因 K3 需求激增暂停新用户订阅，计划拆分会员权益",
+      "url": "https://daily.juya.uk/issues/2026-07-20/",
+      "published": "2026-07-20T01:31:39+00:00",
+      "summary": "Kimi K3 发布后 48 小时用户请求量逼近集群极限，Kimi 暂停新用户订阅并将拆分主权益与 Code 权益。",
+      "detail": "月之暗面 Kimi 团队称，K3 发布后过去 48 小时用户请求量大幅超出预估并逼近现有集群承载极限，已暂停 C 端新用户订阅，全部算力用于保障已订阅用户。团队正在全速推进算力扩容，后续将分批开放新订阅。Kimi 计划拆分会员权益，将 Kimi 主权益与 Kimi Code 权益分开，以便更精准匹配算力。",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-07-20",
+      "image": ""
+    },
+    {
+      "id": "news-4cde08d498b4ba8a",
+      "title": "有了 AI 之后，人们越来越不愿说「不知道」了",
+      "url": "https://sspai.com/post/112425",
+      "date": "2026-07-20",
+      "published": "2026-07-20T11:00:00+08:00",
+      "summary": "AI 工具的普及正在改变人们的认知习惯——面对不确定的问题，越来越多人选择用 AI 答案代替承认「不知道」。",
+      "detail": "Solidot 一篇观察文章指出，AI 工具的广泛使用正在微妙地改变人们的思维方式。面对不确定或不了解的问题，越来越多的人倾向于向 AI 寻求答案，而非坦诚承认自己的知识盲区。这种现象引发了关于 AI 对人类批判性思维和认知谦逊影响的讨论。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "少数派"
+    },
+    {
+      "id": "news-9563f21be35cd1fe",
+      "title": "AI 正在数学反例构造上超越人类数学家",
+      "url": "https://36kr.com/p/3903396279125888?f=rss",
+      "date": "2026-07-20",
+      "published": "2026-07-20 11:02:32  +0800",
+      "summary": "AI 系统在构造数学反例方面已展现出超越人类数学家的效率，引发数学界的反思。",
+      "detail": "Hacker News 热议的一篇文章讨论了 AI 在数学反例构造领域的进展。作者指出，AI 系统在搜索和生成数学反例方面已表现出超越人类数学家的效率。这一趋势正在改变纯数学研究的工作方式，也引发了关于数学创造力本质的讨论。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "36氪",
+      "subcategory": "ai-frontier"
     }
   ]
 }
