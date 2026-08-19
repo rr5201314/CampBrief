@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-19T21:33:46+08:00",
+  "last_updated": "2026-08-20T07:43:15.845717+08:00",
   "source": "CampBrief",
   "total": 190,
   "tiers": [
@@ -2523,20 +2523,27 @@
     },
     {
       "id": "comp-saikr-68dc51fa915b",
-      "name": "2026年全国大学生宪法知识大赛",
+      "name": "【报名即将截止】2026年全国大学生宪法知识大赛",
       "tier": "hobby",
       "fields": [
         "other"
       ],
-      "status": "pending",
-      "signup": "",
+      "status": "open",
+      "signup": "2026年5月13日至8月31日",
       "schedule": "",
       "summary": "来源：赛氪。浏览 1.3万，关注 221",
       "search": "",
       "official_url": "https://www.saikr.com/vse/CWH/XFZS/2025",
       "official_site": "",
-      "organizer": "赛事组委会",
-      "prestige": 4
+      "organizer": "华夏文化促进会文化产业工作委员会",
+      "prestige": 4,
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-05-13",
+        "registration_end": "2026-08-31",
+        "verified_at": "2026-08-20T07:42:10+08:00"
+      }
     },
     {
       "id": "comp-saikr-e5eaadd424dd",
@@ -2927,20 +2934,29 @@
     },
     {
       "id": "comp-saikr-c4f00438cfee",
-      "name": "第四届“一带一路”大学生知识文化大赛",
+      "name": "【最后一场！】第四届“一带一路”大学生知识文化大赛",
       "tier": "hobby",
       "fields": [
         "design"
       ],
-      "status": "pending",
-      "signup": "",
+      "status": "open",
+      "signup": "2026年4月9日至8月29日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/2026/YDYL/Culture",
       "official_site": "",
       "organizer": "一带一路系列赛事组委会",
-      "prestige": 4
+      "prestige": 4,
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-04-09",
+        "registration_end": "2026-08-29",
+        "event_start": "2026-08-29",
+        "event_end": "2026-08-29",
+        "verified_at": "2026-08-20T07:42:10+08:00"
+      }
     },
     {
       "id": "comp-saikr-3bcfd9399c73",
@@ -3095,7 +3111,7 @@
     },
     {
       "id": "comp-saikr-6c0add4967a9",
-      "name": "【最后10天】第三届“中国故事大赛·双语中国”大学生写作大赛-中文赛道",
+      "name": "【最后9天】第三届“中国故事大赛·双语中国”大学生写作大赛-中文赛道",
       "tier": "enterprise",
       "fields": [
         "design"
@@ -3238,7 +3254,7 @@
     },
     {
       "id": "comp-saikr-4eb4c5be367a",
-      "name": "【倒计时11天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
+      "name": "【倒计时10天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3339,22 +3355,22 @@
     },
     {
       "id": "comp-saikr-934b697c9f23",
-      "name": "【即将开考】2026年第二届全国大学生电子商务精英挑战赛",
+      "name": "【最后一场】2026年第二届全国大学生电子商务精英挑战赛",
       "tier": "hobby",
       "fields": [
         "computer"
       ],
-      "status": "done",
+      "status": "open",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-03T21:36:23+08:00",
         "registration_start": "2026-04-08",
-        "registration_end": "2026-08-15",
-        "event_start": "2026-08-14",
-        "event_end": "2026-08-15"
+        "registration_end": "2026-10-10",
+        "event_start": "2026-10-09",
+        "event_end": "2026-10-10",
+        "verified_at": "2026-08-20T07:42:10+08:00"
       },
-      "signup": "2026年4月至8月15日",
+      "signup": "2026年4月8日至10月10日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
@@ -3543,7 +3559,7 @@
     },
     {
       "id": "comp-saikr-3b8905911811",
-      "name": "【最后10天】第三届“中国故事大赛·双语中国”大学生写作大赛-英文赛道",
+      "name": "【最后9天】第三届“中国故事大赛·双语中国”大学生写作大赛-英文赛道",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3759,7 +3775,7 @@
     },
     {
       "id": "comp-saikr-554ce57a889c",
-      "name": "【倒计时】2026年第二届“中外传播杯”大学生中外历史竞答大赛",
+      "name": "【最后3天】2026年第二届“中外传播杯”大学生中外历史竞答大赛",
       "tier": "official",
       "fields": [
         "other"
