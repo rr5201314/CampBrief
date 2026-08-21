@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-21T21:40:17+08:00",
+  "last_updated": "2026-08-22T07:38:36+08:00",
   "source": "CampBrief",
-  "total": 190,
+  "total": 191,
   "tiers": [
     {
       "key": "all",
@@ -3111,7 +3111,7 @@
     },
     {
       "id": "comp-saikr-6c0add4967a9",
-      "name": "【最后8天】第三届“中国故事大赛·双语中国”大学生写作大赛-中文赛道",
+      "name": "【最后7天】第三届“中国故事大赛·双语中国”大学生写作大赛-中文赛道",
       "tier": "enterprise",
       "fields": [
         "design"
@@ -3254,7 +3254,7 @@
     },
     {
       "id": "comp-saikr-4eb4c5be367a",
-      "name": "【倒计时9天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
+      "name": "【倒计时8天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3509,7 +3509,7 @@
     },
     {
       "id": "comp-saikr-699c33f46408",
-      "name": "【倒计时10天】第五届“中外传播杯”大学生英语语法大赛",
+      "name": "【倒计时9天】第五届“中外传播杯”大学生英语语法大赛",
       "tier": "official",
       "fields": [
         "language"
@@ -3559,7 +3559,7 @@
     },
     {
       "id": "comp-saikr-3b8905911811",
-      "name": "【最后8天】第三届“中国故事大赛·双语中国”大学生写作大赛-英文赛道",
+      "name": "【最后7天】第三届“中国故事大赛·双语中国”大学生写作大赛-英文赛道",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3775,7 +3775,7 @@
     },
     {
       "id": "comp-saikr-554ce57a889c",
-      "name": "【最后2天】2026年第二届“中外传播杯”大学生中外历史竞答大赛",
+      "name": "【周六开考】2026年第二届“中外传播杯”大学生中外历史竞答大赛",
       "tier": "official",
       "fields": [
         "other"
@@ -3898,6 +3898,29 @@
       "official_site": "https://www.yingyushijie.com/",
       "organizer": "商务印书馆《英语世界》杂志社",
       "prestige": 6
+    },
+    {
+      "id": "comp-saikr-bc779b2db76d",
+      "name": "第五届“BETT杯”全国大学生英语词汇大赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "signup": "即日起开放报名（首场考试 2026年9月12日）",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/bett/vocabulary/5",
+      "official_site": "",
+      "organizer": "“BETT杯”大赛组委会",
+      "prestige": 2,
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-08-22T07:38:36+08:00",
+        "review_after": "2026-08-25T07:38:36+08:00"
+      }
     }
   ]
 }
