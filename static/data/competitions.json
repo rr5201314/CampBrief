@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-22T21:35:34+08:00",
+  "last_updated": "2026-08-23T07:35:50+08:00",
   "source": "CampBrief",
-  "total": 192,
+  "total": 194,
   "tiers": [
     {
       "key": "all",
@@ -2484,7 +2484,7 @@
       "fields": [
         "science"
       ],
-      "status": "open",
+      "status": "ongoing",
       "signup": "2026年7月1日至8月22日",
       "schedule": "",
       "summary": "来源：赛氪。浏览 1.1万，关注 362",
@@ -2554,7 +2554,7 @@
         "innovation",
         "science"
       ],
-      "status": "open",
+      "status": "closed",
       "signup": "2026年4月29日至8月22日",
       "schedule": "",
       "summary": "来源：赛氪。浏览 1.2万，关注 403",
@@ -3111,7 +3111,7 @@
     },
     {
       "id": "comp-saikr-6c0add4967a9",
-      "name": "【最后7天】第三届“中国故事大赛·双语中国”大学生写作大赛-中文赛道",
+      "name": "【最后6天】第三届“中国故事大赛·双语中国”大学生写作大赛-中文赛道",
       "tier": "enterprise",
       "fields": [
         "design"
@@ -3141,7 +3141,7 @@
         "computer",
         "ai"
       ],
-      "status": "ongoing",
+      "status": "done",
       "signup": "2026年6月12日至2026年8月1日",
       "schedule": "作品提交截止2026年8月9日，成果评议8月10-14日，终选展示8月22日",
       "summary": "赛事详情请访问信息来源页面",
@@ -3254,7 +3254,7 @@
     },
     {
       "id": "comp-saikr-4eb4c5be367a",
-      "name": "【倒计时8天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
+      "name": "【倒计时7天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3559,7 +3559,7 @@
     },
     {
       "id": "comp-saikr-3b8905911811",
-      "name": "【最后7天】第三届“中国故事大赛·双语中国”大学生写作大赛-英文赛道",
+      "name": "【最后6天】第三届“中国故事大赛·双语中国”大学生写作大赛-英文赛道",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3775,12 +3775,12 @@
     },
     {
       "id": "comp-saikr-554ce57a889c",
-      "name": "【周六开考】2026年第二届“中外传播杯”大学生中外历史竞答大赛",
+      "name": "2026年第二届“中外传播杯”大学生中外历史竞答大赛",
       "tier": "official",
       "fields": [
         "other"
       ],
-      "status": "open",
+      "status": "ongoing",
       "signup": "2026年7月15日至8月22日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
@@ -3943,6 +3943,58 @@
       "official_url": "https://www.52jingsai.com/article-23154-1.html",
       "official_site": "http://ctwh.52jingsai.com/",
       "organizer": "华夏文化促进会素质教育委员会",
+      "prestige": 3
+    },
+    {
+      "id": "comp-saikr-9f8e1cb93e50",
+      "name": "2026第五届UNIPP大学生英语应用大赛（秋季赛）",
+      "tier": "enterprise",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-06-23",
+        "registration_end": "2026-12-20",
+        "event_start": "2026-09-13",
+        "event_end": "2026-12-20",
+        "verified_at": "2026-08-23T07:35:50+08:00"
+      },
+      "signup": "即日起至2026年12月20日",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/UNIPPNC2026",
+      "official_site": "",
+      "organizer": "联合国采购杯组委会",
+      "prestige": 5
+    },
+    {
+      "id": "comp-saikr-f485ec626345",
+      "name": "2026年第四届全国大学生数学创新思维挑战赛",
+      "tier": "hobby",
+      "fields": [
+        "science"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-03-11",
+        "registration_end": "2026-08-28",
+        "event_start": "2026-08-29",
+        "event_end": "2026-08-29",
+        "verified_at": "2026-08-23T07:35:50+08:00"
+      },
+      "signup": "即日起至2026年8月28日",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/2026MATH",
+      "official_site": "",
+      "organizer": "四川省科学学与科技政策研究会、成都航空航天学会",
       "prestige": 3
     }
   ]

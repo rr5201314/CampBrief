@@ -403,6 +403,16 @@
     "华夏文化促进会素质教育委员会": {
       "tier": "hobby",
       "prestige": 3
+    },
+    "联合国采购杯组委会": {
+      "tier": "enterprise",
+      "prestige": 5,
+      "note": "UNIPP大学生英语应用大赛（原联合国采购杯）"
+    },
+    "四川省科学学与科技政策研究会": {
+      "tier": "hobby",
+      "prestige": 3,
+      "note": "全国大学生数学创新思维挑战赛主办方"
     }
   },
   "competitions": {
