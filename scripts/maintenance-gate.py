@@ -278,6 +278,8 @@ def pool_tasks(scope: str, name: str, path: Path) -> list[dict[str, Any]]:
         )
         return result
     if not items and not result:
+        if data.get("no_change") is True:
+            return result
         result.append(
             task(
                 "source_error",
@@ -331,6 +333,36 @@ def pool_tasks(scope: str, name: str, path: Path) -> list[dict[str, Any]]:
                         if same_url
                         else "采集到尚未发布的新候选"
                     ),
+                    payload=candidate,
+                )
+            )
+            continue
+
+        if scope == "exams":
+            if candidate.get("kind") != "third_party_lead" or candidate.get("official_required") is not True:
+                result.append(
+                    task(
+                        "source_error",
+                        scope,
+                        identity,
+                        severity="high",
+                        source=name,
+                        item_id=item_id,
+                        title=title,
+                        reason="考试雷达候选未明确要求官方核验，已安全拒绝",
+                        payload=candidate,
+                    )
+                )
+                continue
+            result.append(
+                task(
+                    "exam_radar_review",
+                    scope,
+                    identity,
+                    source=str(candidate.get("source") or name),
+                    item_id=item_id,
+                    title=title,
+                    reason="第三方雷达发现考试线索；必须回到官方域名确认公告后才能更新",
                     payload=candidate,
                 )
             )

@@ -58,15 +58,20 @@ fi
 ```bash
 mkdir -p "$REPO/local-notes/maintenance"
 EXAM_REPORT="$REPO/local-notes/maintenance/exam-notice-probe.json"
+RADAR_POOL="$REPO/local-notes/maintenance/exam-radar-candidates.json"
+RADAR_STATE="$REPO/local-notes/maintenance/exam-radar-state.json"
 HANDOFF="$REPO/local-notes/maintenance/exams-handoff.json"
 STATE="$REPO/local-notes/maintenance/exams-state.json"
 rm -f "$EXAM_REPORT"
 python3 "$REPO/scripts/collect-exam-notices.py" --output "$EXAM_REPORT" || true
+python3 "$REPO/scripts/collect-exam-radar.py" \
+  --output "$RADAR_POOL" --state "$RADAR_STATE" || { rmdir "$LOCK_DIR"; exit 1; }
 
 GATE_RC=0
 python3 "$REPO/scripts/maintenance-gate.py" \
   --scope exams --fix --touch-last-updated \
   --exam-report "$EXAM_REPORT" \
+  --candidate-pool "exam-radar=$RADAR_POOL" \
   --report "$HANDOFF" --state "$STATE" || GATE_RC=$?
 
 if [ "$GATE_RC" -eq 20 ]; then
@@ -123,6 +128,19 @@ fi
 只有退出码为 `10` 时才进入后续 Hermes 处理。只读取 `$HANDOFF.tasks`，再按任务里的 `item_id` 定向读取 `static/data/exams.json` 对应条目和 policy 规则。不得通读或重新核验 gate 已标为通过的考试；`suppressed` 不重复处理。
 
 `exam_notice_review`、`status_review` 和 `lifecycle_error` 只处理各自 `item_id`；`source_error` 只诊断报告中指明的来源；`validation_error` 只按 payload 的命令和输出修复对应数据或配置。任务没有 `item_id` 时不得扩展为全量内容巡检；无法安全修复时停止，不得继续发布。
+
+### 0.2 第三方雷达候选（`exam_radar_review`）
+
+`exam_radar_review` 的 payload 来自第三方雷达，**只是一条发现线索，不是事实来源**。`title`、`registration`、`payment`、地区和 `third_party_notice_url` 都不得直接写入 `static/data/exams.json`，也不得作为 lifecycle 的日期依据。
+
+处理该任务时：
+
+1. 仅以 payload 的考试名称、年份、期次和地区作为检索提示；先查对应主办方、行业协会、人社/教育考试机构等官方域名。
+2. 找到官方公告原文后，按本 Skill 的官方公告解析、期次判断、lifecycle 和校验规则更新；`official_url` 必须是官方绝对 URL，不能是雷达页面。
+3. 若候选来自省级报名信息，而数据中没有该考试家族：先确认该考试存在全国或主办方级官方考务依据；不得仅凭一条省级第三方线索新增公开考试条目，更不得把多个省份拆成重复考试卡片。
+4. 官方原文暂未发布、无法匹配期次、候选为预计/参考往年，或只能取得第三方页面时：不改发布数据；在本次报告中写明“第三方线索未获官方确认”和实际查过的官方 URL。
+
+雷达脚本只在候选新增或字段变化时写入候选池；`no_change=true` 是正常巡检结果，不能当作来源错误。
 
 ## 1. 读取并分类当前数据
 

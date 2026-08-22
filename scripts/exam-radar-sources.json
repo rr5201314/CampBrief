@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "233-first-level-cost-engineer-2026-registration",
+      "provider": "233网校",
+      "url": "https://www.233.com/zaojia/zhuanti/2026baoming/",
+      "parser": "233-regional-signup-table",
+      "exam_family": "first-level-cost-engineer",
+      "exam_name": "一级造价工程师",
+      "year": 2026,
+      "period": "annual",
+      "max_candidates": 3,
+      "official_required": true,
+      "forbidden_markers": [
+        "预计",
+        "参考往年",
+        "待定",
+        "通常",
+        "或将",
+        "可能"
+      ]
+    }
+  ]
+}

@@ -67,6 +67,7 @@ Hermes 只处理 `tasks`：
 - `candidate_review`：未发布的新候选。
 - `candidate_change`：已发布条目的来源字段发生变化。
 - `exam_notice_review`：考试公告新命中、多命中、零命中、动态页变化或来源失败。
+- `exam_radar_review`：第三方考试雷达发现的线索；只能用作查找官方原文的提示，不能直接采用其日期、地区或链接。
 - `status_review` / `lifecycle_error`：状态缺少可靠边界、复核期限已过或生命周期非法。
 - `content_completion`：GitHub 趋势项目缺少中文概述等编辑字段。
 - `link_review`：已发布资讯原文失效、访问受限或出现网络错误，只需定向复核报告中的 URL 与条目 ID。
@@ -107,15 +108,26 @@ python3 scripts/maintenance-gate.py \
 - 多个链接命中、没有命中、页面只有前端壳或请求错误：交给 Hermes 定向兜底。
 - `schedule-page` 和动态同页公告只计算正文指纹；正文变化时立即交给 Hermes，脚本不自行解析日期。
 
+### 第三方考试雷达（仅发现，不发布）
+
+`scripts/collect-exam-radar.py` 按 `scripts/exam-radar-sources.json` 的逐源解析规则收集第三方页面中的结构化线索，并把内容指纹写入 `local-notes/maintenance/exam-radar-state.json`。首次发现或字段变化才写入候选池；无新增时输出 `no_change=true`，不应生成来源错误。
+
+雷达候选必须带 `official_required=true`。Gate 将其转为 `exam_radar_review`，Hermes 只能以候选中的考试名称、年份、期次和地区为检索提示，随后必须找到主办方、行业协会、人社或教育考试机构的官方原文，才可更新 `exams.json`。第三方 URL 和日期不能写入发布数据。
+
 示例：
 
 ```bash
 python3 scripts/collect-exam-notices.py \
   --output local-notes/maintenance/exam-notice-probe.json
 
+python3 scripts/collect-exam-radar.py \
+  --output local-notes/maintenance/exam-radar-candidates.json \
+  --state local-notes/maintenance/exam-radar-state.json
+
 python3 scripts/maintenance-gate.py \
   --scope exams --fix --touch-last-updated \
   --exam-report local-notes/maintenance/exam-notice-probe.json \
+  --candidate-pool exam-radar=local-notes/maintenance/exam-radar-candidates.json \
   --report local-notes/maintenance/exams-handoff.json \
   --state local-notes/maintenance/exams-state.json
 ```

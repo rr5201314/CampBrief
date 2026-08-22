@@ -156,6 +156,7 @@
 - gate 报告与异常去重状态只保存在被忽略的 `local-notes/maintenance/`。Hermes 成功处理、校验并推送后必须用 `--ack` 确认本批任务；未 ack 的任务下次继续交接。已 ack 且内容未变化的异常在冷却期内不重复交接，内容指纹变化则立即重新交接。冷却期不是执行频率。
 - 资讯原文链接先由 `scripts/check-daily-news-links.py` 批量去重、并发探测：非 juya 与 juya 分别使用来源排除/包含参数。`ok` 不交接，只有 `broken`、`restricted`、`error` 生成 `link_review`；Hermes 只复核任务 payload 中的 URL 和 `ids`。
 - 考试来源先由 `scripts/collect-exam-notices.py` 对相同 `news_list_url` 合并下载并按 `source-policy.json` 匹配。唯一新候选、多候选、零命中、动态页面内容变化、页面壳和网络错误才交给 Hermes；脚本不解析正文日期。
+- 第三方考试雷达使用 `scripts/collect-exam-radar.py` + `scripts/exam-radar-sources.json`，状态保存在 `local-notes/maintenance/exam-radar-state.json`。它只在候选新增或字段变化时输出候选池，并以 `exam_radar_review` 交给 Hermes；第三方标题、日期和链接永远只是检索线索，必须由 Hermes 找到官方原文后才能更新 `exams.json`。`no_change=true` 表示雷达无新增，不是来源故障。
 - 采集脚本中的标题或 `status_hint` 启发式结果只作为候选线索，不得直接写入发布状态。状态事实仍只能来自可靠 lifecycle；自然语言日期不得参与自动状态计算。
 - GitHub Trending 采集后不得在 gate 前让 Hermes 通读榜单；gate 只为缺少 `chinese_summary`/`solves_what` 的 repo 生成 `content_completion`。补写后必须通过 `scripts/validate-github-trending.py`。
 - 完整协议和命令见 `static/docs/maintenance-workflow.md`。
