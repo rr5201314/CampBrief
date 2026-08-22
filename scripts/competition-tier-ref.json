@@ -399,6 +399,10 @@
       "tier": "hobby",
       "prestige": 4,
       "note": "华夏文化促进会文化产业工作委员会主办的知识竞赛"
+    },
+    "华夏文化促进会素质教育委员会": {
+      "tier": "hobby",
+      "prestige": 3
     }
   },
   "competitions": {

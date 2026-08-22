@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-22T07:38:36+08:00",
+  "last_updated": "2026-08-22T12:33:59.763744+08:00",
   "source": "CampBrief",
-  "total": 191,
+  "total": 192,
   "tiers": [
     {
       "key": "all",
@@ -3033,7 +3033,7 @@
       "name": "第十九届“振兴杯”全国青年职业技能大赛",
       "tier": "official",
       "fields": [
-        "design"
+        "other"
       ],
       "status": "open",
       "signup": "即日起-12月25日中午12点截止",
@@ -3042,8 +3042,8 @@
       "search": "",
       "official_url": "https://www.52jingsai.com/article-23522-1.html",
       "official_site": "",
-      "organizer": "华夏文化促进会素质教育委员会",
-      "prestige": 6,
+      "organizer": "共青团中央、人力资源和社会保障部",
+      "prestige": 9,
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -3700,8 +3700,8 @@
       "search": "",
       "official_url": "https://www.52jingsai.com/article-23524-1.html",
       "official_site": "http://cycupzt.52jingsai.com/",
-      "organizer": "华夏文化促进会素质教育委员会",
-      "prestige": 6
+      "organizer": "中国外文局亚太传播中心",
+      "prestige": 7
     },
     {
       "id": "comp-52jingsai-7a1b82a1c128",
@@ -3921,6 +3921,29 @@
         "verified_at": "2026-08-22T07:38:36+08:00",
         "review_after": "2026-08-25T07:38:36+08:00"
       }
+    },
+    {
+      "id": "comp-52jingsai-53f086d67013",
+      "name": "【免费答题，及格领证书】第三届中华优秀传统文化大会",
+      "tier": "hobby",
+      "fields": [
+        "other"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-08-22T12:33:21+08:00",
+        "review_after": "2026-08-25T12:32:21+08:00"
+      },
+      "signup": "",
+      "schedule": "",
+      "summary": "免费答题，60分及格领荣誉证书；含知识答题与作品创作（诵读、汉字书写）环节，作品创作收取评审费50元。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23154-1.html",
+      "official_site": "http://ctwh.52jingsai.com/",
+      "organizer": "华夏文化促进会素质教育委员会",
+      "prestige": 3
     }
   ]
 }
