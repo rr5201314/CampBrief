@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-22T13:04:52.609435+08:00",
+  "last_updated": "2026-08-22T15:37:55.681951+08:00",
   "source": "CampBrief",
-  "total": 28,
+  "total": 29,
   "categories": [
     {
       "key": "english",
@@ -26,6 +26,10 @@
     {
       "key": "postgrad",
       "label": "考研类"
+    },
+    {
+      "key": "engineering",
+      "label": "工程类"
     }
   ],
   "items": [
@@ -608,6 +612,48 @@
         }
       ],
       "last_updated": "2026-08-22T07:09:30.577986+08:00"
+    },
+    {
+      "id": "first-level-cost-engineer-2026",
+      "name": "2026年一级造价工程师职业资格考试",
+      "category": "engineering",
+      "status": "closed",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-07-24",
+        "registration_end": "2026-08-18",
+        "event_start": "2026-10-17",
+        "event_end": "2026-10-18",
+        "verified_at": "2026-08-22T15:37:55.681951+08:00"
+      },
+      "fee": "每科约50-80元（各省略有差异）",
+      "schedule": "2026年10月17日—18日",
+      "summary": "造价工程师准入类职业资格，分土木建筑工程、安装工程、交通运输工程、水利工程4个专业类别，考试含《建设工程造价管理》《建设工程计价》《建设工程技术与计量》《建设工程造价案例分析》。",
+      "search": "造价 工程师 一造 造价师 职业资格 cost engineer 2026 10月",
+      "official_site": "https://www.cpta.com.cn/",
+      "official_portal": "https://www.cpta.com.cn/",
+      "news_list_url": "http://www.cpta.com.cn/examNotice.html",
+      "official_url": "http://www.cpta.com.cn/examNotice/2207.html",
+      "timeline": [
+        {
+          "label": "报名时间",
+          "value": "2026年7月24日至8月18日（全国报名平台开放，各省具体安排以当地考试机构通知为准）"
+        },
+        {
+          "label": "考试时间",
+          "value": "2026年10月17日—18日"
+        },
+        {
+          "label": "准考证打印",
+          "value": "考前一周左右，以当地考试机构通知为准"
+        },
+        {
+          "label": "成绩公布",
+          "value": "2026年12月中旬"
+        }
+      ],
+      "last_updated": "2026-08-22T15:37:55.681951+08:00"
     },
     {
       "id": "ntce-202603",
