@@ -413,6 +413,11 @@
       "tier": "hobby",
       "prestige": 3,
       "note": "全国大学生数学创新思维挑战赛主办方"
+    },
+    "中国广播影视培训网": {
+      "tier": "hobby",
+      "prestige": 4,
+      "note": "NPCCS 大学生普通话挑战赛主办方（与北京新视听国际传媒中心联合主办，指导单位中华出版促进会）"
     }
   },
   "competitions": {

@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-23T21:32:28+08:00",
+  "last_updated": "2026-08-24T07:37:00+08:00",
   "source": "CampBrief",
-  "total": 194,
+  "total": 195,
   "tiers": [
     {
       "key": "all",
@@ -2484,7 +2484,7 @@
       "fields": [
         "science"
       ],
-      "status": "ongoing",
+      "status": "done",
       "signup": "2026年7月1日至8月22日",
       "schedule": "",
       "summary": "来源：赛氪。浏览 1.1万，关注 362",
@@ -3412,7 +3412,7 @@
       "fields": [
         "math"
       ],
-      "status": "ongoing",
+      "status": "done",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -3540,7 +3540,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -3997,6 +3997,31 @@
       "official_site": "",
       "organizer": "四川省科学学与科技政策研究会、成都航空航天学会",
       "prestige": 3
+    },
+    {
+      "id": "comp-saikr-3e818dd91712",
+      "name": "【省赛报名开启】第九届大学生普通话挑战赛（NPCCS）",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-08-11",
+        "registration_end": "2026-09-20",
+        "event_start": "2026-09-20",
+        "verified_at": "2026-08-24T07:37:00+08:00"
+      },
+      "signup": "2026年8月11日至9月20日",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/NPCCS2026X",
+      "official_site": "",
+      "organizer": "中国广播影视培训网、北京新视听国际传媒中心",
+      "prestige": 4
     }
   ]
 }
