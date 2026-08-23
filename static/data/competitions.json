@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-23T07:35:50+08:00",
+  "last_updated": "2026-08-23T12:34:29+08:00",
   "source": "CampBrief",
   "total": 194,
   "tiers": [
@@ -3780,8 +3780,8 @@
       "fields": [
         "other"
       ],
-      "status": "ongoing",
-      "signup": "2026年7月15日至8月22日",
+      "status": "open",
+      "signup": "即日起至2026年11月22日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
@@ -3793,9 +3793,10 @@
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
         "registration_start": "2026-07-15",
-        "registration_end": "2026-08-22",
+        "registration_end": "2026-11-22",
         "event_start": "2026-08-22",
-        "verified_at": "2026-08-13T10:06:00+08:00"
+        "verified_at": "2026-08-23T12:34:29+08:00",
+        "event_end": "2026-11-22"
       }
     },
     {
