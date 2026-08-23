@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-23T13:34:42+08:00",
+  "last_updated": "2026-08-23T14:07:06+08:00",
   "source": "CampBrief Auto",
-  "total": 596,
+  "total": 597,
   "items": [
     {
       "id": "news-b1271a936edc542d",
@@ -202,6 +202,19 @@
       "priority": 2,
       "category": "tech",
       "subcategory": "ai-frontier",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-e6a4549e25498eea",
+      "title": "OpenAI 将 GPT-5.6 Sol API 与 Codex Credits 价格下调超 20%",
+      "url": "https://daily.juya.uk/issues/2026-08-22/",
+      "date": "2026-08-22",
+      "published": "2026-08-22T01:59:29+00:00",
+      "summary": "OpenAI 宣布未来 3 个月将 GPT-5.6 Sol 的 API 与 Codex Credits 价格下调超过 20%，API 输入价从 5 美元降至 4 美元，输出价从 30 美元降至 20 美元。",
+      "detail": "OpenAI 宣布未来 3 个月将 GPT-5.6 Sol 的 API 与按量计费 Codex Credits 价格下调超过 20%，API 端已生效，符合条件的 Codex Credits 正逐步推送。标准短上下文价格由每百万输入 token 5 美元降至 4 美元，输出由 30 美元降至 20 美元，缓存与长上下文档位也同步下调；Pro、Plus 和 Business 订阅方案包含的用量不变。此次官方调整与 8 月 17 日 OpenRouter 的半价属于不同平台和计费范围，是同一模型的后续降价。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
       "source": "juya AI 日报"
     },
     {
