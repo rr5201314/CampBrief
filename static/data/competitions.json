@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-24T12:35:49+08:00",
+  "last_updated": "2026-08-24T21:35:13+08:00",
   "source": "CampBrief",
   "total": 195,
   "tiers": [
@@ -2547,7 +2547,7 @@
     },
     {
       "id": "comp-saikr-e5eaadd424dd",
-      "name": "【本周六考试+开学领取证书】2026大学生“麟创杯”创新数学竞赛",
+      "name": "2026大学生“麟创杯”创新数学竞赛",
       "tier": "hobby",
       "fields": [
         "ai",
@@ -3303,7 +3303,7 @@
     },
     {
       "id": "comp-saikr-dd8077ef2650",
-      "name": "【文学类赛事】“悦·读者杯”——2026年青少年文学大赛",
+      "name": "【权威文学大赛】“悦·读者杯”——2026年青少年文学大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3729,7 +3729,7 @@
     },
     {
       "id": "comp-saikr-0eed3f253b2f",
-      "name": "第四届“一带一路”大学生英语演讲大赛",
+      "name": "【最后一场】第四届“一带一路”大学生英语演讲大赛",
       "tier": "hobby",
       "fields": [
         "language"
