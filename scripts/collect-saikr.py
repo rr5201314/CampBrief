@@ -24,6 +24,8 @@ from html import unescape
 
 BASE_URL = "https://www.saikr.com"
 LIST_URL = f"{BASE_URL}/index/hot/contest"
+# 2026-08-24 起热门榜页面改为 Vite SPA（SSR 移除），数据由该 API 提供
+API_URL = "https://apiv4buffer.saikr.com/api/pc/ranking/hotContest?limit=50"
 FETCH_TIMEOUT = 20
 CST = timezone(timedelta(hours=8))
 
@@ -48,6 +50,17 @@ def fetch(url):
     with urllib.request.urlopen(req, timeout=FETCH_TIMEOUT) as resp:
         raw = resp.read()
     return raw.decode("utf-8", errors="replace")
+
+
+def fetch_json(url):
+    """抓取 JSON API，返回解析后的对象。"""
+    api_headers = dict(HEADERS)
+    api_headers["Accept"] = "application/json"
+    api_headers["Referer"] = LIST_URL
+    req = urllib.request.Request(url, headers=api_headers)
+    with urllib.request.urlopen(req, timeout=FETCH_TIMEOUT) as resp:
+        raw = resp.read()
+    return json.loads(raw.decode("utf-8", errors="replace"))
 
 
 def parse_list(html):
@@ -151,6 +164,59 @@ def parse_list(html):
     return items
 
 
+def parse_api_list(data):
+    """从热门榜 API (api/pc/ranking/hotContest) 解析竞赛卡片。
+
+    API 返回结构：data.list[]. 字段：
+      name          竞赛标题
+      contest_url   /vse/XXX（相对路径）
+      content       公告摘要（整段，需截断到 200 字作为 status_hint）
+      create_user   发布者账号名（organizer 候选，可能非真实主办方）
+      look_count    浏览量
+      focus_num     关注数
+      rank          热门榜排名
+    """
+    items = []
+    seen_vse = set()
+    lst = (data.get("data") or {}).get("list") or []
+    for it in lst:
+        name = unescape(str(it.get("name") or "")).strip()
+        href_raw = str(it.get("contest_url") or "").strip()
+        vse_m = re.search(r"/vse/[^\"]+", href_raw)
+        if not name or not vse_m:
+            continue
+        vse_path = vse_m.group(0)
+        vse_id = vse_path.rsplit("/", 1)[-1]
+        if vse_id in seen_vse:
+            continue
+        seen_vse.add(vse_id)
+
+        # 非竞赛过滤
+        if any(kw in name for kw in SKIP_KEYWORDS):
+            continue
+
+        content = unescape(str(it.get("content") or "")).strip()
+        status_hint = content[:200] + ("..." if len(content) > 200 else "")
+        organizer = unescape(str(it.get("create_user") or "")).strip()
+        views = str(it.get("look_count") or "").strip()
+        followers = str(it.get("focus_num") or "").strip()
+        rank = it.get("rank")
+
+        items.append({
+            "vse_id": vse_id,
+            "name": name,
+            "official_url": BASE_URL + vse_path,
+            "cover": str(it.get("web_pic_big") or ""),
+            "status_hint": status_hint,
+            "organizer": organizer,
+            "views": views,
+            "followers": followers,
+            "rank": rank,
+        })
+
+    return items
+
+
 def infer_status(name, status_hint):
     """从标题和状态提示推断竞赛状态。
 
@@ -233,16 +299,28 @@ def main():
 
     now = datetime.now(CST)
 
-    # 1. 抓取列表页
+    # 1. 抓取列表页（SSR）
     print(f"[saikr] 抓取列表页: {LIST_URL}", file=sys.stderr)
+    items = []
     try:
         list_html = fetch(LIST_URL)
+        items = parse_list(list_html)
+        print(f"[saikr] SSR 解析到 {len(items)} 条竞赛", file=sys.stderr)
     except Exception as e:
         print(f"[saikr] 列表页抓取失败: {e}", file=sys.stderr)
-        sys.exit(1)
 
-    items = parse_list(list_html)[:args.max]
-    print(f"[saikr] 解析到 {len(items)} 条竞赛", file=sys.stderr)
+    # 2. SSR 解析不到时回退到热门榜 API（2026-08-24 起页面已改为 SPA）
+    if not items:
+        print(f"[saikr] SSR 无数据，回退到 API: {API_URL}", file=sys.stderr)
+        try:
+            api_data = fetch_json(API_URL)
+            items = parse_api_list(api_data)
+            print(f"[saikr] API 解析到 {len(items)} 条竞赛", file=sys.stderr)
+        except Exception as e:
+            print(f"[saikr] API 抓取失败: {e}", file=sys.stderr)
+
+    items = items[:args.max]
+    print(f"[saikr] 最终 {len(items)} 条竞赛", file=sys.stderr)
 
     if not items:
         print("[saikr] 无数据，退出", file=sys.stderr)
