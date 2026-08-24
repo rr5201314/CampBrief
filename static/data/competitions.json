@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-24T21:35:13+08:00",
+  "last_updated": "2026-08-25T07:38:06+08:00",
   "source": "CampBrief",
   "total": 195,
   "tiers": [
@@ -172,8 +172,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-21T21:40:17+08:00",
-        "review_after": "2026-08-24T21:40:17+08:00"
+        "verified_at": "2026-08-25T07:38:06+08:00",
+        "review_after": "2026-08-28T07:38:06+08:00"
       }
     },
     {
@@ -275,8 +275,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-21T21:40:17+08:00",
-        "review_after": "2026-08-24T21:40:17+08:00"
+        "verified_at": "2026-08-25T07:38:06+08:00",
+        "review_after": "2026-08-28T07:38:06+08:00"
       }
     },
     {
@@ -844,8 +844,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-21T21:40:17+08:00",
-        "review_after": "2026-08-24T21:40:17+08:00"
+        "verified_at": "2026-08-25T07:38:06+08:00",
+        "review_after": "2026-08-28T07:38:06+08:00"
       }
     },
     {
@@ -1592,8 +1592,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-21T21:40:17+08:00",
-        "review_after": "2026-08-24T21:40:17+08:00"
+        "verified_at": "2026-08-25T07:38:06+08:00",
+        "review_after": "2026-08-28T07:38:06+08:00"
       }
     },
     {
@@ -1616,8 +1616,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-21T21:40:17+08:00",
-        "review_after": "2026-08-24T21:40:17+08:00"
+        "verified_at": "2026-08-25T07:38:06+08:00",
+        "review_after": "2026-08-28T07:38:06+08:00"
       }
     },
     {
@@ -1640,8 +1640,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-21T21:40:17+08:00",
-        "review_after": "2026-08-24T21:40:17+08:00"
+        "verified_at": "2026-08-25T07:38:06+08:00",
+        "review_after": "2026-08-28T07:38:06+08:00"
       }
     },
     {
@@ -1701,8 +1701,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-21T21:40:17+08:00",
-        "review_after": "2026-08-24T21:40:17+08:00"
+        "verified_at": "2026-08-25T07:38:06+08:00",
+        "review_after": "2026-08-28T07:38:06+08:00"
       }
     },
     {
@@ -1780,8 +1780,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-21T21:40:17+08:00",
-        "review_after": "2026-08-24T21:40:17+08:00"
+        "verified_at": "2026-08-25T07:38:06+08:00",
+        "review_after": "2026-08-28T07:38:06+08:00"
       }
     },
     {
@@ -1819,8 +1819,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-21T21:40:17+08:00",
-        "review_after": "2026-08-24T21:40:17+08:00"
+        "verified_at": "2026-08-25T07:38:06+08:00",
+        "review_after": "2026-08-28T07:38:06+08:00"
       }
     },
     {
@@ -1842,8 +1842,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-21T21:40:17+08:00",
-        "review_after": "2026-08-24T21:40:17+08:00"
+        "verified_at": "2026-08-25T07:38:06+08:00",
+        "review_after": "2026-08-28T07:38:06+08:00"
       }
     },
     {
@@ -1865,8 +1865,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-21T21:40:17+08:00",
-        "review_after": "2026-08-24T21:40:17+08:00"
+        "verified_at": "2026-08-25T07:38:06+08:00",
+        "review_after": "2026-08-28T07:38:06+08:00"
       }
     },
     {
