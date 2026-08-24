@@ -64,7 +64,9 @@ SOURCES = [
     },
     {
         "name": "36氪",
-        "url": "https://36kr.com/feed",
+        # The apex domain intermittently serves a JavaScript challenge to Termux,
+        # while the official www endpoint consistently returns the same RSS XML.
+        "url": "https://www.36kr.com/feed",
         "category_hint": "tech",
         "lang": "zh",
     },
