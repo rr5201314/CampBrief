@@ -80,10 +80,16 @@ def parse_list(html):
 
     for block in li_blocks:
         # 1. 竞赛详情链接（必须是 /vse/ 开头，过滤 /news/detail/ 等资讯类）
-        link_m = re.search(r'<a[^>]+href="(/vse/[^"]+)"[^>]*>([^<]+)</a>', block)
+        #    页面曾用绝对 /vse/ 路径；2026-08-24 起改为协议相对 //vse/ 路径（无主机名），
+        #    三种形态（/vse/x、//vse/x、https://www.saikr.com/vse/x）都兼容
+        link_m = re.search(r'<a[^>]+href="([^"]*?/vse/[^"]+)"[^>]*>([^<]+)</a>', block)
         if not link_m:
             continue
-        vse_path = link_m.group(1)
+        href_raw = link_m.group(1)
+        vse_m = re.search(r'/vse/[^"]+', href_raw)
+        if not vse_m:
+            continue
+        vse_path = vse_m.group(0)
         vse_id = vse_path.rsplit("/", 1)[-1]
 
         if vse_id in seen_vse:
