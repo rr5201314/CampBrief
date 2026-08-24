@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-24T21:09:38.963813+08:00",
+  "last_updated": "2026-08-25T07:27:32.153602+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -108,7 +108,7 @@
       "requirements": "全日制普通高等院校本科、专科在校生，在籍研究生，各类成人高等院校在校生均可报考。",
       "scoring": "自近年起不再提供纸质成绩单，成绩发布 10 个工作日后，考生可登录中国教育考试网查看并下载电子成绩报告单，与原纸质成绩报告单具有同等效力。",
       "timeline": [],
-      "last_updated": "2026-08-21T21:39:22.120504+08:00"
+      "last_updated": "2026-08-25T07:27:32.153602+08:00"
     },
     {
       "id": "tem-4",
@@ -175,8 +175,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-08-21T21:39:22+08:00",
-        "review_after": "2026-08-24T21:38:22+08:00"
+        "verified_at": "2026-08-25T07:27:32+08:00",
+        "review_after": "2026-08-28T07:26:32+08:00"
       },
       "fee": "约2170元",
       "schedule": "全年多场",
@@ -186,7 +186,7 @@
       "official_portal": "https://ielts-main.neea.cn/",
       "news_list_url": "https://www.chinaielts.org/press-office",
       "official_url": "https://www.chinaielts.org/press-office/IELTS-Chinese-Mainland-Exam-Registration-2026-7-9",
-      "last_updated": "2026-08-21T21:39:22.120504+08:00",
+      "last_updated": "2026-08-25T07:27:32.153602+08:00",
       "timeline": [
         {
           "label": "考试场次",
@@ -209,8 +209,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-08-21T21:39:22+08:00",
-        "review_after": "2026-08-24T21:38:22+08:00"
+        "verified_at": "2026-08-25T07:27:32+08:00",
+        "review_after": "2026-08-28T07:26:32+08:00"
       },
       "fee": "约2100元",
       "schedule": "全年多场",
@@ -220,7 +220,7 @@
       "official_portal": "https://toefl-main.neea.cn/",
       "news_list_url": "https://toefl-main.neea.cn/html1/category/16123/94-1.htm",
       "official_url": "https://toefl.neea.cn/",
-      "last_updated": "2026-08-21T21:39:22.120504+08:00"
+      "last_updated": "2026-08-25T07:27:32.153602+08:00"
     },
     {
       "id": "catti-202606",
@@ -308,14 +308,20 @@
       "category": "computer",
       "status": "pending",
       "fee": "约170元",
-      "schedule": "2026年11月",
+      "schedule": "2026年10月24-27日",
       "summary": "国家级计算机技术与软件专业资格考试，分初、中、高级，可用于职称评定，是 IT 行业重要证书。",
       "search": "软考 计算机 软件 软考 ruankao software professional 2026 下半年",
       "official_site": "https://www.ruankao.org.cn/",
       "official_portal": "https://www.ruankao.org.cn/",
       "news_list_url": "https://www.ruankao.org.cn/index/work.html",
       "official_url": "https://www.ruankao.org.cn/article/content/2603051204118156470700001.html",
-      "last_updated": "2026-08-21T21:39:22.120504+08:00"
+      "last_updated": "2026-08-25T07:27:32.153602+08:00",
+      "timeline": [
+        {
+          "label": "考试时间",
+          "value": "2026年10月24日-27日（分批次机考，据2026年度考试工作安排）"
+        }
+      ]
     },
     {
       "id": "pat-202603",
@@ -390,7 +396,7 @@
           "value": "自备考试用机与双摄像头，需安装最新版监考客户端（OMS v2.1.3）"
         }
       ],
-      "last_updated": "2026-08-21T21:39:22.120504+08:00"
+      "last_updated": "2026-08-25T07:27:32.153602+08:00"
     },
     {
       "id": "junior-accounting-2026",
@@ -727,8 +733,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-08-21T21:39:22+08:00",
-        "review_after": "2026-08-24T21:38:22+08:00"
+        "verified_at": "2026-08-25T07:27:32+08:00",
+        "review_after": "2026-08-28T07:26:32+08:00"
       },
       "fee": "约50元（学生优惠）",
       "schedule": "各地定期组织",
@@ -738,7 +744,7 @@
       "official_portal": "https://www.cltt.org/",
       "news_list_url": "https://www.cltt.org/",
       "official_url": "https://stzbm.cltt.org/",
-      "last_updated": "2026-08-21T21:39:22.120504+08:00"
+      "last_updated": "2026-08-25T07:27:32.153602+08:00"
     },
     {
       "id": "guokao-2026",
@@ -750,10 +756,10 @@
       "summary": "中央机关及其直属机构公务员录用考试，含笔试（行测、申论）和面试，是进入中央机关的主要途径。",
       "search": "公务员 国考 行测 申论 civil service national 2027",
       "official_site": "https://bm.scs.gov.cn/",
-      "official_portal": "https://www.scs.gov.cn/gkIndex.html",
-      "news_list_url": "https://www.scs.gov.cn/",
+      "official_portal": "https://bm.scs.gov.cn/",
+      "news_list_url": "https://bm.scs.gov.cn/",
       "official_url": "",
-      "last_updated": "2026-08-21T21:39:22.120504+08:00"
+      "last_updated": "2026-08-25T07:27:32.153602+08:00"
     },
     {
       "id": "shiye",
@@ -762,8 +768,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-08-21T21:39:22+08:00",
-        "review_after": "2026-08-24T21:38:22+08:00"
+        "verified_at": "2026-08-25T07:27:32+08:00",
+        "review_after": "2026-08-28T07:26:32+08:00"
       },
       "fee": "约50-100元",
       "schedule": "各地不定期",
@@ -773,7 +779,7 @@
       "official_portal": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/index.html",
       "news_list_url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/index.html",
       "official_url": "https://job.mohrss.gov.cn/cjobs/institution/listInstitution",
-      "last_updated": "2026-08-21T21:39:22.120504+08:00"
+      "last_updated": "2026-08-25T07:27:32.153602+08:00"
     },
     {
       "id": "kaoyan-2026",
@@ -803,7 +809,7 @@
       "official_portal": "https://yz.chsi.com.cn/tm/",
       "news_list_url": "https://yz.chsi.com.cn/kyzx/kydt/",
       "official_url": "",
-      "last_updated": "2026-08-21T21:39:22.120504+08:00"
+      "last_updated": "2026-08-25T07:27:32.153602+08:00"
     }
   ]
 }
