@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-25T07:38:06+08:00",
+  "last_updated": "2026-08-25T21:34:38+08:00",
   "source": "CampBrief",
   "total": 195,
   "tiers": [
@@ -2410,7 +2410,7 @@
     },
     {
       "id": "comp-saikr-666a81761ea0",
-      "name": "【八月新增考场】第六届全国高校商务翻译（英语）能力挑战赛",
+      "name": "【本周开考】第六届全国高校商务翻译（英语）能力挑战赛",
       "tier": "hobby",
       "fields": [
         "language",
@@ -2891,7 +2891,7 @@
     },
     {
       "id": "comp-saikr-8715b18b4de9",
-      "name": "【开学加分】第九届ETTBL杯全国英语语法大赛",
+      "name": "【最后一场】第九届ETTBL杯全国英语语法大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3111,7 +3111,7 @@
     },
     {
       "id": "comp-saikr-6c0add4967a9",
-      "name": "【最后4天】第三届“中国故事大赛·双语中国”大学生写作大赛-中文赛道",
+      "name": "【最后3天】第三届“中国故事大赛·双语中国”大学生写作大赛-中文赛道",
       "tier": "enterprise",
       "fields": [
         "design"
@@ -3254,7 +3254,7 @@
     },
     {
       "id": "comp-saikr-4eb4c5be367a",
-      "name": "【倒计时5天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
+      "name": "【倒计时4天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3559,7 +3559,7 @@
     },
     {
       "id": "comp-saikr-3b8905911811",
-      "name": "【最后4天】第三届“中国故事大赛·双语中国”大学生写作大赛-英文赛道",
+      "name": "【最后3天】第三届“中国故事大赛·双语中国”大学生写作大赛-英文赛道",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3919,8 +3919,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-22T07:38:36+08:00",
-        "review_after": "2026-08-25T07:38:36+08:00"
+        "verified_at": "2026-08-25T21:34:38+08:00",
+        "review_after": "2026-08-28T21:34:38+08:00"
       }
     },
     {
@@ -3934,8 +3934,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-22T12:33:21+08:00",
-        "review_after": "2026-08-25T12:32:21+08:00"
+        "verified_at": "2026-08-25T21:34:38+08:00",
+        "review_after": "2026-08-28T21:34:38+08:00"
       },
       "signup": "",
       "schedule": "",
