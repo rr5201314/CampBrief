@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-27T12:33:42+08:00",
+  "last_updated": "2026-08-27T21:37:17.523656+08:00",
   "source": "CampBrief",
   "total": 195,
   "tiers": [
@@ -2574,7 +2574,7 @@
     {
       "id": "comp-saikr-dd7b4d65a4bf",
       "name": "2026 第十七届“安徽大学 –《英语世界》杯”翻译大赛",
-      "tier": "hobby",
+      "tier": "enterprise",
       "fields": [
         "language"
       ],
@@ -2586,7 +2586,7 @@
       "official_url": "https://www.saikr.com/vse/translation17",
       "official_site": "",
       "organizer": "《英语世界》杯系列大赛组委会",
-      "prestige": 4
+      "prestige": 6
     },
     {
       "id": "comp-saikr-c92bb2b34da7",
@@ -2755,8 +2755,8 @@
       "fields": [
         "other"
       ],
-      "status": "closed",
-      "signup": "",
+      "status": "open",
+      "signup": "即日起至2026年9月28日",
       "schedule": "",
       "summary": "来源：赛氪。浏览 6689，关注 224",
       "search": "",
@@ -2767,8 +2767,8 @@
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "registration_end": "2026-07-24",
-        "verified_at": "2026-07-24T21:33:12+08:00"
+        "registration_end": "2026-09-28",
+        "verified_at": "2026-08-27T21:37:13+08:00"
       }
     },
     {
@@ -2960,7 +2960,7 @@
     },
     {
       "id": "comp-saikr-3bcfd9399c73",
-      "name": "【六章证书 | 开学加分】“声释中华”新时代大学生外宣人才文学素养大赛",
+      "name": "【加分必备】“声释中华”新时代大学生外宣人才文学素养大赛",
       "tier": "hobby",
       "fields": [
         "other"
@@ -3211,7 +3211,7 @@
     },
     {
       "id": "comp-saikr-621d8ad96385",
-      "name": "【倒计时8天】第四届“三晋杯”全国大学生英语演讲大赛",
+      "name": "【倒计时7天】第四届“三晋杯”全国大学生英语演讲大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3329,7 +3329,7 @@
     },
     {
       "id": "comp-saikr-888a592edcd2",
-      "name": "2026年全国大学生“青鸾杯”语文能力大赛",
+      "name": "2026年大学生“青鸾杯”语文能力大赛",
       "tier": "hobby",
       "fields": [
         "design"
@@ -3382,7 +3382,7 @@
     {
       "id": "comp-saikr-274ee0a08789",
       "name": "2026年第六届《英语世界》杯全国大学生英语语法大赛",
-      "tier": "hobby",
+      "tier": "enterprise",
       "fields": [
         "language"
       ],
@@ -3403,7 +3403,7 @@
       "official_url": "https://www.saikr.com/vse/grammar/2026",
       "official_site": "",
       "organizer": "《英语世界》杯系列大赛组委会",
-      "prestige": 2
+      "prestige": 6
     },
     {
       "id": "comp-saikr-02e4f69cc49e",
@@ -3554,7 +3554,7 @@
       "search": "空英杯 英语翻译 空中英语教室",
       "official_url": "https://www.saikr.com/vse/KYB/translation26",
       "official_site": "",
-      "organizer": "《空中英语教室》杂志社",
+      "organizer": "空英杯系列赛事",
       "prestige": 4
     },
     {
@@ -3738,8 +3738,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-24T12:35:49+08:00",
-        "review_after": "2026-08-27T12:34:49+08:00"
+        "verified_at": "2026-08-27T21:37:13+08:00",
+        "review_after": "2026-08-30T21:37:13+08:00"
       },
       "signup": "",
       "schedule": "",
@@ -3826,7 +3826,7 @@
     {
       "id": "comp-saikr-9c66a33c52e2",
       "name": "2026年第六届《英语世界》杯全国大学生英语听力大赛",
-      "tier": "hobby",
+      "tier": "enterprise",
       "fields": [
         "language"
       ],
@@ -3847,7 +3847,7 @@
       "official_url": "https://www.saikr.com/vse/Listening26",
       "official_site": "",
       "organizer": "《英语世界》杯系列大赛组委会",
-      "prestige": 3
+      "prestige": 6
     },
     {
       "id": "comp-saikr-9867f29b35c9",
@@ -3897,7 +3897,7 @@
       "search": "",
       "official_url": "https://www.saikr.com/vse/WOWTtranslation2026",
       "official_site": "https://www.yingyushijie.com/",
-      "organizer": "商务印书馆《英语世界》杂志社",
+      "organizer": "《英语世界》杯系列大赛组委会",
       "prestige": 6
     },
     {
