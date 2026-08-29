@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-28T21:33:27+08:00",
+  "last_updated": "2026-08-29T21:46:57+08:00",
   "source": "CampBrief",
   "total": 195,
   "tiers": [
@@ -2410,7 +2410,7 @@
     },
     {
       "id": "comp-saikr-666a81761ea0",
-      "name": "【倒计时两天】第六届全国高校商务翻译（英语）能力挑战赛",
+      "name": "【明日开考】第六届全国高校商务翻译（英语）能力挑战赛",
       "tier": "hobby",
       "fields": [
         "language",
@@ -2750,7 +2750,7 @@
     },
     {
       "id": "comp-saikr-f29d5a8fa482",
-      "name": "【五章认证】2026年全国大学生文旅创作大赛",
+      "name": "【五章认证】2026年大学生文旅创作大赛",
       "tier": "hobby",
       "fields": [
         "other"
@@ -2934,7 +2934,7 @@
     },
     {
       "id": "comp-saikr-c4f00438cfee",
-      "name": "【明日开考】第四届“一带一路”大学生知识文化大赛",
+      "name": "【今日截止】第四届“一带一路”大学生知识文化大赛",
       "tier": "hobby",
       "fields": [
         "design"
@@ -3111,12 +3111,12 @@
     },
     {
       "id": "comp-saikr-6c0add4967a9",
-      "name": "【今晚截止】第三届“中国故事大赛·双语中国”大学生写作大赛-中文赛道",
+      "name": "【最后3天】第三届“中国故事大赛·双语中国”大学生写作大赛-中文赛道",
       "tier": "enterprise",
       "fields": [
         "design"
       ],
-      "status": "open",
+      "status": "closed",
       "signup": "即日起至2026年8月28日",
       "schedule": "作品提交截止：第四场 2026年8月31日",
       "summary": "赛事详情请访问信息来源页面",
@@ -3254,7 +3254,7 @@
     },
     {
       "id": "comp-saikr-4eb4c5be367a",
-      "name": "【明日开考】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
+      "name": "【截止今晚23点】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3483,7 +3483,7 @@
     },
     {
       "id": "comp-saikr-52bbbd9ae327",
-      "name": "【本周六日线上开放考场+9月开学领证书】2026年第二届大学生网络信息技术大赛",
+      "name": "【今日开考+9月开学领证书】2026年第二届大学生网络信息技术大赛",
       "tier": "hobby",
       "fields": [
         "computer"
@@ -3564,7 +3564,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -3761,8 +3761,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-26T07:43:51+08:00",
-        "review_after": "2026-08-29T07:43:51+08:00"
+        "verified_at": "2026-08-29T21:46:57+08:00",
+        "review_after": "2026-09-01T21:46:57+08:00"
       },
       "signup": "",
       "schedule": "",
@@ -3919,8 +3919,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-25T21:34:38+08:00",
-        "review_after": "2026-08-28T21:34:38+08:00"
+        "verified_at": "2026-08-29T21:46:57+08:00",
+        "review_after": "2026-09-01T21:46:57+08:00"
       }
     },
     {
@@ -3934,8 +3934,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-25T21:34:38+08:00",
-        "review_after": "2026-08-28T21:34:38+08:00"
+        "verified_at": "2026-08-29T21:46:57+08:00",
+        "review_after": "2026-09-01T21:46:57+08:00"
       },
       "signup": "",
       "schedule": "",
@@ -3979,7 +3979,7 @@
       "fields": [
         "science"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
