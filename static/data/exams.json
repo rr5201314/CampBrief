@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-28T21:16:24.850301+08:00",
+  "last_updated": "2026-08-29T21:07:58.703166+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -539,7 +539,7 @@
         "registration_end": "2026-08-03T23:59:00+01:00",
         "event_start": "2026-09-07",
         "event_end": "2026-09-11",
-        "verified_at": "2026-08-27T21:08:59+08:00"
+        "verified_at": "2026-08-29T21:07:58+08:00"
       },
       "fee": "各阶段费用不同",
       "schedule": "2026年9月",
@@ -575,7 +575,7 @@
           "value": "2026年10月19日"
         }
       ],
-      "last_updated": "2026-08-27T21:08:59.241145+08:00"
+      "last_updated": "2026-08-29T21:07:58.703166+08:00"
     },
     {
       "id": "acca-202612",
@@ -589,7 +589,7 @@
         "registration_end": "2026-11-09T23:59:00+00:00",
         "event_start": "2026-12-07",
         "event_end": "2026-12-11",
-        "verified_at": "2026-08-27T21:08:59+08:00"
+        "verified_at": "2026-08-29T21:07:58+08:00"
       },
       "fee": "各阶段费用不同",
       "schedule": "2026年12月",
@@ -621,7 +621,7 @@
           "value": "2027年1月18日"
         }
       ],
-      "last_updated": "2026-08-27T21:08:59.241145+08:00"
+      "last_updated": "2026-08-29T21:07:58.703166+08:00"
     },
     {
       "id": "first-level-cost-engineer-2026",
@@ -759,7 +759,7 @@
       "official_portal": "https://bm.scs.gov.cn/",
       "news_list_url": "https://bm.scs.gov.cn/",
       "official_url": "",
-      "last_updated": "2026-08-26T07:10:47.907988+08:00"
+      "last_updated": "2026-08-29T21:07:58.703166+08:00"
     },
     {
       "id": "shiye",
