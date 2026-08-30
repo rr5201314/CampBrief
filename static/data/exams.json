@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-29T21:07:58.703166+08:00",
+  "last_updated": "2026-08-30T13:04:29+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -357,7 +357,7 @@
       "id": "pat-202609",
       "name": "2026年秋季 PAT 计算机程序设计能力考试",
       "category": "computer",
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -453,7 +453,7 @@
           "value": "2026年10月30日下发"
         }
       ],
-      "last_updated": "2026-08-27T07:22:37.147381+08:00"
+      "last_updated": "2026-08-30T13:05:35.295047+08:00"
     },
     {
       "id": "cpa-2026",
