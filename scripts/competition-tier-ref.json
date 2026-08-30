@@ -361,6 +361,11 @@
       "prestige": 2,
       "note": "商业赛/非官方赛泛称"
     },
+    "大国英才": {
+      "tier": "hobby",
+      "prestige": 2,
+      "note": "大国英才（北京）职业技能鉴定中心，商业赛"
+    },
     "科云": {
       "tier": "hobby",
       "prestige": 4,

@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-30T21:32:45+08:00",
+  "last_updated": "2026-08-31T07:37:59.240173+08:00",
   "source": "CampBrief",
-  "total": 195,
+  "total": 196,
   "tiers": [
     {
       "key": "all",
@@ -3488,7 +3488,7 @@
       "fields": [
         "computer"
       ],
-      "status": "open",
+      "status": "ongoing",
       "signup": "2026年7月16日至8月30日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
@@ -3514,7 +3514,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "done",
       "signup": "2026年7月7日至8月30日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
@@ -3738,8 +3738,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-27T21:37:13+08:00",
-        "review_after": "2026-08-30T21:37:13+08:00"
+        "verified_at": "2026-08-31T07:37:31+08:00",
+        "review_after": "2026-09-03T07:37:31+08:00"
       },
       "signup": "",
       "schedule": "",
@@ -3851,7 +3851,7 @@
     },
     {
       "id": "comp-saikr-9867f29b35c9",
-      "name": "【四章证书】第九届ETTBL杯全国英语词汇大赛",
+      "name": "第九届ETTBL杯全国英语词汇大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -4022,6 +4022,32 @@
       "official_site": "",
       "organizer": "中国广播影视培训网、北京新视听国际传媒中心",
       "prestige": 4
+    },
+    {
+      "id": "comp-saikr-dfc3fe81b739",
+      "name": "2026年全国大学生Office办公应用能力大赛",
+      "tier": "hobby",
+      "fields": [
+        "computer"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-07-27",
+        "registration_end": "2026-09-12",
+        "event_start": "2026-09-12",
+        "event_end": "2026-09-12",
+        "verified_at": "2026-08-31T07:37:31+08:00"
+      },
+      "signup": "2026年7月27日至9月12日",
+      "schedule": "2026年9月12日线上考试（当天9:00-18:00任选60分钟参与）",
+      "summary": "通过客观题考核方式检验参赛者对Office办公软件（文字处理、表格数据处理、演示文稿制作等模块）的理论知识掌握程度，共50道客观题，满分100分。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/Office26",
+      "official_site": "",
+      "organizer": "大国英才（北京）职业技能鉴定中心",
+      "prestige": 2
     }
   ]
 }
