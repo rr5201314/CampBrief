@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-30T21:09:12.062242+08:00",
+  "last_updated": "2026-08-31T07:06:45+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -459,7 +459,7 @@
       "id": "cpa-2026",
       "name": "2026年注册会计师全国统一考试 (CPA)",
       "category": "accounting",
-      "status": "closed",
+      "status": "done",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
