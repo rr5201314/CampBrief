@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-30T11:52:54.874516+08:00",
+  "last_updated": "2026-08-30T12:49:17+08:00",
   "source": "GitHub Trending",
   "total": 41,
   "items": [
@@ -27,8 +27,8 @@
           "stars_delta": 3902,
           "trend_period": "today",
           "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "面向 AI 智能体的绘图技能包，可生成架构、工作流、时序、数据流与生命周期图，输出自包含 HTML。",
+          "solves_what": "解决架构图与流程图绘制繁琐、难以验证的问题，让智能体直接产出可验证、带动效的高质量图表。"
         },
         {
           "rank": 2,
@@ -40,8 +40,8 @@
           "stars_delta": 1855,
           "trend_period": "today",
           "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "浏览器里的「间谍卫星」模拟器：基于真实卫星与飞行数据的开源 3D 地球空间情报可视化工具。",
+          "solves_what": "让普通用户无需专业 GIS 工具就能追踪卫星、航班等实时空间数据，体验开源版空间情报分析。"
         },
         {
           "rank": 3,
@@ -53,8 +53,8 @@
           "stars_delta": 1587,
           "trend_period": "today",
           "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "面向科学研究的 Agent Skills 库，含 163 个验证过的技能和 100+ 科学数据库，覆盖生物、化学、医学与药物发现，兼容 Cursor、Claude Code、Codex 等。",
+          "solves_what": "把通用 AI 代理变成能完成科研任务的 AI 科学家，免去科研工具与数据库的重复集成，已服务 17.5 万+ 科研人员。"
         },
         {
           "rank": 4,
@@ -66,8 +66,8 @@
           "stars_delta": 789,
           "trend_period": "today",
           "description": "like netcat, but over Tailscale's data plane, without Tailscale's control plane",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "tailcat：Tailscale 出品的类 netcat 网络工具，流量走 Tailscale 数据面但不依赖其控制面。",
+          "solves_what": "解决在 Tailscale 网络中快速建立原始 TCP/UDP 连接的需求，让节点间像 netcat 一样直接通信，无需控制面协调。"
         },
         {
           "rank": 5,
@@ -79,8 +79,8 @@
           "stars_delta": 907,
           "trend_period": "today",
           "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "清华大学开源的开放多智能体交互课堂（OpenMAIC），一键启动沉浸式多智能体学习环境。",
+          "solves_what": "解决传统课堂单向讲授、学生缺乏互动的问题，通过多智能体模拟让学习者获得沉浸式协作学习体验。"
         },
         {
           "rank": 6,
@@ -92,8 +92,8 @@
           "stars_delta": 150,
           "trend_period": "today",
           "description": "Fully automatic censorship removal for language models",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "heretic：面向语言模型的自动去审查工具，通过 abliteration 消融技术移除模型输出中的内容限制。",
+          "solves_what": "解决本地部署大模型时输出内容受限的问题，常用于研究模型安全对齐机制与本地可控性。"
         },
         {
           "rank": 7,
@@ -105,8 +105,8 @@
           "stars_delta": 32,
           "trend_period": "today",
           "description": "</> htmx - high power tools for HTML",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "htmx：以 HTML 属性为核心的前端库，可在标记中直接使用 AJAX、CSS 过渡、WebSocket 等能力构建动态界面。",
+          "solves_what": "解决传统前端开发需要大量 JavaScript 的痛点，让开发者用简洁的 HTML 属性实现丰富交互，降低前端开发与维护成本。"
         },
         {
           "rank": 8,
@@ -118,8 +118,8 @@
           "stars_delta": 303,
           "trend_period": "today",
           "description": "Help AI coding agents write modern Go",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "JetBrains 出品的现代 Go 编码指南，专门教 AI 编程代理写出符合 Go 最佳实践的代码，兼容 Claude Code、Cursor 等代理。",
+          "solves_what": "解决 AI 生成的 Go 代码不符合语言习惯、过度复杂的问题，通过规则插件让编码代理输出更地道的现代 Go。"
         },
         {
           "rank": 9,
@@ -131,8 +131,8 @@
           "stars_delta": 73,
           "trend_period": "today",
           "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "精选的 Claude 技能和资源列表，汇总自定义 Claude AI 工作流的工具和最佳实践。",
+          "solves_what": "帮助开发者快速发现和学习 Claude 的扩展能力，降低 AI 工作流定制的学习门槛。"
         },
         {
           "rank": 10,
@@ -144,8 +144,8 @@
           "stars_delta": 806,
           "trend_period": "today",
           "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "首个开源的智能体驱动视频制作系统，含 12 条流水线和 500+ 技能。",
+          "solves_what": "把 AI 编程助手变成视频制作工作室，适合做创意媒体项目。"
         }
       ]
     },
