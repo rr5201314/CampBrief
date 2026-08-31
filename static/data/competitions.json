@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-31T21:33:12+08:00",
+  "last_updated": "2026-09-01T07:37:54+08:00",
   "source": "CampBrief",
-  "total": 196,
+  "total": 197,
   "tiers": [
     {
       "key": "all",
@@ -1144,7 +1144,7 @@
         "engineering",
         "computer"
       ],
-      "status": "open",
+      "status": "ongoing",
       "signup": "2026年4月1日至8月31日",
       "schedule": "校内赛 9 月，区域赛 9–10 月，全国总决赛 11 月",
       "summary": "以物联网、人工智能、智能硬件为特色的创新创业赛事。",
@@ -2389,7 +2389,7 @@
       "fields": [
         "science"
       ],
-      "status": "open",
+      "status": "closed",
       "signup": "2026年7月8日至8月31日",
       "schedule": "",
       "summary": "来源：赛氪。浏览 8648，关注 16",
@@ -2528,7 +2528,7 @@
       "fields": [
         "other"
       ],
-      "status": "open",
+      "status": "closed",
       "signup": "2026年5月13日至8月31日",
       "schedule": "",
       "summary": "来源：赛氪。浏览 1.3万，关注 221",
@@ -3116,7 +3116,7 @@
       "fields": [
         "design"
       ],
-      "status": "open",
+      "status": "closed",
       "signup": "即日起至2026年8月31日",
       "schedule": "作品提交截止：第四场 2026年8月31日",
       "summary": "赛事详情请访问信息来源页面",
@@ -3463,7 +3463,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -3563,7 +3563,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -3997,7 +3997,7 @@
     },
     {
       "id": "comp-saikr-3e818dd91712",
-      "name": "【省赛倒计时6天】第九届大学生普通话挑战赛（NPCCS）",
+      "name": "【省赛倒计时5天】第九届大学生普通话挑战赛（NPCCS）",
       "tier": "hobby",
       "fields": [
         "language"
@@ -4045,6 +4045,32 @@
       "official_site": "",
       "organizer": "大国英才（北京）职业技能鉴定中心",
       "prestige": 2
+    },
+    {
+      "id": "comp-saikr-cd1cd6069560",
+      "name": "【惊喜！开学季必参加！】第四届大学生外交英语词汇大赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-08-21",
+        "registration_end": "2026-12-12",
+        "event_start": "2026-09-05",
+        "event_end": "2026-12-12",
+        "verified_at": "2026-09-01T07:37:54+08:00"
+      },
+      "signup": "即日起至2026年12月12日",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/DESC-Vocabulary-Fourth",
+      "official_site": "",
+      "organizer": "外交英语系列大赛（Diplomatic English）",
+      "prestige": 4
     }
   ]
 }
