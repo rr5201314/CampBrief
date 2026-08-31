@@ -1,8 +1,61 @@
 {
-  "last_updated": "2026-08-31T08:51:14+08:00",
+  "last_updated": "2026-08-31T13:39:30+08:00",
   "source": "CampBrief Auto",
-  "total": 626,
+  "total": 630,
   "items": [
+    {
+      "id": "news-a4919e1e6de2ecb1",
+      "title": "报道称 OpenAI 采购数万台 Mac mini 与 Mac Studio 用于 Agent 训练",
+      "url": "https://daily.juya.uk/issues/2026-08-31/",
+      "date": "2026-08-31",
+      "published": "2026-08-31T03:38:21+00:00",
+      "summary": "据 The Information 报道，OpenAI 数月内采购数万台 Mac mini 与 Mac Studio 用于强化学习及计算机使用 Agent 训练，Anthropic 亦被指通过 AWS 租赁 Mac mini，均未获官方确认。",
+      "detail": "据 The Information 报道，OpenAI 在过去数月购买了数万台苹果 Mac mini 和 Mac Studio，主要用于强化学习与计算机使用 Agent 的训练。报道称苹果设备凭借统一内存架构和低延迟雷电 5 特性，被认为适合设备端 Agentic 编排。同一报道指出 Anthropic 也在通过 AWS 租赁 Mac mini 以优化 Agent 工作流。上述采购与租赁均属媒体报道，OpenAI 与 Anthropic 尚未正式确认。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-6816c260406b0cd1",
+      "title": "报道称字节豆包大模型 2.2 延期发布以补强编程与 Agent 能力",
+      "url": "https://daily.juya.uk/issues/2026-08-31/",
+      "date": "2026-08-31",
+      "published": "2026-08-31T03:38:21+00:00",
+      "summary": "据媒体报道，原计划 8 月推出的字节豆包大模型 2.2 推迟面世，原因是希望用更长周期提升编程、工具调用与 Agent 能力，目标年底前达到智谱、Kimi 近期模型的冲击力。",
+      "detail": "据《白鲸实验室》报道，多位接近字节跳动的人士称，原计划 8 月推出的豆包大模型 2.2 推迟发布。延期原因是为提升编程、工具调用和 Agent 能力而延长训练，目标是在年底前让编程能力达到类似智谱和 Kimi 近期模型的行业冲击力。字节为此加快人员调整，8 月中旬将 Seed 基础模型部门重组为预训练数据、强化学习等四个一级部门。该模型训练拒绝数据蒸馏，此前有传闻称参数将追加至 5T 乃至 10T。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-5800eb97ee715d1a",
+      "title": "ChatGPT 推送懒加载更新，长对话加载提速约 10 倍",
+      "url": "https://daily.juya.uk/issues/2026-08-31/",
+      "date": "2026-08-31",
+      "published": "2026-08-31T03:38:21+00:00",
+      "summary": "ChatGPT 近期优化长对话加载方式，改为按需读取历史消息。工程师称长对话加载时间和内存占用均减少 90% 以上，打开长聊天约快 10 倍。",
+      "detail": "ChatGPT 桌面端近期推送懒加载更新：打开长对话时不再一次性读取全部历史，而是先加载最近几轮，向上翻阅时才继续读取更早内容。负责该改动的工程师 Brent Traut 表示，加载时间和内存占用都减少了 90% 以上，长对话打开约快 10 倍。优化已覆盖 Mac、Windows、Linux、CLI、VS Code 扩展等客户端，新对话已生效，旧对话将逐步迁移。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-65e82f3107dac94d",
+      "title": "Tibo 宣布 Codex 与 ChatGPT Work 用量再次重置",
+      "url": "https://daily.juya.uk/issues/2026-08-31/",
+      "date": "2026-08-31",
+      "published": "2026-08-31T03:38:21+00:00",
+      "summary": "Codex 负责人 Tibo 宣布 Codex 和 ChatGPT Work 使用量重置在太平洋时间下午 6 点生效，兑现此前预告的后续动作。",
+      "detail": "Codex 负责人 Tibo 宣布，Codex 和 ChatGPT Work 的使用量重置在太平洋时间下午 6 点生效。此前 8 月 29 日他已为付费用户重置过使用额度，并称原定的「庆祝」顺延、社区猜测还可能有后续重置；本次重置即该预告的落地。同类重置此前在 8 月 26 日、28 日也发生过。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
     {
       "id": "news-7ab6c025887dbfdd",
       "title": "OpenAI 宣布终止与 Cursor 合作，11 月 12 日起切断模型访问",
