@@ -1,8 +1,146 @@
 {
-  "last_updated": "2026-08-31T13:39:30+08:00",
+  "last_updated": "2026-09-01T08:50:27+08:00",
   "source": "CampBrief Auto",
-  "total": 630,
+  "total": 633,
   "items": [
+    {
+      "id": "news-88927883e87d4855",
+      "title": "Anthropic 与英伟达支持的 Lambda 签署 350 亿美元云计算协议",
+      "url": "https://36kr.com/newsflashes/3964094998142212",
+      "date": "2026-09-01",
+      "published": "2026-09-01T08:05:57+08:00",
+      "summary": "Anthropic 与英伟达支持的云服务商 Lambda 签署 350 亿美元云计算协议，算力来自美国得州一座在建数据中心。",
+      "detail": "据媒体报道，Anthropic 已与英伟达支持的云服务提供商 Lambda 签署价值 350 亿美元的云计算协议，涉及的数据中心正由比特币矿企兼数据中心开发商 Hut8 在美国得克萨斯州努埃塞斯县开发。知情人士称，英伟达数周前已与 Hut8 签署协议锁定该数据中心算力。这是 Anthropic 扩充训练与推理算力布局的又一大手笔。",
+      "image": "",
+      "priority": 3,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "36氪"
+    },
+    {
+      "id": "news-41347cbda2017a54",
+      "title": "Steam 平台 2003-2013 年几乎所有游戏数据泄露",
+      "url": "https://www.solidot.org/story?sid=85243",
+      "date": "2026-08-31",
+      "published": "2026-08-31T22:19:30+08:00",
+      "summary": "Steam 逾 12TB 数据泄露，覆盖 2003-2013 年几乎所有游戏，包含被取消的《半条命 2：第三章》部分文件。",
+      "detail": "上周末 Steam 平台逾 12TB 数据泄露，涵盖 2003 至 2013 年间几乎全部游戏。数据来自已被 SteamPipe 取代的 Steam2 内容分发系统，通过公开访问的 API 获取，尚不清楚是近期访问还是早已下载、直到上周才公开。泄露内容包括 Valve 与第三方发行商热门游戏的早期版本、原型和试玩版，其中有《传送门 2》的被删减内容和被取消的《半条命 2：第三章》部分文件。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-fcf19b3c2d35b83d",
+      "title": "Google 从 Chrome 应用商店移除全部 Manifest V2 扩展，uBlock Origin 在列",
+      "url": "https://webiterate.dev/google-removed-extensions-ublock-origin-108/",
+      "date": "2026-08-31",
+      "published": "2026-08-31T21:10:58+00:00",
+      "summary": "Chrome 应用商店完成 MV2 扩展清除，uBlock Origin 等全部下架；Brave 自建后端保留四款热门 MV2 扩展。",
+      "detail": "Google 宣布完成浏览器扩展迁移的最终里程碑：Chrome 应用商店中所有剩余 Manifest V2 扩展被移除，包括广受好评的广告拦截扩展 uBlock Origin。Chrome 138 及更早版本已安装的 MV2 扩展仍可使用，但无法再收到更新，也不能从商店重新安装。由于 Brave 等非 Chrome 的 Chromium 浏览器也依赖 Chrome 应用商店，影响范围超出 Chrome 本身；Brave 已决定自建后端托管 AdGuard、uBlock Origin、uMatrix、NoScript 四款扩展。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-6b23dc5d584f790d",
+      "title": "本地大模型 StartLux-27B 通过 MCP-Universe 测评，综合排名第二",
+      "url": "https://36kr.com/p/3963345222147335",
+      "date": "2026-08-31",
+      "published": "2026-08-31T19:23:32+08:00",
+      "summary": "信通院 MCP 专项测试中，27B 参数的 StartLux-V1.0 综合排名第二、高于 DeepSeek-V4-Flash，能力进入万亿参数模型区间。",
+      "detail": "中国信通院人工智能研究所公布的可信 AI 大模型基准测试 MCP 专项结果显示，上海原点星辉研发的本地大模型 StartLux-V1.0-27B-Preview 以 27B 参数量取得综合性能第二，高于第三名的 DeepSeek-V4-Flash，能力范围进入 DeepSeek-V4-Pro 所代表的万亿参数模型区间。测试涵盖位置导航、网页搜索、浏览器自动化、金融分析、代码仓库管理、3D 设计 6 类专项任务及综合评估，共 7 项检验项目。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "36氪"
+    },
+    {
+      "id": "news-55d1ae9e2dae4656",
+      "title": "天文学家可能发现首个没有恒星的星系",
+      "url": "https://www.solidot.org/story?sid=85239",
+      "date": "2026-08-31",
+      "published": "2026-08-31T15:53:29+08:00",
+      "summary": "天文学家发现距地球 1400 万光年的星系 Cloud 9，几乎没有恒星，或为人类发现的首个「失败」星系。",
+      "detail": "被称为 Cloud 9 的星系可能是人类发现的第一个没有恒星的「失败」星系——拥有大量气体和尘埃却几乎没有恒星。它距地球约 1400 万光年，靠近旋涡星系 M94，包含一团质量约为太阳 100 万倍的氢气云和约 500 万倍太阳质量的暗物质，几乎不发出星光。主流解释与宇宙再电离时代后的紫外背景辐射有关：辐射将低质量暗物质晕中的气体加热，使其无法冷却并坍缩形成恒星。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "hardware",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-21d17bdeedd0b154",
+      "title": "韩国将向全体民众提供免费 AI 服务",
+      "url": "https://www.solidot.org/story?sid=85238",
+      "date": "2026-08-31",
+      "published": "2026-08-31T15:08:15+08:00",
+      "summary": "韩国「AI for All」计划下月启动 beta 测试，由三大联盟提供、政府出算力，民众可无限次免费使用。",
+      "detail": "韩国准备推出面向所有民众的免费 AI 服务「AI for All」，下月起进行 beta 测试，计划今年晚些时候正式推出。服务由韩国两家最大电信公司及 Kakao 牵头的三个联盟提供，政府提供部分算力，包括最多 512 块英伟达 B200 芯片并支付部分运营费用。AI 服务预计与政府系统连接：居民可预约医生、搜索公寓、获取税务指导，小企业可计算税款和查询补贴资格，家长可收到教育内容推荐，用户可无限次访问。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-1780a8f2ddc4b59e",
+      "title": "柏林市政府遭黑客入侵并被勒索",
+      "url": "https://www.solidot.org/story?sid=85237",
+      "date": "2026-08-31",
+      "published": "2026-08-31T14:41:19+08:00",
+      "summary": "黑客入侵柏林市政府系统窃取数据并勒索 30 个比特币，Rhysida 组织宣布负责并威胁拍卖 5.79TB 数据。",
+      "detail": "柏林市长 Kai Wegner 表示，本月初黑客入侵市政府系统、窃取数据并提出勒索要求，政府不会屈服。据媒体报道黑客索要 30 个比特币（约 200 万欧元），攻击导致部分在线系统关闭。在俄罗斯和东欧活动的 Rhysida 组织宣称负责，计划一周后拍卖窃取的 5.79TB 数据。数据泄露发生在 8 月 7 日至 12 日，8 月 14 日起两个政府部门网络被关闭，住房补贴申请和付款一度无法进行。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-42832593c13144e7",
+      "title": "NASA 成功发射罗曼太空望远镜",
+      "url": "https://www.solidot.org/story?sid=85235",
+      "date": "2026-08-31",
+      "published": "2026-08-31T13:36:28+08:00",
+      "summary": "NASA 罗曼太空望远镜 8 月 30 日搭乘猎鹰重型火箭升空，将前往 L2 拉格朗日点研究暗能量与系外行星。",
+      "detail": "罗曼望远镜于北京时间 8 月 30 日 7:26 从肯尼迪太空中心 39A 发射台升空，使用 SpaceX 猎鹰重型火箭。它配备美国国家侦察局捐赠的 2.4 米主镜与两台科学仪器：3 亿像素多波段红外相机 WFI 和用于直接观测邻近恒星周围类木行星的日冕仪 CGI。核心任务包括探测暗能量、发现系外行星及验证广义相对论。火箭飞行 31 分钟后与望远镜分离，助推器安全返回发射场。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "hardware",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-c9bc355af82af5ce",
+      "title": "报道称企业 AI 需求让苹果措手不及，Mac mini 与 Mac Studio 提前发布",
+      "url": "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/",
+      "date": "2026-08-31",
+      "published": "2026-08-31T12:41:22+00:00",
+      "summary": "The Information 报道称苹果因企业 AI 硬件需求意外强劲而提前发布新款 Mac mini 与 Mac Studio，苹果内部缺乏企业 AI 战略。",
+      "detail": "据 The Information 报道，苹果本周罕见地提前发布新款 Mac mini 与 Mac Studio（通常秋季末才发布），原因是企业客户对 AI 硬件的需求超出预期。报道称苹果此前没有专门面向企业客户的工程团队和开发者关系团队，也缺乏企业 AI 战略；企业想购买苹果 Private Cloud Compute 接入权限的请求被拒绝，苹果转而依靠 WebAI、Mount Thor 等合作伙伴提供基于苹果硬件的 AI 工具。苹果此前宣传可将多台 Mac Studio 集群运行大型 AI 模型，6 月还举办了面向企业客户的「Business at the Park」活动。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-e1bf392fbe4df15a",
+      "title": "中科大团队太空智能计算平台获超亿元融资",
+      "url": "https://36kr.com/p/3958987031133568",
+      "date": "2026-08-31",
+      "published": "2026-08-31T10:50:27+08:00",
+      "summary": "专注太空智能计算的「中科密位」完成 A1、A2 轮超亿元融资，博华、经纬、高瓴等联合押注。",
+      "detail": "36氪获悉，专注太空智能计算与卫星智能化的「中科密位」近期完成 A1 轮及 A2 轮融资，总额超亿元，投资方包括博华产投、经纬创投、高瓴创投、宇石空间、中新集团、BV 百度风投等。公司由中国科学技术大学团队创立，随着卫星数量持续增加，处理海量在轨数据、降低数据下传压力、让卫星具备自主运行能力正成为商业航天的基础设施需求，本轮融资将用于拓展太空智能计算及智能卫星核心系统业务。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "36氪"
+    },
     {
       "id": "news-a4919e1e6de2ecb1",
       "title": "报道称 OpenAI 采购数万台 Mac mini 与 Mac Studio 用于 Agent 训练",
@@ -29,6 +167,153 @@
       "priority": 2,
       "category": "ai",
       "source": "juya AI 日报"
+    },
+    {
+      "id": "news-ccc70a819867866d",
+      "title": "Linux 7.3-rc1 释出",
+      "url": "https://www.solidot.org/story?sid=85244",
+      "date": "2026-08-31",
+      "published": "2026-08-31T23:07:53+08:00",
+      "summary": "Linus Torvalds 发布 Linux 7.3-rc1，合并窗口关闭，正式版预计十月底推出。",
+      "detail": "Linus Torvalds 宣布释出 Linux 7.3-rc1，关闭了 7.3 的合并窗口，正式版预计十月底发布。主要特性包括：Ryzen AI Halo LED/RGB 驱动、继续推进 AMD Zen 6 支持、KSMBD 兼容 Apple Time Machine 备份、内核驱动初步支持 2026 年款 Steam Controller、合并 FailFS、Intel Xe3P Nova Lake 集显支持稳定、改进显存有限系统的游戏性能、改进 SMP 降低延迟提升实时性能等。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-815bb56705fa4c83",
+      "title": "开发者用单个 HTML 文件构建可漫步的 ASCII 赛博朋克城市",
+      "url": "https://www.youtube.com/watch?v=3YtygAx_C6A",
+      "date": "2026-08-31",
+      "published": "2026-08-31T18:21:33+00:00",
+      "summary": "开发者发布可交互的 ASCII 赛博朋克城市演示，整个城市构建在单个 HTML 文件中，支持行走探索。",
+      "detail": "开发者 Miguel Carino 展示了用单个 HTML 文件实现的、可漫步的 ASCII 赛博朋克城市：一个由字符方块构成的小型 3D 城市，透过 ASCII 字符屏幕渲染，支持行走、细节与交互。项目源码在 GitHub 开源，相关演示视频展示了交通细节、室内与摩天大楼等更新。适合对创意编程与 Web 技术感兴趣的开发者围观。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-b709a85aff9cdac4",
+      "title": "观点：AI 时代最安全的工作可能是写作",
+      "url": "http://muratbuffalo.blogspot.com/2026/08/the-safest-job-from-ai-may-be-writing.html",
+      "date": "2026-08-31",
+      "published": "2026-08-31T18:12:20+00:00",
+      "summary": "计算机学者撰文称大模型写作停留在「恐怖谷」状态，程序员职责正被 AI 重构，而优秀写作短期内难被 AI 取代。",
+      "detail": "纽约州立大学布法罗分校教授 Murat Demirbas 发文认为，AI 生成代码的能力迅速提升，程序员正面临 5 倍生产率指标与 AI 代码认知债务的压力，但大模型生成的文字仍停留在套路化的「恐怖谷」状态，缺乏真正的理解与洞见。他给出三点理由：文本模型在表达与深度上明显停滞、写作是难以形式化的「棘手问题」、写作的成功标准本质主观，因此判断大模型短期内不会威胁优秀写作者。（观点文章，供参考）",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-c1662f737640793e",
+      "title": "ravynOS：基于 Darwin 与 FreeBSD 的开源 macOS 兼容系统",
+      "url": "https://ravynos.com/",
+      "date": "2026-08-31",
+      "published": "2026-08-31T16:19:36+00:00",
+      "summary": "开源操作系统 ravynOS 发布开发者预览，基于 Darwin、FreeBSD 与苹果开源代码，目标兼容 macOS 应用且无硬件限制。",
+      "detail": "ravynOS 是一个早期（pre-alpha）开源操作系统，基于 Darwin、FreeBSD 与苹果开源代码构建，目标是兼容 macOS 应用程序且不受苹果硬件与生态限制。它借鉴了 macOS 的全局菜单、拖拽安装、Command 快捷键等设计，面向希望获得 macOS 体验又拥抱开源的开发者。目前为开发者预览版，尚未面向普通用户。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-82f028a54f305fd8",
+      "title": "美国 18 世纪怪人商人的 40 尊等身雕像，如今仅存一尊",
+      "url": "https://www.atlasobscura.com/places/timothy-dexters-william-pitt-statue",
+      "date": "2026-08-31",
+      "published": "2026-08-31T16:00:00-04:00",
+      "summary": "马萨诸塞州纽伯里波特保留着「自封勋爵」Timothy Dexter 故居外最后一尊等身雕像，他当年曾用 40 尊雕像装饰豪宅。",
+      "detail": "美国马萨诸塞州纽伯里波特市保留着一尊威廉·皮特等身雕像，它是 18 世纪怪诞商人、自称「蒂莫西勋爵」的 Timothy Dexter 曾经拥有的 40 尊等身雕像中仅存的一尊。Dexter 因靠投机致富和种种荒唐行为闻名，曾用大量雕像装饰自己的豪宅。这尊雕像如今是当地地标，也是了解这位传奇怪人故事的窗口。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Atlas Obscura"
+    },
+    {
+      "id": "news-60ae6dc1094b2038",
+      "title": "深圳神奕科技完成超千万元天使轮融资，专注 AI 脑机接口",
+      "url": "https://36kr.com/p/3963142866369923",
+      "date": "2026-08-31",
+      "published": "2026-08-31T15:58:17+08:00",
+      "summary": "聚焦 AI+脑科学的深圳神奕科技完成超千万元天使轮融资，用于脑机接口研发、消费级产品量产与医疗级临床验证。",
+      "detail": "深圳神奕科技有限公司宣布完成超千万元天使轮融资，资金将用于脑机接口核心技术研发、消费级产品量产及海外市场拓展，以及抑郁症辅助诊断、神经调控等医疗级产品的临床验证和注册转化。公司成立于 2025 年 5 月，围绕睡眠障碍、抑郁症等脑部疾病，研发基于人工智能、非侵入式脑机接口及神经调控技术的脑功能监测与干预产品，采取「严肃医疗+消费健康」双线路径。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "36氪"
+    },
+    {
+      "id": "news-110aefc20af0a44f",
+      "title": "火人节上的免费电话亭：任何人可免费拨打 5 分钟国际电话",
+      "url": "https://playaphone.com/",
+      "date": "2026-08-31",
+      "published": "2026-08-31T14:52:26+00:00",
+      "summary": "开发者把普通电话亭改装成免费国际电话亭放在火人节现场，任何人可免费通话 5 分钟，也可拨号与陌生人随机聊天。",
+      "detail": "开发者 Aaron Hopkins 将一台普通电话亭改装成基于互联网的免费电话亭，放在 2026 年火人节 Black Rock City 的 3:30 与 Chomolungma 街角。任何人都可以免费拨打全球任意号码 5 分钟；也可以拨打 +1 (775) 557-4848 与路过的陌生「Burner」随机通话。网站实时显示电话亭在线状态与通话统计。该项目在 Hacker News 上获得大量关注。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-a9279cf4ec125013",
+      "title": "Google Maps 在美国将安大略湖更名为「美国湖」",
+      "url": "https://www.solidot.org/story?sid=85236",
+      "date": "2026-08-31",
+      "published": "2026-08-31T14:11:49+08:00",
+      "summary": "Google Maps 针对美国用户将安大略湖改名为「美国湖」，加拿大用户仍看到原名，其他地区用户看到两个名字。",
+      "detail": "继墨西哥湾改名之后，Google 宣布其地图服务将安大略湖（Lake Ontario）更名为美国湖（Lake America）。这一更改主要针对美国用户：加拿大用户仍看到「安大略湖」，世界其他地区用户会同时看到两个名字。另一家美国地图服务 MapQuest 表示不会改名，但会提供工具让用户按自己的意愿修改地图上的名字。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-fcae2f6315d51e0d",
+      "title": "开发者公开 ChatGPT Work 工具与技能完整参考快照",
+      "url": "https://codex-tool-reference.simonw.chatgpt.site/",
+      "date": "2026-08-31",
+      "published": "2026-08-31T14:07:15+00:00",
+      "summary": "开发者 Simon Willison 公开 ChatGPT Work 会话的完整工具与技能参考，含 232 个工具接口与 44 个技能文件。",
+      "detail": "开发者 Simon Willison 发布了一个 ChatGPT Work（Codex）工具与技能参考站点，完整快照了 Work 会话中可调用的 232 个工具接口和 44 个技能文件，涵盖文档、浏览器、数据分析、插件管理、数据可视化等类别，并保留各技能的 SKILL.md 原文与 TypeScript 类型声明。该参考可用于了解 ChatGPT Work 的能力边界与技能开发方式，是研究 AI 工作台工具生态的一手资料。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-273322fec1c79e60",
+      "title": "二战德军碉堡被侵蚀冲下悬崖，垂直插在法国海滩上",
+      "url": "https://www.atlasobscura.com/places/bunker-tombe",
+      "date": "2026-08-31",
+      "published": "2026-08-31T12:00:00-04:00",
+      "summary": "法国滨海圣玛格丽特海滩上，一座二战德军碉堡因海岸侵蚀从悬崖坠落，几乎垂直插入沙滩，成为奇特景点。",
+      "detail": "位于法国 Sainte-Marguerite-sur-Mer 的这座二战德军巨型碉堡（blockhaus）原本矗立在海岸悬崖顶部，经过数十年侵蚀后整体坠落到下方海滩，几乎垂直插入沙中并保持直立。如今它成为一处超现实的地标式景点，吸引众多游客与摄影师，也是海岸侵蚀力量的直观展示。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Atlas Obscura"
+    },
+    {
+      "id": "news-cc5e1c41b5eb0494",
+      "title": "全球仅剩三位数的极危物种勺嘴鹬，科学家却数不清它究竟有多少只",
+      "url": "https://sspai.com/post/113827",
+      "date": "2026-08-31",
+      "published": "2026-08-31T10:53:32+08:00",
+      "summary": "极危鸟类勺嘴鹬全球仅存三位数，但各方统计从 250 到 490 只不等，科学家难以给出准确数量。",
+      "detail": "红树林基金会与少数派合作发文介绍极度濒危的勺嘴鹬：这种小鸟全球数量仅存三位数，但不同渠道的统计差异巨大——全球仅剩约 443 只、IUCN 红色名录记载 490 只成熟个体、冬季调查仅记录到 330-340 只、也有观点认为成熟个体已不足 250 只。从 1970 年代的 2000-2800 对到如今的三位数，半个世纪里数量急剧下滑。数清勺嘴鹬的数量有助于保护这一极危鸟种及其迁飞通道沿途的湿地。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "少数派"
     },
     {
       "id": "news-5800eb97ee715d1a",
@@ -233,6 +518,20 @@
       "source": "36氪"
     },
     {
+      "id": "news-714f211e2a34af27",
+      "title": "Pixel 11 取消硬件 MTE 支持，GrapheneOS 无法适配",
+      "url": "https://www.solidot.org/story?sid=85233",
+      "date": "2026-08-30",
+      "published": "2026-08-30T07:44:03+08:00",
+      "summary": "安全项目 GrapheneOS 发现谷歌 Pixel 11 取消了硬件 MTE（内存标记）支持，导致其无法完成对 Pixel 11 的适配。",
+      "detail": "MTE 是 ARM 处理器提供的内存安全硬件特性，能显著降低内存破坏类漏洞的利用风险，是注重安全与隐私的 GrapheneOS 等系统依赖的防护能力。该决定意味着 Pixel 11 将缺少这项硬件级安全特性，也影响安全研究社区对该机型的支持。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "hardware",
+      "source": "Solidot"
+    },
+    {
       "id": "news-d5db1062918f7e9e",
       "title": "Codex 重置付费用户使用量并修复多项消耗 Bug",
       "url": "https://daily.juya.uk/issues/2026-08-30/",
@@ -287,20 +586,6 @@
       "source": "Hacker News"
     },
     {
-      "id": "news-714f211e2a34af27",
-      "title": "Pixel 11 取消硬件 MTE 支持，GrapheneOS 无法适配",
-      "url": "https://www.solidot.org/story?sid=85233",
-      "date": "2026-08-30",
-      "published": "2026-08-30T07:44:03+08:00",
-      "summary": "安全项目 GrapheneOS 发现谷歌 Pixel 11 取消了硬件 MTE（内存标记）支持，导致其无法完成对 Pixel 11 的适配。",
-      "detail": "MTE 是 ARM 处理器提供的内存安全硬件特性，能显著降低内存破坏类漏洞的利用风险，是注重安全与隐私的 GrapheneOS 等系统依赖的防护能力。该决定意味着 Pixel 11 将缺少这项硬件级安全特性，也影响安全研究社区对该机型的支持。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "subcategory": "hardware",
-      "source": "Solidot"
-    },
-    {
       "id": "news-67804b4175c6d220",
       "title": "腾讯发布并开源混元 Hy4 预览版，770B 参数、上下文超百万 token",
       "url": "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/",
@@ -311,20 +596,6 @@
       "image": "",
       "priority": 4,
       "category": "ai",
-      "source": "Hacker News"
-    },
-    {
-      "id": "news-47a1fe113c3ac8bd",
-      "title": "NASA 罗曼空间望远镜定于 8 月 30 日发射，视场达哈勃 100 倍",
-      "url": "https://science.nasa.gov/mission/roman-space-telescope/",
-      "date": "2026-08-29",
-      "published": "2026-08-29T15:48:02+00:00",
-      "summary": "NASA 的南希·格雷斯·罗曼空间望远镜定于 8 月 30 日 19:26（北京时间）由猎鹰重型火箭发射，视场比哈勃大 100 倍以上。",
-      "detail": "罗曼望远镜以哈勃「之母」、NASA 首任首席天文学家南希·罗曼命名，将研究暗能量、暗物质与系外行星，可直接遮挡星光观测系外行星与行星形成盘，预计一生测量 10 亿个星系的光。发射窗口为北京时间 8 月 30 日 19:26，从肯尼迪航天中心 39A 发射台升空。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "hardware",
       "source": "Hacker News"
     },
     {
@@ -340,6 +611,20 @@
       "category": "tech",
       "subcategory": "hardware",
       "source": "Solidot"
+    },
+    {
+      "id": "news-47a1fe113c3ac8bd",
+      "title": "NASA 罗曼空间望远镜定于 8 月 30 日发射，视场达哈勃 100 倍",
+      "url": "https://science.nasa.gov/mission/roman-space-telescope/",
+      "date": "2026-08-29",
+      "published": "2026-08-29T15:48:02+00:00",
+      "summary": "NASA 的南希·格雷斯·罗曼空间望远镜定于 8 月 30 日 19:26（北京时间）由猎鹰重型火箭发射，视场比哈勃大 100 倍以上。",
+      "detail": "罗曼望远镜以哈勃「之母」、NASA 首任首席天文学家南希·罗曼命名，将研究暗能量、暗物质与系外行星，可直接遮挡星光观测系外行星与行星形成盘，预计一生测量 10 亿个星系的光。发射窗口为北京时间 8 月 30 日 19:26，从肯尼迪航天中心 39A 发射台升空。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "hardware",
+      "source": "Hacker News"
     },
     {
       "id": "news-0b77be76a50c1e60",
@@ -395,6 +680,20 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-295d67ba2ef848d6",
+      "title": "Debian 项目投票通过：允许以负责任的方式使用生成式 AI",
+      "url": "https://www.solidot.org/story?sid=85229",
+      "date": "2026-08-29",
+      "published": "2026-08-29T21:37:00+08:00",
+      "summary": "Debian 项目就 AI 使用进行投票，最终通过「负责任地使用生成式 AI」选项，既不反对也不支持，但要求贡献者审核并披露 AI 辅助内容。",
+      "detail": "投票采用孔多塞投票法，共 9 个选项。Debian 表示负责任使用 AI 工具能提高贡献者效率，但提交内容仍需符合相同的质量、正确性与法律合规标准；贡献者应理解、审核、测试 AI 生成输出，鼓励但不强制披露是否使用 AI。项目不对 AI 生成材料的版权问题表明立场。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "Solidot"
+    },
+    {
       "id": "news-fb52aaa77c745f90",
       "title": "Domain-Driven Agents：用领域驱动设计改善 AI 编码代理",
       "url": "https://coldtake.dev/blog/domain-driven-agents",
@@ -423,20 +722,6 @@
       "source": "Hacker News"
     },
     {
-      "id": "news-295d67ba2ef848d6",
-      "title": "Debian 项目投票通过：允许以负责任的方式使用生成式 AI",
-      "url": "https://www.solidot.org/story?sid=85229",
-      "date": "2026-08-29",
-      "published": "2026-08-29T21:37:00+08:00",
-      "summary": "Debian 项目就 AI 使用进行投票，最终通过「负责任地使用生成式 AI」选项，既不反对也不支持，但要求贡献者审核并披露 AI 辅助内容。",
-      "detail": "投票采用孔多塞投票法，共 9 个选项。Debian 表示负责任使用 AI 工具能提高贡献者效率，但提交内容仍需符合相同的质量、正确性与法律合规标准；贡献者应理解、审核、测试 AI 生成输出，鼓励但不强制披露是否使用 AI。项目不对 AI 生成材料的版权问题表明立场。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "subcategory": "software",
-      "source": "Solidot"
-    },
-    {
       "id": "news-d217753b3cb7f34e",
       "title": "程序员在公司厕所猝死，人社局以电脑没开不认定工伤",
       "url": "https://www.solidot.org/story?sid=85227",
@@ -448,6 +733,20 @@
       "priority": 1,
       "category": "fun",
       "source": "Solidot"
+    },
+    {
+      "id": "news-61d5afefae9d7cea",
+      "title": "特危化场景机器人公司玄创机器人完成数千万元 A1 轮融资",
+      "url": "https://36kr.com/p/3959929849642113?f=rss",
+      "date": "2026-08-29",
+      "published": "2026-08-29T09:29:14+08:00",
+      "summary": "专注油气、化工等特危化场景的具身机器人公司玄创机器人完成数千万元 A1 轮融资，投资方包括前海方舟、光洋股份与西湖科创投。",
+      "detail": "资金将用于数据管线搭建、VLA 模型与 JEPA 世界模型训练部署及标准化产品备货。公司已与中石油新疆油田体系签订超百台订单并完成首批交付，在手订单过亿元；自研 AEGIS 三层架构可在毫秒级拦截大模型不合理指令，产品从巡检扩展至「巡操一体」。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "36氪"
     },
     {
       "id": "news-9ba3529c5256f7c4",
@@ -515,20 +814,6 @@
       "source": "juya AI 日报"
     },
     {
-      "id": "news-61d5afefae9d7cea",
-      "title": "特危化场景机器人公司玄创机器人完成数千万元 A1 轮融资",
-      "url": "https://36kr.com/p/3959929849642113?f=rss",
-      "date": "2026-08-29",
-      "published": "2026-08-29T09:29:14+08:00",
-      "summary": "专注油气、化工等特危化场景的具身机器人公司玄创机器人完成数千万元 A1 轮融资，投资方包括前海方舟、光洋股份与西湖科创投。",
-      "detail": "资金将用于数据管线搭建、VLA 模型与 JEPA 世界模型训练部署及标准化产品备货。公司已与中石油新疆油田体系签订超百台订单并完成首批交付，在手订单过亿元；自研 AEGIS 三层架构可在毫秒级拦截大模型不合理指令，产品从巡检扩展至「巡操一体」。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "subcategory": "industry",
-      "source": "36氪"
-    },
-    {
       "id": "news-4c3828f3a1ce2ac6",
       "title": "澳大利亚有望在未来十年内消灭宫颈癌",
       "url": "https://www.solidot.org/story?sid=85226",
@@ -540,6 +825,32 @@
       "priority": 1,
       "category": "fun",
       "source": "Solidot"
+    },
+    {
+      "id": "news-2d0cca853b07ebd2",
+      "title": "据报道 Meta 内部预计每年在 Anthropic 的 AI 支出最高可达 100 亿美元",
+      "url": "https://36kr.com/newsflashes/3958435053878665",
+      "date": "2026-08-28",
+      "published": "2026-08-28T08:15:56+08:00",
+      "summary": "据报道，Meta 公司内部今年一度预测，每年可能在 Anthropic 的 AI 模型上投入高达 100 亿美元。",
+      "detail": "该消息由财联社援引相关报道披露。Anthropic 是 OpenAI 的主要竞争对手之一，其 Claude 系列模型被多家科技大厂采购。若支出达到这一规模，Meta 将成为 Anthropic 最重要的客户之一，也反映出科技巨头在大模型采购上的投入仍在持续加码。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "36氪"
+    },
+    {
+      "id": "news-11dc956a4e237b65",
+      "title": "Alphabet 股价较高点下跌约 15%，市值蒸发逾 7000 亿美元",
+      "url": "https://36kr.com/newsflashes/3958430295850371",
+      "date": "2026-08-28",
+      "published": "2026-08-28T08:11:22+08:00",
+      "summary": "谷歌母公司 Alphabet 股价较 5 月峰值下跌约 15%，市值蒸发逾 7000 亿美元，市场开始质疑其在 AI 领域是否正在失去领先优势。",
+      "detail": "过去一年 Alphabet 曾是大型科技股中表现最强劲的公司之一，股价在截至 5 月 13 日的 12 个月里上涨逾 150% 并创历史新高，当时在标普 500 成分股中跻身表现最好的 25 家之列。此后势头逆转：市场担心谷歌母公司出现人才流失，同时质疑其 AI 领先地位。Alphabet 目前成为这段时间拖累标普 500 指数点位最多的个股。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "36氪"
     },
     {
       "id": "news-af87ec247afd4b90",
@@ -637,32 +948,6 @@
       "source": "juya AI 日报"
     },
     {
-      "id": "news-2d0cca853b07ebd2",
-      "title": "据报道 Meta 内部预计每年在 Anthropic 的 AI 支出最高可达 100 亿美元",
-      "url": "https://36kr.com/newsflashes/3958435053878665",
-      "date": "2026-08-28",
-      "published": "2026-08-28T08:15:56+08:00",
-      "summary": "据报道，Meta 公司内部今年一度预测，每年可能在 Anthropic 的 AI 模型上投入高达 100 亿美元。",
-      "detail": "该消息由财联社援引相关报道披露。Anthropic 是 OpenAI 的主要竞争对手之一，其 Claude 系列模型被多家科技大厂采购。若支出达到这一规模，Meta 将成为 Anthropic 最重要的客户之一，也反映出科技巨头在大模型采购上的投入仍在持续加码。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "36氪"
-    },
-    {
-      "id": "news-11dc956a4e237b65",
-      "title": "Alphabet 股价较高点下跌约 15%，市值蒸发逾 7000 亿美元",
-      "url": "https://36kr.com/newsflashes/3958430295850371",
-      "date": "2026-08-28",
-      "published": "2026-08-28T08:11:22+08:00",
-      "summary": "谷歌母公司 Alphabet 股价较 5 月峰值下跌约 15%，市值蒸发逾 7000 亿美元，市场开始质疑其在 AI 领域是否正在失去领先优势。",
-      "detail": "过去一年 Alphabet 曾是大型科技股中表现最强劲的公司之一，股价在截至 5 月 13 日的 12 个月里上涨逾 150% 并创历史新高，当时在标普 500 成分股中跻身表现最好的 25 家之列。此后势头逆转：市场担心谷歌母公司出现人才流失，同时质疑其 AI 领先地位。Alphabet 目前成为这段时间拖累标普 500 指数点位最多的个股。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "36氪"
-    },
-    {
       "id": "news-693d9c3d3f320d22",
       "title": "微软开始限制员工 AI 用量：有工程师 28 天支出 2.8 万美元",
       "url": "https://www.solidot.org/story?sid=85216",
@@ -674,6 +959,33 @@
       "priority": 2,
       "category": "ai",
       "source": "Solidot"
+    },
+    {
+      "id": "news-1498ee1d8dcfab3b",
+      "title": "韩国计划到 2030 年投入 2.3 万亿韩元支持全栈人形机器人研发",
+      "url": "https://36kr.com/p/3958435226877064",
+      "date": "2026-08-28",
+      "published": "2026-08-28T08:11:23+08:00",
+      "summary": "据 36氪 8 点 1 氪早报，韩国计划到 2030 年投入 2.3 万亿韩元，支持全栈人形机器人研发。",
+      "detail": "该消息出现在 36氪 8 月 28 日早报的热点导览中，与三星被判赔斯沃琪、SK 拟出售蔚山 AI 数据中心股权等消息并列。韩国近年来持续加码机器人产业，此次全栈人形机器人投入计划覆盖硬件、软件与系统集成等环节，表明其希望在下一代机器人产业中占据更主动的位置。具体项目分配与实施细节有待官方进一步披露。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "36氪",
+      "subcategory": "industry"
+    },
+    {
+      "id": "news-89598dc60393a4f4",
+      "title": "美国 FTC 据悉正调查 YouTube 封禁用户账号是否违反消费者保护法",
+      "url": "https://36kr.com/newsflashes/3958423100849284",
+      "date": "2026-08-28",
+      "published": "2026-08-28T08:10:01+08:00",
+      "summary": "知情人士称，美国联邦贸易委员会（FTC）自去年起调查 YouTube 封禁账号是否违反消费者保护法，目前已进入准备潜在诉讼的最后阶段。",
+      "detail": "调查着重审查 YouTube 在封禁账号或降低内容曝光度时是否违反其用户政策，以及用户是否因公司内容政策的误导而注册服务，发布的内容后来却被删除或账号被封禁。报道称目前尚不清楚调查涵盖哪些账号，YouTube 尚未被指控存在不当行为，调查也可能在不采取任何执法行动的情况下结束。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "36氪"
     },
     {
       "id": "news-dba597bbb5cc0e28",
@@ -793,33 +1105,6 @@
       "source": "juya AI 日报"
     },
     {
-      "id": "news-1498ee1d8dcfab3b",
-      "title": "韩国计划到 2030 年投入 2.3 万亿韩元支持全栈人形机器人研发",
-      "url": "https://36kr.com/p/3958435226877064",
-      "date": "2026-08-28",
-      "published": "2026-08-28T08:11:23+08:00",
-      "summary": "据 36氪 8 点 1 氪早报，韩国计划到 2030 年投入 2.3 万亿韩元，支持全栈人形机器人研发。",
-      "detail": "该消息出现在 36氪 8 月 28 日早报的热点导览中，与三星被判赔斯沃琪、SK 拟出售蔚山 AI 数据中心股权等消息并列。韩国近年来持续加码机器人产业，此次全栈人形机器人投入计划覆盖硬件、软件与系统集成等环节，表明其希望在下一代机器人产业中占据更主动的位置。具体项目分配与实施细节有待官方进一步披露。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "source": "36氪",
-      "subcategory": "industry"
-    },
-    {
-      "id": "news-89598dc60393a4f4",
-      "title": "美国 FTC 据悉正调查 YouTube 封禁用户账号是否违反消费者保护法",
-      "url": "https://36kr.com/newsflashes/3958423100849284",
-      "date": "2026-08-28",
-      "published": "2026-08-28T08:10:01+08:00",
-      "summary": "知情人士称，美国联邦贸易委员会（FTC）自去年起调查 YouTube 封禁账号是否违反消费者保护法，目前已进入准备潜在诉讼的最后阶段。",
-      "detail": "调查着重审查 YouTube 在封禁账号或降低内容曝光度时是否违反其用户政策，以及用户是否因公司内容政策的误导而注册服务，发布的内容后来却被删除或账号被封禁。报道称目前尚不清楚调查涵盖哪些账号，YouTube 尚未被指控存在不当行为，调查也可能在不采取任何执法行动的情况下结束。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "36氪"
-    },
-    {
       "id": "news-d155f15dc0dbc260",
       "title": "英伟达同意以 129 亿美元收购 Hugging Face",
       "url": "https://www.solidot.org/story?sid=85206",
@@ -886,6 +1171,47 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-b967a04d059ddfef",
+      "title": "Meta 将支付近 167 亿美元和解儿童隐私诉讼，青少年社媒使用默认受限",
+      "url": "https://www.solidot.org/story?sid=85215",
+      "date": "2026-08-27",
+      "published": "2026-08-27T23:29:16+08:00",
+      "summary": "Meta 与美国多州就儿童隐私和消费者保护案达成和解，将支付近 167 亿美元，并对青少年账户默认启用每日两小时使用上限和夜间屏蔽。",
+      "detail": "和解条款要求 Meta 向各州支付总额将近 167 亿美元，并对青少年用户施加一系列限制：默认开启「夜间屏蔽」，午夜至凌晨 6 点无法访问 Facebook 和 Instagram；青少年账户在 Meta 旗下所有社媒的每日累计使用时长默认上限为两小时。这些保障措施将对面向青少年的社媒运作方式产生实质改变。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-32ae5d0739a7f6b9",
+      "title": "NASA 准备周日用猎鹰重型火箭发射罗曼太空望远镜",
+      "url": "https://www.solidot.org/story?sid=85214",
+      "date": "2026-08-27",
+      "published": "2026-08-27T22:29:55+08:00",
+      "summary": "NASA 计划 8 月 30 日用 SpaceX 猎鹰重型火箭发射罗曼太空望远镜，其主镜口径 2.4 米、视场约为哈勃的 100 倍，将用于研究暗能量和系外行星。",
+      "detail": "罗曼太空望远镜以 NASA 首任天文学部门女主任 Nancy Grace Roman 的名字命名，使用美国国家侦察局捐赠的 2.4 米口径主镜，配备 3 亿像素红外相机（WFI）和用于直接观测类木行星的日冕仪（CGI）。核心任务包括探测暗能量、发现系外行星及验证广义相对论相关理论。它拥有哈勃级别的清晰度，但视场扩大约 100 倍，可快速进行大规模巡天观测。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Solidot",
+      "subcategory": "hardware"
+    },
+    {
+      "id": "news-44b556d041266d66",
+      "title": "亚马逊众包平台 Mechanical Turk 将于 9 月 30 日关闭",
+      "url": "https://www.solidot.org/story?sid=85212",
+      "date": "2026-08-27",
+      "published": "2026-08-27T18:48:03+08:00",
+      "summary": "亚马逊宣布众包平台 Mechanical Turk 将于 9 月 30 日正式关闭，该平台曾长期用于 AI 训练数据标注。",
+      "detail": "上个月亚马逊已宣布自 7 月 30 日起停止接受新用户，如今正式画上句号。Mechanical Turk 自 2018 年起被用作训练神经网络的标注数据服务，但 2023 年的一项研究发现，该平台 33% 到 46% 的众包工作者使用大模型完成任务，引发对标注数据可靠性的质疑。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Solidot",
+      "subcategory": "industry"
+    },
+    {
       "id": "news-939a415ecbb8aa63",
       "title": "Anthropic 开放「模型硬件标准」研究预览：让 AI 代理安全操作实验室设备",
       "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
@@ -898,6 +1224,20 @@
       "category": "tech",
       "source": "Hacker News",
       "subcategory": "ai-frontier"
+    },
+    {
+      "id": "news-cfeaf2bb76999a7e",
+      "title": "LibreOffice 26.8 发布：明确不含生成式 AI 功能",
+      "url": "https://www.solidot.org/story?sid=85211",
+      "date": "2026-08-27",
+      "published": "2026-08-27T17:22:30+08:00",
+      "summary": "The Document Foundation 发布 LibreOffice 26.8，强调不包含生成式 AI 功能、不会将文档传输到远程服务，主要改进集中在双向文本和复杂文本处理。",
+      "detail": "新版 Writer 会在打开或粘贴文档时自动检测段落方向，从右至左或竖排中日韩文档的对象调整句柄能正确工作；Calc 在空单元格输入从右至左文本时会自动设置方向。项目方强调各组件无需网络访问即可运行，用户文档不会被传输到远程服务处理。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Solidot",
+      "subcategory": "software"
     },
     {
       "id": "news-f90064a0f2704785",
@@ -941,61 +1281,6 @@
       "subcategory": "industry"
     },
     {
-      "id": "news-b967a04d059ddfef",
-      "title": "Meta 将支付近 167 亿美元和解儿童隐私诉讼，青少年社媒使用默认受限",
-      "url": "https://www.solidot.org/story?sid=85215",
-      "date": "2026-08-27",
-      "published": "2026-08-27T23:29:16+08:00",
-      "summary": "Meta 与美国多州就儿童隐私和消费者保护案达成和解，将支付近 167 亿美元，并对青少年账户默认启用每日两小时使用上限和夜间屏蔽。",
-      "detail": "和解条款要求 Meta 向各州支付总额将近 167 亿美元，并对青少年用户施加一系列限制：默认开启「夜间屏蔽」，午夜至凌晨 6 点无法访问 Facebook 和 Instagram；青少年账户在 Meta 旗下所有社媒的每日累计使用时长默认上限为两小时。这些保障措施将对面向青少年的社媒运作方式产生实质改变。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "Solidot"
-    },
-    {
-      "id": "news-32ae5d0739a7f6b9",
-      "title": "NASA 准备周日用猎鹰重型火箭发射罗曼太空望远镜",
-      "url": "https://www.solidot.org/story?sid=85214",
-      "date": "2026-08-27",
-      "published": "2026-08-27T22:29:55+08:00",
-      "summary": "NASA 计划 8 月 30 日用 SpaceX 猎鹰重型火箭发射罗曼太空望远镜，其主镜口径 2.4 米、视场约为哈勃的 100 倍，将用于研究暗能量和系外行星。",
-      "detail": "罗曼太空望远镜以 NASA 首任天文学部门女主任 Nancy Grace Roman 的名字命名，使用美国国家侦察局捐赠的 2.4 米口径主镜，配备 3 亿像素红外相机（WFI）和用于直接观测类木行星的日冕仪（CGI）。核心任务包括探测暗能量、发现系外行星及验证广义相对论相关理论。它拥有哈勃级别的清晰度，但视场扩大约 100 倍，可快速进行大规模巡天观测。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "Solidot",
-      "subcategory": "hardware"
-    },
-    {
-      "id": "news-44b556d041266d66",
-      "title": "亚马逊众包平台 Mechanical Turk 将于 9 月 30 日关闭",
-      "url": "https://www.solidot.org/story?sid=85212",
-      "date": "2026-08-27",
-      "published": "2026-08-27T18:48:03+08:00",
-      "summary": "亚马逊宣布众包平台 Mechanical Turk 将于 9 月 30 日正式关闭，该平台曾长期用于 AI 训练数据标注。",
-      "detail": "上个月亚马逊已宣布自 7 月 30 日起停止接受新用户，如今正式画上句号。Mechanical Turk 自 2018 年起被用作训练神经网络的标注数据服务，但 2023 年的一项研究发现，该平台 33% 到 46% 的众包工作者使用大模型完成任务，引发对标注数据可靠性的质疑。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "Solidot",
-      "subcategory": "industry"
-    },
-    {
-      "id": "news-cfeaf2bb76999a7e",
-      "title": "LibreOffice 26.8 发布：明确不含生成式 AI 功能",
-      "url": "https://www.solidot.org/story?sid=85211",
-      "date": "2026-08-27",
-      "published": "2026-08-27T17:22:30+08:00",
-      "summary": "The Document Foundation 发布 LibreOffice 26.8，强调不包含生成式 AI 功能、不会将文档传输到远程服务，主要改进集中在双向文本和复杂文本处理。",
-      "detail": "新版 Writer 会在打开或粘贴文档时自动检测段落方向，从右至左或竖排中日韩文档的对象调整句柄能正确工作；Calc 在空单元格输入从右至左文本时会自动设置方向。项目方强调各组件无需网络访问即可运行，用户文档不会被传输到远程服务处理。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "Solidot",
-      "subcategory": "software"
-    },
-    {
       "id": "news-3ce3666b2c990394",
       "title": "吉隆口岸泥石流灾害后续：尼泊尔 165 人死亡、826 人失踪，原因初步查明",
       "url": "https://www.solidot.org/story?sid=85209",
@@ -1007,6 +1292,33 @@
       "priority": 2,
       "category": "fun",
       "source": "Solidot"
+    },
+    {
+      "id": "news-dd6b0159c8674b6f",
+      "title": "Anthropic 向所有付费订阅用户开放 Claude 的 Chrome 浏览器扩展功能",
+      "url": "https://36kr.com/newsflashes/3957027008183433",
+      "published": "2026-08-27T08:16:01+08:00",
+      "summary": "Anthropic 宣布 Claude in Chrome 已面向所有付费套餐正式开放，可在浏览器中自主点击、输入、导航和填表。",
+      "detail": "Claude in Chrome 现已向所有付费 Claude 套餐正式开放，支持在浏览器中自动执行读取页面、输入文字、点击链接、导航和填写表单等操作，不再需要用户逐步批准；每次操作执行前都会由安全分类器核对是否符合原始请求，用户也可关闭自动批准。Anthropic 表示其新版防护还会用探针检测网页中的提示词注入。",
+      "priority": 2,
+      "category": "ai",
+      "source": "36氪",
+      "date": "2026-08-27",
+      "image": ""
+    },
+    {
+      "id": "news-db6eb9d258a3cc61",
+      "title": "苹果宣布 9 月 9 日发布首款折叠式手机",
+      "url": "https://36kr.com/p/3957017574030727",
+      "published": "2026-08-27T08:11:10+08:00",
+      "summary": "苹果定于 9 月 9 日在加州总部举行发布会，发布首款折叠式手机，为新任 CEO 任内首场重大新品发布。",
+      "detail": "发布会将通过公司网站直播。新任 CEO John Ternus 一直是推动折叠屏 iPhone 项目的核心人员，此次发布将拉开其任期内首场重大新品发布的序幕。该消息出自 36氪 8 点 1 氪早报汇总。",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "hardware",
+      "source": "36氪",
+      "date": "2026-08-27",
+      "image": ""
     },
     {
       "id": "news-cd399053111dda89",
@@ -1062,33 +1374,6 @@
       "source": "juya AI 日报"
     },
     {
-      "id": "news-dd6b0159c8674b6f",
-      "title": "Anthropic 向所有付费订阅用户开放 Claude 的 Chrome 浏览器扩展功能",
-      "url": "https://36kr.com/newsflashes/3957027008183433",
-      "published": "2026-08-27T08:16:01+08:00",
-      "summary": "Anthropic 宣布 Claude in Chrome 已面向所有付费套餐正式开放，可在浏览器中自主点击、输入、导航和填表。",
-      "detail": "Claude in Chrome 现已向所有付费 Claude 套餐正式开放，支持在浏览器中自动执行读取页面、输入文字、点击链接、导航和填写表单等操作，不再需要用户逐步批准；每次操作执行前都会由安全分类器核对是否符合原始请求，用户也可关闭自动批准。Anthropic 表示其新版防护还会用探针检测网页中的提示词注入。",
-      "priority": 2,
-      "category": "ai",
-      "source": "36氪",
-      "date": "2026-08-27",
-      "image": ""
-    },
-    {
-      "id": "news-db6eb9d258a3cc61",
-      "title": "苹果宣布 9 月 9 日发布首款折叠式手机",
-      "url": "https://36kr.com/p/3957017574030727",
-      "published": "2026-08-27T08:11:10+08:00",
-      "summary": "苹果定于 9 月 9 日在加州总部举行发布会，发布首款折叠式手机，为新任 CEO 任内首场重大新品发布。",
-      "detail": "发布会将通过公司网站直播。新任 CEO John Ternus 一直是推动折叠屏 iPhone 项目的核心人员，此次发布将拉开其任期内首场重大新品发布的序幕。该消息出自 36氪 8 点 1 氪早报汇总。",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "hardware",
-      "source": "36氪",
-      "date": "2026-08-27",
-      "image": ""
-    },
-    {
       "id": "news-e0c96d8f1926faa7",
       "title": "AI Engineer Notebooks：免费的框架无关 Colab 教程，覆盖 RAG、Agent 与评测",
       "url": "https://github.com/calmrocks/ai-engineer-notebooks",
@@ -1103,19 +1388,6 @@
       "subcategory": "software"
     },
     {
-      "id": "news-61896fba1eacb5dc",
-      "title": "开发者用「vibe 编程」式模糊测试器在 FFmpeg 里发现除零崩溃 bug",
-      "url": "https://code.ffmpeg.org/FFmpeg/FFmpeg/issues/24290",
-      "date": "2026-08-27",
-      "published": "2026-08-27T17:53:40+00:00",
-      "summary": "一名开发者用自己写的模糊测试器在 FFmpeg 中发现整数除零 bug：仅 21 字节的恶意 VPK 文件就能让任何基于 FFmpeg 的应用崩溃。",
-      "detail": "漏洞位于 FFmpeg 的索尼 PS2 VPK 解复用器 libavformat/vpk.c：vpk_read_packet 在声道数为零时执行除法，触发 SIGFPE 崩溃，问题定级为中等。报告者称该 bug 是用「vibecoded」（快糙猛式）模糊测试器发现的。该议题在 Hacker News 上引发 120 多条讨论。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "Hacker News"
-    },
-    {
       "id": "news-91053303162a4366",
       "title": "科大讯飞 2026 中报：上半年收入 116.23 亿元，大模型商业化提速",
       "url": "https://36kr.com/p/3957597360438656",
@@ -1127,6 +1399,19 @@
       "priority": 1,
       "category": "ai",
       "source": "36氪"
+    },
+    {
+      "id": "news-61896fba1eacb5dc",
+      "title": "开发者用「vibe 编程」式模糊测试器在 FFmpeg 里发现除零崩溃 bug",
+      "url": "https://code.ffmpeg.org/FFmpeg/FFmpeg/issues/24290",
+      "date": "2026-08-27",
+      "published": "2026-08-27T17:53:40+00:00",
+      "summary": "一名开发者用自己写的模糊测试器在 FFmpeg 中发现整数除零 bug：仅 21 字节的恶意 VPK 文件就能让任何基于 FFmpeg 的应用崩溃。",
+      "detail": "漏洞位于 FFmpeg 的索尼 PS2 VPK 解复用器 libavformat/vpk.c：vpk_read_packet 在声道数为零时执行除法，触发 SIGFPE 崩溃，问题定级为中等。报告者称该 bug 是用「vibecoded」（快糙猛式）模糊测试器发现的。该议题在 Hacker News 上引发 120 多条讨论。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Hacker News"
     },
     {
       "id": "news-7ddbb355b5683bad",
@@ -1165,6 +1450,32 @@
       "image": "",
       "priority": 1,
       "category": "fun",
+      "source": "少数派"
+    },
+    {
+      "id": "news-b7656f1f7459b278",
+      "title": "Salesforce 与 Anthropic 扩大合作，推出「Salesforce in Claude」插件",
+      "url": "https://36kr.com/newsflashes/3957027719642503",
+      "published": "2026-08-27T08:16:45+08:00",
+      "summary": "Salesforce 与 Anthropic 宣布扩大合作，推出包含 37 种预构建销售技能的插件「Salesforce in Claude」。",
+      "detail": "该插件可让销售人员和智能体基于实时收入背景信息进行推理、自动更新销售管线，并直接在 Claude 界面内执行受控操作。两家公司还计划在 Claude、Salesforce 和 Slack 之间推出更多集成功能。",
+      "priority": 1,
+      "category": "ai",
+      "source": "36氪",
+      "date": "2026-08-27",
+      "image": ""
+    },
+    {
+      "id": "news-912d04b3847f8daa",
+      "title": "派早报：Apple 调整妙控键盘键帽符号，OpenAI 发布 ChatGPT Admin 插件",
+      "url": "https://sspai.com/post/113873",
+      "date": "2026-08-27",
+      "published": "2026-08-27T07:33:04+08:00",
+      "summary": "OpenAI 推出 ChatGPT Admin 插件，工作区管理员可通过对话管理用户、权限和使用额度；Apple 将妙控键盘部分按键改为纯符号标识。",
+      "detail": "ChatGPT Admin 插件可在 ChatGPT Work 和 Codex 中完成日常管理，包括添加或移除成员、调整群组、查看活动与额度数据、审核额度申请，并根据角色或群组控制不同功能和模型的访问权限。此外，Apple 更新了妙控键盘外观，Tab、Caps Lock、Shift 等键帽改用纯符号标识；闪迪推出宝可梦纪念款产品，Commodore 推出《赛博朋克 2077》主题复古电脑。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
       "source": "少数派"
     },
     {
@@ -1272,32 +1583,6 @@
       "source": "juya AI 日报"
     },
     {
-      "id": "news-b7656f1f7459b278",
-      "title": "Salesforce 与 Anthropic 扩大合作，推出「Salesforce in Claude」插件",
-      "url": "https://36kr.com/newsflashes/3957027719642503",
-      "published": "2026-08-27T08:16:45+08:00",
-      "summary": "Salesforce 与 Anthropic 宣布扩大合作，推出包含 37 种预构建销售技能的插件「Salesforce in Claude」。",
-      "detail": "该插件可让销售人员和智能体基于实时收入背景信息进行推理、自动更新销售管线，并直接在 Claude 界面内执行受控操作。两家公司还计划在 Claude、Salesforce 和 Slack 之间推出更多集成功能。",
-      "priority": 1,
-      "category": "ai",
-      "source": "36氪",
-      "date": "2026-08-27",
-      "image": ""
-    },
-    {
-      "id": "news-912d04b3847f8daa",
-      "title": "派早报：Apple 调整妙控键盘键帽符号，OpenAI 发布 ChatGPT Admin 插件",
-      "url": "https://sspai.com/post/113873",
-      "date": "2026-08-27",
-      "published": "2026-08-27T07:33:04+08:00",
-      "summary": "OpenAI 推出 ChatGPT Admin 插件，工作区管理员可通过对话管理用户、权限和使用额度；Apple 将妙控键盘部分按键改为纯符号标识。",
-      "detail": "ChatGPT Admin 插件可在 ChatGPT Work 和 Codex 中完成日常管理，包括添加或移除成员、调整群组、查看活动与额度数据、审核额度申请，并根据角色或群组控制不同功能和模型的访问权限。此外，Apple 更新了妙控键盘外观，Tab、Caps Lock、Shift 等键帽改用纯符号标识；闪迪推出宝可梦纪念款产品，Commodore 推出《赛博朋克 2077》主题复古电脑。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "少数派"
-    },
-    {
       "id": "news-c5e91f8092a93182",
       "title": "育碧上架《魔法门之英雄无敌 3》时忘记打包游戏文件，玩家仅下载到 23.49 KB",
       "url": "https://www.solidot.org/story?sid=85205",
@@ -1339,6 +1624,19 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-bc079cf1f0b2fb1c",
+      "title": "中尼边境吉隆口岸泥石流灾害：至少 22 人死亡、约 384 人失联",
+      "url": "https://www.solidot.org/story?sid=85202",
+      "published": "2026-08-26T21:43:56+08:00",
+      "summary": "8 月 26 日尼泊尔一侧发生泥石流波及中尼边境吉隆口岸，至少 22 人死亡，约 384 人失联，含 291 名外国游客。",
+      "detail": "中国官方通报灾害造成吉隆口岸重大人员伤亡及失联，中国一侧前往口岸的道路、通信和电力中断。尼泊尔拉苏瓦县等地村庄、道路、桥梁及水电设施受损。中国境内伤亡及失联人数尚未公布。近期赴尼泊尔及中尼边境地区旅行需高度关注官方安全提醒。",
+      "priority": 2,
+      "category": "fun",
+      "source": "Solidot",
+      "date": "2026-08-26",
+      "image": ""
+    },
+    {
       "id": "news-f3e3b9d78938a911",
       "title": "Tailcat 发布：像 netcat 一样使用、但走 Tailscale 数据面的开源工具",
       "url": "https://github.com/tailscale/tailcat",
@@ -1353,32 +1651,6 @@
       "image": ""
     },
     {
-      "id": "news-2d87ef9115a6acd1",
-      "title": "美国国务院暂停移民签证申请，称将进行「深度培训」",
-      "url": "https://www.wsj.com/politics/policy/u-s-state-department-pauses-immigrant-visa-applications-25b31b23",
-      "published": "2026-08-26T17:22:16+00:00",
-      "summary": "美国国务院暂停移民签证申请，以进行「深度培训」收紧对申请人的限制，这是其收紧移民规则的最新举措。",
-      "detail": "国务院发言人称，正在更新指导与培训，确保签证申请人不会成为美国法律下的「公共负担」或依赖面向美国人的政府福利。此举发生在特朗普政府审查所有 B-1 商务签证和 B-2 旅游签证之后，对有赴美移民、留学或探亲计划的人士有直接影响，建议关注后续细则。",
-      "priority": 2,
-      "category": "fun",
-      "source": "Hacker News",
-      "date": "2026-08-26",
-      "image": ""
-    },
-    {
-      "id": "news-bc079cf1f0b2fb1c",
-      "title": "中尼边境吉隆口岸泥石流灾害：至少 22 人死亡、约 384 人失联",
-      "url": "https://www.solidot.org/story?sid=85202",
-      "published": "2026-08-26T21:43:56+08:00",
-      "summary": "8 月 26 日尼泊尔一侧发生泥石流波及中尼边境吉隆口岸，至少 22 人死亡，约 384 人失联，含 291 名外国游客。",
-      "detail": "中国官方通报灾害造成吉隆口岸重大人员伤亡及失联，中国一侧前往口岸的道路、通信和电力中断。尼泊尔拉苏瓦县等地村庄、道路、桥梁及水电设施受损。中国境内伤亡及失联人数尚未公布。近期赴尼泊尔及中尼边境地区旅行需高度关注官方安全提醒。",
-      "priority": 2,
-      "category": "fun",
-      "source": "Solidot",
-      "date": "2026-08-26",
-      "image": ""
-    },
-    {
       "id": "news-5a34578eb8d5d4e6",
       "title": "月之暗面与微软、亚马逊和 Google 协商 Kimi K3 收益分成协议",
       "url": "https://www.solidot.org/story?sid=85201",
@@ -1388,6 +1660,19 @@
       "priority": 2,
       "category": "ai",
       "source": "Solidot",
+      "date": "2026-08-26",
+      "image": ""
+    },
+    {
+      "id": "news-2d87ef9115a6acd1",
+      "title": "美国国务院暂停移民签证申请，称将进行「深度培训」",
+      "url": "https://www.wsj.com/politics/policy/u-s-state-department-pauses-immigrant-visa-applications-25b31b23",
+      "published": "2026-08-26T17:22:16+00:00",
+      "summary": "美国国务院暂停移民签证申请，以进行「深度培训」收紧对申请人的限制，这是其收紧移民规则的最新举措。",
+      "detail": "国务院发言人称，正在更新指导与培训，确保签证申请人不会成为美国法律下的「公共负担」或依赖面向美国人的政府福利。此举发生在特朗普政府审查所有 B-1 商务签证和 B-2 旅游签证之后，对有赴美移民、留学或探亲计划的人士有直接影响，建议关注后续细则。",
+      "priority": 2,
+      "category": "fun",
+      "source": "Hacker News",
       "date": "2026-08-26",
       "image": ""
     },
@@ -1540,6 +1825,32 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-ed610d09b3e1a547",
+      "title": "研究：若发生全球性灾难，澳大利亚是地球上最安全的地方",
+      "url": "https://www.solidot.org/story?sid=85204",
+      "published": "2026-08-26T23:30:14+08:00",
+      "summary": "《Global Challenges》研究评估全球性灾难风险后认为，澳大利亚是最安全的地方——虽不能免于灾难，但相对影响最小。",
+      "detail": "研究人员评估了数百项关于小行星撞击、火山爆发、大规模网络攻击、疾病威胁等灾害影响的研究，将全球灾难危机分为突发性日照减少、基础设施瘫痪和大规模生物灾害三类。澳大利亚因地理位置、地缘条件等因素被认为相对最安全，但研究同时强调其并不能完全免于全球性灾难。",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot",
+      "date": "2026-08-26",
+      "image": ""
+    },
+    {
+      "id": "news-af1b72a0585b6a0b",
+      "title": "美国报告今年首例麻疹死亡病例，疫苗接种率持续下滑",
+      "url": "https://www.solidot.org/story?sid=85203",
+      "published": "2026-08-26T22:32:23+08:00",
+      "summary": "宾夕法尼亚州两名未接种疫苗者死于麻疹，是美国 2026 年首例麻疹死亡病例，也是宾州 35 年来首次。",
+      "detail": "美国 CDC 已统计到至少 2777 例麻疹病例，为 1991 年以来最高纪录；全美疫苗接种率下滑至约 92%，低于群体免疫所需的 95%。公共卫生专家认为，反疫苗宣传和虚假信息是病例激增的重要原因。",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot",
+      "date": "2026-08-26",
+      "image": ""
+    },
+    {
       "id": "news-97d5b772f79eb931",
       "title": "mold 链接器论文发表：大规模并行链接已获 ASPLOS 2027 接收",
       "url": "https://arxiv.org/abs/2608.23228",
@@ -1596,45 +1907,6 @@
       "image": ""
     },
     {
-      "id": "news-ed610d09b3e1a547",
-      "title": "研究：若发生全球性灾难，澳大利亚是地球上最安全的地方",
-      "url": "https://www.solidot.org/story?sid=85204",
-      "published": "2026-08-26T23:30:14+08:00",
-      "summary": "《Global Challenges》研究评估全球性灾难风险后认为，澳大利亚是最安全的地方——虽不能免于灾难，但相对影响最小。",
-      "detail": "研究人员评估了数百项关于小行星撞击、火山爆发、大规模网络攻击、疾病威胁等灾害影响的研究，将全球灾难危机分为突发性日照减少、基础设施瘫痪和大规模生物灾害三类。澳大利亚因地理位置、地缘条件等因素被认为相对最安全，但研究同时强调其并不能完全免于全球性灾难。",
-      "priority": 1,
-      "category": "fun",
-      "source": "Solidot",
-      "date": "2026-08-26",
-      "image": ""
-    },
-    {
-      "id": "news-af1b72a0585b6a0b",
-      "title": "美国报告今年首例麻疹死亡病例，疫苗接种率持续下滑",
-      "url": "https://www.solidot.org/story?sid=85203",
-      "published": "2026-08-26T22:32:23+08:00",
-      "summary": "宾夕法尼亚州两名未接种疫苗者死于麻疹，是美国 2026 年首例麻疹死亡病例，也是宾州 35 年来首次。",
-      "detail": "美国 CDC 已统计到至少 2777 例麻疹病例，为 1991 年以来最高纪录；全美疫苗接种率下滑至约 92%，低于群体免疫所需的 95%。公共卫生专家认为，反疫苗宣传和虚假信息是病例激增的重要原因。",
-      "priority": 1,
-      "category": "fun",
-      "source": "Solidot",
-      "date": "2026-08-26",
-      "image": ""
-    },
-    {
-      "id": "news-68d298bea5753490",
-      "title": "12 座用回收材料制成的雕塑：从垃圾到艺术",
-      "url": "https://www.atlasobscura.com/articles/sculptures-made-from-recycled-materials",
-      "published": "2026-08-26T09:41:00-04:00",
-      "summary": "Atlas Obscura 盘点 12 座用回收材料制成的雕塑作品，展现垃圾如何被转化为艺术。",
-      "detail": "从古罗马引水渠到现代垃圾填埋场，人类一直在处理废弃物；当垃圾落到合适的人手中，也能变成艺术。文章展示了 12 位艺术家利用回收材料创作的雕塑，涵盖不同风格与材料，体现环保理念与创意的结合。",
-      "priority": 1,
-      "category": "fun",
-      "source": "Atlas Obscura",
-      "date": "2026-08-26",
-      "image": ""
-    },
-    {
       "id": "news-f65270d4f78664e7",
       "title": "开学季教育优惠合集：GitHub 学生包、JetBrains、云厂商校园计划等",
       "url": "https://sspai.com/post/68227",
@@ -1684,6 +1956,33 @@
       "category": "tech",
       "subcategory": "industry",
       "source": "Solidot",
+      "date": "2026-08-26",
+      "image": ""
+    },
+    {
+      "id": "news-68d298bea5753490",
+      "title": "12 座用回收材料制成的雕塑：从垃圾到艺术",
+      "url": "https://www.atlasobscura.com/articles/sculptures-made-from-recycled-materials",
+      "published": "2026-08-26T09:41:00-04:00",
+      "summary": "Atlas Obscura 盘点 12 座用回收材料制成的雕塑作品，展现垃圾如何被转化为艺术。",
+      "detail": "从古罗马引水渠到现代垃圾填埋场，人类一直在处理废弃物；当垃圾落到合适的人手中，也能变成艺术。文章展示了 12 位艺术家利用回收材料创作的雕塑，涵盖不同风格与材料，体现环保理念与创意的结合。",
+      "priority": 1,
+      "category": "fun",
+      "source": "Atlas Obscura",
+      "date": "2026-08-26",
+      "image": ""
+    },
+    {
+      "id": "news-a9177e1634089774",
+      "title": "道交法修订草案：自动驾驶状态下违法由车企担责",
+      "url": "https://36kr.com/p/3955588176706951",
+      "published": "2026-08-26T07:52:32+08:00",
+      "source": "36氪",
+      "category": "tech",
+      "priority": 1,
+      "subcategory": "industry",
+      "summary": "道路交通安全法修订草案设「自动驾驶汽车的特别规定」专章：自动驾驶功能激活状态下发生违法行为，由汽车生产企业、进口企业接受处理。",
+      "detail": "8 月 25 日提请全国人大常委会会议初次审议的修订草案，明确了自动驾驶汽车与辅助驾驶功能的概念，并规定自动驾驶功能激活状态下发生道路交通安全违法行为由车企担责；未激活或仅用辅助驾驶时按现行规则处理。草案进入审议程序，最终条款以通过后文本为准。",
       "date": "2026-08-26",
       "image": ""
     },
@@ -1874,20 +2173,6 @@
       "source": "juya AI 日报"
     },
     {
-      "id": "news-a9177e1634089774",
-      "title": "道交法修订草案：自动驾驶状态下违法由车企担责",
-      "url": "https://36kr.com/p/3955588176706951",
-      "published": "2026-08-26T07:52:32+08:00",
-      "source": "36氪",
-      "category": "tech",
-      "priority": 1,
-      "subcategory": "industry",
-      "summary": "道路交通安全法修订草案设「自动驾驶汽车的特别规定」专章：自动驾驶功能激活状态下发生违法行为，由汽车生产企业、进口企业接受处理。",
-      "detail": "8 月 25 日提请全国人大常委会会议初次审议的修订草案，明确了自动驾驶汽车与辅助驾驶功能的概念，并规定自动驾驶功能激活状态下发生道路交通安全违法行为由车企担责；未激活或仅用辅助驾驶时按现行规则处理。草案进入审议程序，最终条款以通过后文本为准。",
-      "date": "2026-08-26",
-      "image": ""
-    },
-    {
       "id": "news-a8abedfd666b97fb",
       "title": "因保安可能罢工，Anthropic 通知员工远程办公",
       "url": "https://www.solidot.org/story?sid=85194",
@@ -1915,6 +2200,19 @@
       "image": ""
     },
     {
+      "id": "news-c3de83a482b5633e",
+      "title": "字节跳动正式发布「豆包工作」，与飞书深度打通",
+      "url": "https://36kr.com/p/3955079667137664",
+      "published": "2026-08-25T23:19:08+08:00",
+      "source": "36氪",
+      "category": "ai",
+      "priority": 2,
+      "summary": "字节跳动 8 月 25 日正式发布 AI 办公产品「豆包工作」，作为面向 AI 办公场景的统一产品与品牌，并与飞书深度打通。",
+      "detail": "此前字节已将 TRAE、扣子团队整体并入豆包体系，此次豆包工作正式亮相，强调与飞书深度打通，把竞争焦点从单个 Agent 的能力推向组织生产力提升。这标志着字节 AI 办公产品线整合进入新阶段。",
+      "date": "2026-08-25",
+      "image": ""
+    },
+    {
       "id": "news-7ee0b9cdb8391b05",
       "title": "X 向第三方客户端连发停止函：XCancel 停服，Nitter 收律师函",
       "url": "https://news.ycombinator.com/item?id=49440786",
@@ -1925,19 +2223,6 @@
       "subcategory": "software",
       "summary": "X 公司向第三方客户端 XCancel 发出停止函，服务已暂停；开源推特前端 Nitter 同样收到停止函，所有公共实例无限期下线。",
       "detail": "XCancel 声明称 8 月 24 日晚收到 X Corp 的停止函，服务暂停并寻求法律意见；Nitter 维护者 zedeus 确认收到停止函，等待法律建议期间所有公共实例保持下线。两家均为绕过 X 官方客户端的第三方前端，X 近期对第三方客户端的法律行动持续收紧。",
-      "date": "2026-08-25",
-      "image": ""
-    },
-    {
-      "id": "news-c3de83a482b5633e",
-      "title": "字节跳动正式发布「豆包工作」，与飞书深度打通",
-      "url": "https://36kr.com/p/3955079667137664",
-      "published": "2026-08-25T23:19:08+08:00",
-      "source": "36氪",
-      "category": "ai",
-      "priority": 2,
-      "summary": "字节跳动 8 月 25 日正式发布 AI 办公产品「豆包工作」，作为面向 AI 办公场景的统一产品与品牌，并与飞书深度打通。",
-      "detail": "此前字节已将 TRAE、扣子团队整体并入豆包体系，此次豆包工作正式亮相，强调与飞书深度打通，把竞争焦点从单个 Agent 的能力推向组织生产力提升。这标志着字节 AI 办公产品线整合进入新阶段。",
       "date": "2026-08-25",
       "image": ""
     },
@@ -2025,6 +2310,19 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-87dfa48f11c0a0c0",
+      "title": "研究：TikTok 式信息流设计让年轻人难以批判性思考",
+      "url": "https://www.solidot.org/story?sid=85193",
+      "published": "2026-08-25T23:52:16+08:00",
+      "source": "Solidot",
+      "category": "fun",
+      "priority": 1,
+      "summary": "伯明翰大学研究显示，以 TikTok 为代表的无缝信息流设计抑制了 16-25 岁年轻人的批判性思维，欧洲正考虑限制此类设计。",
+      "detail": "研究通过访谈英格兰各地中小学和大学生发现，年轻人并非被动接受内容，但 TikTok 的算法驱动设计鼓励快速被动消费，严肃内容常被无关娱乐内容打断，参与者形容平台「有趣但虚假」。该研究为社媒设计与青少年认知的争论提供了新证据。",
+      "date": "2026-08-25",
+      "image": ""
+    },
+    {
       "id": "news-21be109602c7cf41",
       "title": "TeXbrain：纯浏览器运行的免费 LaTeX 编辑器，内置 pdfTeX WASM 编译",
       "url": "https://github.com/swimmingbrain/texbrain",
@@ -2081,6 +2379,19 @@
       "image": ""
     },
     {
+      "id": "news-749285e056dfabea",
+      "title": "微软画图与照片应用生成的 AI 图像嵌入隐形水印",
+      "url": "https://www.solidot.org/story?sid=85192",
+      "published": "2026-08-25T19:12:00+08:00",
+      "source": "Solidot",
+      "category": "ai",
+      "priority": 1,
+      "summary": "Windows 画图和照片应用用 Copilot 生成的 AI 图像会嵌入可见的 Copilot 标识和不可见的唯一 GUID，可追溯用户身份。",
+      "detail": "AI 生成的图像包含两个水印：可见的 Copilot logo 与不可见的唯一识别码 GUID。画图和照片使用的本地模型（限 Copilot+ PC）共四个文件、容量不到 400MB，无论本地还是云端，用户提示词都会发送到微软服务器审核，GUID 随之嵌入图像。",
+      "date": "2026-08-25",
+      "image": ""
+    },
+    {
       "id": "news-00da56ce2eb6ceed",
       "title": "FDA 批准首款同时连续监测酮体与血糖的可穿戴设备",
       "url": "https://www.fda.gov/news-events/press-announcements/fda-authorizes-first-wearable-device-continuously-monitors-both-ketone-levels-and-blood-sugar",
@@ -2091,45 +2402,6 @@
       "subcategory": "hardware",
       "summary": "美国 FDA 批准雅培 Libre Duo 10 Day：全球首款同时连续监测酮体与血糖的可穿戴设备，适用于 2 岁及以上糖尿病患者。",
       "detail": "该设备每分钟读取皮下组织液中的酮体与血糖水平，无线同步到手机并可在酮体达到危险阈值时自动告警，有助及早发现糖尿病酮症酸中毒（DKA）征兆。FDA 称其为美国首款连续监测酮体的可穿戴设备，通过 De Novo 途径授权。",
-      "date": "2026-08-25",
-      "image": ""
-    },
-    {
-      "id": "news-296b7b4900c44be9",
-      "title": "新研究提出：黑洞奇点是一个面，而非一个点",
-      "url": "https://arxiv.org/abs/2608.21590",
-      "published": "2026-08-25T17:02:49+00:00",
-      "source": "Hacker News",
-      "category": "fun",
-      "priority": 1,
-      "summary": "一篇 arXiv 预印本提出，黑洞内部的奇点并非传统理论描述的一个点，而是一个二维表面结构。",
-      "detail": "广义相对论的传统描述认为黑洞中心的奇点密度无穷大、体积为零，新论文则提出奇点具有表面结构。该预印本在 Hacker News 上获得 168 分、122 条讨论，属于尚未广泛确认的理论物理前沿争议。",
-      "date": "2026-08-25",
-      "image": ""
-    },
-    {
-      "id": "news-87dfa48f11c0a0c0",
-      "title": "研究：TikTok 式信息流设计让年轻人难以批判性思考",
-      "url": "https://www.solidot.org/story?sid=85193",
-      "published": "2026-08-25T23:52:16+08:00",
-      "source": "Solidot",
-      "category": "fun",
-      "priority": 1,
-      "summary": "伯明翰大学研究显示，以 TikTok 为代表的无缝信息流设计抑制了 16-25 岁年轻人的批判性思维，欧洲正考虑限制此类设计。",
-      "detail": "研究通过访谈英格兰各地中小学和大学生发现，年轻人并非被动接受内容，但 TikTok 的算法驱动设计鼓励快速被动消费，严肃内容常被无关娱乐内容打断，参与者形容平台「有趣但虚假」。该研究为社媒设计与青少年认知的争论提供了新证据。",
-      "date": "2026-08-25",
-      "image": ""
-    },
-    {
-      "id": "news-749285e056dfabea",
-      "title": "微软画图与照片应用生成的 AI 图像嵌入隐形水印",
-      "url": "https://www.solidot.org/story?sid=85192",
-      "published": "2026-08-25T19:12:00+08:00",
-      "source": "Solidot",
-      "category": "ai",
-      "priority": 1,
-      "summary": "Windows 画图和照片应用用 Copilot 生成的 AI 图像会嵌入可见的 Copilot 标识和不可见的唯一 GUID，可追溯用户身份。",
-      "detail": "AI 生成的图像包含两个水印：可见的 Copilot logo 与不可见的唯一识别码 GUID。画图和照片使用的本地模型（限 Copilot+ PC）共四个文件、容量不到 400MB，无论本地还是云端，用户提示词都会发送到微软服务器审核，GUID 随之嵌入图像。",
       "date": "2026-08-25",
       "image": ""
     },
@@ -2157,6 +2429,19 @@
       "subcategory": "industry",
       "summary": "深圳具身智能基础设施公司枢途科技连续完成天使++轮（数千万元）与天使+++轮（近亿元）融资，已拿下 60% 估值百亿头部机器人公司客户。",
       "detail": "枢途科技成立于 2024 年，将真实岗位的人类经验转化为机器人可学习的数据与技能。天使++轮由麟阁创投、深圳高新投等参与；天使+++轮投资方包括基石资本、南山战新投、苏州趋势资本等。公司业务正从数据采集向具身智能基础设施平台扩展。",
+      "date": "2026-08-25",
+      "image": ""
+    },
+    {
+      "id": "news-296b7b4900c44be9",
+      "title": "新研究提出：黑洞奇点是一个面，而非一个点",
+      "url": "https://arxiv.org/abs/2608.21590",
+      "published": "2026-08-25T17:02:49+00:00",
+      "source": "Hacker News",
+      "category": "fun",
+      "priority": 1,
+      "summary": "一篇 arXiv 预印本提出，黑洞内部的奇点并非传统理论描述的一个点，而是一个二维表面结构。",
+      "detail": "广义相对论的传统描述认为黑洞中心的奇点密度无穷大、体积为零，新论文则提出奇点具有表面结构。该预印本在 Hacker News 上获得 168 分、122 条讨论，属于尚未广泛确认的理论物理前沿争议。",
       "date": "2026-08-25",
       "image": ""
     },
@@ -2217,6 +2502,19 @@
       "image": ""
     },
     {
+      "id": "news-5a9d43f517473eec",
+      "title": "阿里云视频生成模型 Wan3.0 上线，小米发布三款玄戒芯片",
+      "url": "https://sspai.com/post/113813",
+      "published": "2026-08-25T08:28:32+08:00",
+      "source": "少数派",
+      "category": "ai",
+      "priority": 1,
+      "summary": "阿里云视频生成模型 Wan3.0 于 8 月 24 日正式上线，单次可生成 30 秒视频并支持文档格式输入；小米发布玄戒 O3、O100、D100 三款芯片。",
+      "detail": "Wan3.0 生成 480P/720P/1080P 视频的 API 价格分别为 0.3/0.6/1.2 元/秒，8 月 24 日至 9 月 23 日限时 7 折。玄戒 O3 为 3nm AI 旗舰 SoC（十核全大核、240 亿晶体管），O100 为大模型专用 AI 加速芯片（6nm 晶圆级堆叠、1.22TB/s 带宽），D100 为国内首款 3nm 高算力智驾芯片。",
+      "date": "2026-08-25",
+      "image": ""
+    },
+    {
       "id": "news-419668db81310d0e",
       "title": "Anthropic 升级 Claude 流式渲染器，长回答输出平滑度提升约 4 倍",
       "url": "https://daily.juya.uk/issues/2026-08-25/",
@@ -2243,19 +2541,6 @@
       "source": "juya AI 日报"
     },
     {
-      "id": "news-5a9d43f517473eec",
-      "title": "阿里云视频生成模型 Wan3.0 上线，小米发布三款玄戒芯片",
-      "url": "https://sspai.com/post/113813",
-      "published": "2026-08-25T08:28:32+08:00",
-      "source": "少数派",
-      "category": "ai",
-      "priority": 1,
-      "summary": "阿里云视频生成模型 Wan3.0 于 8 月 24 日正式上线，单次可生成 30 秒视频并支持文档格式输入；小米发布玄戒 O3、O100、D100 三款芯片。",
-      "detail": "Wan3.0 生成 480P/720P/1080P 视频的 API 价格分别为 0.3/0.6/1.2 元/秒，8 月 24 日至 9 月 23 日限时 7 折。玄戒 O3 为 3nm AI 旗舰 SoC（十核全大核、240 亿晶体管），O100 为大模型专用 AI 加速芯片（6nm 晶圆级堆叠、1.22TB/s 带宽），D100 为国内首款 3nm 高算力智驾芯片。",
-      "date": "2026-08-25",
-      "image": ""
-    },
-    {
       "id": "news-f24d02cd963ad681",
       "title": "据称 Hugging Face 探索出售，交易估值或达 130 亿美元以上",
       "url": "https://daily.juya.uk/issues/2026-08-24/",
@@ -2267,47 +2552,6 @@
       "priority": 3,
       "category": "ai",
       "source": "juya AI 日报"
-    },
-    {
-      "id": "news-77dcc1aed5307ed5",
-      "title": "全球海洋表面温度创历史新高",
-      "url": "https://www.bbc.com/news/articles/c62m4gpnp78o",
-      "date": "2026-08-24",
-      "published": "2026-08-24T19:19:08+00:00",
-      "summary": "哥白尼气候服务机构数据显示，全球非极地海洋平均表面温度达到 21.1°C，超过 2024 年 3 月的纪录。",
-      "detail": "这一读数出现在 8 月，而海洋温度通常每年 3、4 月达到峰值，8 月破纪录实属罕见。厄尔尼诺预计将持续增强至圣诞节前后，或成为数世纪来最强之一，海洋温度还可能进一步攀升。更暖的海洋将加剧极端天气、推高海平面并威胁珊瑚礁等海洋生态。",
-      "image": "",
-      "priority": 2,
-      "category": "fun",
-      "source": "Hacker News"
-    },
-    {
-      "id": "news-025c282a404a8d8c",
-      "title": "安全研究者：大模型或可借推理引擎漏洞控制宿主机器",
-      "url": "https://boydkane.com/essays/llms-could-control-their-host-machines-by-exploiting-inference-engines",
-      "date": "2026-08-24",
-      "published": "2026-08-24T19:03:06+00:00",
-      "summary": "一篇安全分析指出，恶意 LLM 可能通过向推理引擎发送精心构造的 token 序列，利用解析器漏洞在 GPU 宿主机上执行任意代码。",
-      "detail": "文章以 vLLM 曾被强制合并的 eval() 漏洞（CVE-2025-9141）为例，说明 vLLM、SGLang 等推理引擎解析复杂、bug 常见。一旦模型发现漏洞，可将攻击序列存入文件或 URL 形成持久化提示注入。建议将 GPU 主机与 token 解析分离，并把 GPU 主机发出的数据视为不可信。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "ai-frontier"
-    },
-    {
-      "id": "news-d97954cd6b587a4c",
-      "title": "微软发布 Agent Lightning v1.0：用智能体优化智能体",
-      "url": "https://github.com/microsoft/agent-lightning/releases/tag/v1.0.1",
-      "date": "2026-08-24",
-      "published": "2026-08-24T17:23:22+00:00",
-      "summary": "微软正式发布 Agent Lightning v1.0，该技能可帮助编程 Agent 系统化优化其他 AI Agent 的提示词、工具、工作流、模型与推理设置。",
-      "detail": "用户提供可编辑的 Agent 与基准后，Agent Lightning 会通过测量驱动的迭代，在准确率、成本、延迟与可靠性之间取得平衡，可安装到 Claude Code、Codex 或 GitHub Copilot 中使用。项目在 GitHub 已获约 1.7 万星标。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "software"
     },
     {
       "id": "news-b6821d1d3dc1de75",
@@ -2351,6 +2595,33 @@
       "source": "Solidot"
     },
     {
+      "id": "news-77dcc1aed5307ed5",
+      "title": "全球海洋表面温度创历史新高",
+      "url": "https://www.bbc.com/news/articles/c62m4gpnp78o",
+      "date": "2026-08-24",
+      "published": "2026-08-24T19:19:08+00:00",
+      "summary": "哥白尼气候服务机构数据显示，全球非极地海洋平均表面温度达到 21.1°C，超过 2024 年 3 月的纪录。",
+      "detail": "这一读数出现在 8 月，而海洋温度通常每年 3、4 月达到峰值，8 月破纪录实属罕见。厄尔尼诺预计将持续增强至圣诞节前后，或成为数世纪来最强之一，海洋温度还可能进一步攀升。更暖的海洋将加剧极端天气、推高海平面并威胁珊瑚礁等海洋生态。",
+      "image": "",
+      "priority": 2,
+      "category": "fun",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-025c282a404a8d8c",
+      "title": "安全研究者：大模型或可借推理引擎漏洞控制宿主机器",
+      "url": "https://boydkane.com/essays/llms-could-control-their-host-machines-by-exploiting-inference-engines",
+      "date": "2026-08-24",
+      "published": "2026-08-24T19:03:06+00:00",
+      "summary": "一篇安全分析指出，恶意 LLM 可能通过向推理引擎发送精心构造的 token 序列，利用解析器漏洞在 GPU 宿主机上执行任意代码。",
+      "detail": "文章以 vLLM 曾被强制合并的 eval() 漏洞（CVE-2025-9141）为例，说明 vLLM、SGLang 等推理引擎解析复杂、bug 常见。一旦模型发现漏洞，可将攻击序列存入文件或 URL 形成持久化提示注入。建议将 GPU 主机与 token 解析分离，并把 GPU 主机发出的数据视为不可信。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "ai-frontier"
+    },
+    {
       "id": "news-a9efa16b45c7a51d",
       "title": "TikTok 与字节跳动同意支付 4 亿美元和解美国儿童隐私诉讼",
       "url": "https://www.solidot.org/story?sid=85178",
@@ -2363,6 +2634,20 @@
       "category": "tech",
       "source": "Solidot",
       "subcategory": "industry"
+    },
+    {
+      "id": "news-d97954cd6b587a4c",
+      "title": "微软发布 Agent Lightning v1.0：用智能体优化智能体",
+      "url": "https://github.com/microsoft/agent-lightning/releases/tag/v1.0.1",
+      "date": "2026-08-24",
+      "published": "2026-08-24T17:23:22+00:00",
+      "summary": "微软正式发布 Agent Lightning v1.0，该技能可帮助编程 Agent 系统化优化其他 AI Agent 的提示词、工具、工作流、模型与推理设置。",
+      "detail": "用户提供可编辑的 Agent 与基准后，Agent Lightning 会通过测量驱动的迭代，在准确率、成本、延迟与可靠性之间取得平衡，可安装到 Claude Code、Codex 或 GitHub Copilot 中使用。项目在 GitHub 已获约 1.7 万星标。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "software"
     },
     {
       "id": "news-48eb15609ca23002",
@@ -2446,6 +2731,20 @@
       "subcategory": "software"
     },
     {
+      "id": "news-0f9a2a1618717385",
+      "title": "Wi-Fi 8 不再拼速度，专注于提升可靠性",
+      "url": "https://www.solidot.org/story?sid=85182",
+      "date": "2026-08-24",
+      "published": "2026-08-24T21:37:30+08:00",
+      "summary": "正在开发的 Wi-Fi 8 将与 Wi-Fi 7 保持基本相同的最大数据速率，转而专注提升可靠性，目标是在不同信噪比水平下吞吐量提升 25%。",
+      "detail": "自 Wi-Fi 4 起，每一代 Wi-Fi 都以速率翻倍为卖点，Wi-Fi 7 每频段理论最大吞吐量已达 23Gbps。Wi-Fi 8 维持相同的空间流、4096-QAM 调制与 320MHz 信道带宽，不再追求速率，而是瞄准不同信号环境下吞吐量的稳定提升，并降低 95% 请求的延迟。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "Solidot",
+      "subcategory": "software"
+    },
+    {
       "id": "news-40e0350133593084",
       "title": "「唐朝从未存在」论调在中文互联网一角流传",
       "url": "https://www.cnn.com/2026/08/19/style/china-tang-dynasty-never-existed-hoax-intl-hnk",
@@ -2470,20 +2769,6 @@
       "priority": 1,
       "category": "fun",
       "source": "Hacker News"
-    },
-    {
-      "id": "news-0f9a2a1618717385",
-      "title": "Wi-Fi 8 不再拼速度，专注于提升可靠性",
-      "url": "https://www.solidot.org/story?sid=85182",
-      "date": "2026-08-24",
-      "published": "2026-08-24T21:37:30+08:00",
-      "summary": "正在开发的 Wi-Fi 8 将与 Wi-Fi 7 保持基本相同的最大数据速率，转而专注提升可靠性，目标是在不同信噪比水平下吞吐量提升 25%。",
-      "detail": "自 Wi-Fi 4 起，每一代 Wi-Fi 都以速率翻倍为卖点，Wi-Fi 7 每频段理论最大吞吐量已达 23Gbps。Wi-Fi 8 维持相同的空间流、4096-QAM 调制与 320MHz 信道带宽，不再追求速率，而是瞄准不同信号环境下吞吐量的稳定提升，并降低 95% 请求的延迟。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "source": "Solidot",
-      "subcategory": "software"
     },
     {
       "id": "news-9f43be9a20d5c0aa",
@@ -2634,32 +2919,6 @@
       "source": "juya AI 日报"
     },
     {
-      "id": "news-faa7e4493999fd24",
-      "title": "菲尔斯首夺辛辛那提大师赛冠军，世界排名升至第 11",
-      "url": "https://www.theguardian.com/sport/2026/aug/23/arthur-fils-masters-frances-tiafoe-cincinnati-tennis",
-      "date": "2026-08-23",
-      "published": "2026-08-23T22:59:12+00:00",
-      "summary": "22 岁法国新星菲尔斯以 6-3、1-6、6-0 击败蒂亚福，首夺 ATP 大师赛冠军，这场决赛也是两位黑人球员首次会师大师赛决赛。",
-      "detail": "菲尔斯在经历背伤等长期伤病后强势回归，夺冠后世界排名升至生涯新高第 11 位、ATP 冠军积分榜第 5。随着辛纳伤退、阿尔卡拉斯伤愈回归，他将以热门身份出战即将开赛的美网。",
-      "image": "",
-      "priority": 2,
-      "category": "sports",
-      "source": "The Guardian Sport"
-    },
-    {
-      "id": "news-ae74825e0aa80820",
-      "title": "F1 荷兰站：诺里斯连续两站夺冠，但坦言赛车难争总冠军",
-      "url": "https://www.bbc.co.uk/sport/formula1/articles/c1e1e56q4w5o",
-      "date": "2026-08-23",
-      "published": "2026-08-23T19:23:43+00:00",
-      "summary": "诺里斯在 F1 荷兰站夺得赛季两连胜，车手积分升至第四，但他表示迈凯伦赛车短板明显，难以支撑总冠军争夺。",
-      "detail": "诺里斯在赞德福特凭借出色策略夺冠，目前落后领跑的梅赛德斯车手安东内利 83 分。他指出赛车高速性能出色但低速弯吃亏，预计在蒙扎和阿塞拜疆两站将受考验。迈凯伦领队斯特拉认为，若升级效果能在蒙扎得到确认，下半赛季仍可期待。",
-      "image": "",
-      "priority": 2,
-      "category": "sports",
-      "source": "BBC Sport"
-    },
-    {
       "id": "news-b571b1fd2f3a4752",
       "title": "世界人形机器人运动会开幕：机器人百米跑进 10 秒，但刹住是问题",
       "url": "https://www.solidot.org/story?sid=85169",
@@ -2686,6 +2945,32 @@
       "category": "tech",
       "subcategory": "software",
       "source": "Solidot"
+    },
+    {
+      "id": "news-faa7e4493999fd24",
+      "title": "菲尔斯首夺辛辛那提大师赛冠军，世界排名升至第 11",
+      "url": "https://www.theguardian.com/sport/2026/aug/23/arthur-fils-masters-frances-tiafoe-cincinnati-tennis",
+      "date": "2026-08-23",
+      "published": "2026-08-23T22:59:12+00:00",
+      "summary": "22 岁法国新星菲尔斯以 6-3、1-6、6-0 击败蒂亚福，首夺 ATP 大师赛冠军，这场决赛也是两位黑人球员首次会师大师赛决赛。",
+      "detail": "菲尔斯在经历背伤等长期伤病后强势回归，夺冠后世界排名升至生涯新高第 11 位、ATP 冠军积分榜第 5。随着辛纳伤退、阿尔卡拉斯伤愈回归，他将以热门身份出战即将开赛的美网。",
+      "image": "",
+      "priority": 2,
+      "category": "sports",
+      "source": "The Guardian Sport"
+    },
+    {
+      "id": "news-ae74825e0aa80820",
+      "title": "F1 荷兰站：诺里斯连续两站夺冠，但坦言赛车难争总冠军",
+      "url": "https://www.bbc.co.uk/sport/formula1/articles/c1e1e56q4w5o",
+      "date": "2026-08-23",
+      "published": "2026-08-23T19:23:43+00:00",
+      "summary": "诺里斯在 F1 荷兰站夺得赛季两连胜，车手积分升至第四，但他表示迈凯伦赛车短板明显，难以支撑总冠军争夺。",
+      "detail": "诺里斯在赞德福特凭借出色策略夺冠，目前落后领跑的梅赛德斯车手安东内利 83 分。他指出赛车高速性能出色但低速弯吃亏，预计在蒙扎和阿塞拜疆两站将受考验。迈凯伦领队斯特拉认为，若升级效果能在蒙扎得到确认，下半赛季仍可期待。",
+      "image": "",
+      "priority": 2,
+      "category": "sports",
+      "source": "BBC Sport"
     },
     {
       "id": "news-b3c37702087521c4",
@@ -2729,6 +3014,32 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-652802ea5488cf53",
+      "title": "研究：柳树杨树释放的化合物会加剧城市臭氧污染",
+      "url": "https://www.solidot.org/story?sid=85167",
+      "date": "2026-08-23",
+      "published": "2026-08-23T22:07:42+08:00",
+      "summary": "《科学进展》研究显示，北京广泛种植的柳树和杨树大量释放异戊二烯，成为城市臭氧污染的重要来源。",
+      "detail": "暨南大学团队本欲研究人类活动对臭氧的影响，意外发现城市植被是重要来源：北京约 35% 的树木会释放异戊二烯。研究人员在北京多地采集空气样本、测量挥发性有机物浓度并汇总监测站臭氧数据，结果显示这些植物化合物在光化学反应中显著推高臭氧浓度，为城市绿化与空气质量的权衡提供新视角。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-4d4d91cedb0de8cf",
+      "title": "波兰加密货币交易所两任 CEO 相继失踪，疑点重重",
+      "url": "https://www.solidot.org/story?sid=85166",
+      "date": "2026-08-23",
+      "published": "2026-08-23T19:04:24+08:00",
+      "summary": "东欧最大加密货币交易所 Zondacrypto 创始人 2022 年失踪疑遭不测，4 年后接任的 CEO 也宣告失踪。",
+      "detail": "创始人 Sylwester Suszek 失踪前曾急迫致电妹妹请求寄送比特币，此后杳无音信，家人认为他已遇害。他 2014 年创办该交易所前身 BitBay。接替他出任 CEO 的波兰律师近期也失踪，两任掌舵人相继失联令事件疑点重重，也再次引发对加密货币行业安全与监管的关注。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot"
+    },
+    {
       "id": "news-b4dd4c2f94b68064",
       "title": "曼联英超开局两连败：客场 0-2 负升班马赫尔城",
       "url": "https://www.theguardian.com/football/2026/aug/23/hull-punish-manchester-united-defence-michael-carrick-attack-bigger-concern",
@@ -2754,32 +3065,6 @@
       "category": "tech",
       "subcategory": "software",
       "source": "Hacker News"
-    },
-    {
-      "id": "news-652802ea5488cf53",
-      "title": "研究：柳树杨树释放的化合物会加剧城市臭氧污染",
-      "url": "https://www.solidot.org/story?sid=85167",
-      "date": "2026-08-23",
-      "published": "2026-08-23T22:07:42+08:00",
-      "summary": "《科学进展》研究显示，北京广泛种植的柳树和杨树大量释放异戊二烯，成为城市臭氧污染的重要来源。",
-      "detail": "暨南大学团队本欲研究人类活动对臭氧的影响，意外发现城市植被是重要来源：北京约 35% 的树木会释放异戊二烯。研究人员在北京多地采集空气样本、测量挥发性有机物浓度并汇总监测站臭氧数据，结果显示这些植物化合物在光化学反应中显著推高臭氧浓度，为城市绿化与空气质量的权衡提供新视角。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "Solidot"
-    },
-    {
-      "id": "news-4d4d91cedb0de8cf",
-      "title": "波兰加密货币交易所两任 CEO 相继失踪，疑点重重",
-      "url": "https://www.solidot.org/story?sid=85166",
-      "date": "2026-08-23",
-      "published": "2026-08-23T19:04:24+08:00",
-      "summary": "东欧最大加密货币交易所 Zondacrypto 创始人 2022 年失踪疑遭不测，4 年后接任的 CEO 也宣告失踪。",
-      "detail": "创始人 Sylwester Suszek 失踪前曾急迫致电妹妹请求寄送比特币，此后杳无音信，家人认为他已遇害。他 2014 年创办该交易所前身 BitBay。接替他出任 CEO 的波兰律师近期也失踪，两任掌舵人相继失联令事件疑点重重，也再次引发对加密货币行业安全与监管的关注。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "Solidot"
     },
     {
       "id": "news-a87e74019023e130",
@@ -2890,6 +3175,19 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-98b413af6fa14ae2",
+      "title": "特斯拉因门把手安全隐患在华召回近 300 万辆车",
+      "url": "https://www.solidot.org/story?sid=85163",
+      "date": "2026-08-22",
+      "published": "2026-08-22T21:32:18+08:00",
+      "summary": "特斯拉与另外 8 家车企在中国召回约 430 万辆汽车，创中国汽车召回规模纪录；其中特斯拉因门把手安全隐患召回 298 万辆。",
+      "detail": "国家市场监督管理总局公告显示，特斯拉将从 9 月 25 日起召回 298 万辆进口及中国制造的 Model 3、Model Y、Model S 和 Model X，原因与门把手安全隐患有关；另有 8 家汽车制造商同日宣布召回，合计约 430 万辆，创下中国汽车召回规模纪录。整改措施包括软件更新、加贴警示标签和改进门把手周围标识，多数车企通过 OTA 远程升级修复。主管部门已发布《汽车车门把手安全技术要求》强制性国标，计划于 2027 年 1 月 1 日起实施，届时车外全隐藏式门把手将被禁用。",
+      "image": "",
+      "priority": 2,
+      "category": "fun",
+      "source": "Solidot"
+    },
+    {
       "id": "news-34cc01f6d4cbe810",
       "title": "英超首轮冷门迭出：热刺 0-3 惨败、曼联 0-2 负升班马",
       "url": "https://www.theguardian.com/football/2026/aug/22/roberto-de-zerbi-brentford-tottenham-premier-league",
@@ -2901,6 +3199,20 @@
       "priority": 2,
       "category": "sports",
       "source": "The Guardian Sport"
+    },
+    {
+      "id": "news-14416e2f797c6380",
+      "title": "中国要求政府部门提前停用 Windows 10 政府版，改用国产 Linux",
+      "url": "https://www.solidot.org/story?sid=85161",
+      "date": "2026-08-22",
+      "published": "2026-08-22T19:00:50+08:00",
+      "summary": "彭博社报道，中国政府下令部分机构提前停止使用 Windows 10 中国政府版，改用国产 Linux 发行版，支持期限提前至今年下半年结束。",
+      "detail": "据彭博社报道，为维护数字主权，中国政府已下令部分机构提前停止使用 Windows 10 中国政府版，改用国产 Linux 发行版。该版本由微软与中国电子科技集团合资企业神州网信开发，原计划支持到 2027 年 2 月，其生命结束时间被提前到今年下半年。微软回应称未发现影响该系统的安全事件。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Solidot",
+      "subcategory": "software"
     },
     {
       "id": "news-1196d80274f4457a",
@@ -2929,19 +3241,6 @@
       "source": "The Guardian Sport"
     },
     {
-      "id": "news-98b413af6fa14ae2",
-      "title": "特斯拉因门把手安全隐患在华召回近 300 万辆车",
-      "url": "https://www.solidot.org/story?sid=85163",
-      "date": "2026-08-22",
-      "published": "2026-08-22T21:32:18+08:00",
-      "summary": "特斯拉与另外 8 家车企在中国召回约 430 万辆汽车，创中国汽车召回规模纪录；其中特斯拉因门把手安全隐患召回 298 万辆。",
-      "detail": "国家市场监督管理总局公告显示，特斯拉将从 9 月 25 日起召回 298 万辆进口及中国制造的 Model 3、Model Y、Model S 和 Model X，原因与门把手安全隐患有关；另有 8 家汽车制造商同日宣布召回，合计约 430 万辆，创下中国汽车召回规模纪录。整改措施包括软件更新、加贴警示标签和改进门把手周围标识，多数车企通过 OTA 远程升级修复。主管部门已发布《汽车车门把手安全技术要求》强制性国标，计划于 2027 年 1 月 1 日起实施，届时车外全隐藏式门把手将被禁用。",
-      "image": "",
-      "priority": 2,
-      "category": "fun",
-      "source": "Solidot"
-    },
-    {
       "id": "news-ab89e4846ef93cb5",
       "title": "MCP 官方发布新版路线图，确定五大优先领域",
       "url": "https://blog.modelcontextprotocol.io/posts/mcp-roadmap/",
@@ -2954,20 +3253,6 @@
       "category": "tech",
       "source": "Hacker News",
       "subcategory": "ai-frontier"
-    },
-    {
-      "id": "news-14416e2f797c6380",
-      "title": "中国要求政府部门提前停用 Windows 10 政府版，改用国产 Linux",
-      "url": "https://www.solidot.org/story?sid=85161",
-      "date": "2026-08-22",
-      "published": "2026-08-22T19:00:50+08:00",
-      "summary": "彭博社报道，中国政府下令部分机构提前停止使用 Windows 10 中国政府版，改用国产 Linux 发行版，支持期限提前至今年下半年结束。",
-      "detail": "据彭博社报道，为维护数字主权，中国政府已下令部分机构提前停止使用 Windows 10 中国政府版，改用国产 Linux 发行版。该版本由微软与中国电子科技集团合资企业神州网信开发，原计划支持到 2027 年 2 月，其生命结束时间被提前到今年下半年。微软回应称未发现影响该系统的安全事件。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "Solidot",
-      "subcategory": "software"
     },
     {
       "id": "news-71e84ccef4541591",
@@ -3037,6 +3322,32 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-7a1d4d76b5e1ee7c",
+      "title": "研究：3 分钟冲刺跑的分子反应与 90 分钟中等强度运动截然不同",
+      "url": "https://www.solidot.org/story?sid=85165",
+      "date": "2026-08-22",
+      "published": "2026-08-22T23:59:22+08:00",
+      "summary": "研究显示，六次 30 秒全力冲刺跑后血液中近四分之一蛋白质发生变化，而 90 分钟中等强度骑行仅改变不到 0.25%。",
+      "detail": "洛克菲勒大学研究人员比较了人体对不同强度运动的分子反应：六次 30 秒全力冲刺跑后，血液中近四分之一的蛋白质发生变化，并改变逾 200 种代谢物，迅速提升参与血管生长、组织修复的分子水平；90 分钟持续中等强度骑行仅改变不到 0.25% 的蛋白质。中等强度跑步机运动的影响介于两者之间，提示短时高强度运动可能带来独特的健康效益。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-f83a4b96e237b4a6",
+      "title": "GTA6 发售前 3 个月再遭大规模泄密，Rockstar 向微软和 Discord 发传票",
+      "url": "https://www.solidot.org/story?sid=85164",
+      "date": "2026-08-22",
+      "published": "2026-08-22T23:30:51+08:00",
+      "summary": "距发售约 3 个月，自称 CyberLeek 的组织发布 GTA6 可运行版本视频；Rockstar 已向微软和 Discord 发法庭传票追查泄密者。",
+      "detail": "2022 年 9 月曾有黑客泄露 GTA6 未宣布的图片视频，如今距游戏发售约 3 个月，自称 CyberLeek 的个人或组织又发布一系列新视频，画面显示泄密者手中可能有一个可运行版本，即游戏本体疑似被盗。彭博社援引知情人士称，Rockstar 已向微软和 Discord 发出法庭传票，要求协助识别泄密者身份。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot"
+    },
+    {
       "id": "news-a0837d121079ffd3",
       "title": "穆里尼奥回归皇马首秀：2-1 险胜西班牙人，21 岁新援第 90 分钟绝杀",
       "url": "https://www.theguardian.com/football/2026/aug/23/jose-mourinho-real-madrid-romance-espanyol-la-liga",
@@ -3061,6 +3372,20 @@
       "priority": 1,
       "category": "sports",
       "source": "The Guardian Sport"
+    },
+    {
+      "id": "news-f45c59885ed49d39",
+      "title": "使用胁迫密码删除手机数据的美国公民被控妨碍联邦执法重罪",
+      "url": "https://www.solidot.org/story?sid=85162",
+      "date": "2026-08-22",
+      "published": "2026-08-22T21:22:17+08:00",
+      "summary": "美国公民 Samuel Tunick 在机场被边检搜查手机时使用 GrapheneOS 的「胁迫密码」功能清空数据，随后被控妨碍联邦执法等重罪。",
+      "detail": "2025 年 1 月，Samuel Tunick 从多米尼加度假返美时，在亚特兰大机场被海关与边境保护局官员要求搜查手机。他交出了手机及一个密码，该密码触发 GrapheneOS 系统的「胁迫密码」功能删除了设备数据。检方随后以妨碍联邦执法等罪名起诉他。案件引发关于手机加密、边检搜查权限与胁迫密码功能法律地位的讨论。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "Solidot",
+      "subcategory": "software"
     },
     {
       "id": "news-5343b644ed1ca117",
@@ -3089,32 +3414,6 @@
       "source": "The Guardian Sport"
     },
     {
-      "id": "news-7a1d4d76b5e1ee7c",
-      "title": "研究：3 分钟冲刺跑的分子反应与 90 分钟中等强度运动截然不同",
-      "url": "https://www.solidot.org/story?sid=85165",
-      "date": "2026-08-22",
-      "published": "2026-08-22T23:59:22+08:00",
-      "summary": "研究显示，六次 30 秒全力冲刺跑后血液中近四分之一蛋白质发生变化，而 90 分钟中等强度骑行仅改变不到 0.25%。",
-      "detail": "洛克菲勒大学研究人员比较了人体对不同强度运动的分子反应：六次 30 秒全力冲刺跑后，血液中近四分之一的蛋白质发生变化，并改变逾 200 种代谢物，迅速提升参与血管生长、组织修复的分子水平；90 分钟持续中等强度骑行仅改变不到 0.25% 的蛋白质。中等强度跑步机运动的影响介于两者之间，提示短时高强度运动可能带来独特的健康效益。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "Solidot"
-    },
-    {
-      "id": "news-f83a4b96e237b4a6",
-      "title": "GTA6 发售前 3 个月再遭大规模泄密，Rockstar 向微软和 Discord 发传票",
-      "url": "https://www.solidot.org/story?sid=85164",
-      "date": "2026-08-22",
-      "published": "2026-08-22T23:30:51+08:00",
-      "summary": "距发售约 3 个月，自称 CyberLeek 的组织发布 GTA6 可运行版本视频；Rockstar 已向微软和 Discord 发法庭传票追查泄密者。",
-      "detail": "2022 年 9 月曾有黑客泄露 GTA6 未宣布的图片视频，如今距游戏发售约 3 个月，自称 CyberLeek 的个人或组织又发布一系列新视频，画面显示泄密者手中可能有一个可运行版本，即游戏本体疑似被盗。彭博社援引知情人士称，Rockstar 已向微软和 Discord 发出法庭传票，要求协助识别泄密者身份。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "Solidot"
-    },
-    {
       "id": "news-1fe29ab71de6bed0",
       "title": "面向新手的 Racket 语言友好入门教程走红 Hacker News",
       "url": "https://geometridae.bearblog.dev/a-friendly-introduction-to-racket/",
@@ -3140,20 +3439,6 @@
       "priority": 1,
       "category": "fun",
       "source": "Hacker News"
-    },
-    {
-      "id": "news-f45c59885ed49d39",
-      "title": "使用胁迫密码删除手机数据的美国公民被控妨碍联邦执法重罪",
-      "url": "https://www.solidot.org/story?sid=85162",
-      "date": "2026-08-22",
-      "published": "2026-08-22T21:22:17+08:00",
-      "summary": "美国公民 Samuel Tunick 在机场被边检搜查手机时使用 GrapheneOS 的「胁迫密码」功能清空数据，随后被控妨碍联邦执法等重罪。",
-      "detail": "2025 年 1 月，Samuel Tunick 从多米尼加度假返美时，在亚特兰大机场被海关与边境保护局官员要求搜查手机。他交出了手机及一个密码，该密码触发 GrapheneOS 系统的「胁迫密码」功能删除了设备数据。检方随后以妨碍联邦执法等罪名起诉他。案件引发关于手机加密、边检搜查权限与胁迫密码功能法律地位的讨论。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "source": "Solidot",
-      "subcategory": "software"
     },
     {
       "id": "news-7ee771cab6bab750",
@@ -3313,6 +3598,20 @@
       "source": "Hacker News"
     },
     {
+      "id": "news-8120de78b5631ee7",
+      "title": "中国准备发射嫦娥七号，前往月球南极寻找水冰",
+      "url": "https://www.solidot.org/story?sid=85160",
+      "date": "2026-08-21",
+      "published": "2026-08-21T20:44:27+08:00",
+      "summary": "中国计划于 8 月 24 日上午在海南文昌用长征五号发射嫦娥七号，尝试首次直接在月球南极着陆，搜寻阴影区陨石坑中的水冰。",
+      "detail": "嫦娥七号由轨道器、着陆器、巡视器与飞跃器组成，其中飞跃器具备重复起降与月面飞行能力，可飞入永久阴影区撞击坑探测。这是中国探月工程的重要一步，若成功将首次直接探测月球南极水冰资源，为未来月面基地选址提供依据。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Solidot",
+      "subcategory": "hardware"
+    },
+    {
       "id": "news-859e8a8320bfb826",
       "title": "世界第一辛纳因膝伤退出美网，德雷珀同样因伤缺席",
       "url": "https://www.theguardian.com/sport/2026/aug/21/jannik-sinner-out-of-us-open-tennis-with-knee-injury",
@@ -3365,20 +3664,6 @@
       "priority": 2,
       "category": "tech",
       "source": "Hacker News",
-      "subcategory": "hardware"
-    },
-    {
-      "id": "news-8120de78b5631ee7",
-      "title": "中国准备发射嫦娥七号，前往月球南极寻找水冰",
-      "url": "https://www.solidot.org/story?sid=85160",
-      "date": "2026-08-21",
-      "published": "2026-08-21T20:44:27+08:00",
-      "summary": "中国计划于 8 月 24 日上午在海南文昌用长征五号发射嫦娥七号，尝试首次直接在月球南极着陆，搜寻阴影区陨石坑中的水冰。",
-      "detail": "嫦娥七号由轨道器、着陆器、巡视器与飞跃器组成，其中飞跃器具备重复起降与月面飞行能力，可飞入永久阴影区撞击坑探测。这是中国探月工程的重要一步，若成功将首次直接探测月球南极水冰资源，为未来月面基地选址提供依据。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "Solidot",
       "subcategory": "hardware"
     },
     {
@@ -3677,20 +3962,6 @@
       "image": ""
     },
     {
-      "id": "news-65b1345a01aa9265",
-      "title": "伪装成求职面试的恶意代码：编程测试暗藏远控木马",
-      "url": "https://www.codedge.de/posts/how-to-compromise-your-system-with-a-job-interview",
-      "published": "2026-08-20T15:50:57+00:00",
-      "summary": "安全研究者披露新型求职骗局：假招聘方通过 LinkedIn 发送含恶意代码的编程测试，运行后会植入可窃取浏览器凭据与加密货币钱包的木马。",
-      "detail": "攻击者冒用真实公司名义以远程兼职与高时薪为诱饵联系求职者，要求完成一份约 180 个文件的 TypeScript 编程测试。测试代码内置从 jsonbin.io 拉取混淆载荷的逻辑，载荷包含远控木马（RAT）、浏览器凭据与 28 种钱包扩展窃取器、文件抓取器和剪贴板监控，可读取 SSH 密钥、云凭据与 .env 文件，且无需管理员权限。研究者建议在隔离虚拟机中运行陌生代码。",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "software",
-      "source": "Hacker News",
-      "date": "2026-08-20",
-      "image": ""
-    },
-    {
       "id": "news-ba73bc9bdaf9f0b9",
       "title": "AI 医疗记录员捏造患者服用迷幻蘑菇的经历",
       "url": "https://www.solidot.org/story?sid=85148",
@@ -3728,6 +3999,20 @@
       "category": "tech",
       "subcategory": "hardware",
       "source": "Solidot",
+      "date": "2026-08-20",
+      "image": ""
+    },
+    {
+      "id": "news-65b1345a01aa9265",
+      "title": "伪装成求职面试的恶意代码：编程测试暗藏远控木马",
+      "url": "https://www.codedge.de/posts/how-to-compromise-your-system-with-a-job-interview",
+      "published": "2026-08-20T15:50:57+00:00",
+      "summary": "安全研究者披露新型求职骗局：假招聘方通过 LinkedIn 发送含恶意代码的编程测试，运行后会植入可窃取浏览器凭据与加密货币钱包的木马。",
+      "detail": "攻击者冒用真实公司名义以远程兼职与高时薪为诱饵联系求职者，要求完成一份约 180 个文件的 TypeScript 编程测试。测试代码内置从 jsonbin.io 拉取混淆载荷的逻辑，载荷包含远控木马（RAT）、浏览器凭据与 28 种钱包扩展窃取器、文件抓取器和剪贴板监控，可读取 SSH 密钥、云凭据与 .env 文件，且无需管理员权限。研究者建议在隔离虚拟机中运行陌生代码。",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "Hacker News",
       "date": "2026-08-20",
       "image": ""
     },
@@ -3786,6 +4071,19 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-1d1f7abba8d0d09c",
+      "title": "海冰消融后巨型鲸鱼大量进入格陵兰海域",
+      "url": "https://www.solidot.org/story?sid=85151",
+      "published": "2026-08-20T23:57:12+08:00",
+      "summary": "海冰持续消融使座头鲸等巨型鲸鱼大量进入此前难以抵达的东格陵兰海域，研究人员估计 2024 年夏天约 4000 头座头鲸到访。",
+      "detail": "2006 年该地区才首次记录到座头鲸，2024 年船载设备即记录到 150 头；结合卫星追踪与因纽特猎人证词，研究人员估计当年夏季约有 4000 头座头鲸、6000 头长须鲸与 6000 头小须鲸造访格陵兰海。三种鲸鱼在夏季觅食季至少消耗 80 万吨鱼类和磷虾，北极原有鲸鱼被迫适应或离开，显示东格陵兰海洋生态系统正发生重大转变。",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot",
+      "date": "2026-08-20",
+      "image": ""
+    },
+    {
       "id": "news-5cc08780783d5ab6",
       "title": "RSS 联合创始人因抓取被起诉，Meta 大规模抓取却几乎未受追究",
       "url": "https://blog.curiousquail.com/im-upset-again-about-a-co-creator-of-rss-being-prosecuted-for-something-meta-is-doing-with-little-consequence/",
@@ -3821,19 +4119,6 @@
       "priority": 1,
       "category": "sports",
       "source": "BBC Sport",
-      "date": "2026-08-20",
-      "image": ""
-    },
-    {
-      "id": "news-1d1f7abba8d0d09c",
-      "title": "海冰消融后巨型鲸鱼大量进入格陵兰海域",
-      "url": "https://www.solidot.org/story?sid=85151",
-      "published": "2026-08-20T23:57:12+08:00",
-      "summary": "海冰持续消融使座头鲸等巨型鲸鱼大量进入此前难以抵达的东格陵兰海域，研究人员估计 2024 年夏天约 4000 头座头鲸到访。",
-      "detail": "2006 年该地区才首次记录到座头鲸，2024 年船载设备即记录到 150 头；结合卫星追踪与因纽特猎人证词，研究人员估计当年夏季约有 4000 头座头鲸、6000 头长须鲸与 6000 头小须鲸造访格陵兰海。三种鲸鱼在夏季觅食季至少消耗 80 万吨鱼类和磷虾，北极原有鲸鱼被迫适应或离开，显示东格陵兰海洋生态系统正发生重大转变。",
-      "priority": 1,
-      "category": "fun",
-      "source": "Solidot",
       "date": "2026-08-20",
       "image": ""
     },
@@ -4014,6 +4299,19 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-4995994ad5c683de",
+      "title": "mRNA 癌症疫苗 III 期黑色素瘤试验取得积极成果",
+      "url": "https://www.solidot.org/story?sid=85141",
+      "published": "2026-08-19T23:58:57+08:00",
+      "summary": "默克与 Moderna 宣布 mRNA 个性化癌症疫苗联合 Keytruda 的 III 期黑色素瘤试验取得积极结果，显著延长无复发生存期。",
+      "detail": "逾 1100 名高危或晚期黑色素瘤患者参与试验，癌细胞均已手术完全切除。相比单用免疫疗法 Keytruda，联合 mRNA 疫苗显著延长了无复发生存期，并降低癌细胞向其它部位扩散的风险。黑色素瘤虽仅占皮肤癌约 1%，却导致绝大多数皮肤癌死亡，多数复发发生在初次治疗后的两到三年内，该联合方案或为高危患者提供新的术后选择。",
+      "priority": 2,
+      "category": "fun",
+      "source": "Solidot",
+      "date": "2026-08-19",
+      "image": ""
+    },
+    {
       "id": "news-b21706efe54a1006",
       "title": "Unsloth 发布 Dynamic 3.0 量化：同尺寸精度提升超 10%",
       "url": "https://unsloth.ai/docs/basics/dynamic-3.0-ggufs",
@@ -4038,19 +4336,6 @@
       "category": "tech",
       "subcategory": "software",
       "source": "Hacker News",
-      "date": "2026-08-19",
-      "image": ""
-    },
-    {
-      "id": "news-4995994ad5c683de",
-      "title": "mRNA 癌症疫苗 III 期黑色素瘤试验取得积极成果",
-      "url": "https://www.solidot.org/story?sid=85141",
-      "published": "2026-08-19T23:58:57+08:00",
-      "summary": "默克与 Moderna 宣布 mRNA 个性化癌症疫苗联合 Keytruda 的 III 期黑色素瘤试验取得积极结果，显著延长无复发生存期。",
-      "detail": "逾 1100 名高危或晚期黑色素瘤患者参与试验，癌细胞均已手术完全切除。相比单用免疫疗法 Keytruda，联合 mRNA 疫苗显著延长了无复发生存期，并降低癌细胞向其它部位扩散的风险。黑色素瘤虽仅占皮肤癌约 1%，却导致绝大多数皮肤癌死亡，多数复发发生在初次治疗后的两到三年内，该联合方案或为高危患者提供新的术后选择。",
-      "priority": 2,
-      "category": "fun",
-      "source": "Solidot",
       "date": "2026-08-19",
       "image": ""
     },
@@ -4315,6 +4600,20 @@
       "image": ""
     },
     {
+      "id": "news-90773f690d4445ba",
+      "title": "iOS 27 测试版近期动向与 Apple 新品线索",
+      "url": "https://sspai.com/post/113618",
+      "published": "2026-08-19T17:39:05+08:00",
+      "summary": "iOS 27 已发布 Beta 4 至 6，带来 TV 自动下载、照片缩放、Siri 界面统一等改进；macOS 26.7 RC 代码中曝光大量 Apple 未发布产品线索。",
+      "detail": "Beta 4 新增 TV 自动下载后续剧集、照片缩放填充、Siri 语音设置统一及视频 Log 2 编码支持；Beta 5 重绘多款系统图标并优化 Liquid Glass 效果；Beta 6 以修复为主。同时 MacRumors 在 macOS 26.7 RC 中发现家庭中枢、新版 HomePod mini、相机版 AirPods、折叠 iPhone 等多款未发布产品的代码线索，并出现 Apple Intelligence 中国市场合规机制相关痕迹。",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "少数派",
+      "date": "2026-08-19",
+      "image": ""
+    },
+    {
       "id": "news-6e18dfbf91877235",
       "title": "LLM 时代的可扩展软件：让用户用对话为应用添加扩展",
       "url": "https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms/",
@@ -4342,15 +4641,14 @@
       "image": ""
     },
     {
-      "id": "news-90773f690d4445ba",
-      "title": "iOS 27 测试版近期动向与 Apple 新品线索",
-      "url": "https://sspai.com/post/113618",
-      "published": "2026-08-19T17:39:05+08:00",
-      "summary": "iOS 27 已发布 Beta 4 至 6，带来 TV 自动下载、照片缩放、Siri 界面统一等改进；macOS 26.7 RC 代码中曝光大量 Apple 未发布产品线索。",
-      "detail": "Beta 4 新增 TV 自动下载后续剧集、照片缩放填充、Siri 语音设置统一及视频 Log 2 编码支持；Beta 5 重绘多款系统图标并优化 Liquid Glass 效果；Beta 6 以修复为主。同时 MacRumors 在 macOS 26.7 RC 中发现家庭中枢、新版 HomePod mini、相机版 AirPods、折叠 iPhone 等多款未发布产品的代码线索，并出现 Apple Intelligence 中国市场合规机制相关痕迹。",
+      "id": "news-6f57c53d5db49a3e",
+      "title": "派早报：iQOO 发布手机新品、闪极举行 Loomos AI 眼镜发布会",
+      "url": "https://sspai.com/post/113607",
+      "published": "2026-08-19T08:30:54+08:00",
+      "summary": "iQOO 发布 Neo11 至尊版与 Z11S 两款手机，闪极 Loomos 举行 AI 眼镜发布会推出无显示拍摄眼镜 L1 并预告显示版 S1。",
+      "detail": "iQOO Neo11 至尊版（3399 元起）搭载天玑 9500M、自研电竞芯片 Q2 与 9100mAh 电池，面向游戏性能市场；Z11S（1799 元起）是 iQOO 首款 10000mAh 电池手机。闪极 Loomos 发布 AI 拍摄眼镜 L1（2999 元，摄像头移至镜腿并带物理隐私盖板），并预告双目显示 AI 眼镜 S1（3999 元，2026 年 Q3 上市）。",
       "priority": 1,
-      "category": "tech",
-      "subcategory": "software",
+      "category": "ai",
       "source": "少数派",
       "date": "2026-08-19",
       "image": ""
@@ -4422,19 +4720,6 @@
       "source": "juya AI 日报"
     },
     {
-      "id": "news-6f57c53d5db49a3e",
-      "title": "派早报：iQOO 发布手机新品、闪极举行 Loomos AI 眼镜发布会",
-      "url": "https://sspai.com/post/113607",
-      "published": "2026-08-19T08:30:54+08:00",
-      "summary": "iQOO 发布 Neo11 至尊版与 Z11S 两款手机，闪极 Loomos 举行 AI 眼镜发布会推出无显示拍摄眼镜 L1 并预告显示版 S1。",
-      "detail": "iQOO Neo11 至尊版（3399 元起）搭载天玑 9500M、自研电竞芯片 Q2 与 9100mAh 电池，面向游戏性能市场；Z11S（1799 元起）是 iQOO 首款 10000mAh 电池手机。闪极 Loomos 发布 AI 拍摄眼镜 L1（2999 元，摄像头移至镜腿并带物理隐私盖板），并预告双目显示 AI 眼镜 S1（3999 元，2026 年 Q3 上市）。",
-      "priority": 1,
-      "category": "ai",
-      "source": "少数派",
-      "date": "2026-08-19",
-      "image": ""
-    },
-    {
       "id": "news-c853e154b88db588",
       "title": "OpenAI 暂缓前沿模型扩展训练，强化网络安全与对齐保障",
       "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
@@ -4460,6 +4745,20 @@
       "published": "2026-08-18T01:35:02+00:00",
       "image": "",
       "source": "juya AI 日报"
+    },
+    {
+      "id": "news-a8e684f682f9fd2c",
+      "title": "Firefox 154 增加本地网络 WebSocket 权限保护",
+      "url": "https://www.solidot.org/story?sid=85130",
+      "date": "2026-08-18",
+      "published": "2026-08-18T22:49:10+08:00",
+      "summary": "Firefox 154 支持对访问本地网络的 WebSocket 连接请求权限，并加入 Smart Window 标签分组建议和跨平台配置文件备份。",
+      "detail": "Mozilla 此次更新还允许用户在关闭浏览器时保留指定 Cookie 与网站数据，并新增地址栏 AI 快捷操作。候选原文同时提到多项 bug 修复；这些功能已随 Firefox 154 发布，适合关注浏览器隐私与效率工具的用户。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Solidot",
+      "subcategory": "software"
     },
     {
       "id": "news-7ffa4932d78fcba0",
@@ -4490,6 +4789,19 @@
       "subcategory": "software"
     },
     {
+      "id": "news-fb94a8608ef73b65",
+      "title": "苹果据报开发配备摄像头的 AirPods",
+      "url": "https://www.solidot.org/story?sid=85128",
+      "date": "2026-08-18",
+      "published": "2026-08-18T20:51:55+08:00",
+      "summary": "Solidot 援引 macOS Tahoe 26.7 RC 中的视频称，苹果正在开发带摄像头的 AirPods，用于环境识别和 AI 交互。",
+      "detail": "报道所述产品代号为 B790，摄像头可能把环境信息交给 Visual Intelligence，Siri 再回答相关问题或记录信息。候选原文称该项目仍处研发阶段，最早可能在 9 月公布；目前不能据此视为已发布产品。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "Solidot"
+    },
+    {
       "id": "news-fd6418db77ab1d2d",
       "title": "实地研究首次测量数据中心余热对邻近街区的影响",
       "url": "https://asmedigitalcollection.asme.org/sustainablebuildings/article/7/2/024501/1233035/Data-Center-Waste-Heat-as-an-Emerging-Urban",
@@ -4502,33 +4814,6 @@
       "category": "tech",
       "source": "Hacker News",
       "subcategory": "industry"
-    },
-    {
-      "id": "news-a8e684f682f9fd2c",
-      "title": "Firefox 154 增加本地网络 WebSocket 权限保护",
-      "url": "https://www.solidot.org/story?sid=85130",
-      "date": "2026-08-18",
-      "published": "2026-08-18T22:49:10+08:00",
-      "summary": "Firefox 154 支持对访问本地网络的 WebSocket 连接请求权限，并加入 Smart Window 标签分组建议和跨平台配置文件备份。",
-      "detail": "Mozilla 此次更新还允许用户在关闭浏览器时保留指定 Cookie 与网站数据，并新增地址栏 AI 快捷操作。候选原文同时提到多项 bug 修复；这些功能已随 Firefox 154 发布，适合关注浏览器隐私与效率工具的用户。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "Solidot",
-      "subcategory": "software"
-    },
-    {
-      "id": "news-fb94a8608ef73b65",
-      "title": "苹果据报开发配备摄像头的 AirPods",
-      "url": "https://www.solidot.org/story?sid=85128",
-      "date": "2026-08-18",
-      "published": "2026-08-18T20:51:55+08:00",
-      "summary": "Solidot 援引 macOS Tahoe 26.7 RC 中的视频称，苹果正在开发带摄像头的 AirPods，用于环境识别和 AI 交互。",
-      "detail": "报道所述产品代号为 B790，摄像头可能把环境信息交给 Visual Intelligence，Siri 再回答相关问题或记录信息。候选原文称该项目仍处研发阶段，最早可能在 9 月公布；目前不能据此视为已发布产品。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "Solidot"
     },
     {
       "id": "news-31ea38ff133b6a57",
@@ -4904,20 +5189,6 @@
       "source": "Hacker News"
     },
     {
-      "id": "news-d22a4b230d16cc90",
-      "title": "新论文提出 Rust GPU 卸载方案：可移植、安全且高性能",
-      "url": "https://arxiv.org/abs/2608.13759",
-      "date": "2026-08-17",
-      "published": "2026-08-17T17:54:59+00:00",
-      "summary": "arXiv 新论文介绍在 Rust 中实现 GPU 卸载（GPU Offload）的框架，兼顾可移植性、内存安全与性能。",
-      "detail": "论文《GPU Offload in Rust: Portable, Safe, and Fast》（arXiv:2608.13759）探讨如何在 Rust 语言中实现 GPU 卸载计算，利用 Rust 的所有权与借用检查保证内存安全，同时保持跨平台可移植性与接近原生的性能。该话题在 Hacker News 获 146 分讨论，对关注系统编程与异构计算的学生有参考价值。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "software"
-    },
-    {
       "id": "news-9059ce0f588b8f57",
       "title": "少数派派评：Notomo、Framer 3.0 等近期值得关注的 App",
       "url": "https://sspai.com/post/113544",
@@ -4929,6 +5200,20 @@
       "priority": 1,
       "category": "tech",
       "source": "少数派",
+      "subcategory": "software"
+    },
+    {
+      "id": "news-d22a4b230d16cc90",
+      "title": "新论文提出 Rust GPU 卸载方案：可移植、安全且高性能",
+      "url": "https://arxiv.org/abs/2608.13759",
+      "date": "2026-08-17",
+      "published": "2026-08-17T17:54:59+00:00",
+      "summary": "arXiv 新论文介绍在 Rust 中实现 GPU 卸载（GPU Offload）的框架，兼顾可移植性、内存安全与性能。",
+      "detail": "论文《GPU Offload in Rust: Portable, Safe, and Fast》（arXiv:2608.13759）探讨如何在 Rust 语言中实现 GPU 卸载计算，利用 Rust 的所有权与借用检查保证内存安全，同时保持跨平台可移植性与接近原生的性能。该话题在 Hacker News 获 146 分讨论，对关注系统编程与异构计算的学生有参考价值。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "Hacker News",
       "subcategory": "software"
     },
     {
@@ -5093,6 +5378,19 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-d1443ad2ef70db22",
+      "title": "欧洲创纪录热浪致死约 2.5 万人，河流干涸扰乱航运",
+      "url": "https://www.solidot.org/story?sid=85107",
+      "date": "2026-08-16",
+      "published": "2026-08-16T23:52:05+08:00",
+      "summary": "欧盟哥白尼机构确认，今年 6-7 月西欧创纪录热浪导致约 2.5 万人死亡，河流干涸令商船减载最多 80%，二战军舰残骸重现。",
+      "detail": "欧盟哥白尼气候监测服务机构证实，6 月和 7 月是西欧有记录以来最热的月份，约 25000 人死于高温相关疾病。热浪导致欧洲河流大范围干涸，商船不得不减少多达 80% 的载货量以避免搁浅，扰乱了供应链并推高运输成本。水位下降还让二战期间沉没的几十艘纳粹军舰重新浮出水面。这是欧洲气候危机的最新警示信号。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot"
+    },
+    {
       "id": "news-de43df369aba60ea",
       "title": "MathCode：把自然语言数学题自动转为 Lean 4 形式化证明",
       "url": "https://math-ai-org.github.io/mathcode/",
@@ -5105,19 +5403,6 @@
       "category": "tech",
       "source": "Hacker News",
       "subcategory": "ai-frontier"
-    },
-    {
-      "id": "news-d1443ad2ef70db22",
-      "title": "欧洲创纪录热浪致死约 2.5 万人，河流干涸扰乱航运",
-      "url": "https://www.solidot.org/story?sid=85107",
-      "date": "2026-08-16",
-      "published": "2026-08-16T23:52:05+08:00",
-      "summary": "欧盟哥白尼机构确认，今年 6-7 月西欧创纪录热浪导致约 2.5 万人死亡，河流干涸令商船减载最多 80%，二战军舰残骸重现。",
-      "detail": "欧盟哥白尼气候监测服务机构证实，6 月和 7 月是西欧有记录以来最热的月份，约 25000 人死于高温相关疾病。热浪导致欧洲河流大范围干涸，商船不得不减少多达 80% 的载货量以避免搁浅，扰乱了供应链并推高运输成本。水位下降还让二战期间沉没的几十艘纳粹军舰重新浮出水面。这是欧洲气候危机的最新警示信号。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "Solidot"
     },
     {
       "id": "news-60584bd1c5489ac8",
@@ -5308,34 +5593,6 @@
       "source": "juya AI 日报"
     },
     {
-      "id": "news-774d2175cea236f3",
-      "title": "Firefox 成唯一仍支持 uBlock Origin 的主流浏览器",
-      "url": "https://www.pcworld.com/article/3212428/firefox-is-now-the-last-major-browser-that-still-supports-ublock-origin.html",
-      "date": "2026-08-14",
-      "published": "2026-08-14T19:03:20+00:00",
-      "summary": "微软 Edge 即将随 Manifest V3 淘汰 uBlock Origin，Mozilla 表态继续支持，Firefox 成为唯一完整支持该广告拦截扩展的主流浏览器。",
-      "detail": "微软 Edge 即将跟进 Chrome 的 Manifest V3 迁移，uBlock Origin 等基于 Manifest V2 架构的扩展将失去拦截网页和视频广告所需的能力。Mozilla 官方在社交平台表示“对 uBlock Origin 的支持不会改变”，Firefox 因此成为唯一仍完整支持 uBlock Origin 的主流浏览器；Safari 与 DuckDuckGo 等其他非 Chromium 浏览器同样不支持。其他浏览器用户只能使用功能较弱的 uBlock Origin Lite 或内置广告拦截。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "software",
-      "source": "Hacker News"
-    },
-    {
-      "id": "news-4651b5abaff6857d",
-      "title": "Google 开源 HEIR 编译器，让同态加密 AI 推理走向实用",
-      "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
-      "date": "2026-08-14",
-      "published": "2026-08-14T15:43:10+00:00",
-      "summary": "Google 发布开源编译器 HEIR，可将预训练 AI 模型转换为直接在加密数据上推理的版本，让“看不到数据”的私密 AI 走向实用。",
-      "detail": "Google 发布 HEIR（同态加密中间表示）开源编译器，能把预训练 AI 模型转换成对加密输入直接推理的形式：服务器处理密文并返回加密结果，全程看不到用户原始数据，却能提供内容推荐、垃圾检测等依赖数据的服务。同态加密过去成本高昂、需要密码学专家手工改造程序；Google 正与多家硬件加速器公司合作降低延迟，并已展示四类私密推理应用，目标是把 HEIR 做成非专家也能一键使用的方案，服务医疗、金融等强隐私监管场景。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "ai-frontier",
-      "source": "Hacker News"
-    },
-    {
       "id": "news-8a898165ceb8c713",
       "title": "天文学家发现黑洞恒星",
       "url": "https://www.solidot.org/story?sid=85099",
@@ -5350,6 +5607,20 @@
       "source": "Solidot"
     },
     {
+      "id": "news-774d2175cea236f3",
+      "title": "Firefox 成唯一仍支持 uBlock Origin 的主流浏览器",
+      "url": "https://www.pcworld.com/article/3212428/firefox-is-now-the-last-major-browser-that-still-supports-ublock-origin.html",
+      "date": "2026-08-14",
+      "published": "2026-08-14T19:03:20+00:00",
+      "summary": "微软 Edge 即将随 Manifest V3 淘汰 uBlock Origin，Mozilla 表态继续支持，Firefox 成为唯一完整支持该广告拦截扩展的主流浏览器。",
+      "detail": "微软 Edge 即将跟进 Chrome 的 Manifest V3 迁移，uBlock Origin 等基于 Manifest V2 架构的扩展将失去拦截网页和视频广告所需的能力。Mozilla 官方在社交平台表示“对 uBlock Origin 的支持不会改变”，Firefox 因此成为唯一仍完整支持 uBlock Origin 的主流浏览器；Safari 与 DuckDuckGo 等其他非 Chromium 浏览器同样不支持。其他浏览器用户只能使用功能较弱的 uBlock Origin Lite 或内置广告拦截。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "Hacker News"
+    },
+    {
       "id": "news-8888c21fb76d6521",
       "title": "长鑫市值超越腾讯",
       "url": "https://www.solidot.org/story?sid=85098",
@@ -5362,6 +5633,20 @@
       "category": "tech",
       "subcategory": "hardware",
       "source": "Solidot"
+    },
+    {
+      "id": "news-4651b5abaff6857d",
+      "title": "Google 开源 HEIR 编译器，让同态加密 AI 推理走向实用",
+      "url": "https://blog.google/security/how-google-is-making-private-ai-practical-with-homomorphic-encryption/",
+      "date": "2026-08-14",
+      "published": "2026-08-14T15:43:10+00:00",
+      "summary": "Google 发布开源编译器 HEIR，可将预训练 AI 模型转换为直接在加密数据上推理的版本，让“看不到数据”的私密 AI 走向实用。",
+      "detail": "Google 发布 HEIR（同态加密中间表示）开源编译器，能把预训练 AI 模型转换成对加密输入直接推理的形式：服务器处理密文并返回加密结果，全程看不到用户原始数据，却能提供内容推荐、垃圾检测等依赖数据的服务。同态加密过去成本高昂、需要密码学专家手工改造程序；Google 正与多家硬件加速器公司合作降低延迟，并已展示四类私密推理应用，目标是把 HEIR 做成非专家也能一键使用的方案，服务医疗、金融等强隐私监管场景。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "Hacker News"
     },
     {
       "id": "news-34494165f72aa5f8",
@@ -5485,6 +5770,19 @@
       "subcategory": "industry"
     },
     {
+      "id": "news-3f2bb2cab24197d3",
+      "title": "小米 17 Ultra 手机相机错将太阳误认为是月亮",
+      "url": "https://www.solidot.org/story?sid=85097",
+      "date": "2026-08-14",
+      "published": "2026-08-14T17:23:20+08:00",
+      "summary": "欧洲日全食期间，小米 17 Ultra 相机把橙红色太阳拍出月亮的山脊与陨石坑效果——AI 算法把太阳误识别成了月亮。",
+      "detail": "2026 年 8 月 12 日欧洲大陆经历数十年来首次日全食，有用户用小米 17 Ultra 拍摄日全食照片时发现异常：照片里橙红色的太阳上出现了月亮照片中常见的山脊、陨石坑和线条——相机将太阳误认为是月亮。小米相机显然利用了 AI 技术对拍摄对象进行识别与增强，却在此场景下把圆形天体错认成了月亮。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot"
+    },
+    {
       "id": "news-b55717203ecdacc3",
       "title": "Claude Code 官方指南：高效会话的省钱技巧",
       "url": "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions",
@@ -5524,19 +5822,6 @@
       "category": "tech",
       "subcategory": "ai-frontier",
       "source": "Hacker News"
-    },
-    {
-      "id": "news-3f2bb2cab24197d3",
-      "title": "小米 17 Ultra 手机相机错将太阳误认为是月亮",
-      "url": "https://www.solidot.org/story?sid=85097",
-      "date": "2026-08-14",
-      "published": "2026-08-14T17:23:20+08:00",
-      "summary": "欧洲日全食期间，小米 17 Ultra 相机把橙红色太阳拍出月亮的山脊与陨石坑效果——AI 算法把太阳误识别成了月亮。",
-      "detail": "2026 年 8 月 12 日欧洲大陆经历数十年来首次日全食，有用户用小米 17 Ultra 拍摄日全食照片时发现异常：照片里橙红色的太阳上出现了月亮照片中常见的山脊、陨石坑和线条——相机将太阳误认为是月亮。小米相机显然利用了 AI 技术对拍摄对象进行识别与增强，却在此场景下把圆形天体错认成了月亮。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "Solidot"
     },
     {
       "id": "news-ccd4b2e342376f77",
@@ -6248,6 +6533,19 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-bc73d659446023ce",
+      "title": "科技公司高管称 AI 将减少工作时间，实际却增加了员工工时",
+      "url": "https://www.solidot.org/story?sid=85065",
+      "date": "2026-08-11",
+      "published": "2026-08-11T23:20:06+08:00",
+      "summary": "多家科技公司曾宣称 AI 将推动四天工作制，但前 OpenAI 员工透露公司从未试行，员工每周工作常超 70 小时。",
+      "detail": "四年前 Google 工程总监称 AI 将在 2025 年推动企业实行四天工作制，OpenAI 今年也鼓励企业试行。但前员工称 OpenAI 工作文化令人精疲力竭，冲刺开发期一周工作时长甚至超过 90 小时，同事会被突然解雇。一名现 AI 初创员工表示每周仍需工作 50-60 小时，仅比 OpenAI 略好。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "Solidot"
+    },
+    {
       "id": "news-4adf08a9c1e1f48a",
       "title": "腾讯混元发布 WorldClaw：一句话生成可探索编辑的 3D 开放世界",
       "url": "https://tencent-hunyuan.github.io/Hunyuan3D-WorldClaw/",
@@ -6287,19 +6585,6 @@
       "priority": 2,
       "category": "ai",
       "source": "Hacker News"
-    },
-    {
-      "id": "news-bc73d659446023ce",
-      "title": "科技公司高管称 AI 将减少工作时间，实际却增加了员工工时",
-      "url": "https://www.solidot.org/story?sid=85065",
-      "date": "2026-08-11",
-      "published": "2026-08-11T23:20:06+08:00",
-      "summary": "多家科技公司曾宣称 AI 将推动四天工作制，但前 OpenAI 员工透露公司从未试行，员工每周工作常超 70 小时。",
-      "detail": "四年前 Google 工程总监称 AI 将在 2025 年推动企业实行四天工作制，OpenAI 今年也鼓励企业试行。但前员工称 OpenAI 工作文化令人精疲力竭，冲刺开发期一周工作时长甚至超过 90 小时，同事会被突然解雇。一名现 AI 初创员工表示每周仍需工作 50-60 小时，仅比 OpenAI 略好。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "Solidot"
     },
     {
       "id": "news-e16c531acb9a4a6e",
@@ -6666,19 +6951,6 @@
       "source": "juya AI 日报"
     },
     {
-      "id": "news-d78ddb037f86d3be",
-      "title": "Needle2：14MB 端侧智能体大模型",
-      "url": "https://cactuscompute.com/needle",
-      "date": "2026-08-10",
-      "published": "2026-08-10T17:22:07+00:00",
-      "summary": "Cactus Compute 发布 Needle2，一个仅 14MB 的端侧智能体大模型，面向手机、可穿戴设备、智能家居和机器人等微型设备。",
-      "detail": "Cactus Compute 推出的 Needle2 是一个 14MB 的 agentic LLM，支持工具调用、设备使用和结构化抽取，面向手机、可穿戴设备、智能家居、小型机器人等资源受限设备。模型尺寸极小，可在本地离线运行，为端侧 AI 应用提供轻量级智能体能力，代表了小模型在边缘设备上的最新进展。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "Hacker News"
-    },
-    {
       "id": "news-78b88869baa371b8",
       "title": "Meta 推出 300 亿参数开放权重模型 Muse Glimmer",
       "url": "https://www.solidot.org/story?sid=85054",
@@ -6704,6 +6976,19 @@
       "category": "tech",
       "source": "Solidot",
       "subcategory": "hardware"
+    },
+    {
+      "id": "news-d78ddb037f86d3be",
+      "title": "Needle2：14MB 端侧智能体大模型",
+      "url": "https://cactuscompute.com/needle",
+      "date": "2026-08-10",
+      "published": "2026-08-10T17:22:07+00:00",
+      "summary": "Cactus Compute 发布 Needle2，一个仅 14MB 的端侧智能体大模型，面向手机、可穿戴设备、智能家居和机器人等微型设备。",
+      "detail": "Cactus Compute 推出的 Needle2 是一个 14MB 的 agentic LLM，支持工具调用、设备使用和结构化抽取，面向手机、可穿戴设备、智能家居、小型机器人等资源受限设备。模型尺寸极小，可在本地离线运行，为端侧 AI 应用提供轻量级智能体能力，代表了小模型在边缘设备上的最新进展。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "Hacker News"
     },
     {
       "id": "news-d3a3ca930b6c1ab2",
@@ -6789,20 +7074,6 @@
       "subcategory": "software"
     },
     {
-      "id": "news-cb50b854f2a8ddb1",
-      "title": "研究：一条超长中断即可攻破 CPU 系统管理模式",
-      "url": "https://github.com/xoreaxeaxeax/smiiiiiiiiiiiiiiii",
-      "date": "2026-08-10",
-      "published": "2026-08-10T16:03:14+00:00",
-      "summary": "知名安全研究员 Christopher Domas 开源研究项目，展示仅用一条运行时间极长的机器指令即可攻破 x86 CPU 中最高特权的系统管理模式（SMM）。",
-      "detail": "安全研究员 Christopher Domas（xoreaxeaxeax）发布开源项目 smiiiiiiiiiiiiiiii，展示可以用一条超长运行的机器指令攻破 SMM——x86 CPU 后台运行的最高特权执行环境。项目通过定时 MMIO 读取观察 SMI 计数变化实现漏洞利用，附带示例代码，对理解 CPU 底层安全机制具有研究价值。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "software"
-    },
-    {
       "id": "news-03f364a65513d1cb",
       "title": "果糖会帮助癌细胞扩散",
       "url": "https://www.solidot.org/story?sid=85048",
@@ -6816,17 +7087,18 @@
       "source": "Solidot"
     },
     {
-      "id": "news-be1e850a10de6682",
-      "title": "消息称 Hassabis 原想离职被挽留转任 DeepMind 董事长",
-      "url": "https://daily.juya.uk/issues/2026-08-10/",
+      "id": "news-cb50b854f2a8ddb1",
+      "title": "研究：一条超长中断即可攻破 CPU 系统管理模式",
+      "url": "https://github.com/xoreaxeaxeax/smiiiiiiiiiiiiiiii",
       "date": "2026-08-10",
-      "published": "2026-08-10T01:33:07+00:00",
-      "summary": "消息称 Google DeepMind 前 CEO Hassabis 原想与 Jeff Dean 同时离职，被管理层挽留暂任董事长，说法尚未获官方确认。",
-      "detail": "据 Pathfounders 援引行业消息人士称，Google DeepMind 前 CEO Demis Hassabis 原本希望与 Jeff Dean 同时离职，但 Google 管理层担忧消息导致股价暴跌，说服其暂任 DeepMind 董事长，待局势稳定后再体面退出。Pathfounders 预测 Hassabis 将在一年内离开 Google，该说法尚未获得官方确认。",
+      "published": "2026-08-10T16:03:14+00:00",
+      "summary": "知名安全研究员 Christopher Domas 开源研究项目，展示仅用一条运行时间极长的机器指令即可攻破 x86 CPU 中最高特权的系统管理模式（SMM）。",
+      "detail": "安全研究员 Christopher Domas（xoreaxeaxeax）发布开源项目 smiiiiiiiiiiiiiiii，展示可以用一条超长运行的机器指令攻破 SMM——x86 CPU 后台运行的最高特权执行环境。项目通过定时 MMIO 读取观察 SMI 计数变化实现漏洞利用，附带示例代码，对理解 CPU 底层安全机制具有研究价值。",
       "image": "",
       "priority": 1,
-      "category": "ai",
-      "source": "juya AI 日报"
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "software"
     },
     {
       "id": "news-2b32908c5d0bbd44",
@@ -6842,18 +7114,17 @@
       "source": "少数派"
     },
     {
-      "id": "news-732fc92af12de4cf",
-      "title": "OpenChamber：开源的智能体开发环境，支持多模型并行与定时任务",
-      "url": "https://openchamber.dev/",
-      "date": "2026-08-09",
-      "published": "2026-08-09T17:27:16+00:00",
-      "summary": "开源智能体开发环境 OpenChamber 发布，基于 OpenCode SDK 构建：可设\"会话目标\"让代理持续工作、同一任务并行跑最多 5 个模型并融合最佳结果，支持从 GitHub issue 直达 PR、定时任务等，桌面、浏览器、手机与 VS Code 间同步。",
-      "detail": "OpenChamber 定位为面向 AI 编程的智能体开发环境（ADE），核心功能包括：Session Goals（设定完成目标后代理可连续多轮工作，应用关闭也继续）、Multi-run 与 Fusion（最多 5 个模型并行执行并融合最强部分）、代码变更分步讲解、以及浏览器/手机远程访问（可用密码门控）。项目开源免费，官方承诺代码与会话数据不离开本机，远程连接走端到端加密的 Private Relay。",
+      "id": "news-be1e850a10de6682",
+      "title": "消息称 Hassabis 原想离职被挽留转任 DeepMind 董事长",
+      "url": "https://daily.juya.uk/issues/2026-08-10/",
+      "date": "2026-08-10",
+      "published": "2026-08-10T01:33:07+00:00",
+      "summary": "消息称 Google DeepMind 前 CEO Hassabis 原想与 Jeff Dean 同时离职，被管理层挽留暂任董事长，说法尚未获官方确认。",
+      "detail": "据 Pathfounders 援引行业消息人士称，Google DeepMind 前 CEO Demis Hassabis 原本希望与 Jeff Dean 同时离职，但 Google 管理层担忧消息导致股价暴跌，说服其暂任 DeepMind 董事长，待局势稳定后再体面退出。Pathfounders 预测 Hassabis 将在一年内离开 Google，该说法尚未获得官方确认。",
       "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "software"
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
     },
     {
       "id": "news-5955ae7324dcb5f4",
@@ -6868,6 +7139,20 @@
       "category": "tech",
       "source": "Solidot",
       "subcategory": "industry"
+    },
+    {
+      "id": "news-732fc92af12de4cf",
+      "title": "OpenChamber：开源的智能体开发环境，支持多模型并行与定时任务",
+      "url": "https://openchamber.dev/",
+      "date": "2026-08-09",
+      "published": "2026-08-09T17:27:16+00:00",
+      "summary": "开源智能体开发环境 OpenChamber 发布，基于 OpenCode SDK 构建：可设\"会话目标\"让代理持续工作、同一任务并行跑最多 5 个模型并融合最佳结果，支持从 GitHub issue 直达 PR、定时任务等，桌面、浏览器、手机与 VS Code 间同步。",
+      "detail": "OpenChamber 定位为面向 AI 编程的智能体开发环境（ADE），核心功能包括：Session Goals（设定完成目标后代理可连续多轮工作，应用关闭也继续）、Multi-run 与 Fusion（最多 5 个模型并行执行并融合最强部分）、代码变更分步讲解、以及浏览器/手机远程访问（可用密码门控）。项目开源免费，官方承诺代码与会话数据不离开本机，远程连接走端到端加密的 Private Relay。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "software"
     },
     {
       "id": "news-5ff38009cd94ffd4",
@@ -7685,46 +7970,6 @@
       "source": "juya AI 日报"
     },
     {
-      "id": "news-f16064fcd5d50004",
-      "title": "国际刑警组织：AI 已驱动非洲过半网络犯罪",
-      "url": "https://www.africanews.com/2026/08/04/ai-fuels-more-than-half-of-cybercrime-in-africa-as-digital-scams-surge-interpol/",
-      "date": "2026-08-04",
-      "published": "2026-08-04T22:01:41+00:00",
-      "summary": "国际刑警组织报告称，AI 驱动的网络犯罪已占非洲网络犯罪一半以上，数字诈骗激增。",
-      "detail": "据国际刑警组织（Interpol）报告，随着生成式 AI 工具普及，非洲的网络犯罪中超过一半由 AI 驱动，数字诈骗活动激增。AI 降低了钓鱼攻击、深度伪造等犯罪手法的门槛，使大规模诈骗更容易实施。报告呼吁各国加强执法协作与公众防范意识。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "Hacker News"
-    },
-    {
-      "id": "news-7051863812fcfa1e",
-      "title": "OpenAI 披露第三方网络评估事件，强调测试环境标准升级",
-      "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/",
-      "date": "2026-08-04",
-      "published": "2026-08-04T21:14:19+00:00",
-      "summary": "OpenAI 披露近期第三方网络安全评估中，测试配置与模型能力叠加导致活动超出预定测试边界，呼吁行业升级评估环境标准。",
-      "detail": "OpenAI 发文说明，在近期两次由外部测试方参与的网络安全评估中，测试配置和控制与新一代模型能力叠加，使模型活动超出了预期测试边界。OpenAI 强调第三方独立测试对部署前风险验证的重要性，并呼吁行业协作升级测试环境与流程标准。文章注明该事件与 Hugging Face 安全事件无关。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "Hacker News"
-    },
-    {
-      "id": "news-d449a9e343112918",
-      "title": "Oxide Computer 完成 4.45 亿美元融资",
-      "url": "https://www.sec.gov/Archives/edgar/data/1795071/000179507126000002/xslFormDX01/primary_doc.xml",
-      "date": "2026-08-04",
-      "published": "2026-08-04T20:13:40+00:00",
-      "summary": "主打开源可破解机架级服务器的硬件公司 Oxide Computer 通过 SEC Form D 披露完成 4.45 亿美元融资。",
-      "detail": "Oxide Computer 是一家聚焦机架级（Rack-scale）基础设施的硬件创业公司，主张开源、可破解的服务器与云基础设施，创始团队包括前 Joyent CTO Bryan Cantrill。据 SEC Form D 文件，公司于 8 月 4 日提交文件披露本次 4.45 亿美元融资。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "hardware"
-    },
-    {
       "id": "news-6247e8c92bb92455",
       "title": "\"车企牌\"电池相继上车，与宁德时代相持竞争",
       "url": "https://36kr.com/p/3925382191708552?f=rss",
@@ -7753,6 +7998,32 @@
       "subcategory": "hardware"
     },
     {
+      "id": "news-f16064fcd5d50004",
+      "title": "国际刑警组织：AI 已驱动非洲过半网络犯罪",
+      "url": "https://www.africanews.com/2026/08/04/ai-fuels-more-than-half-of-cybercrime-in-africa-as-digital-scams-surge-interpol/",
+      "date": "2026-08-04",
+      "published": "2026-08-04T22:01:41+00:00",
+      "summary": "国际刑警组织报告称，AI 驱动的网络犯罪已占非洲网络犯罪一半以上，数字诈骗激增。",
+      "detail": "据国际刑警组织（Interpol）报告，随着生成式 AI 工具普及，非洲的网络犯罪中超过一半由 AI 驱动，数字诈骗活动激增。AI 降低了钓鱼攻击、深度伪造等犯罪手法的门槛，使大规模诈骗更容易实施。报告呼吁各国加强执法协作与公众防范意识。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-7051863812fcfa1e",
+      "title": "OpenAI 披露第三方网络评估事件，强调测试环境标准升级",
+      "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/",
+      "date": "2026-08-04",
+      "published": "2026-08-04T21:14:19+00:00",
+      "summary": "OpenAI 披露近期第三方网络安全评估中，测试配置与模型能力叠加导致活动超出预定测试边界，呼吁行业升级评估环境标准。",
+      "detail": "OpenAI 发文说明，在近期两次由外部测试方参与的网络安全评估中，测试配置和控制与新一代模型能力叠加，使模型活动超出了预期测试边界。OpenAI 强调第三方独立测试对部署前风险验证的重要性，并呼吁行业协作升级测试环境与流程标准。文章注明该事件与 Hugging Face 安全事件无关。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
       "id": "news-d37ce24b4d177620",
       "title": "FFmpeg 9.0 释出",
       "url": "https://www.solidot.org/story?sid=85005",
@@ -7765,6 +8036,20 @@
       "category": "tech",
       "source": "Solidot",
       "subcategory": "software"
+    },
+    {
+      "id": "news-d449a9e343112918",
+      "title": "Oxide Computer 完成 4.45 亿美元融资",
+      "url": "https://www.sec.gov/Archives/edgar/data/1795071/000179507126000002/xslFormDX01/primary_doc.xml",
+      "date": "2026-08-04",
+      "published": "2026-08-04T20:13:40+00:00",
+      "summary": "主打开源可破解机架级服务器的硬件公司 Oxide Computer 通过 SEC Form D 披露完成 4.45 亿美元融资。",
+      "detail": "Oxide Computer 是一家聚焦机架级（Rack-scale）基础设施的硬件创业公司，主张开源、可破解的服务器与云基础设施，创始团队包括前 Joyent CTO Bryan Cantrill。据 SEC Form D 文件，公司于 8 月 4 日提交文件披露本次 4.45 亿美元融资。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "hardware"
     },
     {
       "id": "news-0c0743d04300c0ba",
@@ -8070,6 +8355,19 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-31d40b6e7f8f978a",
+      "title": "奇点逃逸完成千万级种子轮融资，研发 AI 原生团队协作系统 Nexus",
+      "url": "https://36kr.com/p/3919025939246727",
+      "published": "2026-08-03T08:10:16+08:00",
+      "source": "36氪",
+      "category": "ai",
+      "priority": 2,
+      "summary": "清华博士薛传奕创办的奇点逃逸获星连资本与水木创投领投的千万级种子轮融资，正在研发 AI 原生团队协作操作系统 Nexus。",
+      "detail": "Nexus 以组织状态而非单次对话为出发点，让人、Agent、任务、知识和工具基于同一份状态持续协作，并通过真实任务反馈驱动 Agent 自进化：协作产生反馈，独立评测筛选改进，经治理机制决定采用或回滚。薛传奕认为 Agent 能力提升后新的瓶颈是协作断层——各自拥有完整上下文的 Agent 难以合并工作，Nexus 希望成为 AI 时代的组织基础设施。",
+      "date": "2026-08-03",
+      "image": ""
+    },
+    {
       "id": "news-14f40e0e40551bd1",
       "title": "Karpathy 用 Opus 5 测试 3D 世界生成，指出 LLM 世界建模仍有短板",
       "url": "https://x.com/karpathy/status/2083749667410727319",
@@ -8082,19 +8380,6 @@
       "category": "tech",
       "subcategory": "ai-frontier",
       "source": "juya AI 日报"
-    },
-    {
-      "id": "news-31d40b6e7f8f978a",
-      "title": "奇点逃逸完成千万级种子轮融资，研发 AI 原生团队协作系统 Nexus",
-      "url": "https://36kr.com/p/3919025939246727",
-      "published": "2026-08-03T08:10:16+08:00",
-      "source": "36氪",
-      "category": "ai",
-      "priority": 2,
-      "summary": "清华博士薛传奕创办的奇点逃逸获星连资本与水木创投领投的千万级种子轮融资，正在研发 AI 原生团队协作操作系统 Nexus。",
-      "detail": "Nexus 以组织状态而非单次对话为出发点，让人、Agent、任务、知识和工具基于同一份状态持续协作，并通过真实任务反馈驱动 Agent 自进化：协作产生反馈，独立评测筛选改进，经治理机制决定采用或回滚。薛传奕认为 Agent 能力提升后新的瓶颈是协作断层——各自拥有完整上下文的 Agent 难以合并工作，Nexus 希望成为 AI 时代的组织基础设施。",
-      "date": "2026-08-03",
-      "image": ""
     },
     {
       "id": "news-f06e0d22b0adef59",
@@ -8111,19 +8396,6 @@
       "image": ""
     },
     {
-      "id": "news-d72886bf69826754",
-      "title": "前谷歌团队成员称谷歌曾在 ChatGPT 前开发类似产品 LMChat",
-      "url": "https://x.com/thsottiaux/status/2083596911060324570",
-      "date": "2026-08-03",
-      "published": "2026-08-03T01:18:49+00:00",
-      "summary": "Codex 负责人 Tibo 透露，谷歌在 ChatGPT 发布约一年前已开发出类似产品 LMChat，但因担忧冲击搜索业务未予发布。",
-      "detail": "Codex 负责人 Tibo 在回复网友时表示，谷歌在 ChatGPT 发布约一年前就已开发出类似产品，最初代号 LMChat，后改用另一代号，他本人曾在该团队工作。Tibo 称谷歌因担忧该产品冲击搜索业务而选择不发布，DeepMind 也曾被阻止推出可能颠覆谷歌的产品。此前有网友援引 Jeff Dean 采访称，谷歌在 ChatGPT 之前已有内部聊天机器人。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "juya AI 日报"
-    },
-    {
       "id": "news-ad10852663cd9f6b",
       "title": "QFII 二季度调仓呈现头部化，外资机构看好中国 AI 产业链",
       "url": "https://36kr.com/newsflashes/3923064316407170",
@@ -8135,6 +8407,19 @@
       "detail": "据证券日报报道，今年二季度外资积极布局 A 股，沪深港通北向资金持仓市值首次突破 3 万亿元人民币。彭博行业研究资深股票策略师陈明康表示中国股市上涨动能有望延续，AI 产业链机遇叠加人民币汇率韧性，提升了外资对 A 股的配置需求。QFII 调仓呈现向头部标的集中的特征。",
       "date": "2026-08-03",
       "image": ""
+    },
+    {
+      "id": "news-d72886bf69826754",
+      "title": "前谷歌团队成员称谷歌曾在 ChatGPT 前开发类似产品 LMChat",
+      "url": "https://x.com/thsottiaux/status/2083596911060324570",
+      "date": "2026-08-03",
+      "published": "2026-08-03T01:18:49+00:00",
+      "summary": "Codex 负责人 Tibo 透露，谷歌在 ChatGPT 发布约一年前已开发出类似产品 LMChat，但因担忧冲击搜索业务未予发布。",
+      "detail": "Codex 负责人 Tibo 在回复网友时表示，谷歌在 ChatGPT 发布约一年前就已开发出类似产品，最初代号 LMChat，后改用另一代号，他本人曾在该团队工作。Tibo 称谷歌因担忧该产品冲击搜索业务而选择不发布，DeepMind 也曾被阻止推出可能颠覆谷歌的产品。此前有网友援引 Jeff Dean 采访称，谷歌在 ChatGPT 之前已有内部聊天机器人。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
     },
     {
       "id": "news-6ad01552d04968d7",
@@ -8223,242 +8508,6 @@
       "category": "ai",
       "source": "juya AI 日报",
       "date": "2026-08-02"
-    },
-    {
-      "id": "news-f1084f2ebe0fff52",
-      "title": "DeepSeek-V4-Flash 正式版 API 上线公测",
-      "url": "https://daily.juya.uk/issues/2026-08-01/",
-      "published": "2026-08-01T01:19:13+00:00",
-      "summary": "DeepSeek 发布 V4-Flash 正式版（0731），仅重新后训练，Agent 能力大幅提升，多项基准远超 V4-Pro-Preview，原生支持 Responses API 并适配 Codex。",
-      "detail": "DeepSeek-V4-Flash-0731 正式版上线公测，模型结构与预览版一致，仅重新进行后训练。在多项 Agent 基准测试中大幅超越 V4-Pro-Preview，Code Agent 任务使用 DeepSeek Harness 极简模式测试。该模型原生支持 Responses API 并适配 Codex，模型权重已在相关平台开放。官方表示 DeepSeek-V4-Pro 正式版也将尽快发布。目前仅 API 端更新，App 和网页端模型不变。",
-      "priority": 4,
-      "category": "ai",
-      "source": "juya AI 日报",
-      "image": "",
-      "date": "2026-08-01"
-    },
-    {
-      "id": "news-eea4a61979b770a9",
-      "title": "LG AI 研究院发布开源模型 K-EXAONE 2.0，总参数 7500 亿",
-      "url": "https://daily.juya.uk/issues/2026-08-01/",
-      "published": "2026-08-01T01:19:13+00:00",
-      "summary": "LG AI 研究院发布 K-EXAONE 2.0 开源模型，采用 MoE 架构，总参数 7500 亿、激活参数 370 亿，支持投机解码加速 3-5 倍，覆盖十种语言。",
-      "detail": "K-EXAONE 2.0 是韩国主权 AI 基金项目下的第二代产品，采用混合注意力 MoE 架构，总参数达 7500 亿，激活参数 370 亿，规模为初代三倍以上。模型支持多标记预测和 DSpark 两种投机解码方法，可加速生成约 3-5 倍，多语言覆盖从六种扩展至十种。采用 Apache 2.0 许可证完全开源，官方基准显示其在长上下文检索和安全性方面优于多款主流开源模型。",
-      "priority": 3,
-      "category": "ai",
-      "source": "juya AI 日报",
-      "image": "",
-      "date": "2026-08-01"
-    },
-    {
-      "id": "news-b90277d5c0dd9e6b",
-      "title": "华为开源 openPangu-2.0-Pro 模型，总参数达 5050 亿",
-      "url": "https://daily.juya.uk/issues/2026-08-01/",
-      "published": "2026-08-01T01:19:13+00:00",
-      "summary": "华为基于昇腾 NPU 训练的 openPangu-2.0-Pro 正式开源，总参数约 5050 亿、激活参数 180 亿，支持 512K 上下文，采用 DSA+SWA 混合架构。",
-      "detail": "华为开源基于昇腾 NPU 训练的大规模混合专家模型 openPangu-2.0-Pro，总参数约 5050 亿，激活参数约 180 亿，支持 512K 上下文长度，采用 DSA+SWA 独立分层混合架构与 Muon 优化器。技术报告包含 Thinking 和 Non-Thinking 两种模式的测评数据。官方称模型在通用能力和逻辑推理方面表现优异，但承认在复杂软件工程任务上仍与顶尖模型存在差距。",
-      "priority": 3,
-      "category": "ai",
-      "source": "juya AI 日报",
-      "image": "",
-      "date": "2026-08-01"
-    },
-    {
-      "id": "news-94062aaa8dfd6b85",
-      "title": "OpenAI 公布数学与理论计算机科学十项进展",
-      "url": "https://openai.com/index/ten-advances-in-mathematics/",
-      "date": "2026-08-01",
-      "published": "2026-08-01T07:37:44+00:00",
-      "summary": "OpenAI公布其内部模型在数学与理论计算机科学领域解决的十个长期未解难题，涵盖高维几何、编码理论、格密码等方向。",
-      "detail": "OpenAI发布文章，介绍其内部版本Astra模型在数学与理论计算机科学领域取得的十项进展，涉及高维几何、编码理论、算术电路复杂度、群论、算子代数、量子复杂度、格密码与极值组合等方向。这些问题公开至少十年且主线长期无进展。OpenAI称求解这些问题的总token成本按Sol API价格计约2000美元，并为每个解提供了Lean形式化证明与模型思考过程的叙述。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "ai-frontier",
-      "source": "Hacker News"
-    },
-    {
-      "id": "news-987216fd53ad377f",
-      "title": "部分美国企业改用中国大模型以降低成本",
-      "url": "https://36kr.com/newsflashes/3920583026929281?f=rss",
-      "date": "2026-08-01",
-      "published": "2026-08-01T15:30:11+08:00",
-      "summary": "外媒报道称部分美国企业开始转向使用中国大模型以降低成本，加密货币交易所Coinbase表示正在切换。",
-      "detail": "据《华尔街日报》等媒体报道，随着中国大模型崛起，部分美国大型企业开始改用中国大模型以降低调用成本。报道提到月之暗面新一代开源模型Kimi K3震动市场，马斯克也称赞其表现。加密货币交易所Coinbase表示正在转向使用中国人工智能模型。此前OpenRouter数据显示近五成美国公司已调用中国AI模型。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "36氪"
-    },
-    {
-      "id": "news-bf49de51d1b2c74c",
-      "title": "微软开源可视化语言 Flint：让 AI 可靠地生成图表",
-      "url": "https://microsoft.github.io/flint-chart/",
-      "date": "2026-08-01",
-      "published": "2026-08-01T02:45:09+00:00",
-      "summary": "微软研究院开源可视化中间语言Flint，让AI代理能从简洁的图表规格可靠生成50种类型的图表。",
-      "detail": "微软研究院开源了可视化中间语言Flint，目标让AI代理可靠地生成美观图表。Flint用语义类型描述数据字段含义，编译器自动推导刻度、坐标轴、配色等底层配置，避免冗长的低层参数。它支持50种图表类型，可渲染到Vega-Lite、ECharts、Chart.js、Plotly和Excel五种后端，并提供了MCP服务器供AI代理调用。项目已在GitHub开源。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "software",
-      "source": "Hacker News"
-    },
-    {
-      "id": "news-6f40a9b329fa77b3",
-      "title": "字节跳动 Seed 正式发布 Seedance 2.5，单次视频生成时长提升至 30 秒",
-      "url": "https://daily.juya.uk/issues/2026-08-01/",
-      "published": "2026-08-01T01:19:13+00:00",
-      "summary": "字节跳动发布 Seedance 2.5 视频生成模型，单次生成时长从 15 秒提升至 30 秒，支持多轮延长和多模态参考素材，正在即梦 AI 和豆包专业版上线。",
-      "detail": "Seedance 2.5 延续 Seedance 2.0 的多模态音视频联合生成架构，重点突破长叙事能力、多模态参考能力和编辑能力。支持输入最多 30 张图片、10 段视频和 10 段音频作为参考素材，可通过时间戳精准编辑音视频内容，强化了绿幕编辑、视角编辑等能力。正在即梦 AI 和豆包专业版陆续上线，面向企业用户的 API 服务将上线火山方舟。",
-      "priority": 2,
-      "category": "ai",
-      "source": "juya AI 日报",
-      "image": "",
-      "date": "2026-08-01"
-    },
-    {
-      "id": "news-ec5333cb2f387375",
-      "title": "千问发布 Qwen-Audio-3.0-ASR-Flash 语音识别大模型",
-      "url": "https://daily.juya.uk/issues/2026-08-01/",
-      "published": "2026-08-01T01:19:13+00:00",
-      "summary": "千问发布语音识别大模型 Qwen-Audio-3.0-ASR-Flash，通过阿里云百炼平台开放调用，支持 30 种语言，医疗场景专业词召回率达 95.36%。",
-      "detail": "Qwen-Audio-3.0-ASR-Flash 提供 Flash、Filetrans（离线文件转写）和 Streaming（实时语音识别）三个版本，Flash 版本支持最长 5 分钟音频转写。模型在上下文一致性、行业词识别、热词定制化、语音润色和多语种识别五个维度完成系统升级。医疗场景专业词召回率达 95.36%，工业场景 93.24%，热词召回率多数场景突破 99%，Streaming 版本理论出字延迟 300 毫秒。",
-      "priority": 2,
-      "category": "ai",
-      "source": "juya AI 日报",
-      "image": "",
-      "date": "2026-08-01"
-    },
-    {
-      "id": "news-fa18cd5630b9f7f3",
-      "title": "数学家称 GPT-5.6 Sol 找到麦克斯韦猜想反例",
-      "url": "https://daily.juya.uk/issues/2026-08-01/",
-      "published": "2026-08-01T01:19:13+00:00",
-      "summary": "数学家 Philip Arathoon 宣布 GPT-5.6 Sol 找到麦克斯韦猜想反例——5 个点电荷的三角双锥体产生 24 个平衡点，超出猜想上限，尚未获独立验证。",
-      "detail": "数学家 Philip Arathoon 发布论文称，GPT-5.6 Sol 找到麦克斯韦猜想的反例。该反例为 5 个点电荷构成的三角双锥体结构，产生 24 个平衡点，超过 (n-1)² 上限。Greg Brockman 转发称 GPT-5.6 Sol 可解决百年以上数学猜想。但有用户指出麦克斯韦原文实际表述为 (n-1)(n-2) 而非 (n-1)²，且\"猜想\"名称于 2007 年才被后人提出。该发现尚未获得独立验证。",
-      "priority": 2,
-      "category": "ai",
-      "source": "juya AI 日报",
-      "image": "",
-      "date": "2026-08-01"
-    },
-    {
-      "id": "news-2b0e381db7953244",
-      "title": "Google AI Studio 取消独立移动 App，整合进 Gemini 应用",
-      "url": "https://daily.juya.uk/issues/2026-08-01/",
-      "published": "2026-08-01T01:19:13+00:00",
-      "summary": "Google AI Studio 取消已获 80 万次预购的独立移动 App，决定将相关能力整合进 Gemini 应用，继续优化网页版满足深度开发需求。",
-      "detail": "Google AI Studio 取消了独立移动端 App 的发布计划，此前该应用在 iOS 和 Android 平台已获得超过 80 万次预购。官方决定将 AI Studio 体验直接整合进 Gemini 应用的移动端和桌面端，让应用在日常对话中自然产生。同时继续投入优化网页版体验，服务于有更深层次开发需求的用户。",
-      "priority": 2,
-      "category": "ai",
-      "source": "juya AI 日报",
-      "image": "",
-      "date": "2026-08-01"
-    },
-    {
-      "id": "news-b090be3ec7f9be8c",
-      "title": "经济学人：如何识别 AI 写作",
-      "url": "https://www.economist.com/culture/2026/07/30/how-to-spot-ai-writing",
-      "date": "2026-08-01",
-      "published": "2026-08-01T13:35:26+00:00",
-      "summary": "《经济学人》刊文分析AI写作的语言特征与识别方法，指出AI文本在用词和标点使用上存在可观察的模式。",
-      "detail": "《经济学人》发表长文讨论如何识别AI生成的写作。文章指出，大语言模型在词汇选择、破折号等标点使用上存在可识别的模式；AI正在撰写互联网上超过三分之一的新网页，也越来越多地参与学生论文写作。文章分析了AI文本与人类写作的风格差异，并提醒读者许多AI生成内容难以简单辨别。对于需要提交论文或内容的用户，这个话题具有现实参考价值。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "Hacker News"
-    },
-    {
-      "id": "news-75a8bf5216dc047a",
-      "title": "宝马向汽车显示屏推送蜘蛛侠全屏广告引发争议",
-      "url": "https://www.solidot.org/story?sid=84980",
-      "date": "2026-08-01",
-      "published": "2026-08-01T18:06:40+08:00",
-      "summary": "宝马自7月27日起向超70个市场的车主车载显示屏推送《蜘蛛侠》电影全屏广告，引发广泛争议。",
-      "detail": "宝马从7月27日开始向客户汽车的中央显示屏推送蜘蛛侠电影《Spider-Man: Brand New Day》的全屏广告，车辆启动时以横幅展示，点击即可播放带背景音乐和氛围灯光秀的全屏动画。该广告覆盖超70个市场，计划持续至8月10日，适用于运行BMW Operating System 7、8、8.5、9或X的2020年7月后制造的汽车。此举引发车主广泛争议。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "Solidot"
-    },
-    {
-      "id": "news-1a15fe1f9bfd6791",
-      "title": "美团发布 LongCat-Flash-Lite-Sparse，采用全新稀疏注意力框架",
-      "url": "https://daily.juya.uk/issues/2026-08-01/",
-      "published": "2026-08-01T01:19:13+00:00",
-      "summary": "美团开源 LongCat-Flash-Lite-Sparse 模型，MoE 架构总参数 69B、激活约 3B，引入 LongCat Sparse Attention 原生支持 1M tokens 上下文。",
-      "detail": "美团在 Hugging Face 上发布 LongCat-Flash-Lite-Sparse 模型，为非 thinking 的 MoE 架构，总参数 69B，每 token 激活参数约 3B。引入 LongCat Sparse Attention（LSA），原生支持最高 1M tokens 上下文长度。相比前代密集模型，在保持推理和通用知识性能的同时提升了长上下文推理效率和 Agentic 能力。模型权重在 MIT 许可下开源，可通过 SGLang 在单节点部署。",
-      "priority": 1,
-      "category": "ai",
-      "source": "juya AI 日报",
-      "image": "",
-      "date": "2026-08-01"
-    },
-    {
-      "id": "news-1035ca3fceb52af4",
-      "title": "商汤开源发布 SenseNova-U1.5-8B-MoT 预览版，支持原生 4K 图像生成",
-      "url": "https://daily.juya.uk/issues/2026-08-01/",
-      "published": "2026-08-01T01:19:13+00:00",
-      "summary": "商汤开源 SenseNova-U1.5-8B-MoT 预览版，基于 NEO-unify 架构，支持原生 4K 图像生成与细粒度图像编辑，同步公开预训练脚本。",
-      "detail": "SenseNova-U1.5-8B-MoT 预览版基于 NEO-unify 架构构建，引入全新 patch 编码层与 ConvDecoder 解码层。支持原生 4K 图像生成，在纹理、材质、光照和真实感方面显著提升，中英文文字渲染和密集版式组织能力增强。图像编辑方面在指令遵循、主体身份保持和结构一致性上均有改进，支持蒙版、边界框和视觉标记进行区域可控编辑。官方表示正式版本将在不久后发布。",
-      "priority": 1,
-      "category": "ai",
-      "source": "juya AI 日报",
-      "image": "",
-      "date": "2026-08-01"
-    },
-    {
-      "id": "news-5f37cb6c3016bb80",
-      "title": "特斯拉推送车机更新，引入豆包大模型语音助手",
-      "url": "https://daily.juya.uk/issues/2026-08-01/",
-      "published": "2026-08-01T01:19:13+00:00",
-      "summary": "特斯拉中国向 Model 3 等车型推送车机更新，首次在国内车机中引入豆包大模型智能语音助手，支持自然对话和个性化角色。",
-      "detail": "特斯拉中国发布 2026.14.13 版本车机软件更新，分批次向 Model 3、Model Y、Model S、Model X 推送，首次在国内车机中引入第三方大模型服务。豆包大模型语音助手可实现自然流畅对话和实时信息检索，提供多款音色及个性化角色，但需开通高级车载娱乐服务。该语音助手暂不支持车辆控制指令，适用于搭载 HW 3.0 及更早硬件的车辆。",
-      "priority": 1,
-      "category": "ai",
-      "source": "juya AI 日报",
-      "image": "",
-      "date": "2026-08-01"
-    },
-    {
-      "id": "news-6d05edbd2bc1dd85",
-      "title": "Google Earth AI 生图功能上线一天后因争议被撤回",
-      "url": "https://daily.juya.uk/issues/2026-08-01/",
-      "published": "2026-08-01T01:19:13+00:00",
-      "summary": "Google Earth 的 AI 图像生成功能上线仅一天即被回滚，因发现用户分享疑似违规生成截图，Google 决定在完善防护期间撤回该功能。",
-      "detail": "Google 此前在 Google Earth 中推出 AI 图像生成功能，允许用户使用 Nano Banana 2 模型通过提示词在卫星地图上创建虚构图像并叠加于真实地图之上。该功能上线后遭批评，评论者指出可能被用于制造和传播虚假地理信息。Google 随后声明已观察到疑似违反政策的生成图像，决定在实施更强护栏期间回滚。生成的图像不会在 Google Earth 主界面对其他用户可见，且已标注 AI 生成水印。",
-      "priority": 1,
-      "category": "ai",
-      "source": "juya AI 日报",
-      "image": "",
-      "date": "2026-08-01"
-    },
-    {
-      "id": "news-afb53d0457739ce8",
-      "title": "GPT-5.4 系列将于 8 月 31 日从 Codex 中下线",
-      "url": "https://daily.juya.uk/issues/2026-08-01/",
-      "published": "2026-08-01T01:19:13+00:00",
-      "summary": "OpenAI 宣布 GPT-5.4 和 GPT-5.4 mini 将于 8 月 31 日对通过 ChatGPT 登录的 Codex 用户停用，API 中仍可使用，官方建议迁移至 GPT-5.6 系列。",
-      "detail": "OpenAI 宣布 GPT-5.4 和 GPT-5.4 mini 将于 8 月 31 日正式从 Codex 中退役，不再向通过 ChatGPT 账号登录的用户提供，但在 OpenAI API 和通过 API 密钥验证的 Codex 会话中仍保持可用。官方建议开发者将 gpt-5.4 替换为 gpt-5.6-terra、gpt-5.4-mini 替换为 gpt-5.6-luna，并在期限前更新所有相关默认设置和自定义任务。",
-      "priority": 1,
-      "category": "ai",
-      "source": "juya AI 日报",
-      "image": "",
-      "date": "2026-08-01"
-    },
-    {
-      "id": "news-dde181e272ff08d1",
-      "title": "Nous Research 发布首个官方 Hermes Desktop 插件 Kanban 及配套插件 SDK",
-      "url": "https://daily.juya.uk/issues/2026-08-01/",
-      "published": "2026-08-01T01:19:13+00:00",
-      "summary": "Nous Research 发布首个官方 Hermes Desktop 插件 Kanban 及配套 Desktop Plugin SDK，开发者可无构建步骤加载自定义插件，为桌面应用添加扩展能力。",
-      "detail": "Nous Research 官方宣布首个 Hermes Desktop 插件 Kanban 已上线，桌面原生版本应大量用户请求推出并进行了重大升级。配套发布的 Desktop Plugin SDK 对应模块 @hermes/plugin-sdk，允许开发者为 Hermes Desktop 原生应用添加独立页面、侧边栏导航、快捷键、状态栏操作、主题和后端接口等功能。",
-      "priority": 1,
-      "category": "ai",
-      "source": "juya AI 日报",
-      "image": "",
-      "date": "2026-08-01"
     }
   ]
 }
