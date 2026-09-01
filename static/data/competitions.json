@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-01T21:33:32+08:00",
+  "last_updated": "2026-09-02T07:48:18+08:00",
   "source": "CampBrief",
-  "total": 196,
+  "total": 197,
   "tiers": [
     {
       "key": "all",
@@ -2240,7 +2240,7 @@
       "fields": [
         "science"
       ],
-      "status": "open",
+      "status": "closed",
       "signup": "2026年5月26日至9月1日报名（多数赛区8月31日20:00前）",
       "schedule": "",
       "summary": "来源：赛氪。浏览 4710，关注 329",
@@ -3735,8 +3735,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-29T21:46:57+08:00",
-        "review_after": "2026-09-01T21:46:57+08:00"
+        "verified_at": "2026-09-02T07:48:18+08:00",
+        "review_after": "2026-09-05T07:48:18+08:00"
       },
       "signup": "",
       "schedule": "",
@@ -3893,8 +3893,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-29T21:46:57+08:00",
-        "review_after": "2026-09-01T21:46:57+08:00"
+        "verified_at": "2026-09-02T07:48:18+08:00",
+        "review_after": "2026-09-05T07:48:18+08:00"
       }
     },
     {
@@ -3908,8 +3908,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-29T21:46:57+08:00",
-        "review_after": "2026-09-01T21:46:57+08:00"
+        "verified_at": "2026-09-02T07:48:18+08:00",
+        "review_after": "2026-09-05T07:48:18+08:00"
       },
       "signup": "",
       "schedule": "",
@@ -4048,6 +4048,29 @@
       "official_site": "",
       "organizer": "外交英语系列大赛（Diplomatic English）",
       "prestige": 4
+    },
+    {
+      "id": "comp-52jingsai-5d176278231c",
+      "name": "2026年全国高校英语翻译挑战赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-09-11",
+        "verified_at": "2026-09-02T07:48:18+08:00"
+      },
+      "signup": "即日起至9月11日",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23445-1.html",
+      "official_site": "http://fytz.52jingsai.com/",
+      "organizer": "全国高校英语翻译挑战赛组织委员会、北京民教信息科学研究院、广东省高教外语研究院",
+      "prestige": 3
     }
   ]
 }
