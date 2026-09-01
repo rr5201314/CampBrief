@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-01T12:33:20+08:00",
+  "last_updated": "2026-09-01T21:33:32+08:00",
   "source": "CampBrief",
-  "total": 197,
+  "total": 196,
   "tiers": [
     {
       "key": "all",
@@ -1909,29 +1909,6 @@
       "prestige": 7
     },
     {
-      "id": "52jingsai-9c66aa8503e5",
-      "name": "【英语词汇大赛】2026年第四届“外文奖”大学生英语词汇大赛",
-      "tier": "official",
-      "fields": [
-        "language"
-      ],
-      "status": "closed",
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_end": "2026-07-17",
-        "verified_at": "2026-07-15T15:31:29+08:00"
-      },
-      "signup": "",
-      "schedule": "2026年7月17",
-      "summary": "报名截止：2026年7月17日；主办单位：全国高校英语翻译挑战赛组织委员会、北京民教信息科学研究院、广东省高教外语研究院",
-      "search": "",
-      "official_url": "https://www.52jingsai.com/article-23445-1.html",
-      "official_site": "",
-      "organizer": "全国高校英语翻译挑战赛组织委员会、北京民教信息科学研究院、广东省高教外语研究院",
-      "prestige": 6
-    },
-    {
       "id": "52jingsai-6ed748f24f50",
       "name": "【写作竞赛，7月17日截止】2026年第五届创研杯全国大学生英语写作竞赛",
       "tier": "official",
@@ -3087,7 +3064,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【开学季福利】2026年第十二届中西部外语翻译大赛",
+      "name": "【赛前直播课】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3210,7 +3187,7 @@
     },
     {
       "id": "comp-saikr-621d8ad96385",
-      "name": "【倒计时3天】第四届“三晋杯”全国大学生英语演讲大赛",
+      "name": "【倒计时2天】第四届“三晋杯”全国大学生英语演讲大赛",
       "tier": "hobby",
       "fields": [
         "language"
