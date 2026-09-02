@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-02T08:30:53+08:00",
+  "last_updated": "2026-09-02T13:39:11+08:00",
   "source": "CampBrief Auto",
-  "total": 657,
+  "total": 665,
   "items": [
     {
       "id": "news-957e8050b0d84001",
@@ -18,6 +18,72 @@
       "source": "36氪"
     },
     {
+      "id": "news-43f6994b3b33ed75",
+      "title": "Gemini 3.7 Flash 等三款模型上线 Agentic 视频理解，长视频分析成本最高降 66%",
+      "url": "https://daily.juya.uk/issues/2026-09-02/",
+      "date": "2026-09-02",
+      "published": "2026-09-02T01:52:13+00:00",
+      "summary": "Google 为 Gemini 3.7 Flash 等三款模型上线 Agentic 视频理解能力，模型可自主决定观看哪些片段与方式，长视频分析 token 消耗最高减少 88%、成本最高降低 66%，现已开放 API 调用。",
+      "detail": "Google 宣布为 Gemini 3.7 Flash、3.6 Flash 和 3.5 Flash-Lite 推出 Agentic 视频理解，已通过 Gemini API 在 Google AI Studio 与 Gemini Enterprise Agent Platform 上线，支持视频上传和 YouTube 视频。与固定 1 FPS 逐帧读入的静态处理不同，模型可自主决定观看哪些片段、以什么速度、通过视觉帧、音频还是字幕获取信息。官方数据显示 token 消耗最高减少 88%、分析成本最高降低 66%、准确度最高提升 7%，长视频收益尤为明显。开发者将视频 processing 参数设为 agentic 即可启用，按标准 token 计费；该能力即将面向 Gemini 应用用户推出，未来数月将支撑 YouTube 观看页的 Ask YouTube 功能。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-841ab8e83842e9f3",
+      "title": "Ollama 订阅方案改为按 token 计费，取消 5 小时与每周用量限制",
+      "url": "https://daily.juya.uk/issues/2026-09-02/",
+      "date": "2026-09-02",
+      "published": "2026-09-02T01:52:13+00:00",
+      "summary": "Ollama 宣布 Pro、Max、Team 订阅方案改为透明按 token 计费，每月附带用量额度；官方称新方案无服务费、无 5 小时或每周限制，额度用完后可按相同价格继续使用。",
+      "detail": "Ollama 宣布 Pro、Max 和 Team 订阅方案改用按 token 计费，每个方案每月附带一池用量额度，按定价页公示的每百万 token 价格消耗。Pro 每月 20 美元含 60 美元用量，Max 每月 100 美元含 300 美元用量，Team 每月 500 美元含 1000 美元共享用量，免费方案每月含少量入门模型用量。现有订阅用户原方案继续有效，可随时在账户设置中升级，新注册用户直接使用新方案。官方称新定价无服务费、无 5 小时或每周限制，并正在开发错峰定价。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-e945a0ea81b203a1",
+      "title": "Meta 发布实时音频感知模型 Muse Voice Transcribe，流式语音转写基准排名第一",
+      "url": "https://daily.juya.uk/issues/2026-09-02/",
+      "date": "2026-09-02",
+      "published": "2026-09-02T01:52:13+00:00",
+      "summary": "Meta 超级智能实验室推出首个实时音频感知模型 Muse Voice Transcribe，官方称其流式语音转写与说话人分离基准均排名第一，已在 Meta Model API、Meta AI for Mac 和 Muse Code 上线。",
+      "detail": "Meta 超级智能实验室发布旗下首个实时音频感知模型 Muse Voice Transcribe。该模型在单一模型内原生提供实时流式语音转写、支持 20 多名说话人的分离以及端点检测，支持多语言与句内语码转换，可通过语言、关键词和上下文偏置提升准确率。官方称其在 Artificial Analysis 流式语音转写榜及公开说话人分离基准上均排名第一。模型已上线 Meta Model API 并提供零数据保留层级，Meta AI for Mac 与 Muse Code 的语音听写功能也由其驱动，用户可直接使用。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-66094a3e885907d0",
+      "title": "讯飞星火开源 X2.5 端侧模型，称端侧首个原生支持 100 万 token 上下文",
+      "url": "https://daily.juya.uk/issues/2026-09-02/",
+      "date": "2026-09-02",
+      "published": "2026-09-02T01:52:13+00:00",
+      "summary": "科大讯飞开源星火 X2.5-4B 与 1.7B 两款端侧模型，Apache 2.0 许可，官方称是端侧模型中首个原生支持最长 100 万 token 上下文的模型，基于全国产算力平台完成训练。",
+      "detail": "科大讯飞推出并开源星火 X2.5-4B 和 X2.5-1.7B 两款端侧通用大模型，模型权重、代码仓库与部署文档已在 Hugging Face、GitHub 开放。官方称其为端侧模型中首个原生支持最长 100 万 token 上下文的模型，采用混合注意力架构，围绕智能体、代码、数学和指令遵循等能力优化，星火 X2.5-4B 在 SWE-Bench Pro、AIME 2026 等多项测试中取得同尺寸领先成绩。两款模型基于全国产算力平台训练，支持英伟达、华为、海光等硬件，兼容 vLLM、SGLang、llama.cpp 等推理框架，可通过 Ollama、LM Studio 部署，对应 API 已上线讯飞星辰 MaaS 平台。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-cd361533f75fba1a",
+      "title": "腾讯混元发布 Hy4 preview 轻量量化版，权重由约 1.5TB 压缩至 214GB",
+      "url": "https://daily.juya.uk/issues/2026-09-02/",
+      "date": "2026-09-02",
+      "published": "2026-09-02T01:52:13+00:00",
+      "summary": "腾讯混元为旗舰模型 Hy4 preview 推出轻量量化版，用自研 Sherry 稀疏三值量化算法把约 1.5TB 权重压缩至约 214GB，能力基本保持，量化 GGUF 已开源。",
+      "detail": "腾讯混元为旗舰模型 Hy4 preview 推出轻量版，通过自研 Sherry 稀疏三值量化算法和 MIX-STQ1_0 混合精度策略，将约 1.5TB 的模型权重压缩至约 214GB，压缩幅度约 86%。官方测试显示，压缩版在长文理解、多轮长上下文检索上与原版基本处于同一水平，数学有小幅回落，多个主流评测集与 BF16 原版差距在一两分以内。量化 GGUF 已发布在 Hugging Face 的 AngelSlim 仓库，共三个版本，其中 STQ1_0 版约 213.66 GiB，全量驻留显存约需 214GB；官方注明文件无法在原版 llama.cpp 直接运行，需先应用仓库提供的补丁。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "juya AI 日报"
+    },
+    {
       "id": "news-c37e8e5af720d308",
       "title": "SK 集团会长：与铠侠联合生产是可选方向，考虑在日本建厂",
       "url": "https://36kr.com/newsflashes/3965488068648201?f=rss",
@@ -30,6 +96,45 @@
       "category": "tech",
       "subcategory": "hardware",
       "source": "36氪"
+    },
+    {
+      "id": "news-2c09524eef0e4194",
+      "title": "Google 推出图像创作与编辑工具 Google Pics，基于 Nano Banana 模型",
+      "url": "https://daily.juya.uk/issues/2026-09-02/",
+      "date": "2026-09-02",
+      "published": "2026-09-02T01:52:13+00:00",
+      "summary": "Google 推出图像创作与编辑工具 Google Pics，基于 Nano Banana 图像模型，支持对象分割、图内文字编辑与多人协作，未来几周内面向 AI Pro/Ultra 订阅用户及多数 Workspace 商业客户推出。",
+      "detail": "Google 官方博客宣布，来自 Workspace 的图像创作与编辑工具 Google Pics 正陆续推出。它基于 Nano Banana 图像生成与编辑模型构建，以独立产品和 Workspace 应用集成两种形式提供，集成率先覆盖 Docs 和 Slides，Drive 将在未来几周内跟进。功能上支持对象分割、图像内文字编辑与翻译、多人协作编辑，以及单次提示生成多个图像选项。该工具将在未来几周内覆盖所有 Google AI Pro 和 Ultra 订阅用户及大多数 Workspace 商业客户，用户可通过 pics.new 试用。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-ca397251584d1a2c",
+      "title": "OpenAI 上线 ChatGPT 礼品卡，目前仅限美国美元账户网页端兑换",
+      "url": "https://daily.juya.uk/issues/2026-09-02/",
+      "date": "2026-09-02",
+      "published": "2026-09-02T01:52:13+00:00",
+      "summary": "OpenAI 上线 ChatGPT 礼品卡，可在部分授权零售商购买数字版；兑换仅限美国地区美元结算账户，余额可用于 ChatGPT 网页端订阅、续费和购买额度。",
+      "detail": "OpenAI 在官方帮助中心公布 ChatGPT 礼品卡的购买与兑换规则。礼品卡为美元计价、不可充值的储值卡，目前可在部分授权零售商购买数字版。兑换和使用仅限美国地区、美元结算的 ChatGPT 账户，余额可用于订阅、续费、升级和额度购买，但不能支付 Apple App Store 或 Google Play 的交易。ChatGPT Free、Go、Plus、Pro 以及 Business 工作区所有者可使用兑换，兑换需受账户余额和每日充值上限约束。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-0aab2349460209fb",
+      "title": "Manus 宣布正式恢复独立运营，创始团队继续领导公司",
+      "url": "https://daily.juya.uk/issues/2026-09-02/",
+      "date": "2026-09-02",
+      "published": "2026-09-02T01:52:13+00:00",
+      "summary": "Manus 官方宣布正式恢复独立运营，创始团队继续领导公司，将作为独立 agent lab 面向全球用户推进通用 AI Agent；已备份但尚未恢复数据的用户仍可通过恢复门户恢复。",
+      "detail": "Manus 在官方博客和官方账号宣布，公司已正式恢复独立运营，创始团队将继续领导公司，作为独立 agent lab 持续投入产品创新，面向全球用户推进通用 AI Agent。Manus 表示，接下来会让产品更深度地嵌入用户日常工作流程、更直接地与世界交互，并更主动地代表用户行动。此前分拆过渡期间，部分用户经历了访问临时中断和数据备份流程；已备份但尚未恢复的用户可通过恢复门户恢复，官方称没有截止期限，未受影响的用户无需采取任何操作。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
     },
     {
       "id": "news-e02bc04e6f80f63e",
