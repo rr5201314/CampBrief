@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-02T07:48:18+08:00",
+  "last_updated": "2026-09-02T12:31:45+08:00",
   "source": "CampBrief",
   "total": 197,
   "tiers": [
@@ -3974,7 +3974,7 @@
     },
     {
       "id": "comp-saikr-3e818dd91712",
-      "name": "【省赛倒计时5天】第九届大学生普通话挑战赛（NPCCS）",
+      "name": "【省赛倒计时4天】第九届大学生普通话挑战赛（NPCCS）",
       "tier": "hobby",
       "fields": [
         "language"
