@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-01T08:50:27+08:00",
+  "last_updated": "2026-09-02T08:30:53+08:00",
   "items": [
     {
       "id": "news-f1084f2ebe0fff52",
@@ -236,6 +236,134 @@
       "source": "juya AI 日报",
       "image": "",
       "date": "2026-08-01"
+    },
+    {
+      "id": "news-31d40b6e7f8f978a",
+      "title": "奇点逃逸完成千万级种子轮融资，研发 AI 原生团队协作系统 Nexus",
+      "url": "https://36kr.com/p/3919025939246727",
+      "published": "2026-08-03T08:10:16+08:00",
+      "source": "36氪",
+      "category": "ai",
+      "priority": 2,
+      "summary": "清华博士薛传奕创办的奇点逃逸获星连资本与水木创投领投的千万级种子轮融资，正在研发 AI 原生团队协作操作系统 Nexus。",
+      "detail": "Nexus 以组织状态而非单次对话为出发点，让人、Agent、任务、知识和工具基于同一份状态持续协作，并通过真实任务反馈驱动 Agent 自进化：协作产生反馈，独立评测筛选改进，经治理机制决定采用或回滚。薛传奕认为 Agent 能力提升后新的瓶颈是协作断层——各自拥有完整上下文的 Agent 难以合并工作，Nexus 希望成为 AI 时代的组织基础设施。",
+      "date": "2026-08-03",
+      "image": ""
+    },
+    {
+      "id": "news-f06e0d22b0adef59",
+      "title": "Kakehashi：在 Linux ARM 上运行 macOS 二进制的开源翻译层",
+      "url": "https://github.com/wie-project/kakehashi",
+      "published": "2026-08-03T00:26:40+08:00",
+      "source": "Hacker News",
+      "category": "tech",
+      "subcategory": "software",
+      "priority": 2,
+      "summary": "开源项目 Kakehashi 提供纯用户态翻译层，可在 Linux aarch64 上直接加载运行 macOS ARM64 二进制文件，无需 JIT。",
+      "detail": "Kakehashi 采用 CLI 优先、无 JIT 的架构，在 Linux ARM64 上加载 Darwin Mach-O 文件，映射独立的 libSystem 并翻译 BSD 系统调用，已在 Docker、Colima 和 UTM 环境中验证可运行 7-Zip、curl 等真实程序。该项目与 Darling 无继承关系，采用 Apache-2.0 许可。",
+      "date": "2026-08-03",
+      "image": ""
+    },
+    {
+      "id": "news-ad10852663cd9f6b",
+      "title": "QFII 二季度调仓呈现头部化，外资机构看好中国 AI 产业链",
+      "url": "https://36kr.com/newsflashes/3923064316407170",
+      "published": "2026-08-03T08:27:23+08:00",
+      "source": "36氪",
+      "category": "ai",
+      "priority": 1,
+      "summary": "二季度末北向资金持仓市值首次突破 3 万亿元，外资机构调研与调仓动向显示中国 AI 产业链吸引力持续凸显。",
+      "detail": "据证券日报报道，今年二季度外资积极布局 A 股，沪深港通北向资金持仓市值首次突破 3 万亿元人民币。彭博行业研究资深股票策略师陈明康表示中国股市上涨动能有望延续，AI 产业链机遇叠加人民币汇率韧性，提升了外资对 A 股的配置需求。QFII 调仓呈现向头部标的集中的特征。",
+      "date": "2026-08-03",
+      "image": ""
+    },
+    {
+      "id": "news-6ad01552d04968d7",
+      "title": "SpaceXAI 为 Grok Imagine 新增文生视频、引用功能与原生 1080p",
+      "url": "https://daily.juya.uk/issues/2026-08-02/",
+      "published": "2026-08-02T01:25:34+00:00",
+      "summary": "SpaceXAI 升级 Imagine Video 1.5 模型，新增文生视频、图像与语音引用及原生 1080p 支持，多引用功能每次最多绑定 7 张参考图。",
+      "detail": "SpaceXAI 旗下视频模型 Imagine Video 1.5 迎来功能升级，新增文生视频、图像引用、语音引用、多引用及原生 1080p 支持。多引用功能允许每次生成最多绑定 7 张参考图像，分别锁定角色、场景或产品。图像与语音引用目前面向美国地区 SuperGrok Heavy 和 Plus 订阅用户开放，文生视频与原生 1080p 已在 web、iOS 和 Android 全面可用；API 方面文生视频、图像引用与 1080p 已上线。",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-08-02"
+    },
+    {
+      "id": "news-f08727df7dfbbf91",
+      "title": "OpenAI 团队向 Git 上游提交多项性能与正确性补丁",
+      "url": "https://daily.juya.uk/issues/2026-08-02/",
+      "published": "2026-08-02T01:25:34+00:00",
+      "summary": "OpenAI 以公开 fork 形式向 Git 上游贡献性能与正确性补丁，已有 2 个补丁系列合入 master，5 个进入审查，23 个仍在开发。",
+      "detail": "OpenAI 正持续推进面向大型仓库的 Git 改进工作，由 Ted Nyman 和 Taylor Blau 主导，以公开 fork 形式开发，只要补丁具备通用价值便贡献至上游 Git。目前已有 2 个补丁系列合入上游 Git master 分支，5 个系列进入 seen 分支审查，另有 23 个系列仍在主题分支开发。已合入的改进包括限制路径的 git stash 稀疏索引优化（索引扩展耗时从 18.87 秒降至 0.06 秒）及路径遍历位图支持。相关性能改进也将应用于 Codex 应用。",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "juya AI 日报",
+      "date": "2026-08-02"
+    },
+    {
+      "id": "news-4915959a3d29cbb8",
+      "title": "报道称 OpenAI 与 Anthropic 正游说要求竞争对手接受相同审查",
+      "url": "https://daily.juya.uk/issues/2026-08-02/",
+      "published": "2026-08-02T01:25:34+00:00",
+      "summary": "据 The Information 报道，OpenAI 和 Anthropic 正敦促美国政府，要求 Meta、SpaceXAI 等竞争对手接受与它们相同的前沿模型审查。",
+      "detail": "据 The Information 报道，OpenAI 和 Anthropic 正悄悄敦促美国政府，要求 Meta 和 SpaceXAI 等竞争对手接受与两家公司目前面临的相同的前沿模型审查。报道称两家公司目前已接受此类审查，希望竞争对手也被纳入同等框架，这一联盟可能在竞争对手避免审查时保护自身不被拖慢进度。消息源自媒体报道，相关公司及华盛顿方面尚未作出正式回应。",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-08-02"
+    },
+    {
+      "id": "news-db2ed1333b67a353",
+      "title": "系外行星大气中发现半重水，韦伯望远镜揭开行星形成线索",
+      "url": "https://www.solidot.org/story?sid=84987",
+      "published": "2026-08-02T22:23:52+08:00",
+      "source": "Solidot",
+      "category": "fun",
+      "priority": 1,
+      "summary": "天文学家利用韦伯望远镜数据，首次在距离地球约 700 光年的系外行星 WASP-39b 大气中探测到半重水。",
+      "detail": "半重水与普通水分子的区别在于两个氢原子之一被含有一个中子的氘取代。研究人员通过精确测量大气中水分子氘与氢的比例，推算这颗行星的诞生与演化历程。这项研究展示了韦伯望远镜在系外行星大气研究上的能力，半重水这类同位素异构体为理解行星形成提供了新的观测窗口。",
+      "date": "2026-08-02",
+      "image": ""
+    },
+    {
+      "id": "news-68db3e5a89ca75a7",
+      "title": "Steam 用户中使用 Linux 比例回升至 4% 以上",
+      "url": "https://www.solidot.org/story?sid=84985",
+      "published": "2026-08-02T20:30:19+08:00",
+      "source": "Solidot",
+      "category": "tech",
+      "subcategory": "software",
+      "priority": 1,
+      "summary": "Valve 发布 2026 年 7 月 Steam 硬件和软件调查，Linux 用户比例在连续三个月下降后回升至 4.01%。",
+      "detail": "调查显示 Linux 占比从 6 月的 3.69% 回升至 4.01%，Windows 占 93.67%（其中 Windows 11 占 70.26%），OSX 占 2.32%。简体中文用户占 22.52%，英语用户占 39.61%。数据还显示玩家中英特尔 CPU 占比 53.76%，仍有超过五分之一的玩家使用已停止支持的 Windows 10。",
+      "date": "2026-08-02",
+      "image": ""
+    },
+    {
+      "id": "news-c5315d35655fe54d",
+      "title": "Tibo 称已重置 Codex 和 ChatGPT Work 使用限制",
+      "url": "https://daily.juya.uk/issues/2026-08-02/",
+      "published": "2026-08-02T01:25:34+00:00",
+      "summary": "Codex 负责人 Tibo 宣布已重置 Codex 和 ChatGPT Work 的使用限制，庆祝效率周，让用户本周末可运行 10 万个 Luna 任务会话。",
+      "detail": "北京时间 8 月 1 日中午，Codex 负责人 Tibo 在社交媒体上宣布，他已重置 Codex 和 ChatGPT Work 的使用限制。Tibo 表示此举是为庆祝一周的效率工作，让用户能够在本周末运行 10 万个 Luna 任务会话。",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-08-02"
+    },
+    {
+      "id": "news-4d86d9d56f302278",
+      "title": "DeepSeek Harness 面向 Agent Harness 开源项目开发者招募内测",
+      "url": "https://daily.juya.uk/issues/2026-08-02/",
+      "published": "2026-08-02T01:25:34+00:00",
+      "summary": "DeepSeek Harness 负责人宣布面向 Agent Harness 相关开源项目开发者招募内测参与者，申请需附 GitHub ID 与开源代表作。",
+      "detail": "DeepSeek Harness 负责人 Tianyi Cui 发布消息称，DeepSeek Harness 目前处于内测阶段，并面向 Agent Harness 相关开源项目开发者招募内测参与者。开发者可通过回复或私信联系申请，需附上 GitHub ID 及代表性开源作品。公测时间及正式发布安排均未提及。",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报",
+      "date": "2026-08-02"
     }
   ]
 }
