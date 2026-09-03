@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-03T07:35:54+08:00",
+  "last_updated": "2026-09-03T12:33:02+08:00",
   "source": "CampBrief",
   "total": 197,
   "tiers": [
@@ -3187,7 +3187,7 @@
     },
     {
       "id": "comp-saikr-621d8ad96385",
-      "name": "【周四截止】第四届“三晋杯”全国大学生英语演讲大赛",
+      "name": "【今日截止】第四届“三晋杯”全国大学生英语演讲大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3712,8 +3712,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-31T07:37:31+08:00",
-        "review_after": "2026-09-03T07:37:31+08:00"
+        "verified_at": "2026-09-03T12:33:02+08:00",
+        "review_after": "2026-09-06T12:32:02+08:00"
       },
       "signup": "",
       "schedule": "",
@@ -4051,7 +4051,7 @@
     },
     {
       "id": "comp-52jingsai-5d176278231c",
-      "name": "2026年全国高校英语翻译挑战赛",
+      "name": "【9月11日截止】2026年全国高校英语翻译挑战赛报名通知！",
       "tier": "hobby",
       "fields": [
         "language"
