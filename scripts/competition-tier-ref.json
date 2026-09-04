@@ -433,6 +433,11 @@
       "tier": "hobby",
       "prestige": 4,
       "note": "外交英语系列（阅读/词汇等），49元商业赛"
+    },
+    "华教杯大学生数学竞赛组委会": {
+      "tier": "hobby",
+      "prestige": 4,
+      "note": "非教育部认可，商业赛事；与 competitions 华教杯关键词对应，防止名称回退误标"
     }
   },
   "competitions": {

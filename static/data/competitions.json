@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-03T12:33:02+08:00",
+  "last_updated": "2026-09-04T08:16:52.951128+08:00",
   "source": "CampBrief",
-  "total": 197,
+  "total": 198,
   "tiers": [
     {
       "key": "all",
@@ -172,8 +172,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-31T12:36:00+08:00",
-        "review_after": "2026-09-03T12:36:00+08:00"
+        "verified_at": "2026-09-04T08:16:31+08:00",
+        "review_after": "2026-09-07T08:16:31+08:00"
       }
     },
     {
@@ -275,8 +275,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-31T12:36:00+08:00",
-        "review_after": "2026-09-03T12:36:00+08:00"
+        "verified_at": "2026-09-04T08:16:31+08:00",
+        "review_after": "2026-09-07T08:16:31+08:00"
       }
     },
     {
@@ -844,8 +844,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-31T12:36:00+08:00",
-        "review_after": "2026-09-03T12:36:00+08:00"
+        "verified_at": "2026-09-04T08:16:31+08:00",
+        "review_after": "2026-09-07T08:16:31+08:00"
       }
     },
     {
@@ -1592,8 +1592,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-31T12:36:00+08:00",
-        "review_after": "2026-09-03T12:36:00+08:00"
+        "verified_at": "2026-09-04T08:16:31+08:00",
+        "review_after": "2026-09-07T08:16:31+08:00"
       }
     },
     {
@@ -1616,8 +1616,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-31T12:36:00+08:00",
-        "review_after": "2026-09-03T12:36:00+08:00"
+        "verified_at": "2026-09-04T08:16:31+08:00",
+        "review_after": "2026-09-07T08:16:31+08:00"
       }
     },
     {
@@ -1640,8 +1640,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-31T12:36:00+08:00",
-        "review_after": "2026-09-03T12:36:00+08:00"
+        "verified_at": "2026-09-04T08:16:31+08:00",
+        "review_after": "2026-09-07T08:16:31+08:00"
       }
     },
     {
@@ -1701,8 +1701,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-31T12:36:00+08:00",
-        "review_after": "2026-09-03T12:36:00+08:00"
+        "verified_at": "2026-09-04T08:16:31+08:00",
+        "review_after": "2026-09-07T08:16:31+08:00"
       }
     },
     {
@@ -1780,8 +1780,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-31T12:36:00+08:00",
-        "review_after": "2026-09-03T12:36:00+08:00"
+        "verified_at": "2026-09-04T08:16:31+08:00",
+        "review_after": "2026-09-07T08:16:31+08:00"
       }
     },
     {
@@ -1819,8 +1819,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-31T12:36:00+08:00",
-        "review_after": "2026-09-03T12:36:00+08:00"
+        "verified_at": "2026-09-04T08:16:31+08:00",
+        "review_after": "2026-09-07T08:16:31+08:00"
       }
     },
     {
@@ -1842,8 +1842,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-31T12:36:00+08:00",
-        "review_after": "2026-09-03T12:36:00+08:00"
+        "verified_at": "2026-09-04T08:16:31+08:00",
+        "review_after": "2026-09-07T08:16:31+08:00"
       }
     },
     {
@@ -1865,8 +1865,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-31T12:36:00+08:00",
-        "review_after": "2026-09-03T12:36:00+08:00"
+        "verified_at": "2026-09-04T08:16:31+08:00",
+        "review_after": "2026-09-07T08:16:31+08:00"
       }
     },
     {
@@ -3187,7 +3187,7 @@
     },
     {
       "id": "comp-saikr-621d8ad96385",
-      "name": "【今日截止】第四届“三晋杯”全国大学生英语演讲大赛",
+      "name": "第四届“三晋杯”全国大学生英语演讲大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3974,7 +3974,7 @@
     },
     {
       "id": "comp-saikr-3e818dd91712",
-      "name": "【省赛倒计时3天】第九届大学生普通话挑战赛（NPCCS）",
+      "name": "【省赛倒计时2天】第九届大学生普通话挑战赛（NPCCS）",
       "tier": "hobby",
       "fields": [
         "language"
@@ -4071,6 +4071,29 @@
       "official_site": "http://fytz.52jingsai.com/",
       "organizer": "全国高校英语翻译挑战赛组织委员会、北京民教信息科学研究院、广东省高教外语研究院",
       "prestige": 3
+    },
+    {
+      "id": "comp-52jingsai-82a8985b777a",
+      "name": "【报名通知】2026年第九届华教杯大学生数学竞赛报名通知！",
+      "tier": "hobby",
+      "fields": [
+        "science"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-12-04",
+        "verified_at": "2026-09-04T08:16:31+08:00"
+      },
+      "signup": "即日起-2026年12月4日",
+      "schedule": "",
+      "summary": "面向在校大学生的全国性数学竞赛：初赛线上远程答题、决赛线上闭卷监考，往届参赛高校超千所、近七万名学生。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23928-1.html",
+      "official_site": "https://www.cecmath.com",
+      "organizer": "华教杯大学生数学竞赛组委会、吉林省科技教育学会、山东北斗教育研究院",
+      "prestige": 4
     }
   ]
 }
