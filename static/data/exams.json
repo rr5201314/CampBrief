@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-04T13:04:10.188290+08:00",
+  "last_updated": "2026-09-04T21:07:12+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -88,15 +88,20 @@
       "id": "cet-202612",
       "name": "2026年12月全国大学英语四、六级考试 (CET)",
       "category": "english",
-      "status": "pending",
+      "status": "open",
+      "lifecycle": {
+        "mode": "manual",
+        "verified_at": "2026-09-04T21:07:12+08:00",
+        "review_after": "2026-09-07T21:06:12+08:00"
+      },
       "fee": "笔试 15-50 元/人次（各省不同，六级比四级高 2-5 元），口试 50 元/人次",
-      "schedule": "2026年12月",
+      "schedule": "2026年12月12日（笔试）；11月21日-22日（口试）",
       "summary": "面向在校大学生的英语水平测试，分四级和六级，包含听力、阅读、写作和翻译。每年两次，需通过学校统一报名。",
       "search": "英语 四级 六级 cet cet-4 cet-6 university english listening 2026 12月",
       "official_site": "https://cet-bm.neea.edu.cn/",
       "official_portal": "https://cet.neea.edu.cn/",
       "news_list_url": "https://www.neea.edu.cn/html1/category/16093/1124-1.htm",
-      "official_url": "",
+      "official_url": "https://www.neea.edu.cn/html1/report/2609/1-1.htm",
       "format": "笔试为主，另设英语四、六级口语考试（CET-SET4/6）为选考科目，需先完成笔试报名方可报考口试。",
       "duration": "四级 9:00-11:20（140 分钟），六级 15:00-17:25（145 分钟）。",
       "subjects": [
@@ -107,8 +112,33 @@
       ],
       "requirements": "全日制普通高等院校本科、专科在校生，在籍研究生，各类成人高等院校在校生均可报考。",
       "scoring": "自近年起不再提供纸质成绩单，成绩发布 10 个工作日后，考生可登录中国教育考试网查看并下载电子成绩报告单，与原纸质成绩报告单具有同等效力。",
-      "timeline": [],
-      "last_updated": "2026-09-01T13:06:01.755259+08:00"
+      "timeline": [
+        {
+          "label": "四级笔试",
+          "value": "2026年12月12日 9:00-11:20"
+        },
+        {
+          "label": "六级笔试",
+          "value": "2026年12月12日 15:00-17:25"
+        },
+        {
+          "label": "四级口语",
+          "value": "2026年11月21日"
+        },
+        {
+          "label": "六级口语",
+          "value": "2026年11月22日"
+        },
+        {
+          "label": "报名时间",
+          "value": "2026年9月2日公告发布，各地报名陆续启动，各考点时间不同，以所在学校通知为准"
+        },
+        {
+          "label": "准考证打印",
+          "value": "口试 2026年11月17日9时起，笔试 2026年12月1日9时起"
+        }
+      ],
+      "last_updated": "2026-09-04T21:07:12+08:00"
     },
     {
       "id": "tem-4",

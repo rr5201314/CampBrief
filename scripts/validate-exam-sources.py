@@ -28,7 +28,6 @@ VALID_POLICY_MODES = {
 }
 VALID_POLICY_FALLBACKS = {"current-notice", "portal"}
 FUTURE_NOTICE_PENDING = {
-    "cet-202612",
     "guokao-2026",
     "kaoyan-2026",
     "baoyan-2026",
