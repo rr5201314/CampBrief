@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-05T21:01:00.025952+08:00",
+  "last_updated": "2026-09-06T07:03:41+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -387,7 +387,7 @@
       "id": "pat-202609",
       "name": "2026年秋季 PAT 计算机程序设计能力考试",
       "category": "computer",
-      "status": "closed",
+      "status": "done",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -455,7 +455,7 @@
         "registration_end": "2026-07-02",
         "event_start": "2026-09-05",
         "event_end": "2026-09-06",
-        "verified_at": "2026-09-02T21:05:22.469790+08:00"
+        "verified_at": "2026-09-06T07:05:16.821393+08:00"
       },
       "fee": "每科约50-70元",
       "schedule": "2026年9月",
@@ -483,7 +483,7 @@
           "value": "2026年10月30日下发"
         }
       ],
-      "last_updated": "2026-09-02T21:05:22.469790+08:00"
+      "last_updated": "2026-09-06T07:05:16.821393+08:00"
     },
     {
       "id": "cpa-2026",
@@ -789,7 +789,7 @@
       "official_portal": "https://bm.scs.gov.cn/",
       "news_list_url": "https://bm.scs.gov.cn/",
       "official_url": "",
-      "last_updated": "2026-09-05T13:04:45.011882+08:00"
+      "last_updated": "2026-09-06T07:05:16.821393+08:00"
     },
     {
       "id": "shiye",
