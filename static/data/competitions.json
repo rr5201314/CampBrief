@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-05T07:31:53+08:00",
+  "last_updated": "2026-09-05T12:36:19+08:00",
   "source": "CampBrief",
   "total": 198,
   "tiers": [
@@ -2937,7 +2937,7 @@
     },
     {
       "id": "comp-saikr-3bcfd9399c73",
-      "name": "【本周六开考】“声释中华”新时代大学生外宣人才文学素养大赛",
+      "name": "【已开考 | 持续报名中】“声释中华”新时代大学生外宣人才文学素养大赛",
       "tier": "hobby",
       "fields": [
         "other"
@@ -3731,14 +3731,14 @@
       "fields": [
         "language"
       ],
-      "status": "pending",
+      "status": "open",
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-02T07:48:18+08:00",
-        "review_after": "2026-09-05T07:48:18+08:00"
+        "registration_end": "2026-12-26",
+        "verified_at": "2026-09-05T12:36:19+08:00"
       },
-      "signup": "",
+      "signup": "即日起至2026年12月26日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
@@ -3893,8 +3893,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-02T07:48:18+08:00",
-        "review_after": "2026-09-05T07:48:18+08:00"
+        "verified_at": "2026-09-05T12:36:19+08:00",
+        "review_after": "2026-09-08T12:36:19+08:00"
       }
     },
     {
@@ -3908,8 +3908,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-02T07:48:18+08:00",
-        "review_after": "2026-09-05T07:48:18+08:00"
+        "verified_at": "2026-09-05T12:36:19+08:00",
+        "review_after": "2026-09-08T12:36:19+08:00"
       },
       "signup": "",
       "schedule": "",
