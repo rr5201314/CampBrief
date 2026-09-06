@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-06T21:35:40+08:00",
+  "last_updated": "2026-09-07T07:36:51+08:00",
   "source": "CampBrief",
-  "total": 199,
+  "total": 200,
   "tiers": [
     {
       "key": "all",
@@ -4120,6 +4120,32 @@
       "official_site": "http://www.ncevc.com/",
       "organizer": "中国国际科技促进会综合素质与职业发展教育专业委员会、大学生英语词汇竞赛组委会",
       "prestige": 3
+    },
+    {
+      "id": "comp-saikr-c3366f823da5",
+      "name": "【大英赛主办方】2026年全国大学生英语翻译大赛",
+      "tier": "official",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-09-01",
+        "registration_end": "2026-12-11",
+        "event_start": "2026-11-12",
+        "event_end": "2026-12-16",
+        "verified_at": "2026-09-07T07:36:51+08:00"
+      },
+      "signup": "即日起至2026年12月11日",
+      "schedule": "译文上传时间：2026年11月12日至12月16日15:00",
+      "summary": "全国性英语翻译赛事：与全国大学生英语竞赛同主办单位，由高等学校大学外语教学研究会、全国高等师范院校外语教学与研究协作组联合主办，英语辅导报社、《考试与评价》杂志社承办，分A/B/C/D四类参赛，报名费39元。",
+      "search": "NETCCS 全国大学生英语翻译大赛 英语翻译",
+      "official_url": "https://www.saikr.com/vse/netc/2026",
+      "official_site": "",
+      "organizer": "全国英翻赛组委会",
+      "prestige": 6
     }
   ]
 }

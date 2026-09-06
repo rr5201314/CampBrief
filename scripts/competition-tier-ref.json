@@ -499,6 +499,11 @@
       "prestige": 7,
       "note": "NECCS"
     },
+    "大英赛主办方": {
+      "tier": "official",
+      "prestige": 6,
+      "note": "NETCCS全国大学生英语翻译大赛：大英赛(高等学校大学外语教学研究会等)同主办单位，39元评审费"
+    },
     "华为ICT大赛": {
       "tier": "enterprise",
       "prestige": 7
