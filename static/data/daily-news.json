@@ -1,8 +1,60 @@
 {
-  "last_updated": "2026-09-06T08:16:49+08:00",
+  "last_updated": "2026-09-06T13:38:30+08:00",
   "source": "CampBrief Auto",
-  "total": 688,
+  "total": 692,
   "items": [
+    {
+      "id": "news-621f873f47ee7ca3",
+      "title": "Ollama Cloud 推出非高峰时段优惠价，DeepSeek-V4 两款模型错峰半价",
+      "url": "https://daily.juya.uk/issues/2026-09-06/",
+      "date": "2026-09-06",
+      "published": "2026-09-06T01:16:27+00:00",
+      "summary": "Ollama Cloud 推出非高峰时段优惠价：DeepSeek-V4-Flash 与 V4-Pro 在工作日非高峰时段及周末全天按半价计费，官方称后续将扩展到更多模型。",
+      "detail": "Ollama Cloud 错峰定价正式上线，目前适用于 DeepSeek-V4-Flash 和 V4-Pro 两款模型：工作日 12:00 至 18:00（UTC，即北京时间 20:00 至次日 02:00）为高峰时段按正常价格计费，其余工作日时段及周末全天按半价计费。官方表示该非高峰定价后续将逐步覆盖更多模型。此前 Ollama 订阅方案已改为按 token 计费并预告开发错峰定价，此次为错峰优惠的正式落地。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-4490597a147b4c35",
+      "title": "Grok Imagine Video 1.5 agent 上线，由 Image 2.0 模型驱动",
+      "url": "https://daily.juya.uk/issues/2026-09-06/",
+      "date": "2026-09-06",
+      "published": "2026-09-06T01:16:27+00:00",
+      "summary": "Grok 上线 Imagine Video 1.5 agent，由 Image 2.0 模型驱动，官方称画质更高、多镜头衔接连续性更好，已在网页端及 iOS、Android 客户端可用。",
+      "detail": "Grok 官方宣布 Grok Imagine Video 1.5 agent 正式上线，由最新的 Image 2.0 模型驱动。官方称升级后的 agent 画质更高、叙事能力更强，并在衔接多个镜头时具备更好的连续性。该 agent 已在 grok.com 网页端以及 iOS 和 Android 客户端上线。Grok Imagine Image 2.0 图像模型此前已于 8 月初发布。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-ce573c2d95387f5f",
+      "title": "OpenAI DevDay 2026 定于 9 月 29 日举行，部分发布计划提前",
+      "url": "https://daily.juya.uk/issues/2026-09-06/",
+      "date": "2026-09-06",
+      "published": "2026-09-06T01:16:27+00:00",
+      "summary": "OpenAI Codex 负责人透露部分计划提前 6 个月、改在 9 月 29 日的 OpenAI DevDay 2026 发布；大会在旧金山举行，Altman 将出席开幕主题演讲。",
+      "detail": "OpenAI Codex 负责人 Tibo 表示，Astra 尚未全面开放时是公司最大的竞争优势，内部使用后生产力大幅提升，部分计划因此提前了 6 个月，改在 DevDay 发布而非原定的明年年中。官方信息显示，OpenAI DevDay 2026 定于 2026 年 9 月 29 日在旧金山 Fort Mason 举行，Sam Altman 将参加开幕主题演讲，主题演讲会直播。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-cc036e86ad0cad91",
+      "title": "三名徒步者按 Gemini 建议规划登山受困，官方提醒勿仅依赖 AI 规划行程",
+      "url": "https://daily.juya.uk/issues/2026-09-06/",
+      "date": "2026-09-06",
+      "published": "2026-09-06T01:16:27+00:00",
+      "summary": "三名徒步者按 Google Gemini 建议规划攀登加州沙斯塔山，因补给远少于所需且超时登顶而在峡谷受困过夜，次日获救；当地治安官提醒切勿仅依赖 AI 规划行程。",
+      "detail": "据报道，三名徒步者使用 Google Gemini 规划加利福尼亚州沙斯塔山登山行程，凌晨 3 点出发、原计划 8 小时登顶，实际晚上 7 点才登顶，未遵守登山指引中「中午前未登顶即应折返」的要求，最终在 Mud Creek 峡谷受困过夜，次日早晨被美国林务局护林员和志愿者救出。报告称他们获 Gemini 建议携带的食物和水远少于团队所需。报道指出尚不能确定错误决策应全部归因于 Gemini，当地治安官办公室提醒出行前应先致电护林站核实信息，切勿仅依赖 AI 规划行程。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
     {
       "id": "news-8c4ef2640405d997",
       "title": "德国初创 Isar Aerospace 火箭从欧洲大陆入轨，创私人航天纪录",
