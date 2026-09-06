@@ -438,6 +438,11 @@
       "tier": "hobby",
       "prestige": 4,
       "note": "非教育部认可，商业赛事；与 competitions 华教杯关键词对应，防止名称回退误标"
+    },
+    "中国国际科技促进会": {
+      "tier": "hobby",
+      "prestige": 3,
+      "note": "大学生英语词汇竞赛（NCEVC）等商业英语赛事主办方"
     }
   },
   "competitions": {

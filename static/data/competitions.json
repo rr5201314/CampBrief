@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-06T12:39:21+08:00",
+  "last_updated": "2026-09-06T21:35:40+08:00",
   "source": "CampBrief",
-  "total": 198,
+  "total": 199,
   "tiers": [
     {
       "key": "all",
@@ -3977,7 +3977,7 @@
     },
     {
       "id": "comp-saikr-3e818dd91712",
-      "name": "【省赛倒计时1天】第九届大学生普通话挑战赛（NPCCS）",
+      "name": "【省赛报名】第九届大学生普通话挑战赛（NPCCS）",
       "tier": "hobby",
       "fields": [
         "language"
@@ -4097,6 +4097,29 @@
       "official_site": "https://www.cecmath.com",
       "organizer": "华教杯大学生数学竞赛组委会、吉林省科技教育学会、山东北斗教育研究院",
       "prestige": 4
+    },
+    {
+      "id": "comp-52jingsai-31cdef7239a7",
+      "name": "【NCEVC通知】2026年第六届大学生英语词汇竞赛报名通知",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-12-18",
+        "verified_at": "2026-09-06T21:35:40+08:00"
+      },
+      "signup": "即日起至2026年12月18日",
+      "schedule": "初赛第一场考试至2026年11月7日，决赛考试2026年12月27日",
+      "summary": "全国性大学生英语词汇赛事：中国国际科技促进会综合素质与职业发展教育专业委员会与大学生英语词汇竞赛组委会主办，已成功举办五届，分非英语专业组、英语专业组、高职高专组，报名费49元。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23936-1.html",
+      "official_site": "http://www.ncevc.com/",
+      "organizer": "中国国际科技促进会综合素质与职业发展教育专业委员会、大学生英语词汇竞赛组委会",
+      "prestige": 3
     }
   ]
 }
