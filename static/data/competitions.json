@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-07T07:36:51+08:00",
+  "last_updated": "2026-09-07T12:32:48+08:00",
   "source": "CampBrief",
   "total": 200,
   "tiers": [
@@ -172,8 +172,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-04T08:16:31+08:00",
-        "review_after": "2026-09-07T08:16:31+08:00"
+        "verified_at": "2026-09-07T12:32:48+08:00",
+        "review_after": "2026-09-10T12:32:48+08:00"
       }
     },
     {
@@ -275,8 +275,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-04T08:16:31+08:00",
-        "review_after": "2026-09-07T08:16:31+08:00"
+        "verified_at": "2026-09-07T12:32:48+08:00",
+        "review_after": "2026-09-10T12:32:48+08:00"
       }
     },
     {
@@ -844,8 +844,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-04T08:16:31+08:00",
-        "review_after": "2026-09-07T08:16:31+08:00"
+        "verified_at": "2026-09-07T12:32:48+08:00",
+        "review_after": "2026-09-10T12:32:48+08:00"
       }
     },
     {
@@ -1592,8 +1592,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-04T08:16:31+08:00",
-        "review_after": "2026-09-07T08:16:31+08:00"
+        "verified_at": "2026-09-07T12:32:48+08:00",
+        "review_after": "2026-09-10T12:32:48+08:00"
       }
     },
     {
@@ -1616,8 +1616,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-04T08:16:31+08:00",
-        "review_after": "2026-09-07T08:16:31+08:00"
+        "verified_at": "2026-09-07T12:32:48+08:00",
+        "review_after": "2026-09-10T12:32:48+08:00"
       }
     },
     {
@@ -1640,8 +1640,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-04T08:16:31+08:00",
-        "review_after": "2026-09-07T08:16:31+08:00"
+        "verified_at": "2026-09-07T12:32:48+08:00",
+        "review_after": "2026-09-10T12:32:48+08:00"
       }
     },
     {
@@ -1701,8 +1701,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-04T08:16:31+08:00",
-        "review_after": "2026-09-07T08:16:31+08:00"
+        "verified_at": "2026-09-07T12:32:48+08:00",
+        "review_after": "2026-09-10T12:32:48+08:00"
       }
     },
     {
@@ -1780,8 +1780,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-04T08:16:31+08:00",
-        "review_after": "2026-09-07T08:16:31+08:00"
+        "verified_at": "2026-09-07T12:32:48+08:00",
+        "review_after": "2026-09-10T12:32:48+08:00"
       }
     },
     {
@@ -1819,8 +1819,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-04T08:16:31+08:00",
-        "review_after": "2026-09-07T08:16:31+08:00"
+        "verified_at": "2026-09-07T12:32:48+08:00",
+        "review_after": "2026-09-10T12:32:48+08:00"
       }
     },
     {
@@ -1842,8 +1842,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-04T08:16:31+08:00",
-        "review_after": "2026-09-07T08:16:31+08:00"
+        "verified_at": "2026-09-07T12:32:48+08:00",
+        "review_after": "2026-09-10T12:32:48+08:00"
       }
     },
     {
@@ -1865,8 +1865,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-04T08:16:31+08:00",
-        "review_after": "2026-09-07T08:16:31+08:00"
+        "verified_at": "2026-09-07T12:32:48+08:00",
+        "review_after": "2026-09-10T12:32:48+08:00"
       }
     },
     {
@@ -3230,7 +3230,7 @@
     },
     {
       "id": "comp-saikr-4eb4c5be367a",
-      "name": "【最后一场】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
+      "name": "【最后19天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
