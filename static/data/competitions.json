@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-07T12:32:48+08:00",
+  "last_updated": "2026-09-07T21:37:22+08:00",
   "source": "CampBrief",
-  "total": 200,
+  "total": 201,
   "tiers": [
     {
       "key": "all",
@@ -2534,7 +2534,7 @@
       "status": "closed",
       "signup": "2026年4月29日至8月22日",
       "schedule": "",
-      "summary": "来源：赛氪。浏览 1.2万，关注 403",
+      "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/LCBCXSX",
       "official_site": "",
@@ -3064,7 +3064,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【赛前直播课】2026年第十二届中西部外语翻译大赛",
+      "name": "【专家直播课】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3802,7 +3802,7 @@
     },
     {
       "id": "comp-saikr-9c66a33c52e2",
-      "name": "2026年第六届《英语世界》杯全国大学生英语听力大赛",
+      "name": "【周日开考】2026年第六届《英语世界》杯全国大学生英语听力大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3812,13 +3812,12 @@
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
         "registration_start": "2026-07-20",
-        "registration_end": "2026-10-24",
+        "registration_end": "2026-09-19",
         "event_start": "2026-08-23",
-        "event_end": "2026-10-25",
-        "verified_at": "2026-08-16T11:33:03+08:00"
+        "verified_at": "2026-09-07T21:37:22+08:00"
       },
-      "signup": "2026年7月20日至10月24日",
-      "schedule": "线上考试三场：8月23日/9月13日/10月25日（任选一场，60分钟）",
+      "signup": "2026年7月20日至9月19日",
+      "schedule": "线上闭卷考试，任选一场参加（60分钟/30道单选）",
       "summary": "商务印书馆《英语世界》杂志社主办，本届主题“粉丝文化”；全在线客观选择题（30题/60分钟），分A/B/C/D四类组别，报名费50元。",
       "search": "英语世界 听力 英语竞赛",
       "official_url": "https://www.saikr.com/vse/Listening26",
@@ -4145,6 +4144,31 @@
       "official_url": "https://www.saikr.com/vse/netc/2026",
       "official_site": "",
       "organizer": "全国英翻赛组委会",
+      "prestige": 6
+    },
+    {
+      "id": "comp-saikr-2e997c3fa13e",
+      "name": "2026年第七届MathorCup数学应用挑战赛——大数据竞赛",
+      "tier": "official",
+      "fields": [
+        "science"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-08-13",
+        "registration_end": "2026-10-23",
+        "event_start": "2026-10-23",
+        "verified_at": "2026-09-07T21:37:22+08:00"
+      },
+      "signup": "2026年8月13日至10月23日12:00",
+      "schedule": "初赛 2026年10月23日-10月30日（线上）；初赛排名前10%的队伍进入复赛",
+      "summary": "中国优选法统筹法与经济数学研究会主办的企业真实场景大数据分析赛项：组委会以企业真实数据命题，参赛队用算法与数据分析解决实际问题。报名费200元/队，设金奖1支（1万元）、银奖2支、铜奖5支及一、二、三等奖。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/bigdata2026",
+      "official_site": "http://www.mathorcup.org/",
+      "organizer": "大数据竞赛组委会",
       "prestige": 6
     }
   ]

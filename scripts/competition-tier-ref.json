@@ -469,6 +469,11 @@
       "tier": "official",
       "prestige": 8
     },
+    "MathorCup": {
+      "tier": "official",
+      "prestige": 6,
+      "note": "MathorCup数学应用挑战赛（中国优选法统筹法与经济数学研究会主办）"
+    },
     "ACM-ICPC": {
       "tier": "official",
       "prestige": 10,
