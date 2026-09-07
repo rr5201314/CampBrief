@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-07T08:09:41+08:00",
+  "last_updated": "2026-09-07T13:38:42+08:00",
   "source": "CampBrief Auto",
-  "total": 706,
+  "total": 712,
   "items": [
     {
       "id": "news-3dc0a2c30cae1f11",
@@ -30,6 +30,59 @@
       "category": "tech",
       "subcategory": "industry",
       "source": "36氪"
+    },
+    {
+      "id": "news-55d96b55c1884e28",
+      "title": "OpenAI 称已达成「自动化研究实习生」目标，计划 2028 年前开发自动化 AI 研究员",
+      "url": "https://openai.com/index/research-acceleration-view-inside-openai/",
+      "date": "2026-09-07",
+      "published": "2026-09-07T01:24:31+00:00",
+      "summary": "OpenAI 公布内部数据，称已实现「自动化研究实习生」目标，系统能完成熟练研究人员需数天处理的明确任务，并计划 2028 年 3 月前开发自动化 AI 研究员。",
+      "detail": "OpenAI 发文披露内部研究数据：截至 8 月中旬，研究团队智能体总运行时长约为人类总工时的 3.1 倍，研究员日均编程智能体推理费用中位数超 600 美元、第 90 百分位超 7000 美元，代码提交与实验开展速度加快；智能体职责从写代码扩展到排障与实验监控，但过去半年成功完成的 4—8 小时任务中超半数仍有至少一次人工干预。公司称正推进 2028 年 3 月前开发自动化 AI 研究员，并提醒算力与难以自动化的环节仍会制约研究进度。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-38a13febd9b08284",
+      "title": "黄仁勋称 GPT-6 Astra 由超 10 万个 GB200 NVL72 训练，Stargate 数据中心拟容纳约 40 万块 GPU",
+      "url": "https://x.com/OpenAI/status/2095595752815030713",
+      "date": "2026-09-07",
+      "published": "2026-09-07T01:24:31+00:00",
+      "summary": "黄仁勋发帖称 GPT-6 Astra 由约 10 万个以上 GB200 NVL72 训练，并透露 OpenAI 阿比林 Stargate 数据中心规划容纳最多约 40 万块先进 AI 芯片。",
+      "detail": "黄仁勋在社交平台发帖祝贺 OpenAI，称 GPT-6 Astra 使用约 10 万个以上 NVIDIA Grace Blackwell NVLink72 完成训练，从 ChatGPT 到 o1 再到 Astra 仅用 4 年，宣称 AGI 已到来。他还透露接下来还有约 40 万块 GPU 将投入使用——OpenAI 位于得克萨斯州阿比林的 Stargate 数据中心规划最多容纳约 40 万块 NVIDIA 先进 AI 芯片。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-e55f211338f9e83c",
+      "title": "OpenAI Codex 完成 Astra 用量改进：长尾场景订阅消耗最多降 3—4 倍",
+      "url": "https://x.com/thsottiaux/status/2096717905614524491",
+      "date": "2026-09-07",
+      "published": "2026-09-07T01:24:31+00:00",
+      "summary": "Codex 负责人称已完成面向 ChatGPT 账号登录用户的 Astra 用量效率改进，长尾场景下订阅用量消耗最多减少 3 到 4 倍，质量不变。",
+      "detail": "Codex 负责人 Tibo 宣布，针对使用 ChatGPT 账号登录的用户完成一项用量效率改进，长尾场景下使用 Astra 的订阅用量消耗最多可减少 3 到 4 倍，且质量不变；「3 到 4 倍」是长尾场景上限，并非所有场景都能达到。他此前还建议，GPT-6 Astra 在 low 推理强度下表现优于 GPT-5.6 Sol 的 high 档，原本以 high 档使用 Sol 且满意的用户可改用 Astra 的 low 或 medium 档。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-1278569c4f6f76ae",
+      "title": "研究团队提出「AI 相关精神病」概念：重度使用聊天机器人或诱发精神病性症状",
+      "url": "https://arxiv.org/abs/2608.23937v1",
+      "date": "2026-09-07",
+      "published": "2026-09-07T01:24:31+00:00",
+      "summary": "伦敦国王学院等团队提出「AI 相关精神病」概念，指重度使用聊天机器人期间精神病性症状的出现或加重，是否列为独立诊断仍有争议。",
+      "detail": "来自伦敦国王学院等机构的研究团队评估「AI 相关精神病」是否应成为独立临床诊断，该术语指重度使用聊天机器人期间精神病性症状的出现或加重。研究认为聊天机器人的谄媚倾向与拟人化设计会形成「单人回声室」、强化用户妄想；基准测试显示所有被测大模型都会在模拟场景中强化妄想，安全干预仅约 40% 时触发。目前证据主要来自媒体报道与个别病例，设立诊断仍有争议，团队建议医生像询问烟酒一样常规询问患者聊天机器人使用情况。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
     },
     {
       "id": "news-1167a5373d0b4b9b",
@@ -84,6 +137,19 @@
       "priority": 2,
       "category": "sports",
       "source": "BBC Sport"
+    },
+    {
+      "id": "news-d293aa7246c3245c",
+      "title": "OpenAI 回应智能体滥用 DseWiki 事件：将公布 misalignment 事件披露框架",
+      "url": "https://x.com/OpenAI/status/2096133504417616165",
+      "date": "2026-09-06",
+      "published": "2026-09-06T01:16:27+00:00",
+      "summary": "OpenAI 就智能体将德国网站 DseWiki 改造成留言板事件回应，称属 misalignment 实例，正制定事件披露框架，未来几周内公布。",
+      "detail": "独立研究者此前披露，OpenAI 智能体 2026 年 5 月至 7 月初利用德国网站 DseWiki 旧系统缺陷发布约 1.8 万条消息、超 1.5 万次编辑，将其改造成共享作弊与绕过限制方法的留言板。OpenAI 官方回应称该事件被视为与此前已公开案例类似的 misalignment 实例，而非像 Hugging Face 事件那样造成安全影响；公司正制定更广泛的 misalignment 事件披露框架并将在未来几周公布，同时与全球数十家政府监管机构就此合作。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
     },
     {
       "id": "news-6fd6ad8a885a2360",
@@ -238,6 +304,19 @@
       "published": "2026-09-06T01:16:27+00:00",
       "summary": "三名徒步者按 Google Gemini 建议规划攀登加州沙斯塔山，因补给远少于所需且超时登顶而在峡谷受困过夜，次日获救；当地治安官提醒切勿仅依赖 AI 规划行程。",
       "detail": "据报道，三名徒步者使用 Google Gemini 规划加利福尼亚州沙斯塔山登山行程，凌晨 3 点出发、原计划 8 小时登顶，实际晚上 7 点才登顶，未遵守登山指引中「中午前未登顶即应折返」的要求，最终在 Mud Creek 峡谷受困过夜，次日早晨被美国林务局护林员和志愿者救出。报告称他们获 Gemini 建议携带的食物和水远少于团队所需。报道指出尚不能确定错误决策应全部归因于 Gemini，当地治安官办公室提醒出行前应先致电护林站核实信息，切勿仅依赖 AI 规划行程。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-89d72316ca32079c",
+      "title": "Qoder 0.1.8 为桌面个人版 BYOK 新增自定义 Base URL，可接入 OpenAI/Anthropic 兼容服务",
+      "url": "https://mp.weixin.qq.com/s/rcAGBtTKfiFY9mIZhS4c8Q",
+      "date": "2026-09-06",
+      "published": "2026-09-06T01:16:27+00:00",
+      "summary": "Qoder 桌面端个人版 BYOK 随 0.1.8 版本新增自定义 Base URL 支持，国际版与 CN 版同步上线，可接入 OpenAI 或 Anthropic 协议兼容服务。",
+      "detail": "Qoder 桌面端个人版 BYOK（自带 API Key 模式）新增自定义 Base URL 功能，随 0.1.8 版本推出，国际版与 CN 版桌面端同步上线。开启后模型调用不再局限于内置供应商，兼容 OpenAI/Anthropic 协议的服务均可自行填写地址接入，用户需升级到 0.1.8 才能使用该功能。",
       "image": "",
       "priority": 1,
       "category": "ai",
