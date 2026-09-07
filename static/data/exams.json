@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-07T07:02:52+08:00",
+  "last_updated": "2026-09-07T13:03:17+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -345,7 +345,7 @@
       "official_portal": "https://www.ruankao.org.cn/",
       "news_list_url": "https://www.ruankao.org.cn/index/work.html",
       "official_url": "https://www.ruankao.org.cn/article/content/2603051204118156470700001.html",
-      "last_updated": "2026-09-04T13:04:10.188290+08:00",
+      "last_updated": "2026-09-07T13:03:17.600835+08:00",
       "timeline": [
         {
           "label": "考试时间",
@@ -569,7 +569,7 @@
         "registration_end": "2026-08-03T23:59:00+01:00",
         "event_start": "2026-09-07",
         "event_end": "2026-09-11",
-        "verified_at": "2026-09-04T13:04:10+08:00"
+        "verified_at": "2026-09-07T13:03:17+08:00"
       },
       "fee": "各阶段费用不同",
       "schedule": "2026年9月",
@@ -605,7 +605,7 @@
           "value": "2026年10月19日"
         }
       ],
-      "last_updated": "2026-09-04T13:04:10.188290+08:00"
+      "last_updated": "2026-09-07T13:03:17.600835+08:00"
     },
     {
       "id": "acca-202612",
@@ -619,7 +619,7 @@
         "registration_end": "2026-11-09T23:59:00+00:00",
         "event_start": "2026-12-07",
         "event_end": "2026-12-11",
-        "verified_at": "2026-09-04T13:04:10+08:00"
+        "verified_at": "2026-09-07T13:03:17+08:00"
       },
       "fee": "各阶段费用不同",
       "schedule": "2026年12月",
@@ -651,7 +651,7 @@
           "value": "2027年1月18日"
         }
       ],
-      "last_updated": "2026-09-04T13:04:10.188290+08:00"
+      "last_updated": "2026-09-07T13:03:17.600835+08:00"
     },
     {
       "id": "first-level-cost-engineer-2026",
@@ -824,7 +824,7 @@
       "official_portal": "https://yz.chsi.com.cn/",
       "news_list_url": "https://yz.chsi.com.cn/kyzx/jybzc/",
       "official_url": "",
-      "last_updated": "2026-09-04T13:04:10.188290+08:00"
+      "last_updated": "2026-09-07T13:03:17.600835+08:00"
     },
     {
       "id": "baoyan-2026",
@@ -839,7 +839,7 @@
       "official_portal": "https://yz.chsi.com.cn/tm/",
       "news_list_url": "https://yz.chsi.com.cn/kyzx/kydt/",
       "official_url": "",
-      "last_updated": "2026-09-04T13:04:10.188290+08:00"
+      "last_updated": "2026-09-07T13:03:17.600835+08:00"
     }
   ]
 }
