@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-08T00:04:25+08:00",
+  "last_updated": "2026-09-08T21:46:17+08:00",
   "source": "CampBrief",
   "total": 201,
   "tiers": [
@@ -2049,16 +2049,7 @@
       "official_url": "https://www.saikr.com/vse/2026NCSET",
       "official_site": "",
       "organizer": "外文局亚太传播中心英语大赛组委会",
-      "prestige": 7,
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_end": "2026-07-27",
-        "verified_at": "2026-07-23T21:32:59+08:00",
-        "registration_start": "2026-03-12",
-        "event_start": "2026-06-25",
-        "event_end": "2026-07-30"
-      }
+      "prestige": 7
     },
     {
       "id": "comp-saikr-94f90cd43a98",
@@ -2207,14 +2198,7 @@
       "official_url": "https://www.saikr.com/vse/2026/SYZGVC",
       "official_site": "",
       "organizer": "中国寓言文学研究会教育教学专业委员会",
-      "prestige": 2,
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_end": "2026-07-25",
-        "verified_at": "2026-07-23T21:32:59+08:00",
-        "event_end": "2026-07-25"
-      }
+      "prestige": 2
     },
     {
       "id": "comp-saikr-908546aaf309",
@@ -2308,16 +2292,7 @@
       "official_url": "https://www.saikr.com/vse/CLComputer2026",
       "official_site": "",
       "organizer": "大连市计算机学会、苏州市计算机学会、天津市计算机学会",
-      "prestige": 4,
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-04T15:41:30+08:00",
-        "registration_start": "2026-06-17",
-        "registration_end": "2026-08-07",
-        "event_start": "2026-08-08",
-        "event_end": "2026-08-09"
-      }
+      "prestige": 4
     },
     {
       "id": "comp-saikr-18e1497ac3fd",
@@ -2469,16 +2444,7 @@
       "official_url": "https://www.saikr.com/vse/LCBSM",
       "official_site": "",
       "organizer": "全国大学生“麟创杯”组委会",
-      "prestige": 8,
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_start": "2026-07-01",
-        "registration_end": "2026-08-22",
-        "event_start": "2026-08-23",
-        "event_end": "2026-08-23",
-        "verified_at": "2026-08-02T00:24:22+08:00"
-      }
+      "prestige": 8
     },
     {
       "id": "comp-saikr-4d36245c1d5c",
@@ -2634,16 +2600,7 @@
       "official_url": "https://www.saikr.com/vse/2026KFZ",
       "official_site": "",
       "organizer": "信息系统创新大赛组委会",
-      "prestige": 4,
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_start": "2026-05-15",
-        "registration_end": "2026-07-26",
-        "event_start": "2026-07-25",
-        "event_end": "2026-08-16",
-        "verified_at": "2026-08-02T00:24:22+08:00"
-      }
+      "prestige": 4
     },
     {
       "id": "comp-saikr-a9fc0ce98006",
@@ -2697,16 +2654,7 @@
       "official_url": "https://www.saikr.com/vse/CLAIBM2026",
       "official_site": "",
       "organizer": "大连市计算机学会、苏州市计算机学会、天津市计算机学会",
-      "prestige": 4,
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_start": "2026-06-17",
-        "registration_end": "2026-08-14",
-        "event_start": "2026-08-15",
-        "event_end": "2026-08-16",
-        "verified_at": "2026-08-14T10:13:34+08:00"
-      }
+      "prestige": 4
     },
     {
       "id": "comp-saikr-9cfeceaf8750",
@@ -2839,15 +2787,7 @@
       "official_url": "https://www.saikr.com/vse/Bett-Writing-Fourth",
       "official_site": "",
       "organizer": "“BETT杯”大赛组委会",
-      "prestige": 4,
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_start": "2026-04-27",
-        "registration_end": "2026-08-12",
-        "event_end": "2026-08-15",
-        "verified_at": "2026-07-26T21:45:14+08:00"
-      }
+      "prestige": 4
     },
     {
       "id": "comp-saikr-613cd4ec2e22",
@@ -2924,16 +2864,7 @@
       "official_url": "https://www.saikr.com/vse/2026/YDYL/Culture",
       "official_site": "",
       "organizer": "一带一路系列赛事组委会",
-      "prestige": 4,
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_start": "2026-04-09",
-        "registration_end": "2026-08-29",
-        "event_start": "2026-08-29",
-        "event_end": "2026-08-29",
-        "verified_at": "2026-08-20T07:42:10+08:00"
-      }
+      "prestige": 4
     },
     {
       "id": "comp-saikr-3bcfd9399c73",
@@ -3012,20 +2943,20 @@
       "fields": [
         "other"
       ],
-      "status": "open",
-      "signup": "即日起-12月25日中午12点截止",
-      "schedule": "",
-      "summary": "赛事详情请访问信息来源页面",
+      "status": "ongoing",
+      "signup": "省级选拔报名以各省级团委通知为准",
+      "schedule": "省级选拔：2026年7月-9月；全国决赛：2026年10月-11月（浙江杭州）",
+      "summary": "2026年全国行业职业技能竞赛，共青团中央、人力资源社会保障部联合主办，设职工组与学生组，来源：共青团中央办公厅通知（zxbds.cn）。",
       "search": "",
-      "official_url": "https://www.52jingsai.com/article-23522-1.html",
-      "official_site": "",
+      "official_url": "",
+      "official_site": "https://www.zxbds.cn/",
       "organizer": "共青团中央、人力资源和社会保障部",
       "prestige": 9,
       "lifecycle": {
-        "mode": "scheduled",
+        "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "registration_end": "2026-12-25",
-        "verified_at": "2026-07-29T21:36:38+08:00"
+        "verified_at": "2026-09-08T21:46:17+08:00",
+        "review_after": "2026-09-11T21:46:17+08:00"
       }
     },
     {
@@ -3125,16 +3056,7 @@
       "official_url": "https://www.saikr.com/vse/YXZS",
       "official_site": "",
       "organizer": "中国光学工程学会",
-      "prestige": 5,
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_start": "2026-06-12",
-        "registration_end": "2026-08-01",
-        "event_start": "2026-08-10",
-        "event_end": "2026-08-22",
-        "verified_at": "2026-07-24T15:38:45+08:00"
-      }
+      "prestige": 5
     },
     {
       "id": "comp-saikr-c45cc2238308",
@@ -3230,7 +3152,7 @@
     },
     {
       "id": "comp-saikr-4eb4c5be367a",
-      "name": "【最后19天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
+      "name": "【最后18天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3363,15 +3285,6 @@
         "language"
       ],
       "status": "done",
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-03T21:36:23+08:00",
-        "registration_start": "2026-05-11",
-        "registration_end": "2026-08-08",
-        "event_start": "2026-08-09",
-        "event_end": "2026-08-09"
-      },
       "signup": "2026年5月11日至8月8日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
@@ -3389,15 +3302,6 @@
         "math"
       ],
       "status": "done",
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_start": "2026-06-30",
-        "registration_end": "2026-08-20",
-        "event_start": "2026-08-20",
-        "event_end": "2026-08-23",
-        "verified_at": "2026-08-02T00:24:22+08:00"
-      },
       "signup": "即日起至2026年8月20日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
@@ -3498,16 +3402,7 @@
       "official_url": "https://www.saikr.com/vse/2026YF",
       "official_site": "",
       "organizer": "外文局亚太传播中心英语大赛组委会",
-      "prestige": 7,
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_start": "2026-07-07",
-        "registration_end": "2026-08-30",
-        "event_start": "2026-08-30",
-        "event_end": "2026-08-30",
-        "verified_at": "2026-08-02T00:24:22+08:00"
-      }
+      "prestige": 7
     },
     {
       "id": "comp-saikr-357a094c18d3",
@@ -3827,7 +3722,7 @@
     },
     {
       "id": "comp-saikr-9867f29b35c9",
-      "name": "【开学必冲】第九届ETTBL杯全国英语词汇大赛",
+      "name": "【倒计时4天】第九届ETTBL杯全国英语词汇大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3895,8 +3790,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-05T12:36:19+08:00",
-        "review_after": "2026-09-08T12:36:19+08:00"
+        "verified_at": "2026-09-08T21:46:17+08:00",
+        "review_after": "2026-09-11T21:46:17+08:00"
       }
     },
     {
@@ -3908,13 +3803,13 @@
       ],
       "status": "open",
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-05T12:36:19+08:00",
-        "review_after": "2026-09-08T12:36:19+08:00"
+        "registration_end": "2026-09-17",
+        "verified_at": "2026-09-08T21:46:17+08:00"
       },
-      "signup": "",
-      "schedule": "",
+      "signup": "即日起至2026年9月17日",
+      "schedule": "作品提交（第三场）：即日起至2026年9月17日17时；证书2026年10月发放",
       "summary": "免费答题，60分及格领荣誉证书；含知识答题与作品创作（诵读、汉字书写）环节，作品创作收取评审费50元。",
       "search": "",
       "official_url": "https://www.52jingsai.com/article-23154-1.html",
@@ -3956,15 +3851,6 @@
         "science"
       ],
       "status": "done",
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_start": "2026-03-11",
-        "registration_end": "2026-08-28",
-        "event_start": "2026-08-29",
-        "event_end": "2026-08-29",
-        "verified_at": "2026-08-23T07:35:50+08:00"
-      },
       "signup": "即日起至2026年8月28日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
