@@ -443,6 +443,10 @@
       "tier": "hobby",
       "prestige": 3,
       "note": "大学生英语词汇竞赛（NCEVC）等商业英语赛事主办方"
+    },
+    "山东省力学学会": {
+      "tier": "official",
+      "prestige": 5
     }
   },
   "competitions": {
