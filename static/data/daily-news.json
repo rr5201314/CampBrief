@@ -1,8 +1,36 @@
 {
-  "last_updated": "2026-09-09T08:37:12+08:00",
+  "last_updated": "2026-09-09T09:45:46+08:00",
   "source": "CampBrief Auto",
-  "total": 785,
+  "total": 783,
   "items": [
+    {
+      "id": "news-2bb3c32b4a0ccc94",
+      "title": "苹果新任 CEO 特努斯将首次主持发布会，折叠屏 iPhone 预计登场",
+      "url": "https://36kr.com/newsflashes/3975486079693062?f=rss",
+      "date": "2026-09-09",
+      "published": "2026-09-09T09:13:34+08:00",
+      "summary": "苹果周三举行年度 iPhone 发布会，9月1日接任 CEO 的约翰·特努斯将首次登台，预计发布首款折叠屏 iPhone 及 iPhone 18 Pro 系列。",
+      "detail": "这是蒂姆·库克卸任后特努斯主持的首场发布会，市场普遍预计苹果将推出首款折叠屏 iPhone，并更新 iPhone 18 Pro 与 Apple Watch 产品线。供应链消息此前显示，折叠 iPhone 因质检标准严格初期日产量仅数百部，全年计划生产 800 万至 1000 万部，开售初期可能面临供不应求。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "hardware",
+      "source": "36氪"
+    },
+    {
+      "id": "news-4b22b3ba420e6d57",
+      "title": "三星与法国 Mistral AI 达成合作，强化芯片业务 AI 能力",
+      "url": "https://36kr.com/newsflashes/3975483051340037?f=rss",
+      "date": "2026-09-09",
+      "published": "2026-09-09T09:10:29+08:00",
+      "summary": "三星电子宣布与法国 AI 初创公司 Mistral AI 合作，将其服务与解决方案整合进半导体业务，开发本地部署的定制化 AI 模型。",
+      "detail": "合作在巴黎举行的韩法峰会期间宣布。作为全球最大存储芯片制造商，三星计划借助 Mistral 的模型能力提升半导体业务智能化水平，重点面向本地部署场景定制模型。此次引入欧洲 AI 公司，被视为三星在自研与本土大模型合作之外的又一布局。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "36氪"
+    },
     {
       "id": "news-5d3769d6c72b79ad",
       "title": "工信部「十五五」规划首次明确：适时启动 6G 商用",
@@ -16,6 +44,33 @@
       "category": "tech",
       "subcategory": "hardware",
       "source": "36氪"
+    },
+    {
+      "id": "news-ab52163764f00531",
+      "title": "智能眼镜品牌「影目科技」完成近 10 亿元 C 轮融资，启动上市筹备",
+      "url": "https://36kr.com/p/3974730056757511?f=rss",
+      "date": "2026-09-09",
+      "published": "2026-09-09T09:00:00+08:00",
+      "summary": "影目科技完成 C3 轮融资，C 轮累计金额近 10 亿元，资金投向空间智能硬件研发与 INMO AIOS 迭代，公司已启动上市筹备。",
+      "detail": "C3 轮由四川振兴科创基金领投，静安资本、市北高新、广州产投等多家机构跟投。影目科技近年营收增速连续保持 200% 以上，本轮资金将用于新一代空间智能硬件产品线、AIOS 系统底层能力建设及全渠道商业化布局。IDC 数据显示智能眼镜正成为消费电子最受关注的增长品类之一。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "36氪"
+    },
+    {
+      "id": "news-e926e15d23259f0b",
+      "title": "派早报：Arm 发布 C2 CPU 与新 Mali GPU、LG 电视被曝后门等",
+      "url": "https://sspai.com/post/114352",
+      "date": "2026-09-09",
+      "published": "2026-09-09T08:00:00+08:00",
+      "summary": "Arm 发布面向 Android 芯片的 C2 系列 CPU 与 Mali G2 GPU，单线程性能提升 15%；LG 电视被曝待机后门、《塞尔达传说：时之笛》重制版公布。",
+      "detail": "Arm C2-Ultra/C2-Pro 将本地 AI 加速直接内置于 CPU，最新 AI 模型运行性能最高提升 1.7 倍；Mali G2-Ultra NX 集成虚幻引擎 5 MegaLights 并支持超分与插帧。LG 智能电视被曝在待机状态下扫描家庭网络并记录麦克风音频；任天堂公布《塞尔达传说：时之笛》重制版；索尼发布首款全画幅鱼眼变焦镜头，定价 9999 元。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "少数派"
     },
     {
       "id": "news-a9f4ad6d304c7567",
@@ -43,6 +98,19 @@
       "category": "tech",
       "subcategory": "industry",
       "source": "36氪"
+    },
+    {
+      "id": "news-6a8b142c5781e0dd",
+      "title": "美网：蒂亚福先丢两盘连扳三盘，四个半小时大逆转米克尔森进四强",
+      "url": "https://www.theguardian.com/sport/2026/sep/08/frances-tiafoe-alex-michelsen-us-open-quarter-final",
+      "date": "2026-09-09",
+      "published": "2026-09-09T00:33:30+00:00",
+      "summary": "蒂亚福在美网男单四分之一决赛 5-7、3-6 落后再扳三盘，历经超过四个半小时逆转米克尔森，打进近五年第三个美网四强。",
+      "detail": "决胜盘抢七中米克尔森惜败，当场落泪，蒂亚福上前安抚对手。此役后蒂亚福半决赛将对阵阿尔卡拉斯与谢尔顿之间的胜者，延续其在大满贯主场赛事的强势表现。",
+      "image": "",
+      "priority": 1,
+      "category": "sports",
+      "source": "The Guardian Sport"
     },
     {
       "id": "news-ba94b68f3054aac7",
@@ -81,6 +149,20 @@
       "detail": "人类基因组约 98% 为非编码区，其变异的功能长期不明。Google DeepMind 基于 AlphaGenome 模型预计算了所有可能的单核苷酸变异对蛋白质生成等分子过程的影响，并发布可检索的 1PB 数据集 AlphaGenome Atlas。研究者可用它定位疾病相关非编码变异、生成候选假设，目标是把变异解读从数年实验压缩到数秒查询。该图谱面向基因组学与精准医疗研究开放。",
       "image": "",
       "priority": 3,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-8f65386d75219295",
+      "title": "ICML 论文：LLM 会在探索中自发形成新的社会偏见",
+      "url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3Dpc7fqaOcAH",
+      "date": "2026-09-08",
+      "published": "2026-09-08T21:47:38+00:00",
+      "summary": "ICML 2026 论文显示，LLM 在多轮雇佣模拟中会因探索不足对无差异群体形成新的职业分层偏见，且模型越大越强偏比分层越严重。",
+      "detail": "研究者复现心理学经典的多轮雇佣实验，发现各前沿模型在无群体差异的设定下仍会基于随机反馈形成刻板印象，任务分配分层程度超过人类被试；更新、更大的模型分层更严重。仅改变温度或提示词效果有限，只有把多样性显式写入目标函数才能稳健缓解。论文提示随着 LLM 走向决策代理，单轮偏见基准已不足以评估其社会影响。",
+      "image": "",
+      "priority": 2,
       "category": "tech",
       "subcategory": "ai-frontier",
       "source": "Hacker News"
@@ -193,6 +275,20 @@
       "source": "36氪"
     },
     {
+      "id": "news-ec8daf167bc0e38b",
+      "title": "全球首款碳化硅超级结功率器件产品在上海发布",
+      "url": "https://36kr.com/p/3974226947158530?f=rss",
+      "date": "2026-09-08",
+      "published": "2026-09-08T11:55:04+08:00",
+      "summary": "9月7日，瑶芯微与郝跃院士团队合作研发的全球首款碳化硅超级结MOSFET产品在上海发布，打破海外厂商在该领域的长期主导。",
+      "detail": "碳化硅功率器件是新能源汽车、数据中心800V供电、光伏储能等场景的核心芯片。本次成果源自瑶芯微与中国科学院院士、西安电子科技大学教授郝跃团队的产学研合作，超级结架构可在同等耐压下降低导通损耗。市场调研机构Yole数据显示碳化硅器件市场近年持续扩张，该产品量产有望推动国产替代。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "hardware",
+      "source": "36氪"
+    },
+    {
       "id": "news-320fa8ef17476f50",
       "title": "华为发布 Mate XT 2 非凡大师与 HarmonyOS 7：首发麒麟 9050 Pro，19999 元起",
       "url": "https://sspai.com/post/114307",
@@ -245,6 +341,20 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-f730dcf4ac018df9",
+      "title": "Brave 自测浏览器性能：CPU 与内存占用低于 Chrome、Edge 和 Firefox",
+      "url": "https://www.solidot.org/story?sid=85324",
+      "date": "2026-09-08",
+      "published": "2026-09-08T23:39:28+08:00",
+      "summary": "Brave 公布对比测试称其平均 CPU 占用 33%、内存约 1.2GB，均低于三家竞品；但对比所用 Firefox 为旧版本。",
+      "detail": "测试结果显示 Brave 平均 CPU 占用率 33%，Chrome 47%、Edge 53%、Firefox 78%；内存约 1.2GB，低于竞品的 1.6-1.75GB；网页加载约 4.4 秒。值得注意的是，对比使用的 Firefox 并非最新版 v155 而是 v146.0.1，且测试由 Brave 官方发布，独立复现结果有待观察。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "Solidot"
+    },
+    {
       "id": "news-19ac2ca7ff2d8499",
       "title": "研究：冲马桶会喷发气溶胶并在空气悬浮至少 20 秒，建议合盖再冲",
       "url": "https://www.solidot.org/story?sid=85323",
@@ -269,6 +379,19 @@
       "priority": 1,
       "category": "fun",
       "source": "Solidot"
+    },
+    {
+      "id": "news-f02d308253cc2866",
+      "title": "交互式《拓扑图鉴》上线：用钢笔手绘风渲染经典曲面",
+      "url": "https://e-infinity.space/picture-book/",
+      "date": "2026-09-08",
+      "published": "2026-09-08T22:28:14+00:00",
+      "summary": "开发者以计算渲染重现 20 世纪中期手绘风格的拓扑学图册，环面、Boy 曲面等经典对象可拖拽旋转观赏。",
+      "detail": "该项目致敬 Francis、Apéry 等经典拓扑图鉴的绘图风格，通过轮廓线零集检测、主曲率线场排线、隐藏线虚线与手工抖动笔触算法，实时渲染出钢笔手绘质感的曲面模型。用户可自由旋转查看环面纽结、Morin 曲面等几何对象，页面还公开了各曲面的参数化生成方法。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Hacker News"
     },
     {
       "id": "news-73ce8fe511bb1447",
@@ -299,6 +422,20 @@
       "source": "36氪"
     },
     {
+      "id": "news-0197a0840e25481c",
+      "title": "开发者手记：给电子墨水阅读器实现一台真正的打印机",
+      "url": "https://nishantjosh.dev/blogs/how-to-build-a-fking-printer/",
+      "date": "2026-09-08",
+      "published": "2026-09-08T21:22:11+00:00",
+      "summary": "开发者为可编程墨水屏设备 Xteink X3 实现 IPP 打印协议，让 macOS 把它当作无线网络打印机直接打印。",
+      "detail": "作者为解决向墨水屏传图繁琐的问题，研究互联网打印协议（IPP），在开源固件中实现了 Get-Printer-Attributes、Print-Job 等操作，使设备可被电脑识别为打印机；打印内容以图片形式存入 SD 卡，可在设备上翻阅。项目代码已在 GitHub 开源，是一篇从零摸清打印协议的实战记录。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "Hacker News"
+    },
+    {
       "id": "news-34ce3d824179f3b8",
       "title": "欧冠：穆里尼奥执教皇马首战欧冠，37 脚对轰 2-1 险胜国际米兰",
       "url": "https://www.theguardian.com/football/2026/sep/08/real-madrid-inter-champions-league-match-report",
@@ -306,6 +443,19 @@
       "published": "2026-09-08T21:18:12+00:00",
       "summary": "穆里尼奥在欧冠赛场回归对阵旧东家国际米兰，皇马全场两队合计 37 脚射门、门将合力 13 次扑救，最终险胜取开门红。",
       "detail": "比赛戏剧性拉满：皇马 2-1 领先后顶住国米反扑，库尔图瓦与门将线多次神扑。阿诺德被穆里尼奥排进中场首发，赛后他坦言「他不是中场」引发战术讨论。穆帅与皇马球迷的二次蜜月、国米失去恰尔汗奥卢式中场控制后的重建，是这场「特殊之夜」的两个叙事主线。",
+      "image": "",
+      "priority": 1,
+      "category": "sports",
+      "source": "The Guardian Sport"
+    },
+    {
+      "id": "news-62c21a698caf7148",
+      "title": "欧冠：哈兰德梅开二度，曼城客场击败波尔图取开门红",
+      "url": "https://www.theguardian.com/football/2026/sep/08/porto-manchester-city-champions-league-match-report",
+      "date": "2026-09-08",
+      "published": "2026-09-08T21:08:19+00:00",
+      "summary": "哈兰德两场进球帮助曼城在雨战中客场击败波尔图，取得新赛季欧冠开门红，主帅马雷斯卡率队走出近期欧战客场低迷。",
+      "detail": "曼城此前 9 场欧冠客场输掉 6 场，此役在波尔图持续降雨中顶住压力取胜。马雷斯卡赛后对球队在恶劣条件下展现的坚韧表示满意，这场胜利也为其执教曼城的欧冠首秀开了好头。",
       "image": "",
       "priority": 1,
       "category": "sports",
@@ -394,6 +544,33 @@
       "source": "Solidot"
     },
     {
+      "id": "news-b5928326d9f0532d",
+      "title": "英国犯罪率持续下降，但公众普遍感觉治安变差了",
+      "url": "https://www.solidot.org/story?sid=85316",
+      "date": "2026-09-08",
+      "published": "2026-09-08T16:45:29+08:00",
+      "summary": "民调显示逾八成英国民众认为犯罪率上升，而官方统计显示同期多数犯罪类型发生率下降五成以上，感知与现实明显背离。",
+      "detail": "警方数据显示，手机盗窃、汽车盗窃、入室盗窃等案件自 2010 年以来实际发生率大幅下降，谋杀率下降约 20%，但多数民众仍持相反判断。分析认为，公众对治安的认知更多受情绪反应和身份认同影响，政客关于治安恶化的言论进一步放大了这种偏差。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-0a75ffe235b668c6",
+      "title": "论文 C*：在 C 语言中统一编程与形式化验证",
+      "url": "https://arxiv.org/abs/2504.02246",
+      "date": "2026-09-08",
+      "published": "2026-09-08T15:56:56+00:00",
+      "summary": "论文提出 C* 语言，在 C 的语法基础上统一程序编写与形式化验证，让底层代码的正确性证明与实现写在一起。",
+      "detail": "C* 的目标是让开发者在同一份代码中既写实现又写规约，将编程与验证合为一体，面向对正确性要求高的系统软件场景。该论文（2025 年发布）近日经 Hacker News 重新讨论，适合对形式化方法、程序验证和 C 语言底层开发感兴趣的学生与工程师阅读。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "Hacker News"
+    },
+    {
       "id": "news-c2ac35904f998b14",
       "title": "RIAA：美国上半年 CD 收入飙升 58.6%，实体唱片强势复苏",
       "url": "https://www.solidot.org/story?sid=85315",
@@ -406,6 +583,20 @@
       "category": "tech",
       "subcategory": "industry",
       "source": "Solidot"
+    },
+    {
+      "id": "news-0dc75c518de57989",
+      "title": "实测 Qwen3.8 27B 量化：4-bit 几乎无损，1-bit 全面崩溃",
+      "url": "https://quesma.com/blog/qwen38-27b-quantizations-benchmarked/",
+      "date": "2026-09-08",
+      "published": "2026-09-08T14:49:19+00:00",
+      "summary": "第三方基准显示 Qwen3.8 27B 的 17GB Q4_K_M 量化版在 Terminal-Bench 2.1 上与 55GB 全精度模型持平，1-bit 量化则接近随机。",
+      "detail": "开发者基于 Unsloth 发布的 GGUF 权重，对 Qwen3.8 27B 做了 8/4/2/1 bit 四档量化对比。4-bit 版本可装入 24GB 显存的 RTX 4090 并预留约 64k 上下文，代理式编程表现与原版持平；1-bit 版本（6.2GB）在 GPQA Diamond 上接近随机猜测，且推理链越长越差。结果为本地大模型部署选型提供了量化档位参考。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "Hacker News"
     },
     {
       "id": "news-9ebb7a46bfa8d8d4",
@@ -10258,47 +10449,6 @@
       "subcategory": "hardware"
     },
     {
-      "id": "news-7f0528036ddf7558",
-      "title": "OpenRouter 上 GLM 5.2 模型出现大幅折扣定价",
-      "url": "https://daily.juya.uk/issues/2026-08-10/",
-      "date": "2026-08-10",
-      "published": "2026-08-10T01:33:07+00:00",
-      "summary": "OpenRouter 平台上部分供应商为 GLM 5.2 的 API 服务提供低至 0.5 折的价格折扣，输入价格低至每百万 tokens 0.07 美元。",
-      "detail": "根据 OpenRouter 平台显示，智谱 GLM 5.2 模型 API 定价目前处于大幅折扣状态，部分推理服务供应商降价 95%，输入价格低至每百万 tokens 0.07 美元、输出价格 0.22 美元。该折扣生效的具体原因和持续时间尚未明确，可能影响开发者选择推理服务时的成本测算。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "juya AI 日报"
-    },
-    {
-      "id": "news-83a969dc967af6cf",
-      "title": "远景乌兰察布星河基地投产 规划容量达 2GW",
-      "url": "https://daily.juya.uk/issues/2026-08-10/",
-      "date": "2026-08-10",
-      "published": "2026-08-10T01:33:07+00:00",
-      "summary": "远景乌兰察布星河基地正式投产，规划容量达 2GW，官方称其为全球 Token 产出能力最强的单体 AI 数据中心和全国最大 AI 算力园区。",
-      "detail": "远景科技集团宣布在乌兰察布建成 AI 算力超级单体“远景乌兰察布星河基地”并正式投产。该基地建筑体量达 12 万平方米，具备百万卡并行能力与百万 P 算力规模，总规划容量 2GW，采用超高比例绿电直连、自建风场及专线实现绿电直供。远景称这是“戈壁使命”落地的首个旗舰项目，旨在为国产算力集群打造可复制的解决方案。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "industry",
-      "source": "juya AI 日报"
-    },
-    {
-      "id": "news-214c8319275f99e8",
-      "title": "Claude Code 主创称通过多层防御 Claude 已基本解决提示词注入威胁",
-      "url": "https://daily.juya.uk/issues/2026-08-10/",
-      "date": "2026-08-10",
-      "published": "2026-08-10T01:33:07+00:00",
-      "summary": "Claude Code 主创 Boris Cherny 表示，Anthropic 通过模型训练、输入探测器和意图分类器多层防御，已基本解决提示词注入威胁。",
-      "detail": "Claude Code 主创 Boris Cherny 发帖称，提示词注入是攻击用户和 agent 最常见的方式。他表示 Anthropic 通过训练模型防范此类攻击，并堆叠模型、输入探测器和意图分类器等多层防御，可将未见过的提示词注入攻击成功率降至约零，并建议用无法访问 SSH 密码等凭证的 subagent 读取不受信任的源。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "ai-frontier",
-      "source": "juya AI 日报"
-    },
-    {
       "id": "news-bfc4b995ce5a96c5",
       "title": "Stoa Markets：GPU 与 AI 服务器的交易市场",
       "url": "https://www.stoaexchange.com",
@@ -10352,178 +10502,6 @@
       "category": "tech",
       "source": "Hacker News",
       "subcategory": "software"
-    },
-    {
-      "id": "news-2b32908c5d0bbd44",
-      "title": "派早报：央视曝光酒店评级标识消费陷阱，美国调查中国 AI 企业海外算力",
-      "url": "https://sspai.com/post/113268",
-      "date": "2026-08-10",
-      "published": "2026-08-10T07:08:03+08:00",
-      "summary": "央视曝光在线旅游平台以自研\"钻级\"商业评级混淆官方\"星级\"误导消费者；美国商务部启动调查，审查中国 AI 企业通过海外数据中心获取英伟达芯片的途径。",
-      "detail": "据央视报道，部分平台混排样式相近的\"星级\"与\"钻级\"标识，后者是平台自研的商业评级、缺乏国家统一门槛，甚至与佣金比例挂钩，消费者易高价入住未评星酒店。彭博社称美国商务部工业和安全局正调查中国 AI 企业海外获取英伟达芯片的渠道，涵盖黑市走私与经海外数据中心远程租用算力（此前白宫曾指责月之暗面经泰国数据中心调用算力）。此外《时代》周刊已开始向 AI 爬虫展示专属广告，Edge 浏览器将淘汰 Manifest V2 扩展、影响 uBlock Origin 等广告拦截插件。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "少数派"
-    },
-    {
-      "id": "news-be1e850a10de6682",
-      "title": "消息称 Hassabis 原想离职被挽留转任 DeepMind 董事长",
-      "url": "https://daily.juya.uk/issues/2026-08-10/",
-      "date": "2026-08-10",
-      "published": "2026-08-10T01:33:07+00:00",
-      "summary": "消息称 Google DeepMind 前 CEO Hassabis 原想与 Jeff Dean 同时离职，被管理层挽留暂任董事长，说法尚未获官方确认。",
-      "detail": "据 Pathfounders 援引行业消息人士称，Google DeepMind 前 CEO Demis Hassabis 原本希望与 Jeff Dean 同时离职，但 Google 管理层担忧消息导致股价暴跌，说服其暂任 DeepMind 董事长，待局势稳定后再体面退出。Pathfounders 预测 Hassabis 将在一年内离开 Google，该说法尚未获得官方确认。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "juya AI 日报"
-    },
-    {
-      "id": "news-5955ae7324dcb5f4",
-      "title": "五大科技巨头 AI 投入将致 2027 年负现金流达 1250 亿美元",
-      "url": "https://www.solidot.org/story?sid=85043",
-      "date": "2026-08-09",
-      "published": "2026-08-09T21:24:37+08:00",
-      "summary": "S&P Global Market Intelligence 数据分析显示，微软、Google、亚马逊、Meta 与甲骨文因 AI 基础设施巨额投入，2026 年自由现金流合计几乎为零，预计 2027 年将恶化至约 1250 亿美元负现金流。",
-      "detail": "五大科技公司在 AI 的开发和交付上投入巨资，自由现金流（扣除各项支出与 AI 基础设施成本后的剩余款项）在 2026 年合计接近零，而到 2027 年预计将出现约 1250 亿美元的负值。这一数据反映出 AI 军备竞赛对科技巨头资产负债表形成的巨大压力，也再次引发市场对 AI 资本开支可持续性及其回报周期的讨论。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "Solidot",
-      "subcategory": "industry"
-    },
-    {
-      "id": "news-732fc92af12de4cf",
-      "title": "OpenChamber：开源的智能体开发环境，支持多模型并行与定时任务",
-      "url": "https://openchamber.dev/",
-      "date": "2026-08-09",
-      "published": "2026-08-09T17:27:16+00:00",
-      "summary": "开源智能体开发环境 OpenChamber 发布，基于 OpenCode SDK 构建：可设\"会话目标\"让代理持续工作、同一任务并行跑最多 5 个模型并融合最佳结果，支持从 GitHub issue 直达 PR、定时任务等，桌面、浏览器、手机与 VS Code 间同步。",
-      "detail": "OpenChamber 定位为面向 AI 编程的智能体开发环境（ADE），核心功能包括：Session Goals（设定完成目标后代理可连续多轮工作，应用关闭也继续）、Multi-run 与 Fusion（最多 5 个模型并行执行并融合最强部分）、代码变更分步讲解、以及浏览器/手机远程访问（可用密码门控）。项目开源免费，官方承诺代码与会话数据不离开本机，远程连接走端到端加密的 Private Relay。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "software"
-    },
-    {
-      "id": "news-5ff38009cd94ffd4",
-      "title": "Codex 重置全部付费用户用量限制，周一将再次重置",
-      "url": "https://daily.juya.uk/issues/2026-08-09/",
-      "date": "2026-08-09",
-      "published": "2026-08-09T01:17:24+00:00",
-      "summary": "Codex 负责人 Tibo 宣布重置 ChatGPT Work 和 Codex 全部付费用户用量限制，并称周一将再次重置，起因是 Claude Code 封号争议。",
-      "detail": "一名开发者称将 OpenAI 模型接入 Claude Code 后 Anthropic 账号被暂停，Codex 负责人 Tibo 与 Claude Code 主创 Boris Cherny 就此交锋。Boris 表示 Anthropic 不会因用户在 Claude Code 中使用其他模型而封号，更可能是账号风控分类器被触发，团队正在调查。事件平息后 Tibo 宣布为庆祝 GPT-5.6 Sol 可运行在 Claude Code 中，重置 ChatGPT Work 和 Codex 付费用户的使用额度，并回应吐槽称周一还会再次重置。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "juya AI 日报"
-    },
-    {
-      "id": "news-58460fc94a1527f2",
-      "title": "SpaceXAI 发布 Grok Imagine Image 2.0 图像模型",
-      "url": "https://daily.juya.uk/issues/2026-08-09/",
-      "date": "2026-08-09",
-      "published": "2026-08-09T01:17:24+00:00",
-      "summary": "SpaceXAI 发布 Grok Imagine Image 2.0 图像生成模型，主打精准编辑，在 Arena 文生图与图像编辑榜单均列世界第二。",
-      "detail": "Grok Imagine Image 2.0 已在 grok.com/imagine 及 iOS、Android 应用中以 Quality Mode 形态全面上线，API 访问即将推出。模型以精准编辑为核心卖点，新增 Magic Wand 魔术棒、Segmentation 区域分割、Smart Resize 智能缩放、背景移除及多参考图编辑等功能，并配套推出覆盖照片编辑、商品图、头像、图标等场景的模板工作流。据官方数据，该模型在 Arena 文生图与图像编辑两项排行榜均位列第二，仅次于 OpenAI 的 GPT Image 2。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "juya AI 日报"
-    },
-    {
-      "id": "news-6d1a6f198b1733ed",
-      "title": "苹果官方文档确认国行 Mac 版 Apple 智能接入阿里千问",
-      "url": "https://daily.juya.uk/issues/2026-08-09/",
-      "date": "2026-08-09",
-      "published": "2026-08-09T01:17:24+00:00",
-      "summary": "苹果更新 Mac 简体中文手册，首次在官方文档确认 Apple 智能接入阿里千问扩展，可通过 Siri 获取更深入答案，该章节随后被删除。",
-      "detail": "苹果更新 Mac 简体中文使用手册，新增《在 Mac 上配合 Apple 智能使用千问》章节，首次在官方文档中确认 Apple 智能接入阿里巴巴千问扩展。用户启用千问扩展后需登录千问账户，可通过 Siri 获取更深入的答案，并使用写作工具进行文本和图像创作；共享照片或文件等附件前系统会询问确认。目前该章节已被删除，疑似因功能尚未正式上线。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "juya AI 日报"
-    },
-    {
-      "id": "news-6b89924748c80555",
-      "title": "OpenAI 收购演示文稿初创公司 NextSlide",
-      "url": "https://daily.juya.uk/issues/2026-08-09/",
-      "date": "2026-08-09",
-      "published": "2026-08-09T01:17:24+00:00",
-      "summary": "OpenAI 收购演示文稿初创公司 NextSlide，未披露交易金额，团队已加入 OpenAI 协助开发 ChatGPT。",
-      "detail": "OpenAI 收购了演示文稿初创公司 NextSlide，但未披露具体交易金额。NextSlide 的核心产品能够将提示词、笔记、文档或研究转化为精美且可编辑的演示文稿。创始人 Ahmed Beshry 表示，实际收购交易发生在今年早些时候，目前团队已加入 OpenAI 协助开发 ChatGPT，以继续实现让视觉传达更易于普及的目标。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "juya AI 日报"
-    },
-    {
-      "id": "news-06253d704172a3d4",
-      "title": "知情人士称阿里拟效仿月之暗面，征收模型商业收入分成",
-      "url": "https://daily.juya.uk/issues/2026-08-09/",
-      "date": "2026-08-09",
-      "published": "2026-08-09T01:17:24+00:00",
-      "summary": "知情人士称阿里巴巴计划向部署 Qwen3.8-Max 的大型推理服务商收取收入分成，效仿月之暗面在 Kimi K3 上的做法。",
-      "detail": "据路透社报道，知情人士称阿里巴巴计划对其下一代开源模型 Qwen3.8-Max 实施新策略，向通过该模型获取重大商业收益的用户要求收入分成。这一举措类似月之暗面在开源模型 Kimi K3 中设定的条款：任何年销售额超过 2000 万美元的实体必须与公司达成商业协议，知情人士称月之暗面要求的收入分成最高可达 30%。阿里巴巴的具体抽成比例仍在讨论中，尚未明确。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "juya AI 日报"
-    },
-    {
-      "id": "news-f964d2fe11fad310",
-      "title": "用 LLM 把复杂知识做成可交互小游戏：工程师分享新式学习方法",
-      "url": "https://laurentiugabriel.github.io/blog/articles/how-i-use-llms-to-learn/",
-      "date": "2026-08-09",
-      "published": "2026-08-09T19:16:49+00:00",
-      "summary": "工程师 Laurentiu Raducu 分享用 LLM 学习复杂主题的流程：先让模型建立知识库并复核准确性，再生成\"过山车大亨\"风格的低多边形模拟动画，以游戏化方式理解芯片制造等硬核知识。",
-      "detail": "作者认为 LLM 的简化解释难以记忆，于是改用四步流程：让 Claude Code/OpenCode 先构建主题基础知识、复核准确性，再要求生成可交互的低多边形动画模拟（含响应式页面与控制按钮），最后部署到 GitHub Pages。他据此制作了芯片制造（ChipTycoon）等页面，并称该方法产出的可视化\"100% 准确、无幻觉\"，比阅读长文或要点列表更有效。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "Hacker News"
-    },
-    {
-      "id": "news-423de25317b4583d",
-      "title": "出租车司机极少死于阿尔茨海默病：持续空间导航或保护大脑",
-      "url": "https://theconversation.com/taxi-drivers-rarely-die-of-alzheimers-how-complex-mental-maps-and-spatial-reasoning-protect-your-brain-286650",
-      "date": "2026-08-09",
-      "published": "2026-08-09T15:21:46+00:00",
-      "summary": "一项覆盖约 900 万份美国死亡证明的研究显示，出租车和救护车司机死于阿尔茨海默病的比例在 443 种职业中最低（约 1/100），而普通人群约为 1/60，关键或是持续实时导航对大脑的锻炼。",
-      "detail": "该研究发表于 BMJ，分析 2020-2022 年数据后发现，依赖固定路线的公交司机和飞行员并无类似优势，说明保护作用来自实时导航而非驾驶本身。研究者认为这得益于海马体（主管记忆与空间导航、也是阿尔茨海默病最早损伤的区域之一）的持续锻炼：2000 年伦敦出租车司机研究即发现其海马体后部灰质更多且随驾龄增长。另一项 2023 年研究显示，生活在空间结构复杂环境中的人更不易患病，提示空间推理可训练，或为延缓认知衰退提供新思路。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "Hacker News"
-    },
-    {
-      "id": "news-84691ff30ae5fbaf",
-      "title": "MiniMax 计划开源统一图像模型，支持文生图与通用编辑",
-      "url": "https://daily.juya.uk/issues/2026-08-09/",
-      "date": "2026-08-09",
-      "published": "2026-08-09T01:17:24+00:00",
-      "summary": "MiniMax H3 团队透露计划开源一款支持文生图与通用图像编辑的统一图像模型，目前处于后训练优化阶段。",
-      "detail": "MiniMax H3 技术团队在 Reddit AMA 中透露，计划开源一款统一的图像模型，同时支持 Text-to-Image 和通用图像编辑，目前正处在后训练优化阶段。该模型与 H3 共享 VAE Encoder，并单独设计用于图像生成的 VAE Decoder；设想的工作流是先由图像模型生成首帧，再交给 H3 继续生成视频。团队还提到 H3 此前未做专门的图像编辑训练，却在多项评测中表现出较强的零样本编辑能力，这正是继续扩展图像模型的重要依据。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "source": "juya AI 日报",
-      "subcategory": "ai-frontier"
-    },
-    {
-      "id": "news-30e7def1777baa29",
-      "title": "微信灰度测试朋友圈“AI 帮写”及“AI 点评”功能",
-      "url": "https://daily.juya.uk/issues/2026-08-09/",
-      "date": "2026-08-09",
-      "published": "2026-08-09T01:17:24+00:00",
-      "summary": "腾讯客服确认微信正小范围灰度测试朋友圈“AI 帮写”和“AI 点评”功能，基于 AI 助手小微生成多种风格文案。",
-      "detail": "腾讯客服回应确认，微信正在小范围灰度测试朋友圈“AI 帮写”及“AI 点评”功能。用户在朋友圈编辑页面点击“AI 帮写”后，会跳转至 AI 助手小微的对话界面，小微能识别正在编辑的图文内容，并生成“简洁”“调侃”和“文艺”三种风格的候选文案。在当前灰度测试版本中，完成文案生成及发布前的准备工作后，最终发布可能仍需用户手动确认。",
-      "image": "",
-      "priority": 1,
-      "category": "ai",
-      "source": "juya AI 日报"
     }
   ]
 }
