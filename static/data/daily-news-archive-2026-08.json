@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-09T09:45:46+08:00",
+  "last_updated": "2026-09-10T08:24:16+08:00",
   "items": [
     {
       "id": "news-f1084f2ebe0fff52",
@@ -1686,6 +1686,115 @@
       "priority": 1,
       "category": "ai",
       "source": "juya AI 日报"
+    },
+    {
+      "id": "news-d78ddb037f86d3be",
+      "title": "Needle2：14MB 端侧智能体大模型",
+      "url": "https://cactuscompute.com/needle",
+      "date": "2026-08-10",
+      "published": "2026-08-10T17:22:07+00:00",
+      "summary": "Cactus Compute 发布 Needle2，一个仅 14MB 的端侧智能体大模型，面向手机、可穿戴设备、智能家居和机器人等微型设备。",
+      "detail": "Cactus Compute 推出的 Needle2 是一个 14MB 的 agentic LLM，支持工具调用、设备使用和结构化抽取，面向手机、可穿戴设备、智能家居、小型机器人等资源受限设备。模型尺寸极小，可在本地离线运行，为端侧 AI 应用提供轻量级智能体能力，代表了小模型在边缘设备上的最新进展。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-bfc4b995ce5a96c5",
+      "title": "Stoa Markets：GPU 与 AI 服务器的交易市场",
+      "url": "https://www.stoaexchange.com",
+      "date": "2026-08-10",
+      "published": "2026-08-10T16:35:27+00:00",
+      "summary": "YC 孵化的 Stoa Markets 推出 GPU 与 AI 服务器交易市场，为高度分散的算力硬件市场提供价格发现与交易撮合服务。",
+      "detail": "YC S26 孵化的 Stoa Markets 推出面向 GPU 和 AI 服务器的交易平台，连接 OEM、云厂商、经纪商和二手卖家，提供验真对手方、明确定价和从询价到交割的全流程记录。网站展示 A100、H100、B200 等主流 GPU 的参考价格，试图为分散的 GPU 二级市场建立统一的价格发现层，反映了 AI 算力硬件交易正在走向平台化的趋势。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "industry"
+    },
+    {
+      "id": "news-fb234c3a489c05f6",
+      "title": "编程智能体该用哪种编程语言？",
+      "url": "http://danluu.com/pl-tokens/",
+      "date": "2026-08-10",
+      "published": "2026-08-10T16:28:58+00:00",
+      "summary": "程序员 danluu 分析编程语言对智能体编程效率的影响：不同语言在 token 消耗上差异显著，常用主流语言未必是 coding agent 的最优选择。",
+      "detail": "danluu 发布分析文章，探讨编程语言选择对 coding agent 工作效率的影响。文章指出不同编程语言在 token 表示效率上差异明显，某些语言让 LLM 生成相同功能代码所需 token 更少，并对比了多种语言的 token 效率。对日常使用 AI 编程工具的开发者具有实用参考价值，也启发用户在训练或使用 coding agent 时重新考虑语言选择。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "software"
+    },
+    {
+      "id": "news-cb50b854f2a8ddb1",
+      "title": "研究：一条超长中断即可攻破 CPU 系统管理模式",
+      "url": "https://github.com/xoreaxeaxeax/smiiiiiiiiiiiiiiii",
+      "date": "2026-08-10",
+      "published": "2026-08-10T16:03:14+00:00",
+      "summary": "知名安全研究员 Christopher Domas 开源研究项目，展示仅用一条运行时间极长的机器指令即可攻破 x86 CPU 中最高特权的系统管理模式（SMM）。",
+      "detail": "安全研究员 Christopher Domas（xoreaxeaxeax）发布开源项目 smiiiiiiiiiiiiiiii，展示可以用一条超长运行的机器指令攻破 SMM——x86 CPU 后台运行的最高特权执行环境。项目通过定时 MMIO 读取观察 SMI 计数变化实现漏洞利用，附带示例代码，对理解 CPU 底层安全机制具有研究价值。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "software"
+    },
+    {
+      "id": "news-78b88869baa371b8",
+      "title": "Meta 推出 300 亿参数开放权重模型 Muse Glimmer",
+      "url": "https://www.solidot.org/story?sid=85054",
+      "date": "2026-08-10",
+      "published": "2026-08-10T22:01:22+08:00",
+      "summary": "Meta 在 Apache 2.0 许可下发布 300 亿参数开放权重模型 Muse Glimmer，专为本地运行的智能体工作流优化，可在配备单个消费级 GPU 的 Mac 或 PC 上运行。",
+      "detail": "Meta 推出的 Muse Glimmer 为 300 亿参数开放权重模型，针对本地运行的智能体工作流进行优化，能在配备单个消费级 GPU 的 Mac 或 PC 上运行，支持本地智能体、函数调用、本地编程和 LLM 自动化评估等场景。Meta 计划在未来几天推出针对 llama.cpp、MLX 和 ExecuTorch 的集成，方便开发者本地部署，延续了 Meta 的开放权重模型路线。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-3e0ae1b1489d6b37",
+      "title": "中国人形机器人出货量占全球逾 97%",
+      "url": "https://www.solidot.org/story?sid=85051",
+      "date": "2026-08-10",
+      "published": "2026-08-10T17:43:58+08:00",
+      "summary": "最新行业数据显示，2026 年上半年中国人形机器人制造商占全球出货量的 97% 以上，智元机器人超越宇树科技跃居市场份额榜首。",
+      "detail": "Smart Analytics Global 数据显示，2026 年上半年全球人形机器人出货量约 1.91 万台，是去年同期 5100 台的三倍多，其中中国制造商占比超过 97%。总部位于上海的智元机器人上半年出货约 8400 台，超越总部位于杭州的宇树科技跃居全球第一，显示中国在该新兴领域对美国的领先优势进一步扩大。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Solidot",
+      "subcategory": "hardware"
+    },
+    {
+      "id": "news-d3a3ca930b6c1ab2",
+      "title": "苹果测试长鑫内存",
+      "url": "https://www.solidot.org/story?sid=85050",
+      "date": "2026-08-10",
+      "published": "2026-08-10T16:38:43+08:00",
+      "summary": "苹果正在 iPhone 和 MacBook 等产品上测试国产内存厂商长鑫的内存芯片，以缓解 AI 热潮导致的内存短缺，目标用于部分在中国销售的产品。",
+      "detail": "苹果已与长鑫就内存芯片供应进行初步磋商，计划将其用于部分在中国销售的苹果设备，以缓解 AI 热潮带来的内存短缺。此前惠普和宏碁已开始在美国以外地区销售的笔记本中少量使用长鑫内存。长鑫目前约占 7% 的内存市场份额，三星、SK 海力士和美光合计占据九成份额，国产内存进入头部客户供应链标志着行业格局的变化。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Solidot",
+      "subcategory": "hardware"
+    },
+    {
+      "id": "news-03f364a65513d1cb",
+      "title": "果糖会帮助癌细胞扩散",
+      "url": "https://www.solidot.org/story?sid=85048",
+      "date": "2026-08-10",
+      "published": "2026-08-10T16:04:39+08:00",
+      "summary": "发表在《Nature Aging》上的研究发现，果糖会帮助癌细胞扩散，可能推动接受顺铂化疗的卵巢癌患者癌症复发。",
+      "detail": "针对卵巢癌的研究发表在《Nature Aging》期刊上。顺铂是强效铂类化疗药物，会诱导细胞衰老，多数患者初期反应良好但复发常见，九成癌症死亡由复发引起。研究团队的代谢分析发现，果糖触发的代谢级联反应不仅作为燃料，还会帮助癌细胞扩散，为理解癌症复发机制提供了新线索。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot"
     }
   ]
 }
