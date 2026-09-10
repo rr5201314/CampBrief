@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-09T21:10:18+08:00",
+  "last_updated": "2026-09-10T21:48:07+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -205,8 +205,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-09-07T21:04:19+08:00",
-        "review_after": "2026-09-10T21:03:19+08:00"
+        "verified_at": "2026-09-10T21:48:07+08:00",
+        "review_after": "2026-09-13T21:47:07+08:00"
       },
       "fee": "约2170元",
       "schedule": "全年多场",
@@ -216,7 +216,7 @@
       "official_portal": "https://ielts-main.neea.cn/",
       "news_list_url": "https://www.chinaielts.org/press-office",
       "official_url": "https://www.chinaielts.org/press-office/IELTS-Chinese-Mainland-Exam-Registration-2026-7-9",
-      "last_updated": "2026-09-07T21:04:19.905686+08:00",
+      "last_updated": "2026-09-10T21:48:07+08:00",
       "timeline": [
         {
           "label": "考试场次",
@@ -239,8 +239,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-09-07T21:04:19+08:00",
-        "review_after": "2026-09-10T21:03:19+08:00"
+        "verified_at": "2026-09-10T21:48:07+08:00",
+        "review_after": "2026-09-13T21:47:07+08:00"
       },
       "fee": "约2100元",
       "schedule": "全年多场",
@@ -250,7 +250,7 @@
       "official_portal": "https://toefl-main.neea.cn/",
       "news_list_url": "https://toefl-main.neea.cn/html1/category/16123/94-1.htm",
       "official_url": "https://toefl.neea.cn/",
-      "last_updated": "2026-09-07T21:04:19.905686+08:00"
+      "last_updated": "2026-09-10T21:48:07+08:00"
     },
     {
       "id": "catti-202606",
@@ -336,7 +336,12 @@
       "id": "ruankao-202611",
       "name": "2026年下半年计算机技术与软件专业技术资格考试 (软考)",
       "category": "computer",
-      "status": "pending",
+      "status": "open",
+      "lifecycle": {
+        "mode": "manual",
+        "verified_at": "2026-09-10T21:48:07+08:00",
+        "review_after": "2026-09-13T21:47:07+08:00"
+      },
       "fee": "约170元",
       "schedule": "2026年10月24-27日",
       "summary": "国家级计算机技术与软件专业资格考试，分初、中、高级，可用于职称评定，是 IT 行业重要证书。",
@@ -345,11 +350,15 @@
       "official_portal": "https://www.ruankao.org.cn/",
       "news_list_url": "https://www.ruankao.org.cn/index/work.html",
       "official_url": "https://www.ruankao.org.cn/article/content/2603051204118156470700001.html",
-      "last_updated": "2026-09-07T13:03:17.600835+08:00",
+      "last_updated": "2026-09-10T21:48:07+08:00",
       "timeline": [
         {
           "label": "考试时间",
           "value": "2026年10月24日-27日（分批次机考，据2026年度考试工作安排）"
+        },
+        {
+          "label": "报名时间",
+          "value": "全国报名平台已开通2026年下半年批次，各省窗口为2026年8月14日至9月18日（如北京9月11-17日、辽宁8月19-25日），各省不同，以当地考试机构通知为准"
         }
       ]
     },
@@ -605,7 +614,7 @@
           "value": "2026年10月19日"
         }
       ],
-      "last_updated": "2026-09-07T13:03:17.600835+08:00"
+      "last_updated": "2026-09-10T21:48:07+08:00"
     },
     {
       "id": "acca-202612",
@@ -651,7 +660,7 @@
           "value": "2027年1月18日"
         }
       ],
-      "last_updated": "2026-09-07T13:03:17.600835+08:00"
+      "last_updated": "2026-09-10T21:48:07+08:00"
     },
     {
       "id": "first-level-cost-engineer-2026",
@@ -763,8 +772,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-09-07T21:04:19+08:00",
-        "review_after": "2026-09-10T21:03:19+08:00"
+        "verified_at": "2026-09-10T21:48:07+08:00",
+        "review_after": "2026-09-13T21:47:07+08:00"
       },
       "fee": "约50元（学生优惠）",
       "schedule": "各地定期组织",
@@ -774,7 +783,7 @@
       "official_portal": "https://www.cltt.org/",
       "news_list_url": "https://www.cltt.org/",
       "official_url": "https://stzbm.cltt.org/",
-      "last_updated": "2026-09-07T21:04:19.905686+08:00"
+      "last_updated": "2026-09-10T21:48:07+08:00"
     },
     {
       "id": "guokao-2026",
@@ -798,8 +807,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-09-07T21:04:19+08:00",
-        "review_after": "2026-09-10T21:03:19+08:00"
+        "verified_at": "2026-09-10T21:48:07+08:00",
+        "review_after": "2026-09-13T21:47:07+08:00"
       },
       "fee": "约50-100元",
       "schedule": "各地不定期",
@@ -809,7 +818,7 @@
       "official_portal": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/index.html",
       "news_list_url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/index.html",
       "official_url": "https://job.mohrss.gov.cn/cjobs/institution/listInstitution",
-      "last_updated": "2026-09-07T21:04:19.905686+08:00"
+      "last_updated": "2026-09-10T21:48:07+08:00"
     },
     {
       "id": "kaoyan-2026",
@@ -824,7 +833,7 @@
       "official_portal": "https://yz.chsi.com.cn/",
       "news_list_url": "https://yz.chsi.com.cn/kyzx/jybzc/",
       "official_url": "",
-      "last_updated": "2026-09-07T13:03:17.600835+08:00"
+      "last_updated": "2026-09-10T21:48:07+08:00"
     },
     {
       "id": "baoyan-2026",
@@ -839,7 +848,7 @@
       "official_portal": "https://yz.chsi.com.cn/tm/",
       "news_list_url": "https://yz.chsi.com.cn/kyzx/kydt/",
       "official_url": "",
-      "last_updated": "2026-09-07T13:03:17.600835+08:00"
+      "last_updated": "2026-09-10T21:48:07+08:00"
     }
   ]
 }
