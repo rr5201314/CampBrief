@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-09T21:39:28+08:00",
+  "last_updated": "2026-09-10T21:42:45+08:00",
   "source": "CampBrief",
-  "total": 202,
+  "total": 203,
   "tiers": [
     {
       "key": "all",
@@ -199,8 +199,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-07T12:32:48+08:00",
-        "review_after": "2026-09-10T12:32:48+08:00"
+        "verified_at": "2026-09-10T21:42:45+08:00",
+        "review_after": "2026-09-13T21:42:45+08:00"
       }
     },
     {
@@ -302,8 +302,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-07T12:32:48+08:00",
-        "review_after": "2026-09-10T12:32:48+08:00"
+        "verified_at": "2026-09-10T21:42:45+08:00",
+        "review_after": "2026-09-13T21:42:45+08:00"
       }
     },
     {
@@ -871,8 +871,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-07T12:32:48+08:00",
-        "review_after": "2026-09-10T12:32:48+08:00"
+        "verified_at": "2026-09-10T21:42:45+08:00",
+        "review_after": "2026-09-13T21:42:45+08:00"
       }
     },
     {
@@ -1619,8 +1619,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-07T12:32:48+08:00",
-        "review_after": "2026-09-10T12:32:48+08:00"
+        "verified_at": "2026-09-10T21:42:45+08:00",
+        "review_after": "2026-09-13T21:42:45+08:00"
       }
     },
     {
@@ -1643,8 +1643,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-07T12:32:48+08:00",
-        "review_after": "2026-09-10T12:32:48+08:00"
+        "verified_at": "2026-09-10T21:42:45+08:00",
+        "review_after": "2026-09-13T21:42:45+08:00"
       }
     },
     {
@@ -1667,8 +1667,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-07T12:32:48+08:00",
-        "review_after": "2026-09-10T12:32:48+08:00"
+        "verified_at": "2026-09-10T21:42:45+08:00",
+        "review_after": "2026-09-13T21:42:45+08:00"
       }
     },
     {
@@ -1728,8 +1728,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-07T12:32:48+08:00",
-        "review_after": "2026-09-10T12:32:48+08:00"
+        "verified_at": "2026-09-10T21:42:45+08:00",
+        "review_after": "2026-09-13T21:42:45+08:00"
       }
     },
     {
@@ -1807,8 +1807,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-07T12:32:48+08:00",
-        "review_after": "2026-09-10T12:32:48+08:00"
+        "verified_at": "2026-09-10T21:42:45+08:00",
+        "review_after": "2026-09-13T21:42:45+08:00"
       }
     },
     {
@@ -1846,8 +1846,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-07T12:32:48+08:00",
-        "review_after": "2026-09-10T12:32:48+08:00"
+        "verified_at": "2026-09-10T21:42:45+08:00",
+        "review_after": "2026-09-13T21:42:45+08:00"
       }
     },
     {
@@ -1869,8 +1869,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-07T12:32:48+08:00",
-        "review_after": "2026-09-10T12:32:48+08:00"
+        "verified_at": "2026-09-10T21:42:45+08:00",
+        "review_after": "2026-09-13T21:42:45+08:00"
       }
     },
     {
@@ -1892,8 +1892,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-07T12:32:48+08:00",
-        "review_after": "2026-09-10T12:32:48+08:00"
+        "verified_at": "2026-09-10T21:42:45+08:00",
+        "review_after": "2026-09-13T21:42:45+08:00"
       }
     },
     {
@@ -2251,7 +2251,7 @@
       "fields": [
         "science"
       ],
-      "status": "closed",
+      "status": "ongoing",
       "signup": "2026年5月26日至9月1日报名（多数赛区8月31日20:00前）",
       "schedule": "",
       "summary": "来源：赛氪。浏览 4710，关注 329",
@@ -3179,7 +3179,7 @@
     },
     {
       "id": "comp-saikr-4eb4c5be367a",
-      "name": "【最后17天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
+      "name": "【最后16天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3651,7 +3651,7 @@
     },
     {
       "id": "comp-saikr-5ff1ac5834d5",
-      "name": "【高校力荐！】第四届“一带一路”大学生英语词汇大赛",
+      "name": "【本周六开考】第四届“一带一路”大学生英语词汇大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3749,7 +3749,7 @@
     },
     {
       "id": "comp-saikr-9867f29b35c9",
-      "name": "【倒计时2天】第九届ETTBL杯全国英语词汇大赛",
+      "name": "【倒计时1天】第九届ETTBL杯全国英语词汇大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -4083,6 +4083,32 @@
       "official_site": "http://www.mathorcup.org/",
       "organizer": "大数据竞赛组委会",
       "prestige": 6
+    },
+    {
+      "id": "comp-saikr-71014596224d",
+      "name": "第五届全国大学生奥林匹克数学竞赛（秋季赛）",
+      "tier": "hobby",
+      "fields": [
+        "science"
+      ],
+      "status": "open",
+      "signup": "即日起至2026年9月12日",
+      "schedule": "秋季赛四场线上考试：9月12日、10月17日、11月14日、12月19日",
+      "summary": "来源：赛氪。数学周报社主办，秋季赛共设四场线上考试（9月12日/10月17日/11月14日/12月19日），选一场参加；报名截止2026年9月12日。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/SOIM26A",
+      "official_site": "",
+      "organizer": "数学周报",
+      "prestige": 4,
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-08-25",
+        "registration_end": "2026-09-12",
+        "event_start": "2026-09-12",
+        "event_end": "2026-12-19",
+        "verified_at": "2026-09-10T21:42:45+08:00"
+      }
     }
   ]
 }

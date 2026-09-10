@@ -447,6 +447,11 @@
     "山东省力学学会": {
       "tier": "official",
       "prestige": 5
+    },
+    "数学周报": {
+      "tier": "hobby",
+      "prestige": 4,
+      "note": "数学周报社系列赛事，商业赛"
     }
   },
   "competitions": {
