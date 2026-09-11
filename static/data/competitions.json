@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-10T21:42:45+08:00",
+  "last_updated": "2026-09-11T21:43:38+08:00",
   "source": "CampBrief",
-  "total": 203,
+  "total": 204,
   "tiers": [
     {
       "key": "all",
@@ -3136,7 +3136,7 @@
     },
     {
       "id": "comp-saikr-621d8ad96385",
-      "name": "第四届“三晋杯”全国大学生英语演讲大赛",
+      "name": "【多校认定为国家级或省部级竞赛】第四届“三晋杯”全国大学生英语演讲大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3179,7 +3179,7 @@
     },
     {
       "id": "comp-saikr-4eb4c5be367a",
-      "name": "【最后16天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
+      "name": "【最后15天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3674,7 +3674,7 @@
     },
     {
       "id": "comp-saikr-554ce57a889c",
-      "name": "【最后10天】2026年第二届“中外传播杯”大学生中外历史竞答大赛",
+      "name": "【最后8天】2026年第二届“中外传播杯”大学生中外历史竞答大赛",
       "tier": "official",
       "fields": [
         "other"
@@ -3724,7 +3724,7 @@
     },
     {
       "id": "comp-saikr-9c66a33c52e2",
-      "name": "【周日开考】2026年第六届《英语世界》杯全国大学生英语听力大赛",
+      "name": "【倒计时两天】2026年第六届《英语世界》杯全国大学生英语听力大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3749,7 +3749,7 @@
     },
     {
       "id": "comp-saikr-9867f29b35c9",
-      "name": "【倒计时1天】第九届ETTBL杯全国英语词汇大赛",
+      "name": "【周六开考】第九届ETTBL杯全国英语词汇大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3914,7 +3914,7 @@
     },
     {
       "id": "comp-saikr-dfc3fe81b739",
-      "name": "2026年全国大学生Office办公应用能力大赛",
+      "name": "【周六开考】2026年全国大学生Office办公应用能力大赛",
       "tier": "hobby",
       "fields": [
         "computer"
@@ -4108,6 +4108,30 @@
         "event_start": "2026-09-12",
         "event_end": "2026-12-19",
         "verified_at": "2026-09-10T21:42:45+08:00"
+      }
+    },
+    {
+      "id": "comp-saikr-52f6c0e0a9e8",
+      "name": "第六届“中外传播杯”大学生英语翻译大赛",
+      "tier": "official",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "signup": "即日起-2026年12月15日",
+      "schedule": "",
+      "summary": "大赛共设三场主题比赛，报名截止2026年12月15日，详情见信息来源页面。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/ZWCBNCSET",
+      "official_site": "",
+      "organizer": "外文局亚太传播中心英语大赛组委会",
+      "prestige": 7,
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-09-03",
+        "registration_end": "2026-12-15",
+        "verified_at": "2026-09-11T21:43:38+08:00"
       }
     }
   ]
