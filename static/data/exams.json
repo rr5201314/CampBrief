@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-10T21:48:07+08:00",
+  "last_updated": "2026-09-11T21:25:46+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -91,8 +91,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "manual",
-        "verified_at": "2026-09-07T23:59:59+08:00",
-        "review_after": "2026-09-10T23:58:59+08:00"
+        "verified_at": "2026-09-11T21:25:46+08:00",
+        "review_after": "2026-09-14T21:24:46+08:00"
       },
       "fee": "笔试 15-50 元/人次（各省不同，六级比四级高 2-5 元），口试 50 元/人次",
       "schedule": "2026年12月12日（笔试）；11月21日-22日（口试）",
@@ -138,7 +138,7 @@
           "value": "口试 2026年11月17日9时起，笔试 2026年12月1日9时起"
         }
       ],
-      "last_updated": "2026-09-07T23:59:59+08:00"
+      "last_updated": "2026-09-11T21:25:46+08:00"
     },
     {
       "id": "tem-4",
@@ -794,11 +794,11 @@
       "schedule": "2026年11月底或12月初",
       "summary": "中央机关及其直属机构公务员录用考试，含笔试（行测、申论）和面试，是进入中央机关的主要途径。",
       "search": "公务员 国考 行测 申论 civil service national 2027",
-      "official_site": "https://bm.scs.gov.cn/",
-      "official_portal": "https://bm.scs.gov.cn/",
-      "news_list_url": "https://bm.scs.gov.cn/",
+      "official_site": "http://bm.scs.gov.cn/",
+      "official_portal": "http://bm.scs.gov.cn/",
+      "news_list_url": "http://bm.scs.gov.cn/",
       "official_url": "",
-      "last_updated": "2026-09-09T21:10:18+08:00"
+      "last_updated": "2026-09-11T21:25:46+08:00"
     },
     {
       "id": "shiye",
