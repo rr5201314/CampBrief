@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-11T21:25:46+08:00",
+  "last_updated": "2026-09-12T21:01:19+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -570,7 +570,7 @@
       "id": "acca-202609",
       "name": "2026年9月 ACCA 考试",
       "category": "accounting",
-      "status": "closed",
+      "status": "done",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Europe/London",
@@ -798,7 +798,7 @@
       "official_portal": "http://bm.scs.gov.cn/",
       "news_list_url": "http://bm.scs.gov.cn/",
       "official_url": "",
-      "last_updated": "2026-09-11T21:25:46+08:00"
+      "last_updated": "2026-09-12T21:05:39+08:00"
     },
     {
       "id": "shiye",
