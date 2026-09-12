@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-11T21:43:38+08:00",
+  "last_updated": "2026-09-12T21:41:40+08:00",
   "source": "CampBrief",
-  "total": 204,
+  "total": 205,
   "tiers": [
     {
       "key": "all",
@@ -2982,8 +2982,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-08T21:46:17+08:00",
-        "review_after": "2026-09-11T21:46:17+08:00"
+        "verified_at": "2026-09-12T21:41:40+08:00",
+        "review_after": "2026-09-15T21:41:40+08:00"
       }
     },
     {
@@ -3651,7 +3651,7 @@
     },
     {
       "id": "comp-saikr-5ff1ac5834d5",
-      "name": "【本周六开考】第四届“一带一路”大学生英语词汇大赛",
+      "name": "【今日开考】第四届“一带一路”大学生英语词汇大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3806,7 +3806,7 @@
         "language"
       ],
       "status": "open",
-      "signup": "即日起开放报名（首场考试 2026年9月12日）",
+      "signup": "即日起开放报名，9月至12月共4个考试场次（首场 2026年9月12日）",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
@@ -3817,8 +3817,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-08T21:46:17+08:00",
-        "review_after": "2026-09-11T21:46:17+08:00"
+        "verified_at": "2026-09-12T21:41:40+08:00",
+        "review_after": "2026-09-15T21:41:40+08:00"
       }
     },
     {
@@ -3914,7 +3914,7 @@
     },
     {
       "id": "comp-saikr-dfc3fe81b739",
-      "name": "【周六开考】2026年全国大学生Office办公应用能力大赛",
+      "name": "2026年全国大学生Office办公应用能力大赛",
       "tier": "hobby",
       "fields": [
         "computer"
@@ -3924,13 +3924,11 @@
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
         "registration_start": "2026-07-27",
-        "registration_end": "2026-09-12",
-        "event_start": "2026-09-12",
-        "event_end": "2026-09-12",
-        "verified_at": "2026-08-31T07:37:31+08:00"
+        "registration_end": "2026-12-12",
+        "verified_at": "2026-09-12T21:41:40+08:00"
       },
-      "signup": "2026年7月27日至9月12日",
-      "schedule": "2026年9月12日线上考试（当天9:00-18:00任选60分钟参与）",
+      "signup": "即日起至2026年12月12日",
+      "schedule": "共设四场在线考试，灵活选择；每场当天9:00-18:00任选60分钟",
       "summary": "通过客观题考核方式检验参赛者对Office办公软件（文字处理、表格数据处理、演示文稿制作等模块）的理论知识掌握程度，共50道客观题，满分100分。",
       "search": "",
       "official_url": "https://www.saikr.com/vse/Office26",
@@ -3971,7 +3969,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -4133,6 +4131,30 @@
         "registration_end": "2026-12-15",
         "verified_at": "2026-09-11T21:43:38+08:00"
       }
+    },
+    {
+      "id": "comp-saikr-f4fdd1112027",
+      "name": "【权威！重磅回归！】2026年全国大学生（语文）作文竞赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-09-02",
+        "registration_end": "2026-12-08",
+        "verified_at": "2026-09-12T21:41:40+08:00"
+      },
+      "signup": "2026年9月2日至12月8日",
+      "schedule": "作品提交2026年9月7日至12月13日14:00",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/2026/CSCC",
+      "official_site": "",
+      "organizer": "语文学习报编辑部",
+      "prestige": 3
     }
   ]
 }

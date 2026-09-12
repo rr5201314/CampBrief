@@ -452,6 +452,11 @@
       "tier": "hobby",
       "prestige": 4,
       "note": "数学周报社系列赛事，商业赛"
+    },
+    "语文学习报编辑部": {
+      "tier": "hobby",
+      "prestige": 3,
+      "note": "全国大学生（语文）作文竞赛主办方，报社商业赛，39元证书费"
     }
   },
   "competitions": {
