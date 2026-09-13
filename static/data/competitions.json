@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-12T21:41:40+08:00",
+  "last_updated": "2026-09-13T21:48:51.496400+08:00",
   "source": "CampBrief",
-  "total": 205,
+  "total": 207,
   "tiers": [
     {
       "key": "all",
@@ -2650,7 +2650,7 @@
     {
       "id": "comp-saikr-29d981765725",
       "name": "2026年APMCM亚太地区大学生大模型竞赛",
-      "tier": "hobby",
+      "tier": "official",
       "fields": [
         "ai"
       ],
@@ -2662,7 +2662,7 @@
       "official_url": "https://www.saikr.com/vse/apmcm2601",
       "official_site": "",
       "organizer": "APMCM组委会",
-      "prestige": 4
+      "prestige": 8
     },
     {
       "id": "comp-saikr-1ec0e37c309a",
@@ -3179,7 +3179,7 @@
     },
     {
       "id": "comp-saikr-4eb4c5be367a",
-      "name": "【最后15天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
+      "name": "【最后13天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3724,7 +3724,7 @@
     },
     {
       "id": "comp-saikr-9c66a33c52e2",
-      "name": "【倒计时两天】2026年第六届《英语世界》杯全国大学生英语听力大赛",
+      "name": "【今日开考】2026年第六届《英语世界》杯全国大学生英语听力大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -4089,7 +4089,7 @@
       "fields": [
         "science"
       ],
-      "status": "open",
+      "status": "ongoing",
       "signup": "即日起至2026年9月12日",
       "schedule": "秋季赛四场线上考试：9月12日、10月17日、11月14日、12月19日",
       "summary": "来源：赛氪。数学周报社主办，秋季赛共设四场线上考试（9月12日/10月17日/11月14日/12月19日），选一场参加；报名截止2026年9月12日。",
@@ -4155,6 +4155,50 @@
       "official_site": "",
       "organizer": "语文学习报编辑部",
       "prestige": 3
+    },
+    {
+      "id": "comp-saikr-c1ede670ec36",
+      "name": "2026年第十六届APMCM亚太地区大学生数学建模竞赛",
+      "tier": "official",
+      "fields": [
+        "science"
+      ],
+      "prestige": 8,
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-09-01",
+        "registration_end": "2026-11-25",
+        "event_start": "2026-11-26",
+        "event_end": "2026-11-30",
+        "verified_at": "2026-09-13T21:48:33+08:00"
+      },
+      "signup": "即日起至2026年11月25日",
+      "schedule": "竞赛时间：2026年11月26日6:00—11月30日9:00",
+      "summary": "由中国国际科技促进会物联网工作委员会、北京图象图形学学会等主办，允许跨校组队，结果2027年1月15日前公布。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/apmcm26",
+      "official_site": "",
+      "organizer": "APMCM组委会"
+    },
+    {
+      "id": "comp-saikr-d95e7718442b",
+      "name": "2025全国大学生机器人与算法大赛—模拟仿真赛道",
+      "tier": "hobby",
+      "fields": [
+        "robot",
+        "computer"
+      ],
+      "prestige": 4,
+      "status": "done",
+      "signup": "2025年12月1日至2026年4月11日（已截止）",
+      "schedule": "决赛 2026年7月2日-4日（上海，已结束）",
+      "summary": "由中国机电一体化技术应用协会主办，初赛线上闭卷答题、决赛线下实操；2025—2026赛季已于2026年7月决赛后结束。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/Robot/arborseek/26",
+      "official_site": "",
+      "organizer": "机器人与算法组委会"
     }
   ]
 }

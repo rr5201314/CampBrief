@@ -759,6 +759,11 @@
       "tier": "hobby",
       "prestige": 2,
       "note": "ETTBL杯词汇大赛，49元商业赛"
+    },
+    "APMCM": {
+      "tier": "official",
+      "prestige": 8,
+      "note": "APMCM亚太地区大学生数学建模竞赛"
     }
   },
   "fields_hints": {
