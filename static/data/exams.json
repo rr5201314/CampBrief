@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-13T21:01:38.129950+08:00",
+  "last_updated": "2026-09-15T21:14:59+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -91,8 +91,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "manual",
-        "verified_at": "2026-09-11T21:25:46+08:00",
-        "review_after": "2026-09-14T21:24:46+08:00"
+        "verified_at": "2026-09-15T21:14:59+08:00",
+        "review_after": "2026-09-18T21:14:59+08:00"
       },
       "fee": "笔试 15-50 元/人次（各省不同，六级比四级高 2-5 元），口试 50 元/人次",
       "schedule": "2026年12月12日（笔试）；11月21日-22日（口试）",
@@ -138,7 +138,7 @@
           "value": "口试 2026年11月17日9时起，笔试 2026年12月1日9时起"
         }
       ],
-      "last_updated": "2026-09-11T21:25:46+08:00"
+      "last_updated": "2026-09-15T21:14:59+08:00"
     },
     {
       "id": "tem-4",
@@ -205,8 +205,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-09-10T21:48:07+08:00",
-        "review_after": "2026-09-13T21:47:07+08:00"
+        "verified_at": "2026-09-15T21:14:59+08:00",
+        "review_after": "2026-09-18T21:14:59+08:00"
       },
       "fee": "约2170元",
       "schedule": "全年多场",
@@ -216,7 +216,7 @@
       "official_portal": "https://ielts-main.neea.cn/",
       "news_list_url": "https://www.chinaielts.org/press-office",
       "official_url": "https://www.chinaielts.org/press-office/IELTS-Chinese-Mainland-Exam-Registration-2026-7-9",
-      "last_updated": "2026-09-10T21:48:07+08:00",
+      "last_updated": "2026-09-15T21:14:59+08:00",
       "timeline": [
         {
           "label": "考试场次",
@@ -239,8 +239,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-09-10T21:48:07+08:00",
-        "review_after": "2026-09-13T21:47:07+08:00"
+        "verified_at": "2026-09-15T21:14:59+08:00",
+        "review_after": "2026-09-18T21:14:59+08:00"
       },
       "fee": "约2100元",
       "schedule": "全年多场",
@@ -250,7 +250,7 @@
       "official_portal": "https://toefl-main.neea.cn/",
       "news_list_url": "https://toefl-main.neea.cn/html1/category/16123/94-1.htm",
       "official_url": "https://toefl.neea.cn/",
-      "last_updated": "2026-09-10T21:48:07+08:00"
+      "last_updated": "2026-09-15T21:14:59+08:00"
     },
     {
       "id": "catti-202606",
@@ -339,8 +339,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "manual",
-        "verified_at": "2026-09-10T21:48:07+08:00",
-        "review_after": "2026-09-13T21:47:07+08:00"
+        "verified_at": "2026-09-15T21:14:59+08:00",
+        "review_after": "2026-09-18T21:14:59+08:00"
       },
       "fee": "约170元",
       "schedule": "2026年10月24-27日",
@@ -350,7 +350,7 @@
       "official_portal": "https://www.ruankao.org.cn/",
       "news_list_url": "https://www.ruankao.org.cn/index/work.html",
       "official_url": "https://www.ruankao.org.cn/article/content/2603051204118156470700001.html",
-      "last_updated": "2026-09-10T21:48:07+08:00",
+      "last_updated": "2026-09-15T21:14:59+08:00",
       "timeline": [
         {
           "label": "考试时间",
@@ -628,7 +628,7 @@
         "registration_end": "2026-11-09T23:59:00+00:00",
         "event_start": "2026-12-07",
         "event_end": "2026-12-11",
-        "verified_at": "2026-09-07T13:03:17+08:00"
+        "verified_at": "2026-09-15T21:14:59+08:00"
       },
       "fee": "各阶段费用不同",
       "schedule": "2026年12月",
@@ -660,7 +660,7 @@
           "value": "2027年1月18日"
         }
       ],
-      "last_updated": "2026-09-10T21:48:07+08:00"
+      "last_updated": "2026-09-15T21:14:59+08:00"
     },
     {
       "id": "first-level-cost-engineer-2026",
@@ -772,8 +772,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-09-10T21:48:07+08:00",
-        "review_after": "2026-09-13T21:47:07+08:00"
+        "verified_at": "2026-09-15T21:14:59+08:00",
+        "review_after": "2026-09-18T21:14:59+08:00"
       },
       "fee": "约50元（学生优惠）",
       "schedule": "各地定期组织",
@@ -783,7 +783,7 @@
       "official_portal": "https://www.cltt.org/",
       "news_list_url": "https://www.cltt.org/",
       "official_url": "https://stzbm.cltt.org/",
-      "last_updated": "2026-09-10T21:48:07+08:00"
+      "last_updated": "2026-09-15T21:14:59+08:00"
     },
     {
       "id": "guokao-2026",
@@ -798,7 +798,7 @@
       "official_portal": "http://bm.scs.gov.cn/",
       "news_list_url": "http://bm.scs.gov.cn/",
       "official_url": "",
-      "last_updated": "2026-09-12T21:05:39+08:00"
+      "last_updated": "2026-09-15T21:14:59+08:00"
     },
     {
       "id": "shiye",
@@ -807,8 +807,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-09-10T21:48:07+08:00",
-        "review_after": "2026-09-13T21:47:07+08:00"
+        "verified_at": "2026-09-15T21:14:59+08:00",
+        "review_after": "2026-09-18T21:14:59+08:00"
       },
       "fee": "约50-100元",
       "schedule": "各地不定期",
@@ -818,7 +818,7 @@
       "official_portal": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/index.html",
       "news_list_url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/index.html",
       "official_url": "https://job.mohrss.gov.cn/cjobs/institution/listInstitution",
-      "last_updated": "2026-09-10T21:48:07+08:00"
+      "last_updated": "2026-09-15T21:14:59+08:00"
     },
     {
       "id": "kaoyan-2026",
@@ -833,7 +833,7 @@
       "official_portal": "https://yz.chsi.com.cn/",
       "news_list_url": "https://yz.chsi.com.cn/kyzx/jybzc/",
       "official_url": "",
-      "last_updated": "2026-09-10T21:48:07+08:00"
+      "last_updated": "2026-09-15T21:14:59+08:00"
     },
     {
       "id": "baoyan-2026",
@@ -848,7 +848,7 @@
       "official_portal": "https://yz.chsi.com.cn/tm/",
       "news_list_url": "https://yz.chsi.com.cn/kyzx/kydt/",
       "official_url": "",
-      "last_updated": "2026-09-10T21:48:07+08:00"
+      "last_updated": "2026-09-15T21:14:59+08:00"
     }
   ]
 }
