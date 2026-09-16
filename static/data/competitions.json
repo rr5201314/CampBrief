@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-15T21:38:10+08:00",
+  "last_updated": "2026-09-16T21:52:42+08:00",
   "source": "CampBrief",
-  "total": 207,
+  "total": 208,
   "tiers": [
     {
       "key": "all",
@@ -2982,8 +2982,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-12T21:41:40+08:00",
-        "review_after": "2026-09-15T21:41:40+08:00"
+        "verified_at": "2026-09-16T21:52:42+08:00",
+        "review_after": "2026-09-19T21:52:42+08:00"
       }
     },
     {
@@ -3179,7 +3179,7 @@
     },
     {
       "id": "comp-saikr-4eb4c5be367a",
-      "name": "【最后11天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
+      "name": "【最后10天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3340,7 +3340,7 @@
     },
     {
       "id": "comp-saikr-6ac61880bd78",
-      "name": "【最后4天】第四届“中外传播杯”大学生英语能力挑战赛",
+      "name": "【最后3天】第四届“中外传播杯”大学生英语能力挑战赛",
       "tier": "official",
       "fields": [
         "language"
@@ -3552,7 +3552,7 @@
     },
     {
       "id": "comp-saikr-c137aa06257d",
-      "name": "2026华智·高校大学生人工智能大赛",
+      "name": "【一级学会盖章】2026华智·高校大学生人工智能大赛",
       "tier": "hobby",
       "fields": [
         "ai"
@@ -3651,7 +3651,7 @@
     },
     {
       "id": "comp-saikr-5ff1ac5834d5",
-      "name": "【高校力荐！】第四届“一带一路”大学生英语词汇大赛",
+      "name": "【高校力荐！】第四届“一带一路”大学生英语词汇能力挑战",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3674,7 +3674,7 @@
     },
     {
       "id": "comp-saikr-554ce57a889c",
-      "name": "【倒计时4天】2026年第二届“中外传播杯”大学生中外历史竞答大赛",
+      "name": "【最后3天】2026年第二届“中外传播杯”大学生中外历史竞答大赛",
       "tier": "official",
       "fields": [
         "other"
@@ -3819,8 +3819,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-12T21:41:40+08:00",
-        "review_after": "2026-09-15T21:41:40+08:00"
+        "verified_at": "2026-09-16T21:52:42+08:00",
+        "review_after": "2026-09-19T21:52:42+08:00"
       }
     },
     {
@@ -3891,7 +3891,7 @@
     },
     {
       "id": "comp-saikr-3e818dd91712",
-      "name": "【省赛倒计时5天】第九届大学生普通话挑战赛（NPCCS）",
+      "name": "【省赛倒计时4天】第九届大学生普通话挑战赛（NPCCS）",
       "tier": "hobby",
       "fields": [
         "language"
@@ -4201,6 +4201,32 @@
       "official_url": "https://www.saikr.com/vse/Robot/arborseek/26",
       "official_site": "",
       "organizer": "机器人与算法组委会"
+    },
+    {
+      "id": "comp-saikr-a86cbb6a41d2",
+      "name": "2026年高校大学生“工创杯”人工智能知识大赛",
+      "tier": "hobby",
+      "fields": [
+        "ai"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-08-10",
+        "registration_end": "2026-12-20",
+        "event_start": "2026-09-06",
+        "event_end": "2026-12-20",
+        "verified_at": "2026-09-16T21:52:42+08:00"
+      },
+      "signup": "即日起-2026年12月20日",
+      "schedule": "线上作答，4场考试任选一场：9月6日、10月11日、11月15日、12月20日",
+      "summary": "由中国商业技师协会主办的线上认知类知识竞赛，2026年9月至12月共4场考试任选一场。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/2026RGZN",
+      "official_site": "",
+      "organizer": "中国商业技师协会",
+      "prestige": 4
     }
   ]
 }
