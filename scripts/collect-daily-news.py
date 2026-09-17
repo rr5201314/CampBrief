@@ -169,7 +169,10 @@ def fetch(url):
         # RSSHub / 多数 RSS 源是 utf-8，带 BOM 时去掉
         if data.startswith(b"\xef\xbb\xbf"):
             data = data[3:]
-        return data.decode("utf-8", errors="replace")
+        text = data.decode("utf-8", errors="replace")
+        # 部分源（如 36氪）正文里混有 XML 1.0 非法控制字符（\x00-\x08 等），
+        # expat 会直接报 not well-formed；解析前统一剔除，保留 \t \n \r。
+        return re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]", "", text)
 
 
 def parse_rss(xml_text, source):
