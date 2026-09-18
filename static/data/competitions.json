@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-16T21:52:42+08:00",
+  "last_updated": "2026-09-18T21:45:41+08:00",
   "source": "CampBrief",
-  "total": 208,
+  "total": 209,
   "tiers": [
     {
       "key": "all",
@@ -1183,7 +1183,7 @@
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-03T09:56:57+08:00",
+        "verified_at": "2026-09-18T21:45:37+08:00",
         "registration_start": "2026-04-01",
         "registration_end": "2026-08-31",
         "event_start": "2026-09-01"
@@ -2389,7 +2389,7 @@
     },
     {
       "id": "comp-saikr-666a81761ea0",
-      "name": "【周六开考·考场开放两天】第六届全国高校商务翻译（英语）能力挑战赛",
+      "name": "【明日开考·考场开放两天】第六届全国高校商务翻译（英语）能力挑战赛",
       "tier": "hobby",
       "fields": [
         "language",
@@ -2835,7 +2835,7 @@
     },
     {
       "id": "comp-saikr-8715b18b4de9",
-      "name": "【最后一场】第九届ETTBL杯全国英语语法大赛",
+      "name": "【最后一场&周六开考】第九届ETTBL杯全国英语语法大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3022,7 +3022,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【专家直播课】2026年第十二届中西部外语翻译大赛",
+      "name": "【多省市译协盖章】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3179,18 +3179,18 @@
     },
     {
       "id": "comp-saikr-4eb4c5be367a",
-      "name": "【最后10天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
+      "name": "【最后8天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
       ],
-      "status": "ongoing",
+      "status": "open",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-03T21:36:23+08:00",
+        "verified_at": "2026-09-18T21:45:37+08:00",
         "registration_start": "2026-05-25",
-        "registration_end": "2026-08-29",
+        "registration_end": "2026-09-26",
         "event_start": "2026-08-29",
         "event_end": "2026-09-26"
       },
@@ -3340,7 +3340,7 @@
     },
     {
       "id": "comp-saikr-6ac61880bd78",
-      "name": "【最后3天】第四届“中外传播杯”大学生英语能力挑战赛",
+      "name": "【本周六考试】第四届“中外传播杯”大学生英语能力挑战赛",
       "tier": "official",
       "fields": [
         "language"
@@ -3527,7 +3527,7 @@
     },
     {
       "id": "comp-saikr-d5eb8e83d073",
-      "name": "【开学加分】第九届ETTBL全国商务英语翻译大赛",
+      "name": "【周六开考】第九届ETTBL全国商务英语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3552,20 +3552,20 @@
     },
     {
       "id": "comp-saikr-c137aa06257d",
-      "name": "【一级学会盖章】2026华智·高校大学生人工智能大赛",
+      "name": "【周日开考】2026华智·高校大学生人工智能大赛",
       "tier": "hobby",
       "fields": [
         "ai"
       ],
-      "status": "ongoing",
+      "status": "open",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
         "registration_start": "2026-07-01",
-        "registration_end": "2026-08-09",
+        "registration_end": "2026-09-20",
         "event_start": "2026-08-09",
         "event_end": "2026-11-15",
-        "verified_at": "2026-08-08T20:20:01+08:00"
+        "verified_at": "2026-09-18T21:45:37+08:00"
       },
       "signup": "2026年7月1日至8月9日",
       "schedule": "第一场考试2026年8月9日，第二场9月20日，第三场10月18日，第四场11月15日",
@@ -3674,7 +3674,7 @@
     },
     {
       "id": "comp-saikr-554ce57a889c",
-      "name": "【最后3天】2026年第二届“中外传播杯”大学生中外历史竞答大赛",
+      "name": "【仅剩1天】2026年第二届“中外传播杯”大学生中外历史竞答大赛",
       "tier": "official",
       "fields": [
         "other"
@@ -3830,7 +3830,7 @@
       "fields": [
         "other"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -3891,7 +3891,7 @@
     },
     {
       "id": "comp-saikr-3e818dd91712",
-      "name": "【省赛倒计时4天】第九届大学生普通话挑战赛（NPCCS）",
+      "name": "【省赛倒计时2天】第九届大学生普通话挑战赛（NPCCS）",
       "tier": "hobby",
       "fields": [
         "language"
@@ -4112,7 +4112,7 @@
     },
     {
       "id": "comp-saikr-52f6c0e0a9e8",
-      "name": "第六届“中外传播杯”大学生英语翻译大赛",
+      "name": "【外文局单位盖章】第六届“中外传播杯”大学生英语翻译大赛",
       "tier": "official",
       "fields": [
         "language"
@@ -4226,6 +4226,32 @@
       "official_url": "https://www.saikr.com/vse/2026RGZN",
       "official_site": "",
       "organizer": "中国商业技师协会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-1f99fd7c4e2a",
+      "name": "第五届“数学周报”全国大学生数学建模大赛",
+      "tier": "hobby",
+      "fields": [
+        "math"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-07-28",
+        "registration_end": "2026-11-26",
+        "event_start": "2026-11-27",
+        "event_end": "2026-11-29",
+        "verified_at": "2026-09-18T21:45:37+08:00"
+      },
+      "signup": "即日起至 2026年11月26日",
+      "schedule": "2026年11月27日至11月29日",
+      "summary": "由《数学周报》社主办的全国性大学生数学建模赛事，报名 2026年7月28日至11月26日，比赛 11月27日至11月29日。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/MW26MM",
+      "official_site": "",
+      "organizer": "“数学周报” 全国大学生数学建模大赛组委会",
       "prestige": 4
     }
   ]
