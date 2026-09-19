@@ -769,6 +769,11 @@
       "tier": "official",
       "prestige": 8,
       "note": "APMCM亚太地区大学生数学建模竞赛"
+    },
+    "商务外语词汇大赛": {
+      "tier": "hobby",
+      "prestige": 3,
+      "note": "商务外语系列商业赛（赛氪发布者：商务外语系列赛事组委会；指导/盖章单位：中国对外贸易经济合作企业协会）"
     }
   },
   "fields_hints": {
