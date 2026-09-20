@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-19T22:18:20+08:00",
+  "last_updated": "2026-09-20T23:07:46+08:00",
   "source": "CampBrief",
-  "total": 210,
+  "total": 223,
   "tiers": [
     {
       "key": "all",
@@ -409,19 +409,26 @@
     },
     {
       "id": "official-017",
-      "name": "两岸新锐设计竞赛·华灿奖",
+      "name": "【榜单赛事】2026新锐设计竞赛·华灿奖",
       "tier": "official",
       "fields": [
         "design"
       ],
-      "status": "pending",
-      "signup": "每年 4–7 月征稿",
+      "status": "open",
+      "signup": "创意赛道征集截止2026年11月27日；定向主题赛道截止2027年3月5日",
       "schedule": "评审通常在 9–10 月",
-      "summary": "面向两岸青年的设计创意竞赛，涵盖视觉传达、产品设计、环境设计、数字多媒体等。",
+      "summary": "2026新锐设计竞赛·华灿奖（中国高等教育学会主办，入选全国普通高校学科竞赛排行榜）：视觉传达/空间/产品/数媒/时尚/交叉创新6领域，校赛—34赛区—总决赛三级赛制。",
       "search": "华灿奖 设计 两岸",
       "official_site": "http://www.huacanjiang.com/home",
-      "organizer": "中国高等教育学会",
-      "prestige": 7
+      "organizer": "中国高等教育学会、中华中山文化交流协会",
+      "prestige": 7,
+      "official_url": "https://www.52jingsai.com/article-24044-1.html",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2027-03-05",
+        "verified_at": "2026-09-20T22:20:00+08:00"
+      }
     },
     {
       "id": "official-018",
@@ -2230,7 +2237,7 @@
     {
       "id": "comp-saikr-908546aaf309",
       "name": "2026年第三届大学生高新技术竞赛——数学竞赛",
-      "tier": "official",
+      "tier": "hobby",
       "fields": [
         "science"
       ],
@@ -2242,7 +2249,7 @@
       "official_url": "https://www.saikr.com/vse/WLBMATH26",
       "official_site": "",
       "organizer": "全国大学生高新技术竞赛组织委员会",
-      "prestige": 6
+      "prestige": 4
     },
     {
       "id": "comp-saikr-c538dd2b43b6",
@@ -2395,7 +2402,7 @@
         "language",
         "business"
       ],
-      "status": "open",
+      "status": "ongoing",
       "signup": "即日起至2026年9月19日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
@@ -2840,7 +2847,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "done",
       "signup": "即日起至2026年9月19日",
       "schedule": "线上考试四场：6月13日/7月18日/8月15日/9月19日（任选一场，60分钟）",
       "summary": "中国商业联合会推出的ETTBL认证体系赛事，语法赛道以商务英语实务场景为主题（四级为主、含少量六级考点），设一二三等奖及优秀奖，获奖可获电子+纸质证书，成绩前5%可晋级ETTBL商务英语翻译大赛决赛。",
@@ -3179,7 +3186,7 @@
     },
     {
       "id": "comp-saikr-4eb4c5be367a",
-      "name": "【最后7天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
+      "name": "【本周五开考】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3188,7 +3195,7 @@
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-18T21:45:37+08:00",
+        "verified_at": "2026-09-20T22:20:00+08:00",
         "registration_start": "2026-05-25",
         "registration_end": "2026-09-26",
         "event_start": "2026-08-29",
@@ -3345,7 +3352,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "done",
       "signup": "2026年6月17日至9月19日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
@@ -3504,7 +3511,7 @@
     },
     {
       "id": "comp-52jingsai-8f63fddc6364",
-      "name": "【推普周特别场】2026年语文规范化知识大赛报名通知！",
+      "name": "2026年语文规范化知识大赛报名通知！",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3552,7 +3559,7 @@
     },
     {
       "id": "comp-saikr-c137aa06257d",
-      "name": "【周日开考】2026华智·高校大学生人工智能大赛",
+      "name": "2026华智·高校大学生人工智能大赛",
       "tier": "hobby",
       "fields": [
         "ai"
@@ -3562,12 +3569,12 @@
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
         "registration_start": "2026-07-01",
-        "registration_end": "2026-09-20",
+        "registration_end": "2026-10-18",
         "event_start": "2026-08-09",
         "event_end": "2026-11-15",
-        "verified_at": "2026-09-18T21:45:37+08:00"
+        "verified_at": "2026-09-20T22:20:00+08:00"
       },
-      "signup": "2026年7月1日至8月9日",
+      "signup": "2026年7月1日至2026年10月18日",
       "schedule": "第一场考试2026年8月9日，第二场9月20日，第三场10月18日，第四场11月15日",
       "summary": "中国移动通信联合会教育与科学技术研究院、中国国土经济学会产业创新专业委员会联合主办，四场在线考试（8月9日、9月20日、10月18日、11月15日），考查人工智能领域知识。",
       "search": "",
@@ -3674,7 +3681,7 @@
     },
     {
       "id": "comp-saikr-554ce57a889c",
-      "name": "【今日考试，限时报名】2026年第二届“中外传播杯”大学生中外历史竞答大赛",
+      "name": "2026年第二届“中外传播杯”大学生中外历史竞答大赛",
       "tier": "official",
       "fields": [
         "other"
@@ -3891,7 +3898,7 @@
     },
     {
       "id": "comp-saikr-3e818dd91712",
-      "name": "【省赛倒计时1天】第九届大学生普通话挑战赛（NPCCS）",
+      "name": "【省赛报名】第九届大学生普通话挑战赛（NPCCS）",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3901,11 +3908,11 @@
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
         "registration_start": "2026-08-11",
-        "registration_end": "2026-09-20",
+        "registration_end": "2026-10-25",
         "event_start": "2026-09-20",
-        "verified_at": "2026-08-24T07:37:00+08:00"
+        "verified_at": "2026-09-20T22:20:00+08:00"
       },
-      "signup": "2026年8月11日至9月20日",
+      "signup": "2026年8月11日至2026年10月25日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
@@ -3999,9 +4006,9 @@
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
         "registration_end": "2026-12-04",
-        "verified_at": "2026-09-04T08:16:31+08:00"
+        "verified_at": "2026-09-20T22:20:00+08:00"
       },
-      "signup": "即日起-2026年12月4日；竞赛官网：www.cecmath.com",
+      "signup": "即日起-2026年12月4日",
       "schedule": "",
       "summary": "面向在校大学生的全国性数学竞赛：初赛线上远程答题、决赛线上闭卷监考，往届参赛高校超千所、近七万名学生。",
       "search": "",
@@ -4256,7 +4263,7 @@
     },
     {
       "id": "comp-saikr-8c1361d912be",
-      "name": "周六开考！2026年高校大学生商务外语词汇大赛",
+      "name": "2026年高校大学生商务外语词汇大赛",
       "tier": "hobby",
       "fields": [
         "language",
@@ -4280,6 +4287,314 @@
       "official_site": "",
       "organizer": "商务外语系列赛事组委会",
       "prestige": 3
+    },
+    {
+      "id": "comp-52jingsai-43d9d71a9d85",
+      "name": "2026年全国大学生科技知识竞赛报名通知",
+      "tier": "hobby",
+      "fields": [
+        "science"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-10-22",
+        "verified_at": "2026-09-20T22:20:00+08:00"
+      },
+      "signup": "即日起—2026年10月22日",
+      "schedule": "",
+      "summary": "在线答题形式，题库随机抽取30题（单选15、判断10、多选5），满分100分限时40分钟自动阅卷，按成绩设一、二、三等奖，免费报名，官网 kj.52jingsai.com。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23677-1.html",
+      "official_site": "http://kj.52jingsai.com",
+      "organizer": "全国大学生科技知识竞赛组委会",
+      "prestige": 3
+    },
+    {
+      "id": "comp-52jingsai-174125b55453",
+      "name": "【免费答题，及格领证书】第五届全国学生科学素质知识科普活动",
+      "tier": "hobby",
+      "fields": [
+        "science"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-09-20T22:20:00+08:00",
+        "review_after": "2026-09-23T22:20:00+08:00"
+      },
+      "signup": "免费答题活动，时间以官网为准",
+      "schedule": "",
+      "summary": "第五届全国学生科学素质知识科普活动：科普学习、答题（25题随机抽取，60分以上可获奖）、科普宣传、科创作品征集四部分，免费参与，电子证书免费。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23188-1.html",
+      "official_site": "http://kxsz.52jingsai.com",
+      "organizer": "全国学生科学素质知识科普活动组委会、广东省时代产业研究院、山东北斗教育研究院",
+      "prestige": 3
+    },
+    {
+      "id": "comp-52jingsai-09f2d28531f8",
+      "name": "2026年全国大学生标准化奥林匹克竞赛",
+      "tier": "official",
+      "fields": [
+        "business"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-09-01",
+        "registration_end": "2026-10-31",
+        "verified_at": "2026-09-20T22:20:00+08:00"
+      },
+      "signup": "报名及作品提交：2026年9月至10月",
+      "schedule": "",
+      "summary": "设区域赛（华东/东南/华南/华中/西南五赛区）与全国总决赛两阶段，分本科与高职赛道，总决赛由中国计量大学承办，10月下旬公布晋级名单。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-24045-1.html",
+      "official_site": "",
+      "organizer": "中国计量大学、全国标准化大学联盟、“一带一路”标准化教育与研究大学联盟、中国国际贸易促进委员会商业行业委员会",
+      "prestige": 6
+    },
+    {
+      "id": "comp-52jingsai-107f4e975262",
+      "name": "关于举办2026年第九届“福思特杯” 全国大学生审计精英挑战赛的通知",
+      "tier": "hobby",
+      "fields": [
+        "business"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-10-24",
+        "event_start": "2026-11-28",
+        "event_end": "2026-11-28",
+        "verified_at": "2026-09-20T22:20:00+08:00"
+      },
+      "signup": "初赛截止：2026年10月24日前",
+      "schedule": "",
+      "summary": "第九届福思特杯全国大学生审计精英挑战赛：初赛（校内）—复赛—决赛三级赛制，研究生/本科/高职分组，全国线下总决赛2026年11月28日。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-24047-1.html",
+      "official_site": "",
+      "organizer": "南京审计大学",
+      "prestige": 4
+    },
+    {
+      "id": "comp-52jingsai-1a858055e16b",
+      "name": "【榜单赛事，规范字大赛】2026年第八届大学生语言文字能力大赛规范字专项赛报名通知！",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-11-20",
+        "verified_at": "2026-09-20T22:20:00+08:00"
+      },
+      "signup": "报名截止：2026年11月20日中午12点",
+      "schedule": "",
+      "summary": "第八届大学生语言文字能力大赛规范字专项赛：以《通用规范汉字表》为标准自选范文书写，提交作品图片与书写过程视频，报名费49元，入选多省高校学科竞赛榜单。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23944-1.html",
+      "official_site": "http://www.yywz.org.cn",
+      "organizer": "中国语文报刊协会读写教学分会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-52jingsai-3ba0716c81ae",
+      "name": "2027年全国高校商业精英挑战赛物流与供应链竞赛",
+      "tier": "official",
+      "fields": [
+        "business"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-09-20T22:20:00+08:00",
+        "review_after": "2026-09-23T22:20:00+08:00"
+      },
+      "signup": "各赛项报名已开启，截止以组委会通知为准",
+      "schedule": "",
+      "summary": "2027年度商业精英挑战赛物流与供应链竞赛：校赛/省赛—全国预选赛—全国总决赛（2027年5月22-23日），团体调研报告与现场答辩，优秀队伍赴港参加内地与港澳地区赛事。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-24046-1.html",
+      "official_site": "http://cubec.org.cn/",
+      "organizer": "中国国际贸易促进委员会商业行业委员会 中国国际商会商业行业商会",
+      "prestige": 6
+    },
+    {
+      "id": "comp-52jingsai-3e19947b07ba",
+      "name": "2026中国自行车电动自行车设计大赛",
+      "tier": "enterprise",
+      "fields": [
+        "design"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-12-31",
+        "verified_at": "2026-09-20T22:20:00+08:00"
+      },
+      "signup": "申请截止时间：2026年12月31日",
+      "schedule": "",
+      "summary": "中国自行车协会主办的自行车及电动自行车产品设计大赛，赛事详情请访问信息来源页面。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-24053-1.html",
+      "official_site": "",
+      "organizer": "中国自行车协会",
+      "prestige": 5
+    },
+    {
+      "id": "comp-52jingsai-3e6534a992d6",
+      "name": "【翻译大赛】2026年第五届“外文奖”大学生英语翻译大赛报名通知！",
+      "tier": "official",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-12-18",
+        "verified_at": "2026-09-20T22:20:00+08:00"
+      },
+      "signup": "即日起至2026年12月18日（第一场至11月13日，第二场至12月18日）",
+      "schedule": "",
+      "summary": "第五届外文奖大学生英语翻译大赛：中国外文局亚太传播中心主办，英译汉/汉译英双赛道，可任选场次报名（11月13日、12月18日两场）。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-24027-1.html",
+      "official_site": "https://www.wwj.org.cn",
+      "organizer": "中国外文局亚太传播中心",
+      "prestige": 7
+    },
+    {
+      "id": "comp-52jingsai-5545905695dd",
+      "name": "【免费答题，来领证书】“读史明智，鉴古知今”2026年大学生历史文化挑战赛",
+      "tier": "hobby",
+      "fields": [
+        "culture"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-09-20T22:20:00+08:00",
+        "review_after": "2026-09-23T22:20:00+08:00"
+      },
+      "signup": "在线答题活动，时间以官网为准",
+      "schedule": "",
+      "summary": "“读史明智，鉴古知今”2026年大学生历史文化挑战赛：25题在线答题（判断5、单选15、多选5），60分即可获证书，免费参与。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-24043-1.html",
+      "official_site": "",
+      "organizer": "大学生历史文化挑战赛组委会",
+      "prestige": 3
+    },
+    {
+      "id": "comp-52jingsai-68e980cca5a7",
+      "name": "【快来答题领证书】“国文杯”全国高校文学知识竞答活动，免费答题",
+      "tier": "hobby",
+      "fields": [
+        "literature"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-09-16",
+        "registration_end": "2027-05-31",
+        "verified_at": "2026-09-20T22:20:00+08:00"
+      },
+      "signup": "2026年9月16日至2027年5月31日",
+      "schedule": "",
+      "summary": "首届国文杯全国高校文学知识竞答：线上30分钟答题，免费报名，电子证书免费，纸质证书自愿申领。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-24056-1.html",
+      "official_site": "",
+      "organizer": "四川省校园文学协会、广东省智慧科普技术研究院",
+      "prestige": 3
+    },
+    {
+      "id": "comp-52jingsai-d2ab81789636",
+      "name": "2026国际标准化青年之星大赛",
+      "tier": "enterprise",
+      "fields": [
+        "science"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-09-25",
+        "event_start": "2026-11-21",
+        "event_end": "2026-11-22",
+        "verified_at": "2026-09-20T22:20:00+08:00"
+      },
+      "signup": "2026年9月25日前提交报名表",
+      "schedule": "",
+      "summary": "国际标准化青年之星大赛：围绕标准提案与标准草案，初赛线上提交，决赛2026年11月21-22日于香港科技大学（广州）举行，中国标准化研究院等主办。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-24051-1.html",
+      "official_site": "",
+      "organizer": "国际标准化杰出贡献奖励基金会、中国标准化研究院、香港科技大学（广州）",
+      "prestige": 5
+    },
+    {
+      "id": "comp-52jingsai-d2fb804f886f",
+      "name": "【免费答题，来领证书】“诗韵华章”2026年大学生诗词大赛",
+      "tier": "hobby",
+      "fields": [
+        "literature"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2027-01-08",
+        "verified_at": "2026-09-20T22:20:00+08:00"
+      },
+      "signup": "即日起至2027年1月8日",
+      "schedule": "",
+      "summary": "“诗韵华章”2026年大学生诗词大赛：25题诗词知识在线答题，免费参与，不同分数段获不同等级电子证书。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-24050-1.html",
+      "official_site": "",
+      "organizer": "大学生诗词大赛组委会、北京中华文化发展协会、黑龙江省创新教育研究院",
+      "prestige": 3
+    },
+    {
+      "id": "comp-saikr-6f1a28424edc",
+      "name": "【即将截止！90分以上全部一等奖】计算机能力挑战赛",
+      "tier": "hobby",
+      "fields": [
+        "computer"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-06-10",
+        "registration_end": "2026-10-23",
+        "event_start": "2026-09-25",
+        "event_end": "2026-09-27",
+        "verified_at": "2026-09-20T22:20:00+08:00"
+      },
+      "signup": "2026年6月10日至2026年10月23日",
+      "schedule": "",
+      "summary": "第三届大学生高新技术竞赛·计算机能力挑战赛：C语言/Python/Java/C++/程序设计基础知识/数字图像处理6赛道，线上闭卷60分钟，九月场次考试9月25-27日。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/2026WLBcomputilit",
+      "official_site": "",
+      "organizer": "全国大学生高新技术竞赛组织委员会",
+      "prestige": 4
     }
   ]
 }
