@@ -462,6 +462,56 @@
       "tier": "hobby",
       "prestige": 4,
       "note": "全国性行业协会，所办赛为线上知识类竞赛（工创杯等），与网络信息技术大赛同档"
+    },
+    "全国大学生科技知识竞赛组委会": {
+      "tier": "hobby",
+      "prestige": 3,
+      "note": "线上答题商业赛，52jingsai收录"
+    },
+    "全国学生科学素质知识科普活动组委会": {
+      "tier": "hobby",
+      "prestige": 3,
+      "note": "公益答题科普活动"
+    },
+    "中国语文报刊协会读写教学分会": {
+      "tier": "hobby",
+      "prestige": 4,
+      "note": "语言文字能力大赛主办方，中国语文报刊协会分支机构"
+    },
+    "大学生语言文字能力大赛组委会": {
+      "tier": "hobby",
+      "prestige": 4,
+      "note": "规范字专项赛组织单位"
+    },
+    "中国标准化研究院": {
+      "tier": "enterprise",
+      "prestige": 5,
+      "note": "国际标准化青年之星大赛主办方之一（事业单位）"
+    },
+    "四川省校园文学协会": {
+      "tier": "hobby",
+      "prestige": 3,
+      "note": "国文杯文学知识竞答主办方"
+    },
+    "大学生诗词大赛组委会": {
+      "tier": "hobby",
+      "prestige": 3,
+      "note": "诗韵华章诗词大赛，答题领证类商业赛"
+    },
+    "大学生历史文化挑战赛组委会": {
+      "tier": "hobby",
+      "prestige": 3,
+      "note": "读史明智历史文化挑战赛，答题领证类商业赛"
+    },
+    "全国大学生高新技术竞赛组织委员会": {
+      "tier": "hobby",
+      "prestige": 4,
+      "note": "高新技术竞赛系列（各赛道）组织单位，主办方为中国国际科技促进会物联网工作委员会"
+    },
+    "南京审计大学": {
+      "tier": "hobby",
+      "prestige": 4,
+      "note": "福思特杯审计精英挑战赛主办高校（企业冠名商业赛）"
     }
   },
   "competitions": {
@@ -774,6 +824,34 @@
       "tier": "hobby",
       "prestige": 3,
       "note": "商务外语系列商业赛（赛氪发布者：商务外语系列赛事组委会；指导/盖章单位：中国对外贸易经济合作企业协会）"
+    },
+    "计算机能力挑战赛": {
+      "tier": "hobby",
+      "prestige": 4
+    },
+    "大学生科学技术竞赛": {
+      "tier": "hobby",
+      "prestige": 3
+    },
+    "科学素质知识科普": {
+      "tier": "hobby",
+      "prestige": 3
+    },
+    "标准化奥林匹克": {
+      "tier": "official",
+      "prestige": 6
+    },
+    "审计精英挑战赛": {
+      "tier": "hobby",
+      "prestige": 4
+    },
+    "语言文字能力大赛": {
+      "tier": "hobby",
+      "prestige": 4
+    },
+    "物流与供应链竞赛": {
+      "tier": "official",
+      "prestige": 6
     }
   },
   "fields_hints": {

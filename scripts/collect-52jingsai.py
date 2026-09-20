@@ -39,41 +39,55 @@ def fetch(url):
     return raw.decode("gbk", errors="replace")
 
 
+SKIP_KEYWORDS = [
+    "输入页码", "快速跳转", "防水墙", "保卫网站", "远离侵害",
+    "真题", "答案", "四六级", "六级", "四级", "词汇答案",
+    "证书查询", "社会实践证书", "荣誉证书",
+    "报名入口", "报名时间汇总", "赛事汇总",
+    "评奖评优", "学科赛事汇总",
+    "志愿者", "实习", "保研", "考研",
+    # 2026-09-20：非竞赛条目混入候选池导致每轮重复发 candidate_review 让人肉 DROP
+    "奖学金", "形象征集",
+]
+
+
 def parse_list(html):
-    """从列表页提取竞赛链接和标题。优先用 img title 完整标题。"""
+    """从列表页提取竞赛链接和标题。
+
+    必须按元素配对提取标题与链接：旧实现用跨元素的
+    `href="article-…"[^>]*>.*?title="…"`（DOTALL）全局匹配，会把
+    相邻条目的标题配到前一条 URL 上（2026-09-20 实测系统性错位）。
+    现在逐区块解析：
+      1) 推荐位 index_four：<li><a href><img title="完整标题">
+      2) 主列表 dl：<dt class="xs2_tit"><a href="…">标题</a></dt>
+    """
     items = []
     seen = set()
 
-    # 匹配模式：<a href="article-xxx"><img ... title="完整标题" /></a>
-    for m in re.finditer(
-        r'href="(article-(\d+)-\d+\.html)"[^>]*>.*?title="([^"]+)"',
-        html, re.DOTALL
-    ):
-        path, aid, title = m.group(1), m.group(2), m.group(3).strip()
-        if aid in seen:
-            continue
-        # 过滤非竞赛条目
-        skip_keywords = [
-            "输入页码", "快速跳转", "防水墙", "保卫网站", "远离侵害",
-            "真题", "答案", "四六级", "六级", "四级", "词汇答案",
-            "证书查询", "社会实践证书", "荣誉证书",
-            "报名入口", "报名时间汇总", "赛事汇总",
-            "评奖评优", "学科赛事汇总",
-            "志愿者", "实习", "保研", "考研",
-        ]
-        if any(kw in title for kw in skip_keywords):
-            continue
-        if title and len(title) > 6:
-            seen.add(aid)
-            items.append({"id": aid, "title": title, "url": f"{BASE_URL}/{path}"})
+    def add(path, aid, title):
+        title = title.strip()
+        if not title or aid in seen or len(title) <= 6:
+            return
+        if any(kw in title for kw in SKIP_KEYWORDS):
+            return
+        seen.add(aid)
+        items.append({"id": aid, "title": title, "url": f"{BASE_URL}/{path}"})
 
-    # 补充：如果 img title 没抓到，用 <a> 文本兜底
-    if len(items) < 3:
-        for m in re.finditer(r'href="(article-(\d+)-\d+\.html)"[^>]*>([^<]+)', html):
-            path, aid, title = m.group(1), m.group(2), m.group(3).strip()
-            if aid not in seen and title and len(title) > 6:
-                seen.add(aid)
-                items.append({"id": aid, "title": title, "url": f"{BASE_URL}/{path}"})
+    # 1) 推荐位四宫格：标题在同一个 <a> 内嵌 <img title> 上
+    grid = re.search(r'<div class="index_four">\s*<ul>(.*?)</ul>', html, re.S)
+    if grid:
+        for m in re.finditer(
+            r'<a href="(article-(\d+)-\d+\.html)"[^>]*>\s*<img[^>]*title="([^"]+)"',
+            grid.group(1),
+        ):
+            add(m.group(1), m.group(2), m.group(3))
+
+    # 2) 主列表：标题在 dt > a 文本内，与 href 同一标签
+    for m in re.finditer(
+        r'<dt class="xs2_tit"><a href="(article-(\d+)-\d+\.html)"[^>]*>([^<]+)</a>',
+        html,
+    ):
+        add(m.group(1), m.group(2), m.group(3))
 
     return items
 
@@ -86,12 +100,13 @@ def parse_detail(html):
     desc_m = re.search(r'<meta\s+name="description"\s+content="([^"]+)"', html)
     if desc_m:
         desc = desc_m.group(1)
-        # 主办方
-        org_m = re.search(r'主办[单位]*[：:]\s*([^|,，]+)', desc)
+        # 主办方（在 ；/; 处截止：desc 常带“；申请截止时间…”等后续段落，
+        # 2026-09-20 实测不截止会把截止日期拼进 organizer 造成污染）
+        org_m = re.search(r'主办[单位]*[：:]\s*([^|,，；;]+)', desc)
         if org_m:
             info["organizer"] = org_m.group(1).strip()
         # 报名时间
-        time_m = re.search(r'报名时间[：:]\s*([^|,，]+)', desc)
+        time_m = re.search(r'报名时间[：:]\s*([^|,，；;]+)', desc)
         if time_m:
             info["signup_time"] = time_m.group(1).strip()
 
