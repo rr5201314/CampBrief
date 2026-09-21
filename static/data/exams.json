@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-20T21:25:52+08:00",
+  "last_updated": "2026-09-21T21:14:54+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -336,29 +336,33 @@
       "id": "ruankao-202611",
       "name": "2026年下半年计算机技术与软件专业技术资格考试 (软考)",
       "category": "computer",
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
-        "mode": "manual",
-        "verified_at": "2026-09-20T21:25:35+08:00",
-        "review_after": "2026-09-23T21:25:35+08:00"
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-08-14",
+        "registration_end": "2026-09-18",
+        "event_start": "2026-10-24",
+        "event_end": "2026-10-25",
+        "verified_at": "2026-09-21T21:14:21+08:00"
       },
       "fee": "约170元",
-      "schedule": "2026年10月24-27日",
+      "schedule": "2026年10月24-25日",
       "summary": "国家级计算机技术与软件专业资格考试，分初、中、高级，可用于职称评定，是 IT 行业重要证书。",
       "search": "软考 计算机 软件 软考 ruankao software professional 2026 下半年",
       "official_site": "https://www.ruankao.org.cn/",
       "official_portal": "https://www.ruankao.org.cn/",
       "news_list_url": "https://www.ruankao.org.cn/index/work.html",
-      "official_url": "https://www.ruankao.org.cn/article/content/2603051204118156470700001.html",
-      "last_updated": "2026-09-20T21:25:35+08:00",
+      "official_url": "https://www.ruankao.org.cn/article/content/2609211354254868000700041.html",
+      "last_updated": "2026-09-21T21:14:21+08:00",
       "timeline": [
         {
           "label": "考试时间",
-          "value": "2026年10月24日-27日（分批次机考，据2026年度考试工作安排）"
+          "value": "2026年10月24日-25日（分批次机考，据2026年9月21日《关于2026年下半年计算机软件资格考试批次安排的通告》；系统集成项目管理工程师分四批实施，以准考证时间为准）"
         },
         {
           "label": "报名时间",
-          "value": "全国报名平台已开通2026年下半年批次，各省窗口为2026年8月14日至9月18日（如北京9月11-17日、辽宁8月19-25日），各省不同，以当地考试机构通知为准"
+          "value": "各省报名窗口为2026年8月14日至9月18日（如北京9月11-17日、辽宁8月19-25日），已全部截止"
         }
       ]
     },
@@ -848,7 +852,7 @@
       "official_portal": "https://yz.chsi.com.cn/tm/",
       "news_list_url": "https://yz.chsi.com.cn/kyzx/kydt/",
       "official_url": "https://yz.chsi.com.cn/tm/",
-      "last_updated": "2026-09-20T21:25:35+08:00",
+      "last_updated": "2026-09-21T21:14:21+08:00",
       "timeline": [
         {
           "label": "系统注册",
@@ -868,7 +872,7 @@
         "time_zone": "Asia/Shanghai",
         "registration_start": "2026-09-18",
         "registration_end": "2026-10-18",
-        "verified_at": "2026-09-20T21:25:35+08:00"
+        "verified_at": "2026-09-21T21:14:21+08:00"
       }
     }
   ]
