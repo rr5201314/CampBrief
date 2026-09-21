@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-20T23:07:46+08:00",
+  "last_updated": "2026-09-21T22:03:08+08:00",
   "source": "CampBrief",
-  "total": 223,
+  "total": 230,
   "tiers": [
     {
       "key": "all",
@@ -3029,7 +3029,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【多省市译协盖章】2026年第十二届中西部外语翻译大赛",
+      "name": "【备赛全套资源】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3832,19 +3832,19 @@
     },
     {
       "id": "comp-52jingsai-53f086d67013",
-      "name": "【免费答题，及格领证书】第三届中华优秀传统文化大会",
+      "name": "【9月24日截止，免费答题，及格领证书】第三届中华优秀传统文化大会",
       "tier": "hobby",
       "fields": [
         "other"
       ],
-      "status": "closed",
+      "status": "open",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "registration_end": "2026-09-17",
-        "verified_at": "2026-09-08T21:46:17+08:00"
+        "registration_end": "2026-09-24",
+        "verified_at": "2026-09-21T22:03:00+08:00"
       },
-      "signup": "即日起至2026年9月17日",
+      "signup": "即日起至2026年9月24日",
       "schedule": "作品提交（第三场）：即日起至2026年9月17日17时；证书2026年10月发放",
       "summary": "免费答题，60分及格领荣誉证书；含知识答题与作品创作（诵读、汉字书写）环节，作品创作收取评审费50元。",
       "search": "",
@@ -4263,7 +4263,7 @@
     },
     {
       "id": "comp-saikr-8c1361d912be",
-      "name": "2026年高校大学生商务外语词汇大赛",
+      "name": "【由商英主办方指导】2026年高校大学生商务外语词汇大赛",
       "tier": "hobby",
       "fields": [
         "language",
@@ -4594,6 +4594,174 @@
       "official_url": "https://www.saikr.com/vse/2026WLBcomputilit",
       "official_site": "",
       "organizer": "全国大学生高新技术竞赛组织委员会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-52jingsai-171912dc3ec0",
+      "name": "第三届漓江文学奖全球征稿",
+      "tier": "hobby",
+      "fields": [
+        "literature"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-10-11",
+        "verified_at": "2026-09-21T22:03:00+08:00",
+        "registration_start": "2026-06-30"
+      },
+      "signup": "征稿截止2026年10月11日",
+      "schedule": "",
+      "summary": "第三届漓江文学奖全球征稿，虚构、非虚构、文学翻译三大类，奖金最高30万元，由广西出版传媒集团主办。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-24076-1.html",
+      "official_site": "",
+      "organizer": "广西出版传媒集团",
+      "prestige": 4
+    },
+    {
+      "id": "comp-52jingsai-22580fa6e53a",
+      "name": "【榜单赛事，人工智能挑战赛】2026年第八届全国高校计算机能力挑战赛人工智能挑战赛报名开启",
+      "tier": "official",
+      "fields": [
+        "computer",
+        "ai"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-11-13",
+        "verified_at": "2026-09-21T22:03:00+08:00"
+      },
+      "signup": "即日起-2026年11月13日",
+      "schedule": "",
+      "summary": "第八届全国高校计算机能力挑战赛人工智能挑战赛，纳入榜单赛事，大赛官羑 ncccu.org.cn，报名截止11月13日。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-24017-1.html",
+      "official_site": "",
+      "organizer": "全国高等学校计算机教育研究会",
+      "prestige": 7
+    },
+    {
+      "id": "comp-52jingsai-5bfdd2dde796",
+      "name": "第十五届中国创新创业大赛颠覆性技术创新大赛（未来空间领域赛）",
+      "tier": "official",
+      "fields": [
+        "innovation"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-10-10",
+        "verified_at": "2026-09-21T22:03:00+08:00"
+      },
+      "signup": "报名截止2026年10月10日",
+      "schedule": "",
+      "summary": "第十五届中国创新创业大赛颠覆性技术创新大赛（未来空间领域赛），拟于雄安新区举办，聚焦载人航天、探月探火、卫星导航等领域，官羑 cxcyds.com。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-24074-1.html",
+      "official_site": "",
+      "organizer": "工业和信息化部火炬高技术产业开发中心、雄安新区管理委员会、河北省科学技术厅、河北省工业和信息化厅",
+      "prestige": 9
+    },
+    {
+      "id": "comp-52jingsai-c4c98147986a",
+      "name": "【榜单赛事，Office大赛】2026年第八届全国高校计算机能力挑战赛Office高级应用赛",
+      "tier": "official",
+      "fields": [
+        "computer",
+        "vocational"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-11-25",
+        "verified_at": "2026-09-21T22:03:00+08:00"
+      },
+      "signup": "即日起-2026年11月25日",
+      "schedule": "",
+      "summary": "第八届全国高校计算机能力挑战赛Office高级应用赛，纳入榜单赛事，大赛官羑 ncccu.org.cn，报名截止11月25日。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23885-1.html",
+      "official_site": "",
+      "organizer": "全国高等学校计算机教育研究会",
+      "prestige": 7
+    },
+    {
+      "id": "comp-52jingsai-ece14655d887",
+      "name": "【榜单赛事】2026年第四届大学生汉语大赛火热报名中！",
+      "tier": "hobby",
+      "fields": [
+        "literature"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-12-19",
+        "verified_at": "2026-09-21T22:03:00+08:00"
+      },
+      "signup": "即日起至2026年12月19日下午5点",
+      "schedule": "",
+      "summary": "第四届大学生汉语大赛，初赛含选择/判断题，决赛含听力、阅读理解、文言文赏析，大赛官羑 hanyu.52jingsai.com。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-24030-1.html",
+      "official_site": "",
+      "organizer": "华夏文化促进会文化产业工作委员会、大学生汉语大赛组委会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-50af6d1652b9",
+      "name": "2026年“中外杯”大学生英语翻译大赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-12-19",
+        "verified_at": "2026-09-21T22:03:00+08:00",
+        "registration_start": "2026-08-28"
+      },
+      "signup": "即日起-2026年12月19日（共三场考试：10.17、11.21、12.19）",
+      "schedule": "",
+      "summary": "2026年中外杯大学生英语翻译大赛，共设三场考试任选参加，报名截止2026年12月19日。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/ZWB2026",
+      "official_site": "",
+      "organizer": "“中外杯”组委会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-72d775b9ef6c",
+      "name": "2026年第二届计算机能力竞赛暨城市联赛（冬季赛）—计算机素养赛道",
+      "tier": "hobby",
+      "fields": [
+        "computer"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-10-30",
+        "verified_at": "2026-09-21T22:03:00+08:00",
+        "registration_start": "2026-08-28",
+        "event_start": "2026-10-31",
+        "event_end": "2026-11-01"
+      },
+      "signup": "即日起-2026年10月30日（冬季赛共四场考试，任选或多场）",
+      "schedule": "",
+      "summary": "第二届计算机能力竞赛暨城市联赛（冬季赛）计算机素养赛道，线上个人赛，报名截止10月30日，主办：大连/苏州/天津市计算机学会。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/CLComputer2026WT",
+      "official_site": "",
+      "organizer": "大连市计算机学会、苏州市计算机学会、天津市计算机学会",
       "prestige": 4
     }
   ]
