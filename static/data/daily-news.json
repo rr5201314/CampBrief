@@ -1,8 +1,21 @@
 {
-  "last_updated": "2026-09-21T08:23:48+08:00",
+  "last_updated": "2026-09-21T13:53:41+08:00",
   "source": "CampBrief Auto",
-  "total": 912,
+  "total": 918,
   "items": [
+    {
+      "id": "news-a6e41f9f786779c0",
+      "title": "Qwen开源图形生成与编辑模型Qwen-Image-2.1",
+      "url": "https://qwen.ai/blog?id=qwen-image-2.1",
+      "date": "2026-09-21",
+      "published": "2026-09-21T01:04:01+00:00",
+      "summary": "Qwen开源Qwen-Image-2.1，把文生图与图像编辑统一到一个模型，视觉生成部分为7B参数，原生支持RGBA透明图生成与编辑。",
+      "detail": "模型采用32层Single-Stream DiT架构，可直接生成或编辑RGBA透明图，也能从照片中提取主体；编辑最多接收10张参考图，支持圈选、涂抹和独立掩码等局部控制。推理侧以混合粒度注意力和KV Cache复用减少多图重复计算，Diffusers、ComfyUI、vLLM-Omni、SGLang在发布当天即提供支持。",
+      "image": "",
+      "priority": 3,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
     {
       "id": "news-945ce44f5e66347e",
       "title": "8点1氪：「电子工业大米」MLCC 价格暴涨，部分现货被炒至原价 10 倍",
@@ -15,6 +28,33 @@
       "priority": 2,
       "category": "ai",
       "source": "36氪"
+    },
+    {
+      "id": "news-cd405f6407b90d5b",
+      "title": "阶跃星辰发布旗舰模型Step 5 Preview，权重10月15日开放",
+      "url": "https://www.stepfun.com/step-5-preview",
+      "date": "2026-09-21",
+      "published": "2026-09-21T01:04:01+00:00",
+      "summary": "阶跃星辰发布Step 5 Preview，总参数600B、激活27B，支持百万token上下文与视觉输入，已向全量用户开放API和Studio。",
+      "detail": "模型为稀疏MoE架构，面向AI编程、软件工程、专业知识工作和金融等Agentic任务。官方称其在Artificial Analysis Intelligence Index得44分、位居全球开源模型前三，单任务成本为Claude Opus 5的八分之一；模型权重将于10月15日开放。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-81dfbae86e6c28e1",
+      "title": "硅基流动完成B+轮二期和C轮融资，年内累计近29亿元",
+      "url": "https://mp.weixin.qq.com/s/Y0X4FqYFYQDsTLGyLl0dzQ",
+      "date": "2026-09-21",
+      "published": "2026-09-21T01:04:01+00:00",
+      "summary": "硅基流动宣布完成B+轮二期和C轮融资，2026年度累计股权融资额近29亿元，投资方包括中国互联网投资基金、国新基金、中国移动链长基金等。",
+      "detail": "融资资金将投入推理引擎、异构算力调度、模型与芯片适配等核心技术研发，强化Token供应平台并加快全球市场拓展。公司称平台注册用户超1000万、服务企业客户超1.3万家，累计支持超170款主流AI模型；Frost & Sullivan数据显示其按2025年Token年吞吐量计为中国最大的独立生态Token供应商。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "juya AI 日报"
     },
     {
       "id": "news-0376c4b72ef6efdd",
@@ -83,6 +123,47 @@
       "priority": 1,
       "category": "ai",
       "source": "36氪"
+    },
+    {
+      "id": "news-95c99d56b88afa39",
+      "title": "腾讯开源端到端文档解析模型WeVisDoc",
+      "url": "https://tencent.github.io/WeVisDoc/",
+      "date": "2026-09-21",
+      "published": "2026-09-21T01:04:01+00:00",
+      "summary": "腾讯开源2B和4B两版端到端文档解析模型WeVisDoc，可将页面图像直接转为含公式与表格的Markdown，权重已上线Hugging Face。",
+      "detail": "WeVisDoc分别基于Qwen3-VL-2B/4B-Instruct微调，可在同一输出序列中保留文本、LaTeX公式、HTML表格和阅读顺序。官方称WeVisDoc-4B在OmniDocBench v1.6及PureDocBench的Clean、Digital Degraded、Real Degraded四项设置中均领先所比较的端到端解析模型。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-f4ad6fd801cf18d5",
+      "title": "腾讯混元联合清华北大发布网页应用生成评测IWC-Bench",
+      "url": "https://arxiv.org/abs/2609.15387",
+      "date": "2026-09-21",
+      "published": "2026-09-21T01:04:01+00:00",
+      "summary": "腾讯混元联合清华、北大提出IWC-Bench，让Agent实际操作网页并以代码覆盖率辅助查漏，从三个维度评估AI生成的网页应用。",
+      "detail": "该评测认为仅检查代码或首页截图难以判断功能能否真正运行，因此让Agent交互探索网页、把交互轨迹抽象为状态转换图并按运行证据评分，覆盖美观度、易用性和需求符合度。基准含369条真实用户需求和5088条验收标准，在197组有效应用对中与人类偏好一致率为85.3%。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-f7b1fc4c23dfd0ad",
+      "title": "智谱MaaS平台将上线数据内容不留存功能",
+      "url": "https://mp.weixin.qq.com/s/e7kLxQKhkOrLdsmgyF5U0Q",
+      "date": "2026-09-21",
+      "published": "2026-09-21T01:04:01+00:00",
+      "summary": "智谱MaaS平台近期将上线数据内容不留存功能，生效后输入输出不做静态存储，仅用于当次模型调用，用户可通过控制台申请开通。",
+      "detail": "该功能面向企业和开发者提供更严格的数据隐私保护。Batch API、File API等需持久化保存任务或文件的功能不在覆盖范围内；因法律法规要求或核查涉嫌违规、滥用行为，平台仍可能留存相关数据30天及以上。具体生效时间及适用范围以平台确认结果为准。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
     },
     {
       "id": "news-e52e73688c2f8fe7",
@@ -193,7 +274,7 @@
     {
       "id": "news-4281f4b099e44f79",
       "title": "阿里达摩院开源腹部 CT 诊断模型 RADAR，论文发表于 Science",
-      "url": "https://github.com/alibaba-damo-academy/damo-radar",
+      "url": "https://www.science.org/doi/10.1126/science.aec6129",
       "date": "2026-09-20",
       "published": "2026-09-20T01:12:16+00:00",
       "summary": "达摩院开源腹部 CT 诊断视觉语言模型 RADAR，用超 42 万例 CT 训练，覆盖 146 项影像发现，外部 AUC 超 0.87。",
