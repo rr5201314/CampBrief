@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-21T22:03:08+08:00",
+  "last_updated": "2026-09-22T21:41:25+08:00",
   "source": "CampBrief",
-  "total": 230,
+  "total": 231,
   "tiers": [
     {
       "key": "all",
@@ -2524,15 +2524,15 @@
     },
     {
       "id": "comp-saikr-e5eaadd424dd",
-      "name": "2026大学生“麟创杯”创新数学竞赛",
+      "name": "【年度最后一场报名中】2026大学生“麟创杯”创新数学竞赛",
       "tier": "hobby",
       "fields": [
         "ai",
         "innovation",
         "science"
       ],
-      "status": "closed",
-      "signup": "2026年4月29日至8月22日",
+      "status": "open",
+      "signup": "2026年4月29日至2026年10月25日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
@@ -2544,8 +2544,8 @@
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
         "registration_start": "2026-04-29",
-        "registration_end": "2026-08-22",
-        "verified_at": "2026-08-05T15:39:30+08:00"
+        "registration_end": "2026-10-25",
+        "verified_at": "2026-09-22T21:41:14+08:00"
       }
     },
     {
@@ -3143,7 +3143,7 @@
     },
     {
       "id": "comp-saikr-621d8ad96385",
-      "name": "【多校认定为国家级或省部级竞赛】第四届“三晋杯”全国大学生英语演讲大赛",
+      "name": "第四届“三晋杯”全国大学生英语演讲大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3658,7 +3658,7 @@
     },
     {
       "id": "comp-saikr-5ff1ac5834d5",
-      "name": "【高校力荐！】第四届“一带一路”大学生英语词汇能力挑战",
+      "name": "【高校力荐】第四届“一带一路”大学生英语词汇能力挑战",
       "tier": "hobby",
       "fields": [
         "language"
@@ -4762,6 +4762,30 @@
       "official_url": "https://www.saikr.com/vse/CLComputer2026WT",
       "official_site": "",
       "organizer": "大连市计算机学会、苏州市计算机学会、天津市计算机学会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-52jingsai-9ef3997664b8",
+      "name": "第二十三届“语文世界杯”教学评比大赛通知",
+      "tier": "hobby",
+      "fields": [
+        "literature"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-07-06",
+        "registration_end": "2026-10-31",
+        "verified_at": "2026-09-22T21:41:14+08:00"
+      },
+      "signup": "2026年7月6日至2026年10月31日（作品提交期）",
+      "schedule": "",
+      "summary": "第二十三届“语文世界杯”教学评比大赛，作品开放提交时段为2026年7月6日至10月31日。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-24091-1.html",
+      "official_site": "",
+      "organizer": "",
       "prestige": 4
     }
   ]
