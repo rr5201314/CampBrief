@@ -1,8 +1,21 @@
 {
-  "last_updated": "2026-09-22T08:23:34+08:00",
+  "last_updated": "2026-09-22T13:40:42+08:00",
   "source": "CampBrief Auto",
-  "total": 917,
+  "total": 922,
   "items": [
+    {
+      "id": "news-60c8bf49abfe53c7",
+      "title": "SpaceXAI 发布 Grok 4.7，另推双倍速双倍价的 Fast 版本",
+      "url": "https://x.ai/news/grok-4-7",
+      "date": "2026-09-22",
+      "published": "2026-09-22T01:16:05+00:00",
+      "summary": "SpaceXAI 发布编程与 Agent 模型 Grok 4.7，支持 50 万 token 上下文，价格与前代不变，另推双倍价双倍速的 Fast 版。",
+      "detail": "Grok 4.7 采用更大的基础模型，在偏多小时任务的难题数据上做了更长强化学习，重点提升长任务执行、自我检查与长上下文管理。CursorBench 4.0 xHigh 得分从 Grok 4.6 High 的 40.4% 升至 46.3%。模型已上线 API、Cursor、OpenRouter、Vercel 和 Cloudflare；Fast 版本暂仅限 Cursor 和 Grok Build。",
+      "image": "",
+      "priority": 3,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
     {
       "id": "news-61c27cbc96c919fe",
       "title": "Google 因位置数据处理被爱尔兰罚款 4.03 亿欧元",
@@ -41,6 +54,60 @@
       "priority": 2,
       "category": "ai",
       "source": "36氪"
+    },
+    {
+      "id": "news-7373496853901576",
+      "title": "智谱开源 ZCode 全部源码，宣布完成数据上传问题安全整改",
+      "url": "https://github.com/zai-org/ZCode",
+      "date": "2026-09-22",
+      "published": "2026-09-22T01:16:05+00:00",
+      "summary": "智谱在 GitHub 公开 ZCode 源码，第一方代码采用 Apache-2.0 许可；最新版移除仓库快照上传链路，整改获中国信通院与绿盟科技评估确认。",
+      "detail": "此前多名用户反映 ZCode 未经授权使用代码库索引功能上传开发数据，智谱为此道歉。开源仓库覆盖桌面应用、浏览器工作台、后端服务、共享界面、Agent CLI 及运行时，官方称相关数据未留存、未用于模型训练。仓库暂无原始提交记录且关闭 issue 与 PR，开源版不享受 GLM Coding Plan 额度活动权益。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-d107079e15d8e133",
+      "title": "OpenAI 称内部模型已解决逾百个数学开放问题",
+      "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai/",
+      "date": "2026-09-22",
+      "published": "2026-09-22T01:16:05+00:00",
+      "summary": "OpenAI 披露其 8 月 28 日开始训练的内部模型已解决纳维-斯托克斯千禧年难题及逾百个数学开放问题，进展速度令公司内部数学家意外。",
+      "detail": "针对数学界对 AI 跳过过程批量产出结论的批评，OpenAI 正与独立「数学与人工智能顾问组」合作，由数学家协助评估新成果的重要性、传播方式与学术规范。顾问组独立于 OpenAI，成员不领取其报酬，可公开发表意见。该模型目前仍为内部模型，OpenAI 未说明公开可用时间。",
+      "image": "",
+      "priority": 2,
+      "subcategory": "ai-frontier",
+      "category": "tech",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-bf9a8408a7751617",
+      "title": "OpenAI 呼吁制定全球前沿 AI 技术标准",
+      "url": "https://openai.com/index/building-standards-next-phase-ai/",
+      "date": "2026-09-22",
+      "published": "2026-09-22T01:16:05+00:00",
+      "summary": "OpenAI 发文提议由美国牵头与各国制定全球前沿 AI 技术标准，重点覆盖能力评测、自动化 AI 研究与递归自我改进（RSI）的风险管理。",
+      "detail": "OpenAI 认为各国规则碎片化、集体行动难题和能力分布不均将妨碍跨境 AI 风险识别与应对，建议依托各国 AI 安全机构、CAISI、行业组织和标准机构，建立共同的能力测量、风险评估、人类监督与事件报告规范，并适用于开放权重和闭源模型。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-75ea494b5f7f1ac9",
+      "title": "HeyGen 发布 Code2Video 基准，评测智能体生成动效视频的成片质量",
+      "url": "https://www.heygen.com/research/introducing-code2video-benchmark",
+      "date": "2026-09-22",
+      "published": "2026-09-22T01:16:05+00:00",
+      "summary": "HeyGen 发布 Code2Video 基准与配套 Judge 模型，评测 LLM Agent 把提示词转成动效代码后的成片质量。",
+      "detail": "基准从吸引力、提示意图、构图、时序和制作质量五个维度评分，Judge 模型对同一提示词的两段候选视频做成对比较。HeyGen 称其在 1464 个样本中与人类评价一致率 82%，高于通用 VLM 的 75%，单次比较延迟低于 1 秒。排行榜已公布，数据集上线 Kaggle，Judge 模型架构待另行公开。",
+      "image": "",
+      "priority": 1,
+      "subcategory": "ai-frontier",
+      "category": "tech",
+      "source": "juya AI 日报"
     },
     {
       "id": "news-fda1c962357d6ed5",
