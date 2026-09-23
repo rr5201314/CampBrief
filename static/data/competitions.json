@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-22T21:41:25+08:00",
+  "last_updated": "2026-09-23T21:39:34+08:00",
   "source": "CampBrief",
   "total": 231,
   "tiers": [
@@ -199,8 +199,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-19T22:18:20+08:00",
-        "review_after": "2026-09-22T22:18:20+08:00"
+        "verified_at": "2026-09-23T21:39:34+08:00",
+        "review_after": "2026-09-26T21:39:34+08:00"
       }
     },
     {
@@ -302,8 +302,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-19T22:18:20+08:00",
-        "review_after": "2026-09-22T22:18:20+08:00"
+        "verified_at": "2026-09-23T21:39:34+08:00",
+        "review_after": "2026-09-26T21:39:34+08:00"
       }
     },
     {
@@ -878,8 +878,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-19T22:18:20+08:00",
-        "review_after": "2026-09-22T22:18:20+08:00"
+        "verified_at": "2026-09-23T21:39:34+08:00",
+        "review_after": "2026-09-26T21:39:34+08:00"
       }
     },
     {
@@ -1626,8 +1626,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-19T22:18:20+08:00",
-        "review_after": "2026-09-22T22:18:20+08:00"
+        "verified_at": "2026-09-23T21:39:34+08:00",
+        "review_after": "2026-09-26T21:39:34+08:00"
       }
     },
     {
@@ -1650,8 +1650,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-19T22:18:20+08:00",
-        "review_after": "2026-09-22T22:18:20+08:00"
+        "verified_at": "2026-09-23T21:39:34+08:00",
+        "review_after": "2026-09-26T21:39:34+08:00"
       }
     },
     {
@@ -1674,8 +1674,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-19T22:18:20+08:00",
-        "review_after": "2026-09-22T22:18:20+08:00"
+        "verified_at": "2026-09-23T21:39:34+08:00",
+        "review_after": "2026-09-26T21:39:34+08:00"
       }
     },
     {
@@ -1735,8 +1735,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-19T22:18:20+08:00",
-        "review_after": "2026-09-22T22:18:20+08:00"
+        "verified_at": "2026-09-23T21:39:34+08:00",
+        "review_after": "2026-09-26T21:39:34+08:00"
       }
     },
     {
@@ -1814,8 +1814,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-19T22:18:20+08:00",
-        "review_after": "2026-09-22T22:18:20+08:00"
+        "verified_at": "2026-09-23T21:39:34+08:00",
+        "review_after": "2026-09-26T21:39:34+08:00"
       }
     },
     {
@@ -1853,8 +1853,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-19T22:18:20+08:00",
-        "review_after": "2026-09-22T22:18:20+08:00"
+        "verified_at": "2026-09-23T21:39:34+08:00",
+        "review_after": "2026-09-26T21:39:34+08:00"
       }
     },
     {
@@ -1876,8 +1876,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-19T22:18:20+08:00",
-        "review_after": "2026-09-22T22:18:20+08:00"
+        "verified_at": "2026-09-23T21:39:34+08:00",
+        "review_after": "2026-09-26T21:39:34+08:00"
       }
     },
     {
@@ -1899,8 +1899,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-19T22:18:20+08:00",
-        "review_after": "2026-09-22T22:18:20+08:00"
+        "verified_at": "2026-09-23T21:39:34+08:00",
+        "review_after": "2026-09-26T21:39:34+08:00"
       }
     },
     {
@@ -2989,8 +2989,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-19T22:18:20+08:00",
-        "review_after": "2026-09-22T22:18:20+08:00"
+        "verified_at": "2026-09-23T21:39:34+08:00",
+        "review_after": "2026-09-26T21:39:34+08:00"
       }
     },
     {
@@ -3423,20 +3423,29 @@
     },
     {
       "id": "comp-saikr-699c33f46408",
-      "name": "第五届“中外传播杯”大学生英语语法大赛",
+      "name": "【倒计时4天】第五届“中外传播杯”大学生英语语法大赛",
       "tier": "official",
       "fields": [
         "language"
       ],
-      "status": "done",
-      "signup": "2026年7月7日至8月30日",
+      "status": "open",
+      "signup": "2026年7月7日至9月27日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/2026YF",
       "official_site": "",
       "organizer": "外文局亚太传播中心英语大赛组委会",
-      "prestige": 7
+      "prestige": 7,
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-07-07",
+        "registration_end": "2026-09-27",
+        "event_start": "2026-09-27",
+        "event_end": "2026-09-27",
+        "verified_at": "2026-09-23T21:39:34+08:00"
+      }
     },
     {
       "id": "comp-saikr-357a094c18d3",
@@ -3826,8 +3835,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-19T22:18:20+08:00",
-        "review_after": "2026-09-22T22:18:20+08:00"
+        "verified_at": "2026-09-23T21:39:34+08:00",
+        "review_after": "2026-09-26T21:39:34+08:00"
       }
     },
     {
