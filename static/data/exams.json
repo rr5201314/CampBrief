@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-22T21:04:10.789542+08:00",
+  "last_updated": "2026-09-23T21:03:38+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -632,7 +632,7 @@
         "registration_end": "2026-11-09T23:59:00+00:00",
         "event_start": "2026-12-07",
         "event_end": "2026-12-11",
-        "verified_at": "2026-09-16T21:01:48+08:00"
+        "verified_at": "2026-09-23T21:03:38+08:00"
       },
       "fee": "各阶段费用不同",
       "schedule": "2026年12月",
@@ -664,7 +664,7 @@
           "value": "2027年1月18日"
         }
       ],
-      "last_updated": "2026-09-20T21:25:35+08:00"
+      "last_updated": "2026-09-23T21:03:38+08:00"
     },
     {
       "id": "first-level-cost-engineer-2026",
