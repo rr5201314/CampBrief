@@ -29,7 +29,6 @@ VALID_POLICY_MODES = {
 VALID_POLICY_FALLBACKS = {"current-notice", "portal"}
 FUTURE_NOTICE_PENDING = {
     "guokao-2026",
-    "kaoyan-2026",
 }
 OFFICIAL_HOSTS = {
     "cet-bm.neea.edu.cn",

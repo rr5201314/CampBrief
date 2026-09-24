@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-23T21:03:38+08:00",
+  "last_updated": "2026-09-24T21:15:01+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -91,8 +91,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "manual",
-        "verified_at": "2026-09-20T21:25:35+08:00",
-        "review_after": "2026-09-23T21:25:35+08:00"
+        "verified_at": "2026-09-24T21:30:00+08:00",
+        "review_after": "2026-09-27T21:30:00+08:00"
       },
       "fee": "笔试 15-50 元/人次（各省不同，六级比四级高 2-5 元），口试 50 元/人次",
       "schedule": "2026年12月12日（笔试）；11月21日-22日（口试）",
@@ -138,7 +138,7 @@
           "value": "口试 2026年11月17日9时起，笔试 2026年12月1日9时起"
         }
       ],
-      "last_updated": "2026-09-20T21:25:35+08:00"
+      "last_updated": "2026-09-24T21:30:00+08:00"
     },
     {
       "id": "tem-4",
@@ -205,8 +205,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-09-20T21:25:35+08:00",
-        "review_after": "2026-09-23T21:25:35+08:00"
+        "verified_at": "2026-09-24T21:30:00+08:00",
+        "review_after": "2026-09-27T21:30:00+08:00"
       },
       "fee": "约2170元",
       "schedule": "全年多场",
@@ -216,7 +216,7 @@
       "official_portal": "https://ielts-main.neea.cn/",
       "news_list_url": "https://www.chinaielts.org/press-office",
       "official_url": "https://www.chinaielts.org/press-office/IELTS-Chinese-Mainland-Exam-Registration-2026-7-9",
-      "last_updated": "2026-09-20T21:25:35+08:00",
+      "last_updated": "2026-09-24T21:30:00+08:00",
       "timeline": [
         {
           "label": "考试场次",
@@ -239,8 +239,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-09-20T21:25:35+08:00",
-        "review_after": "2026-09-23T21:25:35+08:00"
+        "verified_at": "2026-09-24T21:30:00+08:00",
+        "review_after": "2026-09-27T21:30:00+08:00"
       },
       "fee": "约2100元",
       "schedule": "全年多场",
@@ -250,7 +250,7 @@
       "official_portal": "https://toefl-main.neea.cn/",
       "news_list_url": "https://toefl-main.neea.cn/html1/category/16123/94-1.htm",
       "official_url": "https://toefl.neea.cn/",
-      "last_updated": "2026-09-20T21:25:35+08:00"
+      "last_updated": "2026-09-24T21:30:00+08:00"
     },
     {
       "id": "catti-202606",
@@ -632,7 +632,7 @@
         "registration_end": "2026-11-09T23:59:00+00:00",
         "event_start": "2026-12-07",
         "event_end": "2026-12-11",
-        "verified_at": "2026-09-23T21:03:38+08:00"
+        "verified_at": "2026-09-24T21:30:00+08:00"
       },
       "fee": "各阶段费用不同",
       "schedule": "2026年12月",
@@ -664,7 +664,7 @@
           "value": "2027年1月18日"
         }
       ],
-      "last_updated": "2026-09-23T21:03:38+08:00"
+      "last_updated": "2026-09-24T21:30:00+08:00"
     },
     {
       "id": "first-level-cost-engineer-2026",
@@ -776,8 +776,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-09-20T21:25:35+08:00",
-        "review_after": "2026-09-23T21:25:35+08:00"
+        "verified_at": "2026-09-24T21:30:00+08:00",
+        "review_after": "2026-09-27T21:30:00+08:00"
       },
       "fee": "约50元（学生优惠）",
       "schedule": "各地定期组织",
@@ -787,7 +787,7 @@
       "official_portal": "https://www.cltt.org/",
       "news_list_url": "https://www.cltt.org/",
       "official_url": "https://stzbm.cltt.org/",
-      "last_updated": "2026-09-20T21:25:35+08:00"
+      "last_updated": "2026-09-24T21:30:00+08:00"
     },
     {
       "id": "guokao-2026",
@@ -802,7 +802,7 @@
       "official_portal": "http://bm.scs.gov.cn/",
       "news_list_url": "http://bm.scs.gov.cn/",
       "official_url": "",
-      "last_updated": "2026-09-20T21:25:35+08:00"
+      "last_updated": "2026-09-24T21:30:00+08:00"
     },
     {
       "id": "shiye",
@@ -811,8 +811,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-09-20T21:25:35+08:00",
-        "review_after": "2026-09-23T21:25:35+08:00"
+        "verified_at": "2026-09-24T21:30:00+08:00",
+        "review_after": "2026-09-27T21:30:00+08:00"
       },
       "fee": "约50-100元",
       "schedule": "各地不定期",
@@ -822,7 +822,7 @@
       "official_portal": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/index.html",
       "news_list_url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/index.html",
       "official_url": "https://job.mohrss.gov.cn/cjobs/institution/listInstitution",
-      "last_updated": "2026-09-20T21:25:35+08:00"
+      "last_updated": "2026-09-24T21:30:00+08:00"
     },
     {
       "id": "kaoyan-2026",
@@ -830,14 +830,41 @@
       "category": "postgrad",
       "status": "pending",
       "fee": "约200元",
-      "schedule": "预计2026年12月",
-      "summary": "选拔本科毕业生进入研究生阶段的全国统一考试，含初试和复试，分学术型和专业型硕士两类。",
+      "schedule": "2026年12月19日-20日（初试）",
+      "summary": "选拔本科毕业生进入研究生阶段的全国统一考试，含初试和复试，分学术型和专业型硕士两类。2027年初试时间为2026年12月19日至20日。",
       "search": "考研 硕士 研究生 postgraduate entrance master 2027",
       "official_site": "https://yzst.chsi.com.cn/yzwb/",
       "official_portal": "https://yz.chsi.com.cn/",
       "news_list_url": "https://yz.chsi.com.cn/kyzx/jybzc/",
-      "official_url": "",
-      "last_updated": "2026-09-20T21:25:35+08:00"
+      "official_url": "https://yz.chsi.com.cn/kyzx/jybzc/202609/20260924/2293971511.html",
+      "last_updated": "2026-09-24T21:30:00+08:00",
+      "timeline": [
+        {
+          "label": "预报名",
+          "value": "2026年10月9日至10月12日"
+        },
+        {
+          "label": "正式报名",
+          "value": "2026年10月15日至10月24日，每日9:00—22:00"
+        },
+        {
+          "label": "初试时间",
+          "value": "2026年12月19日至20日"
+        },
+        {
+          "label": "管理规定",
+          "value": "教育部2026年9月24日印发《2027年全国硕士研究生招生工作管理规定》"
+        }
+      ],
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-10-09",
+        "registration_end": "2026-10-24",
+        "event_start": "2026-12-19",
+        "event_end": "2026-12-20",
+        "verified_at": "2026-09-24T21:30:00+08:00"
+      }
     },
     {
       "id": "baoyan-2026",
@@ -852,7 +879,7 @@
       "official_portal": "https://yz.chsi.com.cn/tm/",
       "news_list_url": "https://yz.chsi.com.cn/kyzx/kydt/",
       "official_url": "https://yz.chsi.com.cn/tm/",
-      "last_updated": "2026-09-21T21:14:21+08:00",
+      "last_updated": "2026-09-24T21:30:00+08:00",
       "timeline": [
         {
           "label": "系统注册",
@@ -872,7 +899,7 @@
         "time_zone": "Asia/Shanghai",
         "registration_start": "2026-09-18",
         "registration_end": "2026-10-18",
-        "verified_at": "2026-09-21T21:14:21+08:00"
+        "verified_at": "2026-09-24T21:30:00+08:00"
       }
     }
   ]
