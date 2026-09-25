@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-23T21:39:34+08:00",
+  "last_updated": "2026-09-25T21:41:44+08:00",
   "source": "CampBrief",
   "total": 231,
   "tiers": [
@@ -3029,7 +3029,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【备赛全套资源】2026年第十二届中西部外语翻译大赛",
+      "name": "【备赛黄金期】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3186,7 +3186,7 @@
     },
     {
       "id": "comp-saikr-4eb4c5be367a",
-      "name": "【本周五开考】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
+      "name": "【今日开考 | 为期三天】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3423,7 +3423,7 @@
     },
     {
       "id": "comp-saikr-699c33f46408",
-      "name": "【倒计时4天】第五届“中外传播杯”大学生英语语法大赛",
+      "name": "【本周日考试】第五届“中外传播杯”大学生英语语法大赛",
       "tier": "official",
       "fields": [
         "language"
@@ -3846,7 +3846,7 @@
       "fields": [
         "other"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -4202,21 +4202,27 @@
     },
     {
       "id": "comp-saikr-d95e7718442b",
-      "name": "2025全国大学生机器人与算法大赛—模拟仿真赛道",
+      "name": "2026全国大学生机器人与算法大赛-模拟仿真赛道",
       "tier": "hobby",
       "fields": [
         "robot",
         "computer"
       ],
       "prestige": 4,
-      "status": "done",
-      "signup": "2025年12月1日至2026年4月11日（已截止）",
+      "status": "open",
+      "signup": "2026.04.20-2026.11.14，以官网为准",
       "schedule": "决赛 2026年7月2日-4日（上海，已结束）",
-      "summary": "由中国机电一体化技术应用协会主办，初赛线上闭卷答题、决赛线下实操；2025—2026赛季已于2026年7月决赛后结束。",
+      "summary": "中国机电一体化技术应用协会主办的2026赛季，含机器人舞蹈、灵巧手开发等赛道，赛事详情请访问信息来源页面。",
       "search": "",
       "official_url": "https://www.saikr.com/vse/Robot/arborseek/26",
       "official_site": "",
-      "organizer": "机器人与算法组委会"
+      "organizer": "机器人与算法组委会",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-09-25T21:41:44+08:00",
+        "review_after": "2026-09-28T21:41:44+08:00"
+      }
     },
     {
       "id": "comp-saikr-a86cbb6a41d2",
@@ -4331,8 +4337,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-20T22:20:00+08:00",
-        "review_after": "2026-09-23T22:20:00+08:00"
+        "verified_at": "2026-09-25T21:41:44+08:00",
+        "review_after": "2026-09-28T21:41:44+08:00"
       },
       "signup": "免费答题活动，时间以官网为准",
       "schedule": "",
@@ -4426,8 +4432,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-20T22:20:00+08:00",
-        "review_after": "2026-09-23T22:20:00+08:00"
+        "verified_at": "2026-09-25T21:41:44+08:00",
+        "review_after": "2026-09-28T21:41:44+08:00"
       },
       "signup": "各赛项报名已开启，截止以组委会通知为准",
       "schedule": "",
@@ -4495,8 +4501,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-20T22:20:00+08:00",
-        "review_after": "2026-09-23T22:20:00+08:00"
+        "verified_at": "2026-09-25T21:41:44+08:00",
+        "review_after": "2026-09-28T21:41:44+08:00"
       },
       "signup": "在线答题活动，时间以官网为准",
       "schedule": "",
