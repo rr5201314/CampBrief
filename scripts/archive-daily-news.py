@@ -7,6 +7,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_PATH = REPO_ROOT / "static" / "data" / "daily-news.json"
 ARCHIVE_PATTERN = "daily-news-archive-{}.json"
+ARCHIVE_INDEX_PATH = REPO_ROOT / "static" / "data" / "daily-news-archives.json"
 TZ = timezone(timedelta(hours=8))
 
 
@@ -37,6 +38,27 @@ def parse_published(value: str) -> datetime:
             except ValueError:
                 continue
         raise
+
+
+def write_archive_index():
+    """写出归档月份清单（前端只读这一个文件，不再逐月探测）。
+
+    前端原先用「从主文件最早月份起逐月 fetch、遇 404 停」的方式探测归档是否存在：
+    手机上一次列表页访问会顺带下载好几个完整归档（每个 ~170KB gzip），
+    而它只想知道「有哪几个月可点」。归档是否存在只由文件系统决定，这里一次性列出。
+    """
+    months = sorted(
+        path.stem[len("daily-news-archive-"):]
+        for path in DATA_PATH.parent.glob("daily-news-archive-*.json")
+    )
+    dump_json(
+        ARCHIVE_INDEX_PATH,
+        {
+            "last_updated": datetime.now(TZ).isoformat(timespec="seconds"),
+            "archives": months,
+        },
+    )
+    return months
 
 
 def main():
@@ -106,11 +128,14 @@ def main():
             f"count mismatch: kept={kept_total} newly_archived={new_archived_total} original={original_total}"
         )
 
+    archive_months = write_archive_index()
+
     print(f"主文件条数: {kept_total}")
     for month_key, count in archive_totals.items():
         print(f"归档 {month_key}: {count}")
     print(f"归档总条数: {archived_total}")
     print(f"总条数: {combined_total}")
+    print(f"归档清单: {len(archive_months)} 个月份 → {ARCHIVE_INDEX_PATH.name}")
     print("校验: 主文件 + 归档 = 原条数，且 id 全局唯一")
 
 

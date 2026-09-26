@@ -16,17 +16,33 @@
     return params.get(name) || "";
   }
 
+  const DATA_TIMEOUT_MS = 20000;
+
+  // 与列表页一致：带超时的请求。原实现直接 await fetch(...)，网络停滞时
+  // Promise 永不落定，详情页会一直空白且不报错。
+  async function fetchJsonWithTimeout(url, timeoutMs = DATA_TIMEOUT_MS, attempts = 2) {
+    for (let attempt = 0; attempt < attempts; attempt += 1) {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), timeoutMs);
+      try {
+        const response = await fetch(url, { cache: "default", signal: controller.signal });
+        clearTimeout(timer);
+        if (response.status === 404) return null;
+        if (response.ok) return await response.json();
+      } catch (error) {
+        clearTimeout(timer);
+      }
+    }
+    return undefined; // 超时或网络失败
+  }
+
+  let loadFailed = false;
+
   async function loadData() {
     // 详情页同样优先 fetch JSON
-    try {
-      const response = await fetch("../../static/data/daily-news.json", { cache: "default" });
-      if (response.ok) {
-        const data = await response.json();
-        if (data.items && data.items.length > 0) return data.items;
-      }
-    } catch (e) {
-      // file:// 直接打开时无法加载 JSON；显示空状态而非旧数据。
-    }
+    const data = await fetchJsonWithTimeout("../../static/data/daily-news.json");
+    if (data === undefined) loadFailed = true;
+    if (data && Array.isArray(data.items) && data.items.length > 0) return data.items;
     return [];
   }
 
@@ -34,19 +50,29 @@
     return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`;
   }
 
-  async function findInArchives(targetId) {
+  // 归档月份清单（几百字节）：只遍历真实存在的归档。
+  // 旧实现从"上个月"起逐月试到 404，会顺带下载多个完整归档（每个 ~170KB gzip）。
+  async function archiveMonthsToTry() {
+    const index = await fetchJsonWithTimeout("../../static/data/daily-news-archives.json", 8000, 1);
+    if (index && Array.isArray(index.archives)) {
+      const months = index.archives.filter(m => typeof m === "string" && /^\d{4}-\d{2}$/.test(m));
+      if (months.length > 0) return months.sort().reverse();
+    }
+    const fallback = [];
     const now = new Date();
-    for (let index = 1; index <= 12; index += 1) {
-      const month = monthString(new Date(now.getFullYear(), now.getMonth() - index, 1));
-      try {
-        const response = await fetch(`../../static/data/daily-news-archive-${month}.json`, { cache: "default" });
-        if (response.status === 404) break;
-        if (!response.ok) continue;
-        const data = await response.json();
-        const item = Array.isArray(data.items) ? data.items.find(it => it.id === targetId) : null;
+    for (let step = 1; step <= 12; step += 1) {
+      fallback.push(monthString(new Date(now.getFullYear(), now.getMonth() - step, 1)));
+    }
+    return fallback;
+  }
+
+  async function findInArchives(targetId) {
+    const months = await archiveMonthsToTry();
+    for (const month of months) {
+      const data = await fetchJsonWithTimeout(`../../static/data/daily-news-archive-${month}.json`);
+      if (data && Array.isArray(data.items)) {
+        const item = data.items.find(it => it.id === targetId);
         if (item) return item;
-      } catch (error) {
-        continue;
       }
     }
     return null;
@@ -123,12 +149,13 @@
     const items = await loadData();
     let item = items.find(it => it.id === targetId);
 
-    if (!item) {
+    // 主数据没取到（超时/网络失败）时不当作"不存在"，避免误报"内容已归档"
+    if (!item && !loadFailed) {
       item = await findInArchives(targetId);
     }
 
     if (!item) {
-      renderNotFound("内容不存在或已归档。");
+      renderNotFound(loadFailed ? "资讯加载超时，请检查网络后刷新重试。" : "内容不存在或已归档。");
       return;
     }
     renderDetail(item);

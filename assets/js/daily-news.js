@@ -21,6 +21,29 @@ let initStarted = false;
 const escapeHtml = value => CampBriefContent.escapeHtml(value);
 const safeExternalUrl = value => CampBriefContent.safeHttpUrl(value);
 
+// 数据请求超时与重试。
+// 原实现直接 await fetch(...)：GitHub Pages 在国内网络偶发连接停滞时，Promise 永不落定，
+// 页面就永远停在「正在加载资讯...」（既不报错也不给重试入口）。
+const DATA_TIMEOUT_MS = 20000;
+const DATA_ATTEMPTS = 2;
+
+// 返回：object = 成功；null = 明确不存在（404）；undefined = 超时或网络错误
+async function fetchJsonWithTimeout(url, timeoutMs = DATA_TIMEOUT_MS, attempts = DATA_ATTEMPTS) {
+  for (let attempt = 0; attempt < attempts; attempt += 1) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeoutMs);
+    try {
+      const response = await fetch(url, { cache: "default", signal: controller.signal });
+      clearTimeout(timer);
+      if (response.status === 404) return null;
+      if (response.ok) return await response.json();
+    } catch (error) {
+      clearTimeout(timer);
+    }
+  }
+  return undefined;
+}
+
 // 初始化 DOM 元素
 function initDOM() {
   resultCount = document.getElementById("resultCount");
@@ -40,17 +63,16 @@ function initDOM() {
 }
 
 // 获取新闻数据。发布数据仅以 JSON 文件为准，避免旧内嵌数据与线上内容不一致。
+// status: ok = 有条目；empty = 文件在但无条目（或 404）；error = 超时/网络失败（可重试）
 async function loadNewsData() {
-  try {
-    const response = await fetch('../../static/data/daily-news.json', { cache: 'default' });
-    if (response.ok) {
-      const data = await response.json();
-      if (data.items && data.items.length > 0) return { items: data.items, lastUpdated: data.last_updated };
-    }
-  } catch (error) {
-    // file:// 直接打开时无法加载 JSON；显示空状态而非旧数据。
+  const data = await fetchJsonWithTimeout('../../static/data/daily-news.json');
+  if (data && Array.isArray(data.items) && data.items.length > 0) {
+    return { items: data.items, lastUpdated: data.last_updated, status: 'ok' };
   }
-  return { items: [], lastUpdated: null };
+  if (data === null || (data && Array.isArray(data.items))) {
+    return { items: [], lastUpdated: null, status: 'empty' };
+  }
+  return { items: [], lastUpdated: null, status: 'error' };
 }
 
 // 获取条目的分类列表（兼容旧数据：categories 数组优先，回退到 category 字符串）
@@ -159,22 +181,39 @@ function getArchiveControlsContainer() {
   return archiveControlsContainer;
 }
 
-async function probeArchiveMonths() {
+const ARCHIVE_INDEX_URL = "../../static/data/daily-news-archives.json";
+const ARCHIVE_MONTH_RE = /^\d{4}-\d{2}$/;
+
+// 归档月份清单：读一个几百字节的小文件，决定「显示哪几个历史按钮」。
+// 旧实现是从主文件最早月份起逐月 fetch 直到 404 —— 每次打开列表页都会顺带把
+// 几个完整归档（每个 ~170KB gzip）下载一遍，只为拿一个「存在与否」的答案，
+// 在手机上是列表页一半的流量。
+async function loadArchiveIndex() {
   if (archiveMonthsReady) return availableArchiveMonths;
   archiveMonthsReady = true;
-  if (!baseEarliestMonth) return availableArchiveMonths;
 
+  const data = await fetchJsonWithTimeout(ARCHIVE_INDEX_URL, 8000, 1);
+  if (data && Array.isArray(data.archives)) {
+    data.archives
+      .filter(month => typeof month === "string" && ARCHIVE_MONTH_RE.test(month))
+      .forEach(month => {
+        if (!availableArchiveMonths.includes(month)) availableArchiveMonths.push(month);
+      });
+    return availableArchiveMonths;
+  }
+  // 清单缺失（旧部署或尚未生成）时回退到逐月探测，功能不退化
+  return probeArchiveMonths();
+}
+
+// 兜底：清单不可用时的旧探测逻辑
+async function probeArchiveMonths() {
+  if (!baseEarliestMonth) return availableArchiveMonths;
   // 从主文件最早月份本身开始探测：30 天窗口会切分同月条目，同月也可能存在归档文件
   let month = baseEarliestMonth;
   for (let index = 0; month && index < 12; index += 1) {
-    try {
-      const response = await fetch(`../../static/data/daily-news-archive-${month}.json`, { cache: 'default' });
-      if (response.status === 404) break;
-      if (!response.ok) break;
-      availableArchiveMonths.push(month);
-    } catch (error) {
-      break;
-    }
+    const data = await fetchJsonWithTimeout(`../../static/data/daily-news-archive-${month}.json`, 8000, 1);
+    if (data === null || data === undefined) break; // 404 或网络失败：停止，不影响主列表
+    if (Array.isArray(data.items)) availableArchiveMonths.push(month);
     month = shiftMonth(month, -1);
   }
   return availableArchiveMonths;
@@ -183,15 +222,13 @@ async function probeArchiveMonths() {
 async function loadArchive(monthStr) {
   if (!monthStr || loadedArchives.has(monthStr)) return;
   try {
-    const response = await fetch(`../../static/data/daily-news-archive-${monthStr}.json`, { cache: 'default' });
-    if (!response.ok) {
-      if (response.status === 404) return;
-      return;
-    }
-    const data = await response.json();
-    if (!Array.isArray(data.items) || data.items.length === 0) {
-      loadedArchives.add(monthStr);
-      renderArchiveControls();
+    const data = await fetchJsonWithTimeout(`../../static/data/daily-news-archive-${monthStr}.json`);
+    if (!data || !Array.isArray(data.items) || data.items.length === 0) {
+      // 404 或网络失败：不标记已加载，按钮保持可再点；空归档才记入已加载
+      if (data && Array.isArray(data.items)) {
+        loadedArchives.add(monthStr);
+        renderArchiveControls();
+      }
       return;
     }
 
@@ -656,6 +693,57 @@ function initNewsCarousel(items) {
   });
 }
 
+// 加载失败时的提示 + 重试入口（只重跑数据部分，不重复绑定筛选/日历事件）
+function renderDataError(message) {
+  const container = document.getElementById('cards');
+  if (!container) return;
+  container.replaceChildren();
+  const box = document.createElement('div');
+  box.className = 'empty-state';
+  box.setAttribute('role', 'status');
+  box.style.cssText = 'text-align:center;padding:40px;color:var(--text-secondary,#666);';
+  const text = document.createElement('p');
+  text.style.margin = '0 0 16px';
+  text.textContent = message;
+  const retry = document.createElement('button');
+  retry.type = 'button';
+  retry.className = 'btn btn-primary';
+  retry.textContent = '重试';
+  retry.addEventListener('click', () => { loadAndRender(); });
+  box.append(text, retry);
+  container.append(box);
+}
+
+// 数据加载 + 渲染（初始化和重试共用）
+async function loadAndRender() {
+  const container = document.getElementById('cards');
+  container.innerHTML = '<div class="loading-state" style="text-align: center; padding: 40px; color: var(--text-secondary, #666);">正在加载资讯...</div>';
+  container.firstElementChild?.setAttribute("role", "status");
+
+  const { items, lastUpdated, status } = await loadNewsData();
+
+  // 超时或网络失败：给明确提示和重试按钮，而不是永远停在「正在加载资讯...」
+  if (status === 'error') {
+    renderDataError('资讯加载超时，请检查网络后重试');
+    if (resultCount) resultCount.textContent = '';
+    return;
+  }
+
+  CampBriefContent.updateSortPill(lastUpdated);
+
+  if (items.length === 0) {
+    container.innerHTML = '<div class="empty-state" style="text-align: center; padding: 40px; color: var(--text-secondary, #666);">暂无资讯数据</div>';
+    if (resultCount) resultCount.textContent = '0 条资讯';
+    return;
+  }
+
+  // 初始化列表（内部会触发 applyFilters + renderPage）
+  setItems(items);
+  await loadArchiveIndex();
+  renderArchiveControls();
+  initNewsCarousel(items);
+}
+
 // 主初始化函数
 async function init() {
   if (initStarted) return;
@@ -665,28 +753,7 @@ async function init() {
   initDatePicker();
   bindArchiveControls();
   if (typeof FilterScroll !== "undefined") FilterScroll.initAll();
-  
-  // 显示加载状态
-  const container = document.getElementById('cards');
-  container.innerHTML = '<div class="loading-state" style="text-align: center; padding: 40px; color: var(--text-secondary, #666);">正在加载资讯...</div>';
-  
-  // 加载数据
-  container.firstElementChild?.setAttribute("role", "status");
-  const { items, lastUpdated } = await loadNewsData();
-  
-  CampBriefContent.updateSortPill(lastUpdated);
-  
-  if (items.length === 0) {
-    container.innerHTML = '<div class="empty-state" style="text-align: center; padding: 40px; color: var(--text-secondary, #666);">暂无资讯数据</div>';
-    if (resultCount) resultCount.textContent = '0 条资讯';
-    return;
-  }
-
-  // 初始化列表（内部会触发 applyFilters + renderPage）
-  setItems(items);
-  await probeArchiveMonths();
-  renderArchiveControls();
-  initNewsCarousel(items);
+  await loadAndRender();
 }
 
 function safeInit() {
