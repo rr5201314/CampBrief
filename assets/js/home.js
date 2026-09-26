@@ -416,32 +416,60 @@ function applyNewsRules(list){
     .sort(CampBriefContent.compareByPublishedThenPriority);
 }
 
-// 从 daily-news.json 加载资讯数据并映射为看板所需格式
-async function loadNewsBoardData(){
-  // 优先 fetch JSON（GitHub Pages / 本地 HTTP 服务器均可）
-  try {
-    const response = await fetch('static/data/daily-news.json', { cache: 'default' });
-    if(response.ok){
-      const data = await response.json();
-      if(data.items && data.items.length > 0){
-        return data.items.map(it => {
-          const date = it.published || it.date || "";
-          // 资讯数据使用 published（ISO 8601）；兼容旧数据的 date 字段。
-          const displayDate = formatNewsDate(date);
-          return {
-            id: it.id || "",
-            title: it.title,
-            desc: it.summary,
-            priority: it.priority || 1,
-            date,
-            day: displayDate.day,
-            month: displayDate.month,
-            url: it.url || ""
-          };
-        });
-      }
+// 带超时的 JSON 请求。原实现直接 await fetch(...)：GitHub Pages 在国内网络偶发
+// 连接停滞时 Promise 永不落定，首页看板会一直停在加载态且不报错。
+const NEWS_FETCH_TIMEOUT_MS = 20000;
+const NEWS_HOME_FEED_URL = "static/data/daily-news-home.json";
+const NEWS_SOURCE_URL = "static/data/daily-news.json";
+
+async function fetchJsonWithTimeout(url, timeoutMs = NEWS_FETCH_TIMEOUT_MS, attempts = 2){
+  for(let attempt = 0; attempt < attempts; attempt += 1){
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeoutMs);
+    try{
+      const response = await fetch(url, { cache: "default", signal: controller.signal });
+      clearTimeout(timer);
+      if(response.status === 404) return null;   // 明确不存在（旧部署）
+      if(response.ok) return await response.json();
+    }catch(error){
+      clearTimeout(timer);
     }
-  } catch(error) {
+  }
+  return undefined;                              // 超时或网络失败
+}
+
+// 加载资讯数据并映射为看板所需格式。
+// 看板只展示 priority>=3 的条目，用专门的精简 feed（约 10KB gzip），
+// 不再为一个小看板下载整份资讯主文件（约 302KB gzip）；feed 缺失时回退主文件。
+async function loadNewsBoardData(){
+  // feed 只有约 10KB，超时按体积收紧（10s / 不重试）；回退主文件才用默认 20s×2
+  let data = await fetchJsonWithTimeout(NEWS_HOME_FEED_URL, 10000, 1);
+  // feed 自带门槛声明：若它筛得比看板需要的更严，会少显示条目 → 改用主文件
+  if(data && typeof data.feed_min_priority === "number" && data.feed_min_priority > HOME_NEWS_MIN_PRIORITY){
+    data = await fetchJsonWithTimeout(NEWS_SOURCE_URL);
+  }
+  if(data === null){
+    data = await fetchJsonWithTimeout(NEWS_SOURCE_URL);
+  }
+  try{
+    if(data && data.items && data.items.length > 0){
+      return data.items.map(it => {
+        const date = it.published || it.date || "";
+        // 资讯数据使用 published（ISO 8601）；兼容旧数据的 date 字段。
+        const displayDate = formatNewsDate(date);
+        return {
+          id: it.id || "",
+          title: it.title,
+          desc: it.summary,
+          priority: it.priority || 1,
+          date,
+          day: displayDate.day,
+          month: displayDate.month,
+          url: it.url || ""
+        };
+      });
+    }
+  }catch(error) {
     console.warn("无法加载每日资讯数据", error);
   }
   return [];

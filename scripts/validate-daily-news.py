@@ -19,7 +19,7 @@ TRACKING_QUERY_KEYS = {"fbclid", "gclid", "mc_cid", "mc_eid", "ref", "source", "
 
 # 源文件 daily-news.json 是唯一事实源（本条校验只针对它）；
 # 前端列表页读的是派生视图，派生文件落后于源文件时必须拦住发布
-DERIVED_VIEW_NAMES = ("daily-news-list.json", "daily-news-search.json")
+DERIVED_VIEW_NAMES = ("daily-news-list.json", "daily-news-search.json", "daily-news-home.json")
 REGENERATE_HINT = "运行 python3 scripts/build-daily-news-views.py 重新生成"
 DEFAULT_SOURCE = Path(__file__).resolve().parents[1] / "static" / "data" / "daily-news.json"
 

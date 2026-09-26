@@ -39,6 +39,7 @@
 - **前端派生视图（正文拆分）**：源文件 `static/data/daily-news.json` 是唯一事实源，**保持含 `detail`**（采集流程与 `validate-daily-news.py` 的 `REQUIRED_FIELDS` 都依赖它）。前端另读两个派生视图，均由 `scripts/build-daily-news-views.py` 生成：
   - `daily-news-list.json`：列表数据（不含正文）。列表页首屏只加载它（约 143KB gzip，源文件约 293KB）
   - `daily-news-search.json`：`id → detail` 正文语料。列表页**只在搜索框获得焦点时**按需加载，语料到位后自动重跑当前查询；未到位时计数会显示「正在加载全文索引…」，失败时显示「仅搜索标题与摘要」
+  - `daily-news-home.json`：首页看板的精简 feed，只含 `priority>=3` 的条目（约 10KB gzip，源文件约 302KB）；筛选规则是「够用的超集」，近 3 天的时间窗仍由 `home.js` 按浏览器当前时间判断，脚本不重复实现
   - 详情页与技术板块继续读源文件，不受影响
   - 源文件改动后必须重建视图：`validate-daily-news.py` 用 `source_digest` 校验同步性，**过期会拦住发布**（提示运行 `scripts/build-daily-news-views.py`）；两条 daily-news cron 流程的校验段与 `git add` 已包含这一步和这几个文件
   - 视图缺失时列表页回退到源文件，功能不退化；视图内容（除 `generated_at`）不变时不重写文件，避免无意义 diff

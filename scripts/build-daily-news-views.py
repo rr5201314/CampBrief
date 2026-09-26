@@ -8,8 +8,9 @@
 （886KB / gzip 293KB），其中正文占了近一半体积；而列表页只有用户真正搜索时
 才需要正文。把正文拆出去后：
 
-  static/data/daily-news-list.json    列表数据（不含 detail）  ~143KB gzip ← 首屏
+  static/data/daily-news-list.json    列表数据（不含 detail）  ~143KB gzip ← 列表页首屏
   static/data/daily-news-search.json  id → detail 正文语料      ~174KB gzip ← 搜索时按需
+  static/data/daily-news-home.json    首页看板用精简 feed        ~10KB gzip ← 首页（近3天 priority≥3）
 
 `static/data/daily-news.json` 始终是唯一事实源，保持原样不动（采集流程与
 `validate-daily-news.py` 的 REQUIRED_FIELDS 都依赖它带 detail）。本脚本只做
@@ -35,7 +36,14 @@ DATA_DIR = REPO_ROOT / "static" / "data"
 SOURCE_PATH = DATA_DIR / "daily-news.json"
 LIST_PATH = DATA_DIR / "daily-news-list.json"
 SEARCH_PATH = DATA_DIR / "daily-news-search.json"
+HOME_PATH = DATA_DIR / "daily-news-home.json"
 TZ = timezone(timedelta(hours=8))
+
+# 首页看板的取数规则（与 assets/js/home.js 的 HOME_NEWS_MIN_PRIORITY 对齐）：
+# 看板只展示 priority>=3 的条目。这里只做「够用的超集」筛选——近 3 天的时间窗
+# 由前端按浏览器当前时间判断，脚本不重复实现，避免两边规则漂移。
+HOME_FEED_MIN_PRIORITY = 3
+HOME_FEED_FIELDS = ("id", "title", "summary", "published", "priority", "url", "source")
 
 
 def load_json(path: Path):
@@ -73,7 +81,7 @@ def source_digest(items: list) -> str:
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:16]
 
 
-def build_views(source: dict) -> tuple[dict, dict]:
+def build_views(source: dict) -> tuple:
     items = source.get("items")
     if not isinstance(items, list):
         raise SystemExit("ERROR: daily-news.json 的 items 不是数组")
@@ -88,6 +96,7 @@ def build_views(source: dict) -> tuple[dict, dict]:
 
     lite_items = []
     corpus = {}
+    home_items = []
     for item in items:
         if not isinstance(item, dict):
             continue
@@ -96,10 +105,13 @@ def build_views(source: dict) -> tuple[dict, dict]:
         item_id = str(item.get("id") or "").strip()
         if item_id and body:
             corpus[item_id] = body
+        if (item.get("priority") or 1) >= HOME_FEED_MIN_PRIORITY:
+            home_items.append({key: item[key] for key in HOME_FEED_FIELDS if key in item})
 
     lite = {**stamp, "total": len(lite_items), "items": lite_items}
     search = {**stamp, "total": len(corpus), "items": corpus}
-    return lite, search
+    home = {**stamp, "feed_min_priority": HOME_FEED_MIN_PRIORITY, "total": len(home_items), "items": home_items}
+    return lite, search, home
 
 
 def main() -> int:
@@ -113,13 +125,15 @@ def main() -> int:
         print(f"ERROR: 无法读取 {SOURCE_PATH.name}：{error}")
         return 1
 
-    lite, search = build_views(source)
+    lite, search, home = build_views(source)
     lite_bytes, lite_written = dump_json(LIST_PATH, lite)
     search_bytes, search_written = dump_json(SEARCH_PATH, search)
+    home_bytes, home_written = dump_json(HOME_PATH, home)
 
-    changed = "已更新" if (lite_written or search_written) else "无变化，跳过写入"
+    changed = "已更新" if (lite_written or search_written or home_written) else "无变化，跳过写入"
     print(f"OK: 列表视图 {LIST_PATH.name} — {lite['total']} 条，{lite_bytes / 1024:.0f} KB")
     print(f"OK: 正文语料 {SEARCH_PATH.name} — {search['total']} 条，{search_bytes / 1024:.0f} KB")
+    print(f"OK: 首页看板 {HOME_PATH.name} — {home['total']} 条，{home_bytes / 1024:.0f} KB")
     print(f"    {changed}（源文件 {SOURCE_PATH.name} {source.get('total')} 条，保持不动）")
     return 0
 
