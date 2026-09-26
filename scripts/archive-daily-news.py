@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 import json
+import subprocess
+import sys
 from collections import Counter
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -137,6 +139,15 @@ def main():
     print(f"总条数: {combined_total}")
     print(f"归档清单: {len(archive_months)} 个月份 → {ARCHIVE_INDEX_PATH.name}")
     print("校验: 主文件 + 归档 = 原条数，且 id 全局唯一")
+
+    # 主文件内容变了，前端派生视图必须同步重建，否则列表页会显示过期资讯
+    views_script = REPO_ROOT / "scripts" / "build-daily-news-views.py"
+    result = subprocess.run(
+        [sys.executable, str(views_script)], capture_output=True, text=True
+    )
+    if result.returncode != 0:
+        raise SystemExit(f"ERROR: 派生视图重建失败：{result.stdout}{result.stderr}")
+    print(result.stdout.strip())
 
 
 if __name__ == "__main__":

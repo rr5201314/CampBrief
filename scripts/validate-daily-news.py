@@ -17,6 +17,43 @@ SHARED_URL_SOURCE = "juya AI 日报"
 CONTENT_ID_PATTERN = re.compile(r"^news-[0-9a-f]{16}$")
 TRACKING_QUERY_KEYS = {"fbclid", "gclid", "mc_cid", "mc_eid", "ref", "source", "spm"}
 
+# 源文件 daily-news.json 是唯一事实源（本条校验只针对它）；
+# 前端列表页读的是派生视图，派生文件落后于源文件时必须拦住发布
+DERIVED_VIEW_NAMES = ("daily-news-list.json", "daily-news-search.json")
+REGENERATE_HINT = "运行 python3 scripts/build-daily-news-views.py 重新生成"
+DEFAULT_SOURCE = Path(__file__).resolve().parents[1] / "static" / "data" / "daily-news.json"
+
+
+def check_derived_views(source: dict, source_path: Path) -> list:
+    """确认派生视图与源文件同步。
+
+    列表页首屏读 daily-news-list.json、搜索时读 daily-news-search.json。
+    这两个文件由 scripts/build-daily-news-views.py 从源文件派生；若它们缺失或
+    落后于源文件，线上会显示过期资讯（新增条目看不到），所以在这里拦住。
+    """
+    errors = []
+    items = source.get("items") or []
+    expected_digest = hashlib.sha256(
+        json.dumps(items, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+    ).hexdigest()[:16]
+
+    for name in DERIVED_VIEW_NAMES:
+        path = source_path.parent / name
+        if not path.is_file():
+            errors.append(f"缺少派生视图 {name}；{REGENERATE_HINT}")
+            continue
+        try:
+            view = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as error:
+            errors.append(f"派生视图 {name} 无法读取：{error}；{REGENERATE_HINT}")
+            continue
+        if view.get("source_digest") != expected_digest:
+            errors.append(
+                f"派生视图 {name} 与源文件不同步"
+                f"（source_digest={view.get('source_digest')}，源文件 {expected_digest}）；{REGENERATE_HINT}"
+            )
+    return errors
+
 
 def canonical_source_url(value: str) -> str:
     """Strip tracking-only URL parts before deriving a content ID."""
@@ -73,7 +110,7 @@ def main() -> int:
     parser.add_argument(
         "path",
         nargs="?",
-        default=Path(__file__).resolve().parents[1] / "static" / "data" / "daily-news.json",
+        default=DEFAULT_SOURCE,
         type=Path,
     )
     parser.add_argument(
@@ -135,6 +172,10 @@ def main() -> int:
         if any(item["source"] != SHARED_URL_SOURCE for item in group):
             titles = " / ".join(item["title"] for item in group)
             errors.append(f"非日报条目复用了同一原文 URL：{titles} -> {url}")
+
+    # 只在校验默认的源文件时检查派生视图（--assign-ids 是修复动作，不拦）
+    if not args.assign_ids and args.path.resolve() == DEFAULT_SOURCE.resolve():
+        errors.extend(check_derived_views(data, DEFAULT_SOURCE))
 
     if errors:
         for error in errors:

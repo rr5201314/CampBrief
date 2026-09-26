@@ -117,7 +117,7 @@ if [ "$GATE_RC" -eq 0 ]; then
     python3 "$REPO/scripts/validate-github-trending.py" || { rmdir "$LOCK_DIR"; exit 1; }
     python3 "$REPO/scripts/check-carousel-health.py" || { rmdir "$LOCK_DIR"; exit 1; }
     git -C "$REPO" diff --check || { rmdir "$LOCK_DIR"; exit 1; }
-    git add -- static/data/daily-news.json static/data/github-trending.json
+    git add -- static/data/daily-news.json static/data/daily-news-list.json static/data/daily-news-search.json static/data/daily-news-archives.json static/data/daily-news-archive-*.json static/data/github-trending.json
     if ! git diff --cached --quiet; then
       git commit -m "chore(daily-news): batch maintenance $(date +%Y-%m-%d)" || { rmdir "$LOCK_DIR"; exit 1; }
     fi
@@ -301,6 +301,8 @@ fi
 
   ```bash
   python3 "$REPO/scripts/validate-daily-news.py" --assign-ids || { rmdir "$LOCK_DIR"; exit 1; }
+  # 源文件定稿后必须重建前端派生视图（列表页读它们），否则校验会拦下过期视图
+  python3 "$REPO/scripts/build-daily-news-views.py" || { rmdir "$LOCK_DIR"; exit 1; }
   python3 "$REPO/scripts/validate-daily-news.py" || { rmdir "$LOCK_DIR"; exit 1; }
   python3 "$REPO/scripts/validate-github-trending.py" || { rmdir "$LOCK_DIR"; exit 1; }
   python3 "$REPO/scripts/check-carousel-health.py" || { rmdir "$LOCK_DIR"; exit 1; }
@@ -318,7 +320,7 @@ fi
 ```bash
 cd "$REPO"
 
-git add -- static/data/daily-news.json static/data/github-trending.json
+git add -- static/data/daily-news.json static/data/daily-news-list.json static/data/daily-news-search.json static/data/daily-news-archives.json static/data/daily-news-archive-*.json static/data/github-trending.json
 if git diff --cached --quiet; then
   echo "无变更，跳过提交"
 else

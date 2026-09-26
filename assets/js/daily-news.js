@@ -62,10 +62,19 @@ function initDOM() {
   customDateOption = document.querySelector('[data-filter-group="date"] [data-value="custom"]');
 }
 
-// 获取新闻数据。发布数据仅以 JSON 文件为准，避免旧内嵌数据与线上内容不一致。
+const LIST_URL = '../../static/data/daily-news-list.json';
+const SOURCE_URL = '../../static/data/daily-news.json';
+const SEARCH_CORPUS_URL = '../../static/data/daily-news-search.json';
+
+// 获取新闻数据。
+// 列表页优先读「不含正文」的派生视图（约 143KB gzip，源文件约 293KB，正文占近一半）；
+// 派生视图不存在（旧部署或尚未生成）时回退到源文件，功能不退化。
 // status: ok = 有条目；empty = 文件在但无条目（或 404）；error = 超时/网络失败（可重试）
 async function loadNewsData() {
-  const data = await fetchJsonWithTimeout('../../static/data/daily-news.json');
+  let data = await fetchJsonWithTimeout(LIST_URL);
+  if (data === null) {
+    data = await fetchJsonWithTimeout(SOURCE_URL);
+  }
   if (data && Array.isArray(data.items) && data.items.length > 0) {
     return { items: data.items, lastUpdated: data.last_updated, status: 'ok' };
   }
@@ -73,6 +82,30 @@ async function loadNewsData() {
     return { items: [], lastUpdated: null, status: 'empty' };
   }
   return { items: [], lastUpdated: null, status: 'error' };
+}
+
+// 正文语料（id → detail）：只在用户真要搜索时才加载，不占首屏流量。
+// 未加载时搜索只覆盖标题与摘要；语料到达后自动重跑当前查询。
+let searchCorpus = null;
+let searchCorpusState = "idle"; // idle | loading | ready | failed
+
+function loadSearchCorpus() {
+  if (searchCorpusState === "loading" || searchCorpusState === "ready") return;
+  searchCorpusState = "loading";
+  fetchJsonWithTimeout(SEARCH_CORPUS_URL).then(data => {
+    if (data && data.items && typeof data.items === "object") {
+      searchCorpus = data.items;
+      searchCorpusState = "ready";
+    } else {
+      searchCorpusState = "failed";
+    }
+    applyFilters(); // 语料到位（或失败）后重跑当前查询，刷新计数提示
+  });
+}
+
+function searchBodyOf(item) {
+  if (searchCorpus && item.id && searchCorpus[item.id]) return searchCorpus[item.id];
+  return item.detail || "";
 }
 
 // 获取条目的分类列表（兼容旧数据：categories 数组优先，回退到 category 字符串）
@@ -461,7 +494,10 @@ function initDatePicker() {
     if (event.key === "Escape" && !dateModal.hidden) closeDateModal();
   });
 
+  // 用户一碰搜索框就预取正文语料：输入完通常已到位，且不搜索就不花这份流量
+  searchInput.addEventListener("focus", loadSearchCorpus, { once: true });
   searchInput.addEventListener("input", event => {
+    loadSearchCorpus();
     state.query = event.target.value.trim().toLowerCase();
     currentPage = 1;
     applyFilters();
@@ -474,13 +510,22 @@ function applyFilters() {
     if (item.category === "tech") return false;
     const categoryOk = state.category === "all" || getCategories(item).includes(state.category);
     const dateOk = matchesDateFilter(item);
-    const searchOk = !state.query || `${item.title} ${item.summary} ${item.detail || ""}`.toLowerCase().includes(state.query);
+    // 正文来自按需加载的语料；未加载时退回条目自带 detail（回退到源文件时存在）
+    const searchOk = !state.query || `${item.title} ${item.summary} ${searchBodyOf(item)}`.toLowerCase().includes(state.query);
     return categoryOk && dateOk && searchOk;
   });
   // 时效标签优先，保证 24小时条目始终排在 3天条目前；同一时效区间内再按优先级和发布时间排序。
   const now = new Date();
   filteredItems.sort((a, b) => CampBriefContent.compareByTimeBadgeThenPriority(a, b, now));
-  if (resultCount) resultCount.textContent = `${filteredItems.length} 条资讯`;
+  if (resultCount) {
+    // 正文语料未就绪时要说清楚，否则用户会以为"搜不到就是没有"
+    const suffix = state.query && searchCorpusState === "loading"
+      ? "（正在加载全文索引…）"
+      : state.query && searchCorpusState === "failed"
+      ? "（仅搜索标题与摘要）"
+      : "";
+    resultCount.textContent = `${filteredItems.length} 条资讯${suffix}`;
+  }
   renderPage();
 }
 
