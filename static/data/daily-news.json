@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-09-26T14:08:44+08:00",
   "source": "CampBrief Auto",
-  "total": 894,
+  "total": 892,
   "items": [
     {
       "id": "news-d59df6609003c7f9",
@@ -11727,19 +11727,6 @@
       "source": "36氪"
     },
     {
-      "id": "news-693d9c3d3f320d22",
-      "title": "微软开始限制员工 AI 用量：有工程师 28 天支出 2.8 万美元",
-      "url": "https://www.solidot.org/story?sid=85216",
-      "date": "2026-08-28",
-      "published": "2026-08-28T00:00:29+08:00",
-      "summary": "微软本月起要求员工限制 AI 使用，一份员工自愿提交的账单显示，有工程师 28 天 AI 支出高达 2.8 万美元，员工中位数约 300 美元。",
-      "detail": "微软执行副总裁 Jay Parikh 在邮件中要求工程师专注于业务成果而非最大化 token 用量，并将比 Anthropic 模型更便宜的 OpenAI GPT-5.6 设为内部默认模型。根据员工自愿提交的 AI 使用费账单，Customer and Partner Solutions 部门一名员工 28 天内支出 2.8 万美元，多名员工超过 1 万美元，中位数约为 300 美元。",
-      "image": "",
-      "priority": 2,
-      "category": "ai",
-      "source": "Solidot"
-    },
-    {
       "id": "news-dba597bbb5cc0e28",
       "title": "Tibo 称所有 ChatGPT Work 与 Codex 用户额度已重置",
       "url": "https://daily.juya.uk/issues/2026-08-28/",
@@ -11923,20 +11910,6 @@
       "priority": 2,
       "category": "ai",
       "source": "Hacker News"
-    },
-    {
-      "id": "news-0e43bff2f9e0ec5d",
-      "title": "分析：小模型的时代已经到来，推理成本下降将催生大批 AI 消费应用",
-      "url": "https://calv.info/small-models-have-arrived",
-      "date": "2026-08-27",
-      "published": "2026-08-27T15:56:58+00:00",
-      "summary": "Segment 联合创始人发文分析称，GPT-5.6 Luna 等小模型的推理成本大幅下降，将推动「快、便宜、够用」的 AI 应用大规模出现。",
-      "detail": "作者用 GPT-5.6 Luna 实测发现其速度快且能力超出预期，复杂检索任务的 API 成本仅约 0.1 美元，而上一代同级别模型要约 1 美元。文章认为，此前少有消费级 AI 公司的直接原因是 token 成本太高；随着小模型走向性价比前沿（如 GLM 5.3），「快/便宜/够用」类模型的需求即将爆发，但行业也需要新的 harness、提示词注入防护和权限体系来支撑。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "industry"
     },
     {
       "id": "news-e0c96d8f1926faa7",
