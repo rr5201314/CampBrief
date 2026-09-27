@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-26T21:44:05+08:00",
+  "last_updated": "2026-09-27T21:38:19+08:00",
   "source": "CampBrief",
   "total": 231,
   "tiers": [
@@ -3186,7 +3186,7 @@
     },
     {
       "id": "comp-saikr-4eb4c5be367a",
-      "name": "【正在考试 | 明晚截止】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
+      "name": "【截止今晚23点】第三届“中国故事大赛·双语中国”大学生英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3195,13 +3195,13 @@
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-20T22:20:00+08:00",
+        "verified_at": "2026-09-27T21:38:18+08:00",
         "registration_start": "2026-05-25",
-        "registration_end": "2026-09-26",
+        "registration_end": "2026-09-27",
         "event_start": "2026-08-29",
-        "event_end": "2026-09-26"
+        "event_end": "2026-09-27"
       },
-      "signup": "即日起至2026年9月26日",
+      "signup": "即日起至2026年9月27日23:00",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
