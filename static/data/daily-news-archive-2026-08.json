@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-26T14:08:44+08:00",
+  "last_updated": "2026-09-27T08:29:27+08:00",
   "items": [
     {
       "id": "news-f1084f2ebe0fff52",
@@ -7586,6 +7586,127 @@
       "category": "tech",
       "source": "Hacker News",
       "subcategory": "industry"
+    },
+    {
+      "id": "news-2d0cca853b07ebd2",
+      "title": "据报道 Meta 内部预计每年在 Anthropic 的 AI 支出最高可达 100 亿美元",
+      "url": "https://36kr.com/newsflashes/3958435053878665",
+      "date": "2026-08-28",
+      "published": "2026-08-28T08:15:56+08:00",
+      "summary": "据报道，Meta 公司内部今年一度预测，每年可能在 Anthropic 的 AI 模型上投入高达 100 亿美元。",
+      "detail": "该消息由财联社援引相关报道披露。Anthropic 是 OpenAI 的主要竞争对手之一，其 Claude 系列模型被多家科技大厂采购。若支出达到这一规模，Meta 将成为 Anthropic 最重要的客户之一，也反映出科技巨头在大模型采购上的投入仍在持续加码。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "36氪"
+    },
+    {
+      "id": "news-11dc956a4e237b65",
+      "title": "Alphabet 股价较高点下跌约 15%，市值蒸发逾 7000 亿美元",
+      "url": "https://36kr.com/newsflashes/3958430295850371",
+      "date": "2026-08-28",
+      "published": "2026-08-28T08:11:22+08:00",
+      "summary": "谷歌母公司 Alphabet 股价较 5 月峰值下跌约 15%，市值蒸发逾 7000 亿美元，市场开始质疑其在 AI 领域是否正在失去领先优势。",
+      "detail": "过去一年 Alphabet 曾是大型科技股中表现最强劲的公司之一，股价在截至 5 月 13 日的 12 个月里上涨逾 150% 并创历史新高，当时在标普 500 成分股中跻身表现最好的 25 家之列。此后势头逆转：市场担心谷歌母公司出现人才流失，同时质疑其 AI 领先地位。Alphabet 目前成为这段时间拖累标普 500 指数点位最多的个股。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "36氪"
+    },
+    {
+      "id": "news-1498ee1d8dcfab3b",
+      "title": "韩国计划到 2030 年投入 2.3 万亿韩元支持全栈人形机器人研发",
+      "url": "https://36kr.com/p/3958435226877064",
+      "date": "2026-08-28",
+      "published": "2026-08-28T08:11:23+08:00",
+      "summary": "据 36氪 8 点 1 氪早报，韩国计划到 2030 年投入 2.3 万亿韩元，支持全栈人形机器人研发。",
+      "detail": "该消息出现在 36氪 8 月 28 日早报的热点导览中，与三星被判赔斯沃琪、SK 拟出售蔚山 AI 数据中心股权等消息并列。韩国近年来持续加码机器人产业，此次全栈人形机器人投入计划覆盖硬件、软件与系统集成等环节，表明其希望在下一代机器人产业中占据更主动的位置。具体项目分配与实施细节有待官方进一步披露。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "36氪",
+      "subcategory": "industry"
+    },
+    {
+      "id": "news-89598dc60393a4f4",
+      "title": "美国 FTC 据悉正调查 YouTube 封禁用户账号是否违反消费者保护法",
+      "url": "https://36kr.com/newsflashes/3958423100849284",
+      "date": "2026-08-28",
+      "published": "2026-08-28T08:10:01+08:00",
+      "summary": "知情人士称，美国联邦贸易委员会（FTC）自去年起调查 YouTube 封禁账号是否违反消费者保护法，目前已进入准备潜在诉讼的最后阶段。",
+      "detail": "调查着重审查 YouTube 在封禁账号或降低内容曝光度时是否违反其用户政策，以及用户是否因公司内容政策的误导而注册服务，发布的内容后来却被删除或账号被封禁。报道称目前尚不清楚调查涵盖哪些账号，YouTube 尚未被指控存在不当行为，调查也可能在不采取任何执法行动的情况下结束。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "36氪"
+    },
+    {
+      "id": "news-939a415ecbb8aa63",
+      "title": "Anthropic 开放「模型硬件标准」研究预览：让 AI 代理安全操作实验室设备",
+      "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+      "date": "2026-08-27",
+      "published": "2026-08-27T18:04:50+00:00",
+      "summary": "Anthropic 发布模型硬件标准（MHS）研究预览，这是一份让 AI 代理安全操作显微镜、机械臂等物理设备的共享规范。",
+      "detail": "MHS 由 Anthropic 与 HHMI Janelia 研究园区合作开发，已向首批科研实验室和先进制造商开放。它能让 AI 代理并行操作多种实验与制造设备，把通常需要数周甚至数月的硬件集成工作缩短到几小时或几分钟，支持全天候自动化实验，并可在部分场景自动恢复硬件错误。规范与模型无关，任何代理 harness 都可通过 MCP 等标准协议接入；正式开源前将先与合作伙伴共建安全评估体系。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "ai-frontier"
+    },
+    {
+      "id": "news-f90064a0f2704785",
+      "title": "Cloudflare 优化 1.1.1.1 DNS 缓存结构，节省约 100 TB 内存",
+      "url": "https://blog.cloudflare.com/dns-cache-memory-optimization-1111/",
+      "date": "2026-08-27",
+      "published": "2026-08-27T17:17:57+00:00",
+      "summary": "Cloudflare 通过五次内存结构优化，把 1.1.1.1 DNS 缓存的单条目内存占用削减超 50%，全舰队释放约 100 TB 内存。",
+      "detail": "Cloudflare 的 DNS 平台 Big Pineapple 任意时刻缓存超过 2500 亿条记录，每条浪费一个字节就相当于全机群 250 GB 内存开销。五项改动把每个缓存条目内存占用降低一半以上，合计释放约 100 TB 内存（相当于 130 台 Gen 13 服务器的内存总量），同时缓存更快：插入吞吐提升 43%，查询延迟下降 19%。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "software"
+    },
+    {
+      "id": "news-bfd99369cbb6c103",
+      "title": "Google 发布 Gemini Omni 1.1 Flash：生成式视频支持场景扩展与 4K 输出",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/",
+      "date": "2026-08-27",
+      "published": "2026-08-27T17:06:32+00:00",
+      "summary": "Google 推出 Gemini Omni 1.1 Flash，为开发者提供更可控的生成式视频能力，支持场景扩展、首尾帧插值和 4K 高清输出。",
+      "detail": "新模型可通过 Gemini API 在 Google AI Studio 和 Gemini Enterprise Agent Platform 中使用。主要更新包括：场景扩展（从现有视频继续生成后续画面）、首尾帧插值实现平滑转场、4K 分辨率输出，以及更快的原型迭代——开发者可先生成低分辨率草稿快速测试创意，再输出高质量成品。该更新面向生成式视频工作流、创意工具和媒体编辑软件的生产级使用。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-e0c96d8f1926faa7",
+      "title": "AI Engineer Notebooks：免费的框架无关 Colab 教程，覆盖 RAG、Agent 与评测",
+      "url": "https://github.com/calmrocks/ai-engineer-notebooks",
+      "date": "2026-08-27",
+      "published": "2026-08-27T21:46:39+00:00",
+      "summary": "开源项目 AI Engineer Notebooks 提供一系列免费 Colab 笔记本，无需框架即可学习模型 API、RAG、Agent、评测等 AI 工程技能，可用免费 Groq API 运行。",
+      "detail": "教程面向 AI 工程师技能集，内容涵盖模型 API、结构化输出、工具调用、RAG、评测驱动开发、从零手写 Agent 循环、工具设计、护栏、MCP、Skills、微调与 LoRA、提示词注入与安全、LLMOps 等。所有笔记本基于免费 Groq API 运行，零成本上手，适合想系统学习 AI 工程的学生和开发者。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "software"
+    },
+    {
+      "id": "news-61896fba1eacb5dc",
+      "title": "开发者用「vibe 编程」式模糊测试器在 FFmpeg 里发现除零崩溃 bug",
+      "url": "https://code.ffmpeg.org/FFmpeg/FFmpeg/issues/24290",
+      "date": "2026-08-27",
+      "published": "2026-08-27T17:53:40+00:00",
+      "summary": "一名开发者用自己写的模糊测试器在 FFmpeg 中发现整数除零 bug：仅 21 字节的恶意 VPK 文件就能让任何基于 FFmpeg 的应用崩溃。",
+      "detail": "漏洞位于 FFmpeg 的索尼 PS2 VPK 解复用器 libavformat/vpk.c：vpk_read_packet 在声道数为零时执行除法，触发 SIGFPE 崩溃，问题定级为中等。报告者称该 bug 是用「vibecoded」（快糙猛式）模糊测试器发现的。该议题在 Hacker News 上引发 120 多条讨论。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Hacker News"
     }
   ]
 }
