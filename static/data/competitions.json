@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-27T21:38:19+08:00",
+  "last_updated": "2026-09-29T21:38:56+08:00",
   "source": "CampBrief",
-  "total": 231,
+  "total": 232,
   "tiers": [
     {
       "key": "all",
@@ -2714,7 +2714,7 @@
       "fields": [
         "other"
       ],
-      "status": "open",
+      "status": "closed",
       "signup": "即日起至2026年9月28日",
       "schedule": "",
       "summary": "来源：赛氪。浏览 6689，关注 224",
@@ -3191,7 +3191,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "done",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -3423,12 +3423,12 @@
     },
     {
       "id": "comp-saikr-699c33f46408",
-      "name": "【本周日考试】第五届“中外传播杯”大学生英语语法大赛",
+      "name": "第五届“中外传播杯”大学生英语语法大赛",
       "tier": "official",
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "done",
       "signup": "2026年7月7日至9月27日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
@@ -4220,8 +4220,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-25T21:41:44+08:00",
-        "review_after": "2026-09-28T21:41:44+08:00"
+        "verified_at": "2026-09-29T21:38:56+08:00",
+        "review_after": "2026-10-02T21:38:56+08:00"
       }
     },
     {
@@ -4337,8 +4337,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-25T21:41:44+08:00",
-        "review_after": "2026-09-28T21:41:44+08:00"
+        "verified_at": "2026-09-29T21:38:56+08:00",
+        "review_after": "2026-10-02T21:38:56+08:00"
       },
       "signup": "免费答题活动，时间以官网为准",
       "schedule": "",
@@ -4432,8 +4432,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-25T21:41:44+08:00",
-        "review_after": "2026-09-28T21:41:44+08:00"
+        "verified_at": "2026-09-29T21:38:56+08:00",
+        "review_after": "2026-10-02T21:38:56+08:00"
       },
       "signup": "各赛项报名已开启，截止以组委会通知为准",
       "schedule": "",
@@ -4501,8 +4501,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-25T21:41:44+08:00",
-        "review_after": "2026-09-28T21:41:44+08:00"
+        "verified_at": "2026-09-29T21:38:56+08:00",
+        "review_after": "2026-10-02T21:38:56+08:00"
       },
       "signup": "在线答题活动，时间以官网为准",
       "schedule": "",
@@ -4592,7 +4592,7 @@
       "fields": [
         "computer"
       ],
-      "status": "open",
+      "status": "done",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -4801,6 +4801,29 @@
       "official_url": "https://www.52jingsai.com/article-24091-1.html",
       "official_site": "",
       "organizer": "",
+      "prestige": 4
+    },
+    {
+      "id": "comp-52jingsai-9a1183b7777c",
+      "name": "【普通话，榜单赛事】2026年第五届大学生普通话大赛报名通知",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-09-29T21:38:56+08:00",
+        "review_after": "2026-10-02T21:38:56+08:00"
+      },
+      "signup": "多场次报名，截止以官网为准",
+      "schedule": "",
+      "summary": "赛事详情请访问信息来源页面",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23889-1.html",
+      "official_site": "http://pth.52jingsai.com/",
+      "organizer": "中国语文报刊协会读写教学分会",
       "prestige": 4
     }
   ]
