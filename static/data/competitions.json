@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-30T21:37:09.529006+08:00",
+  "last_updated": "2026-10-01T22:06:31+08:00",
   "source": "CampBrief",
-  "total": 234,
+  "total": 235,
   "tiers": [
     {
       "key": "all",
@@ -109,7 +109,7 @@
         "science",
         "engineering"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -3029,7 +3029,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【倒计时18天】2026年第十二届中西部外语翻译大赛",
+      "name": "【倒计时17天】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -4877,6 +4877,33 @@
       "official_site": "",
       "organizer": "中国对外翻译有限公司",
       "prestige": 6
+    },
+    {
+      "id": "comp-saikr-982128cbe3fc",
+      "name": "2026华智·高校大学生创新创业大赛",
+      "tier": "hobby",
+      "fields": [
+        "innovation",
+        "business"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-07-20T11:00:00+08:00",
+        "registration_end": "2026-10-26T17:00:00+08:00",
+        "event_start": "2026-07-20T16:00:00+08:00",
+        "event_end": "2026-12-22T22:00:00+08:00",
+        "verified_at": "2026-10-01T22:04:40+08:00"
+      },
+      "signup": "2026年7月20日11:00至2026年10月26日17:00",
+      "schedule": "四场独立评审：第一场提交截止2026年8月24日，第二场截止9月21日，第三场截止10月26日，第四场截止12月22日；每场结束后15个工作日内公布获奖名单。",
+      "summary": "由中国移动通信联合会教育与科学技术研究院、中国国土经济学会产业创新专业委员会联合发起，面向全国征集社会服务与公益创新、数字技术赋能生活、绿色国土与健康生活方向的项目策划书。赛氪页面载明酌收50元组织经费。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/HZCXCY",
+      "official_site": "",
+      "organizer": "中国移动通信联合会教育与科学技术研究院、中国国土经济学会产业创新专业委员会",
+      "prestige": 3
     }
   ]
 }
