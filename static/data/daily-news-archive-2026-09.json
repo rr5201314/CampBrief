@@ -1,0 +1,99 @@
+{
+  "last_updated": "2026-10-01T08:38:13+08:00",
+  "items": [
+    {
+      "id": "news-88927883e87d4855",
+      "title": "Anthropic 与英伟达支持的 Lambda 签署 350 亿美元云计算协议",
+      "url": "https://36kr.com/newsflashes/3964094998142212",
+      "date": "2026-09-01",
+      "published": "2026-09-01T08:05:57+08:00",
+      "summary": "Anthropic 与英伟达支持的云服务商 Lambda 签署 350 亿美元云计算协议，算力来自美国得州一座在建数据中心。",
+      "detail": "据媒体报道，Anthropic 已与英伟达支持的云服务提供商 Lambda 签署价值 350 亿美元的云计算协议，涉及的数据中心正由比特币矿企兼数据中心开发商 Hut8 在美国得克萨斯州努埃塞斯县开发。知情人士称，英伟达数周前已与 Hut8 签署协议锁定该数据中心算力。这是 Anthropic 扩充训练与推理算力布局的又一大手笔。",
+      "image": "",
+      "priority": 3,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "36氪"
+    },
+    {
+      "id": "news-fcf19b3c2d35b83d",
+      "title": "Google 从 Chrome 应用商店移除全部 Manifest V2 扩展，uBlock Origin 在列",
+      "url": "https://webiterate.dev/google-removed-extensions-ublock-origin-108/",
+      "date": "2026-08-31",
+      "published": "2026-08-31T21:10:58+00:00",
+      "summary": "Chrome 应用商店完成 MV2 扩展清除，uBlock Origin 等全部下架；Brave 自建后端保留四款热门 MV2 扩展。",
+      "detail": "Google 宣布完成浏览器扩展迁移的最终里程碑：Chrome 应用商店中所有剩余 Manifest V2 扩展被移除，包括广受好评的广告拦截扩展 uBlock Origin。Chrome 138 及更早版本已安装的 MV2 扩展仍可使用，但无法再收到更新，也不能从商店重新安装。由于 Brave 等非 Chrome 的 Chromium 浏览器也依赖 Chrome 应用商店，影响范围超出 Chrome 本身；Brave 已决定自建后端托管 AdGuard、uBlock Origin、uMatrix、NoScript 四款扩展。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-815bb56705fa4c83",
+      "title": "开发者用单个 HTML 文件构建可漫步的 ASCII 赛博朋克城市",
+      "url": "https://www.youtube.com/watch?v=3YtygAx_C6A",
+      "date": "2026-08-31",
+      "published": "2026-08-31T18:21:33+00:00",
+      "summary": "开发者发布可交互的 ASCII 赛博朋克城市演示，整个城市构建在单个 HTML 文件中，支持行走探索。",
+      "detail": "开发者 Miguel Carino 展示了用单个 HTML 文件实现的、可漫步的 ASCII 赛博朋克城市：一个由字符方块构成的小型 3D 城市，透过 ASCII 字符屏幕渲染，支持行走、细节与交互。项目源码在 GitHub 开源，相关演示视频展示了交通细节、室内与摩天大楼等更新。适合对创意编程与 Web 技术感兴趣的开发者围观。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-b709a85aff9cdac4",
+      "title": "观点：AI 时代最安全的工作可能是写作",
+      "url": "http://muratbuffalo.blogspot.com/2026/08/the-safest-job-from-ai-may-be-writing.html",
+      "date": "2026-08-31",
+      "published": "2026-08-31T18:12:20+00:00",
+      "summary": "计算机学者撰文称大模型写作停留在「恐怖谷」状态，程序员职责正被 AI 重构，而优秀写作短期内难被 AI 取代。",
+      "detail": "纽约州立大学布法罗分校教授 Murat Demirbas 发文认为，AI 生成代码的能力迅速提升，程序员正面临 5 倍生产率指标与 AI 代码认知债务的压力，但大模型生成的文字仍停留在套路化的「恐怖谷」状态，缺乏真正的理解与洞见。他给出三点理由：文本模型在表达与深度上明显停滞、写作是难以形式化的「棘手问题」、写作的成功标准本质主观，因此判断大模型短期内不会威胁优秀写作者。（观点文章，供参考）",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-c1662f737640793e",
+      "title": "ravynOS：基于 Darwin 与 FreeBSD 的开源 macOS 兼容系统",
+      "url": "https://ravynos.com/",
+      "date": "2026-08-31",
+      "published": "2026-08-31T16:19:36+00:00",
+      "summary": "开源操作系统 ravynOS 发布开发者预览，基于 Darwin、FreeBSD 与苹果开源代码，目标兼容 macOS 应用且无硬件限制。",
+      "detail": "ravynOS 是一个早期（pre-alpha）开源操作系统，基于 Darwin、FreeBSD 与苹果开源代码构建，目标是兼容 macOS 应用程序且不受苹果硬件与生态限制。它借鉴了 macOS 的全局菜单、拖拽安装、Command 快捷键等设计，面向希望获得 macOS 体验又拥抱开源的开发者。目前为开发者预览版，尚未面向普通用户。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-82f028a54f305fd8",
+      "title": "美国 18 世纪怪人商人的 40 尊等身雕像，如今仅存一尊",
+      "url": "https://www.atlasobscura.com/places/timothy-dexters-william-pitt-statue",
+      "date": "2026-08-31",
+      "published": "2026-08-31T16:00:00-04:00",
+      "summary": "马萨诸塞州纽伯里波特保留着「自封勋爵」Timothy Dexter 故居外最后一尊等身雕像，他当年曾用 40 尊雕像装饰豪宅。",
+      "detail": "美国马萨诸塞州纽伯里波特市保留着一尊威廉·皮特等身雕像，它是 18 世纪怪诞商人、自称「蒂莫西勋爵」的 Timothy Dexter 曾经拥有的 40 尊等身雕像中仅存的一尊。Dexter 因靠投机致富和种种荒唐行为闻名，曾用大量雕像装饰自己的豪宅。这尊雕像如今是当地地标，也是了解这位传奇怪人故事的窗口。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Atlas Obscura"
+    },
+    {
+      "id": "news-273322fec1c79e60",
+      "title": "二战德军碉堡被侵蚀冲下悬崖，垂直插在法国海滩上",
+      "url": "https://www.atlasobscura.com/places/bunker-tombe",
+      "date": "2026-08-31",
+      "published": "2026-08-31T12:00:00-04:00",
+      "summary": "法国滨海圣玛格丽特海滩上，一座二战德军碉堡因海岸侵蚀从悬崖坠落，几乎垂直插入沙滩，成为奇特景点。",
+      "detail": "位于法国 Sainte-Marguerite-sur-Mer 的这座二战德军巨型碉堡（blockhaus）原本矗立在海岸悬崖顶部，经过数十年侵蚀后整体坠落到下方海滩，几乎垂直插入沙中并保持直立。如今它成为一处超现实的地标式景点，吸引众多游客与摄影师，也是海岸侵蚀力量的直观展示。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Atlas Obscura"
+    }
+  ]
+}
