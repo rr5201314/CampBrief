@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-01T22:06:31+08:00",
+  "last_updated": "2026-10-02T21:37:10+08:00",
   "source": "CampBrief",
   "total": 235,
   "tiers": [
@@ -3029,7 +3029,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【倒计时17天】2026年第十二届中西部外语翻译大赛",
+      "name": "【倒计时16天】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
