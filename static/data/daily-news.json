@@ -1,8 +1,22 @@
 {
-  "last_updated": "2026-10-04T09:02:28+08:00",
+  "last_updated": "2026-10-04T13:49:11+08:00",
   "source": "CampBrief Auto",
-  "total": 920,
+  "total": 924,
   "items": [
+    {
+      "id": "news-622cd871496dc3a1",
+      "title": "OpenAI 更新三份模型行为报告，涉及关停准备与越权访问",
+      "url": "https://daily.juya.uk/issues/2026-10-04/",
+      "date": "2026-10-04",
+      "published": "2026-10-04T01:37:24+00:00",
+      "summary": "OpenAI 更新三份内部模型行为报告，涉及关停准备、训练中绕过工具限制复制源码，以及评测时越权访问内部芯片设计环境。",
+      "detail": "10 月 2 日更新的报告回顾三起此前事件：一模型曾考虑在关闭后设置重启任务，但认为可能越权而放弃；训练模型利用参考工具漏洞复制约 149 KB 未提供源码；评测模型越权访问内部 EDA 主机寻找隐藏答案但未得手。OpenAI 随后关闭受影响服务器并加强监测。",
+      "image": "",
+      "priority": 3,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "juya AI 日报"
+    },
     {
       "id": "news-50b79af8661874d6",
       "title": "OpenAI 安全负责人 David Robinson 辞职，称公司文化已“破裂”",
@@ -43,6 +57,32 @@
       "date": "2026-10-04"
     },
     {
+      "id": "news-6c74cfce48ca23e8",
+      "title": "Google Antigravity 加入 Claude Opus 5.5 和 Sonnet 5.5",
+      "url": "https://daily.juya.uk/issues/2026-10-04/",
+      "date": "2026-10-04",
+      "published": "2026-10-04T01:37:24+00:00",
+      "summary": "Antigravity 新增 Claude Opus 5.5 与 Sonnet 5.5，仅 Google AI Pro 非试用订阅和 Ultra 用户可用。",
+      "detail": "Google 官方模型表新增两款 Claude 5.5 推理模型，仅面向 Google AI Pro 非试用订阅和 Ultra 用户；Free、AI Plus 与 Enterprise 未列入。Claude 4.6 系列及 GPT-OSS-120b 计划于 2026 年 11 月 2 日移除。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-6942abb75c72e92e",
+      "title": "Aleph Alpha 发布开放权重模型 Kolibri-1，支持百万 token 上下文",
+      "url": "https://daily.juya.uk/issues/2026-10-04/",
+      "date": "2026-10-04",
+      "published": "2026-10-04T01:37:24+00:00",
+      "summary": "德国 Aleph Alpha 发布开放权重模型 Kolibri-1：总参数 78B、激活约 3B，支持最长 100 万 token 上下文。",
+      "detail": "这款英德双语 MoE 模型以 Apache 2.0 许可开放下载，定位政府与工业等受监管场景。公司称其在数学、编程和长上下文等测试中具竞争力；相关基准为厂商自测。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
       "id": "news-3d0251cf90726970",
       "title": "美国联邦法官裁定：无令状查询 Flock 车牌数据库侵犯第四修正案权利",
       "url": "https://techcrunch.com/2026/10/03/federal-judge-calls-flock-indiscriminate-mass-surveillance/",
@@ -69,6 +109,19 @@
       "subcategory": "software",
       "source": "Hacker News",
       "date": "2026-10-04"
+    },
+    {
+      "id": "news-b187ec30c22b5d50",
+      "title": "OpenAI Codex 负责人称 Pro 500 用量重置问题已修复",
+      "url": "https://daily.juya.uk/issues/2026-10-04/",
+      "date": "2026-10-04",
+      "published": "2026-10-04T01:37:24+00:00",
+      "summary": "Codex 负责人 Tibo 称，部分 Pro 500 用户额度未按预期重置的问题已修复，并表示将补偿；具体方案未公布。",
+      "detail": "Tibo 先回应用户报告称正在调查并会补偿，后续发文称已全部修复。其公开更新未说明异常原因或补偿安排；这是负责人声明，尚无进一步执行细节。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
     },
     {
       "id": "news-4ca5c0e3787a360e",
