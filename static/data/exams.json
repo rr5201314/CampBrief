@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-05T21:03:08.955305+08:00",
+  "last_updated": "2026-10-06T21:14:47+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -235,8 +235,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-10-03T21:15:41.638329+08:00",
-        "review_after": "2026-10-06T21:14:41.638329+08:00"
+        "verified_at": "2026-10-06T21:14:47+08:00",
+        "review_after": "2026-10-09T21:13:47+08:00"
       },
       "fee": "约2100元",
       "schedule": "全年多场",
@@ -246,7 +246,7 @@
       "official_portal": "https://toefl-main.neea.cn/",
       "news_list_url": "https://toefl-main.neea.cn/html1/category/16123/94-1.htm",
       "official_url": "https://toefl.neea.cn/",
-      "last_updated": "2026-10-03T21:15:41.638329+08:00"
+      "last_updated": "2026-10-06T21:14:47+08:00"
     },
     {
       "id": "catti-202606",
@@ -288,7 +288,14 @@
       "id": "ncre-202609",
       "name": "2026年9月全国计算机等级考试 (NCRE)",
       "category": "computer",
-      "status": "closed",
+      "status": "done",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "event_start": "2026-09-19",
+        "event_end": "2026-09-21",
+        "verified_at": "2026-10-06T21:14:47+08:00"
+      },
       "fee": "约80-130元",
       "schedule": "2026年9月",
       "summary": "面向社会的计算机应用能力考核，涵盖一级到四级，包括办公软件、程序设计、网络等多个科目。",
@@ -311,7 +318,7 @@
           "value": "考前一周左右，以省级承办机构通知为准"
         }
       ],
-      "last_updated": "2026-07-25T21:04:06.954877+08:00"
+      "last_updated": "2026-10-06T21:14:47+08:00"
     },
     {
       "id": "ruankao-202605",
@@ -340,7 +347,7 @@
         "registration_end": "2026-09-18",
         "event_start": "2026-10-24",
         "event_end": "2026-10-25",
-        "verified_at": "2026-10-03T21:15:41.638329+08:00"
+        "verified_at": "2026-10-06T21:14:47+08:00"
       },
       "fee": "约170元",
       "schedule": "2026年10月24-25日",
@@ -350,7 +357,7 @@
       "official_portal": "https://www.ruankao.org.cn/",
       "news_list_url": "https://www.ruankao.org.cn/index/work.html",
       "official_url": "https://www.ruankao.org.cn/article/content/2609211354254868000700041.html",
-      "last_updated": "2026-10-03T21:15:41.638329+08:00",
+      "last_updated": "2026-10-06T21:14:47+08:00",
       "timeline": [
         {
           "label": "考试时间",
@@ -628,7 +635,7 @@
         "registration_end": "2026-11-09T23:59:00+00:00",
         "event_start": "2026-12-07",
         "event_end": "2026-12-11",
-        "verified_at": "2026-10-03T21:15:41.638329+08:00"
+        "verified_at": "2026-10-06T21:14:47+08:00"
       },
       "fee": "各阶段费用不同",
       "schedule": "2026年12月",
@@ -660,7 +667,7 @@
           "value": "2027年1月18日"
         }
       ],
-      "last_updated": "2026-10-03T21:15:41.638329+08:00"
+      "last_updated": "2026-10-06T21:14:47+08:00"
     },
     {
       "id": "first-level-cost-engineer-2026",
@@ -731,7 +738,7 @@
         "registration_end": "2026-07-10",
         "event_start": "2026-09-12",
         "event_end": "2026-12-06",
-        "verified_at": "2026-07-18T21:05:30+08:00"
+        "verified_at": "2026-10-06T21:14:47+08:00"
       },
       "fee": "每科约50-70元",
       "schedule": "2026年下半年（笔试10月，面试12月）",
@@ -763,7 +770,7 @@
           "value": "以官方公告为准"
         }
       ],
-      "last_updated": "2026-07-25T21:04:06.954877+08:00"
+      "last_updated": "2026-10-06T21:14:47+08:00"
     },
     {
       "id": "psc",
@@ -875,7 +882,7 @@
       "official_portal": "https://yz.chsi.com.cn/tm/",
       "news_list_url": "https://yz.chsi.com.cn/kyzx/kydt/",
       "official_url": "https://yz.chsi.com.cn/tm/",
-      "last_updated": "2026-10-03T21:15:41.638329+08:00",
+      "last_updated": "2026-10-06T21:14:47+08:00",
       "timeline": [
         {
           "label": "系统注册",
@@ -895,7 +902,7 @@
         "time_zone": "Asia/Shanghai",
         "registration_start": "2026-09-18",
         "registration_end": "2026-10-18",
-        "verified_at": "2026-10-03T21:15:41.638329+08:00"
+        "verified_at": "2026-10-06T21:14:47+08:00"
       }
     }
   ]
