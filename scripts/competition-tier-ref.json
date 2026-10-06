@@ -867,6 +867,11 @@
     "物流与供应链竞赛": {
       "tier": "official",
       "prestige": 6
+    },
+    "大学生人文素养竞赛": {
+      "tier": "hobby",
+      "prestige": 3,
+      "note": "免费在线人文知识答题类竞赛；电子证书按成绩发放，纸质证书需承担费用"
     }
   },
   "fields_hints": {

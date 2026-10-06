@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-05T21:36:58+08:00",
+  "last_updated": "2026-10-06T21:38:33+08:00",
   "source": "CampBrief",
-  "total": 235,
+  "total": 236,
   "tiers": [
     {
       "key": "all",
@@ -3029,7 +3029,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【倒计时13天】2026年第十二届中西部外语翻译大赛",
+      "name": "【倒计时12天】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -4903,6 +4903,29 @@
       "official_url": "https://www.saikr.com/vse/HZCXCY",
       "official_site": "",
       "organizer": "中国移动通信联合会教育与科学技术研究院、中国国土经济学会产业创新专业委员会",
+      "prestige": 3
+    },
+    {
+      "id": "comp-52jingsai-57561ce8bfe5",
+      "name": "【免费答题参赛】2026年大学生人文素养竞赛报名通知",
+      "tier": "hobby",
+      "fields": [
+        "design"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-12-30",
+        "verified_at": "2026-10-06T21:38:33+08:00"
+      },
+      "signup": "即日起至2026年12月30日",
+      "schedule": "",
+      "summary": "面向高校在校大学生及对中华优秀文化感兴趣的毕业大学生，采用在线答题形式；免费参赛，纸质证书及社会实践证明需自行承担相关费用。",
+      "search": "大学生人文素养 中华优秀传统文化 在线答题",
+      "official_url": "https://www.52jingsai.com/article-24039-1.html",
+      "official_site": "http://rwsy.52jingsai.com/",
+      "organizer": "大学生人文素养竞赛组委会、北京中华文化发展协会、黑龙江省创新教育研究院",
       "prestige": 3
     }
   ]
