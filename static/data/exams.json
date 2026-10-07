@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-06T21:14:47+08:00",
+  "last_updated": "2026-10-07T21:07:44.339496+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -138,7 +138,7 @@
           "value": "口试 2026年11月17日9时起，笔试 2026年12月1日9时起"
         }
       ],
-      "last_updated": "2026-10-03T21:15:41.638329+08:00"
+      "last_updated": "2026-10-07T21:07:44.339496+08:00"
     },
     {
       "id": "tem-4",
@@ -205,8 +205,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-10-03T21:15:41.638329+08:00",
-        "review_after": "2026-10-06T21:14:41.638329+08:00"
+        "verified_at": "2026-10-07T21:07:44.339496+08:00",
+        "review_after": "2026-10-10T21:06:44.339496+08:00"
       },
       "fee": "约2170元",
       "schedule": "全年多场",
@@ -216,7 +216,7 @@
       "official_portal": "https://ielts-main.neea.cn/",
       "news_list_url": "https://www.chinaielts.org/press-office",
       "official_url": "https://www.chinaielts.org/press-office/IELTS-Chinese-Mainland-Exam-Registration-2026-7-9",
-      "last_updated": "2026-10-03T21:15:41.638329+08:00",
+      "last_updated": "2026-10-07T21:07:44.339496+08:00",
       "timeline": [
         {
           "label": "纸笔退市",
@@ -635,7 +635,7 @@
         "registration_end": "2026-11-09T23:59:00+00:00",
         "event_start": "2026-12-07",
         "event_end": "2026-12-11",
-        "verified_at": "2026-10-06T21:14:47+08:00"
+        "verified_at": "2026-10-07T21:07:44.339496+08:00"
       },
       "fee": "各阶段费用不同",
       "schedule": "2026年12月",
@@ -667,7 +667,7 @@
           "value": "2027年1月18日"
         }
       ],
-      "last_updated": "2026-10-06T21:14:47+08:00"
+      "last_updated": "2026-10-07T21:07:44.339496+08:00"
     },
     {
       "id": "first-level-cost-engineer-2026",
@@ -779,8 +779,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-10-03T21:15:41.638329+08:00",
-        "review_after": "2026-10-06T21:14:41.638329+08:00"
+        "verified_at": "2026-10-07T21:07:44.339496+08:00",
+        "review_after": "2026-10-10T21:06:44.339496+08:00"
       },
       "fee": "约50元（学生优惠）",
       "schedule": "各地定期组织",
@@ -790,7 +790,7 @@
       "official_portal": "https://www.cltt.org/",
       "news_list_url": "https://www.cltt.org/",
       "official_url": "https://stzbm.cltt.org/",
-      "last_updated": "2026-10-03T21:15:41.638329+08:00"
+      "last_updated": "2026-10-07T21:07:44.339496+08:00"
     },
     {
       "id": "guokao-2026",
