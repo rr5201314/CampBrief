@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-06T21:38:33+08:00",
+  "last_updated": "2026-10-07T21:44:08+08:00",
   "source": "CampBrief",
-  "total": 236,
+  "total": 239,
   "tiers": [
     {
       "key": "all",
@@ -3029,7 +3029,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【倒计时12天】2026年第十二届中西部外语翻译大赛",
+      "name": "【倒计时11天】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -4220,8 +4220,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-03T21:38:51+08:00",
-        "review_after": "2026-10-06T21:38:51+08:00"
+        "verified_at": "2026-10-07T21:40:20+08:00",
+        "review_after": "2026-10-10T21:40:20+08:00"
       }
     },
     {
@@ -4328,7 +4328,7 @@
     },
     {
       "id": "comp-52jingsai-174125b55453",
-      "name": "【免费答题，及格领证书】第五届全国学生科学素质知识科普活动",
+      "name": "【免费答题，10月15日截止】第五届全国学生科学素质知识科普活动！及格领证书！",
       "tier": "hobby",
       "fields": [
         "science"
@@ -4432,8 +4432,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-03T21:38:51+08:00",
-        "review_after": "2026-10-06T21:38:51+08:00"
+        "verified_at": "2026-10-07T21:40:20+08:00",
+        "review_after": "2026-10-10T21:40:20+08:00"
       },
       "signup": "各赛项报名已开启，截止以组委会通知为准",
       "schedule": "",
@@ -4814,8 +4814,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-03T21:38:51+08:00",
-        "review_after": "2026-10-06T21:38:51+08:00"
+        "verified_at": "2026-10-07T21:40:20+08:00",
+        "review_after": "2026-10-10T21:40:20+08:00"
       },
       "signup": "多场次报名，截止以官网为准",
       "schedule": "",
@@ -4927,6 +4927,82 @@
       "official_site": "http://rwsy.52jingsai.com/",
       "organizer": "大学生人文素养竞赛组委会、北京中华文化发展协会、黑龙江省创新教育研究院",
       "prestige": 3
+    },
+    {
+      "id": "comp-52jingsai-3d9eb8a61631",
+      "name": "【初赛免费答题，决赛可组队】2026年全国大学生创新创业能力大赛报名通知",
+      "tier": "hobby",
+      "fields": [
+        "innovation",
+        "business"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-12-05",
+        "event_start": "2026-12-27",
+        "event_end": "2027-01-14",
+        "verified_at": "2026-10-07T21:40:20+08:00"
+      },
+      "signup": "初赛报名及答题至2026年11月30日；决赛报名及作品提交至2026年12月5日",
+      "schedule": "初赛为线上答题；决赛作品提交截止2026年12月5日，评审于2026年12月27日至2027年1月13日，结果拟于2027年1月14日公布。",
+      "summary": "初赛为线上创新思维答题且免费；决赛收取50元组织费，分创新组、创业组，可个人或组队提交作品。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23659-1.html",
+      "official_site": "http://chuangxin.52jingsai.com/",
+      "organizer": "中国智慧工程研究会职业教育专业委员会、安徽省企业管理培训协会、黑龙江省创新教育研究院、全国大学生创新创业能力大赛组委会",
+      "prestige": 3
+    },
+    {
+      "id": "comp-52jingsai-8465ea98e10f",
+      "name": "【初赛免费答题领证书】2026年第七届全国大学生职业发展大赛",
+      "tier": "hobby",
+      "fields": [
+        "vocational",
+        "business"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-12-26",
+        "event_start": "2026-12-27",
+        "event_end": "2027-01-14",
+        "verified_at": "2026-10-07T21:40:20+08:00"
+      },
+      "signup": "初赛答题截止2026年12月20日；决赛报名截止2026年12月26日",
+      "schedule": "决赛评审2026年12月27日至2027年1月13日，2027年1月14日公示。",
+      "summary": "初赛为线上职业发展知识答题且免费；决赛酌收50元组织费，设简历设计和职业生涯规划两个赛道。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23876-1.html",
+      "official_site": "http://zy.52jingsai.com/",
+      "organizer": "中国商业经济学会教育培训分会",
+      "prestige": 3
+    },
+    {
+      "id": "comp-saikr-12c6205e1745",
+      "name": "【中国翻译协会盖章】第五届\"海豚杯\"翻译大赛暨国际翻译人才选拔赛",
+      "tier": "official",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-08-06",
+        "registration_end": "2026-12-01",
+        "verified_at": "2026-10-07T21:40:20+08:00"
+      },
+      "signup": "2026年8月6日至2026年12月1日22:00报名；各场次安排详见赛事页面",
+      "schedule": "设多个场次及英译汉、汉译英赛道；页面列明秋季第二场次译文提交截止为2026年10月22日23:00。",
+      "summary": "在中国翻译协会文学艺术翻译专业委员会指导下，由中国外文局海豚出版社主办；设英译汉、汉译英赛道，面向高校学生、翻译从业者及社会人士。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/HTB2026FY5",
+      "official_site": "",
+      "organizer": "中国外文局海豚出版社",
+      "prestige": 7
     }
   ]
 }
