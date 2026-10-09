@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-08T21:01:57.870248+08:00",
+  "last_updated": "2026-10-09T10:15:11+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -831,7 +831,7 @@
       "id": "kaoyan-2026",
       "name": "2027年全国硕士研究生招生考试 (考研)",
       "category": "postgrad",
-      "status": "pending",
+      "status": "open",
       "fee": "约200元",
       "schedule": "2026年12月19日-20日（初试）",
       "summary": "选拔本科毕业生进入研究生阶段的全国统一考试，含初试和复试，分学术型和专业型硕士两类。2027年初试时间为2026年12月19日至20日。",
