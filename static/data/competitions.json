@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-08T21:35:34+08:00",
+  "last_updated": "2026-10-09T21:37:55+08:00",
   "source": "CampBrief",
-  "total": 239,
+  "total": 241,
   "tiers": [
     {
       "key": "all",
@@ -3029,7 +3029,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【倒计时10天】2026年第十二届中西部外语翻译大赛",
+      "name": "【倒计时9天】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3143,7 +3143,7 @@
     },
     {
       "id": "comp-saikr-621d8ad96385",
-      "name": "第四届“三晋杯”全国大学生英语演讲大赛",
+      "name": "【即将截止】第四届“三晋杯”全国大学生英语演讲大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3287,7 +3287,7 @@
     },
     {
       "id": "comp-saikr-934b697c9f23",
-      "name": "【10.09—10.10考试，10.12申领证书！】全国大学生电子商务精英挑战赛",
+      "name": "【10.09—10.11考试，10.12申领证书！】全国大学生电子商务精英挑战赛",
       "tier": "hobby",
       "fields": [
         "computer"
@@ -3667,7 +3667,7 @@
     },
     {
       "id": "comp-saikr-5ff1ac5834d5",
-      "name": "【高校力荐】第四届“一带一路”大学生英语词汇能力挑战",
+      "name": "「高校力荐」第四届\"一带一路\"大学生英语词汇能力挑战",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3767,7 +3767,7 @@
     },
     {
       "id": "comp-saikr-9867f29b35c9",
-      "name": "【周日开考】第九届ETTBL杯全国英语词汇大赛",
+      "name": "【周日开考&下周拿证】第九届ETTBL杯全国英语词汇大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3907,7 +3907,7 @@
     },
     {
       "id": "comp-saikr-3e818dd91712",
-      "name": "【省赛倒计时10天】第九届大学生普通话挑战赛（NPCCS）",
+      "name": "【省赛倒计时9天】第九届大学生普通话挑战赛（NPCCS）",
       "tier": "hobby",
       "fields": [
         "language"
@@ -4128,7 +4128,7 @@
     },
     {
       "id": "comp-saikr-52f6c0e0a9e8",
-      "name": "【倒计时5天】第六届“中外传播杯”大学生英语翻译大赛",
+      "name": "【倒计时4天】第六届“中外传播杯”大学生英语翻译大赛",
       "tier": "official",
       "fields": [
         "language"
@@ -5003,6 +5003,54 @@
       "official_site": "",
       "organizer": "中国外文局海豚出版社",
       "prestige": 7
+    },
+    {
+      "id": "comp-52jingsai-2c7f6752e6b0",
+      "name": "2026第三届自然资源文化创意大赛",
+      "tier": "official",
+      "fields": [
+        "design"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-12-31",
+        "verified_at": "2026-10-09T21:35:41+08:00"
+      },
+      "signup": "作品征集及报名截止：2026年12月31日",
+      "schedule": "",
+      "summary": "面向全社会征集主题创作、平面设计及实物文创作品，设金奖、银奖、铜奖及优秀奖，征集截止2026年12月31日。",
+      "search": "自然资源 文化创意 生态保护 主题创作 平面设计 实物文创",
+      "official_url": "https://www.52jingsai.com/article-24104-1.html",
+      "official_site": "https://www.pecmnr.cn/whcy/",
+      "organizer": "自然资源部宣传教育中心、中国海洋发展基金会",
+      "prestige": 8
+    },
+    {
+      "id": "comp-saikr-410675676401",
+      "name": "【速报名！本周末线上开考！】“智联杯”大学生信息通信技术大赛",
+      "tier": "hobby",
+      "fields": [
+        "computer"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-12-25",
+        "event_start": "2026-10-10",
+        "event_end": "2026-12-27",
+        "verified_at": "2026-10-09T21:35:41+08:00"
+      },
+      "signup": "即日起至2026年12月25日",
+      "schedule": "第一场考试：2026年10月10日至11日；第二场考试：2026年12月26日至27日。",
+      "summary": "由中国智慧工程研究会主办，面向高校及高职在校生、研究生开展信息通信技术知识竞答，设一、二、三等奖和优秀奖；报名截至2026年12月25日。",
+      "search": "信息通信技术 ICT 知识竞答 通信 网络",
+      "official_url": "https://www.saikr.com/vse/ZHGCxy2026ICT",
+      "official_site": "",
+      "organizer": "中国智慧工程研究会",
+      "prestige": 3
     }
   ]
 }
