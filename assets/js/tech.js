@@ -207,7 +207,7 @@ function applyFilters() {
 }
 
 // ===== 技术板块轮播 =====
-// 规则：近3天 priority>=4 的技术条目；不足3个补充 priority>=3；上限15个。
+// 规则：近3天 priority>=4；不足3个补 priority>=3，再用最新 priority=2 补到3个；上限15个。
 function pickTechCarouselItems(items) {
   const now = new Date();
   const threeDaysAgo = new Date(now.getTime() - 3 * 24 * 60 * 60 * 1000);
@@ -219,6 +219,11 @@ function pickTechCarouselItems(items) {
   if (result.length < 3) {
     const p3 = recent.filter(i => (i.priority || 1) === 3 && !result.find(r => r.id === i.id));
     result = result.concat(p3);
+  }
+  if (result.length < 3) {
+    const p2 = recent.filter(i => (i.priority || 1) === 2 && !result.find(r => r.id === i.id));
+    p2.sort((a, b) => new Date(b.published) - new Date(a.published));
+    result = result.concat(p2.slice(0, 3 - result.length));
   }
   result.sort((a, b) => new Date(b.published) - new Date(a.published));
   return result.slice(0, 15);

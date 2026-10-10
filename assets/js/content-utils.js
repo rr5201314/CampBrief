@@ -113,7 +113,8 @@ const CampBriefContent = (function () {
 
   const LIFECYCLE_BOUNDARIES = ["registration_start", "registration_end", "event_start", "event_end"];
   const DATE_ONLY_RE = /^\d{4}-\d{2}-\d{2}$/;
-  const OFFSET_INSTANT_RE = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(?::\d{2}(?:\.\d{1,3})?)?(?:Z|[+-]\d{2}:\d{2})$/;
+  // Match Python temporal_status.py, including datetime.isoformat() microseconds.
+  const OFFSET_INSTANT_RE = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(?::\d{2}(?:\.\d{1,6})?)?(?:Z|[+-]\d{2}:\d{2})$/;
 
   function isValidCalendarDate(value) {
     if (!DATE_ONLY_RE.test(value)) return false;

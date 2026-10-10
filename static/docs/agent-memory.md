@@ -71,7 +71,7 @@
 - 信息网格的"考试时间"字段需填写具体考试月份（如"2026年6月"），而非通用周期（如"每年6月、12月"）
 - 考试和竞赛模块的状态标签需去除"阶段"后缀（如"可报名阶段"改为"可报名"）
 - **结构化生命周期**：考试/竞赛状态只由可选 `lifecycle` 计算；`timeline`、`signup`、`schedule`、标题和摘要仅用于展示，禁止解析自然语言后直接改状态。
-  - `mode=scheduled`：可用 `registration_start` / `registration_end` / `event_start` / `event_end`；值必须是 `YYYY-MM-DD` 或带偏移的 ISO8601。使用日期值时必须提供 IANA `time_zone`，结束日期包含当天。若 `status=open`，必须提供 `registration_end`，避免条目永久停留在“可报名”。
+  - `mode=scheduled`：可用 `registration_start` / `registration_end` / `event_start` / `event_end`；值必须是 `YYYY-MM-DD` 或带偏移的 ISO8601。前端与 Python 均接受1–6位小数秒（包括 `datetime.isoformat()` 的微秒），不得将合法的复核时间误判为无效。使用日期值时必须提供 IANA `time_zone`，结束日期包含当天。若 `status=open`，必须提供 `registration_end`，避免条目永久停留在“可报名”。
   - `mode=rolling|manual`：必须提供带时区的 `verified_at` 和 `review_after`，两者间隔不得超过 72 小时；超过 `review_after` 后前端派生为 `unknown`（待核验），不再展示“可报名”。72 小时是每日定时任务连续失败时的安全宽限，不是 skill 的执行频率配置。
   - 公开页面对没有 lifecycle 的 `status=open` 同样派生为 `unknown`；`unknown` 是前端安全状态，不写回 JSON。
   - 考试状态链：pending → open → closed → done。竞赛状态链：pending → open → closed → ongoing → done；边报名边比赛仍优先 open。
@@ -140,7 +140,7 @@
     - 技术动态：`static/data/daily-news.json` 中 `category=tech` 的条目
     - GitHub 趋势：`static/data/github-trending.json` 中 `category=tech/subcategory=github` 的条目（榜单形式，每个条目含 `repos` 数组）
   - 前端合并两个数据源后统一渲染、筛选、分页
-  - 技术板块轮播：近3天 priority>=4，不足3个补 priority>=3，上限15
+  - 技术板块轮播：近3天 priority>=4，不足3个补 priority>=3；仍不足时，按发布时间降序用同一时间窗内的 priority=2 条目只补到3张，上限15。补位不改源数据优先级、不延长时间窗；按稳定 id 去重，最终仍按发布时间降序。
 - **技术详情页**：`pages/tech/detail.html`，从 `daily-news.json` 和 `github-trending.json` 合并后按不可变 `id` 查找
   - 普通技术动态：显示标题、摘要、正文、原文链接
   - GitHub 趋势榜单：检测到 `repos` 数组时渲染 Top 10 项目卡片列表，每张卡片含排名、仓库名（链接）、语言、Stars/Forks/新增、中文概括、解决问题说明

@@ -51,7 +51,9 @@ def categories(item: dict[str, Any]) -> set[str]:
     return {str(item.get("category"))} if item.get("category") else set()
 
 
-def news_candidates(items: list[dict[str, Any]], now: datetime) -> list[dict[str, Any]]:
+def news_candidates(
+    items: list[dict[str, Any]], now: datetime, *, important_fallback: bool = False
+) -> list[dict[str, Any]]:
     start = now - timedelta(hours=72)
     recent = [item for item in items if (stamp := published_at(item)) and start <= stamp <= now]
     result = [item for item in recent if int(item.get("priority") or 1) >= 4]
@@ -62,6 +64,14 @@ def news_candidates(items: list[dict[str, Any]], now: datetime) -> list[dict[str
             for item in recent
             if int(item.get("priority") or 1) == 3 and item.get("id") not in existing_ids
         )
+    if important_fallback and len(result) < MIN_ITEMS:
+        existing_ids = {item.get("id") for item in result}
+        important = [
+            item for item in recent
+            if int(item.get("priority") or 1) == 2 and item.get("id") not in existing_ids
+        ]
+        important.sort(key=lambda item: published_at(item), reverse=True)
+        result.extend(important[:MIN_ITEMS - len(result)])
     result.sort(key=lambda item: published_at(item) or datetime.min.replace(tzinfo=timezone.utc), reverse=True)
     return result[:MAX_ITEMS]
 
@@ -150,7 +160,9 @@ def main() -> int:
         [item for item in daily_items if "tech" not in categories(item)], now
     )
     tech_carousel = news_candidates(
-        [item for item in daily_items if "tech" in categories(item)] + github_items, now
+        [item for item in daily_items if "tech" in categories(item)] + github_items,
+        now,
+        important_fallback=True,
     )
     competition_eligible = [
         item

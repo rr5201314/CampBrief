@@ -127,6 +127,60 @@ test("only scheduled pending items may enter a carousel", () => {
   );
 });
 
+test("Python microsecond timestamps remain valid lifecycle instants", () => {
+  const now = "2026-10-10T12:00:00Z";
+  for (const fraction of ["3", "33", "339", "3394", "33949", "339496"]) {
+    for (const offset of ["Z", "+08:00"]) {
+      const item = {
+        status: "open",
+        lifecycle: {
+          mode: "rolling",
+          verified_at: `2026-10-09T21:07:44.${fraction}${offset}`,
+          review_after: `2026-10-11T21:06:44.${fraction}${offset}`
+        }
+      };
+      assert.deepEqual(CampBriefContent.lifecycleIssues(item), []);
+      assert.equal(CampBriefContent.effectiveStatus(item, { requireLifecycle: true, now }), "open");
+      assert.equal(CampBriefContent.isCarouselCandidate(item, "exam", { now }), true);
+    }
+  }
+});
+
+test("microsecond verified_at does not exclude scheduled exams", () => {
+  const item = {
+    status: "open",
+    lifecycle: {
+      mode: "scheduled",
+      time_zone: "Europe/London",
+      registration_start: "2026-08-04",
+      registration_end: "2026-11-09T23:59:00+00:00",
+      event_start: "2026-12-07",
+      event_end: "2026-12-11",
+      verified_at: "2026-10-07T21:07:44.339496+08:00"
+    }
+  };
+  assert.deepEqual(CampBriefContent.lifecycleIssues(item), []);
+  assert.equal(CampBriefContent.isCarouselCandidate(item, "exam", { now: "2026-10-10T12:00:00Z" }), true);
+});
+
+test("accepting microseconds preserves expiry and 72-hour safety rules", () => {
+  const item = {
+    status: "open",
+    lifecycle: {
+      mode: "manual",
+      verified_at: "2026-10-07T21:07:44.339496+08:00",
+      review_after: "2026-10-10T21:06:44.339496+08:00"
+    }
+  };
+  assert.deepEqual(CampBriefContent.lifecycleIssues(item), []);
+  assert.equal(CampBriefContent.effectiveStatus(item, { requireLifecycle: true, now: "2026-10-10T22:00:00+08:00" }), "unknown");
+  assert.equal(CampBriefContent.isCarouselCandidate(item, "exam", { now: "2026-10-10T22:00:00+08:00" }), false);
+  item.lifecycle.review_after = "2026-10-11T21:06:44.339496+08:00";
+  assert.match(CampBriefContent.lifecycleIssues(item).join(" "), /72/);
+  item.lifecycle.verified_at = "2026-10-07T21:07:44.339496";
+  assert.match(CampBriefContent.lifecycleIssues(item).join(" "), /verified_at/);
+});
+
 test("homepage board ordering uses publication time before priority", () => {
   const items = [
     { id: "older-headline", published: "2026-07-16T23:59:00+08:00", priority: 4 },

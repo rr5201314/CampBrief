@@ -39,7 +39,7 @@ def main() -> int:
         run(f"JS 语法 {script}", [node, "--check", script])
     run(
         "Node 单元与页面依赖测试",
-        [node, "--test", "tests/content-utils.test.js", "tests/page-dependencies.test.js"],
+        [node, "--test", *sorted(str(path.relative_to(ROOT)) for path in (ROOT / "tests").glob("*.test.js"))],
     )
     run("Git 空白错误", ["git", "diff", "--check"])
     print("\nAll CampBrief maintenance checks passed.")
