@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-09T21:37:55+08:00",
+  "last_updated": "2026-10-10T21:37:22.275376+08:00",
   "source": "CampBrief",
-  "total": 241,
+  "total": 242,
   "tiers": [
     {
       "key": "all",
@@ -3029,7 +3029,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【倒计时9天】2026年第十二届中西部外语翻译大赛",
+      "name": "【倒计时8天】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3143,7 +3143,7 @@
     },
     {
       "id": "comp-saikr-621d8ad96385",
-      "name": "【即将截止】第四届“三晋杯”全国大学生英语演讲大赛",
+      "name": "【最后一天】第四届“三晋杯”全国大学生英语演讲大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3907,7 +3907,7 @@
     },
     {
       "id": "comp-saikr-3e818dd91712",
-      "name": "【省赛倒计时9天】第九届大学生普通话挑战赛（NPCCS）",
+      "name": "【省赛倒计时8天】第九届大学生普通话挑战赛（NPCCS）",
       "tier": "hobby",
       "fields": [
         "language"
@@ -4128,7 +4128,7 @@
     },
     {
       "id": "comp-saikr-52f6c0e0a9e8",
-      "name": "【倒计时4天】第六届“中外传播杯”大学生英语翻译大赛",
+      "name": "【倒计时3天】第六届“中外传播杯”大学生英语翻译大赛",
       "tier": "official",
       "fields": [
         "language"
@@ -4515,7 +4515,7 @@
     },
     {
       "id": "comp-52jingsai-68e980cca5a7",
-      "name": "【快来答题领证书】“国文杯”全国高校文学知识竞答活动，免费答题",
+      "name": "【快来答题领证书】“国文杯”全国高校文学知识竞答，免费答题",
       "tier": "hobby",
       "fields": [
         "literature"
@@ -4982,7 +4982,7 @@
     },
     {
       "id": "comp-saikr-12c6205e1745",
-      "name": "【中国翻译协会盖章】第五届\"海豚杯\"翻译大赛暨国际翻译人才选拔赛",
+      "name": "『中国翻译协会盖章』第五届\"海豚杯\"翻译大赛暨国际翻译人才选拔赛",
       "tier": "official",
       "fields": [
         "language"
@@ -5029,7 +5029,7 @@
     },
     {
       "id": "comp-saikr-410675676401",
-      "name": "【速报名！本周末线上开考！】“智联杯”大学生信息通信技术大赛",
+      "name": "【现在报名！正在考试！下周领证】“智联杯”大学生信息通信技术大赛",
       "tier": "hobby",
       "fields": [
         "computer"
@@ -5051,6 +5051,32 @@
       "official_site": "",
       "organizer": "中国智慧工程研究会",
       "prestige": 3
+    },
+    {
+      "id": "comp-52jingsai-bcc1b24432ee",
+      "name": "【累计两千万大学生参加】2026年第十一届全国大学生预防艾滋病知识竞赛",
+      "tier": "official",
+      "fields": [
+        "medical"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-09-15",
+        "registration_end": "2026-12-15",
+        "event_start": "2026-09-15",
+        "event_end": "2026-12-15",
+        "verified_at": "2026-10-10T21:37:17+08:00"
+      },
+      "signup": "参赛时间：2026年9月15日至12月15日，学生登录竞赛平台注册参赛。",
+      "schedule": "线上答题，每人最多3次机会，取最高分；答题25题、限时25分钟。",
+      "summary": "由中国预防性病艾滋病基金会、中国性病艾滋病防治协会、中国健康教育中心联合主办，围绕艾滋病防治与多病共防开展线上知识竞赛。",
+      "search": "预防艾滋病 艾滋病防治 多病共防 健康科普",
+      "official_url": "https://www.52jingsai.com/article-24099-1.html",
+      "official_site": "http://www.aids0.com/",
+      "organizer": "中国预防性病艾滋病基金会、中国性病艾滋病防治协会、中国健康教育中心",
+      "prestige": 8
     }
   ]
 }
