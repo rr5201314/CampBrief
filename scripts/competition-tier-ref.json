@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "竞赛含金量参考表——主办方/竞赛名 → tier + prestige。脚本批量对照用，未命中的条目由 agent 手动核对后补全。",
-    "version": "2026-10-10",
+    "version": "2026-10-11",
     "prestige_scale": "1-10，10最高。官方顶级赛事8-10，名企赛事5-7，兴趣练手1-4"
   },
   "organizers": {
@@ -859,6 +859,11 @@
       "tier": "hobby",
       "prestige": 2,
       "note": "ETTBL杯词汇大赛，49元商业赛"
+    },
+    "第五届“英才计划”大学生英语阅读大赛": {
+      "tier": "hobby",
+      "prestige": 3,
+      "note": "中华出版促进会国际人才文化传播工作委员会主办；赛氪详情载明参赛者收费50元/位，非教育部认可名录"
     },
     "APMCM": {
       "tier": "official",
