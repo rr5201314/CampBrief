@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-11T21:41:33+08:00",
+  "last_updated": "2026-10-12T21:45:22+08:00",
   "source": "CampBrief",
-  "total": 244,
+  "total": 248,
   "tiers": [
     {
       "key": "all",
@@ -3029,7 +3029,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【倒计时7天】2026年第十二届中西部外语翻译大赛",
+      "name": "【倒计时6天】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3143,7 +3143,7 @@
     },
     {
       "id": "comp-saikr-621d8ad96385",
-      "name": "【最后一天】第四届“三晋杯”全国大学生英语演讲大赛",
+      "name": "第四届“三晋杯”全国大学生英语演讲大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3907,7 +3907,7 @@
     },
     {
       "id": "comp-saikr-3e818dd91712",
-      "name": "【省赛倒计时7天】第九届大学生普通话挑战赛（NPCCS）",
+      "name": "【省赛倒计时6天】第九届大学生普通话挑战赛（NPCCS）",
       "tier": "hobby",
       "fields": [
         "language"
@@ -4128,7 +4128,7 @@
     },
     {
       "id": "comp-saikr-52f6c0e0a9e8",
-      "name": "【倒计时3天】第六届“中外传播杯”大学生英语翻译大赛",
+      "name": "【明日截止】第六届“中外传播杯”大学生英语翻译大赛",
       "tier": "official",
       "fields": [
         "language"
@@ -4618,7 +4618,7 @@
       "fields": [
         "literature"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -4731,7 +4731,7 @@
     },
     {
       "id": "comp-saikr-50af6d1652b9",
-      "name": "2026年“中外杯”大学生英语翻译大赛",
+      "name": "【最后5天】2026年“中外杯”大学生英语翻译大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -5029,7 +5029,7 @@
     },
     {
       "id": "comp-saikr-410675676401",
-      "name": "【现在报名！正在考试！下周领证】“智联杯”大学生信息通信技术大赛",
+      "name": "【年度最后一场开启报名】“智联杯”大学生信息通信技术大赛",
       "tier": "hobby",
       "fields": [
         "computer"
@@ -5128,6 +5128,109 @@
       "official_site": "",
       "organizer": "中华出版促进会国际人才文化传播工作委员会",
       "prestige": 3
+    },
+    {
+      "id": "comp-52jingsai-4ec5d9756ae6",
+      "name": "2026年第八届全国高校创新英语挑战赛（NCIECC）英语翻译赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2027-01-07",
+        "event_start": "2026-10-29",
+        "event_end": "2027-02-28",
+        "verified_at": "2026-10-12T21:42:03+08:00"
+      },
+      "signup": "第一场报名至2026年11月26日中午12点；第二场报名至2027年1月7日中午12点",
+      "schedule": "第一场译题发布：2026年10月29日；第二场：2026年12月10日。第二场评审至2027年1月底，结果预计2027年2月上旬公示。",
+      "summary": "由全国高校创新英语挑战赛组委会、《海外英语》杂志主办，设置汉译英、英译汉两个组别和两场在线笔译；报名评审费49元/组。",
+      "search": "英语翻译 英语笔译 NCIECC",
+      "official_url": "https://www.nciecc.com/news-63.html",
+      "official_site": "https://www.nciecc.com/translate.php",
+      "organizer": "全国高校创新英语挑战赛组委会、《海外英语》杂志",
+      "prestige": 4
+    },
+    {
+      "id": "comp-52jingsai-90660bf84120",
+      "name": "第二十五届“文治杯”大学生写作大赛",
+      "tier": "hobby",
+      "fields": [
+        "design"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-09-30",
+        "registration_end": "2026-12-31",
+        "event_start": "2027-02-14",
+        "event_end": "2027-02-14",
+        "verified_at": "2026-10-12T21:42:03+08:00"
+      },
+      "signup": "即日起至2026年12月31日24时",
+      "schedule": "线上投稿初赛；入围选手于2027年2月14日在上海交通大学参加线下复赛及颁奖。",
+      "summary": "上海交通大学国家大学生文化素质教育基地、上海交通大学人文学院主办，中国作家协会社会联络部指导；面向全国高校在校生，设小说和散文（含非虚构）赛项，线上投稿后进行线下复赛，不收报名费。",
+      "search": "文治杯 写作大赛 小说 散文",
+      "official_url": "https://www.sjtu.edu.cn/tg/20260930/226353.html",
+      "official_site": "https://www.sjtu.edu.cn/",
+      "organizer": "上海交通大学国家大学生文化素质教育基地、上海交通大学人文学院",
+      "prestige": 5
+    },
+    {
+      "id": "comp-52jingsai-b881d33e906a",
+      "name": "2026年全国大学生“人工智能+”创新创业大赛",
+      "tier": "hobby",
+      "fields": [
+        "ai",
+        "innovation"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-10-28",
+        "event_start": "2026-10-29",
+        "event_end": "2026-12-07",
+        "verified_at": "2026-10-12T21:42:03+08:00"
+      },
+      "signup": "初赛报名及参赛至2026年10月28日；决赛报名、组队及提交作品至10月28日，决赛作品提交截止11月5日。",
+      "schedule": "线上AI素养测试初赛；创新创业计划书决赛评审于2026年11月6日至12月6日进行，12月7日公示获奖名单。",
+      "summary": "中国技术创业协会校企融合专业委员会主办、中国技术创业协会指导，设置线上AI素养测试和创新创业计划书决赛；初赛首次免费，决赛评审费70元/人。",
+      "search": "人工智能 AI 创新创业",
+      "official_url": "https://www.52jingsai.com/article-23511-1.html",
+      "official_site": "http://rgzn.52jingsai.com/",
+      "organizer": "中国技术创业协会校企融合专业委员会",
+      "prestige": 3
+    },
+    {
+      "id": "comp-52jingsai-d2973c370cce",
+      "name": "第四届全国大学生职业规划大赛",
+      "tier": "official",
+      "fields": [
+        "vocational"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-10-01",
+        "registration_end": "2027-01-31",
+        "event_start": "2026-10-01",
+        "event_end": "2027-04-30",
+        "verified_at": "2026-10-12T21:42:03+08:00"
+      },
+      "signup": "报名时间为2026年10月至2027年1月；具体截止日期由各地各高校安排，最晚不超过2027年1月31日。",
+      "schedule": "校赛、省赛于2026年10月至2027年3月上旬举行；全国总决赛于2027年4月举办。",
+      "summary": "教育部、重庆市人民政府共同主办，采用校赛、省赛、全国总决赛三级赛制，设成长赛道和就业赛道。报名截止日期由各地各高校确定，最晚不超过2027年1月31日。",
+      "search": "职业规划 就业 成长赛道",
+      "official_url": "http://www.moe.gov.cn/srcsite/A15/s7063/202610/t20261010_1453481.html",
+      "official_site": "https://zgs.chsi.com.cn/",
+      "organizer": "教育部、重庆市人民政府",
+      "prestige": 10
     }
   ]
 }
