@@ -1,8 +1,21 @@
 {
-  "last_updated": "2026-10-12T08:37:56+08:00",
+  "last_updated": "2026-10-12T13:42:16+08:00",
   "source": "CampBrief Auto",
-  "total": 792,
+  "total": 797,
   "items": [
+    {
+      "id": "news-61276304667ec0f0",
+      "title": "GPT-6.1 Sol 在 Codex 与 Work 的默认上下文扩至 50 万 token",
+      "url": "https://daily.juya.uk/issues/2026-10-12/",
+      "date": "2026-10-12",
+      "published": "2026-10-12T00:42:00+00:00",
+      "summary": "GPT-6.1 Sol 在 Codex 与 Work 中的默认上下文从 27.2 万升至 50 万 token，约增加八成。",
+      "detail": "OpenAI Codex 负责人称，调整旨在减少长任务中的上下文压缩；用户仍可手动调整上限，模型最大上下文为 100 万 token。订阅额度用户使用长上下文不另收费。",
+      "image": "",
+      "priority": 3,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
     {
       "id": "news-c6395d46d8e9c806",
       "title": "古尔曼：苹果 10 月 13 日发布智能家居中枢 HomeView，11 月中旬上市",
@@ -203,6 +216,59 @@
       "priority": 2,
       "category": "tech",
       "subcategory": "ai-frontier",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-39c4b7b9ae08d1c8",
+      "title": "Cloudflare 将 Clef-flash 托管输入价下调约 58%，上下文缩至 24K",
+      "url": "https://daily.juya.uk/issues/2026-10-11/",
+      "date": "2026-10-11",
+      "published": "2026-10-11T01:02:12+00:00",
+      "summary": "Cloudflare 将 Clef-flash 托管输入价从每百万 token 0.09 美元降至 0.038 美元，降幅约 58%。",
+      "detail": "为降低价格，托管版上下文窗口由 64K 缩至 24K；Hugging Face 权重未变，仍支持 256K。Cloudflare 称仅 0.24% 请求超过 24K，并建议长上下文用户改用 Clef。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-03d31167e8b03925",
+      "title": "OpenAI 要求前沿工作负载启动前先完成安全简报",
+      "url": "https://daily.juya.uk/issues/2026-10-11/",
+      "date": "2026-10-11",
+      "published": "2026-10-11T01:02:12+00:00",
+      "summary": "OpenAI RSI Preparedness 负责人称，任何前沿工作负载都须先有安全简报才能启动；他表示该要求已推动多项安全工作。",
+      "detail": "这项规则由 OpenAI 的 RSI Preparedness 负责人公开介绍，目标是把安全案例要求纳入前沿工作流程。他同时链接一份覆盖 2026 年 6 月 4 日至 9 月 4 日的内部模型使用风险报告；报告称公司加强了隔离、监控与未发布模型审批。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-638a661f1c3bd4d4",
+      "title": "纳德拉主张将前沿 AI 模型视作内部风险，把权限控制置于模型之外",
+      "url": "https://daily.juya.uk/issues/2026-10-11/",
+      "date": "2026-10-11",
+      "published": "2026-10-11T01:02:12+00:00",
+      "summary": "微软 CEO 纳德拉主张把前沿 AI 模型视为潜在内部风险，从系统外实施权限限制、隔离、审计和人工急停。",
+      "detail": "他提出把智能供给与操作权限分离，要求模型行为可观测、可验证，控制独立于模型本身，并允许授权人员随时暂停任务。文章还列出模型多样性、独立审计与事故披露等原则；这是治理主张，不代表微软已部署相关产品。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-0f545ce5f1171992",
+      "title": "WSJ：Meta 暂缓向 Anthropic 出租 AI 算力",
+      "url": "https://daily.juya.uk/issues/2026-10-11/",
+      "date": "2026-10-11",
+      "published": "2026-10-11T01:02:12+00:00",
+      "summary": "《华尔街日报》称，Anthropic 曾希望向 Meta 租用 AI 芯片算力，但 Meta 内部讨论后决定暂不提供。",
+      "detail": "报道说，Anthropic CEO Dario Amodei 曾联系 Meta 首席 AI 负责人 Alexandr Wang 洽谈。Meta 自有模型业务回升、算力需求增加，被报道列为背景；双方未宣布达成租赁协议。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
       "source": "juya AI 日报"
     },
     {
