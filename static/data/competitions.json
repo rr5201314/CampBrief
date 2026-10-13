@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-12T21:45:22+08:00",
+  "last_updated": "2026-10-13T22:24:06+08:00",
   "source": "CampBrief",
-  "total": 248,
+  "total": 249,
   "tiers": [
     {
       "key": "all",
@@ -2638,21 +2638,29 @@
     },
     {
       "id": "comp-saikr-a9fc0ce98006",
-      "name": "2026年大学生统计科学与算法编程挑战赛——算法赛道",
+      "name": "【年度最后一场】2026年大学生统计科学与算法编程挑战赛——算法赛道",
       "tier": "hobby",
       "fields": [
         "computer",
         "science"
       ],
-      "status": "pending",
-      "signup": "",
-      "schedule": "",
-      "summary": "来源：赛氪。浏览 9786，关注 227",
+      "status": "open",
+      "signup": "报名时间：即日起至2026年10月16日",
+      "schedule": "第二场测试：2026年10月17日13:00–18:00；正式考试：2026年10月18日13:00–18:00。",
+      "summary": "山东省应用统计学会主办，面向本科、高职及研究生的个人在线算法竞赛，采用ACM赛制，设研究生、大学A组、大学B组及高职高专组；每人收取50元服务费。",
       "search": "",
       "official_url": "https://www.saikr.com/vse/2026TJKXSF",
       "official_site": "",
-      "organizer": "统计科学算法编程",
-      "prestige": 4
+      "organizer": "山东省应用统计学会",
+      "prestige": 4,
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-10-16",
+        "event_start": "2026-10-17",
+        "event_end": "2026-10-18",
+        "verified_at": "2026-10-13T22:05:28+08:00"
+      }
     },
     {
       "id": "comp-saikr-29d981765725",
@@ -3029,7 +3037,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【倒计时6天】2026年第十二届中西部外语翻译大赛",
+      "name": "【倒计时5天】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3543,7 +3551,7 @@
     },
     {
       "id": "comp-saikr-d5eb8e83d073",
-      "name": "第九届ETTBL全国商务英语翻译大赛",
+      "name": "【倒计时5天】第九届ETTBL全国商务英语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3646,7 +3654,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "done",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -3907,7 +3915,7 @@
     },
     {
       "id": "comp-saikr-3e818dd91712",
-      "name": "【省赛倒计时6天】第九届大学生普通话挑战赛（NPCCS）",
+      "name": "【省赛倒计时5天】第九届大学生普通话挑战赛（NPCCS）",
       "tier": "hobby",
       "fields": [
         "language"
@@ -4128,7 +4136,7 @@
     },
     {
       "id": "comp-saikr-52f6c0e0a9e8",
-      "name": "【明日截止】第六届“中外传播杯”大学生英语翻译大赛",
+      "name": "【外文局单位主办】第六届“中外传播杯”大学生英语翻译大赛",
       "tier": "official",
       "fields": [
         "language"
@@ -4731,7 +4739,7 @@
     },
     {
       "id": "comp-saikr-50af6d1652b9",
-      "name": "【最后5天】2026年“中外杯”大学生英语翻译大赛",
+      "name": "【最后4天】2026年“中外杯”大学生英语翻译大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -5086,7 +5094,7 @@
         "design",
         "innovation"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5231,6 +5239,24 @@
       "official_site": "https://zgs.chsi.com.cn/",
       "organizer": "教育部、重庆市人民政府",
       "prestige": 10
+    },
+    {
+      "id": "comp-saikr-796ab73a3055",
+      "name": "2026年中国大学生计算机博弈大赛暨第二十届中国计算机博弈锦标赛",
+      "tier": "official",
+      "fields": [
+        "computer",
+        "ai"
+      ],
+      "status": "done",
+      "signup": "2026年6月20日至2026年7月15日",
+      "schedule": "2026年7月24日报到，7月25日至27日比赛与答辩；赛事安排说明完赛日期不晚于7月30日。",
+      "summary": "中国人工智能学会主办的计算机博弈赛事，面向高校学生并涵盖多类棋类与棋牌类算法对抗；2026年比赛已于7月结束。",
+      "search": "计算机博弈 机器博弈 人工智能 CAAI",
+      "official_url": "https://www.saikr.com/vse/computergames2026",
+      "official_site": "http://computergames.caai.cn/",
+      "organizer": "中国人工智能学会",
+      "prestige": 7
     }
   ]
 }

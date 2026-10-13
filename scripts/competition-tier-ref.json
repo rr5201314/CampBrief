@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "竞赛含金量参考表——主办方/竞赛名 → tier + prestige。脚本批量对照用，未命中的条目由 agent 手动核对后补全。",
-    "version": "2026-10-11",
+    "version": "2026-10-13",
     "prestige_scale": "1-10，10最高。官方顶级赛事8-10，名企赛事5-7，兴趣练手1-4"
   },
   "organizers": {
@@ -457,6 +457,11 @@
     "山东省力学学会": {
       "tier": "official",
       "prestige": 5
+    },
+    "山东省应用统计学会": {
+      "tier": "hobby",
+      "prestige": 4,
+      "note": "省民政厅注册的4A级学术社会组织；算法挑战赛收取50元服务费，非教育部认可赛事"
     },
     "数学周报": {
       "tier": "hobby",
