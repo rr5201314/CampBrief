@@ -289,4 +289,12 @@ rmdir "$LOCK_DIR"
 - 赛氪热门榜会混入资讯/活动类条目（如保研规划、时间轴、复盘文章），`collect-saikr.py` 已按关键词过滤，但 skill 层仍需留意标题异常的条目
 - 赛氪条目的 `status_hint` 是公告摘要而非简短状态词，仅用于辅助状态判断，不写入发布数据的 `summary` 字段
 
-<!-- call_count: 0 -->
+### candidate_review 的 ID 可能已在发布数据中（URL 归一化后同 ID，2026-10-13 实测）
+
+`comp-saikr-{sha256(name|official_url)}` 的 ID 会随候选名称变化而改变，但**同一 URL 的候选在跨轮次间可能撞上已发布条目的 ID**。本次 `comp-saikr-796ab73a3055`（计算机博弈大赛）的候选 ID 与已发布条目相同，若按"新条目追加"处理会产生重复 ID → `validate-competitions.py` 报错。
+
+**正确处理：** 写入前取 `items_by_id.get(new_id)`；若已存在且 `official_url` 相同 → **原地替换该条目**（按 ID 定位索引后覆写），不是追加；若已存在但 URL 不同 → 才是真冲突，停止。去重扫描时同时 `continue` 跳过该 ID 自身，否则 URL 相同会误判为重复。写入前用 `hashlib.sha256(f"{name}|{url}")[:12]` 交叉核对 handoff 的 ID 与采集器算法一致（`collect-saikr.py::stable_id`）。
+
+### python3 -c 单行脚本里 f-string 内嵌双引号会被 bash 吞掉（2026-10-13 实测）
+
+`python3 -c '...  raw=f"{p["name"]}" ...'` 在 bash 下报 `SyntaxError: unexpected character after line continuation character`（转义引号被外层单引号吞掉），把 `"` 改成 `'` 又会触发 `unexpected EOF while looking for matching '`。**解决办法：** 不要嵌套引号——用 `p["name"] + "|" + p["official_url"]` 拼接、`str.format()` 或直接把逻辑写进 `local-notes/` 下的临时脚本文件。同理，多行 `python3 -c` 里出现单引号字符串会在 bash 层被截断。
