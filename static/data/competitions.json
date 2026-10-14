@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-13T22:24:06+08:00",
+  "last_updated": "2026-10-14T21:45:08+08:00",
   "source": "CampBrief",
-  "total": 249,
+  "total": 250,
   "tiers": [
     {
       "key": "all",
@@ -199,8 +199,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-11T21:41:33+08:00",
-        "review_after": "2026-10-14T21:41:33+08:00"
+        "verified_at": "2026-10-14T21:45:08+08:00",
+        "review_after": "2026-10-17T21:44:08+08:00"
       }
     },
     {
@@ -302,8 +302,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-11T21:41:33+08:00",
-        "review_after": "2026-10-14T21:41:33+08:00"
+        "verified_at": "2026-10-14T21:45:08+08:00",
+        "review_after": "2026-10-17T21:44:08+08:00"
       }
     },
     {
@@ -878,8 +878,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-11T21:41:33+08:00",
-        "review_after": "2026-10-14T21:41:33+08:00"
+        "verified_at": "2026-10-14T21:45:08+08:00",
+        "review_after": "2026-10-17T21:44:08+08:00"
       }
     },
     {
@@ -1626,8 +1626,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-11T21:41:33+08:00",
-        "review_after": "2026-10-14T21:41:33+08:00"
+        "verified_at": "2026-10-14T21:45:08+08:00",
+        "review_after": "2026-10-17T21:44:08+08:00"
       }
     },
     {
@@ -1650,8 +1650,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-11T21:41:33+08:00",
-        "review_after": "2026-10-14T21:41:33+08:00"
+        "verified_at": "2026-10-14T21:45:08+08:00",
+        "review_after": "2026-10-17T21:44:08+08:00"
       }
     },
     {
@@ -1674,8 +1674,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-11T21:41:33+08:00",
-        "review_after": "2026-10-14T21:41:33+08:00"
+        "verified_at": "2026-10-14T21:45:08+08:00",
+        "review_after": "2026-10-17T21:44:08+08:00"
       }
     },
     {
@@ -1735,8 +1735,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-11T21:41:33+08:00",
-        "review_after": "2026-10-14T21:41:33+08:00"
+        "verified_at": "2026-10-14T21:45:08+08:00",
+        "review_after": "2026-10-17T21:44:08+08:00"
       }
     },
     {
@@ -1814,8 +1814,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-11T21:41:33+08:00",
-        "review_after": "2026-10-14T21:41:33+08:00"
+        "verified_at": "2026-10-14T21:45:08+08:00",
+        "review_after": "2026-10-17T21:44:08+08:00"
       }
     },
     {
@@ -1853,8 +1853,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-11T21:41:33+08:00",
-        "review_after": "2026-10-14T21:41:33+08:00"
+        "verified_at": "2026-10-14T21:45:08+08:00",
+        "review_after": "2026-10-17T21:44:08+08:00"
       }
     },
     {
@@ -1876,8 +1876,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-11T21:41:33+08:00",
-        "review_after": "2026-10-14T21:41:33+08:00"
+        "verified_at": "2026-10-14T21:45:08+08:00",
+        "review_after": "2026-10-17T21:44:08+08:00"
       }
     },
     {
@@ -1899,8 +1899,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-11T21:41:33+08:00",
-        "review_after": "2026-10-14T21:41:33+08:00"
+        "verified_at": "2026-10-14T21:45:08+08:00",
+        "review_after": "2026-10-17T21:44:08+08:00"
       }
     },
     {
@@ -2997,8 +2997,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-11T21:41:33+08:00",
-        "review_after": "2026-10-14T21:41:33+08:00"
+        "verified_at": "2026-10-14T21:45:08+08:00",
+        "review_after": "2026-10-17T21:44:08+08:00"
       }
     },
     {
@@ -3037,7 +3037,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【倒计时5天】2026年第十二届中西部外语翻译大赛",
+      "name": "【倒计时4天】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3537,12 +3537,14 @@
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "registration_end": "2026-10-29",
-        "verified_at": "2026-08-03T15:43:54+08:00"
+        "registration_end": "2026-10-25",
+        "event_start": "2026-10-25",
+        "event_end": "2026-10-25",
+        "verified_at": "2026-10-14T21:45:08+08:00"
       },
-      "signup": "即日起至2026年10月29日",
-      "schedule": "最近考试场次时间：2026年8月8日",
-      "summary": "语文规范化知识大赛：以宣传《国家通用语言文字法》、提升国民语言文字应用能力为宗旨，面向全社会，设大学生组/教师组/社会组线上答题评奖。大赛截止时间：2026年10月29日，官网 ywgfh.52jingsai.com",
+      "signup": "报名截止：2026年10月25日",
+      "schedule": "特别场次线上考试时间：2026年10月25日",
+      "summary": "赛事围绕国家通用语言文字法规与规范知识开展线上答题；2026年增设面向社会的特别场次。",
       "search": "",
       "official_url": "https://www.52jingsai.com/article-23412-1.html",
       "official_site": "http://ywgfh.52jingsai.com/",
@@ -3551,7 +3553,7 @@
     },
     {
       "id": "comp-saikr-d5eb8e83d073",
-      "name": "【倒计时5天】第九届ETTBL全国商务英语翻译大赛",
+      "name": "【倒计时3天】第九届ETTBL全国商务英语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3826,7 +3828,7 @@
     },
     {
       "id": "comp-saikr-bc779b2db76d",
-      "name": "第五届“BETT杯”全国大学生英语词汇大赛",
+      "name": "【10.17开考】第五届“BETT杯”全国大学生英语词汇大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3843,8 +3845,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-11T21:41:33+08:00",
-        "review_after": "2026-10-14T21:41:33+08:00"
+        "verified_at": "2026-10-14T21:43:13+08:00",
+        "review_after": "2026-10-17T21:42:13+08:00"
       }
     },
     {
@@ -3915,7 +3917,7 @@
     },
     {
       "id": "comp-saikr-3e818dd91712",
-      "name": "【省赛倒计时5天】第九届大学生普通话挑战赛（NPCCS）",
+      "name": "【省赛倒计时4天】第九届大学生普通话挑战赛（NPCCS）",
       "tier": "hobby",
       "fields": [
         "language"
@@ -4228,8 +4230,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-11T21:38:13+08:00",
-        "review_after": "2026-10-14T21:38:13+08:00"
+        "verified_at": "2026-10-14T21:45:08+08:00",
+        "review_after": "2026-10-17T21:44:08+08:00"
       }
     },
     {
@@ -4440,8 +4442,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-11T21:38:13+08:00",
-        "review_after": "2026-10-14T21:38:13+08:00"
+        "verified_at": "2026-10-14T21:45:08+08:00",
+        "review_after": "2026-10-17T21:44:08+08:00"
       },
       "signup": "各赛项报名已开启，截止以组委会通知为准",
       "schedule": "",
@@ -4595,29 +4597,29 @@
     },
     {
       "id": "comp-saikr-6f1a28424edc",
-      "name": "【即将截止！90分以上全部一等奖】计算机能力挑战赛",
+      "name": "【最后一场即将截止！90分以上全部一等奖】计算机能力挑战赛",
       "tier": "hobby",
       "fields": [
         "computer"
       ],
-      "status": "done",
+      "status": "open",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
         "registration_start": "2026-06-10",
         "registration_end": "2026-10-23",
-        "event_start": "2026-09-25",
-        "event_end": "2026-09-27",
-        "verified_at": "2026-09-20T22:20:00+08:00"
+        "event_start": "2026-10-24",
+        "event_end": "2026-10-25",
+        "verified_at": "2026-10-14T21:45:08+08:00"
       },
-      "signup": "2026年6月10日至2026年10月23日",
-      "schedule": "",
-      "summary": "第三届大学生高新技术竞赛·计算机能力挑战赛：C语言/Python/Java/C++/程序设计基础知识/数字图像处理6赛道，线上闭卷60分钟，九月场次考试9月25-27日。",
+      "signup": "报名时间：2026年6月10日至10月23日；十月场考试为10月24日至10月25日",
+      "schedule": "2026年10月24日10:00至10月25日23:00，期间任选1小时答题；预计赛后三天公布获奖名单。",
+      "summary": "中国国际科技促进会物联网工作委员会主办的线上计算机能力挑战赛，设C、C++、Java、Python、程序设计基础知识竞答和数字图像处理六个赛道，需缴纳50元资料费。",
       "search": "",
       "official_url": "https://www.saikr.com/vse/2026WLBcomputilit",
       "official_site": "",
-      "organizer": "全国大学生高新技术竞赛组织委员会",
-      "prestige": 4
+      "organizer": "中国国际科技促进会物联网工作委员会",
+      "prestige": 3
     },
     {
       "id": "comp-52jingsai-171912dc3ec0",
@@ -4739,7 +4741,7 @@
     },
     {
       "id": "comp-saikr-50af6d1652b9",
-      "name": "【最后4天】2026年“中外杯”大学生英语翻译大赛",
+      "name": "【仅剩3天】2026年“中外杯”大学生英语翻译大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -4822,8 +4824,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-11T21:38:13+08:00",
-        "review_after": "2026-10-14T21:38:13+08:00"
+        "verified_at": "2026-10-14T21:45:08+08:00",
+        "review_after": "2026-10-17T21:44:08+08:00"
       },
       "signup": "多场次报名，截止以官网为准",
       "schedule": "",
@@ -5257,6 +5259,29 @@
       "official_site": "http://computergames.caai.cn/",
       "organizer": "中国人工智能学会",
       "prestige": 7
+    },
+    {
+      "id": "comp-52jingsai-67f5c1bdaca0",
+      "name": "【诵读大赛】2026年第八届大学生语言文字能力大赛诵读专项赛报名通知！",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-11-13T12:00:00+08:00",
+        "verified_at": "2026-10-14T21:43:13+08:00"
+      },
+      "signup": "报名截至2026年11月13日中午12点；作品提交截至同日17点",
+      "schedule": "作品提交截止：2026年11月13日17点；评审时间以赛事官网通知为准。",
+      "summary": "以中华优秀传统文化经典文本诵读为主题，参赛者需脱稿朗诵并提交露脸视频及诵读原文；报名费49元。",
+      "search": "大学生诵读 普通话 经典诵读 语言文字",
+      "official_url": "https://www.52jingsai.com/article-23941-1.html",
+      "official_site": "http://www.yywz.org.cn",
+      "organizer": "中国语文报刊协会读写教学分会",
+      "prestige": 4
     }
   ]
 }
