@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-14T21:45:08+08:00",
+  "last_updated": "2026-10-16T22:14:29+08:00",
   "source": "CampBrief",
-  "total": 250,
+  "total": 251,
   "tiers": [
     {
       "key": "all",
@@ -482,17 +482,26 @@
     },
     {
       "id": "official-021",
-      "name": "全国大学生市场调查与分析大赛",
+      "name": "第十七届全国大学生市场调查与分析大赛",
       "tier": "official",
       "fields": [
         "business",
         "science"
       ],
-      "status": "pending",
-      "signup": "每年 10 月启动报名",
-      "schedule": "校赛 3 月，省赛 4 月，国赛 5 月",
-      "summary": "统计与市场研究领域的全国性竞赛，团队完成调查方案设计、数据采集与分析报告。",
-      "search": "市场调查 市调大赛 统计",
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-11-15",
+        "event_start": "2026-11-01",
+        "verified_at": "2026-10-16T22:14:29+08:00",
+        "event_end": "2027-05-30"
+      },
+      "signup": "专科组、本科组报名及缴费截至2026年10月31日；研究生组及在华留学生组可延至2026年11月15日。",
+      "schedule": "知识赛：2026年11月1日至11月20日；校赛于2027年3月22日前完成；企业命题赛于2027年4月10日前完成；省赛按组别于2027年4月12日至30日前完成；全国赛初赛：专科及留学生组4月20日前、研究生组4月30日前、本科组5月14日前结束；全国赛决赛：专科组2027年5月8—9日、研究生及留学生组5月15—16日、本科组5月29—30日。",
+      "summary": "全国性市场调查与分析赛事，覆盖专科、本科、研究生及在华留学生组；自2018年起纳入《全国普通高校学科竞赛目录》。",
+      "search": "第十七届 市调大赛 市场调查 分析 统计",
+      "official_url": "https://www.52jingsai.com/article-24110-1.html",
       "official_site": "http://www.china-cssc.org/list-56-1.html",
       "organizer": "中国商业统计学会",
       "prestige": 6
@@ -621,18 +630,25 @@
     },
     {
       "id": "official-029",
-      "name": "米兰设计周--中国高校设计学科师生优秀作品展",
+      "name": "2027第十一届米兰设计周-中国高校设计学科师生优秀作品展",
       "tier": "official",
       "fields": [
         "design"
       ],
-      "status": "pending",
-      "signup": "每年 10 月启动，次年 3 月截稿",
-      "schedule": "省赛 3–4 月，国赛 5 月",
-      "summary": "设计学科高水平赛事，优秀作品有机会在米兰设计周期间展出。",
-      "search": "米兰设计周 设计 作品展",
-      "official_site": "http://www.dandad.cn/",
-      "organizer": "中国高等教育学会、中国教育国际交流协会",
+      "status": "open",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-10-16T22:14:29+08:00",
+        "review_after": "2026-10-19T22:14:29+08:00"
+      },
+      "signup": "线上报名及作品提交：2026年10月至2027年4月。",
+      "schedule": "省赛评审：2027年4—5月；国赛评审及获奖信息发布：2027年5—6月；系列活动：2027年7—8月；优秀作品计划于2027年4月米兰设计周期间展出。",
+      "summary": "面向全国高校师生的设计作品展，涵盖视觉传达、产品、环境、时尚、数字媒体等方向，连续多年入选中国高等教育学会《全国普通高校学科竞赛排行榜》。",
+      "search": "米兰设计周 2027 设计作品展 中国高校 设计学科",
+      "official_url": "https://www.52jingsai.com/article-24114-1.html",
+      "official_site": "https://www.milan-aap.org.cn/",
+      "organizer": "米兰设计周-中国高校设计学科师生优秀作品展组委会",
       "prestige": 7
     },
     {
@@ -860,7 +876,7 @@
     },
     {
       "id": "official-043",
-      "name": "华为 ICT 大赛",
+      "name": "第十一届华为ICT大赛中国赛",
       "tier": "enterprise",
       "fields": [
         "computer",
@@ -868,19 +884,21 @@
         "engineering"
       ],
       "status": "open",
-      "signup": "每年 9–12 月启动报名",
-      "schedule": "省赛/国家赛次年春季，全球总决赛次年 5 月",
-      "summary": "华为面向全球高校举办的 ICT 技术与应用竞赛，含网络、云、计算、昇腾 AI 等赛道。",
-      "search": "华为 ICT 大赛 网络 云计算 昇腾",
-      "official_site": "https://e.huawei.com/cn/talent/ict-academy/#/ict-contest",
-      "organizer": "华为技术有限公司",
-      "prestige": 7,
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-14T21:45:08+08:00",
-        "review_after": "2026-10-17T21:44:08+08:00"
-      }
+        "registration_start": "2026-08-31",
+        "registration_end": "2026-11-30",
+        "verified_at": "2026-10-16T22:14:29+08:00"
+      },
+      "signup": "挑战赛、实践赛报名至2026年10月31日；精英赛、教学赛、创新赛、编程赛报名至2026年11月30日。",
+      "schedule": "挑战赛初赛：2027年2月、中国总决赛：4月；精英赛及教学赛初赛：2026年12月、复赛：2027年1月；实践赛省赛：2026年11—12月；创新赛及编程赛初赛：2026年12月；各赛道中国总决赛于2027年3—4月举行。",
+      "summary": "华为面向全球高校举办的年度ICT赛事，设挑战、精英、教学、实践、创新和编程等赛道；2026年第十一届中国赛不收取参赛费用。",
+      "search": "华为 ICT 第十一届 网络 云 基础软件 编程 人工智能",
+      "official_url": "https://www.52jingsai.com/article-24115-1.html",
+      "official_site": "https://e.huawei.com/cn/talent/ict-academy/#/ict-contest?compId=85132018",
+      "organizer": "华为技术有限公司",
+      "prestige": 7
     },
     {
       "id": "official-044",
@@ -1384,21 +1402,30 @@
     },
     {
       "id": "official-073",
-      "name": "全国大学生数字媒体科技作品及创意竞赛",
+      "name": "2026年第十四届全国大学生数字媒体科技作品及创意竞赛",
       "tier": "official",
       "fields": [
         "design",
         "computer",
         "ai"
       ],
-      "status": "pending",
-      "signup": "每年 4–7 月报名",
-      "schedule": "省赛 8 月，国赛 9 月",
-      "summary": "数字媒体、交互设计、虚拟现实、人工智能生成内容等方向的创意竞赛。",
-      "search": "数字媒体科技 创意竞赛",
-      "official_site": "http://mit.caai.cn/",
-      "organizer": "中国人工智能学会",
-      "prestige": 7
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-10-23",
+        "event_start": "2026-10-24",
+        "event_end": "2026-11-29",
+        "verified_at": "2026-10-16T22:14:29+08:00"
+      },
+      "signup": "报名及作品提交截至2026年10月23日23:59:59。",
+      "schedule": "校级初赛：2026年10月24—28日；赛区选拔：11月2—15日；总决赛入围名单：11月19—22日；全国总决赛：11月27—29日；颁奖典礼及作品展暂定12月4—6日。",
+      "summary": "面向全国高校学生的数字媒体科技与创意实践赛事，覆盖人工智能、虚拟现实、数字艺术、数据可视化等方向；自2023年起纳入《全国普通高校大学生竞赛分析报告》竞赛目录。",
+      "search": "数字媒体科技作品 创意竞赛 2026 人工智能 虚拟现实",
+      "official_url": "https://www.52jingsai.com/article-24109-1.html",
+      "official_site": "https://www.cmit.cn/",
+      "organizer": "全国大学生数字媒体科技作品及创意竞赛组委会",
+      "prestige": 6
     },
     {
       "id": "official-074",
@@ -2330,20 +2357,27 @@
     },
     {
       "id": "comp-saikr-18e1497ac3fd",
-      "name": "2026年第二届工业互联网技术与应用挑战赛——工业互联网专项赛道",
+      "name": "【即将截止】2026年第二届工业互联网技术与应用挑战赛——工业互联网专项赛道",
       "tier": "hobby",
       "fields": [
-        "other"
+        "computer",
+        "engineering"
       ],
-      "status": "pending",
-      "signup": "",
-      "schedule": "",
-      "summary": "来源：赛氪。浏览 1.7万，关注 494",
+      "status": "open",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-10-16T22:14:29+08:00",
+        "review_after": "2026-10-19T22:14:29+08:00"
+      },
+      "signup": "第三场报名：即日起至2026年10月23日；赛事共四场，后续场次日期以组委会公告为准。",
+      "schedule": "第三场线上个人客观题考试：2026年10月24日10:00至10月25日23:00，期间任选一小时答题；页面称全系列共四场。",
+      "summary": "中国互联网协会智慧教育工作委员会主办、工业互联网产业联盟承办的工业互联网专项赛道，采用线上个人客观题考试；页面注明报名费50元。",
       "search": "",
       "official_url": "https://www.saikr.com/vse/2026Industrial",
       "official_site": "",
       "organizer": "工业互联网技术与应用挑战赛组委会",
-      "prestige": 4
+      "prestige": 3
     },
     {
       "id": "comp-saikr-da4f00946e30",
@@ -2638,7 +2672,7 @@
     },
     {
       "id": "comp-saikr-a9fc0ce98006",
-      "name": "【年度最后一场】2026年大学生统计科学与算法编程挑战赛——算法赛道",
+      "name": "【年度最后一场即将截止】2026年大学生统计科学与算法编程挑战赛——算法赛道",
       "tier": "hobby",
       "fields": [
         "computer",
@@ -3037,7 +3071,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【倒计时4天】2026年第十二届中西部外语翻译大赛",
+      "name": "【明日开考 | 为期两天】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3553,7 +3587,7 @@
     },
     {
       "id": "comp-saikr-d5eb8e83d073",
-      "name": "【倒计时3天】第九届ETTBL全国商务英语翻译大赛",
+      "name": "【倒计时1天】第九届ETTBL全国商务英语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3677,7 +3711,7 @@
     },
     {
       "id": "comp-saikr-5ff1ac5834d5",
-      "name": "「高校力荐」第四届\"一带一路\"大学生英语词汇能力挑战",
+      "name": "「10.17本周六考试」第四届\"一带一路\"大学生英语词汇能力挑战",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3917,7 +3951,7 @@
     },
     {
       "id": "comp-saikr-3e818dd91712",
-      "name": "【省赛倒计时4天】第九届大学生普通话挑战赛（NPCCS）",
+      "name": "【省赛倒计时2天】第九届大学生普通话挑战赛（NPCCS）",
       "tier": "hobby",
       "fields": [
         "language"
@@ -4343,7 +4377,7 @@
       "fields": [
         "science"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -4741,7 +4775,7 @@
     },
     {
       "id": "comp-saikr-50af6d1652b9",
-      "name": "【仅剩3天】2026年“中外杯”大学生英语翻译大赛",
+      "name": "【本周六开考】2026年“中外杯”大学生英语翻译大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -5282,6 +5316,33 @@
       "official_site": "http://www.yywz.org.cn",
       "organizer": "中国语文报刊协会读写教学分会",
       "prestige": 4
+    },
+    {
+      "id": "comp-saikr-64090b3f1f81",
+      "name": "2026年“AI生成世界”AI图像图形技术创新大赛——AI机器人素养赛道",
+      "tier": "official",
+      "fields": [
+        "ai",
+        "robot"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-07-01",
+        "registration_end": "2026-10-17",
+        "event_start": "2026-10-17",
+        "event_end": "2026-10-18",
+        "verified_at": "2026-10-16T22:14:29+08:00"
+      },
+      "signup": "2026年7月1日00:00至2026年10月17日23:59。",
+      "schedule": "个人线上客观题考试：2026年10月17日10:00至10月18日23:00；考察机器人相关基础知识。",
+      "summary": "中国图像图形学会主办的全国高校机器人基础知识个人赛，采用线上客观题形式；页面注明参赛费50元。",
+      "search": "AI生成世界 AI图像图形技术创新大赛 AI机器人素养赛道 中国图像图形学会",
+      "official_url": "https://www.saikr.com/vse/2026CSoIaGAI03",
+      "official_site": "",
+      "organizer": "中国图像图形学会",
+      "prestige": 6
     }
   ]
 }

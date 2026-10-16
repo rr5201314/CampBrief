@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "竞赛含金量参考表——主办方/竞赛名 → tier + prestige。脚本批量对照用，未命中的条目由 agent 手动核对后补全。",
-    "version": "2026-10-13",
+    "version": "2026-10-16",
     "prestige_scale": "1-10，10最高。官方顶级赛事8-10，名企赛事5-7，兴趣练手1-4"
   },
   "organizers": {
@@ -215,6 +215,16 @@
     "中国图学学会": {
       "tier": "official",
       "prestige": 6
+    },
+    "中国图像图形学会": {
+      "tier": "official",
+      "prestige": 6,
+      "note": "中国科协主管的全国性学会；主办AI机器人素养赛道"
+    },
+    "工业互联网技术与应用挑战赛组委会": {
+      "tier": "hobby",
+      "prestige": 3,
+      "note": "收费线上客观题挑战赛，按兴趣练手赛事归类"
     },
     "中国教育国际交流协会": {
       "tier": "official",
