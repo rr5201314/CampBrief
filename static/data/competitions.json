@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-16T22:14:29+08:00",
+  "last_updated": "2026-10-17T21:59:16+08:00",
   "source": "CampBrief",
-  "total": 251,
+  "total": 252,
   "tiers": [
     {
       "key": "all",
@@ -482,7 +482,7 @@
     },
     {
       "id": "official-021",
-      "name": "第十七届全国大学生市场调查与分析大赛",
+      "name": "【榜单竞赛】第十七届全国大学生市场调查与分析大赛",
       "tier": "official",
       "fields": [
         "business",
@@ -630,7 +630,7 @@
     },
     {
       "id": "official-029",
-      "name": "2027第十一届米兰设计周-中国高校设计学科师生优秀作品展",
+      "name": "【榜单竞赛】2027第十一届米兰设计周-中国高校设计学科师生优秀作品展",
       "tier": "official",
       "fields": [
         "design"
@@ -876,7 +876,7 @@
     },
     {
       "id": "official-043",
-      "name": "第十一届华为ICT大赛中国赛",
+      "name": "【榜单竞赛】第十一届华为ICT大赛中国赛",
       "tier": "enterprise",
       "fields": [
         "computer",
@@ -2678,7 +2678,7 @@
         "computer",
         "science"
       ],
-      "status": "open",
+      "status": "ongoing",
       "signup": "报名时间：即日起至2026年10月16日",
       "schedule": "第二场测试：2026年10月17日13:00–18:00；正式考试：2026年10月18日13:00–18:00。",
       "summary": "山东省应用统计学会主办，面向本科、高职及研究生的个人在线算法竞赛，采用ACM赛制，设研究生、大学A组、大学B组及高职高专组；每人收取50元服务费。",
@@ -3071,7 +3071,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【明日开考 | 为期两天】2026年第十二届中西部外语翻译大赛",
+      "name": "【今日开考 | 为期两天】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3587,7 +3587,7 @@
     },
     {
       "id": "comp-saikr-d5eb8e83d073",
-      "name": "【倒计时1天】第九届ETTBL全国商务英语翻译大赛",
+      "name": "【考试中】第九届ETTBL全国商务英语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3596,13 +3596,13 @@
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-04T15:41:30+08:00",
         "registration_start": "2026-06-18",
-        "registration_end": "2026-10-18",
-        "event_start": "2026-08-01"
+        "registration_end": "2026-11-22",
+        "event_start": "2026-08-01",
+        "verified_at": "2026-10-17T21:58:27+08:00"
       },
-      "signup": "笔译初赛即日起至2026年10月17日，口译初赛即日起至2026年10月18日",
-      "schedule": "初赛：8月-10月分场次线上考试（笔译/口译），决赛预计11月初",
+      "signup": "赛氪详情页顶部显示报名窗口至2026年11月22日；正文分赛道报名节点仍标注笔译至2026年10月17日、口译至2026年10月18日。",
+      "schedule": "笔译初赛：2026年8月1日、9月19日、10月17日、11月21日；口译初赛：2026年8月2日、9月20日、10月18日、11月22日；决赛预计2026年12月初。",
       "summary": "中国商业联合会主办，设笔译、口译两赛道及研究生/英语专业/非英语专业三组别；初赛获奖率60%，决赛前三名有现金奖励，颁发电子+纸质四章证书。",
       "search": "ETTBL 商务英语翻译 中国商业联合会",
       "official_url": "https://www.saikr.com/vse/ETTBL-SW",
@@ -3811,7 +3811,7 @@
     },
     {
       "id": "comp-saikr-9867f29b35c9",
-      "name": "第九届ETTBL杯全国英语词汇大赛",
+      "name": "【23年品牌沉淀】第九届ETTBL杯全国英语词汇大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3951,22 +3951,20 @@
     },
     {
       "id": "comp-saikr-3e818dd91712",
-      "name": "【省赛倒计时2天】第九届大学生普通话挑战赛（NPCCS）",
+      "name": "【省赛倒计时1天】第九届大学生普通话挑战赛（NPCCS）",
       "tier": "hobby",
       "fields": [
         "language"
       ],
       "status": "open",
       "lifecycle": {
-        "mode": "scheduled",
+        "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "registration_start": "2026-08-11",
-        "registration_end": "2026-10-25",
-        "event_start": "2026-09-20",
-        "verified_at": "2026-09-20T22:20:00+08:00"
+        "verified_at": "2026-10-17T21:58:27+08:00",
+        "review_after": "2026-10-20T21:57:27+08:00"
       },
-      "signup": "2026年8月11日至2026年10月25日",
-      "schedule": "",
+      "signup": "页面当前显示报名时间：2026年8月11日至10月18日；后续场次报名窗口以赛事页面公告为准。",
+      "schedule": "初赛场次：2026年9月20日、10月18日（加场）、10月25日、11月22日、12月20日；决赛场次：9月27日、10月31日、11月29日、12月27日。",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/NPCCS2026X",
@@ -4775,8 +4773,8 @@
     },
     {
       "id": "comp-saikr-50af6d1652b9",
-      "name": "【本周六开考】2026年“中外杯”大学生英语翻译大赛",
-      "tier": "hobby",
+      "name": "【今日开考】2026年“中外杯”大学生英语翻译大赛",
+      "tier": "official",
       "fields": [
         "language"
       ],
@@ -4785,17 +4783,19 @@
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
         "registration_end": "2026-12-19",
-        "verified_at": "2026-09-21T22:03:00+08:00",
-        "registration_start": "2026-08-28"
+        "verified_at": "2026-10-17T21:58:27+08:00",
+        "registration_start": "2026-08-28",
+        "event_start": "2026-10-17",
+        "event_end": "2026-12-19"
       },
       "signup": "即日起-2026年12月19日（共三场考试：10.17、11.21、12.19）",
-      "schedule": "",
+      "schedule": "考试场次：2026年10月17日、11月21日、12月19日，任选一场参加；各场获奖预计于当月下旬公布。",
       "summary": "2026年中外杯大学生英语翻译大赛，共设三场考试任选参加，报名截止2026年12月19日。",
       "search": "",
       "official_url": "https://www.saikr.com/vse/ZWB2026",
       "official_site": "",
-      "organizer": "“中外杯”组委会",
-      "prestige": 4
+      "organizer": "中国外文局亚太传播中心",
+      "prestige": 7
     },
     {
       "id": "comp-saikr-72d775b9ef6c",
@@ -5343,6 +5343,31 @@
       "official_site": "",
       "organizer": "中国图像图形学会",
       "prestige": 6
+    },
+    {
+      "id": "comp-saikr-00aadca1dcd0",
+      "name": "【免费参赛】2026年全国大学生AIGC·新媒体创作大赛",
+      "tier": "hobby",
+      "fields": [
+        "ai",
+        "design"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-07-28",
+        "registration_end": "2026-12-15",
+        "verified_at": "2026-10-17T21:39:28+08:00"
+      },
+      "signup": "即日起至2026年12月15日",
+      "schedule": "参赛者可随时创作并提交作品，赛事约每半个月评阅一次；第二批电子版获奖证书预计于2026年12月下旬发放。",
+      "summary": "以“AI眼里的中国美”为主题，设置AI生成图片和AI生成视频两个赛道；参赛者须使用指定都奔平台创作并提交作品及作品ID。赛事由北京都奔信息科技有限公司与AIGC·新媒体创作大赛组委会主办，报名不收费。",
+      "search": "AIGC 新媒体 AI生成图片 AI生成视频 中国美 都奔",
+      "official_url": "https://www.saikr.com/vse/aigc/xmtcz",
+      "official_site": "",
+      "organizer": "AIGC·新媒体创作大赛组委会",
+      "prestige": 4
     }
   ]
 }
