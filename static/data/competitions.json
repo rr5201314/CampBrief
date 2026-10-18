@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-17T21:59:16+08:00",
+  "last_updated": "2026-10-18T22:09:20+08:00",
   "source": "CampBrief",
-  "total": 252,
+  "total": 253,
   "tiers": [
     {
       "key": "all",
@@ -199,8 +199,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-14T21:45:08+08:00",
-        "review_after": "2026-10-17T21:44:08+08:00"
+        "verified_at": "2026-10-18T22:06:14+08:00",
+        "review_after": "2026-10-21T22:06:14+08:00"
       }
     },
     {
@@ -302,8 +302,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-14T21:45:08+08:00",
-        "review_after": "2026-10-17T21:44:08+08:00"
+        "verified_at": "2026-10-18T22:06:14+08:00",
+        "review_after": "2026-10-21T22:06:14+08:00"
       }
     },
     {
@@ -1653,8 +1653,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-14T21:45:08+08:00",
-        "review_after": "2026-10-17T21:44:08+08:00"
+        "verified_at": "2026-10-18T22:06:14+08:00",
+        "review_after": "2026-10-21T22:06:14+08:00"
       }
     },
     {
@@ -1677,8 +1677,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-14T21:45:08+08:00",
-        "review_after": "2026-10-17T21:44:08+08:00"
+        "verified_at": "2026-10-18T22:06:14+08:00",
+        "review_after": "2026-10-21T22:06:14+08:00"
       }
     },
     {
@@ -1701,8 +1701,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-14T21:45:08+08:00",
-        "review_after": "2026-10-17T21:44:08+08:00"
+        "verified_at": "2026-10-18T22:06:14+08:00",
+        "review_after": "2026-10-21T22:06:14+08:00"
       }
     },
     {
@@ -1762,8 +1762,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-14T21:45:08+08:00",
-        "review_after": "2026-10-17T21:44:08+08:00"
+        "verified_at": "2026-10-18T22:06:14+08:00",
+        "review_after": "2026-10-21T22:06:14+08:00"
       }
     },
     {
@@ -1841,8 +1841,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-14T21:45:08+08:00",
-        "review_after": "2026-10-17T21:44:08+08:00"
+        "verified_at": "2026-10-18T22:06:14+08:00",
+        "review_after": "2026-10-21T22:06:14+08:00"
       }
     },
     {
@@ -1880,8 +1880,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-14T21:45:08+08:00",
-        "review_after": "2026-10-17T21:44:08+08:00"
+        "verified_at": "2026-10-18T22:06:14+08:00",
+        "review_after": "2026-10-21T22:06:14+08:00"
       }
     },
     {
@@ -1903,8 +1903,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-14T21:45:08+08:00",
-        "review_after": "2026-10-17T21:44:08+08:00"
+        "verified_at": "2026-10-18T22:06:14+08:00",
+        "review_after": "2026-10-21T22:06:14+08:00"
       }
     },
     {
@@ -1926,8 +1926,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-14T21:45:08+08:00",
-        "review_after": "2026-10-17T21:44:08+08:00"
+        "verified_at": "2026-10-18T22:06:14+08:00",
+        "review_after": "2026-10-21T22:06:14+08:00"
       }
     },
     {
@@ -3031,8 +3031,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-14T21:45:08+08:00",
-        "review_after": "2026-10-17T21:44:08+08:00"
+        "verified_at": "2026-10-18T22:06:14+08:00",
+        "review_after": "2026-10-21T22:06:14+08:00"
       }
     },
     {
@@ -3071,7 +3071,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【今日开考 | 为期两天】2026年第十二届中西部外语翻译大赛",
+      "name": "【报名仅剩3小时】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3562,7 +3562,7 @@
     },
     {
       "id": "comp-52jingsai-8f63fddc6364",
-      "name": "2026年语文规范化知识大赛报名通知！",
+      "name": "【10月24报名截止，最后一次考试】2026年语文规范化知识大赛报名通知！",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3587,7 +3587,7 @@
     },
     {
       "id": "comp-saikr-d5eb8e83d073",
-      "name": "【考试中】第九届ETTBL全国商务英语翻译大赛",
+      "name": "第九届ETTBL全国商务英语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3784,7 +3784,7 @@
     },
     {
       "id": "comp-saikr-9c66a33c52e2",
-      "name": "2026年第六届《英语世界》杯全国大学生英语听力大赛",
+      "name": "【仅剩一场】2026年第六届《英语世界》杯全国大学生英语听力大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3862,7 +3862,7 @@
     },
     {
       "id": "comp-saikr-bc779b2db76d",
-      "name": "【10.17开考】第五届“BETT杯”全国大学生英语词汇大赛",
+      "name": "第五届“BETT杯”全国大学生英语词汇大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3879,8 +3879,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-14T21:43:13+08:00",
-        "review_after": "2026-10-17T21:42:13+08:00"
+        "verified_at": "2026-10-18T22:06:14+08:00",
+        "review_after": "2026-10-21T22:06:14+08:00"
       }
     },
     {
@@ -3951,7 +3951,7 @@
     },
     {
       "id": "comp-saikr-3e818dd91712",
-      "name": "【省赛倒计时1天】第九届大学生普通话挑战赛（NPCCS）",
+      "name": "【省赛报名】第九届大学生普通话挑战赛（NPCCS）",
       "tier": "hobby",
       "fields": [
         "language"
@@ -4250,7 +4250,7 @@
         "robot",
         "computer"
       ],
-      "prestige": 4,
+      "prestige": 3,
       "status": "open",
       "signup": "2026.04.20-2026.11.14，以官网为准",
       "schedule": "决赛 2026年7月2日-4日（上海，已结束）",
@@ -4262,8 +4262,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-14T21:45:08+08:00",
-        "review_after": "2026-10-17T21:44:08+08:00"
+        "verified_at": "2026-10-18T22:06:14+08:00",
+        "review_after": "2026-10-21T22:06:14+08:00"
       }
     },
     {
@@ -4474,8 +4474,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-14T21:45:08+08:00",
-        "review_after": "2026-10-17T21:44:08+08:00"
+        "verified_at": "2026-10-18T22:06:14+08:00",
+        "review_after": "2026-10-21T22:06:14+08:00"
       },
       "signup": "各赛项报名已开启，截止以组委会通知为准",
       "schedule": "",
@@ -4773,7 +4773,7 @@
     },
     {
       "id": "comp-saikr-50af6d1652b9",
-      "name": "【今日开考】2026年“中外杯”大学生英语翻译大赛",
+      "name": "2026年“中外杯”大学生英语翻译大赛",
       "tier": "official",
       "fields": [
         "language"
@@ -4858,8 +4858,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-14T21:45:08+08:00",
-        "review_after": "2026-10-17T21:44:08+08:00"
+        "verified_at": "2026-10-18T22:06:14+08:00",
+        "review_after": "2026-10-21T22:06:14+08:00"
       },
       "signup": "多场次报名，截止以官网为准",
       "schedule": "",
@@ -5325,7 +5325,7 @@
         "ai",
         "robot"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5368,6 +5368,30 @@
       "official_site": "",
       "organizer": "AIGC·新媒体创作大赛组委会",
       "prestige": 4
+    },
+    {
+      "id": "comp-saikr-affd78e8cf3f",
+      "name": "2026全国大学生机器人与算法大赛-知识竞答赛道",
+      "tier": "hobby",
+      "fields": [
+        "robot",
+        "computer"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-10-18T22:08:23+08:00",
+        "review_after": "2026-10-21T22:08:23+08:00"
+      },
+      "signup": "页面头部列示报名窗口为2026年9月21日至10月31日；具体可报场次以赛事页面公告为准。",
+      "schedule": "页面所示场次：2026年10月18日09:00至22:00；页面正文另列后续场次信息，具体安排以赛事公告为准。",
+      "summary": "由中国机电一体化技术应用协会主办，设置科普知识赛道与仿真科普赛道，面向高校学生及相关社会人士；知识赛道采用线上答题，参赛费为50元。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/59954",
+      "official_site": "https://www.cameta.org.cn/",
+      "organizer": "中国机电一体化技术应用协会",
+      "prestige": 3
     }
   ]
 }
