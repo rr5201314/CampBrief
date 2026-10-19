@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-18T22:09:20+08:00",
+  "last_updated": "2026-10-19T14:15:14+08:00",
   "source": "CampBrief",
-  "total": 253,
+  "total": 254,
   "tiers": [
     {
       "key": "all",
@@ -2436,7 +2436,7 @@
         "language",
         "business"
       ],
-      "status": "ongoing",
+      "status": "done",
       "signup": "即日起至2026年9月19日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
@@ -2678,7 +2678,7 @@
         "computer",
         "science"
       ],
-      "status": "ongoing",
+      "status": "done",
       "signup": "报名时间：即日起至2026年10月16日",
       "schedule": "第二场测试：2026年10月17日13:00–18:00；正式考试：2026年10月18日13:00–18:00。",
       "summary": "山东省应用统计学会主办，面向本科、高职及研究生的个人在线算法竞赛，采用ACM赛制，设研究生、大学A组、大学B组及高职高专组；每人收取50元服务费。",
@@ -3071,14 +3071,14 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【报名仅剩3小时】2026年第十二届中西部外语翻译大赛",
+      "name": "【最后一场】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
       ],
       "status": "open",
       "signup": "即日起至2026年12月13日",
-      "schedule": "初赛两场次，决赛两场次，详见赛氪页面",
+      "schedule": "初赛两场次、决赛两场次；本届比赛时间 2026年12月12日至13日（详见赛氪页面）",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/2026/ZXB",
@@ -3088,9 +3088,11 @@
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "registration_start": "2026-07-01",
+        "registration_start": "2026-07-14",
         "registration_end": "2026-12-13",
-        "verified_at": "2026-07-29T21:36:38+08:00"
+        "verified_at": "2026-07-29T21:36:38+08:00",
+        "event_start": "2026-12-12",
+        "event_end": "2026-12-13"
       }
     },
     {
@@ -3259,7 +3261,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -3612,12 +3614,12 @@
     },
     {
       "id": "comp-saikr-c137aa06257d",
-      "name": "2026华智·高校大学生人工智能大赛",
+      "name": "【最后一场】2026华智·高校大学生人工智能大赛",
       "tier": "hobby",
       "fields": [
         "ai"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -3711,7 +3713,7 @@
     },
     {
       "id": "comp-saikr-5ff1ac5834d5",
-      "name": "「10.17本周六考试」第四届\"一带一路\"大学生英语词汇能力挑战",
+      "name": "「高校力荐」第四届\"一带一路\"大学生英语词汇能力挑战",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3784,7 +3786,7 @@
     },
     {
       "id": "comp-saikr-9c66a33c52e2",
-      "name": "【仅剩一场】2026年第六届《英语世界》杯全国大学生英语听力大赛",
+      "name": "【周日开考·最后一场】2026年第六届《英语世界》杯全国大学生英语听力大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -5325,7 +5327,7 @@
         "ai",
         "robot"
       ],
-      "status": "ongoing",
+      "status": "done",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5391,6 +5393,31 @@
       "official_url": "https://www.saikr.com/vse/59954",
       "official_site": "https://www.cameta.org.cn/",
       "organizer": "中国机电一体化技术应用协会",
+      "prestige": 3
+    },
+    {
+      "id": "comp-52jingsai-7ef00aa31d41",
+      "name": "【10月24报名截止，翻译竞赛】2026年创研杯大学生英语翻译竞赛（秋季赛）报名通知！",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-12-05",
+        "event_start": "2026-10-14",
+        "event_end": "2026-12-05",
+        "verified_at": "2026-10-19T14:15:14+08:00"
+      },
+      "signup": "即日起至2026年12月5日中午12点",
+      "schedule": "第一场：10月14日发布题目，10月24日17点截止上传；第二场：11月25日发布题目，12月5日17点截止上传",
+      "summary": "华夏文化促进会素质教育委员会主办、黑龙江省创新教育研究院与我爱竞赛网承办；分英译汉、汉译英两组，设两场比赛，可任选一场或两场均参加、分组评奖。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23523-1.html",
+      "official_site": "https://cycupzt.52jingsai.com/",
+      "organizer": "华夏文化促进会素质教育委员会",
       "prestige": 3
     }
   ]
