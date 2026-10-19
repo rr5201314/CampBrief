@@ -1,8 +1,22 @@
 {
-  "last_updated": "2026-10-19T08:48:40+08:00",
+  "last_updated": "2026-10-19T13:41:29+08:00",
   "source": "CampBrief Auto",
-  "total": 768,
+  "total": 772,
   "items": [
+    {
+      "id": "news-205fb950a7170140",
+      "title": "Anthropic 设公益基金，先投 5% 股份",
+      "url": "https://daily.juya.uk/issues/2026-10-19/",
+      "date": "2026-10-19",
+      "published": "2026-10-19T00:54:00+00:00",
+      "summary": "Anthropic 设立全资公益实体 Public Benefit Fund，股东批准后先投入 5% 股份；估值每较基准增长 50%，董事会可再加 2%。",
+      "detail": "基金以全资 LLC 形式设立，所持股权不用于美国或海外的游说与政治捐赠。Anthropic 称，连同联合创始人承诺捐出的 80% 股权和约半数员工参与的配比计划，约 20% 的股份将用于公益。用途可能包括向传统非营利组织大额捐赠、向特定人群直接分配，以及应对 AI 对劳动力市场的冲击。基金治理结构、估值里程碑与追加条件将在未来几个月公布。",
+      "image": "",
+      "priority": 3,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "juya AI 日报"
+    },
     {
       "id": "news-0e9a74cbb05bd574",
       "title": "EQT 以 93 亿澳元收购澳大利亚废弃物管理公司 Cleanaway",
@@ -16,6 +30,33 @@
       "category": "tech",
       "subcategory": "industry",
       "source": "36氪"
+    },
+    {
+      "id": "news-5b7d87fa211b9a1c",
+      "title": "Hugging Face 联创估算：开源模型训练算力累计近 10 亿美元",
+      "url": "https://daily.juya.uk/issues/2026-10-19/",
+      "date": "2026-10-19",
+      "published": "2026-10-19T00:54:00+00:00",
+      "summary": "Hugging Face 联创 Thomas Wolf 估算，约 35 家机构开源的 72 个模型家族，训练算力按现价折算累计约 9.5 亿美元。",
+      "detail": "统计覆盖 Meta、NVIDIA、阿里巴巴、DeepSeek、Moonshot、Mistral 等机构，约一半依据机构自行公布的算力数据，其余为有依据的推算。Wolf 称该数字是下限，未计入约 90 万个社区微调、失败的训练运行、研发团队开支与数据集成本。他把开源模型比作 Wikipedia：公共资源由 GPU 小时和数据写成。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-0a0c280ea41de376",
+      "title": "报道称 Anthropic 与律所商讨 AI 谈判规范",
+      "url": "https://daily.juya.uk/issues/2026-10-19/",
+      "date": "2026-10-19",
+      "published": "2026-10-19T00:54:00+00:00",
+      "summary": "据《金融时报》报道，Anthropic 正与律所等机构磋商，为替用户砍价、处理纠纷或谈薪资的 AI Agent 制定谈判规范，兼顾委托方利益与公平结果。",
+      "detail": "报道称，Anthropic 想了解律师如何在代表客户利益的同时兼顾公平结果，也在权衡 Agent 谈判时应在多大程度上寻求人类确认，以及面对其他 AI 对手时应保持多高警惕。公司还讨论过让用户出具签名文件，确认委托事项和需要遵守的全部规则。相关内容仍在研究阶段，尚无正式规范或时间表。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
     },
     {
       "id": "news-453c3027b793da95",
@@ -165,6 +206,19 @@
       "priority": 1,
       "category": "fun",
       "source": "少数派"
+    },
+    {
+      "id": "news-021073fb481637b8",
+      "title": "DeepSeek 搜索调用 11 月 1 日起在 Harness、Claude Code、Codex 计费",
+      "url": "https://daily.juya.uk/issues/2026-10-18/",
+      "date": "2026-10-18",
+      "published": "2026-10-18T01:02:10+00:00",
+      "summary": "DeepSeek 说明，经 DeepSeek Harness、Claude Code、Codex 触发的搜索调用目前不计费，将于 11 月 1 日起按次收费。",
+      "detail": "DeepSeek 10 月 17 日开放 Search 与 Fetch 接口，均为每千次成功请求 5 元，失败、无结果或超时不计费。官方当时称经其接入的 Claude Code、Codex 搜索前两周免费，计费时间另行通知；本次说明明确 11 月 1 日起算，范围覆盖 Harness、Claude Code 与 Codex。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
     },
     {
       "id": "news-90adfdf3136db815",
