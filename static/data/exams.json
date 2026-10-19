@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-18T21:09:26.373416+08:00",
+  "last_updated": "2026-10-19T14:06:02.883538+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -673,7 +673,7 @@
       "id": "first-level-cost-engineer-2026",
       "name": "2026年一级造价工程师职业资格考试",
       "category": "engineering",
-      "status": "closed",
+      "status": "done",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -873,7 +873,7 @@
       "id": "baoyan-2026",
       "name": "2027年推荐免试研究生 (保研)",
       "category": "postgrad",
-      "status": "open",
+      "status": "closed",
       "fee": "无报名费",
       "schedule": "2026年9-10月（推免服务系统）",
       "summary": "推荐优秀本科毕业生免试攻读研究生，需获得本科院校推免资格，通过目标院校复试后录取。",
