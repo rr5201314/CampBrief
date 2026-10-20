@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-19T14:15:14+08:00",
+  "last_updated": "2026-10-20T23:58:49+08:00",
   "source": "CampBrief",
   "total": 254,
   "tiers": [
@@ -639,8 +639,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-16T22:14:29+08:00",
-        "review_after": "2026-10-19T22:14:29+08:00"
+        "verified_at": "2026-10-20T23:58:32+08:00",
+        "review_after": "2026-10-23T23:58:32+08:00"
       },
       "signup": "线上报名及作品提交：2026年10月至2027年4月。",
       "schedule": "省赛评审：2027年4—5月；国赛评审及获奖信息发布：2027年5—6月；系列活动：2027年7—8月；优秀作品计划于2027年4月米兰设计周期间展出。",
@@ -2357,7 +2357,7 @@
     },
     {
       "id": "comp-saikr-18e1497ac3fd",
-      "name": "【即将截止】2026年第二届工业互联网技术与应用挑战赛——工业互联网专项赛道",
+      "name": "【本周考试！答题90分以上直领一等奖】2026年第二届工业互联网技术与应用挑战赛——工业互联网专项赛道",
       "tier": "hobby",
       "fields": [
         "computer",
@@ -2365,10 +2365,12 @@
       ],
       "status": "open",
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-16T22:14:29+08:00",
-        "review_after": "2026-10-19T22:14:29+08:00"
+        "verified_at": "2026-10-20T23:58:32+08:00",
+        "registration_start": "2026-02-25",
+        "registration_end": "2026-10-23",
+        "event_start": "2026-10-24"
       },
       "signup": "第三场报名：即日起至2026年10月23日；赛事共四场，后续场次日期以组委会公告为准。",
       "schedule": "第三场线上个人客观题考试：2026年10月24日10:00至10月25日23:00，期间任选一小时答题；页面称全系列共四场。",
@@ -3467,14 +3469,14 @@
     },
     {
       "id": "comp-saikr-699c33f46408",
-      "name": "第五届“中外传播杯”大学生英语语法大赛",
+      "name": "【倒计时5天】第五届“中外传播杯”大学生英语语法大赛",
       "tier": "official",
       "fields": [
         "language"
       ],
-      "status": "done",
-      "signup": "2026年7月7日至9月27日",
-      "schedule": "",
+      "status": "open",
+      "signup": "2026年7月07日09:00至2026年10月25日23:00",
+      "schedule": "英语语法大赛共设五场比赛；第四场考试为2026年10月25日09:00至23:59，考场开放至10月26日03:00，任选连续60分钟作答；其余场次以页面公告为准。",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/2026YF",
@@ -3484,11 +3486,10 @@
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-10-20T23:58:32+08:00",
         "registration_start": "2026-07-07",
-        "registration_end": "2026-09-27",
-        "event_start": "2026-09-27",
-        "event_end": "2026-09-27",
-        "verified_at": "2026-09-23T21:39:34+08:00"
+        "registration_end": "2026-10-25",
+        "event_start": "2026-10-25"
       }
     },
     {
@@ -3736,14 +3737,14 @@
     },
     {
       "id": "comp-saikr-554ce57a889c",
-      "name": "2026年第二届“中外传播杯”大学生中外历史竞答大赛",
+      "name": "【倒计时4天】2026年第二届“中外传播杯”大学生中外历史竞答大赛",
       "tier": "official",
       "fields": [
         "other"
       ],
       "status": "open",
-      "signup": "即日起至2026年11月22日",
-      "schedule": "",
+      "signup": "报名时间：2026年7月15日至10月24日23:59。",
+      "schedule": "第三场考试：2026年10月24日09:00至22:00；后续场次以赛事页面公告为准。",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/2026LSJD",
@@ -3753,11 +3754,10 @@
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-10-20T23:58:32+08:00",
         "registration_start": "2026-07-15",
-        "registration_end": "2026-11-22",
-        "event_start": "2026-08-22",
-        "verified_at": "2026-08-23T12:34:29+08:00",
-        "event_end": "2026-11-22"
+        "registration_end": "2026-10-24",
+        "event_start": "2026-10-24"
       }
     },
     {
@@ -3960,12 +3960,14 @@
       ],
       "status": "open",
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-17T21:58:27+08:00",
-        "review_after": "2026-10-20T21:57:27+08:00"
+        "verified_at": "2026-10-20T23:58:32+08:00",
+        "registration_start": "2026-08-11",
+        "registration_end": "2026-10-25",
+        "event_start": "2026-10-25"
       },
-      "signup": "页面当前显示报名时间：2026年8月11日至10月18日；后续场次报名窗口以赛事页面公告为准。",
+      "signup": "报名时间：2026年8月11日至10月25日22:00；报名后可选任场次参与。",
       "schedule": "初赛场次：2026年9月20日、10月18日（加场）、10月25日、11月22日、12月20日；决赛场次：9月27日、10月31日、11月29日、12月27日。",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
@@ -4000,7 +4002,7 @@
     },
     {
       "id": "comp-saikr-cd1cd6069560",
-      "name": "【惊喜！开学季必参加！】第四届大学生外交英语词汇大赛",
+      "name": "【大学生信息差！此赛必参加！】第四届大学生外交英语词汇大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -5177,7 +5179,7 @@
     },
     {
       "id": "comp-52jingsai-4ec5d9756ae6",
-      "name": "2026年第八届全国高校创新英语挑战赛（NCIECC）英语翻译赛",
+      "name": "【翻译大赛，多校加分赛事】2026年第八届全国高校创新英语挑战赛（NCIECC）英语翻译赛报名通知！",
       "tier": "hobby",
       "fields": [
         "language"
@@ -5228,7 +5230,7 @@
     },
     {
       "id": "comp-52jingsai-b881d33e906a",
-      "name": "2026年全国大学生“人工智能+”创新创业大赛",
+      "name": "【初赛知识赛，决赛可组队】2026年全国大学生“人工智能+”创新创业大赛，免费答题！",
       "tier": "hobby",
       "fields": [
         "ai",
@@ -5254,7 +5256,7 @@
     },
     {
       "id": "comp-52jingsai-d2973c370cce",
-      "name": "第四届全国大学生职业规划大赛",
+      "name": "【教育部主办】第四届全国大学生职业规划大赛",
       "tier": "official",
       "fields": [
         "vocational"
