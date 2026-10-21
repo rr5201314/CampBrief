@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-19T14:06:02.883538+08:00",
+  "last_updated": "2026-10-21T14:27:57+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -131,14 +131,14 @@
         },
         {
           "label": "报名时间",
-          "value": "2026年9月2日公告发布，各地报名陆续启动，各考点时间不同，以所在学校通知为准"
+          "value": "各考点报名时间不同，以所在学校当期通知及CET全国网上报名系统为准；全国公告未提供统一报名截止日。"
         },
         {
           "label": "准考证打印",
           "value": "口试 2026年11月17日9时起，笔试 2026年12月1日9时起"
         }
       ],
-      "last_updated": "2026-10-14T21:28:47.324735+08:00"
+      "last_updated": "2026-10-21T14:27:57+08:00"
     },
     {
       "id": "tem-4",
@@ -205,8 +205,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-10-18T21:09:26.373416+08:00",
-        "review_after": "2026-10-21T21:08:26.373416+08:00"
+        "verified_at": "2026-10-21T14:27:57+08:00",
+        "review_after": "2026-10-24T14:26:57+08:00"
       },
       "fee": "约2170元",
       "schedule": "全年多场",
@@ -215,8 +215,8 @@
       "official_site": "https://ielts.neea.cn/",
       "official_portal": "https://ielts-main.neea.cn/",
       "news_list_url": "https://www.chinaielts.org/press-office",
-      "official_url": "https://www.chinaielts.org/press-office/IELTS-Chinese-Mainland-Exam-Registration-2026-7-9",
-      "last_updated": "2026-10-18T21:09:26.373416+08:00",
+      "official_url": "https://www.chinaielts.org/press-office/announcement",
+      "last_updated": "2026-10-21T14:27:57+08:00",
       "timeline": [
         {
           "label": "纸笔退市",
@@ -225,6 +225,18 @@
         {
           "label": "机考出分",
           "value": "机考成绩通常在考后3-5天内公布，考前3日截止报名"
+        },
+        {
+          "label": "10月考试调整",
+          "value": "2026年10月10日、11日雅思机考因技术原因取消，10月14日起全面恢复考试；受影响考生免费专场为10月19日、20日。"
+        },
+        {
+          "label": "受影响考生安排",
+          "value": "无法参加专场且尚未报考其他场次的考生，可按官方邮件使用免费考试券报考2026年12月底前的同类型考试。"
+        },
+        {
+          "label": "异地赴考费用申请",
+          "value": "受影响的异地考生须于2026年10月31日前按官方邮件方式留下信息，凭实名交通、住宿等有效凭证申请报销。"
         }
       ]
     },
@@ -235,8 +247,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-10-18T21:09:26.373416+08:00",
-        "review_after": "2026-10-21T21:08:26.373416+08:00"
+        "verified_at": "2026-10-21T14:27:57+08:00",
+        "review_after": "2026-10-24T14:26:57+08:00"
       },
       "fee": "约2100元",
       "schedule": "全年多场",
@@ -246,7 +258,7 @@
       "official_portal": "https://toefl-main.neea.cn/",
       "news_list_url": "https://toefl-main.neea.cn/html1/category/16123/94-1.htm",
       "official_url": "https://toefl.neea.cn/",
-      "last_updated": "2026-10-18T21:09:26.373416+08:00"
+      "last_updated": "2026-10-21T14:27:57+08:00"
     },
     {
       "id": "catti-202606",
@@ -347,7 +359,7 @@
         "registration_end": "2026-09-18",
         "event_start": "2026-10-24",
         "event_end": "2026-10-25",
-        "verified_at": "2026-10-13T21:11:20+08:00"
+        "verified_at": "2026-10-21T14:27:57+08:00"
       },
       "fee": "约170元",
       "schedule": "2026年10月24-25日",
@@ -357,7 +369,7 @@
       "official_portal": "https://www.ruankao.org.cn/",
       "news_list_url": "https://www.ruankao.org.cn/index/work.html",
       "official_url": "https://www.ruankao.org.cn/article/content/2609211354254868000700041.html",
-      "last_updated": "2026-10-13T21:11:20+08:00",
+      "last_updated": "2026-10-21T14:27:57+08:00",
       "timeline": [
         {
           "label": "考试时间",
@@ -635,7 +647,7 @@
         "registration_end": "2026-11-09T23:59:00+00:00",
         "event_start": "2026-12-07",
         "event_end": "2026-12-11",
-        "verified_at": "2026-10-14T21:28:47.324735+08:00"
+        "verified_at": "2026-10-21T14:27:57+08:00"
       },
       "fee": "各阶段费用不同",
       "schedule": "2026年12月",
@@ -667,7 +679,7 @@
           "value": "2027年1月18日"
         }
       ],
-      "last_updated": "2026-10-14T21:28:47.324735+08:00"
+      "last_updated": "2026-10-21T14:27:57+08:00"
     },
     {
       "id": "first-level-cost-engineer-2026",
@@ -738,10 +750,10 @@
         "registration_end": "2026-07-10",
         "event_start": "2026-09-12",
         "event_end": "2026-12-06",
-        "verified_at": "2026-10-06T21:14:47+08:00"
+        "verified_at": "2026-10-21T14:27:57+08:00"
       },
       "fee": "每科约50-70元",
-      "schedule": "2026年下半年（笔试10月，面试12月）",
+      "schedule": "2026年9月12日（笔试）；12月5日-6日（面试）",
       "summary": "教师资格认定考试，含笔试和面试，分幼儿园、小学、中学多个学段，是从事教师职业的必备前提。",
       "search": "教师 资格 教资 ntce teacher certification 2026 下半年",
       "official_site": "https://ntcebm4.neea.edu.cn/apply/memapp/memLogin",
@@ -770,7 +782,7 @@
           "value": "以官方公告为准"
         }
       ],
-      "last_updated": "2026-10-06T21:14:47+08:00"
+      "last_updated": "2026-10-21T14:27:57+08:00"
     },
     {
       "id": "psc",
@@ -779,8 +791,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-10-18T21:09:26.373416+08:00",
-        "review_after": "2026-10-21T21:08:26.373416+08:00"
+        "verified_at": "2026-10-21T14:27:57+08:00",
+        "review_after": "2026-10-24T14:26:57+08:00"
       },
       "fee": "约50元（学生优惠）",
       "schedule": "各地定期组织",
@@ -790,22 +802,69 @@
       "official_portal": "https://www.cltt.org/",
       "news_list_url": "https://www.cltt.org/",
       "official_url": "https://stzbm.cltt.org/",
-      "last_updated": "2026-10-18T21:09:26.373416+08:00"
+      "last_updated": "2026-10-21T14:27:57+08:00"
     },
     {
       "id": "guokao-2026",
       "name": "2027年度国家公务员考试 (国考)",
       "category": "civil-service",
-      "status": "pending",
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-10-15T08:00:00+08:00",
+        "registration_end": "2026-10-24T18:00:00+08:00",
+        "event_start": "2026-11-28",
+        "event_end": "2026-11-29",
+        "verified_at": "2026-10-21T14:27:57+08:00"
+      },
       "fee": "约50-100元",
-      "schedule": "2026年11月底或12月初",
+      "schedule": "2026年11月29日（公共科目笔试）；11月28日（部分职位专业科目/外语水平测试）",
       "summary": "中央机关及其直属机构公务员录用考试，含笔试（行测、申论）和面试，是进入中央机关的主要途径。",
       "search": "公务员 国考 行测 申论 civil service national 2027",
-      "official_site": "http://bm.scs.gov.cn/",
-      "official_portal": "http://bm.scs.gov.cn/",
-      "news_list_url": "http://bm.scs.gov.cn/",
-      "official_url": "",
-      "last_updated": "2026-10-14T21:28:47.324735+08:00"
+      "official_site": "http://bm.scs.gov.cn/kl2027",
+      "official_portal": "http://bm.scs.gov.cn/kl2027",
+      "news_list_url": "http://bm.scs.gov.cn/pp/gkweb/core/web/ui/business/home/gkhome.html",
+      "official_url": "http://bm.scs.gov.cn/pp/gkweb/core/web/ui/business/article/articledetail.html?ArticleId=8a81f6d1a129c3d401a132b7f658007d&id=0000000062b7b2b60162bccd55ec0006&eid=0000000062b7b2b60162bccdd5860007",
+      "timeline": [
+        {
+          "label": "注册与实名实人认证",
+          "value": "2026年10月14日8:00至10月23日18:00；未按时完成认证的，无法提交报考申请。"
+        },
+        {
+          "label": "报名与提交申请",
+          "value": "2026年10月15日8:00至10月24日18:00，每次只能选报1个职位。"
+        },
+        {
+          "label": "资格审查",
+          "value": "2026年10月15日8:00至10月26日18:00。"
+        },
+        {
+          "label": "报名序号查询",
+          "value": "2026年10月28日8:00起。"
+        },
+        {
+          "label": "报名确认及缴费",
+          "value": "2026年11月1日0:00至11月6日24:00。"
+        },
+        {
+          "label": "准考证打印",
+          "value": "2026年11月23日0:00至11月29日15:00。"
+        },
+        {
+          "label": "专业科目/外语测试",
+          "value": "2026年11月28日14:00-16:00，仅适用相关职位。"
+        },
+        {
+          "label": "公共科目笔试",
+          "value": "2026年11月29日：行测9:00-11:00，申论14:00-17:00。"
+        },
+        {
+          "label": "笔试成绩查询",
+          "value": "2027年1月，具体日期另行通知。"
+        }
+      ],
+      "last_updated": "2026-10-21T14:27:57+08:00"
     },
     {
       "id": "shiye",
@@ -814,8 +873,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-10-14T21:16:56.370344+08:00",
-        "review_after": "2026-10-17T21:15:56.370344+08:00"
+        "verified_at": "2026-10-21T14:27:57+08:00",
+        "review_after": "2026-10-24T14:26:57+08:00"
       },
       "fee": "约50-100元",
       "schedule": "各地不定期",
@@ -825,7 +884,7 @@
       "official_portal": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/index.html",
       "news_list_url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/index.html",
       "official_url": "https://job.mohrss.gov.cn/cjobs/institution/listInstitution",
-      "last_updated": "2026-10-14T21:16:56.370344+08:00"
+      "last_updated": "2026-10-21T14:27:57+08:00"
     },
     {
       "id": "kaoyan-2026",
@@ -840,7 +899,7 @@
       "official_portal": "https://yz.chsi.com.cn/",
       "news_list_url": "https://yz.chsi.com.cn/kyzx/jybzc/",
       "official_url": "https://yz.chsi.com.cn/kyzx/jybzc/202609/20260924/2293971511.html",
-      "last_updated": "2026-09-24T21:30:00+08:00",
+      "last_updated": "2026-10-21T14:27:57+08:00",
       "timeline": [
         {
           "label": "预报名",
@@ -866,14 +925,14 @@
         "registration_end": "2026-10-24",
         "event_start": "2026-12-19",
         "event_end": "2026-12-20",
-        "verified_at": "2026-09-24T21:30:00+08:00"
+        "verified_at": "2026-10-21T14:27:57+08:00"
       }
     },
     {
       "id": "baoyan-2026",
       "name": "2027年推荐免试研究生 (保研)",
       "category": "postgrad",
-      "status": "closed",
+      "status": "done",
       "fee": "无报名费",
       "schedule": "2026年9-10月（推免服务系统）",
       "summary": "推荐优秀本科毕业生免试攻读研究生，需获得本科院校推免资格，通过目标院校复试后录取。",
@@ -882,7 +941,7 @@
       "official_portal": "https://yz.chsi.com.cn/tm/",
       "news_list_url": "https://yz.chsi.com.cn/kyzx/kydt/",
       "official_url": "https://yz.chsi.com.cn/tm/",
-      "last_updated": "2026-10-13T21:11:20+08:00",
+      "last_updated": "2026-10-21T14:27:57+08:00",
       "timeline": [
         {
           "label": "系统注册",
@@ -902,7 +961,9 @@
         "time_zone": "Asia/Shanghai",
         "registration_start": "2026-09-18",
         "registration_end": "2026-10-18",
-        "verified_at": "2026-10-13T21:11:20+08:00"
+        "verified_at": "2026-10-21T14:27:57+08:00",
+        "event_start": "2026-09-21",
+        "event_end": "2026-10-20"
       }
     }
   ]

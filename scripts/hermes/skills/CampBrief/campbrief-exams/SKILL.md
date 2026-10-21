@@ -153,7 +153,7 @@ fi
 | `notice-list` | 从官方列表筛选与考试/期次相关的考务或报名公告。 |
 | `filtered-list` | 按 policy 的 `match_all`、`match_any`、`notice_any`、`ignore_any` 筛选；绝不取列表第一条。 |
 | `schedule-page` | `news_list_url` 本身就是持续更新的官方日程页；比较日期与报名截止信息，不比较 URL 是否不同。 |
-| `dynamic-list` | 官方列表由前端渲染；先用浏览器/页面读取器渲染，再提取公开卡片。若 `same_page_notice=true`，列表页本身可以合法地同时作为 `official_url`。 |
+| `dynamic-list` | 官方列表由前端渲染；用浏览器/页面读取器提取公开卡片，或沿页面自身 JS 发现并读取实际用于展示这些卡片的官方公开接口。不得猜测接口或 ID。若 `same_page_notice=true`，列表页本身可以合法地同时作为 `official_url`。policy 关键词用于人工确认考试与期次，本模式的批量探测只比较内容指纹。 |
 | `national-portal` | 仅核验全国官网/报名入口仍为官方可访问链接；不尝试汇总各省、各校的分散报名信息，也不将它报告为“需人工维护”。 |
 
 同一 `news_list_url` 已由批量探测脚本共用一次下载。Hermes 只处理报告中的未命中、多个候选、新候选或来源错误；每个期次仍必须按自己的 `name`、`schedule` 和 policy 独立判断，不能把 6 月公告误写入 12 月条目。
@@ -181,7 +181,7 @@ fetch_official() {
 2. 返回只有壳页面、脚本或极短内容时，使用 Hermes 可用的浏览器/页面读取器打开同一个官方 URL；这尤其适用于 `dynamic-list`，不要猜测或调用未公开 API。
 3. 列表取不到、但当前 `official_url` 可读：这是**降级巡检且当前公告已核验**，不是“访问失败（跳过）”，不得改动数据。
 4. `official_url` 与列表都取不到：再检查同条目的 `official_portal` 是否可读。三者均不可用才报告“官方源暂不可达”，不编造链接或时间。
-5. `official_url` 本来为空且条目是 `pending`：只巡检列表/官网是否出现该期次公告；没有即保持空值和 `pending`，这不是失败。
+5. `official_url` 本来为空且条目是 `pending`：巡检列表/官网是否出现该期次公告。根路径返回 Nginx 默认页、旧期次壳或列表零命中，不能证明当年公告未发布；应以主管/招录机关官方页面为线索寻找当年专题，并从专题自身 JS 发现公开公告接口。只使用真实发现的端点与 ID，不猜专题路径。取得原站公告正文后补齐官网详情页、timeline 与 lifecycle，同时移除 `validate-exam-sources.py` 中已过时的未发布例外；确无公告证据时才保持空值和 `pending`。
 
 所有失败报告都必须写出实际访问的 `static/data/exams.json` URL 和步骤；禁止引用旧网址、HTTP 旧入口或本 Skill 中不存在的数据。
 
@@ -200,7 +200,7 @@ fetch_official() {
 
 对 `schedule-page`：读取当前条目对应月份的考试日期、常规/后期报名截止时间，只有这些事实相较 `timeline` 有新增或变化才更新；不要因为同一 URL 不变就漏检。
 
-对 `dynamic-list`：在浏览器渲染后只使用页面上可见的官方公告标题、日期和链接。若当前 `official_url === news_list_url` 且无可确认的新期次卡片，保持不变；渲染失败时使用已核验的当前页做降级结果。
+对 `dynamic-list`：只使用浏览器渲染可见的官方公告，或官网前端实际公开接口提供的同一公告数据；接口须从该页面自身 JS 发现，不得猜测端点或 ID。对外 `official_url` 保存官网详情页，不用 API 地址替代。若当前 `official_url === news_list_url` 且无可确认的新期次卡片，保持不变；渲染失败时使用已核验的当前页做降级结果。
 
 对 `national-portal`：只检查 `official_site` 和 `official_portal`。PSC、事业单位等项目不收录分散的省级或高校通知，不输出“人工维护”待办。
 
@@ -222,6 +222,7 @@ fetch_official() {
 - 时间边界只允许 `YYYY-MM-DD`，或带 `Z`/时区偏移的 ISO8601 时间戳。使用日期值时必须写 IANA `time_zone`（如 `Asia/Shanghai`、`Europe/London`）；结束日期包含当天。
 - 常年多场项目使用 `mode=rolling`；分地区、无法统一计算的项目使用 `mode=manual`。两者必须填写带时区的 `verified_at` 和 `review_after`，且复核有效期不得超过 72 小时。超过复核时间后前端自动显示“待核验”，不会继续显示“可报名”。
 - 只有官方原文和当前期次能明确支持某个日期时才写入 lifecycle。无年份日期只有在标题/公告明确给出所属年份时才可结构化。
+- manual 期次的复核窗口到期不自动证明旧状态仍成立。只有官网可访问但无法确认当前报名状态时，不得延长旧 `open` 的复核窗；全国无统一截止时也不能用少数省份日期冒充全国边界。可刷新条目 `last_updated` 记录本轮巡检，保留过期 lifecycle 和前端待核验，并在报告说明原因。
 - 报名结束但考试尚未结束为 `closed`，不得直接写成 `done`。
 
 示例：

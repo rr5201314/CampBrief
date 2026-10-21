@@ -27,9 +27,9 @@ VALID_POLICY_MODES = {
     "national-portal",
 }
 VALID_POLICY_FALLBACKS = {"current-notice", "portal"}
-FUTURE_NOTICE_PENDING = {
-    "guokao-2026",
-}
+# Only genuinely unpublished future periods may be exempted. The 2027 national
+# civil-service notice is now published, so no current record needs an exception.
+FUTURE_NOTICE_PENDING: set[str] = set()
 OFFICIAL_HOSTS = {
     "cet-bm.neea.edu.cn",
     "cet.neea.edu.cn",
@@ -206,7 +206,8 @@ def main() -> int:
 
     print(f"Exam-source validation passed: {len(items)} entries, all active records have official notices.")
     print("Hermes source policy validation passed.")
-    print("Notice not yet published (kept as pending): " + ", ".join(sorted(FUTURE_NOTICE_PENDING)))
+    if FUTURE_NOTICE_PENDING:
+        print("Notice not yet published (kept as pending): " + ", ".join(sorted(FUTURE_NOTICE_PENDING)))
     return 0
 
 

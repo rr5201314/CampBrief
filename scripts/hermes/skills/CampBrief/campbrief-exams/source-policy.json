@@ -81,7 +81,7 @@
       "same_page_notice": true
     },
     "guokao-2026": {
-      "mode": "filtered-list",
+      "mode": "dynamic-list",
       "fallback": "portal",
       "match_all": ["公务员"],
       "match_any": ["中央机关", "直属机构", "考试录用"]
