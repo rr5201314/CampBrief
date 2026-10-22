@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-21T14:11:22+08:00",
+  "last_updated": "2026-10-22T19:40:36+08:00",
   "source": "CampBrief",
-  "total": 254,
+  "total": 255,
   "tiers": [
     {
       "key": "all",
@@ -291,8 +291,8 @@
       "fields": [
         "design"
       ],
-      "status": "open",
-      "signup": "每年 3–6 月校级初评，官网提交作品",
+      "status": "closed",
+      "signup": "第18届线上提交：2026年5月10日—6月12日16:00；各赛区报送全国组委会截止：2026年7月5日",
       "schedule": "校赛 3–6 月，省赛 7 月，国赛 8–9 月",
       "summary": "国内规模最大的广告创意类赛事，覆盖平面、视频、策划案、互动等多种广告形式。",
       "search": "大广赛 广告艺术 创意",
@@ -300,10 +300,11 @@
       "organizer": "中国高等教育学会广告教育专业委员会、中国传媒大学",
       "prestige": 7,
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-18T22:06:14+08:00",
-        "review_after": "2026-10-21T22:06:14+08:00"
+        "registration_start": "2026-05-10",
+        "registration_end": "2026-06-12",
+        "verified_at": "2026-10-22T19:40:33+08:00"
       }
     },
     {
@@ -1642,19 +1643,22 @@
         "computer",
         "ai"
       ],
-      "status": "open",
-      "signup": "每年 3–5 月申请",
-      "schedule": "培养周期 6–12 个月",
+      "status": "ongoing",
+      "signup": "2026年度申请：2026年1月6日—2月26日；培养周期2026年5月—2027年5月",
+      "schedule": "2月26日申请截止；4月公布评审结果；5月起企业访学；2027年7月结项答辩",
       "summary": "腾讯面向优秀本科生的科研/工程人才培养项目，含多个前沿技术课题。",
       "search": "腾讯犀牛鸟 精英人才 科研",
-      "official_site": "https://www.tencent.com/zh-cn/rhino-bird.html",
+      "official_site": "https://ur.tencent.com/talent",
       "organizer": "腾讯",
       "prestige": 7,
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-18T22:06:14+08:00",
-        "review_after": "2026-10-21T22:06:14+08:00"
+        "registration_start": "2026-01-06",
+        "registration_end": "2026-02-26",
+        "event_start": "2026-05-01",
+        "event_end": "2027-05-31",
+        "verified_at": "2026-10-22T19:40:33+08:00"
       }
     },
     {
@@ -1677,8 +1681,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-18T22:06:14+08:00",
-        "review_after": "2026-10-21T22:06:14+08:00"
+        "verified_at": "2026-10-22T19:40:33+08:00",
+        "review_after": "2026-10-25T18:40:33+08:00"
       }
     },
     {
@@ -1701,8 +1705,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-18T22:06:14+08:00",
-        "review_after": "2026-10-21T22:06:14+08:00"
+        "verified_at": "2026-10-22T19:40:33+08:00",
+        "review_after": "2026-10-25T18:40:33+08:00"
       }
     },
     {
@@ -1762,8 +1766,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-18T22:06:14+08:00",
-        "review_after": "2026-10-21T22:06:14+08:00"
+        "verified_at": "2026-10-22T19:40:33+08:00",
+        "review_after": "2026-10-25T18:40:33+08:00"
       }
     },
     {
@@ -2560,7 +2564,7 @@
     },
     {
       "id": "comp-saikr-e5eaadd424dd",
-      "name": "【年度最后一场报名中】2026大学生“麟创杯”创新数学竞赛",
+      "name": "【本周六+周日开考！赛后2天公布获奖名单】2026大学生“麟创杯”创新数学竞赛",
       "tier": "hobby",
       "fields": [
         "ai",
@@ -3031,10 +3035,12 @@
       "organizer": "共青团中央、人力资源和社会保障部",
       "prestige": 9,
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-18T22:06:14+08:00",
-        "review_after": "2026-10-21T22:06:14+08:00"
+        "registration_end": "2026-09-30",
+        "event_start": "2026-10-01",
+        "event_end": "2026-11-30",
+        "verified_at": "2026-10-22T19:40:33+08:00"
       }
     },
     {
@@ -3073,7 +3079,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【最后一场】2026年第十二届中西部外语翻译大赛",
+      "name": "【第二场报名】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3469,7 +3475,7 @@
     },
     {
       "id": "comp-saikr-699c33f46408",
-      "name": "【倒计时5天】第五届“中外传播杯”大学生英语语法大赛",
+      "name": "【倒计时3天】第五届“中外传播杯”大学生英语语法大赛",
       "tier": "official",
       "fields": [
         "language"
@@ -3641,8 +3647,8 @@
     },
     {
       "id": "comp-52jingsai-387816ac1709",
-      "name": "【词汇竞赛】2026年第五届创研杯大学生英语词汇竞赛（秋季赛）报名通知！",
-      "tier": "official",
+      "name": "【10月24日开考，词汇竞赛】2026年第五届创研杯大学生英语词汇竞赛（秋季赛）报名通知！",
+      "tier": "hobby",
       "fields": [
         "language"
       ],
@@ -3659,8 +3665,8 @@
       "search": "",
       "official_url": "https://www.52jingsai.com/article-23524-1.html",
       "official_site": "http://cycupzt.52jingsai.com/",
-      "organizer": "中国外文局亚太传播中心",
-      "prestige": 7
+      "organizer": "华夏文化促进会素质教育委员会",
+      "prestige": 3
     },
     {
       "id": "comp-52jingsai-7a1b82a1c128",
@@ -3737,7 +3743,7 @@
     },
     {
       "id": "comp-saikr-554ce57a889c",
-      "name": "【倒计时4天】2026年第二届“中外传播杯”大学生中外历史竞答大赛",
+      "name": "【本周六考试】2026年第二届“中外传播杯”大学生中外历史竞答大赛",
       "tier": "official",
       "fields": [
         "other"
@@ -3786,7 +3792,7 @@
     },
     {
       "id": "comp-saikr-9c66a33c52e2",
-      "name": "【周日开考·最后一场】2026年第六届《英语世界》杯全国大学生英语听力大赛",
+      "name": "【倒计时3天】2026年第六届《英语世界》杯全国大学生英语听力大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3881,8 +3887,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-18T22:06:14+08:00",
-        "review_after": "2026-10-21T22:06:14+08:00"
+        "verified_at": "2026-10-22T19:40:33+08:00",
+        "review_after": "2026-10-25T18:40:33+08:00"
       }
     },
     {
@@ -3953,7 +3959,7 @@
     },
     {
       "id": "comp-saikr-3e818dd91712",
-      "name": "【省赛报名】第九届大学生普通话挑战赛（NPCCS）",
+      "name": "【省赛倒计时3天】第九届大学生普通话挑战赛（NPCCS）",
       "tier": "hobby",
       "fields": [
         "language"
@@ -4256,18 +4262,20 @@
       ],
       "prestige": 3,
       "status": "open",
-      "signup": "2026.04.20-2026.11.14，以官网为准",
-      "schedule": "决赛 2026年7月2日-4日（上海，已结束）",
+      "signup": "即日起至2027年1月9日",
+      "schedule": "三场考试任选一场：2026年11月7日、12月5日、2027年1月9日（当日9:00—22:00任选60分钟）",
       "summary": "中国机电一体化技术应用协会主办的2026赛季，含机器人舞蹈、灵巧手开发等赛道，赛事详情请访问信息来源页面。",
       "search": "",
       "official_url": "https://www.saikr.com/vse/Robot/arborseek/26",
       "official_site": "",
       "organizer": "机器人与算法组委会",
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-18T22:06:14+08:00",
-        "review_after": "2026-10-21T22:06:14+08:00"
+        "registration_end": "2027-01-09",
+        "event_start": "2026-11-07",
+        "event_end": "2027-01-09",
+        "verified_at": "2026-10-22T19:40:33+08:00"
       }
     },
     {
@@ -4476,13 +4484,15 @@
       ],
       "status": "open",
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-18T22:06:14+08:00",
-        "review_after": "2026-10-21T22:06:14+08:00"
+        "registration_end": "2027-04-19",
+        "event_start": "2026-09-01",
+        "event_end": "2027-05-23",
+        "verified_at": "2026-10-22T19:40:33+08:00"
       },
-      "signup": "各赛项报名已开启，截止以组委会通知为准",
-      "schedule": "",
+      "signup": "各参赛院校于2027年4月19日前递交参赛院校登记表；知识赛2026年9月—2027年4月12日",
+      "schedule": "知识赛：2026年9月上旬—2027年4月12日；全国预选赛材料截止：2027年4月26日；总决赛入围名单：2027年5月3日前；全国总决赛：2027年5月22—23日",
       "summary": "2027年度商业精英挑战赛物流与供应链竞赛：校赛/省赛—全国预选赛—全国总决赛（2027年5月22-23日），团体调研报告与现场答辩，优秀队伍赴港参加内地与港澳地区赛事。",
       "search": "",
       "official_url": "https://www.52jingsai.com/article-24046-1.html",
@@ -4633,7 +4643,7 @@
     },
     {
       "id": "comp-saikr-6f1a28424edc",
-      "name": "【最后一场即将截止！90分以上全部一等奖】计算机能力挑战赛",
+      "name": "【最后一场本周开考！90分以上全部一等奖】计算机能力挑战赛",
       "tier": "hobby",
       "fields": [
         "computer"
@@ -4803,7 +4813,7 @@
     },
     {
       "id": "comp-saikr-72d775b9ef6c",
-      "name": "2026年第二届计算机能力竞赛暨城市联赛（冬季赛）—计算机素养赛道",
+      "name": "【即将开考！三学会盖章证书】计算机能力竞赛暨城市联赛（冬季赛）—计算机素养赛道",
       "tier": "hobby",
       "fields": [
         "computer"
@@ -4860,13 +4870,15 @@
       ],
       "status": "open",
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-18T22:06:14+08:00",
-        "review_after": "2026-10-21T22:06:14+08:00"
+        "registration_end": "2026-11-05",
+        "event_start": "2026-11-05",
+        "event_end": "2026-11-14",
+        "verified_at": "2026-10-22T19:40:33+08:00"
       },
-      "signup": "多场次报名，截止以官网为准",
-      "schedule": "",
+      "signup": "第一场报名及初赛截止：2026年11月5日",
+      "schedule": "第一场：报名及初赛11月5日截止；初赛分数复核11月6—8日；决赛入围公示11月11日；决赛11月14日；获奖公布12月上旬",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.52jingsai.com/article-23889-1.html",
@@ -4876,7 +4888,7 @@
     },
     {
       "id": "comp-saikr-3762d0f4af87",
-      "name": "2026年全国高师学生英语教师职业技能竞赛",
+      "name": "【大英赛同主办方】2026年全国高师学生英语教师职业技能竞赛",
       "tier": "official",
       "fields": [
         "language"
@@ -5030,7 +5042,7 @@
     },
     {
       "id": "comp-saikr-12c6205e1745",
-      "name": "『中国翻译协会盖章』第五届\"海豚杯\"翻译大赛暨国际翻译人才选拔赛",
+      "name": "『今晚截止！全国证书』第五届\"海豚杯\"翻译大赛暨国际翻译人才选拔赛",
       "tier": "official",
       "fields": [
         "language"
@@ -5383,13 +5395,16 @@
       ],
       "status": "open",
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-18T22:08:23+08:00",
-        "review_after": "2026-10-21T22:08:23+08:00"
+        "registration_start": "2026-09-21",
+        "registration_end": "2026-10-31",
+        "event_start": "2026-10-31",
+        "event_end": "2027-01-23",
+        "verified_at": "2026-10-22T19:40:33+08:00"
       },
-      "signup": "页面头部列示报名窗口为2026年9月21日至10月31日；具体可报场次以赛事页面公告为准。",
-      "schedule": "页面所示场次：2026年10月18日09:00至22:00；页面正文另列后续场次信息，具体安排以赛事公告为准。",
+      "signup": "报名时间：2026年9月21日—10月31日",
+      "schedule": "科普知识赛道全国赛四场：2026年10月31日、11月28日、12月26日、2027年1月23日；仿真科普赛道初赛第四场2026年11月14日",
       "summary": "由中国机电一体化技术应用协会主办，设置科普知识赛道与仿真科普赛道，面向高校学生及相关社会人士；知识赛道采用线上答题，参赛费为50元。",
       "search": "",
       "official_url": "https://www.saikr.com/vse/59954",
@@ -5421,6 +5436,29 @@
       "official_site": "https://cycupzt.52jingsai.com/",
       "organizer": "华夏文化促进会素质教育委员会",
       "prestige": 3
+    },
+    {
+      "id": "comp-52jingsai-71c3cff791d0",
+      "name": "【供应链+数字化管理+低空物流 专业赛】第9届“链战商峰”全国数智商业生态运营大赛个人赛，三条赛道，免费报名！",
+      "tier": "official",
+      "fields": [
+        "business"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-10-26",
+        "verified_at": "2026-10-22T19:40:33+08:00"
+      },
+      "signup": "即日起至2026年10月26日",
+      "schedule": "在线答题；设产业链供应链、产业数字化、低空物流运营三条赛道",
+      "summary": "第九届全国数智商业生态运营大赛的个人赛，面向全国高校在校生（含本专科、硕士研究生），设产业链供应链、产业数字化、低空物流运营三条赛道，线上答题、免费报名，获奖可获电子版证书。",
+      "search": "链战商峰 全国数智商业生态运营大赛 个人赛",
+      "official_url": "https://www.52jingsai.com/article-24135-1.html",
+      "official_site": "https://m.encp.top/col.jsp?id=165",
+      "organizer": "中国商业联合会",
+      "prestige": 6
     }
   ]
 }
