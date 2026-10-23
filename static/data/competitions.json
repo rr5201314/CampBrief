@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-22T21:39:22+08:00",
+  "last_updated": "2026-10-23T21:47:59.355779+08:00",
   "source": "CampBrief",
-  "total": 255,
+  "total": 256,
   "tiers": [
     {
       "key": "all",
@@ -3079,7 +3079,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【第二场报名】2026年第十二届中西部外语翻译大赛",
+      "name": "【多省市译协盖章】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3475,7 +3475,7 @@
     },
     {
       "id": "comp-saikr-699c33f46408",
-      "name": "【倒计时3天】第五届“中外传播杯”大学生英语语法大赛",
+      "name": "【本周日考试】第五届“中外传播杯”大学生英语语法大赛",
       "tier": "official",
       "fields": [
         "language"
@@ -3792,7 +3792,7 @@
     },
     {
       "id": "comp-saikr-9c66a33c52e2",
-      "name": "【倒计时3天】2026年第六届《英语世界》杯全国大学生英语听力大赛",
+      "name": "【倒计时2天】2026年第六届《英语世界》杯全国大学生英语听力大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3959,7 +3959,7 @@
     },
     {
       "id": "comp-saikr-3e818dd91712",
-      "name": "【省赛倒计时3天】第九届大学生普通话挑战赛（NPCCS）",
+      "name": "【省赛倒计时2天】第九届大学生普通话挑战赛（NPCCS）",
       "tier": "hobby",
       "fields": [
         "language"
@@ -4364,7 +4364,7 @@
       "fields": [
         "science"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5042,7 +5042,7 @@
     },
     {
       "id": "comp-saikr-12c6205e1745",
-      "name": "『今晚截止！全国证书』第五届\"海豚杯\"翻译大赛暨国际翻译人才选拔赛",
+      "name": "『中国翻译协会盖章』第五届\"海豚杯\"翻译大赛暨国际翻译人才选拔赛",
       "tier": "official",
       "fields": [
         "language"
@@ -5166,7 +5166,7 @@
     },
     {
       "id": "comp-saikr-edce0fd03ca1",
-      "name": "【题库开放领取】第五届“英才计划”大学生英语阅读大赛",
+      "name": "【5届积累】第五届“英才计划”大学生英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -5459,6 +5459,31 @@
       "official_site": "https://m.encp.top/col.jsp?id=165",
       "organizer": "中国商业联合会",
       "prestige": 6
+    },
+    {
+      "id": "comp-52jingsai-335a5c9747e9",
+      "name": "2026年第五届大学生英语翻译能力竞赛（秋季赛）报名通知",
+      "tier": "official",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-10-22",
+        "registration_end": "2026-12-31",
+        "event_start": "2026-12-08T10:00:00+08:00",
+        "verified_at": "2026-10-23T21:47:44+08:00"
+      },
+      "signup": "即日起（2026年10月22日）至2026年12月31日；译文提交截止时间为12月31日17:00。",
+      "schedule": "赛题发布时间：2026年12月8日10:00；译文提交截止：2026年12月31日17:00；证书颁发：2027年3月初。",
+      "summary": "面向在校大学生，分英语专业、非英语专业和专科生评奖；设英译汉、汉译英两个组别，每组报名费49元。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-24142-1.html",
+      "official_site": "http://www.ncetac.com/",
+      "organizer": "中国外文局亚太传播中心",
+      "prestige": 7
     }
   ]
 }
