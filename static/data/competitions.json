@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-23T21:47:59.355779+08:00",
+  "last_updated": "2026-10-24T22:41:33+08:00",
   "source": "CampBrief",
-  "total": 256,
+  "total": 258,
   "tiers": [
     {
       "key": "all",
@@ -627,7 +627,7 @@
       "search": "蓝桥杯 软件 算法",
       "official_site": "http://dasai.lanqiao.cn/",
       "organizer": "工业和信息化部人才交流中心",
-      "prestige": 9
+      "prestige": 8
     },
     {
       "id": "official-029",
@@ -640,8 +640,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-20T23:58:32+08:00",
-        "review_after": "2026-10-23T23:58:32+08:00"
+        "verified_at": "2026-10-24T21:40:35+08:00",
+        "review_after": "2026-10-27T21:39:35+08:00"
       },
       "signup": "线上报名及作品提交：2026年10月至2027年4月。",
       "schedule": "省赛评审：2027年4—5月；国赛评审及获奖信息发布：2027年5—6月；系列活动：2027年7—8月；优秀作品计划于2027年4月米兰设计周期间展出。",
@@ -700,7 +700,7 @@
       "search": "集成电路 芯片 集创赛",
       "official_site": "http://univ.ciciec.com/",
       "organizer": "工业和信息化部人才交流中心",
-      "prestige": 9
+      "prestige": 8
     },
     {
       "id": "official-033",
@@ -856,7 +856,7 @@
       "search": "RAICOM 睿抗 机器人开发者",
       "official_site": "https://www.robocom.com.cn/",
       "organizer": "工业和信息化部人才交流中心",
-      "prestige": 9
+      "prestige": 8
     },
     {
       "id": "official-042",
@@ -1410,7 +1410,7 @@
         "computer",
         "ai"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -2062,42 +2062,48 @@
       "fields": [
         "innovation"
       ],
-      "status": "ongoing",
-      "signup": "即日起至2026年10月20日",
-      "schedule": "",
+      "status": "open",
+      "signup": "即日起至2026年10月31日23:59",
+      "schedule": "第一次评审：2026年8月1日至8月25日；第二次评审：2026年11月1日至11月30日。作品只参加一次评审。",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/JSSCSSGS266",
       "official_site": "",
-      "organizer": "全国大学生技术创新创业大赛组委会",
-      "prestige": 4,
+      "organizer": "中国技术创业协会企业市场融通工作委员会",
+      "prestige": 3,
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
         "registration_start": "2026-03-20",
-        "registration_end": "2026-10-20",
-        "event_start": "2026-03-20",
+        "registration_end": "2026-10-31",
+        "event_start": "2026-08-01",
         "event_end": "2026-11-30",
-        "verified_at": "2026-08-02T10:19:52+08:00"
+        "verified_at": "2026-10-24T22:12:34+08:00"
       }
     },
     {
       "id": "comp-saikr-787fea6f2f3c",
       "name": "第十届全国大学生集成电路创新创业大赛职业技能赛项--企业命题",
-      "tier": "hobby",
+      "tier": "official",
       "fields": [
         "innovation",
         "engineering"
       ],
-      "status": "pending",
-      "signup": "",
-      "schedule": "",
-      "summary": "来源：赛氪。浏览 5.1万，关注 188",
+      "status": "closed",
+      "signup": "企业命题赛道报名：2026年5月15日至7月15日",
+      "schedule": "初赛作品提交截止：2026年9月10日；全国总决赛安排在2026年10月下旬，具体时间待官方通知。",
+      "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/58262",
       "official_site": "",
-      "organizer": "芯人类",
-      "prestige": 4
+      "organizer": "工业和信息化部人才交流中心",
+      "prestige": 8,
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-10-24T22:12:34+08:00",
+        "review_after": "2026-10-27T22:11:34+08:00"
+      }
     },
     {
       "id": "comp-saikr-91694bf3b0c1",
@@ -2158,20 +2164,20 @@
     },
     {
       "id": "comp-saikr-1427ab50afa1",
-      "name": "【今日开考】第九届ETTBL杯高校英语阅读大赛",
+      "name": "第九届ETTBL杯高校英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
       ],
       "status": "done",
-      "signup": "",
-      "schedule": "",
-      "summary": "来源：赛氪。浏览 6.6万，关注 639",
+      "signup": "报名时间：2026年3月5日至7月26日",
+      "schedule": "最后一场考试：2026年7月26日9:00-22:00；官方页面已公布获奖名单。",
+      "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/ETTBL-YD",
       "official_site": "",
-      "organizer": "ETTBL英语大赛组委会",
-      "prestige": 4
+      "organizer": "中国商业联合会商业职业技能鉴定指导中心",
+      "prestige": 3
     },
     {
       "id": "comp-saikr-6c2d525ee632",
@@ -2227,26 +2233,20 @@
     },
     {
       "id": "comp-saikr-8cfb683e4617",
-      "name": "【周日截止】第四届“三晋杯”全国大学生英语翻译大赛",
+      "name": "第四届“三晋杯”全国大学生英语翻译大赛",
       "tier": "hobby",
       "fields": [
         "language"
       ],
-      "status": "closed",
-      "signup": "",
-      "schedule": "",
-      "summary": "来源：赛氪。浏览 2.7万，关注 753",
+      "status": "done",
+      "signup": "即日起至2026年7月19日",
+      "schedule": "第三场作品提交截止：2026年7月19日；官方页面称评阅于15个工作日内完成。",
+      "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/YSJFY",
       "official_site": "",
-      "organizer": "“三晋杯”全国大学生英语大赛组委会",
-      "prestige": 4,
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_end": "2026-07-21",
-        "verified_at": "2026-07-15T18:57:08.606962+08:00"
-      }
+      "organizer": "山西省翻译协会",
+      "prestige": 3
     },
     {
       "id": "comp-saikr-b28f051c4971",
@@ -2297,16 +2297,7 @@
       "official_url": "https://www.saikr.com/vse/58394",
       "official_site": "",
       "organizer": "赛事速递",
-      "prestige": 9,
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_start": "2026-05-26",
-        "registration_end": "2026-09-01",
-        "event_start": "2026-09-10",
-        "event_end": "2026-09-13",
-        "verified_at": "2026-07-22T09:54:57.820766+08:00"
-      }
+      "prestige": 9
     },
     {
       "id": "comp-saikr-5aca2a1f06a6",
@@ -2330,44 +2321,53 @@
       "name": "全国大学生诗经吟唱大赛",
       "tier": "hobby",
       "fields": [
-        "other"
+        "design"
       ],
-      "status": "pending",
-      "signup": "",
-      "schedule": "",
-      "summary": "来源：赛氪。浏览 2.5万，关注 650",
+      "status": "open",
+      "signup": "2026年丙午年秋季赛报名时间：2026年8月7日至11月7日",
+      "schedule": "秋季赛备赛及作品提交截至2026年11月7日。",
+      "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/47994",
       "official_site": "",
-      "organizer": "诗经吟唱大赛组委会",
-      "prestige": 4
+      "organizer": "诗经吟唱与才艺大赛志愿者服务队",
+      "prestige": 3,
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-08-07",
+        "registration_end": "2026-11-07",
+        "event_start": "2026-08-08",
+        "event_end": "2026-11-07",
+        "verified_at": "2026-10-24T22:12:34+08:00"
+      }
     },
     {
       "id": "comp-saikr-78443557aa65",
-      "name": "【暑期热门竞赛即将截止】（城市联赛）计算机素养赛道",
+      "name": "（城市联赛）计算机素养赛道",
       "tier": "hobby",
       "fields": [
         "computer"
       ],
       "status": "done",
-      "signup": "即日起至2026年8月7日",
-      "schedule": "第二场考试：2026年8月8日-8月9日（任选1小时作答）",
+      "signup": "第二场报名至2026年8月7日",
+      "schedule": "第二场考试：2026年8月8日至9日；页面已公布获奖名单。",
       "summary": "大连市计算机学会、苏州市计算机学会、天津市计算机学会联合主办，线上客观题竞赛，设C语言、C++、Python、Java四赛道，设一二三等奖及优秀奖，获奖可获三学会联合盖章电子+纸质证书。",
       "search": "",
       "official_url": "https://www.saikr.com/vse/CLComputer2026",
       "official_site": "",
       "organizer": "大连市计算机学会、苏州市计算机学会、天津市计算机学会",
-      "prestige": 4
+      "prestige": 3
     },
     {
       "id": "comp-saikr-18e1497ac3fd",
-      "name": "【本周考试！答题90分以上直领一等奖】2026年第二届工业互联网技术与应用挑战赛——工业互联网专项赛道",
+      "name": "2026年第二届工业互联网技术与应用挑战赛——工业互联网专项赛道",
       "tier": "hobby",
       "fields": [
         "computer",
         "engineering"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -2382,7 +2382,7 @@
       "search": "",
       "official_url": "https://www.saikr.com/vse/2026Industrial",
       "official_site": "",
-      "organizer": "工业互联网技术与应用挑战赛组委会",
+      "organizer": "中国互联网协会智慧教育工作委员会",
       "prestige": 3
     },
     {
@@ -2436,30 +2436,21 @@
     },
     {
       "id": "comp-saikr-666a81761ea0",
-      "name": "【今日开考·考场开放两天】第六届全国高校商务翻译（英语）能力挑战赛",
+      "name": "第六届全国高校商务翻译（英语）能力挑战赛",
       "tier": "hobby",
       "fields": [
         "language",
         "business"
       ],
       "status": "done",
-      "signup": "即日起至2026年9月19日",
-      "schedule": "",
+      "signup": "报名时间：2026年4月14日至9月19日",
+      "schedule": "初赛分四场，最后一场于9月19日至20日举行；全国决赛于2026年10月24日9:00-21:00举行。",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/BTE2026",
       "official_site": "",
-      "organizer": "商务外语系列赛事组委会",
-      "prestige": 4,
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_start": "2026-04-14",
-        "registration_end": "2026-09-19",
-        "event_start": "2026-08-30",
-        "event_end": "2026-10-18",
-        "verified_at": "2026-08-02T00:24:22+08:00"
-      }
+      "organizer": "中国对外贸易经济合作企业协会国际商务与语言服务工作委员会",
+      "prestige": 3
     },
     {
       "id": "comp-saikr-0699351a3134",
@@ -2491,17 +2482,17 @@
       "name": "2026年“知行杯”大学生新媒体大赛",
       "tier": "hobby",
       "fields": [
-        "other"
+        "design"
       ],
-      "status": "pending",
-      "signup": "",
-      "schedule": "",
-      "summary": "来源：赛氪。浏览 1.4万，关注 281",
+      "status": "done",
+      "signup": "2026年报名时间：2026年2月1日至7月25日",
+      "schedule": "第二场作品提交截止：2026年7月25日23:59；第二场获奖名单已公布。",
+      "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/ZXBXMT2026",
       "official_site": "",
-      "organizer": "全国大学生“知行杯”组委会",
-      "prestige": 4
+      "organizer": "中国流通行业管理与思想政治工作研究会行业教育分会",
+      "prestige": 3
     },
     {
       "id": "comp-saikr-bc908cea4c83",
@@ -2528,15 +2519,15 @@
         "design",
         "innovation"
       ],
-      "status": "pending",
-      "signup": "",
-      "schedule": "",
-      "summary": "来源：赛氪。浏览 9824，关注 448",
+      "status": "done",
+      "signup": "2026年报名时间：2026年1月7日至7月14日",
+      "schedule": "各赛道最后一场于2026年7月14日结束，官方页面已公布最终获奖名单。",
+      "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/2026/HWJCTWH",
       "official_site": "",
-      "organizer": "“华文奖”全国大学生文化创新大赛组委会",
-      "prestige": 4
+      "organizer": "华夏文化促进会素质教育委员会",
+      "prestige": 3
     },
     {
       "id": "comp-saikr-68dc51fa915b",
@@ -2564,7 +2555,7 @@
     },
     {
       "id": "comp-saikr-e5eaadd424dd",
-      "name": "【本周六+周日开考！赛后2天公布获奖名单】2026大学生“麟创杯”创新数学竞赛",
+      "name": "【现在报名，立即考试】2026大学生“麟创杯”创新数学竞赛",
       "tier": "hobby",
       "fields": [
         "ai",
@@ -2643,20 +2634,26 @@
     {
       "id": "comp-saikr-d873a7301f36",
       "name": "第十届全国大学生集成电路创新创业大赛职业技能赛项--综合赛道",
-      "tier": "hobby",
+      "tier": "official",
       "fields": [
         "innovation",
         "engineering"
       ],
-      "status": "pending",
-      "signup": "",
-      "schedule": "",
-      "summary": "来源：赛氪。浏览 1.1万，关注 39",
+      "status": "closed",
+      "signup": "综合赛道报名：2026年5月15日至9月15日",
+      "schedule": "初赛作品提交截止：2026年9月10日；全国总决赛安排在2026年10月下旬，具体时间待官方通知。",
+      "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/58261",
       "official_site": "",
-      "organizer": "芯人类",
-      "prestige": 4
+      "organizer": "工业和信息化部人才交流中心",
+      "prestige": 8,
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-10-24T22:12:34+08:00",
+        "review_after": "2026-10-27T22:11:34+08:00"
+      }
     },
     {
       "id": "comp-saikr-c6921a9ddea4",
@@ -2667,14 +2664,14 @@
         "innovation"
       ],
       "status": "done",
-      "signup": "第二场报名截止2026年7月26日",
-      "schedule": "",
-      "summary": "来源：赛氪。浏览 8631，关注 249",
+      "signup": "第二场报名截止：2026年7月26日12:00",
+      "schedule": "第二场初赛考试：2026年7月25日至26日；第二场决赛获奖名单已公布。",
+      "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/2026KFZ",
       "official_site": "",
-      "organizer": "信息系统创新大赛组委会",
-      "prestige": 4
+      "organizer": "湖北省计算机信息系统集成协会",
+      "prestige": 3
     },
     {
       "id": "comp-saikr-a9fc0ce98006",
@@ -2692,15 +2689,7 @@
       "official_url": "https://www.saikr.com/vse/2026TJKXSF",
       "official_site": "",
       "organizer": "山东省应用统计学会",
-      "prestige": 4,
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_end": "2026-10-16",
-        "event_start": "2026-10-17",
-        "event_end": "2026-10-18",
-        "verified_at": "2026-10-13T22:05:28+08:00"
-      }
+      "prestige": 4
     },
     {
       "id": "comp-saikr-29d981765725",
@@ -2736,7 +2725,7 @@
       "official_url": "https://www.saikr.com/vse/CLAIBM2026",
       "official_site": "",
       "organizer": "大连市计算机学会、苏州市计算机学会、天津市计算机学会",
-      "prestige": 4
+      "prestige": 3
     },
     {
       "id": "comp-saikr-9cfeceaf8750",
@@ -2770,7 +2759,7 @@
       "official_url": "https://www.saikr.com/vse/YFWL26",
       "official_site": "",
       "organizer": "2026年全国文旅赛",
-      "prestige": 4,
+      "prestige": 3,
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -2844,15 +2833,24 @@
         "computer",
         "science"
       ],
-      "status": "pending",
-      "signup": "",
-      "schedule": "",
-      "summary": "来源：赛氪。浏览 5899，关注 206",
+      "status": "open",
+      "signup": "报名时间：2026年2月6日至11月20日；最后一场考试：2026年11月21日至22日。",
+      "schedule": "最后一场线上个人赛，参赛者在2026年11月21日10:00至11月22日23:00期间任选1小时答题；每人收取50元服务费。",
+      "summary": "山东省应用统计学会主办，面向高校在校生的计算机组成原理个人线上赛；最后一场报名至11月20日，服务费50元/人。来源：赛氪。",
       "search": "",
       "official_url": "https://www.saikr.com/vse/2026TJKXCOA",
       "official_site": "",
-      "organizer": "统计科学算法编程",
-      "prestige": 4
+      "organizer": "山东省应用统计学会",
+      "prestige": 4,
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-02-06",
+        "registration_end": "2026-11-20",
+        "event_start": "2026-11-21",
+        "event_end": "2026-11-22",
+        "verified_at": "2026-10-24T22:31:30+08:00"
+      }
     },
     {
       "id": "comp-saikr-4604dd3e4d72",
@@ -2869,7 +2867,7 @@
       "official_url": "https://www.saikr.com/vse/Bett-Writing-Fourth",
       "official_site": "",
       "organizer": "“BETT杯”大赛组委会",
-      "prestige": 4
+      "prestige": 3
     },
     {
       "id": "comp-saikr-613cd4ec2e22",
@@ -2903,33 +2901,30 @@
       "official_url": "https://www.saikr.com/vse/ETTBL-JYF",
       "official_site": "",
       "organizer": "ETTBL英语大赛组委会",
-      "prestige": 2,
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-04T15:41:30+08:00",
-        "registration_start": "2026-05-13",
-        "registration_end": "2026-09-19",
-        "event_start": "2026-06-13",
-        "event_end": "2026-09-19"
-      }
+      "prestige": 2
     },
     {
       "id": "comp-saikr-74b7678e90b1",
       "name": "2026 第六届“心上的中国” 大学生525 心理知识大赛·全国赛",
-      "tier": "hobby",
+      "tier": "official",
       "fields": [
         "medical"
       ],
-      "status": "pending",
-      "signup": "",
-      "schedule": "",
-      "summary": "来源：赛氪。浏览 6515，关注 181",
+      "status": "ongoing",
+      "signup": "国赛报名至2026年9月25日；作品提交至9月30日。",
+      "schedule": "第二批作品评阅安排在2026年10月中旬，评阅结果预计于10月下旬公布；截至本次核验，赛事仍处于评阅阶段。",
+      "summary": "中国心理学会心理学普及工作委员会主办，面向高校全日制在校生；国赛作品评阅结果预计于10月下旬公布。来源：赛氪。",
       "search": "",
       "official_url": "https://www.saikr.com/vse/psy2026",
       "official_site": "",
-      "organizer": "全国大学生心理知识竞赛",
-      "prestige": 4
+      "organizer": "中国心理学会心理学普及工作委员会",
+      "prestige": 5,
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-10-24T22:31:30+08:00",
+        "review_after": "2026-10-27T21:31:30+08:00"
+      }
     },
     {
       "id": "comp-saikr-c4f00438cfee",
@@ -2950,28 +2945,20 @@
     },
     {
       "id": "comp-saikr-3bcfd9399c73",
-      "name": "【已开考 | 持续报名中】“声释中华”新时代大学生外宣人才文学素养大赛",
+      "name": "“声释中华”新时代大学生外宣人才文学素养大赛",
       "tier": "hobby",
       "fields": [
         "other"
       ],
-      "status": "ongoing",
-      "signup": "即日起至2026年9月5日",
-      "schedule": "",
-      "summary": "赛事详情请访问信息来源页面",
+      "status": "done",
+      "signup": "报名时间：即日起至2026年9月5日。",
+      "schedule": "第三场考试于2026年9月5日举行；官方说明每场考试结束后一周内公布获奖情况。",
+      "summary": "面向高校学生及社会人士的文学素养线上考试；第三场于2026年9月5日举行，赛事已结束。来源：赛氪。",
       "search": "",
       "official_url": "https://www.saikr.com/vse/2026SY",
       "official_site": "",
       "organizer": "“声释中华”新时代大学生外宣人才赛事组委会",
-      "prestige": 4,
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-03T09:56:57+08:00",
-        "registration_start": "2026-06-02",
-        "registration_end": "2026-09-05",
-        "event_start": "2026-09-05"
-      }
+      "prestige": 3
     },
     {
       "id": "comp-52jingsai-c4ee8436bf0e",
@@ -3046,7 +3033,7 @@
     {
       "id": "comp-saikr-635a0b9d727c",
       "name": "第十一届全国高等院校英语教师教学基本功大赛",
-      "tier": "hobby",
+      "tier": "official",
       "fields": [
         "language"
       ],
@@ -3058,7 +3045,7 @@
       "official_url": "https://www.saikr.com/vse/JSJBG2026",
       "official_site": "",
       "organizer": "第十一届全国高等院校英语教师教学基本功大赛组委会",
-      "prestige": 3
+      "prestige": 6
     },
     {
       "id": "comp-saikr-6678ca268bc9",
@@ -3129,7 +3116,7 @@
     {
       "id": "comp-saikr-c1fb6ed36379",
       "name": "中国光学工程学会首届伊辛·智算未来挑战赛——新质生产力科技成果万里行活动",
-      "tier": "enterprise",
+      "tier": "official",
       "fields": [
         "computer",
         "ai"
@@ -3152,15 +3139,6 @@
         "language"
       ],
       "status": "done",
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_start": "2026-05-09",
-        "registration_end": "2026-09-08",
-        "event_start": "2026-06-13",
-        "event_end": "2026-09-08",
-        "verified_at": "2026-08-02T00:24:22+08:00"
-      },
       "signup": "即日起至2026年9月8日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
@@ -3168,7 +3146,7 @@
       "official_url": "https://www.saikr.com/vse/YCJH/FY2026",
       "official_site": "",
       "organizer": "英才计划",
-      "prestige": 4
+      "prestige": 3
     },
     {
       "id": "comp-52jingsai-47e3099e888b",
@@ -3200,22 +3178,22 @@
       "fields": [
         "language"
       ],
-      "status": "ongoing",
+      "status": "open",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "registration_start": "2026-06-09",
-        "registration_end": "2026-10-10",
-        "event_start": "2026-06-09",
-        "verified_at": "2026-08-02T10:19:52+08:00"
+        "registration_start": "2026-10-10",
+        "registration_end": "2026-11-15",
+        "event_start": "2026-10-11",
+        "verified_at": "2026-10-24T22:31:30+08:00"
       },
-      "signup": "即日起至2026年10月10日",
-      "schedule": "",
-      "summary": "赛事详情请访问信息来源页面",
+      "signup": "第四场报名及作品提交：2026年10月10日至11月15日。",
+      "schedule": "第四场作品提交至2026年11月15日；全国总决赛拟于2026年11月举行，具体时间待官方通知。",
+      "summary": "山西省翻译协会主办的第四届英语演讲大赛；第四场报名及作品提交至11月15日，全国总决赛拟于11月举行。来源：赛氪。",
       "search": "",
       "official_url": "https://www.saikr.com/vse/YSJYJ",
       "official_site": "",
-      "organizer": "“三晋杯”全国大学生英语大赛组委会",
+      "organizer": "山西省翻译协会",
       "prestige": 3
     },
     {
@@ -3244,15 +3222,6 @@
         "language"
       ],
       "status": "done",
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-09-27T21:38:18+08:00",
-        "registration_start": "2026-05-25",
-        "registration_end": "2026-09-27",
-        "event_start": "2026-08-29",
-        "event_end": "2026-09-27"
-      },
       "signup": "即日起至2026年9月27日23:00",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
@@ -3309,7 +3278,7 @@
       "official_url": "https://www.saikr.com/vse/DZZGcup2026",
       "official_site": "",
       "organizer": "读者杂志社、读者出版集团",
-      "prestige": 5
+      "prestige": 4
     },
     {
       "id": "comp-saikr-888a592edcd2",
@@ -3335,7 +3304,7 @@
       "official_url": "https://www.saikr.com/vse/QLBYW26",
       "official_site": "",
       "organizer": "语文文化组委会",
-      "prestige": 4
+      "prestige": 3
     },
     {
       "id": "comp-saikr-934b697c9f23",
@@ -3345,15 +3314,6 @@
         "computer"
       ],
       "status": "done",
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_start": "2026-04-08",
-        "registration_end": "2026-10-10",
-        "event_start": "2026-10-09",
-        "event_end": "2026-10-10",
-        "verified_at": "2026-08-20T07:42:10+08:00"
-      },
       "signup": "2026年4月8日至10月10日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
@@ -3361,7 +3321,7 @@
       "official_url": "https://www.saikr.com/vse/DZSW2026",
       "official_site": "",
       "organizer": "全国大学生电子商务精英挑战赛大赛组委会",
-      "prestige": 4
+      "prestige": 3
     },
     {
       "id": "comp-saikr-274ee0a08789",
@@ -3412,16 +3372,7 @@
       "official_url": "https://www.saikr.com/vse/NCEPC2026",
       "official_site": "",
       "organizer": "外文局亚太传播中心英语大赛组委会",
-      "prestige": 7,
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_start": "2026-06-17",
-        "registration_end": "2026-09-19",
-        "event_start": "2026-07-19",
-        "event_end": "2026-09-19",
-        "verified_at": "2026-08-17T07:43:31+08:00"
-      }
+      "prestige": 7
     },
     {
       "id": "comp-saikr-cc54a285b632",
@@ -3700,15 +3651,6 @@
         "language"
       ],
       "status": "done",
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_start": "2026-04-17",
-        "registration_end": "2026-10-12",
-        "event_start": "2026-08-12",
-        "event_end": "2026-10-12",
-        "verified_at": "2026-09-06T12:39:21+08:00"
-      },
       "signup": "即日起至2026年10月12日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
@@ -3743,14 +3685,14 @@
     },
     {
       "id": "comp-saikr-554ce57a889c",
-      "name": "【本周六考试】2026年第二届“中外传播杯”大学生中外历史竞答大赛",
+      "name": "2026年第二届“中外传播杯”大学生中外历史竞答大赛",
       "tier": "official",
       "fields": [
         "other"
       ],
       "status": "open",
-      "signup": "报名时间：2026年7月15日至10月24日23:59。",
-      "schedule": "第三场考试：2026年10月24日09:00至22:00；后续场次以赛事页面公告为准。",
+      "signup": "2026年7月15日至2026年11月22日22:00；四场考试可任选一场报名参赛",
+      "schedule": "四场线上考试：2026年8月22日、9月19日、10月24日、11月22日；每场9:00—22:00任选一小时，前两场已结束。",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/2026LSJD",
@@ -3760,10 +3702,11 @@
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-20T23:58:32+08:00",
-        "registration_start": "2026-07-15",
-        "registration_end": "2026-10-24",
-        "event_start": "2026-10-24"
+        "registration_start": "2026-07-15T00:00:00+08:00",
+        "registration_end": "2026-11-22T22:00:00+08:00",
+        "event_start": "2026-10-24T09:00:00+08:00",
+        "event_end": "2026-11-22T22:00:00+08:00",
+        "verified_at": "2026-10-24T21:40:35+08:00"
       }
     },
     {
@@ -3959,7 +3902,7 @@
     },
     {
       "id": "comp-saikr-3e818dd91712",
-      "name": "【省赛倒计时2天】第九届大学生普通话挑战赛（NPCCS）",
+      "name": "【省赛倒计时1天】第九届大学生普通话挑战赛（NPCCS）",
       "tier": "hobby",
       "fields": [
         "language"
@@ -4134,7 +4077,7 @@
       "fields": [
         "science"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -4503,7 +4446,7 @@
     {
       "id": "comp-52jingsai-3e19947b07ba",
       "name": "2026中国自行车电动自行车设计大赛",
-      "tier": "enterprise",
+      "tier": "official",
       "fields": [
         "design"
       ],
@@ -4643,12 +4586,12 @@
     },
     {
       "id": "comp-saikr-6f1a28424edc",
-      "name": "【最后一场本周开考！90分以上全部一等奖】计算机能力挑战赛",
+      "name": "【最后一场正在考试中！立即报名】计算机能力挑战赛",
       "tier": "hobby",
       "fields": [
         "computer"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -4670,7 +4613,7 @@
     {
       "id": "comp-52jingsai-171912dc3ec0",
       "name": "第三届漓江文学奖全球征稿",
-      "tier": "hobby",
+      "tier": "enterprise",
       "fields": [
         "literature"
       ],
@@ -4689,7 +4632,7 @@
       "official_url": "https://www.52jingsai.com/article-24076-1.html",
       "official_site": "",
       "organizer": "广西出版传媒集团",
-      "prestige": 4
+      "prestige": 6
     },
     {
       "id": "comp-52jingsai-22580fa6e53a",
@@ -4835,7 +4778,7 @@
       "official_url": "https://www.saikr.com/vse/CLComputer2026WT",
       "official_site": "",
       "organizer": "大连市计算机学会、苏州市计算机学会、天津市计算机学会",
-      "prestige": 4
+      "prestige": 3
     },
     {
       "id": "comp-52jingsai-9ef3997664b8",
@@ -5342,15 +5285,6 @@
         "robot"
       ],
       "status": "done",
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_start": "2026-07-01",
-        "registration_end": "2026-10-17",
-        "event_start": "2026-10-17",
-        "event_end": "2026-10-18",
-        "verified_at": "2026-10-16T22:14:29+08:00"
-      },
       "signup": "2026年7月1日00:00至2026年10月17日23:59。",
       "schedule": "个人线上客观题考试：2026年10月17日10:00至10月18日23:00；考察机器人相关基础知识。",
       "summary": "中国图像图形学会主办的全国高校机器人基础知识个人赛，采用线上客观题形式；页面注明参赛费50元。",
@@ -5484,6 +5418,56 @@
       "official_site": "http://www.ncetac.com/",
       "organizer": "中国外文局亚太传播中心",
       "prestige": 7
+    },
+    {
+      "id": "comp-52jingsai-8a5de2000aa6",
+      "name": "2026年第七届大学生财经素养大赛",
+      "tier": "hobby",
+      "fields": [
+        "business"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-10-30",
+        "verified_at": "2026-10-24T21:40:35+08:00"
+      },
+      "signup": "即日起至2026年10月30日",
+      "schedule": "",
+      "summary": "面向各高校在校生的免费线上财经素养知识答题；60分及以上可获电子版等级证书，纸质证书及邮寄需自费。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23441-1.html",
+      "official_site": "http://cj.52jingsai.com/",
+      "organizer": "中国商业经济学会教育培训分会",
+      "prestige": 3
+    },
+    {
+      "id": "comp-saikr-63507345a848",
+      "name": "2026年度第七届大学生算法设计与编程挑战赛(秋季赛)",
+      "tier": "hobby",
+      "fields": [
+        "computer",
+        "ai"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-08-19T00:00:00+08:00",
+        "registration_end": "2026-11-13T23:59:00+08:00",
+        "event_start": "2026-11-14T10:00:00+08:00",
+        "event_end": "2026-11-15T23:00:00+08:00",
+        "verified_at": "2026-10-24T21:40:35+08:00"
+      },
+      "signup": "2026年8月19日00:00至2026年11月13日23:59",
+      "schedule": "算法编程赛道测试：2026年11月14日13:00—18:00，比赛：11月15日13:00—18:00；计算机基础赛道：11月14日10:00至11月15日23:00期间任选一小时。",
+      "summary": "线上赛事设算法设计编程和计算机基础能力挑战两个赛道，面向高校本专科生、研究生及社会人士；赛事详情列明赛道报名及评审费用分别为69元/队和49元/人。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/adpc2026autumn",
+      "official_site": "",
+      "organizer": "天津市未来与预测科学研究会",
+      "prestige": 3
     }
   ]
 }
