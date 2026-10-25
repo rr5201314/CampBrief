@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-24T22:41:33+08:00",
+  "last_updated": "2026-10-25T22:02:16+08:00",
   "source": "CampBrief",
-  "total": 258,
+  "total": 261,
   "tiers": [
     {
       "key": "all",
@@ -199,8 +199,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-18T22:06:14+08:00",
-        "review_after": "2026-10-21T22:06:14+08:00"
+        "verified_at": "2026-10-25T22:02:16+08:00",
+        "review_after": "2026-10-28T22:02:16+08:00"
       }
     },
     {
@@ -1681,8 +1681,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-22T19:40:33+08:00",
-        "review_after": "2026-10-25T18:40:33+08:00"
+        "verified_at": "2026-10-25T22:02:16+08:00",
+        "review_after": "2026-10-28T22:02:16+08:00"
       }
     },
     {
@@ -1705,8 +1705,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-22T19:40:33+08:00",
-        "review_after": "2026-10-25T18:40:33+08:00"
+        "verified_at": "2026-10-25T22:02:16+08:00",
+        "review_after": "2026-10-28T22:02:16+08:00"
       }
     },
     {
@@ -1766,8 +1766,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-22T19:40:33+08:00",
-        "review_after": "2026-10-25T18:40:33+08:00"
+        "verified_at": "2026-10-25T22:02:16+08:00",
+        "review_after": "2026-10-28T22:02:16+08:00"
       }
     },
     {
@@ -3735,7 +3735,7 @@
     },
     {
       "id": "comp-saikr-9c66a33c52e2",
-      "name": "【倒计时2天】2026年第六届《英语世界》杯全国大学生英语听力大赛",
+      "name": "【考试延长至周一晚六点结束】2026年第六届《英语世界》杯全国大学生英语听力大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3747,9 +3747,8 @@
         "registration_start": "2026-07-20",
         "registration_end": "2026-10-25",
         "event_start": "2026-08-23",
-        "verified_at": "2026-09-15T21:38:10+08:00",
-        "event_end": "2026-10-25",
-        "review_after": "2026-09-18T21:38:10+08:00"
+        "verified_at": "2026-10-25T22:02:16+08:00",
+        "event_end": "2026-10-26"
       },
       "signup": "即日起至2026年10月25日",
       "schedule": "线上闭卷考试，任选一场参加（60分钟/30道单选）",
@@ -3830,8 +3829,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-22T19:40:33+08:00",
-        "review_after": "2026-10-25T18:40:33+08:00"
+        "verified_at": "2026-10-25T22:02:16+08:00",
+        "review_after": "2026-10-28T22:02:16+08:00"
       }
     },
     {
@@ -3902,7 +3901,7 @@
     },
     {
       "id": "comp-saikr-3e818dd91712",
-      "name": "【省赛倒计时1天】第九届大学生普通话挑战赛（NPCCS）",
+      "name": "【省赛报名】第九届大学生普通话挑战赛（NPCCS）",
       "tier": "hobby",
       "fields": [
         "language"
@@ -4377,7 +4376,7 @@
       "fields": [
         "business"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5467,6 +5466,79 @@
       "official_url": "https://www.saikr.com/vse/adpc2026autumn",
       "official_site": "",
       "organizer": "天津市未来与预测科学研究会",
+      "prestige": 3
+    },
+    {
+      "id": "comp-52jingsai-61b5f6d31ed7",
+      "name": "中华民族影像征集计划",
+      "tier": "official",
+      "fields": [
+        "design"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-05-19",
+        "registration_end": "2029-12-31",
+        "verified_at": "2026-10-25T22:02:16+08:00"
+      },
+      "signup": "2026年5月19日启动，长期征集，征稿截止2029年12月31日。",
+      "schedule": "长期征集；优秀作品不定期在《民族画报》刊登，部分佳作在中国摄影家协会平台发表。",
+      "summary": "民族画报社与中国摄影家协会共同主办的公益影像征集，围绕铸牢中华民族共同体意识主题征集图片与短视频，不收费用，采用作品按稿费标准付酬。",
+      "search": "中华民族影像征集计划 中国摄影家协会 民族画报",
+      "official_url": "https://www.52jingsai.com/article-24131-1.html",
+      "official_site": "https://zg.cpanet.cn/",
+      "organizer": "民族画报社、中国摄影家协会",
+      "prestige": 7
+    },
+    {
+      "id": "comp-saikr-cafcc9db7724",
+      "name": "【11.20—11.21开考】2026年高校大学生健康与心理能力大赛",
+      "tier": "hobby",
+      "fields": [
+        "medical"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-10-25T22:02:16+08:00",
+        "review_after": "2026-10-28T22:02:16+08:00"
+      },
+      "signup": "即日起至2026年12月；设8月、9月、11月、12月四场考试，任选一场参加。",
+      "schedule": "线上闭卷测评60分钟；待考场次为2026年11月20日18:00至11月21日18:00、12月18日18:00至12月19日18:00。",
+      "summary": "中国商业技师协会主办的面向全国高校在校生的健康与心理知识竞赛，设心理学与健康管理学两个赛道，线上闭卷作答，收取50元报名费。",
+      "search": "健康与心理能力大赛 心理学 心理健康 大学生",
+      "official_url": "https://www.saikr.com/vse/Mental202602",
+      "official_site": "",
+      "organizer": "中国商业技师协会",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-cf64c1f2b63e",
+      "name": "【多所高校官网报道】第四届“三晋杯”全国大学生英语写作大赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-09-20",
+        "registration_end": "2026-11-22",
+        "event_start": "2026-10-18",
+        "event_end": "2026-11-22",
+        "verified_at": "2026-10-25T22:02:16+08:00"
+      },
+      "signup": "即日起至2026年11月22日24:00，共三场，前两场已结束，第三场作品提交至11月22日。",
+      "schedule": "第三场：2026年10月19日至11月22日提交作品；前两场分别于2026年9月20日、10月18日截止。",
+      "summary": "山西省翻译协会主办的英语写作赛事，分研究生、英语专业、非英语专业三个组别，线上提交作品，收取50元报名费。",
+      "search": "三晋杯 英语写作大赛 山西省翻译协会",
+      "official_url": "https://www.saikr.com/vse/26YSJW",
+      "official_site": "",
+      "organizer": "山西省翻译协会",
       "prestige": 3
     }
   ]
