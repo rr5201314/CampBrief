@@ -1,8 +1,21 @@
 {
-  "last_updated": "2026-10-25T08:27:18+08:00",
+  "last_updated": "2026-10-25T14:03:17+08:00",
   "source": "CampBrief Auto",
-  "total": 693,
+  "total": 704,
   "items": [
+    {
+      "id": "news-083bfe64dcde6c76",
+      "title": "英国公布数亿英镑 AI 投资计划，将设 AI 生物安全实验室",
+      "url": "https://daily.juya.uk/issues/2026-10-25/",
+      "date": "2026-10-25",
+      "published": "2026-10-25T01:13:12+00:00",
+      "summary": "英国公布数亿英镑 AI 投资计划，含 1 亿英镑设立 AI 生物安全实验室；OpenAI 与 Anthropic 另合计承诺最高 2 亿英镑模型额度。",
+      "detail": "计划还包括投资爱丁堡的 AI 芯片设计、在曼彻斯特设立 NCSC AI 网络安全卓越中心，每年投入 1000 万英镑研究 AI 对就业和产业的影响，并向 AI Security Institute 追加 1.2 亿英镑。",
+      "image": "",
+      "priority": 3,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
     {
       "id": "news-707d8e9cb1384876",
       "title": "Apollo 首席经济学家：科技行业之外仍未看到 AI 的财务回报",
@@ -44,6 +57,32 @@
       "category": "tech",
       "subcategory": "software",
       "source": "Hacker News"
+    },
+    {
+      "id": "news-c5c76f39a1fa51e7",
+      "title": "WorkBuddy 内测付费技能与专家，开发者可自行定价",
+      "url": "https://daily.juya.uk/issues/2026-10-25/",
+      "date": "2026-10-25",
+      "published": "2026-10-25T01:13:12+00:00",
+      "summary": "WorkBuddy 开放平台内测收入变现功能，开发者可发布付费技能和专家，自行设置一次性付费或按月订阅价格，内测期平台服务费为 1%。",
+      "detail": "用户购买后才能使用付费资产；平台称付费资产加密并在云端运行以防复制传播。开发者可查看收入与账单，并跳转微信提现。目前暂不支持把已发布的免费资产转为付费。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-ee916095a0b7abe3",
+      "title": "Claude Code 团队两名成员宣布离开 Anthropic",
+      "url": "https://daily.juya.uk/issues/2026-10-25/",
+      "date": "2026-10-25",
+      "published": "2026-10-25T01:13:12+00:00",
+      "summary": "Claude Code 团队成员 Thariq 与 Anthony Morris 分别宣布离职，后者称自己创建了 Claude Code 桌面版。",
+      "detail": "Thariq 表示，项目规模增长超出预期，接下来会先休息一段时间再投入新的事情。Anthony Morris 称参与 Anthropic 的使命是其职业生涯的亮点，并会很快公布下一步。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
     },
     {
       "id": "news-5a262a0d52b4c255",
@@ -316,6 +355,73 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-aec90fbc3abb4631",
+      "title": "火山引擎上线 Seedance 2.5 4K 版，暂限部分企业客户试用",
+      "url": "https://daily.juya.uk/issues/2026-10-24/",
+      "date": "2026-10-24",
+      "published": "2026-10-24T01:28:12+00:00",
+      "summary": "火山引擎发布 Seedance 2.5 4K 版，目前仅供部分企业客户试用，支持先用 480P 样片验证分镜、确定效果后再生成 4K 正片。",
+      "detail": "该版本具备 10-bit 色深，火山引擎称通过专项训练提升了人物表情、细微动作与画面细节表现；参考生成和视频编辑时也能更好保持上传素材的画质与色彩。后续或逐步扩大开放范围。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-9eb1e7cab3a51652",
+      "title": "腾讯混元开源交互式视频世界模型 Hy-Nomas",
+      "url": "https://daily.juya.uk/issues/2026-10-24/",
+      "date": "2026-10-24",
+      "published": "2026-10-24T01:28:12+00:00",
+      "summary": "腾讯混元开源交互式视频世界模型 Hy-Nomas，支持通过文本提示词和相机轨迹交互，并借助世界记忆做长时程生成。",
+      "detail": "模型支持用轻量级 LoRA 适配机器人等专门领域，并针对消费级 GPU 做了推理优化；已在 GitHub 和 Hugging Face 发布，同时提供演示页面。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-b6ceb1638d0ceac9",
+      "title": "OpenAI 披露 Habitat 存储优化：全球读取中位延迟从 120 毫秒降至约 10 毫秒",
+      "url": "https://daily.juya.uk/issues/2026-10-24/",
+      "date": "2026-10-24",
+      "published": "2026-10-24T01:28:12+00:00",
+      "summary": "OpenAI 披露 Habitat 存储优化，通过关键数据复制、区域内缓存和 Rust 重写，把全球读取中位延迟从约 120 毫秒降至约 10 毫秒。",
+      "detail": "Habitat 为 ChatGPT 等产品提供数据访问，承载超过 500 PB 数据，在 40 个地理区域为超过 12 亿用户提供毫秒级服务。大规模复制仍受云容量限制，最慢请求仍需跨区域回源读取未缓存数据。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-5833eeb9939541d7",
+      "title": "AI 研究初创 Flapping Airplanes 完成 10 亿美元 A 轮融资",
+      "url": "https://daily.juya.uk/issues/2026-10-24/",
+      "date": "2026-10-24",
+      "published": "2026-10-24T01:28:12+00:00",
+      "summary": "Flapping Airplanes 完成 10 亿美元 A 轮融资，彭博社称其投后估值达 60 亿美元；公司研究用更少数据和算力训练模型，目前尚无商业产品。",
+      "detail": "本轮由 Index Ventures 和 Lux Capital 共同领投，红杉、Alphabet 旗下 GV 和 Kleiner Perkins 参投。公司同时研究提高开发与运行模型的芯片效率。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-7f93a85ed21bb30b",
+      "title": "DeepSeek、MiniMax 完成大模型技术出口相关登记",
+      "url": "https://daily.juya.uk/issues/2026-10-24/",
+      "date": "2026-10-24",
+      "published": "2026-10-24T01:28:12+00:00",
+      "summary": "据玉渊谭天报道，DeepSeek、MiniMax 在技术出口新政策公布后完成登记手续，并完成模型开源和海外授权使用。",
+      "detail": "商务部、科技部此前就修订《中国禁止出口限制出口技术目录》公开征求意见，拟增列大模型、智能体、算力集群、信息处理相关 23 项技术，并同步实施出口前临时登记管理。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
       "id": "news-b1ef7b8956f1e83b",
       "title": "Rune 1.3加入TypeScript 7、Helix编辑器与智能体浏览器",
       "url": "https://rune.build/blog/rune-1-3-release",
@@ -396,6 +502,45 @@
       "priority": 1,
       "category": "ai",
       "source": "36氪"
+    },
+    {
+      "id": "news-6aaafc2296859141",
+      "title": "Sam Altman：短期内无法负责任地开源最强内部模型",
+      "url": "https://daily.juya.uk/issues/2026-10-24/",
+      "date": "2026-10-24",
+      "published": "2026-10-24T01:28:12+00:00",
+      "summary": "OpenAI CEO Sam Altman 在访谈中表示，短期内无法负责任地开源公司目前最强的内部模型，需先改变互联网整体的网络防御方式。",
+      "detail": "Altman 认为还需要建立生物威胁防护层并完成一系列其他工作；他同时表示，其他人开源同等水平模型的时间可能并不遥远。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-aa09ade04aee8485",
+      "title": "据报 Anthropic 对部分 Claude 订阅账号测试新额度方案",
+      "url": "https://daily.juya.uk/issues/2026-10-24/",
+      "date": "2026-10-24",
+      "published": "2026-10-24T01:28:12+00:00",
+      "summary": "据 SemiAnalysis 报道，Anthropic 正对部分 Claude 订阅账号测试额度：月度 API 等价价值降约两成，五小时限额提高约两成。",
+      "detail": "SemiAnalysis 展示的 Claude Max 20x 两个账号对比显示，测试组五小时使用限额高 19%、每周预算低 20%。月度 API 等价价值指订阅用量按 API 价格折算后的价值。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-938a7f6a0ce887e2",
+      "title": "Cognition 推出焕新版 Devin Desktop",
+      "url": "https://daily.juya.uk/issues/2026-10-24/",
+      "date": "2026-10-24",
+      "published": "2026-10-24T01:28:12+00:00",
+      "summary": "Cognition 推出焕新版 Devin Desktop，全面支持 Devin Cloud 各项功能，并带来新的 Agent 指挥中心和会话显示改进。",
+      "detail": "新版针对会话显示做了数千项改进，目前可免费下载，提供 Mac、Windows 和 Linux 版本。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
     },
     {
       "id": "news-15a8e5c58f1005d3",
