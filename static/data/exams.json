@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-25T21:13:39+08:00",
+  "last_updated": "2026-10-26T21:02:28+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -353,7 +353,7 @@
       "id": "ruankao-202611",
       "name": "2026年下半年计算机技术与软件专业技术资格考试 (软考)",
       "category": "computer",
-      "status": "closed",
+      "status": "done",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
