@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-25T22:02:16+08:00",
+  "last_updated": "2026-10-26T21:47:28+08:00",
   "source": "CampBrief",
-  "total": 261,
+  "total": 264,
   "tiers": [
     {
       "key": "all",
@@ -2562,7 +2562,7 @@
         "innovation",
         "science"
       ],
-      "status": "open",
+      "status": "closed",
       "signup": "2026年4月29日至2026年10月25日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
@@ -3426,12 +3426,12 @@
     },
     {
       "id": "comp-saikr-699c33f46408",
-      "name": "【本周日考试】第五届“中外传播杯”大学生英语语法大赛",
+      "name": "【最后一场】第五届“中外传播杯”大学生英语语法大赛",
       "tier": "official",
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "ongoing",
       "signup": "2026年7月07日09:00至2026年10月25日23:00",
       "schedule": "英语语法大赛共设五场比赛；第四场考试为2026年10月25日09:00至23:59，考场开放至10月26日03:00，任选连续60分钟作答；其余场次以页面公告为准。",
       "summary": "赛事详情请访问信息来源页面",
@@ -3527,15 +3527,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_end": "2026-10-25",
-        "event_start": "2026-10-25",
-        "event_end": "2026-10-25",
-        "verified_at": "2026-10-14T21:45:08+08:00"
-      },
+      "status": "done",
       "signup": "报名截止：2026年10月25日",
       "schedule": "特别场次线上考试时间：2026年10月25日",
       "summary": "赛事围绕国家通用语言文字法规与规范知识开展线上答题；2026年增设面向社会的特别场次。",
@@ -3740,7 +3732,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -3906,7 +3898,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -4590,16 +4582,7 @@
       "fields": [
         "computer"
       ],
-      "status": "ongoing",
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_start": "2026-06-10",
-        "registration_end": "2026-10-23",
-        "event_start": "2026-10-24",
-        "event_end": "2026-10-25",
-        "verified_at": "2026-10-14T21:45:08+08:00"
-      },
+      "status": "done",
       "signup": "报名时间：2026年6月10日至10月23日；十月场考试为10月24日至10月25日",
       "schedule": "2026年10月24日10:00至10月25日23:00，期间任选1小时答题；预计赛后三天公布获奖名单。",
       "summary": "中国国际科技促进会物联网工作委员会主办的线上计算机能力挑战赛，设C、C++、Java、Python、程序设计基础知识竞答和数字图像处理六个赛道，需缴纳50元资料费。",
@@ -4755,7 +4738,7 @@
     },
     {
       "id": "comp-saikr-72d775b9ef6c",
-      "name": "【即将开考！三学会盖章证书】计算机能力竞赛暨城市联赛（冬季赛）—计算机素养赛道",
+      "name": "【本周开考！三学会盖章证书】计算机能力竞赛暨城市联赛（冬季赛）—计算机素养赛道",
       "tier": "hobby",
       "fields": [
         "computer"
@@ -4888,7 +4871,7 @@
         "innovation",
         "business"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5320,7 +5303,7 @@
     },
     {
       "id": "comp-saikr-affd78e8cf3f",
-      "name": "2026全国大学生机器人与算法大赛-知识竞答赛道",
+      "name": "【倒计时4天】2026全国大学生机器人与算法大赛-知识竞答赛道",
       "tier": "hobby",
       "fields": [
         "robot",
@@ -5347,7 +5330,7 @@
     },
     {
       "id": "comp-52jingsai-7ef00aa31d41",
-      "name": "【10月24报名截止，翻译竞赛】2026年创研杯大学生英语翻译竞赛（秋季赛）报名通知！",
+      "name": "【翻译竞赛】2026年创研杯大学生英语翻译竞赛（秋季赛）报名通知！",
       "tier": "hobby",
       "fields": [
         "language"
@@ -5539,6 +5522,81 @@
       "official_url": "https://www.saikr.com/vse/26YSJW",
       "official_site": "",
       "organizer": "山西省翻译协会",
+      "prestige": 3
+    },
+    {
+      "id": "comp-52jingsai-dc19428ab9f8",
+      "name": "第十五届中国创新创业大赛人工智能创新应用专业赛",
+      "tier": "official",
+      "fields": [
+        "ai",
+        "innovation"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-11-15",
+        "verified_at": "2026-10-26T21:44:48+08:00"
+      },
+      "signup": "申报截止日期：2026年11月15日",
+      "schedule": "",
+      "summary": "由工业和信息化部火炬高技术产业开发中心、安徽省科学技术厅共同主办，面向全国高新技术企业、科技型中小企业和创新创业团队，聚焦AI创新技术与AI规模化应用。",
+      "search": "第十五届中国创新创业大赛 人工智能创新应用 安徽 火炬中心",
+      "official_url": "https://www.52jingsai.com/article-24150-1.html",
+      "official_site": "http://www.cxcyds.com",
+      "organizer": "工业和信息化部火炬高技术产业开发中心、安徽省科学技术厅",
+      "prestige": 9
+    },
+    {
+      "id": "comp-saikr-748a3f93a5b5",
+      "name": "2026年“金爪奖”全国萌宠大赛",
+      "tier": "hobby",
+      "fields": [
+        "design"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-07-15",
+        "registration_end": "2026-12-20",
+        "event_start": "2026-07-15",
+        "event_end": "2026-12-20",
+        "verified_at": "2026-10-26T21:44:48+08:00"
+      },
+      "signup": "即日起至2026年12月20日；每周为一个参赛周期。",
+      "schedule": "自2026年8月3日起每周评审；通常每周日24:00截止本周作品提交，周一评奖。",
+      "summary": "面向全国青年学子及社会养宠人士的线上宠物照片征集，免费参加；后续每周为一个参赛周期，有效作品可获专属荣誉证书并有机会获得礼品。",
+      "search": "金爪奖 全国萌宠大赛 2026 宠物照片征集",
+      "official_url": "https://www.saikr.com/vse/GPA26Y",
+      "official_site": "",
+      "organizer": "“金爪奖”全国萌宠大赛组委会",
+      "prestige": 3
+    },
+    {
+      "id": "comp-saikr-fb09590c5c5f",
+      "name": "2026年全国大学生人工智能应用实践大赛",
+      "tier": "hobby",
+      "fields": [
+        "ai"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-12-27",
+        "event_start": "2026-09-28",
+        "event_end": "2026-12-27",
+        "verified_at": "2026-10-26T21:44:48+08:00"
+      },
+      "signup": "报名期全程开放，可任选一场；报名截止2026年12月27日。参赛费29元/人。",
+      "schedule": "国赛第一场作品提交：2026年9月28日—10月25日；第二场：10月26日—11月29日；第三场：11月30日—12月27日。每场独立评审、独立评奖。",
+      "summary": "由四川汇鑫创融大数据研究院主办，面向全国在校大学生及年满18周岁的社会人士，使用腾讯WorkBuddy完成网页作品；参赛费29元/人，有效作品可获优秀奖证书。",
+      "search": "2026 全国大学生人工智能应用实践大赛 四川汇鑫创融 腾讯WorkBuddy",
+      "official_url": "https://www.saikr.com/vse/AIPC26",
+      "official_site": "",
+      "organizer": "四川汇鑫创融大数据研究院",
       "prestige": 3
     }
   ]
