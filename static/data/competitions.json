@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-26T21:47:28+08:00",
+  "last_updated": "2026-10-27T21:46:54+08:00",
   "source": "CampBrief",
   "total": 264,
   "tiers": [
@@ -640,8 +640,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-24T21:40:35+08:00",
-        "review_after": "2026-10-27T21:39:35+08:00"
+        "verified_at": "2026-10-27T21:46:51+08:00",
+        "review_after": "2026-10-30T19:46:51+08:00"
       },
       "signup": "线上报名及作品提交：2026年10月至2027年4月。",
       "schedule": "省赛评审：2027年4—5月；国赛评审及获奖信息发布：2027年5—6月；系列活动：2027年7—8月；优秀作品计划于2027年4月米兰设计周期间展出。",
@@ -2057,7 +2057,7 @@
     },
     {
       "id": "comp-saikr-1d6ba753f9c2",
-      "name": "【创新创业类】2026年第六届全国大学生技术创新创业大赛-国赛",
+      "name": "【即将截止】2026年第六届全国大学生技术创新创业大赛-国赛",
       "tier": "hobby",
       "fields": [
         "innovation"
@@ -2361,23 +2361,24 @@
     },
     {
       "id": "comp-saikr-18e1497ac3fd",
-      "name": "2026年第二届工业互联网技术与应用挑战赛——工业互联网专项赛道",
+      "name": "【最后一场】2026年第二届工业互联网技术与应用挑战赛——工业互联网专项赛道",
       "tier": "hobby",
       "fields": [
         "computer",
         "engineering"
       ],
-      "status": "ongoing",
+      "status": "open",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-20T23:58:32+08:00",
         "registration_start": "2026-02-25",
-        "registration_end": "2026-10-23",
-        "event_start": "2026-10-24"
+        "registration_end": "2026-12-18",
+        "event_start": "2026-12-19",
+        "event_end": "2026-12-20",
+        "verified_at": "2026-10-27T21:46:51+08:00"
       },
-      "signup": "第三场报名：即日起至2026年10月23日；赛事共四场，后续场次日期以组委会公告为准。",
-      "schedule": "第三场线上个人客观题考试：2026年10月24日10:00至10月25日23:00，期间任选一小时答题；页面称全系列共四场。",
+      "signup": "最后一场报名：即日起至2026年12月18日",
+      "schedule": "最后一场考试：2026年12月19日10:00—12月20日23:00，期间任选一小时作答",
       "summary": "中国互联网协会智慧教育工作委员会主办、工业互联网产业联盟承办的工业互联网专项赛道，采用线上个人客观题考试；页面注明报名费50元。",
       "search": "",
       "official_url": "https://www.saikr.com/vse/2026Industrial",
@@ -2922,8 +2923,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-24T22:31:30+08:00",
-        "review_after": "2026-10-27T21:31:30+08:00"
+        "verified_at": "2026-10-27T21:46:51+08:00",
+        "review_after": "2026-10-30T19:46:51+08:00"
       }
     },
     {
@@ -3732,16 +3733,7 @@
       "fields": [
         "language"
       ],
-      "status": "ongoing",
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_start": "2026-07-20",
-        "registration_end": "2026-10-25",
-        "event_start": "2026-08-23",
-        "verified_at": "2026-10-25T22:02:16+08:00",
-        "event_end": "2026-10-26"
-      },
+      "status": "done",
       "signup": "即日起至2026年10月25日",
       "schedule": "线上闭卷考试，任选一场参加（60分钟/30道单选）",
       "summary": "商务印书馆《英语世界》杂志社主办，本届主题“粉丝文化”；全在线客观选择题（30题/60分钟），分A/B/C/D四类组别，报名费50元。",
@@ -4266,7 +4258,7 @@
     },
     {
       "id": "comp-saikr-8c1361d912be",
-      "name": "【由商英主办方指导】2026年高校大学生商务外语词汇大赛",
+      "name": "商英主办方指导 | 下周开考！2026年高校大学生商务外语词汇大赛",
       "tier": "hobby",
       "fields": [
         "language",
@@ -5303,7 +5295,7 @@
     },
     {
       "id": "comp-saikr-affd78e8cf3f",
-      "name": "【倒计时4天】2026全国大学生机器人与算法大赛-知识竞答赛道",
+      "name": "【倒计时3天】2026全国大学生机器人与算法大赛-知识竞答赛道",
       "tier": "hobby",
       "fields": [
         "robot",
@@ -5360,7 +5352,7 @@
       "fields": [
         "business"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
