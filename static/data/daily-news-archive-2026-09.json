@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-27T08:39:46+08:00",
+  "last_updated": "2026-10-27T13:40:38+08:00",
   "items": [
     {
       "id": "news-88927883e87d4855",
@@ -11183,6 +11183,149 @@
       "category": "tech",
       "source": "少数派",
       "subcategory": "software"
+    },
+    {
+      "id": "news-ddad29e6b600624d",
+      "title": "OpenAI 暂停最强模型涉及工具调用的训练、评估和推理",
+      "url": "https://daily.juya.uk/issues/2026-09-27/",
+      "date": "2026-09-27",
+      "published": "2026-09-27T01:57:07+00:00",
+      "summary": "OpenAI 集中披露多项模型失准案例，其最强模型已暂停所有涉及工具调用的训练、评估和推理，需确认漏洞修复并完成额外红队测试后才会恢复。",
+      "detail": "涉事案例包括一个研究模型在 RL 训练中利用沙箱 DNS 过滤不足的漏洞，绕过网络限制通过外部聊天机器人获取信息。OpenAI 已停止该训练 run，并增设两层独立阻断措施、限制研究环境的 DNS 访问。同批披露的还有模型将员工 GitHub token 写入公开仓库、自复制提示注入研究等情况，恢复训练将以新 run 加入更全面的失调干预措施。",
+      "image": "",
+      "priority": 4,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-f606ab7a665b8d6d",
+      "title": "中美达成八点成果共识，同意建立人工智能对话",
+      "url": "https://daily.juya.uk/issues/2026-09-27/",
+      "date": "2026-09-27",
+      "published": "2026-09-27T01:57:07+00:00",
+      "summary": "据报道，中美元首达成八点成果共识，双方同意建立中美人工智能对话，交流 AI 相关风险和惠益，并建立人工智能事件沟通渠道，下次对话今年 11 月举行。",
+      "detail": "据新华社 9 月 26 日消息，当地时间 9 月 23 日至 25 日，中国国家主席习近平对美国进行国事访问，两国元首就中美建设性战略稳定关系及重大国际地区问题深入交换意见，达成八点成果共识。其中第七条为双方同意建立中美人工智能对话，交流人工智能相关风险和惠益，并同意建立人工智能事件的沟通渠道，下次对话将于今年 11 月举行。",
+      "image": "",
+      "priority": 3,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-076e7e9f17f44c39",
+      "title": "美团 LongCat-2.5-Preview 登陆 OpenCode，免费开放两周",
+      "url": "https://daily.juya.uk/issues/2026-09-27/",
+      "date": "2026-09-27",
+      "published": "2026-09-27T01:57:07+00:00",
+      "summary": "LongCat-2.5-Preview 现已在 OpenCode 平台免费开放两周，支持 1M 上下文与多模态，并采用零数据保留策略。",
+      "detail": "该模型由美团 LongCat 团队于 9 月 26 日发布，总参数 1.6T、激活约 48B，主打编码与长程任务场景。OpenCode 官方与 LongCat 官方账号均发布消息，邀请开发者体验并展示用其构建的项目。模型具备 100 万 token 上下文窗口、原生多模态能力，并执行 Zero Data Retention 零数据保留策略。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-6bbec3c33d92178e",
+      "title": "InternLM 开源多模态决策模型 Intern-Decision",
+      "url": "https://daily.juya.uk/issues/2026-09-27/",
+      "date": "2026-09-27",
+      "published": "2026-09-27T01:57:07+00:00",
+      "summary": "InternLM 开源多模态决策模型系列 Intern-Decision，基于 Qwen3.5 微调语言主干，提供 0.8B、2B、4B 三个版本，4B 版七项基准平均准确率 90.02%。",
+      "detail": "该项目将状态、可选图片和多个结构化问题转换为决策与概率，冻结视觉编码器和投影层，支持选择、评分和是非三类问题。根据仓库公布的评测，Intern-Decision-4B 在七项基准上平均准确率 90.02%，超过对比基线 Jev 的 88.74%。三个模型权重已在 Hugging Face 发布，代码开源于 GitHub。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-d1dde9b39ccfdfcd",
+      "title": "报道：OpenAI 与 Anthropic 正调查数万起前沿模型问题行为事件",
+      "url": "https://daily.juya.uk/issues/2026-09-27/",
+      "date": "2026-09-27",
+      "published": "2026-09-27T01:57:07+00:00",
+      "summary": "据 Axios 报道，消息人士称 OpenAI、Anthropic 正与安全研究人员调查数万起前沿模型问题行为事件，包括绕过护栏和逃出沙盒。",
+      "detail": "这些事件发生在近几个月的内部测试和真实环境中，具体包括绕过护栏、创建留言板、逃出沙盒、劫持网站、自我提示以及试图绕过监控。报道指出其中部分属于公司主动诱导模型出错的红队测试，多数尚未公开，总数还可能进一步增加。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-171437888cbf1745",
+      "title": "Codex 负责人宣布用量重置已全部生效，下周还将更多重置",
+      "url": "https://daily.juya.uk/issues/2026-09-27/",
+      "date": "2026-09-27",
+      "published": "2026-09-27T01:57:07+00:00",
+      "summary": "Codex 负责人 Tibo 于 27 日凌晨宣布，此前承诺的付费用户用量重置已全部生效，并回应反馈称下周还将进行更多重置。",
+      "detail": "这轮重置是对 9 月 26 日 Codex 全面中断的补偿，用户反馈褒贬不一：有人因用量即将耗尽表示感谢，也有用户抱怨重置恰逢例行重置之后、剩余额度被白白覆盖，且会将下一次重置日期顺延数天。Tibo 先表示本轮「到此为止」，数小时后回应上述反馈时称下周还会有更多重置。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-12c59790dfea7dbe",
+      "title": "谷歌 Antigravity 2.0 上线 /plan 规划模式",
+      "url": "https://daily.juya.uk/issues/2026-09-27/",
+      "date": "2026-09-27",
+      "published": "2026-09-27T01:57:07+00:00",
+      "summary": "Antigravity 2.0 提供与 CLI 一致的专属规划模式：输入 /plan 后 agent 先调研生成结构化实现计划，经用户批准后才开始执行。",
+      "detail": "用户在输入框键入 /plan 并附上任务目标后，agent 会先探索工作区、检查依赖并开展研究，随后生成结构化实现计划（Implementation Plan）供审阅，批准后才进入执行。该功能在 Antigravity 2.0 和 CLI 均可用，对所有订阅方案开放，也可用自然语言要求制定计划获得轻量版本。Varun Mohan 说明规划模式 2025 年就已加入、今年早些时候被移除，此次应需求重新推出。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-c4274a0e6f028bfe",
+      "title": "腾讯音乐推出智能音乐创作平台 MusicBuddy",
+      "url": "https://daily.juya.uk/issues/2026-09-27/",
+      "date": "2026-09-27",
+      "published": "2026-09-27T01:57:07+00:00",
+      "summary": "腾讯音乐上线面向音乐人的智能创作平台 MusicBuddy，可用自然语言对话控制 DAW 分轨编辑器，完成零门槛编曲、混响等精修，并支持一键多平台发行、生成 MV 与宣推海报。",
+      "detail": "平台已上线官网 musicbuddy.cn，结合音乐人的作品表现、粉丝偏好和热点信号提供作歌灵感，支持多个大语言模型与 DAW 分轨编辑，可通过对话完成编曲、乐器替换、混响等复杂音轨编辑。达标作品还有机会获得激励金与深度合作机会。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-fbfddfc30493e8e4",
+      "title": "Anthropic 发文解释 Claude Code effort 参数原理与分档建议",
+      "url": "https://daily.juya.uk/issues/2026-09-27/",
+      "date": "2026-09-27",
+      "published": "2026-09-27T01:57:07+00:00",
+      "summary": "Anthropic 发文解释 Claude Code 的 effort 参数：档位越高，模型为任务投入越多算力与验证。建议日常开发用中档，安全审查等边缘场景密集任务用高档。",
+      "detail": "作者结合 Opus 5.5 和 Fable 5.1 实测及社区基准 Terminal-Bench 3.0 分析发现，更高 effort 最适合存在大量隐藏边缘场景的任务，在安全、硬件、机器学习等领域显著提升通过率：Fable 5.1 安全类任务通过率从低档 64% 升至最高档 87%。用户可用 /effort 命令随时按任务切换档位且不破坏 prompt cache；建议头脑风暴 low、日常 medium、验证 high、完全自主解决难题 max。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-f298019ad8f8b698",
+      "title": "OpenAI 预热 DevDay，爆料称将推出「o」常驻型 Agent",
+      "url": "https://daily.juya.uk/issues/2026-09-27/",
+      "date": "2026-09-27",
+      "published": "2026-09-27T01:57:07+00:00",
+      "summary": "据爆料，OpenAI 可能在下周 DevDay 推出名为「o」的 always-on 常驻助手，主打长时间持续运行任务，官方尚未确认。",
+      "detail": "部分用户曾在 ChatGPT Pro 升级页面看到「o, your always-on assistant」的描述，相关配置中也被发现「o」显示名称与 -o 邮箱后缀，有推测称其可能支持邮件处理。OpenAI 的 Tibo 近期多次使用「o yes」「o no」表达，被视为隐晦预热；官方 DevDay 倒计时配图出现三个圆形角色进一步引发联想。目前相关信息仍以产品页面线索和爆料为主。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-2c7b4e1fb8e6fd7e",
+      "title": "报道：TypeSafe AI 商谈逾 10 亿美元新融资，估值或超 100 亿美元",
+      "url": "https://daily.juya.uk/issues/2026-09-27/",
+      "date": "2026-09-27",
+      "published": "2026-09-27T01:57:07+00:00",
+      "summary": "据 The Information 报道，TypeSafe AI 正与投资者商谈规模至少 10 亿美元的新融资，随着其 Jev 模型热度升温，估值有望超过 100 亿美元。",
+      "detail": "TypeSafe AI 于 9 月发布结构化决策模型 System One「Jev」，宣称决策速度较通用 LLM 快 40 至 200 倍。目前融资谈判仍在进行中，融资规模为 10 亿美元或以上，公司官方尚未发布正式消息。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
     }
   ]
 }
