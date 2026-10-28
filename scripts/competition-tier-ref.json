@@ -59,6 +59,16 @@
       "tier": "official",
       "prestige": 10
     },
+    "全国翻译专业学位研究生教育指导委员会": {
+      "tier": "official",
+      "prestige": 8,
+      "note": "开棣（CATTI）杯全国翻译大赛联合主办单位；CATTI中心公告确认面向国内外举办的年度全国竞赛"
+    },
+    "中国外文局翻译院": {
+      "tier": "official",
+      "prestige": 8,
+      "note": "开棣（CATTI）杯全国翻译大赛联合主办单位；CATTI中心公告确认面向国内外举办的年度全国竞赛"
+    },
     "中国外文局": {
       "tier": "official",
       "prestige": 7,
@@ -764,6 +774,11 @@
       "tier": "official",
       "prestige": 6,
       "note": "中国外文局主办系列赛事"
+    },
+    "开棣（CATTI）杯翻译大赛": {
+      "tier": "official",
+      "prestige": 8,
+      "note": "全国翻译专业学位研究生教育指导委员会与中国外文局翻译院联合主办的全国年度翻译竞赛；赛事更名历史由CATTI中心公告及高校官方通知确认"
     },
     "蓝桥杯": {
       "tier": "official",

@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-27T21:46:54+08:00",
+  "last_updated": "2026-10-28T21:40:53+08:00",
   "source": "CampBrief",
-  "total": 264,
+  "total": 266,
   "tiers": [
     {
       "key": "all",
@@ -2089,7 +2089,7 @@
         "innovation",
         "engineering"
       ],
-      "status": "closed",
+      "status": "ongoing",
       "signup": "企业命题赛道报名：2026年5月15日至7月15日",
       "schedule": "初赛作品提交截止：2026年9月10日；全国总决赛安排在2026年10月下旬，具体时间待官方通知。",
       "summary": "赛事详情请访问信息来源页面",
@@ -2101,8 +2101,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-24T22:12:34+08:00",
-        "review_after": "2026-10-27T22:11:34+08:00"
+        "verified_at": "2026-10-28T21:39:13+08:00",
+        "review_after": "2026-10-31T21:38:13+08:00"
       }
     },
     {
@@ -2640,7 +2640,7 @@
         "innovation",
         "engineering"
       ],
-      "status": "closed",
+      "status": "ongoing",
       "signup": "综合赛道报名：2026年5月15日至9月15日",
       "schedule": "初赛作品提交截止：2026年9月10日；全国总决赛安排在2026年10月下旬，具体时间待官方通知。",
       "summary": "赛事详情请访问信息来源页面",
@@ -2652,8 +2652,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-24T22:12:34+08:00",
-        "review_after": "2026-10-27T22:11:34+08:00"
+        "verified_at": "2026-10-28T21:39:13+08:00",
+        "review_after": "2026-10-31T21:38:13+08:00"
       }
     },
     {
@@ -3067,7 +3067,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【多省市译协盖章】2026年第十二届中西部外语翻译大赛",
+      "name": "【近百所院校报道】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -4258,7 +4258,7 @@
     },
     {
       "id": "comp-saikr-8c1361d912be",
-      "name": "商英主办方指导 | 下周开考！2026年高校大学生商务外语词汇大赛",
+      "name": "下周开考 | 2026年高校大学生商务外语词汇大赛",
       "tier": "hobby",
       "fields": [
         "language",
@@ -4730,7 +4730,7 @@
     },
     {
       "id": "comp-saikr-72d775b9ef6c",
-      "name": "【本周开考！三学会盖章证书】计算机能力竞赛暨城市联赛（冬季赛）—计算机素养赛道",
+      "name": "【本周开考！赛后三天可领证书】计算机能力竞赛暨城市联赛—计算机素养赛道",
       "tier": "hobby",
       "fields": [
         "computer"
@@ -4780,7 +4780,7 @@
     },
     {
       "id": "comp-52jingsai-9a1183b7777c",
-      "name": "【普通话，榜单赛事】2026年第五届大学生普通话大赛报名通知",
+      "name": "【普通话，榜单赛事】2026年第五届大学生普通话大赛报名通知！第一场11月5日报名截止！",
       "tier": "hobby",
       "fields": [
         "language"
@@ -5295,7 +5295,7 @@
     },
     {
       "id": "comp-saikr-affd78e8cf3f",
-      "name": "【倒计时3天】2026全国大学生机器人与算法大赛-知识竞答赛道",
+      "name": "【倒计时2天】2026全国大学生机器人与算法大赛-知识竞答赛道",
       "tier": "hobby",
       "fields": [
         "robot",
@@ -5590,6 +5590,57 @@
       "official_site": "",
       "organizer": "四川汇鑫创融大数据研究院",
       "prestige": 3
+    },
+    {
+      "id": "comp-52jingsai-93f43c56534d",
+      "name": "【11月6日报名截止，英语语法比赛】第五届“外文奖”大学生英语语法大赛报名通知！",
+      "tier": "official",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-11-06",
+        "event_start": "2026-11-07",
+        "event_end": "2026-11-11",
+        "verified_at": "2026-10-28T21:39:13+08:00"
+      },
+      "signup": "报名截止时间：2026年11月6日",
+      "schedule": "考试时间：2026年11月7日；获奖公示：2026年11月11日",
+      "summary": "面向在校及毕业五年内大学生，分非英语专业组、英语专业组和专科生组；报名截止2026年11月6日，考试于11月7日举行。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-24026-1.html",
+      "official_site": "http://www.wwj.org.cn/",
+      "organizer": "中国外文局亚太传播中心",
+      "prestige": 7
+    },
+    {
+      "id": "comp-saikr-5648520a5d2a",
+      "name": "【即将截止】2026年开棣（CATTI）杯翻译大赛",
+      "tier": "official",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-10-12",
+        "registration_end": "2026-11-06",
+        "event_start": "2026-11-14",
+        "event_end": "2026-12-06",
+        "verified_at": "2026-10-28T21:39:13+08:00"
+      },
+      "signup": "报名时间：2026年10月12日至11月6日",
+      "schedule": "初赛：2026年11月14日至15日；决赛：2026年12月5日至6日",
+      "summary": "全国性年度翻译赛事，设笔译和口译，覆盖英语、日语、韩语、俄语、法语、德语、西班牙语和阿拉伯语八个语种；初赛11月14日至15日，决赛12月5日至6日。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/CATTI2026",
+      "official_site": "http://www.catticenter.com/",
+      "organizer": "全国翻译专业学位研究生教育指导委员会、中国外文局翻译院",
+      "prestige": 8
     }
   ]
 }
