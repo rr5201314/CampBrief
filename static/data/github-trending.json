@@ -1,8 +1,154 @@
 {
-  "last_updated": "2026-10-28T08:01:35.187283+08:00",
+  "last_updated": "2026-10-29T08:04:06.793652+08:00",
   "source": "GitHub Trending",
   "total": 82,
   "items": [
+    {
+      "id": "github-daily-2026-10-29",
+      "title": "10月29日 GitHub趋势日榜",
+      "url": "https://github.com/trending?since=daily",
+      "date": "2026-10-29",
+      "published": "2026-10-29T08:04:06.793652+08:00",
+      "summary": "10月29日 GitHub趋势日榜，Top 10 项目涵盖 TypeScript、Shell、Python 等，今日社区最受关注的开源项目。",
+      "detail": "JetBrains/thinkrail - Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need\nelayadesign/ai-design-skills - \nobra/superpowers - An agentic skills framework & software development methodology that works.\nHKUDS/DeepTutor - DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.\nmacro-inc/macro - Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.\nNutlope/hallmark - Anti-AI-slop design skill for Claude Code, Cursor, and Codex.\npbakaus/impeccable - The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.\nmakecindy/cindy - Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。\nnightly-labs/openbot - A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.\ntogg53192-cmd/jailbreaks - LIST OF ALL MY JAILBREAKS",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "github",
+      "source": "GitHub Trending",
+      "trend_type": "daily",
+      "repos": [
+        {
+          "rank": 1,
+          "name": "JetBrains/thinkrail",
+          "url": "https://github.com/JetBrains/thinkrail",
+          "language": "TypeScript",
+          "stars": 5017,
+          "forks": 259,
+          "stars_delta": 1068,
+          "trend_period": "today",
+          "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+          "chinese_summary": "JetBrains孵化的agentic IDE，围绕pi编码代理构建：用git worktree隔离并行工作区，内置Monaco编辑器、终端与多会话，并通过可维护的SPEC.md规格网络让代理持续积累项目知识。",
+          "solves_what": "解决AI编码代理缺少隔离环境、项目上下文易丢失的问题，让多个代理任务并行推进，改动仍可审查、合并。"
+        },
+        {
+          "rank": 2,
+          "name": "elayadesign/ai-design-skills",
+          "url": "https://github.com/elayadesign/ai-design-skills",
+          "language": "未知",
+          "stars": 11087,
+          "forks": 795,
+          "stars_delta": 2139,
+          "trend_period": "today",
+          "description": "",
+          "chinese_summary": "面向Claude Code、Cursor、Codex等AI编程工具的网页设计技能集合，包含落地页设计与静态稿转动效等模块。",
+          "solves_what": "为AI编程代理提供可复用的设计流程和视觉规则，减少页面结构、排版与动效实现中的随意性。"
+        },
+        {
+          "rank": 3,
+          "name": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "language": "Shell",
+          "stars": 307424,
+          "forks": 27348,
+          "stars_delta": 1095,
+          "trend_period": "today",
+          "description": "An agentic skills framework & software development methodology that works.",
+          "chinese_summary": "面向编码代理的软件开发方法论与技能框架，以结构化流程支持需求澄清、方案设计、实施计划和测试。",
+          "solves_what": "减少代理式开发跳过设计与测试、流程混乱和质量不稳定的问题，让代理按可复用的开发工作流完成任务。"
+        },
+        {
+          "rank": 4,
+          "name": "HKUDS/DeepTutor",
+          "url": "https://github.com/HKUDS/DeepTutor",
+          "language": "Python",
+          "stars": 47932,
+          "forks": 5947,
+          "stars_delta": 2371,
+          "trend_period": "today",
+          "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+          "chinese_summary": "DeepTutor是开源的个性化AI学习工作区，整合对话辅导、问题求解、测验、研究、可视化和掌握练习。",
+          "solves_what": "解决学习问答、资料检索、练习与进度管理分散的问题，让同一学习上下文可在多种辅导流程间复用。"
+        },
+        {
+          "rank": 5,
+          "name": "macro-inc/macro",
+          "url": "https://github.com/macro-inc/macro",
+          "language": "Rust",
+          "stars": 5408,
+          "forks": 517,
+          "stars_delta": 117,
+          "trend_period": "today",
+          "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
+          "chinese_summary": "面向团队的All-in-One协作空间，整合邮件、聊天、文档、任务、Agent、通话与CRM，用共享AI记忆串联。",
+          "solves_what": "解决团队工具分散、信息割裂的问题，把办公工具与AI智能体统一到一个工作区，减少上下文切换。"
+        },
+        {
+          "rank": 6,
+          "name": "Nutlope/hallmark",
+          "url": "https://github.com/Nutlope/hallmark",
+          "language": "CSS",
+          "stars": 40672,
+          "forks": 2111,
+          "stars_delta": 2110,
+          "trend_period": "today",
+          "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+          "chinese_summary": "Hallmark是适配Claude Code、Cursor和Codex的反AI模板化设计技能：按需求选择页面结构与21种主题，并通过57项设计检测和生成前自评约束产出。",
+          "solves_what": "减少AI生成网页千篇一律、模板感重的问题；提供新建、审查、重设计等设计工作流，并以可复用的检测规则提升界面辨识度。"
+        },
+        {
+          "rank": 7,
+          "name": "pbakaus/impeccable",
+          "url": "https://github.com/pbakaus/impeccable",
+          "language": "Rust",
+          "stars": 92595,
+          "forks": 5477,
+          "stars_delta": 1472,
+          "trend_period": "today",
+          "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+          "chinese_summary": "面向AI编码代理的前端设计指导工具，包含1个技能、24条命令、浏览器实时迭代和59条确定性设计检测规则。",
+          "solves_what": "帮助开发者减少AI生成界面的模板感，并通过命令、浏览器迭代和可重复检测，改善交互、可访问性与视觉设计质量。"
+        },
+        {
+          "rank": 8,
+          "name": "makecindy/cindy",
+          "url": "https://github.com/makecindy/cindy",
+          "language": "TypeScript",
+          "stars": 8080,
+          "forks": 943,
+          "stars_delta": 728,
+          "trend_period": "today",
+          "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+          "chinese_summary": "面向多种编码代理与模型的开源AI Agent客户端，提供Electron桌面端和Expo/React Native移动端，并支持记忆、技能、并行代理协作及浏览器、电脑、手机操作。",
+          "solves_what": "减少在不同模型和编码代理之间切换的上下文损耗，让桌面与移动端共用文件、工作区和工具，并可从即时通讯或日程安排接收任务。"
+        },
+        {
+          "rank": 9,
+          "name": "nightly-labs/openbot",
+          "url": "https://github.com/nightly-labs/openbot",
+          "language": "TypeScript",
+          "stars": 3231,
+          "forks": 315,
+          "stars_delta": 1054,
+          "trend_period": "today",
+          "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
+          "chinese_summary": "本地优先的AI桌面工作区，可运行Codex、Claude、Grok等持久代理，并提供独立工作区、任务队列、文件共享、浏览器控制和代理协作。",
+          "solves_what": "把多个长驻AI代理集中到可管理的工作区，减少跨工具切换，并支持代理共享上下文、文件与任务。"
+        },
+        {
+          "rank": 10,
+          "name": "togg53192-cmd/jailbreaks",
+          "url": "https://github.com/togg53192-cmd/jailbreaks",
+          "language": "未知",
+          "stars": 7068,
+          "forks": 1013,
+          "stars_delta": 1477,
+          "trend_period": "today",
+          "description": "LIST OF ALL MY JAILBREAKS",
+          "chinese_summary": "收集31份针对25余种模型的系统提示、角色设定、工作区策略和代理配置样例，覆盖闭源及开放权重模型。",
+          "solves_what": "为研究指令层级、提示冲突和模型安全防护提供可复现样例；仓库注明仅供研究与教育使用。"
+        }
+      ]
+    },
     {
       "id": "github-daily-2026-10-28",
       "title": "10月28日 GitHub趋势日榜",
@@ -27,8 +173,8 @@
           "stars_delta": 1395,
           "trend_period": "today",
           "description": "",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "面向Claude Code、Cursor、Codex等AI编程工具的网页设计技能集合，包含落地页设计与静态稿转动效等模块。",
+          "solves_what": "为AI编程代理提供可复用的设计流程和视觉规则，减少页面结构、排版与动效实现中的随意性。"
         },
         {
           "rank": 2,
@@ -40,8 +186,8 @@
           "stars_delta": 2830,
           "trend_period": "today",
           "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "Hallmark是适配Claude Code、Cursor和Codex的反AI模板化设计技能：按需求选择页面结构与21种主题，并通过57项设计检测和生成前自评约束产出。",
+          "solves_what": "减少AI生成网页千篇一律、模板感重的问题；提供新建、审查、重设计等设计工作流，并以可复用的检测规则提升界面辨识度。"
         },
         {
           "rank": 3,
@@ -53,8 +199,8 @@
           "stars_delta": 777,
           "trend_period": "today",
           "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "本地优先的AI桌面工作区，可运行Codex、Claude、Grok等持久代理，并提供独立工作区、任务队列、文件共享、浏览器控制和代理协作。",
+          "solves_what": "把多个长驻AI代理集中到可管理的工作区，减少跨工具切换，并支持代理共享上下文、文件与任务。"
         },
         {
           "rank": 4,
@@ -66,8 +212,8 @@
           "stars_delta": 617,
           "trend_period": "today",
           "description": "An agentic skills framework & software development methodology that works.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "面向编码代理的软件开发方法论与技能框架，以结构化流程支持需求澄清、方案设计、实施计划和测试。",
+          "solves_what": "减少代理式开发跳过设计与测试、流程混乱和质量不稳定的问题，让代理按可复用的开发工作流完成任务。"
         },
         {
           "rank": 5,
@@ -79,8 +225,8 @@
           "stars_delta": 1449,
           "trend_period": "today",
           "description": "The design language that makes your AI harness better at design.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "面向AI编码代理的前端设计指导工具，包含1个技能、24条命令、浏览器实时迭代和59条确定性设计检测规则。",
+          "solves_what": "帮助开发者减少AI生成界面的模板感，并通过命令、浏览器迭代和可重复检测，改善交互、可访问性与视觉设计质量。"
         },
         {
           "rank": 6,
@@ -92,8 +238,8 @@
           "stars_delta": 1465,
           "trend_period": "today",
           "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "面向多种编码代理与模型的开源AI Agent客户端，提供Electron桌面端和Expo/React Native移动端，并支持记忆、技能、并行代理协作及浏览器、电脑、手机操作。",
+          "solves_what": "减少在不同模型和编码代理之间切换的上下文损耗，让桌面与移动端共用文件、工作区和工具，并可从即时通讯或日程安排接收任务。"
         },
         {
           "rank": 7,
@@ -105,8 +251,8 @@
           "stars_delta": 951,
           "trend_period": "today",
           "description": "📨 The ultimate agentic social media scheduling tool 🤖",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "开源社交媒体管理平台，支持跨平台内容排程、自动发布、团队协作、数据分析及AI辅助功能，也可自托管。",
+          "solves_what": "解决多社交平台内容发布、团队协作与表现分析分散的问题，并提供API和自动化集成。"
         },
         {
           "rank": 8,
@@ -118,8 +264,8 @@
           "stars_delta": 1165,
           "trend_period": "today",
           "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "面向多种编码代理的Agent harness优化系统，整合技能、记忆、安全机制与research-first开发流程。",
+          "solves_what": "帮助开发者在Claude Code、Codex、OpenCode、Cursor等工具中复用工程能力与规范，改善代理执行任务的流程和一致性。"
         },
         {
           "rank": 9,
@@ -131,8 +277,8 @@
           "stars_delta": 1598,
           "trend_period": "today",
           "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "DeepTutor是开源的个性化AI学习工作区，整合对话辅导、问题求解、测验、研究、可视化和掌握练习。",
+          "solves_what": "解决学习问答、资料检索、练习与进度管理分散的问题，让同一学习上下文可在多种辅导流程间复用。"
         },
         {
           "rank": 10,
@@ -144,8 +290,8 @@
           "stars_delta": 1204,
           "trend_period": "today",
           "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "JetBrains孵化的agentic IDE，围绕pi编码代理构建：用git worktree隔离并行工作区，内置Monaco编辑器、终端与多会话，并通过可维护的SPEC.md规格网络让代理持续积累项目知识。",
+          "solves_what": "解决AI编码代理缺少隔离环境、项目上下文易丢失的问题，让多个代理任务并行推进，改动仍可审查、合并。"
         }
       ]
     },
@@ -11670,152 +11816,6 @@
           "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-5.6-Sol, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
           "chinese_summary": "收录多家 AI 产品泄露系统提示词的资料库，持续更新各模型隐藏指令。",
           "solves_what": "解决研究者难以系统比较不同 AI 助手底层行为规则的问题，便于分析提示词设计、能力边界与安全策略。"
-        }
-      ]
-    },
-    {
-      "id": "github-daily-2026-07-30",
-      "title": "7月30日 GitHub趋势日榜",
-      "url": "https://github.com/trending?since=daily",
-      "date": "2026-07-30",
-      "published": "2026-07-30T08:33:16.096240+08:00",
-      "summary": "7月30日 GitHub趋势日榜，Top 10 项目涵盖 TypeScript、JavaScript、Python 等，今日社区最受关注的开源项目。",
-      "detail": "opengeos/GeoLibre - A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.\nmoeru-ai/airi - 💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.\naffaan-m/ECC - The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.\nhuggingface/speech-to-speech - Build local voice agents with open-source models\n1jehuang/jcode - The most RAM efficient harness\ngrokability/snipe-it - A free open source IT asset/license management system\ndeepfakes/faceswap - Deepfakes Software For All\nmicrosoft/VibeVoice - Open-Source Frontier Voice AI\ndifferent-ai/openwork - The open-source alternative to Claude Cowork (powered by opencode)\nobra/superpowers - An agentic skills framework & software development methodology that works.",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "github",
-      "source": "GitHub Trending",
-      "trend_type": "daily",
-      "repos": [
-        {
-          "rank": 1,
-          "name": "opengeos/GeoLibre",
-          "url": "https://github.com/opengeos/GeoLibre",
-          "language": "TypeScript",
-          "stars": 4025,
-          "forks": 431,
-          "stars_delta": 671,
-          "trend_period": "today",
-          "description": "A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.",
-          "chinese_summary": "轻量级云原生 GIS 平台，可在浏览器、桌面、移动端和 Jupyter 中进行地理空间分析。（基于趋势描述整理）",
-          "solves_what": "解决地理空间数据工具分散、跨平台兼容差、可视化与分析协作成本高的问题。"
-        },
-        {
-          "rank": 2,
-          "name": "moeru-ai/airi",
-          "url": "https://github.com/moeru-ai/airi",
-          "language": "TypeScript",
-          "stars": 45369,
-          "forks": 4487,
-          "stars_delta": 682,
-          "trend_period": "today",
-          "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
-          "chinese_summary": "可自托管的 AI 数字伙伴项目，支持实时语音交流以及与游戏世界互动。（基于趋势描述整理）",
-          "solves_what": "解决用户想拥有可控、可自定义、可长期陪伴的 AI 角色，却受限于封闭平台的问题。"
-        },
-        {
-          "rank": 3,
-          "name": "affaan-m/ECC",
-          "url": "https://github.com/affaan-m/ECC",
-          "language": "JavaScript",
-          "stars": 235561,
-          "forks": 35873,
-          "stars_delta": 857,
-          "trend_period": "today",
-          "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-          "chinese_summary": "面向多种 AI 编程代理的增强框架，围绕技能、记忆、安全和研究工作流做统一优化。（基于趋势描述整理）",
-          "solves_what": "解决不同编码代理能力不稳定、缺少长期记忆与安全约束、研究流程割裂的问题。"
-        },
-        {
-          "rank": 4,
-          "name": "huggingface/speech-to-speech",
-          "url": "https://github.com/huggingface/speech-to-speech",
-          "language": "Python",
-          "stars": 7854,
-          "forks": 1000,
-          "stars_delta": 827,
-          "trend_period": "today",
-          "description": "Build local voice agents with open-source models",
-          "chinese_summary": "Hugging Face 提供的本地语音到语音代理方案，利用开源模型搭建完整语音交互链路。（基于趋势描述整理）",
-          "solves_what": "解决语音代理构建依赖云服务、隐私风险高且端到端集成复杂的问题。"
-        },
-        {
-          "rank": 5,
-          "name": "1jehuang/jcode",
-          "url": "https://github.com/1jehuang/jcode",
-          "language": "Rust",
-          "stars": 13446,
-          "forks": 1476,
-          "stars_delta": 640,
-          "trend_period": "today",
-          "description": "The most RAM efficient harness",
-          "chinese_summary": "面向代码代理场景的高内存效率运行框架，强调在有限 RAM 下稳定执行复杂开发任务。（基于趋势描述整理）",
-          "solves_what": "解决 AI 编码代理在本地或小机器上运行时内存占用过高、容易卡顿或崩溃的问题。"
-        },
-        {
-          "rank": 6,
-          "name": "grokability/snipe-it",
-          "url": "https://github.com/grokability/snipe-it",
-          "language": "PHP",
-          "stars": 14437,
-          "forks": 3903,
-          "stars_delta": 164,
-          "trend_period": "today",
-          "description": "A free open source IT asset/license management system",
-          "chinese_summary": "开源 IT 资产与许可证管理系统，用于追踪设备、配件、授权和人员借用关系。（基于趋势描述整理）",
-          "solves_what": "解决企业 IT 资产、软件许可和设备流转难以统一登记、审计和追踪的问题。"
-        },
-        {
-          "rank": 7,
-          "name": "deepfakes/faceswap",
-          "url": "https://github.com/deepfakes/faceswap",
-          "language": "Python",
-          "stars": 56254,
-          "forks": 13428,
-          "stars_delta": 166,
-          "trend_period": "today",
-          "description": "Deepfakes Software For All",
-          "chinese_summary": "老牌开源换脸项目，提供完整的人脸替换、训练与推理工具链。（基于趋势描述整理）",
-          "solves_what": "解决开发者和研究者在本地进行深度伪造实验、换脸训练与效果验证时缺少完整工具的问题。"
-        },
-        {
-          "rank": 8,
-          "name": "microsoft/VibeVoice",
-          "url": "https://github.com/microsoft/VibeVoice",
-          "language": "Python",
-          "stars": 51267,
-          "forks": 5707,
-          "stars_delta": 336,
-          "trend_period": "today",
-          "description": "Open-Source Frontier Voice AI",
-          "chinese_summary": "微软开源的前沿语音 AI 项目，聚焦更自然、更强表现力的语音生成与交互能力。（基于趋势描述整理）",
-          "solves_what": "解决传统 TTS 表达单一、语音交互不够自然，难以支撑新一代语音 Agent 的问题。"
-        },
-        {
-          "rank": 9,
-          "name": "different-ai/openwork",
-          "url": "https://github.com/different-ai/openwork",
-          "language": "TypeScript",
-          "stars": 17892,
-          "forks": 1855,
-          "stars_delta": 97,
-          "trend_period": "today",
-          "description": "The open-source alternative to Claude Cowork (powered by opencode)",
-          "chinese_summary": "开源的 AI 工作流共享平台，可在桌面端或现有代理中复用技能、MCP 与外部连接。",
-          "solves_what": "解决团队在不同 AI 工具、设备与成员之间重复配置工作流的问题，让能力可以一次搭建、多处共享与统一管理。"
-        },
-        {
-          "rank": 10,
-          "name": "obra/superpowers",
-          "url": "https://github.com/obra/superpowers",
-          "language": "Shell",
-          "stars": 263270,
-          "forks": 23510,
-          "stars_delta": 616,
-          "trend_period": "today",
-          "description": "An agentic skills framework & software development methodology that works.",
-          "chinese_summary": "一套面向 AI 代理的软件开发方法论与技能框架，帮助工程团队组织可复用的工作流。（基于趋势描述整理）",
-          "solves_what": "解决代理式开发中流程混乱、经验难沉淀、任务质量不稳定的问题。"
         }
       ]
     }

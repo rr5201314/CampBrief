@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-27T13:40:38+08:00",
+  "last_updated": "2026-10-29T09:14:20+08:00",
   "items": [
     {
       "id": "news-88927883e87d4855",
@@ -11326,6 +11326,34 @@
       "priority": 1,
       "category": "ai",
       "source": "juya AI 日报"
+    },
+    {
+      "id": "news-684ef73324eb4f11",
+      "title": "SpaceX Starship 完成首次轨道发射",
+      "url": "https://www.solidot.org/story?sid=85497",
+      "date": "2026-09-29",
+      "published": "2026-09-29T00:16:29+08:00",
+      "summary": "SpaceX 9 月 28 日完成 Starship 第 14 次试飞并首次进入轨道，将 26 颗 Starlink V3 卫星送入轨道，上面级溅落北太平洋。",
+      "detail": "此次发射于美东时间 28 日上午 8:15 从德州 Starbase 升空，是 Starship 的首次轨道级飞行。任务仍属测试性质，SpaceX 未尝试回收火箭，Ship 41 完成减速点火后溅落北太平洋。Starship 设计运力为近地轨道 150 吨、地球同步转移轨道 100 吨，本次成功入轨标志着该火箭从亚轨道试飞迈向实用化。",
+      "image": "",
+      "priority": 3,
+      "category": "tech",
+      "subcategory": "hardware",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-f2136b24c6480ea3",
+      "title": "36氪专访：华为诺亚生成式大模型负责人李银川创办诺因智能，一年融资超 10 亿元",
+      "url": "https://36kr.com/p/4003270787993737",
+      "date": "2026-09-29",
+      "published": "2026-09-29T09:00:00T+08:00",
+      "summary": "前华为诺亚生成式大模型负责人李银川创业做家庭具身智能，公司诺因智能近日完成数亿元天使+++轮，一年累计融资超 10 亿元。",
+      "detail": "诺因智能成立于 2025 年 8 月，本轮由京东相关基金领投，正心谷资本、南山战新投、华登投资跟投，距上一轮 5 亿元融资仅一个多月。李银川 25 岁时从北理工与哥大联培项目出身，兼具具身智能、大模型与自动驾驶研发落地经验。家庭具身赛道正成为华为系创业者的新方向。（硬氪）",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "36氪"
     }
   ]
 }
