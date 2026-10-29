@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-10-28T21:40:53+08:00",
+  "last_updated": "2026-10-29T21:46:23+08:00",
   "source": "CampBrief",
-  "total": 266,
+  "total": 267,
   "tiers": [
     {
       "key": "all",
@@ -1681,8 +1681,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-25T22:02:16+08:00",
-        "review_after": "2026-10-28T22:02:16+08:00"
+        "verified_at": "2026-10-29T21:40:17+08:00",
+        "review_after": "2026-11-01T21:39:17+08:00"
       }
     },
     {
@@ -1705,8 +1705,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-25T22:02:16+08:00",
-        "review_after": "2026-10-28T22:02:16+08:00"
+        "verified_at": "2026-10-29T21:40:17+08:00",
+        "review_after": "2026-11-01T21:39:17+08:00"
       }
     },
     {
@@ -1766,8 +1766,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-25T22:02:16+08:00",
-        "review_after": "2026-10-28T22:02:16+08:00"
+        "verified_at": "2026-10-29T21:40:17+08:00",
+        "review_after": "2026-11-01T21:39:17+08:00"
       }
     },
     {
@@ -3174,7 +3174,7 @@
     },
     {
       "id": "comp-saikr-621d8ad96385",
-      "name": "第四届“三晋杯”全国大学生英语演讲大赛",
+      "name": "【多校立项加分】第四届“三晋杯”全国大学生英语演讲大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3802,8 +3802,8 @@
         "language"
       ],
       "status": "open",
-      "signup": "即日起开放报名，9月至12月共4个考试场次（首场 2026年9月12日）",
-      "schedule": "",
+      "signup": "即日起至2026年12月19日（四场考试可任选一场）",
+      "schedule": "四场考试：2026年9月12日、10月17日、11月14日、12月19日；每场考试结束后5个工作日内公布获奖名单。",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/bett/vocabulary/5",
@@ -3811,10 +3811,12 @@
       "organizer": "“BETT杯”大赛组委会",
       "prestige": 2,
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-25T22:02:16+08:00",
-        "review_after": "2026-10-28T22:02:16+08:00"
+        "registration_end": "2026-12-19",
+        "event_start": "2026-09-12",
+        "event_end": "2026-12-25",
+        "verified_at": "2026-10-29T21:40:17+08:00"
       }
     },
     {
@@ -5165,7 +5167,7 @@
         "ai",
         "innovation"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5478,8 +5480,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-25T22:02:16+08:00",
-        "review_after": "2026-10-28T22:02:16+08:00"
+        "verified_at": "2026-10-29T21:40:17+08:00",
+        "review_after": "2026-11-01T21:39:17+08:00"
       },
       "signup": "即日起至2026年12月；设8月、9月、11月、12月四场考试，任选一场参加。",
       "schedule": "线上闭卷测评60分钟；待考场次为2026年11月20日18:00至11月21日18:00、12月18日18:00至12月19日18:00。",
@@ -5492,7 +5494,7 @@
     },
     {
       "id": "comp-saikr-cf64c1f2b63e",
-      "name": "【多所高校官网报道】第四届“三晋杯”全国大学生英语写作大赛",
+      "name": "【多校官方报道】第四届“三晋杯”全国大学生英语写作大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -5641,6 +5643,30 @@
       "official_site": "http://www.catticenter.com/",
       "organizer": "全国翻译专业学位研究生教育指导委员会、中国外文局翻译院",
       "prestige": 8
+    },
+    {
+      "id": "comp-saikr-aa82e04db6fd",
+      "name": "2026全国大学生机器人与算法大赛-科技英语（科普知识赛道）",
+      "tier": "hobby",
+      "fields": [
+        "language",
+        "robot"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2027-01-09",
+        "verified_at": "2026-10-29T21:40:17+08:00"
+      },
+      "signup": "即日起至2027年1月9日；三场考试可任选一场。",
+      "schedule": "页面列明当期考试窗口为2026年11月7日9:00—22:00；其余场次以赛事详情页为准。",
+      "summary": "由中国机电一体化技术应用协会主办，面向全国高校在校学生，开展大学英语能力测评，设置科技英语与科普知识内容；40道单项选择题，作答60分钟，报名费50元/人。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/26KJ",
+      "official_site": "https://www.cameta.org.cn/",
+      "organizer": "中国机电一体化技术应用协会",
+      "prestige": 3
     }
   ]
 }
