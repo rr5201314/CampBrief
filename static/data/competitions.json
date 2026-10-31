@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-30T21:40:09+08:00",
+  "last_updated": "2026-10-31T21:38:59+08:00",
   "source": "CampBrief",
   "total": 267,
   "tiers": [
@@ -4732,12 +4732,12 @@
     },
     {
       "id": "comp-saikr-72d775b9ef6c",
-      "name": "【本周开考！赛后三天可领证书】计算机能力竞赛暨城市联赛—计算机素养赛道",
+      "name": "【报名立即开考！赛后三天可领证书】计算机能力竞赛暨城市联赛—计算机素养赛道",
       "tier": "hobby",
       "fields": [
         "computer"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5297,7 +5297,7 @@
     },
     {
       "id": "comp-saikr-affd78e8cf3f",
-      "name": "【周六开考】2026全国大学生机器人与算法大赛-知识竞答赛道",
+      "name": "【考试中】2026全国大学生机器人与算法大赛-知识竞答赛道",
       "tier": "hobby",
       "fields": [
         "robot",
@@ -5402,7 +5402,7 @@
       "fields": [
         "business"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
