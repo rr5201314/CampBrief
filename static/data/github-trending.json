@@ -1,8 +1,300 @@
 {
-  "last_updated": "2026-10-31T08:02:03.635642+08:00",
+  "last_updated": "2026-11-01T08:01:47.789424+08:00",
   "source": "GitHub Trending",
-  "total": 81,
+  "total": 83,
   "items": [
+    {
+      "id": "github-daily-2026-11-01",
+      "title": "11月1日 GitHub趋势日榜",
+      "url": "https://github.com/trending?since=daily",
+      "date": "2026-11-01",
+      "published": "2026-11-01T08:01:47.789424+08:00",
+      "summary": "11月1日 GitHub趋势日榜，Top 10 项目涵盖 TypeScript、Shell 等，今日社区最受关注的开源项目。",
+      "detail": "thedotmack/claude-mem - Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More\nmattpocock/skills - Skills for Real Engineers. Straight from my .agents directory.\nDonchitos/Claude-Code-Game-Studios - Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.\npingdotgg/t3code - \nRenhuai123/ziwei-doushu - 紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据\nmilind-soni/OpenMausBot - Open-source Grok Bot alternative with a virtual machine that bots can use\npbakaus/impeccable - The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.\nobra/superpowers - An agentic skills framework & software development methodology that works.\nlightpanda-io/browser - Lightpanda: the headless browser designed for AI and automation\nHKUDS/DeepTutor - DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "github",
+      "source": "GitHub Trending",
+      "trend_type": "daily",
+      "repos": [
+        {
+          "rank": 1,
+          "name": "thedotmack/claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem",
+          "language": "TypeScript",
+          "stars": 107836,
+          "forks": 9462,
+          "stars_delta": 1723,
+          "trend_period": "today",
+          "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+          "chinese_summary": "claude-mem 是面向编码代理的持久记忆系统：自动捕获会话工具操作，用 AI 生成语义摘要，并在后续会话注入相关上下文。",
+          "solves_what": "解决换会话后项目背景丢失、需要反复阅读文件重建上下文的问题；支持 Claude Code、Codex、Gemini、Hermes、Copilot 与 OpenCode 等。"
+        },
+        {
+          "rank": 2,
+          "name": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills",
+          "language": "Shell",
+          "stars": 308353,
+          "forks": 25943,
+          "stars_delta": 883,
+          "trend_period": "today",
+          "description": "Skills for Real Engineers. Straight from my .agents directory.",
+          "chinese_summary": "Matt Pocock 开源的 AI 代理工程技能集，源自其 .agents 目录，强调小型、可组合且不绑定特定模型的工程工作流。",
+          "solves_what": "针对编码代理需求没对齐、输出冗长或代码不可用等问题，以澄清需求、共享术语和代码评审等技能补足工程流程。"
+        },
+        {
+          "rank": 3,
+          "name": "Donchitos/Claude-Code-Game-Studios",
+          "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+          "language": "Shell",
+          "stars": 31147,
+          "forks": 4264,
+          "stars_delta": 742,
+          "trend_period": "today",
+          "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+          "chinese_summary": "把 Claude Code 组织成游戏开发工作室的插件，提供分层代理、工作流技能、hooks、路径级规则和文档模板，覆盖游戏开发流程。",
+          "solves_what": "解决个人用 AI 开发游戏时缺少设计、开发与 QA 流程的问题：用工作室层级和阶段化命令减少跳步、硬编码及漏测。"
+        },
+        {
+          "rank": 4,
+          "name": "pingdotgg/t3code",
+          "url": "https://github.com/pingdotgg/t3code",
+          "language": "TypeScript",
+          "stars": 35501,
+          "forks": 8778,
+          "stars_delta": 1148,
+          "trend_period": "today",
+          "description": "",
+          "chinese_summary": "T3 Code 是编码代理的远程控制台，可通过手机、网页或桌面端操控本机已登录的 Codex、Claude Code、Cursor、OpenCode 等代理。",
+          "solves_what": "解决编码代理只能在电脑前盯守、离开工位就中断的问题：把本机代理会话接入远程界面，便于查看进度、接管并继续任务。"
+        },
+        {
+          "rank": 5,
+          "name": "Renhuai123/ziwei-doushu",
+          "url": "https://github.com/Renhuai123/ziwei-doushu",
+          "language": "TypeScript",
+          "stars": 12255,
+          "forks": 2409,
+          "stars_delta": 1092,
+          "trend_period": "today",
+          "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+          "chinese_summary": "基于倪海厦《天纪》体系的开源紫微斗数排盘引擎，包含排盘算法、四化系统、格局知识库、古籍原文和命盘数据集。",
+          "solves_what": "把传统紫微斗数排盘与资料查阅流程做成可运行、可复用的开源工具，便于学习者和开发者数字化排盘、对照古籍；术数解读不等同科学结论。"
+        },
+        {
+          "rank": 6,
+          "name": "milind-soni/OpenMausBot",
+          "url": "https://github.com/milind-soni/OpenMausBot",
+          "language": "TypeScript",
+          "stars": 9590,
+          "forks": 1326,
+          "stars_delta": 1303,
+          "trend_period": "today",
+          "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+          "chinese_summary": "开源的 Grok Bot 替代品：Electron 聊天应用中的各个 Bot 可运行 Claude 或 Codex 代理，并配有独立身份、模型和本地或云端电脑。",
+          "solves_what": "解决单一助手难以承载多任务代理、闭源产品又限制模型和电脑环境的问题：本地优先地管理多个 Bot，并在关键动作前审批。"
+        },
+        {
+          "rank": 7,
+          "name": "pbakaus/impeccable",
+          "url": "https://github.com/pbakaus/impeccable",
+          "language": "Rust",
+          "stars": 98249,
+          "forks": 5793,
+          "stars_delta": 1338,
+          "trend_period": "today",
+          "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+          "chinese_summary": "Impeccable 是给编码代理的前端设计词汇表，提供 24 条设计命令、62 条确定性规则和浏览器内改稿流程，用于约束 AI 生成界面的模板感。",
+          "solves_what": "解决让 AI 把页面做得更好看这类模糊指令难以执行的问题：将设计意图拆成具体命令，并在交付前审查和拦截模板化产出。"
+        },
+        {
+          "rank": 8,
+          "name": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "language": "Shell",
+          "stars": 310046,
+          "forks": 27582,
+          "stars_delta": 665,
+          "trend_period": "today",
+          "description": "An agentic skills framework & software development methodology that works.",
+          "chinese_summary": "Superpowers 是面向编码代理的开发方法论与技能框架，引导代理澄清需求、评审设计、拆解实施计划，并通过子代理开发和评审。",
+          "solves_what": "解决代理一上来就写代码、跳过设计和测试、流程不可控的问题：把需求澄清、方案评审、计划拆解和测试固化为可复用步骤。"
+        },
+        {
+          "rank": 9,
+          "name": "lightpanda-io/browser",
+          "url": "https://github.com/lightpanda-io/browser",
+          "language": "Zig",
+          "stars": 39231,
+          "forks": 1906,
+          "stars_delta": 929,
+          "trend_period": "today",
+          "description": "Lightpanda: the headless browser designed for AI and automation",
+          "chinese_summary": "Lightpanda 是用 Zig 从零编写的无头浏览器，专为 AI 代理和自动化设计，不基于 Chromium 或 WebKit，并通过 CDP 兼容常见客户端。",
+          "solves_what": "针对无头 Chromium 执行自动化时内存占用高、启动慢的问题，提供更轻量的网页抓取和代理浏览器运行时。"
+        },
+        {
+          "rank": 10,
+          "name": "HKUDS/DeepTutor",
+          "url": "https://github.com/HKUDS/DeepTutor",
+          "language": "Python",
+          "stars": 52783,
+          "forks": 6461,
+          "stars_delta": 1034,
+          "trend_period": "today",
+          "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+          "chinese_summary": "DeepTutor 是个性化 AI 学习工作区，整合对话辅导、解题、测验、研究、可视化、精读与学习路径，并让不同流程共享资料和上下文。",
+          "solves_what": "解决学习工具分散、切换流程后丢失上下文的问题：让教材、学习进度和记忆在问答、练习、研究与阅读之间复用。"
+        }
+      ]
+    },
+    {
+      "id": "github-monthly-2026-11-01",
+      "title": "11月 GitHub趋势月榜",
+      "url": "https://github.com/trending?since=monthly",
+      "date": "2026-11-01",
+      "published": "2026-11-01T08:01:47.789424+08:00",
+      "summary": "11月 GitHub趋势月榜，Top 10 项目涵盖 JavaScript、TypeScript、CSS 等，本月社区最受关注的开源项目。",
+      "detail": "cloudflare/security-audit-skill - A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings\nheygen-com/hyperframes - Write HTML. Render video. Built for agents.\nNutlope/hallmark - Anti-AI-slop design skill for Claude Code, Cursor, and Codex.\nanthropics/knowledge-work-plugins - Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork\ndebpalash/VoiceStudio - VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.\npbakaus/impeccable - The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.\nearthtojake/text-to-cad - Design physical products with AI\nNationalSecurityAgency/ghidra - Ghidra is a software reverse engineering (SRE) framework\npingdotgg/t3code - \nthedotmack/claude-mem - Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "priority": 4,
+      "category": "tech",
+      "subcategory": "github",
+      "source": "GitHub Trending",
+      "trend_type": "monthly",
+      "repos": [
+        {
+          "rank": 1,
+          "name": "cloudflare/security-audit-skill",
+          "url": "https://github.com/cloudflare/security-audit-skill",
+          "language": "JavaScript",
+          "stars": 55301,
+          "forks": 3603,
+          "stars_delta": 31731,
+          "trend_period": "this month",
+          "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+          "chinese_summary": "Cloudflare 开源的编码代理安全审计技能，通过侦察、覆盖清单、候选验证、结构化输出和独立复核生成机器可读审计结果。",
+          "solves_what": "解决代码审计成本高、覆盖容易遗漏且结论难以复核的问题：让代理按阶段检查仓库，并以覆盖账本和独立验证器保留审计轨迹。"
+        },
+        {
+          "rank": 2,
+          "name": "heygen-com/hyperframes",
+          "url": "https://github.com/heygen-com/hyperframes",
+          "language": "TypeScript",
+          "stars": 76566,
+          "forks": 6999,
+          "stars_delta": 22303,
+          "trend_period": "this month",
+          "description": "Write HTML. Render video. Built for agents.",
+          "chinese_summary": "HyperFrames 是 HeyGen 开源的视频渲染框架，可用 HTML、CSS、媒体和可定位动画描述画面，并确定性地渲染为 MP4。",
+          "solves_what": "解决程序化视频制作工具链复杂、难接入自动化的问题：让开发者或编码代理直接编写 HTML 并生成可复现的视频。"
+        },
+        {
+          "rank": 3,
+          "name": "Nutlope/hallmark",
+          "url": "https://github.com/Nutlope/hallmark",
+          "language": "CSS",
+          "stars": 43907,
+          "forks": 2311,
+          "stars_delta": 14378,
+          "trend_period": "this month",
+          "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+          "chinese_summary": "Hallmark 是适配 Claude Code、Codex、Cursor 和 OpenCode 的反模板化网页设计技能，提供主题选择、页面结构建议与浏览器渲染检查。",
+          "solves_what": "针对 AI 生成网页常见的渐变、重复卡片和通用字体等模板感，用主题与多宽度视觉检查帮助页面形成明确设计方向。"
+        },
+        {
+          "rank": 4,
+          "name": "anthropics/knowledge-work-plugins",
+          "url": "https://github.com/anthropics/knowledge-work-plugins",
+          "language": "Python",
+          "stars": 34195,
+          "forks": 3768,
+          "stars_delta": 8375,
+          "trend_period": "this month",
+          "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+          "chinese_summary": "Anthropic 开源的知识工作插件集，按销售、客服、产品、法务、财务和研究等职能打包技能、连接器、命令与子代理。",
+          "solves_what": "解决不同岗位重复配置 AI 助手工作方式的问题：提供职能工作流起点，并允许组织替换连接器、加入内部术语和流程。"
+        },
+        {
+          "rank": 5,
+          "name": "debpalash/VoiceStudio",
+          "url": "https://github.com/debpalash/VoiceStudio",
+          "language": "Python",
+          "stars": 96833,
+          "forks": 10737,
+          "stars_delta": 47234,
+          "trend_period": "this month",
+          "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+          "chinese_summary": "VoiceStudio 是开源的本地 AI 语音工作站，提供声音克隆、音色设计、视频配音、听写、转录和有声书制作，项目称支持 646 种语言。",
+          "solves_what": "为多语言语音创作提供一站式本地工具，减少对云端语音服务的依赖，降低订阅成本与声音数据外传风险。"
+        },
+        {
+          "rank": 6,
+          "name": "pbakaus/impeccable",
+          "url": "https://github.com/pbakaus/impeccable",
+          "language": "Rust",
+          "stars": 98249,
+          "forks": 5793,
+          "stars_delta": 25479,
+          "trend_period": "this month",
+          "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+          "chinese_summary": "Impeccable 是给编码代理的前端设计词汇表，提供 24 条设计命令、62 条确定性规则和浏览器内改稿流程，用于约束 AI 生成界面的模板感。",
+          "solves_what": "解决让 AI 把页面做得更好看这类模糊指令难以执行的问题：将设计意图拆成具体命令，并在交付前审查和拦截模板化产出。"
+        },
+        {
+          "rank": 7,
+          "name": "earthtojake/text-to-cad",
+          "url": "https://github.com/earthtojake/text-to-cad",
+          "language": "Python",
+          "stars": 24523,
+          "forks": 2349,
+          "stars_delta": 8092,
+          "trend_period": "this month",
+          "description": "Design physical products with AI",
+          "chinese_summary": "text-to-cad 是让编码代理设计实体产品的工具链：用 Python 生成 CAD 模型，支持 STEP、GLB、STL、3MF 导出及制造检查。",
+          "solves_what": "解决从自然语言需求到可制造 CAD 文件缺少代理工作流的问题：把建模、可制造性检查和制造交付连接起来。"
+        },
+        {
+          "rank": 8,
+          "name": "NationalSecurityAgency/ghidra",
+          "url": "https://github.com/NationalSecurityAgency/ghidra",
+          "language": "Java",
+          "stars": 96487,
+          "forks": 10890,
+          "stars_delta": 16685,
+          "trend_period": "this month",
+          "description": "Ghidra is a software reverse engineering (SRE) framework",
+          "chinese_summary": "Ghidra 是美国国家安全局研究部门开源维护的软件逆向工程框架，提供反汇编、反编译、图形分析和 Java/Python 脚本扩展。",
+          "solves_what": "解决没有源代码时分析二进制程序的难题，支持安全研究人员进行漏洞研究、恶意代码分析和二进制比对。"
+        },
+        {
+          "rank": 9,
+          "name": "pingdotgg/t3code",
+          "url": "https://github.com/pingdotgg/t3code",
+          "language": "TypeScript",
+          "stars": 35501,
+          "forks": 8778,
+          "stars_delta": 9973,
+          "trend_period": "this month",
+          "description": "",
+          "chinese_summary": "T3 Code 是编码代理的远程控制台，可通过手机、网页或桌面端操控本机已登录的 Codex、Claude Code、Cursor、OpenCode 等代理。",
+          "solves_what": "解决编码代理只能在电脑前盯守、离开工位就中断的问题：把本机代理会话接入远程界面，便于查看进度、接管并继续任务。"
+        },
+        {
+          "rank": 10,
+          "name": "thedotmack/claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem",
+          "language": "TypeScript",
+          "stars": 107836,
+          "forks": 9462,
+          "stars_delta": 12705,
+          "trend_period": "this month",
+          "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+          "chinese_summary": "claude-mem 是面向编码代理的持久记忆系统：自动捕获会话工具操作，用 AI 生成语义摘要，并在后续会话注入相关上下文。",
+          "solves_what": "解决换会话后项目背景丢失、需要反复阅读文件重建上下文的问题；支持 Claude Code、Codex、Gemini、Hermes、Copilot 与 OpenCode 等。"
+        }
+      ]
+    },
     {
       "id": "github-daily-2026-10-31",
       "title": "10月31日 GitHub趋势日榜",
@@ -27,8 +319,8 @@
           "stars_delta": 1140,
           "trend_period": "today",
           "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "claude-mem 是面向编码代理的持久记忆系统：自动捕获会话工具操作，用 AI 生成语义摘要，并在后续会话注入相关上下文。",
+          "solves_what": "解决换会话后项目背景丢失、需要反复阅读文件重建上下文的问题；支持 Claude Code、Codex、Gemini、Hermes、Copilot 与 OpenCode 等。"
         },
         {
           "rank": 2,
@@ -40,8 +332,8 @@
           "stars_delta": 895,
           "trend_period": "today",
           "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "开源的 Grok Bot 替代品：Electron 聊天应用中的各个 Bot 可运行 Claude 或 Codex 代理，并配有独立身份、模型和本地或云端电脑。",
+          "solves_what": "解决单一助手难以承载多任务代理、闭源产品又限制模型和电脑环境的问题：本地优先地管理多个 Bot，并在关键动作前审批。"
         },
         {
           "rank": 3,
@@ -53,8 +345,8 @@
           "stars_delta": 2300,
           "trend_period": "today",
           "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "Impeccable 是给编码代理的前端设计词汇表，提供 24 条设计命令、62 条确定性规则和浏览器内改稿流程，用于约束 AI 生成界面的模板感。",
+          "solves_what": "解决让 AI 把页面做得更好看这类模糊指令难以执行的问题：将设计意图拆成具体命令，并在交付前审查和拦截模板化产出。"
         },
         {
           "rank": 4,
@@ -66,8 +358,8 @@
           "stars_delta": 706,
           "trend_period": "today",
           "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "CopilotKit 开源的可自托管 AI 同事平台：每个同事拥有独立浏览器、文件和获授权工具，操作经统一网关决策并记录，可接入任意 AG-UI 代理。",
+          "solves_what": "解决企业希望使用 AI 助手却不愿把数据与操作交给第三方云的问题：在自有基础设施运行代理，并对关键动作审批、留存审计记录。"
         },
         {
           "rank": 5,
@@ -79,8 +371,8 @@
           "stars_delta": 1126,
           "trend_period": "today",
           "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "基于倪海厦《天纪》体系的开源紫微斗数排盘引擎，包含排盘算法、四化系统、格局知识库、古籍原文和命盘数据集。",
+          "solves_what": "把传统紫微斗数排盘与资料查阅流程做成可运行、可复用的开源工具，便于学习者和开发者数字化排盘、对照古籍；术数解读不等同科学结论。"
         },
         {
           "rank": 6,
@@ -92,8 +384,8 @@
           "stars_delta": 38,
           "trend_period": "today",
           "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "Expo 官方开源的 AI 代理技能集，面向 Expo 与 EAS 项目，覆盖界面开发、构建与更新、SDK 升级和调试等工作流。",
+          "solves_what": "解决编码代理不熟悉 React Native 与 Expo 约束、容易给出过时方案的问题：将官方文档和 CLI 要点整理成按任务触发的技能。"
         },
         {
           "rank": 7,
@@ -105,8 +397,8 @@
           "stars_delta": 57,
           "trend_period": "today",
           "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "Macro 是面向团队的一体化工作空间，把邮件、聊天、文档、任务、Agent、通话与 CRM 合并，并用共享记忆和链接串联信息。",
+          "solves_what": "解决团队办公工具各自为政、信息割裂的问题：让文档、任务和邮件互相引用并共享 AI 记忆，减少切换与重复录入。"
         },
         {
           "rank": 8,
@@ -118,8 +410,8 @@
           "stars_delta": 876,
           "trend_period": "today",
           "description": "Skills for Real Engineers. Straight from my .agents directory.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "Matt Pocock 开源的 AI 代理工程技能集，源自其 .agents 目录，强调小型、可组合且不绑定特定模型的工程工作流。",
+          "solves_what": "针对编码代理需求没对齐、输出冗长或代码不可用等问题，以澄清需求、共享术语和代码评审等技能补足工程流程。"
         },
         {
           "rank": 9,
@@ -131,8 +423,8 @@
           "stars_delta": 930,
           "trend_period": "today",
           "description": "",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "T3 Code 是编码代理的远程控制台，可通过手机、网页或桌面端操控本机已登录的 Codex、Claude Code、Cursor、OpenCode 等代理。",
+          "solves_what": "解决编码代理只能在电脑前盯守、离开工位就中断的问题：把本机代理会话接入远程界面，便于查看进度、接管并继续任务。"
         },
         {
           "rank": 10,
@@ -144,8 +436,8 @@
           "stars_delta": 2282,
           "trend_period": "today",
           "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "DeepTutor 是个性化 AI 学习工作区，整合对话辅导、解题、测验、研究、可视化、精读与学习路径，并让不同流程共享资料和上下文。",
+          "solves_what": "解决学习工具分散、切换流程后丢失上下文的问题：让教材、学习进度和记忆在问答、练习、研究与阅读之间复用。"
         }
       ]
     },
