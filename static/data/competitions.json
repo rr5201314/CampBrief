@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-31T21:38:59+08:00",
+  "last_updated": "2026-11-01T21:37:00+08:00",
   "source": "CampBrief",
   "total": 267,
   "tiers": [
@@ -109,7 +109,7 @@
         "science",
         "engineering"
       ],
-      "status": "closed",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -2062,7 +2062,7 @@
       "fields": [
         "innovation"
       ],
-      "status": "open",
+      "status": "ongoing",
       "signup": "即日起至2026年10月31日23:59",
       "schedule": "第一次评审：2026年8月1日至8月25日；第二次评审：2026年11月1日至11月30日。作品只参加一次评审。",
       "summary": "赛事详情请访问信息来源页面",
@@ -2091,18 +2091,21 @@
       ],
       "status": "ongoing",
       "signup": "企业命题赛道报名：2026年5月15日至7月15日",
-      "schedule": "初赛作品提交截止：2026年9月10日；全国总决赛安排在2026年10月下旬，具体时间待官方通知。",
+      "schedule": "初赛作品提交截止：2026年9月10日；初赛评审：2026年9月；全国总决赛两场：2026年10月31日—11月2日、2026年11月6日—8日。",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/58262",
-      "official_site": "",
+      "official_site": "https://univ.ciciec.com/",
       "organizer": "工业和信息化部人才交流中心",
       "prestige": 8,
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-28T21:39:13+08:00",
-        "review_after": "2026-10-31T21:38:13+08:00"
+        "registration_start": "2026-05-15",
+        "registration_end": "2026-07-15",
+        "event_start": "2026-10-31",
+        "event_end": "2026-11-08",
+        "verified_at": "2026-11-01T21:37:00+08:00"
       }
     },
     {
@@ -2642,18 +2645,21 @@
       ],
       "status": "ongoing",
       "signup": "综合赛道报名：2026年5月15日至9月15日",
-      "schedule": "初赛作品提交截止：2026年9月10日；全国总决赛安排在2026年10月下旬，具体时间待官方通知。",
+      "schedule": "初赛作品提交截止：2026年9月10日；初赛评审：2026年9月；全国总决赛两场：2026年10月31日—11月2日、2026年11月6日—8日。",
       "summary": "赛事详情请访问信息来源页面",
       "search": "",
       "official_url": "https://www.saikr.com/vse/58261",
-      "official_site": "",
+      "official_site": "https://univ.ciciec.com/",
       "organizer": "工业和信息化部人才交流中心",
       "prestige": 8,
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-28T21:39:13+08:00",
-        "review_after": "2026-10-31T21:38:13+08:00"
+        "registration_start": "2026-05-15",
+        "registration_end": "2026-09-15",
+        "event_start": "2026-10-31",
+        "event_end": "2026-11-08",
+        "verified_at": "2026-11-01T21:37:00+08:00"
       }
     },
     {
@@ -3262,7 +3268,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -4338,7 +4344,7 @@
       "fields": [
         "business"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -4763,7 +4769,7 @@
       "fields": [
         "literature"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5303,7 +5309,7 @@
         "robot",
         "computer"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
