@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-01T21:37:00+08:00",
+  "last_updated": "2026-11-02T21:52:12+08:00",
   "source": "CampBrief",
   "total": 267,
   "tiers": [
@@ -109,16 +109,7 @@
         "science",
         "engineering"
       ],
-      "status": "ongoing",
-      "lifecycle": {
-        "mode": "scheduled",
-        "time_zone": "Asia/Shanghai",
-        "registration_start": "2026-05-23",
-        "registration_end": "2026-09-30",
-        "event_start": "2026-11-01",
-        "event_end": "2026-11-01",
-        "verified_at": "2026-09-09T21:39:28+08:00"
-      },
+      "status": "done",
       "signup": "截至2026年9月30日",
       "schedule": "竞赛时间：2026年11月1日 9:00-11:30",
       "summary": "第十八届山东省大学生科技节赛事之一，由山东省科协组织、山东省力学学会承办，设本科/专科/研究生三个赛道，个人赛、免注册费，面向山东省内高校全日制大学生。",
@@ -199,8 +190,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-25T22:02:16+08:00",
-        "review_after": "2026-10-28T22:02:16+08:00"
+        "verified_at": "2026-11-02T21:52:12+08:00",
+        "review_after": "2026-11-05T20:52:12+08:00"
       }
     },
     {
@@ -1681,8 +1672,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-29T21:40:17+08:00",
-        "review_after": "2026-11-01T21:39:17+08:00"
+        "verified_at": "2026-11-02T21:42:59+08:00",
+        "review_after": "2026-11-05T20:42:59+08:00"
       }
     },
     {
@@ -1705,8 +1696,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-29T21:40:17+08:00",
-        "review_after": "2026-11-01T21:39:17+08:00"
+        "verified_at": "2026-11-02T21:42:59+08:00",
+        "review_after": "2026-11-05T20:42:59+08:00"
       }
     },
     {
@@ -1766,8 +1757,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-29T21:40:17+08:00",
-        "review_after": "2026-11-01T21:39:17+08:00"
+        "verified_at": "2026-11-02T21:42:59+08:00",
+        "review_after": "2026-11-05T20:42:59+08:00"
       }
     },
     {
@@ -1834,9 +1825,9 @@
         "computer",
         "innovation"
       ],
-      "status": "open",
-      "signup": "2026年Q3-Q4，申请举办独立赛",
-      "schedule": "2026年Q3-Q4",
+      "status": "ongoing",
+      "signup": "企业/高校申请举办独立赛：2026年第一季度；企业/高校独立赛阶段：2026年第二至第三季度。",
+      "schedule": "2026年第三至第四季度举行全国总决赛与颁奖。",
       "summary": "火山引擎面向企业开发者与高校师生的 AI Agent 创新赛事；作品可基于 HiAgent、扣子、TRAE、AgentKit 等官方工具构建，并需提供可演示方案。",
       "search": "火山杯 Agent 创新大赛 扣子 TRAE AgentKit 2026",
       "official_site": "https://www.volcengine.com/activity/agent/competition/2026",
@@ -1845,8 +1836,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-18T22:06:14+08:00",
-        "review_after": "2026-10-21T22:06:14+08:00"
+        "verified_at": "2026-11-02T21:52:12+08:00",
+        "review_after": "2026-11-05T20:52:12+08:00"
       }
     },
     {
@@ -3073,7 +3064,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【近百所院校报道】2026年第十二届中西部外语翻译大赛",
+      "name": "【11月综测加分】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3263,24 +3254,21 @@
     },
     {
       "id": "comp-saikr-dd8077ef2650",
-      "name": "【权威文学大赛】“悦·读者杯”——2026年青少年文学大赛",
+      "name": "【11月7日23:59截止】“悦·读者杯”——2026年青少年文学大赛",
       "tier": "hobby",
       "fields": [
         "language"
       ],
-      "status": "ongoing",
+      "status": "open",
       "lifecycle": {
-        "mode": "scheduled",
+        "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-08-03T21:36:23+08:00",
-        "registration_start": "2026-05-20",
-        "registration_end": "2026-10-31",
-        "event_start": "2026-05-20",
-        "event_end": "2026-11-07"
+        "verified_at": "2026-11-02T21:52:12+08:00",
+        "review_after": "2026-11-05T20:52:12+08:00"
       },
-      "signup": "2026年5月20日至10月31日",
-      "schedule": "",
-      "summary": "赛事详情请访问信息来源页面",
+      "signup": "报名及文学作品提交：2026年5月20日至2026年11月7日23:59。",
+      "schedule": "作品评阅：2026年7月31日（第一次）、2026年11月8日（第二次）；第二次获奖名单预计2026年11月中旬公布。",
+      "summary": "《读者》杂志社主办，面向全国高校全日制在校生，设置知识竞答与文学作品征集双赛道、八大主题；报名及作品提交截至2026年11月7日23:59。",
       "search": "",
       "official_url": "https://www.saikr.com/vse/DZZGcup2026",
       "official_site": "",
@@ -4014,7 +4002,7 @@
     },
     {
       "id": "comp-52jingsai-31cdef7239a7",
-      "name": "【NCEVC通知】2026年第六届大学生英语词汇竞赛报名通知",
+      "name": "【NCEVC，11月7日开考】2026年第六届大学生英语词汇竞赛报名通知",
       "tier": "hobby",
       "fields": [
         "language"
@@ -4024,10 +4012,12 @@
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
         "registration_end": "2026-12-18",
-        "verified_at": "2026-09-06T21:35:40+08:00"
+        "event_start": "2026-11-07",
+        "event_end": "2026-12-31",
+        "verified_at": "2026-11-02T21:52:12+08:00"
       },
-      "signup": "即日起至2026年12月18日",
-      "schedule": "初赛第一场考试至2026年11月7日，决赛考试2026年12月27日",
+      "signup": "2026年第六届竞赛分两场初赛：第一场报名至2026年11月6日，第二场报名至2026年12月18日。",
+      "schedule": "初赛第一场：2026年11月7日考试、11月11日公示成绩；初赛第二场：2026年12月19日考试、12月23日公示成绩；决赛：2026年12月27日考试、12月31日公布获奖名单；证书于2027年1月陆续邮寄。",
       "summary": "全国性大学生英语词汇赛事：中国国际科技促进会综合素质与职业发展教育专业委员会与大学生英语词汇竞赛组委会主办，已成功举办五届，分非英语专业组、英语专业组、高职高专组，报名费49元。",
       "search": "",
       "official_url": "https://www.52jingsai.com/article-23936-1.html",
@@ -4266,7 +4256,7 @@
     },
     {
       "id": "comp-saikr-8c1361d912be",
-      "name": "下周开考 | 2026年高校大学生商务外语词汇大赛",
+      "name": "周六开考 | 2026年高校大学生商务外语词汇大赛",
       "tier": "hobby",
       "fields": [
         "language",
@@ -4738,24 +4728,21 @@
     },
     {
       "id": "comp-saikr-72d775b9ef6c",
-      "name": "【报名立即开考！赛后三天可领证书】计算机能力竞赛暨城市联赛—计算机素养赛道",
+      "name": "【十一月首选】计算机能力竞赛暨城市联赛—计算机素养赛道",
       "tier": "hobby",
       "fields": [
         "computer"
       ],
-      "status": "ongoing",
+      "status": "open",
       "lifecycle": {
-        "mode": "scheduled",
+        "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "registration_end": "2026-10-30",
-        "verified_at": "2026-09-21T22:03:00+08:00",
-        "registration_start": "2026-08-28",
-        "event_start": "2026-10-31",
-        "event_end": "2026-11-01"
+        "verified_at": "2026-11-02T21:42:59+08:00",
+        "review_after": "2026-11-05T20:42:59+08:00"
       },
-      "signup": "即日起-2026年10月30日（冬季赛共四场考试，任选或多场）",
-      "schedule": "",
-      "summary": "第二届计算机能力竞赛暨城市联赛（冬季赛）计算机素养赛道，线上个人赛，报名截止10月30日，主办：大连/苏州/天津市计算机学会。",
+      "signup": "冬季赛全阶段报名：即日起至2026年12月；11月冲刺场报名至2026年11月27日。",
+      "schedule": "2026年冬季赛共四场：2026年9月19—20日、10月31日—11月1日、11月28—29日、12月26—27日（每场任选1小时答题）。11月冲刺场获奖名单预计12月2日18:00前公布；12月最终场获奖名单预计12月29日18:00前公布。",
+      "summary": "大连市计算机学会、苏州市计算机学会、天津市计算机学会主办，面向高校学生的线上计算机能力竞赛，设C语言、C++、Python、Java四个赛道；2026年冬季赛设四场考试。",
       "search": "",
       "official_url": "https://www.saikr.com/vse/CLComputer2026WT",
       "official_site": "",
@@ -5091,7 +5078,7 @@
     },
     {
       "id": "comp-saikr-edce0fd03ca1",
-      "name": "【5届积累】第五届“英才计划”大学生英语阅读大赛",
+      "name": "【11月7日考试】第五届“英才计划”大学生英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -5303,7 +5290,7 @@
     },
     {
       "id": "comp-saikr-affd78e8cf3f",
-      "name": "【考试中】2026全国大学生机器人与算法大赛-知识竞答赛道",
+      "name": "2026全国大学生机器人与算法大赛-知识竞答赛道",
       "tier": "hobby",
       "fields": [
         "robot",
@@ -5486,8 +5473,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-29T21:40:17+08:00",
-        "review_after": "2026-11-01T21:39:17+08:00"
+        "verified_at": "2026-11-02T21:42:59+08:00",
+        "review_after": "2026-11-05T20:42:59+08:00"
       },
       "signup": "即日起至2026年12月；设8月、9月、11月、12月四场考试，任选一场参加。",
       "schedule": "线上闭卷测评60分钟；待考场次为2026年11月20日18:00至11月21日18:00、12月18日18:00至12月19日18:00。",
@@ -5601,7 +5588,7 @@
     },
     {
       "id": "comp-52jingsai-93f43c56534d",
-      "name": "【11月6日报名截止，英语语法比赛】第五届“外文奖”大学生英语语法大赛报名通知！",
+      "name": "【11月6日报名截止】第五届“外文奖”大学生英语语法大赛报名通知！",
       "tier": "official",
       "fields": [
         "language"
