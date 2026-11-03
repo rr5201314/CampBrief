@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-02T21:07:20+08:00",
+  "last_updated": "2026-11-03T21:10:14+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -793,8 +793,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-10-27T21:17:43+08:00",
-        "review_after": "2026-10-30T21:16:43+08:00"
+        "verified_at": "2026-11-03T21:10:14+08:00",
+        "review_after": "2026-11-06T21:09:14+08:00"
       },
       "fee": "约50元（学生优惠）",
       "schedule": "各地定期组织",
@@ -804,7 +804,7 @@
       "official_portal": "https://www.cltt.org/",
       "news_list_url": "https://www.cltt.org/",
       "official_url": "https://stzbm.cltt.org/",
-      "last_updated": "2026-10-31T21:53:01+08:00"
+      "last_updated": "2026-11-03T21:10:14+08:00"
     },
     {
       "id": "guokao-2026",
@@ -875,8 +875,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-10-27T21:17:43+08:00",
-        "review_after": "2026-10-30T21:16:43+08:00"
+        "verified_at": "2026-11-03T21:10:14+08:00",
+        "review_after": "2026-11-06T21:09:14+08:00"
       },
       "fee": "约50-100元",
       "schedule": "各地不定期",
@@ -886,7 +886,7 @@
       "official_portal": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/index.html",
       "news_list_url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/index.html",
       "official_url": "https://job.mohrss.gov.cn/cjobs/institution/listInstitution",
-      "last_updated": "2026-10-31T21:53:01+08:00"
+      "last_updated": "2026-11-03T21:10:14+08:00"
     },
     {
       "id": "kaoyan-2026",
