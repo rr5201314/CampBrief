@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-02T21:52:12+08:00",
+  "last_updated": "2026-11-03T21:36:36+08:00",
   "source": "CampBrief",
   "total": 267,
   "tiers": [
@@ -631,8 +631,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-30T21:40:09+08:00",
-        "review_after": "2026-11-02T21:39:09+08:00"
+        "verified_at": "2026-11-03T21:36:36+08:00",
+        "review_after": "2026-11-06T21:35:36+08:00"
       },
       "signup": "线上报名及作品提交：2026年10月至2027年4月。",
       "schedule": "省赛评审：2027年4—5月；国赛评审及获奖信息发布：2027年5—6月；系列活动：2027年7—8月；优秀作品计划于2027年4月米兰设计周期间展出。",
@@ -2908,21 +2908,15 @@
       "fields": [
         "medical"
       ],
-      "status": "ongoing",
+      "status": "done",
       "signup": "国赛报名至2026年9月25日；作品提交至9月30日。",
-      "schedule": "第二批作品评阅安排在2026年10月中旬，评阅结果预计于10月下旬公布；截至本次核验，赛事仍处于评阅阶段。",
+      "schedule": "第二批作品评阅安排在2026年10月中旬，评阅结果预计于2026年10月下旬公布。",
       "summary": "中国心理学会心理学普及工作委员会主办，面向高校全日制在校生；国赛作品评阅结果预计于10月下旬公布。来源：赛氪。",
       "search": "",
       "official_url": "https://www.saikr.com/vse/psy2026",
       "official_site": "",
       "organizer": "中国心理学会心理学普及工作委员会",
-      "prestige": 5,
-      "lifecycle": {
-        "mode": "manual",
-        "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-27T21:46:51+08:00",
-        "review_after": "2026-10-30T19:46:51+08:00"
-      }
+      "prestige": 5
     },
     {
       "id": "comp-saikr-c4f00438cfee",
@@ -3254,7 +3248,7 @@
     },
     {
       "id": "comp-saikr-dd8077ef2650",
-      "name": "【11月7日23:59截止】“悦·读者杯”——2026年青少年文学大赛",
+      "name": "【11.08开启评阅】“悦·读者杯”——2026年青少年文学大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3395,7 +3389,7 @@
     },
     {
       "id": "comp-saikr-52bbbd9ae327",
-      "name": "2026年第二届大学生网络信息技术大赛",
+      "name": "【年度最后一场加分】2026年第二届大学生网络信息技术大赛",
       "tier": "hobby",
       "fields": [
         "computer"
@@ -3672,7 +3666,7 @@
     },
     {
       "id": "comp-saikr-554ce57a889c",
-      "name": "2026年第二届“中外传播杯”大学生中外历史竞答大赛",
+      "name": "【最后一场】2026年第二届“中外传播杯”大学生中外历史竞答大赛",
       "tier": "official",
       "fields": [
         "other"
@@ -4800,7 +4794,7 @@
     },
     {
       "id": "comp-saikr-3762d0f4af87",
-      "name": "【大英赛同主办方】2026年全国高师学生英语教师职业技能竞赛",
+      "name": "【最后7天丨大英赛主办方】2026年全国高师学生英语教师职业技能竞赛",
       "tier": "official",
       "fields": [
         "language"
@@ -5639,7 +5633,7 @@
     },
     {
       "id": "comp-saikr-aa82e04db6fd",
-      "name": "2026全国大学生机器人与算法大赛-科技英语（科普知识赛道）",
+      "name": "【倒计时3天】2026全国大学生机器人与算法大赛-科技英语（科普知识赛道）",
       "tier": "hobby",
       "fields": [
         "language",
