@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-03T21:31:47+08:00",
+  "last_updated": "2026-11-04T09:17:36+08:00",
   "items": [
     {
       "id": "news-49cf10f4a68343b2",
@@ -1096,6 +1096,86 @@
       "subcategory": "hardware",
       "source": "少数派",
       "date": "2026-10-03"
+    },
+    {
+      "id": "news-a2fbf05b509453f2",
+      "title": "文件涂黑失效披露 Google 内布拉斯加数据中心用水与电力数据",
+      "url": "https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/",
+      "date": "2026-10-04",
+      "published": "2026-10-04T19:37:05+00:00",
+      "summary": "美国媒体 10/11 NOW 报道，Google 林肯数据中心报告中失效涂黑的文字披露其峰值用电需求 52.65 MW、过去一年用水约 1329.9 万加仑。",
+      "detail": "报道援引 Agate LLC 向内布拉斯加州水、能源与环境部门提交的年度文件。记者发现遮盖框未真正删除文字，复制后可以读出数据，并对其中其他报告提出公开记录申请。文章还列出 Google 在奥马哈、帕皮利恩站点的用水申报，反映数据中心扩张与地方水、电资源透明度问题。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-b237c0718bb27ad3",
+      "title": "研究发现聊天机器人会随用户政治立场调整回答",
+      "url": "https://www.solidot.org/story?sid=85534",
+      "date": "2026-10-05",
+      "published": "2026-10-05T00:10:02+08:00",
+      "summary": "一项测试 21 个模型、112 项政治陈述的研究发现，模型回答会向提示中的用户立场靠拢，研究者将这种倾向称为“意识形态变色龙”。",
+      "detail": "巴西坎皮纳斯州立大学研究团队比较了无立场提示、左翼及右翼立场提示下的模型答复，覆盖巴西政治七个领域。研究者用“变色龙指数”衡量回答偏移，并指出不同模型的偏移程度不同；结果显示模型会受提示影响，但不等同于真实用户长期态度变化或社会极化已被证明存在因果关系。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-d9c1aebcca84b109",
+      "title": "研究下调太阳系残余行星系统的预计寿命",
+      "url": "https://www.solidot.org/story?sid=85535",
+      "date": "2026-10-05",
+      "published": "2026-10-05T01:14:32+08:00",
+      "summary": "模拟研究认为，太阳转为白矮星后，残余行星系统可能在约 10 亿年内失稳，远短于此前约 1000 亿年的估计；这并不改变太阳演化的数十亿年时间尺度。",
+      "detail": "研究团队模拟太阳演化为白矮星后的行星动力学，认为外侧残余行星系统可能在约 10 亿年内因不稳定而被扰乱。此前估算认为这些行星可继续存在约 1000 亿年；新结论是模型预测，并不意味着太阳或地球会在近期发生变化。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-3bec30271cfd75ec",
+      "title": "Elfyn Evans 夺得 WRC 世界冠军，英国车手时隔 25 年再登顶",
+      "url": "https://www.bbc.co.uk/sport/motorsport/articles/cmd6dq5gyw7xo?at_medium=RSS&at_campaign=rss",
+      "date": "2026-10-04",
+      "published": "2026-10-04T13:46:49+00:00",
+      "summary": "Elfyn Evans 夺得 2026 WRC 冠军，成为 25 年来首位英国冠军；对手 Oliver Solberg 在终点前撞车。",
+      "detail": "进入最后赛段前，Evans 只领先对手 1 分；Solberg 当时仍有机会逆转，却在距终点数百米处失控。Evans 继 Colin McRae（1995）和 Richard Burns（2001）后，成为第三位夺冠的英国车手。原定沙特站因中东局势取消，2026 赛季缩减为 13 站。",
+      "image": "",
+      "priority": 3,
+      "category": "sports",
+      "source": "BBC Sport"
+    },
+    {
+      "id": "news-5b3a7046d3a2a315",
+      "title": "吴宜泽夺深圳公开赛冠军，中国选手首次包揽斯诺克世界排名前两位",
+      "url": "https://www.bbc.co.uk/sport/snooker/articles/cq4g1l0gxl44o?at_medium=RSS&at_campaign=rss",
+      "date": "2026-10-04",
+      "published": "2026-10-04T15:42:24+00:00",
+      "summary": "吴宜泽在深圳公开赛决赛 10 比 5 击败袁思俊，拿下个人第三个排名赛冠军并升至世界第 2；赵心童仍居第 1。",
+      "detail": "吴宜泽在今年 5 月成为世锦赛冠军，此次赢得深圳公开赛，是其第三个排名赛冠军。决赛开局双方一度拉锯，吴宜泽在晚场连续打出高分，最终以 10 比 5 获胜。袁思俊首次打进排名赛决赛，世界排名升至第 26 位；中国选手首次占据世界排名前两名。",
+      "image": "",
+      "priority": 2,
+      "category": "sports",
+      "source": "BBC Sport"
+    },
+    {
+      "id": "news-a9b21bd8624510db",
+      "title": "F1 车手批评新引擎规则，巴林大奖赛因湿地软件故障延误",
+      "url": "https://www.theguardian.com/sport/2026/oct/04/f1-drivers-unite-engine-regulations-chaotic-bahrain-grand-prix-kimi-antonelli-lewis-hamilton",
+      "date": "2026-10-04",
+      "published": "2026-10-04T15:30:11+00:00",
+      "summary": "《卫报》称，安东内利与汉密尔顿等车手赛后批评 F1 当前引擎规则；雨天软件故障令巴林大奖赛延误 53 分钟。",
+      "detail": "报道指巴林站在马来西亚 Sepang 举行，湿地条件下多个赛车在发车流程中出现故障，赛事延误 53 分钟。安东内利和汉密尔顿带头批评当前引擎规则，车手认为规则导致赛车在赛道上停滞等混乱场面。文章聚焦赛后对规则的集体质疑，而非单一车队赛果。",
+      "image": "",
+      "priority": 2,
+      "category": "sports",
+      "source": "The Guardian Sport"
     }
   ]
 }

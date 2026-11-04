@@ -1,8 +1,154 @@
 {
-  "last_updated": "2026-11-03T08:02:07.902211+08:00",
+  "last_updated": "2026-11-04T08:01:28.421088+08:00",
   "source": "GitHub Trending",
   "total": 84,
   "items": [
+    {
+      "id": "github-daily-2026-11-04",
+      "title": "11月4日 GitHub趋势日榜",
+      "url": "https://github.com/trending?since=daily",
+      "date": "2026-11-04",
+      "published": "2026-11-04T08:01:28.421088+08:00",
+      "summary": "11月4日 GitHub趋势日榜，Top 10 项目涵盖 TypeScript、Rust、C 等，今日社区最受关注的开源项目。",
+      "detail": "thedotmack/claude-mem - Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More\nvercel-labs/agent-desktop - Computer use CLI for AI agents\nmax-sixty/worktrunk - Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows\nJustVugg/colibri - A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA, Vulkan), warm ones in RAM, cold ones streamed from NVMe. Written in C, runs on the hardware you already own.\nmattpocock/skills - Skills for Real Engineers. Straight from my .agents directory.\np-e-w/heretic - Training-free language model modification: Remove censorship, suppress slop, reduce sycophancy, and more\nspotify/portal-ai-plugins - \nfloci-io/floci - Light, fluffy, and always free - The AWS Local Emulator alternative\nUsagi-org/ai-goofish-monitor - 基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。\nanomalyco/hex - Local voice dictation for mac, windows and linux",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "github",
+      "source": "GitHub Trending",
+      "trend_type": "daily",
+      "repos": [
+        {
+          "rank": 1,
+          "name": "thedotmack/claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem",
+          "language": "TypeScript",
+          "stars": 111871,
+          "forks": 9735,
+          "stars_delta": 1139,
+          "trend_period": "today",
+          "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+          "chinese_summary": "claude-mem 是面向编码代理的持久记忆系统：自动捕获会话工具操作，用 AI 生成语义摘要，并在后续会话注入相关上下文。",
+          "solves_what": "解决换会话后项目背景丢失、需要反复阅读文件重建上下文的问题；支持 Claude Code、Codex、Gemini、Hermes、Copilot 与 OpenCode 等。"
+        },
+        {
+          "rank": 2,
+          "name": "vercel-labs/agent-desktop",
+          "url": "https://github.com/vercel-labs/agent-desktop",
+          "language": "Rust",
+          "stars": 12670,
+          "forks": 872,
+          "stars_delta": 3791,
+          "trend_period": "today",
+          "description": "Computer use CLI for AI agents",
+          "chinese_summary": "跨平台 AI 代理桌面操作工具，通过操作系统无障碍树读取应用界面并执行操作。",
+          "solves_what": "避免代理只靠截图和像素坐标操作桌面；它以元素引用操作界面，并可再次读取快照确认结果。"
+        },
+        {
+          "rank": 3,
+          "name": "max-sixty/worktrunk",
+          "url": "https://github.com/max-sixty/worktrunk",
+          "language": "Rust",
+          "stars": 10467,
+          "forks": 375,
+          "stars_delta": 438,
+          "trend_period": "today",
+          "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
+          "chinese_summary": "Rust 编写的 Git worktree 管理 CLI：一条命令创建、切换、清理 worktree，并为并行 AI Agent 工作流优化（每个 Agent 独立工作区）。",
+          "solves_what": "解决多个 AI 编码 Agent 并行改代码时频繁 stash/切分支、互相踩踏工作区的问题，让每个任务拥有独立 worktree。"
+        },
+        {
+          "rank": 4,
+          "name": "JustVugg/colibri",
+          "url": "https://github.com/JustVugg/colibri",
+          "language": "C",
+          "stars": 47236,
+          "forks": 5463,
+          "stars_delta": 802,
+          "trend_period": "today",
+          "description": "A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA, Vulkan), warm ones in RAM, cold ones streamed from NVMe. Written in C, runs on the hardware you already own.",
+          "chinese_summary": "纯 C 语言、零依赖的 MoE 大模型推理引擎：通过从磁盘按需流式加载专家权重，让个人硬件也能运行前沿 MoE 模型。",
+          "solves_what": "解决前沿大模型推理依赖高显存服务器、普通设备难以本地运行的问题，以「小而引擎、巨而模型」的方式把 MoE 架构的稀疏性红利释放到消费级硬件。"
+        },
+        {
+          "rank": 5,
+          "name": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills",
+          "language": "Shell",
+          "stars": 311419,
+          "forks": 26170,
+          "stars_delta": 1164,
+          "trend_period": "today",
+          "description": "Skills for Real Engineers. Straight from my .agents directory.",
+          "chinese_summary": "Matt Pocock 开源的 AI 代理工程技能集，源自其 .agents 目录，强调小型、可组合且不绑定特定模型的工程工作流。",
+          "solves_what": "针对编码代理需求没对齐、输出冗长或代码不可用等问题，以澄清需求、共享术语和代码评审等技能补足工程流程。"
+        },
+        {
+          "rank": 6,
+          "name": "p-e-w/heretic",
+          "url": "https://github.com/p-e-w/heretic",
+          "language": "Python",
+          "stars": 38768,
+          "forks": 4380,
+          "stars_delta": 701,
+          "trend_period": "today",
+          "description": "Training-free language model modification: Remove censorship, suppress slop, reduce sycophancy, and more",
+          "chinese_summary": "heretic：面向语言模型的自动去审查工具，通过 abliteration 消融技术移除模型输出中的内容限制。",
+          "solves_what": "解决本地部署大模型时输出内容受限的问题，常用于研究模型安全对齐机制与本地可控性。"
+        },
+        {
+          "rank": 7,
+          "name": "spotify/portal-ai-plugins",
+          "url": "https://github.com/spotify/portal-ai-plugins",
+          "language": "TypeScript",
+          "stars": 3030,
+          "forks": 235,
+          "stars_delta": 91,
+          "trend_period": "today",
+          "description": "",
+          "chinese_summary": "Spotify Portal 的 AI 编码代理插件，为 Claude Code、Codex、Cursor 和 pi 提供 Portal CLI 工作流。",
+          "solves_what": "让编码代理可检索软件目录与技术文档、生成服务简报、运行诊断，并通过 dry-run 与确认机制安全调用 Portal 操作。"
+        },
+        {
+          "rank": 8,
+          "name": "floci-io/floci",
+          "url": "https://github.com/floci-io/floci",
+          "language": "Java",
+          "stars": 28743,
+          "forks": 3202,
+          "stars_delta": 482,
+          "trend_period": "today",
+          "description": "Light, fluffy, and always free - The AWS Local Emulator alternative",
+          "chinese_summary": "免费的 AWS 本地模拟器，供开发者在本机运行和测试云服务相关工作流。",
+          "solves_what": "让开发者本地测试 AWS API 与基础设施工作流，减少对真实 AWS 账户、凭据和在线云环境的依赖。"
+        },
+        {
+          "rank": 9,
+          "name": "Usagi-org/ai-goofish-monitor",
+          "url": "https://github.com/Usagi-org/ai-goofish-monitor",
+          "language": "Python",
+          "stars": 16339,
+          "forks": 2840,
+          "stars_delta": 228,
+          "trend_period": "today",
+          "description": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。",
+          "chinese_summary": "基于 Playwright 和 AI 的闲鱼商品监控系统，支持多任务实时或定时监控、智能分析及后台管理。",
+          "solves_what": "帮助用户持续筛选和跟踪闲鱼上的关注商品，减少在海量二手商品中手动搜索的工作。"
+        },
+        {
+          "rank": 10,
+          "name": "anomalyco/hex",
+          "url": "https://github.com/anomalyco/hex",
+          "language": "Rust",
+          "stars": 4564,
+          "forks": 256,
+          "stars_delta": 410,
+          "trend_period": "today",
+          "description": "Local voice dictation for mac, windows and linux",
+          "chinese_summary": "本地优先的语音听写工具；macOS 正式版支持设备端转写，Windows 与 Linux 提供测试版。",
+          "solves_what": "让用户通过快捷键语音输入并将文字粘贴到当前应用；macOS 版无需云端语音转写服务。"
+        }
+      ]
+    },
     {
       "id": "github-daily-2026-11-03",
       "title": "11月3日 GitHub趋势日榜",
@@ -27,8 +173,8 @@
           "stars_delta": 2275,
           "trend_period": "today",
           "description": "Computer use CLI for AI agents",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "跨平台 AI 代理桌面操作工具，通过操作系统无障碍树读取应用界面并执行操作。",
+          "solves_what": "避免代理只靠截图和像素坐标操作桌面；它以元素引用操作界面，并可再次读取快照确认结果。"
         },
         {
           "rank": 2,
@@ -40,8 +186,8 @@
           "stars_delta": 1803,
           "trend_period": "today",
           "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "claude-mem 是面向编码代理的持久记忆系统：自动捕获会话工具操作，用 AI 生成语义摘要，并在后续会话注入相关上下文。",
+          "solves_what": "解决换会话后项目背景丢失、需要反复阅读文件重建上下文的问题；支持 Claude Code、Codex、Gemini、Hermes、Copilot 与 OpenCode 等。"
         },
         {
           "rank": 3,
@@ -53,8 +199,8 @@
           "stars_delta": 706,
           "trend_period": "today",
           "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "自适应网页抓取框架，覆盖从单次请求到大规模爬取，并面向现代网站设计。",
+          "solves_what": "帮助开发者用同一套工具处理简单网页请求与复杂网站抓取，减少为不同规模采集任务维护多套代码的负担。"
         },
         {
           "rank": 4,
@@ -66,8 +212,8 @@
           "stars_delta": 509,
           "trend_period": "today",
           "description": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "面向 Linux Wayland 的动态平铺合成器，强调高度定制、窗口布局与桌面视觉效果。",
+          "solves_what": "为 Wayland 用户提供动态平铺窗口、快捷键与布局控制方案，让桌面交互可按需定制。"
         },
         {
           "rank": 5,
@@ -79,8 +225,8 @@
           "stars_delta": 1379,
           "trend_period": "today",
           "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "把 Claude Code 组织成游戏开发工作室的插件，提供分层代理、工作流技能、hooks、路径级规则和文档模板，覆盖游戏开发流程。",
+          "solves_what": "解决个人用 AI 开发游戏时缺少设计、开发与 QA 流程的问题：用工作室层级和阶段化命令减少跳步、硬编码及漏测。"
         },
         {
           "rank": 6,
@@ -92,8 +238,8 @@
           "stars_delta": 653,
           "trend_period": "today",
           "description": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently.",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "边缘原生 MoE 推理引擎，将 GPU、CPU 与内存等异构资源用于本地运行超大开源模型。",
+          "solves_what": "让开发者在消费级桌面硬件上运行超大 MoE 模型，减少对数据中心级推理服务器的依赖。"
         },
         {
           "rank": 7,
@@ -105,8 +251,8 @@
           "stars_delta": 3229,
           "trend_period": "today",
           "description": "",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "T3 Code 是编码代理的远程控制台，可通过手机、网页或桌面端操控本机已登录的 Codex、Claude Code、Cursor、OpenCode 等代理。",
+          "solves_what": "解决编码代理只能在电脑前盯守、离开工位就中断的问题：把本机代理会话接入远程界面，便于查看进度、接管并继续任务。"
         },
         {
           "rank": 8,
@@ -118,8 +264,8 @@
           "stars_delta": 857,
           "trend_period": "today",
           "description": "Kronos: A Foundation Model for the Language of Financial Markets",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "开源金融 K 线基础模型，使用 45 个以上全球交易所数据训练，以专用 tokenizer 离散化 OHLCV 序列并用自回归 Transformer 建模。",
+          "solves_what": "针对金融行情高噪声、多变量的时间序列，提供预训练模型以预测 K 线走势并复用于量化分析等任务。"
         },
         {
           "rank": 9,
@@ -131,8 +277,8 @@
           "stars_delta": 412,
           "trend_period": "today",
           "description": "🐍 Geometric Computer Vision Library for Spatial AI",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "面向空间 AI 的几何计算机视觉库，为视觉与几何处理提供可复用的软件组件。",
+          "solves_what": "帮助开发者在空间感知和计算机视觉项目中复用几何处理能力，减少从零搭建视觉算法组件的工作。"
         },
         {
           "rank": 10,
@@ -144,8 +290,8 @@
           "stars_delta": 675,
           "trend_period": "today",
           "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
-          "chinese_summary": "",
-          "solves_what": ""
+          "chinese_summary": "纯 C 语言、零依赖的 MoE 大模型推理引擎：通过从磁盘按需流式加载专家权重，让个人硬件也能运行前沿 MoE 模型。",
+          "solves_what": "解决前沿大模型推理依赖高显存服务器、普通设备难以本地运行的问题，以「小而引擎、巨而模型」的方式把 MoE 架构的稀疏性红利释放到消费级硬件。"
         }
       ]
     },
@@ -11962,152 +12108,6 @@
           "description": "The React Framework",
           "chinese_summary": "Vercel 出品的 React 全栈框架，扩展最新 React 特性并结合 Rust 工具链，支持服务端渲染、静态生成与全栈应用开发。",
           "solves_what": "解决 React 应用从开发到部署的工程化问题，提供统一的渲染、路由、构建与部署方案。"
-        }
-      ]
-    },
-    {
-      "id": "github-daily-2026-08-05",
-      "title": "8月5日 GitHub趋势日榜",
-      "url": "https://github.com/trending?since=daily",
-      "date": "2026-08-05",
-      "published": "2026-08-05T08:34:45.977709+08:00",
-      "summary": "8月5日 GitHub趋势日榜，Top 10 项目涵盖 TypeScript、PowerShell、Rust 等，今日社区最受关注的开源项目。",
-      "detail": "TencentCloud/TencentDB-Agent-Memory - TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.\nzhaoxuya520/reverse-skill - Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端\nfirecrawl/pdf-inspector - Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based PDFs to enable smart routing decisions.\nuber/ADR - ADR secures enterprise AI agents through observability, security benchmarking, and threat detection. Deployed at Uber.\nobra/superpowers - An agentic skills framework & software development methodology that works.\nmicrosoft/generative-ai-for-beginners - 21 Lessons, Get Started Building with Generative AI\ncypress-io/cypress - Fast, easy and reliable testing for anything that runs in a browser.\nlyogavin/airllm - AirLLM 70B inference with single 4GB GPU\nwebpack/webpack - A bundler for javascript and friends. Packs many modules into a few bundled assets. Code Splitting allows for loading parts of the application on demand. Through \"loaders\", modules can be CommonJs, AMD, ES6 modules, CSS, Images, JSON, Coffeescript, LESS, ... and your custom stuff.\ngabime/spdlog - Fast C++ logging library.",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "github",
-      "source": "GitHub Trending",
-      "trend_type": "daily",
-      "repos": [
-        {
-          "rank": 1,
-          "name": "TencentCloud/TencentDB-Agent-Memory",
-          "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
-          "language": "TypeScript",
-          "stars": 13565,
-          "forks": 1274,
-          "stars_delta": 1111,
-          "trend_period": "today",
-          "description": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
-          "chinese_summary": "腾讯云开源的团队级 AI Agent 记忆中枢，将对话、文档和代码沉淀为聊天记忆、技能、LLM 百科与代码图谱四类可复用资产。",
-          "solves_what": "解决 AI Agent 记忆碎片化、跨会话与跨团队难以共享知识的问题，让团队协作经验可治理、可复用。"
-        },
-        {
-          "rank": 2,
-          "name": "zhaoxuya520/reverse-skill",
-          "url": "https://github.com/zhaoxuya520/reverse-skill",
-          "language": "PowerShell",
-          "stars": 17846,
-          "forks": 2449,
-          "stars_delta": 2297,
-          "trend_period": "today",
-          "description": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端",
-          "chinese_summary": "面向逆向工程、授权渗透与安全研究的 AI 技能路由包，支持多种代码代理按需装配工具链。",
-          "solves_what": "解决安全研究工作流分散、工具链搭建繁琐、经验难沉淀的问题，让代理能按场景自动调用合适的逆向与渗透能力。"
-        },
-        {
-          "rank": 3,
-          "name": "firecrawl/pdf-inspector",
-          "url": "https://github.com/firecrawl/pdf-inspector",
-          "language": "Rust",
-          "stars": 9994,
-          "forks": 657,
-          "stars_delta": 2540,
-          "trend_period": "today",
-          "description": "Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based PDFs to enable smart routing decisions.",
-          "chinese_summary": "firecrawl 开源的 Rust 高性能 PDF 检测与文本提取库，可在约 20ms 内判断 PDF 是扫描件还是文本型，并决定走本地提取还是 OCR 服务。",
-          "solves_what": "解决 PDF 处理中扫描件与文本型文档混流导致的 OCR 成本浪费问题，通过智能分类路由降低延迟与费用。"
-        },
-        {
-          "rank": 4,
-          "name": "uber/ADR",
-          "url": "https://github.com/uber/ADR",
-          "language": "Python",
-          "stars": 675,
-          "forks": 68,
-          "stars_delta": 148,
-          "trend_period": "today",
-          "description": "ADR secures enterprise AI agents through observability, security benchmarking, and threat detection. Deployed at Uber.",
-          "chinese_summary": "Uber 开源的 Agentic AI 检测与响应（ADR）企业级安全系统，已在 Uber 生产环境部署，相关论文入选 MLSys 2026。",
-          "solves_what": "解决企业 AI Agent（如 Cursor、Claude Code、Codex 及客服 Agent）的安全监控问题，提供行为观测、安全基准、威胁检测与风险阻断能力。"
-        },
-        {
-          "rank": 5,
-          "name": "obra/superpowers",
-          "url": "https://github.com/obra/superpowers",
-          "language": "Shell",
-          "stars": 266474,
-          "forks": 23827,
-          "stars_delta": 653,
-          "trend_period": "today",
-          "description": "An agentic skills framework & software development methodology that works.",
-          "chinese_summary": "一套面向 AI 代理的软件开发方法论与技能框架，帮助工程团队组织可复用的工作流。（基于趋势描述整理）",
-          "solves_what": "解决代理式开发中流程混乱、经验难沉淀、任务质量不稳定的问题。"
-        },
-        {
-          "rank": 6,
-          "name": "microsoft/generative-ai-for-beginners",
-          "url": "https://github.com/microsoft/generative-ai-for-beginners",
-          "language": "Jupyter Notebook",
-          "stars": 116250,
-          "forks": 61547,
-          "stars_delta": 783,
-          "trend_period": "today",
-          "description": "21 Lessons, Get Started Building with Generative AI",
-          "chinese_summary": "微软推出的生成式 AI 入门课程，21 节课覆盖提示工程、RAG 与 Agent 应用构建。",
-          "solves_what": "解决初学者缺乏生成式 AI 系统学习路径的问题，通过动手实践快速上手大模型应用开发。"
-        },
-        {
-          "rank": 7,
-          "name": "cypress-io/cypress",
-          "url": "https://github.com/cypress-io/cypress",
-          "language": "TypeScript",
-          "stars": 50786,
-          "forks": 3628,
-          "stars_delta": 11,
-          "trend_period": "today",
-          "description": "Fast, easy and reliable testing for anything that runs in a browser.",
-          "chinese_summary": "流行的前端端到端测试框架，提供快速、易用的浏览器自动化测试能力，支持组件测试与测试回放。",
-          "solves_what": "解决前端应用端到端测试配置繁琐、运行不稳定、调试困难的问题，让开发者在真实浏览器中快速编写和运行可靠测试。"
-        },
-        {
-          "rank": 8,
-          "name": "lyogavin/airllm",
-          "url": "https://github.com/lyogavin/airllm",
-          "language": "Jupyter Notebook",
-          "stars": 28368,
-          "forks": 3060,
-          "stars_delta": 1711,
-          "trend_period": "today",
-          "description": "AirLLM 70B inference with single 4GB GPU",
-          "chinese_summary": "可在单张4GB显存GPU上运行70B参数大模型推理的优化框架。",
-          "solves_what": "大幅降低大模型本地推理的硬件门槛，让消费级显卡也能运行超大规模语言模型。"
-        },
-        {
-          "rank": 9,
-          "name": "webpack/webpack",
-          "url": "https://github.com/webpack/webpack",
-          "language": "JavaScript",
-          "stars": 65929,
-          "forks": 9528,
-          "stars_delta": 10,
-          "trend_period": "today",
-          "description": "A bundler for javascript and friends. Packs many modules into a few bundled assets. Code Splitting allows for loading parts of the application on demand. Through \"loaders\", modules can be CommonJs, AMD, ES6 modules, CSS, Images, JSON, Coffeescript, LESS, ... and your custom stuff.",
-          "chinese_summary": "JavaScript 生态最主流的模块打包器，将众多模块打包为少量静态资源，支持代码分割、Loader 与插件体系。",
-          "solves_what": "解决前端工程中模块依赖管理与资源打包问题，通过按需加载（代码分割）和各类 Loader 处理 JS、CSS、图片等静态资源。"
-        },
-        {
-          "rank": 10,
-          "name": "gabime/spdlog",
-          "url": "https://github.com/gabime/spdlog",
-          "language": "C++",
-          "stars": 29373,
-          "forks": 5372,
-          "stars_delta": 10,
-          "trend_period": "today",
-          "description": "Fast C++ logging library.",
-          "chinese_summary": "C++ 高性能日志库，头文件为主、速度快，广泛用于 C++ 项目，最新版为 v1.17.0。",
-          "solves_what": "解决 C++ 程序中日志记录的性能与易用性问题，提供快速、可扩展、格式灵活的日志输出能力。"
         }
       ]
     }
