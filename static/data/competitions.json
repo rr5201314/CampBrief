@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-04T21:38:16+08:00",
+  "last_updated": "2026-11-05T21:39:48+08:00",
   "source": "CampBrief",
   "total": 267,
   "tiers": [
@@ -190,8 +190,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-02T21:52:12+08:00",
-        "review_after": "2026-11-05T20:52:12+08:00"
+        "verified_at": "2026-11-05T21:39:48+08:00",
+        "review_after": "2026-11-08T21:38:48+08:00"
       }
     },
     {
@@ -1672,8 +1672,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-02T21:42:59+08:00",
-        "review_after": "2026-11-05T20:42:59+08:00"
+        "verified_at": "2026-11-05T21:39:48+08:00",
+        "review_after": "2026-11-08T21:38:48+08:00"
       }
     },
     {
@@ -1696,8 +1696,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-02T21:42:59+08:00",
-        "review_after": "2026-11-05T20:42:59+08:00"
+        "verified_at": "2026-11-05T21:39:48+08:00",
+        "review_after": "2026-11-08T21:38:48+08:00"
       }
     },
     {
@@ -1757,8 +1757,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-02T21:42:59+08:00",
-        "review_after": "2026-11-05T20:42:59+08:00"
+        "verified_at": "2026-11-05T21:39:48+08:00",
+        "review_after": "2026-11-08T21:38:48+08:00"
       }
     },
     {
@@ -3058,7 +3058,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【距开考17天】2026年第十二届中西部外语翻译大赛",
+      "name": "【距开考16天】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3255,10 +3255,12 @@
       ],
       "status": "open",
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-02T21:52:12+08:00",
-        "review_after": "2026-11-05T20:52:12+08:00"
+        "registration_start": "2026-05-20",
+        "registration_end": "2026-11-07",
+        "event_start": "2026-11-08",
+        "verified_at": "2026-11-05T21:39:48+08:00"
       },
       "signup": "报名及文学作品提交：2026年5月20日至2026年11月7日23:59。",
       "schedule": "作品评阅：2026年7月31日（第一次）、2026年11月8日（第二次）；第二次获奖名单预计2026年11月中旬公布。",
@@ -4098,7 +4100,7 @@
     },
     {
       "id": "comp-saikr-52f6c0e0a9e8",
-      "name": "【倒计时7天】第六届“中外传播杯”大学生英语翻译大赛",
+      "name": "【倒计时6天】第六届“中外传播杯”大学生英语翻译大赛",
       "tier": "official",
       "fields": [
         "language"
@@ -4731,8 +4733,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-02T21:42:59+08:00",
-        "review_after": "2026-11-05T20:42:59+08:00"
+        "verified_at": "2026-11-05T21:39:48+08:00",
+        "review_after": "2026-11-08T21:38:48+08:00"
       },
       "signup": "冬季赛全阶段报名：即日起至2026年12月；11月冲刺场报名至2026年11月27日。",
       "schedule": "2026年冬季赛共四场：2026年9月19—20日、10月31日—11月1日、11月28—29日、12月26—27日（每场任选1小时答题）。11月冲刺场获奖名单预计12月2日18:00前公布；12月最终场获奖名单预计12月29日18:00前公布。",
@@ -4794,7 +4796,7 @@
     },
     {
       "id": "comp-saikr-3762d0f4af87",
-      "name": "【最后7天丨大英赛主办方】2026年全国高师学生英语教师职业技能竞赛",
+      "name": "【最后6天丨大英赛主办方】2026年全国高师学生英语教师职业技能竞赛",
       "tier": "official",
       "fields": [
         "language"
@@ -5467,8 +5469,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-02T21:42:59+08:00",
-        "review_after": "2026-11-05T20:42:59+08:00"
+        "verified_at": "2026-11-05T21:39:48+08:00",
+        "review_after": "2026-11-08T21:38:48+08:00"
       },
       "signup": "即日起至2026年12月；设8月、9月、11月、12月四场考试，任选一场参加。",
       "schedule": "线上闭卷测评60分钟；待考场次为2026年11月20日18:00至11月21日18:00、12月18日18:00至12月19日18:00。",
@@ -5607,7 +5609,7 @@
     },
     {
       "id": "comp-saikr-5648520a5d2a",
-      "name": "【明日截止】2026年开棣（CATTI）杯翻译大赛",
+      "name": "【今日截止】2026年开棣（CATTI）杯翻译大赛",
       "tier": "official",
       "fields": [
         "language"
@@ -5633,7 +5635,7 @@
     },
     {
       "id": "comp-saikr-aa82e04db6fd",
-      "name": "【倒计时3天】2026全国大学生机器人与算法大赛-科技英语（科普知识赛道）",
+      "name": "【倒计时2天】2026全国大学生机器人与算法大赛-科技英语（科普知识赛道）",
       "tier": "hobby",
       "fields": [
         "language",
