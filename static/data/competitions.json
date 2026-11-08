@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-05T21:39:48+08:00",
+  "last_updated": "2026-11-08T22:13:47+08:00",
   "source": "CampBrief",
-  "total": 267,
+  "total": 270,
   "tiers": [
     {
       "key": "all",
@@ -318,20 +318,27 @@
     },
     {
       "id": "official-012",
-      "name": "全国大学生电子商务「创新、创意及创业」挑战赛",
+      "name": "第十七届全国大学生电子商务“创新、创意及创业”挑战赛",
       "tier": "official",
       "fields": [
         "business",
         "innovation"
       ],
-      "status": "pending",
-      "signup": "每年 9–12 月启动报名",
-      "schedule": "校赛 3–4 月，省赛 4–6 月，国赛 7 月左右",
-      "summary": "简称'三创赛'，聚焦电子商务领域的创新项目、创意设计和创业实践。",
-      "search": "三创赛 电子商务 电商",
-      "official_site": "http://www.3chuang.net/",
-      "organizer": "教育部高等学校电子商务类专业教学指导委员会",
-      "prestige": 10
+      "status": "open",
+      "signup": "第十七届三创赛团队报名已于2026年11月1日开启；截止日期待官网公布。",
+      "schedule": "校赛、省赛、全国总决赛的具体日期尚待官方发布；竞赛方案与指南将陆续公布。",
+      "summary": "第十七届三创赛已启动，设常规赛及多个电商实战赛；官网已开放团队报名，分阶段赛程待官方公布。",
+      "search": "三创赛 第十七届 电子商务 创新 创意 创业 实战赛",
+      "official_site": "https://www.3chuang.net/",
+      "organizer": "全国电子商务产教融合创新联盟、西安交通大学",
+      "prestige": 8,
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-11-08T22:13:47+08:00",
+        "review_after": "2026-11-11T22:12:47+08:00"
+      },
+      "official_url": "https://www.52jingsai.com/article-24180-1.html"
     },
     {
       "id": "official-013",
@@ -631,8 +638,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-03T21:36:36+08:00",
-        "review_after": "2026-11-06T21:35:36+08:00"
+        "verified_at": "2026-11-08T22:03:21+08:00",
+        "review_after": "2026-11-11T22:02:21+08:00"
       },
       "signup": "线上报名及作品提交：2026年10月至2027年4月。",
       "schedule": "省赛评审：2027年4—5月；国赛评审及获奖信息发布：2027年5—6月；系列活动：2027年7—8月；优秀作品计划于2027年4月米兰设计周期间展出。",
@@ -661,7 +668,7 @@
     },
     {
       "id": "official-031",
-      "name": "全国大学生光电设计竞赛",
+      "name": "第十五届全国大学生光电设计竞赛",
       "tier": "official",
       "fields": [
         "science",
@@ -669,10 +676,10 @@
       ],
       "status": "pending",
       "signup": "两年一届，通过学校报名",
-      "schedule": "国赛在偶数年 8 月左右",
-      "summary": "光学工程与光电信息类专业赛事，强调光电技术的创新设计与实践。",
+      "schedule": "第十五届竞赛拟于2027年5月中下旬在天津举行，设实物竞赛主赛道和光学设计赛道；具体日期与报名安排以官网为准。",
+      "summary": "中国光学学会主办；第十五届竞赛包括实物竞赛主赛道和光学设计赛道，计划于2027年5月中下旬在天津举办，具体安排以官网通知为准。",
       "search": "光电设计 光学",
-      "official_site": "http://gd.p.moocollege.com/",
+      "official_site": "https://gd.moocollege.com/home/homepage",
       "organizer": "中国光学学会",
       "prestige": 6
     },
@@ -2317,7 +2324,7 @@
       "fields": [
         "design"
       ],
-      "status": "open",
+      "status": "done",
       "signup": "2026年丙午年秋季赛报名时间：2026年8月7日至11月7日",
       "schedule": "秋季赛备赛及作品提交截至2026年11月7日。",
       "summary": "赛事详情请访问信息来源页面",
@@ -3058,7 +3065,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【距开考16天】2026年第十二届中西部外语翻译大赛",
+      "name": "【距开考14天】2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3248,12 +3255,12 @@
     },
     {
       "id": "comp-saikr-dd8077ef2650",
-      "name": "【11.08开启评阅】“悦·读者杯”——2026年青少年文学大赛",
+      "name": "“悦·读者杯”——2026年青少年文学大赛",
       "tier": "hobby",
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -3998,7 +4005,7 @@
     },
     {
       "id": "comp-52jingsai-31cdef7239a7",
-      "name": "【NCEVC，11月7日开考】2026年第六届大学生英语词汇竞赛报名通知",
+      "name": "【NCEVC】2026年第六届大学生英语词汇竞赛报名通知",
       "tier": "hobby",
       "fields": [
         "language"
@@ -4252,7 +4259,7 @@
     },
     {
       "id": "comp-saikr-8c1361d912be",
-      "name": "周六开考 | 2026年高校大学生商务外语词汇大赛",
+      "name": "最后一场 | 2026年高校大学生商务外语词汇大赛",
       "tier": "hobby",
       "fields": [
         "language",
@@ -4675,7 +4682,7 @@
     },
     {
       "id": "comp-52jingsai-ece14655d887",
-      "name": "【榜单赛事】2026年第四届大学生汉语大赛火热报名中！",
+      "name": "【榜单赛事，第一场报名截止时间：11月14日】2026年第四届大学生汉语大赛火热报名中！",
       "tier": "hobby",
       "fields": [
         "literature"
@@ -4771,12 +4778,12 @@
     },
     {
       "id": "comp-52jingsai-9a1183b7777c",
-      "name": "【普通话，榜单赛事】2026年第五届大学生普通话大赛报名通知！第一场11月5日报名截止！",
+      "name": "【普通话，榜单赛事】2026年第五届大学生普通话大赛报名通知！",
       "tier": "hobby",
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -4796,7 +4803,7 @@
     },
     {
       "id": "comp-saikr-3762d0f4af87",
-      "name": "【最后6天丨大英赛主办方】2026年全国高师学生英语教师职业技能竞赛",
+      "name": "【最后5天丨大英赛主办方】2026年全国高师学生英语教师职业技能竞赛",
       "tier": "official",
       "fields": [
         "language"
@@ -5074,7 +5081,7 @@
     },
     {
       "id": "comp-saikr-edce0fd03ca1",
-      "name": "【11月7日考试】第五届“英才计划”大学生英语阅读大赛",
+      "name": "【5届积累】第五届“英才计划”大学生英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -5220,7 +5227,7 @@
     },
     {
       "id": "comp-52jingsai-67f5c1bdaca0",
-      "name": "【诵读大赛】2026年第八届大学生语言文字能力大赛诵读专项赛报名通知！",
+      "name": "【诵读大赛，11月13日报名截止】2026年第八届大学生语言文字能力大赛诵读专项赛报名通知！",
       "tier": "hobby",
       "fields": [
         "language"
@@ -5520,10 +5527,12 @@
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
         "registration_end": "2026-11-15",
-        "verified_at": "2026-10-26T21:44:48+08:00"
+        "event_start": "2026-11-16",
+        "event_end": "2026-11-17",
+        "verified_at": "2026-11-08T22:03:21+08:00"
       },
       "signup": "申报截止日期：2026年11月15日",
-      "schedule": "",
+      "schedule": "报名截止：2026年11月15日；比赛：2026年11月16日；决赛：2026年11月17日。",
       "summary": "由工业和信息化部火炬高技术产业开发中心、安徽省科学技术厅共同主办，面向全国高新技术企业、科技型中小企业和创新创业团队，聚焦AI创新技术与AI规模化应用。",
       "search": "第十五届中国创新创业大赛 人工智能创新应用 安徽 火炬中心",
       "official_url": "https://www.52jingsai.com/article-24150-1.html",
@@ -5589,7 +5598,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5614,7 +5623,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5635,7 +5644,7 @@
     },
     {
       "id": "comp-saikr-aa82e04db6fd",
-      "name": "【倒计时2天】2026全国大学生机器人与算法大赛-科技英语（科普知识赛道）",
+      "name": "2026全国大学生机器人与算法大赛-科技英语（科普知识赛道）",
       "tier": "hobby",
       "fields": [
         "language",
@@ -5656,6 +5665,81 @@
       "official_site": "https://www.cameta.org.cn/",
       "organizer": "中国机电一体化技术应用协会",
       "prestige": 3
+    },
+    {
+      "id": "comp-52jingsai-ececbe6cb359",
+      "name": "2027年美国大学生数学建模竞赛（MCM/ICM）",
+      "tier": "official",
+      "fields": [
+        "science"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "America/New_York",
+        "registration_end": "2027-01-28",
+        "event_start": "2027-01-28",
+        "event_end": "2027-05-08",
+        "verified_at": "2026-11-08T22:03:21+08:00"
+      },
+      "signup": "团队注册须在2027年1月28日15:00（美国东部时间）前完成；比赛时间为1月28日17:00至2月1日20:00（美国东部时间）。",
+      "schedule": "比赛：2027年1月28日17:00至2月1日20:00（美国东部时间）；方案报告提交截止：2月1日21:00；竞赛结果预计于2027年5月8日公布。",
+      "summary": "COMAP主办的国际数学建模与跨学科建模竞赛，面向本科及以下学生组队参加，围绕现实问题建立模型并提交英文解决方案报告。",
+      "search": "MCM ICM COMAP 国际数学建模 2027 美国大学生数学建模竞赛",
+      "official_url": "https://www.52jingsai.com/article-24183-1.html",
+      "official_site": "https://contest.comap.com/undergraduate/contests/mcm/register.php",
+      "organizer": "美国数学及其应用联合会（COMAP）",
+      "prestige": 8
+    },
+    {
+      "id": "comp-52jingsai-0d8d16b81f25",
+      "name": "2026年第八届全国高校创新英语挑战赛（NCIECC）综合能力赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-11-13",
+        "event_start": "2026-11-14",
+        "verified_at": "2026-11-08T22:03:21+08:00"
+      },
+      "signup": "报名截至2026年11月13日；初赛11月14日；决赛11月21日。",
+      "schedule": "线上初赛：2026年11月14日；决赛：2026年11月21日；初赛获奖及决赛入围名单公示：11月18日；决赛获奖公示：12月。",
+      "summary": "全国高校创新英语挑战赛综合能力赛，采用线上闭卷答题形式，分初赛和决赛；赛程及报名以赛事官网为准。",
+      "search": "NCIECC 综合能力赛 英语 2026 第八届",
+      "official_url": "https://www.52jingsai.com/article-23912-1.html",
+      "official_site": "http://www.nciecc.com/zonghe.php",
+      "organizer": "全国高校创新英语挑战赛组委会、《海外英语》杂志",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-c9d5cbbc7163",
+      "name": "2026年第六届《英语世界》杯全国大学生英语阅读大赛",
+      "tier": "enterprise",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-10-21",
+        "registration_end": "2027-03-06",
+        "event_start": "2026-11-29",
+        "event_end": "2027-03-07",
+        "verified_at": "2026-11-08T22:13:47+08:00"
+      },
+      "signup": "赛事报名：2026年10月21日至2027年3月6日；全国赛四场分别为2026年11月29日、12月20日及2027年1月24日、3月7日。",
+      "schedule": "全国赛第一场：2026年11月29日10:00—22:00；第二场：12月20日10:00—22:00；第三场：2027年1月24日10:00—22:00；第四场：3月7日10:00—22:00。",
+      "summary": "商务印书馆《英语世界》杂志社主办的系列线上英语阅读竞赛，采用客观题考试；报名及多场次安排以赛事详情页为准。",
+      "search": "英语世界杯 全国大学生 英语阅读 2026 第六届",
+      "official_url": "https://www.saikr.com/vse/Reading2026",
+      "official_site": "https://www.yingyushijie.com/",
+      "organizer": "《英语世界》杯系列大赛组委会",
+      "prestige": 6
     }
   ]
 }

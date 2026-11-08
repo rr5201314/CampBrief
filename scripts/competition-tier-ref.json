@@ -677,6 +677,16 @@
       "tier": "hobby",
       "prestige": 3,
       "note": "全国大学生人工智能应用实践大赛主办方；收取29元/人参赛费，按付费练手赛事保守归类。"
+    },
+    "美国数学及其应用联合会": {
+      "tier": "official",
+      "prestige": 8,
+      "note": "COMAP主办的国际大学生数学建模竞赛（MCM/ICM）。"
+    },
+    "全国电子商务产教融合创新联盟": {
+      "tier": "official",
+      "prestige": 8,
+      "note": "第十七届三创赛主办单位之一，与西安交通大学共同主办；按全国性学科创新创业赛事保守评为 official/8。"
     }
   },
   "competitions": {
