@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-08T22:13:47+08:00",
+  "last_updated": "2026-11-09T21:38:16+08:00",
   "source": "CampBrief",
-  "total": 270,
+  "total": 271,
   "tiers": [
     {
       "key": "all",
@@ -325,18 +325,21 @@
         "innovation"
       ],
       "status": "open",
-      "signup": "第十七届三创赛团队报名已于2026年11月1日开启；截止日期待官网公布。",
-      "schedule": "校赛、省赛、全国总决赛的具体日期尚待官方发布；竞赛方案与指南将陆续公布。",
-      "summary": "第十七届三创赛已启动，设常规赛及多个电商实战赛；官网已开放团队报名，分阶段赛程待官方公布。",
+      "signup": "第十七届三创赛团队报名：2026年11月1日至2027年1月20日；校赛注册及备案截止2026年11月30日。",
+      "schedule": "校赛：2027年3月1日—4月10日；省赛：2027年4月20日—6月20日；全国总决赛：2027年7月10日—8月10日。",
+      "summary": "第十七届三创赛设常规赛及多个电商实战赛；团队报名2026年11月1日至2027年1月20日，校赛自2027年3月开始。",
       "search": "三创赛 第十七届 电子商务 创新 创意 创业 实战赛",
       "official_site": "https://www.3chuang.net/",
       "organizer": "全国电子商务产教融合创新联盟、西安交通大学",
       "prestige": 8,
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-08T22:13:47+08:00",
-        "review_after": "2026-11-11T22:12:47+08:00"
+        "registration_start": "2026-11-01",
+        "registration_end": "2027-01-20",
+        "event_start": "2027-03-01",
+        "event_end": "2027-08-10",
+        "verified_at": "2026-11-09T21:38:16+08:00"
       },
       "official_url": "https://www.52jingsai.com/article-24180-1.html"
     },
@@ -1679,8 +1682,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-05T21:39:48+08:00",
-        "review_after": "2026-11-08T21:38:48+08:00"
+        "verified_at": "2026-11-09T21:38:16+08:00",
+        "review_after": "2026-11-12T21:37:16+08:00"
       }
     },
     {
@@ -1703,8 +1706,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-05T21:39:48+08:00",
-        "review_after": "2026-11-08T21:38:48+08:00"
+        "verified_at": "2026-11-09T21:38:16+08:00",
+        "review_after": "2026-11-12T21:37:16+08:00"
       }
     },
     {
@@ -1764,8 +1767,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-05T21:39:48+08:00",
-        "review_after": "2026-11-08T21:38:48+08:00"
+        "verified_at": "2026-11-09T21:38:16+08:00",
+        "review_after": "2026-11-12T21:37:16+08:00"
       }
     },
     {
@@ -2087,7 +2090,7 @@
         "innovation",
         "engineering"
       ],
-      "status": "ongoing",
+      "status": "done",
       "signup": "企业命题赛道报名：2026年5月15日至7月15日",
       "schedule": "初赛作品提交截止：2026年9月10日；初赛评审：2026年9月；全国总决赛两场：2026年10月31日—11月2日、2026年11月6日—8日。",
       "summary": "赛事详情请访问信息来源页面",
@@ -2641,7 +2644,7 @@
         "innovation",
         "engineering"
       ],
-      "status": "ongoing",
+      "status": "done",
       "signup": "综合赛道报名：2026年5月15日至9月15日",
       "schedule": "初赛作品提交截止：2026年9月10日；初赛评审：2026年9月；全国总决赛两场：2026年10月31日—11月2日、2026年11月6日—8日。",
       "summary": "赛事详情请访问信息来源页面",
@@ -4738,10 +4741,13 @@
       ],
       "status": "open",
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-05T21:39:48+08:00",
-        "review_after": "2026-11-08T21:38:48+08:00"
+        "registration_start": "2026-08-28",
+        "registration_end": "2026-11-27",
+        "event_start": "2026-11-28",
+        "event_end": "2026-11-29",
+        "verified_at": "2026-11-09T21:38:16+08:00"
       },
       "signup": "冬季赛全阶段报名：即日起至2026年12月；11月冲刺场报名至2026年11月27日。",
       "schedule": "2026年冬季赛共四场：2026年9月19—20日、10月31日—11月1日、11月28—29日、12月26—27日（每场任选1小时答题）。11月冲刺场获奖名单预计12月2日18:00前公布；12月最终场获奖名单预计12月29日18:00前公布。",
@@ -5474,10 +5480,13 @@
       ],
       "status": "open",
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-05T21:39:48+08:00",
-        "review_after": "2026-11-08T21:38:48+08:00"
+        "registration_start": "2026-07-16",
+        "registration_end": "2026-11-21",
+        "event_start": "2026-08-21",
+        "event_end": "2026-12-19",
+        "verified_at": "2026-11-09T21:38:16+08:00"
       },
       "signup": "即日起至2026年12月；设8月、9月、11月、12月四场考试，任选一场参加。",
       "schedule": "线上闭卷测评60分钟；待考场次为2026年11月20日18:00至11月21日18:00、12月18日18:00至12月19日18:00。",
@@ -5740,6 +5749,32 @@
       "official_site": "https://www.yingyushijie.com/",
       "organizer": "《英语世界》杯系列大赛组委会",
       "prestige": 6
+    },
+    {
+      "id": "comp-saikr-3b4821e67045",
+      "name": "2026年“中外杯”大学生英语词汇大赛",
+      "tier": "official",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-10-12",
+        "registration_end": "2026-12-05",
+        "event_start": "2026-11-07",
+        "event_end": "2027-01-10",
+        "verified_at": "2026-11-09T21:38:16+08:00"
+      },
+      "signup": "2026年10月12日至12月5日；设三场考试任选一场参加。",
+      "schedule": "考试场次：2026年11月7日、12月5日、2027年1月10日，任选一场参加。",
+      "summary": "中国外文局亚太传播中心主办的英语词汇大赛，线上客观题，三场考试任选一场，报名截止2026年12月5日。",
+      "search": "中外杯 英语词汇 词汇大赛 外文局亚太传播中心",
+      "official_url": "https://www.saikr.com/vse/CFC26V",
+      "official_site": "",
+      "organizer": "中国外文局亚太传播中心（人民中国杂志社、中国报道杂志社）",
+      "prestige": 7
     }
   ]
 }
