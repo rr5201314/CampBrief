@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-09T21:05:04+08:00",
+  "last_updated": "2026-11-10T21:01:15+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -641,7 +641,7 @@
       "id": "acca-202612",
       "name": "2026年12月 ACCA 考试",
       "category": "accounting",
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Europe/London",
