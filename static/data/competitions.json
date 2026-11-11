@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-10T21:35:53+08:00",
+  "last_updated": "2026-11-11T21:51:46+08:00",
   "source": "CampBrief",
-  "total": 271,
+  "total": 273,
   "tiers": [
     {
       "key": "all",
@@ -1885,8 +1885,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-18T22:06:14+08:00",
-        "review_after": "2026-10-21T22:06:14+08:00"
+        "verified_at": "2026-11-11T21:51:46+08:00",
+        "review_after": "2026-11-14T20:51:46+08:00"
       }
     },
     {
@@ -1908,8 +1908,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-18T22:06:14+08:00",
-        "review_after": "2026-10-21T22:06:14+08:00"
+        "verified_at": "2026-11-11T21:51:46+08:00",
+        "review_after": "2026-11-14T20:51:46+08:00"
       }
     },
     {
@@ -1931,8 +1931,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-10-18T22:06:14+08:00",
-        "review_after": "2026-10-21T22:06:14+08:00"
+        "verified_at": "2026-11-11T21:51:46+08:00",
+        "review_after": "2026-11-14T20:51:46+08:00"
       }
     },
     {
@@ -3619,7 +3619,7 @@
       "fields": [
         "literature"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -4814,7 +4814,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5775,6 +5775,54 @@
       "official_site": "",
       "organizer": "中国外文局亚太传播中心（人民中国杂志社、中国报道杂志社）",
       "prestige": 7
+    },
+    {
+      "id": "comp-52jingsai-1bca3392fb18",
+      "name": "第一届全国海洋科普文学创作大赛",
+      "tier": "hobby",
+      "fields": [
+        "literature",
+        "science"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2027-03-01",
+        "verified_at": "2026-11-11T21:51:46+08:00"
+      },
+      "signup": "征稿起止：即日起至2027年3月1日24时",
+      "schedule": "分教师组与学生组（小学/初中/高中/大学组）评审",
+      "summary": "中国海洋大学海洋文化教育研究中心、山东省大中小学海洋文化教育研究指导中心主办的全国公益性科普文学征集活动，不收取参赛费，设教师组与学生组，优秀作品颁发荣誉证书；征稿至2027年3月1日。",
+      "search": "海洋科普 文学创作 征文 中国海洋大学 科普文学",
+      "official_url": "https://www.52jingsai.com/article-24193-1.html",
+      "official_site": "",
+      "organizer": "中国海洋大学海洋文化教育研究中心、山东省大中小学海洋文化教育研究指导中心",
+      "prestige": 3
+    },
+    {
+      "id": "comp-saikr-a4e7e63d5ace",
+      "name": "第三届“中国故事大赛·双语中国”大学生英语语法大赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-11-14T23:00:00+08:00",
+        "event_start": "2026-11-14",
+        "verified_at": "2026-11-11T21:51:46+08:00"
+      },
+      "signup": "第三场考试报名截止2026年11月14日23:00（报名与考试同日）",
+      "schedule": "共四场；第三场2026年11月14日线上闭卷，分A组（英语专业）与B组（非英语专业）",
+      "summary": "中国寓言文学研究会教育教学专业委员会主办的全国大学生英语语法赛事，面向全国在校大学生，线上闭卷，设A组（英语专业）与B组（非英语专业）；第三场考试2026年11月14日举行，报名同日23:00截止。",
+      "search": "双语中国 中国故事大赛 英语语法 中国寓言文学研究会",
+      "official_url": "https://www.saikr.com/vse/2026/SYYF",
+      "official_site": "",
+      "organizer": "中国寓言文学研究会教育教学专业委员会",
+      "prestige": 2
     }
   ]
 }
