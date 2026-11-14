@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-14T09:30:22+08:00",
+  "last_updated": "2026-11-14T09:58:39+08:00",
   "source": "CampBrief Auto",
-  "total": 650,
+  "total": 659,
   "items": [
     {
       "id": "news-cb923db0d26e14d1",
@@ -180,6 +180,20 @@
       "subcategory": "industry"
     },
     {
+      "id": "news-026510e486178afa",
+      "title": "马克龙将召集科技企业会议，推动欧洲科技自主",
+      "url": "https://36kr.com/newsflashes/4068933739598721",
+      "date": "2026-11-14",
+      "published": "2026-11-14T09:33:26+08:00",
+      "summary": "法国总统马克龙宣布下月与荷兰首相在巴黎共同召集科技企业负责人会议，推动政府与行业合作，提升欧洲科技自主能力。",
+      "detail": "马克龙强调「独立自主不能外包，必须在欧洲本土建立起来」，人工智能是欧盟领导人非正式会议的重要议题之一。他表示欧洲拥有发展 AI 所需的人才、能源和技术，应加大投资、加快决策，让欧洲企业能在本土获得训练模型的算力、资本和客户。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "36氪",
+      "subcategory": "industry"
+    },
+    {
       "id": "news-def16c872be415a5",
       "title": "Antigravity 重置所有用户 Gemini 使用额度",
       "url": "https://daily.juya.uk/issues/2026-11-14/",
@@ -191,6 +205,19 @@
       "priority": 1,
       "category": "ai",
       "source": "juya AI 日报"
+    },
+    {
+      "id": "news-95866af975d6e5f0",
+      "title": "旅行者 1 号与地球的距离将达到一光日",
+      "url": "https://www.solidot.org/story?sid=85883",
+      "date": "2026-11-14",
+      "published": "2026-11-14T01:14:47+08:00",
+      "summary": "北京时间 11 月 18 日，旅行者 1 号与地球的距离将达到约 259 亿公里，相当于光传播 24 小时的距离，即「一光日」。",
+      "detail": "如果把一光年划分为 365 个刻度，每格代表一个光日，1977 年 9 月 5 日启程的旅行者 1 号经过近半个世纪飞行，终于抵达第一格。今年 10 月它曾经历一次短暂通信中断，NASA 深空网络连续两天未收到预期信号，20 日信号恢复，异常原因仍在调查中。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot"
     },
     {
       "id": "news-0787792001a84a68",
@@ -217,6 +244,20 @@
       "priority": 4,
       "category": "tech",
       "source": "juya AI 日报",
+      "subcategory": "industry"
+    },
+    {
+      "id": "news-29708416dcaf59c7",
+      "title": "英伟达员工发起请愿要求黄仁勋复职",
+      "url": "https://www.solidot.org/story?sid=85878",
+      "date": "2026-11-13",
+      "published": "2026-11-13T16:33:58+08:00",
+      "summary": "英伟达创始人黄仁勋辞职后，公司内部员工发起请愿要求其复职，并在内部系统与 LinkedIn 上公开表达支持。",
+      "detail": "黄仁勋执掌英伟达 33 年，带领公司成为全球市值最高的企业之一。他辞去 CEO 职务后，员工在内部意见系统发起请愿，称他「办了那么多好事，理应得到第二次机会」，认为不应因此抹杀其贡献。目前没有员工公开支持罢免他，董事会已启动新任 CEO 遴选程序。",
+      "image": "",
+      "priority": 3,
+      "category": "tech",
+      "source": "Solidot",
       "subcategory": "industry"
     },
     {
@@ -407,6 +448,89 @@
       "priority": 2,
       "category": "ai",
       "source": "juya AI 日报"
+    },
+    {
+      "id": "news-668e2067b0689e09",
+      "title": "微软云服务全球宕机，Outlook、Teams、Copilot 受影响",
+      "url": "https://www.solidot.org/story?sid=85875",
+      "date": "2026-11-13",
+      "published": "2026-11-13T13:30:36+08:00",
+      "summary": "微软云服务发生全球性宕机，Outlook、Teams、OneDrive 及 AI 工具 Copilot 出现故障，Downdetector 报告的 Outlook 故障数量一度接近 14 万。",
+      "detail": "微软表示事故由部分服务器意外不可用引发，给其余系统造成沉重负担，目前无迹象表明与网络攻击有关。即时通讯和在线会议功能基本正常，但用户可能无法查看部分文件或日历详情，Copilot 也可能无法正常运行。公司正全力恢复服务。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Solidot",
+      "subcategory": "software"
+    },
+    {
+      "id": "news-1025c8d50aabb34f",
+      "title": "台积电部分员工个人数据泄露，黑客在暗网拍卖 6.9GB 数据",
+      "url": "https://www.solidot.org/story?sid=85881",
+      "date": "2026-11-13",
+      "published": "2026-11-13T18:37:17+08:00",
+      "summary": "台积电向 SEC 披露，部分现任及前任员工的个人数据未经授权出现在外网，与某云服务商存储的数据吻合，公司称暂未发现自身系统被入侵。",
+      "detail": "据报道，黑客在 DarkForums、BreachForums 等地下论坛拍卖 6.9GB 台积电员工数据，起标价 3 BTC，样本涵盖姓名、生日、职称、住址、证件号、手机号、银行账户等信息。台积电正通知受影响员工，并与云服务商、调查机构及外部网络安全公司合作查明真相。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Solidot",
+      "subcategory": "software"
+    },
+    {
+      "id": "news-f27dd60dddb58a49",
+      "title": "美国扣押逾 12 亿美元币安被盗加密货币",
+      "url": "https://www.solidot.org/story?sid=85876",
+      "date": "2026-11-13",
+      "published": "2026-11-13T14:36:46+08:00",
+      "summary": "FBI 宣布扣押价值逾 12 亿美元的加密货币，这些资产由黑客组织 TraderTraitor 此前从币安盗走。",
+      "detail": "币安此次被盗加密货币价值约 63 亿美元，其中约半数为稳定币，被发行方通过智能合约冻结；其余为难以冻结的比特币、以太币和 XRP。美国政府表示已通过法庭授权扣押或冻结逾 12 亿美元资产，但未透露更多细节。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Solidot",
+      "subcategory": "software"
+    },
+    {
+      "id": "news-c4ef7304813f7bac",
+      "title": "青葵智造完成亿元 A 轮融资，推进 AI 自驱动实验室",
+      "url": "https://36kr.com/p/4067548192576389",
+      "date": "2026-11-13",
+      "published": "2026-11-13T10:04:43+08:00",
+      "summary": "面向科学研发的 Physical AI 公司青葵智造完成亿元 A 轮融资，由创东方投资、飞荣达股份及金辉大数据共同参与。",
+      "detail": "资金将用于核心技术研发、重点行业拓展和云实验室建设。青葵智造成立于 2021 年，面向生物医药、化学工业、先进材料、新能源等领域，提供「AI 设计—自动化执行—数据回流—模型迭代」的干湿实验闭环方案。创始人陈南江为北航博士，在机器人及智能制造领域有十余年创业经验。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "36氪",
+      "subcategory": "industry"
+    },
+    {
+      "id": "news-a52dfdc16cefa1c9",
+      "title": "无印良品约 109 万条信用卡信息泄露",
+      "url": "https://www.solidot.org/story?sid=85877",
+      "date": "2026-11-13",
+      "published": "2026-11-13T14:47:28+08:00",
+      "summary": "运营无印良品的良品计划公司披露，因系统存在漏洞被非法访问，含已解约客户在内，约 109 万条信用卡完整号码等信息可能泄露。",
+      "detail": "该公司社长清水智召开记者会致歉，承认信息管理存在疏漏，并透露「本应废弃的信用卡信息仍被保存」。此前 MUJI APP 曾遭非法访问，最多约 2726 万条客户信息泄露。公司表示将承担受影响用户换发新卡的手续费，并推进建立不持有非必要信息的机制。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "Solidot",
+      "subcategory": "software"
+    },
+    {
+      "id": "news-72baff2517d8c35b",
+      "title": "研究：地球冰冻圈已不再处于安全运行空间内",
+      "url": "https://www.solidot.org/story?sid=85880",
+      "date": "2026-11-13",
+      "published": "2026-11-13T17:52:54+08:00",
+      "summary": "一项中外联合研究指出，涵盖冰盖、冰川、海冰、积雪和永久冻土的地球冰冻圈基本功能已不再处于安全运行空间之内。",
+      "detail": "研究基于地球界限框架，对陆地冰体积、海冰面积、积雪面积和永久冻土温度等关键变量进行分析，认为冰冻圈完整性正经历「加速且部分不可逆的丧失」，被推越界限的程度将给地球人口带来长期挑战。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot"
     },
     {
       "id": "news-29904a1654aa9a67",
@@ -5856,20 +5980,6 @@
       "source": "juya AI 日报"
     },
     {
-      "id": "news-707d8e9cb1384876",
-      "title": "Apollo 首席经济学家：科技行业之外仍未看到 AI 的财务回报",
-      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
-      "date": "2026-10-25",
-      "published": "2026-10-24T19:47:19+00:00",
-      "summary": "Apollo 首席经济学家 Torsten Slok 指出，除科技巨头外，美国企业尚未从 AI 获得财务回报，人均营收与利润率基本走平，部分公司已把词元支出当成成本负担。",
-      "detail": "报告对比 Mag 7 与标普 493 成分公司：前者人均营收和利润率上升，后者基本持平，也看不到 AI 提升生产率增长的迹象。Slok 认为主流企业并不需要最新模型，也不愿为其付费，因此只要智能体 AI 与词元消费局限在经济的较小部分，AI 的宏观影响就会很有限。",
-      "image": "",
-      "priority": 3,
-      "category": "tech",
-      "subcategory": "industry",
-      "source": "Hacker News"
-    },
-    {
       "id": "news-40ee07bd2191f99b",
       "title": "姆巴佩梅开二度，皇马客场 2-1 击败巴萨",
       "url": "https://www.theguardian.com/football/2026/oct/25/barcelona-real-madrid-el-clasico-la-liga-match-report",
@@ -5951,34 +6061,6 @@
       "source": "36氪"
     },
     {
-      "id": "news-fa73c3590d6fd3b3",
-      "title": "研究：美国创意产业四年流失逾 20 万岗位，AI 影响难以拆清",
-      "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
-      "date": "2026-10-25",
-      "published": "2026-10-24T23:11:54+00:00",
-      "summary": "Apricitas 分析美国就业数据称，媒体、影视与艺术行业四年减少逾 20 万个岗位，其中影视与录音业流失超过 10 万、接近该行业的三分之一。",
-      "detail": "作者 Joseph Politano 指出，这轮下滑的强度与持续时间和 2001、2008 年衰退期相当，但当下并没有全面衰退，时间上与生成式 AI 普及重合。由于企业讳言 AI 使用，行业还受整合与外包影响，AI 的具体贡献难以拆分；数字艺术各细分领域普遍收缩、线下娱乐仍在增长，被视为 AI 影响的一个间接证据。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "industry",
-      "source": "Hacker News"
-    },
-    {
-      "id": "news-7b2f3e8f9b9d483e",
-      "title": "Goose 语言：没有堆分配与垃圾回收的内存安全系统语言",
-      "url": "https://aardappel.github.io/goose/",
-      "date": "2026-10-25",
-      "published": "2026-10-24T19:06:55+00:00",
-      "summary": "开发者发布 Goose 语言，语法接近 C 与 Rust，但取消了堆分配器、垃圾回收和生命周期标注；作者称其自测基准快于 C++ 与安全 Rust，内存占用更低。",
-      "detail": "Goose 把动态值放在编译器静态分配的数据栈上，作用域结束即释放，引用在数组增长后仍然有效，语言用 1 至 4 字节的相对引用代替指针。作者 Wouter van Oortmerssen 表示，这也是用 AI 实现新语言的一次实验，基准数据来自项目自测，尚无第三方复现。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "software",
-      "source": "Hacker News"
-    },
-    {
       "id": "news-c5c76f39a1fa51e7",
       "title": "WorkBuddy 内测付费技能与专家，开发者可自行定价",
       "url": "https://daily.juya.uk/issues/2026-10-25/",
@@ -6005,16 +6087,17 @@
       "source": "juya AI 日报"
     },
     {
-      "id": "news-5a262a0d52b4c255",
-      "title": "限制反而激发创造力：一篇关于学习与创作的短文",
-      "url": "https://ratfactor.com/cards/limitations",
+      "id": "news-707d8e9cb1384876",
+      "title": "Apollo 首席经济学家：科技行业之外仍未看到 AI 的财务回报",
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
       "date": "2026-10-25",
-      "published": "2026-10-24T21:42:47+00:00",
-      "summary": "开发者 Dave 在一篇短文里提出，功能有限的玩具比功能齐全的工具更容易让人玩起来，限制反而更能激发创造力和学习兴趣。",
-      "detail": "他观察到孩子对学校文档平台的一个彩蛋玩得停不下来，却很少在功能完备的 Scratch 里久留：彩蛋功能少、容易出错、也容易玩坏，反而给了发挥空间。作者把这个观察延伸到绘画、剧本结构和小成本电影——选项过多会让人无从下手，约束则迫使创作者想出不一样的办法。",
+      "published": "2026-10-24T19:47:19+00:00",
+      "summary": "Apollo 首席经济学家 Torsten Slok 指出，除科技巨头外，美国企业尚未从 AI 获得财务回报，人均营收与利润率基本走平，部分公司已把词元支出当成成本负担。",
+      "detail": "报告对比 Mag 7 与标普 493 成分公司：前者人均营收和利润率上升，后者基本持平，也看不到 AI 提升生产率增长的迹象。Slok 认为主流企业并不需要最新模型，也不愿为其付费，因此只要智能体 AI 与词元消费局限在经济的较小部分，AI 的宏观影响就会很有限。",
       "image": "",
-      "priority": 1,
-      "category": "fun",
+      "priority": 3,
+      "category": "tech",
+      "subcategory": "industry",
       "source": "Hacker News"
     },
     {
@@ -6096,6 +6179,34 @@
       "priority": 3,
       "category": "ai",
       "source": "36氪"
+    },
+    {
+      "id": "news-fa73c3590d6fd3b3",
+      "title": "研究：美国创意产业四年流失逾 20 万岗位，AI 影响难以拆清",
+      "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
+      "date": "2026-10-25",
+      "published": "2026-10-24T23:11:54+00:00",
+      "summary": "Apricitas 分析美国就业数据称，媒体、影视与艺术行业四年减少逾 20 万个岗位，其中影视与录音业流失超过 10 万、接近该行业的三分之一。",
+      "detail": "作者 Joseph Politano 指出，这轮下滑的强度与持续时间和 2001、2008 年衰退期相当，但当下并没有全面衰退，时间上与生成式 AI 普及重合。由于企业讳言 AI 使用，行业还受整合与外包影响，AI 的具体贡献难以拆分；数字艺术各细分领域普遍收缩、线下娱乐仍在增长，被视为 AI 影响的一个间接证据。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-7b2f3e8f9b9d483e",
+      "title": "Goose 语言：没有堆分配与垃圾回收的内存安全系统语言",
+      "url": "https://aardappel.github.io/goose/",
+      "date": "2026-10-25",
+      "published": "2026-10-24T19:06:55+00:00",
+      "summary": "开发者发布 Goose 语言，语法接近 C 与 Rust，但取消了堆分配器、垃圾回收和生命周期标注；作者称其自测基准快于 C++ 与安全 Rust，内存占用更低。",
+      "detail": "Goose 把动态值放在编译器静态分配的数据栈上，作用域结束即释放，引用在数组增长后仍然有效，语言用 1 至 4 字节的相对引用代替指针。作者 Wouter van Oortmerssen 表示，这也是用 AI 实现新语言的一次实验，基准数据来自项目自测，尚无第三方复现。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "Hacker News"
     },
     {
       "id": "news-eb97066683a607d3",
@@ -6328,6 +6439,19 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-5a262a0d52b4c255",
+      "title": "限制反而激发创造力：一篇关于学习与创作的短文",
+      "url": "https://ratfactor.com/cards/limitations",
+      "date": "2026-10-25",
+      "published": "2026-10-24T21:42:47+00:00",
+      "summary": "开发者 Dave 在一篇短文里提出，功能有限的玩具比功能齐全的工具更容易让人玩起来，限制反而更能激发创造力和学习兴趣。",
+      "detail": "他观察到孩子对学校文档平台的一个彩蛋玩得停不下来，却很少在功能完备的 Scratch 里久留：彩蛋功能少、容易出错、也容易玩坏，反而给了发挥空间。作者把这个观察延伸到绘画、剧本结构和小成本电影——选项过多会让人无从下手，约束则迫使创作者想出不一样的办法。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Hacker News"
+    },
+    {
       "id": "news-1fcb754f16ff7db0",
       "title": "美光桃园厂工会否决新利润分享方案，台中厂已与资方达成协议",
       "url": "https://www.solidot.org/story?sid=85699",
@@ -6392,19 +6516,6 @@
       "priority": 1,
       "category": "ai",
       "source": "juya AI 日报"
-    },
-    {
-      "id": "news-15a8e5c58f1005d3",
-      "title": "安克雷奇：一座被荒野包围的城市",
-      "url": "https://www.atlasobscura.com/articles/anchorage-a-city-within-the-wild-guide",
-      "date": "2026-10-24",
-      "published": "2026-10-23T14:57:00-04:00",
-      "summary": "Atlas Obscura 的指南介绍阿拉斯加安克雷奇：在城内就能走上数百英里步道、看冰川与野生动物，自然是日常生活的一部分而非假期项目。",
-      "detail": "文章把安克雷奇描述成一座嵌在荒野里的城市：清晨可以在市区步道散步，随后去河边钓鱼，再驱车前往冰川或观景台。对当地居民而言，户外不是偶尔一次的远行，而是和基础设施、文化活动并列的日常组成部分。",
-      "image": "",
-      "priority": 1,
-      "category": "fun",
-      "source": "Atlas Obscura"
     },
     {
       "id": "news-7ecf9199468ed96f",
@@ -6732,6 +6843,19 @@
       "category": "tech",
       "subcategory": "ai-frontier",
       "source": "juya AI 日报"
+    },
+    {
+      "id": "news-15a8e5c58f1005d3",
+      "title": "安克雷奇：一座被荒野包围的城市",
+      "url": "https://www.atlasobscura.com/articles/anchorage-a-city-within-the-wild-guide",
+      "date": "2026-10-24",
+      "published": "2026-10-23T14:57:00-04:00",
+      "summary": "Atlas Obscura 的指南介绍阿拉斯加安克雷奇：在城内就能走上数百英里步道、看冰川与野生动物，自然是日常生活的一部分而非假期项目。",
+      "detail": "文章把安克雷奇描述成一座嵌在荒野里的城市：清晨可以在市区步道散步，随后去河边钓鱼，再驱车前往冰川或观景台。对当地居民而言，户外不是偶尔一次的远行，而是和基础设施、文化活动并列的日常组成部分。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Atlas Obscura"
     },
     {
       "id": "news-fdc48bf6c098133c",
