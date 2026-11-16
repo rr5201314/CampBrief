@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-12T18:57:35+08:00",
+  "last_updated": "2026-11-16T10:35:59.181347+08:00",
   "source": "CampBrief",
-  "total": 273,
+  "total": 282,
   "tiers": [
     {
       "key": "all",
@@ -190,8 +190,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-05T21:39:48+08:00",
-        "review_after": "2026-11-08T21:38:48+08:00"
+        "verified_at": "2026-11-16T10:35:00+08:00",
+        "review_after": "2026-11-19T10:35:00+08:00"
       }
     },
     {
@@ -490,7 +490,7 @@
         "business",
         "science"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -641,8 +641,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-08T22:03:21+08:00",
-        "review_after": "2026-11-11T22:02:21+08:00"
+        "verified_at": "2026-11-16T10:35:00+08:00",
+        "review_after": "2026-11-19T10:35:00+08:00"
       },
       "signup": "线上报名及作品提交：2026年10月至2027年4月。",
       "schedule": "省赛评审：2027年4—5月；国赛评审及获奖信息发布：2027年5—6月；系列活动：2027年7—8月；优秀作品计划于2027年4月米兰设计周期间展出。",
@@ -1682,8 +1682,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-09T21:38:16+08:00",
-        "review_after": "2026-11-12T21:37:16+08:00"
+        "verified_at": "2026-11-16T10:35:00+08:00",
+        "review_after": "2026-11-19T10:35:00+08:00"
       }
     },
     {
@@ -1706,8 +1706,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-09T21:38:16+08:00",
-        "review_after": "2026-11-12T21:37:16+08:00"
+        "verified_at": "2026-11-16T10:35:00+08:00",
+        "review_after": "2026-11-19T10:35:00+08:00"
       }
     },
     {
@@ -1767,8 +1767,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-09T21:38:16+08:00",
-        "review_after": "2026-11-12T21:37:16+08:00"
+        "verified_at": "2026-11-16T10:35:00+08:00",
+        "review_after": "2026-11-19T10:35:00+08:00"
       }
     },
     {
@@ -1846,8 +1846,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-02T21:52:12+08:00",
-        "review_after": "2026-11-05T20:52:12+08:00"
+        "verified_at": "2026-11-16T10:35:00+08:00",
+        "review_after": "2026-11-19T10:35:00+08:00"
       }
     },
     {
@@ -1885,8 +1885,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-11T21:51:46+08:00",
-        "review_after": "2026-11-14T20:51:46+08:00"
+        "verified_at": "2026-11-16T10:35:00+08:00",
+        "review_after": "2026-11-19T10:35:00+08:00"
       }
     },
     {
@@ -1908,8 +1908,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-11T21:51:46+08:00",
-        "review_after": "2026-11-14T20:51:46+08:00"
+        "verified_at": "2026-11-16T10:35:00+08:00",
+        "review_after": "2026-11-19T10:35:00+08:00"
       }
     },
     {
@@ -1931,8 +1931,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-11T21:51:46+08:00",
-        "review_after": "2026-11-14T20:51:46+08:00"
+        "verified_at": "2026-11-16T10:35:00+08:00",
+        "review_after": "2026-11-19T10:35:00+08:00"
       }
     },
     {
@@ -2420,7 +2420,7 @@
       "fields": [
         "science"
       ],
-      "status": "closed",
+      "status": "done",
       "signup": "2026年7月8日至8月31日",
       "schedule": "",
       "summary": "来源：赛氪。浏览 8648，关注 16",
@@ -3180,7 +3180,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -3288,7 +3288,7 @@
       "fields": [
         "design"
       ],
-      "status": "ongoing",
+      "status": "done",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -3570,7 +3570,7 @@
       "fields": [
         "ai"
       ],
-      "status": "ongoing",
+      "status": "done",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -4620,7 +4620,7 @@
         "computer",
         "ai"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -4789,7 +4789,7 @@
       "fields": [
         "language"
       ],
-      "status": "ongoing",
+      "status": "done",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -4814,7 +4814,7 @@
       "fields": [
         "language"
       ],
-      "status": "closed",
+      "status": "done",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5238,7 +5238,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5428,7 +5428,7 @@
         "computer",
         "ai"
       ],
-      "status": "open",
+      "status": "done",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5531,7 +5531,7 @@
         "ai",
         "innovation"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5632,7 +5632,7 @@
       "fields": [
         "language"
       ],
-      "status": "closed",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5707,7 +5707,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5807,7 +5807,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5823,6 +5823,222 @@
       "official_site": "",
       "organizer": "中国寓言文学研究会教育教学专业委员会",
       "prestige": 2
+    },
+    {
+      "id": "comp-52jingsai-878913bce13a",
+      "name": "2026年第八届全国高校计算机能力挑战赛",
+      "tier": "official",
+      "fields": [
+        "computer",
+        "ai"
+      ],
+      "status": "open",
+      "signup": "即日起至2026年11月25日",
+      "schedule": "",
+      "summary": "全国高校计算机能力挑战赛，覆盖程序设计、人工智能、大数据、嵌入式等多赛项，由全国高等学校计算机教育研究会主办。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23886-1.html",
+      "official_site": "",
+      "organizer": "全国高等学校计算机教育研究会",
+      "prestige": 7,
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-11-25",
+        "verified_at": "2026-11-16T10:35:00+08:00"
+      }
+    },
+    {
+      "id": "comp-52jingsai-b9dd88e47c61",
+      "name": "2026年第二届大学生AI应用与创新竞赛",
+      "tier": "hobby",
+      "fields": [
+        "ai",
+        "innovation",
+        "computer"
+      ],
+      "status": "open",
+      "signup": "报名及初赛截止至2026年11月22日",
+      "schedule": "初赛：2026年11月22日；成绩公示：2026年11月30日",
+      "summary": "面向大学生的 AI 应用与创新竞赛，初赛为知识竞赛，报名及初赛截止至2026年11月22日，成绩公示11月30日。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23720-1.html",
+      "official_site": "",
+      "organizer": "中国商业经济学会教育培训分会",
+      "prestige": 3,
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-11-22",
+        "verified_at": "2026-11-16T10:35:00+08:00"
+      }
+    },
+    {
+      "id": "comp-52jingsai-c4dbf3a886e8",
+      "name": "2026年第四届全国大学生教育教学能力大赛",
+      "tier": "hobby",
+      "fields": [
+        "vocational"
+      ],
+      "status": "open",
+      "signup": "",
+      "schedule": "",
+      "summary": "全国大学生教育教学能力大赛，初赛免费答题、决赛提交作品，入选普通高校大学生人文类竞赛分析报告榜单赛事。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23649-1.html",
+      "official_site": "",
+      "organizer": "中国智慧工程研究会职业教育专业委员会、黑龙江省创新教育研究院、全国大学生教育教学能力大赛组委会",
+      "prestige": 3,
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-11-16T10:35:00+08:00",
+        "review_after": "2026-11-19T10:35:00+08:00"
+      }
+    },
+    {
+      "id": "comp-52jingsai-d5f913cc1933",
+      "name": "2026年全国大学生英语阅读竞赛（NERCCS）",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "signup": "报名截止至2026年11月21日",
+      "schedule": "初赛：2026年11月22日；决赛：2027年1月10日",
+      "summary": "全国大学生英语阅读竞赛，面向高校学生的英语阅读能力测试，报名截止2026年11月21日，初赛11月22日，决赛2027年1月10日。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23920-1.html",
+      "official_site": "",
+      "organizer": "北京民教信息科学研究院、广东省高教外语研究院、全国大学生英语阅读竞赛组委会",
+      "prestige": 3,
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-11-21",
+        "event_start": "2026-11-22",
+        "event_end": "2027-01-10",
+        "verified_at": "2026-11-16T10:35:00+08:00"
+      }
+    },
+    {
+      "id": "comp-52jingsai-df1ede9c06ce",
+      "name": "2026年第八届全国高校计算机能力挑战赛数字媒体创新设计赛",
+      "tier": "official",
+      "fields": [
+        "computer",
+        "design"
+      ],
+      "status": "open",
+      "signup": "即日起至2026年11月19日",
+      "schedule": "",
+      "summary": "全国高校计算机能力挑战赛数字媒体创新设计赛项，作品提交型，面向高校学生。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23883-1.html",
+      "official_site": "",
+      "organizer": "全国高等学校计算机教育研究会",
+      "prestige": 7,
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-11-19",
+        "verified_at": "2026-11-16T10:35:00+08:00"
+      }
+    },
+    {
+      "id": "comp-saikr-abcd92e0e932",
+      "name": "2026年第五届大学生新媒体大赛",
+      "tier": "hobby",
+      "fields": [
+        "design",
+        "innovation"
+      ],
+      "status": "open",
+      "signup": "",
+      "schedule": "",
+      "summary": "大学生新媒体创作大赛，面向高校学生的新媒体内容创作赛事。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/XMTDX2026",
+      "official_site": "",
+      "organizer": "新媒体大赛组委会",
+      "prestige": 3,
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-11-16T10:35:00+08:00",
+        "review_after": "2026-11-19T10:35:00+08:00"
+      }
+    },
+    {
+      "id": "comp-saikr-bce4402212d9",
+      "name": "第三届“声声不息”大学生配音大赛",
+      "tier": "hobby",
+      "fields": [
+        "design"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "面向大学生的配音艺术赛事，第三届“声声不息”大学生配音大赛。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/pyds/3",
+      "official_site": "",
+      "organizer": "艺术类竞赛组委会",
+      "prestige": 3,
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-11-16T10:35:00+08:00",
+        "review_after": "2026-11-19T10:35:00+08:00"
+      }
+    },
+    {
+      "id": "comp-saikr-c441ad0b8fe2",
+      "name": "2026年高校大学生“工创杯”数据分析大赛",
+      "tier": "hobby",
+      "fields": [
+        "computer",
+        "business",
+        "science"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "高校大学生数据分析大赛，工创杯系列赛事之一。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/2026SJFX",
+      "official_site": "",
+      "organizer": "“工创杯”系列大赛组委会",
+      "prestige": 3,
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-11-16T10:35:00+08:00",
+        "review_after": "2026-11-19T10:35:00+08:00"
+      }
+    },
+    {
+      "id": "comp-saikr-e0799af5b5bd",
+      "name": "第四届“中外传播杯”大学生英语阅读大赛",
+      "tier": "official",
+      "fields": [
+        "language"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "中外传播杯大学生英语阅读大赛，面向高校学生的英语阅读赛事。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/2026R",
+      "official_site": "",
+      "organizer": "外文局亚太传播中心英语大赛组委会",
+      "prestige": 7,
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-11-16T10:35:00+08:00",
+        "review_after": "2026-11-19T10:35:00+08:00"
+      }
     }
   ]
 }
