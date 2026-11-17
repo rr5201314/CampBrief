@@ -1,8 +1,154 @@
 {
-  "last_updated": "2026-11-16T09:54:48.976377+08:00",
+  "last_updated": "2026-11-17T09:56:07.938732+08:00",
   "source": "GitHub Trending",
   "total": 89,
   "items": [
+    {
+      "id": "github-daily-2026-11-17",
+      "title": "11月17日 GitHub趋势日榜",
+      "url": "https://github.com/trending?since=daily",
+      "date": "2026-11-17",
+      "published": "2026-11-17T09:56:07.938732+08:00",
+      "summary": "11月17日 GitHub趋势日榜，Top 10 项目涵盖 TypeScript、Python、Go 等，今日社区最受关注的开源项目。",
+      "detail": "ag-ui-protocol/ag-ui - AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.\nbacknotprop/plannotator - The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.\ndream-num/univer - Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.\ntradermonty/claude-trading-skills - Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.\ngetarcaneapp/arcane - Modern Docker Management, Designed for Everyone\nDeanChensj/jiangshan-map - 江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) | Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes\ngoogle-labs-code/stitch-skills - A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.\nmvanhorn/last30days-skill - AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary\nNVIDIA/SkillEvaluator - Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.\nalibaba/open-code-review - Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "github",
+      "source": "GitHub Trending",
+      "trend_type": "daily",
+      "repos": [
+        {
+          "rank": 1,
+          "name": "ag-ui-protocol/ag-ui",
+          "url": "https://github.com/ag-ui-protocol/ag-ui",
+          "language": "TypeScript",
+          "stars": 19064,
+          "forks": 1967,
+          "stars_delta": 791,
+          "trend_period": "today",
+          "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+          "chinese_summary": "AG-UI 是一个面向智能体与用户交互的开放协议，提供把 AI 智能体接入前端应用的标准接口与组件。",
+          "solves_what": "解决前端应用接入 AI 智能体时缺少统一交互协议的问题，让智能体可被嵌入各类 Web/桌面界面并支持流式交互与状态同步。"
+        },
+        {
+          "rank": 2,
+          "name": "backnotprop/plannotator",
+          "url": "https://github.com/backnotprop/plannotator",
+          "language": "TypeScript",
+          "stars": 12601,
+          "forks": 1231,
+          "stars_delta": 696,
+          "trend_period": "today",
+          "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+          "chinese_summary": "Plannotator 是一个面向 AI 智能体的工作台，用于对智能体任务进行塑形、规划、标注与代码审查，并把反馈一键回传给智能体。",
+          "solves_what": "解决团队与 AI 编码智能体协作时缺乏统一评审与反馈入口的问题，让人能持续掌控智能体的计划、决策与代码产出。"
+        },
+        {
+          "rank": 3,
+          "name": "dream-num/univer",
+          "url": "https://github.com/dream-num/univer",
+          "language": "TypeScript",
+          "stars": 27827,
+          "forks": 2527,
+          "stars_delta": 1828,
+          "trend_period": "today",
+          "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+          "chinese_summary": "Univer 是一套可扩展的开源 Office SDK，提供表格编辑、计算、协作与文件处理能力，可集成到自有产品中构建 AI 办公套件。",
+          "solves_what": "解决开发者需要在产品内嵌电子表格、文档等办公能力却缺乏可定制开源方案的问题，同时为人和 AI 智能体提供统一的编辑与协作接口。"
+        },
+        {
+          "rank": 4,
+          "name": "tradermonty/claude-trading-skills",
+          "url": "https://github.com/tradermonty/claude-trading-skills",
+          "language": "Python",
+          "stars": 6345,
+          "forks": 1332,
+          "stars_delta": 837,
+          "trend_period": "today",
+          "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+          "chinese_summary": "面向股票投资者与交易员的 Claude Code 技能集，涵盖市场分析、技术图表、经济日历、选股器与交易策略开发。",
+          "solves_what": "解决股票交易者缺乏统一、可复用的 AI 分析工具链的问题，把行情分析、图表与策略开发打包成智能体可直接调用的技能。"
+        },
+        {
+          "rank": 5,
+          "name": "getarcaneapp/arcane",
+          "url": "https://github.com/getarcaneapp/arcane",
+          "language": "Go",
+          "stars": 8774,
+          "forks": 405,
+          "stars_delta": 46,
+          "trend_period": "today",
+          "description": "Modern Docker Management, Designed for Everyone",
+          "chinese_summary": "Arcane 是一款面向所有人的现代 Docker 管理工具，用 Go 编写，提供直观的容器与镜像管理体验。",
+          "solves_what": "解决 Docker 命令行工具上手门槛高、管理体验碎片化的问题，提供更现代友好的容器与镜像管理界面。"
+        },
+        {
+          "rank": 6,
+          "name": "DeanChensj/jiangshan-map",
+          "url": "https://github.com/DeanChensj/jiangshan-map",
+          "language": "JavaScript",
+          "stars": 6834,
+          "forks": 799,
+          "stars_delta": 288,
+          "trend_period": "today",
+          "description": "江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) | Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes",
+          "chinese_summary": "江山时序是一个中国历史交互地图时间轴，覆盖公元前 403 年至今 18 个朝代、198 幅疆域快照，并包含古今地名沿革与古典诗词路线。",
+          "solves_what": "解决中国历史疆域与朝代更迭难以直观可视化的问题，通过交互式地图与时间轴呈现历代疆域变迁与地名演变。"
+        },
+        {
+          "rank": 7,
+          "name": "google-labs-code/stitch-skills",
+          "url": "https://github.com/google-labs-code/stitch-skills",
+          "language": "TypeScript",
+          "stars": 9753,
+          "forks": 1242,
+          "stars_delta": 529,
+          "trend_period": "today",
+          "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+          "chinese_summary": "Stitch Skills 是一套与 Stitch MCP 服务器配套的智能体技能库，遵循 Agent Skills 开放标准，可兼容 Gemini CLI、Claude Code、Cursor 等编码智能体。",
+          "solves_what": "解决不同编码智能体之间技能不通用的问题，提供一套遵循开放标准、可跨工具复用的智能体技能集合。"
+        },
+        {
+          "rank": 8,
+          "name": "mvanhorn/last30days-skill",
+          "url": "https://github.com/mvanhorn/last30days-skill",
+          "language": "Python",
+          "stars": 68163,
+          "forks": 6040,
+          "stars_delta": 135,
+          "trend_period": "today",
+          "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+          "chinese_summary": "一个 AI 智能体技能，可跨 Reddit、X、YouTube、Hacker News、Polymarket 与全网检索任意话题，并综合生成有依据的摘要。",
+          "solves_what": "解决智能体研究话题时信息来源分散、难以综合的问题，自动汇总多平台信息并生成带来源依据的综述。"
+        },
+        {
+          "rank": 9,
+          "name": "NVIDIA/SkillEvaluator",
+          "url": "https://github.com/NVIDIA/SkillEvaluator",
+          "language": "Python",
+          "stars": 2750,
+          "forks": 364,
+          "stars_delta": 873,
+          "trend_period": "today",
+          "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+          "chinese_summary": "NVIDIA 开源的智能体技能与插件评估框架，提供多层质量门禁、语义重叠检测、合成评测数据集生成，并测量技能对智能体行为的实际影响。",
+          "solves_what": "解决 AI 智能体技能质量难以量化评估的问题，通过多层级框架自动检测技能质量、重复度及其对智能体行为的真实影响。"
+        },
+        {
+          "rank": 10,
+          "name": "alibaba/open-code-review",
+          "url": "https://github.com/alibaba/open-code-review",
+          "language": "Go",
+          "stars": 52978,
+          "forks": 4299,
+          "stars_delta": 951,
+          "trend_period": "today",
+          "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+          "chinese_summary": "阿里开源的代码审查工具，采用确定性流水线与 LLM 智能体混合架构，提供精确到行的评论与多语言内置规则集，已在阿里规模上经受考验。",
+          "solves_what": "解决大规模代码审查效率与准确率不足的问题，结合规则引擎与 LLM 智能体自动发现 NPE、线程安全、XSS、SQL 注入等缺陷。"
+        }
+      ]
+    },
     {
       "id": "github-daily-2026-11-16",
       "title": "11月16日 GitHub趋势日榜",
@@ -27,8 +173,8 @@
           "stars_delta": 988,
           "trend_period": "today",
           "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
-          "chinese_summary": "开源的 Office SDK，让开发者把电子表格、文档的编辑、计算、协作与文件处理能力集成进自己的产品，面向人与 AI 智能体。",
-          "solves_what": "提供可扩展的办公套件内核，避免从零开发文档、表格等能力，方便为产品或 AI 智能体快速构建办公场景。"
+          "chinese_summary": "Univer 是一套可扩展的开源 Office SDK，提供表格编辑、计算、协作与文件处理能力，可集成到自有产品中构建 AI 办公套件。",
+          "solves_what": "解决开发者需要在产品内嵌电子表格、文档等办公能力却缺乏可定制开源方案的问题，同时为人和 AI 智能体提供统一的编辑与协作接口。"
         },
         {
           "rank": 2,
@@ -40,8 +186,8 @@
           "stars_delta": 355,
           "trend_period": "today",
           "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
-          "chinese_summary": "智能体与用户交互的开放协议（AG-UI），帮助把 AI Agent 集成进前端应用。",
-          "solves_what": "统一 Agent 与前端界面之间的交互规范，降低将智能体接入 Web 应用时的集成成本。"
+          "chinese_summary": "AG-UI 是一个面向智能体与用户交互的开放协议，提供把 AI 智能体接入前端应用的标准接口与组件。",
+          "solves_what": "解决前端应用接入 AI 智能体时缺少统一交互协议的问题，让智能体可被嵌入各类 Web/桌面界面并支持流式交互与状态同步。"
         },
         {
           "rank": 3,
@@ -53,8 +199,8 @@
           "stars_delta": 247,
           "trend_period": "today",
           "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-          "chinese_summary": "面向 Stitch MCP 服务器的 Agent Skills 库，遵循开放的 Agent Skills 标准，兼容 Gemini CLI、Claude Code、Cursor 等编码智能体。",
-          "solves_what": "提供可复用的技能集合，让不同编码智能体获得标准化的扩展能力。"
+          "chinese_summary": "Stitch Skills 是一套与 Stitch MCP 服务器配套的智能体技能库，遵循 Agent Skills 开放标准，可兼容 Gemini CLI、Claude Code、Cursor 等编码智能体。",
+          "solves_what": "解决不同编码智能体之间技能不通用的问题，提供一套遵循开放标准、可跨工具复用的智能体技能集合。"
         },
         {
           "rank": 4,
@@ -66,8 +212,8 @@
           "stars_delta": 866,
           "trend_period": "today",
           "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-          "chinese_summary": "面向智能体工作流的协作工作台，支持规划、审阅代码、标注，并可一键把反馈回传给 Agent。",
-          "solves_what": "帮助团队跟踪和掌控多个 AI 智能体的工作，集中完成规划、代码审查与反馈闭环。"
+          "chinese_summary": "Plannotator 是一个面向 AI 智能体的工作台，用于对智能体任务进行塑形、规划、标注与代码审查，并把反馈一键回传给智能体。",
+          "solves_what": "解决团队与 AI 编码智能体协作时缺乏统一评审与反馈入口的问题，让人能持续掌控智能体的计划、决策与代码产出。"
         },
         {
           "rank": 5,
@@ -92,8 +238,8 @@
           "stars_delta": 691,
           "trend_period": "today",
           "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-          "chinese_summary": "阿里巴巴开源的高效代码评审工具，结合确定性流水线与 LLM Agent，提供行级评论与多语言规则集。",
-          "solves_what": "用确定性规则加 LLM 的混合架构做代码评审，覆盖 NPE、线程安全、XSS、SQL 注入等常见问题。"
+          "chinese_summary": "阿里开源的代码审查工具，采用确定性流水线与 LLM 智能体混合架构，提供精确到行的评论与多语言内置规则集，已在阿里规模上经受考验。",
+          "solves_what": "解决大规模代码审查效率与准确率不足的问题，结合规则引擎与 LLM 智能体自动发现 NPE、线程安全、XSS、SQL 注入等缺陷。"
         },
         {
           "rank": 7,
@@ -212,8 +358,8 @@
           "stars_delta": 1719,
           "trend_period": "this week",
           "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-          "chinese_summary": "面向智能体工作流的协作工作台，支持规划、审阅代码、标注，并可一键把反馈回传给 Agent。",
-          "solves_what": "帮助团队跟踪和掌控多个 AI 智能体的工作，集中完成规划、代码审查与反馈闭环。"
+          "chinese_summary": "Plannotator 是一个面向 AI 智能体的工作台，用于对智能体任务进行塑形、规划、标注与代码审查，并把反馈一键回传给智能体。",
+          "solves_what": "解决团队与 AI 编码智能体协作时缺乏统一评审与反馈入口的问题，让人能持续掌控智能体的计划、决策与代码产出。"
         },
         {
           "rank": 5,
@@ -319,8 +465,8 @@
           "stars_delta": 215,
           "trend_period": "today",
           "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-          "chinese_summary": "阿里巴巴开源的混合架构代码评审工具，结合确定性规则流水线与 LLM Agent，提供行级精确评论与多语言内置规则集。",
-          "solves_what": "解决大规模代码评审效率低、规则不一致的问题，内置 NPE、线程安全、XSS、SQL 注入等规则，并兼容 OpenAI 与 Anthropic 模型。"
+          "chinese_summary": "阿里开源的代码审查工具，采用确定性流水线与 LLM 智能体混合架构，提供精确到行的评论与多语言内置规则集，已在阿里规模上经受考验。",
+          "solves_what": "解决大规模代码审查效率与准确率不足的问题，结合规则引擎与 LLM 智能体自动发现 NPE、线程安全、XSS、SQL 注入等缺陷。"
         },
         {
           "rank": 2,
@@ -384,8 +530,8 @@
           "stars_delta": 108,
           "trend_period": "today",
           "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-          "chinese_summary": "面向 AI 智能体协作的工作区，用于梳理、决策、规划、标注和评审代码，并把反馈一键回传给智能体。",
-          "solves_what": "解决人与 AI 智能体协作时缺少统一工作区的问题，让用户能实时掌控并反馈智能体的代码产出。"
+          "chinese_summary": "Plannotator 是一个面向 AI 智能体的工作台，用于对智能体任务进行塑形、规划、标注与代码审查，并把反馈一键回传给智能体。",
+          "solves_what": "解决团队与 AI 编码智能体协作时缺乏统一评审与反馈入口的问题，让人能持续掌控智能体的计划、决策与代码产出。"
         },
         {
           "rank": 7,
@@ -424,7 +570,7 @@
           "trend_period": "today",
           "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
           "chinese_summary": "面向股票投资者与交易员的 Claude Code 技能集，涵盖市场分析、技术图表、经济日历、选股器与交易策略开发。",
-          "solves_what": "让 Claude Code 具备专业的股票研究与交易辅助能力，覆盖从行情分析到策略开发的完整流程。"
+          "solves_what": "解决股票交易者缺乏统一、可复用的 AI 分析工具链的问题，把行情分析、图表与策略开发打包成智能体可直接调用的技能。"
         },
         {
           "rank": 10,
@@ -5364,8 +5510,8 @@
           "stars_delta": 326,
           "trend_period": "today",
           "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-          "chinese_summary": "阿里巴巴开源的 AI 代码审查 CLI（ocr 命令）：确定性流水线加 LLM Agent 混合架构，读取 Git diff 生成行级精度的审查评论，内置多语言规则集，兼容 OpenAI 与 Anthropic 接口，源于阿里内部大规模实践。",
-          "solves_what": "解决通用 Agent 做代码审查时覆盖不全、行号或位置漂移、质量不稳定的问题：用工程化约束保证审查覆盖与定位精度，并显著降低 token 消耗。"
+          "chinese_summary": "阿里开源的代码审查工具，采用确定性流水线与 LLM 智能体混合架构，提供精确到行的评论与多语言内置规则集，已在阿里规模上经受考验。",
+          "solves_what": "解决大规模代码审查效率与准确率不足的问题，结合规则引擎与 LLM 智能体自动发现 NPE、线程安全、XSS、SQL 注入等缺陷。"
         },
         {
           "rank": 6,
@@ -6918,8 +7064,8 @@
           "stars_delta": 21460,
           "trend_period": "this month",
           "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-          "chinese_summary": "阿里巴巴开源的混合架构代码审查工具，确定性规则流水线加 LLM Agent，生成行级评论并内置多语言安全规则。",
-          "solves_what": "解决人工代码审查成本高、空指针与线程安全等常见缺陷易遗漏的问题，兼容 OpenAI 与 Anthropic。"
+          "chinese_summary": "阿里开源的代码审查工具，采用确定性流水线与 LLM 智能体混合架构，提供精确到行的评论与多语言内置规则集，已在阿里规模上经受考验。",
+          "solves_what": "解决大规模代码审查效率与准确率不足的问题，结合规则引擎与 LLM 智能体自动发现 NPE、线程安全、XSS、SQL 注入等缺陷。"
         },
         {
           "rank": 3,
@@ -7236,8 +7382,8 @@
           "stars_delta": 849,
           "trend_period": "today",
           "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
-          "chinese_summary": "插件化架构的全功能 Office SDK：电子表格、文档、演示、画板、关系表与 PDF 运行在同一内核，定位为面向 AI 智能体的 Office Harness。",
-          "solves_what": "解决业务系统与 AI 智能体嵌入网页版办公组件成本高、能力割裂的问题，提供带公式引擎与 Canvas 渲染的开箱即用内核。"
+          "chinese_summary": "Univer 是一套可扩展的开源 Office SDK，提供表格编辑、计算、协作与文件处理能力，可集成到自有产品中构建 AI 办公套件。",
+          "solves_what": "解决开发者需要在产品内嵌电子表格、文档等办公能力却缺乏可定制开源方案的问题，同时为人和 AI 智能体提供统一的编辑与协作接口。"
         },
         {
           "rank": 5,
@@ -7408,8 +7554,8 @@
           "stars_delta": 1050,
           "trend_period": "today",
           "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
-          "chinese_summary": "插件化架构的全功能 Office SDK：电子表格、文档、演示、画板、关系表与 PDF 运行在同一内核，定位为面向 AI 智能体的 Office Harness。",
-          "solves_what": "解决业务系统与 AI 智能体嵌入网页版办公组件成本高、能力割裂的问题，提供带公式引擎与 Canvas 渲染的开箱即用内核。"
+          "chinese_summary": "Univer 是一套可扩展的开源 Office SDK，提供表格编辑、计算、协作与文件处理能力，可集成到自有产品中构建 AI 办公套件。",
+          "solves_what": "解决开发者需要在产品内嵌电子表格、文档等办公能力却缺乏可定制开源方案的问题，同时为人和 AI 智能体提供统一的编辑与协作接口。"
         },
         {
           "rank": 7,
@@ -7554,8 +7700,8 @@
           "stars_delta": 1142,
           "trend_period": "today",
           "description": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
-          "chinese_summary": "插件化架构的全功能 Office SDK：电子表格、文档、演示、画板、关系表与 PDF 运行在同一内核，定位为面向 AI 智能体的 Office Harness。",
-          "solves_what": "解决业务系统与 AI 智能体嵌入网页版办公组件成本高、能力割裂的问题，提供带公式引擎与 Canvas 渲染的开箱即用内核。"
+          "chinese_summary": "Univer 是一套可扩展的开源 Office SDK，提供表格编辑、计算、协作与文件处理能力，可集成到自有产品中构建 AI 办公套件。",
+          "solves_what": "解决开发者需要在产品内嵌电子表格、文档等办公能力却缺乏可定制开源方案的问题，同时为人和 AI 智能体提供统一的编辑与协作接口。"
         },
         {
           "rank": 7,
@@ -7927,8 +8073,8 @@
           "stars_delta": 15504,
           "trend_period": "this week",
           "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-          "chinese_summary": "阿里巴巴开源的混合架构代码审查工具，确定性规则流水线加 LLM Agent，生成行级评论并内置多语言安全规则。",
-          "solves_what": "解决人工代码审查成本高、空指针与线程安全等常见缺陷易遗漏的问题，兼容 OpenAI 与 Anthropic。"
+          "chinese_summary": "阿里开源的代码审查工具，采用确定性流水线与 LLM 智能体混合架构，提供精确到行的评论与多语言内置规则集，已在阿里规模上经受考验。",
+          "solves_what": "解决大规模代码审查效率与准确率不足的问题，结合规则引擎与 LLM 智能体自动发现 NPE、线程安全、XSS、SQL 注入等缺陷。"
         },
         {
           "rank": 2,
@@ -8219,8 +8365,8 @@
           "stars_delta": 3286,
           "trend_period": "today",
           "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-          "chinese_summary": "阿里巴巴开源的混合架构代码审查工具，确定性规则流水线加 LLM Agent，生成行级评论并内置多语言安全规则。",
-          "solves_what": "解决人工代码审查成本高、空指针与线程安全等常见缺陷易遗漏的问题，兼容 OpenAI 与 Anthropic。"
+          "chinese_summary": "阿里开源的代码审查工具，采用确定性流水线与 LLM 智能体混合架构，提供精确到行的评论与多语言内置规则集，已在阿里规模上经受考验。",
+          "solves_what": "解决大规模代码审查效率与准确率不足的问题，结合规则引擎与 LLM 智能体自动发现 NPE、线程安全、XSS、SQL 注入等缺陷。"
         },
         {
           "rank": 2,
@@ -8365,8 +8511,8 @@
           "stars_delta": 3231,
           "trend_period": "today",
           "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-          "chinese_summary": "阿里巴巴开源的混合架构代码审查工具，确定性规则流水线加 LLM Agent，生成行级评论并内置多语言安全规则。",
-          "solves_what": "解决人工代码审查成本高、空指针与线程安全等常见缺陷易遗漏的问题，兼容 OpenAI 与 Anthropic。"
+          "chinese_summary": "阿里开源的代码审查工具，采用确定性流水线与 LLM 智能体混合架构，提供精确到行的评论与多语言内置规则集，已在阿里规模上经受考验。",
+          "solves_what": "解决大规模代码审查效率与准确率不足的问题，结合规则引擎与 LLM 智能体自动发现 NPE、线程安全、XSS、SQL 注入等缺陷。"
         },
         {
           "rank": 2,
@@ -8511,8 +8657,8 @@
           "stars_delta": 2756,
           "trend_period": "today",
           "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-          "chinese_summary": "阿里巴巴开源的混合架构代码审查工具，确定性规则流水线加 LLM Agent，生成行级评论并内置多语言安全规则。",
-          "solves_what": "解决人工代码审查成本高、空指针与线程安全等常见缺陷易遗漏的问题，兼容 OpenAI 与 Anthropic。"
+          "chinese_summary": "阿里开源的代码审查工具，采用确定性流水线与 LLM 智能体混合架构，提供精确到行的评论与多语言内置规则集，已在阿里规模上经受考验。",
+          "solves_what": "解决大规模代码审查效率与准确率不足的问题，结合规则引擎与 LLM 智能体自动发现 NPE、线程安全、XSS、SQL 注入等缺陷。"
         },
         {
           "rank": 2,
@@ -8670,8 +8816,8 @@
           "stars_delta": 1571,
           "trend_period": "today",
           "description": "Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-          "chinese_summary": "阿里巴巴开源的混合架构代码审查工具，确定性规则流水线加 LLM Agent，生成行级评论并内置多语言安全规则。",
-          "solves_what": "解决人工代码审查成本高、空指针与线程安全等常见缺陷易遗漏的问题，兼容 OpenAI 与 Anthropic。"
+          "chinese_summary": "阿里开源的代码审查工具，采用确定性流水线与 LLM 智能体混合架构，提供精确到行的评论与多语言内置规则集，已在阿里规模上经受考验。",
+          "solves_what": "解决大规模代码审查效率与准确率不足的问题，结合规则引擎与 LLM 智能体自动发现 NPE、线程安全、XSS、SQL 注入等缺陷。"
         },
         {
           "rank": 3,
@@ -10925,8 +11071,8 @@
           "stars_delta": 230,
           "trend_period": "today",
           "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-          "chinese_summary": "一个可跨 Reddit、X、YouTube、HN 等来源做近 30 天主题调研的 AI skill。",
-          "solves_what": "解决热点研究需要手动搜遍多个平台、信息碎片化且难以核实的问题，自动汇总近期讨论并生成有依据的总结。"
+          "chinese_summary": "一个 AI 智能体技能，可跨 Reddit、X、YouTube、Hacker News、Polymarket 与全网检索任意话题，并综合生成有依据的摘要。",
+          "solves_what": "解决智能体研究话题时信息来源分散、难以综合的问题，自动汇总多平台信息并生成带来源依据的综述。"
         },
         {
           "rank": 8,
@@ -12718,152 +12864,6 @@
           "description": "High performance self-hosted photo and video management solution.",
           "chinese_summary": "高性能自托管照片与视频管理方案，功能对标 Google Photos，支持人脸识别、时间线等。",
           "solves_what": "解决云端相册的隐私与容量焦虑，让用户在自己的服务器上获得与 Google Photos 相当的照片管理体验。"
-        }
-      ]
-    },
-    {
-      "id": "github-daily-2026-08-19",
-      "title": "8月19日 GitHub趋势日榜",
-      "url": "https://github.com/trending?since=daily",
-      "date": "2026-08-19",
-      "published": "2026-08-19T08:03:21.588692+08:00",
-      "summary": "8月19日 GitHub趋势日榜，Top 10 项目涵盖 Python、TypeScript、Rust 等，今日社区最受关注的开源项目。",
-      "detail": "harry0703/MoneyPrinterTurbo - 利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.\nchaitanyagiri/munder-difflin - local multi-agent harness\nakitaonrails/ai-memory - Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors\nvolcengine/OpenViking - Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.\nmukul975/Anthropic-Cybersecurity-Skills - 817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0\npublic-apis/public-apis - A collective list of free APIs\nbasecamp/omarchy - Beautiful, Modern & Opinionated Linux\nagalwood/Motrix - A full-featured download manager.\nNawfalMotii79/PLFM_RADAR - Open-source, low-cost 10.5 GHz PLFM phased array RADAR system\njundot/omlx - LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar",
-      "priority": 2,
-      "category": "tech",
-      "subcategory": "github",
-      "source": "GitHub Trending",
-      "trend_type": "daily",
-      "repos": [
-        {
-          "rank": 1,
-          "name": "harry0703/MoneyPrinterTurbo",
-          "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-          "language": "Python",
-          "stars": 108494,
-          "forks": 16473,
-          "stars_delta": 2304,
-          "trend_period": "today",
-          "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
-          "chinese_summary": "利用 AI 大模型和自动化工作流生成短视频的开源工具。",
-          "solves_what": "解决短视频制作门槛高、流程繁琐的问题，让用户可以更快批量产出可发布的视频。"
-        },
-        {
-          "rank": 2,
-          "name": "chaitanyagiri/munder-difflin",
-          "url": "https://github.com/chaitanyagiri/munder-difflin",
-          "language": "TypeScript",
-          "stars": 2008,
-          "forks": 238,
-          "stars_delta": 306,
-          "trend_period": "today",
-          "description": "local multi-agent harness",
-          "chinese_summary": "本地多智能体编排与协作框架。",
-          "solves_what": "解决本地多代理协同、分工执行和上下文衔接的问题。"
-        },
-        {
-          "rank": 3,
-          "name": "akitaonrails/ai-memory",
-          "url": "https://github.com/akitaonrails/ai-memory",
-          "language": "Rust",
-          "stars": 2702,
-          "forks": 232,
-          "stars_delta": 648,
-          "trend_period": "today",
-          "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
-          "chinese_summary": "面向代理编码工具的长期记忆方案。",
-          "solves_what": "解决代理编码 CLI 的长期记忆保存，以及不同代理厂商之间交接上下文的问题。"
-        },
-        {
-          "rank": 4,
-          "name": "volcengine/OpenViking",
-          "url": "https://github.com/volcengine/OpenViking",
-          "language": "Python",
-          "stars": 29354,
-          "forks": 2304,
-          "stars_delta": 213,
-          "trend_period": "today",
-          "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
-          "chinese_summary": "面向 AI 代理的自演化上下文数据库。",
-          "solves_what": "解决代理记忆、知识检索和技能管理分散的问题，帮助统一上下文与能力。"
-        },
-        {
-          "rank": 5,
-          "name": "mukul975/Anthropic-Cybersecurity-Skills",
-          "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
-          "language": "Python",
-          "stars": 29167,
-          "forks": 3494,
-          "stars_delta": 730,
-          "trend_period": "today",
-          "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
-          "chinese_summary": "为 AI 代理准备的结构化网络安全技能集合。",
-          "solves_what": "解决安全技能零散、难以复用的问题，便于代理在安全分析等场景直接调用。"
-        },
-        {
-          "rank": 6,
-          "name": "public-apis/public-apis",
-          "url": "https://github.com/public-apis/public-apis",
-          "language": "Python",
-          "stars": 464515,
-          "forks": 51312,
-          "stars_delta": 1005,
-          "trend_period": "today",
-          "description": "A collective list of free APIs",
-          "chinese_summary": "免费 API 的集合清单。",
-          "solves_what": "解决开发者寻找可用公共接口时需要四处搜集、反复筛选的问题。"
-        },
-        {
-          "rank": 7,
-          "name": "basecamp/omarchy",
-          "url": "https://github.com/basecamp/omarchy",
-          "language": "Shell",
-          "stars": 26407,
-          "forks": 2688,
-          "stars_delta": 356,
-          "trend_period": "today",
-          "description": "Beautiful, Modern & Opinionated Linux",
-          "chinese_summary": "一套面向日常使用的 Linux 桌面系统配置与发行方案。",
-          "solves_what": "解决 Linux 桌面安装配置碎片化、体验不统一的问题。"
-        },
-        {
-          "rank": 8,
-          "name": "agalwood/Motrix",
-          "url": "https://github.com/agalwood/Motrix",
-          "language": "TypeScript",
-          "stars": 53647,
-          "forks": 4948,
-          "stars_delta": 609,
-          "trend_period": "today",
-          "description": "A full-featured download manager.",
-          "chinese_summary": "功能完整的下载管理器。",
-          "solves_what": "解决普通下载、BT、磁力链接等任务分散管理不便的问题。"
-        },
-        {
-          "rank": 9,
-          "name": "NawfalMotii79/PLFM_RADAR",
-          "url": "https://github.com/NawfalMotii79/PLFM_RADAR",
-          "language": "PLSQL",
-          "stars": 24286,
-          "forks": 5585,
-          "stars_delta": 192,
-          "trend_period": "today",
-          "description": "Open-source, low-cost 10.5 GHz PLFM phased array RADAR system",
-          "chinese_summary": "低成本 10.5 GHz PLFM 相控阵雷达系统开源项目。",
-          "solves_what": "解决高性能雷达系统成本高、门槛高的问题，便于工程原型与学习验证。"
-        },
-        {
-          "rank": 10,
-          "name": "jundot/omlx",
-          "url": "https://github.com/jundot/omlx",
-          "language": "Python",
-          "stars": 19386,
-          "forks": 1669,
-          "stars_delta": 370,
-          "trend_period": "today",
-          "description": "LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar",
-          "chinese_summary": "面向 Apple Silicon 的 LLM 推理服务。",
-          "solves_what": "解决本地大模型推理部署、持续批处理和 SSD 缓存管理的问题，并支持从 macOS 菜单栏操作。"
         }
       ]
     }
