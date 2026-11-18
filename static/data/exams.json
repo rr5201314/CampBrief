@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-16T10:08:03.794527+08:00",
+  "last_updated": "2026-11-18T10:12:42.461122+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -207,8 +207,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-11-14T10:10:23+08:00",
-        "review_after": "2026-11-17T10:10:23+08:00"
+        "verified_at": "2026-11-18T10:12:05.046548+08:00",
+        "review_after": "2026-11-21T10:12:05.046548+08:00"
       },
       "fee": "约2170元",
       "schedule": "全年多场",
@@ -218,7 +218,7 @@
       "official_portal": "https://ielts-main.neea.cn/",
       "news_list_url": "https://www.chinaielts.org/press-office",
       "official_url": "https://www.chinaielts.org/press-office/announcement",
-      "last_updated": "2026-11-14T10:10:23+08:00",
+      "last_updated": "2026-11-18T10:12:05.046548+08:00",
       "timeline": [
         {
           "label": "纸笔退市",
@@ -249,8 +249,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-11-14T10:10:23+08:00",
-        "review_after": "2026-11-17T10:10:23+08:00"
+        "verified_at": "2026-11-18T10:12:05.046548+08:00",
+        "review_after": "2026-11-21T10:12:05.046548+08:00"
       },
       "fee": "约2100元",
       "schedule": "全年多场",
@@ -260,7 +260,7 @@
       "official_portal": "https://toefl-main.neea.cn/",
       "news_list_url": "https://toefl-main.neea.cn/html1/category/16123/94-1.htm",
       "official_url": "https://toefl.neea.cn/",
-      "last_updated": "2026-11-14T10:10:23+08:00"
+      "last_updated": "2026-11-18T10:12:05.046548+08:00"
     },
     {
       "id": "catti-202606",
@@ -804,7 +804,7 @@
       "official_portal": "https://www.cltt.org/",
       "news_list_url": "https://www.cltt.org/",
       "official_url": "https://stzbm.cltt.org/",
-      "last_updated": "2026-11-14T10:10:23+08:00"
+      "last_updated": "2026-11-18T10:12:05.046548+08:00"
     },
     {
       "id": "guokao-2026",
@@ -827,7 +827,7 @@
       "official_site": "http://bm.scs.gov.cn/kl2027",
       "official_portal": "http://bm.scs.gov.cn/kl2027",
       "news_list_url": "http://bm.scs.gov.cn/pp/gkweb/core/web/ui/business/home/gkhome.html",
-      "official_url": "http://bm.scs.gov.cn/pp/gkweb/core/web/ui/business/article/articledetail.html?ArticleId=8a81f6d1a15e545a01a177de215b78e0&id=0000000062b7b2b60162bccd55ec0006&eid=0000000062b7b2b60162bcce3de20008",
+      "official_url": "http://bm.scs.gov.cn/pp/gkweb/core/web/ui/business/article/articledetail.html?ArticleId=8a81f6d8a15e574d01a171d4631078cb&id=0000000062b7b2b60162bccd55ec0006&eid=0000000062b7b2b60162bcce3de20008",
       "timeline": [
         {
           "label": "注册与实名实人认证",
@@ -866,7 +866,7 @@
           "value": "2027年1月，具体日期另行通知。"
         }
       ],
-      "last_updated": "2026-11-14T10:10:23+08:00"
+      "last_updated": "2026-11-18T10:12:05.046548+08:00"
     },
     {
       "id": "shiye",
@@ -886,7 +886,7 @@
       "official_portal": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/index.html",
       "news_list_url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/index.html",
       "official_url": "https://job.mohrss.gov.cn/cjobs/institution/listInstitution",
-      "last_updated": "2026-11-14T10:10:23+08:00"
+      "last_updated": "2026-11-18T10:12:05.046548+08:00"
     },
     {
       "id": "kaoyan-2026",
