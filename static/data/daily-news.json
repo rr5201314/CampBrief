@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-17T10:05:05+08:00",
+  "last_updated": "2026-11-18T09:28:56.325064+08:00",
   "source": "CampBrief Auto",
-  "total": 655,
+  "total": 656,
   "items": [
     {
       "id": "news-4fff373c05cb6f5a",
@@ -8889,6 +8889,19 @@
       "priority": 1,
       "category": "fun",
       "source": "少数派"
+    },
+    {
+      "id": "news-a86d0f2ced0fc52b",
+      "title": "Google 为 Gemini 应用推出 66 种地区语音",
+      "url": "https://daily.juya.uk/issues/2026-11-17/",
+      "date": "2026-11-17",
+      "published": "2026-11-17T00:47:27+00:00",
+      "summary": "Google 宣布 Gemini 应用在 Android 和 iOS 平台推出 66 种地区语音，涵盖美式英语、印度英语、韩语等本地化口音。",
+      "detail": "Google 宣布 Gemini 应用在 Android 和 iOS 平台推出 66 种新地区语音，包括美式英语、英国英语、印度英语、印地语、巴西葡萄牙语、印尼语和韩语，每项均有各自的定制选项。这些声音按自然节奏和日常清晰度调试，捕捉当地熟悉的韵律、音高和语调。选定的声音会在整个应用中生效，无论使用 Gemini Live 语音交流、练习语言还是朗读回复均采用同一声音。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
     }
   ]
 }
