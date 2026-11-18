@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-18T09:57:02+08:00",
+  "last_updated": "2026-11-18T09:59:50+08:00",
   "source": "CampBrief Auto",
-  "total": 673,
+  "total": 672,
   "items": [
     {
       "id": "news-07231c3a42465c23",
@@ -370,20 +370,6 @@
       "category": "tech",
       "source": "36氪",
       "subcategory": "industry"
-    },
-    {
-      "id": "news-a416ff46926f0eb4",
-      "title": "Windows组件被曝记录用户安装的编程智能体与开发工具",
-      "url": "https://www.solidot.org/story?sid=85908",
-      "date": "2026-11-17",
-      "published": "2026-11-17T14:50:24+08:00",
-      "summary": "开发者发现Windows的MissionControlAggregator.dll组件会记录用户使用的编程智能体与开发工具。",
-      "detail": "该DLL会记录codex.exe、claude.exe、copilot.exe、cursor.exe等编程智能体，以及python.exe、dotnet.exe、gcc.exe、code.exe等开发工具，默认上报给微软诊断系统，除非用户选择退出诊断数据收集。",
-      "image": "",
-      "priority": 2,
-      "category": "tech",
-      "source": "Solidot",
-      "subcategory": "software"
     },
     {
       "id": "news-70c2c0c653ba6679",
