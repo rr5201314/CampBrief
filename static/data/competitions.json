@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-16T10:35:59.181347+08:00",
+  "last_updated": "2026-11-19T19:33:47+08:00",
   "source": "CampBrief",
-  "total": 282,
+  "total": 286,
   "tiers": [
     {
       "key": "all",
@@ -639,10 +639,11 @@
       ],
       "status": "open",
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-16T10:35:00+08:00",
-        "review_after": "2026-11-19T10:35:00+08:00"
+        "registration_start": "2026-10-01",
+        "registration_end": "2027-04-30",
+        "verified_at": "2026-11-19T19:33:47+08:00"
       },
       "signup": "线上报名及作品提交：2026年10月至2027年4月。",
       "schedule": "省赛评审：2027年4—5月；国赛评审及获奖信息发布：2027年5—6月；系列活动：2027年7—8月；优秀作品计划于2027年4月米兰设计周期间展出。",
@@ -1682,8 +1683,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-16T10:35:00+08:00",
-        "review_after": "2026-11-19T10:35:00+08:00"
+        "verified_at": "2026-11-19T19:33:47+08:00",
+        "review_after": "2026-11-22T19:33:47+08:00"
       }
     },
     {
@@ -1700,14 +1701,14 @@
       "schedule": "各赛道时间不同",
       "summary": "华为面向开发者的综合性赛事，含昇腾 AI、鸿蒙、鲲鹏、云原生等多个赛道。",
       "search": "华为开发者大赛 昇腾 鸿蒙",
-      "official_site": "https://developer.huawei.com/home/contest/home.html",
+      "official_site": "https://developer.huawei.com/consumer/cn/activity/",
       "organizer": "华为",
       "prestige": 7,
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-16T10:35:00+08:00",
-        "review_after": "2026-11-19T10:35:00+08:00"
+        "verified_at": "2026-11-19T19:33:47+08:00",
+        "review_after": "2026-11-22T19:33:47+08:00"
       }
     },
     {
@@ -1767,8 +1768,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-16T10:35:00+08:00",
-        "review_after": "2026-11-19T10:35:00+08:00"
+        "verified_at": "2026-11-19T19:33:47+08:00",
+        "review_after": "2026-11-22T19:33:47+08:00"
       }
     },
     {
@@ -1885,8 +1886,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-16T10:35:00+08:00",
-        "review_after": "2026-11-19T10:35:00+08:00"
+        "verified_at": "2026-11-19T19:33:47+08:00",
+        "review_after": "2026-11-22T19:33:47+08:00"
       }
     },
     {
@@ -1908,8 +1909,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-16T10:35:00+08:00",
-        "review_after": "2026-11-19T10:35:00+08:00"
+        "verified_at": "2026-11-19T19:33:47+08:00",
+        "review_after": "2026-11-22T19:33:47+08:00"
       }
     },
     {
@@ -1931,8 +1932,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-16T10:35:00+08:00",
-        "review_after": "2026-11-19T10:35:00+08:00"
+        "verified_at": "2026-11-19T19:33:47+08:00",
+        "review_after": "2026-11-22T19:33:47+08:00"
       }
     },
     {
@@ -5531,7 +5532,7 @@
         "ai",
         "innovation"
       ],
-      "status": "ongoing",
+      "status": "done",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5881,7 +5882,7 @@
         "vocational"
       ],
       "status": "open",
-      "signup": "",
+      "signup": "即日起至2026年12月4日",
       "schedule": "",
       "summary": "全国大学生教育教学能力大赛，初赛免费答题、决赛提交作品，入选普通高校大学生人文类竞赛分析报告榜单赛事。",
       "search": "",
@@ -5890,10 +5891,10 @@
       "organizer": "中国智慧工程研究会职业教育专业委员会、黑龙江省创新教育研究院、全国大学生教育教学能力大赛组委会",
       "prestige": 3,
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-16T10:35:00+08:00",
-        "review_after": "2026-11-19T10:35:00+08:00"
+        "registration_end": "2026-12-04",
+        "verified_at": "2026-11-19T19:33:47+08:00"
       }
     },
     {
@@ -6039,6 +6040,100 @@
         "verified_at": "2026-11-16T10:35:00+08:00",
         "review_after": "2026-11-19T10:35:00+08:00"
       }
+    },
+    {
+      "id": "comp-52jingsai-84f2099073ca",
+      "name": "2026「温暖中国」公益短视频征集展播活动",
+      "tier": "enterprise",
+      "fields": [
+        "design"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-12-31",
+        "verified_at": "2026-11-19T19:33:47+08:00"
+      },
+      "signup": "2026年10月至12月31日",
+      "schedule": "",
+      "summary": "由中国网络视听节目服务协会主办的公益短视频征集展播活动，面向社会征集温暖主题短片，征集截止 12 月 31 日。",
+      "search": "温暖中国 公益短视频 征集 短视频大赛",
+      "official_url": "https://www.52jingsai.com/article-24199-1.html",
+      "official_site": "",
+      "organizer": "中国网络视听节目服务协会",
+      "prestige": 6
+    },
+    {
+      "id": "comp-52jingsai-8575a3209adc",
+      "name": "第十五届全国大学生光电设计竞赛",
+      "tier": "official",
+      "fields": [
+        "engineering",
+        "science"
+      ],
+      "status": "pending",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-11-19T19:33:47+08:00",
+        "review_after": "2026-11-21T19:33:47+08:00"
+      },
+      "signup": "",
+      "schedule": "",
+      "summary": "第十五届全国大学生光电设计竞赛，承办单位为天津大学，属高校学科竞赛榜单赛事，报名信息以大赛官网为准。",
+      "search": "光电设计竞赛 全国大学生 光电 天津大学",
+      "official_url": "https://www.52jingsai.com/article-24182-1.html",
+      "official_site": "http://gd.moocollege.com/",
+      "organizer": "",
+      "prestige": 6
+    },
+    {
+      "id": "comp-saikr-0a03f34d5acb",
+      "name": "2026「AI 生成世界」AI 图像图形技术创新大赛（AI 生成图像赛道）",
+      "tier": "hobby",
+      "fields": [
+        "ai",
+        "design"
+      ],
+      "status": "pending",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-11-19T19:33:47+08:00",
+        "review_after": "2026-11-21T19:33:47+08:00"
+      },
+      "signup": "",
+      "schedule": "",
+      "summary": "赛氪平台上的 AI 图像图形技术创新大赛分赛道，围绕 AI 生成图像创作，具体报名与赛程以赛氪赛事页公布为准。",
+      "search": "AI生成世界 图像图形 AIGC 创新大赛 赛道",
+      "official_url": "https://www.saikr.com/vse/AIGC2601",
+      "official_site": "",
+      "organizer": "2025年「AI生成世界」AI图像图形技术创新大赛组委会",
+      "prestige": 3
+    },
+    {
+      "id": "comp-saikr-6b85998b9475",
+      "name": "2026年第六届《英语世界》杯全国大学生英语写作大赛",
+      "tier": "enterprise",
+      "fields": [
+        "language"
+      ],
+      "status": "pending",
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-11-19T19:33:47+08:00",
+        "review_after": "2026-11-21T19:33:47+08:00"
+      },
+      "signup": "",
+      "schedule": "",
+      "summary": "《英语世界》杯系列赛事中的英语写作大赛，面向全国大学生，具体报名与赛程以赛氪赛事页为准。",
+      "search": "英语世界 杯 写作大赛 英语 写作",
+      "official_url": "https://www.saikr.com/vse/Writing2026",
+      "official_site": "",
+      "organizer": "《英语世界》杯系列大赛组委会",
+      "prestige": 6
     }
   ]
 }
