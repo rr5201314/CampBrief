@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-19T09:32:23+08:00",
+  "last_updated": "2026-11-19T09:59:35+08:00",
   "source": "CampBrief Auto",
-  "total": 698,
+  "total": 711,
   "items": [
     {
       "id": "news-40bd70cf884fa45c",
@@ -41,6 +41,20 @@
       "priority": 3,
       "category": "ai",
       "source": "juya AI 日报"
+    },
+    {
+      "id": "news-7a33cb638375d704",
+      "title": "英特尔 18A 芯片工艺签下首家外部客户",
+      "url": "https://36kr.com/newsflashes/4076012953228161?f=rss",
+      "date": "2026-11-19",
+      "published": "2026-11-19T09:49:38+08:00",
+      "summary": "英特尔 CEO 陈立武表示，公司 18A 芯片制造工艺已签下首家外部客户，采用 18A-P 节点。",
+      "detail": "英特尔首席执行官陈立武表示，公司已为 18A 芯片制造工艺签下首家外部客户，但未透露客户名称。首席技术官补充称该客户采用 18A-P 制造工艺节点，该节点已于 6 月进入风险试产阶段。在经历多年良率问题后，18A 被视为英特尔转型为对外提供代工服务的关键。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "36氪",
+      "subcategory": "hardware"
     },
     {
       "id": "news-2242f7d66d75c443",
@@ -160,6 +174,20 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-7d9e3ab90a76f168",
+      "title": "镁伽科技完成近 2 亿美元融资，建设面向真实世界的 AI 智能基础设施",
+      "url": "https://36kr.com/p/4075322592187524?f=rss",
+      "date": "2026-11-19",
+      "published": "2026-11-19T08:30:00+08:00",
+      "summary": "镁伽科技完成近 2 亿美元新一轮融资，由阿曼投资局参与投资，用于建设 AI for Science 数据基础设施。",
+      "detail": "镁伽科技宣布完成近 2 亿美元新一轮融资，阿曼苏丹国主权财富基金阿曼投资局参与投资，亚投资本、创新工场等老股东加注。公司聚焦 AI for Science，致力于解决生命科学领域成规模、高质量、可复用科研数据稀缺的问题，推动实验室设备与耗材的智能化升级。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "36氪",
+      "subcategory": "industry"
+    },
+    {
       "id": "news-935cc23205ad67b5",
       "title": "OpenCode Go 限时提供 500 美元 GLM 5.3 使用额度",
       "url": "https://daily.juya.uk/issues/2026-11-19/",
@@ -173,6 +201,32 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-00735ec32350b680",
+      "title": "Claude Fable 5.2 独立「编剧、绘画与导演」一部 AI 短片《Fable》",
+      "url": "https://claudia.gallery/fable/",
+      "date": "2026-11-19",
+      "published": "2026-11-19T00:18:18+08:00",
+      "summary": "一部由 Claude Fable 5.2 完成编剧、绘画与导演的 AI 短片《Fable》上线，展示了 AI 生成内容的一体化创作能力。",
+      "detail": "短片《Fable》由 Claude Fable 5.2 负责编剧、绘画与导演，结合 GPT Image 与 Seedance 等工具完成画面与视频生成，制作成本约 210 美元。影片以皮影戏风格重述多个经典童话，并将每个故事与当周 AI 新闻交织，展示了 AI 在完整影像创作流程中的协同能力。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-27089e51efd6a365",
+      "title": "剑桥词典将「人」选为 2026 年度词汇",
+      "url": "https://www.solidot.org/story?sid=85927",
+      "date": "2026-11-19",
+      "published": "2026-11-19T00:12:14+08:00",
+      "summary": "在 AI 不断模糊人与机器界限的背景下，剑桥词典将「人」（human）选为 2026 年度词汇。",
+      "detail": "剑桥词典公布 2026 年度词汇为「人」（human），该词在词典中被定义为「具有人特有的品质、缺点和情感，区别于神、动物或机器」。随着 AI 快速普及，人们重新开始追问「何为人类」，剑桥大学 AI 治理专家表示，AI 让人类重新面对身份与本质这一古老命题。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot"
+    },
+    {
       "id": "news-07231c3a42465c23",
       "title": "英伟达季度营收破千亿美元，数据中心业务占比达93%",
       "url": "https://36kr.com/p/4074562529645445",
@@ -184,6 +238,33 @@
       "priority": 4,
       "category": "ai",
       "source": "36氪"
+    },
+    {
+      "id": "news-066f9801f2d00115",
+      "title": "Anthropic 完成 IPO 定价，每股 83 美元",
+      "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "date": "2026-11-18",
+      "published": "2026-11-18T23:30:09+08:00",
+      "summary": "Anthropic 公布首次公开募股定价，每股 83 美元，公司估值随之确立。",
+      "detail": "人工智能公司 Anthropic 正式公布 IPO 定价为每股 83 美元，标志着这家人工智能公司完成上市前关键一步。作为 OpenAI 的主要竞争对手，其上市是人工智能行业的重要融资事件，也反映出市场对前沿大模型公司商业化前景的判断。",
+      "image": "",
+      "priority": 3,
+      "category": "ai",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-f1bd229288304e20",
+      "title": "OpenAI 模型参与芯片设计，加速半导体研发流程",
+      "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+      "date": "2026-11-18",
+      "published": "2026-11-18T17:45:47+08:00",
+      "summary": "OpenAI 公布其模型在芯片设计领域的应用进展，展示 AI 辅助完成半导体设计环节的能力。",
+      "detail": "OpenAI 发布文章介绍其模型在芯片设计领域的应用，展示 AI 在辅助芯片架构探索与设计优化方面的进展。此举表明前沿大模型开始深入半导体这一高门槛领域，或将改变芯片研发的流程与效率，也引发业界对 AI 参与硬件创新的关注。",
+      "image": "",
+      "priority": 3,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "ai-frontier"
     },
     {
       "id": "news-7f833cd3b7373416",
@@ -264,6 +345,75 @@
       "category": "tech",
       "source": "Hacker News",
       "subcategory": "software"
+    },
+    {
+      "id": "news-b94b08cacf285d65",
+      "title": "Ruby 正则与字符串大小写转换发现 7 个安全漏洞，部分可导致远程代码执行",
+      "url": "https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/",
+      "date": "2026-11-18",
+      "published": "2026-11-18T23:52:50+08:00",
+      "summary": "Ruby 官方发布安全公告，披露正则引擎与字符串大小写转换中的 7 个漏洞，其中部分已证实可被利用实现远程代码执行。",
+      "detail": "Ruby 官方在 11 月 18 日发布安全公告，披露正则表达式引擎和字符串大小写转换中的 7 个漏洞，包括堆缓冲区溢出、双重释放、整数溢出和越界读取等，部分漏洞的 PoC 已证明可触发远程代码执行。官方已发布 Ruby 4.0.10、3.4.13 和 3.3.14 修复版本，建议尽快升级；Ruby 3.2 及更早版本已停止维护，不会获得修复。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "software"
+    },
+    {
+      "id": "news-f71909a714b04c4a",
+      "title": "特斯拉以 3 万美元出售 Cybercab，并每月收取 299 美元订阅费",
+      "url": "https://www.solidot.org/story?sid=85926",
+      "date": "2026-11-18",
+      "published": "2026-11-18T23:29:11+08:00",
+      "summary": "特斯拉宣布以 3 万美元向特定客户出售无方向盘无人车 Cybercab，但每月需缴纳 299 美元订阅费，否则车辆无法启动。",
+      "detail": "特斯拉正式向少数客户出售 Cybercab 无人驾驶汽车，售价 3 万美元，但车主每月必须支付 299 美元订阅费，否则汽车将停止工作。该车没有方向盘和刹车踏板，目前仅在佛罗里达州和得克萨斯州部分城市可用。分析师认为这类似以 3 万美元购买一个特许经营权，车主的行为也受到特斯拉严格约束。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-66a35db26d795165",
+      "title": "RadixArk 发布 DaisyRose-27B，基于 Qwen3.8 大幅提升长程智能体能力",
+      "url": "https://www.radixark.com/blog/daisyrose-27b",
+      "date": "2026-11-18",
+      "published": "2026-11-18T19:39:16+08:00",
+      "summary": "RadixArk 开源 DaisyRose-27B 模型，基于 Qwen3.8-27B 强化学习训练，将 Terminal-Bench 4.1 pass@1 从 5.6% 提升到 12.0%。",
+      "detail": "RadixArk 发布其首个模型 DaisyRose-27B，基于 Qwen3.8-27B 并用自有框架 Miles 做强化学习后训练，仅用 1200 个精选长程智能体任务、18 天在 144 张 H200 上完成训练。该模型将 Terminal-Bench 4.1 的 pass@1 从 5.6% 提升到 12.0%，并在推理、指令遵循和编码等多个基准上取得提升，同时训练成本较开源训练器降低 57%。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "ai-frontier"
+    },
+    {
+      "id": "news-65a472b2a442b706",
+      "title": "36氪研究院发布 2026 年中国词元经济生态发展研究报告",
+      "url": "https://36kr.com/p/4075073010996352?f=rss",
+      "date": "2026-11-18",
+      "published": "2026-11-18T17:46:06+08:00",
+      "summary": "36氪研究院发布报告，将词元（Token）定位为智能时代可计量、可定价、可交易的基础计量单位，梳理其生态与政策脉络。",
+      "detail": "报告指出，词元（Token）作为大模型处理信息的最小语义单元，正在成为智能服务计量、定价、交易与结算的统一标尺，类比电力按「度」、通信按「流量」计量。报告结合「人工智能+」行动意见等政策，分析了智能体普及率目标与词元经济生态的发展趋势，为理解智能经济的计量体系提供参考。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "36氪",
+      "subcategory": "industry"
+    },
+    {
+      "id": "news-7c0eb55aa1718748",
+      "title": "美国近期技术故障被指源于为修复 AI 发现的漏洞而集中推送补丁",
+      "url": "https://www.solidot.org/story?sid=85918",
+      "date": "2026-11-18",
+      "published": "2026-11-18T15:19:35+08:00",
+      "summary": "华尔街高管与美国国安局称，美国近期航班停飞、银行中断等系列技术故障，起因是集中修复 AI 发现的系统漏洞。",
+      "detail": "过去几天美国接连出现航班停飞、银行在线服务中断，甚至 NSA 机密通信网络瘫痪等故障。华尔街高管和 NSA 向国会议员表示，起因是 AI 模型在系统中识别出大量漏洞后，为尽快修复而一次性推送了大量补丁，超出系统设计承载能力，凸显了 AI 辅助运维在落地中的风险。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "source": "Solidot",
+      "subcategory": "ai-frontier"
     },
     {
       "id": "news-d77a42b2029aeb17",
@@ -453,7 +603,7 @@
     {
       "id": "news-13f1738551fabf23",
       "title": "腾讯发布Hy4 Flash模型",
-      "url": "https://hy.tencent.ai/research/hy4-flash",
+      "url": "https://www.tencent.com/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/",
       "date": "2026-11-18",
       "published": "2026-11-18T05:06:08+08:00",
       "summary": "腾讯混元发布Hy4 Flash模型，主打高效推理与低成本部署。",
@@ -488,6 +638,47 @@
       "priority": 2,
       "category": "fun",
       "source": "Hacker News"
+    },
+    {
+      "id": "news-16825abb44cb02ed",
+      "title": "Palo Alto Networks 拟 45 亿美元收购 Applied Compute",
+      "url": "https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-acquire-applied-compute-bringing-secure-open",
+      "date": "2026-11-18",
+      "published": "2026-11-18T23:49:13+08:00",
+      "summary": "网络安全公司 Palo Alto Networks 宣布以 45 亿美元收购 Applied Compute，以强化安全与计算融合能力。",
+      "detail": "Palo Alto Networks 宣布以 45 亿美元收购 Applied Compute，这是该公司在安全与开放计算融合方向的一次重要布局。收购旨在将安全能力与计算基础设施结合，面向企业客户提供更整合的安全解决方案。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "Hacker News",
+      "subcategory": "industry"
+    },
+    {
+      "id": "news-213e944e0dd0caaa",
+      "title": "开发者用 942KB 的 UEFI 启动镜像做出「类 GTA6」效果",
+      "url": "https://github.com/eklavya-raj/gta6-uefi",
+      "date": "2026-11-18",
+      "published": "2026-11-18T22:26:48+08:00",
+      "summary": "一名开发者在 GitHub 发布了一个仅 942KB 的 UEFI 可启动镜像，实现了类似 GTA6 的画面效果。",
+      "detail": "在 GTA6 正式解禁之际，开发者 eklavya-raj 在 GitHub 发布了一个仅 942KB 的 UEFI 可启动镜像，声称实现了类似 GTA6 的画面效果。这一项目因其极小的体积与反差感在 Hacker News 上引发关注，展示了开发者在极度受限环境下实现视觉效果的技术巧思。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-a315026adcb2380a",
+      "title": "航宇星瑞完成超亿元 A 轮融资，聚焦超纯净高温合金",
+      "url": "https://36kr.com/p/4075111063376773?f=rss",
+      "date": "2026-11-18",
+      "published": "2026-11-18T18:18:30+08:00",
+      "summary": "高温合金材料企业航宇星瑞完成超亿元 A 轮融资，瞄准单晶叶片、粉末涡轮盘等高端产品供给缺口。",
+      "detail": "航宇星瑞完成超亿元 A 轮融资，公司专注于航空发动机、燃气轮机所需的超纯净高温合金。国内高温合金产量虽快速增长，但单晶叶片、粉末涡轮盘等高端牌号供给缺口仍在 30% 左右。「十五五」规划将高品质高温合金列为新材料重点突破方向，本轮融资将用于补齐高端产品能力。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "source": "36氪",
+      "subcategory": "industry"
     },
     {
       "id": "news-2ec0ecccf41993f3",
@@ -529,20 +720,6 @@
       "priority": 1,
       "category": "ai",
       "source": "36氪"
-    },
-    {
-      "id": "news-44b5de075d4c7535",
-      "title": "微软ONNX Runtime仓库从GitHub消失引发关注",
-      "url": "https://github.com/microsoft/onnxruntime",
-      "date": "2026-11-18",
-      "published": "2026-11-18T07:18:49+08:00",
-      "summary": "微软ONNX Runtime的GitHub仓库一度「消失」，引发开发者对开源项目可用性的担忧。",
-      "detail": "ONNX Runtime是微软主导的跨平台推理引擎，被广泛用于AI模型部署。其GitHub仓库短暂无法访问引发讨论，在Hacker News上获得较多关注。",
-      "image": "",
-      "priority": 1,
-      "category": "tech",
-      "source": "Hacker News",
-      "subcategory": "software"
     },
     {
       "id": "news-b9d58f4f98c6a4df",
