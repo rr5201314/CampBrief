@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-19T19:33:47+08:00",
-  "source": "CampBrief",
-  "total": 286,
+  "last_updated": "2026-11-23T10:32:50.432818+08:00",
+  "source": "CampBrief Auto",
+  "total": 291,
   "tiers": [
     {
       "key": "all",
@@ -190,8 +190,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-16T10:35:00+08:00",
-        "review_after": "2026-11-19T10:35:00+08:00"
+        "verified_at": "2026-11-23T10:32:50.432818+08:00",
+        "review_after": "2026-11-26T10:32:50.432818+08:00"
       }
     },
     {
@@ -1683,8 +1683,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-19T19:33:47+08:00",
-        "review_after": "2026-11-22T19:33:47+08:00"
+        "verified_at": "2026-11-23T10:32:50.432818+08:00",
+        "review_after": "2026-11-26T10:32:50.432818+08:00"
       }
     },
     {
@@ -1707,8 +1707,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-19T19:33:47+08:00",
-        "review_after": "2026-11-22T19:33:47+08:00"
+        "verified_at": "2026-11-23T10:32:50.432818+08:00",
+        "review_after": "2026-11-26T10:32:50.432818+08:00"
       }
     },
     {
@@ -1768,8 +1768,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-19T19:33:47+08:00",
-        "review_after": "2026-11-22T19:33:47+08:00"
+        "verified_at": "2026-11-23T10:32:50.432818+08:00",
+        "review_after": "2026-11-26T10:32:50.432818+08:00"
       }
     },
     {
@@ -1847,8 +1847,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-16T10:35:00+08:00",
-        "review_after": "2026-11-19T10:35:00+08:00"
+        "verified_at": "2026-11-23T10:32:50.432818+08:00",
+        "review_after": "2026-11-26T10:32:50.432818+08:00"
       }
     },
     {
@@ -1886,8 +1886,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-19T19:33:47+08:00",
-        "review_after": "2026-11-22T19:33:47+08:00"
+        "verified_at": "2026-11-23T10:32:50.432818+08:00",
+        "review_after": "2026-11-26T10:32:50.432818+08:00"
       }
     },
     {
@@ -1909,8 +1909,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-19T19:33:47+08:00",
-        "review_after": "2026-11-22T19:33:47+08:00"
+        "verified_at": "2026-11-23T10:32:50.432818+08:00",
+        "review_after": "2026-11-26T10:32:50.432818+08:00"
       }
     },
     {
@@ -1932,8 +1932,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-19T19:33:47+08:00",
-        "review_after": "2026-11-22T19:33:47+08:00"
+        "verified_at": "2026-11-23T10:32:50.432818+08:00",
+        "review_after": "2026-11-26T10:32:50.432818+08:00"
       }
     },
     {
@@ -2842,7 +2842,7 @@
         "computer",
         "science"
       ],
-      "status": "open",
+      "status": "done",
       "signup": "报名时间：2026年2月6日至11月20日；最后一场考试：2026年11月21日至22日。",
       "schedule": "最后一场线上个人赛，参赛者在2026年11月21日10:00至11月22日23:00期间任选1小时答题；每人收取50元服务费。",
       "summary": "山东省应用统计学会主办，面向高校在校生的计算机组成原理个人线上赛；最后一场报名至11月20日，服务费50元/人。来源：赛氪。",
@@ -3407,7 +3407,7 @@
       "fields": [
         "computer"
       ],
-      "status": "ongoing",
+      "status": "done",
       "signup": "2026年7月16日至8月30日",
       "schedule": "",
       "summary": "赛事详情请访问信息来源页面",
@@ -3546,7 +3546,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -3684,7 +3684,7 @@
       "fields": [
         "other"
       ],
-      "status": "open",
+      "status": "done",
       "signup": "2026年7月15日至2026年11月22日22:00；四场考试可任选一场报名参赛",
       "schedule": "四场线上考试：2026年8月22日、9月19日、10月24日、11月22日；每场9:00—22:00任选一小时，前两场已结束。",
       "summary": "赛事详情请访问信息来源页面",
@@ -4390,7 +4390,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -4531,7 +4531,7 @@
       "fields": [
         "science"
       ],
-      "status": "closed",
+      "status": "done",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5479,7 +5479,7 @@
       "fields": [
         "medical"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5505,7 +5505,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "done",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5858,7 +5858,7 @@
         "innovation",
         "computer"
       ],
-      "status": "open",
+      "status": "closed",
       "signup": "报名及初赛截止至2026年11月22日",
       "schedule": "初赛：2026年11月22日；成绩公示：2026年11月30日",
       "summary": "面向大学生的 AI 应用与创新竞赛，初赛为知识竞赛，报名及初赛截止至2026年11月22日，成绩公示11月30日。",
@@ -5904,7 +5904,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "ongoing",
       "signup": "报名截止至2026年11月21日",
       "schedule": "初赛：2026年11月22日；决赛：2027年1月10日",
       "summary": "全国大学生英语阅读竞赛，面向高校学生的英语阅读能力测试，报名截止2026年11月21日，初赛11月22日，决赛2027年1月10日。",
@@ -5930,7 +5930,7 @@
         "computer",
         "design"
       ],
-      "status": "open",
+      "status": "closed",
       "signup": "即日起至2026年11月19日",
       "schedule": "",
       "summary": "全国高校计算机能力挑战赛数字媒体创新设计赛项，作品提交型，面向高校学生。",
@@ -5966,8 +5966,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-16T10:35:00+08:00",
-        "review_after": "2026-11-19T10:35:00+08:00"
+        "verified_at": "2026-11-23T10:32:50.432818+08:00",
+        "review_after": "2026-11-26T10:32:50.432818+08:00"
       }
     },
     {
@@ -5989,8 +5989,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-16T10:35:00+08:00",
-        "review_after": "2026-11-19T10:35:00+08:00"
+        "verified_at": "2026-11-23T10:32:50.432818+08:00",
+        "review_after": "2026-11-26T10:32:50.432818+08:00"
       }
     },
     {
@@ -6014,8 +6014,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-16T10:35:00+08:00",
-        "review_after": "2026-11-19T10:35:00+08:00"
+        "verified_at": "2026-11-23T10:32:50.432818+08:00",
+        "review_after": "2026-11-26T10:32:50.432818+08:00"
       }
     },
     {
@@ -6037,8 +6037,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-16T10:35:00+08:00",
-        "review_after": "2026-11-19T10:35:00+08:00"
+        "verified_at": "2026-11-23T10:32:50.432818+08:00",
+        "review_after": "2026-11-26T10:32:50.432818+08:00"
       }
     },
     {
@@ -6076,8 +6076,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-19T19:33:47+08:00",
-        "review_after": "2026-11-21T19:33:47+08:00"
+        "verified_at": "2026-11-23T10:32:50.432818+08:00",
+        "review_after": "2026-11-26T10:32:50.432818+08:00"
       },
       "signup": "",
       "schedule": "",
@@ -6100,8 +6100,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-19T19:33:47+08:00",
-        "review_after": "2026-11-21T19:33:47+08:00"
+        "verified_at": "2026-11-23T10:32:50.432818+08:00",
+        "review_after": "2026-11-26T10:32:50.432818+08:00"
       },
       "signup": "",
       "schedule": "",
@@ -6123,8 +6123,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-19T19:33:47+08:00",
-        "review_after": "2026-11-21T19:33:47+08:00"
+        "verified_at": "2026-11-23T10:32:50.432818+08:00",
+        "review_after": "2026-11-26T10:32:50.432818+08:00"
       },
       "signup": "",
       "schedule": "",
@@ -6134,6 +6134,121 @@
       "official_site": "",
       "organizer": "《英语世界》杯系列大赛组委会",
       "prestige": 6
+    },
+    {
+      "id": "comp-52jingsai-38fe0524821b",
+      "name": "2026年第八届全国高校计算机能力挑战赛程序设计挑战赛",
+      "tier": "official",
+      "fields": [
+        "computer"
+      ],
+      "status": "open",
+      "signup": "即日起-2026年11月25日",
+      "schedule": "",
+      "summary": "来源：我爱竞赛网。全国高校计算机能力挑战赛程序设计赛道，面向全国高校在校生。",
+      "search": "程序设计 计算机能力挑战赛 编程",
+      "official_url": "https://www.52jingsai.com/article-23882-1.html",
+      "official_site": "",
+      "organizer": "全国高等学校计算机教育研究会",
+      "prestige": 7,
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-11-25",
+        "verified_at": "2026-11-23T10:32:50.432818+08:00"
+      }
+    },
+    {
+      "id": "comp-52jingsai-4bc2ff3200a1",
+      "name": "2026年第八届大学生语言文字能力大赛写作专项赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "signup": "11月27日报名截止",
+      "schedule": "",
+      "summary": "来源：我爱竞赛网。大学生语言文字能力大赛写作专项赛。",
+      "search": "语言文字 写作",
+      "official_url": "https://www.52jingsai.com/article-23940-1.html",
+      "official_site": "",
+      "organizer": "",
+      "prestige": 4,
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-11-27",
+        "verified_at": "2026-11-23T10:32:50.432818+08:00"
+      }
+    },
+    {
+      "id": "comp-52jingsai-78e1a883a823",
+      "name": "妇女儿童维权优秀普法作品征集",
+      "tier": "official",
+      "fields": [
+        "design"
+      ],
+      "status": "open",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：我爱竞赛网。全国妇联权益部面向社会征集妇女儿童维权优秀普法作品。",
+      "search": "普法 妇女儿童 维权",
+      "official_url": "https://www.52jingsai.com/article-24202-1.html",
+      "official_site": "",
+      "organizer": "全国妇联权益部",
+      "prestige": 6,
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-11-23T10:32:50.432818+08:00",
+        "review_after": "2026-11-26T10:32:50.432818+08:00"
+      }
+    },
+    {
+      "id": "comp-52jingsai-b8e69a2bf41c",
+      "name": "2026年全国大学生信息素养挑战赛",
+      "tier": "hobby",
+      "fields": [
+        "computer"
+      ],
+      "status": "open",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：我爱竞赛网。全国大学生信息素养挑战赛，初赛知识竞赛。",
+      "search": "信息素养 知识竞赛",
+      "official_url": "https://www.52jingsai.com/article-23613-1.html",
+      "official_site": "",
+      "organizer": "中国技术创业协会校企融合专业委员会",
+      "prestige": 3,
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-11-23T10:32:50.432818+08:00",
+        "review_after": "2026-11-26T10:32:50.432818+08:00"
+      }
+    },
+    {
+      "id": "comp-saikr-7451611ecb6f",
+      "name": "第四届“生态先锋，绿色挑战”大学生环保知识大赛（秋季赛）",
+      "tier": "hobby",
+      "fields": [
+        "science"
+      ],
+      "status": "pending",
+      "signup": "",
+      "schedule": "",
+      "summary": "来源：赛氪。大学生环保知识大赛秋季赛。",
+      "search": "环保 知识大赛 绿色",
+      "official_url": "https://www.saikr.com/vse/2026/HBZS",
+      "official_site": "",
+      "organizer": "“生态先锋，绿色挑战”大学生环保知识大赛",
+      "prestige": 3,
+      "lifecycle": {
+        "mode": "manual",
+        "time_zone": "Asia/Shanghai",
+        "verified_at": "2026-11-23T10:32:50.432818+08:00",
+        "review_after": "2026-11-26T10:32:50.432818+08:00"
+      }
     }
   ]
 }
