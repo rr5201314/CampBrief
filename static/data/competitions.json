@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-23T10:32:50.432818+08:00",
+  "last_updated": "2026-11-23T13:03:05+08:00",
   "source": "CampBrief Auto",
-  "total": 291,
+  "total": 290,
   "tiers": [
     {
       "key": "all",
@@ -685,7 +685,8 @@
       "search": "光电设计 光学",
       "official_site": "https://gd.moocollege.com/home/homepage",
       "organizer": "中国光学学会",
-      "prestige": 6
+      "prestige": 6,
+      "official_url": "https://www.52jingsai.com/article-24182-1.html"
     },
     {
       "id": "official-032",
@@ -2366,7 +2367,7 @@
     },
     {
       "id": "comp-saikr-18e1497ac3fd",
-      "name": "【最后一场】2026年第二届工业互联网技术与应用挑战赛——工业互联网专项赛道",
+      "name": "2026年第二届工业互联网技术与应用挑战赛——工业互联网专项赛道",
       "tier": "hobby",
       "fields": [
         "computer",
@@ -3069,7 +3070,7 @@
     },
     {
       "id": "comp-saikr-09acb8c02f83",
-      "name": "【距开考14天】2026年第十二届中西部外语翻译大赛",
+      "name": "2026年第十二届中西部外语翻译大赛",
       "tier": "enterprise",
       "fields": [
         "language"
@@ -3888,7 +3889,7 @@
     },
     {
       "id": "comp-saikr-3e818dd91712",
-      "name": "【省赛报名】第九届大学生普通话挑战赛（NPCCS）",
+      "name": "第九届大学生普通话挑战赛（NPCCS）",
       "tier": "hobby",
       "fields": [
         "language"
@@ -3986,7 +3987,7 @@
     },
     {
       "id": "comp-52jingsai-82a8985b777a",
-      "name": "【报名通知】2026年第九届华教杯大学生数学竞赛报名通知！",
+      "name": "2026年第九届华教杯大学生数学竞赛报名通知",
       "tier": "hobby",
       "fields": [
         "science"
@@ -4034,7 +4035,7 @@
     },
     {
       "id": "comp-saikr-c3366f823da5",
-      "name": "【大英赛主办方】2026年全国大学生英语翻译大赛",
+      "name": "2026年全国大学生英语翻译大赛",
       "tier": "official",
       "fields": [
         "language"
@@ -4111,7 +4112,7 @@
     },
     {
       "id": "comp-saikr-52f6c0e0a9e8",
-      "name": "【倒计时6天】第六届“中外传播杯”大学生英语翻译大赛",
+      "name": "第六届“中外传播杯”大学生英语翻译大赛",
       "tier": "official",
       "fields": [
         "language"
@@ -4135,7 +4136,7 @@
     },
     {
       "id": "comp-saikr-f4fdd1112027",
-      "name": "【权威主办】2026年全国大学生作文竞赛",
+      "name": "2026年全国大学生作文竞赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -4385,7 +4386,7 @@
     },
     {
       "id": "comp-52jingsai-1a858055e16b",
-      "name": "【榜单赛事，规范字大赛】2026年第八届大学生语言文字能力大赛规范字专项赛报名通知！",
+      "name": "2026年第八届大学生语言文字能力大赛规范字专项赛报名通知",
       "tier": "hobby",
       "fields": [
         "language"
@@ -4686,7 +4687,7 @@
     },
     {
       "id": "comp-52jingsai-ece14655d887",
-      "name": "【榜单赛事，第一场报名截止时间：11月14日】2026年第四届大学生汉语大赛火热报名中！",
+      "name": "2026年第四届大学生汉语大赛",
       "tier": "hobby",
       "fields": [
         "literature"
@@ -4735,7 +4736,7 @@
     },
     {
       "id": "comp-saikr-72d775b9ef6c",
-      "name": "【十一月首选】计算机能力竞赛暨城市联赛—计算机素养赛道",
+      "name": "2026年第二届计算机能力竞赛暨城市联赛（冬季赛）——计算机素养赛道",
       "tier": "hobby",
       "fields": [
         "computer"
@@ -4964,7 +4965,7 @@
     },
     {
       "id": "comp-saikr-12c6205e1745",
-      "name": "『中国翻译协会盖章』第五届\"海豚杯\"翻译大赛暨国际翻译人才选拔赛",
+      "name": "第五届“海豚杯”翻译大赛暨国际翻译人才选拔赛",
       "tier": "official",
       "fields": [
         "language"
@@ -5011,7 +5012,7 @@
     },
     {
       "id": "comp-saikr-410675676401",
-      "name": "【年度最后一场开启报名】“智联杯”大学生信息通信技术大赛",
+      "name": "2026“智联杯”大学生信息通信技术大赛",
       "tier": "hobby",
       "fields": [
         "computer"
@@ -5088,7 +5089,7 @@
     },
     {
       "id": "comp-saikr-edce0fd03ca1",
-      "name": "【5届积累】第五届“英才计划”大学生英语阅读大赛",
+      "name": "第五届“英才计划”大学生英语阅读大赛",
       "tier": "hobby",
       "fields": [
         "language"
@@ -5474,7 +5475,7 @@
     },
     {
       "id": "comp-saikr-cafcc9db7724",
-      "name": "【11.20—11.21开考】2026年高校大学生健康与心理能力大赛",
+      "name": "2026年高校大学生健康与心理能力大赛",
       "tier": "hobby",
       "fields": [
         "medical"
@@ -6062,30 +6063,6 @@
       "official_url": "https://www.52jingsai.com/article-24199-1.html",
       "official_site": "",
       "organizer": "中国网络视听节目服务协会",
-      "prestige": 6
-    },
-    {
-      "id": "comp-52jingsai-8575a3209adc",
-      "name": "第十五届全国大学生光电设计竞赛",
-      "tier": "official",
-      "fields": [
-        "engineering",
-        "science"
-      ],
-      "status": "pending",
-      "lifecycle": {
-        "mode": "manual",
-        "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-23T10:32:50.432818+08:00",
-        "review_after": "2026-11-26T10:32:50.432818+08:00"
-      },
-      "signup": "",
-      "schedule": "",
-      "summary": "第十五届全国大学生光电设计竞赛，承办单位为天津大学，属高校学科竞赛榜单赛事，报名信息以大赛官网为准。",
-      "search": "光电设计竞赛 全国大学生 光电 天津大学",
-      "official_url": "https://www.52jingsai.com/article-24182-1.html",
-      "official_site": "http://gd.moocollege.com/",
-      "organizer": "",
       "prestige": 6
     },
     {
