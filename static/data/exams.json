@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-22T10:09:11.398851+08:00",
+  "last_updated": "2026-11-23T12:58:52.985770+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -207,8 +207,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-11-22T10:09:11.398851+08:00",
-        "review_after": "2026-11-25T10:09:11.398851+08:00"
+        "verified_at": "2026-11-23T12:58:52.985770+08:00",
+        "review_after": "2026-11-26T12:58:52.985770+08:00"
       },
       "fee": "约2170元",
       "schedule": "全年多场",
@@ -218,7 +218,7 @@
       "official_portal": "https://ielts-main.neea.cn/",
       "news_list_url": "https://www.chinaielts.org/press-office",
       "official_url": "https://www.chinaielts.org/press-office/announcement",
-      "last_updated": "2026-11-23T10:15:19.508546+08:00",
+      "last_updated": "2026-11-23T12:58:52.985770+08:00",
       "timeline": [
         {
           "label": "纸笔退市",
@@ -681,7 +681,7 @@
           "value": "2027年1月18日"
         }
       ],
-      "last_updated": "2026-11-19T19:30:51+08:00"
+      "last_updated": "2026-11-23T12:58:52.985770+08:00"
     },
     {
       "id": "first-level-cost-engineer-2026",
@@ -866,7 +866,7 @@
           "value": "2027年1月，具体日期另行通知。"
         }
       ],
-      "last_updated": "2026-11-23T10:15:19.508546+08:00"
+      "last_updated": "2026-11-23T12:58:52.985770+08:00"
     },
     {
       "id": "shiye",
