@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-24T09:36:13+08:00",
+  "last_updated": "2026-11-24T10:10:48+08:00",
   "source": "CampBrief Auto",
-  "total": 768,
+  "total": 779,
   "items": [
     {
       "id": "news-8d0e3322bddcde5d",
@@ -126,6 +126,48 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-f2e4e62c5863e78a",
+      "title": "Stalwart 邮件服务器宣布可无缝替代微软 Exchange",
+      "url": "https://stalw.art/blog/microsoft-exchange-replacement/",
+      "date": "2026-11-24",
+      "published": "2026-11-23T22:32:29+00:00",
+      "summary": "开源邮件服务器 Stalwart 宣布成为微软 Exchange 的直接替代方案，补齐邮件、日历与联系人等能力。",
+      "detail": "Stalwart 此前以 JMAP 邮件服务器著称，新版本补齐了与 Exchange 生态兼容所需的能力，使企业无需改变客户端使用习惯即可迁移。该方案面向希望降低 Exchange 许可成本或寻求自托管的企业与组织，发布后在 Hacker News 上获得较高关注。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-ed30e9c552244b96",
+      "title": "新论文提出「潜在自省」，让大模型检测概念注入",
+      "url": "https://arxiv.org/abs/2602.20031",
+      "date": "2026-11-24",
+      "published": "2026-11-23T22:29:48+00:00",
+      "summary": "一篇新论文提出「潜在自省」方法，使大语言模型能够检测上下文或提示中被注入的既有概念。",
+      "detail": "论文题为 Latent Introspection: Models Can Detect Prior Concept Injections，发布于 arXiv（编号 2602.20031）。研究探索模型在潜在空间中的自省能力，用于识别输入中被植入的概念，方向与大模型安全与对齐相关。该工作目前讨论有限，尚属初步探索。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "Hacker News"
+    },
+    {
+      "id": "news-ecc1f5f6797a96b7",
+      "title": "从 SFF 看下一代支付：智能体商业的信任短板",
+      "url": "https://36kr.com/p/4082408874185606?f=rss",
+      "date": "2026-11-24",
+      "published": "2026-11-24T09:00:00+08:00",
+      "summary": "新加坡金融科技节观察显示，智能体介入消费商业时，身份核验与授权边界等信任短板成为规模化阻碍。",
+      "detail": "据机构预测，到 2030 年智能体有望介入全球 3–5 万亿美元的消费商业活动。今年新加坡金融科技节上，智能体商业从概念走向真实交易场景，但身份核验、授权边界、纠纷定责等信任问题成为产业规模化前的现实障碍。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "36氪"
+    },
+    {
       "id": "news-09b4ce1df4aca48c",
       "title": "Qoder 独家上线匿名模型 HungerG，免费试用 7 天",
       "url": "https://daily.juya.uk/issues/2026-11-24/",
@@ -220,6 +262,20 @@
       "source": "juya AI 日报"
     },
     {
+      "id": "news-ffc57cef0d7fb58c",
+      "title": "开源笔记应用 FSNotes 在欧盟 App Store 被下架",
+      "url": "https://github.com/glushchenko/fsnotes/discussions/2056",
+      "date": "2026-11-24",
+      "published": "2026-11-23T18:48:10+00:00",
+      "summary": "开源笔记应用 FSNotes 开发者称，其应用在欧盟 App Store 被苹果下架，此前已运营 9 年。",
+      "detail": "开发者在 GitHub Discussion 中披露，苹果将 FSNotes 从欧盟区 App Store 移除，且未给出充分说明。事件引发开发者对 App Store 政策透明度与开源应用分发权益的讨论，Hacker News 上关注度较高。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "Hacker News"
+    },
+    {
       "id": "news-f032c678286d52ea",
       "title": "OpenAI 公开内部指标 Perplexity，提议设立共同开发限制",
       "url": "https://daily.juya.uk/issues/2026-11-23/",
@@ -244,6 +300,48 @@
       "priority": 3,
       "category": "ai",
       "source": "juya AI 日报"
+    },
+    {
+      "id": "news-c3278d5f9ba2d0f4",
+      "title": "BepiColombo 探测器成功进入水星轨道",
+      "url": "https://www.solidot.org/story?sid=85965",
+      "date": "2026-11-23",
+      "published": "2026-11-23T17:42:47+08:00",
+      "summary": "欧日合作的 BepiColombo 探测器成功进入水星轨道，全球首次环绕水星观测最快明年春季启动。",
+      "detail": "探测器由欧洲 ESA 与日本 JAXA 合作，以意大利数学家 Giuseppe Colombo 命名，2018 年 10 月发射。因第四次飞掠前推进器故障，任务时间表被修订；ESA 于 11 月 22 日确认日本「澪」（MIO）与欧洲 MPO 两台探测器均已入轨。受太阳引力影响，抵达水星难度很高，任务已实施 9 次借助天体引力的变轨。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "hardware",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-5e678aa582b3e00b",
+      "title": "中芯国际三季报超预期却遭抛售，四季度指引引发担忧",
+      "url": "https://36kr.com/p/4082059413853312?f=rss",
+      "date": "2026-11-23",
+      "published": "2026-11-23T16:07:45+08:00",
+      "summary": "中芯国际三季报收入与毛利率双双超预期、净利翻倍，但财报后股价连跌近 5%。",
+      "detail": "按美元计，中芯国际第三季度营收同比增长 33.9%、环比增长 6.1%，毛利率达 29.9%，超过前期 26%–28% 的指引区间，归母净利润同比翻倍。但公司给出的四季度业绩指引引发市场担忧，叠加科技股整体回调，财报后两个交易日股价累计下跌近 5%。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "36氪"
+    },
+    {
+      "id": "news-0f48d29182d2fad8",
+      "title": "PostgreSQL 19 发布，新增 REPACK 命令与逻辑复制改进",
+      "url": "https://www.solidot.org/story?sid=85960",
+      "date": "2026-11-23",
+      "published": "2026-11-23T14:30:29+08:00",
+      "summary": "PostgreSQL 19 正式发布，新增 REPACK 命令回收磁盘空间并重组表，提升查询性能。",
+      "detail": "新版 REPACK(CONCURRENTLY) 可在不中断现有操作的情况下优化表结构，pg_plan_advice 扩展增强查询计划稳定性控制。同时改进 I/O 工作进程自动伸缩、外键检查与执行优化性能，wal_level 设为 replica 时无需重启即可启用逻辑复制，并支持序列值的逻辑复制。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "software",
+      "source": "Solidot"
     },
     {
       "id": "news-4857395ec3ea9ce4",
@@ -419,6 +517,59 @@
       "priority": 2,
       "category": "sports",
       "source": "The Guardian Sport"
+    },
+    {
+      "id": "news-d68d087c205e079a",
+      "title": "救援人员警告：年轻远足者过度依赖 Google Maps 易迷路遇险",
+      "url": "https://www.solidot.org/story?sid=85970",
+      "date": "2026-11-23",
+      "published": "2026-11-23T22:50:17+08:00",
+      "summary": "英国山地救援人员指出，越来越多年轻远足者因过度依赖 Google Maps 导航而迷路或遇险。",
+      "detail": "救援组织 Wasdale Mountain Rescue Team 表示，Google Maps 并非为山区设计，无法显示陡峭岩壁、山间小径和等高线。救援队与 Google 均建议使用纸质地图，登山教练也强调纸质地图的详细信息对预判地形、避免迷路至关重要。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-751b777bab526679",
+      "title": "天文学家首次观测到恒星吞噬伴星并爆炸的全过程",
+      "url": "https://www.solidot.org/story?sid=85966",
+      "date": "2026-11-23",
+      "published": "2026-11-23T18:10:43+08:00",
+      "summary": "利用韦伯望远镜，天文学家首次直接观察到仙女座星系中一颗恒星吞噬伴星并爆炸的过程。",
+      "detail": "该事件编号 AT 2025abao，研究显示其前身是双星系统，主星质量约为太阳 7 倍、半径约 350 倍。当恒星演化至晚期体积膨胀，可能吞噬邻近天体，这一阶段被称为「共有包层阶段」。这是首次直接观测到该过程并伴随爆炸，相关结果由哥伦比亚大学团队分析。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "Solidot"
+    },
+    {
+      "id": "news-b7b5fd974d249ff3",
+      "title": "用智能插座为旧款 Apple 设备设置「充电上限」",
+      "url": "https://sspai.com/post/118705",
+      "date": "2026-11-23",
+      "published": "2026-11-23T14:00:53+08:00",
+      "summary": "少数派介绍了一种借助智能插座为旧款 Apple 设备设置充电上限的曲线方法。",
+      "detail": "旧款 iPhone、iPad 等 Apple 设备不具备原生「充电上限」功能，文章通过智能插座的定时或电量触发控制，模拟出类似效果以保护电池健康。该方法无需更换设备，适合希望延长旧设备电池寿命的用户。",
+      "image": "",
+      "priority": 1,
+      "category": "fun",
+      "source": "少数派"
+    },
+    {
+      "id": "news-c0deaa4e9dc92ca3",
+      "title": "AI 体育硬件公司英汉思动力完成超亿元 B 轮融资",
+      "url": "https://36kr.com/p/4057886873441153?f=rss",
+      "date": "2026-11-23",
+      "published": "2026-11-23T13:09:53+08:00",
+      "summary": "AI 体育硬件公司英汉思动力完成超亿元 B 轮融资，由国科投资领投，累计融资数亿元。",
+      "detail": "公司成立于 2018 年，聚焦机器人动力、感知与控制技术，投资方阵容包括李泽湘旗下 XBOTPARK 基金、红杉中国、达晨财智等。本轮资金将用于技术研发、产能升级与海外渠道建设。其产品此前通过众筹获得百万美元，已出货数万台。",
+      "image": "",
+      "priority": 1,
+      "category": "tech",
+      "subcategory": "industry",
+      "source": "36氪"
     },
     {
       "id": "news-b90bc3f0215eaac1",
