@@ -687,6 +687,11 @@
       "tier": "official",
       "prestige": 8,
       "note": "第十七届三创赛主办单位之一，与西安交通大学共同主办；按全国性学科创新创业赛事保守评为 official/8。"
+    },
+    "中国智慧工程研究会": {
+      "tier": "hobby",
+      "prestige": 3,
+      "note": "全国大学生地理科普暨科技大赛、智联杯等主办方，商业/兴趣赛"
     }
   },
   "competitions": {

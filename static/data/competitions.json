@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-23T13:03:05+08:00",
+  "last_updated": "2026-11-26T07:07:27+08:00",
   "source": "CampBrief Auto",
-  "total": 290,
+  "total": 293,
   "tiers": [
     {
       "key": "all",
@@ -4166,7 +4166,7 @@
         "science"
       ],
       "prestige": 8,
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -4669,7 +4669,7 @@
         "computer",
         "vocational"
       ],
-      "status": "open",
+      "status": "closed",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5834,7 +5834,7 @@
         "computer",
         "ai"
       ],
-      "status": "open",
+      "status": "closed",
       "signup": "即日起至2026年11月25日",
       "schedule": "",
       "summary": "全国高校计算机能力挑战赛，覆盖程序设计、人工智能、大数据、嵌入式等多赛项，由全国高等学校计算机教育研究会主办。",
@@ -6119,7 +6119,7 @@
       "fields": [
         "computer"
       ],
-      "status": "open",
+      "status": "closed",
       "signup": "即日起-2026年11月25日",
       "schedule": "",
       "summary": "来源：我爱竞赛网。全国高校计算机能力挑战赛程序设计赛道，面向全国高校在校生。",
@@ -6226,6 +6226,83 @@
         "verified_at": "2026-11-23T10:32:50.432818+08:00",
         "review_after": "2026-11-26T10:32:50.432818+08:00"
       }
+    },
+    {
+      "id": "comp-saikr-33d2f4adbe90",
+      "name": "2026年第五届“空英杯”全国大学生英语阅读竞赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-09-10",
+        "registration_end": "2026-12-20",
+        "event_start": "2026-12-20",
+        "event_end": "2026-12-20",
+        "verified_at": "2026-11-26T07:07:27+08:00"
+      },
+      "signup": "2026年9月10日至12月20日报名",
+      "schedule": "比赛时间：2026年12月20日 09:00—21:00",
+      "summary": "来源：赛氪。《空中英语教室》杂志社主办的全国大学生英语阅读竞赛，面向高校学生公开报名。",
+      "search": "空英杯 英语阅读 空中英语教室",
+      "official_url": "https://www.saikr.com/vse/KYBreading26",
+      "official_site": "",
+      "organizer": "《空中英语教室》杂志社",
+      "prestige": 4
+    },
+    {
+      "id": "comp-saikr-3cc6d2e881c1",
+      "name": "2026年第四届大学生地理科普暨科技大赛",
+      "tier": "hobby",
+      "fields": [
+        "science"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-09-11",
+        "registration_end": "2027-02-20",
+        "event_start": "2026-09-11",
+        "event_end": "2027-02-20",
+        "verified_at": "2026-11-26T07:07:27+08:00"
+      },
+      "signup": "2026年9月11日至2027年2月20日报名",
+      "schedule": "活动期：2026年9月11日至2027年2月20日",
+      "summary": "来源：赛氪。中国智慧工程研究会主办的全国大学生地理科普与科技赛事，公开报名。",
+      "search": "地理科普 科技大赛 中国智慧工程研究会",
+      "official_url": "https://www.saikr.com/vse/dlds2026",
+      "official_site": "",
+      "organizer": "中国智慧工程研究会",
+      "prestige": 3
+    },
+    {
+      "id": "comp-saikr-f07d8251d185",
+      "name": "2026“华青杯”大学生人工智能大赛——AI机器人素养赛项",
+      "tier": "hobby",
+      "fields": [
+        "ai",
+        "robot"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-07-16",
+        "registration_end": "2026-12-13",
+        "verified_at": "2026-11-26T07:07:27+08:00"
+      },
+      "signup": "2026年7月16日至12月13日报名",
+      "schedule": "",
+      "summary": "来源：赛氪。中国国际科技促进会青少年人工智能教育普及工作委员会主办的AI机器人素养赛项。",
+      "search": "华青杯 人工智能 AI机器人 素养赛项",
+      "official_url": "https://www.saikr.com/vse/HQBRGZN2603",
+      "official_site": "",
+      "organizer": "中国国际科技促进会青少年人工智能教育普及工作委员会",
+      "prestige": 3
     }
   ]
 }
