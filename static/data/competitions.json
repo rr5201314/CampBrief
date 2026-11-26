@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-26T07:07:27+08:00",
+  "last_updated": "2026-11-27T07:10:53+08:00",
   "source": "CampBrief Auto",
-  "total": 293,
+  "total": 296,
   "tiers": [
     {
       "key": "all",
@@ -190,8 +190,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-23T10:32:50.432818+08:00",
-        "review_after": "2026-11-26T10:32:50.432818+08:00"
+        "verified_at": "2026-11-27T07:10:53+08:00",
+        "review_after": "2026-11-29T19:10:53+08:00"
       }
     },
     {
@@ -1684,8 +1684,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-23T10:32:50.432818+08:00",
-        "review_after": "2026-11-26T10:32:50.432818+08:00"
+        "verified_at": "2026-11-27T07:10:53+08:00",
+        "review_after": "2026-11-29T19:10:53+08:00"
       }
     },
     {
@@ -1708,8 +1708,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-23T10:32:50.432818+08:00",
-        "review_after": "2026-11-26T10:32:50.432818+08:00"
+        "verified_at": "2026-11-27T07:10:53+08:00",
+        "review_after": "2026-11-29T19:10:53+08:00"
       }
     },
     {
@@ -1769,8 +1769,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-23T10:32:50.432818+08:00",
-        "review_after": "2026-11-26T10:32:50.432818+08:00"
+        "verified_at": "2026-11-27T07:10:53+08:00",
+        "review_after": "2026-11-29T19:10:53+08:00"
       }
     },
     {
@@ -1848,8 +1848,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-23T10:32:50.432818+08:00",
-        "review_after": "2026-11-26T10:32:50.432818+08:00"
+        "verified_at": "2026-11-27T07:10:53+08:00",
+        "review_after": "2026-11-29T19:10:53+08:00"
       }
     },
     {
@@ -1887,8 +1887,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-23T10:32:50.432818+08:00",
-        "review_after": "2026-11-26T10:32:50.432818+08:00"
+        "verified_at": "2026-11-27T07:10:53+08:00",
+        "review_after": "2026-11-29T19:10:53+08:00"
       }
     },
     {
@@ -1910,8 +1910,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-23T10:32:50.432818+08:00",
-        "review_after": "2026-11-26T10:32:50.432818+08:00"
+        "verified_at": "2026-11-27T07:10:53+08:00",
+        "review_after": "2026-11-29T19:10:53+08:00"
       }
     },
     {
@@ -1933,8 +1933,8 @@
       "lifecycle": {
         "mode": "rolling",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-23T10:32:50.432818+08:00",
-        "review_after": "2026-11-26T10:32:50.432818+08:00"
+        "verified_at": "2026-11-27T07:10:53+08:00",
+        "review_after": "2026-11-29T19:10:53+08:00"
       }
     },
     {
@@ -4243,7 +4243,7 @@
       "fields": [
         "math"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -5967,8 +5967,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-23T10:32:50.432818+08:00",
-        "review_after": "2026-11-26T10:32:50.432818+08:00"
+        "verified_at": "2026-11-27T07:10:53+08:00",
+        "review_after": "2026-11-29T19:10:53+08:00"
       }
     },
     {
@@ -5990,8 +5990,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-23T10:32:50.432818+08:00",
-        "review_after": "2026-11-26T10:32:50.432818+08:00"
+        "verified_at": "2026-11-27T07:10:53+08:00",
+        "review_after": "2026-11-29T19:10:53+08:00"
       }
     },
     {
@@ -6015,8 +6015,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-23T10:32:50.432818+08:00",
-        "review_after": "2026-11-26T10:32:50.432818+08:00"
+        "verified_at": "2026-11-27T07:10:53+08:00",
+        "review_after": "2026-11-29T19:10:53+08:00"
       }
     },
     {
@@ -6038,8 +6038,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-23T10:32:50.432818+08:00",
-        "review_after": "2026-11-26T10:32:50.432818+08:00"
+        "verified_at": "2026-11-27T07:10:53+08:00",
+        "review_after": "2026-11-29T19:10:53+08:00"
       }
     },
     {
@@ -6077,8 +6077,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-23T10:32:50.432818+08:00",
-        "review_after": "2026-11-26T10:32:50.432818+08:00"
+        "verified_at": "2026-11-27T07:10:53+08:00",
+        "review_after": "2026-11-29T19:10:53+08:00"
       },
       "signup": "",
       "schedule": "",
@@ -6100,8 +6100,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-23T10:32:50.432818+08:00",
-        "review_after": "2026-11-26T10:32:50.432818+08:00"
+        "verified_at": "2026-11-27T07:10:53+08:00",
+        "review_after": "2026-11-29T19:10:53+08:00"
       },
       "signup": "",
       "schedule": "",
@@ -6177,8 +6177,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-23T10:32:50.432818+08:00",
-        "review_after": "2026-11-26T10:32:50.432818+08:00"
+        "verified_at": "2026-11-27T07:10:53+08:00",
+        "review_after": "2026-11-29T19:10:53+08:00"
       }
     },
     {
@@ -6198,10 +6198,10 @@
       "organizer": "中国技术创业协会校企融合专业委员会",
       "prestige": 3,
       "lifecycle": {
-        "mode": "manual",
+        "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-23T10:32:50.432818+08:00",
-        "review_after": "2026-11-26T10:32:50.432818+08:00"
+        "registration_end": "2026-12-03",
+        "verified_at": "2026-11-27T07:10:53+08:00"
       }
     },
     {
@@ -6223,8 +6223,8 @@
       "lifecycle": {
         "mode": "manual",
         "time_zone": "Asia/Shanghai",
-        "verified_at": "2026-11-23T10:32:50.432818+08:00",
-        "review_after": "2026-11-26T10:32:50.432818+08:00"
+        "verified_at": "2026-11-27T07:10:53+08:00",
+        "review_after": "2026-11-29T19:10:53+08:00"
       }
     },
     {
@@ -6303,6 +6303,77 @@
       "official_site": "",
       "organizer": "中国国际科技促进会青少年人工智能教育普及工作委员会",
       "prestige": 3
+    },
+    {
+      "id": "comp-52jingsai-45711cce3b45",
+      "name": "2026年第四届“互联网+”技能应用赛",
+      "tier": "hobby",
+      "fields": [
+        "innovation",
+        "computer"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-12-10",
+        "verified_at": "2026-11-27T07:10:53+08:00"
+      },
+      "signup": "即日起至2026年12月10日",
+      "schedule": "初赛晋级公示：2026年12月15日；决赛作品提交：2026年12月15日至12月30日；获奖公示：2027年1月",
+      "summary": "来源：我爱竞赛网。2026年全国大学生数字技能大赛系列赛事之一，含上机初赛与线上作品决赛，主办方收取考试及评审费用。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-23977-1.html",
+      "official_site": "http://www.cnccac.com/?reg=17876&eid=3",
+      "organizer": "中国技术创业协会技术创新工作委员会",
+      "prestige": 3
+    },
+    {
+      "id": "comp-52jingsai-bc982136b1c1",
+      "name": "2026年全国大学生数字交互媒体设计赛",
+      "tier": "hobby",
+      "fields": [
+        "design",
+        "computer"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-12-03",
+        "verified_at": "2026-11-27T07:10:53+08:00"
+      },
+      "signup": "即日起至2026年12月3日",
+      "schedule": "初赛晋级公示：2026年12月8日；决赛作品提交：2026年12月8日至12月28日；获奖公示：2027年1月",
+      "summary": "来源：我爱竞赛网。2026年全国大学生数字技能大赛系列赛事之一，聚焦数字创意与AIGC内容创作，主办方收取考试及评审费用。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-24022-1.html",
+      "official_site": "http://www.cnccac.com/?reg=18122&eid=6",
+      "organizer": "中国技术创业协会技术创新工作委员会",
+      "prestige": 3
+    },
+    {
+      "id": "comp-52jingsai-99f55b454578",
+      "name": "第二十七届世界华人学生作文大赛",
+      "tier": "hobby",
+      "fields": [
+        "language"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_end": "2026-11-30",
+        "verified_at": "2026-11-27T07:10:53+08:00"
+      },
+      "signup": "即日起至2026年11月30日结束征稿",
+      "schedule": "复审：2026年12月1日至2027年1月31日；终审及特等奖评选：2027年2月1日至2月28日；成绩查询：2027年4月",
+      "summary": "来源：我爱竞赛网。中国侨联、全国台联主办，《快乐作文》杂志承办的面向海内外华人学生的公益性作文赛事，以官方渠道为准。",
+      "search": "",
+      "official_url": "https://www.52jingsai.com/article-24219-1.html",
+      "official_site": "https://www.zuowendasai.com/",
+      "organizer": "中国侨联、全国台联",
+      "prestige": 4
     }
   ]
 }
