@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-26T11:06:24.459358+08:00",
+  "last_updated": "2026-11-27T11:02:41.914549+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -207,8 +207,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-11-23T12:58:52.985770+08:00",
-        "review_after": "2026-11-26T12:58:52.985770+08:00"
+        "verified_at": "2026-11-27T11:02:41.914549+08:00",
+        "review_after": "2026-11-30T11:02:40.914549+08:00"
       },
       "fee": "约2170元",
       "schedule": "全年多场",
@@ -217,8 +217,8 @@
       "official_site": "https://ielts.neea.cn/",
       "official_portal": "https://ielts-main.neea.cn/",
       "news_list_url": "https://www.chinaielts.org/press-office",
-      "official_url": "https://www.chinaielts.org/press-office/announcement",
-      "last_updated": "2026-11-23T12:58:52.985770+08:00",
+      "official_url": "https://www.chinaielts.org/press-office/nov-late-available-ielts-seats",
+      "last_updated": "2026-11-27T11:02:41.914549+08:00",
       "timeline": [
         {
           "label": "纸笔退市",
@@ -239,6 +239,10 @@
         {
           "label": "异地赴考费用申请",
           "value": "受影响的异地考生须于2026年10月31日前按官方邮件方式留下信息，凭实名交通、住宿等有效凭证申请报销。"
+        },
+        {
+          "label": "11月中下旬考位",
+          "value": "2026年11月18日至30日全国仍有1.4万+考位（含 IELTS 与 IELTS for UKVI），数据截至11月11日15:30；最晚考前3天可报名，考位以报名网站实时显示为准。"
         }
       ]
     },
