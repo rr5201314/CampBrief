@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-27T09:51:38+08:00",
+  "last_updated": "2026-11-27T13:05:06+08:00",
   "source": "CampBrief Auto",
-  "total": 820,
+  "total": 827,
   "items": [
     {
       "id": "news-74b74dbe1a64cb81",
@@ -16,6 +16,98 @@
       "category": "tech",
       "subcategory": "ai-frontier",
       "source": "Hacker News"
+    },
+    {
+      "id": "news-c5934e03d0f56f45",
+      "title": "DeepSeek 网页端新增对话价格与额度消耗显示",
+      "url": "https://daily.juya.uk/issues/2026-11-27/",
+      "date": "2026-11-27",
+      "published": "2026-11-27T01:24:40+00:00",
+      "summary": "DeepSeek 网页端与 App 开始显示对话价格、额度消耗与上下文占用，界面仍标注免费，按空闲时段价格分项列出 token 用量与金额。",
+      "detail": "有用户发现 DeepSeek 网页端开始显示对话价格、额度消耗与上下文占用，App 端也有同样功能，界面仍标注免费。面板显示本轮消耗额度并按空闲时段价格估算，分项列出输入缓存命中、未命中及输出的单价、token 用量与金额，网页端底部还显示上下文已占用比例。社区猜测后续可能开放付费，也可能只是展示成本，官方暂未说明。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-41603c1566d05ae9",
+      "title": "OpenAI 就 GPT-6.2 计费错误致歉，可储存额度重置补偿已上线",
+      "url": "https://daily.juya.uk/issues/2026-11-27/",
+      "date": "2026-11-27",
+      "published": "2026-11-27T01:24:40+00:00",
+      "summary": "OpenAI 称 GPT-6.2 上线时计费出错致额度少计，现已修复；作为补偿为 Go/Plus/Pro/Business 用户各提供一次可储存额度重置，目前已上线。",
+      "detail": "OpenAI 员工 Tibo 称，GPT-6.2 上线时出现计费错误，多数用户使用 Astra 和 Sol 时额度消耗被错误折减，现已修复。修复后相同任务会占用更多订阅额度，与上周相比 Astra 达到上限的速度加快 40%、Sol 加快 25%，但用量仍应高于 6 Astra 和 6.1 Sol。其他模型未受影响，过往额度差额不补收。作为致歉，OpenAI 为 Go、Plus、Pro 和 Business 用户各提供一次可储存的额度重置，该补偿目前已上线。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-9a46d31b9424bfc4",
+      "title": "腾讯混元开源草稿模型 DFly2，单项最高提速 4.2 倍",
+      "url": "https://daily.juya.uk/issues/2026-11-27/",
+      "date": "2026-11-27",
+      "published": "2026-11-27T01:24:40+00:00",
+      "summary": "腾讯混元开源草稿模型 DFly2，公开权重、训练代码与技术报告，并推出适配 Hy4 flash、DeepSeek-V4.1-Flash 与 GLM-5.3-Flash 的 MoE 版本。",
+      "detail": "腾讯混元团队开源用于加速大模型生成的草稿模型 DFly2，同步公开权重、训练代码和技术报告，并推出适配 Hy4 flash、DeepSeek-V4.1-Flash 及 GLM-5.3-Flash 的 MoE 草稿模型。DFly2 面向 DSA 类稀疏注意力大模型与长上下文场景，通过 KV Share 和 Index Share 直接复用目标模型的 KV cache 及 indexer 选出的至多 2048 个位置，无需单独维护草稿模型的 KV cache。团队评测显示，在保持 Hy4 flash 权重与输出不变的前提下，单项最高提速 4.2 倍。",
+      "image": "",
+      "priority": 2,
+      "category": "tech",
+      "subcategory": "ai-frontier",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-62943f8f354dd682",
+      "title": "蚂蚁百灵开源 Ming-Image-0.2-Design，预告图层分解版",
+      "url": "https://daily.juya.uk/issues/2026-11-27/",
+      "date": "2026-11-27",
+      "published": "2026-11-27T01:24:40+00:00",
+      "summary": "蚂蚁百灵开源图像生成模型 Ming-Image-0.2-Design，权重以 MIT 协议开放，在 Artificial Analysis 开放权重榜排名第一，并预告可拆分图层的版本。",
+      "detail": "蚂蚁集团百灵团队开源图像生成模型 Ming-Image-0.2-Design，权重以 MIT 协议托管于 ModelScope 等平台。该模型强化复杂构图、光影与文字渲染，可用于电商主图、UI 设计稿与空间效果图，在 Artificial Analysis 的 AA-Image-T2I v2.1 评测中以 1095 Elo 位列开放权重模型第一。团队同时预告 Ming-Image-0.2-Design-Layer，可将单张图像拆分为人物部件与 35 个子图层，多轮连续编辑比 GPT-Image-2.5 Sunburst 保留更多原图色彩与纹理，计划下周开源。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-c4a1b130aadcfed5",
+      "title": "报道称智谱 GLM-5.5 进度受阻或推迟，智谱否认",
+      "url": "https://daily.juya.uk/issues/2026-11-27/",
+      "date": "2026-11-27",
+      "published": "2026-11-27T01:24:40+00:00",
+      "summary": "路透社称受反蒸馏措施与美国算力限制影响，智谱约 3 万亿参数的 GLM-5.5 或推迟至 2027 年一季度以后，智谱员工回应称爆料为假消息。",
+      "detail": "路透社援引知情人士报道，智谱原计划本月发布约 3 万亿参数的下一代旗舰模型 GLM-5.5，但部分受 OpenAI 与 Anthropic 反蒸馏措施及美国新算力限制影响，开发进度受阻，原定年底前完成的训练和发布或推迟至 2027 年第一季度及以后。对此，一名智谱员工在朋友圈回应称相关爆料全部为假消息。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-53c4f6c9006ede57",
+      "title": "英伟达要求合作伙伴暂停向东南亚四国发运服务器",
+      "url": "https://daily.juya.uk/issues/2026-11-27/",
+      "date": "2026-11-27",
+      "published": "2026-11-27T01:24:40+00:00",
+      "summary": "美国 AI 芯片出口新规生效后，据报英伟达要求 Dell、Super Micro 等暂停向马来西亚、新加坡、泰国和印尼发运服务器，恢复期限未定。",
+      "detail": "美国商务部 AI 芯片出口新规已于 11 月 19 日生效：向印尼、马来西亚、新加坡、泰国和巴西出口先进 AI 芯片须申请许可，海外数据中心向中国等地企业远程提供大量算力也须报批，存量数据中心须在 90 天内取得许可。据《华尔街日报》报道，英伟达已要求 Dell、Super Micro 等合作伙伴暂停向马来西亚、新加坡、泰国和印尼发运服务器，恢复期限未定，以评估是否符合出口要求。另据 The Information 报道，部分中国 AI 企业正探索将数据中心租约转给非中国第三方再回租算力等方式继续远程使用英伟达芯片。",
+      "image": "",
+      "priority": 2,
+      "category": "ai",
+      "source": "juya AI 日报"
+    },
+    {
+      "id": "news-d329bcdb245918f0",
+      "title": "Antigravity 的 banked resets 功能被曝现身 CLI",
+      "url": "https://daily.juya.uk/issues/2026-11-27/",
+      "date": "2026-11-27",
+      "published": "2026-11-27T01:24:40+00:00",
+      "summary": "有用户发现 Antigravity CLI v1.5.18 已出现 banked resets 功能，含到期时间与领取门槛，官方尚未公布上线时间。",
+      "detail": "有用户发现 Antigravity CLI 从 v1.5.17 升级至 v1.5.18 后已出现 banked resets 功能，包含到期时间和领取所需的使用量门槛。该发现来自 Antigravity CLI 更新追踪截图，显示用户使用量超过规定门槛后即可领取带到期时间的储存重置额度。此前团队负责人 Varun Mohan 曾表示 banked resets 正在开发中，仍在讨论如何设计以预测容量需求，官方目前尚未公布上线时间。",
+      "image": "",
+      "priority": 1,
+      "category": "ai",
+      "source": "juya AI 日报"
     },
     {
       "id": "news-724d51f3cb5f22ec",
