@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-27T07:10:53+08:00",
+  "last_updated": "2026-11-28T07:07:10+08:00",
   "source": "CampBrief Auto",
-  "total": 296,
+  "total": 297,
   "tiers": [
     {
       "key": "all",
@@ -4366,7 +4366,7 @@
       "fields": [
         "business"
       ],
-      "status": "closed",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -4741,7 +4741,7 @@
       "fields": [
         "computer"
       ],
-      "status": "open",
+      "status": "ongoing",
       "lifecycle": {
         "mode": "scheduled",
         "time_zone": "Asia/Shanghai",
@@ -6142,7 +6142,7 @@
       "fields": [
         "language"
       ],
-      "status": "open",
+      "status": "closed",
       "signup": "11月27日报名截止",
       "schedule": "",
       "summary": "来源：我爱竞赛网。大学生语言文字能力大赛写作专项赛。",
@@ -6374,6 +6374,33 @@
       "official_site": "https://www.zuowendasai.com/",
       "organizer": "中国侨联、全国台联",
       "prestige": 4
+    },
+    {
+      "id": "comp-saikr-80ae32badc32",
+      "name": "2026第七届大学生算法挑战赛",
+      "tier": "hobby",
+      "fields": [
+        "computer",
+        "robot"
+      ],
+      "status": "open",
+      "lifecycle": {
+        "mode": "scheduled",
+        "time_zone": "Asia/Shanghai",
+        "registration_start": "2026-08-24",
+        "registration_end": "2026-12-05",
+        "event_start": "2026-12-06",
+        "event_end": "2026-12-06",
+        "verified_at": "2026-11-28T07:07:10+08:00"
+      },
+      "signup": "报名时间：2026年8月24日—12月5日11:00",
+      "schedule": "竞答赛道第三场2026年12月5日10:00—12月6日23:00任选一小时；算法编程赛道测试2026年12月5日13:00—18:00、考试2026年12月6日13:00—18:00",
+      "summary": "来源：赛氪。中国机电一体化技术应用协会（国家一级协会）主办，面向全国高校在校大学生及研究生，设自动化与控制知识竞答赛道与算法编程赛道。",
+      "search": "",
+      "official_url": "https://www.saikr.com/vse/algorithm202602",
+      "official_site": "",
+      "organizer": "中国机电一体化技术应用协会",
+      "prestige": 3
     }
   ]
 }
