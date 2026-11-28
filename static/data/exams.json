@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-27T11:02:41.914549+08:00",
+  "last_updated": "2026-11-28T11:03:24.207039+08:00",
   "source": "CampBrief",
   "total": 29,
   "categories": [
@@ -207,8 +207,8 @@
       "status": "open",
       "lifecycle": {
         "mode": "rolling",
-        "verified_at": "2026-11-27T11:02:41.914549+08:00",
-        "review_after": "2026-11-30T11:02:40.914549+08:00"
+        "verified_at": "2026-11-28T11:03:24.207039+08:00",
+        "review_after": "2026-12-01T11:03:23.207039+08:00"
       },
       "fee": "约2170元",
       "schedule": "全年多场",
@@ -218,7 +218,7 @@
       "official_portal": "https://ielts-main.neea.cn/",
       "news_list_url": "https://www.chinaielts.org/press-office",
       "official_url": "https://www.chinaielts.org/press-office/nov-late-available-ielts-seats",
-      "last_updated": "2026-11-27T11:02:41.914549+08:00",
+      "last_updated": "2026-11-28T11:03:24.207039+08:00",
       "timeline": [
         {
           "label": "纸笔退市",
